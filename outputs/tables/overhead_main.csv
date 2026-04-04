@@ -1,0 +1,9 @@
+run_file,dataset,backbone,mode,n,acceptance_rate,answer_accuracy,mean_prompt_tokens,mean_completion_tokens,mean_total_tokens,mean_latency_query_ms,mean_latency_accepted_ms,generation_ms,certificate_ms,replay_ms,verifier_ms,baseline_total_tokens,token_overhead_ratio_vs_posthoc
+run_01a2ee82.jsonl,medqa,google/flan-t5-base,pcg_full,20,0.0,0.0,226.05,1.0,227.05,91.34363940393087,,91.3285686445306,0.0,0.0013292024959810078,0.0013291515642777085,,
+run_1fc72a19.jsonl,medmcqa,google/flan-t5-base,pcg_full,20,0.0,0.05,81.3,1.0,82.3,205.17875180084957,,205.16346035146853,0.0,0.0011687006917782128,0.0014936988009139895,85.8,0.9592074592074592
+run_4d4f9be3.jsonl,medmcqa,google/flan-t5-base,baseline_posthoc_verify,10,0.0,0.0,84.8,1.0,85.8,50.50154160708189,,50.499754201155156,0.0,0.0,0.001787405926734209,85.8,1.0
+run_5ac2ba8f.jsonl,medmcqa,google/flan-t5-base,pcg_full,20,0.0,0.05,81.3,1.0,82.3,52.93009404122131,,52.913939603604376,0.0,0.001370847166981548,0.0014396922779269516,85.8,0.9592074592074592
+run_69ad695b.jsonl,medmcqa,google/flan-t5-base,baseline_selective,10,0.0,0.0,84.8,1.0,85.8,54.75042919861153,,54.74859579990152,0.0,0.0,0.0018333987100049853,85.8,1.0
+run_ab25785c.jsonl,medmcqa,google/flan-t5-base,pcg_full,10,0.0,0.0,84.8,1.0,85.8,51.253949900274165,,51.238912405096926,0.0,0.001320798764936626,0.001345702912658453,85.8,1.0
+run_ac81a0d0.jsonl,medmcqa,google/flan-t5-base,baseline_lightweight_citation,10,0.0,0.0,84.8,1.0,85.8,51.165033390861936,,51.163504394935444,0.0,0.0,0.0015289959264919162,85.8,1.0
+run_e676a725.jsonl,medmcqa,google/flan-t5-base,baseline_multiagent_no_cert,10,0.0,0.0,84.8,1.0,85.8,51.112283594557084,,51.11047519312706,0.0,0.0,0.0018084014300256968,85.8,1.0
