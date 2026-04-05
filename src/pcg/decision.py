@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 
-def choose_action(risk: float, threshold: float) -> str:
-    if risk > threshold:
+def choose_action(risk: float, checker_valid: bool, threshold: float) -> str:
+    if not checker_valid:
         return "refuse"
-    return "answer"
+    if risk <= threshold:
+        return "answer"
+    return "refuse"
