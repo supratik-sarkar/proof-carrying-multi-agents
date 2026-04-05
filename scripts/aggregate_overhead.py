@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 
@@ -20,16 +21,22 @@ def get_wall_ms(cell):
     return 0.0
 
 
-def stage_mean(df: pd.DataFrame, stage_name: str) -> float:
+def stage_series(df: pd.DataFrame, stage_name: str) -> pd.Series:
     if stage_name not in df.columns:
-        return 0.0
-    return float(df[stage_name].apply(get_wall_ms).mean())
+        return pd.Series([0.0] * len(df))
+    return df[stage_name].apply(get_wall_ms)
 
 
-def safe_mean(df: pd.DataFrame, col: str) -> float:
+def safe_series(df: pd.DataFrame, col: str, default=0.0) -> pd.Series:
     if col not in df.columns:
+        return pd.Series([default] * len(df))
+    return df[col]
+
+
+def q(series: pd.Series, quantile: float) -> float:
+    if len(series) == 0:
         return 0.0
-    return float(df[col].mean())
+    return float(np.quantile(series.astype(float), quantile))
 
 
 def main():
@@ -37,35 +44,66 @@ def main():
     paths = sorted(run_dir.glob("*.jsonl"))
 
     rows = []
+
     for p in paths:
         df = load_jsonl(p)
         if len(df) == 0:
             continue
 
-        accepted_mean = None
-        if "accepted" in df.columns and df["accepted"].any() and "total_wall_ms" in df.columns:
-            accepted_mean = float(df.loc[df["accepted"], "total_wall_ms"].mean())
+        generation_ms = stage_series(df, "generation")
+        certificate_ms = stage_series(df, "certificate")
+        replay_ms = stage_series(df, "replay")
+        verifier_ms = stage_series(df, "verifier")
 
-        rows.append(
-            {
-                "run_file": p.name,
-                "dataset": df["dataset"].iloc[0] if "dataset" in df.columns else "",
-                "backbone": df["backbone"].iloc[0] if "backbone" in df.columns else "",
-                "mode": df["mode"].iloc[0] if "mode" in df.columns else "",
-                "n": len(df),
-                "acceptance_rate": float(df["accepted"].mean()) if "accepted" in df.columns else 0.0,
-                "answer_accuracy": float(df["answer_correct"].fillna(False).mean()) if "answer_correct" in df.columns else 0.0,
-                "mean_prompt_tokens": safe_mean(df, "total_prompt_tokens"),
-                "mean_completion_tokens": safe_mean(df, "total_completion_tokens"),
-                "mean_total_tokens": safe_mean(df, "total_tokens"),
-                "mean_latency_query_ms": safe_mean(df, "total_wall_ms"),
-                "mean_latency_accepted_ms": accepted_mean,
-                "generation_ms": stage_mean(df, "generation"),
-                "certificate_ms": stage_mean(df, "certificate"),
-                "replay_ms": stage_mean(df, "replay"),
-                "verifier_ms": stage_mean(df, "verifier"),
-            }
+        total_wall = safe_series(df, "total_wall_ms", 0.0).astype(float)
+        total_tokens = safe_series(df, "total_tokens", 0.0).astype(float)
+        prompt_tokens = safe_series(df, "total_prompt_tokens", 0.0).astype(float)
+        completion_tokens = safe_series(df, "total_completion_tokens", 0.0).astype(float)
+        accepted = safe_series(df, "accepted", False).fillna(False).astype(bool)
+        answer_correct = safe_series(df, "answer_correct", False).fillna(False).astype(bool)
+
+        stage_total_mean = (
+            generation_ms.mean()
+            + certificate_ms.mean()
+            + replay_ms.mean()
+            + verifier_ms.mean()
         )
+
+        def share(x):
+            return float(x.mean() / stage_total_mean) if stage_total_mean > 0 else 0.0
+
+        rows.append({
+            "run_file": p.name,
+            "dataset": df["dataset"].iloc[0] if "dataset" in df.columns else "",
+            "backbone": df["backbone"].iloc[0] if "backbone" in df.columns else "",
+            "mode": df["mode"].iloc[0] if "mode" in df.columns else "",
+            "n": len(df),
+
+            "acceptance_rate": float(accepted.mean()),
+            "answer_accuracy": float(answer_correct.mean()),
+            "accepted_accuracy": float(answer_correct[accepted].mean()) if accepted.any() else 0.0,
+
+            "mean_prompt_tokens": float(prompt_tokens.mean()),
+            "mean_completion_tokens": float(completion_tokens.mean()),
+            "mean_total_tokens": float(total_tokens.mean()),
+            "median_total_tokens": float(total_tokens.median()),
+            "p95_total_tokens": q(total_tokens, 0.95),
+
+            "mean_latency_query_ms": float(total_wall.mean()),
+            "median_latency_query_ms": float(total_wall.median()),
+            "p95_latency_query_ms": q(total_wall, 0.95),
+            "mean_latency_accepted_ms": float(total_wall[accepted].mean()) if accepted.any() else 0.0,
+
+            "generation_ms": float(generation_ms.mean()),
+            "certificate_ms": float(certificate_ms.mean()),
+            "replay_ms": float(replay_ms.mean()),
+            "verifier_ms": float(verifier_ms.mean()),
+
+            "generation_share": share(generation_ms),
+            "certificate_share": share(certificate_ms),
+            "replay_share": share(replay_ms),
+            "verifier_share": share(verifier_ms),
+        })
 
     out = pd.DataFrame(rows)
 

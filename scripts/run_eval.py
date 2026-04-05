@@ -31,36 +31,26 @@ def normalize_text(x):
     return str(x).strip().lower()
 
 
-def answer_is_correct(pred: str, gold, choices: list[str]) -> bool | None:
+def gold_to_index(gold, num_choices: int) -> int | None:
     if gold is None:
         return None
 
-    pred_l = normalize_text(pred)
-    gold_l = normalize_text(gold)
-
-    if pred_l is None or gold_l is None:
+    g = normalize_text(gold)
+    if g is None:
         return None
 
-    if gold_l in pred_l:
-        return True
+    if g.isdigit():
+        v = int(g)
+        if 0 <= v < num_choices:
+            return v
+        if 1 <= v <= num_choices:
+            return v - 1
 
-    # Handle numeric answer index if present
-    if gold_l.isdigit():
-        idx = int(gold_l)
-        if 0 <= idx < len(choices):
-            if normalize_text(choices[idx]) in pred_l:
-                return True
-        if 1 <= idx <= len(choices):
-            if normalize_text(choices[idx - 1]) in pred_l:
-                return True
+    letter_map = {"a": 0, "b": 1, "c": 2, "d": 3}
+    if g in letter_map and letter_map[g] < num_choices:
+        return letter_map[g]
 
-    # Handle letter answers a/b/c/d
-    letters = {"a": 0, "b": 1, "c": 2, "d": 3}
-    if gold_l in letters and letters[gold_l] < len(choices):
-        if normalize_text(choices[letters[gold_l]]) in pred_l:
-            return True
-
-    return False
+    return None
 
 
 def main():
@@ -104,8 +94,8 @@ def main():
         choices = ex["choices"]
 
         with timed() as t_gen:
-            prompt, answer = prover.generate(question=question, choices=choices)
-        usage = token_counter.usage(prompt, answer)
+            prompt, raw_answer = prover.generate(question=question, choices=choices)
+        usage = token_counter.usage(prompt, raw_answer)
         tel.generation.wall_ms = t_gen["elapsed_ms"]
         tel.generation.prompt_tokens = usage.prompt_tokens
         tel.generation.completion_tokens = usage.completion_tokens
@@ -118,7 +108,7 @@ def main():
         if mode == "pcg_full":
             with timed() as t_cert:
                 cert = prover.make_certificate(
-                    claim=answer,
+                    claim=raw_answer,
                     evidence_texts=choices,
                     meta={"dataset": dataset_name, "instance_id": ex["instance_id"]},
                 )
@@ -128,24 +118,15 @@ def main():
                 checker_valid, checker_reasons = check_certificate(cert)
             tel.replay.wall_ms = t_rep["elapsed_ms"]
 
-        elif mode == "baseline_selective":
-            pass
-
-        elif mode == "baseline_multiagent_no_cert":
-            pass
-
         elif mode == "baseline_lightweight_citation":
             cert = {
-                "claim": answer,
+                "claim": raw_answer,
                 "evidence": [{"text": c} for c in choices],
                 "meta": {"lightweight": True},
             }
 
-        elif mode == "baseline_posthoc_verify":
-            pass
-
         with timed() as t_ver:
-            risk = verifier.score_risk(answer_text=answer, choices=choices)
+            risk, pred_idx, pred_choice, pred_score = verifier.score_risk(answer_text=raw_answer, choices=choices)
         tel.verifier.wall_ms = t_ver["elapsed_ms"]
         tel.risk_raw = risk
         tel.risk_cal = risk
@@ -153,13 +134,19 @@ def main():
         decision = choose_action(risk=risk, threshold=threshold)
         tel.decision = decision
         tel.accepted = (decision == "answer") and checker_valid
-        tel.answer_correct = answer_is_correct(answer, ex["gold_answer"], choices)
+
+        gold_idx = gold_to_index(ex["gold_answer"], len(choices))
+        tel.answer_correct = (gold_idx == pred_idx) if gold_idx is not None and pred_idx is not None else False
 
         row = tel.to_dict()
         row["question"] = question
         row["choices"] = choices
-        row["answer"] = answer
+        row["raw_answer"] = raw_answer
+        row["predicted_choice_index"] = pred_idx
+        row["predicted_choice_text"] = pred_choice
+        row["predicted_choice_score"] = pred_score
         row["gold_answer"] = ex["gold_answer"]
+        row["gold_choice_index"] = gold_idx
         row["checker_valid"] = checker_valid
         row["checker_reasons"] = checker_reasons
         row["certificate"] = cert
