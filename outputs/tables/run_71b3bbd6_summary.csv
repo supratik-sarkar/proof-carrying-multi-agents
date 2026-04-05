@@ -1,2 +1,0 @@
-dataset,backbone,mode,n,acceptance_rate,answer_accuracy,mean_total_tokens,mean_total_wall_ms,generation_ms,certificate_ms,replay_ms,verifier_ms
-medqa,google/flan-t5-base,pcg_full,20,0.0,0.0,227.05,56.86786045698682,56.85192700184416,0.0,0.0013563039829023182,0.0013459008187055588

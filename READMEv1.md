@@ -1,6 +1,8 @@
-# Proof-Carrying Multi-Agents
+# Proof-Carrying Multi-Agents — READMEv1
 
-This repository contains a reproducible rebuild scaffold for proof-carrying multi-agent evaluation, including:
+This is an interim report page generated before the Colab/GPU stage.
+
+## Included in this snapshot
 - runtime telemetry
 - certificate construction and replay checks
 - healthcare-oriented evaluation adapters
@@ -17,7 +19,7 @@ This figure decomposes end-to-end runtime into generation, certificate construct
 ### 2. Latency Distribution Across Stages
 ![](outputs/figures/run_f9c5b3b0_latency_boxplot.png)
 
-This figure shows variability of latency across examples for each stage, highlighting spread and outliers rather than only means.
+This figure shows spread and outliers in latency across examples for each stage.
 
 ### 3. Token Distribution
 ![](outputs/figures/run_f9c5b3b0_token_distribution.png)
@@ -27,7 +29,7 @@ This figure summarizes how token usage is distributed across examples and highli
 ### 4. Quality Overview
 ![](outputs/figures/run_f9c5b3b0_quality_overview.png)
 
-This figure summarizes acceptance rate, overall accuracy, accepted-answer accuracy, and verifier confidence in a single view.
+This figure summarizes acceptance rate, overall accuracy, accepted-answer accuracy, and verifier confidence in one place.
 
 ## Aggregate Overhead Table
 
@@ -74,7 +76,3 @@ PYTHONPATH=. python scripts/run_healthcare.py
 PYTHONPATH=. python scripts/run_overhead.py
 PYTHONPATH=. python scripts/aggregate_overhead.py
 ```
-
-
-## Interim report
-See [READMEv1](READMEv1.md) for the latest local/CPU plots and tables before the Colab stage.
