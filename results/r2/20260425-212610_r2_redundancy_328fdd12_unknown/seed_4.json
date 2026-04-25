@@ -1,0 +1,8348 @@
+{
+  "branch_fail_matrix": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "n": 150,
+  "per_example": [
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab28e2a5542993be8fa9947"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.19354838709677416,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19354838709677416,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19354838709677416,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19354838709677416,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19354838709677416,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19354838709677416,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19354838709677416,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19354838709677416,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae1389655429901ffe4ae05"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.2380952380952381,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2380952380952381,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2380952380952381,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2380952380952381,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2380952380952381,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2380952380952381,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2380952380952381,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2380952380952381,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5adcc3ed5542994d58a2f6c4"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abd12bb55429933744ab703"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae3c0cc5542992f92d82369"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abf04ae5542993fe9a41dbf"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a88fa9e5542993b751ca8de"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a88658955429938390d3f47"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5add311b5542994ed6169cc5"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.07142857142857142,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.07142857142857142,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.07142857142857142,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.07142857142857142,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.07142857142857142,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.07142857142857142,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.07142857142857142,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.07142857142857142,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a75ebfc5542992d0ec06018"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 1.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 1.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 1.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 1.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 1.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 1.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 1.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 1.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7555215542996c70cfaee1"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.1621621621621622,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1621621621621622,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1621621621621622,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1621621621621622,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1621621621621622,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1621621621621622,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1621621621621622,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1621621621621622,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab67bd355429954757d32f2"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a88c68d55429938390d3fba"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a77d65055429949eeb29f7b"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.38095238095238093,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.38095238095238093,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.38095238095238093,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.38095238095238093,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.38095238095238093,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.38095238095238093,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.38095238095238093,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.38095238095238093,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab7f7465542993667794071"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a74c85055429916b0164218"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abd552555429933744ab776"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae3fd2c5542995dadf2428f"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a738fe855429908901be2fb"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8a7d2b55429930ff3c0dfc"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.1739130434782609,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.1739130434782609,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.1739130434782609,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.1739130434782609,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.1739130434782609,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.1739130434782609,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.1739130434782609,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.1739130434782609,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7f6eab5542992097ad2f66"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac1bce45542994ab5c67def"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7be2595542997c3ec972ac"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae5b301554299546bf82f2d"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.25,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.25,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.25,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.25,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.25,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.25,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.25,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.25,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5adfcb5455429906c02daa48"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.15384615384615383,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.15384615384615383,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.15384615384615383,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.15384615384615383,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.15384615384615383,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.15384615384615383,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.15384615384615383,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.15384615384615383,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abb30755542996cc5e49fd8"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.17142857142857143,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.17142857142857143,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.17142857142857143,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.17142857142857143,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.17142857142857143,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.17142857142857143,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.17142857142857143,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.17142857142857143,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab4e3065542990594ba9cb4"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a87e3d65542993e715abff8"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abcedb355429959677d6b4f"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a9064d05542990a9849360f"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0689655172413793,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0689655172413793,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0689655172413793,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0689655172413793,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0689655172413793,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0689655172413793,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0689655172413793,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0689655172413793,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac079e9554299294b218fff"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac038db554299294b218f57"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac176555542994d76dcce47"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8a2d2155429930ff3c0cdc"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.05555555555555555,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05555555555555555,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05555555555555555,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05555555555555555,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05555555555555555,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05555555555555555,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05555555555555555,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05555555555555555,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abe7eb05542993f32c2a12c"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a83a2a15542993344746063"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.11111111111111112,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.11111111111111112,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.11111111111111112,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.11111111111111112,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.11111111111111112,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.11111111111111112,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.11111111111111112,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.11111111111111112,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a888fe6554299206df2b2f7"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac0d83a554299294b219038"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.19999999999999998,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19999999999999998,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19999999999999998,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19999999999999998,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19999999999999998,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19999999999999998,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19999999999999998,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.19999999999999998,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5adf043b5542993a75d263d4"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8209845542990a1d231f1f"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a867089554299211dda2b30"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae10a5b55429920d52342a0"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8b452655429971feec468e"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae2cda55542992decbdcdb7"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.05405405405405406,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05405405405405406,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05405405405405406,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05405405405405406,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05405405405405406,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05405405405405406,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05405405405405406,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05405405405405406,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a834ed95542990548d0b1ca"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a855b5c5542997b5ce3ffeb"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae53b545542990ba0bbb23c"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.1875,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1875,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1875,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1875,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1875,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1875,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1875,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1875,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7c960655429935c91b5244"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab811e95542995dae37ea22"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae1fa2b5542997f29b3c1df"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.3888888888888889,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.3888888888888889,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.3888888888888889,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.3888888888888889,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.3888888888888889,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.3888888888888889,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.3888888888888889,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.3888888888888889,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae650fb55429929b0807b2e"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7ad9865542995eb53be8aa"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a82fcbd55429954d2e2ebe8"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.15384615384615385,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.15384615384615385,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.15384615384615385,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.15384615384615385,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.15384615384615385,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.15384615384615385,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.15384615384615385,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.15384615384615385,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac19d4c55429963665198bb"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.06896551724137931,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06896551724137931,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06896551724137931,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06896551724137931,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06896551724137931,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06896551724137931,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06896551724137931,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06896551724137931,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a85dfcc5542994775f60673"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae73d235542991e8301cc29"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a875154554299211dda2be7"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.2222222222222222,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab446d455429942dd415f07"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7bae20554299294a54aa96"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac289ff5542996366519a02"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.4,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.4,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.4,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.4,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.4,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.4,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.4,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.4,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7a1cd85542990783324e65"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a80541d5542996402f6a4d2"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a70f1685542994082a3e40f"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a809b575542996402f6a59c"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a77a41a5542997042120ab9"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7daad55542995f4f4022b7"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8ca7d4554299240d9c21b8"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7a6ee75542996c55b2ddac"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abdf12255429976d4830a2f"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5adf9dc3554299025d62a2e6"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.07692307692307693,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.07692307692307693,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.07692307692307693,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.07692307692307693,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.07692307692307693,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.07692307692307693,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.07692307692307693,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.07692307692307693,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a800ca555429969796c1bac"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.16,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a83ed9b55429933447460b8"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abd259d55429924427fcf1a"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.1081081081081081,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1081081081081081,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1081081081081081,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1081081081081081,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1081081081081081,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1081081081081081,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1081081081081081,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1081081081081081,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab58f9a554299488d4d99da"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.06666666666666667,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06666666666666667,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06666666666666667,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06666666666666667,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06666666666666667,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06666666666666667,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06666666666666667,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.06666666666666667,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae66b055542995703ce8b61"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.06060606060606061,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.06060606060606061,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.06060606060606061,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.06060606060606061,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.06060606060606061,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.06060606060606061,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.06060606060606061,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.06060606060606061,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abd0b6b5542996e802b46b4"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5add11935542994734353827"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5adfd2f255429925eb1afaa5"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.05,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.05,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a88a4245542997e5c09a668"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5adc65e85542996e68525350"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5adf17f95542995ec70e8f6c"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab6ddb655429953192ad39e"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abcfc365542993a06baf9d6"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.04347826086956522,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.04347826086956522,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.04347826086956522,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.04347826086956522,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.04347826086956522,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.04347826086956522,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.04347826086956522,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.04347826086956522,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a722fae55429971e9dc9343"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.10526315789473684,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473684,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473684,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473684,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473684,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473684,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473684,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473684,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab4475c5542996a3a969f6c"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5adf65555542992d7e9f9334"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.10526315789473685,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473685,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473685,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473685,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473685,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473685,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473685,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.10526315789473685,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae829ea5542997ec2727738"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a81ff62554299676cceb1c4"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae15e125542990adbacf773"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abc8620554299700f9d78e2"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8a764555429930ff3c0de1"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.12903225806451613,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae2dfd155429928c423951b"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a85a2845542997175ce1fe1"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac2bbd0554299218029db09"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.09523809523809523,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.09523809523809523,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.09523809523809523,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.09523809523809523,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.09523809523809523,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.09523809523809523,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.09523809523809523,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.09523809523809523,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ade811e5542992fa25da7a0"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5aba77be55429955dce3ee44"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.048780487804878044,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.048780487804878044,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.048780487804878044,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.048780487804878044,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.048780487804878044,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.048780487804878044,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.048780487804878044,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.048780487804878044,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8574945542997b5ce3fffb"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a863d2d5542991e771815d2"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abf63f15542997ec76fd3ea"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a837d9a554299123d8c213e"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a88a19a5542997e5c09a64b"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab84d5a55429916710eb028"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.25641025641025644,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.25641025641025644,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.25641025641025644,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.25641025641025644,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.25641025641025644,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.25641025641025644,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.25641025641025644,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.25641025641025644,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abbdb195542993f40c73bf1"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a79311755429970f5fffe67"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5adfa3da554299025d62a317"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8347d65542996488c2e3f6"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab5f854554299637185c64e"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.13043478260869565,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13043478260869565,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13043478260869565,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13043478260869565,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13043478260869565,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13043478260869565,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13043478260869565,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13043478260869565,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a85a3005542991dd0999e72"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.20689655172413793,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.20689655172413793,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.20689655172413793,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.20689655172413793,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.20689655172413793,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.20689655172413793,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.20689655172413793,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.20689655172413793,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae37c765542992f92d822d4"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.16666666666666669,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae80919554299540e5a56f6"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.13793103448275862,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13793103448275862,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13793103448275862,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13793103448275862,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13793103448275862,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13793103448275862,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13793103448275862,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13793103448275862,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab38cdd5542992ade7c6de2"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae791ef55429952e35ea979"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.11764705882352941,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae4d8475542993aec5ec0e0"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8091515542996402f6a563"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab6006a554299110f2199b5"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.08333333333333334,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.08333333333333334,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.08333333333333334,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.08333333333333334,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.08333333333333334,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.08333333333333334,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.08333333333333334,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.08333333333333334,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae7385d5542992ae0d163da"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.13953488372093023,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13953488372093023,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13953488372093023,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13953488372093023,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13953488372093023,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13953488372093023,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13953488372093023,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13953488372093023,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7633ad5542992db9473741"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.08,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a81dacc55429926c1cdada0"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a84c4135542994c784dda31"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a90b43455429916514e7523"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abaf6865542996cc5e49f3c"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a85597c5542997175ce1fba"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac1b8ee5542994d76dccedc"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae6b6065542991bbc976168"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5adf39ce5542995534e8c76d"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac0641f554299294b218fbe"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab2a186554299295394677b"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0625,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0625,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0625,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0625,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0625,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0625,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0625,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0625,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a88f9555542995153361214"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8038b55542996402f6a485"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.05128205128205127,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05128205128205127,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05128205128205127,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05128205128205127,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05128205128205127,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05128205128205127,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05128205128205127,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05128205128205127,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abd0d635542992ac4f381b8"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.32258064516129037,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.32258064516129037,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.32258064516129037,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.32258064516129037,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.32258064516129037,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.32258064516129037,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.32258064516129037,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.32258064516129037,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8e3ea95542995a26add48d"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8887a055429938390d3f72"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7a978555429941d65f26db"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.18181818181818182,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.18181818181818182,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.18181818181818182,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.18181818181818182,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.18181818181818182,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.18181818181818182,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.18181818181818182,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.18181818181818182,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a818387554299260e20a291"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8ee6915542990e94052bad"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a78daf855429970f5fffdae"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac1c9a15542994ab5c67e1c"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1142857142857143,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ac26eed55429951e9e685bf"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.1111111111111111,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1111111111111111,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1111111111111111,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1111111111111111,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1111111111111111,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1111111111111111,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1111111111111111,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.1111111111111111,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a7332935542991f9a20c67d"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab85e9e55429934fafe6d8b"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae24abc5542994d89d5b3c3"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab1d7ac554299449642c7e6"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5abae3205542996cc5e49edc"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae2dd2055429928c423950d"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab51dae5542991779162d82"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.05714285714285715,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05714285714285715,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05714285714285715,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05714285714285715,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05714285714285715,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05714285714285715,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05714285714285715,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.05714285714285715,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab28c89554299340b525513"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ab7f97a5542991d322237ef"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.13333333333333336,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13333333333333336,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13333333333333336,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13333333333333336,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13333333333333336,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13333333333333336,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13333333333333336,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.13333333333333336,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5adf69055542995534e8c7a4"
+    },
+    {
+      "branches": [
+        {
+          "accepted": false,
+          "f1": 0.08695652173913045,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08695652173913045,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08695652173913045,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08695652173913045,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08695652173913045,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08695652173913045,
+          "retriever": "dense"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08695652173913045,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": false,
+          "f1": 0.08695652173913045,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5a8085705542992bc0c4a74b"
+    },
+    {
+      "branches": [
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "dense"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "hybrid"
+        },
+        {
+          "accepted": true,
+          "f1": 0.0,
+          "retriever": "bm25_with_query_paraphrase"
+        }
+      ],
+      "id": "5ae6828f5542996d980e7bb9"
+    }
+  ],
+  "per_k": [
+    {
+      "empirical": {
+        "hi": 0.45975558618387935,
+        "lo": 0.3062372724644591,
+        "n_joint": 57,
+        "n_trials": 150,
+        "p_hat": 0.38
+      },
+      "k": 1,
+      "rho": {
+        "alpha": 0.05,
+        "k": 1,
+        "n_joint_fail": 57,
+        "n_trials": 150,
+        "p_joint_ucb": 0.4627631120547151,
+        "p_marg": 0.38,
+        "rho_hat": 1.0,
+        "rho_ucb": 1.5319366578349507
+      },
+      "theory_plug_in": 0.38,
+      "theory_ucb": 0.38
+    },
+    {
+      "empirical": {
+        "hi": 0.45975558618387935,
+        "lo": 0.3062372724644591,
+        "n_joint": 57,
+        "n_trials": 150,
+        "p_hat": 0.38
+      },
+      "k": 2,
+      "rho": {
+        "alpha": 0.05,
+        "k": 2,
+        "n_joint_fail": 57,
+        "n_trials": 150,
+        "p_joint_ucb": 0.469639734853321,
+        "p_marg": 0.38,
+        "rho_hat": 2.6315789473684212,
+        "rho_ucb": 5.3623990660944205
+      },
+      "theory_plug_in": 0.38,
+      "theory_ucb": 0.7743304251440343
+    },
+    {
+      "empirical": {
+        "hi": 0.45975558618387935,
+        "lo": 0.3062372724644591,
+        "n_joint": 57,
+        "n_trials": 150,
+        "p_hat": 0.38
+      },
+      "k": 4,
+      "rho": {
+        "alpha": 0.05,
+        "k": 4,
+        "n_joint_fail": 57,
+        "n_trials": 150,
+        "p_joint_ucb": 0.4777589591105077,
+        "p_marg": 0.38,
+        "rho_hat": 18.224230937454436,
+        "rho_ucb": 68.71199538718648
+      },
+      "theory_plug_in": 1.0,
+      "theory_ucb": 1.0
+    },
+    {
+      "empirical": {
+        "hi": 0.45975558618387935,
+        "lo": 0.3062372724644591,
+        "n_joint": 57,
+        "n_trials": 150,
+        "p_hat": 0.38
+      },
+      "k": 8,
+      "rho": {
+        "alpha": 0.05,
+        "k": 8,
+        "n_joint_fail": 57,
+        "n_trials": 150,
+        "p_joint_ucb": 0.4864772127209057,
+        "p_marg": 0.38,
+        "rho_hat": 874.0068243728197,
+        "rho_ucb": 12462.297791305691
+      },
+      "theory_plug_in": 1.0,
+      "theory_ucb": 1.0
+    }
+  ],
+  "seed": 4
+}

@@ -1,302 +1,180 @@
-# Proof-Carrying Generation for Agentic AI (PCG-MAS)
+# PCG-MAS — Proof-Carrying Generation for Multi-Agent Systems
 
-Reproducible scaffold for proof-carrying multi-agent evaluation with certificate construction, replay checking, telemetry, overhead analysis, and healthcare-oriented stress-testing.
+> Companion artifact for **"Multi-Agent Systems with Proof-Carrying Generation"** (NeurIPS 2026).
+> Every accepted claim ships with a portable certificate `Z = (c, S, Π, Γ, p, meta)`
+> that an external auditor can replay and verify without re-running the model.
 
-- Multi-stage telemetry: generation, certificate, replay, verifier
-- Overhead analysis with token/latency summaries
-- Healthcare-oriented evaluation adapters (MedMCQA / MedQA path)
-- Publication-style plots and reproducible local + Colab workflow
+## Repository Overview
+
+- **Primary goal.** Make multi-agent LLM systems *externally checkable*: every claim is
+  accompanied by a self-contained grounding certificate (committed evidence + replayable
+  pipeline + execution contract + calibrated confidence) that any auditor can verify.
+- **Main outputs.** Five empirical results — R1 audit decomposition, R2 redundancy law,
+  R3 responsibility / diagnosis, R4 risk-aware control under DP, R5 token / latency
+  overhead — plus the full theoretical scaffolding (Theorems 1–3) implemented as
+  property-tested Python modules.
+- **Current tracked file count (approx.).** 72 files across source, tests,
+  configs, scripts, and docs (excluding `.git`, build/cache directories, virtualenvs,
+  and generated `results/` and `figures/`).
+
+## Quick Start
+
+```bash
+# 1. Clone, create venv, install
+git clone <repo>
+cd pcg-neurips2026
+python3.12 -m venv multi-agents
+source multi-agents/bin/activate
+pip install -e ".[dev]"
+
+# 2. Smoke-test the core layer (no model download)
+python scripts/test_phase_bc.py            # commitments, BM25, audit decomp
+python scripts/test_phase_d.py             # orchestrator + all four agents
+pytest tests/ -v                           # property tests for Check / rho / risk
+
+# 3. Run the five experiments (mock backend = fast iteration, no GPU needed)
+make smoke                                 # ~30 s
+make r1                                    # audit decomposition (Thm 1)
+make r2                                    # redundancy law       (Thm 2)
+make r3                                    # responsibility       (Thm 3 i)
+make r4                                    # risk + privacy       (Thm 3 ii)
+make r5                                    # token/time overhead
+
+# 4. Build paper artifacts (figures + LaTeX tables + intro hero)
+make paper                                 # writes figures/ and docs/tables/
+
+# 5. Regenerate this README with live stats
+make readme
+```
+
+> **Tip — backends.** Configs default to `hf_local` with Qwen2.5-7B. Override with
+> `--backend mock` for instant iteration or `--backend hf_inference` to compare against
+> Llama-3.3-70B via the free HF Inference API (rate-limited, cached aggressively under
+> `.cache/hf_inference/`).
+
+## Theoretical Quantity Map
+
+How each module realizes a specific symbol or theorem from the paper.
+
+| File | Theoretical quantity | Brief description |
+|:---|:---|:---|
+| `src/pcg/graph.py` | $G_t = (V, E)$ — typed runtime graph | First-class `TruthNode`, `ToolCallNode`, `SchemaNode`, `DelegationEdge`; provenance for every claim. |
+| `src/pcg/commitments.py` | $H(\cdot)$, Merkle audit log | Collision-resistant hash and append-only Merkle log for all evidence. |
+| `src/pcg/certificate.py` | $Z = (c, S, \Pi, \Gamma, p, \text{meta})$ | Immutable grounding certificate with deterministic JSON canonicalization. |
+| `src/pcg/checker.py` | $\mathrm{Check}(Z; G_t)$ | The four-channel verification predicate. |
+| `src/pcg/independence.py` | $(\delta, \kappa)$-independence | Provenance-disjoint + low-overlap branch independence test. |
+| `src/pcg/responsibility.py` | $\mathrm{Resp}_v(F; do)$ | Causal interventional responsibility with Hoeffding CIs. |
+| `src/pcg/risk.py` | $r(b, Z)$, $\tau$-policy | Posterior-risk computation and piecewise-threshold optimal action. |
+| `src/pcg/privacy.py` | $(\varepsilon, \delta)$-DP | Gaussian mechanism for releasing aggregate features. |
+| `src/pcg/eval/audit.py` | Theorem 1 decomposition | Empirical estimation of the four union-bound channels. |
+| `src/pcg/eval/rho.py` | $\rho \geq 1$ dependence factor | Clopper–Pearson UCB on $\rho$ with Bonferroni-split $\alpha$. |
+| `src/pcg/eval/stats.py` | Wilson, Hoeffding, bootstrap | Statistical CIs used everywhere. |
+| `src/pcg/eval/meter.py` | Token / latency overhead | Per-phase `Meter` context manager; backbone of R5. |
+| `src/pcg/orchestrator/langgraph_flow.py` | Multi-agent flow | LangGraph dynamic routing — directly answers ICML W2 ("rigid roles"). |
+| `src/pcg/orchestrator/replay_handlers.py` | Deterministic replay ops | BM25, span extract, NLI filter, schema validate. |
+| `src/pcg/agents/prover.py` | Prover agent — builds $Z$ | Retrieval + LLM call + commitment + contract assembly. |
+| `src/pcg/agents/verifier.py` | Verifier agent — runs Check | Plus optional Merkle prefix audit. |
+| `src/pcg/agents/attacker.py` | Soundness probes | Evidence-swap, schema-break, policy-violation perturbations. |
+| `src/pcg/agents/debugger.py` | Diagnosis + risk choice | Theorem 3: identify root-cause + select action. |
+
+## Featured Plots
+
+The figures below are regenerated from `results/*/r*.json` by `make paper`.
+If they don't render, run the experiments first (or `make smoke` to populate
+`results/smoke/`).
+
+<p align="center">
+  <img src="figures/intro_hero.png" alt="Intro hero: false-accept rate and utility vs k" width="92%"/>
+</p>
+
+<table>
+<tr>
+<td align="center"><b>R1 — Audit decomposition</b><br/>
+<img src="figures/r1_audit_decomposition.png" alt="R1 audit decomposition" width="100%"/>
+</td>
+<td align="center"><b>R2 — Redundancy law</b><br/>
+<img src="figures/r2_redundancy_law.png" alt="R2 redundancy law" width="100%"/>
+</td>
+</tr>
+<tr>
+<td align="center"><b>R3 — Responsibility</b><br/>
+<img src="figures/r3_responsibility.png" alt="R3 responsibility" width="100%"/>
+</td>
+<td align="center"><b>R4 — Risk Pareto</b><br/>
+<img src="figures/r4_risk_pareto.png" alt="R4 risk Pareto" width="100%"/>
+</td>
+</tr>
+<tr>
+<td align="center"><b>R4 — Privacy / utility</b><br/>
+<img src="figures/r4_privacy_utility.png" alt="R4 privacy utility" width="100%"/>
+</td>
+<td align="center"><b>R5 — Overhead breakdown</b><br/>
+<img src="figures/r5_overhead.png" alt="R5 overhead" width="100%"/>
+</td>
+</tr>
+</table>
+
+> Animated walk-throughs (if any) live in `figures/animations/`. Drop a `.gif`
+> there with the same stem as a static figure (e.g. `r3_responsibility.gif`)
+> and it will be picked up automatically the next time you run `make readme`.
+
+## Key Modules — Implementation Map
+
+The most important entry points in the codebase, with their public APIs and what they do.
+
+| Module | Key API | Purpose |
+|:---|:---|:---|
+| `pcg.backends.MockBackend` | `MockBackend().generate(prompt, ...)` | Deterministic, zero-dep LLM stub used by smoke tests and CI. |
+| `pcg.backends.hf_local.HFLocalBackend` | `HFLocalBackend(model_name="Qwen/Qwen2.5-7B-Instruct")` | Local Transformers backend, default for paper experiments. |
+| `pcg.backends.hf_inference.HFInferenceBackend` | `HFInferenceBackend(model_name="meta-llama/Llama-3.3-70B-Instruct")` | Free-tier HF Inference API for frontier-model comparison. |
+| `pcg.datasets.load_dataset_by_name` | `load_dataset_by_name("hotpotqa", n_examples=200)` | Streaming loaders for HotpotQA, 2WikiMultihopQA, ToolBench-G1, synthetic. |
+| `pcg.retrieval.BM25Index` | `BM25Index.build(items).search(q, top_k=4)` | Deterministic BM25, replayable from a committed evidence pool. |
+| `pcg.checker.Checker` | `Checker(entailment, replayer).check(cert, graph)` | The four-channel verification predicate. Returns `CheckResult`. |
+| `pcg.orchestrator.run_one_example` | `run_one_example(ex, backend=..., checker=..., cfg=...)` | Top-level entry point — runs Prover/Verifier/Attacker/Debugger as configured. |
+| `pcg.orchestrator.build_replayer_with_handlers` | `build_replayer_with_handlers()` | Replayer with `bm25_retrieve_replay`, `span_extract`, `nli_filter`, `schema_validate` registered. |
+| `pcg.agents.build_default_prover` | `build_default_prover(backend=..., config=ProverConfig(...))` | Closes over a backend and returns a `PCGState -> PCGState` callable. |
+| `pcg.responsibility.ResponsibilityEstimator` | `est.estimate_many(cert, graph, comp_ids)` | Hoeffding-bounded interventional Resp per component. |
+| `pcg.risk.ThresholdPolicy` | `ThresholdPolicy(cost_model).choose(r)` | Piecewise-threshold optimal action over `{Answer, Verify, Escalate, Refuse}`. |
+| `pcg.privacy.gaussian_mechanism` | `gaussian_mechanism(x, sensitivity, epsilon, delta)` | Aggregate-feature DP release used in R4. |
+| `pcg.eval.plots` | `plot_rN_*(...)` | NeurIPS-grade figure builders. Used by `make_figures.py`. |
+
+## File Type Distribution
+
+_Generated on: **2026-04-25 04:28:35 AOE (UTC-12)**_  \
+_Git SHA: `unknown`_
+
+| Extension | Count | Percentage |
+|:---|---:|---:|
+| `.py` | 55 | 76.4% |
+| `.yaml` | 6 | 8.3% |
+| `.tex` | 5 | 6.9% |
+| `.json` | 2 | 2.8% |
+| `Makefile` | 1 | 1.4% |
+| `.toml` | 1 | 1.4% |
+| `.md` | 1 | 1.4% |
+| `(no ext)` | 1 | 1.4% |
+
+**Total number of files canned:** **72**
+
+## Submission Snapshot
+
+The exact code/assets used at submission time are archived in the GitHub Release
+**"Submission April 2026"**. The default branch may contain replication notebooks
+and small fixes for future runs; pin to the release tag for bit-exact reproduction
+of the paper results.
+
+```bash
+git fetch --tags
+git checkout submission-2026-04
+```
+
+Reviewers reproducing the paper artifacts should:
+1. Check out the submission tag.
+2. Run `make smoke` (≤ 30 s) to verify the toolchain.
+3. Run `make r1 r2 r3 r4 r5` (a few hours total on a single GPU; longer for the
+   `hf_inference` 70B comparison).
+4. Run `make paper` to regenerate every figure and LaTeX table from the saved JSONs.
 
 ---
 
-## Project map & methodology cheat-sheet
-
-This README mirrors the structure of the reference repo style while reflecting the current `proof-carrying-multi-agents` repository and its rebuilt experimental scaffold.
-
-### Repository overview
-
-- **Repository root:** `/Users/supratiksarkar/work/proof-carrying-multi-agents`
-- **Primary goal:** evaluate proof-carrying acceptance, replayability, and operational overhead in controlled LLM-driven pipelines.
-- **Main outputs:** run JSONL logs, per-run summary CSVs, aggregate overhead tables, and README-ready figures.
-- **Current tracked file count (approx.):** 100
-
-### Theory glossary (files → quantities)
-
-| File                               | Quantity / Symbol                                         | Short description                                                                                 |
-|:-----------------------------------|:----------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
-| `src/common/telemetry.py`          | `StageStats`, `ExampleTelemetry`                          | Telemetry containers for per-stage latency, tokens, and acceptance-related logging.               |
-| `src/common/token_count.py`        | `prompt_tokens`, `completion_tokens`, `total_tokens`      | Tokenizer-based accounting used for overhead and token-cost analysis.                             |
-| `src/pcg/certificates.py`          | `claim`, `certificate_hash`, `minimal_support_ids`        | Builds proof-carrying certificates with normalized evidence, hashes, and minimal support subsets. |
-| `src/pcg/checker.py`               | `Check(Z; G_t)` proxy                                     | Replay-style checker that validates certificate structure, support IDs, and certificate hashes.   |
-| `src/pcg/verifier.py`              | `risk`, `score`, `pred_idx`                               | Maps model output to a candidate answer and computes a verifier confidence / risk signal.         |
-| `src/pcg/decision.py`              | `answer / refuse`                                         | Risk-aware acceptance rule used to decide whether an answer is accepted.                          |
-| `scripts/run_eval.py`              | `accepted`, `answer_correct`                              | Main evaluation loop that produces run-level JSONL artifacts.                                     |
-| `scripts/summarize_runs.py`        | `mean_total_wall_ms`, `accepted_accuracy`                 | Per-run summary builder used for README-facing tables.                                            |
-| `scripts/aggregate_overhead.py`    | `token_overhead_ratio_vs_posthoc`                         | Aggregates overhead metrics across modes into a single comparison table.                          |
-| `scripts/make_figures.py`          | `latency_breakdown`, `quality_overview`                   | Builds README-ready figures from run logs and summary statistics.                                 |
-| `outputs/runs/*.jsonl`             | `run_id`, stage logs                                      | Raw run artifacts used as the source of truth for tables and plots.                               |
-| `outputs/tables/overhead_main.csv` | `acceptance_rate`, `answer_accuracy`, `latency`, `tokens` | Aggregate overhead table across PCG and baseline modes.                                           |
-
-### Key modules (implementation map)
-
-- `src/common/` → telemetry, timers, token accounting, JSONL logging
-- `src/data/` → dataset adapters
-- `src/pcg/` → prover, certificates, checker, verifier, decision logic
-- `scripts/` → run, summarize, aggregate, plot, and README generation workflows
-- `outputs/` → generated runs, tables, and figures
-
-### Repository tree (depth-limited)
-
-```text
-configs/
-├── 2wiki.yaml
-├── default.yaml
-├── hotpotqa.yaml
-├── medmcqa.yaml
-├── medqa.yaml
-├── tmp_baseline_lightweight_citation.yaml
-├── tmp_baseline_multiagent_no_cert.yaml
-├── tmp_baseline_posthoc_verify.yaml
-├── tmp_baseline_selective.yaml
-└── tmp_pcg_full.yaml
-
-scripts/
-├── aggregate_overhead.py
-├── build_final_readme.py
-├── build_readme_report.py
-├── make_figures.py
-├── run_eval.py
-├── run_healthcare.py
-├── run_overhead.py
-└── summarize_runs.py
-
-src/
-├── common
-│   ├── __pycache__
-│   │   ├── __init__.cpython-312.pyc
-│   │   ├── env.cpython-312.pyc
-│   │   ├── jsonl_logger.cpython-312.pyc
-│   │   ├── telemetry.cpython-312.pyc
-│   │   ├── timers.cpython-312.pyc
-│   │   └── token_count.cpython-312.pyc
-│   ├── __init__.py
-│   ├── env.py
-│   ├── jsonl_logger.py
-│   ├── telemetry.py
-│   ├── timers.py
-│   └── token_count.py
-├── data
-│   ├── __pycache__
-│   │   ├── __init__.cpython-312.pyc
-│   │   ├── adapters.cpython-312.pyc
-│   │   ├── medmcqa_adapter.cpython-312.pyc
-│   │   └── medqa_adapter.cpython-312.pyc
-│   ├── __init__.py
-│   ├── adapters.py
-│   ├── medmcqa_adapter.py
-│   └── medqa_adapter.py
-└── pcg
-    ├── __pycache__
-    │   ├── __init__.cpython-312.pyc
-    │   ├── baselines.cpython-312.pyc
-    │   ├── certificates.cpython-312.pyc
-    │   ├── checker.cpython-312.pyc
-    │   ├── decision.cpython-312.pyc
-    │   ├── prover.cpython-312.pyc
-    │   └── verifier.cpython-312.pyc
-    ├── __init__.py
-    ├── baselines.py
-    ├── certificates.py
-    ├── checker.py
-    ├── decision.py
-    ├── prover.py
-    └── verifier.py
-
-outputs/
-├── figures
-│   ├── run_00c17b99_latency_breakdown.png
-│   ├── run_00c17b99_token_hist.png
-│   ├── run_1893108d_latency_breakdown.png
-│   ├── run_1893108d_token_hist.png
-│   ├── run_1d83c544_latency_breakdown.png
-│   ├── run_1d83c544_token_hist.png
-│   ├── run_50b7fde3_latency_breakdown.png
-│   ├── run_50b7fde3_token_hist.png
-│   ├── run_7eee4e28_latency_breakdown.png
-│   ├── run_7eee4e28_token_hist.png
-│   ├── run_c128fc29_latency_breakdown.png
-│   ├── run_c128fc29_token_hist.png
-│   ├── run_cf7da0dc_latency_breakdown.png
-│   ├── run_cf7da0dc_token_hist.png
-│   ├── run_e472c057_latency_breakdown.png
-│   └── run_e472c057_token_hist.png
-├── runs
-│   ├── run_00c17b99.jsonl
-│   ├── run_1893108d.jsonl
-│   ├── run_1d83c544.jsonl
-│   ├── run_50b7fde3.jsonl
-│   ├── run_7eee4e28.jsonl
-│   ├── run_c128fc29.jsonl
-│   ├── run_cf7da0dc.jsonl
-│   └── run_e472c057.jsonl
-├── tables
-│   ├── overhead_main.csv
-│   ├── run_00c17b99_summary.csv
-│   ├── run_1893108d_summary.csv
-│   ├── run_1d83c544_summary.csv
-│   ├── run_50b7fde3_summary.csv
-│   ├── run_7eee4e28_summary.csv
-│   ├── run_c128fc29_summary.csv
-│   ├── run_cf7da0dc_summary.csv
-│   └── run_e472c057_summary.csv
-└── .DS_Store
-```
-
-## File-type distribution
-
-Total files scanned: **100**
-
-| extension   |   count |
-|:------------|--------:|
-| .py         |      25 |
-| .png        |      19 |
-| .pyc        |      17 |
-| .yaml       |      10 |
-| .csv        |       9 |
-| .jsonl      |       8 |
-| .pdf        |       3 |
-| [no_ext]    |       3 |
-| .md         |       2 |
-| .txt        |       2 |
-| .example    |       1 |
-| .ipynb      |       1 |
-
-## Latest result highlights
-
-### 1. Latency Breakdown
-![](outputs/figures/run_e472c057_latency_breakdown.png)
-
-This figure decomposes end-to-end runtime into generation, certificate construction, replay validation, and verifier scoring.
-
-### 2. Latency Distribution Across Stages
-_No figure found._
-
-This figure shows stage-wise variability and outliers instead of only mean latency.
-
-### 3. Token Distribution
-_No figure found._
-
-This figure summarizes token-cost variability across examples and highlights whether cost is stable or tail-heavy.
-
-### 4. Quality Overview
-_No figure found._
-
-This figure summarizes acceptance rate, overall accuracy, accepted-answer accuracy, and verifier confidence.
-
-## Aggregate overhead table
-
-| dataset   | mode                          |   acceptance_rate |   answer_accuracy |   mean_total_tokens |   mean_latency_query_ms |   generation_ms |   certificate_ms |   replay_ms |   verifier_ms |   token_overhead_ratio_vs_posthoc |
-|:----------|:------------------------------|------------------:|------------------:|--------------------:|------------------------:|----------------:|-----------------:|------------:|--------------:|----------------------------------:|
-| medmcqa   | pcg_full                      |                 1 |              0.1  |               85.8  |                 52.6575 |         52.5434 |                0 |      0.0281 |        0.0076 |                            1      |
-| medmcqa   | baseline_multiagent_no_cert   |                 1 |              0.1  |               85.8  |                 50.6479 |         50.6312 |                0 |      0      |        0.0167 |                            1      |
-| medmcqa   | baseline_lightweight_citation |                 1 |              0.1  |               85.8  |                 51.1604 |         51.1434 |                0 |      0      |        0.017  |                            1      |
-| medmcqa   | baseline_posthoc_verify       |                 1 |              0.1  |               85.8  |                 51.5812 |         51.5648 |                0 |      0      |        0.0164 |                            1      |
-| medmcqa   | pcg_full                      |                 1 |              0.15 |               82.3  |                 44.6902 |         44.5826 |                0 |      0.0271 |        0.0062 |                            0.9592 |
-| medmcqa   | pcg_full                      |                 1 |              0.15 |               82.3  |                 49.0161 |         48.9102 |                0 |      0.0274 |        0.0058 |                            0.9592 |
-| medqa     | pcg_full                      |                 1 |              0.3  |              227.05 |                 55.987  |         55.8854 |                0 |      0.0253 |        0.0059 |                          nan      |
-| medmcqa   | baseline_selective            |                 1 |              0.1  |               85.8  |                 51.8786 |         51.8619 |                0 |      0      |        0.0168 |                            1      |
-
-## Submission snapshot
-
-- **Stage:** local rebuild completed; Colab/GPU phase still pending
-- **Current model path:** open-source Hugging Face models through local script-first execution
-- **Current datasets:** MedMCQA pipeline active; MedQA path scaffolded
-- **Artifacts generated:** run logs, per-run tables, aggregate overhead table, and README-ready figures
-- **Intended next stage:** Colab-backed reruns with stronger backbones and fuller overhead/healthcare reporting
-
-## Why numbers may differ
-
-- Local CPU/MPS runs and later Colab GPU runs can differ in runtime, tokenization edge-cases, and model generation behavior.
-- Public dataset loaders and package versions may introduce small changes in row ordering or field behavior.
-- The current backend is a rebuilt scaffold and still evolving; certificate/checker/verifier logic may strengthen further before final experimental reporting.
-- Figures and tables in this README reflect the currently generated local artifacts, not yet the final Colab-scale experimental pass.
-
-## Interim READMEv1 content (merged)
-
-> The following block preserves and merges the previously generated READMEv1 content.
-
-# Proof-Carrying Multi-Agents — READMEv1
-
-This is an interim report page generated before the Colab/GPU stage.
-
-## Included in this snapshot
-- runtime telemetry
-- certificate construction and replay checks
-- healthcare-oriented evaluation adapters
-- overhead analysis
-- publication-style plots and summary tables
-
-## Latest Result Highlights
-
-### 1. Latency Breakdown
-![](outputs/figures/run_e472c057_latency_breakdown.png)
-
-This figure decomposes end-to-end runtime into generation, certificate construction, replay validation, and verifier scoring.
-
-### 2. Latency Distribution Across Stages
-_No figure found._
-
-This figure shows spread and outliers in latency across examples for each stage.
-
-### 3. Token Distribution
-_No figure found._
-
-This figure summarizes how token usage is distributed across examples and highlights typical versus tail-heavy cost behavior.
-
-### 4. Quality Overview
-_No figure found._
-
-This figure summarizes acceptance rate, overall accuracy, accepted-answer accuracy, and verifier confidence in one place.
-
-## Aggregate Overhead Table
-
-| dataset   | mode                          |   acceptance_rate |   answer_accuracy |   mean_total_tokens |   mean_latency_query_ms |   generation_ms |   certificate_ms |   replay_ms |   verifier_ms |   token_overhead_ratio_vs_posthoc |
-|:----------|:------------------------------|------------------:|------------------:|--------------------:|------------------------:|----------------:|-----------------:|------------:|--------------:|----------------------------------:|
-| medmcqa   | pcg_full                      |                 1 |              0.1  |               85.8  |                 52.6575 |         52.5434 |                0 |      0.0281 |        0.0076 |                            1      |
-| medmcqa   | baseline_multiagent_no_cert   |                 1 |              0.1  |               85.8  |                 50.6479 |         50.6312 |                0 |      0      |        0.0167 |                            1      |
-| medmcqa   | baseline_lightweight_citation |                 1 |              0.1  |               85.8  |                 51.1604 |         51.1434 |                0 |      0      |        0.017  |                            1      |
-| medmcqa   | baseline_posthoc_verify       |                 1 |              0.1  |               85.8  |                 51.5812 |         51.5648 |                0 |      0      |        0.0164 |                            1      |
-| medmcqa   | pcg_full                      |                 1 |              0.15 |               82.3  |                 44.6902 |         44.5826 |                0 |      0.0271 |        0.0062 |                            0.9592 |
-| medmcqa   | pcg_full                      |                 1 |              0.15 |               82.3  |                 49.0161 |         48.9102 |                0 |      0.0274 |        0.0058 |                            0.9592 |
-| medqa     | pcg_full                      |                 1 |              0.3  |              227.05 |                 55.987  |         55.8854 |                0 |      0.0253 |        0.0059 |                          nan      |
-| medmcqa   | baseline_selective            |                 1 |              0.1  |               85.8  |                 51.8786 |         51.8619 |                0 |      0      |        0.0168 |                            1      |
-
-## Reproducibility
-
-Typical commands:
-
-```bash
-PYTHONPATH=. python scripts/run_eval.py --config configs/medmcqa.yaml
-PYTHONPATH=. python scripts/run_healthcare.py
-PYTHONPATH=. python scripts/run_overhead.py
-PYTHONPATH=. python scripts/aggregate_overhead.py
-```
-
-
-## Diagnostics
-
-Typical commands:
-
-```bash
-PYTHONPATH=. python scripts/run_eval.py --config configs/medmcqa.yaml
-PYTHONPATH=. python scripts/run_healthcare.py
-PYTHONPATH=. python scripts/run_overhead.py
-PYTHONPATH=. python scripts/aggregate_overhead.py
-PYTHONPATH=. python scripts/make_figures.py --run outputs/runs/<run_file>.jsonl
-```
-
-## Compute environments
-
-- **Local development:** MacBook Pro environment via `.venv`
-- **Planned replication / scale-up:** Google Colab GPU runtime
-- **Goal:** align local debug runs with later Colab-backed experimental reruns
+*This README was auto-generated by `scripts/build_readme.py` on 2026-04-25 04:28:35 AOE (UTC-12). To regenerate, run `make readme` from the project root.*

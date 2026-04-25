@@ -1,0 +1,42 @@
+# R2: Redundancy law — false-accept rate vs k
+# Theorem 2: Pr(A_t^{(k,k)} & false) <= rho^{k-1} * eps^k
+
+dataset:
+  name: hotpotqa
+  split: validation
+  n_examples: 150           # smaller because each example runs k retrievers
+
+backend:
+  kind: hf_local
+  model_name: Qwen/Qwen2.5-7B-Instruct
+  dtype: float16
+
+prover:
+  top_k: 4
+  max_answer_tokens: 64
+  temperature: 0.0
+  # Multiple retrievers => k branches with different tool steps
+  retrievers_for_branches:
+    - bm25
+    - dense
+    - hybrid
+    - bm25_with_query_paraphrase
+
+checker:
+  entailment: exact_match
+  case_insensitive: true
+
+independence:
+  delta: 0.30               # shingle-Jaccard threshold
+  kappa: 1                  # max shared tool-steps
+  provenance_level: publisher
+  shingle_m: 5
+
+# k values to sweep — each example will be run at each k
+k_values: [1, 2, 4, 8]
+
+stats:
+  bootstrap_n: 2000
+  alpha: 0.05
+
+output_dir: results/r2

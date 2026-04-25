@@ -1,0 +1,33 @@
+{
+  "figures": [
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260425-212245_r1_hotpotqa_9ec00028_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r1_audit_decomposition"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260425-212610_r2_redundancy_328fdd12_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r2_redundancy_law"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r3/20260425-212733_r3_responsibility_be2b77de_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r3_responsibility"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260425-213009_r4_risk_c7f932a2_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r4_risk_pareto"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260425-213009_r4_risk_c7f932a2_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r4_privacy_utility"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r5/20260425-213113_r5_overhead_e9b2f2b5_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r5_overhead"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r5/20260425-213113_r5_overhead_e9b2f2b5_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r5_overhead_vs_k"
+    }
+  ],
+  "out_dir": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures"
+}

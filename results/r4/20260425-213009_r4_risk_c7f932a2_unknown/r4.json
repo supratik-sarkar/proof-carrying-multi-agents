@@ -1,0 +1,602 @@
+{
+  "aggregated": {
+    "1.0": {
+      "always_answer": {
+        "cost_ci": [
+          54.15680329354113,
+          58.794184946777435
+        ],
+        "cost_mean": 56.322108127935486,
+        "harm_ci": [
+          9.919999999999998,
+          10.0
+        ],
+        "harm_mean": 9.959999999999999
+      },
+      "learned": {
+        "cost_ci": [
+          54.15680329354113,
+          58.794184946777435
+        ],
+        "cost_mean": 56.322108127935486,
+        "harm_ci": [
+          9.919999999999998,
+          10.0
+        ],
+        "harm_mean": 9.959999999999999
+      },
+      "threshold_pcg": {
+        "cost_ci": [
+          4.454000000000001,
+          4.559
+        ],
+        "cost_mean": 4.51,
+        "harm_ci": [
+          1.6969999999999998,
+          1.982
+        ],
+        "harm_mean": 1.83
+      }
+    },
+    "3.0": {
+      "always_answer": {
+        "cost_ci": [
+          62.77202755999051,
+          66.89744543441626
+        ],
+        "cost_mean": 64.949565285195,
+        "harm_ci": [
+          9.919999999999998,
+          10.0
+        ],
+        "harm_mean": 9.959999999999999
+      },
+      "learned": {
+        "cost_ci": [
+          62.77202755999051,
+          66.89744543441626
+        ],
+        "cost_mean": 64.949565285195,
+        "harm_ci": [
+          9.919999999999998,
+          10.0
+        ],
+        "harm_mean": 9.959999999999999
+      },
+      "threshold_pcg": {
+        "cost_ci": [
+          4.698580447835763,
+          4.72
+        ],
+        "cost_mean": 4.712580447835763,
+        "harm_ci": [
+          1.26,
+          1.3359999999999999
+        ],
+        "harm_mean": 1.298
+      }
+    },
+    "8.0": {
+      "always_answer": {
+        "cost_ci": [
+          77.31958363166702,
+          82.45124475539573
+        ],
+        "cost_mean": 79.84005485537097,
+        "harm_ci": [
+          9.919999999999998,
+          10.0
+        ],
+        "harm_mean": 9.959999999999999
+      },
+      "learned": {
+        "cost_ci": [
+          77.31958363166702,
+          82.45124475539573
+        ],
+        "cost_mean": 79.84005485537097,
+        "harm_ci": [
+          9.919999999999998,
+          10.0
+        ],
+        "harm_mean": 9.959999999999999
+      },
+      "threshold_pcg": {
+        "cost_ci": [
+          4.923,
+          5.0
+        ],
+        "cost_mean": 4.965,
+        "harm_ci": [
+          0.5,
+          0.7090000000000001
+        ],
+        "harm_mean": 0.595
+      }
+    },
+    "inf": {
+      "always_answer": {
+        "cost_ci": [
+          101.5,
+          101.5
+        ],
+        "cost_mean": 101.5,
+        "harm_ci": [
+          9.919999999999998,
+          10.0
+        ],
+        "harm_mean": 9.959999999999999
+      },
+      "learned": {
+        "cost_ci": [
+          101.5,
+          101.5
+        ],
+        "cost_mean": 101.5,
+        "harm_ci": [
+          9.919999999999998,
+          10.0
+        ],
+        "harm_mean": 9.959999999999999
+      },
+      "threshold_pcg": {
+        "cost_ci": [
+          5.0,
+          5.0
+        ],
+        "cost_mean": 5.0,
+        "harm_ci": [
+          0.5,
+          0.5
+        ],
+        "harm_mean": 0.5
+      }
+    }
+  },
+  "eps_values": [
+    "inf",
+    8.0,
+    3.0,
+    1.0
+  ],
+  "per_seed": [
+    {
+      "n_eval": 100,
+      "per_eps": [
+        {
+          "eps": "inf",
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 101.5,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 101.5,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 5.0,
+              "harm_per_claim": 0.5,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 8.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 75.62542322675172,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 75.62542322675172,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.895,
+              "harm_per_claim": 0.785,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 3.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 61.005583799114994,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 61.005583799114994,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.72,
+              "harm_per_claim": 1.26,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 1.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 52.54382420627679,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 52.54382420627679,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.475,
+              "harm_per_claim": 1.925,
+              "n": 100
+            }
+          }
+        }
+      ],
+      "seed": 0
+    },
+    {
+      "n_eval": 100,
+      "per_eps": [
+        {
+          "eps": "inf",
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 101.5,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 101.5,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 5.0,
+              "harm_per_claim": 0.5,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 8.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 84.36359640203804,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 84.36359640203804,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 5.0,
+              "harm_per_claim": 0.5,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 3.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 67.03644371982587,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 67.03644371982587,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.717902239178817,
+              "harm_per_claim": 1.355,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 1.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 55.8288597380186,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 55.8288597380186,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.405,
+              "harm_per_claim": 2.115,
+              "n": 100
+            }
+          }
+        }
+      ],
+      "seed": 1
+    },
+    {
+      "n_eval": 100,
+      "per_eps": [
+        {
+          "eps": "inf",
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 101.5,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 101.5,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 5.0,
+              "harm_per_claim": 0.5,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 8.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 79.67582840087951,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 79.67582840087951,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 5.0,
+              "harm_per_claim": 0.5,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 3.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 65.42169320130378,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 65.42169320130378,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.685,
+              "harm_per_claim": 1.355,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 1.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 56.013829578945916,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 56.013829578945916,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.545,
+              "harm_per_claim": 1.735,
+              "n": 100
+            }
+          }
+        }
+      ],
+      "seed": 2
+    },
+    {
+      "n_eval": 100,
+      "per_eps": [
+        {
+          "eps": "inf",
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 101.5,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 101.5,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 5.0,
+              "harm_per_claim": 0.5,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 8.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 79.48960616998507,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 79.48960616998507,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.93,
+              "harm_per_claim": 0.69,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 3.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 63.5497318836135,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 63.5497318836135,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.72,
+              "harm_per_claim": 1.26,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 1.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 56.57627192443766,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 56.57627192443766,
+              "harm_per_claim": 10.0,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.545,
+              "harm_per_claim": 1.735,
+              "n": 100
+            }
+          }
+        }
+      ],
+      "seed": 3
+    },
+    {
+      "n_eval": 100,
+      "per_eps": [
+        {
+          "eps": "inf",
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 101.5,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 101.5,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 5.0,
+              "harm_per_claim": 0.5,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 8.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 80.04582007720045,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 80.04582007720045,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 5.0,
+              "harm_per_claim": 0.5,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 3.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 67.73437382211694,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 67.73437382211694,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.72,
+              "harm_per_claim": 1.26,
+              "n": 100
+            }
+          }
+        },
+        {
+          "eps": 1.0,
+          "policies": {
+            "always_answer": {
+              "cost_per_claim": 60.64775519199844,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "learned": {
+              "cost_per_claim": 60.64775519199844,
+              "harm_per_claim": 9.9,
+              "n": 100
+            },
+            "threshold_pcg": {
+              "cost_per_claim": 4.58,
+              "harm_per_claim": 1.64,
+              "n": 100
+            }
+          }
+        }
+      ],
+      "seed": 4
+    }
+  ],
+  "run_id": "20260425-213009_r4_risk_c7f932a2_unknown",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

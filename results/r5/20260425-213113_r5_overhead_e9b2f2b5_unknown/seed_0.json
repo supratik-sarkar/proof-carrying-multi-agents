@@ -1,0 +1,181 @@
+{
+  "per_combo": [
+    {
+      "backend": "mock-llm",
+      "config": "baseline_no_pcg",
+      "k": 1,
+      "n_examples": 100,
+      "phases": {
+        "llm_gen": {
+          "ms": 80.0313341896981,
+          "n": 100,
+          "tok_in": 53272,
+          "tok_out": 3925
+        }
+      },
+      "tokens_per_claim": 571.97,
+      "wall_ms_per_claim": 0.8016659086570144,
+      "wall_ms_total": 80.16659086570144
+    },
+    {
+      "backend": "mock-llm",
+      "config": "pcg_k1",
+      "k": 1,
+      "n_examples": 100,
+      "phases": {
+        "prover_commit_evidence": {
+          "ms": 5.8351660263724625,
+          "n": 100,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_contract": {
+          "ms": 0.6102955085225403,
+          "n": 100,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_llm_gen": {
+          "ms": 24.65278859017417,
+          "n": 100,
+          "tok_in": 60887,
+          "tok_out": 4085
+        },
+        "prover_pipeline": {
+          "ms": 1.3630386674776673,
+          "n": 100,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_retrieval": {
+          "ms": 24.097043555229902,
+          "n": 100,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_setup": {
+          "ms": 0.30112569220364094,
+          "n": 100,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "verifier": {
+          "ms": 1.2809610343538225,
+          "n": 100,
+          "tok_in": 0,
+          "tok_out": 0
+        }
+      },
+      "tokens_per_claim": 649.72,
+      "wall_ms_per_claim": 0.6162416923325509,
+      "wall_ms_total": 61.62416923325509
+    },
+    {
+      "backend": "mock-llm",
+      "config": "pcg_k2",
+      "k": 2,
+      "n_examples": 100,
+      "phases": {
+        "prover_commit_evidence": {
+          "ms": 11.58378820400685,
+          "n": 200,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_contract": {
+          "ms": 1.835828006733209,
+          "n": 200,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_llm_gen": {
+          "ms": 48.44750539632514,
+          "n": 200,
+          "tok_in": 121774,
+          "tok_out": 8170
+        },
+        "prover_pipeline": {
+          "ms": 2.6331644621677697,
+          "n": 200,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_retrieval": {
+          "ms": 46.8067082692869,
+          "n": 200,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_setup": {
+          "ms": 0.5870038876309991,
+          "n": 200,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "verifier": {
+          "ms": 2.49454693403095,
+          "n": 200,
+          "tok_in": 0,
+          "tok_out": 0
+        }
+      },
+      "tokens_per_claim": 1299.44,
+      "wall_ms_per_claim": 1.210099189192988,
+      "wall_ms_total": 121.0099189192988
+    },
+    {
+      "backend": "mock-llm",
+      "config": "pcg_k4",
+      "k": 4,
+      "n_examples": 100,
+      "phases": {
+        "prover_commit_evidence": {
+          "ms": 22.815998818259686,
+          "n": 400,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_contract": {
+          "ms": 2.52209062455222,
+          "n": 400,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_llm_gen": {
+          "ms": 94.86637392546982,
+          "n": 400,
+          "tok_in": 243548,
+          "tok_out": 16340
+        },
+        "prover_pipeline": {
+          "ms": 5.19741146126762,
+          "n": 400,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_retrieval": {
+          "ms": 90.64479178050533,
+          "n": 400,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "prover_setup": {
+          "ms": 1.120801898650825,
+          "n": 400,
+          "tok_in": 0,
+          "tok_out": 0
+        },
+        "verifier": {
+          "ms": 4.96228423435241,
+          "n": 400,
+          "tok_in": 0,
+          "tok_out": 0
+        }
+      },
+      "tokens_per_claim": 2598.88,
+      "wall_ms_per_claim": 2.3469412326812744,
+      "wall_ms_total": 234.69412326812744
+    }
+  ],
+  "seed": 0
+}

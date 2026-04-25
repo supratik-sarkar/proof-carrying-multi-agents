@@ -1,0 +1,44 @@
+{
+  "backend": {
+    "dtype": "float16",
+    "kind": "hf_local",
+    "model_name": "Qwen/Qwen2.5-7B-Instruct"
+  },
+  "checker": {
+    "case_insensitive": true,
+    "entailment": "exact_match"
+  },
+  "dataset": {
+    "n_examples": 150,
+    "name": "hotpotqa",
+    "split": "validation"
+  },
+  "independence": {
+    "delta": 0.3,
+    "kappa": 1,
+    "provenance_level": "publisher",
+    "shingle_m": 5
+  },
+  "k_values": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "output_dir": "results/r2",
+  "prover": {
+    "max_answer_tokens": 64,
+    "retrievers_for_branches": [
+      "bm25",
+      "dense",
+      "hybrid",
+      "bm25_with_query_paraphrase"
+    ],
+    "temperature": 0.0,
+    "top_k": 4
+  },
+  "stats": {
+    "alpha": 0.05,
+    "bootstrap_n": 2000
+  }
+}

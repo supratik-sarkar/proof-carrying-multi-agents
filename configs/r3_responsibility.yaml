@@ -1,0 +1,45 @@
+# R3: Interventional responsibility (Theorem 3 part i)
+# For each component (truth/tool/delegation), estimate Resp_hat and report
+# rank-recovery probability.
+
+dataset:
+  name: hotpotqa
+  split: validation
+  n_examples: 100
+
+backend:
+  kind: hf_local
+  model_name: Qwen/Qwen2.5-7B-Instruct
+  dtype: float16
+
+prover:
+  top_k: 4
+  max_answer_tokens: 64
+  temperature: 0.0
+  retriever: bm25
+
+checker:
+  entailment: exact_match
+  case_insensitive: true
+
+debugger:
+  n_replays: 100            # M in Theorem 3
+  alpha: 0.05               # 1 - confidence
+  use_paired_replay: true
+  component_types: [truth, tool, delegation]
+  use_shapley: false        # set true to compute Shapley values too (slower)
+
+# Corruption regimes to test (R3 stress test — Appendix C.7)
+corruption_regimes:
+  - name: clean
+    p_swap: 0.0
+  - name: light
+    p_swap: 0.10
+  - name: heavy
+    p_swap: 0.30
+
+stats:
+  bootstrap_n: 2000
+  alpha: 0.05
+
+output_dir: results/r3

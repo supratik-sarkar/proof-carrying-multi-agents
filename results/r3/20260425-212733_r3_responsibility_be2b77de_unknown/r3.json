@@ -1,0 +1,191 @@
+{
+  "aggregated": {
+    "clean": {
+      "top1_accuracy_mean": null
+    },
+    "heavy": {
+      "ci": [
+        0.2144988344988345,
+        0.31958333333333333
+      ],
+      "top1_accuracy_mean": 0.2659994172494172
+    },
+    "light": {
+      "ci": [
+        0.11414141414141414,
+        0.3166666666666667
+      ],
+      "top1_accuracy_mean": 0.2032245532245532
+    }
+  },
+  "per_seed": [
+    {
+      "per_regime": [
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.41,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 0,
+          "p_swap": 0.0,
+          "regime": "clean",
+          "top1_accuracy": null
+        },
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.35,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 13,
+          "p_swap": 0.1,
+          "regime": "light",
+          "top1_accuracy": 0.23076923076923078
+        },
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.32,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 32,
+          "p_swap": 0.3,
+          "regime": "heavy",
+          "top1_accuracy": 0.34375
+        }
+      ],
+      "seed": 0
+    },
+    {
+      "per_regime": [
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.39,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 0,
+          "p_swap": 0.0,
+          "regime": "clean",
+          "top1_accuracy": null
+        },
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.37,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 6,
+          "p_swap": 0.1,
+          "regime": "light",
+          "top1_accuracy": 0.16666666666666666
+        },
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.33,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 22,
+          "p_swap": 0.3,
+          "regime": "heavy",
+          "top1_accuracy": 0.22727272727272727
+        }
+      ],
+      "seed": 1
+    },
+    {
+      "per_regime": [
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.35,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 0,
+          "p_swap": 0.0,
+          "regime": "clean",
+          "top1_accuracy": null
+        },
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.33,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 12,
+          "p_swap": 0.1,
+          "regime": "light",
+          "top1_accuracy": 0.4166666666666667
+        },
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.22,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 27,
+          "p_swap": 0.3,
+          "regime": "heavy",
+          "top1_accuracy": 0.3333333333333333
+        }
+      ],
+      "seed": 2
+    },
+    {
+      "per_regime": [
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.35,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 0,
+          "p_swap": 0.0,
+          "regime": "clean",
+          "top1_accuracy": null
+        },
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.3,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 11,
+          "p_swap": 0.1,
+          "regime": "light",
+          "top1_accuracy": 0.09090909090909091
+        },
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.26,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 26,
+          "p_swap": 0.3,
+          "regime": "heavy",
+          "top1_accuracy": 0.19230769230769232
+        }
+      ],
+      "seed": 3
+    },
+    {
+      "per_regime": [
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.38,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 0,
+          "p_swap": 0.0,
+          "regime": "clean",
+          "top1_accuracy": null
+        },
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.35,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 9,
+          "p_swap": 0.1,
+          "regime": "light",
+          "top1_accuracy": 0.1111111111111111
+        },
+        {
+          "mean_margin": 0.0,
+          "mean_resp": 0.26,
+          "median_rank_recovery_prob": 0.0,
+          "n_with_target": 30,
+          "p_swap": 0.3,
+          "regime": "heavy",
+          "top1_accuracy": 0.23333333333333334
+        }
+      ],
+      "seed": 4
+    }
+  ],
+  "run_id": "20260425-212733_r3_responsibility_be2b77de_unknown",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}
