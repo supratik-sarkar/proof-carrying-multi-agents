@@ -10,6 +10,10 @@ Available datasets:
     - hotpotqa     : HotpotQA distractor split (HF: hotpot_qa)
     - twowiki      : 2WikiMultihopQA (HF: 2wikimultihopqa)
     - toolbench    : ToolBench G1 subset (HF: ToolBench)
+    - fever        : FEVER claim verification (HF: fever, v1.0)
+    - pubmedqa     : PubMedQA biomedical QA (HF: qiaojin/PubMedQA)
+    - tatqa        : TAT-QA finance table+text QA (HF: next-tat/TAT-QA)
+    - weblinx      : WebLINX web navigation traces (HF: McGill-NLP/WebLINX)
 
 Each loader returns objects of type `QAExample` (defined in `base.py`), which
 the agent layer consumes uniformly. This decoupling means the Prover, Verifier

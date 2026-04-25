@@ -75,7 +75,8 @@ def load_dataset_by_name(
     """Resolve `name` to the right loader and yield up to `n_examples`.
 
     Args:
-        name: one of {"synthetic", "hotpotqa", "twowiki", "toolbench"}.
+        name: one of {"synthetic", "hotpotqa", "twowiki", "toolbench",
+              "fever", "pubmedqa", "tatqa", "weblinx"}.
         split: dataset split. Synthetic ignores this.
         n_examples: cap on number of examples. None = stream the whole split.
         seed: shuffle seed (when implemented; HF streaming shuffles via buffer).
@@ -94,7 +95,20 @@ def load_dataset_by_name(
     elif name == "toolbench":
         from pcg.datasets.toolbench import iter_toolbench
         yield from iter_toolbench(split=split, n=n_examples, seed=seed, streaming=streaming)
+    elif name == "fever":
+        from pcg.datasets.fever import iter_fever
+        yield from iter_fever(split=split, n=n_examples, seed=seed, streaming=streaming)
+    elif name == "pubmedqa":
+        from pcg.datasets.pubmedqa import iter_pubmedqa
+        yield from iter_pubmedqa(split=split, n=n_examples, seed=seed, streaming=streaming)
+    elif name == "tatqa":
+        from pcg.datasets.tatqa import iter_tatqa
+        yield from iter_tatqa(split=split, n=n_examples, seed=seed, streaming=streaming)
+    elif name == "weblinx":
+        from pcg.datasets.weblinx import iter_weblinx
+        yield from iter_weblinx(split=split, n=n_examples, seed=seed, streaming=streaming)
     else:
         raise ValueError(
-            f"Unknown dataset {name!r}. Known: synthetic, hotpotqa, twowiki, toolbench"
+            f"Unknown dataset {name!r}. Known: synthetic, hotpotqa, twowiki, "
+            "toolbench, fever, pubmedqa, tatqa, weblinx"
         )

@@ -1,0 +1,35 @@
+# R1: Audit decomposition on TAT-QA (finance, table+text reasoning)
+# Tests numerical and structured grounding.
+#
+# Wall time: ~35 min on M4 Pro at 200 examples per seed (long tables stretch context).
+
+dataset:
+  name: tatqa
+  split: validation
+  n_examples: 200
+
+backend:
+  kind: hf_local
+  model_name: Qwen/Qwen2.5-7B-Instruct
+  dtype: float16
+
+prover:
+  top_k: 4
+  max_answer_tokens: 64
+  temperature: 0.0
+  retriever: bm25
+
+checker:
+  entailment: exact_match        # TODO: add numeric_or_exact mode to checker for tighter eval
+  case_insensitive: true
+
+adversarial:
+  enabled: true
+  fraction: 0.30
+  attack_kinds: [evidence_swap, schema_break, policy_violation]
+
+stats:
+  bootstrap_n: 2000
+  alpha: 0.05
+
+output_dir: results/r1_tatqa

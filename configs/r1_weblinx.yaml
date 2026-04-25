@@ -1,0 +1,35 @@
+# R1: Audit decomposition on WebLINX (web agentic, multi-turn DOM grounding)
+# Tests dynamic-state grounding.
+#
+# Wall time: ~40 min on M4 Pro at 200 examples per seed (large DOM contexts).
+
+dataset:
+  name: weblinx
+  split: validation
+  n_examples: 200
+
+backend:
+  kind: hf_local
+  model_name: Qwen/Qwen2.5-7B-Instruct
+  dtype: float16
+
+prover:
+  top_k: 1                    # WebLINX evidence = the DOM at decision time, single doc
+  max_answer_tokens: 128
+  temperature: 0.0
+  retriever: bm25             # used for sub-DOM chunk selection
+
+checker:
+  entailment: exact_match     # TODO: add action_match mode for full agentic eval
+  case_insensitive: true
+
+adversarial:
+  enabled: true
+  fraction: 0.30
+  attack_kinds: [evidence_swap, schema_break, policy_violation]
+
+stats:
+  bootstrap_n: 2000
+  alpha: 0.05
+
+output_dir: results/r1_weblinx

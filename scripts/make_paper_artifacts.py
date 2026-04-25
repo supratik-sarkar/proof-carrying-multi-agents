@@ -44,11 +44,13 @@ def main(
 
     from make_figures import main as make_figures_main
     from make_intro_hero import main as make_intro_hero_main
+    from make_summary_benchmark import main as make_summary_benchmark_main
     from make_tables import main as make_tables_main
 
     rc_a = make_figures_main(results_dir=results_dir, out=figures_dir)
     rc_b = make_tables_main(results_dir=results_dir, out=tables_dir)
     rc_c = make_intro_hero_main(results_dir=results_dir, out=figures_dir)
+    rc_d = make_summary_benchmark_main(results_dir=results_dir, out=figures_dir)
 
     # Collect manifests from each step
     fig_manifest_path = Path(figures_dir if Path(figures_dir).is_absolute()
@@ -108,7 +110,7 @@ def main(
         json.dump(full_manifest, fh, indent=2)
     log_info(f"Wrote {out_manifest}")
 
-    rc = 0 if (rc_a == 0 and rc_b == 0 and rc_c == 0) else 1
+    rc = 0 if (rc_a == 0 and rc_b == 0 and rc_c == 0 and rc_d == 0) else 1
     log_section(f"DONE (rc={rc})")
     return rc
 
