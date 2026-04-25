@@ -1,0 +1,62 @@
+# R4: Risk-aware control + privacy
+# Theorem 3 part ii: piecewise-threshold optimality + O(eps_cal) regret
+
+dataset:
+  name: hotpotqa
+  split: validation
+  n_examples: 200
+
+backend:
+  kind: hf_local
+  model_name: Qwen/Qwen2.5-7B-Instruct
+  dtype: float16
+
+prover:
+  top_k: 4
+  max_answer_tokens: 64
+  temperature: 0.0
+  retriever: bm25
+
+checker:
+  entailment: exact_match
+
+# Cost model (Eq. 22). Reviewers can pin different operating points by editing this.
+cost_model:
+  c_lat: { answer: 1.0, verify: 5.0, escalate: 50.0, refuse: 0.0 }
+  c_tok: { answer: 0.5, verify: 2.0, escalate: 10.0, refuse: 0.0 }
+  c_tool: { answer: 0.0, verify: 1.0, escalate: 5.0, refuse: 0.0 }
+  lambda_risk: 10.0
+  h_fa: 10.0
+  h_ref: 0.5
+  eta:
+    answer: 1.0
+    verify: 0.5
+    escalate: 0.1
+    refuse: 0.0
+
+# Calibration: held-out fraction for fitting the calibrator
+calibration:
+  method: isotonic
+  holdout_fraction: 0.5
+  n_bins: 10
+
+# DP sweep (Sec 5.4)
+privacy:
+  sensitivities: { redundancy: 1.0, disagreement: 1.0, verifier_margin: 0.5 }
+  delta: 1.0e-5
+  eps_values: [inf, 8.0, 3.0, 1.0]      # inf = no DP (utility upper bound)
+
+# Policies to compare on the same logs
+policies:
+  - name: always_answer
+    kind: constant_answer
+  - name: threshold_pcg
+    kind: threshold_policy
+  - name: learned
+    kind: logistic_contextual
+
+stats:
+  bootstrap_n: 2000
+  alpha: 0.05
+
+output_dir: results/r4

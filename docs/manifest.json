@@ -1,0 +1,100 @@
+{
+  "generated_at_utc": "2026-04-25T16:12:23Z",
+  "git_sha": "unknown",
+  "paper_label_to_path": {
+    "figures": {
+      "fig:intro-hero": "figures/intro_hero.pdf",
+      "fig:r1-audit": "figures/r1_audit_decomposition.pdf",
+      "fig:r2-redundancy": "figures/r2_redundancy_law.pdf",
+      "fig:r3-resp": "figures/r3_responsibility.pdf",
+      "fig:r4-pareto": "figures/r4_risk_pareto.pdf",
+      "fig:r4-privacy": "figures/r4_privacy_utility.pdf",
+      "fig:r5-overhead": "figures/r5_overhead.pdf",
+      "fig:r5-vs-k": "figures/r5_overhead_vs_k.pdf"
+    },
+    "tables": {
+      "tab:r1-audit": "docs/tables/t1_audit_decomposition.tex",
+      "tab:r2-redundancy": "docs/tables/t2_redundancy_law.tex",
+      "tab:r3-responsibility": "docs/tables/t3_responsibility.tex",
+      "tab:r4-risk-privacy": "docs/tables/t4_risk_privacy.tex",
+      "tab:r5-overhead": "docs/tables/t5_overhead.tex"
+    }
+  },
+  "figures_emitted": [
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260425-212245_r1_hotpotqa_9ec00028_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r1_audit_decomposition"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260425-212610_r2_redundancy_328fdd12_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r2_redundancy_law"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r3/20260425-212733_r3_responsibility_be2b77de_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r3_responsibility"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260425-213009_r4_risk_c7f932a2_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r4_risk_pareto"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260425-213009_r4_risk_c7f932a2_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r4_privacy_utility"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r5/20260425-213113_r5_overhead_e9b2f2b5_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r5_overhead"
+    },
+    {
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r5/20260425-213113_r5_overhead_e9b2f2b5_unknown",
+      "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r5_overhead_vs_k"
+    }
+  ],
+  "tables_emitted": [
+    {
+      "name": "t1_audit_decomposition.tex",
+      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260425-212245_r1_hotpotqa_9ec00028_unknown/r1.json"
+    },
+    {
+      "name": "t2_redundancy_law.tex",
+      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260425-212610_r2_redundancy_328fdd12_unknown/r2.json"
+    },
+    {
+      "name": "t3_responsibility.tex",
+      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r3/20260425-212733_r3_responsibility_be2b77de_unknown/r3.json"
+    },
+    {
+      "name": "t4_risk_privacy.tex",
+      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260425-213009_r4_risk_c7f932a2_unknown/r4.json"
+    },
+    {
+      "name": "t5_overhead.tex",
+      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r5/20260425-213113_r5_overhead_e9b2f2b5_unknown/r5.json"
+    }
+  ],
+  "intro_hero": {
+    "name": "intro_hero",
+    "source_r2": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260425-212610_r2_redundancy_328fdd12_unknown/r2.json",
+    "source_r1": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260425-212245_r1_hotpotqa_9ec00028_unknown/r1.json",
+    "ks": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "fa_with_cert": [
+      0.39333333333333337,
+      0.39333333333333337,
+      0.39333333333333337,
+      0.39333333333333337
+    ],
+    "util_with_cert": [
+      0.059540091319856096,
+      0.059540091319856096,
+      0.059540091319856096,
+      0.059540091319856096
+    ],
+    "fa_baseline": 0.274,
+    "util_baseline": 0.0607967194528651
+  }
+}

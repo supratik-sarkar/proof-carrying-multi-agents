@@ -1,0 +1,25 @@
+{
+  "name": "intro_hero",
+  "source_r2": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260425-212610_r2_redundancy_328fdd12_unknown/r2.json",
+  "source_r1": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260425-212245_r1_hotpotqa_9ec00028_unknown/r1.json",
+  "ks": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "fa_with_cert": [
+    0.39333333333333337,
+    0.39333333333333337,
+    0.39333333333333337,
+    0.39333333333333337
+  ],
+  "util_with_cert": [
+    0.059540091319856096,
+    0.059540091319856096,
+    0.059540091319856096,
+    0.059540091319856096
+  ],
+  "fa_baseline": 0.274,
+  "util_baseline": 0.0607967194528651
+}

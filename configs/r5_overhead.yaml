@@ -1,0 +1,40 @@
+# R5: Time / token overhead breakdown
+# Directly addresses ICML W2 ("missing details on time/token overhead")
+
+dataset:
+  name: hotpotqa
+  split: validation
+  n_examples: 100
+
+backends:                 # multiple backends compared on the same examples
+  - kind: hf_local
+    model_name: microsoft/Phi-3.5-mini-instruct
+    dtype: float16
+  - kind: hf_local
+    model_name: Qwen/Qwen2.5-7B-Instruct
+    dtype: float16
+
+prover:
+  top_k: 4
+  max_answer_tokens: 64
+  temperature: 0.0
+  retriever: bm25
+
+checker:
+  entailment: exact_match
+
+# Configurations to compare (this is the X-axis of the R5 stacked bar)
+configurations:
+  - name: baseline_no_pcg
+    enable_pcg: false
+  - name: pcg_k1
+    enable_pcg: true
+    k: 1
+  - name: pcg_k2
+    enable_pcg: true
+    k: 2
+  - name: pcg_k4
+    enable_pcg: true
+    k: 4
+
+output_dir: results/r5

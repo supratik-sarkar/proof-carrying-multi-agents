@@ -1,0 +1,16 @@
+# Smoke test config — used by `make smoke`
+# Runs in <30 seconds, no model download, no HF token required.
+dataset:
+  name: synthetic
+  n_examples: 20
+backend:
+  kind: mock
+prover:
+  top_k: 3
+  max_answer_tokens: 32
+  temperature: 0.0
+  retriever: bm25
+checker:
+  entailment: exact_match
+  case_insensitive: true
+output_dir: results/smoke

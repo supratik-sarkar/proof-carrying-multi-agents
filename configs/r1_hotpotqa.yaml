@@ -1,0 +1,38 @@
+# R1: Audit decomposition / checkability on HotpotQA
+# Theorem 1: Pr(accept & wrong) <= Pr(IntFail) + Pr(ReplayFail) + Pr(CheckFail) + Pr(CovGap)
+#
+# Wall time: ~30 min on M4 Pro with Qwen2.5-7B (local) at 200 examples per seed.
+# Set backend.kind = "mock" for fast iteration with no model download.
+
+dataset:
+  name: hotpotqa
+  split: validation
+  n_examples: 200
+
+backend:
+  kind: hf_local            # mock | hf_local | hf_inference
+  model_name: Qwen/Qwen2.5-7B-Instruct
+  dtype: float16
+  load_in_4bit: false       # CUDA only; no-op on Apple Silicon
+
+prover:
+  top_k: 4
+  max_answer_tokens: 64
+  temperature: 0.0
+  retriever: bm25
+
+checker:
+  entailment: exact_match
+  case_insensitive: true
+
+# R1-specific: include adversarial attacks to exercise IntFail / CheckFail channels
+adversarial:
+  enabled: true
+  fraction: 0.30            # 30% of examples are tampered
+  attack_kinds: [evidence_swap, schema_break, policy_violation]
+
+stats:
+  bootstrap_n: 2000
+  alpha: 0.05
+
+output_dir: results/r1
