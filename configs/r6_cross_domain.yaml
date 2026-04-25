@@ -1,0 +1,50 @@
+# R6: Cross-domain robustness experiment
+# Runs the audit-decomposition probe across all PCG-MAS datasets to show
+# the framework generalizes beyond multi-hop QA. Single backend so the
+# variance comes from domain shift, not model differences.
+#
+# Wall time on M4 Pro: ~3-4 hours total (50 examples × 7 datasets × 1 seed).
+
+datasets:
+  - name: hotpotqa
+    split: validation
+  - name: twowiki
+    split: dev
+  - name: fever
+    split: labelled_dev
+  - name: pubmedqa
+    split: train
+  - name: tatqa
+    split: validation
+  - name: weblinx
+    split: validation
+  - name: synthetic
+    split: train
+
+n_examples_per_dataset: 50
+
+backend:
+  kind: hf_local
+  model_name: Qwen/Qwen2.5-7B-Instruct
+  dtype: float16
+
+prover:
+  top_k: 4
+  max_answer_tokens: 64
+  temperature: 0.0
+  retriever: bm25
+
+checker:
+  entailment: exact_match
+  case_insensitive: true
+
+adversarial:
+  enabled: true
+  fraction: 0.30
+  attack_kinds: [evidence_swap, schema_break, policy_violation]
+
+stats:
+  bootstrap_n: 2000
+  alpha: 0.05
+
+output_dir: results/r6
