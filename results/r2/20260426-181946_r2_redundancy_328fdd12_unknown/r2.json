@@ -1,0 +1,3660 @@
+{
+  "aggregated_per_k": [
+    {
+      "empirical_ci": [
+        0.3,
+        0.45
+      ],
+      "empirical_mean": 0.38333333333333336,
+      "k": 1,
+      "rho_hat_mean": 1.0,
+      "rho_ucb_max": 4.5638772711657,
+      "theory_plug_in_mean": 0.38333333333333336,
+      "theory_ucb_max": 0.45
+    },
+    {
+      "empirical_ci": [
+        0.3,
+        0.45
+      ],
+      "empirical_mean": 0.38333333333333336,
+      "k": 2,
+      "rho_hat_mean": 2.685185185185185,
+      "rho_ucb_max": 47.43704663565048,
+      "theory_plug_in_mean": 0.38333333333333336,
+      "theory_ucb_max": 1.0
+    },
+    {
+      "empirical_ci": [
+        0.3,
+        0.45
+      ],
+      "empirical_mean": 0.38333333333333336,
+      "k": 4,
+      "rho_hat_mean": 21.211991312299954,
+      "rho_ucb_max": 6438.677362424738,
+      "theory_plug_in_mean": 1.0,
+      "theory_ucb_max": 1.0
+    },
+    {
+      "empirical_ci": [
+        0.3,
+        0.45
+      ],
+      "empirical_mean": 0.38333333333333336,
+      "k": 8,
+      "rho_hat_mean": 1816.8138243936671,
+      "rho_ucb_max": 195419956.8916191,
+      "theory_plug_in_mean": 1.0,
+      "theory_ucb_max": 1.0
+    }
+  ],
+  "k_values": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "per_seed": [
+    {
+      "branch_fail_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "n": 20,
+      "per_example": [
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.11764705882352941,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.11764705882352941,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.11764705882352941,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.11764705882352941,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.11764705882352941,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.11764705882352941,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.11764705882352941,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.11764705882352941,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae4d8475542993aec5ec0e0"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ab5e9865542992aa134a3db"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.1142857142857143,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1142857142857143,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1142857142857143,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1142857142857143,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1142857142857143,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1142857142857143,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1142857142857143,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1142857142857143,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5abd12bb55429933744ab703"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ab6369655429953192ad2a1"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae68fcb5542992ae0d1635b"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a74106b55429979e288289e"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a713ea95542994082a3e6e4"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.2608695652173913,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.2608695652173913,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.2608695652173913,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.2608695652173913,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.2608695652173913,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.2608695652173913,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.2608695652173913,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.2608695652173913,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ab3e45655429976abd1bcd4"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.07692307692307693,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07692307692307693,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07692307692307693,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07692307692307693,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07692307692307693,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07692307692307693,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07692307692307693,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07692307692307693,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a88dcf9554299206df2b383"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5abce9ca554299114383a193"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a7ce50f55429909bec76869"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0625,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0625,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0625,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0625,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0625,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0625,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0625,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0625,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a89f68f5542992e4fca84b6"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0625,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0625,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0625,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0625,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0625,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0625,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0625,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0625,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ab4bea15542990594ba9cae"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.07142857142857142,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07142857142857142,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07142857142857142,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07142857142857142,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07142857142857142,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07142857142857142,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07142857142857142,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.07142857142857142,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a75ebfc5542992d0ec06018"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae7882b554299540e5a55dd"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.10526315789473684,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10526315789473684,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10526315789473684,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10526315789473684,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10526315789473684,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10526315789473684,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10526315789473684,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10526315789473684,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae7c5ef5542993210983f44"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0909090909090909,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0909090909090909,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0909090909090909,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0909090909090909,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0909090909090909,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0909090909090909,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0909090909090909,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0909090909090909,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a866e7e554299211dda2b29"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a8a7d2b55429930ff3c0dfc"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.07692307692307693,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07692307692307693,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07692307692307693,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07692307692307693,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07692307692307693,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07692307692307693,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07692307692307693,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07692307692307693,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae3205c55429928c423961e"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.04761904761904761,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.04761904761904761,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.04761904761904761,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.04761904761904761,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.04761904761904761,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.04761904761904761,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.04761904761904761,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.04761904761904761,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae0d5335542990adbacf674"
+        }
+      ],
+      "per_k": [
+        {
+          "empirical": {
+            "hi": 0.6579146575496577,
+            "lo": 0.2581978582556243,
+            "n_joint": 9,
+            "n_trials": 20,
+            "p_hat": 0.45
+          },
+          "k": 1,
+          "rho": {
+            "alpha": 0.05,
+            "k": 1,
+            "n_joint_fail": 9,
+            "n_trials": 20,
+            "p_joint_ucb": 0.6847218669594515,
+            "p_marg": 0.45,
+            "rho_hat": 1.0,
+            "rho_ucb": 2.9695902188962418
+          },
+          "theory_plug_in": 0.45,
+          "theory_ucb": 0.45
+        },
+        {
+          "empirical": {
+            "hi": 0.6579146575496577,
+            "lo": 0.2581978582556243,
+            "n_joint": 9,
+            "n_trials": 20,
+            "p_hat": 0.45
+          },
+          "k": 2,
+          "rho": {
+            "alpha": 0.05,
+            "k": 2,
+            "n_joint_fail": 9,
+            "n_trials": 20,
+            "p_joint_ucb": 0.7010983896119073,
+            "p_marg": 0.45,
+            "rho_hat": 2.2222222222222223,
+            "rho_ucb": 14.987656706356352
+          },
+          "theory_plug_in": 0.45000000000000007,
+          "theory_ucb": 1.0
+        },
+        {
+          "empirical": {
+            "hi": 0.6579146575496577,
+            "lo": 0.2581978582556243,
+            "n_joint": 9,
+            "n_trials": 20,
+            "p_hat": 0.45
+          },
+          "k": 4,
+          "rho": {
+            "alpha": 0.05,
+            "k": 4,
+            "n_joint_fail": 9,
+            "n_trials": 20,
+            "p_joint_ucb": 0.7199198143563261,
+            "p_marg": 0.45,
+            "rho_hat": 10.973936899862824,
+            "rho_ucb": 449.45749948354427
+          },
+          "theory_plug_in": 1.0,
+          "theory_ucb": 1.0
+        },
+        {
+          "empirical": {
+            "hi": 0.6579146575496577,
+            "lo": 0.2581978582556243,
+            "n_joint": 9,
+            "n_trials": 20,
+            "p_hat": 0.45
+          },
+          "k": 8,
+          "rho": {
+            "alpha": 0.05,
+            "k": 8,
+            "n_joint_fail": 9,
+            "n_trials": 20,
+            "p_joint_ucb": 0.7394771859661269,
+            "p_marg": 0.45,
+            "rho_hat": 267.6162024048242,
+            "rho_ucb": 577045.1437550276
+          },
+          "theory_plug_in": 1.0,
+          "theory_ucb": 1.0
+        }
+      ],
+      "seed": 0
+    },
+    {
+      "branch_fail_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "n": 20,
+      "per_example": [
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5adfeb0555429942ec259b88"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.32,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.32,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.32,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.32,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.32,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.32,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.32,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.32,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5abb1e1b5542992ccd8e7f19"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a79c8fa5542994bb94570a1"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.23529411764705882,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.23529411764705882,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.23529411764705882,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.23529411764705882,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.23529411764705882,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.23529411764705882,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.23529411764705882,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.23529411764705882,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5abba584554299642a094afa"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5abf63f15542997ec76fd3ea"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.08333333333333333,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08333333333333333,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08333333333333333,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08333333333333333,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08333333333333333,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08333333333333333,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08333333333333333,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08333333333333333,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a8704f8554299211dda2ba4"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.1,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a7125b95542994082a3e5d5"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a7fd7305542992e7d278dc2"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.08333333333333334,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.08333333333333334,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.08333333333333334,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.08333333333333334,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.08333333333333334,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.08333333333333334,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.08333333333333334,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.08333333333333334,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ab6ff3a5542991d3222372a"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a85ab905542994c784ddb35"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae0b2f25542993d6555ec1c"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ac0cf0f554299294b219018"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5abd1529554299114383a1e3"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a733c925542991f9a20c6b7"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae6f2a7554299572ea5464a"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a8d7b1755429941ae14dfc6"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.19354838709677416,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.19354838709677416,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.19354838709677416,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.19354838709677416,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.19354838709677416,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.19354838709677416,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.19354838709677416,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.19354838709677416,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae491155542995ad6573da3"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae48e7e55429913cc20449d"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.04347826086956522,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.04347826086956522,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.04347826086956522,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.04347826086956522,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.04347826086956522,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.04347826086956522,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.04347826086956522,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.04347826086956522,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a7759fc5542993569682d60"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.15384615384615383,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.15384615384615383,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.15384615384615383,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.15384615384615383,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.15384615384615383,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.15384615384615383,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.15384615384615383,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.15384615384615383,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a828c8355429966c78a6a50"
+        }
+      ],
+      "per_k": [
+        {
+          "empirical": {
+            "hi": 0.6134184992377469,
+            "lo": 0.21880653237281705,
+            "n_joint": 8,
+            "n_trials": 20,
+            "p_hat": 0.4
+          },
+          "k": 1,
+          "rho": {
+            "alpha": 0.05,
+            "k": 1,
+            "n_joint_fail": 8,
+            "n_trials": 20,
+            "p_joint_ucb": 0.6394574126925103,
+            "p_marg": 0.4,
+            "rho_hat": 1.0,
+            "rho_ucb": 3.3446164003852297
+          },
+          "theory_plug_in": 0.4,
+          "theory_ucb": 0.4
+        },
+        {
+          "empirical": {
+            "hi": 0.6134184992377469,
+            "lo": 0.21880653237281705,
+            "n_joint": 8,
+            "n_trials": 20,
+            "p_hat": 0.4
+          },
+          "k": 2,
+          "rho": {
+            "alpha": 0.05,
+            "k": 2,
+            "n_joint_fail": 8,
+            "n_trials": 20,
+            "p_joint_ucb": 0.6566766595483763,
+            "p_marg": 0.4,
+            "rho_hat": 2.4999999999999996,
+            "rho_ucb": 20.694530350361493
+          },
+          "theory_plug_in": 0.4,
+          "theory_ucb": 1.0
+        },
+        {
+          "empirical": {
+            "hi": 0.6134184992377469,
+            "lo": 0.21880653237281705,
+            "n_joint": 8,
+            "n_trials": 20,
+            "p_hat": 0.4
+          },
+          "k": 4,
+          "rho": {
+            "alpha": 0.05,
+            "k": 4,
+            "n_joint_fail": 8,
+            "n_trials": 20,
+            "p_joint_ucb": 0.6765762698991429,
+            "p_marg": 0.4,
+            "rho_hat": 15.624999999999996,
+            "rho_ucb": 948.6287376484976
+          },
+          "theory_plug_in": 1.0,
+          "theory_ucb": 1.0
+        },
+        {
+          "empirical": {
+            "hi": 0.6134184992377469,
+            "lo": 0.21880653237281705,
+            "n_joint": 8,
+            "n_trials": 20,
+            "p_hat": 0.4
+          },
+          "k": 8,
+          "rho": {
+            "alpha": 0.05,
+            "k": 8,
+            "n_joint_fail": 8,
+            "n_trials": 20,
+            "p_joint_ucb": 0.6973840236929603,
+            "p_marg": 0.4,
+            "rho_hat": 610.3515624999998,
+            "rho_ucb": 2953732.220087353
+          },
+          "theory_plug_in": 1.0,
+          "theory_ucb": 1.0
+        }
+      ],
+      "seed": 1
+    },
+    {
+      "branch_fail_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "n": 20,
+      "per_example": [
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.13953488372093023,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.13953488372093023,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.13953488372093023,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.13953488372093023,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.13953488372093023,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.13953488372093023,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.13953488372093023,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.13953488372093023,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ab840e255429934fafe6d3b"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5abc3a65554299700f9d782d"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ab978855542996be2020512"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5abffc41554299012d1db551"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae4c2b95542995dadf243ef"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a7a1b845542990783324e5f"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae1f596554299234fd04372"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae2b770554299495565db0f"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.1212121212121212,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1212121212121212,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1212121212121212,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1212121212121212,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1212121212121212,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1212121212121212,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1212121212121212,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1212121212121212,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5adf34d35542993a75d26425"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.07407407407407407,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07407407407407407,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07407407407407407,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07407407407407407,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07407407407407407,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07407407407407407,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07407407407407407,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.07407407407407407,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae6795855429908198fa5e4"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.10526315789473685,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5abce9ca554299114383a193"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.10256410256410257,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10256410256410257,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10256410256410257,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10256410256410257,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10256410256410257,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10256410256410257,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10256410256410257,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.10256410256410257,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae17daa55429901ffe4aea9"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.13793103448275862,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.13793103448275862,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.13793103448275862,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.13793103448275862,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.13793103448275862,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.13793103448275862,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.13793103448275862,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.13793103448275862,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ab9587d55429970cfb8ea7e"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5aba65a055429939ce03dcd2"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.1739130434782609,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5a77ddb855429967ab1052d8"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae73acb5542991e8301cc07"
+        },
+        {
+          "branches": [
+            {
+              "accepted": true,
+              "f1": 0.08000000000000002,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08000000000000002,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08000000000000002,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08000000000000002,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08000000000000002,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08000000000000002,
+              "retriever": "dense"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08000000000000002,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": true,
+              "f1": 0.08000000000000002,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5add63845542992ae4cec541"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.16666666666666666,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.16666666666666666,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.16666666666666666,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.16666666666666666,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.16666666666666666,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.16666666666666666,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.16666666666666666,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.16666666666666666,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ab9debb55429955dce3ed97"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ab8ee035542991b5579f04b"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "dense"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "hybrid"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "5ae320a95542991a06ce992e"
+        }
+      ],
+      "per_k": [
+        {
+          "empirical": {
+            "hi": 0.5189728183535235,
+            "lo": 0.1454772448676043,
+            "n_joint": 6,
+            "n_trials": 20,
+            "p_hat": 0.3
+          },
+          "k": 1,
+          "rho": {
+            "alpha": 0.05,
+            "k": 1,
+            "n_joint_fail": 6,
+            "n_trials": 20,
+            "p_joint_ucb": 0.5427891822762891,
+            "p_marg": 0.3,
+            "rho_hat": 1.0,
+            "rho_ucb": 4.5638772711657
+          },
+          "theory_plug_in": 0.3,
+          "theory_ucb": 0.3
+        },
+        {
+          "empirical": {
+            "hi": 0.5189728183535235,
+            "lo": 0.1454772448676043,
+            "n_joint": 6,
+            "n_trials": 20,
+            "p_hat": 0.3
+          },
+          "k": 2,
+          "rho": {
+            "alpha": 0.05,
+            "k": 2,
+            "n_joint_fail": 6,
+            "n_trials": 20,
+            "p_joint_ucb": 0.5612730177324792,
+            "p_marg": 0.3,
+            "rho_hat": 3.3333333333333335,
+            "rho_ucb": 47.43704663565048
+          },
+          "theory_plug_in": 0.3,
+          "theory_ucb": 1.0
+        },
+        {
+          "empirical": {
+            "hi": 0.5189728183535235,
+            "lo": 0.1454772448676043,
+            "n_joint": 6,
+            "n_trials": 20,
+            "p_hat": 0.3
+          },
+          "k": 4,
+          "rho": {
+            "alpha": 0.05,
+            "k": 4,
+            "n_joint_fail": 6,
+            "n_trials": 20,
+            "p_joint_ucb": 0.5828637182899612,
+            "p_marg": 0.3,
+            "rho_hat": 37.03703703703704,
+            "rho_ucb": 6438.677362424738
+          },
+          "theory_plug_in": 1.0,
+          "theory_ucb": 1.0
+        },
+        {
+          "empirical": {
+            "hi": 0.5189728183535235,
+            "lo": 0.1454772448676043,
+            "n_joint": 6,
+            "n_trials": 20,
+            "p_hat": 0.3
+          },
+          "k": 8,
+          "rho": {
+            "alpha": 0.05,
+            "k": 8,
+            "n_joint_fail": 6,
+            "n_trials": 20,
+            "p_joint_ucb": 0.6057125684160416,
+            "p_marg": 0.3,
+            "rho_hat": 4572.473708276178,
+            "rho_ucb": 195419956.8916191
+          },
+          "theory_plug_in": 1.0,
+          "theory_ucb": 1.0
+        }
+      ],
+      "seed": 2
+    }
+  ],
+  "run_id": "20260426-181946_r2_redundancy_328fdd12_unknown",
+  "seeds": [
+    0,
+    1,
+    2
+  ]
+}
