@@ -1,25 +1,7 @@
 {
-  "name": "intro_hero",
-  "source_r2": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260425-212610_r2_redundancy_328fdd12_unknown/r2.json",
-  "source_r1": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260425-212245_r1_hotpotqa_9ec00028_unknown/r1.json",
-  "ks": [
-    1,
-    2,
-    4,
-    8
-  ],
-  "fa_with_cert": [
-    0.39333333333333337,
-    0.39333333333333337,
-    0.39333333333333337,
-    0.39333333333333337
-  ],
-  "util_with_cert": [
-    0.059540091319856096,
-    0.059540091319856096,
-    0.059540091319856096,
-    0.059540091319856096
-  ],
-  "fa_baseline": 0.274,
-  "util_baseline": 0.0607967194528651
+  "name": "intro_hero_v2",
+  "source_r1": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260427-015811_r1_hotpotqa_9ec00028_unknown",
+  "source_r2": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260427-015835_r2_redundancy_328fdd12_unknown",
+  "source_r4": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260427-015926_r4_risk_c7f932a2_unknown",
+  "is_mock": false
 }

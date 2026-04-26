@@ -1,0 +1,39 @@
+name: Deploy to anonymous HF Space
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+# CRITICAL FOR DOUBLE-BLIND: This workflow uses repo secrets to push
+# to a separate anonymous HF account. The secrets must be set in the
+# repository's Settings → Secrets and variables → Actions:
+#
+#   ANON_SPACE_URL   = https://huggingface.co/spaces/<anon>/<demo>
+#   ANON_HF_TOKEN    = hf_xxx (write-scope, from the anonymous account)
+#
+# The push uses the token only — no author info bleeds into the Space.
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.repository_owner != ''   # never runs on forks
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify required secrets are set
+        run: |
+          if [ -z "${{ secrets.ANON_SPACE_URL }}" ] || \
+             [ -z "${{ secrets.ANON_HF_TOKEN }}" ]; then
+            echo "::warning::Anonymous Space secrets not configured — skipping deploy."
+            echo "Set ANON_SPACE_URL and ANON_HF_TOKEN in repo secrets to enable."
+            exit 0
+          fi
+
+      - name: Run deploy script
+        env:
+          ANON_SPACE_URL: ${{ secrets.ANON_SPACE_URL }}
+          ANON_HF_TOKEN:  ${{ secrets.ANON_HF_TOKEN }}
+        run: |
+          bash scripts/deploy_to_anonymous_space.sh

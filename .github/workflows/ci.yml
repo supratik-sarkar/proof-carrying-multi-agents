@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main, 'feat/**']
+  push:
+    branches: [main]
+
+jobs:
+  test-and-smoke-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+          pip install pytest matplotlib numpy scipy pyyaml streamlit plotly pandas
+
+      - name: Run pytest (theory tests)
+        run: |
+          pytest tests/ -v --tb=short
+        continue-on-error: false
+
+      - name: Smoke-render figures from fixtures
+        run: |
+          python -c "
+          import sys; sys.path.insert(0, 'src')
+          from pcg.eval.plots_v2 import (
+              plot_summary_benchmark, plot_intro_hero, save_fig_v2
+          )
+          # Render with synthetic data — no real R-runs needed in CI
+          fig = plot_summary_benchmark(
+              backend_safety={'backends': ['A', 'B'], 'values': [0.05, 0.07],
+                              'cis': [(0.04, 0.06), (0.06, 0.08)],
+                              'metric_name': 'rate', 'title': 'CI smoke'},
+              is_mock=True,
+          )
+          out = save_fig_v2(fig, '/tmp/ci_smoke')
+          print('rendered:', out)
+          "
+
+      - name: Streamlit app importability check
+        run: |
+          # Make sure pages can be imported without crashing — we don't
+          # actually run the app here (no display, no LLM keys).
+          python -c "
+          import sys
+          sys.path.insert(0, 'app')
+          import importlib.util
+          for f in ['app/app.py', 'app/components/llm_client.py',
+                    'app/components/certificate_card.py']:
+              spec = importlib.util.spec_from_file_location('m', f)
+              mod = importlib.util.module_from_spec(spec)
+              # We don't exec because Streamlit calls require a runtime;
+              # but importable check confirms there are no syntax errors.
+              compile(open(f).read(), f, 'exec')
+              print(f'OK: {f}')
+          "

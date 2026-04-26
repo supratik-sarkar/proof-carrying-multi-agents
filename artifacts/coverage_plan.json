@@ -1,0 +1,75 @@
+{
+  "per_experiment": {
+    "r1": [
+      {
+        "llm": "phi-3.5-mini",
+        "dataset": "hotpotqa"
+      },
+      {
+        "llm": "deepseek-llm-7b-chat",
+        "dataset": "tatqa"
+      },
+      {
+        "llm": "Gemma-2-9b-it",
+        "dataset": "toolbench"
+      }
+    ],
+    "r2": [
+      {
+        "llm": "qwen2.5-7B",
+        "dataset": "fever"
+      },
+      {
+        "llm": "Llama-3.1-8B",
+        "dataset": "hotpotqa"
+      },
+      {
+        "llm": "phi-3.5-mini",
+        "dataset": "tatqa"
+      }
+    ],
+    "r3": [
+      {
+        "llm": "deepseek-llm-7b-chat",
+        "dataset": "weblinx"
+      },
+      {
+        "llm": "Gemma-2-9b-it",
+        "dataset": "fever"
+      },
+      {
+        "llm": "qwen2.5-7B",
+        "dataset": "hotpotqa"
+      }
+    ],
+    "r4": [
+      {
+        "llm": "Llama-3.1-8B",
+        "dataset": "twowiki"
+      },
+      {
+        "llm": "phi-3.5-mini",
+        "dataset": "weblinx"
+      },
+      {
+        "llm": "deepseek-llm-7b-chat",
+        "dataset": "fever"
+      }
+    ],
+    "r5": [
+      {
+        "llm": "Gemma-2-9b-it",
+        "dataset": "pubmedqa"
+      },
+      {
+        "llm": "qwen2.5-7B",
+        "dataset": "twowiki"
+      },
+      {
+        "llm": "Llama-3.1-8B",
+        "dataset": "weblinx"
+      }
+    ]
+  },
+  "rationale": "Diverse coverage plan over 5 LLMs \u00d7 8 datasets. Each of 5 experiments shows 3 cells, with no within-experiment LLM or dataset repetition. Locally-runnable LLM cohort: phi-3.5-mini, qwen2.5-7B, deepseek-llm-7b-chat, Llama-3.1-8B, Gemma-2-9b-it. Replace via scripts/pick_top_k.py once real R-run JSONs exist."
+}

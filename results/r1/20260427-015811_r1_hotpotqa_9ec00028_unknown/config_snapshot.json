@@ -1,0 +1,37 @@
+{
+  "adversarial": {
+    "attack_kinds": [
+      "evidence_swap",
+      "schema_break",
+      "policy_violation"
+    ],
+    "enabled": true,
+    "fraction": 0.3
+  },
+  "backend": {
+    "dtype": "float16",
+    "kind": "hf_local",
+    "load_in_4bit": false,
+    "model_name": "Qwen/Qwen2.5-7B-Instruct"
+  },
+  "checker": {
+    "case_insensitive": true,
+    "entailment": "exact_match"
+  },
+  "dataset": {
+    "n_examples": 20,
+    "name": "hotpotqa",
+    "split": "validation"
+  },
+  "output_dir": "results/r1",
+  "prover": {
+    "max_answer_tokens": 64,
+    "retriever": "bm25",
+    "temperature": 0.0,
+    "top_k": 4
+  },
+  "stats": {
+    "alpha": 0.05,
+    "bootstrap_n": 2000
+  }
+}

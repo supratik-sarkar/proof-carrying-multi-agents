@@ -1,0 +1,32 @@
+{
+  "per_regime": [
+    {
+      "mean_margin": 0.0,
+      "mean_resp": 0.45,
+      "median_rank_recovery_prob": 0.0,
+      "n_with_target": 0,
+      "p_swap": 0.0,
+      "regime": "clean",
+      "top1_accuracy": null
+    },
+    {
+      "mean_margin": 0.0,
+      "mean_resp": 0.4,
+      "median_rank_recovery_prob": 0.0,
+      "n_with_target": 1,
+      "p_swap": 0.1,
+      "regime": "light",
+      "top1_accuracy": 0.0
+    },
+    {
+      "mean_margin": 0.0,
+      "mean_resp": 0.35,
+      "median_rank_recovery_prob": 0.0,
+      "n_with_target": 5,
+      "p_swap": 0.3,
+      "regime": "heavy",
+      "top1_accuracy": 0.8
+    }
+  ],
+  "seed": 0
+}
