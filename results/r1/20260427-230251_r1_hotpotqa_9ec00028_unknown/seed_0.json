@@ -1,0 +1,255 @@
+{
+  "decomposition": {
+    "ci_check_fail": [
+      0.531299122381256,
+      0.8881382985923343
+    ],
+    "ci_cov_gap": [
+      0.052368745896216595,
+      0.36041886474075696
+    ],
+    "ci_int_fail": [
+      0.027866481213768224,
+      0.3010336452284873
+    ],
+    "ci_lhs": [
+      0.052368745896216595,
+      0.36041886474075696
+    ],
+    "ci_replay_fail": [
+      0.0,
+      0.16112515805281938
+    ],
+    "lhs_accept_and_wrong": 0.15,
+    "n": 20,
+    "p_check_fail": 0.75,
+    "p_cov_gap": 0.15,
+    "p_int_fail": 0.1,
+    "p_replay_fail": 0.0,
+    "rhs_union": 1.0
+  },
+  "n": 20,
+  "per_example": [
+    {
+      "attack": "evidence_swap",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.11764705882352941,
+      "id": "5ae4d8475542993aec5ec0e0",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Macbeth (opera): Macbeth (] ) is an opera in four acts by Giuseppe Verdi, with an Italian libretto by Francesco Maria Piave and additions by Andrea Maffei, based on William Shakespeare's play of t",
+      "replay_ok": true
+    },
+    {
+      "attack": "schema_break",
+      "entailment_ok": true,
+      "execution_ok": false,
+      "f1_to_gold": 0.0,
+      "id": "5ab5e9865542992aa134a3db",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "They were chthonic \"daimones\" of Mount Ida, who clashed their spears and shields to drown out the wails of infant Zeus, whom they received from the Great Goddess, Rhea, his mother.",
+      "replay_ok": true
+    },
+    {
+      "attack": "policy_violation",
+      "entailment_ok": false,
+      "execution_ok": false,
+      "f1_to_gold": 0.1142857142857143,
+      "id": "5abd12bb55429933744ab703",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] George Mallory: George Herbert Leigh Mallory (18 June 1886 \u2013 8 or 9 June 1924) was an English mountaineer who took part in the first three British expeditions to Mount Everest, in the early 1920s.",
+      "replay_ok": true
+    },
+    {
+      "attack": "evidence_swap",
+      "entailment_ok": true,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "5ab6369655429953192ad2a1",
+      "integrity_ok": false,
+      "passed": false,
+      "raw_answer": "[2] Lepidozamia: Lepidozamia is a genus of two species of cycad, both endemic to Australia.",
+      "replay_ok": true
+    },
+    {
+      "attack": "schema_break",
+      "entailment_ok": false,
+      "execution_ok": false,
+      "f1_to_gold": 0.0,
+      "id": "5ae68fcb5542992ae0d1635b",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Ew!: \"Ew!\"  is a song by American television host and comedian Jimmy Fallon, featuring American rapper will.i.am.",
+      "replay_ok": true
+    },
+    {
+      "attack": "policy_violation",
+      "entailment_ok": true,
+      "execution_ok": false,
+      "f1_to_gold": 0.0,
+      "id": "5a74106b55429979e288289e",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "He worked as a Software Engineer for Facebook.",
+      "replay_ok": true
+    },
+    {
+      "attack": "evidence_swap",
+      "entailment_ok": true,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "5a713ea95542994082a3e6e4",
+      "integrity_ok": true,
+      "passed": true,
+      "raw_answer": "Mexia was stationed in St Augustine and was given a diplomatic mission to the native populations living south of St.",
+      "replay_ok": true
+    },
+    {
+      "attack": "schema_break",
+      "entailment_ok": true,
+      "execution_ok": false,
+      "f1_to_gold": 0.2608695652173913,
+      "id": "5ab3e45655429976abd1bcd4",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996.",
+      "replay_ok": true
+    },
+    {
+      "attack": "policy_violation",
+      "entailment_ok": false,
+      "execution_ok": false,
+      "f1_to_gold": 0.07692307692307693,
+      "id": "5a88dcf9554299206df2b383",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Hatton Castle, Angus: Hatton Castle stands on the lower part of Hatton Hill, the most easterly of the Sidlaw Hills, to the south of Newtyle in Angus, Scotland.",
+      "replay_ok": true
+    },
+    {
+      "attack": "evidence_swap",
+      "entailment_ok": true,
+      "execution_ok": true,
+      "f1_to_gold": 0.10526315789473685,
+      "id": "5abce9ca554299114383a193",
+      "integrity_ok": false,
+      "passed": false,
+      "raw_answer": "After retiring from law and politics, he managed real estate and focused on charitable endeavors.",
+      "replay_ok": true
+    },
+    {
+      "attack": "schema_break",
+      "entailment_ok": false,
+      "execution_ok": false,
+      "f1_to_gold": 0.0,
+      "id": "5a7ce50f55429909bec76869",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "S\u00f8rensen: S\u00f8ren Peder Lauritz S\u00f8rensen (9 January 1868 \u2013 12 February 1939) was a Danish chemist, famous for the introduction of the concept of pH, a scale for measuring acidity and alkalinity.",
+      "replay_ok": true
+    },
+    {
+      "attack": "policy_violation",
+      "entailment_ok": false,
+      "execution_ok": false,
+      "f1_to_gold": 0.0625,
+      "id": "5a89f68f5542992e4fca84b6",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[3] Stapleton Cotton, 1st Viscount Combermere: Field Marshal Stapleton Cotton, 1st Viscount Combermere {'1': \", '2': \", '3': \", '4': \"} (14 November 1773 \u2013 21 February 1865), was a British Army office",
+      "replay_ok": true
+    },
+    {
+      "attack": "evidence_swap",
+      "entailment_ok": true,
+      "execution_ok": true,
+      "f1_to_gold": 0.0625,
+      "id": "5ab4bea15542990594ba9cae",
+      "integrity_ok": true,
+      "passed": true,
+      "raw_answer": "In that game in 1978 in an Inter City Schools game when Dublin Under 13s played Cork at Croke Park there were some notable personalities who played on both teams that day.",
+      "replay_ok": true
+    },
+    {
+      "attack": "schema_break",
+      "entailment_ok": false,
+      "execution_ok": false,
+      "f1_to_gold": 0.07142857142857142,
+      "id": "5a75ebfc5542992d0ec06018",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[2] Odawa: The Odawa (also Ottawa or Odaawaa ), said to mean \"traders\", are an Indigenous American ethic group who primarily inhabit land in the northern United States and southern Canada.",
+      "replay_ok": true
+    },
+    {
+      "attack": "policy_violation",
+      "entailment_ok": true,
+      "execution_ok": false,
+      "f1_to_gold": 0.0,
+      "id": "5ae7882b554299540e5a55dd",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "Schmidt was drafted by the San Diego Padres of Major League Baseball with the 23rd overall pick in the 2007 Major League Baseball Draft.",
+      "replay_ok": true
+    },
+    {
+      "attack": "evidence_swap",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.10526315789473684,
+      "id": "5ae7c5ef5542993210983f44",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[2] Don't Lose Touch: \"Don't Lose Touch\" is a song by the Gainesville, Florida-based punk rock band Against Me!",
+      "replay_ok": true
+    },
+    {
+      "attack": "schema_break",
+      "entailment_ok": true,
+      "execution_ok": false,
+      "f1_to_gold": 0.0909090909090909,
+      "id": "5a866e7e554299211dda2b29",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "In politics, Lever briefly sat as a Liberal MP for Wirral and later, as Lord Leverhulme, in the House of Lords as a Peer.",
+      "replay_ok": true
+    },
+    {
+      "attack": "policy_violation",
+      "entailment_ok": false,
+      "execution_ok": false,
+      "f1_to_gold": 0.0,
+      "id": "5a8a7d2b55429930ff3c0dfc",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Ecballium: Ecballium is a genus of flowering plants in the family Cucurbitaceae containing a single species, Ecballium elaterium, also called the squirting cucumber or exploding cucumber (but not ",
+      "replay_ok": true
+    },
+    {
+      "attack": "evidence_swap",
+      "entailment_ok": true,
+      "execution_ok": true,
+      "f1_to_gold": 0.07692307692307693,
+      "id": "5ae3205c55429928c423961e",
+      "integrity_ok": true,
+      "passed": true,
+      "raw_answer": "Knope Goes to Washington\" is the season premiere of the fifth season of the American comedy television series \"Parks and Recreation\", and the 69th overall episode of the series.",
+      "replay_ok": true
+    },
+    {
+      "attack": "schema_break",
+      "entailment_ok": false,
+      "execution_ok": false,
+      "f1_to_gold": 0.04761904761904761,
+      "id": "5ae0d5335542990adbacf674",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] The Jack and Triumph Show: The Jack and Triumph Show is a television sitcom from Universal Television for Adult Swim that premiered on February 20, 2015 and ended on April 3, 2015 with a total of ",
+      "replay_ok": true
+    }
+  ],
+  "seed": 0
+}

@@ -27,7 +27,7 @@ from components import inject_css, render_byok_sidebar, render_kpi  # noqa: E402
 # ---------------------------------------------------------------------------
 st.set_page_config(
     page_title="PCG-MAS · live demo",
-    page_icon="🔐",
+    page_icon=":lock:",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
@@ -48,7 +48,7 @@ render_byok_sidebar()
 st.markdown(
     """
     <div class="pcg-anonymous-banner">
-        🕶 <strong>Anonymous demo</strong> — this Space is hosted under an
+        <strong>Anonymous demo</strong> — this Space is hosted under an
         anonymous account for double-blind review. No author info, no
         analytics, no cookies beyond Streamlit's session state.
     </div>
@@ -76,27 +76,27 @@ col_left, col_right = st.columns([1.0, 1.0])
 
 with col_left:
     st.markdown("""
-**1. 🔥 Live Run** — paste any question, watch the multi-agent pipeline run
-in real time, and see the certificate `Z` it produces. Free LLM by default;
-add your own API key in the sidebar to use frontier models like DeepSeek-V3,
-Llama-3.3-70B, GPT-4, or Claude.
+**1. Live Run** — paste any question, watch the multi-agent pipeline run
+in real time, and see the certificate `Z` it produces. The framework
+supports both **single-agent** (special trivial case) and **multi-agent**
+modes; switch in the sidebar to see why redundant consensus matters.
 
-**2. 🔍 Certificate Inspector** — paste or upload any past certificate,
+**2. Certificate Inspector** — paste or upload any past certificate,
 see all six components, and re-run the deterministic verifier to confirm
 the claim is still backed by evidence.
 
-**3. ⚖️ Side-by-Side Comparison** — same question, run twice: once
+**3. Side-by-Side Comparison** — same question, run twice: once
 through PCG-MAS, once through a no-certificate baseline. See exactly
 what gets caught.
 """)
 
 with col_right:
     st.markdown("""
-**4. 📊 Results Browser** — interactive Plotly charts of all five paper
+**4. Results Browser** — interactive Plotly charts of all five paper
 experiments (R1 Audit decomposition, R2 Redundancy law, R3 Responsibility,
 R4 Cost-harm Pareto, R5 Overhead).
 
-**5. 🛡 Auditor Demo** — you are the external auditor. A stream of
+**5. Auditor Demo** — you are the external auditor. A stream of
 certificates arrives; some are tampered. Find the failures using only
 the verifier, no LLM access. Demonstrates the auditability contract
 that makes PCG-MAS deployable in regulated settings.
@@ -124,8 +124,8 @@ st.markdown("---")
 st.markdown(
     """
 **Pick a demo from the sidebar** to start. The default backend is
-the free Hugging Face Inference tier — no key, no cost, rate-limited
-(plenty for review traffic). Add an API key for any premium provider
+the Hugging Face Inference tier (a free HF account token is sufficient,
+configured by the Space owner). Add an API key for any premium provider
 in the sidebar to use frontier models for fresh runs.
 """
 )
@@ -134,8 +134,8 @@ st.markdown(
     """
 <div style="margin-top:48px; padding-top:16px; border-top: 1px solid #E5E7EB;
             font-size:0.82em; color: var(--pcg-ink-light);">
-Anonymous submission · NeurIPS 2026 · MIT License (in the source repo) ·
-<a href="https://anonymous.4open.science" target="_blank">source code</a>
+Anonymous submission · MIT License (in the source repo) ·
+<a href="https://anonymous.4open.science/r/p-c-m-a-E866/" target="_blank">source code</a>
 </div>
 """,
     unsafe_allow_html=True,

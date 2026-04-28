@@ -1,0 +1,20 @@
+{
+  "backend": {
+    "kind": "mock"
+  },
+  "checker": {
+    "case_insensitive": true,
+    "entailment": "exact_match"
+  },
+  "dataset": {
+    "n_examples": 20,
+    "name": "synthetic"
+  },
+  "output_dir": "results/smoke",
+  "prover": {
+    "max_answer_tokens": 32,
+    "retriever": "bm25",
+    "temperature": 0.0,
+    "top_k": 3
+  }
+}

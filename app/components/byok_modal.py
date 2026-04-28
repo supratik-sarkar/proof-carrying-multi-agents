@@ -87,10 +87,71 @@ def render_byok_sidebar() -> tuple[str, str | None, str]:
             if not api_key:
                 st.warning(
                     f"This provider requires a key. Without one, runs will "
-                    f"fall back to the free tier ({free_provider_info().label})."
+                    f"fall back to {free_provider_info().label}."
                 )
         else:
-            st.success("✓ Free tier — no key required, no cost to you.")
+            # The default `hf_free` provider uses the Space-side HF_TOKEN
+            # (set by the Space owner as a secret). If it isn't set, every
+            # call returns 401 — be honest about that.
+            import os as _os
+            if _os.environ.get("HF_TOKEN"):
+                st.success(
+                    "Default backend ready (Space-side HF token configured)."
+                )
+            else:
+                st.warning(
+                    "No HF token detected on the Space. Live runs may fail "
+                    "with 401. Add a free HF account token in the sidebar "
+                    "above (HF Inference, your token) to enable Live Run."
+                )
+
+        st.markdown("---")
+        # ----- Agentic mode toggle -----
+        # The PCG-MAS framework treats single-agent as the trivial special
+        # case k=1 of the redundant-consensus law (Theorem 2). We expose
+        # both modes so reviewers can flip between them and see why
+        # multi-agent is the meaningful general form.
+        st.markdown("### Agentic mode")
+        mode = st.radio(
+            "Pipeline shape",
+            options=["Single-agent (k=1)", "Multi-agent (k=2)", "Multi-agent (k=4)"],
+            index=st.session_state.get("agentic_mode_idx", 1),
+            help=(
+                "Single-agent runs one Prover. By Theorem 2, this is the "
+                "k=1 special case of the redundant-consensus law: the "
+                "false-accept bound is ε (no consensus collapse). "
+                "Multi-agent runs k Provers and applies consensus, so the "
+                "false-accept bound shrinks geometrically as ρ^(k−1)·ε^k. "
+                "PCG-MAS works in either mode; multi-agent is just the "
+                "general case."
+            ),
+        )
+        st.session_state["agentic_mode_idx"] = (
+            ["Single-agent (k=1)", "Multi-agent (k=2)", "Multi-agent (k=4)"]
+            .index(mode)
+        )
+        # Numeric k for the run scripts
+        k_map = {
+            "Single-agent (k=1)": 1,
+            "Multi-agent (k=2)": 2,
+            "Multi-agent (k=4)": 4,
+        }
+        st.session_state["k_redundant"] = k_map[mode]
+        st.session_state["agentic_mode"] = mode
+
+        # Brief unification note (the why)
+        if "Single-agent" in mode:
+            st.caption(
+                "Single-agent is the trivial k=1 special case of PCG-MAS. "
+                "The certificate Z is still produced and verifiable, "
+                "but with no redundancy collapse."
+            )
+        else:
+            st.caption(
+                "Multi-agent activates Theorem 2's geometric collapse: "
+                "k Provers in parallel + verifier consensus → bound "
+                "shrinks as ρ^(k−1)·ε^k."
+            )
 
         # Privacy note (always shown)
         with st.expander("Privacy & cost", expanded=False):

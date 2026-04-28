@@ -130,11 +130,19 @@ _BOLD_PALETTE = {
 BOLD_THEME = PlotTheme(
     name="bold",
     palette=_BOLD_PALETTE,
-    base_size=10,
-    title_size=12,
-    label_size=10,
-    tick_size=9,
-    annotation_size=9,
+    # Sizes calibrated so that at typical NeurIPS-column reproduction
+    # (figure scaled to ~3.3 inches wide), the printed body text is
+    # ≥6pt. Source figures are 13-15 inches wide, so we apply ~2x
+    # scaling vs matplotlib's small-figure defaults. The original
+    # BOLD_THEME defaults were base=10/title=12/label=10/tick=9/ann=9
+    # — these sizes were optimized for full-page reproduction, but
+    # too small after scale-down to NeurIPS column width.
+    # Nothing else (colors, layout intent, font family) changes.
+    base_size=18,
+    title_size=22,
+    label_size=18,
+    tick_size=16,
+    annotation_size=14,
 )
 
 

@@ -19,6 +19,27 @@ if str(_HERE) not in sys.path:
 from components.certificate_card import Certificate
 
 
+def mock_retrieve(question: str, k: int = 4) -> list[dict]:
+    """Toy retriever — in production this is BM25 over a dataset corpus.
+
+    Returns evidence in the EvidenceItem-like shape the rest of the
+    pipeline expects."""
+    h = hashlib.md5(question.encode()).hexdigest()[:6]
+    return [
+        {
+            "title": f"Reference document {h}-{i}",
+            "text": (
+                f"This passage discusses the topic of: '{question}'. "
+                "It contains background facts and one or more direct answers. "
+                f"(Synthesized for demo; index = {i}.)"
+            ),
+            "source_url": f"https://example.org/doc-{h}-{i}",
+            "is_gold": (i == 0),  # first doc is gold by convention
+        }
+        for i in range(k)
+    ]
+
+
 def deterministic_verify(cert: Certificate) -> bool:
     """The same lightweight verifier page 1 ships with."""
     expected = hashlib.sha256(cert.c.encode()).hexdigest()

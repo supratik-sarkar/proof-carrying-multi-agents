@@ -54,8 +54,8 @@ SEQ_K = ["#1F4E79", "#2E75B6", "#5B9BD5", "#9DC3E6", "#BDD7EE", "#DDEBF7"]
 
 
 def set_style(
-    font_size: int = 10,
-    title_size: int = 11,
+    font_size: int = 13,
+    title_size: int = 15,
     line_width: float = 1.6,
     tex: bool = False,
 ) -> None:
@@ -179,7 +179,7 @@ def plot_r1_audit_decomposition(
     ax.set_title(title, loc="left")
     # Annotate each bar
     for i, v in enumerate(vals):
-        ax.text(v + 0.002, y[i], f"{v:.3f}", va="center", ha="left", fontsize=8, color="#444444")
+        ax.text(v + 0.002, y[i], f"{v:.3f}", va="center", ha="left", fontsize=11, color="#444444")
     ax.set_xlim(0, max(0.05, max(vals) * 1.35))
     fig.tight_layout()
     if save_to is not None:
@@ -225,7 +225,7 @@ def plot_r2_redundancy_law(
     ax.set_ylabel(r"$\Pr(A_t^{(k,k)} \wedge c\ \mathrm{false})$")
     ax.set_title(title, loc="left")
     ax.set_xticks(list(ks))
-    ax.legend(loc="upper right", fontsize=8)
+    ax.legend(loc="upper right", fontsize=11)
     fig.tight_layout()
     if save_to is not None:
         save_fig(fig, save_to)
@@ -268,7 +268,7 @@ def plot_r3_responsibility_heatmap(
             v = resp_matrix[i, j]
             txt_color = "white" if abs(v) > 0.5 else "#333333"
             ax.text(j, i, f"{v:.2f}", ha="center", va="center",
-                    color=txt_color, fontsize=7.5)
+                    color=txt_color, fontsize=10.5)
             if ci_halfwidth is not None and ci_halfwidth[i, j] >= abs(v):
                 ax.add_patch(mpl.patches.Rectangle(
                     (j - 0.5, i - 0.5), 1, 1, fill=False,
@@ -309,7 +309,7 @@ def plot_r4_risk_pareto(
     ax.set_xlabel("Expected cost (latency + tokens + tools)")
     ax.set_ylabel(r"Expected harm $\lambda\cdot \mathbb{E}[L_{\mathrm{harm}}]$")
     ax.set_title(title, loc="left")
-    ax.legend(loc="best", fontsize=8)
+    ax.legend(loc="best", fontsize=11)
     fig.tight_layout()
     if save_to is not None:
         save_fig(fig, save_to)
@@ -374,7 +374,7 @@ def plot_r5_overhead(
     ax.set_xticklabels(configs)
     ax.set_ylabel(ylabel)
     ax.set_title(title, loc="left")
-    ax.legend(loc="upper left", fontsize=8, ncol=2)
+    ax.legend(loc="upper left", fontsize=11, ncol=2)
     fig.tight_layout()
     if save_to is not None:
         save_fig(fig, save_to)
@@ -437,7 +437,7 @@ def plot_intro_hero(
     axL.set_xlabel(r"Redundancy $k$")
     axL.set_ylabel("False-accept rate")
     axL.set_title("Safety: false-accept vs k", loc="left")
-    axL.legend(loc="upper right", fontsize=8)
+    axL.legend(loc="upper right", fontsize=11)
 
     # Right: utility
     axR.axhline(utility_without_cert, linestyle="--", color=PALETTE["gray"],
@@ -446,7 +446,7 @@ def plot_intro_hero(
     axR.set_xlabel(r"Redundancy $k$")
     axR.set_ylabel("Utility (F1)")
     axR.set_title("Utility: F1 vs k", loc="left")
-    axR.legend(loc="lower right", fontsize=8)
+    axR.legend(loc="lower right", fontsize=11)
 
     fig.tight_layout()
     if save_to is not None:

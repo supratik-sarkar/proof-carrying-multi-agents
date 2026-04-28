@@ -75,7 +75,7 @@ def plot_intro_hero_v4(
 
     # Smaller height — 4 rows take less vertical space than 7
     fig = plt.figure(
-        figsize=(15.0, 5.4), dpi=theme.dpi,
+        figsize=(20, 7.0), dpi=theme.dpi,
         facecolor=theme.palette["bg_panel"],
     )
     # No banner: panels can extend almost to the top of the figure

@@ -28,12 +28,12 @@ from components import (
 
 st.set_page_config(
     page_title="Side-by-Side · PCG-MAS",
-    page_icon="⚖️", layout="wide",
+    page_icon=":balance_scale:", layout="wide",
 )
 inject_css()
 render_byok_sidebar()
 
-st.title("⚖️ Side-by-side: PCG-MAS vs no-certificate baseline")
+st.title("Side-by-side: PCG-MAS vs no-certificate baseline")
 st.markdown(
     "Same question, same model, same evidence. The left column runs "
     "through PCG-MAS; the right column is a single-LLM-call baseline. "
@@ -54,7 +54,7 @@ with st.form("compare_form"):
             "channels. The baseline has no detection mechanism."
         ),
     )
-    submitted = st.form_submit_button("▶ Run both", type="primary")
+    submitted = st.form_submit_button("Run both", type="primary")
 
 if submitted:
     if not question.strip():

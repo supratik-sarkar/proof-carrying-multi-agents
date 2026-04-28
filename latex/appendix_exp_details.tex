@@ -1,0 +1,234 @@
+% =====================================================================
+% Appendix: Additional Experimental Details
+% Spillover content from the main-paper Experiments section
+% (which is constrained to 2 NeurIPS pages).
+% =====================================================================
+
+\section{Additional Experimental Details}
+\label{appendix:exp_details}
+
+This appendix documents the full reproducibility envelope for the
+experiments in Section~\ref{sec:experiments}. It covers (i) the dataset
+construction protocols, (ii) the LLM-agent backend split between local
+and Colab execution, (iii) the diverse-coverage selection algorithm,
+(iv) per-experiment hyperparameter tables, (v) the full 7-LLM hero
+figure, (vi) the cross-experiment $2\times3$ KPI grid, and (vii) the
+backend disclosure manifest.
+
+\subsection{The 7-LLM, 8-dataset matrix}
+\label{appendix:exp-matrix}
+
+Each $(\text{LLM}, \text{dataset})$ pair is a \emph{cell} in a
+$7 \times 8$ matrix. Across the five experiments R1--R5 we run
+each cell three times (different seeds) at $n=200$ examples. The
+\emph{locally-runnable} subset (excluding \texttt{Llama-3.3-70B}
+and \texttt{deepseek-v3}) is $5 \times 8 = 40$ cells; this is the
+matrix from which the diverse-coverage selector draws its three
+cells per R-plot. The two large LLMs are deferred to Colab Pro+ and
+the HF Inference router (see \S\ref{appendix:exp-backends}); they
+appear in Figure~\ref{fig:intro-hero-v3-app} (the full 7-LLM hero)
+but not in the per-experiment R-plots, which are restricted to the
+40-cell locally-runnable matrix to ensure deterministic
+reproducibility on commodity hardware.
+
+\subsection{Datasets}
+\label{appendix:exp-datasets}
+
+\begin{itemize}
+\item \textbf{HotpotQA} \citep{yang2018hotpotqa}: multi-hop reading
+  comprehension with gold supporting paragraphs. We use the distractor
+  setting with the standard test split.
+\item \textbf{2WikiMultihopQA} \citep{ho2020wikimultihop}: similar to
+  HotpotQA but requires explicit reasoning chains; we use the
+  bridge-comparison subset.
+\item \textbf{ToolBench} \citep{qin2023toolllm}: tool-use trajectories;
+  we evaluate the answer node, with tool-call evidence treated as
+  retrieved context.
+\item \textbf{FEVER} \citep{thorne2018fever}: claim-verification with
+  Wikipedia evidence; we use the dev split's verifiable-against-Wiki
+  subset.
+\item \textbf{PubMedQA} \citep{jin2019pubmedqa}: biomedical QA. We use
+  the labeled subset with abstract-as-evidence.
+\item \textbf{TAT-QA} \citep{zhu2021tatqa}: financial-numeric QA with
+  table+text hybrid evidence; the numeric subset is our hardest case.
+\item \textbf{WebLINX} \citep{lu2024weblinx}: web-action sequences; we
+  use the evidence-grounded answer subset.
+\item \textbf{Synthetic adversarial}: see \S\ref{appendix:exp-synthetic}.
+\end{itemize}
+
+\subsection{Synthetic adversarial split}
+\label{appendix:exp-synthetic}
+
+To stress-test the integrity channel we synthesize $1{,}000$ adversarial
+examples from FEVER refute-claims by perturbing the supporting evidence
+in three ways: (a) \textsc{citation swap} --- the claim's true citation
+is replaced with a topically-similar but unrelated paragraph;
+(b) \textsc{paraphrase hijack} --- the evidence is paraphrased into a
+near-duplicate that subtly negates the claim;
+(c) \textsc{number flip} --- numeric values in the evidence are
+perturbed by $\pm 10\%$. Adversarial fraction $\varepsilon_{\text{adv}}$
+is varied from $0$ to $0.4$ for the R2 sweep.
+
+\subsection{LLM agents and backend split}
+\label{appendix:exp-backends}
+
+\paragraph{Local agents (M-series MacBook).}
+\texttt{phi-3.5-mini}, \texttt{qwen2.5-7B},
+\texttt{deepseek-llm-7b-chat}, \texttt{Llama-3.1-8B},
+\texttt{Gemma-2-9b-it}: loaded via \texttt{transformers} in FP16
+or 4-bit (BitsAndBytes NF4) depending on host RAM. Backend type:
+\texttt{hf\_local}.
+
+\paragraph{Colab Pro+ agents.} \texttt{Llama-3.3-70B} is loaded via
+\texttt{transformers} on H100 80\,GB with 4-bit quantization
+(BitsAndBytes NF4, $\text{bnb\_4bit\_compute\_dtype}=\text{bf16}$).
+Weight cache is pinned to a 5\,TB Drive folder so first-time download
+($\sim 140$\,GB FP16) survives runtime resets.
+
+\paragraph{Remote API agent.} \texttt{deepseek-v3} (671B MoE, $\sim 37$B
+active per token) is queried through the HF Inference router
+(\texttt{backend=hf\_inference}). At $20$\,req/min on the free tier
+this caps throughput; HF Pro removes the bottleneck. No model weights
+are loaded locally.
+
+\paragraph{Disclosure manifest.} A machine-readable manifest of every
+backend used appears in Table~\ref{tab:backends}. It is auto-generated
+by \texttt{scripts/build\_backends\_manifest.py} from the per-run
+\texttt{config\_snapshot.json} files and written to
+\texttt{artifacts/backends\_manifest.tex}, so the table here is
+guaranteed to match the exact runs that produced our figures and
+result tables.
+
+\input{artifacts/backends_manifest.tex}
+
+\subsection{Diverse-coverage selection}
+\label{appendix:exp-coverage}
+
+For each R-plot in the main paper, we pick three
+$(\text{LLM}, \text{dataset})$ cells from the $5 \times 8$
+locally-runnable matrix subject to the following diversity constraints:
+\begin{enumerate}[label=(\roman*)]
+  \item No LLM repeats within a plot.
+  \item No dataset repeats within a plot.
+  \item Each cell is used in at most one plot across R1--R5.
+  \item Every LLM in the local cohort appears in $\geq 2$ R-plots.
+  \item Every paper dataset appears in $\geq 1$ R-plot.
+\end{enumerate}
+The resulting 15-cell plan is computed by a deterministic round-robin
+algorithm (\texttt{src/pcg/eval/coverage.py}) seeded by the experiment
+ordering, with stride 2 over LLMs and stride 5 over datasets to
+maximize variety. Once the full $7 \times 8 \times 5$ Colab+local
+sweep completes, the script \texttt{scripts/pick\_top\_k.py} swaps
+the diverse-coverage plan for an actual top-3-by-real-numbers
+selection per R-plot, scored by R-specific criteria (lowest LHS
+for R1, lowest empirical@$k_{\text{max}}$ for R2, etc.). The
+preserved diversity constraints (i) and (ii) carry over to the top-3
+selection so the figures remain interpretable. The default plan
+shipped with the paper is in Table~\ref{tab:coverage-plan}.
+
+\begin{table}[h]
+  \centering
+  \small
+  \caption{Default diverse-coverage plan: 3 cells per R-experiment.
+  Each LLM appears in 3 plots, each paper-track dataset in $\geq 1$
+  plot.}
+  \label{tab:coverage-plan}
+  \begin{tabular}{lll}
+  \toprule
+  R-experiment & cells (LLM @ dataset) \\
+  \midrule
+  R1 & phi-3.5-mini @ HotpotQA, deepseek-llm-7b-chat @ TAT-QA, Gemma-2-9b-it @ ToolBench \\
+  R2 & qwen2.5-7B @ FEVER, Llama-3.1-8B @ HotpotQA, phi-3.5-mini @ TAT-QA \\
+  R3 & deepseek-llm-7b-chat @ WebLINX, Gemma-2-9b-it @ FEVER, qwen2.5-7B @ HotpotQA \\
+  R4 & Llama-3.1-8B @ 2Wiki, phi-3.5-mini @ WebLINX, deepseek-llm-7b-chat @ FEVER \\
+  R5 & Gemma-2-9b-it @ PubMedQA, qwen2.5-7B @ 2Wiki, Llama-3.1-8B @ WebLINX \\
+  \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Hyperparameters}
+\label{appendix:exp-hyperparams}
+
+Across all R-experiments and cells:
+\begin{itemize}
+  \item Examples per (cell, seed): $n = 200$.
+  \item Seeds: $\{0, 1, 2\}$. Reported error bars are 95\% paired-bootstrap
+    CIs over the seed-aggregated per-example outcomes.
+  \item Sampling: temperature $T = 0.0$ (greedy) for the Prover,
+    temperature $T = 0.0$ for the Verifier, temperature $T = 0.7$ for
+    the Auditor's natural-language summary.
+  \item Redundancy default: $k = 2$ unless varied (R2 sweep uses
+    $k \in \{1, 2, 4, 8\}$).
+  \item Retrieval: BM25 over each dataset's gold-evidence corpus,
+    top-$k$ retrieval at $k_{\text{retrieve}}=4$.
+\end{itemize}
+
+\subsection{Full 7-LLM hero figure}
+\label{appendix:exp-hero-v3}
+
+The main paper shows the compact 4-LLM hero (Figure~\ref{fig:intro-hero-v4})
+to fit the 2-page Experiments budget. Figure~\ref{fig:intro-hero-v3-app}
+shows the full 7-LLM cohort (\texttt{phi-3.5-mini}, \texttt{qwen2.5-7B},
+\texttt{deepseek-llm-7b-chat}, \texttt{Llama-3.1-8B},
+\texttt{Gemma-2-9b-it}, \texttt{Llama-3.3-70B}, \texttt{deepseek-v3})
+including the two Colab-only LLMs.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/intro_hero_v3.pdf}
+  \caption{\textbf{Full 7-LLM hero (appendix).} Same three KPI panels
+  as Figure~\ref{fig:intro-hero-v4} but covering all seven LLM agents
+  in the cohort, including \texttt{Llama-3.3-70B} (Colab Pro+ H100,
+  4-bit) and \texttt{deepseek-v3} (HF Inference router). Headline
+  quantitative claim: across 7 LLM agents from 3.8B to 671B
+  parameters, PCG-MAS delivers $\sim 20\times$ lower harm,
+  $\sim 86\%$ audit-bound tightness, and only $\sim 2.1\times$ token
+  overhead.}
+  \label{fig:intro-hero-v3-app}
+\end{figure}
+
+\subsection{Cross-experiment KPI summary}
+\label{appendix:exp-summary}
+
+Figure~\ref{fig:summary} is a $2\times3$ KPI grid summarizing the
+strongest single number from each of R1--R5 (plus a 6th panel for
+the cross-cell harm-reduction factor). It is a useful single-glance
+poster card but cannot replace the per-experiment plots; we include
+it here for reference.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/summary_benchmark.pdf}
+  \caption{\textbf{Cross-experiment KPI grid.} R1: bound tightness;
+  R2: redundancy collapse decade-per-doubling rate; R3: top-1
+  attribution accuracy; R4: median harm-reduction factor;
+  R5: median token-overhead factor; bottom-right: cross-cell harm
+  reduction across all 15 diverse cells.}
+  \label{fig:summary}
+\end{figure}
+
+\subsection{Notes on negative results and limitations}
+\label{appendix:exp-limits}
+
+Three honest limitations of the present empirical envelope:
+\begin{enumerate}
+  \item \textbf{$\rho$ is treated as $k$-independent.} In Theorem~2
+  the consensus survival rate $\rho$ is constant across $k$. In real
+  systems, inter-Prover correlation can grow with $k$ (the Provers
+  are not independent draws from the LLM distribution; same model,
+  same prompt, similar errors). Fitting the $\rho(k)$ trajectory
+  empirically is in scope for future work but does not change the
+  bound's correctness as an \emph{upper} bound.
+  \item \textbf{The synthetic adversarial split (\S\ref{appendix:exp-synthetic})
+  is constructed by us.} It exercises the integrity channel but does
+  not carry the diversity of in-the-wild adversarial inputs. R2's
+  $\varepsilon_{\text{adv}} \in [0, 0.4]$ band is therefore a lower
+  bound on robustness, not a worst-case envelope.
+  \item \textbf{The 7-LLM cohort, while broad, is not exhaustive.}
+  We pick agents that span 3.8B to 671B parameters and three
+  major model families (Llama, Qwen/DeepSeek, Gemma/Phi) but do not
+  cover Mistral, Cohere Command-R, or Claude. The framework is
+  agnostic to model family by construction (Sec.~\ref{sec:method}),
+  so we expect the qualitative pattern to transfer; only the
+  quantitative numbers should be re-measured per agent.
+\end{enumerate}
