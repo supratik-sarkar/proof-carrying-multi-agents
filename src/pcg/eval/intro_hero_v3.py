@@ -227,7 +227,7 @@ def _panel_tightness(
         linestyle=":", linewidth=1.0, alpha=0.7, zorder=1,
     )
     ax.text(
-        100.5, n - 0.4, "perfect\nbound",
+        100.5, -0.6, "perfect\nbound",
         ha="left", va="center",
         fontsize=theme.annotation_size - 1,
         color=theme.palette["ink_light"],
@@ -240,7 +240,7 @@ def _panel_tightness(
     _set_llm_yaxis(ax, entries, theme)
     _panel_heading(
         ax, theme,
-        title="Theorem 1 tightness",
+        title="(Our) Theorem-1 tightness",
         subtitle="LHS / RHS, fraction explained",
     )
 
@@ -274,7 +274,7 @@ def _panel_overhead(
         y, extra, bar_h, left=base,
         color=theme.palette["ours"],
         edgecolor="white", linewidth=0.6,
-        label="PCG-MAS overhead",
+        label="PCG-MAS overhead (ours)",
     )
 
     # Annotate overhead factor at end of each bar
@@ -335,7 +335,7 @@ def _draw_headline_banner(
     # Centered headline — separate spans for color
     fig.text(
         0.5, 0.95,
-        f"Across 7 LLMs from 3.8B to 671B parameters,",
+        f"Across 7 LLM agents from 3.8B to 671B parameters,",
         ha="center", va="top",
         fontsize=theme.title_size + 4,
         fontweight="bold",
@@ -374,7 +374,7 @@ def plot_intro_hero_v3(
     entries = list(entries or [])
 
     fig = plt.figure(
-        figsize=(15.5, 8.4), dpi=theme.dpi,
+        figsize=(20, 11), dpi=theme.dpi,
         facecolor=theme.palette["bg_panel"],
     )
     gs = GridSpec(
@@ -392,6 +392,72 @@ def plot_intro_hero_v3(
     _panel_overhead(ax_over, entries, theme)
 
     _draw_headline_banner(fig, entries, theme)
+    _add_provenance_footer(fig, theme, source_runs=source_runs, is_mock=is_mock)
+    return fig
+
+
+# ---------------------------------------------------------------------------
+# v4: compact 4-LLM main-text variant
+# ---------------------------------------------------------------------------
+
+# Models picked to span the full capability/scale axis with minimum row count:
+#   phi-3.5-mini      (3.8B)  — small reference
+#   Gemma-2-9b-it     (9B)    — modern mid-scale
+#   Llama-3.3-70B     (70B)   — large open
+#   deepseek-v3       (671B MoE) — frontier
+COMPACT_LLMS_V4 = (
+    "phi-3.5-mini",
+    "Gemma-2-9b-it",
+    "Llama-3.3-70B",
+    "deepseek-v3",
+)
+
+
+def plot_intro_hero_v4(
+    *,
+    entries: Sequence[HeroEntry] | None = None,
+    theme: PlotTheme = BOLD_THEME,
+    source_runs: list[str] | None = None,
+    is_mock: bool = False,
+) -> plt.Figure:
+    """Compact intro hero for the main text of the paper.
+
+    Same three panels (Safety, (Our) Theorem-1 tightness, Cost overhead),
+    same metric annotations, same legend conventions — but with only four
+    LLMs and no headline banner so the figure fits one column on a NeurIPS
+    page. The full quantitative claims belong in the figure caption,
+    written by hand in the paper's introduction section.
+
+    Filters `entries` to those whose name is in COMPACT_LLMS_V4, preserving
+    that order. Missing entries are silently dropped (so v4 still renders
+    with whichever subset of the four are available).
+    """
+    setup_matplotlib_for_theme(theme)
+    entries = list(entries or [])
+
+    # Keep only the v4 set, in v4 order
+    by_name = {e.name: e for e in entries}
+    compact = [by_name[n] for n in COMPACT_LLMS_V4 if n in by_name]
+
+    fig = plt.figure(
+        figsize=(20, 7.2), dpi=theme.dpi,
+        facecolor=theme.palette["bg_panel"],
+    )
+    gs = GridSpec(
+        1, 3, figure=fig,
+        wspace=0.45,
+        left=0.10, right=0.97,
+        top=0.88, bottom=0.13,
+    )
+    ax_harm = fig.add_subplot(gs[0, 0])
+    ax_tight = fig.add_subplot(gs[0, 1])
+    ax_over = fig.add_subplot(gs[0, 2])
+
+    _panel_harm(ax_harm, compact, theme)
+    _panel_tightness(ax_tight, compact, theme)
+    _panel_overhead(ax_over, compact, theme)
+
+    # NO headline banner — caption space-saver per paper main-text constraint
     _add_provenance_footer(fig, theme, source_runs=source_runs, is_mock=is_mock)
     return fig
 

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-26T21:04:37Z",
+  "generated_at_utc": "2026-04-28T20:20:00Z",
   "git_sha": "unknown",
   "paper_label_to_path": {
     "figures": {
@@ -30,61 +30,61 @@
   },
   "figures_emitted": [
     {
-      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260427-015811_r1_hotpotqa_9ec00028_unknown",
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260427-230251_r1_hotpotqa_9ec00028_unknown",
       "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r1_audit_decomposition"
     },
     {
-      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260427-015835_r2_redundancy_328fdd12_unknown",
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260427-230317_r2_redundancy_328fdd12_unknown",
       "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r2_redundancy_law"
     },
     {
-      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r3/20260427-015901_r3_responsibility_be2b77de_unknown",
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r3/20260427-230342_r3_responsibility_be2b77de_unknown",
       "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r3_responsibility"
     },
     {
-      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260427-015926_r4_risk_c7f932a2_unknown",
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260427-230408_r4_risk_c7f932a2_unknown",
       "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r4_risk_pareto"
     },
     {
-      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260427-015926_r4_risk_c7f932a2_unknown",
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260427-230408_r4_risk_c7f932a2_unknown",
       "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r4_privacy_utility"
     },
     {
-      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r5/20260427-015950_r5_overhead_478e2cfd_unknown",
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r5/20260427-230433_r5_overhead_478e2cfd_unknown",
       "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r5_overhead"
     },
     {
-      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r5/20260427-015950_r5_overhead_478e2cfd_unknown",
+      "source_run": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r5/20260427-230433_r5_overhead_478e2cfd_unknown",
       "target": "/Users/supratiksarkar/Desktop/pcg-neurips2026/figures/r5_overhead_vs_k"
     }
   ],
   "tables_emitted": [
     {
       "name": "t1_audit_decomposition.tex",
-      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260427-015811_r1_hotpotqa_9ec00028_unknown/r1.json"
+      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260427-230251_r1_hotpotqa_9ec00028_unknown/r1.json"
     },
     {
       "name": "t2_redundancy_law.tex",
-      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260427-015835_r2_redundancy_328fdd12_unknown/r2.json"
+      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260427-230317_r2_redundancy_328fdd12_unknown/r2.json"
     },
     {
       "name": "t3_responsibility.tex",
-      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r3/20260427-015901_r3_responsibility_be2b77de_unknown/r3.json"
+      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r3/20260427-230342_r3_responsibility_be2b77de_unknown/r3.json"
     },
     {
       "name": "t4_risk_privacy.tex",
-      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260427-015926_r4_risk_c7f932a2_unknown/r4.json"
+      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260427-230408_r4_risk_c7f932a2_unknown/r4.json"
     },
     {
       "name": "t5_overhead.tex",
-      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r5/20260427-015950_r5_overhead_478e2cfd_unknown/r5.json"
+      "source": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r5/20260427-230433_r5_overhead_478e2cfd_unknown/r5.json"
     }
   ],
   "intro_hero": {
     "name": "intro_hero_v2",
-    "source_r1": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260427-015811_r1_hotpotqa_9ec00028_unknown",
-    "source_r2": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260427-015835_r2_redundancy_328fdd12_unknown",
-    "source_r4": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260427-015926_r4_risk_c7f932a2_unknown",
+    "source_r1": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r1/20260427-230251_r1_hotpotqa_9ec00028_unknown",
+    "source_r2": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r2/20260427-230317_r2_redundancy_328fdd12_unknown",
+    "source_r4": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/r4/20260427-230408_r4_risk_c7f932a2_unknown",
     "is_mock": false
   }
 }

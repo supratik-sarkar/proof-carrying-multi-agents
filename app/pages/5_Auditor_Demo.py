@@ -26,11 +26,11 @@ from components import (
     Certificate, inject_css, render_byok_sidebar, render_certificate_card,
 )
 
-st.set_page_config(page_title="Auditor · PCG-MAS", page_icon="🛡", layout="wide")
+st.set_page_config(page_title="Auditor · PCG-MAS", page_icon=":shield:", layout="wide")
 inject_css()
 render_byok_sidebar()
 
-st.title("🛡 External auditor demo")
+st.title("External auditor demo")
 st.markdown(
     "**You are an external auditor.** A stream of certificates arrives "
     "from a model provider you don't fully trust. Your task: classify "
@@ -137,7 +137,7 @@ for i, cdict in enumerate(stream):
 # Score
 # ---------------------------------------------------------------------------
 st.markdown("---")
-if st.button("📊 Score my decisions", type="primary"):
+if st.button("Score my decisions", type="primary"):
     picks = st.session_state["auditor_picks"]
     if len(picks) < n:
         st.warning(f"You've classified {len(picks)}/{n} certificates.")

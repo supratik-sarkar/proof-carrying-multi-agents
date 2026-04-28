@@ -21,11 +21,11 @@ from components import (
 )
 
 st.set_page_config(page_title="Certificate Inspector · PCG-MAS",
-                   page_icon="🔍", layout="wide")
+                   page_icon=":mag:", layout="wide")
 inject_css()
 render_byok_sidebar()
 
-st.title("🔍 Certificate Inspector")
+st.title("Certificate Inspector")
 st.markdown(
     "Paste a JSON certificate, upload one, or pick from the bundled "
     "samples. The Inspector renders all six fields of `Z = (c, S, Π, "
@@ -87,7 +87,7 @@ if cert_dict is not None:
     st.markdown("---")
     render_certificate_card(cert, expanded_by_default=True)
 
-    if st.button("🔁 Re-run deterministic verifier", type="primary"):
+    if st.button("Re-run deterministic verifier", type="primary"):
         # Use the same lightweight verifier as page 1
         from pages._live_run_helpers import deterministic_verify  # noqa
         cert.is_verified = deterministic_verify(cert)

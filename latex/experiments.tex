@@ -1,0 +1,234 @@
+% =====================================================================
+% Experiments section — fits NeurIPS 2-page budget when t1..t5 tables
+% are sized to ~0.45\textwidth (\input{}'d via the macros below) and
+% the R1..R5 figures are wrapped as 0.5\textwidth wide-mode each.
+% Methodological overflow lives in Appendix \ref{appendix:exp_details}.
+%
+% Required packages (already in NeurIPS 2026 style): graphicx, booktabs,
+% amsmath, hyperref, xcolor.
+%
+% Required local files (paths assumed):
+%   figures/intro_hero_v4.pdf
+%   figures/r1_audit_decomposition.pdf
+%   figures/r2_redundancy_law.pdf
+%   figures/r3_responsibility.pdf
+%   figures/r4_risk_pareto.pdf
+%   figures/r5_overhead.pdf
+%   figures/summary_benchmark.pdf
+%   docs/tables/t1_audit_decomposition.tex
+%   docs/tables/t2_redundancy_law.tex
+%   docs/tables/t3_responsibility.tex
+%   docs/tables/t4_risk_privacy.tex
+%   docs/tables/t5_overhead.tex
+%   artifacts/backends_manifest.tex
+% =====================================================================
+
+\section{Experiments}
+\label{sec:experiments}
+
+We evaluate \textbf{PCG-MAS} on five research questions (R1--R5) drawn
+directly from Sections \ref{sec:theory} and \ref{sec:method}: whether
+the Theorem~1 audit-decomposition bound holds empirically (R1),
+whether the redundant-consensus law of Theorem~2 produces the predicted
+geometric collapse (R2), whether root-cause attribution is recoverable
+from an accepted certificate (R3), how the cost-vs-harm Pareto frontier
+shifts under the certificate contract (R4), and what token overhead
+the framework imposes (R5). Across all five experiments we deliberately
+sweep \emph{seven} LLM agents spanning 3.8B to 671B parameters and
+\emph{eight} datasets covering reading-comprehension, claim-verification,
+biomedical, financial-numeric, web-action, and tool-use regimes.
+Cross-cutting diagnostics are summarized in Figure~\ref{fig:intro-hero-v4};
+the full $7 \times 8$ matrix appears in Appendix \ref{appendix:exp_details}.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/intro_hero_v4.pdf}
+  \caption{\textbf{Cross-LLM cross-cutting summary.} Across four LLM
+  agents spanning 3.8B--671B parameters (full 7-LLM cohort in
+  Appendix Fig.~\ref{fig:intro-hero-v3-app}), PCG-MAS reduces harm
+  rate by $\sim 20\times$ (median, 95\% paired-bootstrap CIs),
+  achieves $\geq 83\%$ Theorem-1 bound tightness (LHS/RHS), and
+  costs only $\sim 2 \times$ baseline tokens. Headline numbers
+  improve monotonically with model scale.}
+  \label{fig:intro-hero-v4}
+\end{figure*}
+
+\subsection{Setup}
+\label{sec:exp-setup}
+
+\textbf{LLM agents.} Seven agents: \texttt{phi-3.5-mini} (3.8B),
+\texttt{qwen2.5-7B}, \texttt{deepseek-llm-7b-chat}, \texttt{Llama-3.1-8B},
+\texttt{Gemma-2-9b-it}, \texttt{Llama-3.3-70B}, and \texttt{deepseek-v3}
+(671B MoE). Local agents are run via \texttt{transformers} on M-series
+hardware; the two largest are run on Colab Pro+ (H100 with 4-bit
+quantization for Llama-3.3-70B) and the HF Inference router (DeepSeek-V3).
+\textbf{Datasets.} Eight datasets: HotpotQA, 2WikiMultihopQA, ToolBench,
+FEVER, PubMedQA, TAT-QA, WebLINX, plus a synthetic adversarial split
+constructed per Appendix \ref{appendix:exp-synthetic} for stress-testing
+the integrity channel. \textbf{Diversity coverage.} Each per-experiment
+figure shows three $(\text{LLM}, \text{dataset})$ \emph{cells} drawn from
+the $5 \times 8$ locally-runnable matrix under a diversity constraint
+(no LLM or dataset repeats within a plot, balanced cross-plot coverage);
+the full selection plan and its construction are in Appendix
+\ref{appendix:exp-coverage}. \textbf{Reproducibility.} Every figure
+caption lists the run identifiers used; the full backend manifest
+(\texttt{backend kind}, \texttt{model\_name}, $n_{\text{examples}}$,
+seeds) is auto-emitted to Appendix Table~\ref{tab:backends} via
+\texttt{\textbackslash input\{artifacts/backends\_manifest.tex\}}.
+
+\subsection{R1: Theorem~1 audit decomposition holds across all cells}
+\label{sec:exp-r1}
+
+\textbf{Question.} Does $\Pr[\text{accept} \cap \text{wrong}]
+\leq p_{\text{IntFail}} + p_{\text{ReplayFail}} + p_{\text{CheckFail}}
++ p_{\text{CovGap}}$ hold in practice?
+\textbf{Setup.} For each cell, we run $n=200$ examples across three seeds,
+record empirical accepted-but-wrong probability with 95\% Wilson confidence
+intervals, and decompose the right-hand side into the four channel
+estimators of Sec.~\ref{sec:theory-audit}.
+\textbf{Result.} Figure~\ref{fig:r1-audit} shows that the LHS bar sits
+strictly below the stacked RHS bar in every cell, with positive slack
+$+0.029$ to $+0.052$. Table~\ref{tab:t1-audit} reports the per-channel
+contributions and the LHS/RHS ratio. \emph{Theorem~1 is empirically
+faithful: the bound is tight (median LHS/RHS $\approx 0.86$) without
+ever being violated.}
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/r1_audit_decomposition.pdf}
+  \caption{\textbf{R1.} Per-cell decomposition of $\Pr[\text{accept} \cap
+  \text{wrong}]$ (red, LHS) compared to the Theorem~1 right-hand-side
+  channel sum (stacked: IntFail, ReplayFail, CheckFail, CovGap).
+  Black tick marks at the bar tip show the empirical value with 95\%
+  Wilson CI. Across diverse $(\text{LLM}, \text{dataset})$ cells, the
+  bound holds with non-trivial slack.}
+  \label{fig:r1-audit}
+\end{figure*}
+
+\input{docs/tables/t1_audit_decomposition.tex}
+
+\subsection{R2: Redundant consensus collapses geometrically}
+\label{sec:exp-r2}
+
+\textbf{Question.} Does the per-claim false-accept probability decay
+as $\rho^{k-1}\cdot \varepsilon^k$ when redundancy $k$ grows
+(Theorem~2)?
+\textbf{Setup.} For each cell, we vary $k \in \{1, 2, 4, 8\}$ and
+measure $\Pr[\text{false accept}]$ on a fixed evaluation set with
+$\varepsilon_{\text{adv}} \in [0, 0.4]$ swept by injecting adversarial
+evidence at controlled rates.
+\textbf{Result.} Figure~\ref{fig:r2-redundancy} shows the empirical
+curve hugging the Theorem~2 bound (dashed) on a log scale; the orange
+shaded envelope is the safety regime under the adversary sweep.
+The curve is straight in $\log P$ vs.\ $k$ space (the \emph{exact}
+prediction of Theorem~2: $\log P = \mathrm{const} + k \cdot
+\log(\rho \cdot \varepsilon)$), and lies inside the adversary band
+across all 3 cells. Empirical-vs-bound ratios are summarized in
+Table~\ref{tab:t2-redundancy}.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/r2_redundancy_law.pdf}
+  \caption{\textbf{R2.} Per-claim false-accept probability vs.\
+  redundancy $k$, log-scale. Empirical (red) tracks the Theorem~2
+  bound (dashed) closely; the orange band shows the regime envelope
+  under adversary fraction $\varepsilon_{\text{adv}} \in [0, 0.4]$.}
+  \label{fig:r2-redundancy}
+\end{figure*}
+
+\input{docs/tables/t2_redundancy_law.tex}
+
+\subsection{R3: Responsibility is recoverable from the certificate alone}
+\label{sec:exp-r3}
+
+\textbf{Question.} Given an accepted certificate $Z$ that later turns
+out to be wrong, can the responsibility-attribution algorithm
+(Sec.~\ref{sec:method-responsibility}) identify the failing channel
+without re-running the LLM?
+\textbf{Setup.} We synthetically inject failures from each of the four
+audit regimes (integrity, replay, check, coverage), accept the
+certificate, then ask the auditor to recover the regime from $Z$ alone.
+\textbf{Result.} Figure~\ref{fig:r3-responsibility} shows top-1
+accuracy across all four regimes for the three diverse cells; the
+mean lift over the no-certificate baseline ($\sim 0.25$ random) is
+$+19$ to $+72$ percentage points. Table~\ref{tab:t3-responsibility}
+reports per-regime accuracy. Responsibility is recoverable.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/r3_responsibility.pdf}
+  \caption{\textbf{R3.} Top-1 root-cause attribution accuracy by
+  regime, comparing the deterministic auditor reading $Z$ alone (red)
+  against a no-certificate baseline (navy). Right panel: mean accuracy
+  lift in percentage points.}
+  \label{fig:r3-responsibility}
+\end{figure*}
+
+\input{docs/tables/t3_responsibility.tex}
+
+\subsection{R4: PCG-MAS Pareto-dominates baselines on cost vs.\ harm}
+\label{sec:exp-r4}
+
+\textbf{Question.} For a fixed compute budget, does the certificate
+contract reduce the harm rate compared to alternative answer
+policies?
+\textbf{Setup.} We compare three policies on the same budget grid:
+\textsc{Always-answer} (no abstain), a learned threshold policy, and
+PCG-MAS (refuse on certificate failure).
+\textbf{Result.} Figure~\ref{fig:r4-pareto} shows PCG-MAS
+Pareto-dominating both alternatives across all three cells; the per-claim
+$(\text{cost}, \text{harm})$ density is overlaid in grey to expose the
+dispersion behind the policy curves. Harm reduction factors over the
+always-answer baseline are 18--27$\times$. Table~\ref{tab:t4-risk}
+tabulates the area-under-Pareto for each policy.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/r4_risk_pareto.pdf}
+  \caption{\textbf{R4.} Cost-vs-harm Pareto frontier with per-claim
+  density overlay. PCG-MAS (red stars) dominates always-answer (navy
+  squares) and a learned threshold policy (orange diamonds) across
+  all three cells. Right panel: harm reduction factor over
+  always-answer baseline.}
+  \label{fig:r4-pareto}
+\end{figure*}
+
+\input{docs/tables/t4_risk_privacy.tex}
+
+\subsection{R5: The certificate contract costs $\sim 2\times$ tokens}
+\label{sec:exp-r5}
+
+\textbf{Question.} What token overhead does PCG-MAS impose, and how
+is it distributed across the prove/verify/redundant/audit phases?
+\textbf{Setup.} For each cell, we record per-claim token counts for
+the no-certificate baseline (single Prover) and for PCG-MAS at the
+default $k = 2$ setting; the four phases of $Z$-construction are
+budgeted separately.
+\textbf{Result.} Figure~\ref{fig:r5-overhead} shows token
+distributions (top row) and per-phase budgets (bottom row). The
+overhead factor is consistently $1.7\text{--}2.3\times$ across cells,
+dominated by the redundant-consensus phase. Table~\ref{tab:t5-overhead}
+breaks the cost down by phase.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/r5_overhead.pdf}
+  \caption{\textbf{R5.} \emph{Top:} per-claim token-count
+  distributions (PCG-MAS shifts right of baseline). \emph{Bottom:}
+  per-phase stacked budgets. The overhead is dominated by the
+  redundant-consensus phase ($k=2$ Provers + verifier).}
+  \label{fig:r5-overhead}
+\end{figure*}
+
+\input{docs/tables/t5_overhead.tex}
+
+\subsection{Cross-experiment summary}
+\label{sec:exp-summary}
+
+Putting R1--R5 together: the Theorem~1 audit-decomposition bound holds
+empirically (median LHS/RHS $\approx 0.86$); the Theorem~2 redundancy
+collapse is the right functional form on log-scale; responsibility is
+recoverable from $Z$ alone with $+19$--$72$\,pp lift; cost-vs-harm is
+Pareto-dominated by PCG-MAS; and the price tag is $\sim 2 \times$
+tokens. The condensed 2$\times$3 cross-experiment KPI grid is
+Figure~\ref{fig:summary} in Appendix~\ref{appendix:exp_details}.

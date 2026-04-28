@@ -1,6 +1,5 @@
 ---
 title: PCG-MAS · Live Demo
-emoji: 🔐
 colorFrom: red
 colorTo: yellow
 sdk: streamlit
@@ -8,7 +7,7 @@ sdk_version: 1.39.0
 app_file: app.py
 pinned: false
 license: mit
-short_description: Proof-Carrying Multi-Agent Systems · anonymous demo
+short_description: Proof-Carrying Multi-Agent Systems anonymous demo
 ---
 
 # PCG-MAS — Live demo
@@ -21,7 +20,8 @@ them deterministically.
 The Space runs five interactive pages:
 
 1. **Live Run** — paste a question, watch the agents stream, see the
-   certificate get built.
+   certificate get built. Choose **single-agent** (special trivial
+   case) or **multi-agent** (the framework's full form) in the sidebar.
 2. **Certificate Inspector** — paste/upload a `Z` and re-verify it.
 3. **Side-by-Side** — same question through PCG-MAS vs a no-cert
    baseline. The difference is the certificate.
@@ -32,10 +32,10 @@ The Space runs five interactive pages:
 
 ## Backend
 
-By default, runs use **HF Inference (free tier)** at no cost. To use
-frontier models (DeepSeek-V3, Llama-3.3-70B, GPT-4, Claude, etc.),
-paste your API key in the sidebar — keys are stored only in your
-browser session and are never logged or persisted.
+The Space owner has provisioned a Hugging Face token so reviewers
+need no setup. To use frontier models (DeepSeek-V3, Llama-3.3-70B,
+GPT-4, Claude, etc.), paste your API key in the sidebar — keys are
+stored only in your browser session and are never logged or persisted.
 
 ## Anonymity
 
@@ -47,5 +47,4 @@ in the source code or commit history.
 ## Source
 
 Full anonymized source is available at
-[anonymous.4open.science/r/pcg-mas-anonymous](https://anonymous.4open.science).
-The Space's own Files tab also exposes the deployment subset.
+[anonymous.4open.science/r/p-c-m-a-E866](https://anonymous.4open.science/r/p-c-m-a-E866/).

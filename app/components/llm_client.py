@@ -52,8 +52,9 @@ class ProviderInfo:
 PROVIDERS: dict[str, ProviderInfo] = {
     "hf_free": ProviderInfo(
         id="hf_free",
-        label="HF Inference (free tier)",
-        requires_key=False,
+        label="HF Inference (Space token)",
+        requires_key=False,    # Space-side HF_TOKEN provides it; user-side
+                                # input is not needed for this option
         free=True,
         default_model="meta-llama/Llama-3.2-3B-Instruct",
         available_models=(
@@ -262,11 +263,26 @@ class LLMClient:
     # ------------------------------------------------------------------
 
     def _call_hf(self, messages, temperature, max_tokens, _extra):
-        """Hugging Face Inference API (router endpoint, OpenAI-compatible)."""
+        """Hugging Face Inference API (router endpoint, OpenAI-compatible).
+
+        HF Inference requires a token (free HF accounts have a quota, but
+        the bearer token is mandatory). If we don't have one, raise a
+        clean LLMError with actionable guidance INSTEAD of letting the
+        raw 401 bubble up as HTML to the user.
+        """
+        if not self.api_key:
+            raise LLMError(
+                "No Hugging Face token available. The HF Inference router "
+                "endpoint requires a bearer token (free HF accounts work "
+                "fine, but the token itself is mandatory). To fix:\n"
+                " · As a reviewer: paste any free HF account token in the "
+                "sidebar (Provider → 'HF Inference (your token)').\n"
+                " · As the Space owner: set the HF_TOKEN secret on this "
+                "Space (Settings → Repository secrets) so the default "
+                "backend works for all reviewers."
+            )
         url = "https://router.huggingface.co/v1/chat/completions"
-        headers = {}
-        if self.api_key:
-            headers["Authorization"] = f"Bearer {self.api_key}"
+        headers = {"Authorization": f"Bearer {self.api_key}"}
         payload = {
             "model": self.model,
             "messages": messages,

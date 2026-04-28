@@ -22,11 +22,11 @@ if str(_HERE) not in sys.path:
 
 from components import inject_css, render_byok_sidebar, render_kpi
 
-st.set_page_config(page_title="Results · PCG-MAS", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Results · PCG-MAS", page_icon=":chart:", layout="wide")
 inject_css()
 render_byok_sidebar()
 
-st.title("📊 Results browser")
+st.title("Results browser")
 st.markdown(
     "Interactive versions of the paper's five experiments. Hover, zoom, "
     "and toggle backends. Underlying JSON is downloadable for re-analysis."

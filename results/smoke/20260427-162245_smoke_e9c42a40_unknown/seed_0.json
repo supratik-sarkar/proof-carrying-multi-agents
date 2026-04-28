@@ -1,0 +1,255 @@
+{
+  "decomposition": {
+    "ci_check_fail": [
+      0.5839825677481064,
+      0.919342337420202
+    ],
+    "ci_cov_gap": [
+      0.08065766257979806,
+      0.41601743225189364
+    ],
+    "ci_int_fail": [
+      0.0,
+      0.16112515805281938
+    ],
+    "ci_lhs": [
+      0.08065766257979806,
+      0.41601743225189364
+    ],
+    "ci_replay_fail": [
+      0.0,
+      0.16112515805281938
+    ],
+    "lhs_accept_and_wrong": 0.2,
+    "n": 20,
+    "p_check_fail": 0.8,
+    "p_cov_gap": 0.2,
+    "p_int_fail": 0.0,
+    "p_replay_fail": 0.0,
+    "rhs_union": 1.0
+  },
+  "n": 20,
+  "per_example": [
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.21052631578947367,
+      "id": "syn_compare_003",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Rafael Nadal: Rafael Nadal has won 22 Grand Slam singles titles, including 14 French Open titles.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_tool_001",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "I don't know.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.1111111111111111,
+      "id": "syn_bridge_002",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Eiffel Tower: The Eiffel Tower is a wrought-iron lattice tower located on the Champ de Mars in Paris, France.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_compare_001",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Great Pyramid of Giza: The Great Pyramid of Giza was built around 2560 BCE during the reign of Pharaoh Khufu.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_bridge_004",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[2] Vimeo: Vimeo is a video hosting service launched in 2004, headquartered in New York City.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_bridge_005",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[2] Inception: Inception is a 2010 science fiction film written and directed by Christopher Nolan.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": true,
+      "execution_ok": true,
+      "f1_to_gold": 0.2222222222222222,
+      "id": "syn_bridge_003",
+      "integrity_ok": true,
+      "passed": true,
+      "raw_answer": "Dick that inspired the film Blade Runner.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": true,
+      "execution_ok": true,
+      "f1_to_gold": 0.14285714285714285,
+      "id": "syn_bridge_001",
+      "integrity_ok": true,
+      "passed": true,
+      "raw_answer": "is a multinational technology company that designs and manufactures the iPhone.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_tool_002",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "I don't know.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_compare_002",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Pacific Ocean: The Pacific Ocean covers approximately 165 million square kilometers, the largest ocean.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_compare_002",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Pacific Ocean: The Pacific Ocean covers approximately 165 million square kilometers, the largest ocean.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_bridge_004",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[2] Vimeo: Vimeo is a video hosting service launched in 2004, headquartered in New York City.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_tool_002",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "I don't know.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": true,
+      "execution_ok": true,
+      "f1_to_gold": 0.2222222222222222,
+      "id": "syn_bridge_003",
+      "integrity_ok": true,
+      "passed": true,
+      "raw_answer": "Dick that inspired the film Blade Runner.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.21052631578947367,
+      "id": "syn_compare_003",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Rafael Nadal: Rafael Nadal has won 22 Grand Slam singles titles, including 14 French Open titles.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_tool_001",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "I don't know.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": true,
+      "execution_ok": true,
+      "f1_to_gold": 0.14285714285714285,
+      "id": "syn_bridge_001",
+      "integrity_ok": true,
+      "passed": true,
+      "raw_answer": "is a multinational technology company that designs and manufactures the iPhone.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.1111111111111111,
+      "id": "syn_bridge_002",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Eiffel Tower: The Eiffel Tower is a wrought-iron lattice tower located on the Champ de Mars in Paris, France.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_compare_001",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[1] Great Pyramid of Giza: The Great Pyramid of Giza was built around 2560 BCE during the reign of Pharaoh Khufu.",
+      "replay_ok": true
+    },
+    {
+      "attack": "none",
+      "entailment_ok": false,
+      "execution_ok": true,
+      "f1_to_gold": 0.0,
+      "id": "syn_bridge_005",
+      "integrity_ok": true,
+      "passed": false,
+      "raw_answer": "[2] Inception: Inception is a 2010 science fiction film written and directed by Christopher Nolan.",
+      "replay_ok": true
+    }
+  ],
+  "seed": 0
+}

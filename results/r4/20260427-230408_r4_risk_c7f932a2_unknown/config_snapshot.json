@@ -1,0 +1,88 @@
+{
+  "backend": {
+    "dtype": "float16",
+    "kind": "hf_local",
+    "model_name": "Qwen/Qwen2.5-7B-Instruct"
+  },
+  "calibration": {
+    "holdout_fraction": 0.5,
+    "method": "isotonic",
+    "n_bins": 10
+  },
+  "checker": {
+    "entailment": "exact_match"
+  },
+  "cost_model": {
+    "c_lat": {
+      "answer": 1.0,
+      "escalate": 50.0,
+      "refuse": 0.0,
+      "verify": 5.0
+    },
+    "c_tok": {
+      "answer": 0.5,
+      "escalate": 10.0,
+      "refuse": 0.0,
+      "verify": 2.0
+    },
+    "c_tool": {
+      "answer": 0.0,
+      "escalate": 5.0,
+      "refuse": 0.0,
+      "verify": 1.0
+    },
+    "eta": {
+      "answer": 1.0,
+      "escalate": 0.1,
+      "refuse": 0.0,
+      "verify": 0.5
+    },
+    "h_fa": 10.0,
+    "h_ref": 0.5,
+    "lambda_risk": 10.0
+  },
+  "dataset": {
+    "n_examples": 20,
+    "name": "hotpotqa",
+    "split": "validation"
+  },
+  "output_dir": "results/r4",
+  "policies": [
+    {
+      "kind": "constant_answer",
+      "name": "always_answer"
+    },
+    {
+      "kind": "threshold_policy",
+      "name": "threshold_pcg"
+    },
+    {
+      "kind": "logistic_contextual",
+      "name": "learned"
+    }
+  ],
+  "privacy": {
+    "delta": 1e-05,
+    "eps_values": [
+      "inf",
+      8.0,
+      3.0,
+      1.0
+    ],
+    "sensitivities": {
+      "disagreement": 1.0,
+      "redundancy": 1.0,
+      "verifier_margin": 0.5
+    }
+  },
+  "prover": {
+    "max_answer_tokens": 64,
+    "retriever": "bm25",
+    "temperature": 0.0,
+    "top_k": 4
+  },
+  "stats": {
+    "alpha": 0.05,
+    "bootstrap_n": 2000
+  }
+}

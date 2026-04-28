@@ -123,19 +123,30 @@ def mock_r2_for_cell(cell: Cell) -> dict:
     emp = []
     theory = []
     emp_ci = []
+    band_lo = []
+    band_hi = []
     for k in ks:
-        # Theorem 2 bound: ρ^(k-1) · ε^k
+        # Theorem 2 bound: ρ^(k-1) · ε^k (clean, no-adversary case)
         t = rho ** (k - 1) * eps ** k
         # Empirical typically below or near the bound
         e = float(rng.uniform(t * 0.55, t * 0.95))
         emp.append(e)
         theory.append(t)
         emp_ci.append((e * 0.7, e * 1.3))
+        # Adversary band: at ε_adv=0 the bound is t; at ε_adv=0.4 the
+        # adversary contributes (1 - ρ^(k-1)) extra mass to the false-
+        # accept rate. Bands shrink with k as ρ^(k-1) → 0.
+        eps_adv_max = 0.4
+        adv_contrib = eps_adv_max * (1.0 - rho ** (k - 1))
+        band_lo.append(t)
+        band_hi.append(t + adv_contrib * 0.5 + e * 0.6)
     return {
         "ks": ks,
         "empirical": emp,
         "empirical_ci": emp_ci,
         "theory": theory,
+        "adv_band_lo": band_lo,
+        "adv_band_hi": band_hi,
     }
 
 

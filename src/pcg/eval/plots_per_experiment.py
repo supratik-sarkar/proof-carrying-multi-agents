@@ -79,50 +79,106 @@ def _r1_panel_cell(ax, cell: Cell, cd: dict | None, theme: PlotTheme) -> None:
         return
 
     channels_order = ["p_int_fail", "p_replay_fail", "p_check_fail", "p_cov_gap"]
+    channel_labels = ["IntFail", "ReplayFail", "CheckFail", "CovGap"]
     channel_colors = [
         theme.palette["ch_int"], theme.palette["ch_replay"],
         theme.palette["ch_check"], theme.palette["ch_cov"],
     ]
     means = [cd["channels"][c]["mean"] for c in channels_order]
-    cis = [cd["channels"][c]["ci"] for c in channels_order]
     cumulative_rhs = sum(means)
     lhs = cd["lhs"]
     lhs_ci = cd["lhs_ci"]
 
-    # Stacked horizontal bar showing the channel decomposition (top)
-    # and the LHS empirical bar below it. Visual: LHS sits below RHS;
-    # if LHS > RHS the bound is violated.
-    bottom = 0.0
-    for k, (m, color) in enumerate(zip(means, channel_colors)):
+    # Layout: y=0 is RHS (top), y=1 is LHS (bottom). Two horizontal bars.
+    bar_height = 0.55
+
+    # ----- RHS: stacked color-coded channels -----
+    bottom_x = 0.0
+    for k, (m, color, lab) in enumerate(zip(means, channel_colors, channel_labels)):
         ax.barh(
-            "RHS\n(Σ channels)", m, left=bottom,
-            color=color, edgecolor="white", linewidth=0.6,
-            label=channels_order[k] if cell.llm == "<for-legend>" else None,
+            0, m, height=bar_height, left=bottom_x,
+            color=color, edgecolor="white", linewidth=0.8,
+            label=lab,
         )
-        bottom += m
-    ax.barh(
-        "LHS\n(empirical)", lhs,
-        color=theme.palette["ours"],
-        edgecolor="white", linewidth=0.6,
-        xerr=[[lhs - lhs_ci[0]], [lhs_ci[1] - lhs]],
-        error_kw={"capsize": 2, "elinewidth": 0.7},
+        # Add the channel value as a label inside the segment ONLY when
+        # the segment is wide enough that the larger font won't overlap
+        # neighbours. With 18pt annotation size, 25% threshold is the
+        # safe minimum.
+        if m > cumulative_rhs * 0.25:
+            ax.text(
+                bottom_x + m / 2, 0,
+                f"{m:.3f}",
+                ha="center", va="center",
+                fontsize=theme.annotation_size - 4,
+                color="white", fontweight="bold",
+            )
+        bottom_x += m
+
+    # Black tick at the tip of the RHS bar with the total
+    ax.plot([cumulative_rhs, cumulative_rhs],
+            [-bar_height / 2, bar_height / 2],
+            color=theme.palette["ink"], lw=1.4, zorder=5)
+    ax.text(
+        cumulative_rhs * 1.02, 0,
+        f"Σ = {cumulative_rhs:.3f}",
+        ha="left", va="center",
+        fontsize=theme.annotation_size - 1,
+        color=theme.palette["ink"], fontweight="bold",
     )
 
-    # Annotate slack
+    # ----- LHS: empirical Pr(accept ∩ wrong) with Wilson CI whiskers -----
+    half_lo = lhs - lhs_ci[0]
+    half_hi = lhs_ci[1] - lhs
+    ax.barh(
+        1, lhs, height=bar_height,
+        color=theme.palette["ours"],
+        edgecolor="white", linewidth=0.8,
+    )
+    # CI whiskers as a black bracket
+    ax.errorbar(
+        lhs, 1,
+        xerr=[[half_lo], [half_hi]],
+        fmt="none", ecolor=theme.palette["ink"],
+        elinewidth=1.2, capsize=4, zorder=5,
+    )
+    # Black tick at the tip of the LHS bar
+    ax.plot([lhs, lhs], [1 - bar_height / 2, 1 + bar_height / 2],
+            color=theme.palette["ink"], lw=1.4, zorder=5)
+    ax.text(
+        lhs * 1.02 + cumulative_rhs * 0.01, 1,
+        f"{lhs:.3f}",
+        ha="left", va="center",
+        fontsize=theme.annotation_size - 1,
+        color=theme.palette["ink"], fontweight="bold",
+    )
+
+    # Slack annotation in italics, between the bars
     slack = max(0.0, cumulative_rhs - lhs)
     ax.text(
-        max(cumulative_rhs, lhs) * 1.04, 0.5,
-        f"slack {slack:.3f}",
+        max(cumulative_rhs, lhs) * 1.18, 0.5,
+        f"slack {slack:+.3f}",
         ha="left", va="center",
         fontsize=theme.annotation_size - 1,
         color=theme.palette["ink_light"], style="italic",
     )
 
-    ax.set_xlim(0, max(cumulative_rhs, lhs) * 1.32)
-    ax.set_xlabel("Probability", fontsize=theme.label_size)
+    ax.set_yticks([0, 1])
+    ax.set_yticklabels(
+        ["RHS\n(Σ channels)", "Accept ∩ wrong\n(LHS empirical)"],
+        fontsize=theme.annotation_size,
+    )
+    ax.invert_yaxis()  # so LHS sits visually above RHS
+    ax.set_xlim(0, max(cumulative_rhs, lhs) * 1.55)
+    ax.set_xlabel("Probability (95% Wilson CI)",
+                  fontsize=theme.label_size)
     ax.set_title(_cell_title(cell),
                  fontsize=theme.label_size,
                  loc="left", fontweight="bold")
+    # Per-cell legend with the four channels (small, lower-right, no frame)
+    ax.legend(
+        loc="lower right", frameon=False,
+        fontsize=theme.annotation_size - 2, ncol=2,
+    )
 
 
 def _r1_panel_summary(ax, cells: list[Cell], cell_data: list[dict | None],
@@ -147,21 +203,24 @@ def _r1_panel_summary(ax, cells: list[Cell], cell_data: list[dict | None],
     ax.bar(
         x - width / 2, lhs_vals, width,
         color=theme.palette["ours"], edgecolor="white", linewidth=0.6,
-        label=f"LHS · {_ours_label()}",
+        label=f"Accept ∩ wrong (LHS) · {_ours_label()}",
     )
     ax.bar(
         x + width / 2, rhs_vals, width,
         color=theme.palette["base_strong"], edgecolor="white", linewidth=0.6,
-        label="RHS · Thm 1 bound",
+        label="Σ channels (RHS) · Thm 1 bound",
     )
     ax.set_xticks(x)
     ax.set_xticklabels(
         [f"{c.llm}\n{c.dataset}" for c, _ in valid],
-        rotation=0, ha="center", fontsize=theme.annotation_size - 1,
+        rotation=35, ha="right", fontsize=theme.annotation_size - 2,
     )
     ax.set_ylabel("Probability", fontsize=theme.label_size)
-    ax.legend(loc="upper right", frameon=False,
-              fontsize=theme.annotation_size)
+    # Place legend ABOVE the plot, outside the axes, so it doesn't
+    # collide with the tallest bar.
+    ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.18),
+              frameon=False, fontsize=theme.annotation_size - 2,
+              ncol=1)
     _panel_heading(
         ax, theme,
         title="Theorem 1 holds across cells",
@@ -177,10 +236,10 @@ def plot_r1_audit(
     is_mock: bool = False,
 ) -> plt.Figure:
     setup_matplotlib_for_theme(theme)
-    fig = plt.figure(figsize=(15, 5.5), dpi=theme.dpi,
+    fig = plt.figure(figsize=(20, 8.5), dpi=theme.dpi,
                      facecolor=theme.palette["bg_panel"])
-    gs = GridSpec(1, 4, figure=fig, wspace=0.55,
-                  left=0.06, right=0.98, top=0.84, bottom=0.18)
+    gs = GridSpec(1, 4, figure=fig, wspace=0.85,
+                  left=0.08, right=0.98, top=0.74, bottom=0.22)
     for i, (cell, cd) in enumerate(zip(cells, cell_data)):
         ax = fig.add_subplot(gs[0, i])
         _r1_panel_cell(ax, cell, cd, theme)
@@ -188,8 +247,9 @@ def plot_r1_audit(
     _r1_panel_summary(ax_sum, cells, cell_data, theme)
 
     fig.suptitle(
-        "R1 · Audit decomposition (Theorem 1) over diverse (LLM, dataset) cells",
-        fontsize=theme.title_size + 1, fontweight="bold", y=0.97,
+        "Audit decomposition of accepted failures (Theorem 1)\n"
+        "across diverse (LLM agent, dataset) cells",
+        fontsize=theme.title_size + 2, fontweight="bold", y=0.95,
     )
     _add_provenance_footer(fig, theme, source_runs=source_runs, is_mock=is_mock)
     return fig
@@ -217,24 +277,63 @@ def _r2_panel_cell(ax, cell: Cell, cd: dict | None, theme: PlotTheme) -> None:
     emp = cd["empirical"]
     emp_ci = cd.get("empirical_ci") or [(v, v) for v in emp]
     theory = cd.get("theory") or [None] * len(ks)
+    band_lo = cd.get("adv_band_lo") or [None] * len(ks)
+    band_hi = cd.get("adv_band_hi") or [None] * len(ks)
 
+    # Adversary-fraction band (ε_adv sweep). Shows the regime envelope:
+    # lower = no adversary, upper = ε_adv = 0.4. Empirical sits inside.
+    if all(b is not None for b in band_lo) and all(b is not None for b in band_hi):
+        ax.fill_between(
+            ks, band_lo, band_hi,
+            color=theme.palette["bg_emphasis"], alpha=0.95,
+            label="ε_adv ∈ [0, 0.4]",
+            zorder=1,
+        )
+
+    # 95% CI on empirical
     lo = [c[0] for c in emp_ci]
     hi = [c[1] for c in emp_ci]
     ax.fill_between(ks, lo, hi,
                     color=theme.palette["ours_light"], alpha=0.6,
-                    label="95% CI")
+                    label="95% CI",
+                    zorder=2)
+
+    # Empirical curve
     ax.plot(ks, emp, "o-", color=theme.palette["ours"],
             lw=2.2, markersize=6,
-            label=_ours_label())
+            label=_ours_label(),
+            zorder=4)
+    # Theorem 2 bound
     if any(t is not None for t in theory):
         ax.plot(ks, theory, "s--",
                 color=theme.palette["base_strong"], lw=1.4, markersize=4,
-                alpha=0.85, label="Thm 2 bound")
-    # Reference: no-cert horizontal line if k=1 empirical ~= no-cert
+                alpha=0.85, label="Thm 2 bound",
+                zorder=3)
+    # No-cert reference
     if emp:
         ax.axhline(emp[0], color=theme.palette["neutral"],
                    ls=":", lw=1.0, alpha=0.7,
-                   label="No certificate (k=1)")
+                   label="No certificate (k=1)",
+                   zorder=1)
+
+    # Annotate where the empirical curve detaches from the bound by >10%.
+    # This is the "constant-ρ assumption breaks" marker.
+    if any(t is not None for t in theory):
+        for i, (k, e, t) in enumerate(zip(ks, emp, theory)):
+            if t is None or t <= 0:
+                continue
+            ratio = e / t
+            if ratio > 0.5:   # empirical is within 2× of bound -> tight
+                ax.annotate(
+                    "tight",
+                    xy=(k, e), xytext=(k, e * 0.30),
+                    fontsize=theme.annotation_size - 2,
+                    color=theme.palette["ink_light"], style="italic",
+                    ha="center",
+                    arrowprops=dict(arrowstyle="-",
+                                    color=theme.palette["neutral"], lw=0.5),
+                )
+                break  # annotate only the first tight k to avoid clutter
 
     ax.set_yscale("log")
     ax.set_xticks(ks)
@@ -244,7 +343,8 @@ def _r2_panel_cell(ax, cell: Cell, cd: dict | None, theme: PlotTheme) -> None:
                  fontsize=theme.label_size,
                  loc="left", fontweight="bold")
     ax.legend(loc="lower left", frameon=False,
-              fontsize=theme.annotation_size - 1)
+              fontsize=theme.annotation_size - 2,
+              ncol=1)
 
 
 def _r2_panel_summary(ax, cells, cell_data, theme):
@@ -276,10 +376,10 @@ def plot_r2_redundancy(
     theme=BOLD_THEME, source_runs=None, is_mock=False,
 ) -> plt.Figure:
     setup_matplotlib_for_theme(theme)
-    fig = plt.figure(figsize=(15, 5.5), dpi=theme.dpi,
+    fig = plt.figure(figsize=(20, 7.8), dpi=theme.dpi,
                      facecolor=theme.palette["bg_panel"])
-    gs = GridSpec(1, 4, figure=fig, wspace=0.45,
-                  left=0.06, right=0.98, top=0.84, bottom=0.15)
+    gs = GridSpec(1, 4, figure=fig, wspace=0.55,
+                  left=0.06, right=0.98, top=0.80, bottom=0.18)
     for i, (cell, cd) in enumerate(zip(cells, cell_data)):
         ax = fig.add_subplot(gs[0, i])
         _r2_panel_cell(ax, cell, cd, theme)
@@ -288,7 +388,7 @@ def plot_r2_redundancy(
 
     fig.suptitle(
         "R2 · Redundant-consensus law (Theorem 2) over diverse cells",
-        fontsize=theme.title_size + 1, fontweight="bold", y=0.97,
+        fontsize=theme.title_size + 2, fontweight="bold", y=0.95,
     )
     _add_provenance_footer(fig, theme, source_runs=source_runs, is_mock=is_mock)
     return fig
@@ -345,12 +445,12 @@ def _r3_panel_cell(ax, cell, cd, theme):
     ax.set_xticks(x)
     ax.set_xticklabels(regimes, rotation=20, ha="right",
                        fontsize=theme.annotation_size - 1)
-    ax.set_ylim(0, 1.05)
+    ax.set_ylim(0, 1.15)   # extra headroom for the legend
     ax.set_ylabel("Top-1 root-cause acc.", fontsize=theme.label_size)
     ax.set_title(_cell_title(cell),
                  fontsize=theme.label_size,
                  loc="left", fontweight="bold")
-    ax.legend(loc="lower left", frameon=False,
+    ax.legend(loc="upper right", frameon=False,
               fontsize=theme.annotation_size - 1)
 
 
@@ -382,7 +482,7 @@ def _r3_panel_summary(ax, cells, cell_data, theme):
             color=theme.palette["ours_dark"], fontweight="bold",
         )
     ax.set_xticks(x)
-    ax.set_xticklabels(labels, fontsize=theme.annotation_size - 1)
+    ax.set_xticklabels(labels, rotation=35, ha="right", fontsize=theme.annotation_size - 2)
     ax.set_ylim(0, 1.15)
     ax.set_ylabel("Mean accuracy", fontsize=theme.label_size)
     ax.legend(loc="lower right", frameon=False,
@@ -399,10 +499,10 @@ def plot_r3_responsibility(
     theme=BOLD_THEME, source_runs=None, is_mock=False,
 ) -> plt.Figure:
     setup_matplotlib_for_theme(theme)
-    fig = plt.figure(figsize=(15, 5.5), dpi=theme.dpi,
+    fig = plt.figure(figsize=(20, 7.8), dpi=theme.dpi,
                      facecolor=theme.palette["bg_panel"])
-    gs = GridSpec(1, 4, figure=fig, wspace=0.45,
-                  left=0.06, right=0.98, top=0.84, bottom=0.20)
+    gs = GridSpec(1, 4, figure=fig, wspace=0.55,
+                  left=0.06, right=0.98, top=0.80, bottom=0.22)
     for i, (cell, cd) in enumerate(zip(cells, cell_data)):
         ax = fig.add_subplot(gs[0, i])
         _r3_panel_cell(ax, cell, cd, theme)
@@ -411,7 +511,7 @@ def plot_r3_responsibility(
 
     fig.suptitle(
         "R3 · Responsibility (top-1 root-cause attribution) over diverse cells",
-        fontsize=theme.title_size + 1, fontweight="bold", y=0.97,
+        fontsize=theme.title_size + 2, fontweight="bold", y=0.95,
     )
     _add_provenance_footer(fig, theme, source_runs=source_runs, is_mock=is_mock)
     return fig
@@ -533,7 +633,7 @@ def _r4_panel_summary(ax, cells, cell_data, theme):
             color=theme.palette["ours_dark"],
         )
     ax.set_xticks(x)
-    ax.set_xticklabels(labels, fontsize=theme.annotation_size - 1)
+    ax.set_xticklabels(labels, rotation=35, ha="right", fontsize=theme.annotation_size - 2)
     ax.set_ylabel("Harm reduction factor", fontsize=theme.label_size)
     ax.set_ylim(0, max(factors) * 1.25 if factors else 1)
     _panel_heading(
@@ -548,10 +648,10 @@ def plot_r4_risk_pareto(
     theme=BOLD_THEME, source_runs=None, is_mock=False,
 ) -> plt.Figure:
     setup_matplotlib_for_theme(theme)
-    fig = plt.figure(figsize=(15, 5.5), dpi=theme.dpi,
+    fig = plt.figure(figsize=(20, 7.8), dpi=theme.dpi,
                      facecolor=theme.palette["bg_panel"])
-    gs = GridSpec(1, 4, figure=fig, wspace=0.50,
-                  left=0.06, right=0.98, top=0.84, bottom=0.18)
+    gs = GridSpec(1, 4, figure=fig, wspace=0.60,
+                  left=0.06, right=0.98, top=0.80, bottom=0.20)
     for i, (cell, cd) in enumerate(zip(cells, cell_data)):
         ax = fig.add_subplot(gs[0, i])
         _r4_panel_cell(ax, cell, cd, theme)
@@ -560,7 +660,7 @@ def plot_r4_risk_pareto(
 
     fig.suptitle(
         "R4 · Cost-vs-harm Pareto with per-claim density overlay",
-        fontsize=theme.title_size + 1, fontweight="bold", y=0.97,
+        fontsize=theme.title_size + 2, fontweight="bold", y=0.95,
     )
     _add_provenance_footer(fig, theme, source_runs=source_runs, is_mock=is_mock)
     return fig
@@ -607,7 +707,13 @@ def _r5_panel_cell(ax_top, ax_bot, cell, cd, theme):
                             label=_ours_label())
             ax_top.set_xlim(0, xmax)
             ax_top.set_yticks([])
-            ax_top.set_ylabel("density", fontsize=theme.annotation_size - 1)
+            # Make the axis labels self-explanatory so reviewers don't
+            # have to chase the caption: x = tokens / claim, y = density
+            # (count of claims falling in that token-count bin).
+            ax_top.set_xlabel("Tokens / claim",
+                              fontsize=theme.annotation_size)
+            ax_top.set_ylabel("Density of claims",
+                              fontsize=theme.annotation_size - 1)
             ax_top.legend(loc="upper right", frameon=False,
                           fontsize=theme.annotation_size - 1)
     ax_top.set_title(_cell_title(cell), fontsize=theme.label_size,
@@ -647,20 +753,21 @@ def _r5_panel_cell(ax_top, ax_bot, cell, cd, theme):
                         label=ph)
             left_o += v
 
-    # Overhead factor annotation
+    # Overhead factor annotation (placed inside the bar to avoid bleeding
+    # into the neighbouring panel after the larger-font upgrade).
     factor = (left_o / max(left_b, 1.0))
     ax_bot.text(
-        max(left_o, left_b) * 1.02, 1,   # right of "ours" bar
+        left_o * 0.5, 1,   # centered on the "ours" bar
         f"{factor:.1f}× tokens",
-        ha="left", va="center",
-        fontsize=theme.annotation_size,
-        color=theme.palette["ours_dark"], fontweight="bold",
+        ha="center", va="center",
+        fontsize=theme.annotation_size - 2,
+        color="white", fontweight="bold",
     )
 
-    ax_bot.set_xlim(0, max(left_o, left_b) * 1.30)
+    ax_bot.set_xlim(0, max(left_o, left_b) * 1.10)
     ax_bot.set_xlabel("Tokens / claim", fontsize=theme.label_size)
     ax_bot.legend(loc="upper right", frameon=False,
-                  fontsize=theme.annotation_size - 1, ncol=2)
+                  fontsize=theme.annotation_size - 2, ncol=2)
 
 
 def _r5_panel_summary(ax, cells, cell_data, theme):
@@ -686,7 +793,7 @@ def _r5_panel_summary(ax, cells, cell_data, theme):
                 fontsize=theme.label_size, fontweight="bold",
                 color=theme.palette["ours_dark"])
     ax.set_xticks(x)
-    ax.set_xticklabels(labels, fontsize=theme.annotation_size - 1)
+    ax.set_xticklabels(labels, rotation=35, ha="right", fontsize=theme.annotation_size - 2)
     ax.set_ylabel("Token overhead factor",
                   fontsize=theme.label_size)
     ax.set_ylim(0, max(factors) * 1.25 if factors else 1)
@@ -704,15 +811,15 @@ def plot_r5_overhead(
     theme=BOLD_THEME, source_runs=None, is_mock=False,
 ) -> plt.Figure:
     setup_matplotlib_for_theme(theme)
-    fig = plt.figure(figsize=(15, 6.5), dpi=theme.dpi,
+    fig = plt.figure(figsize=(20, 10.5), dpi=theme.dpi,
                      facecolor=theme.palette["bg_panel"])
     # 2 rows × 4 cols: top row = distributions, bottom row = phase stacks
     # Last column spans both rows (cross-cell summary)
     gs = GridSpec(
         2, 4, figure=fig,
         height_ratios=[1, 2.2],
-        hspace=0.30, wspace=0.50,
-        left=0.06, right=0.98, top=0.86, bottom=0.13,
+        hspace=0.55, wspace=0.55,
+        left=0.06, right=0.98, top=0.86, bottom=0.12,
     )
     for i, (cell, cd) in enumerate(zip(cells, cell_data)):
         ax_top = fig.add_subplot(gs[0, i])
@@ -723,7 +830,7 @@ def plot_r5_overhead(
 
     fig.suptitle(
         "R5 · Token overhead with per-claim distribution sub-panels",
-        fontsize=theme.title_size + 1, fontweight="bold", y=0.97,
+        fontsize=theme.title_size + 2, fontweight="bold", y=0.95,
     )
     _add_provenance_footer(fig, theme, source_runs=source_runs, is_mock=is_mock)
     return fig
