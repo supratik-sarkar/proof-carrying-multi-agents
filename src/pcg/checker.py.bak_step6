@@ -1,0 +1,461 @@
+"""
+Checker — the deterministic external verifier.
+
+Implements Definitions 2.9, 2.10 and the unified Check predicate in Eq. (6).
+The Checker is a *pure function* of (certificate, graph): it holds no state
+that isn't derived from its inputs, and it makes no external calls (tools are
+replayed from committed outputs, see Appendix A.2 "Replay mode").
+
+Check(Z; G_t) = Check_clm(Z^clm; G_t) AND Check_exe(Z^exe)
+where
+    Check_clm verifies:
+        (1) hash commitment for every v in S: H(x(v)) == h(v)
+        (2) pipeline replay: y' = Pi({x(v)}; meta), H(y') == y_digest
+        (3) entailment: Check_vdash(y, c; R) == 1
+    Check_exe verifies:
+        (1) every logged tool call name is in Gamma.tool_allowlist
+        (2) memory accesses respect Gamma.memory_access
+        (3) delegations are in Gamma.allowed_delegations
+        (4) required schemas/policies are attached to the run
+        (5) resource budgets are respected
+
+The entailment check is pluggable: the framework separates soundness (rule
+system R, Assumption 3.2) from the concrete checker implementation. By
+default we provide two implementations:
+
+    - `ExactMatchEntailment`: for QA tasks where the answer string must appear
+      verbatim in the replay output (strict soundness, easy to audit).
+    - `NLIEntailment`: wraps an HF NLI model as a FILTER on top of an
+      exact-match prefix (soundness is grounded in the exact-match part; NLI
+      only adds completeness). This addresses the theory concern that
+      ML-based entailment breaks Assumption 3.2 if used alone.
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any, Callable, Protocol
+
+from pcg.certificate import (
+    ClaimCertificate,
+    ExecutionCertificate,
+    GroundingCertificate,
+    ReplayableStep,
+)
+from pcg.commitments import H, verify
+from pcg.graph import (
+    AgenticRuntimeGraph,
+    DelegationEdge,
+    MaskedGraph,
+    MemoryNode,
+    NodeType,
+    PolicyNode,
+    SchemaNode,
+    ToolCallNode,
+    TruthNode,
+)
+
+GraphLike = AgenticRuntimeGraph | MaskedGraph
+
+
+# -----------------------------------------------------------------------------
+# Entailment interface
+# -----------------------------------------------------------------------------
+
+
+class EntailmentChecker(Protocol):
+    """Check_vdash(y, c; R) - the deterministic entailment checker.
+
+    Must be deterministic given (y, c). May depend on a frozen rule system R
+    that is provided at construction time.
+    """
+
+    def check(self, y: Any, claim_text: str) -> bool: ...
+
+
+@dataclass
+class ExactMatchEntailment:
+    """Check_vdash by verbatim span match.
+
+    Sound by construction: if the claim string is a substring of the replay
+    output after canonicalization, then the replay output entails the claim
+    under the "verbatim substring" rule system R. This is what we use for
+    the paper's main results on HotpotQA / 2Wiki where answers are short.
+    """
+
+    case_insensitive: bool = True
+
+    def check(self, y: Any, claim_text: str) -> bool:
+        y_str = y if isinstance(y, str) else str(y)
+        if self.case_insensitive:
+            return claim_text.lower().strip() in y_str.lower()
+        return claim_text.strip() in y_str
+
+
+@dataclass
+class NLIEntailment:
+    """Sound-with-filter: run an NLI model as a filter, but only accept when
+    an underlying `base` check also accepts.
+
+    This keeps Assumption 3.2 (sound entailment) pinned to the `base` check
+    (typically ExactMatchEntailment). NLI can only REDUCE completeness by
+    rejecting base-accepted pairs; it can never produce a false accept that
+    the base check would have rejected. Formally:
+
+        NLIEntailment.check(y, c) = base.check(y, c) AND nli_fn(y, c)
+
+    so acceptance implies base.check == 1.
+    """
+
+    base: EntailmentChecker
+    nli_fn: Callable[[str, str], bool]
+
+    def check(self, y: Any, claim_text: str) -> bool:
+        if not self.base.check(y, claim_text):
+            return False
+        y_str = y if isinstance(y, str) else str(y)
+        return self.nli_fn(y_str, claim_text)
+
+
+# -----------------------------------------------------------------------------
+# Pipeline replay
+# -----------------------------------------------------------------------------
+
+
+class Replayer(Protocol):
+    """Given a pipeline step and the graph, produce the step's output.
+
+    Implementations must be deterministic: the same `step` and the same
+    committed inputs must produce bit-identical output across runs.
+    """
+
+    def run(self, step: ReplayableStep, graph: GraphLike) -> bytes: ...
+
+
+@dataclass
+class CompositeReplayer:
+    """Dispatches replay to per-op implementations.
+
+    The user registers a function `fn(step, graph) -> bytes` for each op name.
+    The replayer concatenates outputs across steps to form the final y; this
+    matches the convention that the last step's output is the one entailment
+    is checked against, but makes all intermediate digests available.
+    """
+
+    handlers: dict[str, Callable[[ReplayableStep, GraphLike], bytes]] = field(default_factory=dict)
+
+    def register(self, op: str, fn: Callable[[ReplayableStep, GraphLike], bytes]) -> None:
+        self.handlers[op] = fn
+
+    def run(self, step: ReplayableStep, graph: GraphLike) -> bytes:
+        if step.op not in self.handlers:
+            raise KeyError(
+                f"No replay handler for op '{step.op}'. "
+                f"Registered: {sorted(self.handlers)}"
+            )
+        return self.handlers[step.op](step, graph)
+
+
+# -----------------------------------------------------------------------------
+# CheckResult
+# -----------------------------------------------------------------------------
+
+
+@dataclass
+class CheckResult:
+    """Structured result from Checker.check(...).
+
+    Importantly, `passed` is a single bit (Eq. 6), but we also record
+    which channel failed (integrity, replay, entailment, execution) so that
+    downstream evaluation can estimate the audit-decomposition terms of
+    Theorem 1 (Eq. 7).
+    """
+
+    passed: bool
+    # Backward-compatible channel names
+    integrity_ok: bool = True
+    replay_ok: bool = True
+    entailment_ok: bool = True
+    execution_ok: bool = True
+    # v4 explicit verifier channels
+    v_h: bool = True       # evidence commitment integrity (V_H)
+    v_pi: bool = True      # replay validity (V_Pi)
+    v_gamma: bool = True   # execution-contract compliance (V_Gamma)
+    v_entail: bool = True  # entailment validity (V_entail)
+    # Detailed reasons; empty if passed.
+    reasons: list[str] = field(default_factory=list)
+    # Derived data useful for downstream analysis.
+    replay_output: bytes | None = None
+    replay_output_digest: str | None = None
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "passed": self.passed,
+            "integrity_ok": self.integrity_ok,
+            "replay_ok": self.replay_ok,
+            "entailment_ok": self.entailment_ok,
+            "execution_ok": self.execution_ok,
+            "v_h": self.v_h,
+            "v_pi": self.v_pi,
+            "v_gamma": self.v_gamma,
+            "v_entail": self.v_entail,
+            "reasons": list(self.reasons),
+            "replay_output_digest": self.replay_output_digest,
+        }
+
+
+# -----------------------------------------------------------------------------
+# Checker
+# -----------------------------------------------------------------------------
+
+
+@dataclass
+class Checker:
+    """External, deterministic verifier for unified grounding certificates.
+
+    A Checker is stateless: you can call `check(...)` from multiple threads
+    on the same instance, provided the `entailment` and `replayer` components
+    are themselves thread-safe.
+    """
+
+    entailment: EntailmentChecker
+    replayer: Replayer
+
+    # ---- public API ----
+    def check(self, cert: GroundingCertificate, graph: GraphLike) -> CheckResult:
+        """Returns a CheckResult implementing Eq. (6)."""
+        r = CheckResult(passed=False)
+
+        # Channel V_H: evidence commitment integrity
+        v_h = self._check_v_h(cert.claim_cert, graph, r)
+
+        # Channel V_Pi: replay validity (produce replay_output + digest check)
+        v_pi, replay_output = self._check_v_pi(cert.claim_cert, graph, r)
+
+        # Channel V_entail: entailment validity (uses replay_output)
+        v_entail = self._check_v_entail(cert.claim_cert, graph, replay_output, r)
+
+        # Channel V_Gamma: execution contract compliance
+        v_gamma = self._check_v_gamma(cert.exec_cert, graph, r)
+
+        # Populate result fields (backwards-compatible names)
+        r.v_h = v_h
+        r.v_pi = v_pi
+        r.v_entail = v_entail
+        r.v_gamma = v_gamma
+
+        r.integrity_ok = v_h
+        r.replay_ok = v_pi
+        r.entailment_ok = v_entail
+        r.execution_ok = v_gamma
+
+        r.passed = v_h and v_pi and v_entail and v_gamma
+        return r
+
+    # ---- internals ----
+    def _check_claim_side(
+        self,
+        cc: ClaimCertificate,
+        graph: GraphLike,
+        r: CheckResult,
+    ) -> tuple[bool, bytes | None]:
+        raise RuntimeError("_check_claim_side is deprecated; use _check_v_h/_check_v_pi/_check_v_entail")
+
+    # ------------------------------------------------------------------
+    # v4 channel implementations
+    # ------------------------------------------------------------------
+    def _check_v_h(self, cc: ClaimCertificate, graph: GraphLike, r: CheckResult) -> bool:
+        """V_H: evidence commitment integrity. Returns True iff all evidence digests match."""
+        ok = True
+        nodes = graph.nodes
+        for eid, expected_digest in zip(cc.evidence_ids, cc.evidence_digests):
+            if eid not in nodes:
+                ok = False
+                r.reasons.append(f"v_h:evidence_node_missing:{eid}")
+                continue
+            node = nodes[eid]
+            if not isinstance(node, TruthNode):
+                ok = False
+                r.reasons.append(f"v_h:evidence_not_truth:{eid}:{type(node).__name__}")
+                continue
+            actual = H(node.content_for_hash())
+            if actual != expected_digest:
+                ok = False
+                r.reasons.append(f"v_h:hash_mismatch:{eid}")
+        r.v_h = ok
+        return ok
+
+    def _check_v_pi(self, cc: ClaimCertificate, graph: GraphLike, r: CheckResult) -> tuple[bool, bytes | None]:
+        """V_Pi: replay validity. Runs the pipeline and compares output digest.
+        Returns (passed, replay_output_or_None)."""
+        try:
+            last_output: bytes = b""
+            for step in cc.pipeline:
+                last_output = self.replayer.run(step, graph)
+            y_digest = H(last_output)
+            r.replay_output = last_output
+            r.replay_output_digest = y_digest
+        except Exception as exc:
+            r.v_pi = False
+            r.reasons.append(f"v_pi:replay_exception:{type(exc).__name__}:{exc}")
+            return False, None
+
+        if y_digest != cc.replay_output_digest:
+            r.v_pi = False
+            r.reasons.append(f"v_pi:replay_digest_mismatch:expected={cc.replay_output_digest},got={y_digest}")
+            return False, last_output
+
+        r.v_pi = True
+        return True, last_output
+
+    def _check_v_entail(self, cc: ClaimCertificate, graph: GraphLike, replay_output: bytes | None, r: CheckResult) -> bool:
+        """V_entail: entailment validity. Uses replay_output to check claim entailment."""
+        if replay_output is None:
+            r.v_entail = False
+            r.reasons.append("v_entail:no_replay_output")
+            return False
+
+        nodes = graph.nodes
+        claim_node = nodes.get(cc.claim_id)
+        claim_text = getattr(claim_node, "canonical", "") or getattr(claim_node, "raw", "")
+        if not claim_text:
+            r.v_entail = False
+            r.reasons.append(f"v_entail:claim_text_missing:{cc.claim_id}")
+            return False
+
+        ok = self.entailment.check(replay_output.decode("utf-8", errors="replace"), claim_text)
+        if not ok:
+            r.reasons.append(f"v_entail:entailment_rejected:claim={claim_text[:80]!r}")
+        r.v_entail = ok
+        return ok
+
+    def _check_v_gamma(self, ec: ExecutionCertificate, graph: GraphLike, r: CheckResult) -> bool:
+        """V_Gamma: execution-contract compliance. Returns True iff execution-side passes."""
+        contract = ec.contract
+        nodes = graph.nodes
+        ok = True
+
+        # (a) Tool allowlist / blocked_tools
+        tool_call_count = 0
+        for tid in ec.tool_call_ids:
+            node = nodes.get(tid)
+            if not isinstance(node, ToolCallNode):
+                ok = False
+                r.reasons.append(f"v_gamma:tool_node_missing_or_wrong_type:{tid}")
+                continue
+            # blocked_tools has precedence
+            if contract.blocked_tools and node.tool_name in contract.blocked_tools:
+                ok = False
+                r.reasons.append(f"v_gamma:tool_blocked:{node.tool_name}")
+            if contract.allowed_tools and node.tool_name not in contract.allowed_tools:
+                ok = False
+                r.reasons.append(f"v_gamma:tool_not_allowed:{node.tool_name}")
+            tool_call_count += 1
+        rb = contract.resource_budget or {}
+        max_tool_calls = rb.get("max_tool_calls")
+        if max_tool_calls is not None and tool_call_count > max_tool_calls:
+            ok = False
+            r.reasons.append(f"v_gamma:tool_budget_exceeded:{tool_call_count}>{max_tool_calls}")
+
+        # (b) Memory-access constraints (use memory_policy.allowed_scopes if present)
+        allowed_mem = set()
+        if contract.memory_policy and "allowed_scopes" in contract.memory_policy:
+            allowed_mem = set(contract.memory_policy.get("allowed_scopes", []))
+        for mid in ec.memory_node_ids:
+            node = nodes.get(mid)
+            if not isinstance(node, MemoryNode):
+                ok = False
+                r.reasons.append(f"v_gamma:mem_node_missing_or_wrong_type:{mid}")
+                continue
+            key = f"{node.scope}:{node.op}"
+            if allowed_mem and key not in allowed_mem:
+                ok = False
+                r.reasons.append(f"v_gamma:memory_access_violation:{key}")
+
+        # (c) Delegation constraints
+        allowed_deleg = set()
+        if contract.delegation_policy and "allowed_delegations" in contract.delegation_policy:
+            allowed_deleg = set(contract.delegation_policy.get("allowed_delegations", []))
+        for did in ec.delegation_ids:
+            node = nodes.get(did)
+            if not isinstance(node, DelegationEdge):
+                ok = False
+                r.reasons.append(f"v_gamma:delegation_node_missing_or_wrong_type:{did}")
+                continue
+            if allowed_deleg and node.child_agent not in allowed_deleg:
+                ok = False
+                r.reasons.append(f"v_gamma:delegation_not_allowed:{node.child_agent}")
+
+        # (d) Required schemas present
+        attached_schema_ids = {
+            nodes[s].schema_id
+            for s in ec.schema_node_ids
+            if isinstance(nodes.get(s), SchemaNode)
+        }
+        required_schemas = set(contract.get_required_schema_ids()) if hasattr(contract, "get_required_schema_ids") else set()
+        missing_schemas = required_schemas - attached_schema_ids
+        if missing_schemas:
+            ok = False
+            r.reasons.append(f"v_gamma:schema_missing:{sorted(missing_schemas)}")
+
+        # (e) Required policies present
+        attached_policy_ids = {
+            nodes[p].policy_id
+            for p in ec.policy_node_ids
+            if isinstance(nodes.get(p), PolicyNode)
+        }
+        required_policies = set(contract.get_required_policy_ids()) if hasattr(contract, "get_required_policy_ids") else set()
+        missing_policies = required_policies - attached_policy_ids
+        if missing_policies:
+            ok = False
+            r.reasons.append(f"v_gamma:policy_missing:{sorted(missing_policies)}")
+
+        r.v_gamma = ok
+        return ok
+
+    def _check_execution_side(
+        self,
+        ec: ExecutionCertificate,
+        graph: GraphLike,
+        r: CheckResult,
+    ) -> bool:
+        raise RuntimeError("_check_execution_side is deprecated; use _check_v_gamma")
+
+
+# -----------------------------------------------------------------------------
+# Convenience: a default replayer registry covering the ops we use in R1-R5
+# -----------------------------------------------------------------------------
+
+
+def build_default_replayer() -> CompositeReplayer:
+    """Return a CompositeReplayer wired up for the ops used by our experiments.
+
+    Kept in-module so the Checker is a one-stop shop; real handlers live in
+    `pcg.orchestrator.replay_handlers` and are registered there.
+    """
+    rep = CompositeReplayer()
+
+    # 'identity' replay: passes through the payload of the first input TruthNode.
+    # Useful for minimal pipelines where the "aligned evidence" is just the raw
+    # evidence text itself.
+    def _identity(step: ReplayableStep, graph: GraphLike) -> bytes:
+        if not step.input_ids:
+            return b""
+        first = graph.nodes.get(step.input_ids[0])
+        if isinstance(first, TruthNode):
+            return first.payload
+        return b""
+
+    # 'concat' replay: byte-concatenate payloads of all input TruthNodes with a
+    # canonical delimiter. Deterministic across runs.
+    def _concat(step: ReplayableStep, graph: GraphLike) -> bytes:
+        delim = step.params.get("delim", "\n").encode("utf-8")
+        chunks: list[bytes] = []
+        for nid in step.input_ids:
+            n = graph.nodes.get(nid)
+            if isinstance(n, TruthNode):
+                chunks.append(n.payload)
+        return delim.join(chunks)
+
+    rep.register("identity", _identity)
+    rep.register("concat", _concat)
+    return rep

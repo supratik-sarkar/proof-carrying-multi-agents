@@ -233,3 +233,211 @@ def test_merkle_detects_reorder():
     # Neither should be a prefix of the other
     assert not log_a.verify_prefix(log_b)
     assert not log_b.verify_prefix(log_a)
+
+
+# ---------------------------------------------------------------------------
+# v4 backward compatibility tests
+# ---------------------------------------------------------------------------
+
+
+def test_v4_execution_contract_with_new_fields():
+    """Test creating a v4 contract with new fields (allowed_tools, schemas, etc.)."""
+    contract = ExecutionContract(
+        allowed_tools=frozenset({"bm25", "dpr"}),
+        blocked_tools=frozenset({"dangerous_tool"}),
+        schemas={
+            "qa_schema": {"type": "object", "properties": {"answer": {"type": "string"}}},
+        },
+        memory_policy={"allowed_scopes": ["short_term", "persistent"]},
+        delegation_policy={"allowed_delegations": ["retriever", "summarizer"]},
+        policy_rules=[
+            {"policy_id": "ground_v1", "kind": "guardrail", "clause": "must_cite"},
+            {"policy_id": "safety_v1", "kind": "guardrail", "clause": "no_harmful_output"},
+        ],
+        mcp_endpoints={"mcp_server_1": {"url": "http://localhost:8000"}},
+        resource_budget={
+            "max_tokens": 2048,
+            "max_latency_ms": 30000.0,
+            "max_tool_calls": 10,
+        },
+    )
+    
+    # Verify fields are set
+    assert contract.allowed_tools == frozenset({"bm25", "dpr"})
+    assert contract.blocked_tools == frozenset({"dangerous_tool"})
+    assert "qa_schema" in contract.schemas
+    assert contract.resource_budget["max_tokens"] == 2048
+
+
+def test_v2_backward_compatibility_factory():
+    """Test creating v4 contract from v2 fields using from_v2() factory."""
+    contract = ExecutionContract.from_v2(
+        tool_allowlist=frozenset({"bm25_retrieve"}),
+        memory_access=frozenset({"short_term:read", "persistent:read"}),
+        allowed_delegations=frozenset({"agent_1"}),
+        required_schema_ids=frozenset({"qa_v1"}),
+        required_policy_ids=frozenset({"ground_v1"}),
+        max_tokens=2048,
+        max_latency_ms=30000.0,
+        max_tool_calls=10,
+    )
+    
+    # v4 fields should be populated
+    assert contract.allowed_tools == frozenset({"bm25_retrieve"})
+    assert contract.memory_policy == {"allowed_scopes": ["persistent:read", "short_term:read"]}
+    assert "qa_v1" in contract.schemas
+    assert any(r.get("policy_id") == "ground_v1" for r in contract.policy_rules)
+    
+    # v2 fields should also be preserved
+    assert contract.tool_allowlist == frozenset({"bm25_retrieve"})
+    assert contract.memory_access == frozenset({"short_term:read", "persistent:read"})
+
+
+def test_v4_contract_getter_methods():
+    """Test helper getter methods that work with both v4 and v2 fields."""
+    contract = ExecutionContract(
+        allowed_tools=frozenset({"tool_a", "tool_b"}),
+        memory_policy={"allowed_scopes": ["scope_x", "scope_y"]},
+        delegation_policy={"allowed_delegations": ["agent_1"]},
+        schemas={"schema_1": {}, "schema_2": {}},
+        policy_rules=[
+            {"policy_id": "policy_1"},
+            {"policy_id": "policy_2"},
+        ],
+    )
+    
+    # Getter methods should return v4 field values
+    assert contract.get_allowed_tools() == frozenset({"tool_a", "tool_b"})
+    assert contract.get_memory_scopes() == frozenset({"scope_x", "scope_y"})
+    assert contract.get_allowed_delegations() == frozenset({"agent_1"})
+    assert contract.get_required_schema_ids() == frozenset({"schema_1", "schema_2"})
+    assert contract.get_required_policy_ids() == frozenset({"policy_1", "policy_2"})
+
+
+def test_v4_contract_getter_fallback_to_v2():
+    """Test that getters fall back to v2 fields when v4 fields are empty."""
+    contract = ExecutionContract(
+        tool_allowlist=frozenset({"v2_tool"}),
+        memory_access=frozenset({"v2_scope"}),
+        allowed_delegations=frozenset({"v2_agent"}),
+        required_schema_ids=frozenset({"v2_schema"}),
+        required_policy_ids=frozenset({"v2_policy"}),
+    )
+    
+    # Getters should return v2 values since v4 fields are empty
+    assert contract.get_allowed_tools() == frozenset({"v2_tool"})
+    assert contract.get_memory_scopes() == frozenset({"v2_scope"})
+    assert contract.get_allowed_delegations() == frozenset({"v2_agent"})
+    assert contract.get_required_schema_ids() == frozenset({"v2_schema"})
+    assert contract.get_required_policy_ids() == frozenset({"v2_policy"})
+
+
+def test_load_v2_certificate_json_upgrades_to_v4(fixture_graph_and_cert):
+    """Test loading a v2 certificate (no version field) upgrades gracefully to v4."""
+    g, cert, checker = fixture_graph_and_cert
+    
+    # Export as v4 JSON
+    json_str = cert.to_json()
+    cert_dict = json.loads(json_str)
+    
+    # Simulate v2 JSON by removing the version field (v2 certs have no version)
+    del cert_dict["exec_cert"]["contract"]["version"]
+    v2_json_str = json.dumps(cert_dict)
+    
+    # Load the v2 JSON
+    cert_loaded = GroundingCertificate.from_json(v2_json_str)
+    
+    # Should load successfully and have v4 fields populated from v2 fields
+    assert cert_loaded.exec_cert.contract.allowed_tools
+    assert cert_loaded.exec_cert.contract.resource_budget is not None
+
+
+def test_round_trip_v4_certificate_preserves_digest(fixture_graph_and_cert):
+    """Test that round-tripping a v4 certificate through JSON preserves digest."""
+    g, cert, _ = fixture_graph_and_cert
+    original_digest = cert.digest()
+    
+    # Serialize and deserialize
+    json_str = cert.to_json()
+    cert_reloaded = GroundingCertificate.from_json(json_str)
+    
+    # Digest should be identical (canonical form preserved)
+    assert cert_reloaded.digest() == original_digest
+
+
+def test_v4_canonical_bytes_deterministic():
+    """Test that ExecutionContract.canonical_bytes() is deterministic."""
+    contract = ExecutionContract(
+        allowed_tools=frozenset({"tool_b", "tool_a"}),  # Unordered set
+        schemas={"schema_a": {}, "schema_b": {}},      # Unordered dict
+        resource_budget={"max_tokens": 2048, "max_latency_ms": 30000.0},
+    )
+    
+    # Call canonical_bytes() multiple times
+    bytes1 = contract.canonical_bytes()
+    bytes2 = contract.canonical_bytes()
+    
+    # Must be byte-identical (sorted keys, sorted sets)
+    assert bytes1 == bytes2
+    
+    # Create another contract with same values in different order
+    contract2 = ExecutionContract(
+        allowed_tools=frozenset({"tool_a", "tool_b"}),  # Different order
+        schemas={"schema_b": {}, "schema_a": {}},       # Different order
+        resource_budget={"max_latency_ms": 30000.0, "max_tokens": 2048},
+    )
+    
+    # Canonical bytes should still be identical
+    assert contract.canonical_bytes() == contract2.canonical_bytes()
+
+
+def test_v4_contract_in_certificate_json_roundtrip(fixture_graph_and_cert):
+    """Test full certificate with v4 contract fields survives JSON round-trip."""
+    g, orig_cert, checker = fixture_graph_and_cert
+    
+    # Enhance the contract with v4 fields
+    enhanced_contract = ExecutionContract(
+        allowed_tools=frozenset({"bm25_retrieve"}),
+        blocked_tools=frozenset({"dangerous"}),
+        schemas=orig_cert.exec_cert.contract.required_schema_ids and 
+                {sid: {"type": "object"} for sid in orig_cert.exec_cert.contract.required_schema_ids}
+                or {},
+        memory_policy={"allowed_scopes": list(orig_cert.exec_cert.contract.memory_access)},
+        delegation_policy={"allowed_delegations": list(orig_cert.exec_cert.contract.allowed_delegations)},
+        policy_rules=[
+            {"policy_id": pid, "kind": "guardrail"} 
+            for pid in orig_cert.exec_cert.contract.required_policy_ids
+        ],
+        resource_budget={
+            "max_tokens": orig_cert.exec_cert.contract.max_tokens,
+            "max_latency_ms": orig_cert.exec_cert.contract.max_latency_ms,
+            "max_tool_calls": orig_cert.exec_cert.contract.max_tool_calls,
+        },
+    )
+    
+    enhanced_exec_cert = ExecutionCertificate(
+        pipeline=orig_cert.exec_cert.pipeline,
+        contract=enhanced_contract,
+        tool_call_ids=orig_cert.exec_cert.tool_call_ids,
+        memory_node_ids=orig_cert.exec_cert.memory_node_ids,
+        delegation_ids=orig_cert.exec_cert.delegation_ids,
+        schema_node_ids=orig_cert.exec_cert.schema_node_ids,
+        policy_node_ids=orig_cert.exec_cert.policy_node_ids,
+    )
+    
+    enhanced_cert = GroundingCertificate(
+        claim_cert=orig_cert.claim_cert,
+        exec_cert=enhanced_exec_cert,
+        meta=orig_cert.meta,
+    )
+    
+    # Serialize and deserialize
+    json_str = enhanced_cert.to_json()
+    reloaded = GroundingCertificate.from_json(json_str)
+    
+    # v4 fields should survive the round-trip
+    assert reloaded.exec_cert.contract.blocked_tools == frozenset({"dangerous"})
+    assert reloaded.exec_cert.contract.schemas
+    assert reloaded.exec_cert.contract.memory_policy
+    assert reloaded.exec_cert.contract.delegation_policy
+    assert reloaded.exec_cert.contract.policy_rules

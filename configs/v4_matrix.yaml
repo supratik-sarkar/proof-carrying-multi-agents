@@ -1,0 +1,109 @@
+# PCG-MAS v4 experiment matrix.
+# Local Mac: run all local backends except 70B and DeepSeek-V3.
+# Colab: run llama-3.3-70b and deepseek-v3, then sync results back.
+
+seed: 2026
+n_examples_default: 200
+output_dir: results/v4
+figure_dir: figures/v4
+table_dir: docs/tables/v4
+
+datasets:
+  - name: hotpotqa
+    paper_name: HotpotQA
+    n_examples: 200
+    local: true
+  - name: 2wikimultihopqa
+    paper_name: 2WikiMultihopQA
+    n_examples: 200
+    local: true
+  - name: tatqa
+    paper_name: TAT-QA
+    n_examples: 200
+    local: true
+  - name: toolbench
+    paper_name: ToolBench
+    n_examples: 200
+    local: true
+  - name: fever
+    paper_name: FEVER
+    n_examples: 200
+    local: true
+  - name: pubmedqa
+    paper_name: PubMedQA
+    n_examples: 200
+    local: true
+  - name: weblinx
+    paper_name: WebLINX
+    n_examples: 200
+    local: true
+  - name: synthetic_adversarial
+    paper_name: Synthetic-Adversarial
+    n_examples: 200
+    local: true
+
+backends:
+  - name: phi-3.5-mini
+    paper_name: Phi-3.5-mini
+    backend: hf_local
+    model_name: microsoft/Phi-3.5-mini-instruct
+    local: true
+  - name: qwen2.5-7b
+    paper_name: Qwen2.5-7B
+    backend: hf_local
+    model_name: Qwen/Qwen2.5-7B-Instruct
+    local: true
+  - name: deepseek-llm-7b-chat
+    paper_name: DeepSeek-LLM-7B-chat
+    backend: hf_local
+    model_name: deepseek-ai/deepseek-llm-7b-chat
+    local: true
+  - name: llama-3.1-8b
+    paper_name: Llama-3.1-8B
+    backend: hf_local
+    model_name: meta-llama/Llama-3.1-8B-Instruct
+    local: true
+  - name: gemma-2-9b
+    paper_name: Gemma-2-9B
+    backend: hf_local
+    model_name: google/gemma-2-9b-it
+    local: true
+
+  # Remote / Colab-only cells.
+  - name: llama-3.3-70b
+    paper_name: Llama-3.3-70B
+    backend: hf_inference
+    model_name: meta-llama/Llama-3.3-70B-Instruct
+    local: false
+  - name: deepseek-v3
+    paper_name: DeepSeek-V3
+    backend: hf_inference
+    model_name: deepseek-ai/DeepSeek-V3
+    local: false
+
+experiments:
+  r1: true
+  r2: true
+  r3: true
+  r4: true
+  r5: true
+
+r1:
+  delta: 0.05
+
+r2:
+  k_values: [1, 2, 4, 8]
+  delta_overlap: 0.2
+  kappa: 1
+
+r3:
+  replay_samples: 20
+  top_l_components: 20
+
+r4:
+  privacy_eps: [1.0, 3.0, 8.0, .inf]
+  lambda_harm: 1.0
+  lmax: 10.0
+
+r5:
+  configs: ["baseline_no_pcg", "pcg_k1", "pcg_k2", "pcg_k4"]
