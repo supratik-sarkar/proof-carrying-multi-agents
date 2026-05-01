@@ -1,0 +1,42 @@
+dataset:
+  name: hotpotqa
+  split: validation
+  n_examples: 3
+  streaming: true
+backends:
+- kind: hf_local
+  name: phi-3.5-mini
+  model_name: microsoft/Phi-3.5-mini-instruct
+  dtype: float16
+prover:
+  top_k: 4
+  max_answer_tokens: 64
+  temperature: 0.0
+  retriever: bm25
+checker:
+  entailment: exact_match
+configurations:
+- name: baseline_no_pcg
+  enable_pcg: false
+- name: pcg_k1
+  enable_pcg: true
+  k: 1
+- name: pcg_k2
+  enable_pcg: true
+  k: 2
+- name: pcg_k4
+  enable_pcg: true
+  k: 4
+stats:
+  bootstrap_n: 2000
+  alpha: 0.05
+output_dir: results/r5
+backend:
+  kind: hf_local
+  name: phi-3.5-mini
+  model_name: microsoft/Phi-3.5-mini-instruct
+output:
+  base_dir: results/v4_matrix/local/hotpotqa__phi_3_5_mini/r5
+run:
+  dataset_name: hotpotqa
+  backend_name: phi-3.5-mini
