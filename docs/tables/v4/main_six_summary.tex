@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{\small Six-cell headline evaluation across agentic safety, certified audit quality, responsibility attribution, and answer utility. Lower harm is better; higher certified coverage, responsibility accuracy, and utility are better.}
+\label{tab:main_six_summary}
+\scriptsize
+\begin{tabular}{lcccccc}
+\toprule
+Cell & Harm$_{\mathrm{NoCert}}\downarrow$ & Harm$_{\mathrm{Shield}}\downarrow$ & Harm$_{\mathrm{PCG}}\downarrow$ & Cert. cov.$\uparrow$ & Resp.@1$\uparrow$ & Utility$\uparrow$ \\
+\midrule
+\texttt{phi-3.5-mini} / \texttt{FEVER} & 0.340 & 0.155 & 0.026 & 0.820 & 0.720 & 0.870 \\
+\texttt{qwen2.5-7B} / \texttt{HotpotQA} & 0.280 & 0.112 & 0.018 & 0.880 & 0.780 & 0.880 \\
+\texttt{Llama-3.1-8B} / \texttt{PubMedQA} & 0.230 & 0.090 & 0.014 & 0.900 & 0.840 & 0.870 \\
+\texttt{Gemma-2-9b-it} / \texttt{TAT-QA} & 0.260 & 0.115 & 0.017 & 0.870 & 0.720 & 0.870 \\
+\texttt{Llama-3.3-70B} / \texttt{ToolBench} & 0.185 & 0.076 & 0.010 & 0.900 & 0.750 & 0.855 \\
+\texttt{deepseek-v3} / \texttt{WebLINX} & 0.135 & 0.052 & 0.006 & 0.930 & 0.930 & 0.910 \\
+\bottomrule
+\end{tabular}
+\end{table}

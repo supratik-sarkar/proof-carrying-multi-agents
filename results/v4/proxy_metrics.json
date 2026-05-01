@@ -1,14 +1,29 @@
 {
-  "source": "proxy_smoke_not_final",
-  "main6_cells": [
+  "artifact_mode": "smoke_proxy_layout",
+  "description": "Deterministic v4 smoke metrics for figure/table layout before full local+Colab reconciliation.",
+  "intro_cells": [
     {
       "model": "phi-3.5-mini",
       "dataset": "FEVER",
-      "source": "proxy_smoke_not_final",
       "harm": {
         "no_certificate": 0.34,
         "shieldagent": 0.155,
         "pcg_mas": 0.026
+      },
+      "bad_accept": {
+        "no_certificate": 0.21080000000000002,
+        "shieldagent": 0.0899,
+        "pcg_mas": 0.013519999999999999
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.44000000000000006,
+        "shieldagent": 0.305,
+        "pcg_mas": 0.226
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.6,
+        "pcg_mas": 0.82
       },
       "bound_coverage": {
         "no_certificate": 0.0,
@@ -30,337 +45,888 @@
         "shieldagent": 1.42,
         "pcg_mas": 1.86
       },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.47,
+        "pcg_mas": 1.9600000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0036504,
+        "replay": 0.0024335999999999997,
+        "check": 0.0041912,
+        "coverage": 0.0032447999999999995
+      },
       "r2": {
         "eps_path": 0.065,
-        "rho": 1.27,
+        "rho": 1.26,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0187,
+        "shieldagent": 0.0093,
+        "pcg_mas": 0.00312
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
+      }
+    },
+    {
+      "model": "Gemma-2-9b-it",
+      "dataset": "TAT-QA",
+      "harm": {
+        "no_certificate": 0.26,
+        "shieldagent": 0.115,
+        "pcg_mas": 0.017
+      },
+      "bad_accept": {
+        "no_certificate": 0.1612,
+        "shieldagent": 0.0667,
+        "pcg_mas": 0.00884
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.36,
+        "shieldagent": 0.265,
+        "pcg_mas": 0.21700000000000003
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.65,
+        "pcg_mas": 0.87
+      },
+      "bound_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 65.0,
+        "pcg_mas": 87.0
+      },
+      "responsibility_top1": {
+        "no_certificate": 0.23,
+        "shieldagent": 0.52,
+        "pcg_mas": 0.72
+      },
+      "utility": {
+        "no_certificate": 0.8099999999999999,
+        "shieldagent": 0.84,
+        "pcg_mas": 0.87
+      },
+      "token_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.36,
+        "pcg_mas": 1.74
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.84
+      },
+      "audit_channels": {
+        "integrity": 0.0023868,
+        "replay": 0.0015912,
+        "check": 0.0027404,
+        "coverage": 0.0021216
+      },
+      "r2": {
+        "eps_path": 0.08499999999999999,
+        "rho": 1.26,
+        "shield_factor": 0.42,
+        "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0143,
+        "shieldagent": 0.0069,
+        "pcg_mas": 0.00204
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
+      }
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "dataset": "ToolBench",
+      "harm": {
+        "no_certificate": 0.185,
+        "shieldagent": 0.076,
+        "pcg_mas": 0.01
+      },
+      "bad_accept": {
+        "no_certificate": 0.1147,
+        "shieldagent": 0.044079999999999994,
+        "pcg_mas": 0.005200000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.28500000000000003,
+        "shieldagent": 0.22599999999999998,
+        "pcg_mas": 0.21000000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.7,
+        "pcg_mas": 0.9
+      },
+      "bound_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 70.0,
+        "pcg_mas": 90.0
+      },
+      "responsibility_top1": {
+        "no_certificate": 0.23,
+        "shieldagent": 0.55,
+        "pcg_mas": 0.75
+      },
+      "utility": {
+        "no_certificate": 0.7949999999999999,
+        "shieldagent": 0.825,
+        "pcg_mas": 0.855
+      },
+      "token_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3,
+        "pcg_mas": 1.66
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.35,
+        "pcg_mas": 1.76
+      },
+      "audit_channels": {
+        "integrity": 0.0014040000000000003,
+        "replay": 0.0009360000000000001,
+        "check": 0.0016120000000000002,
+        "coverage": 0.0012480000000000002
+      },
+      "r2": {
+        "eps_path": 0.049999999999999996,
+        "rho": 1.29,
+        "shield_factor": 0.42,
+        "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.010175,
+        "shieldagent": 0.00456,
+        "pcg_mas": 0.0012
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
+      }
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "WebLINX",
+      "harm": {
+        "no_certificate": 0.135,
+        "shieldagent": 0.052,
+        "pcg_mas": 0.006
+      },
+      "bad_accept": {
+        "no_certificate": 0.08370000000000001,
+        "shieldagent": 0.030159999999999996,
+        "pcg_mas": 0.0031200000000000004
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.23500000000000001,
+        "shieldagent": 0.20199999999999999,
+        "pcg_mas": 0.20600000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.74,
+        "pcg_mas": 0.93
+      },
+      "bound_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 74.0,
+        "pcg_mas": 93.0
+      },
+      "responsibility_top1": {
+        "no_certificate": 0.25,
+        "shieldagent": 0.7,
+        "pcg_mas": 0.93
+      },
+      "utility": {
+        "no_certificate": 0.83,
+        "shieldagent": 0.87,
+        "pcg_mas": 0.91
+      },
+      "token_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.24,
+        "pcg_mas": 1.58
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.29,
+        "pcg_mas": 1.6800000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0008424000000000002,
+        "replay": 0.0005616000000000001,
+        "check": 0.0009672000000000001,
+        "coverage": 0.0007488000000000001
+      },
+      "r2": {
+        "eps_path": 0.045,
+        "rho": 1.14,
+        "shield_factor": 0.42,
+        "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.007425,
+        "shieldagent": 0.00312,
+        "pcg_mas": 0.001
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
+      }
+    }
+  ],
+  "main6_cells": [
+    {
+      "model": "phi-3.5-mini",
+      "dataset": "FEVER",
+      "harm": {
+        "no_certificate": 0.34,
+        "shieldagent": 0.155,
+        "pcg_mas": 0.026
+      },
+      "bad_accept": {
+        "no_certificate": 0.21080000000000002,
+        "shieldagent": 0.0899,
+        "pcg_mas": 0.013519999999999999
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.44000000000000006,
+        "shieldagent": 0.305,
+        "pcg_mas": 0.226
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.6,
+        "pcg_mas": 0.82
+      },
+      "bound_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 60.0,
+        "pcg_mas": 82.0
+      },
+      "responsibility_top1": {
+        "no_certificate": 0.23,
+        "shieldagent": 0.52,
+        "pcg_mas": 0.72
+      },
+      "utility": {
+        "no_certificate": 0.8099999999999999,
+        "shieldagent": 0.84,
+        "pcg_mas": 0.87
+      },
+      "token_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.42,
+        "pcg_mas": 1.86
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.47,
+        "pcg_mas": 1.9600000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0036504,
+        "replay": 0.0024335999999999997,
+        "check": 0.0041912,
+        "coverage": 0.0032447999999999995
+      },
+      "r2": {
+        "eps_path": 0.065,
+        "rho": 1.26,
+        "shield_factor": 0.42,
+        "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0187,
+        "shieldagent": 0.0093,
+        "pcg_mas": 0.00312
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "qwen2.5-7B",
       "dataset": "HotpotQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.26,
-        "shieldagent": 0.1092,
-        "pcg_mas": 0.0143
+        "no_certificate": 0.28,
+        "shieldagent": 0.112,
+        "pcg_mas": 0.018
+      },
+      "bad_accept": {
+        "no_certificate": 0.1736,
+        "shieldagent": 0.06495999999999999,
+        "pcg_mas": 0.00936
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.38,
+        "shieldagent": 0.262,
+        "pcg_mas": 0.218
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.66,
+        "pcg_mas": 0.88
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 56.6,
-        "pcg_mas": 78.6
+        "shieldagent": 66.0,
+        "pcg_mas": 88.0
       },
       "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.54,
-        "pcg_mas": 0.74
+        "no_certificate": 0.24,
+        "shieldagent": 0.58,
+        "pcg_mas": 0.78
       },
       "utility": {
-        "no_certificate": 0.7999999999999999,
-        "shieldagent": 0.83,
-        "pcg_mas": 0.86
+        "no_certificate": 0.8,
+        "shieldagent": 0.84,
+        "pcg_mas": 0.88
       },
       "token_multiplier": {
         "no_certificate": 1.0,
-        "shieldagent": 1.32,
-        "pcg_mas": 1.6920000000000002
+        "shieldagent": 1.35,
+        "pcg_mas": 1.82
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4000000000000001,
+        "pcg_mas": 1.9200000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0025272000000000003,
+        "replay": 0.0016848,
+        "check": 0.0029016000000000003,
+        "coverage": 0.0022464
       },
       "r2": {
-        "eps_path": 0.095,
-        "rho": 1.29,
+        "eps_path": 0.07,
+        "rho": 1.24,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.015400000000000002,
+        "shieldagent": 0.00672,
+        "pcg_mas": 0.0021599999999999996
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.1-8B",
       "dataset": "PubMedQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.14,
-        "shieldagent": 0.058800000000000005,
-        "pcg_mas": 0.007700000000000001
+        "no_certificate": 0.23,
+        "shieldagent": 0.09,
+        "pcg_mas": 0.014
+      },
+      "bad_accept": {
+        "no_certificate": 0.1426,
+        "shieldagent": 0.052199999999999996,
+        "pcg_mas": 0.00728
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.33,
+        "shieldagent": 0.24,
+        "pcg_mas": 0.21400000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.68,
+        "pcg_mas": 0.9
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 68.0,
+        "pcg_mas": 90.0
+      },
+      "responsibility_top1": {
+        "no_certificate": 0.24,
+        "shieldagent": 0.62,
+        "pcg_mas": 0.84
+      },
+      "utility": {
+        "no_certificate": 0.79,
+        "shieldagent": 0.83,
+        "pcg_mas": 0.87
+      },
+      "token_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.31,
+        "pcg_mas": 1.7
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.36,
+        "pcg_mas": 1.8
+      },
+      "audit_channels": {
+        "integrity": 0.0019656,
+        "replay": 0.0013104,
+        "check": 0.0022567999999999998,
+        "coverage": 0.0017472
+      },
+      "r2": {
+        "eps_path": 0.06,
+        "rho": 1.2,
+        "shield_factor": 0.42,
+        "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01265,
+        "shieldagent": 0.005399999999999999,
+        "pcg_mas": 0.00168
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
+      }
+    },
+    {
+      "model": "Gemma-2-9b-it",
+      "dataset": "TAT-QA",
+      "harm": {
+        "no_certificate": 0.26,
+        "shieldagent": 0.115,
+        "pcg_mas": 0.017
+      },
+      "bad_accept": {
+        "no_certificate": 0.1612,
+        "shieldagent": 0.0667,
+        "pcg_mas": 0.00884
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.36,
+        "shieldagent": 0.265,
+        "pcg_mas": 0.21700000000000003
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.65,
+        "pcg_mas": 0.87
+      },
+      "bound_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 65.0,
+        "pcg_mas": 87.0
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
+        "shieldagent": 0.52,
+        "pcg_mas": 0.72
+      },
+      "utility": {
+        "no_certificate": 0.8099999999999999,
+        "shieldagent": 0.84,
+        "pcg_mas": 0.87
+      },
+      "token_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.36,
+        "pcg_mas": 1.74
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.84
+      },
+      "audit_channels": {
+        "integrity": 0.0023868,
+        "replay": 0.0015912,
+        "check": 0.0027404,
+        "coverage": 0.0021216
+      },
+      "r2": {
+        "eps_path": 0.08499999999999999,
+        "rho": 1.26,
+        "shield_factor": 0.42,
+        "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0143,
+        "shieldagent": 0.0069,
+        "pcg_mas": 0.00204
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
+      }
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "dataset": "ToolBench",
+      "harm": {
+        "no_certificate": 0.185,
+        "shieldagent": 0.076,
+        "pcg_mas": 0.01
+      },
+      "bad_accept": {
+        "no_certificate": 0.1147,
+        "shieldagent": 0.044079999999999994,
+        "pcg_mas": 0.005200000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.28500000000000003,
+        "shieldagent": 0.22599999999999998,
+        "pcg_mas": 0.21000000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.7,
+        "pcg_mas": 0.9
+      },
+      "bound_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 70.0,
+        "pcg_mas": 90.0
+      },
+      "responsibility_top1": {
+        "no_certificate": 0.23,
+        "shieldagent": 0.55,
+        "pcg_mas": 0.75
+      },
+      "utility": {
+        "no_certificate": 0.7949999999999999,
+        "shieldagent": 0.825,
+        "pcg_mas": 0.855
+      },
+      "token_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3,
+        "pcg_mas": 1.66
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.35,
+        "pcg_mas": 1.76
+      },
+      "audit_channels": {
+        "integrity": 0.0014040000000000003,
+        "replay": 0.0009360000000000001,
+        "check": 0.0016120000000000002,
+        "coverage": 0.0012480000000000002
+      },
+      "r2": {
+        "eps_path": 0.049999999999999996,
+        "rho": 1.29,
+        "shield_factor": 0.42,
+        "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.010175,
+        "shieldagent": 0.00456,
+        "pcg_mas": 0.0012
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
+      }
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "WebLINX",
+      "harm": {
+        "no_certificate": 0.135,
+        "shieldagent": 0.052,
+        "pcg_mas": 0.006
+      },
+      "bad_accept": {
+        "no_certificate": 0.08370000000000001,
+        "shieldagent": 0.030159999999999996,
+        "pcg_mas": 0.0031200000000000004
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.23500000000000001,
+        "shieldagent": 0.20199999999999999,
+        "pcg_mas": 0.20600000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.74,
+        "pcg_mas": 0.93
+      },
+      "bound_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 74.0,
+        "pcg_mas": 93.0
+      },
+      "responsibility_top1": {
+        "no_certificate": 0.25,
+        "shieldagent": 0.7,
+        "pcg_mas": 0.93
+      },
+      "utility": {
+        "no_certificate": 0.83,
+        "shieldagent": 0.87,
+        "pcg_mas": 0.91
+      },
+      "token_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.24,
+        "pcg_mas": 1.58
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.29,
+        "pcg_mas": 1.6800000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0008424000000000002,
+        "replay": 0.0005616000000000001,
+        "check": 0.0009672000000000001,
+        "coverage": 0.0007488000000000001
+      },
+      "r2": {
+        "eps_path": 0.045,
+        "rho": 1.14,
+        "shield_factor": 0.42,
+        "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.007425,
+        "shieldagent": 0.00312,
+        "pcg_mas": 0.001
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
+      }
+    }
+  ],
+  "r_plot_cells": [
+    {
+      "model": "qwen2.5-7B",
+      "dataset": "HotpotQA",
+      "harm": {
+        "no_certificate": 0.28,
+        "shieldagent": 0.112,
+        "pcg_mas": 0.018
+      },
+      "bad_accept": {
+        "no_certificate": 0.1736,
+        "shieldagent": 0.06495999999999999,
+        "pcg_mas": 0.00936
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.38,
+        "shieldagent": 0.262,
+        "pcg_mas": 0.218
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.66,
+        "pcg_mas": 0.88
+      },
+      "bound_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 66.0,
+        "pcg_mas": 88.0
+      },
+      "responsibility_top1": {
+        "no_certificate": 0.24,
         "shieldagent": 0.58,
         "pcg_mas": 0.78
       },
       "utility": {
-        "no_certificate": 0.7799999999999999,
-        "shieldagent": 0.8099999999999999,
-        "pcg_mas": 0.84
+        "no_certificate": 0.8,
+        "shieldagent": 0.84,
+        "pcg_mas": 0.88
       },
       "token_multiplier": {
         "no_certificate": 1.0,
+        "shieldagent": 1.35,
+        "pcg_mas": 1.82
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4000000000000001,
+        "pcg_mas": 1.9200000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0025272000000000003,
+        "replay": 0.0016848,
+        "check": 0.0029016000000000003,
+        "coverage": 0.0022464
+      },
+      "r2": {
+        "eps_path": 0.07,
+        "rho": 1.24,
+        "shield_factor": 0.42,
+        "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.015400000000000002,
+        "shieldagent": 0.00672,
+        "pcg_mas": 0.0021599999999999996
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
+      }
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "dataset": "PubMedQA",
+      "harm": {
+        "no_certificate": 0.23,
+        "shieldagent": 0.09,
+        "pcg_mas": 0.014
+      },
+      "bad_accept": {
+        "no_certificate": 0.1426,
+        "shieldagent": 0.052199999999999996,
+        "pcg_mas": 0.00728
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.33,
+        "shieldagent": 0.24,
+        "pcg_mas": 0.21400000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.68,
+        "pcg_mas": 0.9
+      },
+      "bound_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 68.0,
+        "pcg_mas": 90.0
+      },
+      "responsibility_top1": {
+        "no_certificate": 0.24,
+        "shieldagent": 0.62,
+        "pcg_mas": 0.84
+      },
+      "utility": {
+        "no_certificate": 0.79,
+        "shieldagent": 0.83,
+        "pcg_mas": 0.87
+      },
+      "token_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.31,
+        "pcg_mas": 1.7
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.8
+      },
+      "audit_channels": {
+        "integrity": 0.0019656,
+        "replay": 0.0013104,
+        "check": 0.0022567999999999998,
+        "coverage": 0.0017472
+      },
+      "r2": {
+        "eps_path": 0.06,
+        "rho": 1.2,
+        "shield_factor": 0.42,
+        "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01265,
+        "shieldagent": 0.005399999999999999,
+        "pcg_mas": 0.00168
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
+      }
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "WebLINX",
+      "harm": {
+        "no_certificate": 0.135,
+        "shieldagent": 0.052,
+        "pcg_mas": 0.006
+      },
+      "bad_accept": {
+        "no_certificate": 0.08370000000000001,
+        "shieldagent": 0.030159999999999996,
+        "pcg_mas": 0.0031200000000000004
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.23500000000000001,
+        "shieldagent": 0.20199999999999999,
+        "pcg_mas": 0.20600000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.74,
+        "pcg_mas": 0.93
+      },
+      "bound_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 74.0,
+        "pcg_mas": 93.0
+      },
+      "responsibility_top1": {
+        "no_certificate": 0.25,
+        "shieldagent": 0.7,
+        "pcg_mas": 0.93
+      },
+      "utility": {
+        "no_certificate": 0.83,
+        "shieldagent": 0.87,
+        "pcg_mas": 0.91
+      },
+      "token_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.24,
+        "pcg_mas": 1.58
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.29,
+        "pcg_mas": 1.6800000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0008424000000000002,
+        "replay": 0.0005616000000000001,
+        "check": 0.0009672000000000001,
+        "coverage": 0.0007488000000000001
       },
       "r2": {
         "eps_path": 0.045,
-        "rho": 1.33,
+        "rho": 1.14,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
-      }
-    },
-    {
-      "model": "Gemma-2-9b-it",
-      "dataset": "TAT-QA",
-      "source": "proxy_smoke_not_final",
-      "harm": {
-        "no_certificate": 0.26,
-        "shieldagent": 0.115,
-        "pcg_mas": 0.017
       },
-      "bound_coverage": {
+      "harm_err": {
+        "no_certificate": 0.007425,
+        "shieldagent": 0.00312,
+        "pcg_mas": 0.001
+      },
+      "bound_err": {
         "no_certificate": 0.0,
-        "shieldagent": 65.0,
-        "pcg_mas": 87.0
-      },
-      "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.52,
-        "pcg_mas": 0.72
-      },
-      "utility": {
-        "no_certificate": 0.8099999999999999,
-        "shieldagent": 0.84,
-        "pcg_mas": 0.87
-      },
-      "token_multiplier": {
-        "no_certificate": 1.0,
-        "shieldagent": 1.36,
-        "pcg_mas": 1.74
-      },
-      "r2": {
-        "eps_path": 0.08499999999999999,
-        "rho": 1.27,
-        "shield_factor": 0.42,
-        "pcg_factor": 0.12
-      }
-    },
-    {
-      "model": "Llama-3.3-70B",
-      "dataset": "ToolBench",
-      "source": "proxy_smoke_not_final",
-      "harm": {
-        "no_certificate": 0.185,
-        "shieldagent": 0.076,
-        "pcg_mas": 0.01
-      },
-      "bound_coverage": {
-        "no_certificate": 0.0,
-        "shieldagent": 70.0,
-        "pcg_mas": 90.0
-      },
-      "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.55,
-        "pcg_mas": 0.75
-      },
-      "utility": {
-        "no_certificate": 0.7949999999999999,
-        "shieldagent": 0.825,
-        "pcg_mas": 0.855
-      },
-      "token_multiplier": {
-        "no_certificate": 1.0,
-        "shieldagent": 1.3,
-        "pcg_mas": 1.66
-      },
-      "r2": {
-        "eps_path": 0.049999999999999996,
-        "rho": 1.3,
-        "shield_factor": 0.42,
-        "pcg_factor": 0.12
-      }
-    },
-    {
-      "model": "deepseek-v3",
-      "dataset": "WebLINX",
-      "source": "proxy_smoke_not_final",
-      "harm": {
-        "no_certificate": 0.135,
-        "shieldagent": 0.052,
-        "pcg_mas": 0.006
-      },
-      "bound_coverage": {
-        "no_certificate": 0.0,
-        "shieldagent": 74.0,
-        "pcg_mas": 93.0
-      },
-      "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.54,
-        "pcg_mas": 0.74
-      },
-      "utility": {
-        "no_certificate": 0.7999999999999999,
-        "shieldagent": 0.83,
-        "pcg_mas": 0.86
-      },
-      "token_multiplier": {
-        "no_certificate": 1.0,
-        "shieldagent": 1.24,
-        "pcg_mas": 1.58
-      },
-      "r2": {
-        "eps_path": 0.05499999999999999,
-        "rho": 1.29,
-        "shield_factor": 0.42,
-        "pcg_factor": 0.12
-      }
-    }
-  ],
-  "intro_cells": [
-    {
-      "model": "phi-3.5-mini",
-      "dataset": "FEVER",
-      "source": "proxy_smoke_not_final",
-      "harm": {
-        "no_certificate": 0.34,
-        "shieldagent": 0.155,
-        "pcg_mas": 0.026
-      },
-      "bound_coverage": {
-        "no_certificate": 0.0,
-        "shieldagent": 60.0,
-        "pcg_mas": 82.0
-      },
-      "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.52,
-        "pcg_mas": 0.72
-      },
-      "utility": {
-        "no_certificate": 0.8099999999999999,
-        "shieldagent": 0.84,
-        "pcg_mas": 0.87
-      },
-      "token_multiplier": {
-        "no_certificate": 1.0,
-        "shieldagent": 1.42,
-        "pcg_mas": 1.86
-      },
-      "r2": {
-        "eps_path": 0.065,
-        "rho": 1.27,
-        "shield_factor": 0.42,
-        "pcg_factor": 0.12
-      }
-    },
-    {
-      "model": "Gemma-2-9b-it",
-      "dataset": "TAT-QA",
-      "source": "proxy_smoke_not_final",
-      "harm": {
-        "no_certificate": 0.26,
-        "shieldagent": 0.115,
-        "pcg_mas": 0.017
-      },
-      "bound_coverage": {
-        "no_certificate": 0.0,
-        "shieldagent": 65.0,
-        "pcg_mas": 87.0
-      },
-      "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.52,
-        "pcg_mas": 0.72
-      },
-      "utility": {
-        "no_certificate": 0.8099999999999999,
-        "shieldagent": 0.84,
-        "pcg_mas": 0.87
-      },
-      "token_multiplier": {
-        "no_certificate": 1.0,
-        "shieldagent": 1.36,
-        "pcg_mas": 1.74
-      },
-      "r2": {
-        "eps_path": 0.08499999999999999,
-        "rho": 1.27,
-        "shield_factor": 0.42,
-        "pcg_factor": 0.12
-      }
-    },
-    {
-      "model": "Llama-3.3-70B",
-      "dataset": "ToolBench",
-      "source": "proxy_smoke_not_final",
-      "harm": {
-        "no_certificate": 0.185,
-        "shieldagent": 0.076,
-        "pcg_mas": 0.01
-      },
-      "bound_coverage": {
-        "no_certificate": 0.0,
-        "shieldagent": 70.0,
-        "pcg_mas": 90.0
-      },
-      "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.55,
-        "pcg_mas": 0.75
-      },
-      "utility": {
-        "no_certificate": 0.7949999999999999,
-        "shieldagent": 0.825,
-        "pcg_mas": 0.855
-      },
-      "token_multiplier": {
-        "no_certificate": 1.0,
-        "shieldagent": 1.3,
-        "pcg_mas": 1.66
-      },
-      "r2": {
-        "eps_path": 0.049999999999999996,
-        "rho": 1.3,
-        "shield_factor": 0.42,
-        "pcg_factor": 0.12
-      }
-    },
-    {
-      "model": "deepseek-v3",
-      "dataset": "WebLINX",
-      "source": "proxy_smoke_not_final",
-      "harm": {
-        "no_certificate": 0.135,
-        "shieldagent": 0.052,
-        "pcg_mas": 0.006
-      },
-      "bound_coverage": {
-        "no_certificate": 0.0,
-        "shieldagent": 74.0,
-        "pcg_mas": 93.0
-      },
-      "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.54,
-        "pcg_mas": 0.74
-      },
-      "utility": {
-        "no_certificate": 0.7999999999999999,
-        "shieldagent": 0.83,
-        "pcg_mas": 0.86
-      },
-      "token_multiplier": {
-        "no_certificate": 1.0,
-        "shieldagent": 1.24,
-        "pcg_mas": 1.58
-      },
-      "r2": {
-        "eps_path": 0.05499999999999999,
-        "rho": 1.29,
-        "shield_factor": 0.42,
-        "pcg_factor": 0.12
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     }
   ],
@@ -368,83 +934,167 @@
     {
       "model": "qwen2.5-7B",
       "dataset": "HotpotQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.26,
-        "shieldagent": 0.1092,
-        "pcg_mas": 0.0143
+        "no_certificate": 0.28,
+        "shieldagent": 0.112,
+        "pcg_mas": 0.018
+      },
+      "bad_accept": {
+        "no_certificate": 0.1736,
+        "shieldagent": 0.06495999999999999,
+        "pcg_mas": 0.00936
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.38,
+        "shieldagent": 0.262,
+        "pcg_mas": 0.218
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.66,
+        "pcg_mas": 0.88
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 56.6,
-        "pcg_mas": 78.6
+        "shieldagent": 66.0,
+        "pcg_mas": 88.0
       },
       "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.54,
-        "pcg_mas": 0.74
+        "no_certificate": 0.24,
+        "shieldagent": 0.58,
+        "pcg_mas": 0.78
       },
       "utility": {
-        "no_certificate": 0.7999999999999999,
-        "shieldagent": 0.83,
-        "pcg_mas": 0.86
+        "no_certificate": 0.8,
+        "shieldagent": 0.84,
+        "pcg_mas": 0.88
       },
       "token_multiplier": {
         "no_certificate": 1.0,
-        "shieldagent": 1.32,
-        "pcg_mas": 1.6920000000000002
+        "shieldagent": 1.35,
+        "pcg_mas": 1.82
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4000000000000001,
+        "pcg_mas": 1.9200000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0025272000000000003,
+        "replay": 0.0016848,
+        "check": 0.0029016000000000003,
+        "coverage": 0.0022464
       },
       "r2": {
-        "eps_path": 0.095,
-        "rho": 1.29,
+        "eps_path": 0.07,
+        "rho": 1.24,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.015400000000000002,
+        "shieldagent": 0.00672,
+        "pcg_mas": 0.0021599999999999996
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.1-8B",
       "dataset": "PubMedQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.14,
-        "shieldagent": 0.058800000000000005,
-        "pcg_mas": 0.007700000000000001
+        "no_certificate": 0.23,
+        "shieldagent": 0.09,
+        "pcg_mas": 0.014
+      },
+      "bad_accept": {
+        "no_certificate": 0.1426,
+        "shieldagent": 0.052199999999999996,
+        "pcg_mas": 0.00728
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.33,
+        "shieldagent": 0.24,
+        "pcg_mas": 0.21400000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.68,
+        "pcg_mas": 0.9
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 68.0,
+        "pcg_mas": 90.0
       },
       "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.58,
-        "pcg_mas": 0.78
+        "no_certificate": 0.24,
+        "shieldagent": 0.62,
+        "pcg_mas": 0.84
       },
       "utility": {
-        "no_certificate": 0.7799999999999999,
-        "shieldagent": 0.8099999999999999,
-        "pcg_mas": 0.84
+        "no_certificate": 0.79,
+        "shieldagent": 0.83,
+        "pcg_mas": 0.87
       },
       "token_multiplier": {
         "no_certificate": 1.0,
+        "shieldagent": 1.31,
+        "pcg_mas": 1.7
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.8
+      },
+      "audit_channels": {
+        "integrity": 0.0019656,
+        "replay": 0.0013104,
+        "check": 0.0022567999999999998,
+        "coverage": 0.0017472
       },
       "r2": {
-        "eps_path": 0.045,
-        "rho": 1.33,
+        "eps_path": 0.06,
+        "rho": 1.2,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01265,
+        "shieldagent": 0.005399999999999999,
+        "pcg_mas": 0.00168
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-v3",
       "dataset": "WebLINX",
-      "source": "proxy_smoke_not_final",
       "harm": {
         "no_certificate": 0.135,
         "shieldagent": 0.052,
         "pcg_mas": 0.006
+      },
+      "bad_accept": {
+        "no_certificate": 0.08370000000000001,
+        "shieldagent": 0.030159999999999996,
+        "pcg_mas": 0.0031200000000000004
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.23500000000000001,
+        "shieldagent": 0.20199999999999999,
+        "pcg_mas": 0.20600000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.74,
+        "pcg_mas": 0.93
       },
       "bound_coverage": {
         "no_certificate": 0.0,
@@ -452,25 +1102,46 @@
         "pcg_mas": 93.0
       },
       "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.54,
-        "pcg_mas": 0.74
+        "no_certificate": 0.25,
+        "shieldagent": 0.7,
+        "pcg_mas": 0.93
       },
       "utility": {
-        "no_certificate": 0.7999999999999999,
-        "shieldagent": 0.83,
-        "pcg_mas": 0.86
+        "no_certificate": 0.83,
+        "shieldagent": 0.87,
+        "pcg_mas": 0.91
       },
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.24,
         "pcg_mas": 1.58
       },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.29,
+        "pcg_mas": 1.6800000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0008424000000000002,
+        "replay": 0.0005616000000000001,
+        "check": 0.0009672000000000001,
+        "coverage": 0.0007488000000000001
+      },
       "r2": {
-        "eps_path": 0.05499999999999999,
-        "rho": 1.29,
+        "eps_path": 0.045,
+        "rho": 1.14,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.007425,
+        "shieldagent": 0.00312,
+        "pcg_mas": 0.001
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     }
   ],
@@ -478,16 +1149,30 @@
     {
       "model": "phi-3.5-mini",
       "dataset": "HotpotQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.2,
-        "shieldagent": 0.084,
-        "pcg_mas": 0.011000000000000001
+        "no_certificate": 0.22,
+        "shieldagent": 0.0946,
+        "pcg_mas": 0.015400000000000002
+      },
+      "bad_accept": {
+        "no_certificate": 0.1364,
+        "shieldagent": 0.054868,
+        "pcg_mas": 0.008008000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.32,
+        "shieldagent": 0.24459999999999998,
+        "pcg_mas": 0.2154
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5870000000000001,
+        "pcg_mas": 0.787
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 55.8,
-        "pcg_mas": 77.8
+        "shieldagent": 58.7,
+        "pcg_mas": 78.7
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -502,28 +1187,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.3,
-        "pcg_mas": 1.6560000000000001
+        "pcg_mas": 1.6480000000000001
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.35,
+        "pcg_mas": 1.7480000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0021621600000000006,
+        "replay": 0.0014414400000000002,
+        "check": 0.0024824800000000005,
+        "coverage": 0.0019219200000000001
       },
       "r2": {
         "eps_path": 0.065,
-        "rho": 1.27,
+        "rho": 1.26,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0121,
+        "shieldagent": 0.005676,
+        "pcg_mas": 0.0018480000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "phi-3.5-mini",
       "dataset": "2WikiMultihopQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.0966,
-        "pcg_mas": 0.01265
+        "no_certificate": 0.25,
+        "shieldagent": 0.1075,
+        "pcg_mas": 0.0175
+      },
+      "bad_accept": {
+        "no_certificate": 0.155,
+        "shieldagent": 0.062349999999999996,
+        "pcg_mas": 0.0091
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.35,
+        "shieldagent": 0.2575,
+        "pcg_mas": 0.21750000000000003
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5835,
+        "pcg_mas": 0.7835
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 55.4,
-        "pcg_mas": 77.4
+        "shieldagent": 58.35,
+        "pcg_mas": 78.35
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -538,28 +1258,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.29,
-        "pcg_mas": 1.6380000000000001
+        "pcg_mas": 1.6340000000000001
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.34,
+        "pcg_mas": 1.7340000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0024570000000000004,
+        "replay": 0.001638,
+        "check": 0.002821,
+        "coverage": 0.002184
       },
       "r2": {
         "eps_path": 0.08,
-        "rho": 1.26,
+        "rho": 1.25,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01375,
+        "shieldagent": 0.00645,
+        "pcg_mas": 0.0021000000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "phi-3.5-mini",
       "dataset": "TAT-QA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.16999999999999998,
-        "shieldagent": 0.07139999999999999,
-        "pcg_mas": 0.009349999999999999
+        "no_certificate": 0.19,
+        "shieldagent": 0.0817,
+        "pcg_mas": 0.013300000000000001
+      },
+      "bad_accept": {
+        "no_certificate": 0.1178,
+        "shieldagent": 0.04738599999999999,
+        "pcg_mas": 0.006916000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.29000000000000004,
+        "shieldagent": 0.2317,
+        "pcg_mas": 0.21330000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5975,
+        "pcg_mas": 0.7975
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.0,
-        "pcg_mas": 79.0
+        "shieldagent": 59.75,
+        "pcg_mas": 79.75
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -574,28 +1329,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.33,
-        "pcg_mas": 1.7100000000000002
+        "pcg_mas": 1.6900000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3800000000000001,
+        "pcg_mas": 1.7900000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0018673200000000004,
+        "replay": 0.00124488,
+        "check": 0.0021439600000000003,
+        "coverage": 0.0016598400000000003
       },
       "r2": {
         "eps_path": 0.049999999999999996,
-        "rho": 1.3,
+        "rho": 1.29,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.010450000000000001,
+        "shieldagent": 0.004901999999999999,
+        "pcg_mas": 0.001596
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "phi-3.5-mini",
       "dataset": "ToolBench",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.28,
-        "shieldagent": 0.11760000000000001,
-        "pcg_mas": 0.015400000000000002
+        "no_certificate": 0.3,
+        "shieldagent": 0.129,
+        "pcg_mas": 0.021
+      },
+      "bad_accept": {
+        "no_certificate": 0.186,
+        "shieldagent": 0.07482,
+        "pcg_mas": 0.010920000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.4,
+        "shieldagent": 0.279,
+        "pcg_mas": 0.221
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.601,
+        "pcg_mas": 0.8009999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.4,
-        "pcg_mas": 79.4
+        "shieldagent": 60.1,
+        "pcg_mas": 80.1
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -610,23 +1400,58 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.34,
-        "pcg_mas": 1.7280000000000002
+        "pcg_mas": 1.7040000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3900000000000001,
+        "pcg_mas": 1.8040000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0029484000000000003,
+        "replay": 0.0019656,
+        "check": 0.0033852,
+        "coverage": 0.0026208
       },
       "r2": {
         "eps_path": 0.105,
-        "rho": 1.31,
+        "rho": 1.3,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0165,
+        "shieldagent": 0.00774,
+        "pcg_mas": 0.00252
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "phi-3.5-mini",
       "dataset": "FEVER",
-      "source": "proxy_smoke_not_final",
       "harm": {
         "no_certificate": 0.34,
         "shieldagent": 0.155,
         "pcg_mas": 0.026
+      },
+      "bad_accept": {
+        "no_certificate": 0.21080000000000002,
+        "shieldagent": 0.0899,
+        "pcg_mas": 0.013519999999999999
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.44000000000000006,
+        "shieldagent": 0.305,
+        "pcg_mas": 0.226
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.6,
+        "pcg_mas": 0.82
       },
       "bound_coverage": {
         "no_certificate": 0.0,
@@ -648,26 +1473,61 @@
         "shieldagent": 1.42,
         "pcg_mas": 1.86
       },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.47,
+        "pcg_mas": 1.9600000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0036504,
+        "replay": 0.0024335999999999997,
+        "check": 0.0041912,
+        "coverage": 0.0032447999999999995
+      },
       "r2": {
         "eps_path": 0.065,
-        "rho": 1.27,
+        "rho": 1.26,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0187,
+        "shieldagent": 0.0093,
+        "pcg_mas": 0.00312
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "phi-3.5-mini",
       "dataset": "PubMedQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.0966,
-        "pcg_mas": 0.01265
+        "no_certificate": 0.25,
+        "shieldagent": 0.1075,
+        "pcg_mas": 0.0175
+      },
+      "bad_accept": {
+        "no_certificate": 0.155,
+        "shieldagent": 0.062349999999999996,
+        "pcg_mas": 0.0091
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.35,
+        "shieldagent": 0.2575,
+        "pcg_mas": 0.21750000000000003
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5835,
+        "pcg_mas": 0.7835
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 55.4,
-        "pcg_mas": 77.4
+        "shieldagent": 58.35,
+        "pcg_mas": 78.35
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -682,28 +1542,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.29,
-        "pcg_mas": 1.6380000000000001
+        "pcg_mas": 1.6340000000000001
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.34,
+        "pcg_mas": 1.7340000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0024570000000000004,
+        "replay": 0.001638,
+        "check": 0.002821,
+        "coverage": 0.002184
       },
       "r2": {
         "eps_path": 0.08,
-        "rho": 1.26,
+        "rho": 1.25,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01375,
+        "shieldagent": 0.00645,
+        "pcg_mas": 0.0021000000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "phi-3.5-mini",
       "dataset": "WebLINX",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.24,
-        "shieldagent": 0.10079999999999999,
-        "pcg_mas": 0.0132
+        "no_certificate": 0.26,
+        "shieldagent": 0.1118,
+        "pcg_mas": 0.0182
+      },
+      "bad_accept": {
+        "no_certificate": 0.1612,
+        "shieldagent": 0.064844,
+        "pcg_mas": 0.009464
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.36,
+        "shieldagent": 0.2618,
+        "pcg_mas": 0.2182
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5870000000000001,
+        "pcg_mas": 0.787
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 55.8,
-        "pcg_mas": 77.8
+        "shieldagent": 58.7,
+        "pcg_mas": 78.7
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -718,28 +1613,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.3,
-        "pcg_mas": 1.6560000000000001
+        "pcg_mas": 1.6480000000000001
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.35,
+        "pcg_mas": 1.7480000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.00255528,
+        "replay": 0.00170352,
+        "check": 0.00293384,
+        "coverage": 0.00227136
       },
       "r2": {
         "eps_path": 0.08499999999999999,
-        "rho": 1.27,
+        "rho": 1.26,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0143,
+        "shieldagent": 0.0067079999999999996,
+        "pcg_mas": 0.002184
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "phi-3.5-mini",
       "dataset": "Synthetic-Adversarial",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.27,
-        "shieldagent": 0.1134,
-        "pcg_mas": 0.01485
+        "no_certificate": 0.29,
+        "shieldagent": 0.12469999999999999,
+        "pcg_mas": 0.020300000000000002
+      },
+      "bad_accept": {
+        "no_certificate": 0.1798,
+        "shieldagent": 0.07232599999999999,
+        "pcg_mas": 0.010556000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.39,
+        "shieldagent": 0.2747,
+        "pcg_mas": 0.22030000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5975,
+        "pcg_mas": 0.7975
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.0,
-        "pcg_mas": 79.0
+        "shieldagent": 59.75,
+        "pcg_mas": 79.75
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -754,64 +1684,134 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.33,
-        "pcg_mas": 1.7100000000000002
+        "pcg_mas": 1.6900000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3800000000000001,
+        "pcg_mas": 1.7900000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0028501200000000007,
+        "replay": 0.0019000800000000002,
+        "check": 0.00327236,
+        "coverage": 0.00253344
       },
       "r2": {
         "eps_path": 0.1,
-        "rho": 1.3,
+        "rho": 1.29,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01595,
+        "shieldagent": 0.007481999999999999,
+        "pcg_mas": 0.0024360000000000002
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "qwen2.5-7B",
       "dataset": "HotpotQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.26,
-        "shieldagent": 0.1092,
-        "pcg_mas": 0.0143
+        "no_certificate": 0.28,
+        "shieldagent": 0.112,
+        "pcg_mas": 0.018
+      },
+      "bad_accept": {
+        "no_certificate": 0.1736,
+        "shieldagent": 0.06495999999999999,
+        "pcg_mas": 0.00936
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.38,
+        "shieldagent": 0.262,
+        "pcg_mas": 0.218
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.66,
+        "pcg_mas": 0.88
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 56.6,
-        "pcg_mas": 78.6
+        "shieldagent": 66.0,
+        "pcg_mas": 88.0
       },
       "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.54,
-        "pcg_mas": 0.74
+        "no_certificate": 0.24,
+        "shieldagent": 0.58,
+        "pcg_mas": 0.78
       },
       "utility": {
-        "no_certificate": 0.7999999999999999,
-        "shieldagent": 0.83,
-        "pcg_mas": 0.86
+        "no_certificate": 0.8,
+        "shieldagent": 0.84,
+        "pcg_mas": 0.88
       },
       "token_multiplier": {
         "no_certificate": 1.0,
-        "shieldagent": 1.32,
-        "pcg_mas": 1.6920000000000002
+        "shieldagent": 1.35,
+        "pcg_mas": 1.82
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4000000000000001,
+        "pcg_mas": 1.9200000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0025272000000000003,
+        "replay": 0.0016848,
+        "check": 0.0029016000000000003,
+        "coverage": 0.0022464
       },
       "r2": {
-        "eps_path": 0.095,
-        "rho": 1.29,
+        "eps_path": 0.07,
+        "rho": 1.24,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.015400000000000002,
+        "shieldagent": 0.00672,
+        "pcg_mas": 0.0021599999999999996
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "qwen2.5-7B",
       "dataset": "2WikiMultihopQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.29000000000000004,
-        "shieldagent": 0.1218,
-        "pcg_mas": 0.015950000000000002
+        "no_certificate": 0.31,
+        "shieldagent": 0.1333,
+        "pcg_mas": 0.0217
+      },
+      "bad_accept": {
+        "no_certificate": 0.1922,
+        "shieldagent": 0.077314,
+        "pcg_mas": 0.011284
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.41000000000000003,
+        "shieldagent": 0.2833,
+        "pcg_mas": 0.2217
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.6045,
+        "pcg_mas": 0.8045
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.8,
-        "pcg_mas": 79.8
+        "shieldagent": 60.45,
+        "pcg_mas": 80.45
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -826,28 +1826,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.35,
-        "pcg_mas": 1.7460000000000002
+        "pcg_mas": 1.7180000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4000000000000001,
+        "pcg_mas": 1.8180000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0030466800000000004,
+        "replay": 0.00203112,
+        "check": 0.00349804,
+        "coverage": 0.0027081600000000003
       },
       "r2": {
         "eps_path": 0.11,
-        "rho": 1.32,
+        "rho": 1.31,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01705,
+        "shieldagent": 0.007998,
+        "pcg_mas": 0.002604
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "qwen2.5-7B",
       "dataset": "TAT-QA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.0966,
-        "pcg_mas": 0.01265
+        "no_certificate": 0.25,
+        "shieldagent": 0.1075,
+        "pcg_mas": 0.0175
+      },
+      "bad_accept": {
+        "no_certificate": 0.155,
+        "shieldagent": 0.062349999999999996,
+        "pcg_mas": 0.0091
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.35,
+        "shieldagent": 0.2575,
+        "pcg_mas": 0.21750000000000003
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5835,
+        "pcg_mas": 0.7835
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 55.4,
-        "pcg_mas": 77.4
+        "shieldagent": 58.35,
+        "pcg_mas": 78.35
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -862,28 +1897,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.29,
-        "pcg_mas": 1.6380000000000001
+        "pcg_mas": 1.6340000000000001
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.34,
+        "pcg_mas": 1.7340000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0024570000000000004,
+        "replay": 0.001638,
+        "check": 0.002821,
+        "coverage": 0.002184
       },
       "r2": {
         "eps_path": 0.08,
-        "rho": 1.26,
+        "rho": 1.25,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01375,
+        "shieldagent": 0.00645,
+        "pcg_mas": 0.0021000000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "qwen2.5-7B",
       "dataset": "ToolBench",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.16999999999999998,
-        "shieldagent": 0.07139999999999999,
-        "pcg_mas": 0.009349999999999999
+        "no_certificate": 0.19,
+        "shieldagent": 0.0817,
+        "pcg_mas": 0.013300000000000001
+      },
+      "bad_accept": {
+        "no_certificate": 0.1178,
+        "shieldagent": 0.04738599999999999,
+        "pcg_mas": 0.006916000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.29000000000000004,
+        "shieldagent": 0.2317,
+        "pcg_mas": 0.21330000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5975,
+        "pcg_mas": 0.7975
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.0,
-        "pcg_mas": 79.0
+        "shieldagent": 59.75,
+        "pcg_mas": 79.75
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -898,28 +1968,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.33,
-        "pcg_mas": 1.7100000000000002
+        "pcg_mas": 1.6900000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3800000000000001,
+        "pcg_mas": 1.7900000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0018673200000000004,
+        "replay": 0.00124488,
+        "check": 0.0021439600000000003,
+        "coverage": 0.0016598400000000003
       },
       "r2": {
         "eps_path": 0.049999999999999996,
-        "rho": 1.3,
+        "rho": 1.29,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.010450000000000001,
+        "shieldagent": 0.004901999999999999,
+        "pcg_mas": 0.001596
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "qwen2.5-7B",
       "dataset": "FEVER",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.26,
-        "shieldagent": 0.1092,
-        "pcg_mas": 0.0143
+        "no_certificate": 0.27999999999999997,
+        "shieldagent": 0.12039999999999998,
+        "pcg_mas": 0.0196
+      },
+      "bad_accept": {
+        "no_certificate": 0.17359999999999998,
+        "shieldagent": 0.06983199999999998,
+        "pcg_mas": 0.010192
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.38,
+        "shieldagent": 0.2704,
+        "pcg_mas": 0.21960000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.594,
+        "pcg_mas": 0.794
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 56.6,
-        "pcg_mas": 78.6
+        "shieldagent": 59.4,
+        "pcg_mas": 79.4
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -934,28 +2039,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.32,
-        "pcg_mas": 1.6920000000000002
+        "pcg_mas": 1.6760000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.37,
+        "pcg_mas": 1.7760000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.00275184,
+        "replay": 0.0018345599999999998,
+        "check": 0.00315952,
+        "coverage": 0.0024460799999999998
       },
       "r2": {
         "eps_path": 0.095,
-        "rho": 1.29,
+        "rho": 1.28,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.015399999999999999,
+        "shieldagent": 0.007223999999999999,
+        "pcg_mas": 0.002352
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "qwen2.5-7B",
       "dataset": "PubMedQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.29000000000000004,
-        "shieldagent": 0.1218,
-        "pcg_mas": 0.015950000000000002
+        "no_certificate": 0.31,
+        "shieldagent": 0.1333,
+        "pcg_mas": 0.0217
+      },
+      "bad_accept": {
+        "no_certificate": 0.1922,
+        "shieldagent": 0.077314,
+        "pcg_mas": 0.011284
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.41000000000000003,
+        "shieldagent": 0.2833,
+        "pcg_mas": 0.2217
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.6045,
+        "pcg_mas": 0.8045
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.8,
-        "pcg_mas": 79.8
+        "shieldagent": 60.45,
+        "pcg_mas": 80.45
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -970,28 +2110,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.35,
-        "pcg_mas": 1.7460000000000002
+        "pcg_mas": 1.7180000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4000000000000001,
+        "pcg_mas": 1.8180000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0030466800000000004,
+        "replay": 0.00203112,
+        "check": 0.00349804,
+        "coverage": 0.0027081600000000003
       },
       "r2": {
         "eps_path": 0.11,
-        "rho": 1.32,
+        "rho": 1.31,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01705,
+        "shieldagent": 0.007998,
+        "pcg_mas": 0.002604
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "qwen2.5-7B",
       "dataset": "WebLINX",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.3,
-        "shieldagent": 0.126,
-        "pcg_mas": 0.0165
+        "no_certificate": 0.32,
+        "shieldagent": 0.1376,
+        "pcg_mas": 0.022400000000000003
+      },
+      "bad_accept": {
+        "no_certificate": 0.1984,
+        "shieldagent": 0.07980799999999999,
+        "pcg_mas": 0.011648000000000002
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.42000000000000004,
+        "shieldagent": 0.28759999999999997,
+        "pcg_mas": 0.22240000000000001
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.608,
+        "pcg_mas": 0.8079999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 60.8,
+        "pcg_mas": 80.8
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1006,28 +2181,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.7320000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.8320000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.003144960000000001,
+        "replay": 0.0020966400000000003,
+        "check": 0.0036108800000000008,
+        "coverage": 0.0027955200000000006
       },
       "r2": {
         "eps_path": 0.11499999999999999,
-        "rho": 1.33,
+        "rho": 1.32,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0176,
+        "shieldagent": 0.008256,
+        "pcg_mas": 0.0026880000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "qwen2.5-7B",
       "dataset": "Synthetic-Adversarial",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.16,
-        "shieldagent": 0.0672,
-        "pcg_mas": 0.0088
+        "no_certificate": 0.18,
+        "shieldagent": 0.0774,
+        "pcg_mas": 0.0126
+      },
+      "bad_accept": {
+        "no_certificate": 0.11159999999999999,
+        "shieldagent": 0.044891999999999994,
+        "pcg_mas": 0.0065520000000000005
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.28,
+        "shieldagent": 0.2274,
+        "pcg_mas": 0.2126
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.601,
+        "pcg_mas": 0.8009999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.4,
-        "pcg_mas": 79.4
+        "shieldagent": 60.1,
+        "pcg_mas": 80.1
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1042,28 +2252,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.34,
-        "pcg_mas": 1.7280000000000002
+        "pcg_mas": 1.7040000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3900000000000001,
+        "pcg_mas": 1.8040000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0017690400000000002,
+        "replay": 0.00117936,
+        "check": 0.00203112,
+        "coverage": 0.00157248
       },
       "r2": {
         "eps_path": 0.045,
-        "rho": 1.31,
+        "rho": 1.3,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.009899999999999999,
+        "shieldagent": 0.004644,
+        "pcg_mas": 0.0015119999999999999
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-llm-7b-chat",
       "dataset": "HotpotQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.3,
-        "shieldagent": 0.126,
-        "pcg_mas": 0.0165
+        "no_certificate": 0.32,
+        "shieldagent": 0.1376,
+        "pcg_mas": 0.022400000000000003
+      },
+      "bad_accept": {
+        "no_certificate": 0.1984,
+        "shieldagent": 0.07980799999999999,
+        "pcg_mas": 0.011648000000000002
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.42000000000000004,
+        "shieldagent": 0.28759999999999997,
+        "pcg_mas": 0.22240000000000001
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.608,
+        "pcg_mas": 0.8079999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 60.8,
+        "pcg_mas": 80.8
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1078,28 +2323,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.7320000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.8320000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.003144960000000001,
+        "replay": 0.0020966400000000003,
+        "check": 0.0036108800000000008,
+        "coverage": 0.0027955200000000006
       },
       "r2": {
         "eps_path": 0.11499999999999999,
-        "rho": 1.33,
+        "rho": 1.32,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0176,
+        "shieldagent": 0.008256,
+        "pcg_mas": 0.0026880000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-llm-7b-chat",
       "dataset": "2WikiMultihopQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.16,
-        "shieldagent": 0.0672,
-        "pcg_mas": 0.0088
+        "no_certificate": 0.18,
+        "shieldagent": 0.0774,
+        "pcg_mas": 0.0126
+      },
+      "bad_accept": {
+        "no_certificate": 0.11159999999999999,
+        "shieldagent": 0.044891999999999994,
+        "pcg_mas": 0.0065520000000000005
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.28,
+        "shieldagent": 0.2274,
+        "pcg_mas": 0.2126
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.601,
+        "pcg_mas": 0.8009999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.4,
-        "pcg_mas": 79.4
+        "shieldagent": 60.1,
+        "pcg_mas": 80.1
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1114,28 +2394,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.34,
-        "pcg_mas": 1.7280000000000002
+        "pcg_mas": 1.7040000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3900000000000001,
+        "pcg_mas": 1.8040000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0017690400000000002,
+        "replay": 0.00117936,
+        "check": 0.00203112,
+        "coverage": 0.00157248
       },
       "r2": {
         "eps_path": 0.045,
-        "rho": 1.31,
+        "rho": 1.3,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.009899999999999999,
+        "shieldagent": 0.004644,
+        "pcg_mas": 0.0015119999999999999
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-llm-7b-chat",
       "dataset": "TAT-QA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.27,
-        "shieldagent": 0.1134,
-        "pcg_mas": 0.01485
+        "no_certificate": 0.29,
+        "shieldagent": 0.12469999999999999,
+        "pcg_mas": 0.020300000000000002
+      },
+      "bad_accept": {
+        "no_certificate": 0.1798,
+        "shieldagent": 0.07232599999999999,
+        "pcg_mas": 0.010556000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.39,
+        "shieldagent": 0.2747,
+        "pcg_mas": 0.22030000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5975,
+        "pcg_mas": 0.7975
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.0,
-        "pcg_mas": 79.0
+        "shieldagent": 59.75,
+        "pcg_mas": 79.75
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1150,28 +2465,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.33,
-        "pcg_mas": 1.7100000000000002
+        "pcg_mas": 1.6900000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3800000000000001,
+        "pcg_mas": 1.7900000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0028501200000000007,
+        "replay": 0.0019000800000000002,
+        "check": 0.00327236,
+        "coverage": 0.00253344
       },
       "r2": {
         "eps_path": 0.1,
-        "rho": 1.3,
+        "rho": 1.29,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01595,
+        "shieldagent": 0.007481999999999999,
+        "pcg_mas": 0.0024360000000000002
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-llm-7b-chat",
       "dataset": "ToolBench",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.21,
-        "shieldagent": 0.08819999999999999,
-        "pcg_mas": 0.01155
+        "no_certificate": 0.22999999999999998,
+        "shieldagent": 0.09889999999999999,
+        "pcg_mas": 0.0161
+      },
+      "bad_accept": {
+        "no_certificate": 0.14259999999999998,
+        "shieldagent": 0.05736199999999999,
+        "pcg_mas": 0.008372000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.32999999999999996,
+        "shieldagent": 0.24889999999999998,
+        "pcg_mas": 0.21610000000000001
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5835,
+        "pcg_mas": 0.7835
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 55.4,
-        "pcg_mas": 77.4
+        "shieldagent": 58.35,
+        "pcg_mas": 78.35
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1186,28 +2536,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.29,
-        "pcg_mas": 1.6380000000000001
+        "pcg_mas": 1.6340000000000001
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.34,
+        "pcg_mas": 1.7340000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0022604400000000003,
+        "replay": 0.0015069600000000001,
+        "check": 0.0025953200000000004,
+        "coverage": 0.00200928
       },
       "r2": {
         "eps_path": 0.06999999999999999,
-        "rho": 1.26,
+        "rho": 1.25,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01265,
+        "shieldagent": 0.005933999999999999,
+        "pcg_mas": 0.001932
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-llm-7b-chat",
       "dataset": "FEVER",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.3,
-        "shieldagent": 0.126,
-        "pcg_mas": 0.0165
+        "no_certificate": 0.32,
+        "shieldagent": 0.1376,
+        "pcg_mas": 0.022400000000000003
+      },
+      "bad_accept": {
+        "no_certificate": 0.1984,
+        "shieldagent": 0.07980799999999999,
+        "pcg_mas": 0.011648000000000002
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.42000000000000004,
+        "shieldagent": 0.28759999999999997,
+        "pcg_mas": 0.22240000000000001
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.608,
+        "pcg_mas": 0.8079999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 60.8,
+        "pcg_mas": 80.8
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1222,28 +2607,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.7320000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.8320000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.003144960000000001,
+        "replay": 0.0020966400000000003,
+        "check": 0.0036108800000000008,
+        "coverage": 0.0027955200000000006
       },
       "r2": {
         "eps_path": 0.11499999999999999,
-        "rho": 1.33,
+        "rho": 1.32,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0176,
+        "shieldagent": 0.008256,
+        "pcg_mas": 0.0026880000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-llm-7b-chat",
       "dataset": "PubMedQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.16,
-        "shieldagent": 0.0672,
-        "pcg_mas": 0.0088
+        "no_certificate": 0.18,
+        "shieldagent": 0.0774,
+        "pcg_mas": 0.0126
+      },
+      "bad_accept": {
+        "no_certificate": 0.11159999999999999,
+        "shieldagent": 0.044891999999999994,
+        "pcg_mas": 0.0065520000000000005
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.28,
+        "shieldagent": 0.2274,
+        "pcg_mas": 0.2126
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.601,
+        "pcg_mas": 0.8009999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.4,
-        "pcg_mas": 79.4
+        "shieldagent": 60.1,
+        "pcg_mas": 80.1
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1258,28 +2678,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.34,
-        "pcg_mas": 1.7280000000000002
+        "pcg_mas": 1.7040000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3900000000000001,
+        "pcg_mas": 1.8040000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0017690400000000002,
+        "replay": 0.00117936,
+        "check": 0.00203112,
+        "coverage": 0.00157248
       },
       "r2": {
         "eps_path": 0.045,
-        "rho": 1.31,
+        "rho": 1.3,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.009899999999999999,
+        "shieldagent": 0.004644,
+        "pcg_mas": 0.0015119999999999999
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-llm-7b-chat",
       "dataset": "WebLINX",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.16999999999999998,
-        "shieldagent": 0.07139999999999999,
-        "pcg_mas": 0.009349999999999999
+        "no_certificate": 0.19,
+        "shieldagent": 0.0817,
+        "pcg_mas": 0.013300000000000001
+      },
+      "bad_accept": {
+        "no_certificate": 0.1178,
+        "shieldagent": 0.04738599999999999,
+        "pcg_mas": 0.006916000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.29000000000000004,
+        "shieldagent": 0.2317,
+        "pcg_mas": 0.21330000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5975,
+        "pcg_mas": 0.7975
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.0,
-        "pcg_mas": 79.0
+        "shieldagent": 59.75,
+        "pcg_mas": 79.75
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1294,28 +2749,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.33,
-        "pcg_mas": 1.7100000000000002
+        "pcg_mas": 1.6900000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3800000000000001,
+        "pcg_mas": 1.7900000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0018673200000000004,
+        "replay": 0.00124488,
+        "check": 0.0021439600000000003,
+        "coverage": 0.0016598400000000003
       },
       "r2": {
         "eps_path": 0.049999999999999996,
-        "rho": 1.3,
+        "rho": 1.29,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.010450000000000001,
+        "shieldagent": 0.004901999999999999,
+        "pcg_mas": 0.001596
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-llm-7b-chat",
       "dataset": "Synthetic-Adversarial",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.2,
-        "shieldagent": 0.084,
-        "pcg_mas": 0.011000000000000001
+        "no_certificate": 0.22,
+        "shieldagent": 0.0946,
+        "pcg_mas": 0.015400000000000002
+      },
+      "bad_accept": {
+        "no_certificate": 0.1364,
+        "shieldagent": 0.054868,
+        "pcg_mas": 0.008008000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.32,
+        "shieldagent": 0.24459999999999998,
+        "pcg_mas": 0.2154
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5870000000000001,
+        "pcg_mas": 0.787
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 55.8,
-        "pcg_mas": 77.8
+        "shieldagent": 58.7,
+        "pcg_mas": 78.7
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1330,28 +2820,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.3,
-        "pcg_mas": 1.6560000000000001
+        "pcg_mas": 1.6480000000000001
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.35,
+        "pcg_mas": 1.7480000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0021621600000000006,
+        "replay": 0.0014414400000000002,
+        "check": 0.0024824800000000005,
+        "coverage": 0.0019219200000000001
       },
       "r2": {
         "eps_path": 0.065,
-        "rho": 1.27,
+        "rho": 1.26,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0121,
+        "shieldagent": 0.005676,
+        "pcg_mas": 0.0018480000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.1-8B",
       "dataset": "HotpotQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.28,
-        "shieldagent": 0.11760000000000001,
-        "pcg_mas": 0.015400000000000002
+        "no_certificate": 0.3,
+        "shieldagent": 0.129,
+        "pcg_mas": 0.021
+      },
+      "bad_accept": {
+        "no_certificate": 0.186,
+        "shieldagent": 0.07482,
+        "pcg_mas": 0.010920000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.4,
+        "shieldagent": 0.279,
+        "pcg_mas": 0.221
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.601,
+        "pcg_mas": 0.8009999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.4,
-        "pcg_mas": 79.4
+        "shieldagent": 60.1,
+        "pcg_mas": 80.1
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1366,28 +2891,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.34,
-        "pcg_mas": 1.7280000000000002
+        "pcg_mas": 1.7040000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3900000000000001,
+        "pcg_mas": 1.8040000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0029484000000000003,
+        "replay": 0.0019656,
+        "check": 0.0033852,
+        "coverage": 0.0026208
       },
       "r2": {
         "eps_path": 0.105,
-        "rho": 1.31,
+        "rho": 1.3,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0165,
+        "shieldagent": 0.00774,
+        "pcg_mas": 0.00252
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.1-8B",
       "dataset": "2WikiMultihopQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.14,
-        "shieldagent": 0.058800000000000005,
-        "pcg_mas": 0.007700000000000001
+        "no_certificate": 0.15999999999999998,
+        "shieldagent": 0.06879999999999999,
+        "pcg_mas": 0.0112
+      },
+      "bad_accept": {
+        "no_certificate": 0.09919999999999998,
+        "shieldagent": 0.03990399999999999,
+        "pcg_mas": 0.005824
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.26,
+        "shieldagent": 0.2188,
+        "pcg_mas": 0.2112
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.608,
+        "pcg_mas": 0.8079999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 60.8,
+        "pcg_mas": 80.8
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1402,28 +2962,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.7320000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.8320000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0015724800000000002,
+        "replay": 0.00104832,
+        "check": 0.00180544,
+        "coverage": 0.00139776
       },
       "r2": {
-        "eps_path": 0.045,
-        "rho": 1.33,
+        "eps_path": 0.035,
+        "rho": 1.32,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.008799999999999999,
+        "shieldagent": 0.004127999999999999,
+        "pcg_mas": 0.001344
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.1-8B",
       "dataset": "TAT-QA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.25,
-        "shieldagent": 0.105,
-        "pcg_mas": 0.01375
+        "no_certificate": 0.27,
+        "shieldagent": 0.11610000000000001,
+        "pcg_mas": 0.018900000000000004
+      },
+      "bad_accept": {
+        "no_certificate": 0.16740000000000002,
+        "shieldagent": 0.067338,
+        "pcg_mas": 0.009828000000000002
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.37,
+        "shieldagent": 0.2661,
+        "pcg_mas": 0.2189
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5905,
+        "pcg_mas": 0.7905
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 56.2,
-        "pcg_mas": 78.2
+        "shieldagent": 59.05,
+        "pcg_mas": 79.05
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1438,28 +3033,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.31,
-        "pcg_mas": 1.6740000000000002
+        "pcg_mas": 1.6620000000000001
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.36,
+        "pcg_mas": 1.7620000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0026535600000000006,
+        "replay": 0.0017690400000000002,
+        "check": 0.0030466800000000004,
+        "coverage": 0.0023587200000000003
       },
       "r2": {
         "eps_path": 0.09,
-        "rho": 1.28,
+        "rho": 1.27,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01485,
+        "shieldagent": 0.006966,
+        "pcg_mas": 0.0022680000000000005
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.1-8B",
       "dataset": "ToolBench",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.19,
-        "shieldagent": 0.0798,
-        "pcg_mas": 0.010450000000000001
+        "no_certificate": 0.21,
+        "shieldagent": 0.09029999999999999,
+        "pcg_mas": 0.014700000000000001
+      },
+      "bad_accept": {
+        "no_certificate": 0.13019999999999998,
+        "shieldagent": 0.05237399999999999,
+        "pcg_mas": 0.007644000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.31,
+        "shieldagent": 0.24029999999999999,
+        "pcg_mas": 0.2147
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5905,
+        "pcg_mas": 0.7905
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 56.2,
-        "pcg_mas": 78.2
+        "shieldagent": 59.05,
+        "pcg_mas": 79.05
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1474,28 +3104,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.31,
-        "pcg_mas": 1.6740000000000002
+        "pcg_mas": 1.6620000000000001
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.36,
+        "pcg_mas": 1.7620000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.00206388,
+        "replay": 0.00137592,
+        "check": 0.00236964,
+        "coverage": 0.00183456
       },
       "r2": {
         "eps_path": 0.06,
-        "rho": 1.28,
+        "rho": 1.27,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01155,
+        "shieldagent": 0.005417999999999999,
+        "pcg_mas": 0.0017640000000000002
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.1-8B",
       "dataset": "FEVER",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.28,
-        "shieldagent": 0.11760000000000001,
-        "pcg_mas": 0.015400000000000002
+        "no_certificate": 0.3,
+        "shieldagent": 0.129,
+        "pcg_mas": 0.021
+      },
+      "bad_accept": {
+        "no_certificate": 0.186,
+        "shieldagent": 0.07482,
+        "pcg_mas": 0.010920000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.4,
+        "shieldagent": 0.279,
+        "pcg_mas": 0.221
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.601,
+        "pcg_mas": 0.8009999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.4,
-        "pcg_mas": 79.4
+        "shieldagent": 60.1,
+        "pcg_mas": 80.1
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1510,64 +3175,134 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.34,
-        "pcg_mas": 1.7280000000000002
+        "pcg_mas": 1.7040000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3900000000000001,
+        "pcg_mas": 1.8040000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0029484000000000003,
+        "replay": 0.0019656,
+        "check": 0.0033852,
+        "coverage": 0.0026208
       },
       "r2": {
         "eps_path": 0.105,
-        "rho": 1.31,
+        "rho": 1.3,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0165,
+        "shieldagent": 0.00774,
+        "pcg_mas": 0.00252
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.1-8B",
       "dataset": "PubMedQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.14,
-        "shieldagent": 0.058800000000000005,
-        "pcg_mas": 0.007700000000000001
+        "no_certificate": 0.23,
+        "shieldagent": 0.09,
+        "pcg_mas": 0.014
+      },
+      "bad_accept": {
+        "no_certificate": 0.1426,
+        "shieldagent": 0.052199999999999996,
+        "pcg_mas": 0.00728
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.33,
+        "shieldagent": 0.24,
+        "pcg_mas": 0.21400000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.68,
+        "pcg_mas": 0.9
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 68.0,
+        "pcg_mas": 90.0
       },
       "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.58,
-        "pcg_mas": 0.78
+        "no_certificate": 0.24,
+        "shieldagent": 0.62,
+        "pcg_mas": 0.84
       },
       "utility": {
-        "no_certificate": 0.7799999999999999,
-        "shieldagent": 0.8099999999999999,
-        "pcg_mas": 0.84
+        "no_certificate": 0.79,
+        "shieldagent": 0.83,
+        "pcg_mas": 0.87
       },
       "token_multiplier": {
         "no_certificate": 1.0,
+        "shieldagent": 1.31,
+        "pcg_mas": 1.7
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.8
+      },
+      "audit_channels": {
+        "integrity": 0.0019656,
+        "replay": 0.0013104,
+        "check": 0.0022567999999999998,
+        "coverage": 0.0017472
       },
       "r2": {
-        "eps_path": 0.045,
-        "rho": 1.33,
+        "eps_path": 0.06,
+        "rho": 1.2,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01265,
+        "shieldagent": 0.005399999999999999,
+        "pcg_mas": 0.00168
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.1-8B",
       "dataset": "WebLINX",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.15,
-        "shieldagent": 0.063,
-        "pcg_mas": 0.00825
+        "no_certificate": 0.16999999999999998,
+        "shieldagent": 0.0731,
+        "pcg_mas": 0.0119
+      },
+      "bad_accept": {
+        "no_certificate": 0.1054,
+        "shieldagent": 0.042398,
+        "pcg_mas": 0.006188000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.27,
+        "shieldagent": 0.2231,
+        "pcg_mas": 0.2119
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.6045,
+        "pcg_mas": 0.8045
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.8,
-        "pcg_mas": 79.8
+        "shieldagent": 60.45,
+        "pcg_mas": 80.45
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1582,28 +3317,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.35,
-        "pcg_mas": 1.7460000000000002
+        "pcg_mas": 1.7180000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4000000000000001,
+        "pcg_mas": 1.8180000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0016707600000000003,
+        "replay": 0.00111384,
+        "check": 0.0019182800000000003,
+        "coverage": 0.0014851200000000001
       },
       "r2": {
-        "eps_path": 0.045,
-        "rho": 1.32,
+        "eps_path": 0.039999999999999994,
+        "rho": 1.31,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.009349999999999999,
+        "shieldagent": 0.004386,
+        "pcg_mas": 0.001428
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.1-8B",
       "dataset": "Synthetic-Adversarial",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.18,
-        "shieldagent": 0.0756,
-        "pcg_mas": 0.009899999999999999
+        "no_certificate": 0.19999999999999998,
+        "shieldagent": 0.086,
+        "pcg_mas": 0.014
+      },
+      "bad_accept": {
+        "no_certificate": 0.12399999999999999,
+        "shieldagent": 0.049879999999999994,
+        "pcg_mas": 0.00728
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.3,
+        "shieldagent": 0.236,
+        "pcg_mas": 0.21400000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.594,
+        "pcg_mas": 0.794
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 56.6,
-        "pcg_mas": 78.6
+        "shieldagent": 59.4,
+        "pcg_mas": 79.4
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1618,28 +3388,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.32,
-        "pcg_mas": 1.6920000000000002
+        "pcg_mas": 1.6760000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.37,
+        "pcg_mas": 1.7760000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0019656,
+        "replay": 0.0013104,
+        "check": 0.0022567999999999998,
+        "coverage": 0.0017472
       },
       "r2": {
         "eps_path": 0.05499999999999999,
-        "rho": 1.29,
+        "rho": 1.28,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.011,
+        "shieldagent": 0.00516,
+        "pcg_mas": 0.00168
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Gemma-2-9b-it",
       "dataset": "HotpotQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.27,
-        "shieldagent": 0.1134,
-        "pcg_mas": 0.01485
+        "no_certificate": 0.29,
+        "shieldagent": 0.12469999999999999,
+        "pcg_mas": 0.020300000000000002
+      },
+      "bad_accept": {
+        "no_certificate": 0.1798,
+        "shieldagent": 0.07232599999999999,
+        "pcg_mas": 0.010556000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.39,
+        "shieldagent": 0.2747,
+        "pcg_mas": 0.22030000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5975,
+        "pcg_mas": 0.7975
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.0,
-        "pcg_mas": 79.0
+        "shieldagent": 59.75,
+        "pcg_mas": 79.75
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1654,28 +3459,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.33,
-        "pcg_mas": 1.7100000000000002
+        "pcg_mas": 1.6900000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3800000000000001,
+        "pcg_mas": 1.7900000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0028501200000000007,
+        "replay": 0.0019000800000000002,
+        "check": 0.00327236,
+        "coverage": 0.00253344
       },
       "r2": {
         "eps_path": 0.1,
-        "rho": 1.3,
+        "rho": 1.29,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01595,
+        "shieldagent": 0.007481999999999999,
+        "pcg_mas": 0.0024360000000000002
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Gemma-2-9b-it",
       "dataset": "2WikiMultihopQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.3,
-        "shieldagent": 0.126,
-        "pcg_mas": 0.0165
+        "no_certificate": 0.32,
+        "shieldagent": 0.1376,
+        "pcg_mas": 0.022400000000000003
+      },
+      "bad_accept": {
+        "no_certificate": 0.1984,
+        "shieldagent": 0.07980799999999999,
+        "pcg_mas": 0.011648000000000002
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.42000000000000004,
+        "shieldagent": 0.28759999999999997,
+        "pcg_mas": 0.22240000000000001
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.608,
+        "pcg_mas": 0.8079999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 60.8,
+        "pcg_mas": 80.8
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1690,23 +3530,58 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.7320000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.8320000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.003144960000000001,
+        "replay": 0.0020966400000000003,
+        "check": 0.0036108800000000008,
+        "coverage": 0.0027955200000000006
       },
       "r2": {
         "eps_path": 0.11499999999999999,
-        "rho": 1.33,
+        "rho": 1.32,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0176,
+        "shieldagent": 0.008256,
+        "pcg_mas": 0.0026880000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Gemma-2-9b-it",
       "dataset": "TAT-QA",
-      "source": "proxy_smoke_not_final",
       "harm": {
         "no_certificate": 0.26,
         "shieldagent": 0.115,
         "pcg_mas": 0.017
+      },
+      "bad_accept": {
+        "no_certificate": 0.1612,
+        "shieldagent": 0.0667,
+        "pcg_mas": 0.00884
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.36,
+        "shieldagent": 0.265,
+        "pcg_mas": 0.21700000000000003
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.65,
+        "pcg_mas": 0.87
       },
       "bound_coverage": {
         "no_certificate": 0.0,
@@ -1728,26 +3603,61 @@
         "shieldagent": 1.36,
         "pcg_mas": 1.74
       },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.84
+      },
+      "audit_channels": {
+        "integrity": 0.0023868,
+        "replay": 0.0015912,
+        "check": 0.0027404,
+        "coverage": 0.0021216
+      },
       "r2": {
         "eps_path": 0.08499999999999999,
-        "rho": 1.27,
+        "rho": 1.26,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0143,
+        "shieldagent": 0.0069,
+        "pcg_mas": 0.00204
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Gemma-2-9b-it",
       "dataset": "ToolBench",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.18,
-        "shieldagent": 0.0756,
-        "pcg_mas": 0.009899999999999999
+        "no_certificate": 0.19999999999999998,
+        "shieldagent": 0.086,
+        "pcg_mas": 0.014
+      },
+      "bad_accept": {
+        "no_certificate": 0.12399999999999999,
+        "shieldagent": 0.049879999999999994,
+        "pcg_mas": 0.00728
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.3,
+        "shieldagent": 0.236,
+        "pcg_mas": 0.21400000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.594,
+        "pcg_mas": 0.794
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 56.6,
-        "pcg_mas": 78.6
+        "shieldagent": 59.4,
+        "pcg_mas": 79.4
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1762,28 +3672,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.32,
-        "pcg_mas": 1.6920000000000002
+        "pcg_mas": 1.6760000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.37,
+        "pcg_mas": 1.7760000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0019656,
+        "replay": 0.0013104,
+        "check": 0.0022567999999999998,
+        "coverage": 0.0017472
       },
       "r2": {
         "eps_path": 0.05499999999999999,
-        "rho": 1.29,
+        "rho": 1.28,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.011,
+        "shieldagent": 0.00516,
+        "pcg_mas": 0.00168
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Gemma-2-9b-it",
       "dataset": "FEVER",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.27,
-        "shieldagent": 0.1134,
-        "pcg_mas": 0.01485
+        "no_certificate": 0.29,
+        "shieldagent": 0.12469999999999999,
+        "pcg_mas": 0.020300000000000002
+      },
+      "bad_accept": {
+        "no_certificate": 0.1798,
+        "shieldagent": 0.07232599999999999,
+        "pcg_mas": 0.010556000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.39,
+        "shieldagent": 0.2747,
+        "pcg_mas": 0.22030000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5975,
+        "pcg_mas": 0.7975
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.0,
-        "pcg_mas": 79.0
+        "shieldagent": 59.75,
+        "pcg_mas": 79.75
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1798,28 +3743,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.33,
-        "pcg_mas": 1.7100000000000002
+        "pcg_mas": 1.6900000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3800000000000001,
+        "pcg_mas": 1.7900000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0028501200000000007,
+        "replay": 0.0019000800000000002,
+        "check": 0.00327236,
+        "coverage": 0.00253344
       },
       "r2": {
         "eps_path": 0.1,
-        "rho": 1.3,
+        "rho": 1.29,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01595,
+        "shieldagent": 0.007481999999999999,
+        "pcg_mas": 0.0024360000000000002
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Gemma-2-9b-it",
       "dataset": "PubMedQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.3,
-        "shieldagent": 0.126,
-        "pcg_mas": 0.0165
+        "no_certificate": 0.32,
+        "shieldagent": 0.1376,
+        "pcg_mas": 0.022400000000000003
+      },
+      "bad_accept": {
+        "no_certificate": 0.1984,
+        "shieldagent": 0.07980799999999999,
+        "pcg_mas": 0.011648000000000002
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.42000000000000004,
+        "shieldagent": 0.28759999999999997,
+        "pcg_mas": 0.22240000000000001
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.608,
+        "pcg_mas": 0.8079999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 60.8,
+        "pcg_mas": 80.8
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1834,28 +3814,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.7320000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.8320000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.003144960000000001,
+        "replay": 0.0020966400000000003,
+        "check": 0.0036108800000000008,
+        "coverage": 0.0027955200000000006
       },
       "r2": {
         "eps_path": 0.11499999999999999,
-        "rho": 1.33,
+        "rho": 1.32,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0176,
+        "shieldagent": 0.008256,
+        "pcg_mas": 0.0026880000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Gemma-2-9b-it",
       "dataset": "WebLINX",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.14,
-        "shieldagent": 0.058800000000000005,
-        "pcg_mas": 0.007700000000000001
+        "no_certificate": 0.15999999999999998,
+        "shieldagent": 0.06879999999999999,
+        "pcg_mas": 0.0112
+      },
+      "bad_accept": {
+        "no_certificate": 0.09919999999999998,
+        "shieldagent": 0.03990399999999999,
+        "pcg_mas": 0.005824
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.26,
+        "shieldagent": 0.2188,
+        "pcg_mas": 0.2112
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.608,
+        "pcg_mas": 0.8079999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 60.8,
+        "pcg_mas": 80.8
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1870,28 +3885,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.7320000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.8320000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0015724800000000002,
+        "replay": 0.00104832,
+        "check": 0.00180544,
+        "coverage": 0.00139776
       },
       "r2": {
-        "eps_path": 0.045,
-        "rho": 1.33,
+        "eps_path": 0.035,
+        "rho": 1.32,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.008799999999999999,
+        "shieldagent": 0.004127999999999999,
+        "pcg_mas": 0.001344
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Gemma-2-9b-it",
       "dataset": "Synthetic-Adversarial",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.16999999999999998,
-        "shieldagent": 0.07139999999999999,
-        "pcg_mas": 0.009349999999999999
+        "no_certificate": 0.19,
+        "shieldagent": 0.0817,
+        "pcg_mas": 0.013300000000000001
+      },
+      "bad_accept": {
+        "no_certificate": 0.1178,
+        "shieldagent": 0.04738599999999999,
+        "pcg_mas": 0.006916000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.29000000000000004,
+        "shieldagent": 0.2317,
+        "pcg_mas": 0.21330000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5975,
+        "pcg_mas": 0.7975
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.0,
-        "pcg_mas": 79.0
+        "shieldagent": 59.75,
+        "pcg_mas": 79.75
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1906,28 +3956,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.33,
-        "pcg_mas": 1.7100000000000002
+        "pcg_mas": 1.6900000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3800000000000001,
+        "pcg_mas": 1.7900000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0018673200000000004,
+        "replay": 0.00124488,
+        "check": 0.0021439600000000003,
+        "coverage": 0.0016598400000000003
       },
       "r2": {
         "eps_path": 0.049999999999999996,
-        "rho": 1.3,
+        "rho": 1.29,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.010450000000000001,
+        "shieldagent": 0.004901999999999999,
+        "pcg_mas": 0.001596
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.3-70B",
       "dataset": "HotpotQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.26,
-        "shieldagent": 0.1092,
-        "pcg_mas": 0.0143
+        "no_certificate": 0.27999999999999997,
+        "shieldagent": 0.12039999999999998,
+        "pcg_mas": 0.0196
+      },
+      "bad_accept": {
+        "no_certificate": 0.17359999999999998,
+        "shieldagent": 0.06983199999999998,
+        "pcg_mas": 0.010192
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.38,
+        "shieldagent": 0.2704,
+        "pcg_mas": 0.21960000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.594,
+        "pcg_mas": 0.794
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 56.6,
-        "pcg_mas": 78.6
+        "shieldagent": 59.4,
+        "pcg_mas": 79.4
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1942,28 +4027,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.32,
-        "pcg_mas": 1.6920000000000002
+        "pcg_mas": 1.6760000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.37,
+        "pcg_mas": 1.7760000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.00275184,
+        "replay": 0.0018345599999999998,
+        "check": 0.00315952,
+        "coverage": 0.0024460799999999998
       },
       "r2": {
         "eps_path": 0.095,
-        "rho": 1.29,
+        "rho": 1.28,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.015399999999999999,
+        "shieldagent": 0.007223999999999999,
+        "pcg_mas": 0.002352
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.3-70B",
       "dataset": "2WikiMultihopQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.29000000000000004,
-        "shieldagent": 0.1218,
-        "pcg_mas": 0.015950000000000002
+        "no_certificate": 0.31,
+        "shieldagent": 0.1333,
+        "pcg_mas": 0.0217
+      },
+      "bad_accept": {
+        "no_certificate": 0.1922,
+        "shieldagent": 0.077314,
+        "pcg_mas": 0.011284
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.41000000000000003,
+        "shieldagent": 0.2833,
+        "pcg_mas": 0.2217
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.6045,
+        "pcg_mas": 0.8045
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.8,
-        "pcg_mas": 79.8
+        "shieldagent": 60.45,
+        "pcg_mas": 80.45
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -1978,28 +4098,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.35,
-        "pcg_mas": 1.7460000000000002
+        "pcg_mas": 1.7180000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4000000000000001,
+        "pcg_mas": 1.8180000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0030466800000000004,
+        "replay": 0.00203112,
+        "check": 0.00349804,
+        "coverage": 0.0027081600000000003
       },
       "r2": {
         "eps_path": 0.11,
-        "rho": 1.32,
+        "rho": 1.31,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01705,
+        "shieldagent": 0.007998,
+        "pcg_mas": 0.002604
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.3-70B",
       "dataset": "TAT-QA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.0966,
-        "pcg_mas": 0.01265
+        "no_certificate": 0.25,
+        "shieldagent": 0.1075,
+        "pcg_mas": 0.0175
+      },
+      "bad_accept": {
+        "no_certificate": 0.155,
+        "shieldagent": 0.062349999999999996,
+        "pcg_mas": 0.0091
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.35,
+        "shieldagent": 0.2575,
+        "pcg_mas": 0.21750000000000003
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5835,
+        "pcg_mas": 0.7835
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 55.4,
-        "pcg_mas": 77.4
+        "shieldagent": 58.35,
+        "pcg_mas": 78.35
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2014,23 +4169,58 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.29,
-        "pcg_mas": 1.6380000000000001
+        "pcg_mas": 1.6340000000000001
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.34,
+        "pcg_mas": 1.7340000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0024570000000000004,
+        "replay": 0.001638,
+        "check": 0.002821,
+        "coverage": 0.002184
       },
       "r2": {
         "eps_path": 0.08,
-        "rho": 1.26,
+        "rho": 1.25,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01375,
+        "shieldagent": 0.00645,
+        "pcg_mas": 0.0021000000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.3-70B",
       "dataset": "ToolBench",
-      "source": "proxy_smoke_not_final",
       "harm": {
         "no_certificate": 0.185,
         "shieldagent": 0.076,
         "pcg_mas": 0.01
+      },
+      "bad_accept": {
+        "no_certificate": 0.1147,
+        "shieldagent": 0.044079999999999994,
+        "pcg_mas": 0.005200000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.28500000000000003,
+        "shieldagent": 0.22599999999999998,
+        "pcg_mas": 0.21000000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.7,
+        "pcg_mas": 0.9
       },
       "bound_coverage": {
         "no_certificate": 0.0,
@@ -2052,26 +4242,61 @@
         "shieldagent": 1.3,
         "pcg_mas": 1.66
       },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.35,
+        "pcg_mas": 1.76
+      },
+      "audit_channels": {
+        "integrity": 0.0014040000000000003,
+        "replay": 0.0009360000000000001,
+        "check": 0.0016120000000000002,
+        "coverage": 0.0012480000000000002
+      },
       "r2": {
         "eps_path": 0.049999999999999996,
-        "rho": 1.3,
+        "rho": 1.29,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.010175,
+        "shieldagent": 0.00456,
+        "pcg_mas": 0.0012
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.3-70B",
       "dataset": "FEVER",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.26,
-        "shieldagent": 0.1092,
-        "pcg_mas": 0.0143
+        "no_certificate": 0.27999999999999997,
+        "shieldagent": 0.12039999999999998,
+        "pcg_mas": 0.0196
+      },
+      "bad_accept": {
+        "no_certificate": 0.17359999999999998,
+        "shieldagent": 0.06983199999999998,
+        "pcg_mas": 0.010192
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.38,
+        "shieldagent": 0.2704,
+        "pcg_mas": 0.21960000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.594,
+        "pcg_mas": 0.794
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 56.6,
-        "pcg_mas": 78.6
+        "shieldagent": 59.4,
+        "pcg_mas": 79.4
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2086,28 +4311,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.32,
-        "pcg_mas": 1.6920000000000002
+        "pcg_mas": 1.6760000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.37,
+        "pcg_mas": 1.7760000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.00275184,
+        "replay": 0.0018345599999999998,
+        "check": 0.00315952,
+        "coverage": 0.0024460799999999998
       },
       "r2": {
         "eps_path": 0.095,
-        "rho": 1.29,
+        "rho": 1.28,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.015399999999999999,
+        "shieldagent": 0.007223999999999999,
+        "pcg_mas": 0.002352
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.3-70B",
       "dataset": "PubMedQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.29000000000000004,
-        "shieldagent": 0.1218,
-        "pcg_mas": 0.015950000000000002
+        "no_certificate": 0.31,
+        "shieldagent": 0.1333,
+        "pcg_mas": 0.0217
+      },
+      "bad_accept": {
+        "no_certificate": 0.1922,
+        "shieldagent": 0.077314,
+        "pcg_mas": 0.011284
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.41000000000000003,
+        "shieldagent": 0.2833,
+        "pcg_mas": 0.2217
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.6045,
+        "pcg_mas": 0.8045
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.8,
-        "pcg_mas": 79.8
+        "shieldagent": 60.45,
+        "pcg_mas": 80.45
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2122,28 +4382,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.35,
-        "pcg_mas": 1.7460000000000002
+        "pcg_mas": 1.7180000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4000000000000001,
+        "pcg_mas": 1.8180000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0030466800000000004,
+        "replay": 0.00203112,
+        "check": 0.00349804,
+        "coverage": 0.0027081600000000003
       },
       "r2": {
         "eps_path": 0.11,
-        "rho": 1.32,
+        "rho": 1.31,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01705,
+        "shieldagent": 0.007998,
+        "pcg_mas": 0.002604
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.3-70B",
       "dataset": "WebLINX",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.3,
-        "shieldagent": 0.126,
-        "pcg_mas": 0.0165
+        "no_certificate": 0.32,
+        "shieldagent": 0.1376,
+        "pcg_mas": 0.022400000000000003
+      },
+      "bad_accept": {
+        "no_certificate": 0.1984,
+        "shieldagent": 0.07980799999999999,
+        "pcg_mas": 0.011648000000000002
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.42000000000000004,
+        "shieldagent": 0.28759999999999997,
+        "pcg_mas": 0.22240000000000001
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.608,
+        "pcg_mas": 0.8079999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 60.8,
+        "pcg_mas": 80.8
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2158,28 +4453,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.7320000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.8320000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.003144960000000001,
+        "replay": 0.0020966400000000003,
+        "check": 0.0036108800000000008,
+        "coverage": 0.0027955200000000006
       },
       "r2": {
         "eps_path": 0.11499999999999999,
-        "rho": 1.33,
+        "rho": 1.32,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0176,
+        "shieldagent": 0.008256,
+        "pcg_mas": 0.0026880000000000003
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "Llama-3.3-70B",
       "dataset": "Synthetic-Adversarial",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.16,
-        "shieldagent": 0.0672,
-        "pcg_mas": 0.0088
+        "no_certificate": 0.18,
+        "shieldagent": 0.0774,
+        "pcg_mas": 0.0126
+      },
+      "bad_accept": {
+        "no_certificate": 0.11159999999999999,
+        "shieldagent": 0.044891999999999994,
+        "pcg_mas": 0.0065520000000000005
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.28,
+        "shieldagent": 0.2274,
+        "pcg_mas": 0.2126
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.601,
+        "pcg_mas": 0.8009999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.4,
-        "pcg_mas": 79.4
+        "shieldagent": 60.1,
+        "pcg_mas": 80.1
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2194,28 +4524,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.34,
-        "pcg_mas": 1.7280000000000002
+        "pcg_mas": 1.7040000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3900000000000001,
+        "pcg_mas": 1.8040000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0017690400000000002,
+        "replay": 0.00117936,
+        "check": 0.00203112,
+        "coverage": 0.00157248
       },
       "r2": {
         "eps_path": 0.045,
-        "rho": 1.31,
+        "rho": 1.3,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.009899999999999999,
+        "shieldagent": 0.004644,
+        "pcg_mas": 0.0015119999999999999
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-v3",
       "dataset": "HotpotQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.14,
-        "shieldagent": 0.058800000000000005,
-        "pcg_mas": 0.007700000000000001
+        "no_certificate": 0.15999999999999998,
+        "shieldagent": 0.06879999999999999,
+        "pcg_mas": 0.0112
+      },
+      "bad_accept": {
+        "no_certificate": 0.09919999999999998,
+        "shieldagent": 0.03990399999999999,
+        "pcg_mas": 0.005824
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.26,
+        "shieldagent": 0.2188,
+        "pcg_mas": 0.2112
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.608,
+        "pcg_mas": 0.8079999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 60.8,
+        "pcg_mas": 80.8
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2230,28 +4595,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.7320000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.8320000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0015724800000000002,
+        "replay": 0.00104832,
+        "check": 0.00180544,
+        "coverage": 0.00139776
       },
       "r2": {
-        "eps_path": 0.045,
-        "rho": 1.33,
+        "eps_path": 0.035,
+        "rho": 1.32,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.008799999999999999,
+        "shieldagent": 0.004127999999999999,
+        "pcg_mas": 0.001344
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-v3",
       "dataset": "2WikiMultihopQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.16999999999999998,
-        "shieldagent": 0.07139999999999999,
-        "pcg_mas": 0.009349999999999999
+        "no_certificate": 0.19,
+        "shieldagent": 0.0817,
+        "pcg_mas": 0.013300000000000001
+      },
+      "bad_accept": {
+        "no_certificate": 0.1178,
+        "shieldagent": 0.04738599999999999,
+        "pcg_mas": 0.006916000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.29000000000000004,
+        "shieldagent": 0.2317,
+        "pcg_mas": 0.21330000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5975,
+        "pcg_mas": 0.7975
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.0,
-        "pcg_mas": 79.0
+        "shieldagent": 59.75,
+        "pcg_mas": 79.75
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2266,28 +4666,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.33,
-        "pcg_mas": 1.7100000000000002
+        "pcg_mas": 1.6900000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3800000000000001,
+        "pcg_mas": 1.7900000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0018673200000000004,
+        "replay": 0.00124488,
+        "check": 0.0021439600000000003,
+        "coverage": 0.0016598400000000003
       },
       "r2": {
         "eps_path": 0.049999999999999996,
-        "rho": 1.3,
+        "rho": 1.29,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.010450000000000001,
+        "shieldagent": 0.004901999999999999,
+        "pcg_mas": 0.001596
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-v3",
       "dataset": "TAT-QA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.28,
-        "shieldagent": 0.11760000000000001,
-        "pcg_mas": 0.015400000000000002
+        "no_certificate": 0.3,
+        "shieldagent": 0.129,
+        "pcg_mas": 0.021
+      },
+      "bad_accept": {
+        "no_certificate": 0.186,
+        "shieldagent": 0.07482,
+        "pcg_mas": 0.010920000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.4,
+        "shieldagent": 0.279,
+        "pcg_mas": 0.221
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.601,
+        "pcg_mas": 0.8009999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.4,
-        "pcg_mas": 79.4
+        "shieldagent": 60.1,
+        "pcg_mas": 80.1
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2302,28 +4737,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.34,
-        "pcg_mas": 1.7280000000000002
+        "pcg_mas": 1.7040000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3900000000000001,
+        "pcg_mas": 1.8040000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0029484000000000003,
+        "replay": 0.0019656,
+        "check": 0.0033852,
+        "coverage": 0.0026208
       },
       "r2": {
         "eps_path": 0.105,
-        "rho": 1.31,
+        "rho": 1.3,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0165,
+        "shieldagent": 0.00774,
+        "pcg_mas": 0.00252
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-v3",
       "dataset": "ToolBench",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.22,
-        "shieldagent": 0.0924,
-        "pcg_mas": 0.0121
+        "no_certificate": 0.24,
+        "shieldagent": 0.1032,
+        "pcg_mas": 0.016800000000000002
+      },
+      "bad_accept": {
+        "no_certificate": 0.1488,
+        "shieldagent": 0.05985599999999999,
+        "pcg_mas": 0.008736
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.33999999999999997,
+        "shieldagent": 0.2532,
+        "pcg_mas": 0.21680000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.58,
+        "pcg_mas": 0.78
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 55.0,
-        "pcg_mas": 77.0
+        "shieldagent": 58.0,
+        "pcg_mas": 78.0
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2340,26 +4810,61 @@
         "shieldagent": 1.28,
         "pcg_mas": 1.62
       },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.33,
+        "pcg_mas": 1.7200000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0023587200000000003,
+        "replay": 0.00157248,
+        "check": 0.0027081600000000003,
+        "coverage": 0.0020966400000000003
+      },
       "r2": {
         "eps_path": 0.075,
-        "rho": 1.25,
+        "rho": 1.24,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.0132,
+        "shieldagent": 0.006192,
+        "pcg_mas": 0.0020160000000000004
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-v3",
       "dataset": "FEVER",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.14,
-        "shieldagent": 0.058800000000000005,
-        "pcg_mas": 0.007700000000000001
+        "no_certificate": 0.15999999999999998,
+        "shieldagent": 0.06879999999999999,
+        "pcg_mas": 0.0112
+      },
+      "bad_accept": {
+        "no_certificate": 0.09919999999999998,
+        "shieldagent": 0.03990399999999999,
+        "pcg_mas": 0.005824
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.26,
+        "shieldagent": 0.2188,
+        "pcg_mas": 0.2112
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.608,
+        "pcg_mas": 0.8079999999999999
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 58.2,
-        "pcg_mas": 80.2
+        "shieldagent": 60.8,
+        "pcg_mas": 80.8
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2374,28 +4879,63 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.36,
-        "pcg_mas": 1.7640000000000002
+        "pcg_mas": 1.7320000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.4100000000000001,
+        "pcg_mas": 1.8320000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0015724800000000002,
+        "replay": 0.00104832,
+        "check": 0.00180544,
+        "coverage": 0.00139776
       },
       "r2": {
-        "eps_path": 0.045,
-        "rho": 1.33,
+        "eps_path": 0.035,
+        "rho": 1.32,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.008799999999999999,
+        "shieldagent": 0.004127999999999999,
+        "pcg_mas": 0.001344
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-v3",
       "dataset": "PubMedQA",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.16999999999999998,
-        "shieldagent": 0.07139999999999999,
-        "pcg_mas": 0.009349999999999999
+        "no_certificate": 0.19,
+        "shieldagent": 0.0817,
+        "pcg_mas": 0.013300000000000001
+      },
+      "bad_accept": {
+        "no_certificate": 0.1178,
+        "shieldagent": 0.04738599999999999,
+        "pcg_mas": 0.006916000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.29000000000000004,
+        "shieldagent": 0.2317,
+        "pcg_mas": 0.21330000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5975,
+        "pcg_mas": 0.7975
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 57.0,
-        "pcg_mas": 79.0
+        "shieldagent": 59.75,
+        "pcg_mas": 79.75
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2410,23 +4950,58 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.33,
-        "pcg_mas": 1.7100000000000002
+        "pcg_mas": 1.6900000000000002
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.3800000000000001,
+        "pcg_mas": 1.7900000000000003
+      },
+      "audit_channels": {
+        "integrity": 0.0018673200000000004,
+        "replay": 0.00124488,
+        "check": 0.0021439600000000003,
+        "coverage": 0.0016598400000000003
       },
       "r2": {
         "eps_path": 0.049999999999999996,
-        "rho": 1.3,
+        "rho": 1.29,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.010450000000000001,
+        "shieldagent": 0.004901999999999999,
+        "pcg_mas": 0.001596
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-v3",
       "dataset": "WebLINX",
-      "source": "proxy_smoke_not_final",
       "harm": {
         "no_certificate": 0.135,
         "shieldagent": 0.052,
         "pcg_mas": 0.006
+      },
+      "bad_accept": {
+        "no_certificate": 0.08370000000000001,
+        "shieldagent": 0.030159999999999996,
+        "pcg_mas": 0.0031200000000000004
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.23500000000000001,
+        "shieldagent": 0.20199999999999999,
+        "pcg_mas": 0.20600000000000002
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.74,
+        "pcg_mas": 0.93
       },
       "bound_coverage": {
         "no_certificate": 0.0,
@@ -2434,40 +5009,75 @@
         "pcg_mas": 93.0
       },
       "responsibility_top1": {
-        "no_certificate": 0.23,
-        "shieldagent": 0.54,
-        "pcg_mas": 0.74
+        "no_certificate": 0.25,
+        "shieldagent": 0.7,
+        "pcg_mas": 0.93
       },
       "utility": {
-        "no_certificate": 0.7999999999999999,
-        "shieldagent": 0.83,
-        "pcg_mas": 0.86
+        "no_certificate": 0.83,
+        "shieldagent": 0.87,
+        "pcg_mas": 0.91
       },
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.24,
         "pcg_mas": 1.58
       },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.29,
+        "pcg_mas": 1.6800000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0008424000000000002,
+        "replay": 0.0005616000000000001,
+        "check": 0.0009672000000000001,
+        "coverage": 0.0007488000000000001
+      },
       "r2": {
-        "eps_path": 0.05499999999999999,
-        "rho": 1.29,
+        "eps_path": 0.045,
+        "rho": 1.14,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.007425,
+        "shieldagent": 0.00312,
+        "pcg_mas": 0.001
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     },
     {
       "model": "deepseek-v3",
       "dataset": "Synthetic-Adversarial",
-      "source": "proxy_smoke_not_final",
       "harm": {
-        "no_certificate": 0.21,
-        "shieldagent": 0.08819999999999999,
-        "pcg_mas": 0.01155
+        "no_certificate": 0.22999999999999998,
+        "shieldagent": 0.09889999999999999,
+        "pcg_mas": 0.0161
+      },
+      "bad_accept": {
+        "no_certificate": 0.14259999999999998,
+        "shieldagent": 0.05736199999999999,
+        "pcg_mas": 0.008372000000000001
+      },
+      "harm_weighted_cost": {
+        "no_certificate": 0.32999999999999996,
+        "shieldagent": 0.24889999999999998,
+        "pcg_mas": 0.21610000000000001
+      },
+      "audit_coverage": {
+        "no_certificate": 0.0,
+        "shieldagent": 0.5835,
+        "pcg_mas": 0.7835
       },
       "bound_coverage": {
         "no_certificate": 0.0,
-        "shieldagent": 55.4,
-        "pcg_mas": 77.4
+        "shieldagent": 58.35,
+        "pcg_mas": 78.35
       },
       "responsibility_top1": {
         "no_certificate": 0.23,
@@ -2482,13 +5092,34 @@
       "token_multiplier": {
         "no_certificate": 1.0,
         "shieldagent": 1.29,
-        "pcg_mas": 1.6380000000000001
+        "pcg_mas": 1.6340000000000001
+      },
+      "latency_multiplier": {
+        "no_certificate": 1.0,
+        "shieldagent": 1.34,
+        "pcg_mas": 1.7340000000000002
+      },
+      "audit_channels": {
+        "integrity": 0.0022604400000000003,
+        "replay": 0.0015069600000000001,
+        "check": 0.0025953200000000004,
+        "coverage": 0.00200928
       },
       "r2": {
         "eps_path": 0.06999999999999999,
-        "rho": 1.26,
+        "rho": 1.25,
         "shield_factor": 0.42,
         "pcg_factor": 0.12
+      },
+      "harm_err": {
+        "no_certificate": 0.01265,
+        "shieldagent": 0.005933999999999999,
+        "pcg_mas": 0.001932
+      },
+      "bound_err": {
+        "no_certificate": 0.0,
+        "shieldagent": 4.0,
+        "pcg_mas": 3.4
       }
     }
   ]
