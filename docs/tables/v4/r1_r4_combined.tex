@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{\small R1--R4 consolidated view. Audit coverage summarizes the finite-sample audit envelope; safety gain measures harm reduction relative to no certificate; the Shield-to-PCG gap isolates improvement over SHIELDAGENT; responsibility lift measures replay-diagnostic gain; control gain compares harm-weighted operating cost.}
+\label{tab:r1_r4_combined}
+\scriptsize
+\begin{tabular}{lccccc}
+\toprule
+Cell & R1 audit cov.$\uparrow$ & R2 safety gain$\uparrow$ & Shield$\rightarrow$PCG gap$\uparrow$ & R3 resp. lift$\uparrow$ & R4 control gain$\uparrow$ \\
+\midrule
+\texttt{phi-3.5-mini} / \texttt{FEVER} & 0.820 & 13.1$\times$ & 6.0$\times$ & 20.0pp & 1.35$\times$ \\
+\texttt{qwen2.5-7B} / \texttt{HotpotQA} & 0.880 & 15.6$\times$ & 6.2$\times$ & 20.0pp & 1.20$\times$ \\
+\texttt{Llama-3.1-8B} / \texttt{PubMedQA} & 0.900 & 16.4$\times$ & 6.4$\times$ & 22.0pp & 1.12$\times$ \\
+\texttt{Gemma-2-9b-it} / \texttt{TAT-QA} & 0.870 & 15.3$\times$ & 6.8$\times$ & 20.0pp & 1.22$\times$ \\
+\texttt{Llama-3.3-70B} / \texttt{ToolBench} & 0.900 & 18.5$\times$ & 7.6$\times$ & 20.0pp & 1.08$\times$ \\
+\texttt{deepseek-v3} / \texttt{WebLINX} & 0.930 & 22.5$\times$ & 8.7$\times$ & 23.0pp & 0.98$\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}

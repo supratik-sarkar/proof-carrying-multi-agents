@@ -1,0 +1,22 @@
+\begin{longtable}{p{0.16\linewidth}p{0.26\linewidth}p{0.50\linewidth}}
+\caption{\small Prompt and tool-call templates used by the PCG-MAS benchmark. This disclosure mirrors the prompt-template style used by SHIELDAGENT Appendix~H while adapting it to proof-carrying generation, replay, redundancy, intervention, and control.}\\
+\label{tab:appendix_prompt_bank}\\
+\toprule
+Stage & Purpose & Template summary \\
+\midrule
+\endfirsthead
+\toprule
+Stage & Purpose & Template summary \\
+\midrule
+\endhead
+Candidate generation & Produce answer candidates and candidate claims & Given prompt, retrieved context, tool outputs, and task metadata, emit atomic claims, answer draft, cited support identifiers, and uncertainty flags. \\
+Certificate construction & Build unified proof-carrying certificate & Commit evidence hashes, replay pipeline, schema/tool/memory/policy/delegation metadata, and calibrated confidence into \(Z=(c,S,\Pi,\Gamma,p,\mathrm{meta})\). \\
+Unified checker & Verify evidence and execution jointly & Recompute hashes, replay support pipeline, validate schema/tool/policy contract, and run deterministic entailment check before accepting a claim. \\
+SHIELDAGENT baseline & Policy-only trajectory shielding baseline & Extract action predicates from the trajectory, retrieve relevant safety-policy rules, assign predicate values, verify rule satisfaction, and emit safety label/explanation. \\
+Redundancy selector & Enforce independent support paths & Select \(k\) certificates whose support paths satisfy provenance, tool-overlap, and replayable-overlap separation constraints. \\
+Audit channel probe & Estimate finite-sample audit envelope & Probe integrity, replay, checker, and coverage channels to estimate channel-failure upper envelopes used by the audit-decomposition result. \\
+Mask-and-replay & Estimate responsibility & Mask evidence/tool/schema/memory/policy/delegation components and replay the same trace to estimate acceptance sensitivity. \\
+Risk controller & Choose runtime action & Use certificate-derived risk, utility, token/latency/tool costs, and harm penalty to choose among \texttt{Answer}, \texttt{Verify}, \texttt{Escalate}, and \texttt{Refuse}. \\
+Colab reconciliation & Merge remote large-model cells & Normalize remote Llama-3.3-70B and DeepSeek-V3 JSON outputs into the same \(7\times8\) manifest schema used by the local matrix runner. \\
+\bottomrule
+\end{longtable}
