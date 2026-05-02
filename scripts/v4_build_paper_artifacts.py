@@ -26,6 +26,7 @@ COMMANDS = [
     ],
     [sys.executable, "scripts/v4_make_r1_r5_figures.py"],
     [sys.executable, "scripts/v4_make_latex_tables.py"],
+    [sys.executable, "scripts/v4_reconcile_remote_results.py"],
     [sys.executable, "scripts/v4_collect_artifacts.py"],
 ]
 

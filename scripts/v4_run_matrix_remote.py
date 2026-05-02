@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Run the PCG-MAS v4 local 40-cell matrix.
+"""Run the PCG-MAS v4 16-cell remote/Colab matrix.
 
-Runs 8 datasets x 5 local LLM backends. Resume-safe: each cell writes a
-completion marker, and completed cells are skipped unless --force is passed.
+Remote split:
+    8 datasets x 2 large models = 16 cells
 
-This script calls existing R1-R5 scripts by path. It does not require package
-installation; PYTHONPATH=src is injected.
+Outputs:
+    results/v4_matrix/remote/<dataset>__<model>/<r1-r5 artifacts>
+
+This script mirrors scripts/v4_run_matrix_local.py but only exposes the
+large-model cells intended for Colab/HF Inference.
 """
 
 from __future__ import annotations
@@ -22,31 +25,16 @@ from pathlib import Path
 import yaml
 
 
-LOCAL_MODELS = [
+REMOTE_MODELS = [
     {
-        "name": "phi-3.5-mini",
-        "model_name": "microsoft/Phi-3.5-mini-instruct",
-        "kind": "hf_local",
+        "name": "llama-3.3-70b",
+        "model_name": "meta-llama/Llama-3.3-70B-Instruct",
+        "kind": "hf_inference",
     },
     {
-        "name": "qwen2.5-7b",
-        "model_name": "Qwen/Qwen2.5-7B-Instruct",
-        "kind": "hf_local",
-    },
-    {
-        "name": "deepseek-llm-7b-chat",
-        "model_name": "deepseek-ai/deepseek-llm-7b-chat",
-        "kind": "hf_local",
-    },
-    {
-        "name": "llama-3.1-8b",
-        "model_name": "meta-llama/Llama-3.1-8B-Instruct",
-        "kind": "hf_local",
-    },
-    {
-        "name": "gemma-2-9b",
-        "model_name": "google/gemma-2-9b-it",
-        "kind": "hf_local",
+        "name": "deepseek-v3",
+        "model_name": "deepseek-ai/DeepSeek-V3",
+        "kind": "hf_inference",
     },
 ]
 
@@ -70,6 +58,16 @@ R_SCRIPTS = {
 }
 
 
+def _slug(s: str) -> str:
+    return (
+        s.replace("/", "__")
+        .replace(":", "_")
+        .replace(" ", "_")
+        .replace(".", "_")
+        .replace("-", "_")
+    )
+
+
 def _load_yaml(path: Path) -> dict:
     if not path.exists():
         return {}
@@ -81,16 +79,6 @@ def _write_yaml(path: Path, obj: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
         yaml.safe_dump(obj, f, sort_keys=False)
-
-
-def _slug(s: str) -> str:
-    return (
-        s.replace("/", "__")
-        .replace(":", "_")
-        .replace(" ", "_")
-        .replace(".", "_")
-        .replace("-", "_")
-    )
 
 
 def _patch_config(base_cfg: dict, dataset: dict, model: dict, n_examples: int, out_root: Path) -> dict:
@@ -106,29 +94,12 @@ def _patch_config(base_cfg: dict, dataset: dict, model: dict, n_examples: int, o
     cfg["backend"]["kind"] = model["kind"]
     cfg["backend"]["name"] = model["name"]
     cfg["backend"]["model_name"] = model["model_name"]
-    # Cell-level backend restriction.
-    # Some legacy configs use `models`, while R5 uses `backends`.
-    # If these lists are not pruned, a single matrix cell can accidentally
-    # iterate through Qwen/DeepSeek even when the selected cell is Phi.
+
     selected_backend = {
         "kind": model["kind"],
         "name": model["name"],
         "model_name": model["model_name"],
     }
-
-    if "dtype" in model:
-        selected_backend["dtype"] = model["dtype"]
-
-    if "models" in cfg:
-        cfg["models"] = [dict(selected_backend)]
-
-    if "backends" in cfg:
-        r5_backend = dict(selected_backend)
-        r5_backend.setdefault("dtype", "float16")
-        cfg["backends"] = [r5_backend]
-
-    if "dtype" in model:
-        selected_backend["dtype"] = model["dtype"]
 
     if "models" in cfg:
         cfg["models"] = [dict(selected_backend)]
@@ -157,40 +128,39 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--experiments", nargs="+", default=["r1", "r2", "r3", "r4", "r5"])
     parser.add_argument("--datasets", nargs="+", default=[d["name"] for d in DATASETS])
-    parser.add_argument("--models", nargs="+", default=[m["name"] for m in LOCAL_MODELS])
+    parser.add_argument("--models", nargs="+", default=[m["name"] for m in REMOTE_MODELS])
     parser.add_argument("--n-examples", type=int, default=50)
     parser.add_argument("--seeds", nargs="+", type=int, default=[0])
-    parser.add_argument("--out-root", type=Path, default=Path("results/v4_matrix/local"))
-    parser.add_argument("--work-config-dir", type=Path, default=Path("configs/generated/v4_local"))
+    parser.add_argument("--out-root", type=Path, default=Path("results/v4_matrix/remote"))
+    parser.add_argument("--work-config-dir", type=Path, default=Path("configs/generated/v4_remote"))
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--allow-full-run", action="store_true", help="Required to intentionally run the full 8x5x5 local matrix.",)
+    parser.add_argument(
+        "--allow-full-run",
+        action="store_true",
+        help="Required to intentionally run the full 16-cell x R1-R5 remote matrix.",
+    )
     args = parser.parse_args()
 
     env = dict(os.environ)
     env["PYTHONPATH"] = "src" + os.pathsep + env.get("PYTHONPATH", "")
 
     selected_datasets = [d for d in DATASETS if d["name"] in set(args.datasets)]
-    selected_models = [m for m in LOCAL_MODELS if m["name"] in set(args.models)]
+    selected_models = [m for m in REMOTE_MODELS if m["name"] in set(args.models)]
 
     total = len(args.experiments) * len(selected_datasets) * len(selected_models)
     default_full = (
         len(selected_datasets) == len(DATASETS)
-        and len(selected_models) == len(LOCAL_MODELS)
+        and len(selected_models) == len(REMOTE_MODELS)
         and set(args.experiments) == {"r1", "r2", "r3", "r4", "r5"}
     )
 
     if default_full and not args.allow_full_run:
         raise SystemExit(
-            "\nRefusing to launch the full 200-command local matrix by default.\n"
-            "You probably forgot CLI flags or broke a shell line continuation.\n\n"
-            "For a smoke test, use:\n"
-            "  PYTHONPATH=src python scripts/v4_run_matrix_local.py "
-            "--dry-run --n-examples 3 --seeds 0 --datasets hotpotqa "
-            "--models phi-3.5-mini --experiments r1\n\n"
-            "To intentionally run the full local matrix, add:\n"
-            "  --allow-full-run\n"
+            "\nRefusing to launch the full remote matrix without --allow-full-run.\n"
+            "Use explicit --datasets, --models, and --experiments for smoke tests.\n"
         )
+
     print(f"Planned commands: {total}")
     print(f"Datasets: {[d['name'] for d in selected_datasets]}")
     print(f"Models  : {[m['name'] for m in selected_models]}")
@@ -273,9 +243,6 @@ def main() -> None:
                         encoding="utf-8",
                     )
                     raise
-
-    if not args.dry_run:
-        _run([sys.executable, "scripts/v4_build_paper_artifacts.py"], env=env)
 
 
 if __name__ == "__main__":

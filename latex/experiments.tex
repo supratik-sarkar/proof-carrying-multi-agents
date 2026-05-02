@@ -1,234 +1,273 @@
 % =====================================================================
-% Experiments section — fits NeurIPS 2-page budget when t1..t5 tables
-% are sized to ~0.45\textwidth (\input{}'d via the macros below) and
-% the R1..R5 figures are wrapped as 0.5\textwidth wide-mode each.
-% Methodological overflow lives in Appendix \ref{appendix:exp_details}.
-%
-% Required packages (already in NeurIPS 2026 style): graphicx, booktabs,
-% amsmath, hyperref, xcolor.
-%
-% Required local files (paths assumed):
+% Experiments section -- PCG-MAS v4
+% Required packages: graphicx, booktabs, amsmath, hyperref, xcolor.
+% Required generated files:
 %   figures/intro_hero_v4.pdf
-%   figures/r1_audit_decomposition.pdf
-%   figures/r2_redundancy_law.pdf
-%   figures/r3_responsibility.pdf
-%   figures/r4_risk_pareto.pdf
-%   figures/r5_overhead.pdf
-%   figures/summary_benchmark.pdf
-%   docs/tables/t1_audit_decomposition.tex
-%   docs/tables/t2_redundancy_law.tex
-%   docs/tables/t3_responsibility.tex
-%   docs/tables/t4_risk_privacy.tex
-%   docs/tables/t5_overhead.tex
-%   artifacts/backends_manifest.tex
+%   figures/v4/r1_audit_decomposition_v4.pdf
+%   figures/v4/r2_redundancy_surface_v4.pdf
+%   figures/v4/r3_responsibility_v4.pdf
+%   figures/v4/r4_control_frontier_v4.pdf
+%   figures/v4/r5_overhead_v4.pdf
+%   docs/tables/v4/main_six_summary.tex
+%   docs/tables/v4/r1_r4_combined.tex
+%   docs/tables/v4/cost_overhead_main.tex
 % =====================================================================
 
 \section{Experiments}
 \label{sec:experiments}
 
-We evaluate \textbf{PCG-MAS} on five research questions (R1--R5) drawn
-directly from Sections \ref{sec:theory} and \ref{sec:method}: whether
-the Theorem~1 audit-decomposition bound holds empirically (R1),
-whether the redundant-consensus law of Theorem~2 produces the predicted
-geometric collapse (R2), whether root-cause attribution is recoverable
-from an accepted certificate (R3), how the cost-vs-harm Pareto frontier
-shifts under the certificate contract (R4), and what token overhead
-the framework imposes (R5). Across all five experiments we deliberately
-sweep \emph{seven} LLM agents spanning 3.8B to 671B parameters and
-\emph{eight} datasets covering reading-comprehension, claim-verification,
-biomedical, financial-numeric, web-action, and tool-use regimes.
-Cross-cutting diagnostics are summarized in Figure~\ref{fig:intro-hero-v4};
-the full $7 \times 8$ matrix appears in Appendix \ref{appendix:exp_details}.
+\noindent\textbf{Code-base:} \href{https://anonymous.4open.science/r/p-c-m-a-E866/README.md}{\texttt{<Repo>}}
+\hfill
+\textbf{App-demo:} \href{https://huggingface.co/spaces/anonymous-artifact/pcg-demo}{\texttt{<URL>}}
 
-\begin{figure*}[t]
-  \centering
-  \includegraphics[width=0.98\textwidth]{figures/intro_hero_v4.pdf}
-  \caption{\textbf{Cross-LLM cross-cutting summary.} Across four LLM
-  agents spanning 3.8B--671B parameters (full 7-LLM cohort in
-  Appendix Fig.~\ref{fig:intro-hero-v3-app}), PCG-MAS reduces harm
-  rate by $\sim 20\times$ (median, 95\% paired-bootstrap CIs),
-  achieves $\geq 83\%$ Theorem-1 bound tightness (LHS/RHS), and
-  costs only $\sim 2 \times$ baseline tokens. Headline numbers
-  improve monotonically with model scale.}
-  \label{fig:intro-hero-v4}
-\end{figure*}
+\smallskip
+\noindent\textbf{Goal.}
+We evaluate whether proof-carrying verification improves agentic reliability beyond both
+ordinary no-certificate generation and a recent safety-policy guardrail baseline. The experiments
+track five linked questions: whether accepted failures decompose into auditable runtime channels
+(R1), whether independent certificate redundancy suppresses false acceptance under adversarial
+stress (R2), whether mask-and-replay identifies the responsible component (R3), whether
+certificate-derived risk improves control decisions (R4), and what overhead this contract imposes
+(R5). Figure~\ref{fig:intro-hero-v4} gives the cross-cutting summary; detailed matrix results are
+deferred to Appendix~\ref{appendix:exp_details}.
+
 
 \subsection{Setup}
-\label{sec:exp-setup}
+\label{sec:exp_setup}
 
-\textbf{LLM agents.} Seven agents: \texttt{phi-3.5-mini} (3.8B),
-\texttt{qwen2.5-7B}, \texttt{deepseek-llm-7b-chat}, \texttt{Llama-3.1-8B},
-\texttt{Gemma-2-9b-it}, \texttt{Llama-3.3-70B}, and \texttt{deepseek-v3}
-(671B MoE). Local agents are run via \texttt{transformers} on M-series
-hardware; the two largest are run on Colab Pro+ (H100 with 4-bit
-quantization for Llama-3.3-70B) and the HF Inference router (DeepSeek-V3).
-\textbf{Datasets.} Eight datasets: HotpotQA, 2WikiMultihopQA, ToolBench,
-FEVER, PubMedQA, TAT-QA, WebLINX, plus a synthetic adversarial split
-constructed per Appendix \ref{appendix:exp-synthetic} for stress-testing
-the integrity channel. \textbf{Diversity coverage.} Each per-experiment
-figure shows three $(\text{LLM}, \text{dataset})$ \emph{cells} drawn from
-the $5 \times 8$ locally-runnable matrix under a diversity constraint
-(no LLM or dataset repeats within a plot, balanced cross-plot coverage);
-the full selection plan and its construction are in Appendix
-\ref{appendix:exp-coverage}. \textbf{Reproducibility.} Every figure
-caption lists the run identifiers used; the full backend manifest
-(\texttt{backend kind}, \texttt{model\_name}, $n_{\text{examples}}$,
-seeds) is auto-emitted to Appendix Table~\ref{tab:backends} via
-\texttt{\textbackslash input\{artifacts/backends\_manifest.tex\}}.
+\noindent\textbf{Datasets.}
+We use eight tasks that stress different failure modes of agentic grounding:
+\href{https://hotpotqa.github.io/}{\texttt{HotpotQA}} for explainable multi-hop QA
+\citep{yang2018hotpotqa};
+\href{https://huggingface.co/datasets/framolfese/2WikiMultihopQA}{\texttt{2WikiMultiHopQA}} for
+structured and unstructured multi-hop reasoning with explicit reasoning paths
+\citep{ho2020constructing};
+\href{https://huggingface.co/datasets/next-tat/TAT-QA}{\texttt{TAT-QA}} for hybrid financial
+table--text numerical QA \citep{zhu2021tatqa};
+\href{https://github.com/OpenBMB/ToolBench}{\texttt{ToolBench}} for tool-use instruction following
+and API-style agent behavior \citep{qin2023toollm};
+\href{https://huggingface.co/datasets/fever/fever}{\texttt{FEVER}} for evidence-backed claim
+verification \citep{thorne2018fever};
+\href{https://huggingface.co/datasets/qiaojin/PubMedQA}{\texttt{PubMedQA}} for biomedical
+yes/no/maybe reasoning over abstracts \citep{jin2019pubmedqa};
+\href{https://huggingface.co/datasets/McGill-NLP/WebLINX}{\texttt{WebLINX}} for conversational
+web navigation with browser-action trajectories \citep{lu2024weblinx}; and a synthetic
+adversarial split that perturbs evidence integrity, replay faithfulness, checker behavior, and
+coverage to stress the four audit channels. The synthetic construction is described in
+Appendix~\ref{appendix:exp_details}.
 
-\subsection{R1: Theorem~1 audit decomposition holds across all cells}
-\label{sec:exp-r1}
+\smallskip
+\noindent\textbf{LLM backends.}
+The benchmark spans seven instruction-tuned backends:
+\href{https://huggingface.co/microsoft/Phi-3.5-mini-instruct}{\texttt{microsoft/Phi-3.5-mini-instruct}}
+(\(\sim\)3.8B, Phi-3.5 family);
+\href{https://huggingface.co/Qwen/Qwen2.5-7B-Instruct}{\texttt{Qwen/Qwen2.5-7B-Instruct}}
+(7B, Qwen2.5 family);
+\href{https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3}{\texttt{mistralai/Mistral-7B-Instruct-v0.3}}
+(7B, Mistral instruction family);
+\href{https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct}{\texttt{meta-llama/Llama-3.1-8B-Instruct}}
+(8B, Llama-3.1 family);
+\href{https://huggingface.co/google/gemma-2-9b-it}{\texttt{google/gemma-2-9b-it}}
+(9B, Gemma-2 instruction family);
+\href{https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct}{\texttt{meta-llama/Llama-3.3-70B-Instruct}}
+(70B, Llama-3.3 family); and
+\href{https://huggingface.co/deepseek-ai/DeepSeek-V3}{\texttt{deepseek-ai/DeepSeek-V3}}
+(671B total / 37B activated MoE). The five smaller/local backends form the \(5\times8\) local
+matrix; \texttt{Llama-3.3-70B-Instruct} and \texttt{DeepSeek-V3} form the 16-cell remote split.
+We use \texttt{HF\_TOKEN} only for gated or authenticated model access, specifically for gated
+Meta Llama checkpoints and any HF Inference / router calls required by the remote split.
 
-\textbf{Question.} Does $\Pr[\text{accept} \cap \text{wrong}]
-\leq p_{\text{IntFail}} + p_{\text{ReplayFail}} + p_{\text{CheckFail}}
-+ p_{\text{CovGap}}$ hold in practice?
-\textbf{Setup.} For each cell, we run $n=200$ examples across three seeds,
-record empirical accepted-but-wrong probability with 95\% Wilson confidence
-intervals, and decompose the right-hand side into the four channel
-estimators of Sec.~\ref{sec:theory-audit}.
-\textbf{Result.} Figure~\ref{fig:r1-audit} shows that the LHS bar sits
-strictly below the stacked RHS bar in every cell, with positive slack
-$+0.029$ to $+0.052$. Table~\ref{tab:t1-audit} reports the per-channel
-contributions and the LHS/RHS ratio. \emph{Theorem~1 is empirically
-faithful: the bound is tight (median LHS/RHS $\approx 0.86$) without
-ever being violated.}
+\smallskip
+\noindent\textbf{Baselines.}
+\texttt{No certificate} is the ordinary agentic generation pipeline: retrieve, call tools, delegate,
+and answer, but accept without a replayable certificate. \texttt{SHIELDAGENT} is a policy-reasoning
+guardrail baseline inspired by verifiable safety-policy shielding over agent trajectories
+\citep{shieldagent2025}. It validates safety-policy consistency but does not require the full
+PCG-MAS contract: committed evidence hashes, replayable support pipelines, independent support
+paths, replay interventions, and certificate-derived risk control. \texttt{PCG-MAS} uses the full
+unified certificate and accepts only when the evidence and execution checks pass.
 
-\begin{figure*}[t]
-  \centering
-  \includegraphics[width=0.98\textwidth]{figures/r1_audit_decomposition.pdf}
-  \caption{\textbf{R1.} Per-cell decomposition of $\Pr[\text{accept} \cap
-  \text{wrong}]$ (red, LHS) compared to the Theorem~1 right-hand-side
-  channel sum (stacked: IntFail, ReplayFail, CheckFail, CovGap).
-  Black tick marks at the bar tip show the empirical value with 95\%
-  Wilson CI. Across diverse $(\text{LLM}, \text{dataset})$ cells, the
-  bound holds with non-trivial slack.}
-  \label{fig:r1-audit}
-\end{figure*}
+\smallskip
+\noindent\textbf{Metrics.}
+Tables~\ref{tab:main_six_summary}--\ref{tab:cost_overhead_main} use three metric groups. 
+\emph{Table~\ref{tab:main_six_summary}} reports the headline six-cell safety and utility summary:
+\(\mathrm{Harm}_{\mathrm{NoCert}}\), \(\mathrm{Harm}_{\mathrm{Shield}}\), and
+\(\mathrm{Harm}_{\mathrm{PCG}}\) denote the accepted-claim harm rate under no certificate,
+\texttt{SHIELDAGENT}, and \texttt{PCG-MAS}, respectively, where harm means an accepted claim is
+wrong, unsupported, or unsafe; \(\mathrm{Cert.\ cov.}\) is the fraction of observed bad accepts
+covered by auditable certificate channels; \(\mathrm{Resp.@1}\) is top-1 root-cause accuracy under
+mask-and-replay responsibility diagnosis over evidence/tool/schema/memory/policy/delegation
+components; and \(\mathrm{Utility}\) is answered-claim utility after selective verification,
+escalation, or refusal. \emph{Table~\ref{tab:r1_r4_combined}} aggregates the R1--R4 diagnostics:
+\(\mathrm{R1\ audit\ cov.}\) is the finite-sample audit-channel coverage; \(\mathrm{R2\ safety\
+gain}\) is the multiplicative harm reduction of \texttt{PCG-MAS} relative to \texttt{No certificate};
+\(\mathrm{Shield}\!\rightarrow\!\mathrm{PCG\ gap}\) is the remaining multiplicative harm reduction of
+\texttt{PCG-MAS} relative to \texttt{SHIELDAGENT}; \(\mathrm{R3\ resp.\ lift}\) is the percentage-point
+gain in responsibility@1 over \texttt{SHIELDAGENT}; and \(\mathrm{R4\ control\ gain}\) is the
+multiplicative reduction in harm-weighted operating cost relative to \texttt{SHIELDAGENT}.
+\emph{Table~\ref{tab:cost_overhead_main}} reports overhead: \(\mathrm{NoCert\ tok.}\),
+\(\mathrm{Shield\ tok.}\), and \(\mathrm{PCG\ tok.}\) are token multipliers relative to the
+no-certificate pipeline, while \(\mathrm{Shield\ lat.}\) and \(\mathrm{PCG\ lat.}\) are latency
+multipliers. The six main cells are selected to cover model scale and task diversity:
+\texttt{phi-3.5-mini}/\texttt{FEVER}, \texttt{qwen2.5-7B}/\texttt{HotpotQA},
+\texttt{Llama-3.1-8B}/\texttt{PubMedQA}, \texttt{Gemma-2-9b-it}/\texttt{TAT-QA},
+\texttt{Llama-3.3-70B}/\texttt{ToolBench}, and \texttt{deepseek-v3}/\texttt{WebLINX}; the remaining
+50 cells appear in Appendix~\ref{appendix:exp_details}.
 
-\input{docs/tables/t1_audit_decomposition.tex}
+\input{.../main_six_summary}
+\input{.../r1_r4_combined}
+\input{.../cost_overhead_main}
 
-\subsection{R2: Redundant consensus collapses geometrically}
-\label{sec:exp-r2}
+\subsection{Results and discussion}
+\label{sec:exp_results_discussion}
 
-\textbf{Question.} Does the per-claim false-accept probability decay
-as $\rho^{k-1}\cdot \varepsilon^k$ when redundancy $k$ grows
-(Theorem~2)?
-\textbf{Setup.} For each cell, we vary $k \in \{1, 2, 4, 8\}$ and
-measure $\Pr[\text{false accept}]$ on a fixed evaluation set with
-$\varepsilon_{\text{adv}} \in [0, 0.4]$ swept by injecting adversarial
-evidence at controlled rates.
-\textbf{Result.} Figure~\ref{fig:r2-redundancy} shows the empirical
-curve hugging the Theorem~2 bound (dashed) on a log scale; the orange
-shaded envelope is the safety regime under the adversary sweep.
-The curve is straight in $\log P$ vs.\ $k$ space (the \emph{exact}
-prediction of Theorem~2: $\log P = \mathrm{const} + k \cdot
-\log(\rho \cdot \varepsilon)$), and lies inside the adversary band
-across all 3 cells. Empirical-vs-bound ratios are summarized in
-Table~\ref{tab:t2-redundancy}.
-
-\begin{figure*}[t]
-  \centering
-  \includegraphics[width=0.98\textwidth]{figures/r2_redundancy_law.pdf}
-  \caption{\textbf{R2.} Per-claim false-accept probability vs.\
-  redundancy $k$, log-scale. Empirical (red) tracks the Theorem~2
-  bound (dashed) closely; the orange band shows the regime envelope
-  under adversary fraction $\varepsilon_{\text{adv}} \in [0, 0.4]$.}
-  \label{fig:r2-redundancy}
-\end{figure*}
-
-\input{docs/tables/t2_redundancy_law.tex}
-
-\subsection{R3: Responsibility is recoverable from the certificate alone}
-\label{sec:exp-r3}
-
-\textbf{Question.} Given an accepted certificate $Z$ that later turns
-out to be wrong, can the responsibility-attribution algorithm
-(Sec.~\ref{sec:method-responsibility}) identify the failing channel
-without re-running the LLM?
-\textbf{Setup.} We synthetically inject failures from each of the four
-audit regimes (integrity, replay, check, coverage), accept the
-certificate, then ask the auditor to recover the regime from $Z$ alone.
-\textbf{Result.} Figure~\ref{fig:r3-responsibility} shows top-1
-accuracy across all four regimes for the three diverse cells; the
-mean lift over the no-certificate baseline ($\sim 0.25$ random) is
-$+19$ to $+72$ percentage points. Table~\ref{tab:t3-responsibility}
-reports per-regime accuracy. Responsibility is recoverable.
+\noindent\textbf{R1: accepted failures become auditable.}
+Figure~\ref{fig:r1-audit-v4} replaces theorem-specific labels with an operational view:
+observed bad accepts are compared against the four certificate-failure channels
+\texttt{Integrity}, \texttt{Replay}, \texttt{Checker}, and \texttt{Coverage}. Across the displayed
+cells, \texttt{PCG-MAS} has the lowest bad-accept rate and exposes which part of the runtime caused
+the residual failure, while \texttt{SHIELDAGENT} improves over no certificate but lacks the same
+evidence-replay decomposition.
 
 \begin{figure*}[t]
   \centering
-  \includegraphics[width=0.98\textwidth]{figures/r3_responsibility.pdf}
-  \caption{\textbf{R3.} Top-1 root-cause attribution accuracy by
-  regime, comparing the deterministic auditor reading $Z$ alone (red)
-  against a no-certificate baseline (navy). Right panel: mean accuracy
-  lift in percentage points.}
-  \label{fig:r3-responsibility}
+  \includegraphics[width=0.98\textwidth]{figures/v4/r1_audit_decomposition_v4.pdf}
+  \caption{\textbf{R1.} Certified audit decomposition across the fixed three R1--R5 cells:
+  \texttt{qwen2.5-7B}/\texttt{HotpotQA}, \texttt{Llama-3.1-8B}/\texttt{PubMedQA}, and
+  \texttt{deepseek-v3}/\texttt{WebLINX}. PCG-MAS both lowers bad accepts and decomposes residual
+  failures into auditable runtime channels.}
+  \label{fig:r1-audit-v4}
 \end{figure*}
 
-\input{docs/tables/t3_responsibility.tex}
-
-\subsection{R4: PCG-MAS Pareto-dominates baselines on cost vs.\ harm}
-\label{sec:exp-r4}
-
-\textbf{Question.} For a fixed compute budget, does the certificate
-contract reduce the harm rate compared to alternative answer
-policies?
-\textbf{Setup.} We compare three policies on the same budget grid:
-\textsc{Always-answer} (no abstain), a learned threshold policy, and
-PCG-MAS (refuse on certificate failure).
-\textbf{Result.} Figure~\ref{fig:r4-pareto} shows PCG-MAS
-Pareto-dominating both alternatives across all three cells; the per-claim
-$(\text{cost}, \text{harm})$ density is overlaid in grey to expose the
-dispersion behind the policy curves. Harm reduction factors over the
-always-answer baseline are 18--27$\times$. Table~\ref{tab:t4-risk}
-tabulates the area-under-Pareto for each policy.
+\noindent\textbf{R2: redundancy improves under adversarial stress.}
+Figure~\ref{fig:r2-redundancy-v4} visualizes the same dependency-aware redundancy law over an
+adversarial-stress grid. Bubble size encodes certified false-accept risk as redundancy \(k\) and
+stress \(\varepsilon_{\mathrm{adv}}\) vary. This avoids a visually trivial log-line plot while
+preserving the underlying theory: increasing independent support paths contracts risk fastest for
+\texttt{PCG-MAS}, less strongly for \texttt{SHIELDAGENT}, and weakest for no-certificate operation.
 
 \begin{figure*}[t]
   \centering
-  \includegraphics[width=0.98\textwidth]{figures/r4_risk_pareto.pdf}
-  \caption{\textbf{R4.} Cost-vs-harm Pareto frontier with per-claim
-  density overlay. PCG-MAS (red stars) dominates always-answer (navy
-  squares) and a learned threshold policy (orange diamonds) across
-  all three cells. Right panel: harm reduction factor over
-  always-answer baseline.}
-  \label{fig:r4-pareto}
+  \includegraphics[width=0.98\textwidth]{figures/v4/r2_redundancy_surface_v4.pdf}
+  \caption{\textbf{R2.} Redundancy under adversarial stress. The plotted surface evaluates the
+  same certified redundancy envelope across \(k\) and \(\varepsilon_{\mathrm{adv}}\), showing that
+  PCG-MAS achieves the sharpest risk collapse under support-path redundancy.}
+  \label{fig:r2-redundancy-v4}
 \end{figure*}
 
-\input{docs/tables/t4_risk_privacy.tex}
-
-\subsection{R5: The certificate contract costs $\sim 2\times$ tokens}
-\label{sec:exp-r5}
-
-\textbf{Question.} What token overhead does PCG-MAS impose, and how
-is it distributed across the prove/verify/redundant/audit phases?
-\textbf{Setup.} For each cell, we record per-claim token counts for
-the no-certificate baseline (single Prover) and for PCG-MAS at the
-default $k = 2$ setting; the four phases of $Z$-construction are
-budgeted separately.
-\textbf{Result.} Figure~\ref{fig:r5-overhead} shows token
-distributions (top row) and per-phase budgets (bottom row). The
-overhead factor is consistently $1.7\text{--}2.3\times$ across cells,
-dominated by the redundant-consensus phase. Table~\ref{tab:t5-overhead}
-breaks the cost down by phase.
+\noindent\textbf{R3: failures are localizable.}
+Figure~\ref{fig:r3-responsibility-v4} shows that replay interventions make failure diagnosis
+recoverable from the certificate trace. \texttt{SHIELDAGENT} improves policy-level safety relative
+to no certificate, but \texttt{PCG-MAS} provides a stronger diagnostic object because the verifier can
+mask evidence, tool, schema, memory, policy, or delegation components and replay the same trace.
 
 \begin{figure*}[t]
   \centering
-  \includegraphics[width=0.98\textwidth]{figures/r5_overhead.pdf}
-  \caption{\textbf{R5.} \emph{Top:} per-claim token-count
-  distributions (PCG-MAS shifts right of baseline). \emph{Bottom:}
-  per-phase stacked budgets. The overhead is dominated by the
-  redundant-consensus phase ($k=2$ Provers + verifier).}
-  \label{fig:r5-overhead}
+  \includegraphics[width=0.98\textwidth]{figures/v4/r3_responsibility_v4.pdf}
+  \caption{\textbf{R3.} Responsibility ranking under replay interventions. PCG-MAS improves top-1
+  root-cause recovery because the accepted certificate records the auditable runtime components
+  needed for mask-and-replay diagnosis.}
+  \label{fig:r3-responsibility-v4}
 \end{figure*}
 
-\input{docs/tables/t5_overhead.tex}
+\noindent\textbf{R4: certificate risk improves control.}
+Figure~\ref{fig:r4-control-v4} uses utility versus harm-weighted operating cost rather than a
+hard-to-read log-harm/cost curve. The desired operating regime is high utility and low harm-weighted
+cost. \texttt{PCG-MAS} shifts decisions toward this regime by using certificate-derived risk to
+select among \texttt{Answer}, \texttt{Verify}, \texttt{Escalate}, and \texttt{Refuse}.
 
-\subsection{Cross-experiment summary}
-\label{sec:exp-summary}
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/v4/r4_control_frontier_v4.pdf}
+  \caption{\textbf{R4.} Risk-control frontier. PCG-MAS yields a better utility--harm operating
+  point because acceptance, verification, escalation, and refusal are driven by certificate risk
+  rather than post-hoc confidence alone.}
+  \label{fig:r4-control-v4}
+\end{figure*}
 
-Putting R1--R5 together: the Theorem~1 audit-decomposition bound holds
-empirically (median LHS/RHS $\approx 0.86$); the Theorem~2 redundancy
-collapse is the right functional form on log-scale; responsibility is
-recoverable from $Z$ alone with $+19$--$72$\,pp lift; cost-vs-harm is
-Pareto-dominated by PCG-MAS; and the price tag is $\sim 2 \times$
-tokens. The condensed 2$\times$3 cross-experiment KPI grid is
-Figure~\ref{fig:summary} in Appendix~\ref{appendix:exp_details}.
+\noindent\textbf{R5: certification is measurable but bounded.}
+Figure~\ref{fig:r5-overhead-v4} reports token overhead and phase decomposition. \texttt{No certificate}
+is cheapest, \texttt{SHIELDAGENT} adds moderate policy-reasoning cost, and \texttt{PCG-MAS} is more
+expensive because it adds evidence commitments, replay, redundancy, and diagnosis. This cost is not
+hidden: Table~\ref{tab:cost_overhead_main} reports token and latency multipliers, while the appendix
+breaks down the remaining cells.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/v4/r5_overhead_v4.pdf}
+  \caption{\textbf{R5.} Certification overhead. PCG-MAS costs more than a policy-only guardrail, but
+  the extra cost buys replayable evidence certificates, independent support paths, and diagnostic
+  responsibility.}
+  \label{fig:r5-overhead-v4}
+\end{figure*}
+
+\noindent\textbf{Takeaway.}
+Across the five result families, the comparison is consistent: no-certificate agents are cheapest
+but least safe; \texttt{SHIELDAGENT} improves trajectory-level policy safety; \texttt{PCG-MAS} wins
+on externally checkable groundedness because it verifies evidence, execution, redundancy,
+responsibility, and risk control in a single auditable runtime contract. Appendix~\ref{appendix:exp_details}
+contains the complementary 50-cell tables, prompt bank/templates, backend manifest, and local/remote
+reconciliation details.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{yang2018hotpotqa,
+  title={HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering},
+  author={Yang, Zhilin and Qi, Peng and Zhang, Saizheng and Bengio, Yoshua and Cohen, William W. and Salakhutdinov, Ruslan and Manning, Christopher D.},
+  booktitle={EMNLP},
+  year={2018}
+}
+
+@article{ho2020constructing,
+  title={Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps},
+  author={Ho, Xanh and Nguyen, Anh-Khoa Duong and Sugawara, Saku and Aizawa, Akiko},
+  journal={arXiv preprint arXiv:2011.01060},
+  year={2020}
+}
+
+@inproceedings{zhu2021tatqa,
+  title={TAT-QA: A Question Answering Benchmark on a Hybrid of Tabular and Textual Content in Finance},
+  author={Zhu, Fengbin and Lei, Wenqiang and Huang, Youcheng and Wang, Chao and Zhang, Shuo and Lv, Jiancheng and Feng, Fuli and Chua, Tat-Seng},
+  booktitle={ACL},
+  year={2021}
+}
+
+@article{qin2023toollm,
+  title={ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs},
+  author={Qin, Yujia and others},
+  journal={arXiv preprint arXiv:2307.16789},
+  year={2023}
+}
+
+@inproceedings{thorne2018fever,
+  title={FEVER: a Large-scale Dataset for Fact Extraction and VERification},
+  author={Thorne, James and Vlachos, Andreas and Christodoulopoulos, Christos and Mittal, Arpit},
+  booktitle={NAACL-HLT},
+  year={2018}
+}
+
+@inproceedings{jin2019pubmedqa,
+  title={PubMedQA: A Dataset for Biomedical Research Question Answering},
+  author={Jin, Qiao and Dhingra, Bhuwan and Liu, Zhengping and Cohen, William W. and Lu, Xinghua},
+  booktitle={EMNLP-IJCNLP},
+  year={2019}
+}
+
+@article{lu2024weblinx,
+  title={WebLINX: Real-World Website Navigation with Multi-Turn Dialogue},
+  author={L{\`u}, Xing Han and others},
+  journal={arXiv preprint arXiv:2402.05930},
+  year={2024}
+}
+
+@article{shieldagent2025,
+  title={SHIELDAGENT: Shielding Agents via Verifiable Safety Policy Reasoning},
+  author={Anonymous},
+  journal={arXiv preprint arXiv:2503.22738},
+  year={2025}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%

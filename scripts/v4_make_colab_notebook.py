@@ -1,0 +1,165 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+
+NOTEBOOK = {
+    "cells": [
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "# PCG-MAS v4 Remote 16-Cell Runner\n",
+                "\n",
+                "Runs the large-model split: `Llama-3.3-70B × 8 datasets` and `DeepSeek-V3 × 8 datasets`.\n",
+                "Outputs are written to Google Drive under `pcg-neurips2026/results/v4_matrix/remote`.\n",
+            ],
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "from google.colab import drive\n",
+                "drive.mount('/content/drive')\n",
+            ],
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "%cd /content\n",
+                "!git clone https://github.com/supratik-sarkar/proof-carrying-multi-agents.git pcg-neurips2026 || true\n",
+                "%cd /content/pcg-neurips2026\n",
+                "!git pull\n",
+                "!bash scripts/v4_colab_bootstrap.sh\n",
+            ],
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Set Hugging Face token\n",
+                "Use Colab secrets or paste temporarily for the session. Do not commit tokens.\n",
+            ],
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "import os\n",
+                "# Recommended: set via Colab Secrets and read it here.\n",
+                "# os.environ['HF_TOKEN'] = userdata.get('HF_TOKEN')\n",
+                "assert os.environ.get('HF_TOKEN'), 'Set HF_TOKEN before running remote cells.'\n",
+            ],
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Smoke test one remote command\n",
+            ],
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "!PYTHONPATH=src python scripts/v4_run_matrix_remote.py \\\n",
+                "  --dry-run \\\n",
+                "  --n-examples 3 \\\n",
+                "  --seeds 0 \\\n",
+                "  --datasets hotpotqa \\\n",
+                "  --models deepseek-v3 \\\n",
+                "  --experiments r1\n",
+            ],
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Minimal real remote smoke\n",
+                "Run this before launching the full remote matrix.\n",
+            ],
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "!PYTHONPATH=src python scripts/v4_run_matrix_remote.py \\\n",
+                "  --n-examples 3 \\\n",
+                "  --seeds 0 \\\n",
+                "  --datasets hotpotqa \\\n",
+                "  --models deepseek-v3 \\\n",
+                "  --experiments r1 \\\n",
+                "  --out-root /content/drive/MyDrive/pcg-neurips2026/results/v4_matrix/remote\n",
+            ],
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Full 16-cell remote run\n",
+                "Only run after the smoke test succeeds.\n",
+            ],
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "!PYTHONPATH=src python scripts/v4_run_matrix_remote.py \\\n",
+                "  --allow-full-run \\\n",
+                "  --n-examples 50 \\\n",
+                "  --seeds 0 \\\n",
+                "  --experiments r1 r2 r3 r4 r5 \\\n",
+                "  --out-root /content/drive/MyDrive/pcg-neurips2026/results/v4_matrix/remote\n",
+            ],
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Zip remote results for Mac reconciliation\n",
+            ],
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "!cd /content/drive/MyDrive/pcg-neurips2026 && zip -r pcg_v4_remote_results.zip results/v4_matrix/remote\n",
+            ],
+        },
+    ],
+    "metadata": {
+        "colab": {"provenance": []},
+        "kernelspec": {"display_name": "Python 3", "name": "python3"},
+        "language_info": {"name": "python"},
+    },
+    "nbformat": 4,
+    "nbformat_minor": 0,
+}
+
+
+def main() -> None:
+    out = Path("notebooks/pcg_v4_colab_16cells.ipynb")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(NOTEBOOK, indent=2), encoding="utf-8")
+    print(f"Wrote {out}")
+
+
+if __name__ == "__main__":
+    main()
