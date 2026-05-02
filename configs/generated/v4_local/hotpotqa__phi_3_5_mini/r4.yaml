@@ -1,0 +1,14 @@
+dataset:
+  name: hotpotqa
+  split: validation
+  n_examples: 3
+  streaming: true
+backend:
+  kind: hf_local
+  name: phi-3.5-mini
+  model_name: microsoft/Phi-3.5-mini-instruct
+output:
+  base_dir: results/v4_matrix/local/hotpotqa__phi_3_5_mini/r4
+run:
+  dataset_name: hotpotqa
+  backend_name: phi-3.5-mini
