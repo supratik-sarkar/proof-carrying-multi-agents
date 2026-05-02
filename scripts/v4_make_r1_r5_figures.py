@@ -428,7 +428,7 @@ def r3_responsibility(cells: list[dict]) -> None:
         small_legend(
             ax,
             loc="upper right",
-            bbox_to_anchor=(0.995, 0.990),
+            bbox_to_anchor=(0.995, 1.2),
             borderaxespad=0.15,
         )
 
@@ -447,12 +447,12 @@ def r3_responsibility(cells: list[dict]) -> None:
     ax.set_xticklabels([label(c) for c in cells], rotation=18, ha="right")
     ax.set_ylim(0, 1.05)
     ax.set_ylabel("Mean responsibility accuracy")
-    ax.set_title("Responsibility lift across cells", fontsize=12, fontweight="semibold", pad=5)
+    ax.set_title("Responsibility lift across cells \n \n ", fontsize=12, fontweight="semibold", pad=5)
     clean_axis(ax, "y")
     small_legend(
         ax,
         loc="upper right",
-        bbox_to_anchor=(0.995, 0.990),
+        bbox_to_anchor=(0.995, 1.15),
         borderaxespad=0.15,
     )
 
@@ -508,7 +508,7 @@ def r4_control(cells: list[dict]) -> None:
         ax.set_xlim(0.72, 0.94)
         ax.set_ylim(0.19, 0.44)
         clean_axis(ax, "both")
-        small_legend(ax, loc="upper right")
+        small_legend(ax, loc="upper right", bbox_to_anchor=(0.98, 1.15), borderaxespad=0.15,)
 
     ax = axes[3]
     x = np.arange(len(cells))
@@ -527,7 +527,7 @@ def r4_control(cells: list[dict]) -> None:
     ax.set_ylabel("Harm-weighted cost")
     ax.set_title("Control cost across cells", fontsize=12, fontweight="semibold", pad=5)
     clean_axis(ax, "y")
-    small_legend(ax, loc="upper right")
+    small_legend(ax, loc="upper right", bbox_to_anchor=(0.98, 0.98), borderaxespad=0.15,)
 
     fig.subplots_adjust(top=0.82, bottom=0.25, left=0.055, right=0.99)
     save(fig, "r4_control_frontier_v4")
