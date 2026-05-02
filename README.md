@@ -1,180 +1,174 @@
-# PCG-MAS — Proof-Carrying Generation for Multi-Agent Systems
+# PCG-MAS: Proof-Carrying Verification for LLM Multi-Agents
 
-> Companion artifact for **"Multi-Agent Systems with Proof-Carrying Generation"** (NeurIPS 2026).
-> Every accepted claim ships with a portable certificate `Z = (c, S, Π, Γ, p, meta)`
-> that an external auditor can replay and verify without re-running the model.
+> Companion artifact for the current NeurIPS-style manuscript on proof-carrying verification for LLM multi-agent systems.
+> An agentic answer is accepted only when it carries a replayable certificate tying the emitted claim to committed evidence, execution metadata, policy constraints, and calibrated risk.
 
 ## Repository Overview
 
-- **Primary goal.** Make multi-agent LLM systems *externally checkable*: every claim is
-  accompanied by a self-contained grounding certificate (committed evidence + replayable
-  pipeline + execution contract + calibrated confidence) that any auditor can verify.
-- **Main outputs.** Five empirical results — R1 audit decomposition, R2 redundancy law,
-  R3 responsibility / diagnosis, R4 risk-aware control under DP, R5 token / latency
-  overhead — plus the full theoretical scaffolding (Theorems 1–3) implemented as
-  property-tested Python modules.
-- **Current tracked file count (approx.).** 72 files across source, tests,
-  configs, scripts, and docs (excluding `.git`, build/cache directories, virtualenvs,
-  and generated `results/` and `figures/`).
+**PCG-MAS** turns an LLM-agent run into an auditable runtime event. Retrieved evidence, tool or function or MCP calls, schema checks, memory reads and writes, policy gates, delegation steps, and emitted claims or actions are logged into a typed runtime graph and verified through a unified certificate.
+
+The benchmark compares three operating modes:
+
+1. **No certificate** — ordinary agentic generation without proof-carrying verification.
+2. **SHIELDAGENT** — a safety-policy guardrail baseline based on verifiable policy reasoning over agent trajectories.
+3. **PCG-MAS (ours)** — unified certificates, committed evidence, replayable pipelines, independent support paths, mask-and-replay diagnosis, and risk-aware control.
+
+The five paper-facing result families are:
+
+    R1 — finite-sample audit decomposition
+    R2 — dependency-aware redundancy under adversarial stress
+    R3 — replay-interventional responsibility and diagnosis
+    R4 — risk-control frontier
+    R5 — certification overhead
+
+The benchmark is organized as a 7 x 8 model-dataset matrix: 40 local cells and 16 remote or Colab cells.
 
 ## Quick Start
 
-```bash
-# 1. Clone, create venv, install
-git clone <repo>
-cd pcg-neurips2026
-python3.12 -m venv multi-agents
-source multi-agents/bin/activate
-pip install -e ".[dev]"
+Create an environment:
 
-# 2. Smoke-test the core layer (no model download)
-python scripts/test_phase_bc.py            # commitments, BM25, audit decomp
-python scripts/test_phase_d.py             # orchestrator + all four agents
-pytest tests/ -v                           # property tests for Check / rho / risk
+    python3.12 -m venv multi-agents
+    source multi-agents/bin/activate
+    pip install -r requirements.txt
 
-# 3. Run the five experiments (mock backend = fast iteration, no GPU needed)
-make smoke                                 # ~30 s
-make r1                                    # audit decomposition (Thm 1)
-make r2                                    # redundancy law       (Thm 2)
-make r3                                    # responsibility       (Thm 3 i)
-make r4                                    # risk + privacy       (Thm 3 ii)
-make r5                                    # token/time overhead
+Regenerate the fast paper-facing artifacts:
 
-# 4. Build paper artifacts (figures + LaTeX tables + intro hero)
-make paper                                 # writes figures/ and docs/tables/
+    PYTHONPATH=src python scripts/v4_make_proxy_metrics.py
+    PYTHONPATH=src python src/pcg/eval/intro_hero_v4.py --metrics results/v4/proxy_metrics.json --out figures/intro_hero_v4
+    PYTHONPATH=src python scripts/v4_make_r1_r5_figures.py
+    PYTHONPATH=src python scripts/v4_make_latex_tables.py
+    PYTHONPATH=src python scripts/v4_collect_artifacts.py
 
-# 5. Regenerate this README with live stats
-make readme
-```
+Dry-run one local experiment cell before any expensive run:
 
-> **Tip — backends.** Configs default to `hf_local` with Qwen2.5-7B. Override with
-> `--backend mock` for instant iteration or `--backend hf_inference` to compare against
-> Llama-3.3-70B via the free HF Inference API (rate-limited, cached aggressively under
-> `.cache/hf_inference/`).
+    PYTHONPATH=src python scripts/v4_run_matrix_local.py --dry-run --n-examples 3 --seeds 0 --datasets hotpotqa --models phi-3.5-mini --experiments r1
+
+The full local matrix runner requires `--allow-full-run` to prevent accidental long jobs.
+
+## What PCG-MAS Verifies
+
+At time `t`, the runtime maintains a typed graph:
+
+    G_t = (V_t, E_t, tau_V, tau_E, attr_t)
+
+where nodes and edges represent evidence, tools, schemas, memory, policy gates, delegation, claims, and actions.
+
+A claim is accepted only when it carries a certificate:
+
+    Z = (c, S, Pi, Gamma, p, meta)
+
+where:
+
+- `c` is the candidate claim or action-level statement.
+- `S` is the support set of evidence and runtime components.
+- `Pi` is the replayable pipeline used to reconstruct support.
+- `Gamma` is the execution and policy contract.
+- `p` is the originating prompt or task context.
+- `meta` stores hashes, timestamps, model or tool versions, parameters, schemas, and replay settings.
+
+The checker verifies integrity, replay, entailment or deterministic checking, and semantic coverage. This makes accepted outputs externally auditable without requiring model-internal access.
 
 ## Theoretical Quantity Map
 
-How each module realizes a specific symbol or theorem from the paper.
-
-| File | Theoretical quantity | Brief description |
+| File | Quantity or symbol | Short description |
 |:---|:---|:---|
-| `src/pcg/graph.py` | $G_t = (V, E)$ — typed runtime graph | First-class `TruthNode`, `ToolCallNode`, `SchemaNode`, `DelegationEdge`; provenance for every claim. |
-| `src/pcg/commitments.py` | $H(\cdot)$, Merkle audit log | Collision-resistant hash and append-only Merkle log for all evidence. |
-| `src/pcg/certificate.py` | $Z = (c, S, \Pi, \Gamma, p, \text{meta})$ | Immutable grounding certificate with deterministic JSON canonicalization. |
-| `src/pcg/checker.py` | $\mathrm{Check}(Z; G_t)$ | The four-channel verification predicate. |
-| `src/pcg/independence.py` | $(\delta, \kappa)$-independence | Provenance-disjoint + low-overlap branch independence test. |
-| `src/pcg/responsibility.py` | $\mathrm{Resp}_v(F; do)$ | Causal interventional responsibility with Hoeffding CIs. |
-| `src/pcg/risk.py` | $r(b, Z)$, $\tau$-policy | Posterior-risk computation and piecewise-threshold optimal action. |
-| `src/pcg/privacy.py` | $(\varepsilon, \delta)$-DP | Gaussian mechanism for releasing aggregate features. |
-| `src/pcg/eval/audit.py` | Theorem 1 decomposition | Empirical estimation of the four union-bound channels. |
-| `src/pcg/eval/rho.py` | $\rho \geq 1$ dependence factor | Clopper–Pearson UCB on $\rho$ with Bonferroni-split $\alpha$. |
-| `src/pcg/eval/stats.py` | Wilson, Hoeffding, bootstrap | Statistical CIs used everywhere. |
-| `src/pcg/eval/meter.py` | Token / latency overhead | Per-phase `Meter` context manager; backbone of R5. |
-| `src/pcg/orchestrator/langgraph_flow.py` | Multi-agent flow | LangGraph dynamic routing — directly answers ICML W2 ("rigid roles"). |
-| `src/pcg/orchestrator/replay_handlers.py` | Deterministic replay ops | BM25, span extract, NLI filter, schema validate. |
-| `src/pcg/agents/prover.py` | Prover agent — builds $Z$ | Retrieval + LLM call + commitment + contract assembly. |
-| `src/pcg/agents/verifier.py` | Verifier agent — runs Check | Plus optional Merkle prefix audit. |
-| `src/pcg/agents/attacker.py` | Soundness probes | Evidence-swap, schema-break, policy-violation perturbations. |
-| `src/pcg/agents/debugger.py` | Diagnosis + risk choice | Theorem 3: identify root-cause + select action. |
+| `src/pcg/graph.py` | `G_t` | Typed runtime graph for evidence, tools, schemas, memory, policy, delegation, claims, and actions. |
+| `src/pcg/certificate.py` | `Z=(c,S,Pi,Gamma,p,meta)` | Unified proof-carrying certificate and canonical serialization. |
+| `src/pcg/commitments.py` | `H(.)` | Hash commitments and audit-log utilities for evidence and runtime objects. |
+| `src/pcg/checker.py` | `Check(Z;G_t)` | Unified verification predicate for integrity, replay, checking or entailment, and coverage. |
+| `src/pcg/independence.py` | `(delta,kappa)` separation and `rho` | Support-path separation and residual dependence control. |
+| `src/pcg/responsibility.py` | `Resp` | Mask-and-replay responsibility estimation over runtime components. |
+| `src/pcg/risk.py` | `r(b,Z)` and control action | Risk-aware controller over `Answer`, `Verify`, `Escalate`, and `Refuse`. |
+| `src/pcg/privacy.py` | privacy and noise budgets | Aggregate feature release utilities for privacy-sensitive audit settings. |
+| `src/pcg/backends/hf_local.py` | local LLM backend | Local Hugging Face and Transformers inference backend. |
+| `src/pcg/backends/hf_inference.py` | remote LLM backend | Hosted or HF inference backend for large or gated models. |
+| `scripts/v4_make_proxy_metrics.py` | metric schema | Fast deterministic metric manifest for figure and table smoke testing. |
+| `scripts/v4_make_r1_r5_figures.py` | R1 to R5 plots | Main paper and appendix figure generation. |
+| `scripts/v4_make_latex_tables.py` | table generation | Main-text and appendix LaTeX tables. |
+| `scripts/v4_run_matrix_local.py` | 40-cell local runner | Local model-dataset matrix execution. |
+| `scripts/v4_run_matrix_remote.py` | 16-cell remote runner | Remote or Colab matrix execution for large backends. |
+| `scripts/v4_reconcile_remote_results.py` | local and remote merge | Reconciles local and remote result folders. |
+| `scripts/v4_collect_artifacts.py` | artifact manifest | Collects generated figures, tables, metrics, and manifests. |
 
 ## Featured Plots
 
-The figures below are regenerated from `results/*/r*.json` by `make paper`.
-If they don't render, run the experiments first (or `make smoke` to populate
-`results/smoke/`).
+### PCG-MAS v4 overview
 
-<p align="center">
-  <img src="figures/intro_hero.png" alt="Intro hero: false-accept rate and utility vs k" width="92%"/>
-</p>
+![PCG-MAS v4 overview](figures/intro_hero_v4.png)
 
-<table>
-<tr>
-<td align="center"><b>R1 — Audit decomposition</b><br/>
-<img src="figures/r1_audit_decomposition.png" alt="R1 audit decomposition" width="100%"/>
-</td>
-<td align="center"><b>R2 — Redundancy law</b><br/>
-<img src="figures/r2_redundancy_law.png" alt="R2 redundancy law" width="100%"/>
-</td>
-</tr>
-<tr>
-<td align="center"><b>R3 — Responsibility</b><br/>
-<img src="figures/r3_responsibility.png" alt="R3 responsibility" width="100%"/>
-</td>
-<td align="center"><b>R4 — Risk Pareto</b><br/>
-<img src="figures/r4_risk_pareto.png" alt="R4 risk Pareto" width="100%"/>
-</td>
-</tr>
-<tr>
-<td align="center"><b>R4 — Privacy / utility</b><br/>
-<img src="figures/r4_privacy_utility.png" alt="R4 privacy utility" width="100%"/>
-</td>
-<td align="center"><b>R5 — Overhead breakdown</b><br/>
-<img src="figures/r5_overhead.png" alt="R5 overhead" width="100%"/>
-</td>
-</tr>
-</table>
+### R5 overhead summary
 
-> Animated walk-throughs (if any) live in `figures/animations/`. Drop a `.gif`
-> there with the same stem as a static figure (e.g. `r3_responsibility.gif`)
-> and it will be picked up automatically the next time you run `make readme`.
+![R5 overhead summary](figures/v4/r5_overhead_v4.png)
 
-## Key Modules — Implementation Map
+## Generated Paper Artifacts
 
-The most important entry points in the codebase, with their public APIs and what they do.
+Expected figure outputs:
 
-| Module | Key API | Purpose |
-|:---|:---|:---|
-| `pcg.backends.MockBackend` | `MockBackend().generate(prompt, ...)` | Deterministic, zero-dep LLM stub used by smoke tests and CI. |
-| `pcg.backends.hf_local.HFLocalBackend` | `HFLocalBackend(model_name="Qwen/Qwen2.5-7B-Instruct")` | Local Transformers backend, default for paper experiments. |
-| `pcg.backends.hf_inference.HFInferenceBackend` | `HFInferenceBackend(model_name="meta-llama/Llama-3.3-70B-Instruct")` | Free-tier HF Inference API for frontier-model comparison. |
-| `pcg.datasets.load_dataset_by_name` | `load_dataset_by_name("hotpotqa", n_examples=200)` | Streaming loaders for HotpotQA, 2WikiMultihopQA, ToolBench-G1, synthetic. |
-| `pcg.retrieval.BM25Index` | `BM25Index.build(items).search(q, top_k=4)` | Deterministic BM25, replayable from a committed evidence pool. |
-| `pcg.checker.Checker` | `Checker(entailment, replayer).check(cert, graph)` | The four-channel verification predicate. Returns `CheckResult`. |
-| `pcg.orchestrator.run_one_example` | `run_one_example(ex, backend=..., checker=..., cfg=...)` | Top-level entry point — runs Prover/Verifier/Attacker/Debugger as configured. |
-| `pcg.orchestrator.build_replayer_with_handlers` | `build_replayer_with_handlers()` | Replayer with `bm25_retrieve_replay`, `span_extract`, `nli_filter`, `schema_validate` registered. |
-| `pcg.agents.build_default_prover` | `build_default_prover(backend=..., config=ProverConfig(...))` | Closes over a backend and returns a `PCGState -> PCGState` callable. |
-| `pcg.responsibility.ResponsibilityEstimator` | `est.estimate_many(cert, graph, comp_ids)` | Hoeffding-bounded interventional Resp per component. |
-| `pcg.risk.ThresholdPolicy` | `ThresholdPolicy(cost_model).choose(r)` | Piecewise-threshold optimal action over `{Answer, Verify, Escalate, Refuse}`. |
-| `pcg.privacy.gaussian_mechanism` | `gaussian_mechanism(x, sensitivity, epsilon, delta)` | Aggregate-feature DP release used in R4. |
-| `pcg.eval.plots` | `plot_rN_*(...)` | NeurIPS-grade figure builders. Used by `make_figures.py`. |
+    figures/intro_hero_v4.png
+    figures/v4/r1_audit_decomposition_v4.pdf
+    figures/v4/r2_redundancy_surface_v4.pdf
+    figures/v4/r3_responsibility_v4.pdf
+    figures/v4/r4_control_frontier_v4.pdf
+    figures/v4/r5_overhead_v4.pdf
+
+
+## File Structure Distribution
+
+_Generated on: **2026-05-02 05:42:10**_  
+_Git SHA: `unknown`
+
+| Top-level path | File count |
+|:---|---:|
+| `src` | 55 |
+| `scripts` | 31 |
+| `app` | 18 |
+| `configs` | 13 |
+| `figures` | 13 |
+| `docs` | 10 |
+| `tests` | 9 |
+| `.` | 7 |
+| `.github` | 2 |
+| `latex` | 2 |
+| `notebooks` | 2 |
+| `artifacts` | 1 |
 
 ## File Type Distribution
 
-_Generated on: **2026-04-25 04:28:35 AOE (UTC-12)**_  \
-_Git SHA: `unknown`_
-
 | Extension | Count | Percentage |
 |:---|---:|---:|
-| `.py` | 55 | 76.4% |
-| `.yaml` | 6 | 8.3% |
-| `.tex` | 5 | 6.9% |
-| `.json` | 2 | 2.8% |
-| `Makefile` | 1 | 1.4% |
-| `.toml` | 1 | 1.4% |
-| `.md` | 1 | 1.4% |
-| `(no ext)` | 1 | 1.4% |
+| `.py` | 99 | 60.7% |
+| `(no ext)` | 16 | 9.8% |
+| `.yaml` | 12 | 7.4% |
+| `.tex` | 9 | 5.5% |
+| `.pdf` | 6 | 3.7% |
+| `.png` | 6 | 3.7% |
+| `.json` | 3 | 1.8% |
+| `.ipynb` | 2 | 1.2% |
+| `.md` | 2 | 1.2% |
+| `.sh` | 2 | 1.2% |
+| `.txt` | 2 | 1.2% |
+| `.yml` | 2 | 1.2% |
+| `.bak_step6` | 1 | 0.6% |
+| `.toml` | 1 | 0.6% |
 
-**Total number of files canned:** **72**
+**Total tracked-style files counted:** **163**
 
 ## Submission Snapshot
 
-The exact code/assets used at submission time are archived in the GitHub Release
-**"Submission April 2026"**. The default branch may contain replication notebooks
-and small fixes for future runs; pin to the release tag for bit-exact reproduction
-of the paper results.
+This repository snapshot supports the current PCG-MAS manuscript and artifact pipeline. Reviewers or collaborators should use the generated figures, tables, metric manifest, and local or remote runner scripts rather than older Makefile-era artifacts.
 
-```bash
-git fetch --tags
-git checkout submission-2026-04
-```
+Suggested smoke validation:
 
-Reviewers reproducing the paper artifacts should:
-1. Check out the submission tag.
-2. Run `make smoke` (≤ 30 s) to verify the toolchain.
-3. Run `make r1 r2 r3 r4 r5` (a few hours total on a single GPU; longer for the
-   `hf_inference` 70B comparison).
-4. Run `make paper` to regenerate every figure and LaTeX table from the saved JSONs.
+    python -m compileall src scripts
+    python scripts/v4_run_matrix_local.py --allow-full-run --n-examples 200 --seeds 0 1 2 3 4 --experiments r1 r2 r3 r4 r5
 
----
+For local execution, start with a one-cell dry run. For large backends, use:
 
-*This README was auto-generated by `scripts/build_readme.py` on 2026-04-25 04:28:35 AOE (UTC-12). To regenerate, run `make readme` from the project root.*
+    notebooks/pcg_v4_colab_16cells.ipynb
+
+`HF_TOKEN` is required only for gated or authenticated model access, especially Meta Llama checkpoints and any HF Inference or router calls needed for the remote split.
+
+## Notes
+
+- Full local outputs should write to `results/v4_matrix/local/`.
+- Full remote outputs should write to `results/v4_matrix/remote/`.

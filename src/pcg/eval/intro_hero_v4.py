@@ -71,6 +71,13 @@ ERROR_KW = {
     "capthick": 2.0,
 }
 
+FONT_TITLE = 34
+FONT_SUBTITLE = 24
+FONT_AXIS_LABEL = 25
+FONT_TICK = 22
+FONT_LEGEND = 20
+FONT_ANNOT = 21
+FONT_ROW = 23
 
 # ---------------------------------------------------------------------------
 # Data model
@@ -335,28 +342,29 @@ def _row_labels(entries: Sequence[IntroHeroEntry]) -> list[str]:
 
 
 def _style_axis(ax, theme: PlotTheme) -> None:
-    ax.grid(axis="x", alpha=0.38, linewidth=1.15, color="#64748b")
-    ax.tick_params(axis="both", length=0, labelsize=theme.tick_size, colors="#0f172a")
+    ax.grid(axis="x", alpha=0.40, linewidth=1.25, color="#64748b")
+    ax.tick_params(axis="both", length=0, labelsize=FONT_TICK, colors="#0f172a")
     for label in ax.get_xticklabels() + ax.get_yticklabels():
         label.set_fontweight("bold")
         label.set_color("#0f172a")
+        label.set_fontsize(FONT_TICK)
     for spine in ("top", "right"):
         ax.spines[spine].set_visible(False)
-    ax.spines["left"].set_linewidth(1.35)
+    ax.spines["left"].set_linewidth(1.45)
     ax.spines["left"].set_color("#0f172a")
-    ax.spines["bottom"].set_linewidth(1.35)
+    ax.spines["bottom"].set_linewidth(1.45)
     ax.spines["bottom"].set_color("#0f172a")
 
 
 def _panel_title(ax, title: str, subtitle: str, theme: PlotTheme) -> None:
     ax.text(
         0.0,
-        1.245,
+        1.255,
         title,
         transform=ax.transAxes,
         ha="left",
         va="bottom",
-        fontsize=theme.title_size,
+        fontsize=FONT_TITLE,
         fontweight="heavy",
         color="#020617",
     )
@@ -367,9 +375,9 @@ def _panel_title(ax, title: str, subtitle: str, theme: PlotTheme) -> None:
         transform=ax.transAxes,
         ha="left",
         va="bottom",
-        fontsize=theme.annotation_size,
+        fontsize=FONT_SUBTITLE,
         fontweight="bold",
-        color="#334155",
+        color="#111827",
     )
 
 
@@ -382,7 +390,7 @@ def _top_right_legend(ax, theme: PlotTheme, ncol: int = 1) -> None:
         framealpha=0.98,
         facecolor="white",
         edgecolor="#111827",
-        fontsize=max(theme.annotation_size - 3, 10),
+        fontsize=FONT_LEGEND, #max(theme.annotation_size - 3, 10),
         borderpad=0.25,
         handlelength=1.10,
         handleheight=0.55,
@@ -458,16 +466,16 @@ def _panel_safety(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme) -> No
                 f"{reduction:.0f}× lower",
                 va="center",
                 ha="left",
-                fontsize=theme.annotation_size,
+                fontsize=FONT_ANNOT, #fontsize=theme.annotation_size,
                 color="#7f1d1d",
                 fontweight="bold",
             )
 
     ax.set_xscale("log")
     ax.set_yticks(y)
-    ax.set_yticklabels(labels, fontfamily="monospace", fontsize=theme.tick_size)
+    ax.set_yticklabels(labels, fontfamily="monospace", fontsize=FONT_ROW, fontweight="bold")
     ax.invert_yaxis()
-    ax.set_xlabel("Harm / false-accept rate  (log scale, lower is better)", fontsize=theme.label_size)
+    ax.set_xlabel("Harm / false-accept rate  (log scale, lower is better)", fontsize=FONT_AXIS_LABEL, fontweight="bold", color="#020617")
     _style_axis(ax, theme)
     _top_right_legend(ax, theme, ncol=1)
 
@@ -520,7 +528,7 @@ def _panel_bound_quality(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme
         -0.63,
         "ideal",
         color="#111827",
-        fontsize=theme.annotation_size,
+        fontsize=FONT_ANNOT, #fontsize=theme.annotation_size,
         ha="left",
         va="center",
         fontweight="bold",
@@ -533,16 +541,16 @@ def _panel_bound_quality(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme
             f"{val:.0f}%",
             va="center",
             ha="left",
-            fontsize=theme.annotation_size,
+            fontsize=FONT_ANNOT, #fontsize=theme.annotation_size,
             color="#7f1d1d",
             fontweight="bold",
         )
 
     ax.set_xlim(0, 118)
     ax.set_yticks(y)
-    ax.set_yticklabels(labels, fontfamily="monospace", fontsize=theme.tick_size)
+    ax.set_yticklabels(labels, fontfamily="monospace", fontsize=FONT_ROW, fontweight="bold")
     ax.invert_yaxis()
-    ax.set_xlabel("Certified bound coverage  (%, higher is better)", fontsize=theme.label_size)
+    ax.set_xlabel("Certified bound coverage  (%, higher is better)", fontsize=FONT_AXIS_LABEL, fontweight="bold", color="#020617")
     _style_axis(ax, theme)
     _top_right_legend(ax, theme, ncol=1)
 
@@ -587,16 +595,16 @@ def _panel_cost(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme) -> None
             f"{val:.1f}×",
             va="center",
             ha="left",
-            fontsize=theme.annotation_size,
+            fontsize=FONT_ANNOT, #fontsize=theme.annotation_size,
             color="#7f1d1d",
             fontweight="bold",
         )
 
     max_x = max(float(np.max(v)) for v in vals.values())
     ax.set_yticks(y)
-    ax.set_yticklabels(labels, fontfamily="monospace", fontsize=theme.tick_size)
+    ax.set_yticklabels(labels, fontfamily="monospace", fontsize=FONT_ROW, fontweight="bold")
     ax.invert_yaxis()
-    ax.set_xlabel("Token multiplier per accepted claim", fontsize=theme.label_size)
+    ax.set_xlabel("Token multiplier per accepted claim", fontsize=FONT_AXIS_LABEL, fontweight="bold", color="#020617")
     ax.set_xlim(0, max_x * 1.35)
     _style_axis(ax, theme)
     _top_right_legend(ax, theme, ncol=1)
@@ -627,7 +635,7 @@ def plot_intro_hero_v4(
         raise ValueError("intro hero needs at least one entry")
 
     fig = plt.figure(
-        figsize=(21.5, 7.9),
+        figsize=(22.5, 8.3),
         dpi=theme.dpi,
         facecolor=theme.palette["bg_panel"],
     )
