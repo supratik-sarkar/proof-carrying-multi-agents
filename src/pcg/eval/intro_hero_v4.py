@@ -385,7 +385,7 @@ def _top_right_legend(ax, theme: PlotTheme, ncol: int = 1) -> None:
     """Small legend placed above and to the far right of each panel."""
     leg = ax.legend(
         loc="lower right",
-        bbox_to_anchor=(1.42, 1.105),
+        bbox_to_anchor=(1.3, 1.105),
         frameon=True,
         framealpha=0.98,
         facecolor="white",
@@ -481,8 +481,8 @@ def _panel_safety(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme) -> No
 
     _panel_title(
         ax,
-        "Safety",
-        "accepted-claim harm under corruption",
+        "Safety \n ",
+        "accepted-claim harm \n under corruption",
         theme,
     )
 
@@ -556,8 +556,8 @@ def _panel_bound_quality(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme
 
     _panel_title(
         ax,
-        "Certified bound quality",
-        "audit coverage of observed bad accepts",
+        "Certified bound quality \n ",
+        "audit coverage of \n observed bad accepts",
         theme,
     )
 
@@ -611,8 +611,8 @@ def _panel_cost(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme) -> None
 
     _panel_title(
         ax,
-        "Cost overhead",
-        "certification adds measurable token cost",
+        "Cost overhead \n ",
+        "certification adds \n measurable token cost",
         theme,
     )
 
