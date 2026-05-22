@@ -137,3 +137,42 @@ results/figures_staged_selected/
 results/tables/tex_staged_selected/
 results/tables/tex/*
 !results/tables/tex/.gitkeep
+
+# Local/runtime secrets and environments
+.env
+.env.*
+!.env.example
+multi-agents/
+.venvs/
+.sota_src/
+node_modules/
+
+# Local-only project notes and README generators
+README_creator*.txt
+user_v1.txt
+user_v2.txt
+user_v3.txt
+user_v4.txt
+
+# Generated results; keep only results/tables/tex/.gitkeep
+results/**
+!results/
+!results/tables/
+!results/tables/tex/
+!results/tables/tex/.gitkeep
+
+# Local manuscript and validation-only folders
+latex/
+tests/
+
+# Non-release workflow drafts
+workflow/pcg-mas-workflow.png
+workflow/workflow_v2.png
+
+# Preview tables are local-only
+artifacts/v4_preview/tables/
+
+# Python/editor clutter
+__pycache__/
+*.pyc
+.DS_Store
