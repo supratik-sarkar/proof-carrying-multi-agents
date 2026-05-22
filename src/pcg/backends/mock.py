@@ -1,18 +1,17 @@
 """
-MockBackend — deterministic LLM for smoke tests, CI, and theory unit tests.
+MockBackend — deterministic offline backend for preflight, CI, and theory unit tests.
 
-Does NOT call any model. Inspects the prompt for telltale patterns
+Does not call an external model. Inspects the prompt for telltale patterns
 ("Question:", "Context:", "Answer:") and returns a templated answer that
 either:
     (a) extracts a span from the context that matches a question keyword,
-    (b) returns a fixed string for known smoke-test patterns, or
+    (b) returns a fixed string for known preflight-test patterns, or
     (c) returns "I don't know." as a safe default.
 
-Why so simple? Because the FRAMEWORK is what we're testing in smoke runs:
+This backend is intentionally simple because preflight runs test the framework plumbing:
 the certificate machinery, the checker, the responsibility estimator, the
 risk policy. We don't need an actual LLM to verify the plumbing is correct.
-A real LLM is only needed for measuring real-world utility, which is what
-R1-R5 do with HFLocalBackend.
+A real LLM is used for measuring model utility in the full R1--R5 experiments.
 
 The mock is bit-deterministic given (prompt, seed): the same call twice
 returns identical output. This is what makes replay tests work without an
@@ -100,7 +99,7 @@ class MockBackend:
         question = q_match.group(1).strip() if q_match else ""
         context = c_match.group(1).strip() if c_match else ""
 
-        # Fixed responses for known smoke-test patterns
+        # Fixed responses for known preflight-test patterns
         if "calc_tool_log" in prompt.lower():
             # Pull the "X = Y" pattern from the calc tool log and return Y
             m = re.search(r"=\s*([\-\d\.]+)", prompt)

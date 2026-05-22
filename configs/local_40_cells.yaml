@@ -1,0 +1,28 @@
+run_name: local_40_cells
+description: Local 40-cell reproduction run with n=500 and four seeds.
+
+n_examples: 500
+seeds: [0, 1, 2, 3]
+
+models:
+  - phi-3.5-mini
+  - qwen2.5-7B
+  - Llama-3.1-8B
+  - Gemma-2-9b-it
+  - Llama-3.3-70B
+
+datasets:
+  - FEVER
+  - HotpotQA
+  - PubMedQA
+  - TAT-QA
+  - ToolBench
+  - WebLINX
+  - 2WikiMultihopQA
+  - synthetic
+
+outputs:
+  run_status: artifacts/local_40_cells_status.json
+  tables_csv: results/tables/csv
+  tables_tex: results/tables/tex
+  figures: results/figures

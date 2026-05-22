@@ -1,0 +1,17 @@
+run_name: preflight_2_cells
+description: Fast preflight gate before any broader run.
+
+n_examples: 10
+seeds: [0]
+
+cells:
+  - model: phi-3.5-mini
+    dataset: FEVER
+  - model: qwen2.5-7B
+    dataset: HotpotQA
+
+outputs:
+  run_status: artifacts/preflight_2_cells_status.json
+  tables_csv: results/tables/csv
+  tables_tex: results/tables/tex
+  figures: results/figures

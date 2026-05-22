@@ -3,7 +3,7 @@ Dataset loaders for PCG-MAS experiments.
 
 All loaders return a stream (`Iterator[QAExample]`) — they NEVER write the full
 dataset to local disk. We rely on `datasets.load_dataset(..., streaming=True)`
-for HF datasets and on small in-memory synthetic data for smoke tests.
+for HF datasets and on small in-memory synthetic data for preflight tests.
 
 Available datasets:
     - synthetic    : 50 in-memory multi-hop QA examples (no download)

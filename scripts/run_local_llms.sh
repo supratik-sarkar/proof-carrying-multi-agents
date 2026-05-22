@@ -2,11 +2,11 @@
 # Run the 5 LLMs that fit on M-series MacBook unified memory.
 # Each LLM × 5 R-experiments × 8 datasets = 200 cell.json files per LLM.
 # Total wall time on M4 Pro 32 GB: ~30-40 hours per LLM at n=200.
-# For sanity-check before the big run: pass SMOKE=1 to use n=20.
+# For sanity-check before the big run: pass PREFLIGHT=1 to use n=20.
 #
 # Usage:
 #   scripts/run_local_llms.sh                  # full run, all 5 LLMs
-#   SMOKE=1 scripts/run_local_llms.sh          # quick sanity, n=20
+#   PREFLIGHT=1 scripts/run_local_llms.sh          # quick sanity, n=20
 #   LLMS="phi-3.5-mini Gemma-2-9b-it" scripts/run_local_llms.sh   # subset
 #   DATASETS="hotpotqa fever" scripts/run_local_llms.sh           # subset
 
@@ -26,10 +26,10 @@ DATASETS="${DATASETS:-hotpotqa twowiki toolbench fever pubmedqa tatqa weblinx sy
 SEEDS="${SEEDS:-0 1 2}"
 N_EXAMPLES="${N_EXAMPLES:-200}"
 
-if [[ "${SMOKE:-0}" == "1" ]]; then
+if [[ "${PREFLIGHT:-0}" == "1" ]]; then
   N_EXAMPLES=20
   SEEDS="0"
-  echo "SMOKE=1: using n=$N_EXAMPLES, seed=$SEEDS"
+  echo "PREFLIGHT=1: using n=$N_EXAMPLES, seed=$SEEDS"
 fi
 
 # HF model id for each short name
@@ -90,4 +90,4 @@ done
 echo ""
 echo "=========================================="
 echo "Done: $total_cells (LLM × dataset × R) cells written."
-echo "Run scripts/pick_top_k.py to swap diverse-coverage for top-3 selections."
+echo "Run scripts/analysis/pick_top_k.py to swap diverse-coverage for top-3 selections."

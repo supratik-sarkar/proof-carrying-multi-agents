@@ -11,14 +11,10 @@ Provides:
     - `posterior_risk`: the r(b, Z) estimator from Eq. (24)
     - `expected_cost`: the C(b, a) model from Eq. (22)
 
-IMPORTANT THEORY FIX: The paper's Eq. (30) presents the refusal threshold as
-    tau = Delta_C_bar / (lambda * L_max)
-which disagrees with the full derivation in Appendix B.3 (Eq. 65):
-    tau = (Delta_C + lambda * H_Ref) / (lambda * H_FA)
-
-The implementation below uses the full derivation. The main-text formula
-becomes the special case H_Ref=0, H_FA=L_max. We expose both parameterizations
-so the paper and code can be trivially reconciled during the camera-ready.
+Implementation note:
+    The threshold policy exposes both the compact main-text parameterization
+    and the full harm-aware derivation used in the appendix. The compact form is
+    recovered as the special case H_Ref=0 and H_FA=L_max.
 """
 from __future__ import annotations
 

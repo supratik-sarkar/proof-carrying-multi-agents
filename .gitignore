@@ -52,3 +52,58 @@ docs/tables/manifest.json
 figures/manifest.json
 figures/intro_hero_manifest.json
 docs/manifest.json
+
+# local environment and Python cache
+multi-agents/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.pyc
+
+# ---------------------------------------------------------------------
+# PCG-MAS local-only / generated artifacts
+# ---------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+multi-agents/
+.venvs/
+.sota_src/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Runtime outputs
+results/
+!results/
+!results/tables/
+!results/tables/tex/
+!results/tables/tex/.gitkeep
+
+# Local setup notes and local README generator
+user_v1.txt
+user_v2.txt
+user_v3.txt
+user_v4.txt
+README_creator*.txt
+
+# Non-public manuscript / validation assets
+latex/
+tests/
+
+# Local workflow drafts; workflow_v3.png is the public README header
+workflow/pcg-mas-workflow.png
+workflow/workflow_v2.png
+
+# Preview tables are manuscript-side artifacts; figures are kept for README display
+artifacts/v4_preview/tables/
+
+# Staging folders
+results/figures_staged_selected/
+results/tables/tex_staged_selected/

@@ -1,0 +1,8 @@
+openai>=1.69.0
+tiktoken>=0.8.0
+transformers>=4.45.0
+accelerate>=0.33.0
+torch
+numpy>=1.26.0
+pandas>=2.2.0
+tqdm>=4.67.0

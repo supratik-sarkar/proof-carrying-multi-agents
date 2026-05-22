@@ -456,7 +456,7 @@ class Checker:
 
 
 # ---------------------------------------------------------------------------
-# Default replay handlers used by smoke tests and light experiments
+# Default replay handlers used by preflight tests and light experiments
 # ---------------------------------------------------------------------------
 
 def build_default_replayer() -> CompositeReplayer:

@@ -64,6 +64,35 @@ class QAExample:
 # ---------------------------------------------------------------------------
 
 
+
+def normalize_dataset_name(name: str) -> str:
+    """Normalize paper-facing dataset names to internal loader keys."""
+    key = name.strip().lower()
+    key = key.replace("_", "-").replace(" ", "-")
+
+    aliases = {
+        "synthetic": "synthetic",
+        "fever": "fever",
+        "hotpotqa": "hotpotqa",
+        "hotpot-qa": "hotpotqa",
+        "hotpot_qa": "hotpotqa",
+        "2wiki": "twowiki",
+        "2wikimultihopqa": "twowiki",
+        "2wiki-multihopqa": "twowiki",
+        "2wiki-multihop-qa": "twowiki",
+        "twowiki": "twowiki",
+        "twowikimultihopqa": "twowiki",
+        "toolbench": "toolbench",
+        "pubmedqa": "pubmedqa",
+        "pubmed-qa": "pubmedqa",
+        "tatqa": "tatqa",
+        "tat-qa": "tatqa",
+        "weblinx": "weblinx",
+        "web-linx": "weblinx",
+    }
+    return aliases.get(key, key)
+
+
 def load_dataset_by_name(
     name: str,
     *,
@@ -83,6 +112,7 @@ def load_dataset_by_name(
         streaming: forwarded to `datasets.load_dataset`. Synthetic always
                    in-memory; the flag is just for API uniformity.
     """
+    name = normalize_dataset_name(name)
     if name == "synthetic":
         from pcg.datasets.synthetic import iter_synthetic
         yield from iter_synthetic(n=n_examples, seed=seed)

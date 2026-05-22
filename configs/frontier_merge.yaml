@@ -1,0 +1,17 @@
+run_name: frontier_merge
+description: Merge Colab/Databricks frontier-cell outputs with local 40-cell outputs.
+
+local_results_dir: results/tables/csv
+frontier_results_dirs:
+  - notebooks/colab/outputs
+  - notebooks/databricks/outputs
+
+fallback:
+  use_local_40_cells_if_frontier_missing: true
+  use_preflight_if_local_missing: true
+
+outputs:
+  merged_tables_csv: results/tables/csv
+  merged_tables_tex: results/tables/tex
+  merged_figures: results/figures
+  merge_manifest: artifacts/frontier_merge_manifest.json

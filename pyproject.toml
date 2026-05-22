@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "pcg-mas"
 version = "0.1.0"
-description = "Proof-Carrying Generation for Multi-Agent Systems (NeurIPS 2026 submission artifact)"
+description = "Proof-Carrying Generation for Multi-Agent Systems (conference 2026 submission artifact)"
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
 license = { text = "MIT" }

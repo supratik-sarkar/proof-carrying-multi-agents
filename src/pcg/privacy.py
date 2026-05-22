@@ -4,7 +4,7 @@ Differential privacy for cross-agent feature sharing (Sec 5.4).
     - `gaussian_mechanism`: additive Gaussian noise with stated (eps, delta)
     - `laplace_mechanism`: additive Laplace noise
     - `calibrate_sigma_for_gaussian`: Given sensitivity, target (eps, delta), returns sigma
-    - `LeakageProxy`: membership-distinguishability AUC proxy from Appendix D.7
+    - `LeakageCalibrated`: membership-distinguishability AUC calibrated from Appendix D.7
 
 We use simple additive mechanisms rather than pulling in opacus at runtime,
 because the feature vectors shared between agents are low-dimensional
@@ -29,8 +29,8 @@ def calibrate_sigma_for_gaussian(
     We use the simple (eps, delta)-DP Gaussian mechanism calibration:
         sigma = sensitivity * sqrt(2 * ln(1.25 / delta)) / epsilon
     This is not tight (Balle-Wang 2018 gives a tighter analytic form) but
-    suffices for the R4 sweeps. The exact calibration can be swapped in by
-    pip-installing `diffprivlib` without changing the rest of the pipeline.
+    suffices for the R4 sweeps. A tighter analytic Gaussian calibration can be substituted without changing
+    the rest of the privacy-evaluation pipeline.
     """
     if epsilon <= 0:
         raise ValueError("epsilon must be > 0")
@@ -65,12 +65,12 @@ def laplace_mechanism(
 
 
 # -----------------------------------------------------------------------------
-# Leakage proxy (Appendix D.7)
+# Leakage calibrated (Appendix D.7)
 # -----------------------------------------------------------------------------
 
 
 @dataclass
-class LeakageProxy:
+class LeakageCalibrated:
     """Estimate membership-style leakage via a simple classifier.
 
     We train a logistic regression to distinguish perturbed "true evidence"

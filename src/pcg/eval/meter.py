@@ -167,7 +167,7 @@ class Meter:
 
         Nested phases are supported; timing is per-phase (a nested phase's
         time is counted in both its own and the enclosing phase, which is
-        usually what you want — e.g., retrieval_llm inside retrieval).
+        usually the desired behavior, e.g., retrieval_llm inside retrieval).
         """
         pt = self._phases.setdefault(name, PhaseTimer(name=name))
         pt.n_calls += 1

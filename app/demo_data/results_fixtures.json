@@ -1,0 +1,54 @@
+{
+  "r1": {
+    "aggregated": {
+      "lhs_accept_and_wrong": {"mean": 0.078, "ci": [0.060, 0.094]},
+      "p_int_fail":   {"mean": 0.022, "ci": [0.015, 0.029]},
+      "p_replay_fail":{"mean": 0.018, "ci": [0.012, 0.024]},
+      "p_check_fail": {"mean": 0.031, "ci": [0.022, 0.040]},
+      "p_cov_gap":    {"mean": 0.024, "ci": [0.017, 0.031]}
+    }
+  },
+  "r2": {
+    "aggregated_per_k": [
+      {"k": 1, "empirical_mean": 0.180, "empirical_ci": [0.14, 0.22], "theory_ucb_max": 0.20},
+      {"k": 2, "empirical_mean": 0.060, "empirical_ci": [0.04, 0.08], "theory_ucb_max": 0.07},
+      {"k": 4, "empirical_mean": 0.018, "empirical_ci": [0.011, 0.027], "theory_ucb_max": 0.022},
+      {"k": 8, "empirical_mean": 0.0040, "empirical_ci": [0.001, 0.009], "theory_ucb_max": 0.0055}
+    ]
+  },
+  "r3": {
+    "aggregated": {
+      "integrity": {"top1_accuracy_mean": 0.91, "top1_accuracy_ci": [0.87, 0.94]},
+      "replay":    {"top1_accuracy_mean": 0.86, "top1_accuracy_ci": [0.82, 0.90]},
+      "check":     {"top1_accuracy_mean": 0.78, "top1_accuracy_ci": [0.73, 0.83]},
+      "coverage":  {"top1_accuracy_mean": 0.72, "top1_accuracy_ci": [0.66, 0.78]}
+    }
+  },
+  "r4": {
+    "aggregated": {
+      "0.05": {
+        "always_answer": {"cost_mean": 0.05, "harm_mean": 0.32},
+        "threshold_pcg": {"cost_mean": 0.07, "harm_mean": 0.018},
+        "learned":       {"cost_mean": 0.10, "harm_mean": 0.07}
+      },
+      "0.10": {
+        "always_answer": {"cost_mean": 0.05, "harm_mean": 0.32},
+        "threshold_pcg": {"cost_mean": 0.09, "harm_mean": 0.012},
+        "learned":       {"cost_mean": 0.13, "harm_mean": 0.05}
+      },
+      "0.20": {
+        "always_answer": {"cost_mean": 0.05, "harm_mean": 0.32},
+        "threshold_pcg": {"cost_mean": 0.12, "harm_mean": 0.008},
+        "learned":       {"cost_mean": 0.16, "harm_mean": 0.035}
+      }
+    }
+  },
+  "r5": {
+    "aggregated": {
+      "Qwen-7B":      {"phases": {"prove": 180, "verify": 40, "redundant": 120}},
+      "DeepSeek-7B":  {"phases": {"prove": 175, "verify": 38, "redundant": 115}},
+      "Phi-3.5-mini": {"phases": {"prove": 95,  "verify": 22, "redundant": 60}},
+      "Llama-3.3-70B":{"phases": {"prove": 320, "verify": 55, "redundant": 215}}
+    }
+  }
+}

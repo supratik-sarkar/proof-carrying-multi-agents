@@ -1,12 +1,7 @@
 """
 LangGraph-based dynamic orchestrator for PCG-MAS.
 
-The orchestrator answers ICML W2 directly:
-
-    "The proposed multi-agent architecture relies on a fairly hard-coded
-     decomposition into roles ... a fixed certificate pipeline."
-
-Our response: roles are *capabilities* (build/check/perturb/intervene), and
+The orchestrator implements dynamic certificate-conditioned routing. roles are *capabilities* (build/check/perturb/intervene), and
 the routing edges are conditional on certificate state. An example flows
 through the graph based on what its certificate looks like, not based on
 its position in a fixed pipeline:
@@ -22,6 +17,7 @@ its position in a fixed pipeline:
               +---- [retry with different tool/retriever]
 
          [Attacker] is OPTIONAL — only invoked under adversarial config
+
 
 This means a clean example with a passing certificate goes Prover -> Verifier
 -> END (3 nodes). An adversarially-tampered certificate goes Prover -> Attacker
@@ -205,7 +201,7 @@ def build_pcg_graph(
     """Build a callable that runs one example through the orchestrator.
 
     Tries LangGraph first; falls back to a simple in-process executor that
-    follows the same routing edges. The fallback exists so that smoke tests
+    follows the same routing edges. The alternate exists so that preflight tests
     don't require LangGraph to be installed (it's a heavy import).
     """
     try:
@@ -301,7 +297,7 @@ def _build_in_process(
     checker,
 ) -> Callable[[PCGState], PCGState]:
     """Minimal in-process executor with identical routing semantics. Used
-    when LangGraph isn't installed (e.g., during the smoke test).
+    when LangGraph isn't installed (e.g., during the preflight test).
     """
 
     def run(state: PCGState) -> PCGState:

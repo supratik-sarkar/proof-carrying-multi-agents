@@ -1,0 +1,171 @@
+
+
+========== TAT-QA ==========
+keys: ['paragraphs', 'questions', 'table']
+{
+  "table": {
+    "uid": "f6368ece2c45f8080d07ccc5817d2431",
+    "table": [
+      [
+        "",
+        "Years Ended December 31,",
+        "",
+        "Change",
+        ""
+      ],
+      [
+        "",
+        "2019",
+        "2018",
+        "$",
+        "%"
+      ],
+      [
+        "",
+        "",
+        "(dollars in thousands)",
+        "",
+        ""
+      ],
+      [
+        "Impairment of goodwill",
+        "$1,910",
+        "$14,740",
+        "$(12,830)",
+        "(87%)"
+      ],
+      [
+        "Percent of revenues, net",
+        "4%",
+        "26%",
+        "",
+        ""
+      ]
+    ]
+  },
+  "paragraphs": [
+    {
+      "uid": "5e25314bca56907e507191972239ed83",
+      "order": 1,
+      "text": "Impairment of Goodwill"
+    },
+    {
+      "uid": "6a9f715bdecb8bcdfea1a761ab0b7c99",
+      "order": 2,
+      "text": "We recorded a goodwill impairment charge of $1.9 million in the fourth quarter of 2019, reducing the goodwill balance to zero at that time. We also recorded a goodwill impairment charge of $14.7 million in the third quarter of 2018. Refer to Note 2 and Note 6 of the accompanying consolidated financial statements for additional information on these goodwill impairment charges."
+    }
+  ],
+  "questions": [
+    {
+      "uid": "a353075ff10f74d710b82c55dab49e5f",
+      "order": 1,
+      "question": "What is the value of the goodwill impairment charge in the fourth quarter of 2019?",
+      "answer": "[\"$1.9 million\"]",
+      "derivation": "",
+      "answer_type": "span",
+      "answer_from": "text",
+      "rel_paragraphs": [
+        "2"
+      ],
+      "req_comparison": false,
+      "scale": ""
+    },
+    {
+      "uid": "62780ddb006bd4d1b42ce01bf6bfac75",
+      "order": 2,
+      "question": "What is the value of the goodwill impairment charge in the third quarter of 2018?",
+      "answer": "[\"$14.7 million\"]",
+      "derivation": "",
+      "answer_type": "span",
+      "answer_from": "text",
+      "rel_paragraphs": [
+        "2"
+      ],
+      "req_comparison": false,
+      "scale": ""
+    },
+    {
+      "uid": "e15c6ac66e87a720bc2fc27fde4fef38",
+      "order": 3,
+      "question": "What are the respective goodwill impairment values in 2018 and 2019?",
+      "answer": "[\"$14,740\",\"$1,910\"]",
+      "derivation": "",
+      "answer_type": "multi-span",
+      "answer_from": "table",
+      "rel_paragraphs": [],
+      "req_comparison": false,
+      "scale": "thousand"
+    },
+    {
+      "uid": "f1db9dad6d358d3b0741eea0d44fb2e2",
+      "order": 4,
+      "question": "What is the company's average goodwill impairment in 2018 and 2019?",
+      "answer": "8325",
+      "derivation": "(14,740 + 1,910)/2 ",
+      "answer_type": "arithmetic",
+      "answer_from": "table",
+      "rel_paragraphs": [],
+      "req_comparison": false,
+      "scale": "thousand"
+    },
+    {
+      "uid": "66a77ab95304d2ac322b0d0e1ee91008",
+      "order": 6,
+      "question": "What is the company's total goodwill impairment in 2018 and 2019?",
+      "answer": "16650",
+      "derivation": "14,740 + 1,910 ",
+      "answer_type": "arithmetic",
+      "answer_from": "table",
+      "rel_paragraphs": [],
+      "req_comparison": false,
+      "scale": "thousand"
+    },
+    {
+      "uid": "935015b20dd8cfd9a24826afbcfbf42b",
+      "order": 8,
+      "question": "What is the value of the change in goodwill impairment between 2018 and 2019 as a percentage of the 2018 goodwill impairment?",
+      "answer": "87.04",
+      "derivation": "12,830/14,740 ",
+      "answer_type": "arithmetic",
+      "answer_from": "table",
+      "rel_paragraphs": [],
+      "req_comparison": false,
+      "scale": "percent"
+    }
+  ]
+}
+
+
+========== WebLINX-reranking ==========
+keys: ['negative', 'positive', 'query', 'query_dict', 'query_id']
+{
+  "query_id": "Q_ygprzve@8",
+  "query": "User: Hello\nAgent: say(speaker=\"navigator\", utterance=\"Hi\")\nUser: Please open Gmail.\nAgent: load(url=\"https://mail.google.com/mail/u/0/\")\nAgent: say(speaker=\"navigator\", utterance=\"Yes, sure\")\nUser: Add a task with the title \"Interview.\"\nAgent: say(speaker=\"navigator\", utterance=\"Okay\")\nAgent: click(x=1416, y=201, tag=\"path\", attrs={})",
+  "positive": [
+    "[[tag]] div\n[[xpath]] /html/body/div[7]/div[3]/div/div[2]/div[3]/div[1]/div/div[1]/div[1]/div/div[3]/div[3]\n[[text]] \n[[bbox]] x=1188 y=184 width=40 height=40\n[[attributes]] class='aT5-aOt-I-JX-Jw' data-webtasks-id='112e2f9f-9097-4464' style='background-image: url(\"https://www.gstatic.com/c...on_assets/tasks_2021_2x.png\"); user-select: none;'\n[[children]] "
+  ],
+  "negative": [
+    "[[tag]] div\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]\n[[text]] \n[[bbox]] x=0 y=0 width=1236 height=64\n[[attributes]] class='nH w-asV bbg aiw' data-webtasks-id='41956f41-bb96-4ef1'\n[[children]] div div",
+    "[[tag]] div\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]\n[[text]] \n[[bbox]] x=0 y=0 width=1236 height=64\n[[attributes]] class='nH oy8Mbf qp' data-webtasks-id='6a9a256d-30ca-454d'\n[[children]] header",
+    "[[tag]] header\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header\n[[text]] \n[[bbox]] x=0 y=0 width=1236 height=64\n[[attributes]] id='gb' role='banner' data-webtasks-id='bd441f0b-aaa5-4edd' style='background-color:transparent' class='gb_Ia gb_ab gb_Pd gb_kd gb_nd gb_Wc'\n[[children]] div div",
+    "[[tag]] div\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]\n[[text]] \n[[bbox]] x=0 y=0 width=1236 height=64\n[[attributes]] class='gb_qd gb_Fd gb_wd' data-webtasks-id='65f33121-c42a-44ce'\n[[children]] div div",
+    "[[tag]] div\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[1]\n[[text]] \n[[bbox]] x=8 y=8 width=238 height=48\n[[attributes]] class='gb_pd gb_cd gb_dd' style='min-width: 238px;' data-webtasks-id='16020f3b-0fa3-4dab'\n[[children]] div div",
+    "[[tag]] div\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[1]/div[1]\n[[text]] \n[[bbox]] x=12 y=8 width=48 height=48\n[[attributes]] data-ogmb='1' tabindex='0' aria-expanded='true' class='gb_Kc' role='button' aria-label='Main menu' data-webtasks-id='6ba1ba37-6175-4f98'\n[[children]] svg",
+    "[[tag]] svg\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[1]/div[1]/svg\n[[text]] \n[[bbox]] x=24 y=20 width=24 height=24\n[[attributes]] focusable='false' viewbox='0 0 24 24' data-webtasks-id='a12b5871-af95-42fe'\n[[children]] path",
+    "[[tag]] path\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[1]/div[1]/svg/path\n[[text]] \n[[bbox]] x=27 y=26 width=18 height=12\n[[attributes]] data-webtasks-id='696aeddd-fb91-421a' d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'\n[[children]] ",
+    "[[tag]] div\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[1]/div[4]\n[[text]] \n[[bbox]] x=64 y=12 width=109 height=44\n[[attributes]] class='gb_Cc' data-webtasks-id='e312c05c-4def-4bf0'\n[[children]] div",
+    "[[tag]] div\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[1]/div[4]/div\n[[text]] \n[[bbox]] x=64 y=12 width=109 height=44\n[[attributes]] class='gb_Dc gb_de' data-webtasks-id='ebd3c247-5964-4d7b'\n[[children]] a",
+    "[[tag]] a\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[1]/div[4]/div/a\n[[text]] \n[[bbox]] x=64 y=12 width=109 height=44\n[[attributes]] aria-label='Gmail' title='Gmail' href='#inbox' class='gb_ce gb_Ec gb_ae' data-webtasks-id='4d66de38-cc82-4ac9'\n[[children]] img",
+    "[[tag]] img\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[1]/div[4]/div/a/img\n[[text]] \n[[bbox]] x=64 y=12 width=109 height=40\n[[attributes]] alt='' aria-hidden='true' class='gb_Jc' role='presentation' data-webtasks-id='f7b9f042-4a54-456d' style='width:109px;height:40px' src='https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png' srcset='https://ssl.gstatic.com/ui/v1/icons/mail/rfr/log.../mail/rfr/logo_gmail_lockup_default_2x_r5.png 2x '\n[[children]] ",
+    "[[tag]] div\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]\n[[text]] \n[[bbox]] x=246 y=8 width=886 height=48\n[[attributes]] data-webtasks-id='a063d42e-27e9-4d78' class='gb_pd gb_zd gb_Ie gb_Ue gb_0e'\n[[children]] div div",
+    "[[tag]] div\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]/div[2]\n[[text]] \n[[bbox]] x=246 y=8 width=798 height=48\n[[attributes]] class='gb_He' data-webtasks-id='dd8aab3a-7c92-4a17'\n[[children]] form",
+    "[[tag]] form\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]/div[2]/form\n[[text]] \n[[bbox]] x=256 y=8 width=720 height=48\n[[attributes]] method='get' role='search' data-webtasks-id='97b9076b-d26e-4ba0' class='gb_2d gb_Pe bas aJf'\n[[children]] h2 button",
+    "[[tag]] div\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]/div[2]/form/div\n[[text]] \n[[bbox]] x=300 y=8 width=580 height=46\n[[attributes]] gh='sb' class='gb_Se gb_Me' data-webtasks-id='02bb73c2-483d-4461'\n[[children]] input",
+    "[[tag]] input\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]/div[2]/form/div/input\n[[text]] \n[[bbox]] x=300 y=8 width=580 height=46\n[[attributes]] value='' name='q' autocomplete='off' type='text' aria-autocomplete='list' role='combobox' class='gb_ye aJh' aria-label='Search mail' reference='Search mail' data-webtasks-id='43b3a6b8-9325-4916'\n[[children]] ",
+    "[[tag]] button\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]/div[2]/form/button[2]\n[[text]] \n[[bbox]] x=920 y=8 width=56 height=46\n[[attributes]] gh='sda' class='gb_Re' type='button' role='button' data-webtasks-id='00c24afd-32b1-41fc' data-tooltip='Show search options' aria-label='Advanced search options'\n[[children]] svg",
+    "[[tag]] svg\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]/div[2]/form/button[2]/svg\n[[text]] \n[[bbox]] x=928 y=11 width=40 height=40\n[[attributes]] width='24' height='24' viewbox='0 0 24 24' data-webtasks-id='581a36d5-25f7-47e9' xmlns='http://www.w3.org/2000/svg'\n[[children]] path",
+    "[[tag]] path\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]/div[2]/form/button[2]/svg/path\n[[text]] \n[[bbox]] x=939 y=22 width=18 height=18\n[[attributes]] data-webtasks-id='284d20b6-f8ca-463b' d='M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-...2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z'\n[[children]] ",
+    "[[tag]] button\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]/div[2]/form/button[3]\n[[text]] \n[[bbox]] x=876 y=8 width=56 height=46\n[[attributes]] class='gb_Oe' type='button' aria-label='Clear search' data-webtasks-id='00d3ddb7-f9f4-41a1'\n[[children]] svg",
+    "[[tag]] svg\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]/div[2]/form/button[3]/svg\n[[text]] \n[[bbox]] x=884 y=11 width=40 height=40\n[[attributes]] height='24px' width='24px' focusable='false' viewbox='0 0 24 24' data-webtasks-id='9c1526c7-3c45-4387' xmlns='http://www.w3.org/2000/svg'\n[[children]] path path",
+    "[[tag]] path\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]/div[2]/form/button[3]/svg/path[1]\n[[text]] \n[[bbox]] x=897 y=24 width=14 height=14\n[[attributes]] data-webtasks-id='00230713-d34e-4426' d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12...7.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'\n[[children]] ",
+    "[[tag]] path\n[[xpath]] /html/body/div[7]/div[3]/div/div[1]/div[3]/header/div[2]/div[2]/div[2]/form/button[3]/svg/path[2]\n[[text]] \n[[bbox]] x=892 y=19 width=24 height=24\n[[attributes]] fill='none' d='M0 0h24v24H0z' data-webtasks-id='2de301e1-29a2-479f'\n[[chil

@@ -6,9 +6,10 @@ Two index types:
     - `DenseIndex`: sentence-transformers embedding + FAISS exact NN, much
                     stronger but requires a model download
 
-Each Prover branch picks one or the other (or one of each) so that the k
-branches in Theorem 2 are *operationally* independent: different retrievers
-satisfy the (delta, kappa)-independence predicate via different tool steps.
+Each Prover branch picks one or the other, or a hybrid of both, so that the k
+branches expose operationally separated retrieval paths. Different retrievers
+reduce shared tool dependence and support the (delta, kappa, gamma)-separation
+diagnostics used by the redundancy analysis.
 """
 from __future__ import annotations
 
@@ -166,8 +167,8 @@ def hybrid_search(
     weights: Sequence[float] | None = None,
 ) -> list[tuple[EvidenceItem, float]]:
     """Reciprocal-rank-fused hybrid retrieval. Used to construct branches
-    whose tool steps differ (BM25 vs. dense) so that they qualify as
-    (delta, kappa)-independent.
+    whose tool steps differ, for example BM25 versus dense retrieval, so that
+    they support (delta, kappa, gamma)-separation diagnostics.
 
     Standard RRF formula: sum_i 1 / (rank_i + 60). Weights are multiplied
     onto each index's contribution.

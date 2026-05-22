@@ -1,7 +1,7 @@
 """
-plots_v2.py — NeurIPS-grade hero figure system.
+plots_v2.py — conference-grade hero figure system.
 
-A NeurIPS hero figure has roughly 5 seconds to make a reviewer care about
+A conference hero figure has roughly 5 seconds to make a reviewer care about
 the paper. This module delivers a 4-panel layout that tells the entire
 impact story at a single glance:
 
@@ -17,7 +17,7 @@ DESIGN PRINCIPLES (the software-engineering perspective)
 
   1. Separation of computation and rendering.
      Plot functions accept already-computed statistics, never raw data.
-     Lets you re-render in different styles without touching experiments.
+     Supports re-rendering in different styles without touching experiments.
 
   2. Single source of style truth.
      PlotTheme dataclass holds palette/fonts/sizes. Switch from bold to
@@ -31,18 +31,18 @@ DESIGN PRINCIPLES (the software-engineering perspective)
   4. Defensive defaults.
      Every keyword argument is optional. Missing field → grayed reference.
      Missing CI → no error bar (not a crash). Missing run → friendly
-     "Run experiment Rn to populate" placeholder. Never blows up.
+     "Run experiment Rn to populate" empty-state. Never blows up.
 
   5. Self-annotating output.
      Tiny footer carries git SHA, source run IDs, and AOE timestamp.
      Invisible at thumbnail scale; readable when zoomed. Solves "which
      version of the data made this figure?" reviewer questions silently.
 
-  6. Mock-aware watermarking.
-     When source data came from a `mock` backend, the figure auto-tags
-     itself with a diagonal "MOCK BACKEND · PREVIEW ONLY" stamp. Removed
-     automatically when real-LLM runs replace the mock results. Prevents
-     accidentally screenshotting mock numbers into the camera-ready.
+  6. Synthetic-aware watermarking.
+     When source data came from a `synthetic` backend, the figure auto-tags
+     itself with a diagonal "SYNTHETIC BACKEND · PREVIEW ONLY" stamp. Removed
+     automatically when real-LLM runs replace the synthetic results. Prevents
+     accidentally screenshotting synthetic numbers into the camera-ready.
 
   7. Format hygiene.
      PDF (vector) for paper inclusion, PNG (raster) for README embedding.
@@ -80,7 +80,7 @@ class PlotTheme:
     name: str
     palette: dict[str, str]
     font_family: str = "Helvetica"
-    font_fallbacks: tuple[str, ...] = (
+    font_alternates: tuple[str, ...] = (
         "Helvetica", "Arial", "Liberation Sans", "DejaVu Sans"
     )
     base_size: int = 9
@@ -130,13 +130,13 @@ _BOLD_PALETTE = {
 BOLD_THEME = PlotTheme(
     name="bold",
     palette=_BOLD_PALETTE,
-    # Sizes calibrated so that at typical NeurIPS-column reproduction
+    # Sizes calibrated so that at typical conference-column reproduction
     # (figure scaled to ~3.3 inches wide), the printed body text is
     # ≥6pt. Source figures are 13-15 inches wide, so we apply ~2x
     # scaling vs matplotlib's small-figure defaults. The original
     # BOLD_THEME defaults were base=10/title=12/label=10/tick=9/ann=9
     # — these sizes were optimized for full-page reproduction, but
-    # too small after scale-down to NeurIPS column width.
+    # too small after scale-down to conference column width.
     # Nothing else (colors, layout intent, font family) changes.
     base_size=18,
     title_size=22,
@@ -153,15 +153,15 @@ BOLD_THEME = PlotTheme(
 
 def setup_matplotlib_for_theme(theme: PlotTheme = BOLD_THEME) -> None:
     """Apply theme-wide rcParams. Idempotent — safe to call repeatedly."""
-    # Silence matplotlib's noisy font-fallback warnings. Helvetica/Arial
+    # Silence matplotlib's noisy font-alternate warnings. Helvetica/Arial
     # are not installed on most Linux containers (Colab, CI), so the user
     # gets a wall of "Font family ... not found" messages even though the
-    # fallback to DejaVu Sans is fine. Suppress at module level.
+    # alternate to DejaVu Sans is fine. Suppress at module level.
     import logging
     logging.getLogger("matplotlib.font_manager").setLevel(logging.ERROR)
 
     plt.rcParams.update({
-        "font.family": list(theme.font_fallbacks),
+        "font.family": list(theme.font_alternates),
         "font.size": theme.base_size,
         "axes.titlesize": theme.title_size,
         "axes.labelsize": theme.label_size,
@@ -195,7 +195,7 @@ def _lighten(hex_color: str, amount: float = 0.85) -> str:
 
 
 def _annotate_missing(ax, message: str, theme: PlotTheme) -> None:
-    """Draw a centered placeholder when data is unavailable."""
+    """Draw a centered empty-state when data is unavailable."""
     ax.text(0.5, 0.5, message,
             transform=ax.transAxes,
             ha="center", va="center",
@@ -256,10 +256,10 @@ def _aoe_timestamp() -> str:
 def _add_provenance_footer(
     fig, theme: PlotTheme,
     source_runs: list[str] | None = None,
-    is_mock: bool = False,
+    is_synthetic: bool = False,
 ) -> None:
     """Bottom-left provenance line (git SHA · timestamp · source runs).
-    Plus an optional centered diagonal MOCK watermark."""
+    Plus an optional centered diagonal SYNTHETIC watermark."""
     parts = [f"git: {_git_sha()}", _aoe_timestamp()]
     if source_runs:
         names = [(s[:42] + "…" if len(s) > 42 else s) for s in source_runs[:2]]
@@ -270,9 +270,9 @@ def _add_provenance_footer(
         alpha=0.55, ha="left", va="bottom",
     )
 
-    if is_mock:
+    if is_synthetic:
         fig.text(
-            0.5, 0.5, "MOCK BACKEND · PREVIEW ONLY",
+            0.5, 0.5, "SYNTHETIC BACKEND · PREVIEW ONLY",
             fontsize=44, color=theme.palette["warning"],
             alpha=0.07, ha="center", va="center",
             rotation=28, fontweight="bold",
@@ -280,8 +280,8 @@ def _add_provenance_footer(
         )
 
 
-def detect_mock_runs(run_dirs: Sequence[Path | str]) -> bool:
-    """Return True if ANY of the given run directories used a mock backend.
+def detect_synthetic_runs(run_dirs: Sequence[Path | str]) -> bool:
+    """Return True if ANY of the given run directories used a synthetic backend.
 
     Reads `config_snapshot.json` from each run directory and checks
     `backend.kind` (single-backend) or `backends[*].kind` (R5-style multi).
@@ -298,10 +298,10 @@ def detect_mock_runs(run_dirs: Sequence[Path | str]) -> bool:
                 cfg = json.load(f)
         except Exception:
             continue
-        if (cfg.get("backend", {}) or {}).get("kind") == "mock":
+        if (cfg.get("backend", {}) or {}).get("kind") == "synthetic":
             return True
         for b in cfg.get("backends", []) or []:
-            if isinstance(b, dict) and b.get("kind") == "mock":
+            if isinstance(b, dict) and b.get("kind") == "synthetic":
                 return True
     return False
 
@@ -779,7 +779,7 @@ def _panel_headline_numbers(
         sub:   str  — italic subtitle giving context (optional)
 
     Renders 2-4 stacked KPIs vertically with a thin divider between rows.
-    Falls back to a friendly placeholder if no KPIs computable.
+    Falls back to a friendly empty-state if no KPIs computable.
     """
     ax.axis("off")
     ax.set_xlim(0, 1)
@@ -860,11 +860,11 @@ def plot_intro_hero_v2(
     tradeoff: dict | None = None,
     theme: PlotTheme = BOLD_THEME,
     source_runs: list[str] | None = None,
-    is_mock: bool = False,
+    is_synthetic: bool = False,
 ) -> plt.Figure:
     """The page-1 hero: schematic banner + Safety / Audit / Tradeoff panels.
 
-    Layout (9.5 × 5.8 inches, designed to span full text width in NeurIPS):
+    Layout (9.5 × 5.8 inches, designed to span full text width in conference):
 
         ┌──────────────────────────────────────────────────────────┐
         │           certificate Z anatomy schematic                │
@@ -874,7 +874,7 @@ def plot_intro_hero_v2(
         └──────────────┴─────────────────┴─────────────────────────┘
 
     Each quantitative panel takes its data dict; missing/None renders as
-    a friendly "Run experiment Rn to populate" placeholder.
+    a friendly "Run experiment Rn to populate" empty-state.
 
     Args:
         safety:   {ks, empirical, empirical_ci, theory_curve, baseline_no_cert}
@@ -883,7 +883,7 @@ def plot_intro_hero_v2(
         tradeoff: {policies: {<name>: {costs: [...], harms: [...]}}}
         theme:    PlotTheme — default is bold
         source_runs: list of run-id names for the provenance footer
-        is_mock:  if True, add MOCK BACKEND watermark
+        is_synthetic:  if True, add SYNTHETIC BACKEND watermark
 
     Returns:
         matplotlib Figure (not yet saved).
@@ -914,7 +914,7 @@ def plot_intro_hero_v2(
 
     _add_provenance_footer(
         fig, theme,
-        source_runs=source_runs, is_mock=is_mock,
+        source_runs=source_runs, is_synthetic=is_synthetic,
     )
     return fig
 
@@ -934,7 +934,7 @@ def plot_summary_benchmark(
     headline_numbers: list | None = None,
     theme: PlotTheme = BOLD_THEME,
     source_runs: list[str] | None = None,
-    is_mock: bool = False,
+    is_synthetic: bool = False,
 ) -> plt.Figure:
     """The 2x3 comprehensive comparison panel covering ALL five experiments.
 
@@ -951,7 +951,7 @@ def plot_summary_benchmark(
         └──────────────┴──────────────┴──────────────────┘
 
     Each panel takes its data dict; missing/None renders as a friendly
-    "Run experiment Rn to populate" placeholder.
+    "Run experiment Rn to populate" empty-state.
 
     Args:
         backend_safety: dict for R1 per-backend bars (see _panel_backend_compare)
@@ -960,7 +960,7 @@ def plot_summary_benchmark(
         tradeoff: dict for R4 Pareto scatter (see _panel_tradeoff)
         backend_overhead: dict for R5 stacked tokens/claim
         headline_numbers: list of {value, label, sub} dicts for KPI tiles
-        theme, source_runs, is_mock: same as hero
+        theme, source_runs, is_synthetic: same as hero
     """
     setup_matplotlib_for_theme(theme)
 
@@ -990,7 +990,7 @@ def plot_summary_benchmark(
 
     _add_provenance_footer(
         fig, theme,
-        source_runs=source_runs, is_mock=is_mock,
+        source_runs=source_runs, is_synthetic=is_synthetic,
     )
     return fig
 
@@ -1024,7 +1024,7 @@ def save_fig_v2(
 
 __all__ = [
     "PlotTheme", "BOLD_THEME",
-    "setup_matplotlib_for_theme", "detect_mock_runs",
+    "setup_matplotlib_for_theme", "detect_synthetic_runs",
     "plot_intro_hero_v2", "plot_summary_benchmark",
     "save_fig_v2",
 ]

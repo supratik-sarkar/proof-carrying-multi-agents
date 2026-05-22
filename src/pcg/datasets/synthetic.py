@@ -1,5 +1,5 @@
 """
-Synthetic multi-hop QA dataset for smoke tests.
+Synthetic multi-hop QA dataset for preflight tests.
 
 We hand-construct ~60 examples that span:
     - bridge questions ("Who directed the 1972 film starring X?")
@@ -255,7 +255,7 @@ def iter_synthetic(n: int | None = None, seed: int = 0) -> Iterator[QAExample]:
     """Yield up to `n` examples from the synthetic dataset.
 
     The order is deterministic given `seed`. If `n` exceeds the dataset size,
-    we cycle (with re-shuffling per cycle) so smoke tests can request larger
+    we cycle (with re-shuffling per cycle) so preflight tests can request larger
     n_examples without crashing.
     """
     rng = random.Random(seed)
