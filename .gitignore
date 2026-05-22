@@ -107,3 +107,33 @@ artifacts/v4_preview/tables/
 # Staging folders
 results/figures_staged_selected/
 results/tables/tex_staged_selected/
+
+# PCG-MAS local-only and generated artifacts
+.env
+.env.*
+!.env.example
+multi-agents/
+.venvs/
+.sota_src/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+README_creator*.txt
+user_v1.txt
+user_v2.txt
+user_v3.txt
+user_v4.txt
+workflow/pcg-mas-workflow.png
+workflow/workflow_v2.png
+artifacts/v4_preview/tables/
+latex/
+tests/
+results/audit/
+results/baselines/
+results/figures/
+results/tables/csv/
+results/figures_staged_selected/
+results/tables/tex_staged_selected/
+results/tables/tex/*
+!results/tables/tex/.gitkeep
