@@ -1,20 +1,20 @@
 """
 (delta, kappa)-independence of support paths (Definition 2.11).
 
-Also hosts the operational proxies from Appendix A.4: provenance labels,
+Also hosts the operational diagnostics from Appendix A.4: provenance labels,
 tool overlap, and shingle-based replayable overlap.
 
 This module is the load-bearing theoretical bridge between the paper's
-*operational* independence notion (Def 2.11) and the *probabilistic*
+*operational* separation notion (Def 2.11) and the *probabilistic*
 residual-dependence factor rho used in Theorem 2 (Assumption 3). Specifically:
 
     - `path_overlap(pi_i, pi_j)` returns a deterministic, replayable score
       in [0, 1] that the verifier can recompute from logs alone. This is
       the Overlap(pi_i, pi_j) function in Eq. (19).
-    - `are_independent(pi_i, pi_j, delta, kappa)` is the boolean predicate
+    - `are_independent(pi_i, pi_j, delta, kappa, gamma)` is the boolean predicate
       of Definition 2.11.
     - `rho_upper_bound(...)` (in pcg.eval.rho_estimator) uses the family
-      of independent paths produced here to give a statistically-valid
+      of separated paths produced here to give a statistically-valid
       upper confidence bound on rho (addresses the theoretical concern
       that rho is otherwise defined tautologically).
 """

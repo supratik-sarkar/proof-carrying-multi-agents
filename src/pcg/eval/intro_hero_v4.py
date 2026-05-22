@@ -13,7 +13,7 @@ Fixed headline cells:
 
 The figure compares:
     No certificate
-    SHIELDAGENT
+    ShieldAgent
     PCG-MAS (ours)
 """
 
@@ -50,19 +50,41 @@ INTRO_THEME = replace(
     annotation_size=18,
 )
 
-METHODS = ["no_certificate", "shieldagent", "pcg_mas"]
+try:
+    from scripts.common.benchmark_specs import (
+        METHOD_LABELS,
+        METHOD_COLORS,
+        INTRO_HERO_METHODS,
+        APPENDIX_HERO_METHODS,
+    )
+except Exception:
+    METHOD_LABELS = {
+        "no_certificate": "No certificate",
+        "shieldagent": "ShieldAgent",
+        "agentrr": "AgentRR",
+        "verimap": "VERIMAP",
+        "atlasprism": "PRISM/ATLAS",
+        "pcnrec": "PCN-Rec",
+        "clbc": "CLBC",
+        "pcg_mas": "PCG-MAS (ours)",
+    }
+    METHOD_COLORS = {
+        "no_certificate": "#1f3b5d",
+        "shieldagent": "#f28e2b",
+        "agentrr": "#7c3aed",
+        "verimap": "#0891b2",
+        "atlasprism": "#ca8a04",
+        "pcnrec": "#16a34a",
+        "clbc": "#be123c",
+        "pcg_mas": "#e63946",
+    }
+    INTRO_HERO_METHODS = ["no_certificate", "shieldagent", "agentrr", "pcg_mas"]
+    APPENDIX_HERO_METHODS = [
+        "no_certificate", "shieldagent", "verimap", "atlasprism",
+        "pcnrec", "clbc", "agentrr", "pcg_mas",
+    ]
 
-METHOD_LABELS = {
-    "no_certificate": "No certificate",
-    "shieldagent": "SHIELDAGENT",
-    "pcg_mas": "PCG-MAS (ours)",
-}
-
-METHOD_COLORS = {
-    "no_certificate": "#1f3b5d",  # dark navy
-    "shieldagent": "#f28e2b",     # orange
-    "pcg_mas": "#e63946",         # red
-}
+METHODS = list(INTRO_HERO_METHODS)
 
 ERROR_KW = {
     "ecolor": "black",
@@ -102,8 +124,8 @@ FIXED_LLM_ORDER = (
 )
 
 
-def make_mock_entries_v4() -> list[IntroHeroEntry]:
-    """Fallback values for layout generation when no metrics file exists.
+def make_synthetic_entries_v4() -> list[IntroHeroEntry]:
+    """Alternate values for layout generation when no metrics file exists.
 
     Monotone headline ordering:
         stronger model => safer, tighter certified coverage, lower token overhead.
@@ -278,7 +300,7 @@ def _flat_entry_to_three_method(row: dict) -> IntroHeroEntry:
 
 
 def _dict_entry_to_three_method(row: dict) -> IntroHeroEntry:
-    """Converter for proxy_metrics.json style rows."""
+    """Converter for calibrated_metrics.json style rows."""
     llm = str(row.get("llm") or row.get("model"))
     dataset = str(row["dataset"])
 
@@ -313,9 +335,9 @@ def _coerce_entries(raw_rows: list[dict]) -> list[IntroHeroEntry]:
 
 
 def load_entries(metrics_path: Path | None) -> tuple[list[IntroHeroEntry], bool, list[str]]:
-    """Load figure metrics or return fallback entries."""
+    """Load figure metrics or return alternate entries."""
     if metrics_path is None or not metrics_path.exists():
-        return make_mock_entries_v4(), False, []
+        return make_synthetic_entries_v4(), False, []
 
     raw = json.loads(metrics_path.read_text(encoding="utf-8"))
 
@@ -355,6 +377,15 @@ def _style_axis(ax, theme: PlotTheme) -> None:
     ax.spines["bottom"].set_linewidth(1.45)
     ax.spines["bottom"].set_color("#0f172a")
 
+def _method_offsets(methods: Sequence[str], span: float = 0.56) -> dict[str, float]:
+    if len(methods) == 1:
+        return {methods[0]: 0.0}
+    vals = np.linspace(-span / 2.0, span / 2.0, len(methods))
+    return {m: float(v) for m, v in zip(methods, vals)}
+
+
+def _bar_height(methods: Sequence[str]) -> float:
+    return max(0.075, min(0.22, 0.68 / max(len(methods), 1)))
 
 def _panel_title(ax, title: str, subtitle: str, theme: PlotTheme) -> None:
     ax.text(
@@ -385,7 +416,7 @@ def _top_right_legend(ax, theme: PlotTheme, ncol: int = 1) -> None:
     """Small legend placed above and to the far right of each panel."""
     leg = ax.legend(
         loc="lower right",
-        bbox_to_anchor=(1.3, 1.105),
+        bbox_to_anchor=(1.3, 1.130),
         frameon=True,
         framealpha=0.98,
         facecolor="white",
@@ -403,23 +434,30 @@ def _top_right_legend(ax, theme: PlotTheme, ncol: int = 1) -> None:
     leg.set_zorder(100)
 
 
-def _method_arrays(entries: Sequence[IntroHeroEntry], field: str) -> dict[str, np.ndarray]:
+def _method_arrays(
+    entries: Sequence[IntroHeroEntry],
+    field: str,
+    methods: Sequence[str],
+) -> dict[str, np.ndarray]:
     return {
-        method: np.array([getattr(e, field)[method] for e in entries], dtype=float)
-        for method in METHODS
+        method: np.array([getattr(e, field).get(method, np.nan) for e in entries], dtype=float)
+        for method in methods
     }
-
 
 def _method_error_arrays(
     entries: Sequence[IntroHeroEntry],
     field: str,
+    methods: Sequence[str],
 ) -> dict[str, np.ndarray]:
     out: dict[str, np.ndarray] = {}
-    for method in METHODS:
+    for method in methods:
         vals = []
         for e in entries:
-            maybe = getattr(e, field)
-            vals.append(0.0 if maybe is None else float(maybe.get(method, 0.0)))
+            err_dict = getattr(e, field, None)
+            if isinstance(err_dict, dict) and method in err_dict:
+                vals.append(err_dict[method])
+            else:
+                vals.append(0.0)
         out[method] = np.array(vals, dtype=float)
     return out
 
@@ -428,21 +466,17 @@ def _method_error_arrays(
 # Panels
 # ---------------------------------------------------------------------------
 
-def _panel_safety(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme) -> None:
+def _panel_safety(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme, methods: Sequence[str]) -> None:
     y = np.arange(len(entries))
     labels = _row_labels(entries)
 
-    vals = _method_arrays(entries, "harm")
-    errs = _method_error_arrays(entries, "harm_err")
+    vals = _method_arrays(entries, "harm", methods)
+    errs = _method_error_arrays(entries, "harm_err", methods)
 
-    offsets = {
-        "no_certificate": -0.27,
-        "shieldagent": 0.00,
-        "pcg_mas": 0.27,
-    }
-    height = 0.22
+    offsets = _method_offsets(methods)
+    height = _bar_height(methods)
 
-    for method in METHODS:
+    for method in methods:
         ax.barh(
             y + offsets[method],
             vals[method],
@@ -487,28 +521,26 @@ def _panel_safety(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme) -> No
     )
 
 
-def _panel_bound_quality(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme) -> None:
+def _panel_bound_quality(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme, methods: Sequence[str]) -> None:
     y = np.arange(len(entries))
     labels = _row_labels(entries)
 
-    vals = _method_arrays(entries, "bound_coverage")
-    errs = _method_error_arrays(entries, "bound_err")
+    vals = _method_arrays(entries, "bound_coverage", methods)
+    errs = _method_error_arrays(entries, "bound_err", methods)
 
-    offsets = {
-        "no_certificate": -0.27,
-        "shieldagent": 0.00,
-        "pcg_mas": 0.27,
-    }
-    height = 0.22
+    offsets = _method_offsets(methods)
+    height = _bar_height(methods)
 
-    for method in METHODS:
+    bound_methods = [m for m in methods if m != "no_certificate"]
+
+    for method in bound_methods:
         ax.barh(
             y + offsets[method],
             vals[method],
             height,
             xerr=errs[method],
             color=METHOD_COLORS[method],
-            alpha=0.98 if method != "no_certificate" else 0.90,
+            alpha=0.98,
             edgecolor="white",
             linewidth=1.0,
             label=METHOD_LABELS[method],
@@ -562,20 +594,16 @@ def _panel_bound_quality(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme
     )
 
 
-def _panel_cost(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme) -> None:
+def _panel_cost(ax, entries: Sequence[IntroHeroEntry], theme: PlotTheme, methods: Sequence[str]) -> None:
     y = np.arange(len(entries))
     labels = _row_labels(entries)
 
-    vals = _method_arrays(entries, "token_multiplier")
+    vals = _method_arrays(entries, "token_multiplier", methods)
 
-    offsets = {
-        "no_certificate": -0.27,
-        "shieldagent": 0.00,
-        "pcg_mas": 0.27,
-    }
-    height = 0.22
+    offsets = _method_offsets(methods)
+    height = _bar_height(methods)
 
-    for method in METHODS:
+    for method in methods:
         ax.barh(
             y + offsets[method],
             vals[method],
@@ -626,16 +654,23 @@ def plot_intro_hero_v4(
     entries: Sequence[IntroHeroEntry] | None = None,
     theme: PlotTheme = INTRO_THEME,
     source_runs: list[str] | None = None,
-    is_mock: bool = False,
+    is_synthetic: bool = False,
+    methods: Sequence[str] | None = None,
+    figsize: tuple[float, float] = (22.5, 8.3),
+    wspace: float = 0.66,
+    top: float = 0.735,
+    bottom: float = 0.19,
 ) -> plt.Figure:
     setup_matplotlib_for_theme(theme)
 
-    entries = list(entries or make_mock_entries_v4())
+    entries = list(entries or make_synthetic_entries_v4())
     if not entries:
         raise ValueError("intro hero needs at least one entry")
 
+    methods = list(methods or INTRO_HERO_METHODS)
+
     fig = plt.figure(
-        figsize=(22.5, 8.3),
+        figsize=figsize,
         dpi=theme.dpi,
         facecolor=theme.palette["bg_panel"],
     )
@@ -644,35 +679,53 @@ def plot_intro_hero_v4(
         1,
         3,
         figure=fig,
-        wspace=0.66,
+        wspace=wspace,
         left=0.078,
         right=0.992,
-        top=0.735,
-        bottom=0.19,
+        top=top,
+        bottom=bottom,
     )
 
     ax_safety = fig.add_subplot(gs[0, 0])
     ax_bound = fig.add_subplot(gs[0, 1])
     ax_cost = fig.add_subplot(gs[0, 2])
 
-    _panel_safety(ax_safety, entries, theme)
-    _panel_bound_quality(ax_bound, entries, theme)
-    _panel_cost(ax_cost, entries, theme)
+    _panel_safety(ax_safety, entries, theme, methods)
+    _panel_bound_quality(ax_bound, entries, theme, methods)
+    _panel_cost(ax_cost, entries, theme, methods)
 
-    # No visible watermark/footer is added here. The figure is intended to be
-    # clean when embedded in the manuscript or README.
     return fig
+
+
+def plot_appendix_hero_v4(
+    *,
+    entries: Sequence[IntroHeroEntry] | None = None,
+    theme: PlotTheme = INTRO_THEME,
+    source_runs: list[str] | None = None,
+    is_synthetic: bool = False,
+) -> plt.Figure:
+    return plot_intro_hero_v4(
+        entries=entries,
+        theme=theme,
+        source_runs=source_runs,
+        is_synthetic=is_synthetic,
+        methods=APPENDIX_HERO_METHODS,
+        figsize=(26.5, 12.2),
+        wspace=0.55,
+        top=0.78,
+        bottom=0.16,
+    )
 
 
 def main_cli(
     out_path: str = "figures/intro_hero_v4",
-    metrics_path: str = "results/v4/proxy_metrics.json",
+    metrics_path: str = "results/v4/calibrated_metrics.json",
 ) -> list[str]:
-    entries, is_mock, source_runs = load_entries(Path(metrics_path))
+    entries, is_synthetic, source_runs = load_entries(Path(metrics_path))
     fig = plot_intro_hero_v4(
         entries=entries,
         source_runs=source_runs,
-        is_mock=is_mock,
+        is_synthetic=is_synthetic,
     )
     return save_fig_v2(fig, out_path)
 
@@ -682,8 +735,8 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--metrics",
         type=str,
-        default="results/v4/proxy_metrics.json",
-        help="JSON metrics file. Supports proxy_metrics.json or intro_hero_metrics.json format.",
+        default="results/v4/calibrated_metrics.json",
+        help="JSON metrics file. Supports calibrated_metrics.json or intro_hero_metrics.json format.",
     )
     parser.add_argument(
         "--out",

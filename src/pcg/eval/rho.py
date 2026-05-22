@@ -17,7 +17,7 @@ We provide:
     - `RhoEstimate`        : dataclass carrying the raw stats plus both the
                              plug-in point estimate and the UCB
 
-The UCB rho^UCB is what you plug into the paper's Eq. (20) if you want to
+The UCB rho^UCB is the quantity used in the paper's Eq. (20) to
 claim a genuinely valid (1 - alpha) upper bound on Pr(false accept) at
 redundancy k.
 """
@@ -119,7 +119,7 @@ def estimate_rho(
            We split alpha into (k + 1) pieces via the union bound so that
            the final rho_ucb has simultaneous confidence 1 - alpha.
 
-    This is the quantity you cite alongside Theorem 2 if you want to claim a
+    This is the quantity cited alongside Theorem 2 to claim a
     genuine (1 - alpha) upper bound on the false-accept rate.
     """
     m = np.asarray(branch_fail_matrix, dtype=np.int64)

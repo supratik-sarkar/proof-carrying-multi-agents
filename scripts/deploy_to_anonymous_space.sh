@@ -10,7 +10,7 @@
 # WHAT IT DOES NOT DO
 # - Create the HF Space itself. You must do that manually first:
 #     1. Sign up for a fresh HF account using a pseudonymous email
-#        (Proton / SimpleLogin / disposable). DO NOT use your real
+#        (Proton / SimpleLogin / disposable). DO NOT use a real
 #        institutional email — HF profiles show the email's domain.
 #     2. Create a new Space at https://huggingface.co/new-space
 #        SDK = Streamlit, Hardware = CPU basic (free)

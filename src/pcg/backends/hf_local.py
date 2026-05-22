@@ -40,7 +40,7 @@ def _pick_device() -> str:
 class HFLocalBackend:
     """Local HF transformers inference.
 
-    Heavy imports happen on first generate() call so that smoke tests that
+    Heavy imports happen on first generate() call so that preflight tests that
     don't touch this backend pay no startup cost.
     """
 

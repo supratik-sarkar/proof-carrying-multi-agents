@@ -1,117 +1,214 @@
 """
-WebLINX streaming loader.
+WebLINX loader.
 
-WebLINX records real-world web navigation traces — a user instruction
-plus a turn-by-turn dialogue against a live page DOM. Each turn pairs
-the latest utterances and DOM snapshot with a gold action (click,
-type, submit, etc.). Tests PCG-MAS on agentic, multi-turn grounding
-where evidence is dynamic state rather than static text.
-
-The full DOM snapshots are large, so we truncate to a configurable
-character budget. For paper-grade evaluation, swap to a smarter DOM
-reduction (e.g. WebLINX's own truncated_html column when present) or
-to the `dmr_truncated` config which ships pre-pruned snapshots.
-
-References:
-    - HF page: https://huggingface.co/datasets/McGill-NLP/WebLINX
-    - Paper: Lù et al., 2024, "WebLINX: Real-World Website Navigation
-      with Multi-Turn Dialogue"
+WebLINX schemas differ by config ("reranking", "chat") and library version.
+This loader robustly extracts an instruction/action target and compact evidence
+from row fields without assuming a single schema.
 """
 from __future__ import annotations
 
-from typing import Iterator
+import json
+from typing import Any, Iterator
 
 from pcg.datasets.base import EvidenceItem, QAExample
 
 _DATASET_NAME = "McGill-NLP/WebLINX"
-_DATASET_CONFIG = "default"
-_DEFAULT_REVISION = "main"
-
-# Cap DOM snapshot text by characters; ~8kB is enough for the visible
-# region in most cases. Bump if your retriever / context can take more.
-_DOM_CHAR_BUDGET = 8000
+_DATASET_CONFIG = "reranking"
 
 
-def _utterances_text(utterances: object) -> str:
-    """Concatenate user-side utterances into a single instruction string."""
-    if not isinstance(utterances, list):
-        return ""
-    parts: list[str] = []
-    for u in utterances:
-        if isinstance(u, dict):
-            speaker = (u.get("speaker") or u.get("role") or "").lower()
-            text = u.get("text") or u.get("utterance") or ""
-            if speaker in ("user", "navigator", "instructor"):
-                parts.append(str(text))
-        elif isinstance(u, str):
-            parts.append(u)
-    return " ".join(p for p in parts if p)
+def _first_nonempty(*values: Any) -> str:
+    for value in values:
+        if value is None:
+            continue
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+        if not isinstance(value, str):
+            s = str(value).strip()
+            if s and s.lower() != "none":
+                return s
+    return ""
 
 
-def _action_to_str(action: object) -> str:
-    """Render a WebLINX action dict to a compact string the Verifier can match."""
-    if isinstance(action, str):
-        return action
-    if isinstance(action, dict):
-        intent = action.get("intent") or action.get("type") or "action"
-        target = (
-            action.get("element_text")
-            or action.get("text")
-            or action.get("element")
-            or ""
-        )
-        return f"{intent}({target})".strip()
-    return str(action)
+def _deep_find(obj: Any, keys: set[str]) -> Any:
+    """Depth-first search for the first non-empty value whose key matches."""
+    if isinstance(obj, dict):
+        for key, value in obj.items():
+            if key in keys and value not in (None, "", [], {}):
+                return value
+        for value in obj.values():
+            found = _deep_find(value, keys)
+            if found not in (None, "", [], {}):
+                return found
+    elif isinstance(obj, list):
+        for value in obj:
+            found = _deep_find(value, keys)
+            if found not in (None, "", [], {}):
+                return found
+    return None
 
 
-def _row_to_example(row: dict, idx: int) -> QAExample:
-    """Convert a WebLINX row to a QAExample.
+def _json_preview(obj: Any, max_chars: int = 1200) -> str:
+    try:
+        text = json.dumps(obj, ensure_ascii=False, sort_keys=True)
+    except TypeError:
+        text = str(obj)
+    text = " ".join(text.split())
+    return text[:max_chars]
 
-    WebLINX schema (default config) — fields vary slightly by release;
-    we read defensively and tolerate missing keys.
-    """
-    demo = row.get("demo_name") or row.get("demonstration") or "unknown"
-    qid = f"weblinx_{demo}_{row.get('turn_index', idx)}"
 
-    instruction = _utterances_text(row.get("utterances")) or row.get("instruction", "")
-    action_str = _action_to_str(row.get("action"))
-
-    # Evidence: the page DOM snapshot at decision time. We provide it as
-    # one big evidence item; the retriever can chunk it before passing
-    # to the Prover.
-    dom = (
-        row.get("snapshot")
-        or row.get("html")
-        or row.get("truncated_html")
-        or ""
+def _extract_question(row: dict[str, Any]) -> str:
+    direct = _first_nonempty(
+        row.get("utterance"),
+        row.get("query"),
+        row.get("question"),
+        row.get("instruction"),
+        row.get("intent"),
+        row.get("goal"),
+        row.get("user_intent"),
+        row.get("turn"),
     )
-    dom_text = str(dom)
-    if len(dom_text) > _DOM_CHAR_BUDGET:
-        dom_text = dom_text[:_DOM_CHAR_BUDGET] + "\n…[DOM truncated]"
+    if direct:
+        return direct
 
-    evidence: tuple[EvidenceItem, ...] = (
+    deep = _deep_find(
+        row,
+        {
+            "utterance",
+            "query",
+            "question",
+            "instruction",
+            "intent",
+            "goal",
+            "user_intent",
+            "user_utterance",
+            "task",
+        },
+    )
+    if deep not in (None, "", [], {}):
+        return str(deep).strip()
+
+    # Reranking rows may be candidate-oriented and not have a natural question.
+    demo = _first_nonempty(row.get("demo_name"), row.get("demo_id"), row.get("session_id"))
+    turn = _first_nonempty(row.get("turn_index"), row.get("turn_id"))
+    url = _first_nonempty(row.get("url"), _deep_find(row, {"url", "page_url"}))
+    if demo or turn or url:
+        return f"Select the correct web action for demo={demo or 'unknown'}, turn={turn or 'unknown'}, url={url or 'unknown'}."
+
+    return "Select the correct next web action from the available WebLINX context."
+
+
+def _extract_gold_answers(row: dict[str, Any]) -> tuple[str, ...]:
+    candidates = [
+        row.get("target"),
+        row.get("gold"),
+        row.get("answer"),
+        row.get("label"),
+        row.get("action"),
+        row.get("target_action"),
+        row.get("positive"),
+        row.get("correct"),
+    ]
+
+    deep = _deep_find(
+        row,
+        {"target", "gold", "answer", "label", "action", "target_action", "positive", "correct"},
+    )
+    candidates.append(deep)
+
+    out: list[str] = []
+    for item in candidates:
+        if item in (None, "", [], {}):
+            continue
+        if isinstance(item, list):
+            out.extend(str(x) for x in item if x not in (None, "", [], {}))
+        elif isinstance(item, dict):
+            out.append(_json_preview(item, max_chars=500))
+        else:
+            out.append(str(item))
+
+    # Deduplicate while preserving order.
+    deduped = []
+    seen = set()
+    for x in out:
+        x = x.strip()
+        if x and x not in seen and x.lower() != "none":
+            deduped.append(x)
+            seen.add(x)
+
+    return tuple(deduped) if deduped else ("web_action_target_unavailable",)
+
+
+def _extract_evidence_text(row: dict[str, Any]) -> str:
+    pieces: list[str] = []
+
+    for key in [
+        "url",
+        "page_url",
+        "title",
+        "html",
+        "dom",
+        "viewport",
+        "screenshot",
+        "candidates",
+        "candidate",
+        "query",
+        "utterance",
+        "context",
+        "history",
+        "turns",
+    ]:
+        value = row.get(key)
+        if value not in (None, "", [], {}):
+            pieces.append(f"{key}: {_json_preview(value, max_chars=900)}")
+
+    if not pieces:
+        pieces.append("raw_row: " + _json_preview(row, max_chars=1500))
+
+    return "\n".join(pieces)
+
+
+def _row_to_example(row: dict[str, Any], idx: int) -> QAExample:
+    qid = _first_nonempty(
+        row.get("id"),
+        row.get("uid"),
+        row.get("turn_id"),
+        row.get("demo_name"),
+        row.get("demo_id"),
+        f"weblinx_{idx}",
+    )
+
+    question = _extract_question(row)
+    gold_answers = _extract_gold_answers(row)
+    evidence_text = _extract_evidence_text(row)
+
+    url = _first_nonempty(row.get("url"), row.get("page_url"), _deep_find(row, {"url", "page_url"}))
+    demo_name = _first_nonempty(row.get("demo_name"), row.get("demo_id"), row.get("session_id"))
+
+    evidence = (
         EvidenceItem(
-            id=f"{qid}_dom",
-            title=f"DOM @ {demo} t{row.get('turn_index', idx)}",
-            text=dom_text,
-            source_url=row.get("url") or None,
-            publisher="weblinx",
+            id=f"{qid}_web_context",
+            title=f"WebLINX context {demo_name or idx}",
+            text=evidence_text,
+            source_url=url or None,
+            publisher="WebLINX",
             domain="weblinx",
-            is_gold=True,  # The DOM at decision time is the grounding signal
+            is_gold=True,
         ),
     )
 
     return QAExample(
-        id=qid,
-        question=str(instruction),
-        gold_answers=(action_str,),
+        id=str(qid),
+        question=question,
+        gold_answers=gold_answers,
         evidence=evidence,
         task_type="web_action",
         meta={
-            "demo_name": demo,
-            "turn_index": row.get("turn_index"),
-            "intent": row.get("intent"),
-            "url": row.get("url"),
+            "dataset": "weblinx",
+            "demo_name": row.get("demo_name") or row.get("demo_id"),
+            "turn_index": row.get("turn_index") or row.get("turn_id"),
+            "intent": row.get("intent") or row.get("user_intent"),
+            "url": url or None,
+            "config": _DATASET_CONFIG,
         },
     )
 
@@ -122,36 +219,19 @@ def iter_weblinx(
     n: int | None = None,
     seed: int = 0,
     streaming: bool = True,
-    revision: str = _DEFAULT_REVISION,
     config: str = _DATASET_CONFIG,
-    shuffle_buffer: int = 256,
 ) -> Iterator[QAExample]:
-    """Yield WebLINX examples (one per turn).
-
-    Args:
-        config: WebLINX HF config name. "default" works for most builds.
-        split: HF split. WebLINX exposes train / validation / test_iid /
-               test_visual / test_geo / test_cat / test_web — pick what you need.
-        n, seed, streaming, revision, shuffle_buffer: same as hotpotqa.
-    """
     try:
         from datasets import load_dataset
     except ImportError as exc:
         raise ImportError(
-            "huggingface `datasets` not installed. Install via "
-            "`pip install datasets`."
+            "huggingface `datasets` is not installed. Install via `pip install datasets`."
         ) from exc
 
-    ds = load_dataset(
-        _DATASET_NAME,
-        config,
-        split=split,
-        streaming=streaming,
-        revision=revision,
-        trust_remote_code=True,
-    )
-    if streaming and shuffle_buffer > 0:
-        ds = ds.shuffle(seed=seed, buffer_size=shuffle_buffer)
+    ds = load_dataset(_DATASET_NAME, config, split=split, streaming=streaming)
+
+    if streaming:
+        ds = ds.shuffle(seed=seed, buffer_size=1024)
 
     count = 0
     for idx, row in enumerate(ds):

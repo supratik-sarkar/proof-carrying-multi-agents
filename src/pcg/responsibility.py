@@ -204,7 +204,7 @@ def rank_recovery_prob(
     Returns a *lower bound* via
         1 - 2 |E| exp(-M gamma^2 / 8)
 
-    so a value close to 1 is a strong guarantee, a value near 0 means you
+    so a value close to 1 is a strong guarantee, while a value near 0 means the
     need more replays or a larger margin.
     """
     if margin <= 0:

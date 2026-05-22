@@ -1,7 +1,7 @@
 """
 PCG-MAS: Proof-Carrying Generation for Multi-Agent Systems.
 
-Reference implementation for the NeurIPS 2026 submission.
+Reference implementation for the conference 2026 submission.
 
 Public API (stable across the artifact):
     - Graph / graph types:     pcg.graph

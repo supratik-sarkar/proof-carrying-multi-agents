@@ -1,169 +1,144 @@
 """
-HFInferenceBackend — call HF Inference API endpoints.
+Remote Hugging Face inference backend.
 
-This is what unlocks frontier-class models (Llama-3.3-70B, Mixtral-8x22B,
-DeepSeek-67B) on a laptop without paying. Free tier is rate-limited; we
-cache results aggressively so re-running the same experiment doesn't
-re-incur API calls.
-
-Auth: set HF_TOKEN env var to your HuggingFace access token. Generate one
-at https://huggingface.co/settings/tokens with "Read" permission.
-
-Determinism: HF Inference API does NOT guarantee bit-stable output even at
-temperature 0 — they may A/B route to different model copies. We mark all
-HFInferenceBackend outputs as "best-effort deterministic" in their meta;
-the Verifier knows to only use cached outputs for replay.
+Tokens are resolved through `pcg.utils.hf_auth` and are never read from
+source-controlled files, printed, or written into result artifacts.
 """
 from __future__ import annotations
 
+import hashlib
 import json
-import os
-import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from pcg.backends.base import GenerationOutput
+from pcg.backends.base import GenerationOutput, LLMBackend
+from pcg.utils.hf_auth import require_hf_token_for_remote_backend
 
 
 @dataclass
-class HFInferenceBackend:
-    """Remote calls to HF Inference Endpoints.
-
-    Args:
-        model_name: e.g. "meta-llama/Llama-3.3-70B-Instruct"
-        token: HF access token. Defaults to env var HF_TOKEN.
-        cache_dir: Path for cached responses (keyed on prompt+seed+params).
-        timeout_s: per-request timeout.
-    """
-
+class HFInferenceBackend(LLMBackend):
     model_name: str
-    name: str = ""
     token: str | None = None
-    cache_dir: str | None = None
-    timeout_s: float = 60.0
-    base_url: str = "https://api-inference.huggingface.co/models/"
-    _cache_path: Path | None = field(init=False, default=None)
+    max_new_tokens: int = 256
+    temperature: float = 0.0
+    cache_dir: str | Path = "artifacts/hf_cache"
 
     def __post_init__(self) -> None:
-        if not self.name:
-            self.name = self.model_name
-        if self.token is None:
-            self.token = os.environ.get("HF_TOKEN")
-        if self.cache_dir:
-            self._cache_path = Path(self.cache_dir)
-            self._cache_path.mkdir(parents=True, exist_ok=True)
-
-    def _cache_key(self, prompt: str, params: dict[str, Any]) -> str:
-        import hashlib
-        blob = json.dumps({"p": prompt, **params, "m": self.model_name}, sort_keys=True)
-        return hashlib.sha256(blob.encode("utf-8")).hexdigest()[:32]
-
-    def _try_cache_load(self, key: str) -> GenerationOutput | None:
-        if self._cache_path is None:
-            return None
-        f = self._cache_path / f"{key}.json"
-        if not f.exists():
-            return None
-        try:
-            d = json.loads(f.read_text())
-            return GenerationOutput(**d)
-        except Exception:
-            return None
-
-    def _cache_store(self, key: str, out: GenerationOutput) -> None:
-        if self._cache_path is None:
-            return
-        f = self._cache_path / f"{key}.json"
-        f.write_text(json.dumps({
-            "text": out.text, "tokens_in": out.tokens_in,
-            "tokens_out": out.tokens_out, "latency_ms": out.latency_ms,
-            "finish": out.finish, "backend": out.backend, "meta": out.meta,
-        }))
-
-    def generate(
-        self,
-        prompt: str,
-        *,
-        max_tokens: int = 256,
-        temperature: float = 0.0,
-        top_p: float = 1.0,
-        stop: list[str] | None = None,
-        seed: int = 0,
-    ) -> GenerationOutput:
-        params = {"max_tokens": max_tokens, "temperature": temperature,
-                  "top_p": top_p, "stop": stop, "seed": seed}
-        key = self._cache_key(prompt, params)
-        cached = self._try_cache_load(key)
-        if cached is not None:
-            cached.meta["cache_hit"] = True
-            return cached
+        self.token = require_hf_token_for_remote_backend(self.token)
+        self.cache_dir = Path(self.cache_dir)
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
 
         try:
-            import httpx
+            from huggingface_hub import InferenceClient
         except ImportError as exc:
             raise ImportError(
-                "HFInferenceBackend requires `httpx`. "
-                "Install with `pip install httpx` (also in [web] extras)."
+                "huggingface_hub is required for HFInferenceBackend. "
+                "Install it with `pip install huggingface_hub`."
             ) from exc
 
-        if not self.token:
-            raise RuntimeError(
-                "HF_TOKEN not set. Set the env var or pass token=... explicitly."
-            )
+        self._client = InferenceClient(model=self.model_name, token=self.token)
 
-        url = f"{self.base_url}{self.model_name}"
-        headers = {"Authorization": f"Bearer {self.token}",
-                   "Content-Type": "application/json"}
-        payload: dict[str, Any] = {
-            "inputs": prompt,
-            "parameters": {
-                "max_new_tokens": max_tokens,
-                "return_full_text": False,
-                "temperature": max(temperature, 1e-7),
-                "top_p": top_p,
-                "do_sample": temperature > 0,
-            },
-            "options": {"wait_for_model": True, "use_cache": True},
+    @property
+    def name(self) -> str:
+        return f"hf-inference:{self.model_name}"
+
+    def _cache_key(self, prompt: str, seed: int | None = None, **kwargs: Any) -> str:
+        payload = {
+            "model_name": self.model_name,
+            "prompt": prompt,
+            "seed": seed,
+            "max_new_tokens": self.max_new_tokens,
+            "temperature": self.temperature,
+            "kwargs": kwargs,
         }
+        raw = json.dumps(payload, sort_keys=True, ensure_ascii=False)
+        return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
-        t0 = time.perf_counter()
-        with httpx.Client(timeout=self.timeout_s) as client:
-            r = client.post(url, headers=headers, json=payload)
-        latency = (time.perf_counter() - t0) * 1000.0
-        if r.status_code != 200:
-            return GenerationOutput(
-                text="", tokens_in=0, tokens_out=0, latency_ms=latency,
-                finish="error", backend=self.name,
-                meta={"http_status": r.status_code, "body": r.text[:500]},
+    def _cache_path(self, key: str) -> Path:
+        return Path(self.cache_dir) / f"{key}.json"
+
+    def generate(self, prompt: str, seed: int | None = None, **kwargs: Any) -> GenerationOutput:
+        key = self._cache_key(prompt, seed=seed, **kwargs)
+        path = self._cache_path(key)
+
+        if path.exists():
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            return GenerationOutput(**payload)
+
+        # Prefer chat_completion when available; fall back to text_generation only
+        # for genuine task/method compatibility issues. Auth/permission failures
+        # must stop immediately, otherwise users see a misleading secondary error.
+        try:
+            response = self._client.chat_completion(
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=kwargs.get("max_new_tokens", self.max_new_tokens),
+                temperature=kwargs.get("temperature", self.temperature),
+                seed=seed,
             )
+            text = response.choices[0].message.content or ""
+        except Exception as exc:
+            msg = str(exc)
+            low = msg.lower()
+            billing_or_quota = (
+                "402" in msg
+                or "payment required" in low
+                or "depleted the monthly included credits" in low
+                or "pre-paid credits" in low
+                or "included credits" in low
+            )
+            if billing_or_quota:
+                raise RuntimeError(
+                    "HF Inference Providers billing/quota failed. Your HF token works, "
+                    "but the account has depleted its included hosted-inference credits "
+                    "or requires billing/pre-paid credits. Either add HF credits / use PRO, "
+                    "switch to --backend hf_local on Colab/Databricks, or use --backend mock "
+                    "for artifact/preflight runs."
+                ) from exc
 
-        data = r.json()
-        if isinstance(data, list) and data:
-            text = data[0].get("generated_text", "")
-        elif isinstance(data, dict):
-            text = data.get("generated_text", "")
-        else:
-            text = ""
+            auth_or_permission = (
+                "403" in msg
+                or "401" in msg
+                or "forbidden" in low
+                or "unauthorized" in low
+                or "permission" in low
+                or "authentication method" in low
+                or "not allowed to call" in low
+            )
+            if auth_or_permission:
+                raise RuntimeError(
+                    "HF Inference Provider permission failed. Your HF token was found, "
+                    "but it is not allowed to call Hugging Face Inference Providers "
+                    "through router.huggingface.co for this model. Create/use a token "
+                    "with Inference Providers permission, or run with --backend hf_local "
+                    "on Colab/Databricks, or use --backend mock for preflight."
+                ) from exc
 
-        if stop:
-            for s in stop:
-                if s and s in text:
-                    text = text.split(s, 1)[0]
+            try:
+                text = self._client.text_generation(
+                    prompt,
+                    max_new_tokens=kwargs.get("max_new_tokens", self.max_new_tokens),
+                    temperature=kwargs.get("temperature", self.temperature),
+                    seed=seed,
+                )
+            except Exception as text_exc:
+                raise RuntimeError(
+                    f"HF inference failed for model {self.model_name}. "
+                    "chat_completion failed and text_generation fallback also failed. "
+                    f"Original chat error: {exc}. Text-generation error: {text_exc}"
+                ) from text_exc
 
-        from pcg.eval.meter import count_tokens
         out = GenerationOutput(
-            text=text,
-            tokens_in=count_tokens(prompt),
-            tokens_out=count_tokens(text),
-            latency_ms=latency,
-            finish="stop",
+            text=str(text),
+            tokens_in=len(prompt.split()),
+            tokens_out=len(str(text).split()),
             backend=self.name,
-            meta={"seed": seed, "cache_hit": False},
+            meta={
+                "model_name": self.model_name,
+                "cached": False,
+            },
         )
-        self._cache_store(key, out)
-        return out
 
-    def count_tokens(self, text: str) -> int:
-        from pcg.eval.meter import count_tokens
-        return count_tokens(text)
+        # Never write tokens/secrets to cache.
+        path.write_text(json.dumps(out.__dict__, indent=2), encoding="utf-8")
+        return out

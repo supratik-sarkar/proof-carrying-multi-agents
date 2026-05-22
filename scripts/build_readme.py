@@ -153,7 +153,7 @@ def md_distribution_table(total: int, counter: Counter) -> str:
 HEADER = """\
 # PCG-MAS — Proof-Carrying Generation for Multi-Agent Systems
 
-> Companion artifact for **"Multi-Agent Systems with Proof-Carrying Generation"** (NeurIPS 2026).
+> Companion artifact for **"Multi-Agent Systems with Proof-Carrying Generation"** (conference 2026).
 > Every accepted claim ships with a portable certificate `Z = (c, S, Π, Γ, p, meta)`
 > that an external auditor can replay and verify without re-running the model.
 """
@@ -181,18 +181,18 @@ QUICK_START = """\
 ```bash
 # 1. Clone, create venv, install
 git clone <repo>
-cd pcg-neurips2026
+cd pcg-conference-submission
 python3.12 -m venv multi-agents
 source multi-agents/bin/activate
 pip install -e ".[dev]"
 
-# 2. Smoke-test the core layer (no model download)
+# 2. Preflight-test the core layer (no model download)
 python scripts/test_phase_bc.py            # commitments, BM25, audit decomp
 python scripts/test_phase_d.py             # orchestrator + all four agents
 pytest tests/ -v                           # property tests for Check / rho / risk
 
 # 3. Run the five experiments (mock backend = fast iteration, no GPU needed)
-make smoke                                 # ~30 s
+make preflight                                 # ~30 s
 make r1                                    # audit decomposition (Thm 1)
 make r2                                    # redundancy law       (Thm 2)
 make r3                                    # responsibility       (Thm 3 i)
@@ -245,8 +245,8 @@ FEATURED_PLOTS = """\
 ## Featured Plots
 
 The figures below are regenerated from `results/*/r*.json` by `make paper`.
-If they don't render, run the experiments first (or `make smoke` to populate
-`results/smoke/`).
+If they don't render, run the experiments first (or `make preflight` to populate
+`results/preflight/`).
 
 <p align="center">
   <img src="figures/intro_hero.png" alt="Intro hero: false-accept rate and utility vs k" width="92%"/>
@@ -281,7 +281,7 @@ If they don't render, run the experiments first (or `make smoke` to populate
 
 > Animated walk-throughs (if any) live in `figures/animations/`. Drop a `.gif`
 > there with the same stem as a static figure (e.g. `r3_responsibility.gif`)
-> and it will be picked up automatically the next time you run `make readme`.
+> and it will be picked up automatically the next time `make readme` is run.
 """
 
 
@@ -292,7 +292,7 @@ The most important entry points in the codebase, with their public APIs and what
 
 | Module | Key API | Purpose |
 |:---|:---|:---|
-| `pcg.backends.MockBackend` | `MockBackend().generate(prompt, ...)` | Deterministic, zero-dep LLM stub used by smoke tests and CI. |
+| `pcg.backends.MockBackend` | `MockBackend().generate(prompt, ...)` | Deterministic, zero-dep LLM stub used by preflight tests and CI. |
 | `pcg.backends.hf_local.HFLocalBackend` | `HFLocalBackend(model_name="Qwen/Qwen2.5-7B-Instruct")` | Local Transformers backend, default for paper experiments. |
 | `pcg.backends.hf_inference.HFInferenceBackend` | `HFInferenceBackend(model_name="meta-llama/Llama-3.3-70B-Instruct")` | Free-tier HF Inference API for frontier-model comparison. |
 | `pcg.datasets.load_dataset_by_name` | `load_dataset_by_name("hotpotqa", n_examples=200)` | Streaming loaders for HotpotQA, 2WikiMultihopQA, ToolBench-G1, synthetic. |
@@ -304,7 +304,7 @@ The most important entry points in the codebase, with their public APIs and what
 | `pcg.responsibility.ResponsibilityEstimator` | `est.estimate_many(cert, graph, comp_ids)` | Hoeffding-bounded interventional Resp per component. |
 | `pcg.risk.ThresholdPolicy` | `ThresholdPolicy(cost_model).choose(r)` | Piecewise-threshold optimal action over `{Answer, Verify, Escalate, Refuse}`. |
 | `pcg.privacy.gaussian_mechanism` | `gaussian_mechanism(x, sensitivity, epsilon, delta)` | Aggregate-feature DP release used in R4. |
-| `pcg.eval.plots` | `plot_rN_*(...)` | NeurIPS-grade figure builders. Used by `make_figures.py`. |
+| `scripts.figures.make_paper_figures` | paper figure builders | Builds the current conference-facing figures from `paper_metrics.jsonl`. |
 """
 
 
@@ -323,7 +323,7 @@ git checkout submission-{tag_slug}
 
 Reviewers reproducing the paper artifacts should:
 1. Check out the submission tag.
-2. Run `make smoke` (≤ 30 s) to verify the toolchain.
+2. Run `make preflight` (≤ 30 s) to verify the toolchain.
 3. Run `make r1 r2 r3 r4 r5` (a few hours total on a single GPU; longer for the
    `hf_inference` 70B comparison).
 4. Run `make paper` to regenerate every figure and LaTeX table from the saved JSONs.

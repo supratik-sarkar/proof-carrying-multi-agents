@@ -1,0 +1,13 @@
+run_name: preflight_40_cells
+description: Fast 40-cell coverage check with n=5 and one seed.
+
+n_examples: 5
+seeds: [0]
+
+cell_source: configs/local_40_cells.yaml
+
+outputs:
+  run_status: artifacts/preflight_40_cells_status.json
+  tables_csv: results/tables/csv
+  tables_tex: results/tables/tex
+  figures: results/figures

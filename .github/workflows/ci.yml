@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  test-and-smoke-render:
+  test-and-preflight-render:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -30,7 +30,7 @@ jobs:
           pytest tests/ -v --tb=short
         continue-on-error: false
 
-      - name: Smoke-render figures from fixtures
+      - name: Preflight-render figures from fixtures
         run: |
           python -c "
           import sys; sys.path.insert(0, 'src')
@@ -41,10 +41,10 @@ jobs:
           fig = plot_summary_benchmark(
               backend_safety={'backends': ['A', 'B'], 'values': [0.05, 0.07],
                               'cis': [(0.04, 0.06), (0.06, 0.08)],
-                              'metric_name': 'rate', 'title': 'CI smoke'},
+                              'metric_name': 'rate', 'title': 'CI preflight'},
               is_mock=True,
           )
-          out = save_fig_v2(fig, '/tmp/ci_smoke')
+          out = save_fig_v2(fig, '/tmp/ci_preflight')
           print('rendered:', out)
           "
 

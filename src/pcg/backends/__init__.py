@@ -1,19 +1,34 @@
 """
-LLM backends used by the agent layer.
+LLM backends used by the PCG-MAS agent layer.
 
-Three backends, all implementing the `LLMBackend` protocol:
+All backends implement the `LLMBackend` protocol:
 
-    - `MockBackend`     : deterministic, no model needed (CI, smoke tests)
-    - `HFLocalBackend`  : Hugging Face transformers, MPS / CUDA / CPU autodetect
-    - `HFInferenceBackend` : remote HF Inference API (free tier rate-limited)
+    - `MockBackend`        : deterministic offline backend for preflight and CI
+    - `HFLocalBackend`     : Hugging Face transformers with local device support
+    - `HFInferenceBackend` : remote Hugging Face Inference API / endpoint backend
 
-The Prover and Verifier accept any `LLMBackend`, so swapping backends is a
-config change. This is what lets us mix open-weight (local) and frontier
-(remote) models in the same experiment - directly answering ICML W1.
+The Prover and Verifier accept any `LLMBackend`, so swapping local, offline,
+and remote model execution is a configuration-level change.
 """
 from __future__ import annotations
 
 from pcg.backends.base import GenerationOutput, LLMBackend
 from pcg.backends.mock import MockBackend
 
-__all__ = ["GenerationOutput", "LLMBackend", "MockBackend"]
+try:
+    from pcg.backends.hf_local import HFLocalBackend
+except Exception:  # optional dependency path
+    HFLocalBackend = None  # type: ignore
+
+try:
+    from pcg.backends.hf_inference import HFInferenceBackend
+except Exception:  # optional dependency path
+    HFInferenceBackend = None  # type: ignore
+
+__all__ = [
+    "GenerationOutput",
+    "LLMBackend",
+    "MockBackend",
+    "HFLocalBackend",
+    "HFInferenceBackend",
+]
