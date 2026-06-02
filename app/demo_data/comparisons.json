@@ -1,0 +1,44 @@
+[
+  {
+    "label": "Medical · Conflicting drug guidance (PDF)",
+    "question": "Should I continue taking my low-dose aspirin if I am being started on citalopram?",
+    "fixture": "med_drug_interaction.pdf",
+    "domain": "healthcare",
+    "expected_divergence": "Raw LLM tends to give a confident yes/no based on training-data priors. PCG-MAS surfaces the nuanced 'evaluate case-by-case; consider PPI' guidance that's actually in the document, with citations."
+  },
+  {
+    "label": "Legal · 3x vs 5x punitive cap (DOCX)",
+    "question": "What is the maximum punitive damages multiplier under State Civil Code § 4501 for a non-fraud commercial dispute?",
+    "fixture": "legal_misquote.docx",
+    "domain": "legal",
+    "expected_divergence": "Raw LLM may confidently invent a generic answer. PCG-MAS reads the actual document and produces 3× with the section reference."
+  },
+  {
+    "label": "Finance · Wrong totals row (CSV)",
+    "question": "Looking at the totals row, what is the company's Net_USD across Q1 and Q2 combined? Is the figure in the TOTAL row arithmetically correct?",
+    "fixture": "finance_arithmetic.csv",
+    "domain": "finance",
+    "expected_divergence": "Raw LLM tends to either parrot the TOTAL row uncritically or hallucinate a number. PCG-MAS' V_Γ checks entailment against the actual data and flags the inconsistency (sum of regional Net = 16.8M; TOTAL row shows 18.4M)."
+  },
+  {
+    "label": "API · Endpoint path mismatch (JSON)",
+    "question": "What HTTP path should production code POST to in order to create a new invoice?",
+    "fixture": "api_endpoint_mismatch.json",
+    "domain": "engineering",
+    "expected_divergence": "Raw LLM reads the formal documentation section and reports /v2/billing/invoices. PCG-MAS picks up the implementation_notes block warning that production uses the singular /v2/billing/invoice path."
+  },
+  {
+    "label": "Scientific · Abstract vs. results contradiction (MD)",
+    "question": "Did the study find that Compound X reduces cellular senescence in primary fibroblasts?",
+    "fixture": "scientific_contradiction.md",
+    "domain": "science",
+    "expected_divergence": "Raw LLM may read the abstract first and answer 'yes, significantly reduces senescence'. PCG-MAS' V_Γ checks the answer against ALL evidence chunks (including the results table) and rejects: the body shows a non-significant increase, not a decrease."
+  },
+  {
+    "label": "News · Outdated headline (TXT)",
+    "question": "Is Jack Dorsey currently the CEO of Twitter / X?",
+    "fixture": "outdated_news.txt",
+    "domain": "factual",
+    "expected_divergence": "Raw LLM tends to answer from training-data priors (which may also be outdated) without flagging that the document is from 2019. PCG-MAS' V_Γ requires the answer to be supported by the supplied document, so it correctly grounds the answer to the document's 2019 framing — letting the user see the gap, not paper over it."
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "label": "[text · safe] Who proved Fermat's Last Theorem?",
+    "question": "Who proved Fermat's Last Theorem and in what year?",
+    "context": "Fermat's Last Theorem was a number-theoretic conjecture posed by Pierre de Fermat in 1637. The theorem remained unproven for over 350 years until Andrew Wiles, a British mathematician at Princeton University, published a complete proof in 1995. Wiles's proof used techniques from algebraic geometry and modular forms, building on work by many earlier mathematicians including Ken Ribet and Goro Shimura.",
+    "expected": "ACCEPT — concrete answer, evidence supports it"
+  },
+  {
+    "label": "[text · adversarial] Contradicting evidence about the Pacific Ocean",
+    "question": "Is the Pacific Ocean the largest ocean on Earth?",
+    "context": "The Pacific Ocean is the largest and deepest of Earth's oceanic divisions, covering about 165 million square kilometres. However, contrary to popular belief, the Atlantic Ocean is actually larger and the Pacific is only second-place. The Pacific extends from the Arctic Ocean in the north to the Southern Ocean in the south.",
+    "expected": "REJECT — evidence is internally contradictory; PCG-MAS catches it, raw LLM picks one side and confidently fabricates"
+  },
+  {
+    "label": "[text · capital] What is the capital of Bhutan?",
+    "question": "What is the capital of Bhutan?",
+    "context": "Bhutan is a landlocked country in South Asia, located in the Eastern Himalayas. Its capital and largest city is Thimphu, which is also the country's political and economic center.",
+    "expected": "ACCEPT — Thimphu, evidence-supported"
+  }
+]

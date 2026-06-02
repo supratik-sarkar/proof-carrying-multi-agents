@@ -1,0 +1,25 @@
+{
+  "service": "BillingService",
+  "version": "2.4",
+  "documentation": {
+    "create_invoice": {
+      "method": "POST",
+      "path": "/v2/billing/invoices",
+      "description": "Creates a new invoice and returns its id.",
+      "required_fields": [
+        "customer_id",
+        "line_items",
+        "due_date"
+      ],
+      "returns": "200 OK with {invoice_id, created_at}"
+    },
+    "get_invoice": {
+      "method": "GET",
+      "path": "/v2/billing/invoices/{invoice_id}",
+      "description": "Retrieves an invoice by id."
+    }
+  },
+  "implementation_notes": {
+    "create_invoice": "NOTE: The handler is mounted at /v2/billing/invoice (singular) in the production code due to a legacy alias. The documented /v2/billing/invoices (plural) path returns 404. Callers must use the singular form until the alias is removed."
+  }
+}

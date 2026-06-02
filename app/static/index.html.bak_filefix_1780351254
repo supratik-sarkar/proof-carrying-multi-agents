@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>PCG-MAS · interactive verification demo</title>
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Sticky header -->
+<header class="header" role="banner">
+  <a href="#hero" class="brand" aria-label="PCG-MAS home">
+    <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+          <defs>
+            <linearGradient id="mark-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#5b6fc4"/>
+              <stop offset="55%" stop-color="#8a6fe6"/>
+              <stop offset="100%" stop-color="#d97aff"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="28" height="28" rx="8" fill="url(#mark-grad)"/>
+          <path d="M10 22 V10 H15.5 a3.5 3.5 0 0 1 0 7 H10" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M18 10 H24 M21 10 V22" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity="0.95"/>
+        </svg>
+      </span>
+    <span class="brand-name">PCG-MAS</span>
+    <span class="brand-sub">Proof-Carrying Generation for Multi-Agent Systems</span>
+  </a>
+  <nav class="header-nav" aria-label="primary">
+    <a href="#tab-live"   data-tab="live">Live Run</a>
+    <a href="#tab-cert"   data-tab="cert">Certificate</a>
+    <a href="#tab-trace"  data-tab="trace">Stress / Adversarial</a>
+    <a href="#tab-results" data-tab="results">Results</a>
+    <a href="#tab-arch"   data-tab="arch">Architecture</a>
+    <a href="#tab-about"  data-tab="about">About</a>
+    <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+      </svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-mesh" aria-hidden="true"></div>
+    <h1 class="hero-title">Proof-Carrying Generation for Multi-Agent Systems</h1>
+    <p class="hero-tagline">Every accepted answer carries evidence, replay, verification, and a calibrated decision.</p>
+    <p class="hero-lede">Submit a question with optional evidence — pasted text, a URL, or any uploaded document — and watch the four-channel pipeline produce a tamper-evident certificate in real time.</p>
+    <div class="hero-meta">
+      <span class="chip">live demo</span>
+      <span class="chip">BYOK</span>
+      <span class="chip">AI safety</span>
+      <span class="chip">no telemetry</span>
+    </div>
+  </section>
+
+  <!-- Backend / settings strip (shared by all interactive tabs) -->
+  <section class="settings">
+    <div class="settings-grid">
+      <label class="field">
+        <span class="field-label">Backend</span>
+        <div class="select-wrap">
+          <select id="backend-select">
+            <optgroup label="OpenAI">
+              <option>OpenAI · gpt-4.1</option>
+              <option>OpenAI · gpt-4.1-mini</option>
+              <option>OpenAI · gpt-4o</option>
+              <option>OpenAI · gpt-4o-mini</option>
+              <option>OpenAI · o4-mini (reasoning)</option>
+            </optgroup>
+            <optgroup label="Anthropic">
+              <option>Anthropic · claude-sonnet-4.5</option>
+              <option>Anthropic · claude-opus-4.1</option>
+              <option>Anthropic · claude-haiku-4.5</option>
+              <option>Anthropic · claude-3-5-sonnet</option>
+            </optgroup>
+            <optgroup label="DeepSeek">
+              <option>DeepSeek · deepseek-chat (V3)</option>
+              <option>DeepSeek · deepseek-reasoner</option>
+            </optgroup>
+            <optgroup label="Hugging Face">
+              <option>HF Inference · Llama-3.3-70B</option>
+              <option>HF Inference · Llama-3.1-70B</option>
+              <option>HF Inference · Llama-3.1-8B</option>
+              <option>HF Inference · Mixtral-8x7B</option>
+              <option>HF Inference · Qwen-2.5-72B</option>
+            </optgroup>
+          </select>
+          <svg class="select-caret" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </label>
+
+      <label class="field">
+        <span class="field-label">API key · BYOK, session-only</span>
+        <input type="password" id="api-key" placeholder="Paste your openai key…" autocomplete="off">
+      </label>
+
+      <label class="field">
+        <span class="field-label">Top-k evidence chunks</span>
+        <div class="slider-row">
+          <input type="range" id="topk" min="1" max="10" value="6">
+          <output for="topk" id="topk-out">5</output>
+        </div>
+      </label>
+
+      <label class="field field-inline">
+        <input type="checkbox" id="replay-check" checked>
+        <span>Replay determinism check (V_Π)</span>
+      </label>
+    </div>
+    <p class="hint" id="backend-hint">Get a key at platform.openai.com/api-keys (starts with sk-…)</p>
+  </section>
+
+  <!-- Tabs nav -->
+  <nav class="tabs" role="tablist" aria-label="demo tabs">
+    <button role="tab" data-tab="live"    aria-selected="true">Live Run</button>
+    <button role="tab" data-tab="cert"    aria-selected="false">Certificate Inspector</button>
+    <button role="tab" data-tab="trace"   aria-selected="false">Stress / Adversarial</button>
+    <button role="tab" data-tab="results" aria-selected="false">Results</button>
+    <button role="tab" data-tab="arch"    aria-selected="false">Architecture</button>
+    <button role="tab" data-tab="about"   aria-selected="false">About &amp; Citation</button>
+  </nav>
+
+  <!-- ====================== LIVE RUN ====================== -->
+  <section id="tab-live" class="tab-panel" data-tab="live" aria-labelledby="tab-live">
+
+    <div class="two-col">
+      <!-- Input column -->
+      <div class="card">
+        <div class="card-title">Input</div>
+
+        <div class="segmented" role="tablist" aria-label="Input source">
+          <button data-mode="text" class="seg-btn is-active" role="tab" aria-selected="true">Text</button>
+          <button data-mode="url"  class="seg-btn"          role="tab" aria-selected="false">URL</button>
+          <button data-mode="file" class="seg-btn"          role="tab" aria-selected="false">File</button>
+        </div>
+
+        <label class="field">
+          <span class="field-label">Question / claim</span>
+          <textarea id="question" rows="2" placeholder="e.g. Who proved Fermat's Last Theorem?"></textarea>
+        </label>
+
+        <label class="field" id="field-context">
+          <span class="field-label">Context · paste any evidence here (optional)</span>
+          <textarea id="context" rows="5" placeholder="Leave empty to let the model answer from parametric knowledge."></textarea>
+        </label>
+
+        <label class="field" id="field-url" hidden>
+          <span class="field-label">URL</span>
+          <input type="text" id="url" placeholder="https://example.com/article">
+        </label>
+
+        <div class="field file-field" id="field-file" hidden>
+          <span class="field-label">Upload a file</span>
+          <div class="dropzone" id="dropzone-live">
+            <button type="button" class="file-picker-btn" id="file-browse">Browse files…</button>
+            <input type="file" id="file" class="file-input-visible" accept=".pdf,.txt,.md,.markdown,.docx,.csv,.xlsx,.xls,.json,.html,.htm">
+            <span class="dropzone-hint" id="dropzone-hint">.pdf, .docx, .csv, .xlsx, .md, .txt, .json, .html</span>
+          </div>
+        </div>
+
+        <label class="field">
+          <span class="field-label">Or load an example</span>
+          <div class="select-wrap">
+            <select id="example-select">
+              <option value="">— pick an example —</option>
+              <option value="0">[text · safe] Who proved Fermat's Last Theorem?</option>
+              <option value="1">[text · adversarial] Contradicting evidence about the Pacific Ocean</option>
+              <option value="2">[text · capital] What is the capital of Bhutan?</option>
+            </select>
+            <svg class="select-caret" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+        </label>
+
+        <button id="run-btn" class="primary-btn full-width">
+          <span class="btn-label">Run verification</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="5 12 9 16 19 6"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Output column -->
+      <div class="card output-card">
+        <div class="card-title">Verification pipeline</div>
+
+        <!-- Status chips -->
+        <div class="status-row" id="status-row">
+          <div class="status-chip" data-channel="V_H">    <span class="dot"></span> V_H · Proposer</div>
+          <div class="status-chip" data-channel="V_pi">   <span class="dot"></span> V_Π · Executor</div>
+          <div class="status-chip" data-channel="V_gamma"><span class="dot"></span> V_Γ · Judge</div>
+          <div class="status-chip" data-channel="V_entail"><span class="dot"></span> V_⊢ · Verifier</div>
+        </div>
+
+        <!-- Animated SVG flow diagram -->
+        <div class="flow-wrap" id="flow-wrap">
+          <svg viewBox="0 0 1180 240" preserveAspectRatio="xMidYMid meet" class="flow-svg" role="img" aria-label="PCG-MAS pipeline">
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 Z" class="arrowhead-fill"/>
+              </marker>
+            </defs>
+            <g class="edge"  data-edge="0"><path d="M 116 120 L 246 120" class="edge-line" marker-end="url(#arrowhead)"/></g>
+            <g class="edge"  data-edge="1"><path d="M 334 120 L 426 120" class="edge-line" marker-end="url(#arrowhead)"/></g>
+            <g class="edge"  data-edge="2"><path d="M 514 120 L 606 120" class="edge-line" marker-end="url(#arrowhead)"/></g>
+            <g class="edge"  data-edge="3"><path d="M 694 120 L 786 120" class="edge-line" marker-end="url(#arrowhead)"/></g>
+            <g class="edge"  data-edge="4"><path d="M 874 120 L 1010 120" class="edge-line" marker-end="url(#arrowhead)"/></g>
+
+            <g class="node node-io"      data-node="input"><circle cx="80"  cy="120" r="36"/><text x="80"  y="118" class="node-label">Claim</text><text x="80"  y="134" class="node-sublabel">+ evidence</text></g>
+            <g class="node node-channel" data-node="V_H"      data-state="idle"><circle cx="290" cy="120" r="44"/><text x="290" y="118" class="node-label">V_H</text><text x="290" y="134" class="node-sublabel">Proposer</text></g>
+            <g class="node node-channel" data-node="V_pi"     data-state="idle"><circle cx="470" cy="120" r="44"/><text x="470" y="118" class="node-label">V_Π</text><text x="470" y="134" class="node-sublabel">Executor</text></g>
+            <g class="node node-channel" data-node="V_gamma"  data-state="idle"><circle cx="650" cy="120" r="44"/><text x="650" y="118" class="node-label">V_Γ</text><text x="650" y="134" class="node-sublabel">Judge</text></g>
+            <g class="node node-channel" data-node="V_entail" data-state="idle"><circle cx="830" cy="120" r="44"/><text x="830" y="118" class="node-label">V_⊢</text><text x="830" y="134" class="node-sublabel">Verifier</text></g>
+            <g class="node node-io"      data-node="cert"><circle cx="1050" cy="120" r="40"/><text x="1050" y="118" class="node-label">Cert</text><text x="1050" y="134" class="node-sublabel" id="cert-hash">SHA-256</text></g>
+          </svg>
+          <div class="flow-legend">
+            <span class="legend-item"><span class="legend-dot idle"></span>idle</span>
+            <span class="legend-item"><span class="legend-dot pending"></span>running</span>
+            <span class="legend-item"><span class="legend-dot pass"></span>verified</span>
+            <span class="legend-item"><span class="legend-dot fail"></span>rejected</span>
+          </div>
+        </div>
+
+        <!-- Result banner -->
+        <div id="result-banner" class="banner" hidden>
+          <div class="banner-head">
+            <span class="badge" id="result-badge">Accepted</span>
+            <span class="banner-rationale" id="result-rationale">All channels pass.</span>
+          </div>
+          <div class="banner-answer" id="result-answer">—</div>
+          <div class="banner-meta" id="result-meta"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== CERTIFICATE ====================== -->
+  <section id="tab-cert" class="tab-panel" data-tab="cert" hidden>
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <div class="card-title">Certificate inspector</div>
+          <p class="muted">The most recent certificate from the Live Run tab. Canonicalized JSON — copy it to verify the SHA-256 integrity hash offline.</p>
+        </div>
+        <button class="ghost-btn" id="copy-cert">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+          Copy JSON
+        </button>
+      </div>
+      <pre class="code-block" id="cert-block"><code>(run the Live Run tab to produce a certificate)</code></pre>
+
+      <div class="cert-key-fields">
+        <div class="card-title">Key fields</div>
+        <ul class="kv-list">
+          <li><code>accepted</code><span>final accept / reject decision</span></li>
+          <li><code>claim</code><span>the user's question</span></li>
+          <li><code>answer</code><span>the proposed answer (only filled if accepted)</span></li>
+          <li><code>channels.V_H</code><span>proposer's verdict + cited chunk indices</span></li>
+          <li><code>channels.V_pi</code><span>replay determinism check</span></li>
+          <li><code>channels.V_gamma</code><span>judge entailment score, mode, reason</span></li>
+          <li><code>channels.V_entail</code><span>final integration rationale</span></li>
+          <li><code>integrity_hash</code><span>SHA-256 over the canonicalized payload</span></li>
+          <li><code>cert_id</code><span>short identifier derived from decision + claim + timestamp</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== TRACE ====================== -->
+  <section id="tab-trace" class="tab-panel" data-tab="trace" hidden>
+    <div class="card">
+      <div class="card-title">Stress / adversarial tests</div>
+      <p class="muted">A focused stress test runs the same input through eight canonical adversarial perturbations of the evidence set, then reports the verifier's decision for each.</p>
+      <button class="primary-btn" id="run-stress" style="width:auto">Run stress test</button>
+      <div class="stress-table-wrap" id="stress-table">
+        <p class="muted small">No results yet. Run a stress test to populate this table.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== RESULTS ====================== -->
+  <section id="tab-results" class="tab-panel" data-tab="results" hidden>
+    <div class="card">
+      <div class="card-title">Raw LLM vs PCG-MAS</div>
+      <p class="muted">Use any input — paste text, fetch a URL, or upload a document — and see the same question answered twice: once by the raw LLM (no verification), once by the full PCG-MAS pipeline (verified, certificate attached, with a per-call token-overhead comparison).</p>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Input</div>
+
+        <div class="segmented" role="tablist" aria-label="Input source (Results)">
+          <button data-results-mode="text" class="seg-btn is-active" role="tab" aria-selected="true">Text</button>
+          <button data-results-mode="url"  class="seg-btn"          role="tab" aria-selected="false">URL</button>
+          <button data-results-mode="file" class="seg-btn"          role="tab" aria-selected="false">File</button>
+        </div>
+
+        <label class="field">
+          <span class="field-label">Question / claim</span>
+          <textarea id="results-question" rows="2" placeholder="e.g. What is the recommended action when a patient on warfarin is started on sertraline?"></textarea>
+        </label>
+
+        <label class="field" id="results-field-context">
+          <span class="field-label">Context (optional)</span>
+          <textarea id="results-context" rows="5" placeholder="Paste any evidence here. Leave empty to use parametric knowledge."></textarea>
+        </label>
+
+        <label class="field" id="results-field-url" hidden>
+          <span class="field-label">URL</span>
+          <input type="text" id="results-url" placeholder="https://example.com/article">
+        </label>
+
+        <div class="field file-field" id="results-field-file" hidden>
+          <span class="field-label">Upload a file</span>
+          <div class="dropzone" id="dropzone-results">
+            <button type="button" class="file-picker-btn" id="results-file-browse">Browse files…</button>
+            <input type="file" id="results-file" class="file-input-visible" accept=".pdf,.txt,.md,.markdown,.docx,.csv,.xlsx,.xls,.json,.html,.htm">
+            <span class="dropzone-hint" id="results-dropzone-hint">.pdf, .docx, .csv, .xlsx, .md, .txt, .json, .html</span>
+          </div>
+        </div>
+
+        <label class="field">
+          <span class="field-label">Or load a curated comparison</span>
+          <div class="select-wrap">
+            <select id="comp-select">
+              <option value="">— pick a curated comparison —</option>
+              <option value="0">Medical · Conflicting drug guidance (PDF)</option>
+              <option value="1">Legal · 3× vs 5× punitive cap (DOCX)</option>
+              <option value="2">Finance · Wrong totals row (CSV)</option>
+              <option value="3">API · Endpoint path mismatch (JSON)</option>
+              <option value="4">Scientific · Abstract vs results contradiction (MD)</option>
+              <option value="5">News · Outdated headline (TXT)</option>
+            </select>
+            <svg class="select-caret" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+        </label>
+
+        <p class="muted small" id="comp-note">Curated comparisons auto-load the question + the source document. Or fill the fields above manually with any input.</p>
+
+        <button id="compare-btn" class="primary-btn full-width">
+          <span class="btn-label">Compare raw LLM vs PCG-MAS</span>
+        </button>
+      </div>
+
+      <div>
+        <div class="card">
+          <div class="card-title">Raw LLM <span class="muted small">· no verification</span></div>
+          <div id="raw-out"><p class="muted small">Run the comparison above to see output.</p></div>
+        </div>
+        <div class="card">
+          <div class="card-title">PCG-MAS <span class="muted small">· verified, certificate attached</span></div>
+          <div id="pcg-out"><p class="muted small">Run the comparison above to see output.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== ARCHITECTURE ====================== -->
+  <section id="tab-arch" class="tab-panel" data-tab="arch" hidden>
+    <div class="card">
+      <div class="card-title">Pipeline architecture</div>
+      <div class="arch-grid">
+        <div class="arch-step"><div class="num">stage 01</div><div class="name">User task</div><div class="desc">The user submits a question or claim, optionally with evidence — pasted text, a URL to fetch, or an uploaded document. Supported formats include PDF, DOCX, XLSX, CSV, MD, TXT, JSON, and HTML.</div></div>
+        <div class="arch-step"><div class="num">stage 02</div><div class="name">Multi-agent generation</div><div class="desc">V_H (Proposer) reads the top-k retrieved evidence chunks and drafts an answer with citations and a self-reported confidence score.</div></div>
+        <div class="arch-step"><div class="num">stage 03</div><div class="name">Evidence commitment</div><div class="desc">The proposer's answer + cited chunk indices are hashed and committed. This commit becomes part of the certificate payload.</div></div>
+        <div class="arch-step"><div class="num">stage 04</div><div class="name">Replay &amp; consistency</div><div class="desc">V_Π (Executor) re-runs the proposer on the same input. The two answers are compared. A divergence indicates non-determinism and is flagged as drift.</div></div>
+        <div class="arch-step"><div class="num">stage 05</div><div class="name">Entailment &amp; risk</div><div class="desc">V_Γ (Judge) independently checks whether the answer is supported by the evidence. V_⊢ (Verifier) integrates all verdicts into the final decision and emits the SHA-256-stamped certificate.</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">What does "proof-carrying" mean?</div>
+      <p>A traditional LLM emits an answer. The user has to trust it, or independently verify it. <strong>Proof-Carrying Generation</strong> changes that: every answer ships with a structured <strong>certificate</strong> that an independent auditor can check. The certificate is the receipt for what the model did.</p>
+
+      <div class="card-title spaced">The four channels</div>
+      <table class="table">
+        <thead><tr><th style="min-width:200px">Channel</th><th>Role</th><th>Adds to certificate</th></tr></thead>
+        <tbody>
+          <tr><td><strong>V_H · Proposer</strong></td><td>Read the evidence, propose an answer with citations.</td><td>answer, cited chunk indices, self-reported confidence</td></tr>
+          <tr><td><strong>V_Π · Executor</strong></td><td>Replay V_H deterministically. Detect non-determinism / drift.</td><td>replay similarity, drift flag</td></tr>
+          <tr><td><strong>V_Γ · Judge</strong></td><td>Independent entailment check.</td><td>judge mode, entailment boolean, score, reason</td></tr>
+          <tr><td><strong>V_⊢ · Verifier</strong></td><td>Integrate verdicts into final accept / reject.</td><td>accepted boolean, rationale</td></tr>
+        </tbody>
+      </table>
+
+      <div class="card-title spaced">Why this matters for AI safety and alignment</div>
+      <ul class="reasons">
+        <li><strong>No silent failures.</strong> When the model hallucinates, V_Γ rejects. When the model is non-deterministic, V_Π flags it.</li>
+        <li><strong>Verifiable, not just claimed.</strong> The certificate is structured JSON with channel verdicts.</li>
+        <li><strong>Tamper-evident.</strong> Every certificate carries a SHA-256 integrity hash over the canonicalized payload.</li>
+        <li><strong>Audit trail.</strong> The certificate is the substrate for downstream auditors and compliance reviewers.</li>
+      </ul>
+
+      <div class="card-title spaced">Certificate construction</div>
+      <pre class="code-block"><code>Step 1 — V_H proposes
+  payload = { claim, evidence, answer, cited_chunks, proposer_conf }
+  hash_1  = SHA-256(canonical_json(payload))
+
+Step 2 — V_Π replays
+  payload += { replay_ok, replay_detail }
+  hash_2   = SHA-256(canonical_json(payload))
+
+Step 3 — V_Γ judges
+  payload += { judge_mode, entailed, score, reason }
+  hash_3   = SHA-256(canonical_json(payload))
+
+Step 4 — V_⊢ integrates
+  payload         += { accepted, rationale }
+  integrity_hash   = SHA-256(canonical_json(payload))
+  cert_id          = SHA-256("decision:claim:timestamp")[:12]</code></pre>
+    </div>
+  </section>
+
+  <!-- ====================== ABOUT ====================== -->
+  <section id="tab-about" class="tab-panel" data-tab="about" hidden>
+    <div class="card">
+      <div class="card-title">What is PCG-MAS?</div>
+      <p>PCG-MAS — <strong>Proof-Carrying Generation for Multi-Agent Systems</strong> — is a framework where every generated answer is verified by four independent channels before being shown to the user. If any channel rejects, the answer is withheld and the user sees the rejection reason instead of a fabricated one.</p>
+
+      <div class="card-title spaced">Comparison with baselines</div>
+      <table class="table">
+        <thead><tr><th>Method</th><th>Evidence committed</th><th>Replayable</th><th>Entailment checked</th><th>Risk controlled</th><th>Audit trail</th></tr></thead>
+        <tbody>
+          <tr><td>Raw LLM</td><td>no</td><td>no</td><td>no</td><td>no</td><td>no</td></tr>
+          <tr><td>RAG</td><td>partial</td><td>no</td><td>no</td><td>no</td><td>partial</td></tr>
+          <tr><td>Self-consistency sampling</td><td>no</td><td>partial</td><td>no</td><td>no</td><td>no</td></tr>
+          <tr><td>Verifier-only post-hoc</td><td>partial</td><td>no</td><td>yes</td><td>no</td><td>partial</td></tr>
+          <tr><td><strong>PCG-MAS</strong></td><td><strong>yes</strong></td><td><strong>yes</strong></td><td><strong>yes</strong></td><td><strong>yes</strong></td><td><strong>yes</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div class="card-title spaced">BYOK — bring your own key</div>
+      <p>This space runs on free CPU. To call a frontier model, you provide your own API key (OpenAI, Anthropic, DeepSeek, Hugging Face). Your key is never logged, never persisted, never leaves your browser session.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <nav class="footer-nav" aria-label="footer">
+    <a href="#tab-live"   data-tab="live">Live Run</a>
+    <a href="#tab-cert"   data-tab="cert">Certificate</a>
+    <a href="#tab-results" data-tab="results">Results</a>
+    <a href="#tab-arch"   data-tab="arch">Architecture</a>
+    <a href="#tab-about"  data-tab="about">About</a>
+  </nav>
+  <div class="footer-legal">
+    <p class="footer-copyright">&copy; 2026 anonymous-artifact. All rights reserved.</p>
+    <p class="footer-disclaimer">This demo is for peer review. Source code, evaluation scripts, and reproduction instructions are available at <a href="https://anonymous.4open.science/r/p-c-m-a-E866/README.md" target="_blank" rel="noopener noreferrer">anonymous.4open.science/r/p-c-m-a-E866</a>.</p>
+    <p class="footer-disclaimer">This artifact is provided for research and evaluation purposes only. It is not intended for production, clinical, financial, legal, or safety-critical deployment.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
