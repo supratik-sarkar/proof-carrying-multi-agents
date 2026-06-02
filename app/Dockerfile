@@ -1,31 +1,25 @@
-# Optional Docker deployment for HF Spaces.
-# Use Docker mode for full runtime control — set sdk: docker
-# in README.md frontmatter instead of sdk: streamlit.
-#
-# For most cases the streamlit SDK is fine and faster to deploy.
-
 FROM python:3.11-slim
 
-WORKDIR /app
-
-# System deps (minimal — keeping image small for fast cold-starts)
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git \
+        libfreetype6 libjpeg62-turbo zlib1g \
     && rm -rf /var/lib/apt/lists/*
 
-# Python deps first (cached layer)
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+WORKDIR /home/user/app
 
-# App
-COPY . .
+RUN useradd -m -u 1000 user
+USER user
+ENV PATH="/home/user/.local/bin:$PATH"
 
-# HF Spaces expects the app on port 7860
+COPY --chown=user requirements.txt .
+RUN pip install --no-cache-dir --user --upgrade pip && \
+    pip install --no-cache-dir --user -r requirements.txt
+
+COPY --chown=user server.py    .
+COPY --chown=user pcg_glue     ./pcg_glue
+COPY --chown=user static       ./static
+COPY --chown=user demo_data    ./demo_data
+
 ENV PORT=7860
 EXPOSE 7860
 
-CMD ["streamlit", "run", "app.py", \
-     "--server.port=7860", \
-     "--server.address=0.0.0.0", \
-     "--server.headless=true", \
-     "--browser.gatherUsageStats=false"]
+CMD ["python", "-m", "uvicorn", "server:app", "--host", "0.0.0.0", "--port", "7860"]
