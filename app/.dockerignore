@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.archive_gradio
+.archive_legacy
+.git
+.gitignore
+*.log
+.venv
