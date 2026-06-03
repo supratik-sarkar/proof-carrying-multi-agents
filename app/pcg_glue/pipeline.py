@@ -1,172 +1,406 @@
-"""Streaming PCG-MAS pipeline for the demo.
+"""
+Demo-runtime master pipeline for PCG-MAS.
 
-This is a SELF-CONTAINED, demo-grade implementation of the four-channel
-verification pipeline (V_H proposer, V_Π executor, V_Γ judge, V_⊢ verifier).
-It runs against any BYOK backend and any source-resolved input. It deliberately
-mirrors the structure of src/pcg/orchestrator/langgraph_flow.py but avoids
-importing the full pcg package (which pulls in torch and other heavy deps
-that don't fit the HF Space CPU-basic image).
+Orchestrates Phases 1-3 into a single SSE-streaming end-to-end run:
 
-Each channel yields a structured event dict for the UI to render in real time.
+    START
+      └─ evidence retrieval / parsing  -> EVIDENCE event
+      └─ claim extraction (Phase 2a)   -> CLAIM events
+      └─ 5-channel checker (Phase 2b)  -> CHANNEL events + CLAIM_CERT events
+      └─ redundancy selection          -> (folded into RISK summary)
+      └─ mask-and-replay responsibility -> RESPONSIBILITY events
+      └─ audit envelopes               -> AUDIT_ENVELOPE events
+      └─ risk-aware control            -> RISK event
+      └─ final certificate             -> CERTIFICATE event
+    DONE
+
+Backward-compatible legacy entrypoint `run_pipeline(...)` is preserved so
+server.py keeps working through Phase 5. It yields ChannelEvent + a single
+FinalCertificate using the OLD 4-channel labels (V_H/V_pi/V_gamma/V_entail)
+synthesized from the new 5-channel certificates (V_I/V_R/V_D/V_Ch/V_Cov).
+
+The new entrypoint `run_pcg_mas(...)` yields the rich event stream.
 """
 from __future__ import annotations
 
 import hashlib
 import json
-import re
 import time
 from dataclasses import dataclass, field, asdict
 from typing import Any, Iterator, Optional
 
-from .backends import BackendChoice, call_chat
-from .sources import ResolvedInput, Evidence
+from pcg_glue.backends import BackendChoice
+from pcg_glue.sources import ResolvedInput, Evidence
+
+# Phase 1 schemas
+from pcg_glue.schemas import (
+    EvidenceItem, ToolOutput, AtomicClaim,
+    ChannelName, ChannelState, ChannelVerdict, CHANNEL_LABELS,
+    ClaimCertificate, FullCertificate, RunMeta,
+    ResponsibilityReport, AuditEnvelope,
+    RiskDecision, RiskAction,
+    SSEEventType, ChannelStreamEvent,
+    to_jsonable,
+)
+
+# Phase 2 logic
+from pcg_glue.claim_extractor import (
+    extract_claims, commit_evidence, commit_tool_outputs,
+)
+from pcg_glue.channels import run_all_channels
+
+# Phase 3 logic
+from pcg_glue.responsibility   import estimate_responsibility_for_claim
+from pcg_glue.risk_control     import decide as risk_decide
+from pcg_glue.audit_envelopes  import compute_envelopes
+from pcg_glue.redundancy       import select_independent
 
 
-# ---------------------------------------------------------------------------
-# Channel events the UI consumes
-# ---------------------------------------------------------------------------
+# =============================================================================
+# Legacy event shape (kept for server.py backward-compat through Phase 5)
+# =============================================================================
 
 @dataclass
 class ChannelEvent:
-    channel: str             # 'V_H' | 'V_pi' | 'V_gamma' | 'V_entail' | 'verifier'
-    state: str               # 'pending' | 'pass' | 'fail'
-    verdict: str = ""        # short human-readable result
-    detail: str = ""         # one-line explanation
-    payload: dict = field(default_factory=dict)
+    """Legacy 4-channel event the current server.py expects. Synthesized from
+    the new 5-channel certificates so the existing SSE consumer keeps working."""
+    channel: str                    # "V_H" | "V_pi" | "V_gamma" | "V_entail"
+    state: str                      # "pending" | "pass" | "fail"
+    label: str
+    detail: str = ""
+    payload: dict[str, Any] = field(default_factory=dict)
     elapsed_ms: float = 0.0
 
 
 @dataclass
 class FinalCertificate:
+    """Legacy top-level certificate the current server.py expects."""
     accepted: bool
     claim: str
     answer: str
-    channels: dict          # name -> ChannelEvent.as_dict()
-    backend: dict
-    source: dict
+    channels: dict[str, Any]
+    backend: dict[str, Any]
+    source: dict[str, Any]
     integrity_hash: str
     cert_id: str
     timestamp: float
 
-    def to_json(self) -> str:
-        return json.dumps(asdict(self), indent=2, sort_keys=True, default=str)
+
+# =============================================================================
+# Adapter: ResolvedInput  ->  schema EvidenceItem[]
+# =============================================================================
+
+def _normalize_text(s: str) -> str:
+    return " ".join((s or "").split())
 
 
-# ---------------------------------------------------------------------------
-# Channel implementations
-# ---------------------------------------------------------------------------
-
-PROPOSER_SYSTEM_WITH_EVIDENCE = (
-    "You are V_H, the proposer in a Proof-Carrying Generation multi-agent system. "
-    "Answer the user's QUESTION using ONLY the EVIDENCE provided. Cite the chunk "
-    "indices you actually used.\n\n"
-    "If the evidence appears stale, outdated, or insufficient for the question "
-    "(e.g. the question asks about a CURRENT state but the evidence is dated, or "
-    "the evidence is on a related-but-different topic), produce a SHORT honest "
-    "answer that:\n"
-    "  (a) states what the evidence DOES say (with the date or context),\n"
-    "  (b) explicitly flags that the evidence may be outdated or insufficient "
-    "for the user\'s actual question,\n"
-    "  (c) sets confidence below 0.4.\n\n"
-    "Only return a bare \"Insufficient evidence\" abstention if the evidence is "
-    "TOTALLY unrelated to the question. Otherwise extract whatever the evidence "
-    "DOES support and flag the staleness in the answer text itself.\n\n"
-    "Respond in JSON exactly: "
-    "{\"answer\": \"...\", \"cited_chunks\": [int,...], \"confidence\": float in [0,1]}"
-)
-
-PROPOSER_SYSTEM_NO_EVIDENCE = (
-    "You are V_H, the proposer in a Proof-Carrying Generation multi-agent system. "
-    "The user has NOT supplied external evidence. Answer the QUESTION from your "
-    "own parametric knowledge. Be concrete and direct \u2014 a downstream judge "
-    "will independently verify entailment, so abstaining costs the user a real "
-    "answer. Only refuse if you are genuinely uncertain.\n\n"
-    "Use \"cited_chunks\": [] since there is no external evidence. Respond in "
-    "JSON exactly: "
-    "{\"answer\": \"...\", \"cited_chunks\": [], \"confidence\": float in [0,1]}"
-)
-
-JUDGE_SYSTEM_NO_EVIDENCE = (
-    "You are V_Γ, the entailment judge in a Proof-Carrying Generation system. "
-    "The user did NOT supply external evidence; the proposer answered from its own "
-    "parametric knowledge. Your job: act as a plausibility check.\n\n"
-    "Reject (entailed=false) if any of these hold:\n"
-    "  - The answer is a refusal or 'I don't know' / 'insufficient information' \u2014 "
-    "    set is_abstention=true.\n"
-    "  - The answer is internally inconsistent or self-contradictory.\n"
-    "  - The answer is off-topic relative to the question.\n"
-    "  - The answer makes a claim that is well-known to be false (e.g. wrong famous "
-    "    historical fact, wrong capital city, wrong year by a wide margin).\n\n"
-    "Accept (entailed=true) if the answer is a concrete, on-topic claim that is "
-    "consistent with widely-known facts. You are NOT certifying the answer against "
-    "any specific evidence \u2014 you are confirming it is a reasonable parametric "
-    "response. The certificate will state 'parametric-only, no external evidence'.\n\n"
-    "Respond in JSON exactly: "
-    "{\"entailed\": true|false, \"reason\": \"...\", \"score\": float in [0,1], "
-    "\"is_abstention\": true|false}"
-)
+def _adapt_evidence(resolved: ResolvedInput) -> tuple[list[EvidenceItem], str]:
+    """Convert the existing ResolvedInput's evidence to schema EvidenceItem[]
+    + return the question text."""
+    out: list[EvidenceItem] = []
+    for i, ev in enumerate(getattr(resolved, "evidence", []) or []):
+        text = getattr(ev, "text", "") or ""
+        # Source attribute could be .publisher (most common) or .source
+        source = (
+            getattr(ev, "publisher", None)
+            or getattr(ev, "source", None)
+            or getattr(ev, "url", None)
+            or "unknown"
+        )
+        # Skip the synthetic "no evidence supplied" placeholder used by the
+        # legacy pipeline when the user gives only a question.
+        if isinstance(text, str) and text.startswith("(no evidence"):
+            continue
+        item = EvidenceItem(
+            id=f"e{i + 1}",
+            text=text,
+            source=str(source),
+            hash=hashlib.sha256(_normalize_text(text).encode("utf-8")).hexdigest(),
+        )
+        out.append(item)
+    question = getattr(resolved, "claim", "") or getattr(resolved, "question", "")
+    return out, str(question)
 
 
-JUDGE_SYSTEM = (
-    "You are V_Γ, the entailment judge in a Proof-Carrying Generation system. "
-    "Your job: decide whether the proposed ANSWER is (a) a real answer to the QUESTION "
-    "and (b) supported by the EVIDENCE.\n\n"
-    "Reject (entailed=false) if any of the following hold:\n"
-    "  - The answer is a refusal, abstention, or 'insufficient evidence' / 'I don't know' "
-    "    statement. Such answers do not entail anything; they decline to answer.\n"
-    "  - The answer is a real claim but is not supported by the evidence.\n"
-    "  - The answer contradicts the evidence.\n"
-    "  - The answer is off-topic relative to the question.\n\n"
-    "Accept (entailed=true) only if the answer makes a concrete claim that the evidence "
-    "directly supports. The 'score' field is your confidence in [0,1].\n\n"
-    "Respond in JSON exactly: "
-    "{\"entailed\": true|false, \"reason\": \"...\", \"score\": float in [0,1], "
-    "\"is_abstention\": true|false}"
-)
+def _cert_id(prefix: str, question: str) -> str:
+    h = hashlib.sha256(f"{prefix}|{question}|{time.time()}".encode("utf-8")).hexdigest()[:16]
+    return f"pcg-{prefix}-{h}"
 
 
-def _proposer_prompt(claim: str, evs: list[Evidence]) -> str:
-    evidence_block = "\n".join(
-        f"[chunk {i}] ({ev.title}) {ev.text}" for i, ev in enumerate(evs)
-    )
-    return (
-        f"QUESTION:\n{claim}\n\n"
-        f"EVIDENCE:\n{evidence_block}\n\n"
-        f"Respond as JSON with keys: answer, cited_chunks, confidence."
-    )
+# =============================================================================
+# SSE event payload helper
+# =============================================================================
+
+def _evt(event_type: SSEEventType, payload: Any) -> dict[str, Any]:
+    """Standardized SSE-yieldable dict: {event: "...", data: {...}}."""
+    return {"event": event_type.value, "data": to_jsonable(payload)}
 
 
-def _judge_prompt(claim: str, answer: str, evs: list[Evidence]) -> str:
-    evidence_block = "\n".join(
-        f"[chunk {i}] ({ev.title}) {ev.text}" for i, ev in enumerate(evs)
-    )
-    return (
-        f"QUESTION:\n{claim}\n\n"
-        f"PROPOSED ANSWER:\n{answer}\n\n"
-        f"EVIDENCE:\n{evidence_block}\n\n"
-        f"Is the proposed answer entailed by the evidence? Respond as JSON "
-        f"with keys: entailed, reason, score."
-    )
+# =============================================================================
+# NEW master entrypoint — yields rich SSE events
+# =============================================================================
 
+def run_pcg_mas(
+    resolved: ResolvedInput,
+    backend: BackendChoice,
+    api_key: str,
+    *,
+    top_k_evidence: int = 6,
+    do_responsibility: bool = True,
+    do_envelopes: bool = True,
+    do_redundancy: bool = True,
+    responsibility_n_replays: int = 4,
+    redundancy_k: int = 3,
+) -> Iterator[dict[str, Any]]:
+    """Full demo-runtime PCG-MAS pipeline. Yields SSE event dicts.
 
-def _safe_json(text: str) -> Optional[dict]:
-    """Extract first JSON object from a (possibly fenced) LLM response."""
-    m = re.search(r"\{.*\}", text, re.DOTALL)
-    if not m:
-        return None
+    Path-A execution (always run everything). To tighten latency/cost,
+    callers can set do_responsibility / do_envelopes / do_redundancy to False.
+    """
+    t_total = time.time()
+    cert_id = _cert_id("run", getattr(resolved, "claim", ""))
+
+    # ---- Cap evidence at top_k for context window safety ----
     try:
-        return json.loads(m.group(0))
+        from .sources import top_k as topk_fn
+        resolved = topk_fn(resolved, top_k_evidence)
     except Exception:
+        pass
+
+    evidence, question = _adapt_evidence(resolved)
+    tools: list[ToolOutput] = []  # demo doesn't run live tools
+
+    # Recommit hashes (ensures the schema's `hash` is the canonical sha256)
+    evidence = commit_evidence(evidence)
+
+    yield _evt(SSEEventType.START, {
+        "cert_id": cert_id,
+        "n_evidence": len(evidence),
+        "backend": {"provider": backend.provider, "model": backend.model_id},
+    })
+
+    yield _evt(SSEEventType.EVIDENCE, {
+        "items": [{"id": e.id, "source": e.source,
+                   "text": e.text[:300], "hash": e.hash[:16]}
+                  for e in evidence],
+    })
+
+    # =============================================================
+    # Phase 2a: claim extraction
+    # =============================================================
+    try:
+        answer_draft, claims, extract_meta = extract_claims(
+            question=question,
+            evidence=evidence,
+            tool_outputs=tools,
+            backend=backend,
+            api_key=api_key,
+        )
+    except Exception as e:
+        yield _evt(SSEEventType.ERROR, {
+            "stage": "claim_extraction",
+            "type": type(e).__name__,
+            "message": str(e)[:300],
+        })
+        yield _evt(SSEEventType.DONE, {"elapsed_ms": int((time.time() - t_total) * 1000)})
+        return
+
+    for c in claims:
+        yield _evt(SSEEventType.CLAIM, {
+            "claim_id": c.claim_id,
+            "claim_text": c.claim_text,
+            "support_ids": c.support_ids,
+            "tool_output_ids": c.tool_output_ids,
+            "confidence": c.confidence,
+            "uncertainty_flags": c.uncertainty_flags,
+        })
+
+    if not claims:
+        # No claims extracted — produce a minimal certificate and stop.
+        # The risk controller will see [] and choose Refuse.
+        risk = risk_decide([])
+        yield _evt(SSEEventType.RISK, risk)
+        full = FullCertificate(
+            question=question,
+            answer_draft=answer_draft,
+            answer_final=f"(no claims extracted: {extract_meta.get('abstain_reason', 'parser')})",
+            accepted=False,
+            integrity_hash=hashlib.sha256(cert_id.encode()).hexdigest(),
+            evidence=evidence,
+            claims=[],
+            claim_certificates=[],
+            responsibility=[],
+            audit_envelopes=[],
+            risk=risk,
+            meta=RunMeta(
+                cert_id=cert_id,
+                backend_label=getattr(backend, "label", ""),
+                backend_provider=backend.provider,
+                backend_model=backend.model_id,
+                elapsed_ms_total=int((time.time() - t_total) * 1000),
+                tokens_total=extract_meta.get("tokens_out", 0),
+            ),
+        )
+        yield _evt(SSEEventType.CERTIFICATE, full)
+        yield _evt(SSEEventType.DONE, {"elapsed_ms": int((time.time() - t_total) * 1000)})
+        return
+
+    # =============================================================
+    # Phase 2b: 5-channel checker per claim
+    # =============================================================
+    evidence_index = {e.id: e for e in evidence}
+    tool_index = {t.id: t for t in tools}
+    claim_certs: list[ClaimCertificate] = []
+
+    for c in claims:
+        # Emit pending state for all 5 channels so the UI lights them up
+        for ch in [ChannelName.V_I, ChannelName.V_R, ChannelName.V_D,
+                   ChannelName.V_Ch, ChannelName.V_Cov]:
+            yield _evt(SSEEventType.CHANNEL, ChannelStreamEvent(
+                claim_id=c.claim_id, channel=ch, state=ChannelState.PENDING,
+            ))
+
         try:
-            cleaned = re.sub(r",\s*([}\]])", r"\1", m.group(0))
-            return json.loads(cleaned)
-        except Exception:
-            return None
+            cc = run_all_channels(
+                claim=c,
+                evidence_index=evidence_index,
+                tool_index=tool_index,
+                question=question,
+                backend=backend,
+                api_key=api_key,
+            )
+        except Exception as e:
+            # Synthesize a fully-FAIL ClaimCertificate so downstream still works
+            cc = ClaimCertificate(
+                claim=c, channels={
+                    ch: ChannelVerdict(channel=ch, state=ChannelState.FAIL,
+                                       score=0.0,
+                                       detail=f"channel run crashed: {type(e).__name__}")
+                    for ch in [ChannelName.V_I, ChannelName.V_R, ChannelName.V_D,
+                               ChannelName.V_Ch, ChannelName.V_Cov]
+                },
+                accepted=False,
+                integrity_hash="",
+                minimal_support_ids=c.support_ids[:],
+            )
+
+        for ch_name, verdict in cc.channels.items():
+            yield _evt(SSEEventType.CHANNEL, ChannelStreamEvent(
+                claim_id=c.claim_id,
+                channel=ch_name,
+                state=verdict.state,
+                score=verdict.score,
+                detail=verdict.detail,
+            ))
+
+        yield _evt(SSEEventType.CLAIM_CERT, cc)
+        claim_certs.append(cc)
+
+    # =============================================================
+    # Phase 3: redundancy / responsibility / envelopes / risk
+    # =============================================================
+    if do_redundancy:
+        sel = select_independent(claim_certs, k=redundancy_k)
+    else:
+        sel = None
+
+    responsibility_reports: list[ResponsibilityReport] = []
+    if do_responsibility:
+        # Only run on accepted claims with at least one cited support — masking
+        # an already-failed or uncited claim is uninformative.
+        for cc in claim_certs:
+            if not cc.accepted:
+                continue
+            if not cc.claim.support_ids and not cc.claim.tool_output_ids:
+                continue
+            try:
+                rep = estimate_responsibility_for_claim(
+                    claim=cc.claim,
+                    claim_cert=cc,
+                    evidence=evidence,
+                    tools=tools,
+                    question=question,
+                    backend=backend,
+                    api_key=api_key,
+                    n_replays=responsibility_n_replays,
+                )
+                responsibility_reports.append(rep)
+                yield _evt(SSEEventType.RESPONSIBILITY, rep)
+            except Exception as e:
+                yield _evt(SSEEventType.ERROR, {
+                    "stage": "responsibility",
+                    "claim_id": cc.claim.claim_id,
+                    "type": type(e).__name__,
+                    "message": str(e)[:300],
+                })
+
+    envelopes: list[AuditEnvelope] = []
+    if do_envelopes:
+        envelopes = compute_envelopes(claim_certs)
+        for env in envelopes:
+            yield _evt(SSEEventType.AUDIT_ENVELOPE, env)
+
+    risk = risk_decide(claim_certs)
+    yield _evt(SSEEventType.RISK, risk)
+
+    # =============================================================
+    # Top-level FullCertificate
+    # =============================================================
+    answer_final = answer_draft if risk.action == RiskAction.ANSWER else \
+        f"(answer withheld — controller chose {risk.action.value})"
+
+    payload_for_hash = json.dumps({
+        "question": question,
+        "answer_draft": answer_draft,
+        "claims": [c.claim_id for c in claims],
+        "risk_action": risk.action.value,
+    }, sort_keys=True)
+    integrity_hash = hashlib.sha256(payload_for_hash.encode("utf-8")).hexdigest()
+
+    full = FullCertificate(
+        question=question,
+        answer_draft=answer_draft,
+        answer_final=answer_final,
+        accepted=(risk.action == RiskAction.ANSWER),
+        integrity_hash=integrity_hash,
+        evidence=evidence,
+        tool_outputs=tools,
+        claims=claims,
+        claim_certificates=claim_certs,
+        responsibility=responsibility_reports,
+        audit_envelopes=envelopes,
+        risk=risk,
+        meta=RunMeta(
+            cert_id=cert_id,
+            backend_label=getattr(backend, "label", ""),
+            backend_provider=backend.provider,
+            backend_model=backend.model_id,
+            elapsed_ms_total=int((time.time() - t_total) * 1000),
+            tokens_total=int(extract_meta.get("tokens_out", 0)),
+            prompt_hashes={"claim_extractor": "v1", "checker": "v1"},
+        ),
+    )
+    # Fold redundancy selection into the certificate's meta for inspection
+    if sel is not None:
+        full.meta.prompt_hashes["redundancy_selected"] = ",".join(sel.selected_ids)
+
+    yield _evt(SSEEventType.CERTIFICATE, full)
+    yield _evt(SSEEventType.DONE, {"elapsed_ms": int((time.time() - t_total) * 1000)})
 
 
-# ---------------------------------------------------------------------------
-# Main pipeline — a generator yielding events
-# ---------------------------------------------------------------------------
+# =============================================================================
+# LEGACY entrypoint — kept for server.py backward-compat through Phase 5
+# =============================================================================
+
+# Map new 5-channel names to old 4-channel names used by the existing server SSE
+_LEGACY_CHANNEL_MAP = {
+    ChannelName.V_I:   "V_H",        # Integrity ~ proposer integrity
+    ChannelName.V_R:   "V_pi",       # Replay
+    ChannelName.V_D:   "V_pi",       # Drift folds into Replay channel
+    ChannelName.V_Ch:  "V_gamma",    # Checker == judge
+    ChannelName.V_Cov: "V_entail",   # Coverage ~ entailment in old vocab
+}
+
 
 def run_pipeline(
     resolved: ResolvedInput,
@@ -175,266 +409,126 @@ def run_pipeline(
     *,
     replay_check: bool = True,
     top_k_evidence: int = 5,
-) -> Iterator[ChannelEvent | FinalCertificate]:
-    """Run the four channels in sequence. Yields ChannelEvent for each phase
-    transition (pending then pass/fail), and a final FinalCertificate.
+) -> Iterator[Any]:
+    """Backward-compatible entrypoint with the legacy event shape.
+
+    Yields ChannelEvent | FinalCertificate, just like the old pipeline.
+    Internally calls run_pcg_mas() and remaps the new SSE events.
+
+    The server.py rewrite in Phase 5 will switch to run_pcg_mas() directly.
     """
+    legacy_channel_state: dict[str, str] = {
+        "V_H": "idle", "V_pi": "idle", "V_gamma": "idle", "V_entail": "idle",
+    }
 
-    # ---- Setup: cap evidence at top_k for context window safety ----
-    from .sources import top_k as topk_fn
-    resolved = topk_fn(resolved, top_k_evidence)
+    final_certificate: Optional[FullCertificate] = None
+    answer_text = ""
+    question_text = getattr(resolved, "claim", "")
 
-    # ============== Channel V_H: Proposer ==============
-    # Choose proposer mode based on whether the user supplied real evidence.
-    # A single placeholder evidence chunk (e.g. "(no evidence supplied)") counts
-    # as no-evidence and we let the proposer use its parametric knowledge.
-    has_evidence = bool(resolved.evidence) and not any(
-        ev.publisher == "user_input" and ev.text.startswith("(no evidence")
-        for ev in resolved.evidence
-    )
-    proposer_system = PROPOSER_SYSTEM_WITH_EVIDENCE if has_evidence else PROPOSER_SYSTEM_NO_EVIDENCE
+    for ev in run_pcg_mas(
+        resolved, backend, api_key,
+        top_k_evidence=top_k_evidence,
+        do_responsibility=False,    # legacy mode: skip the heavy bits for parity
+        do_envelopes=False,
+        do_redundancy=False,
+    ):
+        ev_type = ev.get("event")
+        data = ev.get("data", {})
 
-    yield ChannelEvent(
-        "V_H", "pending", "running",
-        ("Asking proposer to answer from evidence…" if has_evidence
-         else "No evidence supplied — proposer uses parametric knowledge."),
-    )
-    t0 = time.perf_counter()
-    proposer_text, proposer_meta = call_chat(
-        backend, api_key,
-        _proposer_prompt(resolved.claim, resolved.evidence) if has_evidence
-            else f"QUESTION:\n{resolved.claim}\n\nRespond as JSON with keys: answer, cited_chunks, confidence.",
-        system=proposer_system, max_tokens=512, temperature=0.0,
-    )
-    elapsed = (time.perf_counter() - t0) * 1000.0
+        if ev_type == SSEEventType.CHANNEL.value:
+            # data: {claim_id, channel, state, score, detail}
+            new_ch = data.get("channel", "")
+            new_state = data.get("state", "")
+            try:
+                legacy_ch = _LEGACY_CHANNEL_MAP[ChannelName(new_ch)]
+            except (ValueError, KeyError):
+                continue
+            # Aggregate: legacy channel passes only if ALL contributing new
+            # channels pass; fails if ANY fails; pending otherwise.
+            if new_state == "fail":
+                legacy_channel_state[legacy_ch] = "fail"
+            elif new_state == "pass" and legacy_channel_state[legacy_ch] != "fail":
+                legacy_channel_state[legacy_ch] = "pass"
+            elif new_state == "pending" and legacy_channel_state[legacy_ch] == "idle":
+                legacy_channel_state[legacy_ch] = "pending"
+            yield ChannelEvent(
+                channel=legacy_ch,
+                state=legacy_channel_state[legacy_ch],
+                label=new_ch,
+                detail=data.get("detail", "")[:200],
+            )
 
-    parsed = _safe_json(proposer_text)
-    if not parsed or "answer" not in parsed:
-        yield ChannelEvent(
-            "V_H", "fail", "malformed",
-            "Proposer returned no parseable JSON answer.",
-            payload={"raw": proposer_text[:300], "meta": proposer_meta},
-            elapsed_ms=elapsed,
-        )
-        # Cannot continue without an answer to verify
+        elif ev_type == SSEEventType.CERTIFICATE.value:
+            # The whole FullCertificate dict — store for final emit
+            final_certificate = data    # type: ignore[assignment]
+            answer_text = data.get("answer_final") or data.get("answer_draft") or ""
+
+    # Emit the legacy FinalCertificate at the end
+    if final_certificate is None:
         yield FinalCertificate(
-            accepted=False, claim=resolved.claim, answer="(no answer produced)",
-            channels={"V_H": {"state": "fail", "reason": "proposer returned no JSON"}},
-            backend=proposer_meta,
-            source={"kind": resolved.source_kind, "label": resolved.source_label,
-                    "n_evidence": len(resolved.evidence)},
-            integrity_hash="", cert_id=_cert_id("fail", resolved.claim),
+            accepted=False, claim=question_text,
+            answer="(no certificate produced)",
+            channels={k: {"state": v} for k, v in legacy_channel_state.items()},
+            backend={"provider": backend.provider, "model": backend.model_id},
+            source={"kind": getattr(resolved, "source_kind", ""),
+                    "label": getattr(resolved, "source_label", ""),
+                    "n_evidence": len(getattr(resolved, "evidence", []) or [])},
+            integrity_hash="",
+            cert_id=_cert_id("legacy", question_text),
             timestamp=time.time(),
         )
         return
 
-    answer = str(parsed.get("answer", "")).strip()
-    cited = parsed.get("cited_chunks", []) or []
-    conf = float(parsed.get("confidence", 0.0) or 0.0)
-
-    # Validate cited chunks exist
-    valid_cites = [c for c in cited if isinstance(c, int) and 0 <= c < len(resolved.evidence)]
-    cite_ok = len(valid_cites) >= 1 if cited else (len(resolved.evidence) > 0)
-
-    yield ChannelEvent(
-        "V_H", "pass" if answer and cite_ok else "fail",
-        f"answer ({len(answer)} chars), conf={conf:.2f}",
-        f"Proposer produced an answer citing {len(valid_cites)} of {len(resolved.evidence)} chunks.",
-        payload={"answer": answer, "cited_chunks": valid_cites,
-                 "confidence": conf, "meta": proposer_meta},
-        elapsed_ms=elapsed,
-    )
-
-    # ============== Channel V_Π: Executor (replay determinism) ==============
-    yield ChannelEvent("V_pi", "pending", "running",
-                       "Re-running the proposer to check replay determinism…")
-    t0 = time.perf_counter()
-    replay_ok = True
-    replay_detail = "skipped (single-shot mode)"
-    if replay_check:
-        replay_text, _replay_meta = call_chat(
-            backend, api_key,
-            _proposer_prompt(resolved.claim, resolved.evidence) if has_evidence
-                else f"QUESTION:\n{resolved.claim}\n\nRespond as JSON with keys: answer, cited_chunks, confidence.",
-            system=proposer_system, max_tokens=512, temperature=0.0,
-        )
-        replay_parsed = _safe_json(replay_text)
-        replay_answer = str(replay_parsed.get("answer", "")).strip() if replay_parsed else ""
-        # We require lexically-similar (not necessarily identical) answers at T=0,
-        # since most chat APIs don't guarantee bit-identity even at temperature=0.
-        sim = _jaccard_similarity(answer, replay_answer)
-        replay_ok = sim >= 0.5
-        replay_detail = (f"replay similarity (Jaccard) = {sim:.2f}; "
-                         f"accepted as deterministic" if replay_ok
-                         else f"replay diverged (Jaccard = {sim:.2f}); flagging drift")
-    elapsed = (time.perf_counter() - t0) * 1000.0
-    yield ChannelEvent(
-        "V_pi", "pass" if replay_ok else "fail",
-        "deterministic" if replay_ok else "drift",
-        replay_detail,
-        payload={"replay_check": replay_check},
-        elapsed_ms=elapsed,
-    )
-
-    # ============== Channel V_Γ: Judge (entailment OR plausibility) ==============
-    judge_role = ("entailment judge verifying the answer against evidence"
-                  if has_evidence else
-                  "plausibility judge (no external evidence; parametric-only)")
-    yield ChannelEvent("V_gamma", "pending", "running",
-                       f"Asking {judge_role}…")
-    t0 = time.perf_counter()
-    if has_evidence:
-        judge_prompt_text = _judge_prompt(resolved.claim, answer, resolved.evidence)
-        judge_system = JUDGE_SYSTEM
-    else:
-        judge_prompt_text = (
-            f"QUESTION:\n{resolved.claim}\n\n"
-            f"PROPOSED ANSWER:\n{answer}\n\n"
-            "Is this answer plausible and on-topic? Respond as JSON with keys: "
-            "entailed, reason, score, is_abstention."
-        )
-        judge_system = JUDGE_SYSTEM_NO_EVIDENCE
-    judge_text, judge_meta = call_chat(
-        backend, api_key, judge_prompt_text,
-        system=judge_system, max_tokens=256, temperature=0.0,
-    )
-    elapsed = (time.perf_counter() - t0) * 1000.0
-    j = _safe_json(judge_text) or {}
-    entailed = bool(j.get("entailed", False))
-    score = float(j.get("score", 0.0) or 0.0)
-    reason = str(j.get("reason", "(no reason)"))[:240]
-    judge_label = "entailed" if has_evidence else "plausible"
-    yield ChannelEvent(
-        "V_gamma", "pass" if entailed else "fail",
-        f"{judge_label}={entailed}, score={score:.2f}",
-        reason + (" (parametric-only — no external evidence)" if not has_evidence else ""),
-        payload={"raw": judge_text[:400], "meta": judge_meta,
-                 "mode": "entailment" if has_evidence else "plausibility"},
-        elapsed_ms=elapsed,
-    )
-
-    # ============== Channel V_⊢: Verifier (integration) ==============
-    yield ChannelEvent("V_entail", "pending", "running",
-                       "Integrating channel verdicts into final accept/reject…")
-    t0 = time.perf_counter()
-    is_abstention = bool(j.get("is_abstention", False))
-    # In no-evidence mode, citing is vacuously OK (proposer cites nothing by design).
-    cite_required_pass = cite_ok if has_evidence else True
-    accept = bool(
-        answer
-        and cite_required_pass
-        and replay_ok
-        and entailed
-        and score >= 0.5
-        and not is_abstention
-    )
-    rationale = _build_rationale(
-        cite_ok=cite_required_pass, replay_ok=replay_ok, entailed=entailed,
-        score=score, conf=conf, n_evidence=len(resolved.evidence),
-        is_abstention=is_abstention,
-    )
-    elapsed = (time.perf_counter() - t0) * 1000.0
-    yield ChannelEvent(
-        "V_entail", "pass" if accept else "fail",
-        "accept" if accept else "reject",
-        rationale,
-        payload={
-            "cite_ok": cite_ok, "replay_ok": replay_ok,
-            "entailed": entailed, "judge_score": score,
-            "proposer_conf": conf,
-        },
-        elapsed_ms=elapsed,
-    )
-
-    # ============== Final certificate ==============
-    cert_payload = {
-        "claim": resolved.claim,
-        "answer": answer,
-        "cited_chunks": valid_cites,
-        "proposer_conf": conf,
-        "replay_ok": replay_ok,
-        "judge_mode": "entailment" if has_evidence else "plausibility",
-        "judge_entailed": entailed,
-        "judge_score": score,
-        "n_evidence": len(resolved.evidence) if has_evidence else 0,
-        "evidence_supplied": has_evidence,
-        "backend": {"provider": backend.provider, "model": backend.model_id},
-    }
-    integrity = hashlib.sha256(
-        json.dumps(cert_payload, sort_keys=True).encode("utf-8")
-    ).hexdigest()
-
+    fc_meta = final_certificate.get("meta", {}) or {}
     yield FinalCertificate(
-        accepted=accept,
-        claim=resolved.claim,
-        answer=answer,
+        accepted=bool(final_certificate.get("accepted")),
+        claim=question_text,
+        answer=answer_text or "(no answer)",
         channels={
-            "V_H":      {"pass": bool(answer and cite_ok), "conf": conf,
-                          "cited_chunks": valid_cites},
-            "V_pi":     {"pass": replay_ok, "detail": replay_detail},
-            "V_gamma":  {"pass": entailed, "score": score, "reason": reason},
-            "V_entail": {"pass": accept, "rationale": rationale},
+            "V_H":      {"state": legacy_channel_state["V_H"]},
+            "V_pi":     {"state": legacy_channel_state["V_pi"]},
+            "V_gamma":  {"state": legacy_channel_state["V_gamma"]},
+            "V_entail": {"state": legacy_channel_state["V_entail"],
+                         "rationale": (final_certificate.get("risk") or {}).get("summary", "")},
         },
         backend={"provider": backend.provider, "model": backend.model_id},
-        source={"kind": resolved.source_kind, "label": resolved.source_label,
-                "n_evidence": len(resolved.evidence)},
-        integrity_hash=integrity,
-        cert_id=_cert_id("accept" if accept else "reject", resolved.claim),
+        source={
+            "kind":  getattr(resolved, "source_kind",  ""),
+            "label": getattr(resolved, "source_label", ""),
+            "n_evidence": len(getattr(resolved, "evidence", []) or []),
+        },
+        integrity_hash=final_certificate.get("integrity_hash", ""),
+        cert_id=fc_meta.get("cert_id", _cert_id("legacy", question_text)),
         timestamp=time.time(),
     )
 
 
+# Convenience for server.py: the raw-baseline LLM call also remains importable.
 def run_raw_baseline(
     resolved: ResolvedInput,
     backend: BackendChoice,
     api_key: str,
 ) -> tuple[str, dict]:
     """Side-by-side baseline: raw LLM call, no PCG-MAS. Returns (answer, meta)."""
+    from .backends import call_chat
+    evs = getattr(resolved, "evidence", []) or []
     evidence_block = "\n".join(
-        f"- ({ev.title}) {ev.text[:300]}" for ev in resolved.evidence[:5]
+        f"- ({getattr(ev, 'publisher', getattr(ev, 'title', '?'))}) {getattr(ev, 'text', '')[:300]}"
+        for ev in evs[:5]
     )
+    question = getattr(resolved, "claim", "") or getattr(resolved, "question", "")
     prompt = (
-        f"Question: {resolved.claim}\n\n"
+        f"Question: {question}\n\n"
         f"Context:\n{evidence_block}\n\n"
         f"Answer the question."
     )
     return call_chat(backend, api_key, prompt, max_tokens=512, temperature=0.0)
 
 
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
-
-def _jaccard_similarity(a: str, b: str) -> float:
-    if not a and not b:
-        return 1.0
-    ta = set(re.findall(r"\w+", a.lower()))
-    tb = set(re.findall(r"\w+", b.lower()))
-    if not ta or not tb:
-        return 0.0
-    return len(ta & tb) / len(ta | tb)
-
-
-def _build_rationale(*, cite_ok, replay_ok, entailed, score, conf, n_evidence,
-                     is_abstention: bool = False) -> str:
-    parts = []
-    if is_abstention:
-        parts.append("proposer abstained (no concrete answer) — the judge flagged "
-                     "this as a non-answer rather than a verifiable claim")
-    if not cite_ok:
-        parts.append("proposer failed to cite valid evidence chunks")
-    if not replay_ok:
-        parts.append("replay diverged — answer is not deterministic")
-    if not entailed:
-        parts.append(f"judge rejected entailment (score={score:.2f})")
-    if entailed and score < 0.5:
-        parts.append(f"judge entailment score below threshold ({score:.2f} < 0.50)")
-    if not parts:
-        return (f"All channels pass: cited evidence, replay deterministic, "
-                f"judge entailment {score:.2f}.")
-    return "Rejected because: " + "; ".join(parts) + "."
-
-
-def _cert_id(decision: str, claim: str) -> str:
-    seed = f"{decision}:{claim}:{time.time()}".encode("utf-8")
-    return f"cert-{hashlib.sha256(seed).hexdigest()[:12]}"
+__all__ = [
+    "run_pcg_mas",          # NEW master entrypoint, rich SSE events
+    "run_pipeline",         # LEGACY backward-compat entrypoint
+    "run_raw_baseline",
+    "ChannelEvent",
+    "FinalCertificate",
+]

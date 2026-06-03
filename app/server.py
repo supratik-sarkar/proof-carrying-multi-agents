@@ -48,9 +48,11 @@ from pcg_glue.sources import (
     SUPPORTED_EXTENSIONS,
 )
 from pcg_glue.pipeline import (
-    run_pipeline, run_raw_baseline,
+    run_pcg_mas,                           # NEW master entrypoint
+    run_pipeline, run_raw_baseline,        # legacy (used by stress for the answer text)
     ChannelEvent, FinalCertificate,
 )
+from pcg_glue.schemas import SSEEventType
 from pcg_glue.attacks import all_attacks
 
 
@@ -181,7 +183,6 @@ async def upload(file: UploadFile = File(...)):
     """Accept a file from the browser, save to server-side temp, return path.
 
     The returned `file_path` is then passed back in the /api/run request body.
-    Streams the upload chunk-by-chunk so multi-GB files don't exhaust memory.
     """
     ext = Path(file.filename or "").suffix.lower()
     if ext not in SUPPORTED_EXTENSIONS:
@@ -190,40 +191,15 @@ async def upload(file: UploadFile = File(...)):
             f"Unsupported file type: {ext}. Supported: {', '.join(SUPPORTED_EXTENSIONS)}",
         )
 
-    # 10 GB hard cap (matches the UI message)
-    MAX_BYTES = 10 * 1024 * 1024 * 1024
-    CHUNK = 1024 * 1024  # 1 MB read window
-
+    # Random-ish name to avoid collisions, keep the extension
     safe_name = f"upload_{int(time.time() * 1000)}_{Path(file.filename).stem[:40]}{ext}"
     dest = UPLOAD_DIR / safe_name
-
-    total = 0
-    try:
-        with open(dest, "wb") as out:
-            while True:
-                chunk = await file.read(CHUNK)
-                if not chunk:
-                    break
-                total += len(chunk)
-                if total > MAX_BYTES:
-                    out.close()
-                    try:
-                        dest.unlink()
-                    except Exception:
-                        pass
-                    raise HTTPException(413, "File too large (10 GB max).")
-                out.write(chunk)
-    except HTTPException:
-        raise
-    except Exception as e:
-        try:
-            if dest.exists():
-                dest.unlink()
-        except Exception:
-            pass
-        raise HTTPException(500, f"upload write failed: {type(e).__name__}: {e}")
-
-    return {"file_path": str(dest), "size": total, "name": file.filename}
+    contents = await file.read()
+    # 25MB hard cap
+    if len(contents) > 25 * 1024 * 1024:
+        raise HTTPException(413, "File too large (25MB max).")
+    dest.write_bytes(contents)
+    return {"file_path": str(dest), "size": len(contents), "name": file.filename}
 
 
 # ---------------------------------------------------------------------------
@@ -254,10 +230,20 @@ def _sse(event_name: str, payload: dict) -> str:
 
 @app.post("/api/run")
 async def api_run(req: RunRequest):
-    """Stream channel events + final certificate over Server-Sent Events.
+    """Stream the full PCG-MAS pipeline as SSE.
 
-    The browser consumes this with `fetch().then(r => r.body.getReader())`
-    and dispatches each event into the SVG state machine.
+    Event types streamed to the browser (in order):
+      start            - cert_id, n_evidence, backend
+      evidence         - parsed evidence items
+      claim            - one per atomic claim extracted
+      channel          - pending then final per (claim, channel) pair (5 per claim)
+      claim_cert       - completed ClaimCertificate per claim
+      responsibility   - mask-and-replay report per accepted claim
+      audit_envelope   - one per channel (V_I / V_R / V_D / V_Ch / V_Cov)
+      risk             - the 4-action RiskDecision
+      certificate      - the top-level FullCertificate
+      done             - elapsed_ms
+      error            - on any pipeline crash
     """
     backend = choice_by_label(req.backend_label)
     if backend is None:
@@ -271,43 +257,17 @@ async def api_run(req: RunRequest):
         raise HTTPException(400, f"input error: {type(e).__name__}: {e}")
 
     async def gen():
-        # 1. Emit a 'start' frame
-        yield _sse("start", {
-            "claim": resolved.claim,
-            "source_kind": resolved.source_kind,
-            "source_label": resolved.source_label,
-            "n_evidence": len(resolved.evidence),
-        })
-
         try:
-            # The pipeline is a sync generator; we marshal it into async chunks.
-            # Each yield from run_pipeline becomes one SSE event.
-            for ev in run_pipeline(
+            # run_pcg_mas yields {event, data} dicts already shaped for SSE.
+            # We forward each one untouched.
+            for ev in run_pcg_mas(
                 resolved, backend, req.api_key,
-                replay_check=req.replay_check,
                 top_k_evidence=int(req.top_k),
+                do_responsibility=True,
+                do_envelopes=True,
+                do_redundancy=True,
             ):
-                if isinstance(ev, ChannelEvent):
-                    yield _sse("channel", {
-                        "channel": ev.channel,
-                        "state": ev.state,
-                        "verdict": ev.verdict,
-                        "detail": ev.detail,
-                        "elapsed_ms": ev.elapsed_ms,
-                    })
-                elif isinstance(ev, FinalCertificate):
-                    yield _sse("certificate", {
-                        "accepted": ev.accepted,
-                        "claim": ev.claim,
-                        "answer": ev.answer,
-                        "channels": ev.channels,
-                        "backend": ev.backend,
-                        "source": ev.source,
-                        "integrity_hash": ev.integrity_hash,
-                        "cert_id": ev.cert_id,
-                        "timestamp": ev.timestamp,
-                    })
-                # Yield control so the browser can render
+                yield _sse(ev["event"], ev["data"])
                 await asyncio.sleep(0)
         except Exception as e:
             yield _sse("error", {
@@ -337,8 +297,8 @@ async def api_run(req: RunRequest):
 @app.post("/api/stress_stream")
 async def api_stress_stream(req: RunRequest):
     """SSE-streaming stress test: emits one 'progress' event per completed
-    variant (1 ORIGINAL + 8 attacks = 9 total). The browser shows a live
-    progress bar + appends rows as they arrive."""
+    variant (1 ORIGINAL + 8 attacks = 9 total). Decision is derived from the
+    new pipeline's risk action: Answer -> accept, anything else -> reject."""
     backend = choice_by_label(req.backend_label)
     if backend is None:
         raise HTTPException(400, f"Unknown backend: {req.backend_label}")
@@ -362,31 +322,41 @@ async def api_stress_stream(req: RunRequest):
                               "model": backend.model_id})
         for idx, case in enumerate(cases):
             try:
-                final = None
-                for ev in run_pipeline(
+                cert = None
+                risk = None
+                # Run new pipeline; capture the final certificate + risk event
+                for ev in run_pcg_mas(
                     case["resolved"], backend, req.api_key,
-                    replay_check=False, top_k_evidence=int(req.top_k),
+                    top_k_evidence=int(req.top_k),
+                    do_responsibility=False,   # stress doesn't need responsibility
+                    do_envelopes=False,        # nor envelopes
+                    do_redundancy=False,
                 ):
-                    if isinstance(ev, FinalCertificate):
-                        final = ev
+                    if ev["event"] == "risk":
+                        risk = ev["data"]
+                    elif ev["event"] == "certificate":
+                        cert = ev["data"]
                         break
-                if final is None:
+                if cert is None:
                     row = {"attack": case["name"], "description": case["description"],
-                           "decision": "error", "rationale": "(no certificate)"}
+                           "decision": "error", "rationale": "(no certificate)",
+                           "risk_action": "Refuse"}
                 else:
+                    risk_action = (risk or {}).get("action", "Refuse")
                     row = {
                         "attack": case["name"],
                         "description": case["description"],
-                        "decision": "accept" if final.accepted else "reject",
-                        "rationale": final.channels.get("V_entail", {})
-                                                  .get("rationale", "")[:240],
-                        "judge_score": (final.channels.get("V_gamma", {}) or {})
-                                                     .get("score", None),
+                        "decision": "accept" if cert.get("accepted") else "reject",
+                        "risk_action": risk_action,
+                        "rationale": (risk or {}).get("summary", "")[:240],
+                        "posterior_risk": (risk or {}).get("posterior_risk"),
+                        "dominant_failure": (risk or {}).get("dominant_failure_channel"),
                     }
             except Exception as e:
                 row = {"attack": case["name"], "description": case["description"],
                        "decision": "error",
-                       "rationale": f"{type(e).__name__}: {str(e)[:200]}"}
+                       "rationale": f"{type(e).__name__}: {str(e)[:200]}",
+                       "risk_action": "Refuse"}
 
             yield _sse("progress", {
                 "index": idx + 1,
@@ -415,6 +385,7 @@ async def api_stress_stream(req: RunRequest):
 
 @app.post("/api/stress")
 async def api_stress(req: RunRequest):
+    """Non-streaming variant of stress: same logic, single JSON payload at end."""
     backend = choice_by_label(req.backend_label)
     if backend is None:
         raise HTTPException(400, f"Unknown backend: {req.backend_label}")
@@ -434,34 +405,41 @@ async def api_stress(req: RunRequest):
     out = []
     for case in cases:
         try:
-            final = None
-            for ev in run_pipeline(
+            cert = None
+            risk = None
+            for ev in run_pcg_mas(
                 case["resolved"], backend, req.api_key,
-                replay_check=False, top_k_evidence=int(req.top_k),
+                top_k_evidence=int(req.top_k),
+                do_responsibility=False, do_envelopes=False, do_redundancy=False,
             ):
-                if isinstance(ev, FinalCertificate):
-                    final = ev
+                if ev["event"] == "risk":
+                    risk = ev["data"]
+                elif ev["event"] == "certificate":
+                    cert = ev["data"]
                     break
-            if final is None:
+            if cert is None:
                 out.append({
                     "attack": case["name"], "description": case["description"],
                     "decision": "error", "rationale": "(no certificate)",
+                    "risk_action": "Refuse",
                 })
             else:
+                risk_action = (risk or {}).get("action", "Refuse")
                 out.append({
                     "attack": case["name"],
                     "description": case["description"],
-                    "decision": "accept" if final.accepted else "reject",
-                    "rationale": final.channels.get("V_entail", {})
-                                              .get("rationale", "")[:240],
-                    "judge_score": (final.channels.get("V_gamma", {}) or {})
-                                                 .get("score", None),
+                    "decision": "accept" if cert.get("accepted") else "reject",
+                    "risk_action": risk_action,
+                    "rationale": (risk or {}).get("summary", "")[:240],
+                    "posterior_risk": (risk or {}).get("posterior_risk"),
+                    "dominant_failure": (risk or {}).get("dominant_failure_channel"),
                 })
         except Exception as e:
             out.append({
                 "attack": case["name"], "description": case["description"],
                 "decision": "error",
                 "rationale": f"{type(e).__name__}: {str(e)[:200]}",
+                "risk_action": "Refuse",
             })
 
     # Clean up upload if any
@@ -482,6 +460,9 @@ async def api_stress(req: RunRequest):
 
 @app.post("/api/sidebyside")
 async def api_sidebyside(req: RunRequest):
+    """Raw LLM vs PCG-MAS side-by-side. PCG side now returns the full
+    risk decision + per-channel envelopes so the Results tab can show
+    both answers AND the verification overhead in tokens."""
     backend = choice_by_label(req.backend_label)
     if backend is None:
         raise HTTPException(400, f"Unknown backend: {req.backend_label}")
@@ -497,33 +478,77 @@ async def api_sidebyside(req: RunRequest):
     # Raw baseline
     try:
         raw_text, raw_meta = run_raw_baseline(resolved, backend, req.api_key)
-        out["raw"] = {
-            "answer": raw_text,
-            "meta": raw_meta,
-        }
+        out["raw"] = {"answer": raw_text, "meta": raw_meta}
     except Exception as e:
         out["raw"] = {"error": f"{type(e).__name__}: {e}"}
 
-    # PCG-MAS
+    # PCG-MAS via new pipeline
     try:
-        final = None
-        for ev in run_pipeline(
+        cert = None
+        risk = None
+        envelopes: list = []
+        for ev in run_pcg_mas(
             resolved, backend, req.api_key,
-            replay_check=False, top_k_evidence=int(req.top_k),
+            top_k_evidence=int(req.top_k),
+            do_responsibility=False,
+            do_envelopes=True,
+            do_redundancy=True,
         ):
-            if isinstance(ev, FinalCertificate):
-                final = ev
+            if ev["event"] == "risk":
+                risk = ev["data"]
+            elif ev["event"] == "audit_envelope":
+                envelopes.append(ev["data"])
+            elif ev["event"] == "certificate":
+                cert = ev["data"]
                 break
-        if final is None:
+        if cert is None:
             out["pcg"] = {"error": "no certificate produced"}
         else:
+            # Build compact per-claim summaries for the Results-tab attribution
+            # list. Each entry carries everything the frontend needs to render
+            # the channel strip and the "supported by <evidence>" line, without
+            # shipping the full FullCertificate over the wire.
+            claim_certs = cert.get("claim_certificates") or []
+            evidence_index = {e.get("id"): e for e in (cert.get("evidence") or [])}
+            attribution = []
+            for cc in claim_certs:
+                ch = cc.get("channels") or {}
+                claim = cc.get("claim") or {}
+                supports = []
+                for eid in (claim.get("support_ids") or []):
+                    ev_item = evidence_index.get(eid) or {}
+                    supports.append({
+                        "id": eid,
+                        "source": ev_item.get("source") or "evidence",
+                        "snippet": (ev_item.get("text") or "")[:160],
+                    })
+                attribution.append({
+                    "claim_id":   claim.get("claim_id"),
+                    "claim_text": claim.get("claim_text"),
+                    "accepted":   cc.get("accepted"),
+                    "integrity_hash": (cc.get("integrity_hash") or "")[:24],
+                    "channels": {
+                        ch_name: {"state": (ch.get(ch_name) or {}).get("state", "idle")}
+                        for ch_name in ("V_I", "V_R", "V_D", "V_Ch", "V_Cov")
+                    },
+                    "supports": supports,
+                })
+
             out["pcg"] = {
-                "accepted": final.accepted,
-                "answer": final.answer,
-                "rationale": final.channels.get("V_entail", {}).get("rationale", ""),
-                "cert_id": final.cert_id,
-                "integrity_hash": final.integrity_hash,
-                "judge_score": (final.channels.get("V_gamma", {}) or {}).get("score"),
+                "accepted": cert.get("accepted"),
+                "answer": cert.get("answer_final") or cert.get("answer_draft"),
+                "rationale": (risk or {}).get("summary", ""),
+                "risk_action": (risk or {}).get("action"),
+                "posterior_risk": (risk or {}).get("posterior_risk"),
+                "dominant_failure": (risk or {}).get("dominant_failure_channel"),
+                "cert_id": (cert.get("meta") or {}).get("cert_id"),
+                "integrity_hash": cert.get("integrity_hash"),
+                "tokens_total": (cert.get("meta") or {}).get("tokens_total", 0),
+                "envelopes": envelopes,
+                "n_claims": len(claim_certs),
+                "n_accepted": sum(1 for c in claim_certs if c.get("accepted")),
+                "n_evidence": len(evidence_index),
+                "attribution": attribution,
             }
     except Exception as e:
         out["pcg"] = {"error": f"{type(e).__name__}: {e}"}
