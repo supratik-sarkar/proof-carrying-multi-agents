@@ -1,0 +1,19 @@
+\begin{table}[!ht]
+\centering
+\caption{\small Replay, drift, and coverage decomposition under snapshot and fresh modes. Drift is counted when snapshot replay passes but fresh replay no longer matches the committed snapshot.}
+\label{tab:replay_drift_covgap}
+\scriptsize
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{l|ccc|ccc}
+\toprule
+Cell & Replay clean & Drift clean & CovGap clean & Replay fresh & Drift fresh & CovGap fresh \\
+\midrule
+\texttt{phi-3.5-mini} / \texttt{FEVER} & 0.010 & 0.009 & 0.021 & 0.014 & 0.045 & 0.027 \\
+\texttt{qwen2.5-7B} / \texttt{HotpotQA} & 0.010 & 0.008 & 0.021 & 0.016 & 0.046 & 0.027 \\
+\texttt{Llama-3.1-8B} / \texttt{PubMedQA} & 0.011 & 0.008 & 0.018 & 0.014 & 0.055 & 0.021 \\
+\texttt{Gemma-2-9b-it} / \texttt{TAT-QA} & 0.009 & 0.007 & 0.019 & 0.013 & 0.045 & 0.022 \\
+\texttt{Llama-3.3-70B} / \texttt{ToolBench} & 0.010 & 0.007 & 0.022 & 0.014 & 0.051 & 0.026 \\
+\texttt{deepseek-v3} / \texttt{WebLINX} & 0.012 & 0.008 & 0.021 & 0.016 & 0.052 & 0.027 \\
+\bottomrule
+\end{tabular}}
+\end{table}

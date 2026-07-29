@@ -1,0 +1,16 @@
+version: v4.2-canonical-
+provenance: _
+metrics:
+ accepted_harm:
+ numerator: accepted_and_harmful
+ denominator: accepted
+ control_coverage:
+ numerator: pcg_accepted
+ denominator: eligible_examples
+ audit_coverage:
+ numerator: audited_observed_bad_accepts
+ denominator: observed_bad_accepts
+ safety_gain:
+ formula: harm_nocert / harm_pcg
+ responsibility_lift:
+ formula: resp_at_1_pcg - resp_at_1_shield

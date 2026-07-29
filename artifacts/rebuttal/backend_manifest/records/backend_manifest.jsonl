@@ -1,0 +1,1 @@
+{"model_id": "phi-3.5-mini", "revision": "rev-001", "tokenizer_id": "phi-tok", "backend_type": "vllm", "provider_route": "local", "dtype": "float16", "quantization": "none", "decoding_config": {"temp": 0.0}, "prompt_hash": "a1b2c3d4", "seed": 0}

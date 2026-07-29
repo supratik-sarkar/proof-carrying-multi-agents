@@ -1,0 +1,23 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize Separating witnesses. Each family fails exactly one PCG-MAS channel and passes the other three; baseline verdicts illustrate non-redundancy.}
+\label{tab:rebuttal_separating_witnesses}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llccccccccc}
+\toprule
+Family & Target & $V_H$ & $V_{\Pi}$ & $V_{\Gamma}$ & $V_{\vdash}$ & Citation & Shield & AgentRR & VERIMAP & PCG-MAS \\
+\midrule
+$\mathcal{W}_H$ & $V_H$ & Fail & Pass & Pass & Pass & Accept & Accept & Block & Accept & \textbf{Block} \\
+$\mathcal{W}_{\Pi}$ & $V_{\Pi}$ & Pass & Fail & Pass & Pass & Accept & Accept & Block & Block & \textbf{Block} \\
+$\mathcal{W}_{\Gamma}$ & $V_{\Gamma}$ & Pass & Pass & Fail & Pass & Accept & Block & Accept & Block & \textbf{Block} \\
+$\mathcal{W}_{\vdash}$ & $V_{\vdash}$ & Pass & Pass & Pass & Fail & Block & Accept & Accept & Block & \textbf{Block} \\
+\bottomrule
+\end{tabular}}
+\end{table*}

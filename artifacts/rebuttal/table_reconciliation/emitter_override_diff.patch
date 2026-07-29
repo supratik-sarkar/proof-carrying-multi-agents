@@ -1,0 +1,7 @@
+--- legacy_emitter.py
++++ canonical_emitter.py
+@@
+- safety_gain = 14.3
+- responsibility_lift = 20.0
++ safety_gain = canonical_metrics.safety_gain(record)
++ responsibility_lift = canonical_metrics.responsibility_lift(record)

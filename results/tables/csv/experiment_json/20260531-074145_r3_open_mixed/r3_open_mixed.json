@@ -1,0 +1,1552 @@
+{
+  "run_id": "20260531-074145_r3_open_mixed",
+  "results": [
+    {
+      "dataset": "weblinx",
+      "model": "deepseek-v3",
+      "seed": 1,
+      "n_examples": 31,
+      "open_set": {
+        "dataset": "weblinx",
+        "model": "deepseek-v3",
+        "regime": "action_replay",
+        "records": [
+          {
+            "example_id": "weblinx_0",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "33b99ccd4e2148b1",
+                "resp": 1.0
+              },
+              {
+                "component_id": "5801e004a7104eff",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "33b99ccd4e2148b1",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "2ba19118b7304b6b"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_1",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "b1a67bead66f4d17",
+                "resp": 1.0
+              },
+              {
+                "component_id": "c9eb9788c3fa4364",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "b1a67bead66f4d17",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "d677639171414aa3"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_2",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "b236a851e4374f57",
+                "resp": 1.0
+              },
+              {
+                "component_id": "fdf34897d46742ef",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "b236a851e4374f57",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "5c0109e9c0e14a72"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_3",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "fc41853d97ad4b27",
+                "resp": 0.0
+              },
+              {
+                "component_id": "a11bdf91478e4a4f",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "fc41853d97ad4b27",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "89327218fc6449ec"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_4",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "0ab82b79aa3c46c7",
+                "resp": 1.0
+              },
+              {
+                "component_id": "a6a4e09c479a41e0",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "0ab82b79aa3c46c7",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "004067eb9f394006"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_5",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "dff6b2bcbe4a4c64",
+                "resp": 0.0
+              },
+              {
+                "component_id": "b4326af114774980",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "dff6b2bcbe4a4c64",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "94352ba888354852"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_6",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "165636f574294c53",
+                "resp": 1.0
+              },
+              {
+                "component_id": "745f6175b2d042b6",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "165636f574294c53",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "20166b5aecf14584"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_7",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "2a1bd0bba2b743b9",
+                "resp": 0.0
+              },
+              {
+                "component_id": "2ac5a3563f724ba1",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "2a1bd0bba2b743b9",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "4b9baa888dd44ec9"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_8",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "bd3fc078642f4170",
+                "resp": 1.0
+              },
+              {
+                "component_id": "bda2d24775594ddd",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "bd3fc078642f4170",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "b7695e05f19448f6"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_9",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "112426e8987a4039",
+                "resp": 1.0
+              },
+              {
+                "component_id": "5557fcaaa73b43e9",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "112426e8987a4039",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "8f2d607ae0534258"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_10",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "130a6a3c3f7b4108",
+                "resp": 0.0
+              },
+              {
+                "component_id": "b4b99713e46b431a",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "130a6a3c3f7b4108",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "980d684db8a045d3"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_11",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "75262a2f5b704d7f",
+                "resp": 1.0
+              },
+              {
+                "component_id": "7669f459e3d742d8",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "75262a2f5b704d7f",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "964fb300c06f4285"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_12",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "59f860ed82c74934",
+                "resp": 0.0
+              },
+              {
+                "component_id": "d0b0bcfde90b49ff",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "59f860ed82c74934",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "ff0af5be4e4c406d"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_13",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "2d72b526b14e4575",
+                "resp": 0.0
+              },
+              {
+                "component_id": "d23bec4fb9d448ef",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "2d72b526b14e4575",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "ef6bffce76ec40e0"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_14",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "582b9f44597a4d9b",
+                "resp": 0.0
+              },
+              {
+                "component_id": "bd5f8e84c5364211",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "582b9f44597a4d9b",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "4e9e34b4bb9a44bd"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_15",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "42d7158dc9dc4e12",
+                "resp": 0.0
+              },
+              {
+                "component_id": "455d57c6831e471b",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "42d7158dc9dc4e12",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "b037f4b4ce864ec6"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_16",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "9fea3c31cc3942bc",
+                "resp": 0.0
+              },
+              {
+                "component_id": "a16ba845e6994390",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "9fea3c31cc3942bc",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "47885647d6b14dd5"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_17",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "16bb245a7548435e",
+                "resp": 0.0
+              },
+              {
+                "component_id": "21af86f8ac48437c",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "16bb245a7548435e",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "54e13741b8b94a51"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_18",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "ce9b91300ad74391",
+                "resp": 1.0
+              },
+              {
+                "component_id": "fbc26516ebc44e84",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "ce9b91300ad74391",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "31f949cd81234b0b"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_19",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "75e5782d3d734189",
+                "resp": 1.0
+              },
+              {
+                "component_id": "c04918a0e8b344aa",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "75e5782d3d734189",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "cfe52f1539be4fb2"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_20",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "55624c35e9544acc",
+                "resp": 1.0
+              },
+              {
+                "component_id": "f0b3c680dd504cb0",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "55624c35e9544acc",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "0e5b8cfbf116497e"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_21",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "13ffdbe5a8c34fc5",
+                "resp": 1.0
+              },
+              {
+                "component_id": "4a8e0f57627b4dc5",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "13ffdbe5a8c34fc5",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "2d2a51b379614087"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_22",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "f1089911c1ea4632",
+                "resp": 0.0
+              },
+              {
+                "component_id": "7db8065d0d124be8",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "f1089911c1ea4632",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "d567265c5ecf4a2e"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_23",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "1fda5e81ecfa402f",
+                "resp": 1.0
+              },
+              {
+                "component_id": "9439e01dbddb4aa0",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "1fda5e81ecfa402f",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "8e888a1c3efd4245"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_24",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "dbcdd08a20f24889",
+                "resp": 0.0
+              },
+              {
+                "component_id": "bd5a3ccdc8424185",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "dbcdd08a20f24889",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "f8a237e77aa54bed"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_25",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "bf178a19977e4690",
+                "resp": 1.0
+              },
+              {
+                "component_id": "fae8e14bcb4043ac",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "bf178a19977e4690",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "fc2a909639d54cba"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_26",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "6de7c159926a47d7",
+                "resp": 1.0
+              },
+              {
+                "component_id": "2136f9d30d84425a",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "6de7c159926a47d7",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "24042158a27f47f3"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_27",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "b25b30f2a31a4c04",
+                "resp": 0.0
+              },
+              {
+                "component_id": "1f774e5aac8a4603",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "b25b30f2a31a4c04",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "824080455e764f32"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_28",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "c3f71d37b6df4bb9",
+                "resp": 0.0
+              },
+              {
+                "component_id": "41e491e8db1b40ec",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "c3f71d37b6df4bb9",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "cd150ab8c84241bf"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_29",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "80828e8e9fb344d6",
+                "resp": 1.0
+              },
+              {
+                "component_id": "a95c965aad5342a2",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "80828e8e9fb344d6",
+            "top1_resp": 1.0,
+            "top1_margin": 1.0,
+            "targets": [
+              "cd83e183aee2452e"
+            ],
+            "unknown_correct": false,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_30",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "9a821823c60c4e84",
+                "resp": 0.0
+              },
+              {
+                "component_id": "6b20e67040a04b92",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "9a821823c60c4e84",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "bb01a2ee79ea40db"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          }
+        ]
+      },
+      "mixed_channel": {
+        "dataset": "weblinx",
+        "model": "deepseek-v3",
+        "regime": "mixed_channel",
+        "records": [
+          {
+            "example_id": "weblinx_0",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "8f576a74f8124354",
+                "resp": 0.0
+              },
+              {
+                "component_id": "980bcf66c62c4cdf",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "8f576a74f8124354",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "8f576a74f8124354",
+              "4242d9e85bda4dc9"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_1",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "7769344870de4bff",
+                "resp": 0.0
+              },
+              {
+                "component_id": "cae706c816d04bcb",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "7769344870de4bff",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "7769344870de4bff",
+              "95369191a5e94eae"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_2",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "fb8552c79cf0493c",
+                "resp": 0.0
+              },
+              {
+                "component_id": "b00428f970224507",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "fb8552c79cf0493c",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "fb8552c79cf0493c",
+              "11ae2ba62ee94920"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_3",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "747cf28a44d344a2",
+                "resp": 0.0
+              },
+              {
+                "component_id": "36be2288934a4852",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "747cf28a44d344a2",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "747cf28a44d344a2",
+              "867571b242ad4fdf"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_4",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "33f8466b47604e44",
+                "resp": 0.0
+              },
+              {
+                "component_id": "b6e15c4894f541c0",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "33f8466b47604e44",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "33f8466b47604e44",
+              "c3bc1e4d2f3d42d4"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_5",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "a367ec8138524491",
+                "resp": 0.0
+              },
+              {
+                "component_id": "447e875dd2f44521",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "a367ec8138524491",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "a367ec8138524491",
+              "cf8717f8a60c4713"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_6",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "8a48495ee1b14f53",
+                "resp": 0.0
+              },
+              {
+                "component_id": "b9fce9bacb294613",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "8a48495ee1b14f53",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "8a48495ee1b14f53",
+              "5847e1a519124cb4"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_7",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "c61c377dce494635",
+                "resp": 0.0
+              },
+              {
+                "component_id": "017db891fb694c64",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "c61c377dce494635",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "c61c377dce494635",
+              "1bf23b7d9ebe409f"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_8",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "b954222dbac24fbc",
+                "resp": 0.0
+              },
+              {
+                "component_id": "2cdb7919b9b149a8",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "b954222dbac24fbc",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "b954222dbac24fbc",
+              "e330ba5b9a6a4559"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_9",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "0dffb5098cf4418b",
+                "resp": 0.0
+              },
+              {
+                "component_id": "b73ba0fe96c3454a",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "0dffb5098cf4418b",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "0dffb5098cf4418b",
+              "c43384a7650c4ad3"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_10",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "55f1193c2d054099",
+                "resp": 0.0
+              },
+              {
+                "component_id": "bd435ef5f5e84954",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "55f1193c2d054099",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "55f1193c2d054099",
+              "a89abd93c45342e2"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_11",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "108c7fec63604bb7",
+                "resp": 0.0
+              },
+              {
+                "component_id": "131380b395034169",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "108c7fec63604bb7",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "108c7fec63604bb7",
+              "ad618145deaf4598"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_12",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "a37dfaf038b1433a",
+                "resp": 0.0
+              },
+              {
+                "component_id": "40bc7638928d4660",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "a37dfaf038b1433a",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "a37dfaf038b1433a",
+              "af76605c5da64b73"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_13",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "a1587a9210e94a9c",
+                "resp": 0.0
+              },
+              {
+                "component_id": "77e475cb6dc3469d",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "a1587a9210e94a9c",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "a1587a9210e94a9c",
+              "6ec0a79248354ed2"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_14",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "fea5cd830bb24562",
+                "resp": 0.0
+              },
+              {
+                "component_id": "18f00b8ffd914711",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "fea5cd830bb24562",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "fea5cd830bb24562",
+              "8c024ed3f85149c3"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_15",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "f449336847654108",
+                "resp": 0.0
+              },
+              {
+                "component_id": "da88762196b34002",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "f449336847654108",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "f449336847654108",
+              "b1a75f3d5cad46a2"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_16",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "cec49b1a98c2461e",
+                "resp": 0.0
+              },
+              {
+                "component_id": "e800e8e627454d32",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "cec49b1a98c2461e",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "cec49b1a98c2461e",
+              "fc39b850cc2a424f"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_17",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "cfd66201c53e4c6c",
+                "resp": 0.0
+              },
+              {
+                "component_id": "6f8c3df88d584d03",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "cfd66201c53e4c6c",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "cfd66201c53e4c6c",
+              "07aa5153bc5f4ef8"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_18",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "20bbdd2f2fef4381",
+                "resp": 0.0
+              },
+              {
+                "component_id": "07b8c75059c84193",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "20bbdd2f2fef4381",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "20bbdd2f2fef4381",
+              "b975aca19f8c4392"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_19",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "7e410170efaf49ee",
+                "resp": 0.0
+              },
+              {
+                "component_id": "d4552ed7a3e94aa3",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "7e410170efaf49ee",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "7e410170efaf49ee",
+              "e3b8afe3b90b4dc1"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_20",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "e824e7a8742c49bc",
+                "resp": 0.0
+              },
+              {
+                "component_id": "61931e6a57d5478d",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "e824e7a8742c49bc",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "e824e7a8742c49bc",
+              "b4170df2466f451b"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_21",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "7ed2687ffbf446ea",
+                "resp": 0.0
+              },
+              {
+                "component_id": "7a4177c18d294d1e",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "7ed2687ffbf446ea",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "7ed2687ffbf446ea",
+              "25465a62c9ae4d48"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_22",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "25aec2123f93469b",
+                "resp": 0.0
+              },
+              {
+                "component_id": "64c6b077094c44e9",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "25aec2123f93469b",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "25aec2123f93469b",
+              "3cb1848048d1486c"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_23",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "87ee0dbeb6624934",
+                "resp": 0.0
+              },
+              {
+                "component_id": "70c0ee6473b44df9",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "87ee0dbeb6624934",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "87ee0dbeb6624934",
+              "be24efa51d544e3f"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_24",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "2e57f68be7f44e50",
+                "resp": 0.0
+              },
+              {
+                "component_id": "a6ab7fbe88944b80",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "2e57f68be7f44e50",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "2e57f68be7f44e50",
+              "4fac5967f0f14689"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_25",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "dff2416f03d04a0b",
+                "resp": 0.0
+              },
+              {
+                "component_id": "4505e9be599d4993",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "dff2416f03d04a0b",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "dff2416f03d04a0b",
+              "783b41d7afc64ed8"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_26",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "69a0c97b6ff04c6c",
+                "resp": 0.0
+              },
+              {
+                "component_id": "9e88a61460524560",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "69a0c97b6ff04c6c",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "69a0c97b6ff04c6c",
+              "8229a2aa33e149f8"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_27",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "90299b2ce94c4ec7",
+                "resp": 0.0
+              },
+              {
+                "component_id": "81004d56119d4fa5",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "90299b2ce94c4ec7",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "90299b2ce94c4ec7",
+              "f4c9ab9bb7484ec7"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_28",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "8b44372492f84c47",
+                "resp": 0.0
+              },
+              {
+                "component_id": "055b59a3074848e6",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "8b44372492f84c47",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "8b44372492f84c47",
+              "b1bb66ffbd6b45ec"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_29",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "2fc3ba44e73a4613",
+                "resp": 0.0
+              },
+              {
+                "component_id": "205cfb44087f41d8",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "2fc3ba44e73a4613",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "2fc3ba44e73a4613",
+              "59a72fa1157340c0"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "weblinx_30",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "a47bbb4ba08a4fe3",
+                "resp": 0.0
+              },
+              {
+                "component_id": "2264f9f5df774480",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "a47bbb4ba08a4fe3",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "a47bbb4ba08a4fe3",
+              "92ea077228e14a31"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          }
+        ]
+      },
+      "summary": {
+        "unknown_acc": 0.4838709677419355,
+        "n_open_examples": 31,
+        "multi_label_f1": 0.5,
+        "open_top2": 1.0,
+        "n_mixed_examples": 31
+      },
+      "source": "measured"
+    }
+  ]
+}

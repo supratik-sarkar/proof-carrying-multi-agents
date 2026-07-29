@@ -1,0 +1,78 @@
+{
+  "label": "tab:rebuttal_sv_decomposition",
+  "caption": "Exact selectivity/verification decomposition on paired examples. S is selection effect; V is verification effect on the same answered set.",
+  "rows": [
+    {
+      "Cell": "phi-3.5-mini/FEVER",
+      "N": 120,
+      "A": 100,
+      "NoCert all": "0.117",
+      "NoCert on A": "0.110",
+      "PCG on A": "0.040",
+      "S": "0.007",
+      "S CI": "[-0.020,0.036]",
+      "V": "0.070",
+      "V CI": "[0.030,0.125]"
+    },
+    {
+      "Cell": "qwen2.5-7B/HotpotQA",
+      "N": 120,
+      "A": 101,
+      "NoCert all": "0.158",
+      "NoCert on A": "0.139",
+      "PCG on A": "0.059",
+      "S": "0.020",
+      "S CI": "[-0.010,0.060]",
+      "V": "0.079",
+      "V CI": "[0.030,0.137]"
+    },
+    {
+      "Cell": "Llama-3.1-8B/PubMedQA",
+      "N": 120,
+      "A": 101,
+      "NoCert all": "0.075",
+      "NoCert on A": "0.079",
+      "PCG on A": "0.030",
+      "S": "-0.004",
+      "S CI": "[-0.020,0.017]",
+      "V": "0.050",
+      "V CI": "[0.010,0.097]"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/TAT-QA",
+      "N": 120,
+      "A": 101,
+      "NoCert all": "0.133",
+      "NoCert on A": "0.158",
+      "PCG on A": "0.119",
+      "S": "-0.025",
+      "S CI": "[-0.044,-0.011]",
+      "V": "0.040",
+      "V CI": "[0.009,0.079]"
+    },
+    {
+      "Cell": "Llama-3.3-70B/ToolBench",
+      "N": 120,
+      "A": 102,
+      "NoCert all": "0.133",
+      "NoCert on A": "0.137",
+      "PCG on A": "0.069",
+      "S": "-0.004",
+      "S CI": "[-0.025,0.023]",
+      "V": "0.069",
+      "V CI": "[0.021,0.122]"
+    },
+    {
+      "Cell": "deepseek-v3/WebLINX",
+      "N": 120,
+      "A": 102,
+      "NoCert all": "0.133",
+      "NoCert on A": "0.127",
+      "PCG on A": "0.069",
+      "S": "0.006",
+      "S CI": "[-0.018,0.038]",
+      "V": "0.059",
+      "V CI": "[0.019,0.106]"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "copied_figures": [
+    "results/figures/intro_hero_v4.pdf",
+    "results/figures/intro_hero_v4.png",
+    "results/figures/appendix_hero_v4.pdf",
+    "results/figures/appendix_hero_v4.png"
+  ],
+  "copied_tables": [],
+  "missing_figures": [],
+  "missing_tables": [],
+  "note": "Built after overlaying AgentRR artifacts. Only intro_hero_v4 and appendix_hero_v4 are copied so existing main/optional figures and tables are preserved."
+}

@@ -1,0 +1,441 @@
+[
+  {
+    "R1_accept_rate": {
+      "mean": 0.5,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_block_rate": {
+      "mean": 0.5,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_false_accept_proxy_rate_among_known": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_verify_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_accept_n": {
+      "mean": 9.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_block_n": {
+      "mean": 9.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_verify_n": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_mean_decision_flips_per_record": {
+      "mean": 0.5,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_total_decision_flips": {
+      "mean": 9.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_mean_s": {
+      "mean": 2.5269994338353476,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_total_s": {
+      "mean": 45.485989809036255,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_tokens_est_total": {
+      "mean": 2920.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "audit_coverage_of_observed_bad_accepts": {
+      "mean": 0.5499999999999999,
+      "n": 1,
+      "std": 0.0
+    },
+    "backend_mode": [
+      "openai"
+    ],
+    "baseline": "agentrr_style_record_replay_adapter",
+    "dataset": "fever",
+    "harm_under_corruption": {
+      "mean": 0.7600000000000001,
+      "n": 1,
+      "std": 0.0
+    },
+    "implementation_note": "AgentRR-style record/replay adapter over PCG-MAS baseline records; official MobiAgent/agent_rr source is kept in isolated scratch, but native mobile task runner is not used for QA cells.",
+    "method": "agentrr",
+    "model": "phi-3.5-mini",
+    "num_seeds": 1,
+    "seeds": [
+      0
+    ],
+    "summary_files": [
+      "./results/baselines/agentrr/r1_r5/fever__phi-3-5-mini__seed0__n18__openai/summary.json"
+    ]
+  },
+  {
+    "R1_accept_rate": {
+      "mean": 0.7,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_block_rate": {
+      "mean": 0.30000000000000004,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_false_accept_proxy_rate_among_known": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_verify_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_accept_n": {
+      "mean": 42.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_block_n": {
+      "mean": 18.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_verify_n": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_mean_decision_flips_per_record": {
+      "mean": 0.3,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_total_decision_flips": {
+      "mean": 18.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_mean_s": {
+      "mean": 2.5259878635406494,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_total_s": {
+      "mean": 151.55927181243896,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_tokens_est_total": {
+      "mean": 68968.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "audit_coverage_of_observed_bad_accepts": {
+      "mean": 0.8349999999999995,
+      "n": 1,
+      "std": 0.0
+    },
+    "backend_mode": [
+      "openai"
+    ],
+    "baseline": "agentrr_style_record_replay_adapter",
+    "dataset": "hotpotqa",
+    "harm_under_corruption": {
+      "mean": 0.34,
+      "n": 1,
+      "std": 0.0
+    },
+    "implementation_note": "AgentRR-style record/replay adapter over PCG-MAS baseline records; official MobiAgent/agent_rr source is kept in isolated scratch, but native mobile task runner is not used for QA cells.",
+    "method": "agentrr",
+    "model": "phi-3.5-mini",
+    "num_seeds": 1,
+    "seeds": [
+      0
+    ],
+    "summary_files": [
+      "./results/baselines/agentrr/r1_r5/hotpotqa__phi-3-5-mini__seed0__n60__openai/summary.json"
+    ]
+  },
+  {
+    "R1_accept_rate": {
+      "mean": 0.6666666666666666,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_block_rate": {
+      "mean": 0.33333333333333337,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_false_accept_proxy_rate_among_known": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_verify_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_accept_n": {
+      "mean": 12.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_block_n": {
+      "mean": 6.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_verify_n": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_mean_decision_flips_per_record": {
+      "mean": 0.3333333333333333,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_total_decision_flips": {
+      "mean": 6.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_mean_s": {
+      "mean": 2.1005578305986194,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_total_s": {
+      "mean": 37.81004095077515,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_tokens_est_total": {
+      "mean": 24195.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "audit_coverage_of_observed_bad_accepts": {
+      "mean": 0.8000000000000003,
+      "n": 1,
+      "std": 0.0
+    },
+    "backend_mode": [
+      "openai"
+    ],
+    "baseline": "agentrr_style_record_replay_adapter",
+    "dataset": "hotpotqa",
+    "harm_under_corruption": {
+      "mean": 0.5,
+      "n": 1,
+      "std": 0.0
+    },
+    "implementation_note": "AgentRR-style record/replay adapter over PCG-MAS baseline records; official MobiAgent/agent_rr source is kept in isolated scratch, but native mobile task runner is not used for QA cells.",
+    "method": "agentrr",
+    "model": "qwen2.5-7b",
+    "num_seeds": 1,
+    "seeds": [
+      0
+    ],
+    "summary_files": [
+      "./results/baselines/agentrr/r1_r5/hotpotqa__qwen2-5-7b__seed0__n18__openai/summary.json"
+    ]
+  },
+  {
+    "R1_accept_rate": {
+      "mean": 0.36989247311827955,
+      "n": 2,
+      "std": 0.10322580645161292
+    },
+    "R1_block_rate": {
+      "mean": 0.6301075268817204,
+      "n": 2,
+      "std": 0.10322580645161294
+    },
+    "R1_false_accept_proxy_rate_among_known": {
+      "mean": 0.11666666666666667,
+      "n": 2,
+      "std": 0.11666666666666667
+    },
+    "R1_verify_rate": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "R2_quorum_accept_n": {
+      "mean": 68.0,
+      "n": 2,
+      "std": 20.0
+    },
+    "R2_quorum_block_n": {
+      "mean": 115.0,
+      "n": 2,
+      "std": 17.0
+    },
+    "R2_quorum_verify_n": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "R3_mean_decision_flips_per_record": {
+      "mean": 0.6301075268817204,
+      "n": 2,
+      "std": 0.10322580645161289
+    },
+    "R3_total_decision_flips": {
+      "mean": 115.0,
+      "n": 2,
+      "std": 17.0
+    },
+    "R5_latency_mean_s": {
+      "mean": 1.4122614990212157,
+      "n": 2,
+      "std": 0.1547289255058466
+    },
+    "R5_latency_total_s": {
+      "mean": 257.97966754436493,
+      "n": 2,
+      "std": 24.078608870506287
+    },
+    "R5_tokens_est_total": {
+      "mean": 182824.5,
+      "n": 2,
+      "std": 158229.5
+    },
+    "audit_coverage_of_observed_bad_accepts": {
+      "mean": 0.6421274961597542,
+      "n": 2,
+      "std": 0.06593701996927803
+    },
+    "backend_mode": [
+      "openai"
+    ],
+    "baseline": "agentrr_style_record_replay_adapter",
+    "dataset": "toolbench",
+    "harm_under_corruption": {
+      "mean": 0.6961075268817205,
+      "n": 2,
+      "std": 0.20255913978494627
+    },
+    "implementation_note": "AgentRR-style record/replay adapter over PCG-MAS baseline records; official MobiAgent/agent_rr source is kept in isolated scratch, but native mobile task runner is not used for QA cells.",
+    "method": "agentrr",
+    "model": "llama-3.3-70b",
+    "num_seeds": 2,
+    "seeds": [
+      0,
+      1
+    ],
+    "summary_files": [
+      "./results/baselines/agentrr/r1_r5/toolbench__llama-3-3-70b__seed0__n180__openai/summary.json",
+      "./results/baselines/agentrr/r1_r5/toolbench__llama-3-3-70b__seed1__n186__openai/summary.json"
+    ]
+  },
+  {
+    "R1_accept_rate": {
+      "mean": 0.5240143369175627,
+      "n": 2,
+      "std": 0.03512544802867382
+    },
+    "R1_block_rate": {
+      "mean": 0.4759856630824373,
+      "n": 2,
+      "std": 0.03512544802867379
+    },
+    "R1_false_accept_proxy_rate_among_known": {
+      "mean": 0.1388888888888889,
+      "n": 2,
+      "std": 0.1388888888888889
+    },
+    "R1_verify_rate": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "R2_quorum_accept_n": {
+      "mean": 96.0,
+      "n": 2,
+      "std": 8.0
+    },
+    "R2_quorum_block_n": {
+      "mean": 87.0,
+      "n": 2,
+      "std": 5.0
+    },
+    "R2_quorum_verify_n": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "R3_mean_decision_flips_per_record": {
+      "mean": 0.4759856630824373,
+      "n": 2,
+      "std": 0.03512544802867382
+    },
+    "R3_total_decision_flips": {
+      "mean": 87.0,
+      "n": 2,
+      "std": 5.0
+    },
+    "R5_latency_mean_s": {
+      "mean": 1.3078739254491731,
+      "n": 2,
+      "std": 0.010260238036459923
+    },
+    "R5_latency_total_s": {
+      "mean": 239.3101476430893,
+      "n": 2,
+      "std": 2.045998215675354
+    },
+    "R5_tokens_est_total": {
+      "mean": 55920.0,
+      "n": 2,
+      "std": 34774.0
+    },
+    "audit_coverage_of_observed_bad_accepts": {
+      "mean": 0.4390967741935484,
+      "n": 2,
+      "std": 0.2850967741935484
+    },
+    "backend_mode": [
+      "openai"
+    ],
+    "baseline": "agentrr_style_record_replay_adapter",
+    "dataset": "weblinx",
+    "harm_under_corruption": {
+      "mean": 0.7661290322580645,
+      "n": 2,
+      "std": 0.17387096774193544
+    },
+    "implementation_note": "AgentRR-style record/replay adapter over PCG-MAS baseline records; official MobiAgent/agent_rr source is kept in isolated scratch, but native mobile task runner is not used for QA cells.",
+    "method": "agentrr",
+    "model": "deepseek-v3",
+    "num_seeds": 2,
+    "seeds": [
+      0,
+      1
+    ],
+    "summary_files": [
+      "./results/baselines/agentrr/r1_r5/weblinx__deepseek-v3__seed0__n180__openai/summary.json",
+      "./results/baselines/agentrr/r1_r5/weblinx__deepseek-v3__seed1__n186__openai/summary.json"
+    ]
+  }
+]

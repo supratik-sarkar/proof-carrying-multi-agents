@@ -1,0 +1,17 @@
+{
+  "audit_coverage_mean": 0.4077777777777778,
+  "audit_coverage_on_bad_accepts": 0.9,
+  "harm_under_corruption_max": 0.9,
+  "harm_under_corruption_mean": 0.7646666666666667,
+  "invalid_response_rate": 0.0,
+  "json_parse_success_rate": 1.0,
+  "json_repair_rate": 0.0,
+  "stress_suite_used": [
+    "clean_plan",
+    "drop_support_step",
+    "contradict_verification_criterion",
+    "insert_distractor_step",
+    "shuffle_plan_context",
+    "answer_evidence_mismatch"
+  ]
+}

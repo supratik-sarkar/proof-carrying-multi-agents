@@ -1,0 +1,29 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table}[!ht]
+\centering
+\caption{\footnotesize MODELLED SCENARIO ANALYSIS. Privacy-budgeted certificate sharing under hand-specified communication and DP-noise parameters.}
+\label{tab:r4_privacy}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{ccccc}
+\toprule
+$B_{\mathrm{info}}$ & $\eta$ & Utility & Harm & Leakage AUC \\
+\midrule
+32 & 0.00 & 0.717 & 0.090 & 0.746 \\
+32 & 0.18 & 0.684 & 0.104 & 0.652 \\
+64 & 0.00 & 0.732 & 0.085 & 0.731 \\
+64 & 0.18 & 0.700 & 0.099 & 0.638 \\
+128 & 0.00 & 0.757 & 0.077 & 0.702 \\
+128 & 0.18 & 0.725 & 0.091 & 0.609 \\
+256 & 0.00 & 0.788 & 0.066 & 0.645 \\
+\textbf{256} & \textbf{0.18} & \textbf{0.756} & \textbf{0.079} & \textbf{0.551} \\
+\bottomrule
+\end{tabular}}
+\vspace{0.25em}
+\parbox{0.98\linewidth}{\footnotesize Bold marks an illustrative balanced point. Coefficients are chosen, not fitted.}
+\end{table}

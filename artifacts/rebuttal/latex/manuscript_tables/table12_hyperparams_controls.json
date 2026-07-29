@@ -1,0 +1,51 @@
+{
+  "label": "tab:hyperparams_controls",
+  "caption": "Hyperparameters and evaluation controls for R1--R5. This protocol table is preserved rather than regenerated from outcomes.",
+  "rows": [
+    {
+      "Parameter": "Models",
+      "Value": "7 canonical backends",
+      "Freeze stage": "before execution"
+    },
+    {
+      "Parameter": "Datasets",
+      "Value": "8 datasets / 56 cells",
+      "Freeze stage": "before execution"
+    },
+    {
+      "Parameter": "Seeds",
+      "Value": "0,1,2,3,4",
+      "Freeze stage": "before execution"
+    },
+    {
+      "Parameter": "Examples per cell",
+      "Value": "500 planned",
+      "Freeze stage": "before execution"
+    },
+    {
+      "Parameter": "Confidence level",
+      "Value": "95\\% ($\\alpha=0.05$)",
+      "Freeze stage": "analysis plan"
+    },
+    {
+      "Parameter": "Default redundancy",
+      "Value": "k=2; sweep {1,2,4,8}",
+      "Freeze stage": "before execution"
+    },
+    {
+      "Parameter": "Replay budget",
+      "Value": "M=32",
+      "Freeze stage": "before execution"
+    },
+    {
+      "Parameter": "Entailment threshold",
+      "Value": "0.70",
+      "Freeze stage": "calibration only"
+    },
+    {
+      "Parameter": "Contradiction threshold",
+      "Value": "0.50",
+      "Freeze stage": "calibration only"
+    }
+  ]
+}

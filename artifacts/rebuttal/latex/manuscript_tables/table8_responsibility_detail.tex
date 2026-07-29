@@ -1,0 +1,25 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize Responsibility detail from seeded mask-and-replay diagnostics. Top-k accuracy, margin, Unresolved rate, and oracle-intervention improvement are diagnostic utilities.}
+\label{tab:responsibility_detail}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lcccccc}
+\toprule
+Cell & Top-1 & Top-3 & Margin & Unresolved & Top component & DeltaSuccess \\
+\midrule
+\texttt{phi-3.5-mini}/\texttt{FEVER} & 0.667 & \textbf{0.842} & 0.268 & 0.050 & retrieval & +0.164 \\
+\texttt{qwen2.5-7B}/\texttt{HotpotQA} & 0.692 & \textbf{0.883} & 0.303 & 0.008 & retrieval & +0.173 \\
+\texttt{Llama-3.1-8B}/\texttt{PubMedQA} & 0.650 & \textbf{0.900} & 0.318 & 0.017 & retrieval & +0.165 \\
+\texttt{Gemma-2-9b-it}/\texttt{TAT-QA} & 0.767 & \textbf{0.892} & 0.311 & 0.017 & checker & +0.186 \\
+\texttt{Llama-3.3-70B}/\texttt{ToolBench} & 0.725 & \textbf{0.883} & 0.332 & 0.017 & tool & +0.178 \\
+\texttt{deepseek-v3}/\texttt{WebLINX} & 0.733 & \textbf{0.883} & 0.355 & 0.000 & tool & +0.182 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

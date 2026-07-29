@@ -1,0 +1,19 @@
+{
+  "backend_mode": "openai",
+  "baseline": "verimap_adapter",
+  "native_author_runner_used": false,
+  "num_original_records": 30,
+  "num_stress_decisions": 180,
+  "official_source_reference": "https://github.com/megagonlabs/veriMAP",
+  "reason_native_runner_not_used": "PCG-MAS cells are claim/evidence QA/tool records, not the native VeriMAP demonstration substrate.",
+  "seed": 0,
+  "stress_suite": [
+    "clean_plan",
+    "drop_support_step",
+    "contradict_verification_criterion",
+    "insert_distractor_step",
+    "shuffle_plan_context",
+    "answer_evidence_mismatch"
+  ],
+  "stress_suite_version": "verimap_adapter_v1"
+}

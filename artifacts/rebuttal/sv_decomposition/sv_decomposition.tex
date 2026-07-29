@@ -1,0 +1,25 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize Exact selectivity/verification decomposition on paired examples. S is selection effect; V is verification effect on the same answered set.}
+\label{tab:rebuttal_sv_decomposition}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccccccc}
+\toprule
+Cell & N & |A| & NoCert all & NoCert on A & PCG on A & S & S 95\% CI & V & V 95\% CI \\
+\midrule
+\texttt{phi-3.5-mini}/\texttt{FEVER} & 120 & 100 & 0.117 & 0.110 & 0.040 & \textbf{0.007} & [-0.020,0.036] & \textbf{0.070} & [0.030,0.125] \\
+\texttt{qwen2.5-7B}/\texttt{HotpotQA} & 120 & 101 & 0.158 & 0.139 & 0.059 & \textbf{0.020} & [-0.010,0.060] & \textbf{0.079} & [0.030,0.137] \\
+\texttt{Llama-3.1-8B}/\texttt{PubMedQA} & 120 & 101 & 0.075 & 0.079 & 0.030 & \textbf{-0.004} & [-0.020,0.017] & \textbf{0.050} & [0.010,0.097] \\
+\texttt{Gemma-2-9b-it}/\texttt{TAT-QA} & 120 & 101 & 0.133 & 0.158 & 0.119 & \textbf{-0.025} & [-0.044,-0.011] & \textbf{0.040} & [0.009,0.079] \\
+\texttt{Llama-3.3-70B}/\texttt{ToolBench} & 120 & 102 & 0.133 & 0.137 & 0.069 & \textbf{-0.004} & [-0.025,0.023] & \textbf{0.069} & [0.021,0.122] \\
+\texttt{deepseek-v3}/\texttt{WebLINX} & 120 & 102 & 0.133 & 0.127 & 0.069 & \textbf{0.006} & [-0.018,0.038] & \textbf{0.059} & [0.019,0.106] \\
+\bottomrule
+\end{tabular}}
+\end{table*}

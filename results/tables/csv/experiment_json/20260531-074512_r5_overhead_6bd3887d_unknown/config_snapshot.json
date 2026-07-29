@@ -1,0 +1,52 @@
+{
+  "backend": {
+    "model_name": "meta-llama/Llama-3.3-70B-Instruct"
+  },
+  "backends": [
+    {
+      "dtype": "float16",
+      "kind": "hf_local",
+      "model_name": "microsoft/Phi-3.5-mini-instruct"
+    }
+  ],
+  "checker": {
+    "entailment": "exact_match"
+  },
+  "configurations": [
+    {
+      "enable_pcg": false,
+      "name": "baseline_no_pcg"
+    },
+    {
+      "enable_pcg": true,
+      "k": 1,
+      "name": "pcg_k1"
+    },
+    {
+      "enable_pcg": true,
+      "k": 2,
+      "name": "pcg_k2"
+    },
+    {
+      "enable_pcg": true,
+      "k": 4,
+      "name": "pcg_k4"
+    }
+  ],
+  "dataset": {
+    "n_examples": 31,
+    "name": "toolbench",
+    "split": "validation"
+  },
+  "output_dir": "results/r5",
+  "prover": {
+    "max_answer_tokens": 64,
+    "retriever": "bm25",
+    "temperature": 0.0,
+    "top_k": 4
+  },
+  "stats": {
+    "alpha": 0.05,
+    "bootstrap_n": 2000
+  }
+}

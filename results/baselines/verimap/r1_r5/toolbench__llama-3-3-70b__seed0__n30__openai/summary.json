@@ -1,0 +1,48 @@
+{
+  "R1_verification_planning": {
+    "accept_rate": 0.03888888888888889,
+    "audit_coverage_mean": 0.41388888888888886,
+    "audit_coverage_on_bad_accepts": 0.8666666666666667,
+    "block_rate": 0.9611111111111111,
+    "false_accept_proxy_rate_among_known": 0.03333333333333333,
+    "harm_under_corruption_max": 0.9,
+    "harm_under_corruption_mean": 0.7526666666666667,
+    "invalid_response_rate": 0.0,
+    "json_parse_success_rate": 1.0,
+    "json_repair_rate": 0.0,
+    "known_correctness_n": 180,
+    "stress_suite_used": [
+      "clean_plan",
+      "drop_support_step",
+      "contradict_verification_criterion",
+      "insert_distractor_step",
+      "shuffle_plan_context",
+      "answer_evidence_mismatch"
+    ],
+    "verify_rate": 0.0
+  },
+  "R2_planning_redundancy": {
+    "quorum_accept_n": 7,
+    "quorum_block_n": 173,
+    "quorum_verify_n": 0
+  },
+  "R3_planning_responsibility": {
+    "mean_decision_flips_per_record": 4.766666666666667,
+    "total_decision_flips": 143
+  },
+  "R5_overhead": {
+    "completion_tokens_total": 12710,
+    "latency_mean_s": 1.6117405547036066,
+    "latency_total_s": 290.11329984664917,
+    "prompt_tokens_total": 56073,
+    "tokens_est_total": 68783
+  },
+  "backend_mode": "openai",
+  "baseline": "verimap_adapter",
+  "dataset": "toolbench",
+  "model": "llama-3.3-70b",
+  "n_decisions": 180,
+  "n_records": 30,
+  "seed": 0,
+  "source_baseline_input": "/content/pcg/results/tables/csv/baseline_inputs/20260529-221217_r1_toolbench_llama-3.3-70b__seed0__baseline_inputs.jsonl"
+}

@@ -1,0 +1,48 @@
+{
+  "policy": "phase8_frontier_selected_artifacts",
+  "note": "Reviewer-facing selected raw artifacts for the frontier PCG-MAS paper rebuild. This manifest avoids stale, interrupted, default-config, and mislabeled experiment_json directories.",
+  "cells": [
+    {
+      "dataset": "toolbench",
+      "model": "Llama-3.3-70B",
+      "backend": "hf_inference",
+      "paper_model": "Llama-3.3-70B",
+      "backend_model": "meta-llama/Llama-3.3-70B-Instruct",
+      "n_examples": 30,
+      "seed": 0,
+      "artifacts": {
+        "r1": "results/tables/csv/experiment_json/20260530-075123_r1_toolbench_llama-3.3-70b_hf_inference/r1.json",
+        "r2": "results/tables/csv/experiment_json/20260531-074307_r2_redundancy_d9bded6c_unknown/r2.json",
+        "r3": "results/tables/csv/experiment_json/20260531-074453_r3_responsibility_18dbf418_unknown/r3.json",
+        "r4": "results/tables/csv/experiment_json/20260531-074503_r4_risk_4dd6170b_unknown/r4.json",
+        "r5": "results/tables/csv/experiment_json/20260531-074512_r5_overhead_6bd3887d_unknown/r5.json",
+        "replay_drift": "results/tables/csv/experiment_json/20260531-073819_replay_drift/replay_drift.json",
+        "r3_open_mixed": "results/tables/csv/experiment_json/20260531-073831_r3_open_mixed/r3_open_mixed.json",
+        "r4_privacy": "results/tables/csv/experiment_json/20260531-073845_r4_privacy/r4_privacy.json",
+        "r5_scaling": "results/tables/csv/experiment_json/20260531-073919_r5_scaling/r5_scaling.json",
+        "ablation_summary": "results/tables/csv/ablations_outputs/20260529-214738_ablations/toolbench__Llama-3.3-70B__summary.json"
+      }
+    },
+    {
+      "dataset": "weblinx",
+      "model": "deepseek-v3",
+      "backend": "deepseek",
+      "paper_model": "deepseek-v3",
+      "backend_model": "deepseek-v3",
+      "n_examples": 30,
+      "seed": 0,
+      "artifacts": {
+        "r1": "results/tables/csv/experiment_json/20260530-075321_r1_weblinx_deepseek-v3_deepseek/r1.json",
+        "r2": "results/tables/csv/experiment_json/20260531-074743_r2_redundancy_d9bded6c_unknown/r2.json",
+        "r3": "results/tables/csv/experiment_json/20260531-074911_r3_responsibility_18dbf418_unknown/r3.json",
+        "r4": "results/tables/csv/experiment_json/20260531-074922_r4_risk_4dd6170b_unknown/r4.json",
+        "r5": "results/tables/csv/experiment_json/20260531-074934_r5_overhead_6bd3887d_unknown/r5.json",
+        "replay_drift": "results/tables/csv/experiment_json/20260531-074130_replay_drift/replay_drift.json",
+        "r3_open_mixed": "results/tables/csv/experiment_json/20260531-074145_r3_open_mixed/r3_open_mixed.json",
+        "r4_privacy": "results/tables/csv/experiment_json/20260531-074201_r4_privacy/r4_privacy.json",
+        "r5_scaling": "results/tables/csv/experiment_json/20260531-074230_r5_scaling/r5_scaling.json",
+        "ablation_summary": "results/tables/csv/ablations_outputs/20260529-215725_ablations/weblinx__deepseek-v3__summary.json"
+      }
+    }
+  ]
+}

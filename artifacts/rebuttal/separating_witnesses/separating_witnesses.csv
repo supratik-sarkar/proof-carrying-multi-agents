@@ -1,0 +1,5 @@
+Family,Target,V_H,V_Pi,V_Gamma,V_entail,CitationOnly,ShieldAgent,AgentRR,VERIMAP,PCG-MAS
+W_H,V_H,Fail,Pass,Pass,Pass,Accept,Accept,Block,Accept,Block
+W_Pi,V_Pi,Pass,Fail,Pass,Pass,Accept,Accept,Block,Block,Block
+W_Gamma,V_Gamma,Pass,Pass,Fail,Pass,Accept,Block,Accept,Block,Block
+W_entail,V_entail,Pass,Pass,Pass,Fail,Block,Accept,Accept,Block,Block

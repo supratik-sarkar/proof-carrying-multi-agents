@@ -1,0 +1,50 @@
+[
+  {
+    "cell": "phi-3.5-mini / fever",
+    "h_nocert": 0.1391304347826087,
+    "h_pcg": 0.08163265306122448,
+    "cov_control": 0.8166666666666667,
+    "cov_audit": 0.95,
+    "gain": 1.7
+  },
+  {
+    "cell": "gemma-2-9b-it / tat-qa",
+    "h_nocert": 0.17391304347826086,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.91
+  },
+  {
+    "cell": "llama-3.3-70b / toolbench",
+    "h_nocert": 0.19130434782608696,
+    "h_pcg": 0.1,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 1.91
+  },
+  {
+    "cell": "deepseek-v3 / weblinx",
+    "h_nocert": 0.16521739130434782,
+    "h_pcg": 0.08,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 2.07
+  },
+  {
+    "cell": "qwen2.5-7b / hotpotqa",
+    "h_nocert": 0.21739130434782608,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 2.39
+  },
+  {
+    "cell": "llama-3.1-8b / pubmedqa",
+    "h_nocert": 0.14782608695652175,
+    "h_pcg": 0.050505050505050504,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 2.93
+  }
+]

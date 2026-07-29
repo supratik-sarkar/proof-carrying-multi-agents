@@ -1,0 +1,275 @@
+[
+  {
+    "category_name": "Manipulative and Deceptive AI Practices",
+    "category_rationale": "This category addresses AI systems that manipulate human behavior through subliminal techniques, deceptive practices, or exploitation of vulnerabilities. These practices undermine informed decision-making and autonomy, causing significant harm to individuals or groups.",
+    "risk_level": "high",
+    "rules": [
+      {
+        "rule_description": "User must not deploy AI systems that use subliminal techniques beyond a person's consciousness to materially distort behavior by impairing the ability to make informed decisions, thereby causing significant harm.",
+        "original_rule_ids": [
+          1
+        ],
+        "rule_id": "1",
+        "source_policy_ids": [
+          0
+        ]
+      },
+      {
+        "rule_description": "User must not deploy AI systems that use purposefully manipulative or deceptive techniques to materially distort behavior by impairing the ability to make informed decisions, thereby causing significant harm.",
+        "original_rule_ids": [
+          2
+        ],
+        "rule_id": "2",
+        "source_policy_ids": [
+          0
+        ]
+      },
+      {
+        "rule_description": "User must not deploy AI systems that exploit vulnerabilities of persons due to age, disability, or specific social or economic situations to materially distort their behavior in a manner causing or likely to cause significant harm.",
+        "original_rule_ids": [
+          3
+        ],
+        "rule_id": "3",
+        "source_policy_ids": [
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "category_name": "Social Scoring and Discriminatory Classification",
+    "category_rationale": "This category covers AI systems that evaluate or classify individuals based on social behavior or personal characteristics, leading to unjustified detrimental treatment. Such systems create discriminatory outcomes and violate principles of fairness and proportionality.",
+    "risk_level": "high",
+    "rules": [
+      {
+        "rule_description": "User must not deploy AI systems that evaluate or classify persons based on social behavior or personal characteristics where the social score leads to detrimental treatment in contexts unrelated to where the data was originally generated or collected.",
+        "original_rule_ids": [
+          4
+        ],
+        "rule_id": "4",
+        "source_policy_ids": [
+          2
+        ]
+      },
+      {
+        "rule_description": "User must not deploy AI systems that evaluate or classify persons based on social behavior or personal characteristics where the social score leads to unjustified or disproportionate detrimental treatment relative to the behavior or its gravity.",
+        "original_rule_ids": [
+          5
+        ],
+        "rule_id": "5",
+        "source_policy_ids": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "category_name": "Predictive Criminal Risk Assessment",
+    "category_rationale": "This category addresses AI systems used for predicting criminal behavior based solely on profiling or personality assessment. Such systems pose risks of unfair prejudgment and discrimination, except when supporting human assessment based on objective, verifiable facts.",
+    "risk_level": "high",
+    "rules": [
+      {
+        "rule_description": "User must not deploy AI systems for assessing or predicting the risk of a person committing a criminal offense based solely on profiling or personality traits, except when supporting human assessment based on objective and verifiable facts directly linked to criminal activity.",
+        "original_rule_ids": [
+          6
+        ],
+        "rule_id": "6",
+        "source_policy_ids": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "category_name": "Facial Recognition Database Expansion",
+    "category_rationale": "This category covers the creation or expansion of facial recognition databases through untargeted scraping of images. Such practices raise severe privacy concerns and enable mass surveillance without consent or legal basis.",
+    "risk_level": "high",
+    "rules": [
+      {
+        "rule_description": "User must not deploy AI systems that create or expand facial recognition databases through untargeted scraping of facial images from the internet or CCTV footage.",
+        "original_rule_ids": [
+          7
+        ],
+        "rule_id": "7",
+        "source_policy_ids": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "category_name": "Emotion Recognition in Sensitive Contexts",
+    "category_rationale": "This category addresses AI systems that infer emotions in workplace and educational settings. Such systems can lead to privacy violations and inappropriate surveillance, except when justified for medical or safety purposes.",
+    "risk_level": "medium",
+    "rules": [
+      {
+        "rule_description": "User must not deploy AI systems to infer emotions of persons in workplace and education institutions, except where the system is intended for medical or safety reasons.",
+        "original_rule_ids": [
+          8
+        ],
+        "rule_id": "8",
+        "source_policy_ids": [
+          5
+        ]
+      }
+    ]
+  },
+  {
+    "category_name": "Biometric Categorization for Sensitive Attributes",
+    "category_rationale": "This category covers AI systems that categorize individuals based on biometric data to infer sensitive attributes such as race, political opinions, religious beliefs, or sexual orientation. Such practices violate fundamental rights and dignity, with limited exceptions for lawful purposes.",
+    "risk_level": "high",
+    "rules": [
+      {
+        "rule_description": "User must not deploy biometric categorization systems that deduce or infer race, political opinions, trade union membership, religious or philosophical beliefs, sex life, or sexual orientation from biometric data, except for lawful labeling or filtering of legally acquired datasets or categorization in law enforcement contexts.",
+        "original_rule_ids": [
+          9
+        ],
+        "rule_id": "9",
+        "source_policy_ids": [
+          6
+        ]
+      }
+    ]
+  },
+  {
+    "category_name": "Real-Time Remote Biometric Identification - Permissible Use Cases",
+    "category_rationale": "This category defines the strictly limited circumstances under which real-time remote biometric identification in public spaces for law enforcement is permitted, including search for victims, prevention of imminent threats, and investigation of serious crimes.",
+    "risk_level": "high",
+    "rules": [
+      {
+        "rule_description": "User must not use real-time remote biometric identification systems in publicly accessible spaces for law enforcement purposes, unless strictly necessary for targeted search for specific victims of abduction, trafficking, sexual exploitation, or missing persons.",
+        "original_rule_ids": [
+          10
+        ],
+        "rule_id": "10",
+        "source_policy_ids": [
+          7
+        ]
+      },
+      {
+        "rule_description": "User must not use real-time remote biometric identification systems in publicly accessible spaces for law enforcement purposes, unless strictly necessary for prevention of a specific, substantial, and imminent threat to life or physical safety, or a genuine and present or foreseeable terrorist attack.",
+        "original_rule_ids": [
+          11
+        ],
+        "rule_id": "11",
+        "source_policy_ids": [
+          7
+        ]
+      },
+      {
+        "rule_description": "User must not use real-time remote biometric identification systems in publicly accessible spaces for law enforcement purposes, unless strictly necessary for localization or identification of a person suspected of having committed a criminal offense punishable by at least four years of custodial sentence, as referred to in Annex II.",
+        "original_rule_ids": [
+          12
+        ],
+        "rule_id": "12",
+        "source_policy_ids": [
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "category_name": "Real-Time Remote Biometric Identification - Operational Requirements",
+    "category_rationale": "This category establishes operational safeguards and requirements when real-time remote biometric identification is used for permitted law enforcement purposes, including identity confirmation, proportionality assessment, and rights protection.",
+    "risk_level": "high",
+    "rules": [
+      {
+        "rule_description": "When using real-time remote biometric identification systems in publicly accessible spaces for permitted law enforcement objectives, User must deploy the system only to confirm the identity of specifically targeted individuals.",
+        "original_rule_ids": [
+          13
+        ],
+        "rule_id": "13",
+        "source_policy_ids": [
+          8
+        ]
+      },
+      {
+        "rule_description": "When using real-time remote biometric identification systems in publicly accessible spaces for permitted law enforcement objectives, User must consider the nature of the situation, particularly the seriousness, probability, and scale of harm that would result if the system were not used.",
+        "original_rule_ids": [
+          14
+        ],
+        "rule_id": "14",
+        "source_policy_ids": [
+          8
+        ]
+      },
+      {
+        "rule_description": "When using real-time remote biometric identification systems in publicly accessible spaces for permitted law enforcement objectives, User must consider the consequences for the rights and freedoms of all persons concerned, particularly the seriousness, probability, and scale of those consequences.",
+        "original_rule_ids": [
+          15
+        ],
+        "rule_id": "15",
+        "source_policy_ids": [
+          8
+        ]
+      },
+      {
+        "rule_description": "When using real-time remote biometric identification systems in publicly accessible spaces for permitted law enforcement objectives, User must comply with necessary and proportionate safeguards and conditions under national law, particularly regarding temporal, geographic, and personal limitations.",
+        "original_rule_ids": [
+          16
+        ],
+        "rule_id": "16",
+        "source_policy_ids": [
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "category_name": "Real-Time Remote Biometric Identification - Compliance and Authorization",
+    "category_rationale": "This category covers mandatory compliance procedures for real-time remote biometric identification, including fundamental rights impact assessments, database registration, prior authorization, and notification requirements to ensure accountability and oversight.",
+    "risk_level": "high",
+    "rules": [
+      {
+        "rule_description": "When using real-time remote biometric identification systems in publicly accessible spaces for law enforcement purposes, User must ensure that the law enforcement authority has completed a fundamental rights impact assessment as provided for in Article 27 before use.",
+        "original_rule_ids": [
+          17
+        ],
+        "rule_id": "17",
+        "source_policy_ids": [
+          9
+        ]
+      },
+      {
+        "rule_description": "When using real-time remote biometric identification systems in publicly accessible spaces for law enforcement purposes, User must ensure the system has been registered in the EU database according to Article 49 before use, except in duly justified urgent cases where registration must be completed without undue delay.",
+        "original_rule_ids": [
+          18
+        ],
+        "rule_id": "18",
+        "source_policy_ids": [
+          9
+        ]
+      },
+      {
+        "rule_description": "For each use of real-time remote biometric identification systems in publicly accessible spaces for law enforcement purposes, User must obtain prior authorization from a judicial authority or independent administrative authority with binding decision power, except in duly justified urgent situations where authorization must be requested within 24 hours.",
+        "original_rule_ids": [
+          19
+        ],
+        "rule_id": "19",
+        "source_policy_ids": [
+          10
+        ]
+      },
+      {
+        "rule_description": "If authorization for real-time remote biometric identification in publicly accessible spaces for law enforcement purposes is rejected, User must immediately stop use and discard and delete all data, results, and outputs from that use.",
+        "original_rule_ids": [
+          20
+        ],
+        "rule_id": "20",
+        "source_policy_ids": [
+          10
+        ]
+      },
+      {
+        "rule_description": "For each use of real-time remote biometric identification systems in publicly accessible spaces for law enforcement purposes, User must notify the relevant market surveillance authority and national data protection authority in accordance with national rules, including minimum specified information excluding sensitive operational data.",
+        "original_rule_ids": [
+          21
+        ],
+        "rule_id": "21",
+        "source_policy_ids": [
+          11
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1091 @@
+{
+  "axis": "R3",
+  "description": "Proxy responsibility: ablate evidence/answer/request fields and measure ShieldAgent decision flips. This is not PCG-MAS mask-and-replay responsibility.",
+  "records": [
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3314667750000808,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpSnYPDu59dZxKAzBi'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.27668282199920213,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpUBsmAmpYsch8vxsp'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2984626240004218,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpVPogvcYg1XbB2gTh'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2830111080002098,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpWgSnNcmu2GVWXbTZ'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3265280799996617,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpXx6GH23bHo16Xyhk'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.27846108399990044,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpZHDch8PJsHPwPwRh'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.34606888400048774,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpaX8Z6cu2tPM2sTDB'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.29073091500049486,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpbySdmoqtWKARxif4'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2799187279997568,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpdDbmXiu2MgkAY2ku'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2959707319996596,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpeTGBxWnGTgPXecGv'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2806527949996962,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpfgw318px3aufYb78'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28719123999962903,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpgubvtqeNZJwG1H1x'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.280418684000324,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpi8XCWyuYzsKaXDk2'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2893565509994005,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpjPvfZjzveveybpYP'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2747576290003053,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpkacKBnWLQKvKgXeS'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3365373719998388,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpmmJby3jowY1xfuvw'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3304858649999005,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpoPnM1UXZQvzgPVHB'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28259821699975873,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMppeC2YLSN19hmyV4q'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28164773099979357,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpqr7c2ubZNe7U8B4g'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.7144801460008239,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMptZLNBgLX9Pgv8mG6'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28705577299933793,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpv7qsR6N3GSyV3jDx'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28076579900061915,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpwM1os1Hnxqr6uRYr'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.27956584699950326,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpxZBnaqj5uoEenNWD'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.27624291199936124,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpykNfPaJ53Z7V8NNg'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2799326429994835,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMpzx4AGZad9AFXukpr'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3047164140007226,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMq28zU51daFrvaEZBX'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.4547267859998101,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMq42MBCNEoTgJPRYhz'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3302345570000398,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMq5SBLjmBiDf9vevqQ'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.29360547099986434,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMq6sWBrrcPH8jXy9J1'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.34254345600038505,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMq87uutR9nNsio8Tvk'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2839390579993051,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMq9ZjEAzeEeULK9vb7'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3231756309996854,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqAodqmN7PvtZ6rovR'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28042955599994457,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqCAFF4UdmrBvDb1Rx'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.29372887699992134,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqDQf4YBHouDtKgB1c'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.27886487399973703,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqEdKyhmiSUneefNDU'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2819067129994437,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqFqFgq2dpomfDpUwL'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.27868051800032845,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqH3S1mKFLMBSfBoK6'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3330924239999149,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqJFcPcjUeUUdoju7r'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2794422110000596,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqKfCNAAcUgPwMRXny'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.27830901099969196,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqLs8Hx9npDShm3627'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.40444732699961605,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqN5JL8mnKzfErWctq'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.445189028000641,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqPuw6qkUgm7Qaz7W5'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2788974529994448,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqRiL7s1xk6LzXdJp8'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3188266229999499,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqT2CrkGG4PUSGcnew'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3045968709993758,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqUKqkCSVNTQQvYj6m'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2825244060004479,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqVbjiY748sucdgbA9'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2818530090007698,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqWnvaewGaREHvsLPU'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.280015645000276,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqY16mH4eMK7Y3jrnv'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2755278710001221,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqZCHQbGe1TeChFpKZ'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2783018459995219,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqaPiZQph3WnThhSa7'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28045352200024354,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqbbPqLSA3dqUEgJHs'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3607959660002962,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqd5gxBtc2A51esj1m'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28405491200010147,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqeMLcHVqPeuxuuJNH'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3176418350003587,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqfZ2CQgZzeFmVFvQx'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2800615589994777,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqgv8K9FW2rzHKjWQa'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.6043540399996346,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqiKDXokkLdABksXV4'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2796631620003609,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqkj5CRLFkDitjM3KZ'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2841876920001596,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqmvFnMxokrMdSEuKS'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2796359129997654,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqo9BJDQkqtj3Ly7SQ'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28836379299991677,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqpLcAAjgETGwKktf7'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28083728999990853,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqqb1u9aebqjtqevgb'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3612180879999869,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqrxcfZSS7MS7tNd4J'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.29431974699946295,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqtNSxGeT6Tn8twT4U'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28292020600019896,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMquc7XCVw1BRuVFJUL'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28648121999958676,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqvpJ8f3Dxh6PebafF'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.41917354199995316,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqxHr7QS3bu4cUghB8'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.4124964880002153,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMqywZerdu1uhmCjtWi'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.27704218100006983,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMr1cmgZCsZ1DZaNDBq'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.4072663859997192,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMr38oKUBTJNNNdSWUN'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2795401650000713,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMr4ZNvRkMktyTZVsxN'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.33095086199955404,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMr5sFenkMApfMWs46q'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.27634858200053714,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMr7B8zN1oBoxoZ8SRt'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.27827427800002624,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMr8N59m2XYJqSFGgDi'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.39510209200034296,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMr9t76gZjtChgvDDaE'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2793964920001599,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrBGhKNC7VYB4gvHFt'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.5603594449994489,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrDfZRYnTbxpnPgV9a'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.36145719200067106,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrEsF2kiM27cPMhnLV'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28452494199973444,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrGSzQmAKZLfw4AfzV'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2826373429998057,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrHeg2CLta67Er1JzM'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2980252970000947,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrJtb7CCgnNGm9vQUN'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2767651250005656,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrL8VwYvvvkWwBf5Hn'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2776740389999759,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrMKBieXXgEa3DtNqS'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2881445110006098,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrNY7Ar4JzEvFwCMXh'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28339771599985397,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrPmmnw1vNVQMcWZf7'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.28187412999977823,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrQyTWQHfoM3Lbj6Sh'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.297244960000171,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrSCNwiKFKHDYxSpoE'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.31328384800053755,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrTVWoaShmTiGjbpBK'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3065519339997991,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrUpPTJ5RvfkJtLMje'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2806355029997576,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrW8kzZ9faW6vsWKdX'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.3348995830001513,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrXMRu86kHQjK4KZTV'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    },
+    {
+      "ablations": [
+        {
+          "ablation": "no_evidence",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2817021910004769,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrYn1KBjE5n7rKkWLZ'}"
+        },
+        {
+          "ablation": "no_answer",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2816204620003191,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrZywWaosdSc9x5fPY'}"
+        },
+        {
+          "ablation": "question_only",
+          "decision": "verify",
+          "flipped": false,
+          "latency_s": 0.2768269379994308,
+          "risk_score": 0.5,
+          "status": "error:BadRequestError:Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbaMrbBNgYhJXpfpGaW9F'}"
+        }
+      ],
+      "base_decision": "verify",
+      "dataset": "weblinx",
+      "id": null,
+      "native_to_shieldagent": false,
+      "num_flips": 0,
+      "proxy_axis": "R3",
+      "proxy_name": "ShieldAgent decision-flip ablation over evidence/answer/request fields"
+    }
+  ]
+}

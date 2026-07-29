@@ -1,0 +1,8 @@
+cell,full_pcg,minus_v_h,minus_v_pi,minus_v_gamma,minus_v_entail,source
+fever:phi-3.5-mini,0.0,0.0,0.0,0.0,0.0,measured
+hotpotqa:qwen2.5-7B,0.4,0.4,0.4,0.4,0.8,measured
+pubmedqa:Llama-3.1-8B,,,,,,MISSING
+tatqa:Gemma-2-9b-it,,,,,,MISSING
+toolbench:Llama-3.3-70B,0.0,0.0,0.0,0.0,1.0,measured
+weblinx:deepseek-v3,0.0967741935483871,0.0967741935483871,0.0967741935483871,0.0967741935483871,0.1935483870967742,measured
+hotpotqa:phi-3.5-mini,,,,,,MISSING

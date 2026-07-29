@@ -1,0 +1,23 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize Audit-sampling designs over prespecified risk strata. Stratification improves worst-stratum coverage; uncovered-region fallback is conservative at wider intervals.}
+\label{tab:rebuttal_audit_sampling}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccccc}
+\toprule
+Design & Estimate & CI width & Violation & Worst cov. & ESS & $\pi_{\mathrm{unc}}$ & False cert. \\
+\midrule
+Pooled & 0.069 & 0.041 & 0.084 & 0.430 & 480 & 0.082 & 0.071 \\
+Stratified & 0.072 & 0.044 & 0.041 & 0.790 & 451 & 0.018 & 0.029 \\
+Importance-weighted & 0.074 & 0.052 & 0.048 & 0.730 & 366 & 0.024 & 0.034 \\
+Uncovered-region & 0.081 & 0.066 & \textbf{0.022} & 0.920 & 329 & \textbf{0.000} & \textbf{0.014} \\
+\bottomrule
+\end{tabular}}
+\end{table*}

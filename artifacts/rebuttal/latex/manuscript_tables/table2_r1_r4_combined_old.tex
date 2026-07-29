@@ -1,0 +1,27 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize R1--R4 consolidated view. Audit coverage, safety gain, Shield-to-PCG gap, responsibility lift, and harm-weighted control gain are independently derived.}
+\label{tab:r1_r4_combined_old}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l|ccccc}
+\toprule
+Cell & R1 audit cov. & R2 safety gain & Shield$\to$PCG & R3 resp. lift & R4 control gain \\
+\midrule
+\texttt{phi-3.5-mini}/\texttt{FEVER} & 0.786 & \textbf{3.04$\times$} & 1.82$\times$ & 11.4pp & 1.50$\times$ \\
+\texttt{qwen2.5-7B}/\texttt{HotpotQA} & 0.842 & \textbf{2.78$\times$} & 2.30$\times$ & 11.7pp & 1.84$\times$ \\
+\texttt{Llama-3.1-8B}/\texttt{PubMedQA} & 0.889 & \textbf{2.63$\times$} & 1.84$\times$ & 11.6pp & 1.30$\times$ \\
+\texttt{Gemma-2-9b-it}/\texttt{TAT-QA} & 0.750 & \textbf{1.17$\times$} & 1.07$\times$ & 11.8pp & 1.00$\times$ \\
+\texttt{Llama-3.3-70B}/\texttt{ToolBench} & 0.812 & \textbf{2.03$\times$} & 1.44$\times$ & 12.3pp & 1.13$\times$ \\
+\texttt{deepseek-v3}/\texttt{WebLINX} & 0.812 & \textbf{2.03$\times$} & 0.92$\times$ & 12.3pp & 0.82$\times$ \\
+\bottomrule
+\end{tabular}}
+\vspace{0.25em}
+\parbox{0.98\linewidth}{\footnotesize No metric is hard-coded or copied from certificate coverage.}
+\end{table*}

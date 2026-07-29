@@ -1,0 +1,54 @@
+{
+  "label": "tab:channel_ablation",
+  "caption": "Verification-channel ablation. Removing any channel increases accepted harm; execution compliance matters most in tool/delegation-heavy cells.",
+  "rows": [
+    {
+      "Cell": "phi-3.5-mini/FEVER",
+      "Full": "0.040",
+      "-V_H": "0.049",
+      "-V_Pi": "0.058",
+      "-V_Gamma": "0.087",
+      "-V_entail": "0.049"
+    },
+    {
+      "Cell": "qwen2.5-7B/HotpotQA",
+      "Full": "0.069",
+      "-V_H": "0.078",
+      "-V_Pi": "0.115",
+      "-V_Gamma": "0.077",
+      "-V_entail": "0.115"
+    },
+    {
+      "Cell": "Llama-3.1-8B/PubMedQA",
+      "Full": "0.030",
+      "-V_H": "0.029",
+      "-V_Pi": "0.038",
+      "-V_Gamma": "0.038",
+      "-V_entail": "0.038"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/TAT-QA",
+      "Full": "0.119",
+      "-V_H": "0.107",
+      "-V_Pi": "0.115",
+      "-V_Gamma": "0.135",
+      "-V_entail": "0.115"
+    },
+    {
+      "Cell": "Llama-3.3-70B/ToolBench",
+      "Full": "0.059",
+      "-V_H": "0.067",
+      "-V_Pi": "0.076",
+      "-V_Gamma": "0.086",
+      "-V_entail": "0.076"
+    },
+    {
+      "Cell": "deepseek-v3/WebLINX",
+      "Full": "0.078",
+      "-V_H": "0.058",
+      "-V_Pi": "0.095",
+      "-V_Gamma": "0.114",
+      "-V_entail": "0.067"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "audit_coverage": 0.07555555555555556,
+  "frontier": [
+    {
+      "answer_rate": 0.4888888888888889,
+      "harm_weighted_cost": 0.9372222222222222,
+      "tau": 0.0,
+      "utility": 0.4888888888888889
+    },
+    {
+      "answer_rate": 0.4888888888888889,
+      "harm_weighted_cost": 0.9372222222222222,
+      "tau": 0.25,
+      "utility": 0.4888888888888889
+    },
+    {
+      "answer_rate": 0.4888888888888889,
+      "harm_weighted_cost": 0.9372222222222222,
+      "tau": 0.5,
+      "utility": 0.4888888888888889
+    },
+    {
+      "answer_rate": 0.4888888888888889,
+      "harm_weighted_cost": 0.9372222222222222,
+      "tau": 0.75,
+      "utility": 0.4888888888888889
+    },
+    {
+      "answer_rate": 0.4888888888888889,
+      "harm_weighted_cost": 0.9372222222222222,
+      "tau": 1.0,
+      "utility": 0.4888888888888889
+    }
+  ],
+  "harm_under_corruption": 0.9372222222222222
+}

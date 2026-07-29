@@ -1,0 +1,1552 @@
+{
+  "run_id": "20260531-073831_r3_open_mixed",
+  "results": [
+    {
+      "dataset": "toolbench",
+      "model": "Llama-3.3-70B",
+      "seed": 1,
+      "n_examples": 31,
+      "open_set": {
+        "dataset": "toolbench",
+        "model": "Llama-3.3-70B",
+        "regime": "action_replay",
+        "records": [
+          {
+            "example_id": "Step 10: I'm throwing a music-themed birthday party for my niece who loves Eminem. Can you search for tracks by 'Eminem' on Deezer and provide me with the genre of the artist? Additionally, fetch the HOT 100 chart information and the basic user information of a Soundcloud user with the profile URL 'https://soundcloud.com/user-977421934'.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "4dfeb2764c2b452f",
+                "resp": 0.0
+              },
+              {
+                "component_id": "40f1a5e26961465a",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "4dfeb2764c2b452f",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "9b09798564554231"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 3: I'm planning a surprise party for my best friend's promotion and I need some entertainment ideas. Fetch the top quality memes from popular subreddits to create a fun and light-hearted atmosphere. Also, check if the username 'PromotionKing' is available on all social media platforms.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "df96946b1ac74dd5",
+                "resp": 0.0
+              },
+              {
+                "component_id": "a4db303dce6c4858",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "df96946b1ac74dd5",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "ce7ca205f3174e9f"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I'm an art enthusiast and I'm interested in attending an art event in Italy. Can you provide me with the details of the event with the ID 55daa408-d224-4b68-8b70-8800424d3e88? Additionally, I would like to know the current status of the art openings Italy API. Also, fetch the latest active contests list.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "2df8477e67d945e2",
+                "resp": 0.0
+              },
+              {
+                "component_id": "0f740102501248c4",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "2df8477e67d945e2",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "fc00bb93c13f41d1"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 6: I want to send a gift to my friend and need reliable logistics services. Can you provide me with a list of logistics companies along with their images and additional data? Also, please provide the supply chain information for IBM.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "5661545406ca4e2b",
+                "resp": 0.0
+              },
+              {
+                "component_id": "5220eeb3b0e1479d",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "5661545406ca4e2b",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "91a55f65d2614226"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 5: I'm a fashion blogger and I'm looking for some trendy accessories to feature in my next blog post. Can you search for products on Shopee that match the keywords 'statement necklace' and 'chunky rings'? Also, provide me with the market data for international markets to help me make informed investment decisions.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "5c80f84716c04cca",
+                "resp": 0.0
+              },
+              {
+                "component_id": "644690fe62ca4590",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "5c80f84716c04cca",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "4f52c9820eed4b08"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I am writing an article on personality types and would like to gather information. Can you provide me with the Enneagram Personality Test Questionnaire, the Big Five Personality Test Questionnaire, and the DISC Personality Test Questionnaire? I want to explore different aspects of personality in my article.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "53faec6fecea4197",
+                "resp": 0.0
+              },
+              {
+                "component_id": "dbad06916051418d",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "53faec6fecea4197",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "adcf6f9d78ac4719"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 4: As a trader, I want to evaluate the performance of the BTCUSDT pair on Binance. Fetch the Ultimate Oscillator (UO), the Typical Price (TP), and the Trix (TRIX) for the past month. Additionally, provide the Stochastic (STOCH) and the Standard Deviation (STD) for the same period.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "0b4a5d3aaa694e47",
+                "resp": 0.0
+              },
+              {
+                "component_id": "3dce55117a4b4634",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "0b4a5d3aaa694e47",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "1a75e2c2bb324b1d"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: My friends and I are planning a ski trip to Colorado and we need help finding accommodations near the slopes. Can you search for properties within a specific area defined by GPS coordinates? We would like to filter the results based on price, number of beds, and minimum bathrooms. Additionally, we would like to see the available amenities and property types for the listings.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "9b1df891021c47a8",
+                "resp": 0.0
+              },
+              {
+                "component_id": "571bc3740d124b2f",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "9b1df891021c47a8",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "49f28fcec865441e"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 9: Please download the file at '/project_files/project1.mpp'. Also, retrieve the document properties for the same file.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "628f1ded34eb49a9",
+                "resp": 0.0
+              },
+              {
+                "component_id": "59e278fffc994d4e",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "628f1ded34eb49a9",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "51fc77245c7542bf"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 4: I am planning a big event for my company and I need to minimize costs. Can you assist me in finding the latest coupons, trending coupons, and popular coupons for event venues, catering services, and transportation? Please provide the coupon codes, discount percentages, and expiration dates for each coupon.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "f2774b1ec1814c2f",
+                "resp": 0.0
+              },
+              {
+                "component_id": "77225fcc3f6c4a44",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "f2774b1ec1814c2f",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "958b18b012164a31"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I need to access my previously uploaded file with the ID 'e2ab50b6-0252-468b-8e76-700f60926b05' from the Simple File Storage tool. Additionally, provide me with the list of images I uploaded using the Image CDN tool, starting from page 2 and with a page size of 50.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "fad582a1ecd94273",
+                "resp": 0.0
+              },
+              {
+                "component_id": "315806755ede4270",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "fad582a1ecd94273",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "f4d943d139fc4276"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 3: I'd like to explore the field of Shopify stores. Can you search for stores in a specific niche and retrieve their store names, store titles, store URLs, images, store descriptions, emails, phone numbers, and social media handles?",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "ed67e50ccd274289",
+                "resp": 0.0
+              },
+              {
+                "component_id": "7edef4917e3a4f9d",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "ed67e50ccd274289",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "6aae3ee2409d4c1f"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 10: Please open the variation with ID '11111' and provide me with the details. Additionally, open the service with ID '22222' and list all the services available in my account.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "4cf6975072d24de0",
+                "resp": 0.0
+              },
+              {
+                "component_id": "0200f6ada7784c82",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "4cf6975072d24de0",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "4232ea928c464956"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 7: I'm organizing a family reunion and I need to find a suitable venue. Can you perform a web search for event venues in my city, including banquet halls, outdoor spaces, and hotels with conference facilities? Additionally, provide image search results for venue interiors, outdoor setups, and event decorations.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "1963d8d60fa84c21",
+                "resp": 0.0
+              },
+              {
+                "component_id": "880fdc98f7314959",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "1963d8d60fa84c21",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "0ecc0c63b4ef4aba"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: My friend is redecorating her living room and she needs some furniture suggestions. Can you provide her with the details of a specific product she is interested in? Additionally, it would be helpful to see other similar products and their prices. Thank you!",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "a5a02be74c34469e",
+                "resp": 0.0
+              },
+              {
+                "component_id": "ad81819fb4fb4e5c",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "a5a02be74c34469e",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "e40a00b2ac3449df"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 11: My friend is planning a trip around the world and needs information about the populations of different countries. Can you provide the English names and populations in millions? Also, please include the total population worldwide.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "d348f4f4a5f144ca",
+                "resp": 0.0
+              },
+              {
+                "component_id": "b84ec36d72144a89",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "d348f4f4a5f144ca",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "24188e9933ea449e"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I'm organizing a company event and I need to create a playlist that will keep everyone entertained. Can you recommend some popular albums and playlists that would suit a diverse crowd? Additionally, provide me with trivia facts about the number of employees in our company and the significance of the event date.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "58d5c733fb7a4d11",
+                "resp": 0.0
+              },
+              {
+                "component_id": "3260d8fcbbef4eb2",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "58d5c733fb7a4d11",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "288f4f5b72ee407d"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 6: I'm organizing a team-building event for my company and I need some inspirational jokes to boost morale. Can you provide me with a specific manatee joke by its id? Additionally, it would be great to have a random Chuck Norris joke to add some laughter to the event.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "4dcb71f9466d4347",
+                "resp": 0.0
+              },
+              {
+                "component_id": "e5c8c2aa0d9d4b57",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "4dcb71f9466d4347",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "d021c55bdb4245b5"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I am organizing a conference and would like to invite companies similar to 'ibm.com'. Can you retrieve the list of 50 similar companies along with their names, number of employees, revenue in USD, revenue growth, description, logo image URL, HQ location, country, and Linkedin URL? Including the logo of each company would be highly appreciated.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "39b492e0d8a049c2",
+                "resp": 0.0
+              },
+              {
+                "component_id": "8aaa684680324b87",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "39b492e0d8a049c2",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "7e61d5d530bb4288"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I'm hosting a company event and need to order customized merchandise. Fetch the product details for the items in the 'promotional products' category on My Store. Also, check if there are any available coupon codes for the website with site ID 'zi00001' using the Free Coupon Codes API.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "566efe052a6646dc",
+                "resp": 0.0
+              },
+              {
+                "component_id": "6b7cd92f272a4c11",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "566efe052a6646dc",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "9dc96537c87f454b"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 5: I want to customize the navigation menu on my sports website. Can you provide me with the breadcrumb navigation items available on BetSports? Additionally, I would like to localize the routes on my website. Please provide me with the necessary data.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "b77ec080c4e648c4",
+                "resp": 0.0
+              },
+              {
+                "component_id": "08517664881e42fe",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "b77ec080c4e648c4",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "fb9054fa07624cf9"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 9: I'm organizing a charity event and I need to send out invitations to potential donors. Can you provide me with a list of email addresses for individuals who have previously donated to similar causes? Additionally, I would like to create personalized invitations with unique QR codes for each recipient. Is there an API that can help me generate QR codes based on email addresses?",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "74424e68dde449e9",
+                "resp": 0.0
+              },
+              {
+                "component_id": "bf968de7a58f46be",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "74424e68dde449e9",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "861e6efd8e804425"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 5: I am planning a surprise party for my best friend's birthday. Can you suggest some creative party themes and provide images related to these themes? Additionally, I would like to know the availability of local bakeries for ordering a customized cake.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "45cf97fa65cf4221",
+                "resp": 0.0
+              },
+              {
+                "component_id": "e4db713bf78d433c",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "45cf97fa65cf4221",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "60bbe2af17bd43eb"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 10: Give me the word of the day from Dictionary.com, Merriam-Webster, and Cambridge Dictionary. Also, fetch the recent word of the day from Dictionary.com. It would be helpful to have the word, type, and meaning for each word.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "3dc4bd6ed2ab4c3c",
+                "resp": 0.0
+              },
+              {
+                "component_id": "7aa432a05b794030",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "3dc4bd6ed2ab4c3c",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "1ae4bebd1ec442d5"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 8: I'm exploring different cities in Germany and I'm specifically interested in Berlin. Can you fetch me a list of city names in Berlin? Furthermore, I want to know the boundaries of the city named Karlsruhe. Please provide me with the postal codes, state, city, total area, and area unit for Karlsruhe. Thank you!",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "52ff597afc3147b2",
+                "resp": 0.0
+              },
+              {
+                "component_id": "a850b04d607d46b7",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "52ff597afc3147b2",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "8dc367327954472c"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I'm organizing a team-building event for my company and I need some inspirational jokes to boost morale. Can you provide me with a specific manatee joke by its id? Additionally, it would be great to have a random Chuck Norris joke to add some laughter to the event.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "2a734b4c3f9445b5",
+                "resp": 0.0
+              },
+              {
+                "component_id": "5a185779c94843eb",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "2a734b4c3f9445b5",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "c73fc8741964462c"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 3: Can you help me retrieve the history of my uploaded images from the Web Image Storage tool? I would like to see the pages starting from page 1 with a page size of 50. Additionally, provide me with the pageable list of images from the Image CDN tool with a page size of 20 and starting from page 0.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "644e7206a3004e34",
+                "resp": 0.0
+              },
+              {
+                "component_id": "0fb4ec5343b94c1a",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "644e7206a3004e34",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "eb15d34584f64d8a"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I'm organizing a company event and I need some customized merchandise. Fetch the catalogue from togo420 and provide me with the product images, descriptions, and inventory quantities. Also, suggest some wine options from Direct Wines for the event.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "984d8cb384fe41c3",
+                "resp": 0.0
+              },
+              {
+                "component_id": "84f804a871534654",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "984d8cb384fe41c3",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "843d0d0e88d54566"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 6: I want to build a chatbot that can receive and respond to text messages. Can you provide me with a list of available numbers to receive messages from? Additionally, I would like to get updates about newly received messages and retrieve the details of a specific message by its ID.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "e89d2f040bc74bb5",
+                "resp": 0.0
+              },
+              {
+                "component_id": "39b382bdebac4743",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "e89d2f040bc74bb5",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "7097ab1ebb8a44cf"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 7: Please translate the sentence 'How are you?' into different languages using the Translator Text API. Also, convert the number 2468135790 into its text format. Finally, can you translate the phrase 'What is your name?' into Shakespearean English?",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "f6db64da3eb0424c",
+                "resp": 0.0
+              },
+              {
+                "component_id": "a7917c61025d4d1e",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "f6db64da3eb0424c",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "73353192c38f4649"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 5: I'm working on a research project related to product categories and their popularity in the market. Can you fetch the categories and the number of products available in each category? Additionally, I would like to know the date and time of the last update to ensure the accuracy of my findings.",
+            "regime": "action_replay",
+            "per_component": [
+              {
+                "component_id": "6ce4356e82dc4309",
+                "resp": 0.0
+              },
+              {
+                "component_id": "5a4be1798aed4e42",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "6ce4356e82dc4309",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "68d5e55a1ef74c87"
+            ],
+            "unknown_correct": true,
+            "multilabel_tp": 0,
+            "multilabel_fp": 2,
+            "multilabel_fn": 1
+          }
+        ]
+      },
+      "mixed_channel": {
+        "dataset": "toolbench",
+        "model": "Llama-3.3-70B",
+        "regime": "mixed_channel",
+        "records": [
+          {
+            "example_id": "Step 10: I'm throwing a music-themed birthday party for my niece who loves Eminem. Can you search for tracks by 'Eminem' on Deezer and provide me with the genre of the artist? Additionally, fetch the HOT 100 chart information and the basic user information of a Soundcloud user with the profile URL 'https://soundcloud.com/user-977421934'.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "0374f61e6b6c4cd0",
+                "resp": 0.0
+              },
+              {
+                "component_id": "4636408b0da64593",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "0374f61e6b6c4cd0",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "0374f61e6b6c4cd0",
+              "368cc373d9184f20"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 3: I'm planning a surprise party for my best friend's promotion and I need some entertainment ideas. Fetch the top quality memes from popular subreddits to create a fun and light-hearted atmosphere. Also, check if the username 'PromotionKing' is available on all social media platforms.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "dc17a6f4bd5c4297",
+                "resp": 0.0
+              },
+              {
+                "component_id": "bc29853ed0eb4d87",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "dc17a6f4bd5c4297",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "dc17a6f4bd5c4297",
+              "69e5a6dbef8944af"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I'm an art enthusiast and I'm interested in attending an art event in Italy. Can you provide me with the details of the event with the ID 55daa408-d224-4b68-8b70-8800424d3e88? Additionally, I would like to know the current status of the art openings Italy API. Also, fetch the latest active contests list.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "11cdd3605dfe4ddf",
+                "resp": 0.0
+              },
+              {
+                "component_id": "c9da5470782144fc",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "11cdd3605dfe4ddf",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "11cdd3605dfe4ddf",
+              "e287acb503dc4a21"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 6: I want to send a gift to my friend and need reliable logistics services. Can you provide me with a list of logistics companies along with their images and additional data? Also, please provide the supply chain information for IBM.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "bf330254cb8c4aa6",
+                "resp": 0.0
+              },
+              {
+                "component_id": "872031c470754175",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "bf330254cb8c4aa6",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "bf330254cb8c4aa6",
+              "85475fbe29be48ab"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 5: I'm a fashion blogger and I'm looking for some trendy accessories to feature in my next blog post. Can you search for products on Shopee that match the keywords 'statement necklace' and 'chunky rings'? Also, provide me with the market data for international markets to help me make informed investment decisions.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "ceacdfae76be42fb",
+                "resp": 0.0
+              },
+              {
+                "component_id": "18b5976e14fd4ddc",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "ceacdfae76be42fb",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "ceacdfae76be42fb",
+              "b8965b0ae4f34f29"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I am writing an article on personality types and would like to gather information. Can you provide me with the Enneagram Personality Test Questionnaire, the Big Five Personality Test Questionnaire, and the DISC Personality Test Questionnaire? I want to explore different aspects of personality in my article.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "04573c2c61d343de",
+                "resp": 0.0
+              },
+              {
+                "component_id": "1e3cafe933224c1c",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "04573c2c61d343de",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "04573c2c61d343de",
+              "7a25b00e8af546e2"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 4: As a trader, I want to evaluate the performance of the BTCUSDT pair on Binance. Fetch the Ultimate Oscillator (UO), the Typical Price (TP), and the Trix (TRIX) for the past month. Additionally, provide the Stochastic (STOCH) and the Standard Deviation (STD) for the same period.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "b90b7263e1914ea0",
+                "resp": 0.0
+              },
+              {
+                "component_id": "dde165574c924fed",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "b90b7263e1914ea0",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "b90b7263e1914ea0",
+              "7e39d21edfcf4200"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: My friends and I are planning a ski trip to Colorado and we need help finding accommodations near the slopes. Can you search for properties within a specific area defined by GPS coordinates? We would like to filter the results based on price, number of beds, and minimum bathrooms. Additionally, we would like to see the available amenities and property types for the listings.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "65a238efa3d4493e",
+                "resp": 0.0
+              },
+              {
+                "component_id": "2c3b2b43797a4123",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "65a238efa3d4493e",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "65a238efa3d4493e",
+              "509866df7a1d483d"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 9: Please download the file at '/project_files/project1.mpp'. Also, retrieve the document properties for the same file.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "0a62861794134141",
+                "resp": 0.0
+              },
+              {
+                "component_id": "9a5a0093f74d4686",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "0a62861794134141",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "0a62861794134141",
+              "82eeff48ad484aaf"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 4: I am planning a big event for my company and I need to minimize costs. Can you assist me in finding the latest coupons, trending coupons, and popular coupons for event venues, catering services, and transportation? Please provide the coupon codes, discount percentages, and expiration dates for each coupon.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "509bd3f7725746e9",
+                "resp": 0.0
+              },
+              {
+                "component_id": "a26578eb629d4808",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "509bd3f7725746e9",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "509bd3f7725746e9",
+              "ab00fc8a363e4b08"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I need to access my previously uploaded file with the ID 'e2ab50b6-0252-468b-8e76-700f60926b05' from the Simple File Storage tool. Additionally, provide me with the list of images I uploaded using the Image CDN tool, starting from page 2 and with a page size of 50.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "bb2c280cff354b1b",
+                "resp": 0.0
+              },
+              {
+                "component_id": "bc9c312f8c7c4f74",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "bb2c280cff354b1b",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "bb2c280cff354b1b",
+              "e45e739f5d2944a1"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 3: I'd like to explore the field of Shopify stores. Can you search for stores in a specific niche and retrieve their store names, store titles, store URLs, images, store descriptions, emails, phone numbers, and social media handles?",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "42278fbfc6664907",
+                "resp": 0.0
+              },
+              {
+                "component_id": "610d901a78894e95",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "42278fbfc6664907",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "42278fbfc6664907",
+              "0b7bfbbe39c04de2"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 10: Please open the variation with ID '11111' and provide me with the details. Additionally, open the service with ID '22222' and list all the services available in my account.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "79a073a869bc430e",
+                "resp": 0.0
+              },
+              {
+                "component_id": "ac13db09020c439c",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "79a073a869bc430e",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "79a073a869bc430e",
+              "b9106e9cac524844"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 7: I'm organizing a family reunion and I need to find a suitable venue. Can you perform a web search for event venues in my city, including banquet halls, outdoor spaces, and hotels with conference facilities? Additionally, provide image search results for venue interiors, outdoor setups, and event decorations.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "bb943cfbc82048cc",
+                "resp": 0.0
+              },
+              {
+                "component_id": "715c514ef4444f58",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "bb943cfbc82048cc",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "bb943cfbc82048cc",
+              "0de7e9d048624e85"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: My friend is redecorating her living room and she needs some furniture suggestions. Can you provide her with the details of a specific product she is interested in? Additionally, it would be helpful to see other similar products and their prices. Thank you!",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "40654b82e4474b70",
+                "resp": 0.0
+              },
+              {
+                "component_id": "f81ebef0e56245d1",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "40654b82e4474b70",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "40654b82e4474b70",
+              "762a13b12bb04b51"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 11: My friend is planning a trip around the world and needs information about the populations of different countries. Can you provide the English names and populations in millions? Also, please include the total population worldwide.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "3f79963574704aa1",
+                "resp": 0.0
+              },
+              {
+                "component_id": "deaf4d3a55fc46af",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "3f79963574704aa1",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "3f79963574704aa1",
+              "0b4a465f8e514584"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I'm organizing a company event and I need to create a playlist that will keep everyone entertained. Can you recommend some popular albums and playlists that would suit a diverse crowd? Additionally, provide me with trivia facts about the number of employees in our company and the significance of the event date.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "e8bd918ddf534ec9",
+                "resp": 0.0
+              },
+              {
+                "component_id": "dec9438b1a304273",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "e8bd918ddf534ec9",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "e8bd918ddf534ec9",
+              "062456b449a04ab1"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 6: I'm organizing a team-building event for my company and I need some inspirational jokes to boost morale. Can you provide me with a specific manatee joke by its id? Additionally, it would be great to have a random Chuck Norris joke to add some laughter to the event.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "bcc66589052c4a5e",
+                "resp": 0.0
+              },
+              {
+                "component_id": "a43aa2a532e247a0",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "bcc66589052c4a5e",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "bcc66589052c4a5e",
+              "2d81bbe2b8994d08"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I am organizing a conference and would like to invite companies similar to 'ibm.com'. Can you retrieve the list of 50 similar companies along with their names, number of employees, revenue in USD, revenue growth, description, logo image URL, HQ location, country, and Linkedin URL? Including the logo of each company would be highly appreciated.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "d84016668a794c14",
+                "resp": 0.0
+              },
+              {
+                "component_id": "5398930eb6e5475e",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "d84016668a794c14",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "d84016668a794c14",
+              "c4df998caf974c7f"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I'm hosting a company event and need to order customized merchandise. Fetch the product details for the items in the 'promotional products' category on My Store. Also, check if there are any available coupon codes for the website with site ID 'zi00001' using the Free Coupon Codes API.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "ca8372f7bd564e83",
+                "resp": 0.0
+              },
+              {
+                "component_id": "79350890616d405d",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "ca8372f7bd564e83",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "ca8372f7bd564e83",
+              "9d674a9f75714b12"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 5: I want to customize the navigation menu on my sports website. Can you provide me with the breadcrumb navigation items available on BetSports? Additionally, I would like to localize the routes on my website. Please provide me with the necessary data.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "27ef013bc9f14815",
+                "resp": 0.0
+              },
+              {
+                "component_id": "9ef2d5f1f68542ad",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "27ef013bc9f14815",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "27ef013bc9f14815",
+              "d908aee758d7418b"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 9: I'm organizing a charity event and I need to send out invitations to potential donors. Can you provide me with a list of email addresses for individuals who have previously donated to similar causes? Additionally, I would like to create personalized invitations with unique QR codes for each recipient. Is there an API that can help me generate QR codes based on email addresses?",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "177451f167ef4ed1",
+                "resp": 0.0
+              },
+              {
+                "component_id": "6b2bd9e316354080",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "177451f167ef4ed1",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "177451f167ef4ed1",
+              "320c6e304fc541fd"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 5: I am planning a surprise party for my best friend's birthday. Can you suggest some creative party themes and provide images related to these themes? Additionally, I would like to know the availability of local bakeries for ordering a customized cake.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "715a2a9d2fdd4c74",
+                "resp": 0.0
+              },
+              {
+                "component_id": "c5af26125d8b4966",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "715a2a9d2fdd4c74",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "715a2a9d2fdd4c74",
+              "37b1d5868161424d"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 10: Give me the word of the day from Dictionary.com, Merriam-Webster, and Cambridge Dictionary. Also, fetch the recent word of the day from Dictionary.com. It would be helpful to have the word, type, and meaning for each word.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "07423488e94c4dae",
+                "resp": 0.0
+              },
+              {
+                "component_id": "2ac482f78caa409d",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "07423488e94c4dae",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "07423488e94c4dae",
+              "a224efcfcfd64a00"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 8: I'm exploring different cities in Germany and I'm specifically interested in Berlin. Can you fetch me a list of city names in Berlin? Furthermore, I want to know the boundaries of the city named Karlsruhe. Please provide me with the postal codes, state, city, total area, and area unit for Karlsruhe. Thank you!",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "69b92d410b3a4219",
+                "resp": 0.0
+              },
+              {
+                "component_id": "e888179f2c74438d",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "69b92d410b3a4219",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "69b92d410b3a4219",
+              "17f1f5a0c1904538"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I'm organizing a team-building event for my company and I need some inspirational jokes to boost morale. Can you provide me with a specific manatee joke by its id? Additionally, it would be great to have a random Chuck Norris joke to add some laughter to the event.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "635ec0248e81426f",
+                "resp": 0.0
+              },
+              {
+                "component_id": "09138788188b433d",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "635ec0248e81426f",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "635ec0248e81426f",
+              "b95205d1639b4e64"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 3: Can you help me retrieve the history of my uploaded images from the Web Image Storage tool? I would like to see the pages starting from page 1 with a page size of 50. Additionally, provide me with the pageable list of images from the Image CDN tool with a page size of 20 and starting from page 0.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "44fbdb469ded481f",
+                "resp": 0.0
+              },
+              {
+                "component_id": "32e8b3d341d645d3",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "44fbdb469ded481f",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "44fbdb469ded481f",
+              "2646fdb0bf694e36"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 2: I'm organizing a company event and I need some customized merchandise. Fetch the catalogue from togo420 and provide me with the product images, descriptions, and inventory quantities. Also, suggest some wine options from Direct Wines for the event.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "883a844764de49d0",
+                "resp": 0.0
+              },
+              {
+                "component_id": "98d4063e1ada4e0a",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "883a844764de49d0",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "883a844764de49d0",
+              "839ae5b3a8104310"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 6: I want to build a chatbot that can receive and respond to text messages. Can you provide me with a list of available numbers to receive messages from? Additionally, I would like to get updates about newly received messages and retrieve the details of a specific message by its ID.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "69a11e1d388542c0",
+                "resp": 0.0
+              },
+              {
+                "component_id": "c3740052e6a9453f",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "69a11e1d388542c0",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "69a11e1d388542c0",
+              "9e7964f205164a45"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 7: Please translate the sentence 'How are you?' into different languages using the Translator Text API. Also, convert the number 2468135790 into its text format. Finally, can you translate the phrase 'What is your name?' into Shakespearean English?",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "b6fcc5c1ac584df2",
+                "resp": 0.0
+              },
+              {
+                "component_id": "ba59d3f882b440f5",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "b6fcc5c1ac584df2",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "b6fcc5c1ac584df2",
+              "8a95ed5465a74959"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          },
+          {
+            "example_id": "Step 5: I'm working on a research project related to product categories and their popularity in the market. Can you fetch the categories and the number of products available in each category? Additionally, I would like to know the date and time of the last update to ensure the accuracy of my findings.",
+            "regime": "mixed_channel",
+            "per_component": [
+              {
+                "component_id": "0234bfa5f691484f",
+                "resp": 0.0
+              },
+              {
+                "component_id": "6259cd1040a64337",
+                "resp": 0.0
+              }
+            ],
+            "top1_component_id": "0234bfa5f691484f",
+            "top1_resp": 0.0,
+            "top1_margin": 0.0,
+            "targets": [
+              "0234bfa5f691484f",
+              "5cfc61d943a840fc"
+            ],
+            "unknown_correct": null,
+            "multilabel_tp": 1,
+            "multilabel_fp": 1,
+            "multilabel_fn": 1
+          }
+        ]
+      },
+      "summary": {
+        "unknown_acc": 1.0,
+        "n_open_examples": 31,
+        "multi_label_f1": 0.5,
+        "open_top2": 1.0,
+        "n_mixed_examples": 31
+      },
+      "source": "measured"
+    }
+  ]
+}

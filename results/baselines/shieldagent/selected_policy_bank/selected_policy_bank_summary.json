@@ -1,0 +1,11 @@
+{
+  "policies_extracted_reported": 13,
+  "policy_bank_files": {
+    "extraction_report": "results/baselines/shieldagent/selected_policy_bank/extraction_report.json",
+    "policies": "results/baselines/shieldagent/selected_policy_bank/policies.json",
+    "policy_rule_mapping": "results/baselines/shieldagent/selected_policy_bank/policy_rule_mapping.json",
+    "risk_categories": "results/baselines/shieldagent/selected_policy_bank/risk_categories.json",
+    "rules": "results/baselines/shieldagent/selected_policy_bank/rules.json"
+  },
+  "selected_policy_source_dir": "results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216"
+}

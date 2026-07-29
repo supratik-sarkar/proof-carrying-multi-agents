@@ -1,0 +1,7 @@
+Cell,Shield tok×,AgentRR tok×,PCG tok×,Shield lat×,AgentRR lat×,PCG lat×,PCG p50,PCG p95,PCG tokens
+phi-3.5-mini/FEVER,1.37x,1.43x,1.89x,1.27x,1.44x,1.90x,775,1190,918
+qwen2.5-7B/HotpotQA,1.37x,1.47x,1.89x,1.31x,1.52x,1.95x,1021,1525,1496
+Llama-3.1-8B/PubMedQA,1.40x,1.48x,1.92x,1.33x,1.50x,2.01x,1185,1641,1713
+Gemma-2-9b-it/TAT-QA,1.41x,1.51x,1.96x,1.24x,1.46x,1.88x,1243,1704,1945
+Llama-3.3-70B/ToolBench,1.38x,1.48x,1.93x,1.37x,1.54x,2.03x,1765,2661,3574
+deepseek-v3/WebLINX,1.37x,1.48x,1.90x,1.27x,1.46x,2.02x,2021,2621,4207

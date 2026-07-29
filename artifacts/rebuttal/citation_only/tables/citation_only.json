@@ -1,0 +1,56 @@
+[
+  {
+    "system": "NoCert",
+    "h_supp": 0.1159,
+    "h_exec": 0.0652,
+    "composite_harm": 0.1725,
+    "coverage": 0.9583,
+    "tokens": 1210,
+    "latency_p50": 670.7
+  },
+  {
+    "system": "ShieldAgent",
+    "h_supp": 0.1099,
+    "h_exec": 0.035,
+    "composite_harm": 0.1403,
+    "coverage": 0.9111,
+    "tokens": 1672,
+    "latency_p50": 885.2
+  },
+  {
+    "system": "VERIMAP",
+    "h_supp": 0.0745,
+    "h_exec": 0.0284,
+    "composite_harm": 0.1013,
+    "coverage": 0.8778,
+    "tokens": 1819,
+    "latency_p50": 1059.6
+  },
+  {
+    "system": "AgentRR",
+    "h_supp": 0.0835,
+    "h_exec": 0.0355,
+    "composite_harm": 0.1174,
+    "coverage": 0.8986,
+    "tokens": 1784,
+    "latency_p50": 992.3
+  },
+  {
+    "system": "CitationOnly",
+    "h_supp": 0.0425,
+    "h_exec": 0.0629,
+    "composite_harm": 0.1039,
+    "coverage": 0.8819,
+    "tokens": 1513,
+    "latency_p50": 800.6
+  },
+  {
+    "system": "PCG-MAS",
+    "h_supp": 0.0488,
+    "h_exec": 0.0352,
+    "composite_harm": 0.0823,
+    "coverage": 0.8264,
+    "tokens": 2325,
+    "latency_p50": 1360.3
+  }
+]

@@ -1,0 +1,29 @@
+=== tables produced ===
+  OK  results/tables/audit_calibration_summary.csv
+  OK  results/tables/audit_calibration_summary.tex
+  OK  results/tables/ablations.csv
+  OK  results/tables/ablations.tex
+  OK  results/tables/channel_ablation.csv
+  OK  results/tables/channel_ablation.tex
+  OK  results/tables/replay_drift_covgap.csv
+  OK  results/tables/replay_drift_covgap.tex
+  OK  results/tables/r3_open_mixed.csv
+  OK  results/tables/r3_open_mixed.tex
+  OK  results/tables/r4_privacy.csv
+  OK  results/tables/r4_privacy.tex
+  OK  results/tables/r5_scaling.csv
+  OK  results/tables/r5_scaling.tex
+
+=== figures produced ===
+  OK  results/figures/ablations.pdf
+  OK  results/figures/ablations.png
+  OK  results/figures/channel_ablation.pdf
+  OK  results/figures/channel_ablation.png
+  OK  results/figures/r1_five_channel_audit.pdf
+  OK  results/figures/r1_five_channel_audit.png
+  OK  results/figures/r3_open_mixed.pdf
+  OK  results/figures/r3_open_mixed.png
+  OK  results/figures/r4_privacy_frontier.pdf
+  OK  results/figures/r4_privacy_frontier.png
+  OK  results/figures/r5_scaling.pdf
+  OK  results/figures/r5_scaling.png

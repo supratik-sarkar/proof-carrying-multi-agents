@@ -1,0 +1,62 @@
+{
+  "backend": "hf_local",
+  "cells": [
+    {
+      "dataset": "fever",
+      "model": "phi-3.5-mini"
+    }
+  ],
+  "cells_cli": "fever:phi-3.5-mini",
+  "experiment_mode": "r1",
+  "experiments": [
+    "r1"
+  ],
+  "experiments_cli": "r1",
+  "figure_policy": {
+    "additional_figures": {
+      "max_cells": 2,
+      "message": "additional figures will use first 1 selected cell(s), PCG-MAS vs NoCert only.",
+      "selected_cells": [
+        {
+          "dataset": "fever",
+          "model": "phi-3.5-mini"
+        }
+      ],
+      "sota_allowed": false
+    },
+    "appendix_hero_v4": {
+      "build": false,
+      "max_cells": 4,
+      "message": "appendix_hero_v4 will be skipped because it is only built for r1-r5/main/all experiment mode.",
+      "selected_cells": [
+        {
+          "dataset": "fever",
+          "model": "phi-3.5-mini"
+        }
+      ]
+    },
+    "intro_hero_v4": {
+      "build": false,
+      "max_cells": 4,
+      "message": "intro_hero_v4 will be skipped because it is only built for r1-r5/main/all experiment mode.",
+      "selected_cells": [
+        {
+          "dataset": "fever",
+          "model": "phi-3.5-mini"
+        }
+      ]
+    },
+    "main_r1_r5": {
+      "max_cells": 3,
+      "message": "main R1-R5 figures will use first 1 selected cell(s).",
+      "selected_cells": [
+        {
+          "dataset": "fever",
+          "model": "phi-3.5-mini"
+        }
+      ]
+    }
+  },
+  "n_examples": 10,
+  "seeds": "0"
+}

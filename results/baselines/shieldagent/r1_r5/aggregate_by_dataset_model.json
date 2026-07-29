@@ -1,0 +1,80 @@
+[
+  {
+    "R1_accept_rate": {
+      "mean": 1.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_block_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_false_accept_proxy_rate_among_known": {
+      "mean": null,
+      "n": 0,
+      "std": null
+    },
+    "R1_rule_check_failure_proxy_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_verify_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_accept_n": {
+      "mean": 10.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_block_n": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_verify_n": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_mean_decision_flips_per_record": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_total_decision_flips": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_mean_s": {
+      "mean": 20.761669448720447,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_total_s": {
+      "mean": 622.8500834616134,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_tokens_est_total": {
+      "mean": 344064.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "baseline": "shieldagent_author_policy_bank",
+    "dataset": "hotpotqa",
+    "method": "shieldagent",
+    "model": "phi-3.5-mini",
+    "num_seeds": 1,
+    "seeds": [
+      0
+    ],
+    "summary_files": [
+      "results/baselines/shieldagent/r1_r5/hotpotqa__phi-3-5-mini__seed0__n10/summary.json"
+    ]
+  }
+]

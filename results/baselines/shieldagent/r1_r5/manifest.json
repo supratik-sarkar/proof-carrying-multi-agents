@@ -1,0 +1,22 @@
+{
+  "aggregate_file": "results/baselines/shieldagent/r1_r5/aggregate_by_dataset_model.json",
+  "baseline": "shieldagent_author_policy_bank",
+  "cells": [
+    "hotpotqa__phi-3-5-mini__seed0__n10"
+  ],
+  "method": "shieldagent",
+  "n_examples": 10,
+  "note": "Figures and LaTeX tables are intentionally not modified by this runner.",
+  "pairs": [
+    {
+      "dataset": "hotpotqa",
+      "model": "phi-3.5-mini"
+    }
+  ],
+  "seeds": [
+    0
+  ],
+  "summary_files": [
+    "results/baselines/shieldagent/r1_r5/hotpotqa__phi-3-5-mini__seed0__n10/summary.json"
+  ]
+}

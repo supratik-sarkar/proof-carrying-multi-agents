@@ -1,0 +1,8 @@
+cell,replay_clean,drift_clean,covgap_clean,replay_fresh,drift_fresh,covgap_fresh,source
+fever:phi-3.5-mini,0.0,0.0,0.2,0.0,0.0,0.2,measured
+hotpotqa:qwen2.5-7B,0.0,0.0,0.0,0.0,0.6,0.2,measured
+pubmedqa:Llama-3.1-8B,,,,,,,MISSING
+tatqa:Gemma-2-9b-it,,,,,,,MISSING
+toolbench:Llama-3.3-70B,0.0,0.0,0.0,0.0,0.0,0.0,measured
+weblinx:deepseek-v3,0.0,0.0,0.0,0.0,0.0,0.0,measured
+hotpotqa:phi-3.5-mini,,,,,,,MISSING

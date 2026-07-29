@@ -1,0 +1,652 @@
+{
+  "run_id": "20260531-074130_replay_drift",
+  "results": [
+    {
+      "dataset": "weblinx",
+      "model": "deepseek-v3",
+      "seed": 1,
+      "n_examples": 31,
+      "p_fresh": 0.3,
+      "snapshot": {
+        "n_examples": 31,
+        "pass_rate": 0.5161290322580645,
+        "correct_rate": 0.0,
+        "replay_fail_rate": 0.0,
+        "covgap": 0.0,
+        "drift_rate": 0.0
+      },
+      "fresh": {
+        "n_examples": 31,
+        "pass_rate": 0.5161290322580645,
+        "correct_rate": 0.0,
+        "replay_fail_rate": 0.0,
+        "covgap": 0.0,
+        "drift_rate": 0.0
+      },
+      "snap_records": [
+        {
+          "example_id": "weblinx_0",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_1",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hi"
+        },
+        {
+          "example_id": "weblinx_2",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Sept 4th from 9:00 AM - 12:00 PM"
+        },
+        {
+          "example_id": "weblinx_3",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_4",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_5",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Alcoholic drinks, Beer, wine..."
+        },
+        {
+          "example_id": "weblinx_6",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Yes, sure."
+        },
+        {
+          "example_id": "weblinx_7",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_8",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Urgent Request On Sales Report."
+        },
+        {
+          "example_id": "weblinx_9",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hi"
+        },
+        {
+          "example_id": "weblinx_10",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "What time should the review start?"
+        },
+        {
+          "example_id": "weblinx_11",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Your neighborhood"
+        },
+        {
+          "example_id": "weblinx_12",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_13",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_14",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.04,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_15",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_16",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_17",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_18",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_19",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_20",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_21",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hi"
+        },
+        {
+          "example_id": "weblinx_22",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_23",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hi"
+        },
+        {
+          "example_id": "weblinx_24",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Conditional formatting in Excel."
+        },
+        {
+          "example_id": "weblinx_25",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_26",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_27",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_28",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_29",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_30",
+          "mode": "snapshot",
+          "p_fresh": 0.0,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        }
+      ],
+      "fresh_records": [
+        {
+          "example_id": "weblinx_0",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_1",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hi"
+        },
+        {
+          "example_id": "weblinx_2",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Sept 4th from 9:00 AM - 12:00 PM"
+        },
+        {
+          "example_id": "weblinx_3",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_4",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_5",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Alcoholic drinks, Beer, wine..."
+        },
+        {
+          "example_id": "weblinx_6",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Yes, sure."
+        },
+        {
+          "example_id": "weblinx_7",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_8",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Urgent Request On Sales Report."
+        },
+        {
+          "example_id": "weblinx_9",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hi"
+        },
+        {
+          "example_id": "weblinx_10",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "What time should the review start?"
+        },
+        {
+          "example_id": "weblinx_11",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Your neighborhood"
+        },
+        {
+          "example_id": "weblinx_12",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_13",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_14",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.04,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_15",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_16",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_17",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_18",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_19",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_20",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_21",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hi"
+        },
+        {
+          "example_id": "weblinx_22",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_23",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hi"
+        },
+        {
+          "example_id": "weblinx_24",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Conditional formatting in Excel."
+        },
+        {
+          "example_id": "weblinx_25",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_26",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_27",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_28",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        },
+        {
+          "example_id": "weblinx_29",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": true,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "Hello"
+        },
+        {
+          "example_id": "weblinx_30",
+          "mode": "fresh",
+          "p_fresh": 0.3,
+          "passed": false,
+          "integrity_ok": true,
+          "replay_ok": true,
+          "f1": 0.0,
+          "raw_answer": "I don't know."
+        }
+      ]
+    }
+  ]
+}

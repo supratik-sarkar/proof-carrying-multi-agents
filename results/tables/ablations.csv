@@ -1,0 +1,8 @@
+cell,full_clean,full_adv,no_replay_clean,no_replay_adv,no_redundancy_clean,no_redundancy_adv,no_resp_clean,no_resp_adv,no_riskctrl_clean,no_riskctrl_adv,source
+fever:phi-3.5-mini,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,measured
+hotpotqa:qwen2.5-7B,0.4,0.0,0.8,0.4,0.2,0.0,0.4,0.0,0.4,0.0,measured
+pubmedqa:Llama-3.1-8B,,,,,,,,,,,MISSING
+tatqa:Gemma-2-9b-it,,,,,,,,,,,MISSING
+toolbench:Llama-3.3-70B,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,measured
+weblinx:deepseek-v3,0.0967741935483871,0.0967741935483871,0.1935483870967742,0.1935483870967742,0.0967741935483871,0.0967741935483871,0.0967741935483871,0.0967741935483871,0.5161290322580645,0.5161290322580645,measured
+hotpotqa:phi-3.5-mini,,,,,,,,,,,MISSING

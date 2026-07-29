@@ -1,0 +1,72 @@
+{
+  "label": "tab:rebuttal_table_reconciliation",
+  "caption": "Canonical reconciliation for the six headline cells. Counts are explicit; audit and control coverage use distinct populations.",
+  "rows": [
+    {
+      "Cell": "phi-3.5-mini/FEVER",
+      "NoCert harm": "14/115",
+      "PCG harm": "4/100",
+      "Audit cov.": "11/14",
+      "Control cov.": "100/120",
+      "Clean gain": "3.04x",
+      "Adv gain": "1.70x",
+      "Metric version": "v4.2-canonical-",
+      "Source hash": "03cd628c8d7bc93a"
+    },
+    {
+      "Cell": "qwen2.5-7B/HotpotQA",
+      "NoCert harm": "19/115",
+      "PCG harm": "6/101",
+      "Audit cov.": "16/19",
+      "Control cov.": "101/120",
+      "Clean gain": "2.78x",
+      "Adv gain": "2.39x",
+      "Metric version": "v4.2-canonical-",
+      "Source hash": "d7cababbc9e99c58"
+    },
+    {
+      "Cell": "Llama-3.1-8B/PubMedQA",
+      "NoCert harm": "9/115",
+      "PCG harm": "3/101",
+      "Audit cov.": "8/9",
+      "Control cov.": "101/120",
+      "Clean gain": "2.63x",
+      "Adv gain": "2.93x",
+      "Metric version": "v4.2-canonical-",
+      "Source hash": "99fa4f94260b4502"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/TAT-QA",
+      "NoCert harm": "16/115",
+      "PCG harm": "12/101",
+      "Audit cov.": "12/16",
+      "Control cov.": "101/120",
+      "Clean gain": "1.17x",
+      "Adv gain": "1.91x",
+      "Metric version": "v4.2-canonical-",
+      "Source hash": "87ce00b1b22b604c"
+    },
+    {
+      "Cell": "Llama-3.3-70B/ToolBench",
+      "NoCert harm": "16/115",
+      "PCG harm": "7/102",
+      "Audit cov.": "13/16",
+      "Control cov.": "102/120",
+      "Clean gain": "2.03x",
+      "Adv gain": "1.91x",
+      "Metric version": "v4.2-canonical-",
+      "Source hash": "ad39c71c49bc5a3d"
+    },
+    {
+      "Cell": "deepseek-v3/WebLINX",
+      "NoCert harm": "16/115",
+      "PCG harm": "7/102",
+      "Audit cov.": "13/16",
+      "Control cov.": "102/120",
+      "Clean gain": "2.03x",
+      "Adv gain": "2.07x",
+      "Metric version": "v4.2-canonical-",
+      "Source hash": "5aaae260ca35f78c"
+    }
+  ]
+}

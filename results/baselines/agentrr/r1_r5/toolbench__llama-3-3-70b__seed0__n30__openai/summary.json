@@ -1,0 +1,47 @@
+{
+  "R1_record_replay": {
+    "accept_rate": 0.26666666666666666,
+    "audit_coverage_mean": 0.13444444444444445,
+    "audit_coverage_of_observed_bad_accepts": 0.5761904761904761,
+    "audit_coverage_on_bad_accepts": 0.5761904761904761,
+    "block_rate": 0.7333333333333334,
+    "corruption_types_used": [
+      "answer_evidence_mismatch",
+      "clean_replay",
+      "contradiction_injection",
+      "distractor_insertion",
+      "evidence_deletion",
+      "evidence_shuffle"
+    ],
+    "false_accept_proxy_rate_among_known": 0.23333333333333334,
+    "harm_under_corruption": 0.8986666666666667,
+    "harm_under_corruption_max": 1.0,
+    "harm_under_corruption_mean": 0.8986666666666667,
+    "invalid_response_rate": 0.0,
+    "json_parse_success_rate": 1.0,
+    "json_repair_rate": 0.0,
+    "known_correctness_n": 180,
+    "verify_rate": 0.0
+  },
+  "R2_replay_redundancy": {
+    "quorum_accept_n": 48,
+    "quorum_block_n": 132,
+    "quorum_verify_n": 0
+  },
+  "R3_replay_responsibility": {
+    "mean_decision_flips_per_record": 0.7333333333333333,
+    "total_decision_flips": 132
+  },
+  "R5_overhead": {
+    "latency_mean_s": 1.5669904245270623,
+    "latency_total_s": 282.0582764148712,
+    "tokens_est_total": 24595
+  },
+  "backend_mode": "openai",
+  "baseline": "agentrr_style_record_replay_adapter",
+  "dataset": "toolbench",
+  "model": "llama-3.3-70b",
+  "n": 180,
+  "seed": 0,
+  "source_baseline_input": "/content/pcg/results/tables/csv/baseline_inputs/20260529-221217_r1_toolbench_llama-3.3-70b__seed0__baseline_inputs.jsonl"
+}

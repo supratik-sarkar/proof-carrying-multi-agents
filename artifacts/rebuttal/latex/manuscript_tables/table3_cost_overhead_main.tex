@@ -1,0 +1,25 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize Cost overhead on the six highlighted cells. Multipliers are relative to NoCert; absolute p50/p95 latency and token counts expose the certification cost.}
+\label{tab:cost_overhead_main}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l|ccc|ccc|ccc}
+\toprule
+Cell & Shield tok. & AgentRR tok. & PCG tok. & Shield lat. & AgentRR lat. & PCG lat. & PCG p50 ms & PCG p95 ms & PCG tokens \\
+\midrule
+\texttt{phi-3.5-mini}/\texttt{FEVER} & 1.37$\times$ & 1.43$\times$ & 1.89$\times$ & 1.27$\times$ & 1.44$\times$ & 1.90$\times$ & 775 & 1190 & 918 \\
+\texttt{qwen2.5-7B}/\texttt{HotpotQA} & 1.37$\times$ & 1.47$\times$ & 1.89$\times$ & 1.31$\times$ & 1.52$\times$ & 1.95$\times$ & 1021 & 1525 & 1496 \\
+\texttt{Llama-3.1-8B}/\texttt{PubMedQA} & 1.40$\times$ & 1.48$\times$ & 1.92$\times$ & 1.33$\times$ & 1.50$\times$ & 2.01$\times$ & 1185 & 1641 & 1713 \\
+\texttt{Gemma-2-9b-it}/\texttt{TAT-QA} & 1.41$\times$ & 1.51$\times$ & 1.96$\times$ & 1.24$\times$ & 1.46$\times$ & 1.88$\times$ & 1243 & 1704 & 1945 \\
+\texttt{Llama-3.3-70B}/\texttt{ToolBench} & 1.38$\times$ & 1.48$\times$ & 1.93$\times$ & 1.37$\times$ & 1.54$\times$ & 2.03$\times$ & 1765 & 2661 & 3574 \\
+\texttt{deepseek-v3}/\texttt{WebLINX} & 1.37$\times$ & 1.48$\times$ & 1.90$\times$ & 1.27$\times$ & 1.46$\times$ & 2.02$\times$ & 2021 & 2621 & 4207 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

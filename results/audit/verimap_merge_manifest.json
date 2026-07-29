@@ -1,0 +1,34 @@
+{
+  "copied_figures": [
+    "results/figures/appendix_hero_v4.pdf",
+    "results/figures/appendix_hero_v4.png"
+  ],
+  "copied_tables": [],
+  "missing_figures": [],
+  "missing_tables": [],
+  "note": "VeriMAP is appendix-only: copied appendix_hero_v4 only; preserved all other final figures/tables.",
+  "preserved_existing_figures": [
+    "results/figures/intro_hero_v4.pdf",
+    "results/figures/intro_hero_v4.png",
+    "results/figures/r1_audit_decomposition_v4.pdf",
+    "results/figures/r1_audit_decomposition_v4.png",
+    "results/figures/r1_five_channel_audit.pdf",
+    "results/figures/r1_five_channel_audit.png",
+    "results/figures/r2_redundancy_surface_v4.pdf",
+    "results/figures/r2_redundancy_surface_v4.png",
+    "results/figures/r3_open_mixed.pdf",
+    "results/figures/r3_open_mixed.png",
+    "results/figures/r3_responsibility_v4.pdf",
+    "results/figures/r3_responsibility_v4.png",
+    "results/figures/r4_control_frontier_v4.pdf",
+    "results/figures/r4_control_frontier_v4.png",
+    "results/figures/r4_privacy_frontier.pdf",
+    "results/figures/r4_privacy_frontier.png",
+    "results/figures/r5_overhead_v4.pdf",
+    "results/figures/r5_overhead_v4.png",
+    "results/figures/r5_scaling.pdf",
+    "results/figures/r5_scaling.png",
+    "results/figures/ablations.pdf",
+    "results/figures/ablations.png"
+  ]
+}

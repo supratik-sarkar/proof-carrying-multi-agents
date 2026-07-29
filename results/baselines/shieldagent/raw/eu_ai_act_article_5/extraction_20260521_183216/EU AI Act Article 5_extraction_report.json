@@ -1,0 +1,54 @@
+{
+  "document_path": "./.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
+  "input_type": "pdf",
+  "organization": "EU AI Act Article 5",
+  "extraction_id": "20260521_183216",
+  "deep_policy": false,
+  "sections_processed": 1,
+  "policies_extracted": 13,
+  "visited_sections": [
+    "pdf:./.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf:1-8"
+  ],
+  "document_tree": {
+    "name": "Root",
+    "type": "root",
+    "path": "./.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
+    "policies_count": 0,
+    "children": [
+      {
+        "name": "Initial Document",
+        "type": "pdf",
+        "path": "./.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
+        "range": "1-8",
+        "policies_count": 13,
+        "policy_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "children": []
+      }
+    ]
+  },
+  "document_tree_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/EU AI Act Article 5_document_tree.json",
+  "visualization_file": null,
+  "timestamp": "2026-05-21T18:33:38.574540",
+  "overall_processing_time": 82.38588905334473,
+  "section_processing_times": [
+    {
+      "section_name": "Initial Document",
+      "processing_time": 82.3848249912262
+    }
+  ],
+  "average_section_time": 82.3848249912262
+}

@@ -1,0 +1,25 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize Audit and calibration summary. Residual-dependence envelopes, checker calibration, and replay/canonicalization failure rates are frozen before final evaluation.}
+\label{tab:audit_calibration_summary}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l|cccccc}
+\toprule
+Cell & $\bar{\rho}$ & ECE & Brier & Replay fail & Canon fail & Entail F1 \\
+\midrule
+\texttt{phi-3.5-mini}/\texttt{FEVER} & 1.236 & 0.136 & 0.022 & 0.017 & 0.009 & \textbf{1.000} \\
+\texttt{qwen2.5-7B}/\texttt{HotpotQA} & 1.206 & 0.144 & 0.028 & 0.017 & 0.009 & \textbf{1.000} \\
+\texttt{Llama-3.1-8B}/\texttt{PubMedQA} & 1.196 & 0.131 & 0.022 & 0.016 & 0.008 & \textbf{1.000} \\
+\texttt{Gemma-2-9b-it}/\texttt{TAT-QA} & 1.169 & 0.143 & 0.028 & 0.017 & 0.009 & \textbf{1.000} \\
+\texttt{Llama-3.3-70B}/\texttt{ToolBench} & 1.147 & 0.125 & 0.020 & 0.016 & 0.008 & \textbf{1.000} \\
+\texttt{deepseek-v3}/\texttt{WebLINX} & \textbf{1.141} & \textbf{0.124} & \textbf{0.019} & \textbf{0.015} & \textbf{0.008} & \textbf{1.000} \\
+\bottomrule
+\end{tabular}}
+\end{table*}

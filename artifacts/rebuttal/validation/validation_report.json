@@ -1,0 +1,84 @@
+{
+  "summary": {
+    "checks_total": 13,
+    "checks_passed": 13,
+    "checks_failed": 0
+  },
+  "checks": [
+    {
+      "name": "56 unique cells",
+      "passed": true,
+      "detail": "observed=56"
+    },
+    {
+      "name": "6 headline + 50 complement",
+      "passed": true,
+      "detail": "6+50"
+    },
+    {
+      "name": "18 labels preserved",
+      "passed": true,
+      "detail": "labels=18"
+    },
+    {
+      "name": "Tables 14/15 partition",
+      "passed": true,
+      "detail": "25+25=50"
+    },
+    {
+      "name": "Audit coverage varies",
+      "passed": true,
+      "detail": "distinct=25"
+    },
+    {
+      "name": "Safety gain varies",
+      "passed": true,
+      "detail": "distinct=42"
+    },
+    {
+      "name": "Responsibility lift varies",
+      "passed": true,
+      "detail": "distinct=9"
+    },
+    {
+      "name": "Audit/control definitions differ",
+      "passed": true,
+      "detail": "audit_selected among bad NoCert vs PCG accepted/N"
+    },
+    {
+      "name": "Tables 10/11 labelled modelled",
+      "passed": true,
+      "detail": "yes"
+    },
+    {
+      "name": "S identity exact",
+      "passed": true,
+      "detail": "six cells"
+    },
+    {
+      "name": "NoPrune costs more",
+      "passed": true,
+      "detail": "positive mean token delta"
+    },
+    {
+      "name": "Witnesses one fail each",
+      "passed": true,
+      "detail": "4/4"
+    },
+    {
+      "name": "No generic one-value tables",
+      "passed": true,
+      "detail": "all substantive"
+    }
+  ],
+  "ranges": {
+    "clean_safety_gain": [
+      1.0643478260869565,
+      4.8304347826086955
+    ],
+    "audit_coverage": [
+      0.7272727272727273,
+      0.9090909090909091
+    ]
+  }
+}
