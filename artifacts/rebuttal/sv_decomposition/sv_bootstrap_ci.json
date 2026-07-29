@@ -1,0 +1,10 @@
+{
+  "n_bootstraps": 1000,
+  "seed": 42,
+  "S_mean": -0.0005,
+  "S_ci_low": -0.0034,
+  "S_ci_high": 0.0022,
+  "V_mean": 0.0783,
+  "V_ci_low": 0.0734,
+  "V_ci_high": 0.0835
+}

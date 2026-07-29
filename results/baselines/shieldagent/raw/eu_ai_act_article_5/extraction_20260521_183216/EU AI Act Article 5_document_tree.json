@@ -1,13 +1,13 @@
 {
   "name": "Root",
   "type": "root",
-  "path": "./.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
+  "path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
   "policies_count": 0,
   "children": [
     {
       "name": "Initial Document",
       "type": "pdf",
-      "path": "./.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
+      "path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
       "range": "1-8",
       "policies_count": 13,
       "policy_ids": [

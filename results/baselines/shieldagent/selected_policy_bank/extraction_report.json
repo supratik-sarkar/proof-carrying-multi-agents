@@ -1,5 +1,5 @@
 {
-  "document_path": "./.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
+  "document_path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
   "input_type": "pdf",
   "organization": "EU AI Act Article 5",
   "extraction_id": "20260521_183216",
@@ -7,18 +7,18 @@
   "sections_processed": 1,
   "policies_extracted": 13,
   "visited_sections": [
-    "pdf:./.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf:1-8"
+    "pdf:/Users/supratiksarkar/Desktop/pcg-neurips2026/.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf:1-8"
   ],
   "document_tree": {
     "name": "Root",
     "type": "root",
-    "path": "./.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
+    "path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
     "policies_count": 0,
     "children": [
       {
         "name": "Initial Document",
         "type": "pdf",
-        "path": "./.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
+        "path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/.sota_src/shieldagent_author/policy_docs/eu_ai_act_art5.pdf",
         "range": "1-8",
         "policies_count": 13,
         "policy_ids": [
@@ -40,7 +40,7 @@
       }
     ]
   },
-  "document_tree_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/EU AI Act Article 5_document_tree.json",
+  "document_tree_file": "/Users/supratiksarkar/Desktop/pcg-neurips2026/results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/EU AI Act Article 5_document_tree.json",
   "visualization_file": null,
   "timestamp": "2026-05-21T18:33:38.574540",
   "overall_processing_time": 82.38588905334473,

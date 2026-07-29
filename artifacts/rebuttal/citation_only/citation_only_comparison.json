@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "matched_example_count": 13440,
+  "systems": {
+    "NoCert": {
+      "system_name": "NoCert",
+      "evaluated_examples": 13440,
+      "accepted_count": 12880,
+      "h_support": 0.1126,
+      "h_exec": 0.0628,
+      "h_composite": 0.1686,
+      "coverage": 0.9583,
+      "utility": 0.9503,
+      "tokens": 1122.5,
+      "latency_ms": 659.3
+    },
+    "Citation-Only": {
+      "system_name": "Citation-Only",
+      "evaluated_examples": 13440,
+      "accepted_count": 0,
+      "h_support": 0.0,
+      "h_exec": 0.0,
+      "h_composite": 0.0,
+      "coverage": 0.0,
+      "utility": 0.0,
+      "tokens": 0.0,
+      "latency_ms": 0.0
+    },
+    "ShieldAgent": {
+      "system_name": "ShieldAgent",
+      "evaluated_examples": 13440,
+      "accepted_count": 12297,
+      "h_support": 0.1039,
+      "h_exec": 0.0299,
+      "h_composite": 0.1303,
+      "coverage": 0.915,
+      "utility": 0.9125,
+      "tokens": 1555.6,
+      "latency_ms": 884.3
+    },
+    "AgentRR": {
+      "system_name": "AgentRR",
+      "evaluated_examples": 13440,
+      "accepted_count": 12104,
+      "h_support": 0.0894,
+      "h_exec": 0.0404,
+      "h_composite": 0.1264,
+      "coverage": 0.9006,
+      "utility": 0.899,
+      "tokens": 1649.7,
+      "latency_ms": 977.0
+    },
+    "PCG-MAS": {
+      "system_name": "PCG-MAS",
+      "evaluated_examples": 13440,
+      "accepted_count": 11211,
+      "h_support": 0.0556,
+      "h_exec": 0.0297,
+      "h_composite": 0.0838,
+      "coverage": 0.8342,
+      "utility": 0.8336,
+      "tokens": 2159.8,
+      "latency_ms": 1338.8
+    }
+  }
+}
