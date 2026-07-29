@@ -1,0 +1,1712 @@
+{
+  "per_regime": [
+    {
+      "mean_margin": 0.5161290322580645,
+      "mean_resp": 0.25806451612903225,
+      "median_rank_recovery_prob": 0.9059290165759636,
+      "n_with_target": 0,
+      "p_swap": 0.0,
+      "per_example": [
+        {
+          "all_components": [
+            {
+              "component_id": "4a27eab81f054bc5",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "f31a755ceeea4de5",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_0",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "4a27eab81f054bc5",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "9205a9a9d74c4c3a",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "9c1d56f053d04c2c",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_1",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "9205a9a9d74c4c3a",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "c381fc8360de4353",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "1369976cf1ce495b",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_2",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "c381fc8360de4353",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "5a1f97e07e8d47e5",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "6b0fd71ae267443a",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_3",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "5a1f97e07e8d47e5",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "5ef1638b981949e8",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "6ffe2275d45b4b1b",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_4",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "5ef1638b981949e8",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "e92037ac200b40ae",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "b6b73025c4fb4a3a",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_5",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "e92037ac200b40ae",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "db7e9d2a91b3431c",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "5266d4cbc3d7455c",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_6",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "db7e9d2a91b3431c",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "5ca76f529ace4595",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "a775400bf5e64e05",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_7",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "5ca76f529ace4595",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "336c03f017444e9c",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "74363219d1944c6e",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_8",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "336c03f017444e9c",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "4ebcbe81a49f4371",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "e33874f2efb4404a",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_9",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "4ebcbe81a49f4371",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "ec08a5fccf394587",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "97ba912d85db4cb4",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_10",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "ec08a5fccf394587",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "11b2e35c829f44d0",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "64edf1b6e9e943f2",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_11",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "11b2e35c829f44d0",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "09a25e774bda48bb",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "78924da9aee7442e",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_12",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "09a25e774bda48bb",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "1cb080c3e0d7494b",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "9969b47b0cb14674",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_13",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "1cb080c3e0d7494b",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "9c1732a77dbd424e",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "8d9d857a42164d16",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_14",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "9c1732a77dbd424e",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "694df8483cc74b94",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "c12e564b95c649ba",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_15",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "694df8483cc74b94",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "711c10d2051544a5",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "ab0434dd690c4ef9",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_16",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "711c10d2051544a5",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "85ef2ab66d0042e2",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "e5c24ce96ec34367",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_17",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "85ef2ab66d0042e2",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "907c0cea3ed1404d",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "616112065d134b02",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_18",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "907c0cea3ed1404d",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "1ffff2ccc8fa4eed",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "e04a22fd0f794c77",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_19",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "1ffff2ccc8fa4eed",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "5b97d3ae3580435d",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "8f74109a2fb34f12",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_20",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "5b97d3ae3580435d",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "ddce505644e94671",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "fa70eb8b79af4eea",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_21",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "ddce505644e94671",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "8075fef50a654246",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "daa0bea99b0d4958",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_22",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "8075fef50a654246",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "02361e894bc34b16",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "84ff678ceb4d4b23",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_23",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "02361e894bc34b16",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "5f6fe219458d40ce",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "b9ade25ee8e64d95",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_24",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "5f6fe219458d40ce",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "9b9aa9fdbeae4664",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "4212328d32a446a5",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_25",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "9b9aa9fdbeae4664",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "4ddf111b8ee040cb",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "12846cea83434ccf",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_26",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "4ddf111b8ee040cb",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "66bb64f244974f8b",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "6451c58f64954fb7",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_27",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "66bb64f244974f8b",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "5fc6967e36864109",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "1041b30f13b74931",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_28",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "5fc6967e36864109",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "c5921fd20b244a17",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "016e726f79554983",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_29",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "c5921fd20b244a17",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "e41ecc75d63d4a8f",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "a90a5bc9b38342b7",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_30",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "e41ecc75d63d4a8f",
+          "top1_correct": false
+        }
+      ],
+      "regime": "clean",
+      "top1_accuracy": null
+    },
+    {
+      "mean_margin": 0.45161290322580644,
+      "mean_resp": 0.22580645161290322,
+      "median_rank_recovery_prob": 0.0,
+      "n_with_target": 5,
+      "p_swap": 0.1,
+      "per_example": [
+        {
+          "all_components": [
+            {
+              "component_id": "93d95be5dbd54877",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "77012e2658d34b7c",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_0",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "93d95be5dbd54877",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "dfb0195dd8544be7",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "08b960b78bb146ed",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_1",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "dfb0195dd8544be7",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "9274b9f6e71344c3",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "80289ffa8f4b4827",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_2",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "9274b9f6e71344c3",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "cdf26f09a33d49cd",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "b52d386bb04843a9",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_3",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "cdf26f09a33d49cd",
+          "top1_component_id": "cdf26f09a33d49cd",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "db61e4fc4b5242f5",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "4b665c423129413d",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_4",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "db61e4fc4b5242f5",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "6a2e346ad6a44180",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "4bbc4c2393d34fd9",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_5",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "6a2e346ad6a44180",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "822daa42d346458c",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "45c4706314714c2f",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_6",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "822daa42d346458c",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "ba36f14b47be4406",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "42574046b773430e",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_7",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "ba36f14b47be4406",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "edf5b8db0dbd4ca6",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "d109a5c66a404b3e",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_8",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "edf5b8db0dbd4ca6",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "3ab61cfac3884967",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "245bc8ee75794f57",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_9",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "3ab61cfac3884967",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "cc8c662c0cbe48ed",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "343f464ef8dc41d0",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_10",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "cc8c662c0cbe48ed",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "98ffc3023d964228",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "0f6e0be7693e4f49",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_11",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "98ffc3023d964228",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "5af4e1ce6eb14c59",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "4c675979a9b048e8",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_12",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "5af4e1ce6eb14c59",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "1932d68b4b564fc8",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "5f987bf7e86549cc",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_13",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "1932d68b4b564fc8",
+          "top1_component_id": "1932d68b4b564fc8",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "249b118f50a04526",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "6f5e63928fb047b0",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_14",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "249b118f50a04526",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "69bf658417e94241",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "0df78b43df1944ed",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_15",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "69bf658417e94241",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "e56a0d281725452d",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "91bbce86181a4c13",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_16",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "e56a0d281725452d",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "359db53445b74425",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "25a6547a836f4724",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_17",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "359db53445b74425",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "59f5e8d3978e46fc",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "eba450575f134f93",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_18",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "59f5e8d3978e46fc",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "4d1457d05e6b4358",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "5a2c51d9c56c40a5",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_19",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "4d1457d05e6b4358",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "1936b517d04f4975",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "ef3e1bf4eff441ad",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_20",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "1936b517d04f4975",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "0430bb00d2c2460e",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "31507504f9c74f52",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_21",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "0430bb00d2c2460e",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "76dc3797eff142e1",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "d452a48bee7e4c80",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_22",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "76dc3797eff142e1",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "17ac9b1e1aa84805",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "54ca6e3348534198",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_23",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "17ac9b1e1aa84805",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "dfc055f196084c3e",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "adb24944d7b64aab",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_24",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "dfc055f196084c3e",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "4ca7e9259e914420",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "48534bab68164396",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_25",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "4ca7e9259e914420",
+          "top1_component_id": "4ca7e9259e914420",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "9693778fd6024a91",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "9950a9905e844b60",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_26",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "9693778fd6024a91",
+          "top1_component_id": "9693778fd6024a91",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "f887296ec4cb41a8",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "ef81fafe3f4d4286",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_27",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "f887296ec4cb41a8",
+          "top1_component_id": "f887296ec4cb41a8",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "b24ee7531f254e71",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "e880d3cab2f542b4",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_28",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "b24ee7531f254e71",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "ca5c599bf66c49ef",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "56fb1fc1a0bf4a12",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_29",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "ca5c599bf66c49ef",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "ced0f8908d7d45eb",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "e616ef191d65411a",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_30",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "ced0f8908d7d45eb",
+          "top1_correct": false
+        }
+      ],
+      "regime": "light",
+      "top1_accuracy": 1.0
+    },
+    {
+      "mean_margin": 0.3548387096774194,
+      "mean_resp": 0.1774193548387097,
+      "median_rank_recovery_prob": 0.0,
+      "n_with_target": 13,
+      "p_swap": 0.3,
+      "per_example": [
+        {
+          "all_components": [
+            {
+              "component_id": "556597d3f06e40f1",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "9307ba42485e4573",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_0",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "556597d3f06e40f1",
+          "top1_component_id": "556597d3f06e40f1",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "f9d069c59d5846ba",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "7b7ba6e2e5d74739",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_1",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "f9d069c59d5846ba",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "2a193b0bfe754650",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "6c61b1848dad4874",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_2",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "2a193b0bfe754650",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "3240fd2d3bc04cea",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "d3d5e9758d8940dc",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_3",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "3240fd2d3bc04cea",
+          "top1_component_id": "3240fd2d3bc04cea",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "a4544a63b58945b2",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "dd4071d088914f96",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_4",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "a4544a63b58945b2",
+          "top1_component_id": "a4544a63b58945b2",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "1327a10e49134af6",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "af908ea0e48a44cd",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_5",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "1327a10e49134af6",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "f8f14b39500c46cb",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "0188e4b35a134b2d",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_6",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "f8f14b39500c46cb",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "be06f57d32754b1a",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "ebf5029701fa467d",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_7",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "be06f57d32754b1a",
+          "top1_component_id": "be06f57d32754b1a",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "53b23d7fb24047c4",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "e48702bffdea42ea",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_8",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "53b23d7fb24047c4",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "cb409a566f9947f0",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "00a6cfae28ff4c58",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_9",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "cb409a566f9947f0",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "e00a945a74b2475f",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "8d8137fd5c544bdd",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_10",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "e00a945a74b2475f",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "64880de222db4190",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "015dfa7c972449e7",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_11",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "64880de222db4190",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "26665d18c6ba4e3c",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "21583934a4dc4f03",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_12",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "26665d18c6ba4e3c",
+          "top1_component_id": "26665d18c6ba4e3c",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "59287c2128134a84",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "66e7b480831846ac",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_13",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "59287c2128134a84",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "5139d2f56c9b47c6",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "1f133800258d4f38",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_14",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "5139d2f56c9b47c6",
+          "top1_component_id": "5139d2f56c9b47c6",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "7912f504e9a4491a",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "63ad333845b64cdd",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_15",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "7912f504e9a4491a",
+          "top1_component_id": "7912f504e9a4491a",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "1118cbc2b33a4350",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "2af5496f7a904b2e",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_16",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "1118cbc2b33a4350",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "48093808c5234359",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "d48684f5003b41a0",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_17",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "48093808c5234359",
+          "top1_component_id": "48093808c5234359",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "652de05a16fe4ef5",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "110f585c321c4a63",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_18",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "652de05a16fe4ef5",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "7897bc2bf4254eec",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "718b87ca944b4dba",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_19",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "7897bc2bf4254eec",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "56660e87075a411b",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "a5672ed84356418e",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_20",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "56660e87075a411b",
+          "top1_component_id": "56660e87075a411b",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "b3ef528a5fd74b8b",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "1915aeb6cc5d4abb",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_21",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "b3ef528a5fd74b8b",
+          "top1_component_id": "b3ef528a5fd74b8b",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "46b9a9014be54f3f",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "1f65b54c867e4937",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_22",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "46b9a9014be54f3f",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "065b015d157d46aa",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "15f74b0dd9c54de6",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_23",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "065b015d157d46aa",
+          "top1_component_id": "065b015d157d46aa",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "d66f482621cb47e1",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "5ceefa29d6b449d2",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_24",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "d66f482621cb47e1",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "adfa7afffa9a4ee8",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "228a5f204ab5412d",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_25",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "adfa7afffa9a4ee8",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "cb87ec542f5447b3",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "0f5eafa475134486",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_26",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "cb87ec542f5447b3",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "99ac632b89234093",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "4fb5ce2d16d84074",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_27",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": null,
+          "top1_component_id": "99ac632b89234093",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "d03f6b2e95ad487e",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "c6bd9f7e04734d50",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_28",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "d03f6b2e95ad487e",
+          "top1_component_id": "d03f6b2e95ad487e",
+          "top1_correct": true
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "5953f82683cc4479",
+              "estimate": 1.0
+            },
+            {
+              "component_id": "eb3694f45dc14cc1",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_29",
+          "margin": 1.0,
+          "rank_recovery_prob": 0.9059290165759636,
+          "target_id": null,
+          "top1_component_id": "5953f82683cc4479",
+          "top1_correct": false
+        },
+        {
+          "all_components": [
+            {
+              "component_id": "857e8fa081514cc2",
+              "estimate": 0.0
+            },
+            {
+              "component_id": "a4776839431448a2",
+              "estimate": 0.0
+            }
+          ],
+          "example_id": "weblinx_30",
+          "margin": 0.0,
+          "rank_recovery_prob": 0.0,
+          "target_id": "857e8fa081514cc2",
+          "top1_component_id": "857e8fa081514cc2",
+          "top1_correct": true
+        }
+      ],
+      "regime": "heavy",
+      "top1_accuracy": 1.0
+    }
+  ],
+  "seed": 1
+}

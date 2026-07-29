@@ -1,0 +1,38 @@
+
+======================================================================
+CELL: hotpotqa__qwen2.5-7B  (n=5, seed=0)
+======================================================================
+loaded 5 examples
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.49s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.53s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.25s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.82s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.46s/it]
+./.venvs/multi-agents/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+./.venvs/multi-agents/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+./.venvs/multi-agents/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+  variant=full           cond=clean harm=0.400  (775.0s)
+  variant=full           cond=adv   harm=0.000  (537.7s)
+  variant=minus_v_h      cond=clean harm=0.400  (520.1s)
+  variant=minus_v_h      cond=adv   harm=0.000  (522.6s)
+  variant=minus_v_pi     cond=clean harm=0.400  (530.1s)
+  variant=minus_v_pi     cond=adv   harm=0.000  (520.7s)
+  variant=minus_v_gamma  cond=clean harm=0.400  (523.6s)
+  variant=minus_v_gamma  cond=adv   harm=0.000  (523.9s)
+  variant=minus_v_entail cond=clean harm=0.800  (521.3s)
+  variant=minus_v_entail cond=adv   harm=0.000  (531.1s)
+wrote results/tables/csv/ablations_outputs/20260601-041705_ablations/hotpotqa__qwen2.5-7B.jsonl
+wrote results/tables/csv/ablations_outputs/20260601-041705_ablations/hotpotqa__qwen2.5-7B__summary.json
+wrote results/tables/channel_ablation.csv
+wrote results/tables/channel_ablation.tex
+
+======================================================================
+ALL CELLS COMPLETE — out_dir: results/tables/csv/ablations_outputs/20260601-041705_ablations
+======================================================================
+cell                                     |        full(cl) |        full(ad) |   minus_v_h(cl) |   minus_v_h(ad) |  minus_v_pi(cl) |  minus_v_pi(ad) | minus_v_gam(cl) | minus_v_gam(ad) | minus_v_ent(cl) | minus_v_ent(ad)
+  hotpotqa:qwen2.5-7B             |        0.400           0.000           0.400           0.000           0.400           0.000           0.400           0.000           0.800           0.000    

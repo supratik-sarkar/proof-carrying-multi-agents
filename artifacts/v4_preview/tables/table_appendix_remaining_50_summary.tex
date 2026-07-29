@@ -1,0 +1,63 @@
+\begin{longtable}{lccccccccc}
+\caption{\small Complement to Table~\ref{tab:main_six_summary} over the remaining cells.}\\
+\label{tab:appendix_remaining_50_summary}\\
+\toprule
+Cell & Clean NoCert($\downarrow$) & Clean ShieldAgent($\downarrow$) & Clean PCG($\downarrow$) & Adv. NoCert($\downarrow$) & Adv. ShieldAgent($\downarrow$) & Adv. PCG($\downarrow$) & Cert. cov.$(\uparrow)$ & Resp.@1($\uparrow$) & Utility($\uparrow$) \\
+\midrule
+\endfirsthead
+\toprule
+Cell & Clean NoCert($\downarrow$) & Clean ShieldAgent($\downarrow$) & Clean PCG($\downarrow$) & Adv. NoCert($\downarrow$) & Adv. ShieldAgent($\downarrow$) & Adv. PCG($\downarrow$) & Cert. cov.$(\uparrow)$ & Resp.@1($\uparrow$) & Utility($\uparrow$) \\
+\midrule
+\endhead
+\texttt{Gemma-2-9b-it} / \texttt{2WikiMultihopQA} & 0.115 & 0.077 & 0.048 & 0.173 & 0.116 & 0.070 & 0.357 & 0.688 & 0.830 \\
+\texttt{Gemma-2-9b-it} / \texttt{FEVER} & 0.099 & 0.068 & 0.040 & 0.147 & 0.097 & 0.052 & 0.410 & 0.688 & 0.829 \\
+\texttt{Gemma-2-9b-it} / \texttt{HotpotQA} & 0.110 & 0.078 & 0.049 & 0.178 & 0.119 & 0.071 & 0.298 & 0.682 & 0.829 \\
+\texttt{Gemma-2-9b-it} / \texttt{PubMedQA} & 0.099 & 0.068 & 0.043 & 0.146 & 0.099 & 0.060 & 0.409 & 0.698 & 0.827 \\
+\texttt{Gemma-2-9b-it} / \texttt{Synthetic-Adversarial} & 0.180 & 0.128 & 0.079 & 0.192 & 0.124 & 0.065 & 0.000 & 0.681 & 0.820 \\
+\texttt{Gemma-2-9b-it} / \texttt{ToolBench} & 0.153 & 0.111 & 0.057 & 0.260 & 0.181 & 0.098 & 0.188 & 0.684 & 0.823 \\
+\texttt{Gemma-2-9b-it} / \texttt{WebLINX} & 0.122 & 0.086 & 0.054 & 0.189 & 0.127 & 0.080 & 0.237 & 0.669 & 0.830 \\
+\texttt{Llama-3.1-8B} / \texttt{2WikiMultihopQA} & 0.104 & 0.071 & 0.042 & 0.163 & 0.108 & 0.052 & 0.323 & 0.677 & 0.842 \\
+\texttt{Llama-3.1-8B} / \texttt{FEVER} & 0.093 & 0.062 & 0.038 & 0.132 & 0.087 & 0.054 & 0.479 & 0.705 & 0.837 \\
+\texttt{Llama-3.1-8B} / \texttt{HotpotQA} & 0.106 & 0.074 & 0.040 & 0.170 & 0.116 & 0.057 & 0.438 & 0.707 & 0.827 \\
+\texttt{Llama-3.1-8B} / \texttt{Synthetic-Adversarial} & 0.170 & 0.119 & 0.076 & 0.199 & 0.141 & 0.077 & 0.000 & 0.695 & 0.830 \\
+\texttt{Llama-3.1-8B} / \texttt{TAT-QA} & 0.126 & 0.088 & 0.049 & 0.199 & 0.135 & 0.074 & 0.317 & 0.685 & 0.833 \\
+\texttt{Llama-3.1-8B} / \texttt{ToolBench} & 0.138 & 0.099 & 0.058 & 0.213 & 0.148 & 0.085 & 0.146 & 0.702 & 0.832 \\
+\texttt{Llama-3.1-8B} / \texttt{WebLINX} & 0.119 & 0.084 & 0.043 & 0.193 & 0.134 & 0.078 & 0.396 & 0.703 & 0.825 \\
+\texttt{Llama-3.3-70B} / \texttt{2WikiMultihopQA} & 0.083 & 0.058 & 0.034 & 0.139 & 0.097 & 0.049 & 0.531 & 0.713 & 0.854 \\
+\texttt{Llama-3.3-70B} / \texttt{FEVER} & 0.067 & 0.048 & 0.026 & 0.097 & 0.069 & 0.036 & 0.599 & 0.740 & 0.854 \\
+\texttt{Llama-3.3-70B} / \texttt{HotpotQA} & 0.077 & 0.054 & 0.030 & 0.117 & 0.083 & 0.049 & 0.595 & 0.714 & 0.864 \\
+\texttt{Llama-3.3-70B} / \texttt{PubMedQA} & 0.063 & 0.042 & 0.025 & 0.097 & 0.066 & 0.035 & 0.629 & 0.717 & 0.851 \\
+\texttt{Llama-3.3-70B} / \texttt{Synthetic-Adversarial} & 0.143 & 0.098 & 0.057 & 0.164 & 0.111 & 0.060 & 0.185 & 0.734 & 0.851 \\
+\texttt{Llama-3.3-70B} / \texttt{TAT-QA} & 0.100 & 0.070 & 0.046 & 0.155 & 0.112 & 0.066 & 0.341 & 0.727 & 0.847 \\
+\texttt{Llama-3.3-70B} / \texttt{WebLINX} & 0.086 & 0.062 & 0.030 & 0.127 & 0.086 & 0.047 & 0.577 & 0.742 & 0.860 \\
+\texttt{deepseek-llm-7b-chat} / \texttt{2WikiMultihopQA} & 0.129 & 0.085 & 0.058 & 0.199 & 0.129 & 0.086 & 0.178 & 0.665 & 0.825 \\
+\texttt{deepseek-llm-7b-chat} / \texttt{FEVER} & 0.108 & 0.077 & 0.042 & 0.175 & 0.113 & 0.067 & 0.378 & 0.679 & 0.827 \\
+\texttt{deepseek-llm-7b-chat} / \texttt{HotpotQA} & 0.115 & 0.080 & 0.045 & 0.175 & 0.113 & 0.070 & 0.402 & 0.671 & 0.840 \\
+\texttt{deepseek-llm-7b-chat} / \texttt{PubMedQA} & 0.107 & 0.073 & 0.038 & 0.153 & 0.107 & 0.054 & 0.461 & 0.679 & 0.834 \\
+\texttt{deepseek-llm-7b-chat} / \texttt{Synthetic-Adversarial} & 0.191 & 0.130 & 0.070 & 0.218 & 0.142 & 0.074 & 0.047 & 0.696 & 0.817 \\
+\texttt{deepseek-llm-7b-chat} / \texttt{TAT-QA} & 0.142 & 0.104 & 0.054 & 0.223 & 0.147 & 0.075 & 0.226 & 0.678 & 0.821 \\
+\texttt{deepseek-llm-7b-chat} / \texttt{ToolBench} & 0.155 & 0.106 & 0.066 & 0.238 & 0.158 & 0.102 & 0.072 & 0.665 & 0.815 \\
+\texttt{deepseek-llm-7b-chat} / \texttt{WebLINX} & 0.131 & 0.091 & 0.050 & 0.207 & 0.140 & 0.087 & 0.289 & 0.648 & 0.823 \\
+\texttt{deepseek-v3} / \texttt{2WikiMultihopQA} & 0.067 & 0.046 & 0.030 & 0.109 & 0.075 & 0.046 & 0.608 & 0.745 & 0.864 \\
+\texttt{deepseek-v3} / \texttt{FEVER} & 0.055 & 0.039 & 0.019 & 0.078 & 0.052 & 0.032 & 0.716 & 0.742 & 0.856 \\
+\texttt{deepseek-v3} / \texttt{HotpotQA} & 0.055 & 0.037 & 0.019 & 0.086 & 0.056 & 0.033 & 0.721 & 0.766 & 0.868 \\
+\texttt{deepseek-v3} / \texttt{PubMedQA} & 0.055 & 0.036 & 0.022 & 0.079 & 0.056 & 0.029 & 0.697 & 0.746 & 0.874 \\
+\texttt{deepseek-v3} / \texttt{Synthetic-Adversarial} & 0.127 & 0.086 & 0.052 & 0.145 & 0.098 & 0.062 & 0.309 & 0.735 & 0.864 \\
+\texttt{deepseek-v3} / \texttt{TAT-QA} & 0.084 & 0.057 & 0.030 & 0.130 & 0.086 & 0.046 & 0.582 & 0.763 & 0.863 \\
+\texttt{deepseek-v3} / \texttt{ToolBench} & 0.094 & 0.066 & 0.041 & 0.141 & 0.094 & 0.050 & 0.404 & 0.740 & 0.852 \\
+\texttt{phi-3.5-mini} / \texttt{2WikiMultihopQA} & 0.146 & 0.102 & 0.055 & 0.243 & 0.161 & 0.104 & 0.228 & 0.645 & 0.816 \\
+\texttt{phi-3.5-mini} / \texttt{HotpotQA} & 0.142 & 0.100 & 0.056 & 0.215 & 0.137 & 0.077 & 0.228 & 0.623 & 0.807 \\
+\texttt{phi-3.5-mini} / \texttt{PubMedQA} & 0.133 & 0.089 & 0.059 & 0.212 & 0.143 & 0.082 & 0.230 & 0.619 & 0.803 \\
+\texttt{phi-3.5-mini} / \texttt{Synthetic-Adversarial} & 0.228 & 0.148 & 0.098 & 0.256 & 0.176 & 0.090 & 0.000 & 0.631 & 0.801 \\
+\texttt{phi-3.5-mini} / \texttt{TAT-QA} & 0.177 & 0.122 & 0.076 & 0.268 & 0.168 & 0.102 & 0.000 & 0.642 & 0.803 \\
+\texttt{phi-3.5-mini} / \texttt{ToolBench} & 0.186 & 0.127 & 0.078 & 0.283 & 0.189 & 0.107 & 0.000 & 0.624 & 0.798 \\
+\texttt{phi-3.5-mini} / \texttt{WebLINX} & 0.165 & 0.112 & 0.065 & 0.233 & 0.162 & 0.079 & 0.063 & 0.624 & 0.807 \\
+\texttt{qwen2.5-7B} / \texttt{2WikiMultihopQA} & 0.127 & 0.086 & 0.051 & 0.188 & 0.126 & 0.077 & 0.280 & 0.667 & 0.827 \\
+\texttt{qwen2.5-7B} / \texttt{FEVER} & 0.115 & 0.077 & 0.047 & 0.187 & 0.125 & 0.075 & 0.349 & 0.675 & 0.828 \\
+\texttt{qwen2.5-7B} / \texttt{PubMedQA} & 0.108 & 0.074 & 0.043 & 0.168 & 0.116 & 0.062 & 0.321 & 0.676 & 0.826 \\
+\texttt{qwen2.5-7B} / \texttt{Synthetic-Adversarial} & 0.189 & 0.131 & 0.080 & 0.211 & 0.142 & 0.080 & 0.000 & 0.651 & 0.812 \\
+\texttt{qwen2.5-7B} / \texttt{TAT-QA} & 0.146 & 0.098 & 0.060 & 0.224 & 0.147 & 0.083 & 0.110 & 0.637 & 0.820 \\
+\texttt{qwen2.5-7B} / \texttt{ToolBench} & 0.168 & 0.114 & 0.071 & 0.249 & 0.164 & 0.104 & 0.000 & 0.641 & 0.824 \\
+\texttt{qwen2.5-7B} / \texttt{WebLINX} & 0.136 & 0.091 & 0.059 & 0.191 & 0.135 & 0.083 & 0.129 & 0.643 & 0.821 \\
+\bottomrule
+\end{longtable}

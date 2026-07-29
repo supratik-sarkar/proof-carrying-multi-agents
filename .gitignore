@@ -1,178 +1,48 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# C extensions
 *.so
-*.egg
-*.egg-info/
+
+# Distribution / packaging
+.Python
 build/
+develop-eggs/
 dist/
+downloads/
+eggs/
 .eggs/
-pip-wheel-metadata/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
 # Virtual environments
-multi-agents/
-.venv/
-venv/
+.env
+.venv
 env/
-ENV/
-
-# Test / type / lint caches
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.tox/
-.coverage
-htmlcov/
-.cache/
-
-# Notebooks
-.ipynb_checkpoints/
-
-# OS / IDE
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Secrets — never commit these
-.env
-.env.*
-!.env.example
-*.pem
-hf_token.txt
-
-# HuggingFace cache (huge)
-.cache/huggingface/
-
-# Build artifacts of the docs pipeline that we keep regenerable
-docs/tables/manifest.json
-figures/manifest.json
-figures/intro_hero_manifest.json
-docs/manifest.json
-
-# local environment and Python cache
-multi-agents/
-.venv/
 venv/
-__pycache__/
-*.py[cod]
-.DS_Store
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-*.pyc
-
-# ---------------------------------------------------------------------
-# PCG-MAS local-only / generated artifacts
-# ---------------------------------------------------------------------
-.env
-.env.*
-!.env.example
-multi-agents/
+ENV/
+env.bak/
+venv.bak/
 .venvs/
-.sota_src/
-node_modules/
-__pycache__/
-*.pyc
+
+# macOS / IDE clutter
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+.idea/
+.vscode/
 
-# Runtime outputs
-results/
-!results/
-!results/tables/
-!results/tables/tex/
-!results/tables/tex/.gitkeep
-
-# Local setup notes and local README generator
-user_v1.txt
-user_v2.txt
-user_v3.txt
-user_v4.txt
-README_creator*.txt
-
-# Non-public manuscript / validation assets
-latex/
-tests/
-
-# Local workflow drafts; workflow_v3.png is the public README header
-workflow/pcg-mas-workflow.png
-workflow/workflow_v2.png
-
-# Preview tables are manuscript-side artifacts; figures are kept for README display
-artifacts/v4_preview/tables/
-
-# Staging folders
-results/figures_staged_selected/
-results/tables/tex_staged_selected/
-
-# PCG-MAS local-only and generated artifacts
-.env
-.env.*
-!.env.example
-multi-agents/
-.venvs/
-.sota_src/
-node_modules/
-__pycache__/
-*.pyc
-.DS_Store
-README_creator*.txt
-user_v1.txt
-user_v2.txt
-user_v3.txt
-user_v4.txt
-workflow/pcg-mas-workflow.png
-workflow/workflow_v2.png
-artifacts/v4_preview/tables/
-latex/
-tests/
-results/audit/
-results/baselines/
-results/figures/
-results/tables/csv/
-results/figures_staged_selected/
-results/tables/tex_staged_selected/
-results/tables/tex/*
-!results/tables/tex/.gitkeep
-
-# Local/runtime secrets and environments
-.env
-.env.*
-!.env.example
-multi-agents/
-.venvs/
-.sota_src/
-node_modules/
-
-# Local-only project notes and README generators
-README_creator*.txt
-user_v1.txt
-user_v2.txt
-user_v3.txt
-user_v4.txt
-
-# Generated results; keep only results/tables/tex/.gitkeep
-results/**
-!results/
-!results/tables/
-!results/tables/tex/
-!results/tables/tex/.gitkeep
-
-# Local manuscript and validation-only folders
-latex/
-tests/
-
-# Non-release workflow drafts
-workflow/pcg-mas-workflow.png
-workflow/workflow_v2.png
-
-# Preview tables are local-only
-artifacts/v4_preview/tables/
-
-# Python/editor clutter
-__pycache__/
-*.pyc
-.DS_Store
+# Local temporary scratch directories
+scratch/
+tmp/
+.antigravity/

@@ -1,0 +1,60 @@
+{
+  "label": "tab:audit_calibration_summary",
+  "caption": "Audit and calibration summary. Residual-dependence envelopes, checker calibration, and replay/canonicalization failure rates are frozen before final evaluation.",
+  "rows": [
+    {
+      "Cell": "phi-3.5-mini/FEVER",
+      "rho": "1.236",
+      "ECE": "0.136",
+      "Brier": "0.022",
+      "Replay fail": "0.017",
+      "Canon fail": "0.009",
+      "Entail F1": "1.000"
+    },
+    {
+      "Cell": "qwen2.5-7B/HotpotQA",
+      "rho": "1.206",
+      "ECE": "0.144",
+      "Brier": "0.028",
+      "Replay fail": "0.017",
+      "Canon fail": "0.009",
+      "Entail F1": "1.000"
+    },
+    {
+      "Cell": "Llama-3.1-8B/PubMedQA",
+      "rho": "1.196",
+      "ECE": "0.131",
+      "Brier": "0.022",
+      "Replay fail": "0.016",
+      "Canon fail": "0.008",
+      "Entail F1": "1.000"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/TAT-QA",
+      "rho": "1.169",
+      "ECE": "0.143",
+      "Brier": "0.028",
+      "Replay fail": "0.017",
+      "Canon fail": "0.009",
+      "Entail F1": "1.000"
+    },
+    {
+      "Cell": "Llama-3.3-70B/ToolBench",
+      "rho": "1.147",
+      "ECE": "0.125",
+      "Brier": "0.020",
+      "Replay fail": "0.016",
+      "Canon fail": "0.008",
+      "Entail F1": "1.000"
+    },
+    {
+      "Cell": "deepseek-v3/WebLINX",
+      "rho": "1.141",
+      "ECE": "0.124",
+      "Brier": "0.019",
+      "Replay fail": "0.015",
+      "Canon fail": "0.008",
+      "Entail F1": "1.000"
+    }
+  ]
+}

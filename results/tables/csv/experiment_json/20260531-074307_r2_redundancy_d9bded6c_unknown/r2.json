@@ -1,0 +1,1088 @@
+{
+  "aggregated_per_k": [
+    {
+      "empirical_ci": [
+        0.0,
+        0.0
+      ],
+      "empirical_mean": 0.0,
+      "k": 1,
+      "rho_hat_mean": Infinity,
+      "rho_ucb_max": Infinity,
+      "theory_plug_in_mean": 1.0,
+      "theory_ucb_max": 1.0
+    },
+    {
+      "empirical_ci": [
+        0.0,
+        0.0
+      ],
+      "empirical_mean": 0.0,
+      "k": 2,
+      "rho_hat_mean": Infinity,
+      "rho_ucb_max": Infinity,
+      "theory_plug_in_mean": 1.0,
+      "theory_ucb_max": 1.0
+    },
+    {
+      "empirical_ci": [
+        0.0,
+        0.0
+      ],
+      "empirical_mean": 0.0,
+      "k": 4,
+      "rho_hat_mean": Infinity,
+      "rho_ucb_max": Infinity,
+      "theory_plug_in_mean": 1.0,
+      "theory_ucb_max": 1.0
+    }
+  ],
+  "k_values": [
+    1,
+    2,
+    4
+  ],
+  "per_seed": [
+    {
+      "branch_fail_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "n": 31,
+      "per_example": [
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 10: I'm throwing a music-themed birthday party for my niece who loves Eminem. Can you search for tracks by 'Eminem' on Deezer and provide me with the genre of the artist? Additionally, fetch the HOT 100 chart information and the basic user information of a Soundcloud user with the profile URL 'https://soundcloud.com/user-977421934'."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 3: I'm planning a surprise party for my best friend's promotion and I need some entertainment ideas. Fetch the top quality memes from popular subreddits to create a fun and light-hearted atmosphere. Also, check if the username 'PromotionKing' is available on all social media platforms."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 2: I'm an art enthusiast and I'm interested in attending an art event in Italy. Can you provide me with the details of the event with the ID 55daa408-d224-4b68-8b70-8800424d3e88? Additionally, I would like to know the current status of the art openings Italy API. Also, fetch the latest active contests list."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 6: I want to send a gift to my friend and need reliable logistics services. Can you provide me with a list of logistics companies along with their images and additional data? Also, please provide the supply chain information for IBM."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 5: I'm a fashion blogger and I'm looking for some trendy accessories to feature in my next blog post. Can you search for products on Shopee that match the keywords 'statement necklace' and 'chunky rings'? Also, provide me with the market data for international markets to help me make informed investment decisions."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 2: I am writing an article on personality types and would like to gather information. Can you provide me with the Enneagram Personality Test Questionnaire, the Big Five Personality Test Questionnaire, and the DISC Personality Test Questionnaire? I want to explore different aspects of personality in my article."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 4: As a trader, I want to evaluate the performance of the BTCUSDT pair on Binance. Fetch the Ultimate Oscillator (UO), the Typical Price (TP), and the Trix (TRIX) for the past month. Additionally, provide the Stochastic (STOCH) and the Standard Deviation (STD) for the same period."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 2: My friends and I are planning a ski trip to Colorado and we need help finding accommodations near the slopes. Can you search for properties within a specific area defined by GPS coordinates? We would like to filter the results based on price, number of beds, and minimum bathrooms. Additionally, we would like to see the available amenities and property types for the listings."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 9: Please download the file at '/project_files/project1.mpp'. Also, retrieve the document properties for the same file."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": true,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 4: I am planning a big event for my company and I need to minimize costs. Can you assist me in finding the latest coupons, trending coupons, and popular coupons for event venues, catering services, and transportation? Please provide the coupon codes, discount percentages, and expiration dates for each coupon."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 2: I need to access my previously uploaded file with the ID 'e2ab50b6-0252-468b-8e76-700f60926b05' from the Simple File Storage tool. Additionally, provide me with the list of images I uploaded using the Image CDN tool, starting from page 2 and with a page size of 50."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 3: I'd like to explore the field of Shopify stores. Can you search for stores in a specific niche and retrieve their store names, store titles, store URLs, images, store descriptions, emails, phone numbers, and social media handles?"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 10: Please open the variation with ID '11111' and provide me with the details. Additionally, open the service with ID '22222' and list all the services available in my account."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 7: I'm organizing a family reunion and I need to find a suitable venue. Can you perform a web search for event venues in my city, including banquet halls, outdoor spaces, and hotels with conference facilities? Additionally, provide image search results for venue interiors, outdoor setups, and event decorations."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 2: My friend is redecorating her living room and she needs some furniture suggestions. Can you provide her with the details of a specific product she is interested in? Additionally, it would be helpful to see other similar products and their prices. Thank you!"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 11: My friend is planning a trip around the world and needs information about the populations of different countries. Can you provide the English names and populations in millions? Also, please include the total population worldwide."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 2: I'm organizing a company event and I need to create a playlist that will keep everyone entertained. Can you recommend some popular albums and playlists that would suit a diverse crowd? Additionally, provide me with trivia facts about the number of employees in our company and the significance of the event date."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 6: I'm organizing a team-building event for my company and I need some inspirational jokes to boost morale. Can you provide me with a specific manatee joke by its id? Additionally, it would be great to have a random Chuck Norris joke to add some laughter to the event."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 2: I am organizing a conference and would like to invite companies similar to 'ibm.com'. Can you retrieve the list of 50 similar companies along with their names, number of employees, revenue in USD, revenue growth, description, logo image URL, HQ location, country, and Linkedin URL? Including the logo of each company would be highly appreciated."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 2: I'm hosting a company event and need to order customized merchandise. Fetch the product details for the items in the 'promotional products' category on My Store. Also, check if there are any available coupon codes for the website with site ID 'zi00001' using the Free Coupon Codes API."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 5: I want to customize the navigation menu on my sports website. Can you provide me with the breadcrumb navigation items available on BetSports? Additionally, I would like to localize the routes on my website. Please provide me with the necessary data."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 9: I'm organizing a charity event and I need to send out invitations to potential donors. Can you provide me with a list of email addresses for individuals who have previously donated to similar causes? Additionally, I would like to create personalized invitations with unique QR codes for each recipient. Is there an API that can help me generate QR codes based on email addresses?"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 5: I am planning a surprise party for my best friend's birthday. Can you suggest some creative party themes and provide images related to these themes? Additionally, I would like to know the availability of local bakeries for ordering a customized cake."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 10: Give me the word of the day from Dictionary.com, Merriam-Webster, and Cambridge Dictionary. Also, fetch the recent word of the day from Dictionary.com. It would be helpful to have the word, type, and meaning for each word."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 8: I'm exploring different cities in Germany and I'm specifically interested in Berlin. Can you fetch me a list of city names in Berlin? Furthermore, I want to know the boundaries of the city named Karlsruhe. Please provide me with the postal codes, state, city, total area, and area unit for Karlsruhe. Thank you!"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 2: I'm organizing a team-building event for my company and I need some inspirational jokes to boost morale. Can you provide me with a specific manatee joke by its id? Additionally, it would be great to have a random Chuck Norris joke to add some laughter to the event."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 3: Can you help me retrieve the history of my uploaded images from the Web Image Storage tool? I would like to see the pages starting from page 1 with a page size of 50. Additionally, provide me with the pageable list of images from the Image CDN tool with a page size of 20 and starting from page 0."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 2: I'm organizing a company event and I need some customized merchandise. Fetch the catalogue from togo420 and provide me with the product images, descriptions, and inventory quantities. Also, suggest some wine options from Direct Wines for the event."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 6: I want to build a chatbot that can receive and respond to text messages. Can you provide me with a list of available numbers to receive messages from? Additionally, I would like to get updates about newly received messages and retrieve the details of a specific message by its ID."
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 7: Please translate the sentence 'How are you?' into different languages using the Translator Text API. Also, convert the number 2468135790 into its text format. Finally, can you translate the phrase 'What is your name?' into Shakespearean English?"
+        },
+        {
+          "branches": [
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25"
+            },
+            {
+              "accepted": false,
+              "f1": 0.0,
+              "retriever": "bm25_with_query_paraphrase"
+            }
+          ],
+          "id": "Step 5: I'm working on a research project related to product categories and their popularity in the market. Can you fetch the categories and the number of products available in each category? Additionally, I would like to know the date and time of the last update to ensure the accuracy of my findings."
+        }
+      ],
+      "per_k": [
+        {
+          "empirical": {
+            "hi": 0.11025539546043596,
+            "lo": 0.0,
+            "n_joint": 0,
+            "n_trials": 31,
+            "p_hat": 0.0
+          },
+          "k": 1,
+          "rho": {
+            "alpha": 0.05,
+            "k": 1,
+            "n_joint_fail": 0,
+            "n_trials": 31,
+            "p_joint_ucb": 0.11218874692236996,
+            "p_marg": 0.0,
+            "rho_hat": Infinity,
+            "rho_ucb": Infinity
+          },
+          "theory_plug_in": 1.0,
+          "theory_ucb": 1.0
+        },
+        {
+          "empirical": {
+            "hi": 0.11025539546043596,
+            "lo": 0.0,
+            "n_joint": 0,
+            "n_trials": 31,
+            "p_hat": 0.0
+          },
+          "k": 2,
+          "rho": {
+            "alpha": 0.05,
+            "k": 2,
+            "n_joint_fail": 0,
+            "n_trials": 31,
+            "p_joint_ucb": 0.12372528099467733,
+            "p_marg": 0.016129032258064516,
+            "rho_hat": Infinity,
+            "rho_ucb": Infinity
+          },
+          "theory_plug_in": 1.0,
+          "theory_ucb": 1.0
+        },
+        {
+          "empirical": {
+            "hi": 0.11025539546043596,
+            "lo": 0.0,
+            "n_joint": 0,
+            "n_trials": 31,
+            "p_hat": 0.0
+          },
+          "k": 4,
+          "rho": {
+            "alpha": 0.05,
+            "k": 4,
+            "n_joint_fail": 0,
+            "n_trials": 31,
+            "p_joint_ucb": 0.13804643352469687,
+            "p_marg": 0.016129032258064516,
+            "rho_hat": Infinity,
+            "rho_ucb": Infinity
+          },
+          "theory_plug_in": 1.0,
+          "theory_ucb": 1.0
+        }
+      ],
+      "seed": 1
+    }
+  ],
+  "run_id": "20260531-074307_r2_redundancy_d9bded6c_unknown",
+  "seeds": [
+    1
+  ]
+}

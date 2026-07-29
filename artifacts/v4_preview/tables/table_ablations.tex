@@ -1,0 +1,19 @@
+\begin{table}[!ht]
+\centering
+\caption{\small PCG-MAS ablations. Lower clean harm is better. Each ablation removes one component while keeping the same model--dataset cell.}
+\label{tab:ablations}
+\scriptsize
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{l|ccccc}
+\toprule
+Cell & Full PCG & NoReplay & NoRedundancy & NoResp & NoRiskCtrl \\
+\midrule
+\texttt{phi-3.5-mini} / \texttt{FEVER} & 0.055 & 0.090 & 0.080 & 0.063 & 0.081 \\
+\texttt{qwen2.5-7B} / \texttt{HotpotQA} & 0.052 & 0.082 & 0.072 & 0.058 & 0.086 \\
+\texttt{Llama-3.1-8B} / \texttt{PubMedQA} & 0.038 & 0.063 & 0.059 & 0.041 & 0.051 \\
+\texttt{Gemma-2-9b-it} / \texttt{TAT-QA} & 0.054 & 0.088 & 0.080 & 0.063 & 0.082 \\
+\texttt{Llama-3.3-70B} / \texttt{ToolBench} & 0.045 & 0.076 & 0.068 & 0.050 & 0.071 \\
+\texttt{deepseek-v3} / \texttt{WebLINX} & 0.027 & 0.044 & 0.039 & 0.030 & 0.040 \\
+\bottomrule
+\end{tabular}}
+\end{table}

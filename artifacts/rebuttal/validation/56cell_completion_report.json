@@ -1,0 +1,570 @@
+{
+  "gate": "GATE_1_COMPLETED_56_CELL_MATRIX",
+  "status": "PASS",
+  "total_expected_cells": 56,
+  "sample_size_per_cell": 240,
+  "total_records": 13440,
+  "arithmetic_identity": "56 * 240 = 13,440 [VERIFIED]",
+  "cells": [
+    {
+      "model": "phi-3.5-mini",
+      "dataset": "FEVER",
+      "cell_id": "phi-3.5-mini__FEVER",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "phi-3.5-mini",
+      "dataset": "HotpotQA",
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "phi-3.5-mini",
+      "dataset": "2WikiMultihopQA",
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "phi-3.5-mini",
+      "dataset": "PubMedQA",
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "phi-3.5-mini",
+      "dataset": "TAT-QA",
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "phi-3.5-mini",
+      "dataset": "ToolBench",
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "phi-3.5-mini",
+      "dataset": "WebLINX",
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "phi-3.5-mini",
+      "dataset": "Adversarial-Integrity",
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "qwen2.5-7B",
+      "dataset": "FEVER",
+      "cell_id": "qwen2.5-7B__FEVER",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "qwen2.5-7B",
+      "dataset": "HotpotQA",
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "qwen2.5-7B",
+      "dataset": "2WikiMultihopQA",
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "qwen2.5-7B",
+      "dataset": "PubMedQA",
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "qwen2.5-7B",
+      "dataset": "TAT-QA",
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "qwen2.5-7B",
+      "dataset": "ToolBench",
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "qwen2.5-7B",
+      "dataset": "WebLINX",
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "qwen2.5-7B",
+      "dataset": "Adversarial-Integrity",
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-llm-7b-chat",
+      "dataset": "FEVER",
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-llm-7b-chat",
+      "dataset": "HotpotQA",
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-llm-7b-chat",
+      "dataset": "2WikiMultihopQA",
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-llm-7b-chat",
+      "dataset": "PubMedQA",
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-llm-7b-chat",
+      "dataset": "TAT-QA",
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-llm-7b-chat",
+      "dataset": "ToolBench",
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-llm-7b-chat",
+      "dataset": "WebLINX",
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-llm-7b-chat",
+      "dataset": "Adversarial-Integrity",
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "dataset": "FEVER",
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "dataset": "HotpotQA",
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "dataset": "2WikiMultihopQA",
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "dataset": "PubMedQA",
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "dataset": "TAT-QA",
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "dataset": "ToolBench",
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "dataset": "WebLINX",
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "dataset": "Adversarial-Integrity",
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Gemma-2-9b-it",
+      "dataset": "FEVER",
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Gemma-2-9b-it",
+      "dataset": "HotpotQA",
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Gemma-2-9b-it",
+      "dataset": "2WikiMultihopQA",
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Gemma-2-9b-it",
+      "dataset": "PubMedQA",
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Gemma-2-9b-it",
+      "dataset": "TAT-QA",
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Gemma-2-9b-it",
+      "dataset": "ToolBench",
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Gemma-2-9b-it",
+      "dataset": "WebLINX",
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Gemma-2-9b-it",
+      "dataset": "Adversarial-Integrity",
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "dataset": "FEVER",
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "dataset": "HotpotQA",
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "dataset": "2WikiMultihopQA",
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "dataset": "PubMedQA",
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "dataset": "TAT-QA",
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "dataset": "ToolBench",
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "dataset": "WebLINX",
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "dataset": "Adversarial-Integrity",
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "FEVER",
+      "cell_id": "deepseek-v3__FEVER",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "HotpotQA",
+      "cell_id": "deepseek-v3__HotpotQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "2WikiMultihopQA",
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "PubMedQA",
+      "cell_id": "deepseek-v3__PubMedQA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "TAT-QA",
+      "cell_id": "deepseek-v3__TAT-QA",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "ToolBench",
+      "cell_id": "deepseek-v3__ToolBench",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "WebLINX",
+      "cell_id": "deepseek-v3__WebLINX",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "Adversarial-Integrity",
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "sample_count": 240,
+      "unique_record_ids": true,
+      "missing_outcomes": false,
+      "fallback_used": false,
+      "execution_status": "COMPLETED"
+    }
+  ]
+}

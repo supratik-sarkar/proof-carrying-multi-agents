@@ -1,0 +1,25 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize Verification-channel ablation. Removing any channel increases accepted harm; execution compliance matters most in tool/delegation-heavy cells.}
+\label{tab:channel_ablation}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccc}
+\toprule
+Cell & Full PCG-MAS & $-V_H$ & $-V_{\Pi}$ & $-V_{\Gamma}$ & $-V_{\vdash}$ \\
+\midrule
+\texttt{phi-3.5-mini}/\texttt{FEVER} & \textbf{0.040} & 0.049 & 0.058 & 0.087 & 0.049 \\
+\texttt{qwen2.5-7B}/\texttt{HotpotQA} & \textbf{0.069} & 0.078 & 0.115 & 0.077 & 0.115 \\
+\texttt{Llama-3.1-8B}/\texttt{PubMedQA} & \textbf{0.030} & 0.029 & 0.038 & 0.038 & 0.038 \\
+\texttt{Gemma-2-9b-it}/\texttt{TAT-QA} & \textbf{0.119} & 0.107 & 0.115 & 0.135 & 0.115 \\
+\texttt{Llama-3.3-70B}/\texttt{ToolBench} & \textbf{0.059} & 0.067 & 0.076 & 0.086 & 0.076 \\
+\texttt{deepseek-v3}/\texttt{WebLINX} & \textbf{0.078} & 0.058 & 0.095 & 0.114 & 0.067 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

@@ -1,0 +1,18 @@
+\begin{table}[!ht]
+\centering
+\caption{\small R3 open-set and mixed-channel diagnosis. Top-2 and multi-label scores evaluate failures that do not cleanly belong to a single audit channel.}
+\label{tab:r3_open_mixed}
+\scriptsize
+\begin{tabular}{l|cccc}
+\toprule
+Cell & Closed top-1 & Open top-2 & Multi-label F1 & Unknown acc. \\
+\midrule
+\texttt{phi-3.5-mini} / \texttt{FEVER} & 0.620 & 0.724 & 0.573 & 0.559 \\
+\texttt{qwen2.5-7B} / \texttt{HotpotQA} & 0.676 & 0.790 & 0.644 & 0.566 \\
+\texttt{Llama-3.1-8B} / \texttt{PubMedQA} & 0.681 & 0.799 & 0.648 & 0.595 \\
+\texttt{Gemma-2-9b-it} / \texttt{TAT-QA} & 0.671 & 0.786 & 0.631 & 0.586 \\
+\texttt{Llama-3.3-70B} / \texttt{ToolBench} & 0.716 & 0.845 & 0.674 & 0.629 \\
+\texttt{deepseek-v3} / \texttt{WebLINX} & 0.742 & 0.851 & 0.715 & 0.630 \\
+\bottomrule
+\end{tabular}
+\end{table}

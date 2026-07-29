@@ -1,0 +1,47 @@
+{
+  "R1_record_replay": {
+    "accept_rate": 0.4888888888888889,
+    "audit_coverage_mean": 0.07555555555555556,
+    "audit_coverage_of_observed_bad_accepts": 0.154,
+    "audit_coverage_on_bad_accepts": 0.154,
+    "block_rate": 0.5111111111111111,
+    "corruption_types_used": [
+      "answer_evidence_mismatch",
+      "clean_replay",
+      "contradiction_injection",
+      "distractor_insertion",
+      "evidence_deletion",
+      "evidence_shuffle"
+    ],
+    "false_accept_proxy_rate_among_known": 0.2777777777777778,
+    "harm_under_corruption": 0.94,
+    "harm_under_corruption_max": 1.0,
+    "harm_under_corruption_mean": 0.94,
+    "invalid_response_rate": 0.0,
+    "json_parse_success_rate": 1.0,
+    "json_repair_rate": 0.0,
+    "known_correctness_n": 180,
+    "verify_rate": 0.0
+  },
+  "R2_replay_redundancy": {
+    "quorum_accept_n": 88,
+    "quorum_block_n": 92,
+    "quorum_verify_n": 0
+  },
+  "R3_replay_responsibility": {
+    "mean_decision_flips_per_record": 0.5111111111111111,
+    "total_decision_flips": 92
+  },
+  "R5_overhead": {
+    "latency_mean_s": 1.318134163485633,
+    "latency_total_s": 237.26414942741394,
+    "tokens_est_total": 21146
+  },
+  "backend_mode": "openai",
+  "baseline": "agentrr_style_record_replay_adapter",
+  "dataset": "weblinx",
+  "model": "deepseek-v3",
+  "n": 180,
+  "seed": 0,
+  "source_baseline_input": "/content/pcg/results/tables/csv/baseline_inputs/20260529-221217_r1_weblinx_deepseek-v3__seed0__baseline_inputs.jsonl"
+}

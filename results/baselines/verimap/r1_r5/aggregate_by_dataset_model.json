@@ -1,0 +1,656 @@
+[
+  {
+    "R1_accept_rate": {
+      "mean": 0.3888888888888889,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_block_rate": {
+      "mean": 0.6111111111111112,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_false_accept_proxy_rate_among_known": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_verify_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_accept_n": {
+      "mean": 7.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_block_n": {
+      "mean": 11.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_verify_n": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_mean_decision_flips_per_record": {
+      "mean": 3.6666666666666665,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_total_decision_flips": {
+      "mean": 11.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_completion_tokens_total": {
+      "mean": 1301.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_mean_s": {
+      "mean": 2.9855792389975653,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_total_s": {
+      "mean": 53.74042630195618,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_prompt_tokens_total": {
+      "mean": 6166.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_tokens_est_total": {
+      "mean": 7467.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "audit_coverage_mean": {
+      "mean": 0.7500000000000001,
+      "n": 1,
+      "std": 0.0
+    },
+    "audit_coverage_on_bad_accepts": {
+      "mean": 0.7500000000000001,
+      "n": 1,
+      "std": 0.0
+    },
+    "backend_mode": [
+      "openai"
+    ],
+    "baseline": "verimap_adapter",
+    "dataset": "fever",
+    "harm_under_corruption_max": {
+      "mean": 0.8,
+      "n": 1,
+      "std": 0.0
+    },
+    "harm_under_corruption_mean": {
+      "mean": 0.5866666666666666,
+      "n": 1,
+      "std": 0.0
+    },
+    "implementation_note": "VeriMAP-style verification-aware planning adapter over PCG-MAS baseline records; official VeriMAP source is retained as source reference, but native author demo runner is not used.",
+    "invalid_response_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "json_parse_success_rate": {
+      "mean": 1.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "json_repair_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "method": "verimap",
+    "model": "phi-3.5-mini",
+    "num_seeds": 1,
+    "seeds": [
+      0
+    ],
+    "stress_suite_used": [
+      "clean_plan",
+      "drop_support_step",
+      "contradict_verification_criterion",
+      "insert_distractor_step",
+      "shuffle_plan_context",
+      "answer_evidence_mismatch"
+    ],
+    "summary_files": [
+      "./results/baselines/verimap/r1_r5/fever__phi-3-5-mini__seed0__n3__openai/summary.json"
+    ]
+  },
+  {
+    "R1_accept_rate": {
+      "mean": 0.5333333333333333,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_block_rate": {
+      "mean": 0.4666666666666667,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_false_accept_proxy_rate_among_known": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_verify_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_accept_n": {
+      "mean": 32.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_block_n": {
+      "mean": 28.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_verify_n": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_mean_decision_flips_per_record": {
+      "mean": 2.7,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_total_decision_flips": {
+      "mean": 27.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_completion_tokens_total": {
+      "mean": 4843.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_mean_s": {
+      "mean": 2.752252380053202,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_total_s": {
+      "mean": 165.13514280319214,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_prompt_tokens_total": {
+      "mean": 92661.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_tokens_est_total": {
+      "mean": 97504.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "audit_coverage_mean": {
+      "mean": 0.7216666666666663,
+      "n": 1,
+      "std": 0.0
+    },
+    "audit_coverage_on_bad_accepts": {
+      "mean": 0.7216666666666663,
+      "n": 1,
+      "std": 0.0
+    },
+    "backend_mode": [
+      "openai"
+    ],
+    "baseline": "verimap_adapter",
+    "dataset": "hotpotqa",
+    "harm_under_corruption_max": {
+      "mean": 0.8,
+      "n": 1,
+      "std": 0.0
+    },
+    "harm_under_corruption_mean": {
+      "mean": 0.45600000000000035,
+      "n": 1,
+      "std": 0.0
+    },
+    "implementation_note": "VeriMAP-style verification-aware planning adapter over PCG-MAS baseline records; official VeriMAP source is retained as source reference, but native author demo runner is not used.",
+    "invalid_response_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "json_parse_success_rate": {
+      "mean": 1.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "json_repair_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "method": "verimap",
+    "model": "phi-3.5-mini",
+    "num_seeds": 1,
+    "seeds": [
+      0
+    ],
+    "stress_suite_used": [
+      "clean_plan",
+      "drop_support_step",
+      "contradict_verification_criterion",
+      "insert_distractor_step",
+      "shuffle_plan_context",
+      "answer_evidence_mismatch"
+    ],
+    "summary_files": [
+      "./results/baselines/verimap/r1_r5/hotpotqa__phi-3-5-mini__seed0__n10__openai/summary.json"
+    ]
+  },
+  {
+    "R1_accept_rate": {
+      "mean": 0.3333333333333333,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_block_rate": {
+      "mean": 0.6666666666666667,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_false_accept_proxy_rate_among_known": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R1_verify_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_accept_n": {
+      "mean": 6.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_block_n": {
+      "mean": 12.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R2_quorum_verify_n": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_mean_decision_flips_per_record": {
+      "mean": 3.6666666666666665,
+      "n": 1,
+      "std": 0.0
+    },
+    "R3_total_decision_flips": {
+      "mean": 11.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_completion_tokens_total": {
+      "mean": 1543.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_mean_s": {
+      "mean": 2.9548169639375477,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_latency_total_s": {
+      "mean": 53.186705350875854,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_prompt_tokens_total": {
+      "mean": 32424.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "R5_tokens_est_total": {
+      "mean": 33967.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "audit_coverage_mean": {
+      "mean": 0.6555555555555556,
+      "n": 1,
+      "std": 0.0
+    },
+    "audit_coverage_on_bad_accepts": {
+      "mean": 0.6555555555555556,
+      "n": 1,
+      "std": 0.0
+    },
+    "backend_mode": [
+      "openai"
+    ],
+    "baseline": "verimap_adapter",
+    "dataset": "hotpotqa",
+    "harm_under_corruption_max": {
+      "mean": 0.8,
+      "n": 1,
+      "std": 0.0
+    },
+    "harm_under_corruption_mean": {
+      "mean": 0.5866666666666667,
+      "n": 1,
+      "std": 0.0
+    },
+    "implementation_note": "VeriMAP-style verification-aware planning adapter over PCG-MAS baseline records; official VeriMAP source is retained as source reference, but native author demo runner is not used.",
+    "invalid_response_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "json_parse_success_rate": {
+      "mean": 1.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "json_repair_rate": {
+      "mean": 0.0,
+      "n": 1,
+      "std": 0.0
+    },
+    "method": "verimap",
+    "model": "qwen2.5-7b",
+    "num_seeds": 1,
+    "seeds": [
+      0
+    ],
+    "stress_suite_used": [
+      "clean_plan",
+      "drop_support_step",
+      "contradict_verification_criterion",
+      "insert_distractor_step",
+      "shuffle_plan_context",
+      "answer_evidence_mismatch"
+    ],
+    "summary_files": [
+      "./results/baselines/verimap/r1_r5/hotpotqa__qwen2-5-7b__seed0__n3__openai/summary.json"
+    ]
+  },
+  {
+    "R1_accept_rate": {
+      "mean": 0.1296594982078853,
+      "n": 2,
+      "std": 0.09077060931899641
+    },
+    "R1_block_rate": {
+      "mean": 0.8703405017921146,
+      "n": 2,
+      "std": 0.09077060931899644
+    },
+    "R1_false_accept_proxy_rate_among_known": {
+      "mean": 0.016666666666666666,
+      "n": 2,
+      "std": 0.016666666666666666
+    },
+    "R1_verify_rate": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "R2_quorum_accept_n": {
+      "mean": 24.0,
+      "n": 2,
+      "std": 17.0
+    },
+    "R2_quorum_block_n": {
+      "mean": 159.0,
+      "n": 2,
+      "std": 14.0
+    },
+    "R2_quorum_verify_n": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "R3_mean_decision_flips_per_record": {
+      "mean": 4.496236559139785,
+      "n": 2,
+      "std": 0.2704301075268818
+    },
+    "R3_total_decision_flips": {
+      "mean": 137.0,
+      "n": 2,
+      "std": 6.0
+    },
+    "R5_completion_tokens_total": {
+      "mean": 13688.5,
+      "n": 2,
+      "std": 978.5
+    },
+    "R5_latency_mean_s": {
+      "mean": 1.6093286988128472,
+      "n": 2,
+      "std": 0.002411855890759429
+    },
+    "R5_latency_total_s": {
+      "mean": 294.49991631507874,
+      "n": 2,
+      "std": 4.386616468429565
+    },
+    "R5_prompt_tokens_total": {
+      "mean": 335976.0,
+      "n": 2,
+      "std": 279903.0
+    },
+    "R5_tokens_est_total": {
+      "mean": 349664.5,
+      "n": 2,
+      "std": 280881.5
+    },
+    "audit_coverage_mean": {
+      "mean": 0.5174283154121864,
+      "n": 2,
+      "std": 0.1035394265232975
+    },
+    "audit_coverage_on_bad_accepts": {
+      "mean": 0.7438172043010753,
+      "n": 2,
+      "std": 0.12284946236559141
+    },
+    "backend_mode": [
+      "openai"
+    ],
+    "baseline": "verimap_adapter",
+    "dataset": "toolbench",
+    "harm_under_corruption_max": {
+      "mean": 0.8500000000000001,
+      "n": 2,
+      "std": 0.04999999999999999
+    },
+    "harm_under_corruption_mean": {
+      "mean": 0.7108494623655914,
+      "n": 2,
+      "std": 0.04181720430107527
+    },
+    "implementation_note": "VeriMAP-style verification-aware planning adapter over PCG-MAS baseline records; official VeriMAP source is retained as source reference, but native author demo runner is not used.",
+    "invalid_response_rate": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "json_parse_success_rate": {
+      "mean": 1.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "json_repair_rate": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "method": "verimap",
+    "model": "llama-3.3-70b",
+    "num_seeds": 2,
+    "seeds": [
+      0,
+      1
+    ],
+    "stress_suite_used": [
+      "clean_plan",
+      "drop_support_step",
+      "contradict_verification_criterion",
+      "insert_distractor_step",
+      "shuffle_plan_context",
+      "answer_evidence_mismatch"
+    ],
+    "summary_files": [
+      "./results/baselines/verimap/r1_r5/toolbench__llama-3-3-70b__seed0__n30__openai/summary.json",
+      "./results/baselines/verimap/r1_r5/toolbench__llama-3-3-70b__seed1__n31__openai/summary.json"
+    ]
+  },
+  {
+    "R1_accept_rate": {
+      "mean": 0.1485663082437276,
+      "n": 2,
+      "std": 0.10412186379928315
+    },
+    "R1_block_rate": {
+      "mean": 0.8514336917562724,
+      "n": 2,
+      "std": 0.10412186379928318
+    },
+    "R1_false_accept_proxy_rate_among_known": {
+      "mean": 0.005555555555555556,
+      "n": 2,
+      "std": 0.005555555555555556
+    },
+    "R1_verify_rate": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "R2_quorum_accept_n": {
+      "mean": 27.5,
+      "n": 2,
+      "std": 19.5
+    },
+    "R2_quorum_block_n": {
+      "mean": 155.5,
+      "n": 2,
+      "std": 16.5
+    },
+    "R2_quorum_verify_n": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "R3_mean_decision_flips_per_record": {
+      "mean": 4.431720430107527,
+      "n": 2,
+      "std": 0.3349462365591398
+    },
+    "R3_total_decision_flips": {
+      "mean": 135.0,
+      "n": 2,
+      "std": 8.0
+    },
+    "R5_completion_tokens_total": {
+      "mean": 13226.0,
+      "n": 2,
+      "std": 507.0
+    },
+    "R5_latency_mean_s": {
+      "mean": 1.5402883573885888,
+      "n": 2,
+      "std": 0.07820603802639947
+    },
+    "R5_latency_total_s": {
+      "mean": 281.63815128803253,
+      "n": 2,
+      "std": 9.690839886665344
+    },
+    "R5_prompt_tokens_total": {
+      "mean": 130709.5,
+      "n": 2,
+      "std": 80040.5
+    },
+    "R5_tokens_est_total": {
+      "mean": 143935.5,
+      "n": 2,
+      "std": 80547.5
+    },
+    "audit_coverage_mean": {
+      "mean": 0.5434050179211469,
+      "n": 2,
+      "std": 0.13562724014336913
+    },
+    "audit_coverage_on_bad_accepts": {
+      "mean": 0.7895161290322581,
+      "n": 2,
+      "std": 0.11048387096774198
+    },
+    "backend_mode": [
+      "openai"
+    ],
+    "baseline": "verimap_adapter",
+    "dataset": "weblinx",
+    "harm_under_corruption_max": {
+      "mean": 0.8500000000000001,
+      "n": 2,
+      "std": 0.04999999999999999
+    },
+    "harm_under_corruption_mean": {
+      "mean": 0.6987849462365592,
+      "n": 2,
+      "std": 0.06588172043010754
+    },
+    "implementation_note": "VeriMAP-style verification-aware planning adapter over PCG-MAS baseline records; official VeriMAP source is retained as source reference, but native author demo runner is not used.",
+    "invalid_response_rate": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "json_parse_success_rate": {
+      "mean": 1.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "json_repair_rate": {
+      "mean": 0.0,
+      "n": 2,
+      "std": 0.0
+    },
+    "method": "verimap",
+    "model": "deepseek-v3",
+    "num_seeds": 2,
+    "seeds": [
+      0,
+      1
+    ],
+    "stress_suite_used": [
+      "clean_plan",
+      "drop_support_step",
+      "contradict_verification_criterion",
+      "insert_distractor_step",
+      "shuffle_plan_context",
+      "answer_evidence_mismatch"
+    ],
+    "summary_files": [
+      "./results/baselines/verimap/r1_r5/weblinx__deepseek-v3__seed0__n30__openai/summary.json",
+      "./results/baselines/verimap/r1_r5/weblinx__deepseek-v3__seed1__n31__openai/summary.json"
+    ]
+  }
+]

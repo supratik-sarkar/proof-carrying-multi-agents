@@ -1,0 +1,103 @@
+{
+  "R1_checkability_proxy": {
+    "accept_rate": 0.0,
+    "accepted_n": 0,
+    "block_rate": 0.0,
+    "blocked_n": 0,
+    "description": "Accept/block/verify with author-extracted ShieldAgent rules; false accept among accepted where gold is available.",
+    "false_accept_proxy_known_n": 31,
+    "false_accept_proxy_n": 0,
+    "false_accept_proxy_rate_among_known": 0.0,
+    "rule_check_failure_proxy_n": 31,
+    "rule_check_failure_proxy_rate": 1.0,
+    "verify_n": 31,
+    "verify_rate": 1.0
+  },
+  "R2_redundancy_proxy": {
+    "description": "Proxy redundancy: three ShieldAgent policy/rule-bank views with majority/quorum. This is not native PCG-MAS k-certificate redundancy.",
+    "k": 3,
+    "quorum_accept_n": 0,
+    "quorum_block_n": 0,
+    "quorum_verify_n": 31,
+    "records_n": 31
+  },
+  "R3_responsibility_proxy": {
+    "description": "Proxy responsibility: ablate evidence/answer/request fields and measure ShieldAgent decision flips. This is not PCG-MAS mask-and-replay responsibility.",
+    "mean_decision_flips_per_record": 0.0,
+    "records_n": 31,
+    "total_decision_flips": 0
+  },
+  "R4_risk_control_proxy": {
+    "axis": "R4",
+    "description": "Proxy risk-control frontier: vary risk_score threshold over ShieldAgent accept decisions.",
+    "frontier": [
+      {
+        "accepted_n": 0,
+        "blocked_or_verify_n": 31,
+        "false_accept_proxy_known_n": 0,
+        "false_accept_proxy_n": 0,
+        "false_accept_proxy_rate_among_known": null,
+        "threshold": 0.25,
+        "utility_proxy_accept_rate": 0.0
+      },
+      {
+        "accepted_n": 0,
+        "blocked_or_verify_n": 31,
+        "false_accept_proxy_known_n": 0,
+        "false_accept_proxy_n": 0,
+        "false_accept_proxy_rate_among_known": null,
+        "threshold": 0.4,
+        "utility_proxy_accept_rate": 0.0
+      },
+      {
+        "accepted_n": 0,
+        "blocked_or_verify_n": 31,
+        "false_accept_proxy_known_n": 0,
+        "false_accept_proxy_n": 0,
+        "false_accept_proxy_rate_among_known": null,
+        "threshold": 0.5,
+        "utility_proxy_accept_rate": 0.0
+      },
+      {
+        "accepted_n": 0,
+        "blocked_or_verify_n": 31,
+        "false_accept_proxy_known_n": 0,
+        "false_accept_proxy_n": 0,
+        "false_accept_proxy_rate_among_known": null,
+        "threshold": 0.6,
+        "utility_proxy_accept_rate": 0.0
+      },
+      {
+        "accepted_n": 0,
+        "blocked_or_verify_n": 31,
+        "false_accept_proxy_known_n": 0,
+        "false_accept_proxy_n": 0,
+        "false_accept_proxy_rate_among_known": null,
+        "threshold": 0.75,
+        "utility_proxy_accept_rate": 0.0
+      }
+    ]
+  },
+  "R5_overhead": {
+    "api_call_count_main_pass": 31,
+    "api_call_count_r2_proxy": 93,
+    "api_call_count_r3_proxy": 93,
+    "api_call_count_total_proxy_suite": 217,
+    "description": "Wall-clock API latency for ShieldAgent policy-bank checks; policy extraction cost is amortized and stored separately in Step 8 artifacts.",
+    "latency_mean_s": 0.3921799000644305,
+    "latency_median_s": 0.28197311599979,
+    "latency_total_s": 12.157576901997345,
+    "matched_rules_mean": 0.0
+  },
+  "baseline": "shieldagent_author_policy_bank",
+  "cell": "weblinx:deepseek-v3",
+  "fairness_note": "R1/R4/R5 are directly comparable proxies for ShieldAgent-policy behavior. R2/R3 are explicitly labeled proxy experiments because ShieldAgent does not natively emit PCG-MAS certificates or mask-and-replay responsibility.",
+  "input_jsonl": "/content/drive/MyDrive/pcg-submission-drive/results/baselines/shieldagent/weblinx__deepseek-v3/input.jsonl",
+  "n": 31,
+  "output_jsonl": "/content/drive/MyDrive/pcg-submission-drive/results/baselines/shieldagent/weblinx__deepseek-v3/output.jsonl",
+  "policy_bank": {
+    "policies_json": "results/baselines/shieldagent/selected_policy_bank/policies.json",
+    "risk_categories_json": "results/baselines/shieldagent/selected_policy_bank/risk_categories.json",
+    "rules_json": "results/baselines/shieldagent/selected_policy_bank/rules.json"
+  }
+}

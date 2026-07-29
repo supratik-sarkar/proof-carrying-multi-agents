@@ -1,0 +1,13 @@
+cell,variable,sweep,token_slope,latency_slope,source
+toolbench:Llama-3.3-70B,Redundancy k,"[1, 2, 4]",1.0000000000000002,0.5011732110522205,measured
+toolbench:Llama-3.3-70B,Support size |S0|,"[2, 4, 8, 16]",,,analytic_model
+toolbench:Llama-3.3-70B,Chain depth d,"[2, 5, 10, 20]",,,analytic_model
+weblinx:deepseek-v3,Redundancy k,"[1, 2, 4]",1.0000000000000002,0.5011732110522205,measured
+weblinx:deepseek-v3,Support size |S0|,"[2, 4, 8, 16]",,,analytic_model
+weblinx:deepseek-v3,Chain depth d,"[2, 5, 10, 20]",,,analytic_model
+fever:phi-3.5-mini,Redundancy k,"[1, 2, 4]",0.9999999999999979,0.9426007867168024,measured
+fever:phi-3.5-mini,Support size |S0|,"[2, 4, 8, 16]",,,analytic_model
+fever:phi-3.5-mini,Chain depth d,"[2, 5, 10, 20]",,,analytic_model
+hotpotqa:qwen2.5-7B,Redundancy k,"[1, 2, 4]",1.0000000000000002,1.3371711600582292,measured
+hotpotqa:qwen2.5-7B,Support size |S0|,"[2, 4, 8, 16]",0.6428790337788463,0.9015904985568634,measured
+hotpotqa:qwen2.5-7B,Chain depth d,"[2, 5, 10, 20]",,,analytic_model

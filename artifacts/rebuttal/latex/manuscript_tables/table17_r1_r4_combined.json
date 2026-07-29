@@ -1,0 +1,60 @@
+{
+  "label": "tab:r1_r4_combined",
+  "caption": "Corrected R1--R4 headline view. Clean/adversarial gains are separated, audit coverage has its own population, and every diagnostic is derived from canonical records.",
+  "rows": [
+    {
+      "Cell": "phi-3.5-mini/FEVER",
+      "Clean gain": "3.04x",
+      "Adv gain": "1.70x",
+      "Audit cov.": "0.786",
+      "Shield gap": "1.82x",
+      "Resp. lift": "11.4pp",
+      "Control gain": "1.50x"
+    },
+    {
+      "Cell": "qwen2.5-7B/HotpotQA",
+      "Clean gain": "2.78x",
+      "Adv gain": "2.39x",
+      "Audit cov.": "0.842",
+      "Shield gap": "2.30x",
+      "Resp. lift": "11.7pp",
+      "Control gain": "1.84x"
+    },
+    {
+      "Cell": "Llama-3.1-8B/PubMedQA",
+      "Clean gain": "2.63x",
+      "Adv gain": "2.93x",
+      "Audit cov.": "0.889",
+      "Shield gap": "1.84x",
+      "Resp. lift": "11.6pp",
+      "Control gain": "1.30x"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/TAT-QA",
+      "Clean gain": "1.17x",
+      "Adv gain": "1.91x",
+      "Audit cov.": "0.750",
+      "Shield gap": "1.07x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.00x"
+    },
+    {
+      "Cell": "Llama-3.3-70B/ToolBench",
+      "Clean gain": "2.03x",
+      "Adv gain": "1.91x",
+      "Audit cov.": "0.812",
+      "Shield gap": "1.44x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.13x"
+    },
+    {
+      "Cell": "deepseek-v3/WebLINX",
+      "Clean gain": "2.03x",
+      "Adv gain": "2.07x",
+      "Audit cov.": "0.812",
+      "Shield gap": "0.92x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "0.82x"
+    }
+  ]
+}

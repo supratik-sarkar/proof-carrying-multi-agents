@@ -1,0 +1,7 @@
+Cell,NoCert harm,PCG harm,Audit cov.,Control cov.,Clean gain,Adv gain,Metric version,Source hash
+phi-3.5-mini/FEVER,14/115,4/100,11/14,100/120,3.04x,1.70x,v4.2-canonical-,03cd628c8d7bc93a
+qwen2.5-7B/HotpotQA,19/115,6/101,16/19,101/120,2.78x,2.39x,v4.2-canonical-,d7cababbc9e99c58
+Llama-3.1-8B/PubMedQA,9/115,3/101,8/9,101/120,2.63x,2.93x,v4.2-canonical-,99fa4f94260b4502
+Gemma-2-9b-it/TAT-QA,16/115,12/101,12/16,101/120,1.17x,1.91x,v4.2-canonical-,87ce00b1b22b604c
+Llama-3.3-70B/ToolBench,16/115,7/102,13/16,102/120,2.03x,1.91x,v4.2-canonical-,ad39c71c49bc5a3d
+deepseek-v3/WebLINX,16/115,7/102,13/16,102/120,2.03x,2.07x,v4.2-canonical-,5aaae260ca35f78c

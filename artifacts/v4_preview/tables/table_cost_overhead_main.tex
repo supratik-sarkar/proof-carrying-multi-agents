@@ -1,0 +1,18 @@
+\begin{table}[!ht]
+\centering
+\caption{\small Cost overhead on the six highlighted cells. PCG-MAS carries replayable certificates, redundancy, and diagnosis, so it is more expensive than a policy-only guardrail.}
+\label{tab:cost_overhead_main}
+\scriptsize
+\begin{tabular}{l|ccc|cc}
+\toprule
+Cell & NoCert tok. & ShieldAgent tok. & PCG tok. & ShieldAgent lat. & PCG lat. \\
+\midrule
+\texttt{phi-3.5-mini} / \texttt{FEVER} & 1.00$\times$ & 1.29$\times$ & 1.63$\times$ & 1.36$\times$ & 1.73$\times$ \\
+\texttt{qwen2.5-7B} / \texttt{HotpotQA} & 1.00$\times$ & 1.25$\times$ & 1.65$\times$ & 1.30$\times$ & 1.72$\times$ \\
+\texttt{Llama-3.1-8B} / \texttt{PubMedQA} & 1.00$\times$ & 1.32$\times$ & 1.72$\times$ & 1.40$\times$ & 1.84$\times$ \\
+\texttt{Gemma-2-9b-it} / \texttt{TAT-QA} & 1.00$\times$ & 1.28$\times$ & 1.68$\times$ & 1.33$\times$ & 1.78$\times$ \\
+\texttt{Llama-3.3-70B} / \texttt{ToolBench} & 1.00$\times$ & 1.29$\times$ & 1.68$\times$ & 1.35$\times$ & 1.77$\times$ \\
+\texttt{deepseek-v3} / \texttt{WebLINX} & 1.00$\times$ & 1.25$\times$ & 1.67$\times$ & 1.34$\times$ & 1.79$\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,62 @@
+{
+  "label": "tab:r4_privacy",
+  "caption": "MODELLED SCENARIO ANALYSIS. Privacy-budgeted certificate sharing under hand-specified communication and DP-noise parameters.",
+  "rows": [
+    {
+      "B_info": 32,
+      "eta": "0.000",
+      "Utility": "0.717",
+      "Harm": "0.090",
+      "Leakage AUC": "0.746"
+    },
+    {
+      "B_info": 32,
+      "eta": "0.180",
+      "Utility": "0.684",
+      "Harm": "0.104",
+      "Leakage AUC": "0.652"
+    },
+    {
+      "B_info": 64,
+      "eta": "0.000",
+      "Utility": "0.732",
+      "Harm": "0.085",
+      "Leakage AUC": "0.731"
+    },
+    {
+      "B_info": 64,
+      "eta": "0.180",
+      "Utility": "0.700",
+      "Harm": "0.099",
+      "Leakage AUC": "0.638"
+    },
+    {
+      "B_info": 128,
+      "eta": "0.000",
+      "Utility": "0.757",
+      "Harm": "0.077",
+      "Leakage AUC": "0.702"
+    },
+    {
+      "B_info": 128,
+      "eta": "0.180",
+      "Utility": "0.725",
+      "Harm": "0.091",
+      "Leakage AUC": "0.609"
+    },
+    {
+      "B_info": 256,
+      "eta": "0.000",
+      "Utility": "0.788",
+      "Harm": "0.066",
+      "Leakage AUC": "0.645"
+    },
+    {
+      "B_info": 256,
+      "eta": "0.180",
+      "Utility": "0.756",
+      "Harm": "0.079",
+      "Leakage AUC": "0.551"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "note": "Independent ShieldAgent merge rebuilt from final additive overlays.",
+  "rows": [
+    {
+      "agentrr": true,
+      "dataset": "fever",
+      "model": "phi-3.5-mini",
+      "shieldagent": true,
+      "verimap": false
+    },
+    {
+      "agentrr": true,
+      "dataset": "hotpotqa",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "shieldagent": true,
+      "verimap": false
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Metric Registry - Rebuttal Pipeline Submission 9327
+metrics:
+  raw_safety_gain: (k_nc / N_nc) / (k_pcg / N_pcg)
+  haldane_anscombe_safety_gain: ((k_nc + 0.5) * (N_pcg + 1)) / ((k_pcg + 0.5) * (N_nc + 1))
+  audit_coverage: audited_failures / total_failures
+  selectivity: (1/N)*sum(l_nc) - (1/|A|)*sum_{A}(l_nc)
+  verification: (1/|A|)*sum_{A}(l_nc - l_pcg)

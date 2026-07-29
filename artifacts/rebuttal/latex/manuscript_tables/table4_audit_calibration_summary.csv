@@ -1,0 +1,7 @@
+Cell,rho,ECE,Brier,Replay fail,Canon fail,Entail F1
+phi-3.5-mini/FEVER,1.236,0.136,0.022,0.017,0.009,1.000
+qwen2.5-7B/HotpotQA,1.206,0.144,0.028,0.017,0.009,1.000
+Llama-3.1-8B/PubMedQA,1.196,0.131,0.022,0.016,0.008,1.000
+Gemma-2-9b-it/TAT-QA,1.169,0.143,0.028,0.017,0.009,1.000
+Llama-3.3-70B/ToolBench,1.147,0.125,0.020,0.016,0.008,1.000
+deepseek-v3/WebLINX,1.141,0.124,0.019,0.015,0.008,1.000

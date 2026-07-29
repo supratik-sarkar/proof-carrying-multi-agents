@@ -1,0 +1,44 @@
+{
+  "hardened_mapping": true,
+  "matched_rows": 1,
+  "output": "results/tables/csv/paper_metrics.jsonl",
+  "overlay_sidecar": "results/tables/csv/shieldagent_overlay_rows.jsonl",
+  "paper_metric_rows": 4,
+  "rehydrated_known_sidecars": [
+    "results/tables/csv/shieldagent_overlay_rows.jsonl",
+    "results/tables/csv/agentrr_overlay_rows.jsonl",
+    "results/tables/csv/verimap_overlay_rows.jsonl"
+  ],
+  "shield_keys": [
+    [
+      "hotpotqa",
+      "phi-3.5-mini"
+    ]
+  ],
+  "unmatched_rows": [
+    {
+      "dataset": "fever",
+      "model": "qwen2.5-7B",
+      "normalized_key": [
+        "fever",
+        "qwen2.5-7b"
+      ]
+    },
+    {
+      "dataset": "fever",
+      "model": "phi-3.5-mini",
+      "normalized_key": [
+        "fever",
+        "phi-3.5-mini"
+      ]
+    },
+    {
+      "dataset": "hotpotqa",
+      "model": "unknown",
+      "normalized_key": [
+        "hotpotqa",
+        "unknown"
+      ]
+    }
+  ]
+}

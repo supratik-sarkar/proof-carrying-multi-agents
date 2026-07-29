@@ -1,0 +1,27 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize Pivoted SOTA headline comparison. Each entry is clean/adversarial accepted harm; lower is better. Native-scope support and execution decompositions are separately reported.}
+\label{tab:appendix_sota_pivot_full}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l|cccc}
+\toprule
+System & phi-3.5-mini/FEVER & Gemma-2-9b-it/TAT-QA & Llama-3.3-70B/ToolBench & deepseek-v3/WebLINX \\
+\midrule
+\texttt{NoCert} & 0.122/0.139 & 0.139/0.174 & 0.139/0.191 & 0.139/0.165 \\
+\texttt{CitationOnly} & 0.085/0.086 & 0.131/0.094 & 0.103/0.170 & 0.121/0.123 \\
+\texttt{ShieldAgent} & 0.073/0.128 & 0.127/0.165 & 0.099/0.118 & 0.063/0.127 \\
+\texttt{AgentRR} & 0.065/0.103 & 0.130/0.130 & 0.101/0.130 & 0.101/0.093 \\
+\texttt{VERIMAP} & 0.057/0.076 & 0.113/0.133 & \textbf{0.038/0.075} & 0.084/0.104 \\
+\texttt{PCG-MAS} & \textbf{0.040/0.082} & \textbf{0.119/0.091} & 0.069/0.100 & \textbf{0.069/0.080} \\
+\bottomrule
+\end{tabular}}
+\vspace{0.25em}
+\parbox{0.98\linewidth}{\footnotesize VERIMAP narrowly wins one tool-heavy slice; PCG-MAS is strongest overall rather than universally best.}
+\end{table*}

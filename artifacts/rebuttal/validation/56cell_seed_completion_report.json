@@ -1,0 +1,1106 @@
+{
+  "SUBMITTED_SEEDS_PRESENT": true,
+  "SUBMITTED_SAMPLE_CAP_SATISFIED": true,
+  "EXACT_SUBMITTED_SEED_SET_REPRODUCED": false,
+  "EXTRA_EXECUTED_SEEDS": [
+    4
+  ],
+  "POST_REVIEW_SEED_EXPANSION_DISCLOSED": true,
+  "PROTOCOL_STATUS": "POST_REVIEW_SEED_EXPANSION",
+  "submitted_protocol": {
+    "models": 7,
+    "datasets": 8,
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "seeds_count": 4,
+    "sample_cap_per_cell_seed": "up to 500",
+    "maximum_possible_evaluations": 112000
+  },
+  "executed_protocol": {
+    "models": 7,
+    "datasets": 8,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "seeds_count": 5,
+    "unique_semantic_examples_per_cell": 120,
+    "evaluations_per_cell_seed": 48,
+    "evaluations_per_cell": 240,
+    "total_observed_evaluations": 13440
+  },
+  "reconciliation_summary": "48 <= 500 satisfies submitted sample cap. Submitted seeds {0..3} present; seed 4 added post-review.",
+  "cells": [
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "qwen2.5-7B__FEVER",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-v3__FEVER",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-v3__HotpotQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-v3__PubMedQA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-v3__TAT-QA",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-v3__ToolBench",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "unique_semantic_examples": 120,
+      "evaluations_total": 240,
+      "evaluations_per_seed": 48,
+      "seeds_executed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "seeds_submitted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

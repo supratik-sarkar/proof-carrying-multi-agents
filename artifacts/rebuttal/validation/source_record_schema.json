@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PCG-MAS paired example record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "cell_id",
+    "model_id",
+    "dataset",
+    "condition",
+    "example_id",
+    "seed",
+    "systems",
+    "ablations",
+    "checker",
+    "responsibility"
+  ],
+  "properties": {
+    "systems": {
+      "type": "object",
+      "required": [
+        "NoCert",
+        "CitationOnly",
+        "ShieldAgent",
+        "AgentRR",
+        "VERIMAP",
+        "PCG-MAS"
+      ]
+    },
+    "ablations": {
+      "type": "object",
+      "required": [
+        "Full",
+        "NoReplay",
+        "NoRedundancy",
+        "NoRiskCtrl",
+        "NoPrune",
+        "NoResp",
+        "-V_H",
+        "-V_Pi",
+        "-V_Gamma",
+        "-V_entail"
+      ]
+    }
+  }
+}

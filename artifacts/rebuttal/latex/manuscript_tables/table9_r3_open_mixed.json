@@ -1,0 +1,60 @@
+{
+  "label": "tab:r3_open_mixed",
+  "caption": "Mixed-channel and open-set responsibility diagnostics. Unknown is allowed; low-margin cases are routed to Unresolved rather than forced into attribution.",
+  "rows": [
+    {
+      "Cell": "phi-3.5-mini/FEVER",
+      "Closed Top-1": "0.667",
+      "Mixed Top-1": "0.625",
+      "Open Top-1": "0.551",
+      "Top-3": "0.792",
+      "Unknown": "0.075",
+      "Margin": "0.268"
+    },
+    {
+      "Cell": "qwen2.5-7B/HotpotQA",
+      "Closed Top-1": "0.692",
+      "Mixed Top-1": "0.635",
+      "Open Top-1": "0.560",
+      "Top-3": "0.834",
+      "Unknown": "0.058",
+      "Margin": "0.307"
+    },
+    {
+      "Cell": "Llama-3.1-8B/PubMedQA",
+      "Closed Top-1": "0.650",
+      "Mixed Top-1": "0.613",
+      "Open Top-1": "0.539",
+      "Top-3": "0.797",
+      "Unknown": "0.071",
+      "Margin": "0.317"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/TAT-QA",
+      "Closed Top-1": "0.767",
+      "Mixed Top-1": "0.710",
+      "Open Top-1": "0.636",
+      "Top-3": "0.843",
+      "Unknown": "0.087",
+      "Margin": "0.304"
+    },
+    {
+      "Cell": "Llama-3.3-70B/ToolBench",
+      "Closed Top-1": "0.725",
+      "Mixed Top-1": "0.665",
+      "Open Top-1": "0.592",
+      "Top-3": "0.822",
+      "Unknown": "0.071",
+      "Margin": "0.336"
+    },
+    {
+      "Cell": "deepseek-v3/WebLINX",
+      "Closed Top-1": "0.733",
+      "Mixed Top-1": "0.711",
+      "Open Top-1": "0.638",
+      "Top-3": "0.859",
+      "Unknown": "0.025",
+      "Margin": "0.346"
+    }
+  ]
+}

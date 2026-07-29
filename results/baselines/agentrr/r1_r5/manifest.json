@@ -1,0 +1,22 @@
+{
+  "backend_mode": "openai",
+  "baseline": "agentrr_style_record_replay_adapter",
+  "n_examples": 31,
+  "pairs": [
+    {
+      "dataset": "toolbench",
+      "model": "llama-3.3-70b"
+    },
+    {
+      "dataset": "weblinx",
+      "model": "deepseek-v3"
+    }
+  ],
+  "seeds": [
+    1
+  ],
+  "summary_files": [
+    "/content/pcg/results/baselines/agentrr/r1_r5/toolbench__llama-3-3-70b__seed1__n186__openai/summary.json",
+    "/content/pcg/results/baselines/agentrr/r1_r5/weblinx__deepseek-v3__seed1__n186__openai/summary.json"
+  ]
+}

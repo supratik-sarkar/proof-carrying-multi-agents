@@ -1,0 +1,243 @@
+[
+  {
+    "definitions": [
+      "AI system: A system that deploys techniques or methods as defined under the EU AI Act",
+      "Subliminal techniques: Techniques beyond a person's consciousness",
+      "Manipulative or deceptive techniques: Techniques that are purposefully manipulative or deceptive",
+      "Materially distorting behaviour: Appreciably impairing the ability to make an informed decision, causing a person to take a decision they would not have otherwise taken",
+      "Significant harm: Harm that causes or is reasonably likely to cause damage to a person or group of persons"
+    ],
+    "scope": "Applies to the placing on the market, putting into service, or use of AI systems. Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "The placing on the market, the putting into service or the use of an AI system that deploys subliminal techniques beyond a person's consciousness or purposefully manipulative or deceptive techniques, with the objective, or the effect of materially distorting the behaviour of a person or a group of persons by appreciably impairing their ability to make an informed decision, thereby causing them to take a decision that they would not have otherwise taken in a manner that causes or is reasonably likely to cause that person, another person or group of persons significant harm shall be prohibited.",
+    "reference": [
+      "Article 5, paragraph 1(a)",
+      "Recital 29"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 0
+  },
+  {
+    "definitions": [
+      "AI system: A system that deploys techniques or methods as defined under the EU AI Act",
+      "Vulnerabilities: Characteristics related to age, disability, or specific social or economic situation",
+      "Materially distorting behaviour: Behaviour distortion that causes or is reasonably likely to cause significant harm",
+      "Significant harm: Harm that causes or is reasonably likely to cause damage to a person"
+    ],
+    "scope": "Applies to the placing on the market, putting into service, or use of AI systems. Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "The placing on the market, the putting into service or the use of an AI system that exploits any of the vulnerabilities of a natural person or a specific group of persons due to their age, disability or a specific social or economic situation, with the objective, or the effect, of materially distorting the behaviour of that person or a person belonging to that group in a manner that causes or is reasonably likely to cause that person or another person significant harm shall be prohibited.",
+    "reference": [
+      "Article 5, paragraph 1(b)",
+      "Recital 29"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 1
+  },
+  {
+    "definitions": [
+      "AI system: A system that deploys techniques or methods as defined under the EU AI Act",
+      "Social behaviour: Behaviour of natural persons or groups of persons",
+      "Social score: Evaluation or classification based on social behaviour or personal/personality characteristics",
+      "Detrimental or unfavourable treatment: Treatment that is unjustified or disproportionate",
+      "Social contexts unrelated to original data context: Contexts different from where data was originally generated or collected"
+    ],
+    "scope": "Applies to the placing on the market, putting into service, or use of AI systems for evaluation or classification over a certain period of time. Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "The placing on the market, the putting into service or the use of AI systems for the evaluation or classification of natural persons or groups of persons over a certain period of time based on their social behaviour or known, inferred or predicted personal or personality characteristics, with the social score leading to either or both of the following shall be prohibited: (i) detrimental or unfavourable treatment of certain natural persons or groups of persons in social contexts that are unrelated to the contexts in which the data was originally generated or collected; (ii) detrimental or unfavourable treatment of certain natural persons or groups of persons that is unjustified or disproportionate to their social behaviour or its gravity.",
+    "reference": [
+      "Article 5, paragraph 1(c)",
+      "Recital 31"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 2
+  },
+  {
+    "definitions": [
+      "AI system: A system that deploys techniques or methods as defined under the EU AI Act",
+      "Risk assessment: Assessment or prediction of the risk of a natural person committing a criminal offence",
+      "Profiling: Profiling of a natural person",
+      "Personality traits and characteristics: Traits and characteristics used to assess criminal risk",
+      "Exception: AI systems used to support human assessment based on objective and verifiable facts directly linked to criminal activity are not prohibited"
+    ],
+    "scope": "Applies to the placing on the market, putting into service for this specific purpose, or use of AI systems for making risk assessments of natural persons. Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "The placing on the market, the putting into service for this specific purpose, or the use of an AI system for making risk assessments of natural persons in order to assess or predict the risk of a natural person committing a criminal offence, based solely on the profiling of a natural person or on assessing their personality traits and characteristics shall be prohibited; this prohibition shall not apply to AI systems used to support the human assessment of the involvement of a person in a criminal activity, which is already based on objective and verifiable facts directly linked to a criminal activity.",
+    "reference": [
+      "Article 5, paragraph 1(d)",
+      "Recital 42"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 3
+  },
+  {
+    "definitions": [
+      "AI system: A system that deploys techniques or methods as defined under the EU AI Act",
+      "Facial recognition databases: Databases containing facial images",
+      "Untargeted scraping: Collection of facial images without specific targeting",
+      "Internet or CCTV footage: Sources from which facial images are scraped"
+    ],
+    "scope": "Applies to the placing on the market, putting into service for this specific purpose, or use of AI systems that create or expand facial recognition databases. Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "The placing on the market, the putting into service for this specific purpose, or the use of AI systems that create or expand facial recognition databases through the untargeted scraping of facial images from the internet or CCTV footage shall be prohibited.",
+    "reference": [
+      "Article 5, paragraph 1(e)",
+      "Recital 43"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 4
+  },
+  {
+    "definitions": [
+      "AI system: A system that deploys techniques or methods as defined under the EU AI Act",
+      "Emotions: Emotional states of a natural person",
+      "Workplace and education institutions: Areas where emotion inference is prohibited",
+      "Exception: Use for medical or safety reasons is not prohibited"
+    ],
+    "scope": "Applies to the placing on the market, putting into service for this specific purpose, or use of AI systems to infer emotions in workplace and education institutions. Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "The placing on the market, the putting into service for this specific purpose, or the use of AI systems to infer emotions of a natural person in the areas of workplace and education institutions shall be prohibited, except where the use of the AI system is intended to be put in place or into the market for medical or safety reasons.",
+    "reference": [
+      "Article 5, paragraph 1(f)",
+      "Recital 44"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 5
+  },
+  {
+    "definitions": [
+      "AI system: A system that deploys techniques or methods as defined under the EU AI Act",
+      "Biometric categorisation systems: Systems that categorise natural persons based on biometric data",
+      "Biometric data: Data used to deduce or infer sensitive characteristics",
+      "Sensitive characteristics: Race, political opinions, trade union membership, religious or philosophical beliefs, sex life or sexual orientation",
+      "Exception: Labelling or filtering of lawfully acquired biometric datasets and categorizing of biometric data in law enforcement are not prohibited"
+    ],
+    "scope": "Applies to the placing on the market, putting into service for this specific purpose, or use of biometric categorisation systems. Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "The placing on the market, the putting into service for this specific purpose, or the use of biometric categorisation systems that categorise individually natural persons based on their biometric data to deduce or infer their race, political opinions, trade union membership, religious or philosophical beliefs, sex life or sexual orientation shall be prohibited; this prohibition does not cover any labelling or filtering of lawfully acquired biometric datasets, such as images, based on biometric data or categorizing of biometric data in the area of law enforcement.",
+    "reference": [
+      "Article 5, paragraph 1(g)",
+      "Recital 30"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 6
+  },
+  {
+    "definitions": [
+      "'Real-time' remote biometric identification systems: Systems used for biometric identification in real-time",
+      "Publicly accessible spaces: Spaces accessible to the public",
+      "Law enforcement purposes: Purposes related to law enforcement activities",
+      "Strictly necessary: The use must be strictly necessary for specific objectives",
+      "Specific objectives: (i) targeted search for victims of abduction, trafficking, sexual exploitation, or missing persons; (ii) prevention of specific, substantial and imminent threat to life/physical safety or terrorist attack; (iii) localisation or identification of person suspected of criminal offence listed in Annex II punishable by custodial sentence of at least four years"
+    ],
+    "scope": "Applies to the use of 'real-time' remote biometric identification systems in publicly accessible spaces for law enforcement purposes. Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "The use of 'real-time' remote biometric identification systems in publicly accessible spaces for the purposes of law enforcement shall be prohibited, unless and in so far as such use is strictly necessary for one of the following objectives: (i) the targeted search for specific victims of abduction, trafficking in human beings or sexual exploitation of human beings, as well as the search for missing persons; (ii) the prevention of a specific, substantial and imminent threat to the life or physical safety of natural persons or a genuine and present or genuine and foreseeable threat of a terrorist attack; (iii) the localisation or identification of a person suspected of having committed a criminal offence, for the purpose of conducting a criminal investigation or prosecution or executing a criminal penalty for offences referred to in Annex II and punishable in the Member State concerned by a custodial sentence or a detention order for a maximum period of at least four years.",
+    "reference": [
+      "Article 5, paragraph 1(h)",
+      "Annex II",
+      "Recitals 32, 33, 38, 39, 40, and 41"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 7
+  },
+  {
+    "definitions": [
+      "'Real-time' remote biometric identification systems: Systems used for biometric identification in real-time",
+      "Publicly accessible spaces: Spaces accessible to the public",
+      "Law enforcement purposes: Purposes related to law enforcement activities",
+      "Confirm identity: To verify the identity of a specifically targeted individual",
+      "Elements to consider: (a) nature of situation including seriousness, probability and scale of harm; (b) consequences for rights and freedoms including seriousness, probability and scale"
+    ],
+    "scope": "Applies when 'real-time' remote biometric identification systems are used in publicly accessible spaces for law enforcement for objectives in paragraph 1(h). Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "The use of 'real-time' remote biometric identification systems in publicly accessible spaces for the purposes of law enforcement for any of the objectives referred to in paragraph 1, first subparagraph, point (h), shall be deployed for the purposes set out in that point only to confirm the identity of the specifically targeted individual, and it shall take into account the following elements: (a) the nature of the situation giving rise to the possible use, in particular the seriousness, probability and scale of the harm that would be caused if the system were not used; (b) the consequences of the use of the system for the rights and freedoms of all persons concerned, in particular the seriousness, probability and scale of those consequences.",
+    "reference": [
+      "Article 5, paragraph 2",
+      "Recitals 34, 38, 39, 40, and 41"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 8
+  },
+  {
+    "definitions": [
+      "'Real-time' remote biometric identification systems: Systems used for biometric identification in real-time",
+      "Publicly accessible spaces: Spaces accessible to the public",
+      "Law enforcement purposes: Purposes related to law enforcement activities",
+      "Necessary and proportionate safeguards: Safeguards including temporal, geographic and personal limitations",
+      "Fundamental rights impact assessment: Assessment as provided for in Article 27",
+      "EU database: Database according to Article 49",
+      "Duly justified cases of urgency: Cases where registration may be completed without undue delay after use commences"
+    ],
+    "scope": "Applies when 'real-time' remote biometric identification systems are used in publicly accessible spaces for law enforcement for objectives in paragraph 1(h). Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "The use of 'real-time' remote biometric identification systems in publicly accessible spaces for the purposes of law enforcement for any of the objectives referred to in paragraph 1, first subparagraph, point (h), of this Article shall comply with necessary and proportionate safeguards and conditions in relation to the use in accordance with the national law authorising the use thereof, in particular as regards the temporal, geographic and personal limitations. The use of the 'real-time' remote biometric identification system in publicly accessible spaces shall be authorised only if the law enforcement authority has completed a fundamental rights impact assessment as provided for in Article 27 and has registered the system in the EU database according to Article 49. However, in duly justified cases of urgency, the use of such systems may be commenced without the registration in the EU database, provided that such registration is completed without undue delay.",
+    "reference": [
+      "Article 5, paragraph 2",
+      "Article 27",
+      "Article 49",
+      "Recitals 34, 38, 39, 40, and 41"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 9
+  },
+  {
+    "definitions": [
+      "'Real-time' remote biometric identification systems: Systems used for biometric identification in real-time",
+      "Publicly accessible spaces: Spaces accessible to the public",
+      "Law enforcement purposes: Purposes related to law enforcement activities",
+      "Prior authorisation: Authorisation granted before use by judicial authority or independent administrative authority",
+      "Judicial authority or independent administrative authority: Authority whose decision is binding in the Member State",
+      "Duly justified situation of urgency: Situation where authorisation may be requested within 24 hours after use commences",
+      "Objective evidence or clear indications: Evidence that use is necessary and proportionate"
+    ],
+    "scope": "Applies to each use of 'real-time' remote biometric identification systems in publicly accessible spaces for law enforcement purposes. Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "For the purposes of paragraph 1, first subparagraph, point (h) and paragraph 2, each use for the purposes of law enforcement of a 'real-time' remote biometric identification system in publicly accessible spaces shall be subject to a prior authorisation granted by a judicial authority or an independent administrative authority whose decision is binding of the Member State in which the use is to take place, issued upon a reasoned request and in accordance with the detailed rules of national law referred to in paragraph 5. However, in a duly justified situation of urgency, the use of such system may be commenced without an authorisation provided that such authorisation is requested without undue delay, at the latest within 24 hours. If such authorisation is rejected, the use shall be stopped with immediate effect and all the data, as well as the results and outputs of that use shall be immediately discarded and deleted. The competent judicial authority or an independent administrative authority whose decision is binding shall grant the authorisation only where it is satisfied, on the basis of objective evidence or clear indications presented to it, that the use of the 'real-time' remote biometric identification system concerned is necessary for, and proportionate to, achieving one of the objectives specified in paragraph 1, first subparagraph, point (h), as identified in the request and, in particular, remains limited to what is strictly necessary concerning the period of time as well as the geographic and personal scope. In deciding on the request, that authority shall take into account the elements referred to in paragraph 2. No decision that produces an adverse legal effect on a person may be taken based solely on the output of the 'real-time' remote biometric identification system.",
+    "reference": [
+      "Article 5, paragraph 3",
+      "Recitals 35, 38, 39, 40, and 41"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 10
+  },
+  {
+    "definitions": [
+      "'Real-time' remote biometric identification systems: Systems used for biometric identification in real-time",
+      "Publicly accessible spaces: Spaces accessible to the public",
+      "Law enforcement purposes: Purposes related to law enforcement activities",
+      "Market surveillance authority: Relevant authority responsible for market surveillance",
+      "National data protection authority: Authority responsible for data protection",
+      "Notification: Notification containing minimum information specified under paragraph 6, excluding sensitive operational data"
+    ],
+    "scope": "Applies to each use of 'real-time' remote biometric identification systems in publicly accessible spaces for law enforcement purposes. Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "Without prejudice to paragraph 3, each use of a 'real-time' remote biometric identification system in publicly accessible spaces for law enforcement purposes shall be notified to the relevant market surveillance authority and the national data protection authority in accordance with the national rules referred to in paragraph 5. The notification shall, as a minimum, contain the information specified under paragraph 6 and shall not include sensitive operational data.",
+    "reference": [
+      "Article 5, paragraph 4",
+      "Recitals 36, 38, 39, 40, and 41"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 11
+  },
+  {
+    "definitions": [
+      "'Real-time' remote biometric identification systems: Systems used for biometric identification in real-time",
+      "Publicly accessible spaces: Spaces accessible to the public",
+      "Law enforcement purposes: Purposes related to law enforcement activities",
+      "Member State: A member state of the European Union",
+      "National law: Detailed rules for request, issuance, exercise, supervision and reporting of authorisations",
+      "Criminal offences referred to in point (h)(iii): Offences listed in Annex II",
+      "More restrictive laws: Laws that further restrict the use of remote biometric identification systems"
+    ],
+    "scope": "Applies to Member States deciding to authorise the use of 'real-time' remote biometric identification systems. Effective from 2 February 2025 according to Article 113(a).",
+    "policy_description": "A Member State may decide to provide for the possibility to fully or partially authorise the use of 'real-time' remote biometric identification systems in publicly accessible spaces for the purposes of law enforcement within the limits and under the conditions listed in paragraph 1, first subparagraph, point (h), and paragraphs 2 and 3. Member States concerned shall lay down in their national law the necessary detailed rules for the request, issuance and exercise of, as well as supervision and reporting relating to, the authorisations referred to in paragraph 3. Those rules shall also specify in respect of which of the objectives listed in paragraph 1, first subparagraph, point (h), including which of the criminal offences referred to in point (h)(iii) thereof, the competent authorities may be authorised to use those systems for the purposes of law enforcement. Member States shall notify those rules to the Commission at the latest 30 days following the adoption thereof. Member States may introduce, in accordance with Union law, more restrictive laws on the use of remote biometric identification systems.",
+    "reference": [
+      "Article 5, paragraph 5",
+      "Recitals 37, 38, 39, 40, and 41"
+    ],
+    "source_file": "./results/baselines/shieldagent/raw/eu_ai_act_article_5/extraction_20260521_183216/eu_ai_act_art5_pages_1-8_20260521_183216.txt",
+    "extraction_time": "2026-05-21 18:33:38",
+    "policy_id": 12
+  }
+]

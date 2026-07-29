@@ -1,0 +1,9 @@
+{
+  "canonical_baseline_inputs": "/content/pcg/results/tables/csv/baseline_inputs/20260530-075321_r1_weblinx_deepseek-v3__seed0__baseline_inputs.jsonl",
+  "dataset": "weblinx",
+  "model": "deepseek:deepseek-v3",
+  "note": "R1 run content was correct, but original directory name inherited default config label hotpotqa/Qwen.",
+  "run_id": "20260530-075321_r1_weblinx_deepseek-v3_deepseek",
+  "source_baseline_inputs": "/content/pcg/results/tables/csv/baseline_inputs/20260530-075321_r1_hotpotqa_5b990c6e_unknown__seed0__baseline_inputs.jsonl",
+  "source_dir": "/content/pcg/results/tables/csv/experiment_json/20260530-075321_r1_hotpotqa_5b990c6e_unknown"
+}

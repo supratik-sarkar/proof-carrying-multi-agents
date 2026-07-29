@@ -1,0 +1,27 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize End-to-end performance on six highlighted cells. Clean/adversarial accepted harm, certificate coverage, responsibility top-1, and utility share the same paired records.}
+\label{tab:main_six_summary}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l|ccc|ccc|ccc}
+\toprule
+Cell & NoCert C & Shield C & PCG C & NoCert A & Shield A & PCG A & Cert. cov. & Resp.@1 & Utility \\
+\midrule
+\texttt{phi-3.5-mini}/\texttt{FEVER} & 0.122 & 0.073 & \textbf{0.040} & 0.139 & 0.128 & \textbf{0.082} & 0.833 & 0.667 & \textbf{0.704} \\
+\texttt{qwen2.5-7B}/\texttt{HotpotQA} & 0.165 & 0.136 & \textbf{0.059} & 0.217 & 0.165 & \textbf{0.091} & 0.842 & 0.692 & \textbf{0.697} \\
+\texttt{Llama-3.1-8B}/\texttt{PubMedQA} & 0.078 & 0.055 & \textbf{0.030} & 0.148 & 0.138 & \textbf{0.051} & 0.842 & 0.650 & \textbf{0.719} \\
+\texttt{Gemma-2-9b-it}/\texttt{TAT-QA} & 0.139 & 0.127 & \textbf{0.119} & 0.174 & 0.165 & \textbf{0.091} & 0.842 & 0.767 & \textbf{0.653} \\
+\texttt{Llama-3.3-70B}/\texttt{ToolBench} & 0.139 & 0.099 & \textbf{0.069} & 0.191 & 0.118 & \textbf{0.100} & 0.850 & 0.725 & \textbf{0.697} \\
+\texttt{deepseek-v3}/\texttt{WebLINX} & 0.139 & 0.063 & \textbf{0.069} & 0.165 & 0.127 & \textbf{0.080} & 0.850 & 0.733 & \textbf{0.697} \\
+\bottomrule
+\end{tabular}}
+\vspace{0.25em}
+\parbox{0.98\linewidth}{\footnotesize C/A denote clean/adversarial. Bold marks PCG-MAS harm and utility. }
+\end{table*}

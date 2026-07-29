@@ -1,0 +1,4 @@
+Variable,Sweep,Token slope,Latency slope
+Redundancy k,"{1,2,4,8}",0.18,0.23
+Support size |S0|,"{2,4,8,16,32}",0.024,0.03
+Chain depth d,"{2,5,10,20}",0.017,0.021

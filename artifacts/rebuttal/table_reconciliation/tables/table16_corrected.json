@@ -1,0 +1,402 @@
+[
+  {
+    "cell": "phi-3.5-mini / hotpotqa",
+    "h_nocert": 0.1826086956521739,
+    "h_pcg": 0.1326530612244898,
+    "cov_control": 0.8166666666666667,
+    "cov_audit": 0.95,
+    "gain": 1.38
+  },
+  {
+    "cell": "phi-3.5-mini / 2wikimultihopqa",
+    "h_nocert": 0.2608695652173913,
+    "h_pcg": 0.1326530612244898,
+    "cov_control": 0.8166666666666667,
+    "cov_audit": 0.95,
+    "gain": 1.97
+  },
+  {
+    "cell": "phi-3.5-mini / pubmedqa",
+    "h_nocert": 0.1391304347826087,
+    "h_pcg": 0.04081632653061224,
+    "cov_control": 0.8166666666666667,
+    "cov_audit": 0.95,
+    "gain": 3.41
+  },
+  {
+    "cell": "phi-3.5-mini / tat-qa",
+    "h_nocert": 0.20869565217391303,
+    "h_pcg": 0.08163265306122448,
+    "cov_control": 0.8166666666666667,
+    "cov_audit": 0.95,
+    "gain": 2.56
+  },
+  {
+    "cell": "phi-3.5-mini / toolbench",
+    "h_nocert": 0.2608695652173913,
+    "h_pcg": 0.15306122448979592,
+    "cov_control": 0.8166666666666667,
+    "cov_audit": 0.95,
+    "gain": 1.7
+  },
+  {
+    "cell": "phi-3.5-mini / weblinx",
+    "h_nocert": 0.26956521739130435,
+    "h_pcg": 0.14285714285714285,
+    "cov_control": 0.8166666666666667,
+    "cov_audit": 0.95,
+    "gain": 1.89
+  },
+  {
+    "cell": "phi-3.5-mini / adversarial-integrity",
+    "h_nocert": 0.2956521739130435,
+    "h_pcg": 0.12244897959183673,
+    "cov_control": 0.8166666666666667,
+    "cov_audit": 0.95,
+    "gain": 2.41
+  },
+  {
+    "cell": "qwen2.5-7b / fever",
+    "h_nocert": 0.1391304347826087,
+    "h_pcg": 0.08080808080808081,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.72
+  },
+  {
+    "cell": "qwen2.5-7b / 2wikimultihopqa",
+    "h_nocert": 0.20869565217391303,
+    "h_pcg": 0.1414141414141414,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.48
+  },
+  {
+    "cell": "qwen2.5-7b / pubmedqa",
+    "h_nocert": 0.14782608695652175,
+    "h_pcg": 0.0707070707070707,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 2.09
+  },
+  {
+    "cell": "qwen2.5-7b / tat-qa",
+    "h_nocert": 0.21739130434782608,
+    "h_pcg": 0.1111111111111111,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.96
+  },
+  {
+    "cell": "qwen2.5-7b / toolbench",
+    "h_nocert": 0.20869565217391303,
+    "h_pcg": 0.12121212121212122,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.72
+  },
+  {
+    "cell": "qwen2.5-7b / weblinx",
+    "h_nocert": 0.2,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 2.2
+  },
+  {
+    "cell": "qwen2.5-7b / adversarial-integrity",
+    "h_nocert": 0.2608695652173913,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 2.87
+  },
+  {
+    "cell": "deepseek-llm-7b-chat / fever",
+    "h_nocert": 0.1565217391304348,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.72
+  },
+  {
+    "cell": "deepseek-llm-7b-chat / hotpotqa",
+    "h_nocert": 0.12173913043478261,
+    "h_pcg": 0.0707070707070707,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.72
+  },
+  {
+    "cell": "deepseek-llm-7b-chat / 2wikimultihopqa",
+    "h_nocert": 0.24347826086956523,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 2.68
+  },
+  {
+    "cell": "deepseek-llm-7b-chat / pubmedqa",
+    "h_nocert": 0.16521739130434782,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.82
+  },
+  {
+    "cell": "deepseek-llm-7b-chat / tat-qa",
+    "h_nocert": 0.17391304347826086,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.91
+  },
+  {
+    "cell": "deepseek-llm-7b-chat / toolbench",
+    "h_nocert": 0.21739130434782608,
+    "h_pcg": 0.1414141414141414,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.54
+  },
+  {
+    "cell": "deepseek-llm-7b-chat / weblinx",
+    "h_nocert": 0.17391304347826086,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.91
+  },
+  {
+    "cell": "deepseek-llm-7b-chat / adversarial-integrity",
+    "h_nocert": 0.26956521739130435,
+    "h_pcg": 0.1111111111111111,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 2.43
+  },
+  {
+    "cell": "llama-3.1-8b / fever",
+    "h_nocert": 0.11304347826086956,
+    "h_pcg": 0.030303030303030304,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 3.73
+  },
+  {
+    "cell": "llama-3.1-8b / hotpotqa",
+    "h_nocert": 0.17391304347826086,
+    "h_pcg": 0.10101010101010101,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.72
+  },
+  {
+    "cell": "llama-3.1-8b / 2wikimultihopqa",
+    "h_nocert": 0.17391304347826086,
+    "h_pcg": 0.10101010101010101,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.72
+  },
+  {
+    "cell": "llama-3.1-8b / tat-qa",
+    "h_nocert": 0.22608695652173913,
+    "h_pcg": 0.08080808080808081,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 2.8
+  },
+  {
+    "cell": "llama-3.1-8b / toolbench",
+    "h_nocert": 0.1826086956521739,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 2.01
+  },
+  {
+    "cell": "llama-3.1-8b / weblinx",
+    "h_nocert": 0.23478260869565218,
+    "h_pcg": 0.1111111111111111,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 2.11
+  },
+  {
+    "cell": "llama-3.1-8b / adversarial-integrity",
+    "h_nocert": 0.28695652173913044,
+    "h_pcg": 0.16161616161616163,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.78
+  },
+  {
+    "cell": "gemma-2-9b-it / fever",
+    "h_nocert": 0.1391304347826087,
+    "h_pcg": 0.0707070707070707,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.97
+  },
+  {
+    "cell": "gemma-2-9b-it / hotpotqa",
+    "h_nocert": 0.1391304347826087,
+    "h_pcg": 0.0707070707070707,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.97
+  },
+  {
+    "cell": "gemma-2-9b-it / 2wikimultihopqa",
+    "h_nocert": 0.16521739130434782,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.82
+  },
+  {
+    "cell": "gemma-2-9b-it / pubmedqa",
+    "h_nocert": 0.17391304347826086,
+    "h_pcg": 0.09090909090909091,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.91
+  },
+  {
+    "cell": "gemma-2-9b-it / toolbench",
+    "h_nocert": 0.21739130434782608,
+    "h_pcg": 0.10101010101010101,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 2.15
+  },
+  {
+    "cell": "gemma-2-9b-it / weblinx",
+    "h_nocert": 0.2,
+    "h_pcg": 0.10101010101010101,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.98
+  },
+  {
+    "cell": "gemma-2-9b-it / adversarial-integrity",
+    "h_nocert": 0.25217391304347825,
+    "h_pcg": 0.16161616161616163,
+    "cov_control": 0.825,
+    "cov_audit": 0.95,
+    "gain": 1.56
+  },
+  {
+    "cell": "llama-3.3-70b / fever",
+    "h_nocert": 0.08695652173913043,
+    "h_pcg": 0.03,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 2.9
+  },
+  {
+    "cell": "llama-3.3-70b / hotpotqa",
+    "h_nocert": 0.1565217391304348,
+    "h_pcg": 0.06,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 2.61
+  },
+  {
+    "cell": "llama-3.3-70b / 2wikimultihopqa",
+    "h_nocert": 0.1391304347826087,
+    "h_pcg": 0.04,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 3.48
+  },
+  {
+    "cell": "llama-3.3-70b / pubmedqa",
+    "h_nocert": 0.1565217391304348,
+    "h_pcg": 0.09,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 1.74
+  },
+  {
+    "cell": "llama-3.3-70b / tat-qa",
+    "h_nocert": 0.17391304347826086,
+    "h_pcg": 0.09,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 1.93
+  },
+  {
+    "cell": "llama-3.3-70b / weblinx",
+    "h_nocert": 0.2,
+    "h_pcg": 0.06,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 3.33
+  },
+  {
+    "cell": "llama-3.3-70b / adversarial-integrity",
+    "h_nocert": 0.23478260869565218,
+    "h_pcg": 0.06,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 3.91
+  },
+  {
+    "cell": "deepseek-v3 / fever",
+    "h_nocert": 0.11304347826086956,
+    "h_pcg": 0.0297029702970297,
+    "cov_control": 0.8416666666666667,
+    "cov_audit": 0.95,
+    "gain": 3.81
+  },
+  {
+    "cell": "deepseek-v3 / hotpotqa",
+    "h_nocert": 0.14782608695652175,
+    "h_pcg": 0.08,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 1.85
+  },
+  {
+    "cell": "deepseek-v3 / 2wikimultihopqa",
+    "h_nocert": 0.1391304347826087,
+    "h_pcg": 0.07,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 1.99
+  },
+  {
+    "cell": "deepseek-v3 / pubmedqa",
+    "h_nocert": 0.17391304347826086,
+    "h_pcg": 0.1,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 1.74
+  },
+  {
+    "cell": "deepseek-v3 / tat-qa",
+    "h_nocert": 0.14782608695652175,
+    "h_pcg": 0.03,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 4.93
+  },
+  {
+    "cell": "deepseek-v3 / toolbench",
+    "h_nocert": 0.1826086956521739,
+    "h_pcg": 0.1,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 1.83
+  },
+  {
+    "cell": "deepseek-v3 / adversarial-integrity",
+    "h_nocert": 0.1826086956521739,
+    "h_pcg": 0.1,
+    "cov_control": 0.8333333333333334,
+    "cov_audit": 0.95,
+    "gain": 1.83
+  }
+]

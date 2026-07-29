@@ -1,0 +1,60 @@
+{
+  "models": [
+    "phi-3.5-mini",
+    "qwen2.5-7B",
+    "deepseek-llm-7b-chat",
+    "Llama-3.1-8B",
+    "Gemma-2-9b-it",
+    "Llama-3.3-70B",
+    "deepseek-v3"
+  ],
+  "datasets": [
+    "FEVER",
+    "HotpotQA",
+    "2WikiMultihopQA",
+    "PubMedQA",
+    "TAT-QA",
+    "ToolBench",
+    "WebLINX",
+    "Adversarial-Integrity"
+  ],
+  "cell_count": 56,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "planned_examples_per_cell": 500,
+  "preview_examples_per_condition": 120,
+  "headline_cells": [
+    {
+      "model": "phi-3.5-mini",
+      "dataset": "FEVER"
+    },
+    {
+      "model": "qwen2.5-7B",
+      "dataset": "HotpotQA"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "dataset": "PubMedQA"
+    },
+    {
+      "model": "Gemma-2-9b-it",
+      "dataset": "TAT-QA"
+    },
+    {
+      "model": "Llama-3.3-70B",
+      "dataset": "ToolBench"
+    },
+    {
+      "model": "deepseek-v3",
+      "dataset": "WebLINX"
+    }
+  ],
+  "server_command_template": "python scripts/rebuttal/run_56cell_server.py --config configs/rebuttal_56cell.yaml --output-root artifacts/rebuttal/source_records/server_runs",
+  "sample_size_per_cell": 240,
+  "total_expected_examples": 13440
+}

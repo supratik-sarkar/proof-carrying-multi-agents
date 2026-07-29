@@ -1,0 +1,28 @@
+% result_status: 
+% reporting_status: false
+% run_status: Recorded
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize Hyperparameters and evaluation controls for R1--R5. This protocol table is preserved rather than regenerated from outcomes.}
+\label{tab:hyperparams_controls}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lll}
+\toprule
+Parameter & Value & Freeze stage \\
+\midrule
+Models & 7 canonical backends & before execution \\
+Datasets & 8 datasets / 56 cells & before execution \\
+Seeds & 0,1,2,3,4 & before execution \\
+Examples per cell & 500 planned & before execution \\
+Confidence level & 95\% ($\alpha=0.05$) & analysis plan \\
+Default redundancy & k=2; sweep {1,2,4,8} & before execution \\
+Replay budget & M=32 & before execution \\
+Entailment threshold & 0.70 & calibration only \\
+Contradiction threshold & 0.50 & calibration only \\
+\bottomrule
+\end{tabular}}
+\end{table*}

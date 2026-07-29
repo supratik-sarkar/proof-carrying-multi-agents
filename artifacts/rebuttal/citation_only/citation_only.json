@@ -1,0 +1,56 @@
+{
+  "label": "tab:rebuttal_citation_only",
+  "caption": "Scope-matched comparison at common coverage. Support and execution harm are separated so each baseline is judged within its native mechanism scope.",
+  "rows": [
+    {
+      "System": "NoCert",
+      "Coverage": "0.843",
+      "H_support": "0.082",
+      "H_exec": "0.051",
+      "Composite": "0.132",
+      "Utility": "0.615",
+      "Tokens": 1202.8,
+      "p50 ms": 645.6
+    },
+    {
+      "System": "CitationOnly",
+      "Coverage": "0.843",
+      "H_support": "0.046",
+      "H_exec": "0.051",
+      "Composite": "0.097",
+      "Utility": "0.639",
+      "Tokens": 1498.0,
+      "p50 ms": 738.0
+    },
+    {
+      "System": "ShieldAgent",
+      "Coverage": "0.843",
+      "H_support": "0.079",
+      "H_exec": "0.021",
+      "Composite": "0.100",
+      "Utility": "0.637",
+      "Tokens": 1649.7,
+      "p50 ms": 835.1
+    },
+    {
+      "System": "AgentRR",
+      "Coverage": "0.843",
+      "H_support": "0.068",
+      "H_exec": "0.031",
+      "Composite": "0.099",
+      "Utility": "0.638",
+      "Tokens": 1773.8,
+      "p50 ms": 941.3
+    },
+    {
+      "System": "PCG-MAS",
+      "Coverage": "0.843",
+      "H_support": "0.046",
+      "H_exec": "0.023",
+      "Composite": "0.069",
+      "Utility": "0.691",
+      "Tokens": 2296.8,
+      "p50 ms": 1249.6
+    }
+  ]
+}

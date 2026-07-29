@@ -1,0 +1,58 @@
+{
+  "label": "tab:rebuttal_separating_witnesses",
+  "caption": "Separating witnesses. Each family fails exactly one PCG-MAS channel and passes the other three; baseline verdicts illustrate non-redundancy.",
+  "rows": [
+    {
+      "Family": "W_H",
+      "Target": "V_H",
+      "V_H": "Fail",
+      "V_Pi": "Pass",
+      "V_Gamma": "Pass",
+      "V_entail": "Pass",
+      "CitationOnly": "Accept",
+      "ShieldAgent": "Accept",
+      "AgentRR": "Block",
+      "VERIMAP": "Accept",
+      "PCG-MAS": "Block"
+    },
+    {
+      "Family": "W_Pi",
+      "Target": "V_Pi",
+      "V_H": "Pass",
+      "V_Pi": "Fail",
+      "V_Gamma": "Pass",
+      "V_entail": "Pass",
+      "CitationOnly": "Accept",
+      "ShieldAgent": "Accept",
+      "AgentRR": "Block",
+      "VERIMAP": "Block",
+      "PCG-MAS": "Block"
+    },
+    {
+      "Family": "W_Gamma",
+      "Target": "V_Gamma",
+      "V_H": "Pass",
+      "V_Pi": "Pass",
+      "V_Gamma": "Fail",
+      "V_entail": "Pass",
+      "CitationOnly": "Accept",
+      "ShieldAgent": "Block",
+      "AgentRR": "Accept",
+      "VERIMAP": "Block",
+      "PCG-MAS": "Block"
+    },
+    {
+      "Family": "W_entail",
+      "Target": "V_entail",
+      "V_H": "Pass",
+      "V_Pi": "Pass",
+      "V_Gamma": "Pass",
+      "V_entail": "Fail",
+      "CitationOnly": "Block",
+      "ShieldAgent": "Accept",
+      "AgentRR": "Accept",
+      "VERIMAP": "Block",
+      "PCG-MAS": "Block"
+    }
+  ]
+}

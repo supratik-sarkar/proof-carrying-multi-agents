@@ -1,0 +1,59 @@
+{
+  "run_id": "20260531-073919_r5_scaling",
+  "results": [
+    {
+      "cell": "toolbench:Llama-3.3-70B",
+      "k": {
+        "variable": "k",
+        "sweep": [
+          1,
+          2,
+          4
+        ],
+        "tokens": [
+          867.3,
+          1734.6,
+          3469.2
+        ],
+        "latency_ms": [
+          631.4118900666775,
+          612.0297989998713,
+          1264.8793279000831
+        ],
+        "token_slope": 1.0000000000000002,
+        "latency_slope": 0.5011732110522205,
+        "source": "measured",
+        "source_file": "results/tables/csv/experiment_json/20260530-080500_r5_overhead_6bd3887d_unknown/r5.json"
+      },
+      "s0": {
+        "variable": "support_size",
+        "sweep": [
+          2,
+          4,
+          8,
+          16
+        ],
+        "tokens": null,
+        "latency_ms": null,
+        "token_slope": null,
+        "latency_slope": null,
+        "source": "analytic_model",
+        "note": "dataset 'toolbench' provides max_evidence=1 per example; |S0| sweep is degenerate (retrieval saturates below smallest sweep value). Use a multi-evidence dataset (e.g. hotpotqa, pubmedqa) for measured |S0| scaling.",
+        "max_evidence_in_dataset": 1
+      },
+      "d": {
+        "variable": "chain_depth",
+        "sweep": [
+          2,
+          5,
+          10,
+          20
+        ],
+        "token_slope": null,
+        "latency_slope": null,
+        "source": "analytic_model",
+        "note": "No native chained prover is used in the current runtime; d-scaling is reported as an analytic model unless a future multi-pass refinement loop is enabled."
+      }
+    }
+  ]
+}

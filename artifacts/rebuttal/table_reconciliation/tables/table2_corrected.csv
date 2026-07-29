@@ -1,0 +1,7 @@
+cell,h_nocert,h_pcg,cov_ctrl,cov_audit,gain
+phi-3.5-mini / fever,0.1391,0.0816,0.8167,0.9500,1.70x
+gemma-2-9b-it / tat-qa,0.1739,0.0909,0.8250,0.9500,1.91x
+llama-3.3-70b / toolbench,0.1913,0.1000,0.8333,0.9500,1.91x
+deepseek-v3 / weblinx,0.1652,0.0800,0.8333,0.9500,2.07x
+qwen2.5-7b / hotpotqa,0.2174,0.0909,0.8250,0.9500,2.39x
+llama-3.1-8b / pubmedqa,0.1478,0.0505,0.8250,0.9500,2.93x

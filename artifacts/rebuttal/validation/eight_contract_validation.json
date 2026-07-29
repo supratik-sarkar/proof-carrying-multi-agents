@@ -1,0 +1,13 @@
+{
+  "overall_status": "PASS",
+  "directories": {
+    "table_reconciliation": "PASS",
+    "sv_decomposition": "PASS",
+    "separating_witnesses": "PASS",
+    "citation_only": "PASS",
+    "injection": "PASS",
+    "shift": "PASS",
+    "audit_sampling": "PASS",
+    "backend_manifest": "PASS"
+  }
+}

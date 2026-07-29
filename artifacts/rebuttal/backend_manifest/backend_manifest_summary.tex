@@ -1,0 +1,26 @@
+% result_status: 
+% reporting_status: false
+% run_status: Available
+
+\begin{table*}[!ht]
+\centering
+\caption{\footnotesize Backend manifest. Every row is explicitly unexecuted; the final manifest must come from immutable server records and output hashes.}
+\label{tab:rebuttal_backend_manifest}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.94}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lllllll}
+\toprule
+Model & Seeds & Revision & Backend & dtype & Quant. & Manifest \\
+\midrule
+phi-3.5-mini & 0--4 & pinned-revision & configured-backend & bfloat16 & none & \textbf{Available} \\
+qwen2.5-7B & 0--4 & pinned-revision & configured-backend & bfloat16 & none & \textbf{Available} \\
+deepseek-llm-7b-chat & 0--4 & pinned-revision & configured-backend & bfloat16 & none & \textbf{Available} \\
+Llama-3.1-8B & 0--4 & pinned-revision & configured-backend & bfloat16 & none & \textbf{Available} \\
+Gemma-2-9b-it & 0--4 & pinned-revision & configured-backend & bfloat16 & none & \textbf{Available} \\
+Llama-3.3-70B & 0--4 & pinned-revision & configured-backend & bfloat16 & none & \textbf{Available} \\
+deepseek-v3 & 0--4 & pinned-revision & configured-backend & bfloat16 & none & \textbf{Available} \\
+\bottomrule
+\end{tabular}}
+\end{table*}

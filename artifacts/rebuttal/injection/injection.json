@@ -1,0 +1,326 @@
+{
+  "label": "tab:rebuttal_injection",
+  "caption": "Indirect prompt-injection stress across four payload locations. Isolated verifier contexts benefit from redundancy; shared payloads show common-mode saturation.",
+  "rows": [
+    {
+      "Vector": "retrieved content",
+      "Regime": "isolated",
+      "k": 1,
+      "Detection": 0.6810033721538452,
+      "Accepted attack": 0.18793570998481998,
+      "False refusal": 0.03215947360486246,
+      "rho_realized": 0.9424394533510356,
+      "Utility": 0.8282312289517325
+    },
+    {
+      "Vector": "retrieved content",
+      "Regime": "isolated",
+      "k": 2,
+      "Detection": 0.7584888174232819,
+      "Accepted attack": 0.1116749413116375,
+      "False refusal": 0.041462930115096754,
+      "rho_realized": 0.9762491200840197,
+      "Utility": 0.8097195388436697
+    },
+    {
+      "Vector": "retrieved content",
+      "Regime": "isolated",
+      "k": 4,
+      "Detection": 0.8543356350384883,
+      "Accepted attack": 0.03535503208751627,
+      "False refusal": 0.05682541615800196,
+      "rho_realized": 1.0449504674637553,
+      "Utility": 0.7908746021113098
+    },
+    {
+      "Vector": "retrieved content",
+      "Regime": "isolated",
+      "k": 8,
+      "Detection": 0.9005597359833928,
+      "Accepted attack": 0.004330006979408248,
+      "False refusal": 0.06379046068425656,
+      "rho_realized": 1.071858224716993,
+      "Utility": 0.7724915246623659
+    },
+    {
+      "Vector": "retrieved content",
+      "Regime": "shared",
+      "k": 1,
+      "Detection": 0.4730614031659297,
+      "Accepted attack": 0.18455494100828193,
+      "False refusal": 0.02830613735063905,
+      "rho_realized": 1.0371053787428033,
+      "Utility": 0.8284431624457148
+    },
+    {
+      "Vector": "retrieved content",
+      "Regime": "shared",
+      "k": 2,
+      "Detection": 0.4863842842270849,
+      "Accepted attack": 0.1817970889804437,
+      "False refusal": 0.02983073698608483,
+      "rho_realized": 1.2886701391624222,
+      "Utility": 0.8103593094657653
+    },
+    {
+      "Vector": "retrieved content",
+      "Regime": "shared",
+      "k": 4,
+      "Detection": 0.5176447414070935,
+      "Accepted attack": 0.1514192178314974,
+      "False refusal": 0.048023693662032456,
+      "rho_realized": 1.5408113884443104,
+      "Utility": 0.7913586968485882
+    },
+    {
+      "Vector": "retrieved content",
+      "Regime": "shared",
+      "k": 8,
+      "Detection": 0.5685371609092476,
+      "Accepted attack": 0.11868037002744572,
+      "False refusal": 0.04628388395948087,
+      "rho_realized": 1.7027341976601222,
+      "Utility": 0.7734543863822285
+    },
+    {
+      "Vector": "tool output",
+      "Regime": "isolated",
+      "k": 1,
+      "Detection": 0.7375593321376753,
+      "Accepted attack": 0.20361561037658438,
+      "False refusal": 0.032485383210465034,
+      "rho_realized": 0.9106070022919718,
+      "Utility": 0.8282133039234244
+    },
+    {
+      "Vector": "tool output",
+      "Regime": "isolated",
+      "k": 2,
+      "Detection": 0.7943730476412122,
+      "Accepted attack": 0.1269841959097162,
+      "False refusal": 0.04045010784857721,
+      "rho_realized": 0.982526111566456,
+      "Utility": 0.8097752440683282
+    },
+    {
+      "Vector": "tool output",
+      "Regime": "isolated",
+      "k": 4,
+      "Detection": 0.903026816333017,
+      "Accepted attack": 0.044705312539416196,
+      "False refusal": 0.05386629405677631,
+      "rho_realized": 1.0363039223201636,
+      "Utility": 0.7910373538268772
+    },
+    {
+      "Vector": "tool output",
+      "Regime": "isolated",
+      "k": 8,
+      "Detection": 0.9448499093732574,
+      "Accepted attack": 0.005215450562938837,
+      "False refusal": 0.06634524334391065,
+      "rho_realized": 1.090721360936781,
+      "Utility": 0.772351011616085
+    },
+    {
+      "Vector": "tool output",
+      "Regime": "shared",
+      "k": 1,
+      "Detection": 0.5268109390086282,
+      "Accepted attack": 0.21193820767499055,
+      "False refusal": 0.0324483341675957,
+      "rho_realized": 1.0622454288426384,
+      "Utility": 0.8282153416207821
+    },
+    {
+      "Vector": "tool output",
+      "Regime": "shared",
+      "k": 2,
+      "Detection": 0.5700493814220938,
+      "Accepted attack": 0.2109225645569105,
+      "False refusal": 0.04387387252659982,
+      "rho_realized": 1.252090686033873,
+      "Utility": 0.8095869370110369
+    },
+    {
+      "Vector": "tool output",
+      "Regime": "shared",
+      "k": 4,
+      "Detection": 0.5729576925122049,
+      "Accepted attack": 0.1813696802817756,
+      "False refusal": 0.04666031814282597,
+      "rho_realized": 1.466272835922008,
+      "Utility": 0.7914336825021445
+    },
+    {
+      "Vector": "tool output",
+      "Regime": "shared",
+      "k": 8,
+      "Detection": 0.5938271024880047,
+      "Accepted attack": 0.15360082874877767,
+      "False refusal": 0.050265802652520016,
+      "rho_realized": 1.666368068279898,
+      "Utility": 0.7732353808541115
+    },
+    {
+      "Vector": "memory",
+      "Regime": "isolated",
+      "k": 1,
+      "Detection": 0.6626465005988968,
+      "Accepted attack": 0.15749384495102364,
+      "False refusal": 0.03955849800734114,
+      "rho_realized": 0.9488549789686368,
+      "Utility": 0.8278242826095962
+    },
+    {
+      "Vector": "memory",
+      "Regime": "isolated",
+      "k": 2,
+      "Detection": 0.7541732910623961,
+      "Accepted attack": 0.0897149708089722,
+      "False refusal": 0.04921855700511306,
+      "rho_realized": 0.9675501524297802,
+      "Utility": 0.8092929793647188
+    },
+    {
+      "Vector": "memory",
+      "Regime": "isolated",
+      "k": 4,
+      "Detection": 0.8201015780051112,
+      "Accepted attack": 0.032587676367170436,
+      "False refusal": 0.05605832952849203,
+      "rho_realized": 1.016068367400647,
+      "Utility": 0.7909167918759329
+    },
+    {
+      "Vector": "memory",
+      "Regime": "isolated",
+      "k": 8,
+      "Detection": 0.8883704308423507,
+      "Accepted attack": 0.0034032296348785645,
+      "False refusal": 0.06412619182934688,
+      "rho_realized": 1.1109427645506895,
+      "Utility": 0.7724730594493859
+    },
+    {
+      "Vector": "memory",
+      "Regime": "shared",
+      "k": 1,
+      "Detection": 0.4845611330219724,
+      "Accepted attack": 0.17094929043127813,
+      "False refusal": 0.027335998665232602,
+      "rho_realized": 1.0486103965411036,
+      "Utility": 0.8284965200734121
+    },
+    {
+      "Vector": "memory",
+      "Regime": "shared",
+      "k": 2,
+      "Detection": 0.5056262338998044,
+      "Accepted attack": 0.1472351759350689,
+      "False refusal": 0.037849254419028706,
+      "rho_realized": 1.317883670964136,
+      "Utility": 0.8099182910069533
+    },
+    {
+      "Vector": "memory",
+      "Regime": "shared",
+      "k": 4,
+      "Detection": 0.5515915241057414,
+      "Accepted attack": 0.1386504761782763,
+      "False refusal": 0.05064624069695546,
+      "rho_realized": 1.5331725859393002,
+      "Utility": 0.7912144567616674
+    },
+    {
+      "Vector": "memory",
+      "Regime": "shared",
+      "k": 8,
+      "Detection": 0.5378242570707944,
+      "Accepted attack": 0.10353943014166118,
+      "False refusal": 0.05824980596308653,
+      "rho_realized": 1.7315709766549117,
+      "Utility": 0.7727962606720302
+    },
+    {
+      "Vector": "delegated message",
+      "Regime": "isolated",
+      "k": 1,
+      "Detection": 0.6902695560781891,
+      "Accepted attack": 0.23921885640354856,
+      "False refusal": 0.03766587829085867,
+      "rho_realized": 0.9290683164846661,
+      "Utility": 0.8279283766940028
+    },
+    {
+      "Vector": "delegated message",
+      "Regime": "isolated",
+      "k": 2,
+      "Detection": 0.7374850578571495,
+      "Accepted attack": 0.15114337286485938,
+      "False refusal": 0.04328868388343029,
+      "rho_realized": 0.9516586708755411,
+      "Utility": 0.8096191223864113
+    },
+    {
+      "Vector": "delegated message",
+      "Regime": "isolated",
+      "k": 4,
+      "Detection": 0.826940237589928,
+      "Accepted attack": 0.04639928965628475,
+      "False refusal": 0.057991657536029986,
+      "rho_realized": 1.0007136899608204,
+      "Utility": 0.7908104588355183
+    },
+    {
+      "Vector": "delegated message",
+      "Regime": "isolated",
+      "k": 8,
+      "Detection": 0.901189583058669,
+      "Accepted attack": 0.005256984867690284,
+      "False refusal": 0.06128407225162692,
+      "rho_realized": 1.101163149320016,
+      "Utility": 0.7726293760261606
+    },
+    {
+      "Vector": "delegated message",
+      "Regime": "shared",
+      "k": 1,
+      "Detection": 0.45966641498921323,
+      "Accepted attack": 0.24146543464013462,
+      "False refusal": 0.037191447665513785,
+      "rho_realized": 1.0489988400408083,
+      "Utility": 0.8279544703783968
+    },
+    {
+      "Vector": "delegated message",
+      "Regime": "shared",
+      "k": 2,
+      "Detection": 0.4822920229605836,
+      "Accepted attack": 0.2243881796147489,
+      "False refusal": 0.03501688219858543,
+      "rho_realized": 1.260130468930015,
+      "Utility": 0.8100740714790777
+    },
+    {
+      "Vector": "delegated message",
+      "Regime": "shared",
+      "k": 4,
+      "Detection": 0.5480615985274543,
+      "Accepted attack": 0.18759140206116576,
+      "False refusal": 0.04523633256212354,
+      "rho_realized": 1.455124245637688,
+      "Utility": 0.7915120017090831
+    },
+    {
+      "Vector": "delegated message",
+      "Regime": "shared",
+      "k": 8,
+      "Detection": 0.521986728303378,
+      "Accepted attack": 0.16150601498568928,
+      "False refusal": 0.05833062325846428,
+      "rho_realized": 1.7312002252779872,
+      "Utility": 0.7727918157207845
+    }
+  ]
+}

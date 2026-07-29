@@ -1,0 +1,1 @@
+risk_strata: [tcb_core, tool_execution, retrieval_grounding, memory_access, delegation, drift_monitoring]

@@ -1,0 +1,18 @@
+{
+  "dataset": "toolbench",
+  "model": "Llama-3.3-70B",
+  "seed": 0,
+  "n_examples": 30,
+  "epsilon_adv": 0.25,
+  "p_fresh": 0.3,
+  "harm_pcg_full_clean": 0.1,
+  "harm_pcg_full_adv": 0.0,
+  "harm_pcg_minus_v_h_clean": 0.1,
+  "harm_pcg_minus_v_h_adv": 0.0,
+  "harm_pcg_minus_v_pi_clean": 0.1,
+  "harm_pcg_minus_v_pi_adv": 0.0,
+  "harm_pcg_minus_v_gamma_clean": 0.1,
+  "harm_pcg_minus_v_gamma_adv": 0.06666666666666667,
+  "harm_pcg_minus_v_entail_clean": 1.0,
+  "harm_pcg_minus_v_entail_adv": 0.0
+}

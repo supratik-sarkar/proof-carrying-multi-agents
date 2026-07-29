@@ -1,0 +1,1 @@
+attack_locations: [retrieved_content, tool_output, memory, delegated_message]
