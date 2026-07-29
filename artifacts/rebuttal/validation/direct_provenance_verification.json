@@ -1,8 +1,8 @@
 {
-  "NATIVE_PROVENANCE_GLOBAL_RECOMPUTATION": "PASS",
-  "total_records_verified": 13440,
-  "total_hashes_recomputed": 40320,
-  "request_hashes": 13440,
-  "prompt_hashes": 13440,
-  "output_hashes": 13440
+  "SOURCE_RECORD_FILE_INTEGRITY": "PASS",
+  "NATIVE_MODEL_RUN_PROVENANCE": "NOT_AVAILABLE",
+  "per_example_records_file_sha256": "c63babd59efe28b52797379d19e2dffbc500416fd53fc0d45e0e953ebd3d3cef",
+  "per_cell_metrics_file_sha256": "3ec8a88085fa94fdfc144216453fe5c726e55e113d7d4586e863e06352648711",
+  "total_record_lines_verified": 13440,
+  "record_hashes_verified": true
 }

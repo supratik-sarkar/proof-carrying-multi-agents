@@ -8,7 +8,7 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path("/Users/supratiksarkar/Desktop/pcg-neurips2026")
+REPO_ROOT = Path(__file__).resolve().parents[2]
 ART_DIR = REPO_ROOT / "artifacts"
 RES_DIR = REPO_ROOT / "results"
 VAL_DIR = ART_DIR / "validation"

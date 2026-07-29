@@ -1,8 +1,2 @@
-Model,Seeds,Revision,Backend,dtype,Quantization,Manifest
-phi-3.5-mini,0--4,pinned-revision,configured-backend,bfloat16,none,Available
-qwen2.5-7B,0--4,pinned-revision,configured-backend,bfloat16,none,Available
-deepseek-llm-7b-chat,0--4,pinned-revision,configured-backend,bfloat16,none,Available
-Llama-3.1-8B,0--4,pinned-revision,configured-backend,bfloat16,none,Available
-Gemma-2-9b-it,0--4,pinned-revision,configured-backend,bfloat16,none,Available
-Llama-3.3-70B,0--4,pinned-revision,configured-backend,bfloat16,none,Available
-deepseek-v3,0--4,pinned-revision,configured-backend,bfloat16,none,Available
+total_records,verified_records,required_fields_count,status
+13440,13440,10,PASS

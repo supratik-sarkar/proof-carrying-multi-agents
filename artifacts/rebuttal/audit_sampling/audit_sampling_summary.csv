@@ -1,0 +1,5 @@
+design_name,sample_size,effective_sample_size,estimated_harm,interval_width,uncovered_mass_penalty,status
+pooled,3966,3966.0,0.1808,0.0120,0.0000,PASS
+stratified,3966,3925.6,0.1808,0.0120,0.0000,PASS
+importance_weighted,3966,3637.9,0.2214,0.0147,0.0000,PASS
+uncovered_region,3966,3925.6,0.8857,0.0120,0.7049,PASS

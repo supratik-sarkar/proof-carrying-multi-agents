@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "total_records_processed": 13440,
+  "total_designs": 4,
+  "designs": {
+    "pooled": {
+      "design_name": "pooled",
+      "sample_size": 3966,
+      "effective_sample_size": 3966.0,
+      "estimated_harm": 0.1808,
+      "interval_width": 0.012,
+      "uncovered_mass_penalty": 0.0,
+      "status": "PASS"
+    },
+    "stratified": {
+      "design_name": "stratified",
+      "sample_size": 3966,
+      "effective_sample_size": 3925.6,
+      "estimated_harm": 0.1808,
+      "interval_width": 0.012,
+      "uncovered_mass_penalty": 0.0,
+      "status": "PASS"
+    },
+    "importance_weighted": {
+      "design_name": "importance_weighted",
+      "sample_size": 3966,
+      "effective_sample_size": 3637.9,
+      "estimated_harm": 0.2214,
+      "interval_width": 0.0147,
+      "uncovered_mass_penalty": 0.0,
+      "status": "PASS"
+    },
+    "uncovered_region": {
+      "design_name": "uncovered_region",
+      "sample_size": 3966,
+      "effective_sample_size": 3925.6,
+      "estimated_harm": 0.8857,
+      "interval_width": 0.012,
+      "uncovered_mass_penalty": 0.7049,
+      "status": "PASS"
+    }
+  }
+}

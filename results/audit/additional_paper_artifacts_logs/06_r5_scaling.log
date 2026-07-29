@@ -2,18 +2,12 @@
 === r5 scaling: hotpotqa:qwen2.5-7B ===
   k (measured)  tokens slope=1.000  latency slope=1.337
   |S0| (measured) sweep over top_k = [2, 4, 8, 16]
-
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
-Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.94s/it]
-Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.92s/it]
-Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.49s/it]
-Loading checkpoint shards: 100%|██████████| 4/4 [00:10<00:00,  2.76s/it]
-Loading checkpoint shards: 100%|██████████| 4/4 [00:10<00:00,  2.55s/it]
-./.venvs/multi-agents/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.94s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.92s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.49s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:10<00:00,  2.76s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:10<00:00,  2.55s/it]
+/Users/supratiksarkar/Desktop/pcg-neurips2026/.venvs/multi-agents/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
   warnings.warn(
-./.venvs/multi-agents/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+/Users/supratiksarkar/Desktop/pcg-neurips2026/.venvs/multi-agents/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
   warnings.warn(
-./.venvs/multi-agents/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+/Users/supratiksarkar/Desktop/pcg-neurips2026/.venvs/multi-agents/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
   warnings.warn(
     |S0|= 2  tokens=372  latency=68337ms  n=5
     |S0|= 4  tokens=629  latency=151935ms  n=5

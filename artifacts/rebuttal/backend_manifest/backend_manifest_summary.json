@@ -1,69 +1,7 @@
 {
-  "label": "tab:rebuttal_backend_manifest",
-  "caption": "Backend manifest. Every row is explicitly unexecuted; the final manifest must come from immutable server records and output hashes.",
-  "rows": [
-    {
-      "Model": "phi-3.5-mini",
-      "Seeds": "0--4",
-      "Revision": "pinned-revision",
-      "Backend": "configured-backend",
-      "dtype": "bfloat16",
-      "Quantization": "none",
-      "Manifest": "Available"
-    },
-    {
-      "Model": "qwen2.5-7B",
-      "Seeds": "0--4",
-      "Revision": "pinned-revision",
-      "Backend": "configured-backend",
-      "dtype": "bfloat16",
-      "Quantization": "none",
-      "Manifest": "Available"
-    },
-    {
-      "Model": "deepseek-llm-7b-chat",
-      "Seeds": "0--4",
-      "Revision": "pinned-revision",
-      "Backend": "configured-backend",
-      "dtype": "bfloat16",
-      "Quantization": "none",
-      "Manifest": "Available"
-    },
-    {
-      "Model": "Llama-3.1-8B",
-      "Seeds": "0--4",
-      "Revision": "pinned-revision",
-      "Backend": "configured-backend",
-      "dtype": "bfloat16",
-      "Quantization": "none",
-      "Manifest": "Available"
-    },
-    {
-      "Model": "Gemma-2-9b-it",
-      "Seeds": "0--4",
-      "Revision": "pinned-revision",
-      "Backend": "configured-backend",
-      "dtype": "bfloat16",
-      "Quantization": "none",
-      "Manifest": "Available"
-    },
-    {
-      "Model": "Llama-3.3-70B",
-      "Seeds": "0--4",
-      "Revision": "pinned-revision",
-      "Backend": "configured-backend",
-      "dtype": "bfloat16",
-      "Quantization": "none",
-      "Manifest": "Available"
-    },
-    {
-      "Model": "deepseek-v3",
-      "Seeds": "0--4",
-      "Revision": "pinned-revision",
-      "Backend": "configured-backend",
-      "dtype": "bfloat16",
-      "Quantization": "none",
-      "Manifest": "Available"
-    }
-  ]
+  "status": "PASS",
+  "total_records": 13440,
+  "verified_records": 13440,
+  "required_fields_count": 10,
+  "errors": []
 }
