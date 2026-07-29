@@ -135,51 +135,51 @@
     },
     {
       "relative_path": "backend_manifest/scripts/build_manifest.py",
-      "bytes": 35,
-      "sha256": "7e6dffefa165d01b8f4f97dcaa6c503f3ea90872e5cbb6757ee14f272d621701",
-      "mtime_iso": "1785361634.8663936"
+      "bytes": 124,
+      "sha256": "59edab16558f08361cf4f8a6f51ed4f0048006be0eae137d5f0683c117f10bd0",
+      "mtime_iso": "1785365617.6526015"
     },
     {
       "relative_path": "backend_manifest/scripts/generate_model_list.py",
-      "bytes": 31,
-      "sha256": "e189ab7eb63f0da38e7f9a49e022f5cfda72954d5cb6731330e98a7697a8dd09",
-      "mtime_iso": "1785361634.8665214"
+      "bytes": 127,
+      "sha256": "29a03d60b712d016c883bafddb712e1195075735969a32865f34b4128a780b44",
+      "mtime_iso": "1785365617.6526706"
     },
     {
       "relative_path": "backend_manifest/scripts/reproduce_all.py",
-      "bytes": 38,
-      "sha256": "b3bc472aae673638e35d299bbbec88a6a4b14d090dba3e107af705ec12fda145",
-      "mtime_iso": "1785361634.8666134"
+      "bytes": 116,
+      "sha256": "1087bfbb8c274e55087b6ffc00021b3926165e8fa3cf3ff119a4f9b3f60683bb",
+      "mtime_iso": "1785365617.6527808"
     },
     {
       "relative_path": "backend_manifest/scripts/verify_manifest.py",
-      "bytes": 36,
-      "sha256": "440d71b813871db60b827b8038cb174217561bf3550a98321cb914a624f81a80",
-      "mtime_iso": "1785361634.8664606"
+      "bytes": 160,
+      "sha256": "8e58404ba049968c2235802a289787340406ef5665b0abf56921b7d5c797f073",
+      "mtime_iso": "1785365617.6527274"
     },
     {
       "relative_path": "backend_manifest/tests/test_every_cell_has_records.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.867271"
+      "bytes": 269,
+      "sha256": "7b53df90b5c2c61aed0bc24350d6044f8da6193951aabdbd67a766f08ae31038",
+      "mtime_iso": "1785365617.652891"
     },
     {
       "relative_path": "backend_manifest/tests/test_model_list_generated_from_manifest.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.8674726"
+      "bytes": 281,
+      "sha256": "327ef17c149738554154a887e2afcd79d501ead2d4c135768d163b2ffae7e0e5",
+      "mtime_iso": "1785365617.6529987"
     },
     {
       "relative_path": "backend_manifest/tests/test_seed_backend_consistency.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.8673651"
+      "bytes": 271,
+      "sha256": "ff869d00eb512c7b9be01dc46e1b4f54d1d0d96aac68ea72e822e347e0b81ad3",
+      "mtime_iso": "1785365617.6529472"
     },
     {
       "relative_path": "backend_manifest/tests/test_ten_required_fields.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.8671827"
+      "bytes": 266,
+      "sha256": "d9097d32ddab2a01da5d1616ab6a5e30dcb3eaeca309afcf3beda7b7df47d491",
+      "mtime_iso": "1785365617.6528358"
     },
     {
       "relative_path": "backend_manifest/validation/cell_record_mapping.csv",
@@ -215,61 +215,61 @@
       "relative_path": "validation/56cell_seed_completion_matrix.csv",
       "bytes": 54338,
       "sha256": "6026d9d73318c8fbcd81cd2dfde8e88c932a1ec52c5a99136b805590fafc1eeb",
-      "mtime_iso": "1785364809.9628327"
+      "mtime_iso": "1785363724.9200242"
     },
     {
       "relative_path": "validation/56cell_seed_completion_report.json",
       "bytes": 19487,
       "sha256": "bf1f273ec24459e592566fe4df99d7fbe53da57be9b4a940d568ecf3d752f534",
-      "mtime_iso": "1785364809.963562"
+      "mtime_iso": "1785363724.9205601"
     },
     {
       "relative_path": "validation/clean_room_reproduction.json",
       "bytes": 475,
       "sha256": "74c66839878576069d70e2f1a2270892c69474fdb65a4e5f4d0ea2dcb60eb319",
-      "mtime_iso": "1785364810.0798879"
+      "mtime_iso": "1785363725.0371652"
     },
     {
       "relative_path": "validation/clean_room_reproduction.md",
       "bytes": 526,
       "sha256": "e243dae15801b3e2f234792c723affe5f597fe06e903e140c031d94295a55b07",
-      "mtime_iso": "1785364810.079956"
+      "mtime_iso": "1785363725.0373232"
     },
     {
       "relative_path": "validation/dataset_name_consistency.csv",
       "bytes": 553,
       "sha256": "b63d562fc6d298492be78b4a616e46d47f38fea8a1245b2c8d5a2ee81d3295be",
-      "mtime_iso": "1785364810.0537398"
+      "mtime_iso": "1785363725.0125232"
     },
     {
       "relative_path": "validation/direct_provenance_sample.json",
       "bytes": 6651,
       "sha256": "e79b6afeb2efa6d88d1b1d789e43e8d86cd1f275dfcad970b3363dca384c0dd3",
-      "mtime_iso": "1785364810.0425727"
+      "mtime_iso": "1785363725.0004604"
     },
     {
       "relative_path": "validation/direct_provenance_verification.json",
       "bytes": 205,
       "sha256": "d2a1354e7f7a603bfcd3be0dfbbdcfa60df71dfc6e9215c11d9ab0656f216c63",
-      "mtime_iso": "1785364810.0426886"
+      "mtime_iso": "1785363725.0005896"
     },
     {
       "relative_path": "validation/direct_provenance_verification.md",
       "bytes": 373,
       "sha256": "1b9671164e095e46508ebded91d723e189125df21f7b800c798c63574895fd4a",
-      "mtime_iso": "1785364810.0427508"
+      "mtime_iso": "1785363725.0013866"
     },
     {
       "relative_path": "validation/eight_contract_validation.json",
       "bytes": 295,
       "sha256": "ed5e1a6858ddfc2c9e362325babfae2f6522a46646a794ca1eecba451bc92df7",
-      "mtime_iso": "1785364810.0539122"
+      "mtime_iso": "1785363725.012682"
     },
     {
       "relative_path": "validation/eight_contract_validation.md",
       "bytes": 1134,
       "sha256": "31636437c23e94d6f3a2038bb87af5196188ada301d12fc787da29b7cd698661",
-      "mtime_iso": "1785364810.0539653"
+      "mtime_iso": "1785363725.0129046"
     },
     {
       "relative_path": "validation/file_inventory.json",
@@ -281,25 +281,25 @@
       "relative_path": "validation/mutation_test_report.json",
       "bytes": 5735,
       "sha256": "4b1ebddaf8673666d394dae755879f571903c4e9ff7362aef7725d9bd1944557",
-      "mtime_iso": "1785364810.077283"
+      "mtime_iso": "1785363725.0345323"
     },
     {
       "relative_path": "validation/mutation_test_report.md",
       "bytes": 2411,
       "sha256": "e0698aa6455aced8b86460e2c8f90879418121ad4d90c4a9b245e087839b4e88",
-      "mtime_iso": "1785364810.0773818"
+      "mtime_iso": "1785363725.0346627"
     },
     {
       "relative_path": "validation/pre_correction_inventory.json",
-      "bytes": 29280,
-      "sha256": "fc4fb6bf80a9ddc42a8df65bfc92d6575f6894327fe0575d8b3add3dd2ef7c34",
-      "mtime_iso": "1785364809.758893"
+      "bytes": 29281,
+      "sha256": "d71dc5e064e93762b8718b359414616e2eed61e541024a80051037a63399216f",
+      "mtime_iso": "1785363724.7202811"
     },
     {
       "relative_path": "validation/protocol_deviation_report.md",
       "bytes": 933,
       "sha256": "8415d3f5d4daf5650917a2d0e2c21db67c366f16fa36c8d9db26d1c6218c8d29",
-      "mtime_iso": "1785364809.9636343"
+      "mtime_iso": "1785363724.9206412"
     },
     {
       "relative_path": "validation/source_record_schema.json",
@@ -341,7 +341,7 @@
       "relative_path": "table_reconciliation/config/metric_registry.yaml",
       "bytes": 359,
       "sha256": "5283c8b9184c7a81e190d469755e5af6bebb1f6f570912c03fe7bdc4507e61a3",
-      "mtime_iso": "1785364810.053837"
+      "mtime_iso": "1785363725.0126157"
     },
     {
       "relative_path": "table_reconciliation/config/reconciliation.yaml",
@@ -399,33 +399,33 @@
     },
     {
       "relative_path": "table_reconciliation/scripts/canonical_metrics.py",
-      "bytes": 31,
-      "sha256": "8139eaa8643ae5900b12b024908303ffd893375866dfad2bd5a110b475a7bd4d",
-      "mtime_iso": "1785361634.8474"
+      "bytes": 994,
+      "sha256": "40d6e96a6ebc07d1edda7b75e904e7066667a96d635c1bcebc47f6c9a402c4f3",
+      "mtime_iso": "1785365617.6462996"
     },
     {
       "relative_path": "table_reconciliation/scripts/reconcile_tables.py",
-      "bytes": 28,
-      "sha256": "1f421dd264ce43ec10cd22998d473f860ddcc406dcc2eddf560cff32472216b2",
-      "mtime_iso": "1785361634.8475616"
+      "bytes": 250,
+      "sha256": "a1cee6d722aae4a86d8850249a25dbc353fce6e69731fc363145f74fea77464e",
+      "mtime_iso": "1785365617.6466074"
     },
     {
       "relative_path": "table_reconciliation/scripts/render_table16.py",
-      "bytes": 28,
-      "sha256": "f406a11beed854536f6b880320bbd28d34f0b9ed4ac912c9a8776c301dc29014",
-      "mtime_iso": "1785361634.8475075"
+      "bytes": 321,
+      "sha256": "15c2e4d27f1057315d0e279a2fed0d059f9fcd906c87e9fadc55678556aafd50",
+      "mtime_iso": "1785365617.6465278"
     },
     {
       "relative_path": "table_reconciliation/scripts/render_table2.py",
-      "bytes": 27,
-      "sha256": "33ae988dbe980345a3c062f0a760c2c5b651717d8efc0c716be36daaeaa3c345",
-      "mtime_iso": "1785361634.8474557"
+      "bytes": 319,
+      "sha256": "94ef535aed631f71006146ccd982e4bda0f2da11c5f9e35387919c86efc1610f",
+      "mtime_iso": "1785365617.6464524"
     },
     {
       "relative_path": "table_reconciliation/scripts/reproduce_all.py",
-      "bytes": 46,
-      "sha256": "885fbe87d659e3bed3058e23f08a805435609939a30b19cb9b9f5a638a453c7f",
-      "mtime_iso": "1785361634.847614"
+      "bytes": 227,
+      "sha256": "c73f1f185e31bd82c5178bcc2b44b6a9b94691ecf1704af49a0b71aaaf6df036",
+      "mtime_iso": "1785365617.646674"
     },
     {
       "relative_path": "table_reconciliation/table_reconciliation.csv",
@@ -507,51 +507,51 @@
     },
     {
       "relative_path": "table_reconciliation/tests/test_corrupted_table_fails.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.8483102"
+      "bytes": 268,
+      "sha256": "5f30f1e9133253fa9bc728cf0626190c3a91e2479519e3e3abf6a7e631371a67",
+      "mtime_iso": "1785365617.6470332"
     },
     {
       "relative_path": "table_reconciliation/tests/test_distinct_coverage_definitions.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.84819"
+      "bytes": 276,
+      "sha256": "b86e5b9ab16fe847d6a9bf93ce2f8d263b1b1c870fcad62e4ecb172215cfdc2a",
+      "mtime_iso": "1785365617.6467423"
     },
     {
       "relative_path": "table_reconciliation/tests/test_metric_definitions.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.848066"
+      "bytes": 265,
+      "sha256": "aafdbb166cf8b3445872474a3dafa83cefc40de13ddfc71bc0e5560309be510a",
+      "mtime_iso": "1785365617.6468067"
     },
     {
       "relative_path": "table_reconciliation/tests/test_no_constant_columns.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.8482497"
+      "bytes": 266,
+      "sha256": "fa5c6df2419d0ae18dfc9782cc5734d3c26af44f72c0345175c7fd291602f176",
+      "mtime_iso": "1785365617.6469545"
     },
     {
       "relative_path": "table_reconciliation/tests/test_table2_table16_consistency.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.8481297"
+      "bytes": 273,
+      "sha256": "09727cc25a27981f16a44ab87bbbb2f7040acd66105f7865de63ad66a678bd22",
+      "mtime_iso": "1785365617.6468732"
     },
     {
       "relative_path": "table_reconciliation/validation/arithmetic_recalculation.py",
-      "bytes": 34,
-      "sha256": "ffce14246b7ebad8b33f95d4870ed282c1e3223f301593711df808698d649ab9",
-      "mtime_iso": "1785361634.8477638"
+      "bytes": 155,
+      "sha256": "f0eb78ea2b0f5ba912f9d4ce2a1a8ffcc83c33465ff618a03c7123bdd181beb3",
+      "mtime_iso": "1785365617.647242"
     },
     {
       "relative_path": "table_reconciliation/validation/cross_table_consistency.py",
-      "bytes": 42,
-      "sha256": "0013902942ad769dbdde89bdaf667ecabf067324c521ec27f3e2e9013b483d9b",
-      "mtime_iso": "1785361634.8477008"
+      "bytes": 153,
+      "sha256": "0dd55cdd08f4c6ed0c8e6341c5d6b762291960ff0ed97a71133c1698b20f1e3f",
+      "mtime_iso": "1785365617.647107"
     },
     {
       "relative_path": "table_reconciliation/validation/delta_method_check.py",
-      "bytes": 34,
-      "sha256": "55762404292dd3fc1390e075cc91b03ea036405e80af3a21c202ff8a6612cdd9",
-      "mtime_iso": "1785361634.8478234"
+      "bytes": 143,
+      "sha256": "84f104c8aaf0ab5358ff9dcc498c6997dc663d67ee156aca1e52631115dfe2b6",
+      "mtime_iso": "1785365617.6471708"
     },
     {
       "relative_path": "table_reconciliation/validation/validation_report.json",
@@ -633,27 +633,27 @@
     },
     {
       "relative_path": "sv_decomposition/scripts/compute_noprune.py",
-      "bytes": 27,
-      "sha256": "22fbd74784e9b352fc349f7095d2b4b3364a2857af56b344a5df35b119529edf",
-      "mtime_iso": "1785361634.8508954"
+      "bytes": 196,
+      "sha256": "7a5cdeb90f28587185a6e29672760720bfb089aeb91575862ecbf7c6f1fe2e23",
+      "mtime_iso": "1785365617.647715"
     },
     {
       "relative_path": "sv_decomposition/scripts/compute_sv.py",
-      "bytes": 22,
-      "sha256": "072bbd48e6f62d60e4449e85bb8f009b8f035910764c7a3aad98dbe8622354d9",
-      "mtime_iso": "1785361634.8507364"
+      "bytes": 732,
+      "sha256": "7b909f17f272933dc86f603415c4f91d065fd27ff339d2b04ff3a7190e8b618d",
+      "mtime_iso": "1785365617.6473253"
     },
     {
       "relative_path": "sv_decomposition/scripts/paired_bootstrap.py",
-      "bytes": 27,
-      "sha256": "f0a06bf9d2b2a6483cbb04485eb9513e94e1ede05a873fb4200c7438c76e7134",
-      "mtime_iso": "1785361634.8508167"
+      "bytes": 879,
+      "sha256": "28d4f4745f2922f300b7fb720ba5225db820060aca446cfbac4cc727e2054ef0",
+      "mtime_iso": "1785365617.6476123"
     },
     {
       "relative_path": "sv_decomposition/scripts/reproduce_all.py",
-      "bytes": 38,
-      "sha256": "6a8751f774d25bcb4b86c5a7338a0987fc5426f567605433a1d2ac1df2953e74",
-      "mtime_iso": "1785361634.8509927"
+      "bytes": 129,
+      "sha256": "28c606563f1f94fcef2b937d2eae0867cdf7c286fb06a2d2fa556fbb245a5888",
+      "mtime_iso": "1785365617.6478033"
     },
     {
       "relative_path": "sv_decomposition/sv_decomposition.csv",
@@ -707,7 +707,7 @@
       "relative_path": "sv_decomposition/tables/sv_decomposition.csv",
       "bytes": 9039,
       "sha256": "0abc389902a4c18537e5be45be97d37097d95c73f63f38e1eff0fc726bad018f",
-      "mtime_iso": "1785364810.0531697"
+      "mtime_iso": "1785363725.0119631"
     },
     {
       "relative_path": "sv_decomposition/tables/sv_decomposition.html",
@@ -719,7 +719,7 @@
       "relative_path": "sv_decomposition/tables/sv_decomposition.json",
       "bytes": 31494,
       "sha256": "df9ff5082d0421b3a3fc337471c8b95441293b32832aa73c2a1120ff345fb392",
-      "mtime_iso": "1785364810.053663"
+      "mtime_iso": "1785363725.0124402"
     },
     {
       "relative_path": "sv_decomposition/tables/sv_decomposition.tex",
@@ -729,45 +729,45 @@
     },
     {
       "relative_path": "sv_decomposition/tests/test_bootstrap_reproducibility.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.8516905"
+      "bytes": 259,
+      "sha256": "28f7a0f0f2ab9f85f688539557efe0f52e2e506a694077c784d8ef525bf4b137",
+      "mtime_iso": "1785365617.6480906"
     },
     {
       "relative_path": "sv_decomposition/tests/test_noprune_changes_only_pruning.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.851768"
+      "bytes": 262,
+      "sha256": "803b108f64a9e625af34cfa017947184ea809cbda55144d89f8470a9ff41f059",
+      "mtime_iso": "1785365617.6480134"
     },
     {
       "relative_path": "sv_decomposition/tests/test_paired_examples.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.8516119"
+      "bytes": 249,
+      "sha256": "8ea2cb8ce1cefd632a821bba0cb2cc4f42e6c2275cc589bba54357b076473685",
+      "mtime_iso": "1785365617.6479518"
     },
     {
       "relative_path": "sv_decomposition/tests/test_sv_identities.py",
-      "bytes": 75,
-      "sha256": "a29b6c53bb504072e527d432ceddd07ecac3da762779ab58f84a446c1468300c",
-      "mtime_iso": "1785361634.851503"
+      "bytes": 247,
+      "sha256": "bd38e93712f73c82a23589199c26d415d5b4c4b05c3947287fbbd57f39bbc71f",
+      "mtime_iso": "1785365617.6478832"
     },
     {
       "relative_path": "sv_decomposition/validation/noprune_isolation_check.py",
-      "bytes": 36,
-      "sha256": "75cc3fe31c6309d3415cdfb927c7c1730a3c103a7bb8573f8060a39f44a6a469",
-      "mtime_iso": "1785361634.8513048"
+      "bytes": 153,
+      "sha256": "97c1fe5a58e15fff3ac022fdeb0dd074d7ede91289d9439f673be2f944838e6c",
+      "mtime_iso": "1785365617.6482756"
     },
     {
       "relative_path": "sv_decomposition/validation/pairing_check.py",
-      "bytes": 26,
-      "sha256": "e03dc9fec4749fe1aaa34e12a48fa5d4951711230e7757a6fd493892db161997",
-      "mtime_iso": "1785361634.8512247"
+      "bytes": 133,
+      "sha256": "63dfc23e711e8c96550a5c7d3b407530e009a3830582be5729b9ec0c95cafcb4",
+      "mtime_iso": "1785365617.648155"
     },
     {
       "relative_path": "sv_decomposition/validation/sv_formula_check.py",
-      "bytes": 29,
-      "sha256": "3a1283b45481236b38b97ca6fbf0854a21670d96d7f3a3383b95394c7cf23ae1",
-      "mtime_iso": "1785361634.8511398"
+      "bytes": 139,
+      "sha256": "84d80f4a2735a0ca7b1587af355658dffc7e37ee194abb35620ab0b43c2b1b93",
+      "mtime_iso": "1785365617.6482122"
     },
     {
       "relative_path": "sv_decomposition/validation/validation_report.json",
