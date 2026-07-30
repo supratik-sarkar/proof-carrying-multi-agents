@@ -17,21 +17,21 @@ def reproduce_all(source_records_path, output_dir):
     src_p = Path(source_records_path)
     if not src_p.exists():
         raise FileNotFoundError(f"Source records file not found: {src_p}")
-        
+
     src_bytes = src_p.read_bytes()
     src_sha = hashlib.sha256(src_bytes).hexdigest()
-    
+
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    
+
     sh_res = apply_shift_validity_gate(source_records_path, out_dir / "shift_validity_summary.json")
-    
+
     csv_lines = ["family_name,tpr,tnr,balanced_accuracy,tv_lower_bound,hat_rho,rho_ucb,validity_gate_passed,fallback_action"]
     for fam, m in sh_res["families"].items():
         csv_lines.append(f"{m['family_name']},{m['tpr']:.4f},{m['tnr']:.4f},{m['balanced_accuracy']:.4f},{m['tv_lower_bound']:.4f},{m['hat_rho']:.4f},{m['rho_ucb']:.4f},{m['validity_gate_passed']},{m['fallback_action']}")
-        
+
     (out_dir / "shift_validity_summary.csv").write_text("\n".join(csv_lines) + "\n", encoding="utf-8")
-    
+
     manifest = {
         "source_records_path": str(src_p),
         "source_records_sha256": src_sha,
@@ -52,6 +52,6 @@ if __name__ == "__main__":
     parser.add_argument("--source-records", required=True)
     parser.add_argument("--output-dir", required=True)
     args = parser.parse_args()
-    
+
     reproduce_all(args.source_records, args.output_dir)
     print("Shift pipeline reproduced successfully.")

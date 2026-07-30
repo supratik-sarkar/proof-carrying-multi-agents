@@ -1,4 +1,4 @@
-#!/usr/bin/env parser
+#!/usr/bin/env python3
 """Pytest suite for injection sweep: verify honest classification and error handling."""
 
 import tempfile
@@ -19,12 +19,12 @@ class TestInjection(unittest.TestCase):
             res = run_injection_matrix(source_rec)
             self.assertEqual(res["empirical_status"], "NOT_RUN")
             self.assertEqual(res["classification"], "MODELLED")
-            
+
     def test_corrupted_file_raises_error(self):
         with tempfile.NamedTemporaryFile(mode="w", suffix=".jsonl", delete=False) as tmp:
             tmp.write("invalid json\n")
             tmp_path = tmp.name
-            
+
         with self.assertRaises(Exception):
             run_injection_matrix(tmp_path)
 

@@ -19,19 +19,19 @@ class TestTableReconciliation(unittest.TestCase):
         self.assertAlmostEqual(m["h_nc"], 30 / 230, places=4)
         self.assertAlmostEqual(m["h_pcg"], 12 / 198, places=4)
         self.assertGreater(m["haldane_anscombe_gain"], 1.5)
-        
+
     def test_reconciliation_on_real_fixture(self):
         source_rec = Path(__file__).resolve().parents[2] / "source_records" / "per_example_records.jsonl"
         if source_rec.exists():
             res = run_reconciliation(source_rec)
             self.assertEqual(res["total_cells"], 56)
             self.assertEqual(res["total_examples_processed"], 13440)
-            
+
     def test_corrupted_fixture_raises_error(self):
         with tempfile.NamedTemporaryFile(mode="w", suffix=".jsonl", delete=False) as tmp:
             tmp.write("invalid json line\n")
             tmp_path = tmp.name
-            
+
         with self.assertRaises(Exception):
             run_reconciliation(tmp_path)
 

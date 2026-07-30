@@ -1,6 +1,6 @@
 {
-  "total_py_files": 46,
-  "failures_count": 0,
+  "total_files": 48,
+  "failures": 0,
   "audit_status": "PASS",
   "files": [
     {
@@ -37,7 +37,7 @@
     },
     {
       "path": "artifacts/rebuttal/backend_manifest/scripts/verify_manifest.py",
-      "classification": "REAL_IMPLEMENTATION",
+      "classification": "VALIDATOR",
       "reads_files": true,
       "has_absolute_paths": false,
       "status": "PASS",
@@ -221,7 +221,7 @@
     },
     {
       "path": "scripts/rebuttal/audit_artifact_python.py",
-      "classification": "REAL_IMPLEMENTATION",
+      "classification": "VALIDATOR",
       "reads_files": true,
       "has_absolute_paths": false,
       "status": "PASS",
@@ -229,7 +229,7 @@
     },
     {
       "path": "scripts/rebuttal/execute_all_gates.py",
-      "classification": "REAL_IMPLEMENTATION",
+      "classification": "VALIDATOR",
       "reads_files": true,
       "has_absolute_paths": false,
       "status": "PASS",
@@ -237,7 +237,7 @@
     },
     {
       "path": "scripts/rebuttal/execute_full_workflow.py",
-      "classification": "REAL_IMPLEMENTATION",
+      "classification": "VALIDATOR",
       "reads_files": true,
       "has_absolute_paths": false,
       "status": "PASS",
@@ -364,8 +364,24 @@
       "failure_reason": ""
     },
     {
+      "path": "scripts/rebuttal/verify_clean_room.py",
+      "classification": "VALIDATOR",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/rebuttal/verify_protocol_completion.py",
+      "classification": "VALIDATOR",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
       "path": "scripts/rebuttal/verify_source_record_integrity.py",
-      "classification": "REAL_IMPLEMENTATION",
+      "classification": "VALIDATOR",
       "reads_files": true,
       "has_absolute_paths": false,
       "status": "PASS",

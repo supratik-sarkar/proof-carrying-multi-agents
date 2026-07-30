@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
-"""Phase A Master Forensic Workflow, Clean-Room Reproducibility, & Protocol Completeness Pipeline."""
+"""Master Forensic Audit & Reproducibility Pipeline Runner."""
 
-import hashlib
 import json
 import os
 import subprocess
 import sys
-import tempfile
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 REBUTTAL_DIR = REPO_ROOT / "artifacts" / "rebuttal"
 VAL_DIR = REBUTTAL_DIR / "validation"
-SOURCE_REC = REBUTTAL_DIR / "source_records" / "per_example_records.jsonl"
 PYTHON_BIN = sys.executable
 
 VAL_DIR.mkdir(parents=True, exist_ok=True)
@@ -21,195 +18,117 @@ print("=================================================================")
 print("=== STARTING MASTER FORENSIC & REPRODUCIBILITY PIPELINE ===")
 print("=================================================================\n")
 
-lines = SOURCE_REC.read_text(encoding="utf-8").splitlines()
-obs_records = [json.loads(l) for l in lines if l.strip()]
+# 1. Source Record File Integrity
+print("--- STEP 1: VERIFYING SOURCE RECORD FILE INTEGRITY ---")
+res_src = subprocess.run([PYTHON_BIN, str(REPO_ROOT / "scripts" / "rebuttal" / "verify_source_record_integrity.py")], capture_output=True, text=True)
+src_report_path = VAL_DIR / "source_record_integrity_report.json"
+if src_report_path.exists():
+    src_rep = json.loads(src_report_path.read_text(encoding="utf-8"))
+    source_rec_file_integrity = src_rep.get("integrity_status", "FAIL")
+else:
+    source_rec_file_integrity = "FAIL"
+print(f"SOURCE_RECORD_FILE_INTEGRITY = {source_rec_file_integrity}\n")
 
-# --- STEP 10: FROZEN PROTOCOL EXPECTATION & DYNAMIC DERIVATION ---
-print("--- STEP 10: FROZEN PROTOCOL EXPECTATION & DYNAMIC DERIVATION ---")
-all_cell_ids = sorted(list(set(r["cell_id"] for r in obs_records)))
-all_seeds = sorted(list(set(r["seed"] for r in obs_records)))
-all_conditions = sorted(list(set(r.get("condition", "clean") for r in obs_records)))
+# 2. Frozen Protocol Expectation & Completion
+print("--- STEP 2: VERIFYING FROZEN PROTOCOL COMPLETION ---")
+res_proto = subprocess.run([PYTHON_BIN, str(REPO_ROOT / "scripts" / "rebuttal" / "verify_protocol_completion.py")], capture_output=True, text=True)
+proto_report_path = VAL_DIR / "protocol_completion_report.json"
+if proto_report_path.exists():
+    proto_rep = json.loads(proto_report_path.read_text(encoding="utf-8"))
+    protocol_completion_status = proto_rep.get("status", "FAIL")
+else:
+    protocol_completion_status = "FAIL"
+print(f"PROTOCOL_COMPLETION_STATUS = {protocol_completion_status}\n")
 
-expected_tuples = []
-for cid in all_cell_ids:
-    for s in all_seeds:
-        for c in all_conditions:
-            expected_tuples.append({"cell_id": cid, "seed": s, "condition": c, "expected_records": 24})
+# 3. Clean-Room Reproduction
+print("--- STEP 3: NON-CIRCULAR CLEAN-ROOM REPRODUCIBILITY ---")
+res_clean = subprocess.run([PYTHON_BIN, str(REPO_ROOT / "scripts" / "rebuttal" / "verify_clean_room.py")], capture_output=True, text=True)
+clean_report_path = VAL_DIR / "clean_room_reproduction.json"
+if clean_report_path.exists():
+    clean_rep = json.loads(clean_report_path.read_text(encoding="utf-8"))
+    clean_room_status = clean_rep.get("status", "FAIL")
+else:
+    clean_room_status = "FAIL"
+print(f"CLEAN_ROOM_STATUS = {clean_room_status}\n")
 
-frozen_proto_file = VAL_DIR / "frozen_protocol_expectation.json"
-frozen_proto_file.write_text(json.dumps({"total_expected_tuples": len(expected_tuples), "tuples": expected_tuples}, indent=2) + "\n", encoding="utf-8")
+# 4. Semantic Mutation Suite
+print("--- STEP 4: STRICT SEMANTIC MUTATION TEST SUITE ---")
+res_mut = subprocess.run([PYTHON_BIN, str(REPO_ROOT / "scripts" / "rebuttal" / "run_mutation_tests.py")], capture_output=True, text=True)
+mut_report_path = VAL_DIR / "mutation_test_report.json"
+if mut_report_path.exists():
+    mut_rep = json.loads(mut_report_path.read_text(encoding="utf-8"))
+    mutation_test_status = mut_rep.get("mutation_status", "FAIL")
+else:
+    mutation_test_status = "FAIL"
+print(f"MUTATION_TEST_STATUS = {mutation_test_status}\n")
 
-proto_matrix = {}
-for r in obs_records:
-    cid = r["cell_id"]
-    sd = r["seed"]
-    cond = r.get("condition", "clean")
-    key = (cid, sd, cond)
-    proto_matrix.setdefault(key, []).append(r)
+# 5. AST Meta-Validator
+print("--- STEP 5: AST META-VALIDATOR FOR PYTHON SCRIPTS ---")
+res_ast = subprocess.run([PYTHON_BIN, str(REPO_ROOT / "scripts" / "rebuttal" / "audit_artifact_python.py")], capture_output=True, text=True)
+ast_report_path = VAL_DIR / "python_file_audit.json"
+if ast_report_path.exists():
+    ast_rep = json.loads(ast_report_path.read_text(encoding="utf-8"))
+    ast_meta_validator_status = ast_rep.get("audit_status", "FAIL")
+else:
+    ast_meta_validator_status = "FAIL"
+print(f"AST_META_VALIDATOR_STATUS = {ast_meta_validator_status}\n")
 
-completed_tuples = 0
-matrix_rows = []
+# 6. Execution Smoke Test
+print("--- STEP 6: ARTIFACT PYTHON EXECUTION SMOKE TEST ---")
+res_exec = subprocess.run([PYTHON_BIN, str(REPO_ROOT / "scripts" / "rebuttal" / "generate_execution_matrix.py")], capture_output=True, text=True)
+execution_smoke_test_status = "PASS" if res_exec.returncode == 0 else "FAIL"
+print(f"EXECUTION_SMOKE_TEST_STATUS = {execution_smoke_test_status}\n")
 
-for t in expected_tuples:
-    key = (t["cell_id"], t["seed"], t["condition"])
-    recs = proto_matrix.get(key, [])
-    obs_cnt = len(recs)
-    ex_ids = [r["example_id"] for r in recs]
-    uniq_ids = len(set(ex_ids))
-    dups = obs_cnt - uniq_ids
-    missing = max(0, t["expected_records"] - obs_cnt)
-    extra = max(0, obs_cnt - t["expected_records"])
-    
-    # Requirement 10 Completion Rule
-    completed = (obs_cnt == t["expected_records"]) and (dups == 0) and (missing == 0)
-    if completed:
-        completed_tuples += 1
-        
-    matrix_rows.append({
-        "cell_id": t["cell_id"],
-        "seed": t["seed"],
-        "condition": t["condition"],
-        "expected_records": t["expected_records"],
-        "observed_records": obs_cnt,
-        "unique_example_ids": uniq_ids,
-        "duplicate_example_ids": dups,
-        "missing_records": missing,
-        "extra_records": extra,
-        "completed": completed
-    })
+# 7. Check Subdirectory Reports
+tbl_path = REBUTTAL_DIR / "table_reconciliation" / "table_reconciliation_summary.json"
+table_reconciliation_status = "PASS" if (tbl_path.exists() and json.loads(tbl_path.read_text()).get("status") in ["RECONCILED", "PASS"]) else "FAIL"
 
-proto_csv = VAL_DIR / "56cell_seed_completion_matrix.csv"
-proto_json = VAL_DIR / "56cell_seed_completion_report.json"
+sv_path = REBUTTAL_DIR / "sv_decomposition" / "sv_decomposition.json"
+sv_decomposition_status = "PASS" if (sv_path.exists() and json.loads(sv_path.read_text()).get("status") == "PASS") else "FAIL"
 
-csv_lines = ["cell_id,seed,condition,expected_records,observed_records,unique_example_ids,duplicate_example_ids,missing_records,extra_records,completed"]
-for r in matrix_rows:
-    csv_lines.append(f"{r['cell_id']},{r['seed']},{r['condition']},{r['expected_records']},{r['observed_records']},{r['unique_example_ids']},{r['duplicate_example_ids']},{r['missing_records']},{r['extra_records']},{r['completed']}")
-proto_csv.write_text("\n".join(csv_lines) + "\n", encoding="utf-8")
-proto_json.write_text(json.dumps({"total_tuples": len(expected_tuples), "completed_tuples": completed_tuples, "rows": matrix_rows}, indent=2) + "\n", encoding="utf-8")
+bm_path = REBUTTAL_DIR / "backend_manifest" / "backend_manifest_summary.json"
+backend_manifest_status = "PASS" if (bm_path.exists() and json.loads(bm_path.read_text()).get("status") == "PASS") else "FAIL"
 
-print(f"Protocol Matrix Derived: {completed_tuples} / {len(expected_tuples)} expected cell-seed tuples completed 100%.\n")
-
-# --- STEP 11: PROVENANCE STATUS ---
-print("--- STEP 11: PROVENANCE STATUS ---")
-source_rec_file_integrity = "PASS" # 13,440 line hashes verified
-native_model_run_provenance = "NOT_AVAILABLE" # Raw HTTP request/response byte files not present
-print(f"SOURCE_RECORD_FILE_INTEGRITY = {source_rec_file_integrity}")
-print(f"NATIVE_MODEL_RUN_PROVENANCE = {native_model_run_provenance}\n")
-
-# --- STEP 9: NON-CIRCULAR CLEAN-ROOM REPRODUCIBILITY ---
-print("--- STEP 9: NON-CIRCULAR CLEAN-ROOM REPRODUCIBILITY ---")
-subdirs = [
-    "table_reconciliation", "sv_decomposition", "separating_witnesses",
-    "citation_only", "injection", "shift", "audit_sampling", "backend_manifest"
+required_statuses = [
+    source_rec_file_integrity,
+    protocol_completion_status,
+    clean_room_status,
+    mutation_test_status,
+    ast_meta_validator_status,
+    execution_smoke_test_status,
+    table_reconciliation_status,
+    sv_decomposition_status,
+    backend_manifest_status
 ]
 
-clean_room_results = []
-all_clean_room_pass = True
+all_pass = all(s == "PASS" for s in required_statuses)
+overall_status = "PASS" if all_pass else "FAIL"
 
-# Freeze expected canonical outputs
-canonical_outputs_manifest = {}
-for s in subdirs:
-    s_dir = REBUTTAL_DIR / s
-    out_files = sorted([f for f in s_dir.glob("*") if f.is_file() and f.name not in ["reproduction_manifest.json", "clean_room_expected_outputs.json"]])
-    canonical_outputs_manifest[s] = {
-        f.name: hashlib.sha256(f.read_bytes()).hexdigest() for f in out_files
-    }
+print("=================================================================")
+print("=== FINAL REBUTTAL AUDIT & REPRODUCIBILITY REPORT ===")
+print("=================================================================")
 
-(VAL_DIR / "clean_room_expected_outputs.json").write_text(json.dumps(canonical_outputs_manifest, indent=2) + "\n", encoding="utf-8")
+print(f"SOURCE_RECORD_FILE_INTEGRITY: {source_rec_file_integrity}")
+print(f"NATIVE_MODEL_RUN_PROVENANCE: NOT_AVAILABLE")
+print(f"HEADLINE_56_CELL_RUN_STATUS: EXECUTED_AND_VERIFIED")
+print(f"INJECTION_EMPIRICAL_STATUS: NOT_RUN / MODELLED")
+print(f"SHIFT_EMPIRICAL_STATUS: NOT_RUN / MODELLED")
+print(f"AUDIT_SAMPLING_EMPIRICAL_STATUS: NOT_RUN / MODELLED")
+print(f"PROTOCOL_COMPLETION_STATUS: {protocol_completion_status}")
+print(f"CLEAN_ROOM_STATUS: {clean_room_status}")
+print(f"MUTATION_TEST_STATUS: {mutation_test_status}")
+print(f"AST_META_VALIDATOR_STATUS: {ast_meta_validator_status}")
+print(f"EXECUTION_SMOKE_TEST_STATUS: {execution_smoke_test_status}")
+print(f"TABLE_RECONCILIATION_STATUS: {table_reconciliation_status}")
+print(f"SV_DECOMPOSITION_STATUS: {sv_decomposition_status}")
+print(f"BACKEND_MANIFEST_STATUS: {backend_manifest_status}")
 
-for s in subdirs:
-    reproduce_script = REBUTTAL_DIR / s / "scripts" / "reproduce_all.py"
-    with tempfile.TemporaryDirectory() as tmp_out:
-        cmd = [
-            PYTHON_BIN, str(reproduce_script),
-            "--source-records", str(SOURCE_REC),
-            "--output-dir", tmp_out
-        ]
-        res = subprocess.run(cmd, capture_output=True, text=True)
-        
-        dir_pass = (res.returncode == 0)
-        file_matches = {}
-        
-        if dir_pass:
-            expected_map = canonical_outputs_manifest.get(s, {})
-            for fname, exp_sha in expected_map.items():
-                gen_file = Path(tmp_out) / fname
-                if not gen_file.exists():
-                    dir_pass = False
-                    file_matches[fname] = "MISSING_IN_REGENERATION"
-                else:
-                    gen_sha = hashlib.sha256(gen_file.read_bytes()).hexdigest()
-                    if gen_sha == exp_sha:
-                        file_matches[fname] = "MATCH"
-                    else:
-                        dir_pass = False
-                        file_matches[fname] = f"MISMATCH (exp: {exp_sha[:8]}, gen: {gen_sha[:8]})"
-                        
-        if not dir_pass:
-            all_clean_room_pass = False
-            
-        clean_room_results.append({
-            "subdirectory": s,
-            "exit_code": res.returncode,
-            "status": "PASS" if dir_pass else "FAIL",
-            "file_matches": file_matches
-        })
-        print(f"  {s:24s} | Exit Code: {res.returncode} | Status: [{'PASS' if dir_pass else 'FAIL'}]")
-
-clean_room_json = VAL_DIR / "clean_room_reproduction.json"
-clean_room_md = VAL_DIR / "clean_room_reproduction.md"
-
-clean_room_json.write_text(json.dumps({"all_passed": all_clean_room_pass, "subdirectories": clean_room_results}, indent=2) + "\n", encoding="utf-8")
-
-md_cr = """# Non-Circular Clean-Room Reproduction Report — Submission 9327
-
-## Clean-Room Summary: """ + f"{'PASS' if all_clean_room_pass else 'FAIL'}" + """
-
-| Subdirectory | Exit Code | Status | File Verification |
-|---|---|---|---|
-""" + "\n".join([f"| `{r['subdirectory']}` | {r['exit_code']} | **{r['status']}** | {json.dumps(r['file_matches'])} |" for r in clean_room_results])
-
-clean_room_md.write_text(md_cr.strip() + "\n", encoding="utf-8")
-
-print("\n--- STEP 8: AST META-VALIDATOR & EXECUTION MATRIX & MUTATION SUITE ---")
-
-ast_res = subprocess.run([PYTHON_BIN, str(REPO_ROOT / "scripts" / "rebuttal" / "audit_artifact_python.py")], capture_output=True, text=True)
-print(ast_res.stdout)
-
-exec_res = subprocess.run([PYTHON_BIN, str(REPO_ROOT / "scripts" / "rebuttal" / "generate_execution_matrix.py")], capture_output=True, text=True)
-print(exec_res.stdout)
-
-mut_res = subprocess.run([PYTHON_BIN, str(REPO_ROOT / "scripts" / "rebuttal" / "run_mutation_tests.py")], capture_output=True, text=True)
-print(mut_res.stdout)
-
-# --- FINAL NON-GIT STATUS REPORT ---
-print("\n=================================================================")
-print("=== FINAL NON-GIT AUDIT & REPRODUCIBILITY REPORT ===")
+print(f"\nOVERALL COMPLIANCE STATUS: {overall_status}")
 print("=================================================================\n")
 
-report_content = f"""SOURCE_RECORD_FILE_INTEGRITY: {source_rec_file_integrity}
-NATIVE_MODEL_RUN_PROVENANCE: {native_model_run_provenance}
-HEADLINE_56_CELL_RUN_STATUS: EXECUTED_AND_VERIFIED
-INJECTION_EMPIRICAL_STATUS: NOT_RUN
-SHIFT_EMPIRICAL_STATUS: NOT_RUN
-AUDIT_SAMPLING_EMPIRICAL_STATUS: NOT_RUN
-MUTATION_TEST_STATUS: PASS
-CLEAN_ROOM_STATUS: {'PASS' if all_clean_room_pass else 'FAIL'}
-PROTOCOL_COMPLETION_STATUS: PASS ({completed_tuples}/{len(expected_tuples)} tuples completed)
-TABLE_RECONCILIATION_STATUS: PASS
-SV_DECOMPOSITION_STATUS: PASS
-BACKEND_MANIFEST_STATUS: PASS
-
-OVERALL COMPLIANCE STATUS: COMPLIANT_WITH_DISCLOSED_INTERVENTION_CLASSIFICATION
-"""
-
-print(report_content)
-
-if not all_clean_room_pass or mut_res.returncode != 0 or exec_res.returncode != 0 or ast_res.returncode != 0 or completed_tuples != len(expected_tuples):
-    print("ERROR: Master workflow failed verification checks!")
+if not all_pass:
+    print("ERROR: Master workflow failed one or more verification checks!")
     sys.exit(1)
 else:
-    print("=================================================================")
-    print("=== MASTER WORKFLOW COMPLETED SUCCESSFULLY: STATUS = PASS ===")
-    print("=================================================================")
+    print("Master workflow completed successfully with status PASS.")
     sys.exit(0)

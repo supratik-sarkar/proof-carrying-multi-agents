@@ -33,7 +33,7 @@ for p in files_to_audit:
     rel_path = str(p.relative_to(REPO_ROOT))
     size = p.stat().st_size
     sha256 = hashlib.sha256(p.read_bytes()).hexdigest()
-    
+
     # Classify file
     classification = "DERIVED_FROM_DIRECT"
     source_records = "artifacts/rebuttal/source_records/per_example_records.jsonl"
@@ -43,7 +43,7 @@ for p in files_to_audit:
     public_release_safe = True
     problem = "None"
     recommended_action = "Preserve canonical artifact"
-    
+
     # Path-based classifications
     if "source_records" in rel_path or "backend_manifest" in rel_path:
         classification = "DIRECT"
@@ -59,7 +59,7 @@ for p in files_to_audit:
         if "tables" in rel_path:
             problem = "Redundant result convenience copy; duplicated in artifacts/"
             recommended_action = "Remove redundant directory from public Git release"
-    
+
     # Content check for stale/invalid markers
     try:
         content = p.read_text(encoding="utf-8", errors="ignore")
@@ -75,10 +75,10 @@ for p in files_to_audit:
                 break
     except Exception:
         pass
-        
+
     if model_run_grounded:
         empirical_grounded_count += 1
-        
+
     audit_records.append({
         "path": rel_path,
         "classification": classification,

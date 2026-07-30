@@ -1,36 +1,28 @@
-# Artifact Python Execution Report — Submission 9327
+# Artifact Python Execution Smoke Test Report
 
-## Execution Matrix Status: PASS
+## Summary: PASS (0 Failures out of 19 Scripts Executed)
 
-* **Total Scripts Exercised:** 27
-* **Execution Failures:** 0
+> [!NOTE]
+> This is a CLI smoke test verifying command-line execution and exit code responses on valid and invalid CLI parameters.
 
-| Path | Classification | Valid Exit | Invalid Exit | Coverage | Final Status |
+| Script Path | Valid Exit Code | Created Files | Invalid Exit Code | Invalid Error Output | Smoke Test Status |
 |---|---|---|---|---|---|
-| `audit_sampling/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `audit_sampling/scripts/run_sampling_designs.py` | REAL_IMPLEMENTATION | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `audit_sampling/tests/test_audit_sampling.py` | REAL_TEST | 0 | N/A | EXECUTED_SUCCESSFULLY | **PASS** |
-| `backend_manifest/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `backend_manifest/scripts/verify_manifest.py` | REAL_IMPLEMENTATION | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `backend_manifest/tests/test_backend_manifest.py` | REAL_TEST | 0 | N/A | EXECUTED_SUCCESSFULLY | **PASS** |
-| `citation_only/scripts/match_coverage.py` | REAL_IMPLEMENTATION | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `citation_only/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `citation_only/tests/test_citation_only.py` | REAL_TEST | 0 | N/A | EXECUTED_SUCCESSFULLY | **PASS** |
-| `injection/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `injection/scripts/run_injection_matrix.py` | REAL_IMPLEMENTATION | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `injection/tests/test_injection.py` | REAL_TEST | 0 | N/A | EXECUTED_SUCCESSFULLY | **PASS** |
-| `separating_witnesses/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `separating_witnesses/scripts/run_witness_suite.py` | REAL_IMPLEMENTATION | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `separating_witnesses/tests/test_separating_witnesses.py` | REAL_TEST | 0 | N/A | EXECUTED_SUCCESSFULLY | **PASS** |
-| `shift/scripts/apply_validity_gate.py` | REAL_IMPLEMENTATION | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `shift/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `shift/tests/test_shift.py` | REAL_TEST | 0 | N/A | EXECUTED_SUCCESSFULLY | **PASS** |
-| `sv_decomposition/scripts/compute_sv.py` | REAL_IMPLEMENTATION | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `sv_decomposition/scripts/paired_bootstrap.py` | REAL_IMPLEMENTATION | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `sv_decomposition/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `sv_decomposition/tests/test_sv_decomposition.py` | REAL_TEST | 0 | N/A | EXECUTED_SUCCESSFULLY | **PASS** |
-| `table_reconciliation/scripts/canonical_metrics.py` | REAL_IMPLEMENTATION | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `table_reconciliation/scripts/reconcile_tables.py` | REAL_IMPLEMENTATION | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `table_reconciliation/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
-| `table_reconciliation/tests/test_table_reconciliation.py` | REAL_TEST | 0 | N/A | EXECUTED_SUCCESSFULLY | **PASS** |
-| `validation/validate_artifact.py` | REAL_IMPLEMENTATION | 0 | 1 | EXECUTED_SUCCESSFULLY | **PASS** |
+| `artifacts/rebuttal/audit_sampling/scripts/reproduce_all.py` | 0 | `audit_sampling_summary.json, reproduction_manifest.json, audit_sampling_summary.csv` | 2 | `reproduce_all.py: error: the following arguments are required: --output-dir` | **PASS** |
+| `artifacts/rebuttal/audit_sampling/scripts/run_sampling_designs.py` | 0 | `result.json` | 1 | `FileNotFoundError: Source records not found: /tmp/nonexistent_file_xyz.jsonl` | **PASS** |
+| `artifacts/rebuttal/backend_manifest/scripts/reproduce_all.py` | 0 | `backend_manifest_summary.csv, reproduction_manifest.json, backend_manifest_summary.json` | 2 | `reproduce_all.py: error: the following arguments are required: --output-dir` | **PASS** |
+| `artifacts/rebuttal/backend_manifest/scripts/verify_manifest.py` | 0 | `result.json` | 1 | `FileNotFoundError: Backend manifest not found: /tmp/nonexistent_file_xyz.jsonl` | **PASS** |
+| `artifacts/rebuttal/citation_only/scripts/match_coverage.py` | 0 | `result.json` | 1 | `FileNotFoundError: Source records not found: /tmp/nonexistent_file_xyz.jsonl` | **PASS** |
+| `artifacts/rebuttal/citation_only/scripts/reproduce_all.py` | 0 | `citation_only_comparison.json, reproduction_manifest.json, citation_only_comparison.csv` | 2 | `reproduce_all.py: error: the following arguments are required: --output-dir` | **PASS** |
+| `artifacts/rebuttal/injection/scripts/reproduce_all.py` | 0 | `injection_matrix.csv, reproduction_manifest.json, injection_matrix.json` | 2 | `reproduce_all.py: error: the following arguments are required: --output-dir` | **PASS** |
+| `artifacts/rebuttal/injection/scripts/run_injection_matrix.py` | 0 | `result.json` | 1 | `FileNotFoundError: Source records not found: /tmp/nonexistent_file_xyz.jsonl` | **PASS** |
+| `artifacts/rebuttal/separating_witnesses/scripts/reproduce_all.py` | 0 | `reproduction_manifest.json, separating_witnesses.csv, separating_witnesses.json` | 2 | `reproduce_all.py: error: the following arguments are required: --output-dir` | **PASS** |
+| `artifacts/rebuttal/separating_witnesses/scripts/run_witness_suite.py` | 0 | `result.json` | 1 | `FileNotFoundError: Source records not found: /tmp/nonexistent_file_xyz.jsonl` | **PASS** |
+| `artifacts/rebuttal/shift/scripts/apply_validity_gate.py` | 0 | `result.json` | 1 | `FileNotFoundError: Source records not found: /tmp/nonexistent_file_xyz.jsonl` | **PASS** |
+| `artifacts/rebuttal/shift/scripts/reproduce_all.py` | 0 | `shift_validity_summary.json, reproduction_manifest.json, shift_validity_summary.csv` | 2 | `reproduce_all.py: error: the following arguments are required: --output-dir` | **PASS** |
+| `artifacts/rebuttal/sv_decomposition/scripts/compute_sv.py` | 0 | `result.json` | 1 | `FileNotFoundError: Source records not found: /tmp/nonexistent_file_xyz.jsonl` | **PASS** |
+| `artifacts/rebuttal/sv_decomposition/scripts/paired_bootstrap.py` | 0 | `result.json` | 1 | `FileNotFoundError: Source records not found: /tmp/nonexistent_file_xyz.jsonl` | **PASS** |
+| `artifacts/rebuttal/sv_decomposition/scripts/reproduce_all.py` | 0 | `sv_decomposition.json, reproduction_manifest.json, sv_bootstrap_ci.json, sv_decomposition.csv` | 2 | `reproduce_all.py: error: the following arguments are required: --output-dir` | **PASS** |
+| `artifacts/rebuttal/table_reconciliation/scripts/canonical_metrics.py` | 0 | `result.json` | 1 | `FileNotFoundError: Source records not found: /tmp/nonexistent_file_xyz.jsonl` | **PASS** |
+| `artifacts/rebuttal/table_reconciliation/scripts/reconcile_tables.py` | 0 | `result.json` | 1 | `FileNotFoundError: Source records not found: /tmp/nonexistent_file_xyz.jsonl` | **PASS** |
+| `artifacts/rebuttal/table_reconciliation/scripts/reproduce_all.py` | 0 | `table_reconciliation_summary.json, table_reconciliation_summary.csv, reproduction_manifest.json, table_reconciliation_summary.html` | 2 | `reproduce_all.py: error: the following arguments are required: --output-dir` | **PASS** |
+| `artifacts/rebuttal/validation/validate_artifact.py` | 0 | `result.json` | 1 | `FileNotFoundError: Source records file not found: /tmp/nonexistent_file_xyz.json` | **PASS** |

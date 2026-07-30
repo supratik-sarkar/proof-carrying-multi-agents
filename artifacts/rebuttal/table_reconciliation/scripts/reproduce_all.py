@@ -17,26 +17,26 @@ def reproduce_all(source_records_path, output_dir):
     src_p = Path(source_records_path)
     if not src_p.exists():
         raise FileNotFoundError(f"Source records file not found: {src_p}")
-        
+
     src_bytes = src_p.read_bytes()
     src_sha = hashlib.sha256(src_bytes).hexdigest()
-    
+
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    
+
     rec_results = run_reconciliation(source_records_path, out_dir / "table_reconciliation_summary.json")
-    
+
     csv_lines = ["cell_id,k_nc,N_nc,k_pcg,N_pcg,h_nc,h_pcg,raw_gain,haldane_anscombe_gain,cov_audit"]
     for cid, m in rec_results["cells"].items():
         csv_lines.append(f"{cid},{m['k_nc']},{m['N_nc']},{m['k_pcg']},{m['N_pcg']},{m['h_nc']:.4f},{m['h_pcg']:.4f},{m['raw_gain']:.4f},{m['haldane_anscombe_gain']:.4f},{m['cov_audit']:.4f}")
-        
+
     csv_path = out_dir / "table_reconciliation_summary.csv"
     csv_path.write_text("\n".join(csv_lines) + "\n", encoding="utf-8")
-    
+
     html_content = f"<html><body><h1>Table Reconciliation Report</h1><p>Total Cells: {rec_results['total_cells']}</p></body></html>"
     html_path = out_dir / "table_reconciliation_summary.html"
     html_path.write_text(html_content, encoding="utf-8")
-    
+
     manifest = {
         "source_records_path": str(src_p),
         "source_records_sha256": src_sha,
@@ -57,6 +57,6 @@ if __name__ == "__main__":
     parser.add_argument("--source-records", required=True)
     parser.add_argument("--output-dir", required=True)
     args = parser.parse_args()
-    
+
     reproduce_all(args.source_records, args.output_dir)
     print("Table reconciliation pipeline reproduced successfully.")

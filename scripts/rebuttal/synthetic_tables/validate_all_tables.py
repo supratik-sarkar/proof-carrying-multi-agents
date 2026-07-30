@@ -12,15 +12,15 @@ OUT_DIR = REPO_ROOT / "results" / "tables"
 
 def validate():
     print("=== EXECUTING CANONICAL CONSISTENCY VALIDATION ===")
-    
+
     # 1. Load synthetic records
     records_file = OUT_DIR / "synthetic_placeholder_records.jsonl"
     if not records_file.exists():
         print(f"[FAIL] Missing synthetic records file: {records_file}")
         return False
-        
+
     records = [json.loads(line) for line in records_file.read_text().splitlines() if line.strip()]
-    
+
     # 2. Check total cell count
     cells = set((r["model"], r["dataset"]) for r in records)
     if len(cells) != 56:
@@ -51,7 +51,7 @@ def validate():
 
     # 4. Negative tests (Deliberate corruptions must fail)
     print("=== RUNNING NEGATIVE TEST SUITE ===")
-    
+
     # Negative Test A: Missing synthetic provenance
     bad_meta = {"provenance": "EMPIRICAL_RUN"}
     assert bad_meta.get("provenance") != "SYNTHETIC_PLACEHOLDER", "Negative Test A passed correctly (caught non-synthetic provenance)"

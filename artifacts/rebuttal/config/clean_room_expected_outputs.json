@@ -1,0 +1,23 @@
+{
+  "manifest_version": "1.0.0",
+  "expected_deterministic_outputs": {
+    "table_reconciliation/table_reconciliation_summary.csv": "9bafc5d7372695bd01a4255602ca2685edc7f9f12c3852fa22c1edeacd3b0616",
+    "table_reconciliation/table_reconciliation_summary.html": "50711620a7b72befdab22ffe203c34fb3cbb092a5aab957c3e30fe34569d1d96",
+    "table_reconciliation/table_reconciliation_summary.json": "94b8ca8b0b4a08bb3c816dd15c1fb4719ade44f3b90f320f9a2f0e016d739349",
+    "sv_decomposition/sv_bootstrap_ci.json": "c4770caeeeaad88daea4aa26913e416940d34dc32fd6eed58cb8753cf845351c",
+    "sv_decomposition/sv_decomposition.csv": "76968216adf985a55043a546ffb526ac5406705884ce2734abcc92702e1c752c",
+    "sv_decomposition/sv_decomposition.json": "e566e5bfddb7d46eb0c8c96f9c9d80f32272343cb444e5de7c9d0a94aed99ceb",
+    "separating_witnesses/separating_witnesses.csv": "4fd011bcc8a308b913569f5bcc2d7bd9ce79a86bf1c7ae18ec1af17a9319029a",
+    "separating_witnesses/separating_witnesses.json": "b812d4e4fe2854d2ae80d6090e9f30f501941dab197d8f08f4cd4d7b284e5847",
+    "citation_only/citation_only_comparison.csv": "76c77e96449bdb402a2f67a51d703c974fe8375677a1ff88f6a923cbc829f881",
+    "citation_only/citation_only_comparison.json": "2d9b7cb47971e3de20d935bb5d54aaebe4255f0fdb83bc4ae979174b4e20aed5",
+    "injection/injection_matrix.csv": "dbc3d235ae52fde6ef695ec2d9f793f5d70c71c91ca576ccf221fcce8c53719d",
+    "injection/injection_matrix.json": "da1a3a29bf2282b4c9a57a61b9ff98f76eb99eb6b53f8ef3ff758ff0f65b61ef",
+    "shift/shift_validity_summary.csv": "d6af7578b35a2b7f7e650a9386f9b20ad123e846c56ac76d3532b9b229049b2a",
+    "shift/shift_validity_summary.json": "e5fe76f6e024537e98f19d1237c8c774cc7a7a9097f51ac02b7fb780162ea008",
+    "audit_sampling/audit_sampling_summary.csv": "968b1f17a11def1799c74e7e78e141c86cb5b7247a48b5862096a5207db9b70d",
+    "audit_sampling/audit_sampling_summary.json": "4c6cdf29577f8453eb18ef80a7ab2a9b98346e67067cc588a9dcd9f7e8fc5a66",
+    "backend_manifest/backend_manifest_summary.csv": "5c510d4677db457cbdfddcdc4ced44b68e137602a9bb689cf34fcad989984a2e",
+    "backend_manifest/backend_manifest_summary.json": "c6b3b15bce51b07a2113e2a72ad664fb1a7e4c1da6e50a8d7b653fd8f447f23b"
+  }
+}

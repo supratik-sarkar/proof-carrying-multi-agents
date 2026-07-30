@@ -19,14 +19,14 @@ def generate():
     datasets = cfg["datasets"]
 
     records = []
-    
+
     # Model capability multipliers
     cap_map = {
         "phi-3.5-mini": 0.45, "qwen2.5-7b": 0.65, "llama-3.1-8b": 0.70,
         "gemma-2-9b-it": 0.72, "deepseek-llm-7b-chat": 0.68,
         "llama-3.3-70b": 0.88, "deepseek-v3": 0.92
     }
-    
+
     # Dataset difficulty and risk
     exec_risk_map = {
         "fever": 0.15, "hotpotqa": 0.20, "twowiki": 0.25, "tatqa": 0.35,
@@ -38,17 +38,17 @@ def generate():
         for d in datasets:
             r_d = exec_risk_map[d]
             cell_id = f"{m}_{d}"
-            
+
             base_supp_harm = max(0.04, 0.40 * (1.0 - c_m) + 0.05 * (1.0 - c_m))
             base_exec_harm = max(0.04, 0.45 * (1.0 - c_m) + 0.15 * r_d)
 
             for i in range(cfg["samples_per_cell"]):
                 ex_id = f"{cell_id}_{i}"
-                
+
                 supp_fail_nc = (rng.rand() < base_supp_harm)
                 exec_fail_nc = (rng.rand() < base_exec_harm)
                 comp_harm_nc = supp_fail_nc or exec_fail_nc
-                
+
                 accepted_pcg = (rng.rand() < (0.85 - 0.04 * (1.0 - c_m)))
                 supp_fail_pcg = supp_fail_nc and (rng.rand() < 0.14)
                 exec_fail_pcg = exec_fail_nc and (rng.rand() < 0.11)
@@ -89,7 +89,7 @@ def generate():
     with out_file.open("w", encoding="utf-8") as f:
         for r in records:
             f.write(json.dumps(r) + "\n")
-            
+
     print(f"[GENERATOR] Generated {len(records)} per-example synthetic records into {out_file}")
     return out_file
 

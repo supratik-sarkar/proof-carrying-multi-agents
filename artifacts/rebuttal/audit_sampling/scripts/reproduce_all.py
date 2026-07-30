@@ -17,21 +17,21 @@ def reproduce_all(source_records_path, output_dir):
     src_p = Path(source_records_path)
     if not src_p.exists():
         raise FileNotFoundError(f"Source records file not found: {src_p}")
-        
+
     src_bytes = src_p.read_bytes()
     src_sha = hashlib.sha256(src_bytes).hexdigest()
-    
+
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    
+
     aud_res = run_all_sampling_designs(source_records_path, out_dir / "audit_sampling_summary.json")
-    
+
     csv_lines = ["design_name,estimate,standard_error,confidence_interval,effective_sample_size,population_size,selection_probability_source"]
     for d, m in aud_res["designs"].items():
         csv_lines.append(f"{d},{m['estimate']:.4f},{m['standard_error']:.4f},{m['confidence_interval']:.4f},{m['effective_sample_size']:.1f},{m['population_size']},{m['selection_probability_source']}")
-        
+
     (out_dir / "audit_sampling_summary.csv").write_text("\n".join(csv_lines) + "\n", encoding="utf-8")
-    
+
     manifest = {
         "source_records_path": str(src_p),
         "source_records_sha256": src_sha,
@@ -52,6 +52,6 @@ if __name__ == "__main__":
     parser.add_argument("--source-records", required=True)
     parser.add_argument("--output-dir", required=True)
     args = parser.parse_args()
-    
+
     reproduce_all(args.source_records, args.output_dir)
     print("Audit sampling pipeline reproduced successfully.")

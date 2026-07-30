@@ -1,0 +1,16 @@
+{
+  "source_file": "artifacts/rebuttal/source_records/per_example_records.jsonl",
+  "frozen_manifest": "artifacts/rebuttal/config/source_record_integrity_manifest.json",
+  "file_size_bytes": 39989050,
+  "file_sha256": "c63babd59efe28b52797379d19e2dffbc500416fd53fc0d45e0e953ebd3d3cef",
+  "expected_file_sha256": "c63babd59efe28b52797379d19e2dffbc500416fd53fc0d45e0e953ebd3d3cef",
+  "sha256_match": true,
+  "total_records": 13440,
+  "expected_record_count": 13440,
+  "count_match": true,
+  "line_hashes_match": true,
+  "unique_identity_keys_count": 13440,
+  "duplicate_identity_keys": 0,
+  "corrupted_records": 0,
+  "integrity_status": "PASS"
+}

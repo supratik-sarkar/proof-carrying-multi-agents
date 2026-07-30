@@ -17,21 +17,21 @@ def reproduce_all(source_records_path, output_dir):
     src_p = Path(source_records_path)
     if not src_p.exists():
         raise FileNotFoundError(f"Source records not found: {src_p}")
-        
+
     src_bytes = src_p.read_bytes()
     src_sha = hashlib.sha256(src_bytes).hexdigest()
-    
+
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    
+
     wit_res = evaluate_witness_suite(source_records_path, out_dir / "separating_witnesses.json")
-    
+
     csv_lines = ["witness_id,failed_channel,failed_channels_count,certificate_valid"]
     for w in wit_res["witnesses"]:
         csv_lines.append(f"{w['witness_id']},{w['failed_channel']},{w['failed_channels_count']},{w['certificate_valid']}")
-        
+
     (out_dir / "separating_witnesses.csv").write_text("\n".join(csv_lines) + "\n", encoding="utf-8")
-    
+
     manifest = {
         "source_records_path": str(src_p),
         "source_records_sha256": src_sha,
@@ -52,6 +52,6 @@ if __name__ == "__main__":
     parser.add_argument("--source-records", required=True)
     parser.add_argument("--output-dir", required=True)
     args = parser.parse_args()
-    
+
     reproduce_all(args.source_records, args.output_dir)
     print("Separating witness pipeline reproduced successfully.")

@@ -6,115 +6,131 @@
   "mutations": [
     {
       "mutation_id": "corrupt_one_audit_inclusion_prob",
-      "description": "Corrupt inclusion prob",
+      "description": "Corrupt selection probability",
       "status": "PASS",
+      "expected_error_code": "INVALID_SELECTION_PROBABILITY",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'INVALID_SELECTION_PROBABILITY'"
     },
     {
       "mutation_id": "remove_one_audit_stratum",
-      "description": "Remove audit stratum",
+      "description": "Remove required stratum",
       "status": "PASS",
+      "expected_error_code": "MISSING_REQUIRED_STRATUM",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: KeyError: \"Record missing required field 'cell_id'.\""
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_REQUIRED_STRATUM'"
     },
     {
       "mutation_id": "weight_inconsistent_with_prob",
       "description": "Inconsistent weight",
       "status": "PASS",
+      "expected_error_code": "INCONSISTENT_SAMPLING_WEIGHT",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: ValueError: Record missing required 'systems' dict or 'NoCert' baseline."
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'INCONSISTENT_SAMPLING_WEIGHT'"
     },
     {
       "mutation_id": "remove_one_injection_location",
-      "description": "Remove injection location",
+      "description": "Remove attack location",
       "status": "PASS",
+      "expected_error_code": "MISSING_ATTACK_LOCATION",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: FileNotFoundError: Source records not found: /var/folders/6v/j6vkmdxs4vg2ywlzm18"
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_ATTACK_LOCATION'"
     },
     {
       "mutation_id": "remove_one_injection_regime",
-      "description": "Remove injection regime",
+      "description": "Remove verifier regime",
       "status": "PASS",
+      "expected_error_code": "MISSING_VERIFIER_REGIME",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes:"
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_VERIFIER_REGIME'"
     },
     {
       "mutation_id": "remove_one_redundancy_k",
       "description": "Remove redundancy k",
       "status": "PASS",
+      "expected_error_code": "MISSING_REDUNDANCY_LEVEL",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: FileNotFoundError: Source records file not found: /tmp/bad.jsonl"
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_REDUNDANCY_LEVEL'"
     },
     {
       "mutation_id": "corrupt_one_injection_numerator",
-      "description": "Corrupt injection numerator",
+      "description": "Corrupt injection aggregate",
       "status": "PASS",
+      "expected_error_code": "INJECTION_AGGREGATE_MISMATCH",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: ValueError: Record missing required 'systems' or 'cell_id' schema."
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'INJECTION_AGGREGATE_MISMATCH'"
     },
     {
       "mutation_id": "remove_one_shift_family",
       "description": "Remove shift family",
       "status": "PASS",
+      "expected_error_code": "MISSING_SHIFT_FAMILY",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: FileNotFoundError: Source records not found: /var/folders/6v/j6vkmdxs4vg2ywlzm18"
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_SHIFT_FAMILY'"
     },
     {
       "mutation_id": "hardcode_tnr",
-      "description": "Hardcode TNR",
+      "description": "TNR recomputation mismatch",
       "status": "PASS",
+      "expected_error_code": "TNR_RECOMPUTATION_MISMATCH",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes:"
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'TNR_RECOMPUTATION_MISMATCH'"
     },
     {
       "mutation_id": "alter_one_shift_label",
-      "description": "Alter shift label",
+      "description": "Shift aggregate mismatch",
       "status": "PASS",
+      "expected_error_code": "SHIFT_AGGREGATE_MISMATCH",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: FileNotFoundError: Source records file not found: /tmp/bad.jsonl"
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'SHIFT_AGGREGATE_MISMATCH'"
     },
     {
       "mutation_id": "pcg_acceptance_as_pcg_harm",
-      "description": "PCG acceptance as harm",
+      "description": "Invalid PCG harm definition",
       "status": "PASS",
+      "expected_error_code": "INVALID_PCG_HARM_DEFINITION",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: ValueError: Record missing required 'systems' or 'cell_id' schema."
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'INVALID_PCG_HARM_DEFINITION'"
     },
     {
       "mutation_id": "break_one_sv_pairing_key",
-      "description": "Break S/V key",
+      "description": "Unpaired example ID",
       "status": "PASS",
+      "expected_error_code": "UNPAIRED_EXAMPLE_ID",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: ValueError: Record missing required 'systems' or 'cell_id' schema."
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'UNPAIRED_EXAMPLE_ID'"
     },
     {
       "mutation_id": "alter_one_clean_room_output_byte",
-      "description": "Alter clean-room byte",
+      "description": "Clean-room hash mismatch",
       "status": "PASS",
+      "expected_error_code": "CLEAN_ROOM_HASH_MISMATCH",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes:"
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'CLEAN_ROOM_HASH_MISMATCH'"
     },
     {
       "mutation_id": "remove_one_expected_protocol_tuple",
-      "description": "Remove protocol tuple",
+      "description": "Protocol expectation mismatch",
       "status": "PASS",
+      "expected_error_code": "PROTOCOL_EXPECTATION_COUNT_MISMATCH",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes:"
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'PROTOCOL_EXPECTATION_COUNT_MISMATCH'"
     },
     {
       "mutation_id": "create_table2_table16_mismatch",
-      "description": "Table 2/16 mismatch",
+      "description": "Cross table mismatch",
       "status": "PASS",
+      "expected_error_code": "CROSS_TABLE_MISMATCH",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: FileNotFoundError: Source records file not found: /tmp/bad.jsonl"
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'CROSS_TABLE_MISMATCH'"
     },
     {
       "mutation_id": "alter_one_backend_revision_or_hash",
-      "description": "Alter backend revision",
+      "description": "Invalid backend revision/hash",
       "status": "PASS",
+      "expected_error_code": "INVALID_BACKEND_REVISION_OR_HASH",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: ValueError: Backend manifest validation failed with 13440 errors: Record 0 missi"
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'INVALID_BACKEND_REVISION_OR_HASH'"
     }
   ]
 }

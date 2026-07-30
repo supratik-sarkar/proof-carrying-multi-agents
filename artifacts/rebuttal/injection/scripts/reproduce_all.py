@@ -1,4 +1,4 @@
-#!/usr/bin/env parser
+#!/usr/bin/env python3
 """Reproduce injection matrix outputs cleanly from input records."""
 
 import argparse
@@ -17,21 +17,21 @@ def reproduce_all(source_records_path, output_dir):
     src_p = Path(source_records_path)
     if not src_p.exists():
         raise FileNotFoundError(f"Source records file not found: {src_p}")
-        
+
     src_bytes = src_p.read_bytes()
     src_sha = hashlib.sha256(src_bytes).hexdigest()
-    
+
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    
+
     inj_res = run_injection_matrix(source_records_path, out_dir / "injection_matrix.json")
-    
+
     csv_lines = ["attack_location,verifier_regime,redundancy_k,modelled_attack_success_rate,modelled_detection_rate,modelled_false_refusal_rate"]
     for key, m in inj_res["matrix"].items():
         csv_lines.append(f"{m['attack_location']},{m['verifier_regime']},{m['redundancy_k']},{m['modelled_attack_success_rate']:.4f},{m['modelled_detection_rate']:.4f},{m['modelled_false_refusal_rate']:.4f}")
-        
+
     (out_dir / "injection_matrix.csv").write_text("\n".join(csv_lines) + "\n", encoding="utf-8")
-    
+
     manifest = {
         "source_records_path": str(src_p),
         "source_records_sha256": src_sha,
@@ -52,6 +52,6 @@ if __name__ == "__main__":
     parser.add_argument("--source-records", required=True)
     parser.add_argument("--output-dir", required=True)
     args = parser.parse_args()
-    
+
     reproduce_all(args.source_records, args.output_dir)
     print("Injection pipeline reproduced successfully.")

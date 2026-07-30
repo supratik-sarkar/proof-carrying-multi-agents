@@ -1,79 +1,14 @@
 {
-  "all_passed": true,
-  "subdirectories": [
-    {
-      "subdirectory": "table_reconciliation",
-      "exit_code": 0,
-      "status": "PASS",
-      "file_matches": {
-        "table_reconciliation_summary.csv": "MATCH",
-        "table_reconciliation_summary.html": "MATCH",
-        "table_reconciliation_summary.json": "MATCH"
-      }
-    },
-    {
-      "subdirectory": "sv_decomposition",
-      "exit_code": 0,
-      "status": "PASS",
-      "file_matches": {
-        "sv_bootstrap_ci.json": "MATCH",
-        "sv_decomposition.csv": "MATCH",
-        "sv_decomposition.json": "MATCH"
-      }
-    },
-    {
-      "subdirectory": "separating_witnesses",
-      "exit_code": 0,
-      "status": "PASS",
-      "file_matches": {
-        "separating_witnesses.csv": "MATCH",
-        "separating_witnesses.json": "MATCH"
-      }
-    },
-    {
-      "subdirectory": "citation_only",
-      "exit_code": 0,
-      "status": "PASS",
-      "file_matches": {
-        "citation_only_comparison.csv": "MATCH",
-        "citation_only_comparison.json": "MATCH"
-      }
-    },
-    {
-      "subdirectory": "injection",
-      "exit_code": 0,
-      "status": "PASS",
-      "file_matches": {
-        "injection_matrix.csv": "MATCH",
-        "injection_matrix.json": "MATCH"
-      }
-    },
-    {
-      "subdirectory": "shift",
-      "exit_code": 0,
-      "status": "PASS",
-      "file_matches": {
-        "shift_validity_summary.csv": "MATCH",
-        "shift_validity_summary.json": "MATCH"
-      }
-    },
-    {
-      "subdirectory": "audit_sampling",
-      "exit_code": 0,
-      "status": "PASS",
-      "file_matches": {
-        "audit_sampling_summary.csv": "MATCH",
-        "audit_sampling_summary.json": "MATCH"
-      }
-    },
-    {
-      "subdirectory": "backend_manifest",
-      "exit_code": 0,
-      "status": "PASS",
-      "file_matches": {
-        "backend_manifest_summary.csv": "MATCH",
-        "backend_manifest_summary.json": "MATCH"
-      }
-    }
-  ]
+  "frozen_manifest": "/var/folders/6v/j6vkmdxs4vg2ywlzm18p_8n80000gn/T/tmpyipt1pcd/clean_room_expected_outputs.json",
+  "total_files_expected": 18,
+  "total_files_checked": 18,
+  "mismatches_count": 1,
+  "missing_files_count": 0,
+  "extra_files_count": 0,
+  "mismatches": [
+    "CLEAN_ROOM_HASH_MISMATCH: Canonical file table_reconciliation/table_reconciliation_summary.csv hash 9bafc5d7372695bd01a4255602ca2685edc7f9f12c3852fa22c1edeacd3b0616 != expected 0000000000000000000000000000000000000000000000000000000000000000"
+  ],
+  "missing_files": [],
+  "extra_files": [],
+  "status": "FAIL"
 }
