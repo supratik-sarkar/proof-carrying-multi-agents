@@ -1,80 +1,267 @@
 {
+  "empirical_status": "NOT_RUN",
+  "classification": "MODELLED",
+  "note": "Separate empirical injection intervention sweep was not run at model execution time. Values are theoretical/modelled sweeps.",
   "status": "PASS",
-  "total_records_processed": 13440,
   "total_locations": 4,
   "total_regimes": 2,
+  "total_k_values": 4,
   "matrix": {
-    "retrieved_content__isolated": {
+    "retrieved_content__isolated__k1": {
       "attack_location": "retrieved_content",
       "verifier_regime": "isolated",
-      "evaluated_samples": 1680,
-      "attack_attempts": 840,
-      "attack_success_rate": 0.2595,
-      "false_refusal_rate": 0.0696,
-      "channel_detection_rate": 0.1702
+      "redundancy_k": 1,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
     },
-    "retrieved_content__shared": {
+    "retrieved_content__isolated__k2": {
+      "attack_location": "retrieved_content",
+      "verifier_regime": "isolated",
+      "redundancy_k": 2,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "retrieved_content__isolated__k3": {
+      "attack_location": "retrieved_content",
+      "verifier_regime": "isolated",
+      "redundancy_k": 3,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "retrieved_content__isolated__k5": {
+      "attack_location": "retrieved_content",
+      "verifier_regime": "isolated",
+      "redundancy_k": 5,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "retrieved_content__shared__k1": {
       "attack_location": "retrieved_content",
       "verifier_regime": "shared",
-      "evaluated_samples": 1680,
-      "attack_attempts": 840,
-      "attack_success_rate": 0.2488,
-      "false_refusal_rate": 0.0863,
-      "channel_detection_rate": 0.1226
+      "redundancy_k": 1,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
     },
-    "tool_output__isolated": {
+    "retrieved_content__shared__k2": {
+      "attack_location": "retrieved_content",
+      "verifier_regime": "shared",
+      "redundancy_k": 2,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "retrieved_content__shared__k3": {
+      "attack_location": "retrieved_content",
+      "verifier_regime": "shared",
+      "redundancy_k": 3,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "retrieved_content__shared__k5": {
+      "attack_location": "retrieved_content",
+      "verifier_regime": "shared",
+      "redundancy_k": 5,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "tool_output__isolated__k1": {
       "attack_location": "tool_output",
       "verifier_regime": "isolated",
-      "evaluated_samples": 1680,
-      "attack_attempts": 840,
-      "attack_success_rate": 0.2821,
-      "false_refusal_rate": 0.0768,
-      "channel_detection_rate": 0.156
+      "redundancy_k": 1,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
     },
-    "tool_output__shared": {
+    "tool_output__isolated__k2": {
+      "attack_location": "tool_output",
+      "verifier_regime": "isolated",
+      "redundancy_k": 2,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "tool_output__isolated__k3": {
+      "attack_location": "tool_output",
+      "verifier_regime": "isolated",
+      "redundancy_k": 3,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "tool_output__isolated__k5": {
+      "attack_location": "tool_output",
+      "verifier_regime": "isolated",
+      "redundancy_k": 5,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "tool_output__shared__k1": {
       "attack_location": "tool_output",
       "verifier_regime": "shared",
-      "evaluated_samples": 1680,
-      "attack_attempts": 840,
-      "attack_success_rate": 0.2452,
-      "false_refusal_rate": 0.0827,
-      "channel_detection_rate": 0.1071
+      "redundancy_k": 1,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
     },
-    "memory__isolated": {
+    "tool_output__shared__k2": {
+      "attack_location": "tool_output",
+      "verifier_regime": "shared",
+      "redundancy_k": 2,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "tool_output__shared__k3": {
+      "attack_location": "tool_output",
+      "verifier_regime": "shared",
+      "redundancy_k": 3,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "tool_output__shared__k5": {
+      "attack_location": "tool_output",
+      "verifier_regime": "shared",
+      "redundancy_k": 5,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "memory__isolated__k1": {
       "attack_location": "memory",
       "verifier_regime": "isolated",
-      "evaluated_samples": 1680,
-      "attack_attempts": 840,
-      "attack_success_rate": 0.2702,
-      "false_refusal_rate": 0.0821,
-      "channel_detection_rate": 0.1548
+      "redundancy_k": 1,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
     },
-    "memory__shared": {
+    "memory__isolated__k2": {
+      "attack_location": "memory",
+      "verifier_regime": "isolated",
+      "redundancy_k": 2,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "memory__isolated__k3": {
+      "attack_location": "memory",
+      "verifier_regime": "isolated",
+      "redundancy_k": 3,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "memory__isolated__k5": {
+      "attack_location": "memory",
+      "verifier_regime": "isolated",
+      "redundancy_k": 5,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "memory__shared__k1": {
       "attack_location": "memory",
       "verifier_regime": "shared",
-      "evaluated_samples": 1680,
-      "attack_attempts": 840,
-      "attack_success_rate": 0.2381,
-      "false_refusal_rate": 0.0851,
-      "channel_detection_rate": 0.1286
+      "redundancy_k": 1,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
     },
-    "delegated_message__isolated": {
+    "memory__shared__k2": {
+      "attack_location": "memory",
+      "verifier_regime": "shared",
+      "redundancy_k": 2,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "memory__shared__k3": {
+      "attack_location": "memory",
+      "verifier_regime": "shared",
+      "redundancy_k": 3,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "memory__shared__k5": {
+      "attack_location": "memory",
+      "verifier_regime": "shared",
+      "redundancy_k": 5,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "delegated_message__isolated__k1": {
       "attack_location": "delegated_message",
       "verifier_regime": "isolated",
-      "evaluated_samples": 1680,
-      "attack_attempts": 840,
-      "attack_success_rate": 0.2655,
-      "false_refusal_rate": 0.0762,
-      "channel_detection_rate": 0.175
+      "redundancy_k": 1,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
     },
-    "delegated_message__shared": {
+    "delegated_message__isolated__k2": {
+      "attack_location": "delegated_message",
+      "verifier_regime": "isolated",
+      "redundancy_k": 2,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "delegated_message__isolated__k3": {
+      "attack_location": "delegated_message",
+      "verifier_regime": "isolated",
+      "redundancy_k": 3,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "delegated_message__isolated__k5": {
+      "attack_location": "delegated_message",
+      "verifier_regime": "isolated",
+      "redundancy_k": 5,
+      "modelled_attack_success_rate": 0.05,
+      "modelled_detection_rate": 0.95,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "delegated_message__shared__k1": {
       "attack_location": "delegated_message",
       "verifier_regime": "shared",
-      "evaluated_samples": 1680,
-      "attack_attempts": 840,
-      "attack_success_rate": 0.2345,
-      "false_refusal_rate": 0.0732,
-      "channel_detection_rate": 0.1107
+      "redundancy_k": 1,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "delegated_message__shared__k2": {
+      "attack_location": "delegated_message",
+      "verifier_regime": "shared",
+      "redundancy_k": 2,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "delegated_message__shared__k3": {
+      "attack_location": "delegated_message",
+      "verifier_regime": "shared",
+      "redundancy_k": 3,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
+    },
+    "delegated_message__shared__k5": {
+      "attack_location": "delegated_message",
+      "verifier_regime": "shared",
+      "redundancy_k": 5,
+      "modelled_attack_success_rate": 0.18,
+      "modelled_detection_rate": 0.82,
+      "modelled_false_refusal_rate": 0.02
     }
   }
 }

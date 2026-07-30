@@ -36,7 +36,7 @@ def compute_safety_gain(harm_nocert: float, harm_pcg: float) -> float:
 
 def compute_sv_decomposition_literal(paired_examples: Sequence[dict]) -> dict:
     """Computes exact literal per-example S and V decomposition promised in QVEJ §3.
-    
+
     S = (1/N) * sum_i l_nc[i] - (1/|A|) * sum_{i in A} l_nc[i]
     V = (1/|A|) * sum_{i in A} (l_nc[i] - l_pcg[i])
     """

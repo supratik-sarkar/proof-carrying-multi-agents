@@ -1,0 +1,15 @@
+{
+  "source_records_path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/artifacts/rebuttal/source_records/per_example_records.jsonl",
+  "source_records_sha256": "c63babd59efe28b52797379d19e2dffbc500416fd53fc0d45e0e953ebd3d3cef",
+  "configuration_paths": [],
+  "configuration_sha256": [],
+  "script_path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/artifacts/rebuttal/backend_manifest/scripts/reproduce_all.py",
+  "script_sha256": "e09ae32053df74796140c69bd8eb0442e9f07fcc0083f6c50485ca40c8c99fe8",
+  "classification": "REAL_BACKEND_MANIFEST",
+  "empirical_status": "EXECUTED_AND_VERIFIED",
+  "generation_timestamp": "2026-07-30T05:00:00Z",
+  "deterministic_outputs": [
+    "backend_manifest_summary.json",
+    "backend_manifest_summary.csv"
+  ]
+}

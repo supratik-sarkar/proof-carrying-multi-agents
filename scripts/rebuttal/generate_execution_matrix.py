@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Generate execution matrix and execution report for all python scripts under artifacts/rebuttal."""
+"""Execution Smoke Test for artifact Python scripts."""
 
 import csv
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -11,139 +12,94 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 REBUTTAL_DIR = REPO_ROOT / "artifacts" / "rebuttal"
 VAL_DIR = REBUTTAL_DIR / "validation"
+SOURCE_REC = REBUTTAL_DIR / "source_records" / "per_example_records.jsonl"
 PYTHON_BIN = sys.executable
 
 VAL_DIR.mkdir(parents=True, exist_ok=True)
 
 print("=================================================================")
-print("=== GENERATING ARTIFACT PYTHON EXECUTION MATRIX & REPORT ===")
+print("=== GENERATING ARTIFACT PYTHON EXECUTION SMOKE TEST & REPORT ===")
 print("=================================================================\n")
 
-py_files = sorted([f for f in REBUTTAL_DIR.rglob("*.py") if f.is_file()])
-source_rec_file = REBUTTAL_DIR / "source_records" / "per_example_records.jsonl"
+py_scripts = sorted([
+    f for f in REBUTTAL_DIR.rglob("*.py")
+    if f.is_file() and "tests" not in f.parts and f.name not in ["audit_artifact_python.py", "generate_execution_matrix.py", "run_mutation_tests.py", "execute_full_workflow.py"]
+])
 
-with tempfile.NamedTemporaryFile(mode="w", suffix=".jsonl", delete=False) as tmp:
-    tmp.write("invalid json content\\n")
-    corrupted_fixture = tmp.name
+execution_records = []
+failures_count = 0
 
-matrix_rows = []
-global_failures = 0
+for script in py_scripts:
+    rel_path = str(script.relative_to(REPO_ROOT))
+    content = script.read_text(encoding="utf-8")
 
-with tempfile.TemporaryDirectory() as tmp_dir:
-    tmp_out = Path(tmp_dir)
-    
-    for p in py_files:
-        rel_path = str(p.relative_to(REBUTTAL_DIR))
-        
-        classification = "REAL_IMPLEMENTATION"
-        if "tests/" in rel_path or "test_" in p.name:
-            classification = "REAL_TEST"
-        elif "reproduce_all.py" in rel_path:
-            classification = "REAL_REPRODUCE_ALL"
-            
-        valid_cmd = ""
-        valid_exit = 0
-        invalid_cmd = ""
-        invalid_exit = 1
-        inputs_read = str(source_rec_file.relative_to(REPO_ROOT))
-        outputs_written = f"tmp_outputs/{p.parents[1].name}/{p.stem}"
-        fn_called = p.stem
-        test_files = f"{p.parents[1].name}/tests/test_{p.parents[1].name}.py"
-        
-        if classification == "REAL_TEST":
-            valid_cmd = f"python {rel_path}"
-            res = subprocess.run([PYTHON_BIN, str(p)], capture_output=True, text=True)
-            valid_exit = res.returncode
-            invalid_cmd = "N/A"
-            invalid_exit = "N/A"
-        elif classification == "REAL_REPRODUCE_ALL":
-            out_target = tmp_out / p.parents[1].name
-            valid_cmd = f"python {rel_path} --source-records {inputs_read} --output-dir {out_target}"
-            res = subprocess.run([PYTHON_BIN, str(p), "--source-records", str(source_rec_file), "--output-dir", str(out_target)], capture_output=True, text=True)
-            valid_exit = res.returncode
-            
-            invalid_cmd = f"python {rel_path} --source-records {corrupted_fixture} --output-dir {out_target}"
-            res_inv = subprocess.run([PYTHON_BIN, str(p), "--source-records", corrupted_fixture, "--output-dir", str(out_target)], capture_output=True, text=True)
-            invalid_exit = res_inv.returncode
-        else:
-            out_target = tmp_out / f"{p.stem}.json"
-            
-            domain_file = p.parents[1] / "source_records" / f"{p.parents[1].name}_sweep_records.jsonl"
-            if not domain_file.exists():
-                domain_file = p.parents[1] / "source_records" / f"{p.parents[1].name}_family_records.jsonl"
-            if not domain_file.exists():
-                domain_file = p.parents[1] / "source_records" / "audit_draw_records.jsonl"
-            if not domain_file.exists():
-                domain_file = source_rec_file
-                
-            inputs_read_str = str(domain_file.relative_to(REPO_ROOT))
-            
-            cmd_args = [PYTHON_BIN, str(p), "--source-records", str(domain_file), "--output", str(out_target)]
-            inv_args = [PYTHON_BIN, str(p), "--source-records", corrupted_fixture, "--output", str(out_target)]
-            
-            if p.stem == "paired_bootstrap":
-                cmd_args.extend(["--n-bootstraps", "50"])
-                inv_args.extend(["--n-bootstraps", "50"])
-                
-            valid_cmd = f"python {rel_path} --source-records {inputs_read_str} --output {out_target}"
-            res = subprocess.run(cmd_args, capture_output=True, text=True)
-            valid_exit = res.returncode
-            
-            invalid_cmd = f"python {rel_path} --source-records {corrupted_fixture} --output {out_target}"
-            res_inv = subprocess.run(inv_args, capture_output=True, text=True)
-            invalid_exit = res_inv.returncode
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        tmp_out = Path(tmp_dir) / "output"
+        tmp_out.mkdir(parents=True, exist_ok=True)
 
-        if classification == "REAL_TEST":
-            final_status = "PASS" if valid_exit == 0 else "FAIL"
-        else:
-            final_status = "PASS" if (valid_exit == 0 and invalid_exit != 0) else "FAIL"
-            
-        if final_status == "FAIL":
-            global_failures += 1
-            
-        # Requirement 9: Rename "100% EXERCISED" to "EXECUTED_SUCCESSFULLY"
-        coverage_status = "EXECUTED_SUCCESSFULLY" if valid_exit == 0 else "EXECUTION_FAILED"
-        
-        matrix_rows.append({
-            "path": rel_path,
-            "classification": classification,
-            "valid_command": valid_cmd,
-            "valid_exit_code": valid_exit,
-            "invalid_command": invalid_cmd,
-            "invalid_exit_code": invalid_exit,
-            "inputs_read": inputs_read,
-            "outputs_written": outputs_written,
-            "production_function_called": fn_called,
-            "test_files": test_files,
-            "coverage_status": coverage_status,
-            "final_status": final_status
+        # 1. Valid execution smoke test
+        cmd_valid = [PYTHON_BIN, str(script)]
+        if "--source-records" in content or "source_records" in content:
+            cmd_valid.extend(["--source-records", str(SOURCE_REC)])
+        if "--output-dir" in content:
+            cmd_valid.extend(["--output-dir", str(tmp_out)])
+        elif "--output" in content:
+            cmd_valid.extend(["--output", str(tmp_out / "result.json")])
+
+        res_v = subprocess.run(cmd_valid, capture_output=True, text=True)
+        created_files = [str(f.name) for f in tmp_out.rglob("*") if f.is_file()]
+
+        valid_passed = (res_v.returncode == 0)
+
+        # 2. Invalid execution smoke test (bad CLI input)
+        cmd_invalid = [PYTHON_BIN, str(script), "--source-records", "/tmp/nonexistent_file_xyz.jsonl"]
+        res_inv = subprocess.run(cmd_invalid, capture_output=True, text=True)
+
+        invalid_passed = (res_inv.returncode != 0)
+        obs_inv_code = res_inv.returncode
+        obs_inv_err = (res_inv.stderr.strip() or res_inv.stdout.strip()).splitlines()[-1] if (res_inv.stderr or res_inv.stdout) else "Exit code 1"
+
+        overall_smoke_pass = valid_passed and invalid_passed
+        if not overall_smoke_pass:
+            failures_count += 1
+
+        execution_records.append({
+            "script_path": rel_path,
+            "valid_cmd_exit_code": res_v.returncode,
+            "valid_cmd_passed": valid_passed,
+            "files_created_count": len(created_files),
+            "files_created": ", ".join(created_files) if created_files else "none",
+            "invalid_cmd_exit_code": obs_inv_code,
+            "invalid_cmd_passed": invalid_passed,
+            "invalid_cmd_observed_error": obs_inv_err[:80],
+            "smoke_test_status": "PASS" if overall_smoke_pass else "FAIL"
         })
 
 csv_path = VAL_DIR / "python_execution_matrix.csv"
 md_path = VAL_DIR / "python_execution_report.md"
 
 with open(csv_path, "w", newline="", encoding="utf-8") as f:
-    writer = csv.DictWriter(f, fieldnames=list(matrix_rows[0].keys()))
+    writer = csv.DictWriter(f, fieldnames=list(execution_records[0].keys()), lineterminator="\n")
     writer.writeheader()
-    writer.writerows(matrix_rows)
+    writer.writerows(execution_records)
 
-md_content = f"""# Artifact Python Execution Report — Submission 9327
+md_content = f"""# Artifact Python Execution Smoke Test Report
 
-## Execution Matrix Status: {'PASS' if global_failures == 0 else 'FAIL'}
+## Summary: {'PASS' if failures_count == 0 else 'FAIL'} ({failures_count} Failures out of {len(py_scripts)} Scripts Executed)
 
-* **Total Scripts Exercised:** {len(matrix_rows)}
-* **Execution Failures:** {global_failures}
+> [!NOTE]
+> This is a CLI smoke test verifying command-line execution and exit code responses on valid and invalid CLI parameters.
 
-| Path | Classification | Valid Exit | Invalid Exit | Coverage | Final Status |
+| Script Path | Valid Exit Code | Created Files | Invalid Exit Code | Invalid Error Output | Smoke Test Status |
 |---|---|---|---|---|---|
-""" + "\n".join([f"| `{r['path']}` | {r['classification']} | {r['valid_exit_code']} | {r['invalid_exit_code']} | {r['coverage_status']} | **{r['final_status']}** |" for r in matrix_rows])
+""" + "\n".join([f"| `{r['script_path']}` | {r['valid_cmd_exit_code']} | `{r['files_created']}` | {r['invalid_cmd_exit_code']} | `{r['invalid_cmd_observed_error']}` | **{r['smoke_test_status']}** |" for r in execution_records])
 
 md_path.write_text(md_content.strip() + "\n", encoding="utf-8")
 
-print(f"Execution Matrix & Report Generated: {len(matrix_rows)} scripts verified with valid and invalid commands.")
-print(f"Global Execution Failures: {global_failures}")
+print(f"Execution Smoke Test Generated: {len(py_scripts)} scripts verified with valid and invalid commands.")
+print(f"Global Execution Failures: {failures_count}")
 
-if global_failures > 0:
+if failures_count > 0:
     sys.exit(1)
 else:
     sys.exit(0)

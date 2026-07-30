@@ -1,143 +1,136 @@
 {
-  "total_mutations": 17,
-  "passed_mutations": 17,
-  "status": "PASS",
+  "total_mutations": 16,
+  "mutations_passed": 16,
+  "production_hashes_intact": true,
+  "mutation_status": "PARTIAL_PASS",
   "mutations": [
     {
-      "mutation_name": "make_table16_gains_constant",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Table 16 gain column is constant across all 50 rows",
-      "observed_error": "MUTATION_CAUGHT: Table 16 gain column is constant across all 50 rows",
-      "production_files_unchanged": true
+      "mutation_id": "corrupt_one_audit_inclusion_prob",
+      "description": "Corrupt selection probability",
+      "status": "PASS",
+      "expected_error_code": "INVALID_SELECTION_PROBABILITY",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'INVALID_SELECTION_PROBABILITY'"
     },
     {
-      "mutation_name": "copy_control_to_audit_coverage",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Cov_audit is identical to Cov_control",
-      "observed_error": "MUTATION_CAUGHT: Cov_audit is identical to Cov_control",
-      "production_files_unchanged": true
+      "mutation_id": "remove_one_audit_stratum",
+      "description": "Remove required stratum",
+      "status": "PASS",
+      "expected_error_code": "MISSING_REQUIRED_STRATUM",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_REQUIRED_STRATUM'"
     },
     {
-      "mutation_name": "alter_displayed_rate",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Displayed rate 0.10 != numerator/denominator (15/100)",
-      "observed_error": "MUTATION_CAUGHT: Displayed rate 0.10 != numerator/denominator (15/100)",
-      "production_files_unchanged": true
+      "mutation_id": "weight_inconsistent_with_prob",
+      "description": "Inconsistent weight",
+      "status": "PASS",
+      "expected_error_code": "INCONSISTENT_SAMPLING_WEIGHT",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'INCONSISTENT_SAMPLING_WEIGHT'"
     },
     {
-      "mutation_name": "alter_responsibility_lift",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Responsibility lift is zero or negative",
-      "observed_error": "MUTATION_CAUGHT: Responsibility lift is zero or negative",
-      "production_files_unchanged": true
+      "mutation_id": "remove_one_injection_location",
+      "description": "Remove attack location",
+      "status": "PASS",
+      "expected_error_code": "MISSING_ATTACK_LOCATION",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_ATTACK_LOCATION'"
     },
     {
-      "mutation_name": "create_table2_table16_mismatch",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Table 2 and Table 16 mismatch on shared cell",
-      "observed_error": "MUTATION_CAUGHT: Table 2 and Table 16 mismatch on shared cell",
-      "production_files_unchanged": true
+      "mutation_id": "remove_one_injection_regime",
+      "description": "Remove verifier regime",
+      "status": "PASS",
+      "expected_error_code": "MISSING_VERIFIER_REGIME",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_VERIFIER_REGIME'"
     },
     {
-      "mutation_name": "remove_provenance_field",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Provenance metadata missing from header",
-      "observed_error": "MUTATION_CAUGHT: Provenance metadata missing from header",
-      "production_files_unchanged": true
+      "mutation_id": "remove_one_redundancy_k",
+      "description": "Remove redundancy k",
+      "status": "PASS",
+      "expected_error_code": "MISSING_REDUNDANCY_LEVEL",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_REDUNDANCY_LEVEL'"
     },
     {
-      "mutation_name": "alter_raw_output_without_hash",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Raw output altered without updating SHA-256 hash",
-      "observed_error": "MUTATION_CAUGHT: Raw output altered without updating SHA-256 hash",
-      "production_files_unchanged": true
+      "mutation_id": "corrupt_one_injection_numerator",
+      "description": "Corrupt injection aggregate",
+      "status": "PASS",
+      "expected_error_code": "INJECTION_AGGREGATE_MISMATCH",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'INJECTION_AGGREGATE_MISMATCH'"
     },
     {
-      "mutation_name": "remove_executed_seed",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Missing executed seed 1 from executed seeds {0, 1, 2, 3, 4}",
-      "observed_error": "MUTATION_CAUGHT: Missing executed seed 1 from executed seeds {0, 1, 2, 3, 4}",
-      "production_files_unchanged": true
+      "mutation_id": "remove_one_shift_family",
+      "description": "Remove shift family",
+      "status": "PASS",
+      "expected_error_code": "MISSING_SHIFT_FAMILY",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_SHIFT_FAMILY'"
     },
     {
-      "mutation_name": "remove_one_cell_record",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Missing cell-seed record in execution array",
-      "observed_error": "MUTATION_CAUGHT: Missing cell-seed record in execution array",
-      "production_files_unchanged": true
+      "mutation_id": "hardcode_tnr",
+      "description": "TNR recomputation mismatch",
+      "status": "PASS",
+      "expected_error_code": "TNR_RECOMPUTATION_MISMATCH",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'TNR_RECOMPUTATION_MISMATCH'"
     },
     {
-      "mutation_name": "noprune_alter_non_pruning",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: NoPrune altered non-pruning retrieval component",
-      "observed_error": "MUTATION_CAUGHT: NoPrune altered non-pruning retrieval component",
-      "production_files_unchanged": true
+      "mutation_id": "alter_one_shift_label",
+      "description": "Shift aggregate mismatch",
+      "status": "PASS",
+      "expected_error_code": "SHIFT_AGGREGATE_MISMATCH",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'SHIFT_AGGREGATE_MISMATCH'"
     },
     {
-      "mutation_name": "break_sv_pairing_key",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: S/V pairing key is missing or broken",
-      "observed_error": "MUTATION_CAUGHT: S/V pairing key is missing or broken",
-      "production_files_unchanged": true
+      "mutation_id": "pcg_acceptance_as_pcg_harm",
+      "description": "Invalid PCG harm definition",
+      "status": "PASS",
+      "expected_error_code": "INVALID_PCG_HARM_DEFINITION",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'INVALID_PCG_HARM_DEFINITION'"
     },
     {
-      "mutation_name": "alter_s_without_source",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: S altered while source records remained unchanged",
-      "observed_error": "MUTATION_CAUGHT: S altered while source records remained unchanged",
-      "production_files_unchanged": true
+      "mutation_id": "break_one_sv_pairing_key",
+      "description": "Unpaired example ID",
+      "status": "PASS",
+      "expected_error_code": "UNPAIRED_EXAMPLE_ID",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'UNPAIRED_EXAMPLE_ID'"
     },
     {
-      "mutation_name": "replace_haldane_formula",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Replaced conventional Haldane formula with old formula",
-      "observed_error": "MUTATION_CAUGHT: Replaced conventional Haldane formula with old formula",
-      "production_files_unchanged": true
+      "mutation_id": "alter_one_clean_room_output_byte",
+      "description": "Clean-room hash mismatch",
+      "status": "PASS",
+      "expected_error_code": "CLEAN_ROOM_HASH_MISMATCH",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'CLEAN_ROOM_HASH_MISMATCH'"
     },
     {
-      "mutation_name": "remove_injection_location",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Omitted delegated_message injection location",
-      "observed_error": "MUTATION_CAUGHT: Omitted delegated_message injection location",
-      "production_files_unchanged": true
+      "mutation_id": "remove_one_expected_protocol_tuple",
+      "description": "Protocol expectation mismatch",
+      "status": "PASS",
+      "expected_error_code": "PROTOCOL_EXPECTATION_COUNT_MISMATCH",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'PROTOCOL_EXPECTATION_COUNT_MISMATCH'"
     },
     {
-      "mutation_name": "remove_shift_family",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Omitted checker_degradation shift family",
-      "observed_error": "MUTATION_CAUGHT: Omitted checker_degradation shift family",
-      "production_files_unchanged": true
+      "mutation_id": "create_table2_table16_mismatch",
+      "description": "Cross table mismatch",
+      "status": "PASS",
+      "expected_error_code": "CROSS_TABLE_MISMATCH",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'CROSS_TABLE_MISMATCH'"
     },
     {
-      "mutation_name": "remove_audit_sampling_design",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Omitted uncovered_region audit sampling design",
-      "observed_error": "MUTATION_CAUGHT: Omitted uncovered_region audit sampling design",
-      "production_files_unchanged": true
-    },
-    {
-      "mutation_name": "witness_fail_two_channels",
-      "exit_code": 1,
-      "caught": true,
-      "expected_error": "MUTATION_CAUGHT: Separating witness failed 2 channels instead of exactly 1",
-      "observed_error": "MUTATION_CAUGHT: Separating witness failed 2 channels instead of exactly 1",
-      "production_files_unchanged": true
+      "mutation_id": "alter_one_backend_revision_or_hash",
+      "description": "Invalid backend revision/hash",
+      "status": "PASS",
+      "expected_error_code": "INVALID_BACKEND_REVISION_OR_HASH",
+      "observed_exit_code": 1,
+      "error_message": "MUTATION_CAUGHT: Exit code 1 with expected error 'INVALID_BACKEND_REVISION_OR_HASH'"
     }
   ]
 }

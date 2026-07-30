@@ -1,18 +1,14 @@
 {
-  "ARTIFACT_INTEGRITY": "PASS",
-  "MATHEMATICAL_RECONCILIATION": "PASS",
-  "EXECUTED_PROTOCOL_VALIDATION": "PASS",
-  "SUBMITTED_SEED_COVERAGE": "PASS",
-  "SUBMITTED_SAMPLE_CAP": "PASS",
-  "EXACT_SUBMITTED_SEED_SET_REPRODUCED": false,
-  "POST_REVIEW_SEED_EXPANSION_DISCLOSED": true,
-  "SOURCE_RECORD_FILE_INTEGRITY": "PASS",
-  "NATIVE_MODEL_RUN_PROVENANCE": "NOT_AVAILABLE",
-  "EIGHT_REBUTTAL_CONTRACTS": "PASS",
-  "CLEAN_ROOM_REPRODUCTION": "PASS",
-  "ALL_8_REPRODUCE_ALL_PIPELINES": "PASS",
-  "AST_META_VALIDATOR": "PASS",
-  "EXECUTION_MATRIX_STATUS": "PASS",
-  "MUTATION_TEST_SUITE": "PASS",
-  "OVERALL_STATUS": "COMPLIANT_WITH_DISCLOSED_SEED_EXPANSION"
+  "frozen_manifest": "/var/folders/6v/j6vkmdxs4vg2ywlzm18p_8n80000gn/T/tmpmt5goxt3/clean_room_expected_outputs.json",
+  "total_files_expected": 18,
+  "total_files_checked": 18,
+  "mismatches_count": 1,
+  "missing_files_count": 0,
+  "extra_files_count": 0,
+  "mismatches": [
+    "CLEAN_ROOM_HASH_MISMATCH: Canonical file table_reconciliation/table_reconciliation_summary.csv hash 9bafc5d7372695bd01a4255602ca2685edc7f9f12c3852fa22c1edeacd3b0616 != expected 0000000000000000000000000000000000000000000000000000000000000000"
+  ],
+  "missing_files": [],
+  "extra_files": [],
+  "status": "FAIL"
 }

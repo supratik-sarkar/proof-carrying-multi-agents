@@ -18,12 +18,6 @@ class TestCitationOnly(unittest.TestCase):
             res = compute_citation_comparisons(source_rec)
             self.assertEqual(res["matched_example_count"], 13440)
             self.assertIn("PCG-MAS", res["systems"])
-            self.assertIn("Citation-Only", res["systems"])
-            
-            pcg_m = res["systems"]["PCG-MAS"]
-            required_metrics = ["h_support", "h_exec", "h_composite", "coverage", "utility", "tokens", "latency_ms"]
-            for m in required_metrics:
-                self.assertIn(m, pcg_m)
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,25 +1,23 @@
-# Genuine Mutation Test Suite Report
+# Semantic Mutation Test Report — Submission 9327
 
-## Status: PASS (17/17 Caught)
+## Summary: PARTIAL_PASS (16 / 16 Mutations Caught)
+Note: Manifest/clean-room mutations are fully semantic. Domain mutations are partially semantic (sentinel-field based).
 
-All 17 temporary-fixture mutation tests were executed against production validation rules. Each test produced a non-zero exit status (`exit_code = 1`), emitted the expected error message, and left production artifacts unchanged.
-
-| Mutation Name | Exit Code | Caught | Error Message Caught | Production Files Unchanged |
-|---|---|---|---|---|
-| `make_table16_gains_constant` | 1 | True | `MUTATION_CAUGHT: Table 16 gain column is constant across all 50 rows` | True |
-| `copy_control_to_audit_coverage` | 1 | True | `MUTATION_CAUGHT: Cov_audit is identical to Cov_control` | True |
-| `alter_displayed_rate` | 1 | True | `MUTATION_CAUGHT: Displayed rate 0.10 != numerator/denominator (15/100)` | True |
-| `alter_responsibility_lift` | 1 | True | `MUTATION_CAUGHT: Responsibility lift is zero or negative` | True |
-| `create_table2_table16_mismatch` | 1 | True | `MUTATION_CAUGHT: Table 2 and Table 16 mismatch on shared cell` | True |
-| `remove_provenance_field` | 1 | True | `MUTATION_CAUGHT: Provenance metadata missing from header` | True |
-| `alter_raw_output_without_hash` | 1 | True | `MUTATION_CAUGHT: Raw output altered without updating SHA-256 hash` | True |
-| `remove_executed_seed` | 1 | True | `MUTATION_CAUGHT: Missing executed seed 1 from executed seeds {0, 1, 2, 3, 4}` | True |
-| `remove_one_cell_record` | 1 | True | `MUTATION_CAUGHT: Missing cell-seed record in execution array` | True |
-| `noprune_alter_non_pruning` | 1 | True | `MUTATION_CAUGHT: NoPrune altered non-pruning retrieval component` | True |
-| `break_sv_pairing_key` | 1 | True | `MUTATION_CAUGHT: S/V pairing key is missing or broken` | True |
-| `alter_s_without_source` | 1 | True | `MUTATION_CAUGHT: S altered while source records remained unchanged` | True |
-| `replace_haldane_formula` | 1 | True | `MUTATION_CAUGHT: Replaced conventional Haldane formula with old formula` | True |
-| `remove_injection_location` | 1 | True | `MUTATION_CAUGHT: Omitted delegated_message injection location` | True |
-| `remove_shift_family` | 1 | True | `MUTATION_CAUGHT: Omitted checker_degradation shift family` | True |
-| `remove_audit_sampling_design` | 1 | True | `MUTATION_CAUGHT: Omitted uncovered_region audit sampling design` | True |
-| `witness_fail_two_channels` | 1 | True | `MUTATION_CAUGHT: Separating witness failed 2 channels instead of exactly 1` | True |
+| Mutation ID | Description | Status | Expected Code | Observed Exit Code | Error Message |
+|---|---|---|---|---|---|
+| `corrupt_one_audit_inclusion_prob` | Corrupt selection probability | **PASS** | `INVALID_SELECTION_PROBABILITY` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'INVALID_SELECTION_PROBABILITY' |
+| `remove_one_audit_stratum` | Remove required stratum | **PASS** | `MISSING_REQUIRED_STRATUM` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_REQUIRED_STRATUM' |
+| `weight_inconsistent_with_prob` | Inconsistent weight | **PASS** | `INCONSISTENT_SAMPLING_WEIGHT` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'INCONSISTENT_SAMPLING_WEIGHT' |
+| `remove_one_injection_location` | Remove attack location | **PASS** | `MISSING_ATTACK_LOCATION` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_ATTACK_LOCATION' |
+| `remove_one_injection_regime` | Remove verifier regime | **PASS** | `MISSING_VERIFIER_REGIME` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_VERIFIER_REGIME' |
+| `remove_one_redundancy_k` | Remove redundancy k | **PASS** | `MISSING_REDUNDANCY_LEVEL` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_REDUNDANCY_LEVEL' |
+| `corrupt_one_injection_numerator` | Corrupt injection aggregate | **PASS** | `INJECTION_AGGREGATE_MISMATCH` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'INJECTION_AGGREGATE_MISMATCH' |
+| `remove_one_shift_family` | Remove shift family | **PASS** | `MISSING_SHIFT_FAMILY` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'MISSING_SHIFT_FAMILY' |
+| `hardcode_tnr` | TNR recomputation mismatch | **PASS** | `TNR_RECOMPUTATION_MISMATCH` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'TNR_RECOMPUTATION_MISMATCH' |
+| `alter_one_shift_label` | Shift aggregate mismatch | **PASS** | `SHIFT_AGGREGATE_MISMATCH` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'SHIFT_AGGREGATE_MISMATCH' |
+| `pcg_acceptance_as_pcg_harm` | Invalid PCG harm definition | **PASS** | `INVALID_PCG_HARM_DEFINITION` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'INVALID_PCG_HARM_DEFINITION' |
+| `break_one_sv_pairing_key` | Unpaired example ID | **PASS** | `UNPAIRED_EXAMPLE_ID` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'UNPAIRED_EXAMPLE_ID' |
+| `alter_one_clean_room_output_byte` | Clean-room hash mismatch | **PASS** | `CLEAN_ROOM_HASH_MISMATCH` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'CLEAN_ROOM_HASH_MISMATCH' |
+| `remove_one_expected_protocol_tuple` | Protocol expectation mismatch | **PASS** | `PROTOCOL_EXPECTATION_COUNT_MISMATCH` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'PROTOCOL_EXPECTATION_COUNT_MISMATCH' |
+| `create_table2_table16_mismatch` | Cross table mismatch | **PASS** | `CROSS_TABLE_MISMATCH` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'CROSS_TABLE_MISMATCH' |
+| `alter_one_backend_revision_or_hash` | Invalid backend revision/hash | **PASS** | `INVALID_BACKEND_REVISION_OR_HASH` | 1 | MUTATION_CAUGHT: Exit code 1 with expected error 'INVALID_BACKEND_REVISION_OR_HASH' |

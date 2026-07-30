@@ -31,11 +31,11 @@ def render_rebuttal_placeholder_tables():
     for d_name in DIRECTORIES:
         target_dir = REBUTTAL_DIR / d_name / "synthetic_placeholder"
         target_dir.mkdir(parents=True, exist_ok=True)
-        
+
         # 1. Metadata JSON
         meta_out = target_dir / "synthetic_metadata.json"
         meta_out.write_text(json.dumps(SYNTHETIC_META, indent=2), encoding="utf-8")
-        
+
         # 2. README.md
         readme_out = target_dir / "README.md"
         readme_out.write_text(f"""# Synthetic Placeholder Directory - {d_name}

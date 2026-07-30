@@ -1,0 +1,16 @@
+{
+  "source_records_path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/artifacts/rebuttal/source_records/per_example_records.jsonl",
+  "source_records_sha256": "c63babd59efe28b52797379d19e2dffbc500416fd53fc0d45e0e953ebd3d3cef",
+  "configuration_paths": [],
+  "configuration_sha256": [],
+  "script_path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/artifacts/rebuttal/table_reconciliation/scripts/reproduce_all.py",
+  "script_sha256": "4c8a2a7a86b55221cd47aec2b892a125e3c3ed145477ad11f0b66e0be3f42e93",
+  "classification": "REAL_BENCHMARK_RECONCILIATION",
+  "empirical_status": "EXECUTED_AND_VERIFIED",
+  "generation_timestamp": "2026-07-30T05:00:00Z",
+  "deterministic_outputs": [
+    "table_reconciliation_summary.json",
+    "table_reconciliation_summary.csv",
+    "table_reconciliation_summary.html"
+  ]
+}

@@ -17,16 +17,16 @@ def main():
     print("=================================================================")
     print("=== SYNTHETIC PLACEHOLDER TABLE GENERATION PIPELINE (56 CELLS) ===")
     print("=================================================================")
-    
+
     # Step 1: Generate per-example synthetic records
     records_file = generate_records.generate()
-    
+
     # Step 2: Render manuscript tables (Tables 1-18)
     render_manuscript_tables.render_all(records_file)
-    
+
     # Step 3: Render rebuttal tables in eight subdirectories
     render_rebuttal_tables.render_rebuttal_placeholder_tables()
-    
+
     # Step 4: Validate canonical consistency & run negative tests
     if not validate_all_tables.validate():
         print("[ERROR] Table validation failed!")

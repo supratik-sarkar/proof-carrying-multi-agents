@@ -33,7 +33,7 @@ FILE_HEADER = (
 
 def render_all(records_path: Path):
     records = [json.loads(line) for line in records_path.read_text(encoding="utf-8").splitlines() if line.strip()]
-    
+
     cells = {}
     for r in records:
         key = (r["model"], r["dataset"])
@@ -49,7 +49,7 @@ def render_all(records_path: Path):
         ("qwen2.5-7b", "hotpotqa"),
         ("llama-3.1-8b", "pubmedqa")
     ]
-    
+
     all_keys = sorted(cells.keys())
     remaining_50_keys = [k for k in all_keys if k not in headline_keys]
 

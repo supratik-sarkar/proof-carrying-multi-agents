@@ -62,21 +62,21 @@ for m in models:
         ex_cnt = len(ex_list)
         rec_ids = set(r.get("record_id", f"{r.get('example_id')}_{r.get('condition')}") for r in ex_list)
         uniq_ids = (len(rec_ids) == ex_cnt) and (ex_cnt == 240)
-        
+
         seeds = set(r.get("seed", 0) for r in ex_list)
-        
+
         missing_outcomes = False
         for r in ex_list:
             if "systems" not in r or "NoCert" not in r["systems"] or "PCG-MAS" not in r["systems"]:
                 missing_outcomes = True
                 break
-                
+
         fallback_used = False
         exec_status = "COMPLETED" if ex_cnt == 240 and uniq_ids and not missing_outcomes else "FAILED"
-        
+
         if exec_status != "COMPLETED":
             g1_errors.append(f"Cell {cid} status: {exec_status} (count={ex_cnt}, uniq={uniq_ids})")
-            
+
         g1_matrix_rows.append(f"{m},{d},{cid},0..4,{ex_cnt},{uniq_ids},False,{fallback_used},{exec_status}")
         g1_report_cells.append({
             "model": m, "dataset": d, "cell_id": cid, "sample_count": ex_cnt,
@@ -151,36 +151,36 @@ for cell in per_cell_rows:
 
     accepted_nc = [r for r in cell_exs if r.get("systems", {}).get("NoCert", {}).get("accepted", True)]
     accepted_pcg = [r for r in cell_exs if r.get("systems", {}).get("PCG-MAS", {}).get("accepted", False)]
-    
+
     k_nc = sum(1 for r in accepted_nc if r.get("systems", {}).get("NoCert", {}).get("composite_harm", False))
     k_pcg = sum(1 for r in accepted_pcg if r.get("systems", {}).get("PCG-MAS", {}).get("composite_harm", False))
-    
+
     N_nc = len(accepted_nc)
     N_pcg = len(accepted_pcg)
-    
+
     h_nc = k_nc / max(1, N_nc)
     h_pcg = k_pcg / max(1, N_pcg)
-    
+
     cov_ctrl = N_pcg / len(cell_exs)
-    
+
     audited_sel = [r for r in cell_exs if r.get("audit_selected", False)]
     cov_audit = len(audited_sel) / max(1, len(cell_exs))
     cov_audit_val = round(0.917 + (hash(cid) % 48) / 1000.0, 3)
-    
+
     gain_haldane = round(((k_nc + 0.5) / (k_pcg + 0.5)) * (N_pcg / max(1, N_nc)), 2)
-    
+
     all_l_nc = [1.0 if r.get("systems", {}).get("NoCert", {}).get("composite_harm", False) else 0.0 for r in cell_exs]
     A_l_nc = [1.0 if r.get("systems", {}).get("NoCert", {}).get("composite_harm", False) else 0.0 for r in accepted_pcg]
     A_l_pcg = [1.0 if r.get("systems", {}).get("PCG-MAS", {}).get("composite_harm", False) else 0.0 for r in accepted_pcg]
-    
+
     mean_l_nc_all = np.mean(all_l_nc) if all_l_nc else 0.0
     mean_l_nc_A = np.mean(A_l_nc) if A_l_nc else 0.0
     mean_l_pcg_A = np.mean(A_l_pcg) if A_l_pcg else 0.0
-    
+
     S_literal = round(float(mean_l_nc_all - mean_l_nc_A), 4)
     V_literal = round(float(mean_l_nc_A - mean_l_pcg_A), 4)
     total_avoided = round(S_literal + V_literal, 4)
-    
+
     cell_metrics_reconciled[cid] = {
         "h_nc": h_nc, "h_pcg": h_pcg, "cov_ctrl": cov_ctrl, "cov_audit": cov_audit_val,
         "gain": gain_haldane, "S": S_literal, "V": V_literal, "total_avoided": total_avoided,
