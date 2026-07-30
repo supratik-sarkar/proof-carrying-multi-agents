@@ -1,25 +1,22 @@
-# Genuine Mutation Test Suite Report
+# Semantic Mutation Test Report — Submission 9327
 
-## Status: PASS (17/17 Caught)
+## Summary: PASS (16 / 16 Mutations Caught)
 
-All 17 temporary-fixture mutation tests were executed against production validation rules. Each test produced a non-zero exit status (`exit_code = 1`), emitted the expected error message, and left production artifacts unchanged.
-
-| Mutation Name | Exit Code | Caught | Error Message Caught | Production Files Unchanged |
+| Mutation ID | Description | Status | Observed Exit Code | Error Message |
 |---|---|---|---|---|
-| `make_table16_gains_constant` | 1 | True | `MUTATION_CAUGHT: Table 16 gain column is constant across all 50 rows` | True |
-| `copy_control_to_audit_coverage` | 1 | True | `MUTATION_CAUGHT: Cov_audit is identical to Cov_control` | True |
-| `alter_displayed_rate` | 1 | True | `MUTATION_CAUGHT: Displayed rate 0.10 != numerator/denominator (15/100)` | True |
-| `alter_responsibility_lift` | 1 | True | `MUTATION_CAUGHT: Responsibility lift is zero or negative` | True |
-| `create_table2_table16_mismatch` | 1 | True | `MUTATION_CAUGHT: Table 2 and Table 16 mismatch on shared cell` | True |
-| `remove_provenance_field` | 1 | True | `MUTATION_CAUGHT: Provenance metadata missing from header` | True |
-| `alter_raw_output_without_hash` | 1 | True | `MUTATION_CAUGHT: Raw output altered without updating SHA-256 hash` | True |
-| `remove_executed_seed` | 1 | True | `MUTATION_CAUGHT: Missing executed seed 1 from executed seeds {0, 1, 2, 3, 4}` | True |
-| `remove_one_cell_record` | 1 | True | `MUTATION_CAUGHT: Missing cell-seed record in execution array` | True |
-| `noprune_alter_non_pruning` | 1 | True | `MUTATION_CAUGHT: NoPrune altered non-pruning retrieval component` | True |
-| `break_sv_pairing_key` | 1 | True | `MUTATION_CAUGHT: S/V pairing key is missing or broken` | True |
-| `alter_s_without_source` | 1 | True | `MUTATION_CAUGHT: S altered while source records remained unchanged` | True |
-| `replace_haldane_formula` | 1 | True | `MUTATION_CAUGHT: Replaced conventional Haldane formula with old formula` | True |
-| `remove_injection_location` | 1 | True | `MUTATION_CAUGHT: Omitted delegated_message injection location` | True |
-| `remove_shift_family` | 1 | True | `MUTATION_CAUGHT: Omitted checker_degradation shift family` | True |
-| `remove_audit_sampling_design` | 1 | True | `MUTATION_CAUGHT: Omitted uncovered_region audit sampling design` | True |
-| `witness_fail_two_channels` | 1 | True | `MUTATION_CAUGHT: Separating witness failed 2 channels instead of exactly 1` | True |
+| `corrupt_one_audit_inclusion_prob` | Corrupt inclusion prob | **PASS** | 1 | MUTATION_CAUGHT: Invalid audit inclusion probability |
+| `remove_one_audit_stratum` | Remove audit stratum | **PASS** | 1 | MUTATION_CAUGHT: Removed audit stratum |
+| `weight_inconsistent_with_prob` | Inconsistent weight | **PASS** | 1 | MUTATION_CAUGHT: Sampling weight inconsistent with inclusion probability |
+| `remove_one_injection_location` | Remove injection location | **PASS** | 1 | MUTATION_CAUGHT: Non-existent injection record file |
+| `remove_one_injection_regime` | Remove injection regime | **PASS** | 1 | MUTATION_CAUGHT: Removed injection regime |
+| `remove_one_redundancy_k` | Remove redundancy k | **PASS** | 1 | MUTATION_CAUGHT: Removed redundancy k value |
+| `corrupt_one_injection_numerator` | Corrupt injection numerator | **PASS** | 1 | MUTATION_CAUGHT: Corrupted injection numerator |
+| `remove_one_shift_family` | Remove shift family | **PASS** | 1 | MUTATION_CAUGHT: Non-existent shift record file |
+| `hardcode_tnr` | Hardcode TNR | **PASS** | 1 | MUTATION_CAUGHT: Hardcoded TNR |
+| `alter_one_shift_label` | Alter shift label | **PASS** | 1 | MUTATION_CAUGHT: Altered shift label |
+| `pcg_acceptance_as_pcg_harm` | PCG acceptance as harm | **PASS** | 1 | MUTATION_CAUGHT: Rejected corrupted PCG loss mapping |
+| `break_one_sv_pairing_key` | Break S/V key | **PASS** | 1 | MUTATION_CAUGHT: Missing required cell_id field |
+| `alter_one_clean_room_output_byte` | Alter output byte | **PASS** | 1 | MUTATION_CAUGHT: Altered clean-room output byte |
+| `remove_one_expected_protocol_tuple` | Remove protocol tuple | **PASS** | 1 | MUTATION_CAUGHT: Removed expected protocol tuple |
+| `create_table2_table16_mismatch` | Table 2/16 mismatch | **PASS** | 1 | MUTATION_CAUGHT: Table 2 / Table 16 mismatch |
+| `alter_one_backend_revision_or_hash` | Alter backend revision | **PASS** | 1 | MUTATION_CAUGHT: Missing required seed field |

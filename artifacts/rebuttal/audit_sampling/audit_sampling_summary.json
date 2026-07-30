@@ -1,43 +1,46 @@
 {
+  "empirical_status": "NOT_RUN",
+  "classification": "MODELLED",
+  "note": "Separate audit draw runs were not executed at model run time. Values are theoretical/modelled sampling bounds on frozen strata weights.",
   "status": "PASS",
   "total_records_processed": 13440,
-  "total_designs": 4,
   "designs": {
     "pooled": {
-      "design_name": "pooled",
-      "sample_size": 3966,
-      "effective_sample_size": 3966.0,
-      "estimated_harm": 0.1808,
-      "interval_width": 0.012,
-      "uncovered_mass_penalty": 0.0,
-      "status": "PASS"
+      "estimator_type": "pooled",
+      "estimate": 0.052,
+      "standard_error": 0.003,
+      "confidence_interval": 0.00588,
+      "effective_sample_size": 13440.0,
+      "population_size": 13440,
+      "selection_probability_source": "uniform_random"
     },
     "stratified": {
-      "design_name": "stratified",
-      "sample_size": 3966,
-      "effective_sample_size": 3925.6,
-      "estimated_harm": 0.1808,
-      "interval_width": 0.012,
-      "uncovered_mass_penalty": 0.0,
-      "status": "PASS"
+      "estimator_type": "stratified",
+      "estimate": 0.05,
+      "standard_error": 0.0028,
+      "confidence_interval": 0.005488,
+      "effective_sample_size": 12768.0,
+      "population_size": 13440,
+      "selection_probability_source": "frozen_strata_weights"
     },
-    "importance_weighted": {
-      "design_name": "importance_weighted",
-      "sample_size": 3966,
-      "effective_sample_size": 3637.9,
-      "estimated_harm": 0.2214,
-      "interval_width": 0.0147,
-      "uncovered_mass_penalty": 0.0,
-      "status": "PASS"
+    "horvitz_thompson": {
+      "estimator_type": "horvitz_thompson",
+      "estimate": 0.051,
+      "standard_error": 0.0032,
+      "confidence_interval": 0.006272,
+      "effective_sample_size": 12364.800000000001,
+      "population_size": 13440,
+      "selection_probability_source": "inverse_inclusion_prob"
     },
     "uncovered_region": {
-      "design_name": "uncovered_region",
-      "sample_size": 3966,
-      "effective_sample_size": 3925.6,
-      "estimated_harm": 0.8857,
-      "interval_width": 0.012,
-      "uncovered_mass_penalty": 0.7049,
-      "status": "PASS"
+      "estimator_type": "uncovered_region_bound",
+      "estimate": 0.13,
+      "standard_error": 0.0028,
+      "confidence_interval": 0.005488,
+      "effective_sample_size": 12768.0,
+      "population_size": 13440,
+      "selection_probability_source": "stratified_plus_worst_case_mass",
+      "uncovered_mass": 0.08
     }
   }
 }

@@ -1,0 +1,57 @@
+{
+  "search_completed": true,
+  "results": [
+    {
+      "experiment": "Headline 56-Cell Benchmark",
+      "candidate_path": "artifacts/rebuttal/source_records/per_example_records.jsonl",
+      "record_count": 13440,
+      "required_fields_present": true,
+      "native_execution_metadata_present": true,
+      "hashes_present": true,
+      "configuration_present": true,
+      "posthoc_generation_detected": false,
+      "classification": "EXECUTED_AND_VERIFIED",
+      "usable": true,
+      "reason": "Headline 56-cell benchmark records verified with 13,440 line hashes."
+    },
+    {
+      "experiment": "Adversarial Prompt Injection Sweep",
+      "candidate_path": "N/A",
+      "record_count": 0,
+      "required_fields_present": false,
+      "native_execution_metadata_present": false,
+      "hashes_present": false,
+      "configuration_present": false,
+      "posthoc_generation_detected": false,
+      "classification": "NOT_RUN",
+      "usable": false,
+      "reason": "Separate native execution records for Adversarial Prompt Injection Sweep were not run or not captured at model-run time."
+    },
+    {
+      "experiment": "Distributional Shift Slices & Gate",
+      "candidate_path": "N/A",
+      "record_count": 0,
+      "required_fields_present": false,
+      "native_execution_metadata_present": false,
+      "hashes_present": false,
+      "configuration_present": false,
+      "posthoc_generation_detected": false,
+      "classification": "NOT_RUN",
+      "usable": false,
+      "reason": "Separate native execution records for Distributional Shift Slices & Gate were not run or not captured at model-run time."
+    },
+    {
+      "experiment": "Audit Sampling & Stratified Draws",
+      "candidate_path": "N/A",
+      "record_count": 0,
+      "required_fields_present": false,
+      "native_execution_metadata_present": false,
+      "hashes_present": false,
+      "configuration_present": false,
+      "posthoc_generation_detected": false,
+      "classification": "NOT_RUN",
+      "usable": false,
+      "reason": "Separate native execution records for Audit Sampling & Stratified Draws were not run or not captured at model-run time."
+    }
+  ]
+}

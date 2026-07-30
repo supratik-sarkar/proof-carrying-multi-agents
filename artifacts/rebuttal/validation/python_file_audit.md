@@ -2,25 +2,25 @@
 
 ## Overall Meta-Audit Status: PASS
 
-* **Total Python Files Analyzed:** 46
+* **Total Python Files Analyzed:** 45
 * **Failed / Placeholder Files:** 0
-* **Valid Functional Files:** 46
+* **Valid Functional Files:** 45
 
 | Relative Path | Classification | Reads Files | Absolute Paths | Status | Failure Reason |
 |---|---|---|---|---|---|
 | `artifacts/rebuttal/audit_sampling/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | True | False | **PASS** |  |
 | `artifacts/rebuttal/audit_sampling/scripts/run_sampling_designs.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
 | `artifacts/rebuttal/audit_sampling/tests/test_audit_sampling.py` | REAL_TEST | False | False | **PASS** |  |
-| `artifacts/rebuttal/backend_manifest/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | False | False | **PASS** |  |
+| `artifacts/rebuttal/backend_manifest/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | True | False | **PASS** |  |
 | `artifacts/rebuttal/backend_manifest/scripts/verify_manifest.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
 | `artifacts/rebuttal/backend_manifest/tests/test_backend_manifest.py` | REAL_TEST | False | False | **PASS** |  |
 | `artifacts/rebuttal/citation_only/scripts/match_coverage.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
-| `artifacts/rebuttal/citation_only/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | False | False | **PASS** |  |
+| `artifacts/rebuttal/citation_only/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | True | False | **PASS** |  |
 | `artifacts/rebuttal/citation_only/tests/test_citation_only.py` | REAL_TEST | False | False | **PASS** |  |
 | `artifacts/rebuttal/injection/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | True | False | **PASS** |  |
 | `artifacts/rebuttal/injection/scripts/run_injection_matrix.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
 | `artifacts/rebuttal/injection/tests/test_injection.py` | REAL_TEST | False | False | **PASS** |  |
-| `artifacts/rebuttal/separating_witnesses/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | False | False | **PASS** |  |
+| `artifacts/rebuttal/separating_witnesses/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | True | False | **PASS** |  |
 | `artifacts/rebuttal/separating_witnesses/scripts/run_witness_suite.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
 | `artifacts/rebuttal/separating_witnesses/tests/test_separating_witnesses.py` | REAL_TEST | False | False | **PASS** |  |
 | `artifacts/rebuttal/shift/scripts/apply_validity_gate.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
@@ -28,15 +28,14 @@
 | `artifacts/rebuttal/shift/tests/test_shift.py` | REAL_TEST | False | False | **PASS** |  |
 | `artifacts/rebuttal/sv_decomposition/scripts/compute_sv.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
 | `artifacts/rebuttal/sv_decomposition/scripts/paired_bootstrap.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
-| `artifacts/rebuttal/sv_decomposition/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | False | False | **PASS** |  |
+| `artifacts/rebuttal/sv_decomposition/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | True | False | **PASS** |  |
 | `artifacts/rebuttal/sv_decomposition/tests/test_sv_decomposition.py` | REAL_TEST | False | False | **PASS** |  |
 | `artifacts/rebuttal/table_reconciliation/scripts/canonical_metrics.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
 | `artifacts/rebuttal/table_reconciliation/scripts/reconcile_tables.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
-| `artifacts/rebuttal/table_reconciliation/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | False | False | **PASS** |  |
+| `artifacts/rebuttal/table_reconciliation/scripts/reproduce_all.py` | REAL_REPRODUCE_ALL | True | False | **PASS** |  |
 | `artifacts/rebuttal/table_reconciliation/tests/test_table_reconciliation.py` | REAL_TEST | False | False | **PASS** |  |
 | `artifacts/rebuttal/validation/validate_artifact.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
 | `scripts/rebuttal/audit_artifact_python.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
-| `scripts/rebuttal/create_explicit_domain_records.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
 | `scripts/rebuttal/execute_all_gates.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
 | `scripts/rebuttal/execute_full_workflow.py` | REAL_IMPLEMENTATION | True | False | **PASS** |  |
 | `scripts/rebuttal/finalize_rebuttal_artifacts.py` | REAL_IMPLEMENTATION | False | False | **PASS** |  |

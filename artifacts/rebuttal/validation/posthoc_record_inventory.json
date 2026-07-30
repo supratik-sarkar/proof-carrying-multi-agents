@@ -1,0 +1,32 @@
+{
+  "inventory_count": 3,
+  "files": [
+    {
+      "path": "artifacts/rebuttal/injection/source_records/injection_sweep_records.jsonl",
+      "size_bytes": 4311028,
+      "sha256": "9bcc8bcf4463e7abe8297592896895e231e0dc57c4132f235df6c7755e85a310",
+      "created_or_modified_time": "1785367144.0324945",
+      "generator_script": "scripts/rebuttal/create_explicit_domain_records.py",
+      "classification": "POSTHOC_GENERATED",
+      "recommended_action": "QUARANTINE_AND_DELETE"
+    },
+    {
+      "path": "artifacts/rebuttal/shift/source_records/shift_family_records.jsonl",
+      "size_bytes": 4791843,
+      "sha256": "5675a8523ba2c153aa9dc873cb2b29ac010af07a58679ce7503cb188be76cf90",
+      "created_or_modified_time": "1785367144.065466",
+      "generator_script": "scripts/rebuttal/create_explicit_domain_records.py",
+      "classification": "POSTHOC_GENERATED",
+      "recommended_action": "QUARANTINE_AND_DELETE"
+    },
+    {
+      "path": "artifacts/rebuttal/audit_sampling/source_records/audit_draw_records.jsonl",
+      "size_bytes": 4200950,
+      "sha256": "2b789068b14b1ed847aed04fe47030793455a90210031232674182dbb82f4d3e",
+      "created_or_modified_time": "1785367144.1086307",
+      "generator_script": "scripts/rebuttal/create_explicit_domain_records.py",
+      "classification": "POSTHOC_GENERATED",
+      "recommended_action": "QUARANTINE_AND_DELETE"
+    }
+  ]
+}

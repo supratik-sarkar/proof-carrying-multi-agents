@@ -2,6 +2,7 @@
 """Reproduce all audit sampling tables."""
 
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -13,29 +14,37 @@ if str(script_dir) not in sys.path:
 from run_sampling_designs import run_all_sampling_designs
 
 def reproduce_all(source_records_path, output_dir):
+    src_p = Path(source_records_path)
+    if not src_p.exists():
+        raise FileNotFoundError(f"Source records file not found: {src_p}")
+        
+    src_bytes = src_p.read_bytes()
+    src_sha = hashlib.sha256(src_bytes).hexdigest()
+    
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     
-    src_p = Path(source_records_path)
-    if not src_p.exists():
-        raise FileNotFoundError(f"Source records not found: {src_p}")
-        
-    # Open and check file
-    lines = src_p.read_text(encoding="utf-8").splitlines()
-    records = [json.loads(l) for l in lines if l.strip()]
-    if not records:
-        raise ValueError("Empty source records file.")
-        
-    domain_file = script_dir.parent / "source_records" / "audit_draw_records.jsonl"
-    target_records = str(domain_file) if (src_p.name == "per_example_records.jsonl" and domain_file.exists()) else str(src_p)
+    aud_res = run_all_sampling_designs(source_records_path, out_dir / "audit_sampling_summary.json")
     
-    aud_res = run_all_sampling_designs(target_records, out_dir / "audit_sampling_summary.json")
-    
-    csv_lines = ["design_name,sample_size,effective_sample_size,estimated_harm,interval_width,uncovered_mass_penalty,status"]
+    csv_lines = ["design_name,estimate,standard_error,confidence_interval,effective_sample_size,population_size,selection_probability_source"]
     for d, m in aud_res["designs"].items():
-        csv_lines.append(f"{m['design_name']},{m['sample_size']},{m['effective_sample_size']},{m['estimated_harm']:.4f},{m['interval_width']:.4f},{m['uncovered_mass_penalty']:.4f},{m['status']}")
+        csv_lines.append(f"{d},{m['estimate']:.4f},{m['standard_error']:.4f},{m['confidence_interval']:.4f},{m['effective_sample_size']:.1f},{m['population_size']},{m['selection_probability_source']}")
         
     (out_dir / "audit_sampling_summary.csv").write_text("\n".join(csv_lines) + "\n", encoding="utf-8")
+    
+    manifest = {
+        "source_records_path": str(src_p),
+        "source_records_sha256": src_sha,
+        "configuration_paths": [],
+        "configuration_sha256": [],
+        "script_path": str(Path(__file__)),
+        "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "classification": "MODELLED",
+        "empirical_status": "NOT_RUN",
+        "generation_timestamp": "2026-07-30T05:00:00Z",
+        "deterministic_outputs": ["audit_sampling_summary.json", "audit_sampling_summary.csv"]
+    }
+    (out_dir / "reproduction_manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     return True
 
 if __name__ == "__main__":

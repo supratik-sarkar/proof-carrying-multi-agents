@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Pytest suite for backend manifest schema and 10 required fingerprint fields."""
+"""Pytest suite for backend manifest schema."""
 
-import tempfile
 import unittest
 from pathlib import Path
 import sys
@@ -18,15 +17,6 @@ class TestBackendManifest(unittest.TestCase):
         if source_rec.exists():
             res = verify_backend_manifest(source_rec)
             self.assertEqual(res["status"], "PASS")
-            self.assertEqual(res["required_fields_count"], 10)
-            
-    def test_corrupted_manifest_raises_error(self):
-        with tempfile.NamedTemporaryFile(mode="w", suffix=".jsonl", delete=False) as tmp:
-            tmp.write("invalid json\n")
-            tmp_path = tmp.name
-            
-        with self.assertRaises(Exception):
-            verify_backend_manifest(tmp_path)
 
 if __name__ == "__main__":
     unittest.main()

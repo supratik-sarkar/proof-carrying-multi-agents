@@ -1,4 +1,5 @@
 {
+  "empirical_status": "EXECUTED_AND_VERIFIED",
   "status": "PASS",
   "total_cells_processed": 56,
   "max_identity_residual": 1.3877787807814457e-17,

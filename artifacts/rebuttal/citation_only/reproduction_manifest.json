@@ -1,0 +1,15 @@
+{
+  "source_records_path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/artifacts/rebuttal/source_records/per_example_records.jsonl",
+  "source_records_sha256": "c63babd59efe28b52797379d19e2dffbc500416fd53fc0d45e0e953ebd3d3cef",
+  "configuration_paths": [],
+  "configuration_sha256": [],
+  "script_path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/artifacts/rebuttal/citation_only/scripts/reproduce_all.py",
+  "script_sha256": "937fec62e95d9213b3ad11d01b46dd43579a7f85f9341d7ff3c7ff38c49e9427",
+  "classification": "REAL_CITATION_COMPARISON",
+  "empirical_status": "EXECUTED_AND_VERIFIED",
+  "generation_timestamp": "2026-07-30T05:00:00Z",
+  "deterministic_outputs": [
+    "citation_only_comparison.json",
+    "citation_only_comparison.csv"
+  ]
+}

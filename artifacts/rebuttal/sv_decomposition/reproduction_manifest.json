@@ -1,0 +1,16 @@
+{
+  "source_records_path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/artifacts/rebuttal/source_records/per_example_records.jsonl",
+  "source_records_sha256": "c63babd59efe28b52797379d19e2dffbc500416fd53fc0d45e0e953ebd3d3cef",
+  "configuration_paths": [],
+  "configuration_sha256": [],
+  "script_path": "/Users/supratiksarkar/Desktop/pcg-neurips2026/artifacts/rebuttal/sv_decomposition/scripts/reproduce_all.py",
+  "script_sha256": "ddb59f27fd02603e42baf0ac6a471e9cbab871118ca3ab0f7e555e9de8a7a48a",
+  "classification": "REAL_PAIRED_SV_DECOMPOSITION",
+  "empirical_status": "EXECUTED_AND_VERIFIED",
+  "generation_timestamp": "2026-07-30T05:00:00Z",
+  "deterministic_outputs": [
+    "sv_decomposition.json",
+    "sv_bootstrap_ci.json",
+    "sv_decomposition.csv"
+  ]
+}

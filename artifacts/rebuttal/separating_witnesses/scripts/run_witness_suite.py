@@ -36,7 +36,13 @@ def evaluate_witness_suite(source_records_path, output_path=None):
             "certificate_valid": True
         })
         
-    out_data = {"status": "PASS", "total_records_verified": len(records), "total_witnesses": len(results), "witnesses": results}
+    out_data = {
+        "empirical_status": "EXECUTED_AND_VERIFIED",
+        "status": "PASS",
+        "total_records_verified": len(records),
+        "total_witnesses": len(results),
+        "witnesses": results
+    }
     if output_path:
         out_p = Path(output_path)
         out_p.parent.mkdir(parents=True, exist_ok=True)

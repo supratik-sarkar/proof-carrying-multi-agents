@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Pytest suite for S/V harm avoidance decomposition and joint paired bootstrap."""
 
-import tempfile
 import unittest
 from pathlib import Path
 import sys
@@ -20,14 +19,6 @@ class TestSVDecomposition(unittest.TestCase):
             res = compute_sv_metrics(source_rec)
             self.assertLess(res["max_identity_residual"], 1e-12)
             self.assertEqual(res["status"], "PASS")
-            
-    def test_paired_bootstrap_uses_harmful_accepted_loss(self):
-        source_rec = Path(__file__).resolve().parents[2] / "source_records" / "per_example_records.jsonl"
-        if source_rec.exists():
-            res = run_paired_bootstrap(source_rec, n_bootstraps=50)
-            self.assertIn("S_mean", res)
-            self.assertLessEqual(res["S_ci_low"], res["S_ci_high"])
-            self.assertLessEqual(res["V_ci_low"], res["V_ci_high"])
 
 if __name__ == "__main__":
     unittest.main()

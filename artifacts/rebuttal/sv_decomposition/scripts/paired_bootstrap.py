@@ -8,7 +8,6 @@ import numpy as np
 from pathlib import Path
 
 def run_paired_bootstrap(source_records_path, n_bootstraps=1000, seed=42, output_path=None):
-    """Resample complete paired example rows jointly using PCG-MAS harmful accepted loss."""
     source_p = Path(source_records_path)
     if not source_p.exists():
         raise FileNotFoundError(f"Source records not found: {source_p}")
@@ -30,7 +29,6 @@ def run_paired_bootstrap(source_records_path, n_bootstraps=1000, seed=42, output
         accepted_pcg = [r for r in sampled_recs if r.get("systems", {}).get("PCG-MAS", {}).get("accepted", False)]
         
         A_l_nc = [1.0 if r.get("systems", {}).get("NoCert", {}).get("composite_harm", False) else 0.0 for r in accepted_pcg]
-        # Requirement 4: PCG-MAS harmful accepted loss (accepted AND composite_harm)
         A_l_pcg = [1.0 if (r.get("systems", {}).get("PCG-MAS", {}).get("accepted", False) and r.get("systems", {}).get("PCG-MAS", {}).get("composite_harm", False)) else 0.0 for r in accepted_pcg]
         
         I_nc_all = np.mean(all_l_nc) if all_l_nc else 0.0

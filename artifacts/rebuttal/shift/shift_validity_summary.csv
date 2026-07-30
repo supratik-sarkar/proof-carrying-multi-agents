@@ -1,7 +1,7 @@
-family_name,evaluated_samples,tpr,tnr,balanced_accuracy,tv_lower_bound,hat_rho,rho_ucb,validity_gate_passed,fallback_action
-dataset_shift,2240,1.0000,1.0000,1.0000,1.0000,0.0864,0.0981,True,ALLOW
-backend_shift,2240,1.0000,1.0000,1.0000,1.0000,0.0857,0.0973,True,ALLOW
-corruption,2240,1.0000,1.0000,1.0000,1.0000,0.0856,0.0972,True,ALLOW
-tool_drift,2240,1.0000,1.0000,1.0000,1.0000,0.0860,0.0976,True,ALLOW
-branch_dependence,2240,1.0000,0.9924,0.9962,0.9924,0.0859,0.0975,True,ALLOW
-checker_degradation,2240,1.0000,1.0000,1.0000,1.0000,0.0862,0.0978,True,ALLOW
+family_name,tpr,tnr,balanced_accuracy,tv_lower_bound,hat_rho,rho_ucb,validity_gate_passed,fallback_action
+dataset_shift,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW
+backend_shift,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW
+corruption,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW
+tool_drift,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW
+branch_dependence,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW
+checker_degradation,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW

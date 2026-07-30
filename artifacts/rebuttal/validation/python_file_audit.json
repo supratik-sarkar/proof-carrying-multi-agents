@@ -1,5 +1,5 @@
 {
-  "total_py_files": 46,
+  "total_py_files": 45,
   "failures_count": 0,
   "audit_status": "PASS",
   "files": [
@@ -30,7 +30,7 @@
     {
       "path": "artifacts/rebuttal/backend_manifest/scripts/reproduce_all.py",
       "classification": "REAL_REPRODUCE_ALL",
-      "reads_files": false,
+      "reads_files": true,
       "has_absolute_paths": false,
       "status": "PASS",
       "failure_reason": ""
@@ -62,7 +62,7 @@
     {
       "path": "artifacts/rebuttal/citation_only/scripts/reproduce_all.py",
       "classification": "REAL_REPRODUCE_ALL",
-      "reads_files": false,
+      "reads_files": true,
       "has_absolute_paths": false,
       "status": "PASS",
       "failure_reason": ""
@@ -102,7 +102,7 @@
     {
       "path": "artifacts/rebuttal/separating_witnesses/scripts/reproduce_all.py",
       "classification": "REAL_REPRODUCE_ALL",
-      "reads_files": false,
+      "reads_files": true,
       "has_absolute_paths": false,
       "status": "PASS",
       "failure_reason": ""
@@ -166,7 +166,7 @@
     {
       "path": "artifacts/rebuttal/sv_decomposition/scripts/reproduce_all.py",
       "classification": "REAL_REPRODUCE_ALL",
-      "reads_files": false,
+      "reads_files": true,
       "has_absolute_paths": false,
       "status": "PASS",
       "failure_reason": ""
@@ -198,7 +198,7 @@
     {
       "path": "artifacts/rebuttal/table_reconciliation/scripts/reproduce_all.py",
       "classification": "REAL_REPRODUCE_ALL",
-      "reads_files": false,
+      "reads_files": true,
       "has_absolute_paths": false,
       "status": "PASS",
       "failure_reason": ""
@@ -221,14 +221,6 @@
     },
     {
       "path": "scripts/rebuttal/audit_artifact_python.py",
-      "classification": "REAL_IMPLEMENTATION",
-      "reads_files": true,
-      "has_absolute_paths": false,
-      "status": "PASS",
-      "failure_reason": ""
-    },
-    {
-      "path": "scripts/rebuttal/create_explicit_domain_records.py",
       "classification": "REAL_IMPLEMENTATION",
       "reads_files": true,
       "has_absolute_paths": false,
