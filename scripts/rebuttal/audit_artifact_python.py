@@ -121,13 +121,15 @@ with open(csv_path, "w", newline="", encoding="utf-8") as f:
 json_path.write_text(json.dumps({
     "total_files": len(py_files),
     "failures": failures_count,
-    "audit_status": "PASS" if failures_count == 0 else "FAIL",
+    "audit_status": "BASIC_STATIC_AUDIT_PASS" if failures_count == 0 else "FAIL",
     "files": audit_results
 }, indent=2) + "\n", encoding="utf-8")
 
 md_content = """# Python File AST Audit Report
 
-## Summary: """ + ("PASS" if failures_count == 0 else "FAIL") + f""" ({failures_count} Failures out of {len(py_files)} Files)
+## Summary: """ + ("BASIC_STATIC_AUDIT_PASS" if failures_count == 0 else "FAIL") + f""" ({failures_count} Failures out of {len(py_files)} Files)
+
+Note: Audit performs static hygiene checks (AST parsing, shebang, absolute paths, argument consumption, non-tautological assertions).
 
 | File Path | Classification | Reads Files | Absolute Paths | Status | Failure Reason |
 |---|---|---|---|---|---|

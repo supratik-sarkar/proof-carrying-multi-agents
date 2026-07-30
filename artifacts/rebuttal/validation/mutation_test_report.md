@@ -1,6 +1,7 @@
 # Semantic Mutation Test Report — Submission 9327
 
-## Summary: PASS (16 / 16 Mutations Caught)
+## Summary: PARTIAL_PASS (16 / 16 Mutations Caught)
+Note: Manifest/clean-room mutations are fully semantic. Domain mutations are partially semantic (sentinel-field based).
 
 | Mutation ID | Description | Status | Expected Code | Observed Exit Code | Error Message |
 |---|---|---|---|---|---|

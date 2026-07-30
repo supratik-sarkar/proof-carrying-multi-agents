@@ -239,15 +239,14 @@ json_report.write_text(json.dumps({
     "total_mutations": total_mutations,
     "mutations_passed": mutations_passed,
     "production_hashes_intact": hashes_intact,
-    "mutation_status": "PASS" if mutations_passed == total_mutations else "FAIL",
+    "mutation_status": "PARTIAL_PASS" if mutations_passed == total_mutations else "FAIL",
     "mutations": mutation_records
 }, indent=2) + "\n", encoding="utf-8")
 
 md_content = """# Semantic Mutation Test Report — Submission 9327
 
-## Summary: """ + f"{'PASS' if mutations_passed == total_mutations else 'FAIL'}" + f""" ({mutations_passed} / {total_mutations} Mutations Caught)
-
-| Mutation ID | Description | Status | Expected Code | Observed Exit Code | Error Message |
+## Summary: """ + f"{'PARTIAL_PASS' if mutations_passed == total_mutations else 'FAIL'}" + f""" ({mutations_passed} / {total_mutations} Mutations Caught)
+""" + "Note: Manifest/clean-room mutations are fully semantic. Domain mutations are partially semantic (sentinel-field based).\n\n" + """| Mutation ID | Description | Status | Expected Code | Observed Exit Code | Error Message |
 |---|---|---|---|---|---|
 """ + "\n".join([f"| `{m['mutation_id']}` | {m['description']} | **{m['status']}** | `{m['expected_error_code']}` | {m['observed_exit_code']} | {m['error_message']} |" for m in mutation_records])
 

@@ -1,6 +1,8 @@
 # Python File AST Audit Report
 
-## Summary: PASS (0 Failures out of 48 Files)
+## Summary: BASIC_STATIC_AUDIT_PASS (0 Failures out of 48 Files)
+
+Note: Audit performs static hygiene checks (AST parsing, shebang, absolute paths, argument consumption, non-tautological assertions).
 
 | File Path | Classification | Reads Files | Absolute Paths | Status | Failure Reason |
 |---|---|---|---|---|---|

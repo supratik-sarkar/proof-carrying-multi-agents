@@ -1,7 +1,7 @@
 {
   "total_files": 48,
   "failures": 0,
-  "audit_status": "PASS",
+  "audit_status": "BASIC_STATIC_AUDIT_PASS",
   "files": [
     {
       "path": "artifacts/rebuttal/audit_sampling/scripts/reproduce_all.py",

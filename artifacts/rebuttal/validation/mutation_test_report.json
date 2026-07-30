@@ -2,7 +2,7 @@
   "total_mutations": 16,
   "mutations_passed": 16,
   "production_hashes_intact": true,
-  "mutation_status": "PASS",
+  "mutation_status": "PARTIAL_PASS",
   "mutations": [
     {
       "mutation_id": "corrupt_one_audit_inclusion_prob",
