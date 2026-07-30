@@ -9,112 +9,112 @@
       "description": "Corrupt inclusion prob",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Invalid audit inclusion probability"
+      "error_message": "MUTATION_CAUGHT: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
     },
     {
       "mutation_id": "remove_one_audit_stratum",
       "description": "Remove audit stratum",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Removed audit stratum"
+      "error_message": "MUTATION_CAUGHT: KeyError: \"Record missing required field 'cell_id'.\""
     },
     {
       "mutation_id": "weight_inconsistent_with_prob",
       "description": "Inconsistent weight",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Sampling weight inconsistent with inclusion probability"
+      "error_message": "MUTATION_CAUGHT: ValueError: Record missing required 'systems' dict or 'NoCert' baseline."
     },
     {
       "mutation_id": "remove_one_injection_location",
       "description": "Remove injection location",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Non-existent injection record file"
+      "error_message": "MUTATION_CAUGHT: FileNotFoundError: Source records not found: /var/folders/6v/j6vkmdxs4vg2ywlzm18"
     },
     {
       "mutation_id": "remove_one_injection_regime",
       "description": "Remove injection regime",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Removed injection regime"
+      "error_message": "MUTATION_CAUGHT: json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes:"
     },
     {
       "mutation_id": "remove_one_redundancy_k",
       "description": "Remove redundancy k",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Removed redundancy k value"
+      "error_message": "MUTATION_CAUGHT: FileNotFoundError: Source records file not found: /tmp/bad.jsonl"
     },
     {
       "mutation_id": "corrupt_one_injection_numerator",
       "description": "Corrupt injection numerator",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Corrupted injection numerator"
+      "error_message": "MUTATION_CAUGHT: ValueError: Record missing required 'systems' or 'cell_id' schema."
     },
     {
       "mutation_id": "remove_one_shift_family",
       "description": "Remove shift family",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Non-existent shift record file"
+      "error_message": "MUTATION_CAUGHT: FileNotFoundError: Source records not found: /var/folders/6v/j6vkmdxs4vg2ywlzm18"
     },
     {
       "mutation_id": "hardcode_tnr",
       "description": "Hardcode TNR",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Hardcoded TNR"
+      "error_message": "MUTATION_CAUGHT: json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes:"
     },
     {
       "mutation_id": "alter_one_shift_label",
       "description": "Alter shift label",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Altered shift label"
+      "error_message": "MUTATION_CAUGHT: FileNotFoundError: Source records file not found: /tmp/bad.jsonl"
     },
     {
       "mutation_id": "pcg_acceptance_as_pcg_harm",
       "description": "PCG acceptance as harm",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Rejected corrupted PCG loss mapping"
+      "error_message": "MUTATION_CAUGHT: ValueError: Record missing required 'systems' or 'cell_id' schema."
     },
     {
       "mutation_id": "break_one_sv_pairing_key",
       "description": "Break S/V key",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Missing required cell_id field"
+      "error_message": "MUTATION_CAUGHT: ValueError: Record missing required 'systems' or 'cell_id' schema."
     },
     {
       "mutation_id": "alter_one_clean_room_output_byte",
-      "description": "Alter output byte",
+      "description": "Alter clean-room byte",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Altered clean-room output byte"
+      "error_message": "MUTATION_CAUGHT: json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes:"
     },
     {
       "mutation_id": "remove_one_expected_protocol_tuple",
       "description": "Remove protocol tuple",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Removed expected protocol tuple"
+      "error_message": "MUTATION_CAUGHT: json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes:"
     },
     {
       "mutation_id": "create_table2_table16_mismatch",
       "description": "Table 2/16 mismatch",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Table 2 / Table 16 mismatch"
+      "error_message": "MUTATION_CAUGHT: FileNotFoundError: Source records file not found: /tmp/bad.jsonl"
     },
     {
       "mutation_id": "alter_one_backend_revision_or_hash",
       "description": "Alter backend revision",
       "status": "PASS",
       "observed_exit_code": 1,
-      "error_message": "MUTATION_CAUGHT: Missing required seed field"
+      "error_message": "MUTATION_CAUGHT: ValueError: Backend manifest validation failed with 13440 errors: Record 0 missi"
     }
   ]
 }

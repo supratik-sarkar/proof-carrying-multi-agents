@@ -16,6 +16,10 @@ def compute_sv_metrics(source_records_path, output_path=None):
     if not records:
         raise ValueError("Source records file is empty.")
         
+    for r in records:
+        if "systems" not in r or "cell_id" not in r:
+            raise ValueError("Record missing required 'systems' or 'cell_id' schema.")
+            
     cell_groups = {}
     for r in records:
         cid = r.get("cell_id")

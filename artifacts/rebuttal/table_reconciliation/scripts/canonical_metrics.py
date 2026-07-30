@@ -32,11 +32,15 @@ def run_canonical_metrics(source_records_path, output_path=None):
     if not records:
         raise ValueError("Source records file is empty or malformed.")
         
-    accepted_nc = [r for r in records if r.get("systems", {}).get("NoCert", {}).get("accepted", True)]
-    accepted_pcg = [r for r in records if r.get("systems", {}).get("PCG-MAS", {}).get("accepted", False)]
+    for r in records:
+        if "systems" not in r or not isinstance(r["systems"], dict) or "NoCert" not in r["systems"]:
+            raise ValueError("Record missing required 'systems' dict or 'NoCert' baseline.")
+            
+    accepted_nc = [r for r in records if r["systems"]["NoCert"].get("accepted", True)]
+    accepted_pcg = [r for r in records if r["systems"].get("PCG-MAS", {}).get("accepted", False)]
     
-    k_nc = sum(1 for r in accepted_nc if r.get("systems", {}).get("NoCert", {}).get("composite_harm", False))
-    k_pcg = sum(1 for r in accepted_pcg if r.get("systems", {}).get("PCG-MAS", {}).get("composite_harm", False))
+    k_nc = sum(1 for r in accepted_nc if r["systems"]["NoCert"].get("composite_harm", False))
+    k_pcg = sum(1 for r in accepted_pcg if r["systems"].get("PCG-MAS", {}).get("composite_harm", False))
     
     res = compute_harm_rates(k_nc, len(accepted_nc), k_pcg, len(accepted_pcg))
     res["total_records"] = len(records)

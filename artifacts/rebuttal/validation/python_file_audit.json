@@ -1,5 +1,5 @@
 {
-  "total_py_files": 45,
+  "total_py_files": 46,
   "failures_count": 0,
   "audit_status": "PASS",
   "files": [
@@ -357,6 +357,14 @@
     },
     {
       "path": "scripts/rebuttal/validate_submitted_protocol.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/rebuttal/verify_source_record_integrity.py",
       "classification": "REAL_IMPLEMENTATION",
       "reads_files": true,
       "has_absolute_paths": false,

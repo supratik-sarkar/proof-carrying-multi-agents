@@ -15,6 +15,10 @@ def run_injection_matrix(source_records_path, output_path=None):
     if not records:
         raise ValueError("Source records file is empty.")
         
+    for r in records:
+        if "systems" not in r or "cell_id" not in r:
+            raise ValueError("Record missing required 'systems' or 'cell_id' schema.")
+            
     locations = ["retrieved_content", "tool_output", "memory", "delegated_message"]
     regimes = ["isolated", "shared"]
     redundancy_k_vals = [1, 2, 3, 5]
@@ -24,7 +28,6 @@ def run_injection_matrix(source_records_path, output_path=None):
         for reg in regimes:
             for k in redundancy_k_vals:
                 key = f"{loc}__{reg}__k{k}"
-                # Analytical / Modelled values clearly badged
                 matrix[key] = {
                     "attack_location": loc,
                     "verifier_regime": reg,
