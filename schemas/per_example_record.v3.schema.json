@@ -1,0 +1,556 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pcg-mas/schemas/per_example_record.v3.schema.json",
+  "title": "PCG-MAS canonical per-example record (v3.0)",
+  "description": "Keystone record. Every metric, table and figure derives from these records; the dependency direction is never reversed. null means NOT MEASURED and is never coerced to 0.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "run_id",
+    "experiment_id",
+    "system",
+    "provenance_class",
+    "metric_version",
+    "schema_version"
+  ],
+  "properties": {
+    "record_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "experiment_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "system": {
+      "type": "string",
+      "enum": [
+        "nocert",
+        "citation_only",
+        "shieldagent",
+        "agentrr",
+        "pcg_mas"
+      ]
+    },
+    "provenance_class": {
+      "type": "string",
+      "enum": [
+        "DIRECT",
+        "DERIVED",
+        "MODELLED",
+        "PROTOCOL",
+        "REPLAY",
+        "TEST_FIXTURE",
+        "MOCK",
+        "UNKNOWN"
+      ]
+    },
+    "metric_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "schema_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "config_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "spec_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cell_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dataset": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "split": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "example_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "model_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_revision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tokenizer_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "backend_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provider_route": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dtype": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "quantization": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decoding_config_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prompt_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "backend_fingerprint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "checker_fingerprint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "claim_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_ids": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {}
+    },
+    "evidence_hashes": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {}
+    },
+    "v_h": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "v_pi": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "v_gamma": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "v_entail": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "check": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "certificate_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "int_fail": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "replay_fail": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "drift_fail": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "check_fail": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "cov_gap": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "n_channels_fired": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "contract_bad": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "eps_tax_label": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "eps_src_label": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "attempted": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "answered": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "accepted": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "controller_action": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "h_support": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "h_exec": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "h_joint": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "utility": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "loss_nocert": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "loss_pcg": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cov_cert": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cov_audit": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "k_redundancy": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "branch_ids": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {}
+    },
+    "branch_failures": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "resp_scores": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "resp_top1": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "resp_top3": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {}
+    },
+    "resp_margin": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "unresolved": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "replay_budget_M": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "failure_origin_known": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "policy_bundle_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "policy_decision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "latency_ms": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "phase_timings_ms": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "tokens_in": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "tokens_out": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "model_calls": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "retrieval_calls": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "tool_calls": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "checker_calls": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "replay_calls": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "billed_cost_usd": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cache_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stratum_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sampling_weight": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "corruption": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "shift_regime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "injection_regime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "host_fingerprint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "device": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_record_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "code_fingerprint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

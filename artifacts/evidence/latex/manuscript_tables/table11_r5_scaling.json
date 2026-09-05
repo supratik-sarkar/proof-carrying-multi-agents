@@ -1,0 +1,24 @@
+{
+  "label": "tab:r5_scaling",
+  "caption": "MODELLED SCENARIO ANALYSIS. Engineering scaling slopes are illustrative under the declared scaling configuration.",
+  "rows": [
+    {
+      "Variable": "Redundancy k",
+      "Sweep": "{1,2,4,8}",
+      "Token slope": 0.18,
+      "Latency slope": 0.23
+    },
+    {
+      "Variable": "Support size |S0|",
+      "Sweep": "{2,4,8,16,32}",
+      "Token slope": 0.024,
+      "Latency slope": 0.03
+    },
+    {
+      "Variable": "Chain depth d",
+      "Sweep": "{2,5,10,20}",
+      "Token slope": 0.017,
+      "Latency slope": 0.021
+    }
+  ]
+}

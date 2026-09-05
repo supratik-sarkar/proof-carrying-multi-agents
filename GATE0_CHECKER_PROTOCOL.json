@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "v3.0-gate0-frozen",
+  "workstream": "A15",
+  "title": "A15 Entailment Checker Selection and Calibration Protocol",
+  "freeze_timestamp_utc": "2026-09-05T15:20:00Z",
+  "target_alpha_ent": 0.05,
+  "calibration_split": "held_out_calibration_partition",
+  "threshold_rule": "max_coverage_subject_to_UCB_FPR_le_alpha_ent",
+  "statistical_bound": {
+    "confidence_level": 0.95,
+    "method": "Clopper_Pearson_exact_binomial_UCB"
+  },
+  "candidate_checkers": [
+    {
+      "id": "formal_z3_prover",
+      "type": "deterministic_smt",
+      "role": "primary_deterministic_entailment",
+      "timeout_ms": 5000
+    },
+    {
+      "id": "nli_calibrated_verifier",
+      "type": "llm_entailment_classifier",
+      "role": "semantic_claim_verifier",
+      "prompt_template_sha256": "3fa857c91a7e2b109e4f5012389abce4857201df184029471012398401293847",
+      "temperature": 0.0,
+      "seed": 42
+    }
+  ],
+  "test_firewall": {
+    "rule": "ONE_WAY_CALIBRATION_FIREWALL",
+    "description": "Thresholds, prompt templates and checker hyperparameters are frozen on the calibration partition prior to test set ingestion. Zero test-set feedback is permitted."
+  }
+}

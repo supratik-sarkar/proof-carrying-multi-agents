@@ -33,15 +33,31 @@ from pcg.graph import ActionNode, NodeType, ToolCallNode, TruthNode
 from pcg.orchestrator.langgraph_flow import PCGState
 
 
-AttackKind = Literal["evidence_swap", "schema_break", "policy_violation", "none"]
+AttackKind = Literal["evidence_swap", "schema_break", "policy_violation", "action_replay", "mixed_channel", "none"]
 
 
 def _attack_evidence_swap(state: PCGState, rng: random.Random) -> str:
-    """Pick a TruthNode at random and replace its payload with garbage."""
-    truths = state.graph.truth_nodes()
-    if not truths:
+    """Tamper with COMMITTED evidence so V_H actually fires.
+
+    Previously this picked any TruthNode in the retrieval pool, which meant
+    V_H rarely caught the swap when retrieval pool > top_k (the tampered
+    node was not in claim_cert.evidence_ids and so was never re-hashed at
+    check time). The fix targets only nodes the certificate committed to,
+    matching the guard convention used by schema_break / policy_violation.
+    """
+    if state.certificate is None:
+        return "no_cert"
+    committed_ids = tuple(state.certificate.claim_cert.evidence_ids)
+    if not committed_ids:
+        return "no_committed_evidence"
+    candidates = [
+        state.graph.nodes[nid]
+        for nid in committed_ids
+        if nid in state.graph.nodes and hasattr(state.graph.nodes[nid], "payload")
+    ]
+    if not candidates:
         return "no_truth_to_swap"
-    target = rng.choice(truths)
+    target = rng.choice(candidates)
     target.payload = b"TAMPERED " + rng.randbytes(32)
     return f"evidence_swap:{target.id}"
 
@@ -98,6 +114,62 @@ def _attack_policy_violation(state: PCGState, rng: random.Random) -> str:
     return f"policy_violation:{rogue.id}"
 
 
+def _attack_action_replay(state: PCGState, rng: random.Random) -> str:
+    """Open-set attack: corrupt the prover's ActionNode args.
+
+    This target lives OUTSIDE the closed channel taxonomy
+    (V_H/V_Pi/V_Gamma/V_entail). A correct responsibility estimator
+    should return "no confident attribution" (small |Resp| across all
+    components) rather than confidently pointing at any single component.
+    """
+    if state.certificate is None:
+        return "no_cert"
+    action_nodes = [n for n in state.graph.nodes.values()
+                     if isinstance(n, ActionNode)]
+    if not action_nodes:
+        return "no_action_node"
+    target = rng.choice(action_nodes)
+    target.args = {**target.args, "_open_set_corruption":
+                    f"rogue_{rng.randint(0, 1<<31)}"}
+    return f"action_replay:{target.id}"
+
+
+def _attack_mixed_channel(state: PCGState, rng: random.Random) -> str:
+    """Mixed-channel attack: tamper TWO components in different channels.
+
+    Corrupts evidence (V_H domain) AND schema (V_Gamma domain) in the same
+    record. A correct responsibility estimator should rank BOTH targets in
+    its top-2 by |Resp|. We record both target_ids so the runner can score
+    multi-label F1.
+    """
+    if state.certificate is None:
+        return "no_cert"
+    targets = []
+
+    # Evidence corruption (V_H)
+    committed_ids = tuple(state.certificate.claim_cert.evidence_ids)
+    if committed_ids:
+        ev_candidates = [
+            state.graph.nodes[nid] for nid in committed_ids
+            if nid in state.graph.nodes and hasattr(state.graph.nodes[nid], "payload")
+        ]
+        if ev_candidates:
+            ev_target = rng.choice(ev_candidates)
+            ev_target.payload = b"TAMPERED_MIXED " + rng.randbytes(24)
+            targets.append(ev_target.id)
+
+    # Schema corruption (V_Gamma)
+    sch_ids = list(state.certificate.exec_cert.schema_node_ids)
+    if sch_ids:
+        sch_target_id = rng.choice(sch_ids)
+        node = state.graph.nodes.get(sch_target_id)
+        if hasattr(node, "schema_id"):
+            node.schema_id = "MUTATED_MIXED_" + node.schema_id    # type: ignore[attr-defined]
+            targets.append(sch_target_id)
+
+    return f"mixed_channel:{','.join(targets) if targets else 'no_targets'}"
+
+
 def build_default_attacker(
     *,
     kind: AttackKind = "evidence_swap",
@@ -114,6 +186,10 @@ def build_default_attacker(
                 desc = _attack_schema_break(state, rng)
             elif kind == "policy_violation":
                 desc = _attack_policy_violation(state, rng)
+            elif kind == "action_replay":
+                desc = _attack_action_replay(state, rng)
+            elif kind == "mixed_channel":
+                desc = _attack_mixed_channel(state, rng)
             else:
                 desc = "none"
 

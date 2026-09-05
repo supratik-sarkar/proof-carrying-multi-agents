@@ -1,0 +1,27 @@
+# Validation 56-Cell Execution Configuration
+matrix:
+  models:
+    - id: phi-3.5-mini
+      tier: local
+    - id: qwen2.5-7b
+      tier: local
+    - id: llama-3.1-8b
+      tier: local
+    - id: gemma-2-9b-it
+      tier: local
+    - id: deepseek-llm-7b-chat
+      tier: local
+    - id: llama-3.3-70b
+      tier: colab_pro
+    - id: deepseek-v3
+      tier: colab_pro
+  datasets:
+    - fever
+    - hotpotqa
+    - twowiki
+    - tatqa
+    - toolbench
+    - pubmedqa
+    - weblinx
+    - adversarial_integrity
+  seeds: [0, 1, 2, 3, 4]

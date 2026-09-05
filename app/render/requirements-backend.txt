@@ -1,0 +1,5 @@
+# Backend-only. Deliberately excludes torch/transformers: the demo backend must
+# start fast and must not download models.
+fastapi>=0.110,<0.116
+uvicorn[standard]>=0.27,<0.32
+numpy>=1.26,<2.3

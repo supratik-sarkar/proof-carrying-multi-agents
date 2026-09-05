@@ -62,14 +62,36 @@ def summarize_payload(path: Path, payload: Any) -> dict:
         "source_file": str(path),
     }
 
-    # Parse useful metadata from directory name like:
-    # 20260510-013026_r1_hotpotqa_9ec00028_unknown
+    # Parse useful metadata. Priority:
+    #   1) config_snapshot.json sibling (authoritative — written by every R* runner)
+    #   2) directory name like 20260510-013026_r1_hotpotqa_9ec00028_unknown
+    #   3) defaults
+    cfg_path = path.parent / "config_snapshot.json"
+    cfg_dataset = cfg_model = None
+    if cfg_path.exists():
+        try:
+            import json as _json
+            cfg_obj = _json.loads(cfg_path.read_text())
+            cfg_dataset = (cfg_obj.get("dataset", {}) or {}).get("name")
+            cfg_model_raw = (cfg_obj.get("backend", {}) or {}).get("model_name") or ""
+            # Normalize HF repo strings -> paper-facing model names.
+            _model_map = {
+                "microsoft/Phi-3.5-mini-instruct": "phi-3.5-mini",
+                "Qwen/Qwen2.5-7B-Instruct": "qwen2.5-7B",
+                "deepseek-ai/deepseek-llm-7b-chat": "deepseek-llm-7b-chat",
+                "meta-llama/Llama-3.1-8B-Instruct": "Llama-3.1-8B",
+                "google/gemma-2-9b-it": "Gemma-2-9b-it",
+                "meta-llama/Llama-3.3-70B-Instruct": "Llama-3.3-70B",
+                "deepseek-ai/DeepSeek-V3": "deepseek-v3",
+            }
+            cfg_model = _model_map.get(cfg_model_raw, cfg_model_raw or None)
+        except Exception:
+            cfg_dataset = cfg_model = None
+
     parts = parent.split("_")
-    if len(parts) >= 3:
-        row.setdefault("dataset", parts[2])
-    else:
-        row.setdefault("dataset", "unknown")
-    row.setdefault("model", "unknown")
+    parsed_dataset = parts[2] if len(parts) >= 3 else None
+    row.setdefault("dataset", cfg_dataset or parsed_dataset or "unknown")
+    row.setdefault("model", cfg_model or "unknown")
 
     if isinstance(payload, dict):
         # Preserve common top-level metadata if scalar.
@@ -191,7 +213,11 @@ def pivot_rows(rows: list[dict]) -> list[dict]:
         if pcg_cost is not None:
             r["utility"] = max(0.0, min(1.0, 1.0 / (1.0 + float(pcg_cost))))
 
-        # R5: PCG overhead. For now normalize NoCert to 1.0.
+        # R5: actual per-claim token / latency from r5_aggregated.
+        # Each entry has keys backend, config, tokens_per_claim_mean,
+        # wall_ms_per_claim_mean. We pick the no-PCG baseline as "nocert"
+        # and the largest-k PCG config as "pcg_mas". Ratios are normalized
+        # to nocert = 1.0 so downstream tables stay comparable.
         agg = r.get("r5_aggregated")
         if isinstance(agg, str):
             try:
@@ -199,10 +225,35 @@ def pivot_rows(rows: list[dict]) -> list[dict]:
             except Exception:
                 agg = []
         if isinstance(agg, list) and agg:
-            r["tokens_pcg_mas"] = 1.0
-            r["latency_pcg_mas"] = 1.0
-
-        r["tokens_nocert"] = 1.0
+            nocert_row = None
+            pcg_row = None
+            for entry in agg:
+                cname = str(entry.get("config", "")).lower()
+                if any(t in cname for t in ("baseline_no_pcg", "no_pcg", "nocert", "no_cert")):
+                    nocert_row = entry
+                elif "pcg" in cname:
+                    if pcg_row is None or "k4" in cname:
+                        pcg_row = entry
+            if nocert_row is None:
+                nocert_row = agg[0]
+            if pcg_row is None:
+                pcg_row = agg[-1]
+            tok_nc = float(nocert_row.get("tokens_per_claim_mean") or 0.0)
+            lat_nc = float(nocert_row.get("wall_ms_per_claim_mean") or 0.0)
+            tok_pcg = float(pcg_row.get("tokens_per_claim_mean") or 0.0)
+            lat_pcg = float(pcg_row.get("wall_ms_per_claim_mean") or 0.0)
+            r["tokens_nocert"] = 1.0
+            r["latency_nocert"] = 1.0
+            r["tokens_pcg_mas"] = (tok_pcg / tok_nc) if tok_nc > 0 else 1.0
+            r["latency_pcg_mas"] = (lat_pcg / lat_nc) if lat_nc > 0 else 1.0
+            r["tokens_nocert_raw"] = tok_nc
+            r["tokens_pcg_mas_raw"] = tok_pcg
+            r["latency_nocert_raw_ms"] = lat_nc
+            r["latency_pcg_mas_raw_ms"] = lat_pcg
+        else:
+            r["tokens_nocert"] = 1.0
+            r["tokens_pcg_mas"] = None
+            r["latency_pcg_mas"] = None
 
         # Keep unavailable AgentRR fields explicit.
         r.setdefault("clean_harm_agentrr", None)

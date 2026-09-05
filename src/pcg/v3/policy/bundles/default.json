@@ -1,0 +1,9 @@
+{
+  "id": "pcg-mas-default",
+  "version": "v3.0",
+  "allowed_tools": ["search", "retrieve", "calculator", "sql_read", "http_get_allowlisted"],
+  "allowed_delegations": ["prover", "verifier", "retriever"],
+  "required_fields": ["actor", "action"],
+  "require_verifier_isolation": true,
+  "notes": "V_Gamma execution contract. Verifier isolation is a clause of Gamma, not advice."
+}

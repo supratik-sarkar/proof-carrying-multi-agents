@@ -1,0 +1,6 @@
+Regime,n,accepted attack success,false refusal,gate state
+isolated_verifier,400,0.0,0.0,CLOSED
+malicious_tool_output,400,0.0425,0.0,CLOSED
+poisoned_shard,400,0.0525,0.0,CLOSED
+shared_verifier,400,0.045,0.0,CLOSED
+common-mode floor q_cm,,0.05,,k* = 2.0

@@ -807,13 +807,13 @@ def collect_and_build(args: argparse.Namespace) -> None:
         "--rows",
         "results/tables/csv/paper_metrics.jsonl",
     ]
-    if args.allow_partial:
-        validate_cmd.append("--allow-partial")
+    if args.allow_partial_DISABLED:
+        validate_cmd.append("--DISABLED-allow-partial")
     run(validate_cmd)
 
     fig_cmd = [sys.executable, "scripts/figures/build_all_figures.py"]
-    if args.allow_partial:
-        fig_cmd.append("--allow-partial")
+    if args.allow_partial_DISABLED:
+        fig_cmd.append("--DISABLED-allow-partial")
     run(fig_cmd)
 
     run([sys.executable, "scripts/tables/build_all_tables.py"])
@@ -855,7 +855,7 @@ def main() -> int:
     parser.add_argument("--skip-pcg", action="store_true")
     parser.add_argument("--skip-baselines", action="store_true")
     parser.add_argument("--skip-build", action="store_true")
-    parser.add_argument("--allow-partial", action="store_true")
+    parser.add_argument("--DISABLED-allow-partial", action="store_true")
     parser.add_argument(
         "--build-scope",
         default="selected",

@@ -1,0 +1,54 @@
+{
+  "label": "tab:r1_r4_combined_old",
+  "caption": "R1--R4 consolidated view. Audit coverage, safety gain, Shield-to-PCG gap, responsibility lift, and harm-weighted control gain are independently derived.",
+  "rows": [
+    {
+      "Cell": "phi-3.5-mini/FEVER",
+      "Audit cov.": "0.786",
+      "Safety gain": "3.04x",
+      "Shield→PCG": "1.82x",
+      "Resp. lift": "11.4pp",
+      "Control gain": "1.50x"
+    },
+    {
+      "Cell": "qwen2.5-7B/HotpotQA",
+      "Audit cov.": "0.842",
+      "Safety gain": "2.78x",
+      "Shield→PCG": "2.30x",
+      "Resp. lift": "11.7pp",
+      "Control gain": "1.84x"
+    },
+    {
+      "Cell": "Llama-3.1-8B/PubMedQA",
+      "Audit cov.": "0.889",
+      "Safety gain": "2.63x",
+      "Shield→PCG": "1.84x",
+      "Resp. lift": "11.6pp",
+      "Control gain": "1.30x"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/TAT-QA",
+      "Audit cov.": "0.750",
+      "Safety gain": "1.17x",
+      "Shield→PCG": "1.07x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.00x"
+    },
+    {
+      "Cell": "Llama-3.3-70B/ToolBench",
+      "Audit cov.": "0.812",
+      "Safety gain": "2.03x",
+      "Shield→PCG": "1.44x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.13x"
+    },
+    {
+      "Cell": "deepseek-v3/WebLINX",
+      "Audit cov.": "0.812",
+      "Safety gain": "2.03x",
+      "Shield→PCG": "0.92x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "0.82x"
+    }
+  ]
+}

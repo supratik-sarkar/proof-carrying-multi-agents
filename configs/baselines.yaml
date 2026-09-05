@@ -1,0 +1,61 @@
+# Unified baseline registry under baselines/ umbrella directory
+baselines:
+  shieldagent:
+    name: ShieldAgent
+    source_type: author_vendored_policy_bank
+    path: baselines/shieldagent
+    external_vendor_path: external/shieldagent
+    pinned_commit: 9ec00028
+    license: MIT
+    execution_status: ready
+
+  verimap:
+    name: VERIMAP
+    source_type: author_vendored_contract_verifier
+    path: baselines/verimap
+    external_vendor_path: external/verimap
+    pinned_commit: 5b990c6e
+    license: Apache-2.0
+    execution_status: ready
+
+  agentrr:
+    name: AgentRR
+    source_type: author_vendored_replay_verifier
+    path: baselines/agentrr
+    external_vendor_path: external/agentrr
+    pinned_commit: 18dbf418
+    license: MIT
+    execution_status: ready
+
+  atlasprism:
+    name: PRISM/ATLAS
+    source_type: independent_task_adapter
+    path: baselines/atlasprism
+    arxiv_id: "2510.25890"
+    execution_status: ready
+
+  pcnrec:
+    name: PCN-Rec
+    source_type: independent_task_adapter
+    path: baselines/pcnrec
+    arxiv_id: "2601.09771"
+    execution_status: ready
+
+  clbc:
+    name: CLBC
+    source_type: independent_task_adapter
+    path: baselines/clbc
+    arxiv_id: "2603.00381"
+    execution_status: ready
+
+  citation_only:
+    name: Citation-Only
+    source_type: scope_matched_control
+    path: baselines/citation_only
+    execution_status: ready
+
+  no_certificate:
+    name: No Certificate
+    source_type: matched_stack_control
+    path: baselines/no_certificate
+    execution_status: ready

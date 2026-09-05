@@ -38,7 +38,7 @@ def read_metric_rows(path: str | Path) -> list[dict]:
     return rows
 
 
-def validate_headline_rows(rows: list[dict], *, source: str = "paper_metrics.jsonl", allow_partial: bool = False) -> None:
+def validate_headline_rows(rows: list[dict], *, source: str = "paper_metrics.jsonl", allow_partial_DISABLED: bool = False) -> None:
     if any(row.get("metric_source") == "schema_preflight_stub" for row in rows):
         raise SystemExit(
             f"{source} contains schema_preflight_stub rows. "
@@ -51,7 +51,7 @@ def validate_headline_rows(rows: list[dict], *, source: str = "paper_metrics.jso
         if missing:
             bad.append((i, missing))
 
-    if bad and not allow_partial:
+    if bad and not allow_partial_DISABLED:
         lines = [
             f"Paper metric validation failed for {source}.",
             "The figure/table builders require measured, paper-facing columns.",
@@ -66,7 +66,7 @@ def validate_headline_rows(rows: list[dict], *, source: str = "paper_metrics.jso
         )
         raise SystemExit("\n".join(lines))
 
-    if bad and allow_partial:
+    if bad and allow_partial_DISABLED:
         print(f"Partial metric validation allowed for {source}; {len(bad)} rows have missing headline fields.")
 
 

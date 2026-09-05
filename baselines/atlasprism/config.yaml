@@ -1,0 +1,6 @@
+# Configuration for baseline: PRISM/ATLAS
+name: "atlasprism"
+label: "PRISM/ATLAS"
+paper_title: "PRISM/ATLAS: Constraint-Guided Structured Artifact Generation for Model-Driven Engineering"
+arxiv_id: "2510.25890"
+adapter_type: "independent_task_adapter"

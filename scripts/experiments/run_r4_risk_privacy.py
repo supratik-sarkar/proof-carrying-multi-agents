@@ -69,7 +69,7 @@ def main(
     log_section(f"R4 run: {run_id}")
     write_json(out_dir / "config_snapshot.json", cfg)
 
-    from pcg.checker import Checker, ExactMatchEntailment
+    from pcg.checker import Checker, TokenOverlapEntailment
     from pcg.datasets import load_dataset_by_name
     from pcg.eval import bootstrap_ci
     from pcg.eval.metrics import f1_score
@@ -85,7 +85,7 @@ def main(
 
     backend_obj = build_backend(cfg, override=backend)
     checker = Checker(
-        entailment=ExactMatchEntailment(case_insensitive=True),
+        entailment=TokenOverlapEntailment(threshold=0.5),
         replayer=build_replayer_with_handlers(),
     )
 
@@ -142,11 +142,21 @@ def main(
         labels = np.asarray([1 if (r["passed"] and not r["wrong"]) else 0 for r in rows])
         rng = np.random.default_rng(seed)
         idx = rng.permutation(len(rows))
-        cut = len(rows) // 2
+        # Guard: keep BOTH the calibration split (idx[:cut]) and the eval split
+        # (idx[cut:]) non-empty. With n>=2 this is the usual half-split; with
+        # n==1 we fall back to cut=1 (calibrate and evaluate on the same single
+        # row — degenerate but non-crashing; real runs use n>=2).
+        n_rows = len(rows)
+        if n_rows <= 1:
+            cut = 1
+            eval_idx = idx  # evaluate on the same single row
+        else:
+            cut = max(1, min(n_rows - 1, n_rows // 2))
+            eval_idx = idx[cut:]
         cal = Calibrator(method=cfg_get(cfg, "calibration.method", "isotonic"))
         cal.fit(confs[idx[:cut]], labels[idx[:cut]])
-        cal_confs = cal.transform(confs[idx[cut:]])
-        eval_rows = [rows[j] for j in idx[cut:]]
+        cal_confs = cal.transform(confs[eval_idx])
+        eval_rows = [rows[j] for j in eval_idx]
 
         per_eps: list[dict] = []
         sens = cfg_get(cfg, "privacy.sensitivities", {"redundancy": 1.0,

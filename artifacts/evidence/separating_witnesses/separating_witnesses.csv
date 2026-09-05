@@ -1,0 +1,5 @@
+witness_id,failed_channel,failed_channels_count,certificate_valid
+W_H,V_H,1,True
+W_Pi,V_Pi,1,True
+W_Gamma,V_Gamma,1,True
+W_entail,V_entail,1,True

@@ -1,0 +1,20 @@
+# A11 — union_tightness
+
+- release: `v3.0`
+- provenance class: `DERIVED`
+- spec hash: `e26c588d5f7bfa8b`
+- requires model calls: `False`
+
+## Metrics
+```json
+{"containment_slack_note":"reported separately from finite-sample UCB slack per the v3.0 contract","experiment_id":"A11","identity_residual":2.7755575615628914e-17,"lambda_union":0.14222222222222222,"metric_version":"v3.0.0","multi_channel_rate":0.11222222222222222,"n":900,"n_records":900,"per_channel":{"check_fail":80,"cov_gap":88,"drift_fail":83,"int_fail":102,"replay_fail":88},"pr_union":0.3477777777777778,"spec_hash":"e26c588d5f7bfa8bb0ce4fa62ef3521f206826fdddd62789a7f6c8af6f56eae5","sum_marginals":0.49}
+```
+
+## Checks
+```json
+{"all_five_channels_counted":true,"identity_exact":true,"records_present":true}
+```
+
+## Failures and limitations
+
+None recorded.

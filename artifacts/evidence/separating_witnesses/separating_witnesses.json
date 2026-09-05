@@ -1,0 +1,33 @@
+{
+  "empirical_status": "NOT_ESTABLISHED",
+  "status": "PASS",
+  "total_records_verified": 13440,
+  "total_witnesses": 4,
+  "witnesses": [
+    {
+      "witness_id": "W_H",
+      "failed_channel": "V_H",
+      "failed_channels_count": 1,
+      "certificate_valid": true
+    },
+    {
+      "witness_id": "W_Pi",
+      "failed_channel": "V_Pi",
+      "failed_channels_count": 1,
+      "certificate_valid": true
+    },
+    {
+      "witness_id": "W_Gamma",
+      "failed_channel": "V_Gamma",
+      "failed_channels_count": 1,
+      "certificate_valid": true
+    },
+    {
+      "witness_id": "W_entail",
+      "failed_channel": "V_entail",
+      "failed_channels_count": 1,
+      "certificate_valid": true
+    }
+  ],
+  "_provenance_correction": "Corrected during clean-room repair. The prior value asserted native execution that no evidence in this repository supports. See reports/ARTIFACT_56_CELL_LINEAGE.md."
+}

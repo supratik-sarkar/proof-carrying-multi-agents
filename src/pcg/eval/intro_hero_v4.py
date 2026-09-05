@@ -63,9 +63,6 @@ except Exception:
         "shieldagent": "ShieldAgent",
         "agentrr": "AgentRR",
         "verimap": "VERIMAP",
-        "atlasprism": "PRISM/ATLAS",
-        "pcnrec": "PCN-Rec",
-        "clbc": "CLBC",
         "pcg_mas": "PCG-MAS (ours)",
     }
     METHOD_COLORS = {
@@ -73,15 +70,11 @@ except Exception:
         "shieldagent": "#f28e2b",
         "agentrr": "#7c3aed",
         "verimap": "#0891b2",
-        "atlasprism": "#ca8a04",
-        "pcnrec": "#16a34a",
-        "clbc": "#be123c",
         "pcg_mas": "#e63946",
     }
     INTRO_HERO_METHODS = ["no_certificate", "shieldagent", "agentrr", "pcg_mas"]
     APPENDIX_HERO_METHODS = [
-        "no_certificate", "shieldagent", "verimap", "atlasprism",
-        "pcnrec", "clbc", "agentrr", "pcg_mas",
+        "no_certificate", "shieldagent", "verimap", "agentrr", "pcg_mas",
     ]
 
 METHODS = list(INTRO_HERO_METHODS)

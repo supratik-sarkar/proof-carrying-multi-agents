@@ -91,6 +91,28 @@ class OrchestratorConfig:
     risk_lambda: float = 1.0
     h_fa: float = 1.0
     h_ref: float = 0.0
+    # --- Ablation flags (Phase 8) ---
+    # Each flag disables ONE PCG-MAS component while keeping the cell, model,
+    # prompts, evidence pool, and backend identical. Defaults preserve current
+    # behavior so R1-R5 callsites are unaffected.
+    disable_replay:         bool = False     # NoReplay     : V_Pi check is skipped
+    disable_redundancy:     bool = False     # NoRedundancy : force k=1 (single branch)
+    disable_responsibility: bool = False     # NoResp       : skip mask-and-replay diagnosis
+    disable_risk_control:   bool = False     # NoRiskCtrl   : always_answer policy
+    # --- Channel ablation flags (Phase 12) ---
+    # Targeted single-channel ablations: each disables exactly one verifier
+    # channel while leaving the other three active. Used for the channel
+    # ablation table (-V_H / -V_Pi / -V_Gamma / -V_entail).
+    disable_v_h:            bool = False     # -V_H         : skip evidence integrity check
+    disable_v_pi:           bool = False     # -V_Pi        : skip replay-consistency check ONLY (V_H still active)
+    disable_v_gamma:        bool = False     # -V_Gamma     : skip execution-contract check
+    disable_v_entail:       bool = False     # -V_entail    : skip claim entailment check
+    # --- Adversarial replay-stress knobs (Phase 8 figure/table) ---
+    # epsilon_adv: fraction of evidence/tool states perturbed in adversarial half
+    # p_fresh:     probability a tool call re-fetches live (mutable) state instead
+    #              of consulting its committed snapshot. Stresses replay-isolation.
+    epsilon_adv: float = 0.0
+    p_fresh:     float = 0.0
 
 
 # ---------------------------------------------------------------------------
@@ -118,21 +140,45 @@ def attacker_node(
         return attacker_fn(state)
 
 
+def _apply_fresh_mode(state: PCGState, p_fresh: float) -> None:
+    """Stress test for replay isolation. With probability p_fresh per committed
+    truth node, mutate its payload to simulate a tool re-fetch yielding
+    different bytes than what the certificate committed. Replay-disabled
+    variants degrade most here because committed snapshots can no longer
+    isolate the checker from this drift.
+    """
+    if p_fresh <= 0.0 or state.certificate is None:
+        return
+    import random as _rnd
+    rng = _rnd.Random(state.meta.get("fresh_seed", 0))
+    for nid in state.certificate.claim_cert.evidence_ids:
+        if rng.random() < p_fresh:
+            node = state.graph.nodes.get(nid)
+            if node is not None and hasattr(node, "payload"):
+                node.payload = b"FRESH_DRIFT " + rng.randbytes(8)
+
+
 def verifier_node(
     state: PCGState,
     *,
     checker: Checker,
 ) -> PCGState:
-    """Run Check(Z; G_t) and store the structured result.
-
-    If the check fails, increment `state.retries` HERE (inside a node).
-    LangGraph persists state mutations made by node functions; mutations
-    inside conditional-edge functions are silently discarded. Centralizing
-    the increment here is the only way the retry counter can grow.
-    """
+    """Run Check(Z; G_t) and store the structured result."""
     with state.meter.phase("verifier"):
         if state.certificate is None:
             return state
+        # NoReplay ablation: tell the checker to short-circuit V_Pi.
+        cfg = state.meta.get("orchestrator_cfg")
+        if cfg is not None:
+            checker.disable_replay = bool(getattr(cfg, "disable_replay", False))
+            checker.disable_v_h      = bool(getattr(cfg, "disable_v_h",      False))
+            checker.disable_v_pi     = bool(getattr(cfg, "disable_v_pi",     False))
+            checker.disable_v_gamma  = bool(getattr(cfg, "disable_v_gamma",  False))
+            checker.disable_v_entail = bool(getattr(cfg, "disable_v_entail", False))
+            # Fresh-mode replay stress (Phase 8 figure caption: p_fresh=0.3)
+            p_fresh = float(getattr(cfg, "p_fresh", 0.0) or 0.0)
+            if p_fresh > 0.0:
+                _apply_fresh_mode(state, p_fresh)
         state.check_result = checker.check(state.certificate, state.graph)
         if not state.check_result.passed:
             state.retries += 1
@@ -177,12 +223,12 @@ def _post_verifier_route(state: PCGState, cfg: OrchestratorConfig) -> str:
         return "end"
     passed = state.check_result.passed
     if passed:
-        return "debugger" if cfg.enable_debugger else "end"
+        return "debugger" if (cfg.enable_debugger and not getattr(cfg, "disable_responsibility", False)) else "end"
     # state.retries was already incremented in verifier_node; allow up to
     # max_retries failed-and-retried attempts.
     if state.retries <= cfg.max_retries:
         return "prover"     # retry with a different retriever / branch
-    return "debugger" if cfg.enable_debugger else "end"
+    return "debugger" if (cfg.enable_debugger and not getattr(cfg, "disable_responsibility", False)) else "end"
 
 
 # ---------------------------------------------------------------------------
@@ -354,6 +400,11 @@ def run_one_example(
         debugger_fn = build_default_debugger(checker=checker, cfg=cfg)
 
     state = PCGState(example=example)
+    # Stamp orchestrator cfg into state.meta so node functions can read ablation flags.
+    state.meta["orchestrator_cfg"] = cfg
+    state.meta["disable_redundancy"] = bool(getattr(cfg, "disable_redundancy", False))
+    if cfg.enable_attacker and getattr(cfg, "epsilon_adv", 0.0) > 0.0:
+        state.meta["epsilon_adv"] = float(cfg.epsilon_adv)
     runner = build_pcg_graph(
         cfg, prover_fn=prover_fn, attacker_fn=attacker_fn,
         debugger_fn=debugger_fn, checker=checker,

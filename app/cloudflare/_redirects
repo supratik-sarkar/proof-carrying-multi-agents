@@ -1,0 +1,2 @@
+# SPA fallback. API traffic goes to the Render backend via PCG_API_BASE, never same-origin.
+/*    /index.html   200

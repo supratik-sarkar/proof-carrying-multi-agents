@@ -1,0 +1,18 @@
+\begin{table}[h]
+\centering
+\small
+\caption{Table 2: R1-R4 combined (reconciled empirical metrics)}
+\label{tab:r1_r4_combined_old}
+\begin{tabular}{l|cc|cc|c}
+\hline
+Model / Dataset & $H_{\mathrm{nocert}}$ & $H_{\mathrm{pcg}}$ & $\mathrm{Cov}_{\mathrm{control}}$ & $\mathrm{Cov}_{\mathrm{audit}}$ & $G_{\mathrm{safe}}$ \\
+\hline
+phi-3.5-mini / fever & 0.139 & 0.082 & 0.817 & 0.950 & 1.70x \\
+gemma-2-9b-it / tat-qa & 0.174 & 0.091 & 0.825 & 0.950 & 1.91x \\
+llama-3.3-70b / toolbench & 0.191 & 0.100 & 0.833 & 0.950 & 1.91x \\
+deepseek-v3 / weblinx & 0.165 & 0.080 & 0.833 & 0.950 & 2.07x \\
+qwen2.5-7b / hotpotqa & 0.217 & 0.091 & 0.825 & 0.950 & 2.39x \\
+llama-3.1-8b / pubmedqa & 0.148 & 0.051 & 0.825 & 0.950 & 2.93x \\
+\hline
+\end{tabular}
+\end{table}

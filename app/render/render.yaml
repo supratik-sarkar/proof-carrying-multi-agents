@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: pcg-mas-api
+    runtime: python
+    plan: starter
+    region: oregon
+    branch: main
+    rootDir: .
+    buildCommand: pip install -r app/render/requirements-backend.txt
+    startCommand: bash app/render/start.sh
+    # Health check is deliberately the FAST endpoint: it must not initialise
+    # heavyweight optional components. Prior deployments failed on slow readiness.
+    healthCheckPath: /health
+    autoDeploy: false
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.13
+      - key: PCG_OFFLINE_ONLY
+        value: "1"
+      - key: LANGSMITH_ENABLED
+        value: "false"
+      - key: NEMO_GUARDRAILS_ENABLED
+        value: "false"
+      - key: PCG_CORS_ORIGINS
+        value: https://pcg-mas-demo.pages.dev
+      - key: PCG_ARTIFACT_ROOT
+        value: /opt/render/project/src/artifacts/v3_0
+      # Provider keys are NEVER set here for the public demo. BYOK is per-request.

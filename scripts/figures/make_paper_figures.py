@@ -67,23 +67,13 @@ except Exception:
         "shieldagent": "#f28e2b",
         "agentrr": "#7c3aed",
         "verimap": "#0891b2",
-        "atlasprism": "#ca8a04",
-        "pcnrec": "#16a34a",
-        "clbc": "#be123c",
+        "verimap": "#0891b2",
         "pcg_mas": "#e63946",
     }
     INTRO_HERO_METHODS = ["no_certificate", "shieldagent", "agentrr", "pcg_mas"]
     APPENDIX_HERO_METHODS = [
-        "no_certificate", "shieldagent", "verimap", "atlasprism",
-        "pcnrec", "clbc", "agentrr", "pcg_mas",
+        "no_certificate", "shieldagent", "verimap", "agentrr", "pcg_mas",
     ]
-    SOTA_CALIBRATED = {
-        "verimap": {"harm_vs_no_cert": 0.50, "bound_gap_from_pcg": 20.0, "token_multiplier_extra": 0.20},
-        "atlasprism": {"harm_vs_no_cert": 0.46, "bound_gap_from_pcg": 17.0, "token_multiplier_extra": 0.24},
-        "pcnrec": {"harm_vs_no_cert": 0.52, "bound_gap_from_pcg": 22.0, "token_multiplier_extra": 0.18},
-        "clbc": {"harm_vs_no_cert": 0.49, "bound_gap_from_pcg": 19.0, "token_multiplier_extra": 0.21},
-        "agentrr": {"harm_vs_no_cert": 0.44, "bound_gap_from_pcg": 15.0, "token_multiplier_extra": 0.26},
-    }
 
 METHODS = ["no_certificate", "shieldagent", "pcg_mas"]
 
@@ -2209,22 +2199,22 @@ def _build_hero_entries(rows: List[Dict[str, Any]], mod: Any, methods: list[str]
                 "pcg_mas": by_method.get("pcg_mas", {}).get("bad", 0.0),
             },
             harm={
-                "no_certificate": by_method.get("no_certificate", {}).get("harm", 0.0),
-                "shieldagent": by_method.get("shieldagent", {}).get("harm", 0.0),
-                "agentrr": by_method.get("agentrr", {}).get("harm", 0.0),
-                "pcg_mas": by_method.get("pcg_mas", {}).get("harm", 0.0),
+                "no_certificate": by_method.get("no_certificate", {}).get("harm"),
+                "shieldagent": by_method.get("shieldagent", {}).get("harm"),
+                "agentrr": by_method.get("agentrr", {}).get("harm"),
+                "pcg_mas": by_method.get("pcg_mas", {}).get("harm"),
             },
             utility={
-                "no_certificate": by_method.get("no_certificate", {}).get("utility", 0.0),
-                "shieldagent": by_method.get("shieldagent", {}).get("utility", 0.0),
-                "agentrr": by_method.get("agentrr", {}).get("utility", 0.0),
-                "pcg_mas": by_method.get("pcg_mas", {}).get("utility", 0.0),
+                "no_certificate": by_method.get("no_certificate", {}).get("utility"),
+                "shieldagent": by_method.get("shieldagent", {}).get("utility"),
+                "agentrr": by_method.get("agentrr", {}).get("utility"),
+                "pcg_mas": by_method.get("pcg_mas", {}).get("utility"),
             },
             tokens={
-                "no_certificate": by_method.get("no_certificate", {}).get("tokens", 1.0),
-                "shieldagent": by_method.get("shieldagent", {}).get("tokens", 1.0),
-                "agentrr": by_method.get("agentrr", {}).get("tokens", 1.0),
-                "pcg_mas": by_method.get("pcg_mas", {}).get("tokens", 1.0),
+                "no_certificate": by_method.get("no_certificate", {}).get("tokens"),
+                "shieldagent": by_method.get("shieldagent", {}).get("tokens"),
+                "agentrr": by_method.get("agentrr", {}).get("tokens"),
+                "pcg_mas": by_method.get("pcg_mas", {}).get("tokens"),
             },
             token_multiplier={
                 "no_certificate": by_method.get("no_certificate", {}).get("token_multiplier", 1.0),
@@ -2272,8 +2262,8 @@ def _build_hero_entries(rows: List[Dict[str, Any]], mod: Any, methods: list[str]
             },
             latency={
                 "no_certificate": 1.0,
-                "shieldagent": by_method.get("shieldagent", {}).get("latency", 1.0),
-                "pcg_mas": by_method.get("pcg_mas", {}).get("latency", 1.0),
+                "shieldagent": by_method.get("shieldagent", {}).get("latency"),
+                "pcg_mas": by_method.get("pcg_mas", {}).get("latency"),
             },
             responsibility_top1={
                 "no_certificate": 0.0,
@@ -2522,7 +2512,7 @@ def r1_audit_with_drift(cells: list[dict], outdir: Path) -> None:
                 "replay": float(cell["v5_audit"].get("replay", 0.0) or 0.0),
                 "drift": float(cell["v5_audit"].get("drift", 0.0) or 0.0),
                 "check": float(cell["v5_audit"].get("check", 0.0) or 0.0),
-                "coverage": float(cell["v5_audit"].get("coverage", 0.0) or 0.0),
+                "coverage": float(cell["v5_audit"].get("coverage") or 0.0),
             }
         row = cell.get("_source_row", {})
         if "_final_r1_components" in globals():
@@ -2765,7 +2755,7 @@ if __name__ == "__main__":
     parser.add_argument("--rows", type=str, required=True)
     parser.add_argument("--outdir", type=str, default="results/figures")
     parser.add_argument(
-        "--allow-partial",
+        "--DISABLED-allow-partial",
         action="store_true",
         help="Allow private layout/debug figure generation when headline metrics are incomplete.",
     )
@@ -2779,7 +2769,7 @@ if __name__ == "__main__":
     else:
         raise SystemExit(f"Missing rows file: {rows_path}")
 
-    validate_headline_rows(rows, source=str(rows_path), allow_partial=args.allow_partial)
+    validate_headline_rows(rows, source=str(rows_path), allow_partial_DISABLED=args.allow_partial_DISABLED)
     rows = alias_paper_rows(rows)
 
     make_all_figures(rows, Path(args.outdir))

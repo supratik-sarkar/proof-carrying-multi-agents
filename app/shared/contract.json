@@ -1,0 +1,675 @@
+{
+  "PCG_MAS_RELEASE": "v3.0",
+  "artifact_schema_version": "3.0.0",
+  "audit_channels": [
+    "IntFail",
+    "ReplayFail",
+    "DriftFail",
+    "CheckFail",
+    "CovGap"
+  ],
+  "conjunct_to_channels": {
+    "V_Gamma": [
+      "CovGap",
+      "CheckFail"
+    ],
+    "V_H": [
+      "IntFail",
+      "CheckFail"
+    ],
+    "V_Pi": [
+      "ReplayFail",
+      "DriftFail",
+      "CheckFail"
+    ],
+    "V_vdash": [
+      "CheckFail"
+    ]
+  },
+  "conjuncts": [
+    "V_H",
+    "V_Pi",
+    "V_Gamma",
+    "V_vdash"
+  ],
+  "controller_actions": [
+    "Answer",
+    "Verify",
+    "Escalate",
+    "Refuse"
+  ],
+  "gate_states": [
+    "OPEN",
+    "CLOSED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "graph_nodes": [
+    "request",
+    "task_normalization",
+    "generation",
+    "evidence_acquisition",
+    "evidence_commitment",
+    "execution_contract",
+    "entailment_check",
+    "replay_check",
+    "audit",
+    "dependence",
+    "controller",
+    "terminal"
+  ],
+  "graph_terminals": [
+    "accepted",
+    "repaired",
+    "escalated",
+    "refused"
+  ],
+  "n_figures": 10,
+  "n_tables": 33,
+  "provenance_classes": [
+    "DIRECT",
+    "DERIVED",
+    "MODELLED",
+    "PROTOCOL",
+    "REPLAY",
+    "TEST_FIXTURE",
+    "MOCK",
+    "UNKNOWN"
+  ],
+  "record_schema": {
+    "$id": "https://pcg-mas/schemas/per_example_record.v3.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "description": "Keystone record. Every metric, table and figure derives from these records; the dependency direction is never reversed. null means NOT MEASURED and is never coerced to 0.",
+    "properties": {
+      "accepted": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "answered": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "attempted": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "backend_fingerprint": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "backend_type": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "billed_cost_usd": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "branch_failures": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "branch_ids": {
+        "items": {},
+        "type": [
+          "array",
+          "null"
+        ]
+      },
+      "cache_state": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "cell_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "certificate_hash": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "check": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "check_fail": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "checker_calls": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "checker_fingerprint": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "claim_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "code_fingerprint": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "config_hash": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "contract_bad": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "controller_action": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "corruption": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "cov_audit": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "cov_cert": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "cov_gap": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "dataset": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "decoding_config_hash": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "device": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "drift_fail": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "dtype": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "eps_src_label": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "eps_tax_label": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "evidence_hashes": {
+        "items": {},
+        "type": [
+          "array",
+          "null"
+        ]
+      },
+      "evidence_ids": {
+        "items": {},
+        "type": [
+          "array",
+          "null"
+        ]
+      },
+      "example_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "experiment_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "failure_origin_known": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "h_exec": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "h_joint": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "h_support": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "host_fingerprint": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "injection_regime": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "int_fail": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "k_redundancy": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "latency_ms": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "loss_nocert": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "loss_pcg": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "metric_version": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "model_calls": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "model_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "model_revision": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "n_channels_fired": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "phase_timings_ms": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "policy_bundle_hash": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "policy_decision": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "prompt_hash": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "provenance_class": {
+        "enum": [
+          "DIRECT",
+          "DERIVED",
+          "MODELLED",
+          "PROTOCOL",
+          "REPLAY",
+          "TEST_FIXTURE",
+          "MOCK",
+          "UNKNOWN"
+        ],
+        "type": "string"
+      },
+      "provider_route": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "quantization": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "record_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "replay_budget_M": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "replay_calls": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "replay_fail": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "resp_margin": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "resp_scores": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "resp_top1": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "resp_top3": {
+        "items": {},
+        "type": [
+          "array",
+          "null"
+        ]
+      },
+      "retrieval_calls": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "run_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "sampling_weight": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "schema_version": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "seed": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "shift_regime": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "source_record_hash": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "spec_hash": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "split": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "stratum_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "system": {
+        "enum": [
+          "nocert",
+          "citation_only",
+          "shieldagent",
+          "agentrr",
+          "pcg_mas"
+        ],
+        "type": "string"
+      },
+      "tokenizer_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "tokens_in": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "tokens_out": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "tool_calls": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "unresolved": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "utility": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "v_entail": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "v_gamma": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "v_h": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "v_pi": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "required": [
+      "record_id",
+      "run_id",
+      "experiment_id",
+      "system",
+      "provenance_class",
+      "metric_version",
+      "schema_version"
+    ],
+    "title": "PCG-MAS canonical per-example record (v3.0)",
+    "type": "object"
+  },
+  "record_schema_version": "3.0.0",
+  "residuals_outside_channels": [
+    "eps_tax",
+    "eps_src"
+  ],
+  "scientific_schema_version": "3.0.0",
+  "semantics": {
+    "acceptance": "checker-relative external recomputability, NOT proof of world truth",
+    "eps_src": "source/world-truth residual; outside the certificate",
+    "eps_tax": "open-world taxonomy residual; challenge-set alarm, not a deployment bound",
+    "null_is_not_zero": true,
+    "responsibility": "replay-interventional attribution; not causal root cause",
+    "unknown_is_failure": true
+  },
+  "systems": [
+    "nocert",
+    "citation_only",
+    "shieldagent",
+    "agentrr",
+    "pcg_mas"
+  ],
+  "workstreams": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "A14",
+    "A15",
+    "A16",
+    "A17",
+    "A18"
+  ]
+}

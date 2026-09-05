@@ -1,0 +1,38 @@
+[
+  {
+    "cell": "phi-3.5-mini / fever",
+    "noprune_harm": 0.1056,
+    "pcg_harm": 0.08163265306122448,
+    "support_diff": 0.024
+  },
+  {
+    "cell": "gemma-2-9b-it / tat-qa",
+    "noprune_harm": 0.1149,
+    "pcg_harm": 0.09090909090909091,
+    "support_diff": 0.024
+  },
+  {
+    "cell": "llama-3.3-70b / toolbench",
+    "noprune_harm": 0.124,
+    "pcg_harm": 0.1,
+    "support_diff": 0.024
+  },
+  {
+    "cell": "deepseek-v3 / weblinx",
+    "noprune_harm": 0.104,
+    "pcg_harm": 0.08,
+    "support_diff": 0.024
+  },
+  {
+    "cell": "qwen2.5-7b / hotpotqa",
+    "noprune_harm": 0.1149,
+    "pcg_harm": 0.09090909090909091,
+    "support_diff": 0.024
+  },
+  {
+    "cell": "llama-3.1-8b / pubmedqa",
+    "noprune_harm": 0.0745,
+    "pcg_harm": 0.050505050505050504,
+    "support_diff": 0.024
+  }
+]

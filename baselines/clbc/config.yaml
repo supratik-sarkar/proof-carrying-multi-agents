@@ -1,0 +1,6 @@
+# Configuration for baseline: CLBC
+name: "clbc"
+label: "CLBC"
+paper_title: "CLBC: Certified Bounds on Covert Signaling in Colluding Agent Systems"
+arxiv_id: "2603.00381"
+adapter_type: "independent_task_adapter"

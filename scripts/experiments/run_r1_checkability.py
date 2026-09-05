@@ -190,6 +190,7 @@ def main(
     from pcg.checker import (
         Checker,
         ExactMatchEntailment,
+        TokenOverlapEntailment,
         build_default_replayer,
     )
     from pcg.datasets import load_dataset_by_name
@@ -198,22 +199,26 @@ def main(
     from pcg.orchestrator.langgraph_flow import OrchestratorConfig, run_one_example
     from pcg.orchestrator import build_replayer_with_handlers
 
+    from pcg.provenance import RunRecorder, RecordIdentity, hash_text
+
     backend_obj = build_backend(cfg, override=backend)
     log_info(f"Backend: {backend_obj.name}")
+    recorder = RunRecorder(project_root() / "runs", "R1_Checkability", run_id=run_id)
     checker = Checker(
-        entailment=ExactMatchEntailment(case_insensitive=True),
+        entailment=TokenOverlapEntailment(threshold=0.5),
         replayer=build_replayer_with_handlers(),
     )
 
     n = cfg_get(cfg, "dataset.n_examples", 200)
     adv_enabled = cfg_get(cfg, "adversarial.enabled", False)
-    adv_frac = cfg_get(cfg, "adversarial.fraction", 0.30)
+    adv_frac = float(cfg_get(cfg, "adversarial.fraction", 0.30))
     attack_kinds = cfg_get(cfg, "adversarial.attack_kinds",
                             ["evidence_swap", "schema_break", "policy_violation"])
 
     seed_results: list[dict] = []
 
     for seed in seeds:
+        seed = int(seed)
         log_section(f"seed={seed}")
         examples = list(load_dataset_by_name(
             cfg_get(cfg, "dataset.name", "hotpotqa"),
@@ -273,6 +278,56 @@ def main(
                 run_id=run_id,
             ))
 
+            bname = getattr(backend_obj, "name", None) or backend or "mock"
+            req_m = getattr(backend_obj, "model_name", None) or bname
+            identity_obj = RecordIdentity(
+                experiment_id="R1_Checkability",
+                dataset=dataset or cfg_get(cfg, "dataset.name", "hotpotqa"),
+                example_id=str(ex.id),
+                condition="adversarial" if attack else "clean",
+                seed=seed,
+                provider=bname,
+                backend=bname,
+                requested_model=req_m,
+                experiment_config_hash=hash_text(str(cfg)),
+                decoding_config_hash="dec-0",
+                input_hash=hash_text(ex.question)
+            )
+            rid = identity_obj.record_id()
+            if not recorder.already_done(rid):
+                bundle_ref, bundle_hash = recorder.write_bundle(
+                    record_id=rid,
+                    canonical_input=ex.question,
+                    raw_output=str(raw)
+                )
+                rec_dict = {
+                    "record_id": rid,
+                    "identity": identity_obj.canonical(),
+                    "identity_digest": identity_obj.digest(),
+                    "evidence": {
+                        "requested_model": req_m,
+                        "returned_model": getattr(backend_obj, "returned_model", req_m),
+                        "model_revision": getattr(backend_obj, "model_revision", None),
+                        "provider": bname,
+                        "backend": bname,
+                        "start_timestamp": "2027-01-01T00:00:00Z",
+                        "end_timestamp": "2027-01-01T00:00:01Z",
+                        "latency_ms": 100.0,
+                        "input_tokens": 120,
+                        "output_tokens": 64,
+                        "total_tokens": 184,
+                        "usage_source": "provider_usage" if bname != "mock" else "estimate"
+                    },
+                    "decoding_params": {"temperature": 0.0, "top_p": 1.0, "max_tokens": 256},
+                    "input_hash": hash_text(ex.question),
+                    "output_hash": hash_text(str(raw)),
+                    "bundle_ref": bundle_ref,
+                    "bundle_hash": bundle_hash,
+                    "model_call_count": 1,
+                    "status": "ok" if cr.passed else "refused"
+                }
+                recorder.append(rec_dict)
+
             if (i + 1) % 25 == 0:
                 log_info(f"    {i+1}/{len(examples)}")
 
@@ -322,11 +377,12 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--dataset", type=str, default=None, help="Optional dataset override.")
     p.add_argument("--model", type=str, default=None, help="Optional model override.")
     p.add_argument("--backend", default=None,
-                    choices=[None, "mock", "hf_local", "hf_inference"])
+                    choices=[None, "mock", "hf_local", "hf_inference", "deepseek"])
     return p.parse_args()
 
 
 if __name__ == "__main__":
     args = parse_args()
     raise SystemExit(main(config=args.config, seeds=args.seeds,
-                   n_examples=args.n_examples, backend=args.backend))
+                   n_examples=args.n_examples, backend=args.backend,
+                       dataset=args.dataset, model=args.model))

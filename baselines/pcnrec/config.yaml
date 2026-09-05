@@ -1,0 +1,6 @@
+# Configuration for baseline: PCN-Rec
+name: "pcnrec"
+label: "PCN-Rec"
+paper_title: "PCN-Rec: Proof-Carrying Negotiation for Recommender Systems"
+arxiv_id: "2601.09771"
+adapter_type: "independent_task_adapter"

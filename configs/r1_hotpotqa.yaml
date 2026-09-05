@@ -7,7 +7,7 @@
 dataset:
   name: hotpotqa
   split: validation
-  n_examples: 200
+  n_examples: 500
 
 backend:
   kind: hf_local            # mock | hf_local | hf_inference
@@ -28,7 +28,7 @@ checker:
 # R1-specific: include adversarial attacks to exercise IntFail / CheckFail channels
 adversarial:
   enabled: true
-  fraction: 0.30            # 30% of examples are tampered
+  fraction: 1.0            # 30% of examples are tampered
   attack_kinds: [evidence_swap, schema_break, policy_violation]
 
 stats:

@@ -67,7 +67,7 @@ def main(
     write_json(out_dir / "config_snapshot.json", cfg)
 
     from pcg.agents.prover import ProverConfig, build_default_prover
-    from pcg.checker import Checker, ExactMatchEntailment
+    from pcg.checker import Checker, TokenOverlapEntailment
     from pcg.datasets import load_dataset_by_name
     from pcg.eval import bootstrap_ci, estimate_rho
     from pcg.eval.metrics import f1_score
@@ -82,7 +82,7 @@ def main(
 
     backend_obj = build_backend(cfg, override=backend)
     checker = Checker(
-        entailment=ExactMatchEntailment(case_insensitive=True),
+        entailment=TokenOverlapEntailment(threshold=0.5),
         replayer=build_replayer_with_handlers(),
     )
 
@@ -123,6 +123,7 @@ def main(
                     temperature=0.0,
                     seed=seed * 100 + j,
                     retriever=retriever,
+                    prompt_variant=j,
                 )
                 prover_fn = build_default_prover(backend=backend_obj, config=pcfg)
                 state = PCGState(example=ex)

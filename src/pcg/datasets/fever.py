@@ -1,15 +1,23 @@
 """
-FEVER-compatible loader.
+FEVER claim-verification loader.
 
-Primary source:
-    BeIR/fever
+Source: copenlu/fever_gold_evidence (HF Hub).
 
-Rationale:
-    The canonical Hugging Face `fever/fever` repository is script-based and can
-    fail under modern `datasets` versions. For PCG-MAS artifact runs, we use the
-    BEIR FEVER variant as a real 500-example FEVER-derived retrieval/fact-checking
-    source. An explicit deterministic alternate remains available only when
-    PCG_ALLOW_DATASET_ALTERNATE=1 and real loading fails.
+Why this source: the canonical fever/fever HF dataset is script-based and is
+no longer loadable under modern datasets (>=3.0). The previous BeIR/fever
+fallback is a retrieval dataset with no FEVER labels — every gold answer
+defaulted to "SUPPORTS", making the f1-vs-gold metric meaningless.
+copenlu/fever_gold_evidence carries the real three-class labels
+(SUPPORTS / REFUTES / NOT ENOUGH INFO) and gold evidence with Wikipedia
+page ids, which is exactly what claim verification needs.
+
+Row schema (validation split):
+    claim       : str         the claim under verification
+    label       : str         SUPPORTS | REFUTES | NOT ENOUGH INFO
+    evidence    : list        [[wiki_page_id, sent_idx, sentence_text, _], ...]
+    id          : str
+    verifiable  : str         VERIFIABLE | NOT VERIFIABLE
+    original_id : int         original FEVER claim id
 """
 from __future__ import annotations
 
@@ -18,51 +26,32 @@ from typing import Any, Iterator
 
 from pcg.datasets.base import EvidenceItem, QAExample
 
-_BEIR_DATASET = "BeIR/fever"
+_HF_DATASET = "copenlu/fever_gold_evidence"
 
 
 def _allow_dataset_alternate() -> bool:
     return os.environ.get("PCG_ALLOW_DATASET_ALTERNATE", "0") == "1"
 
 
-def _as_list(obj: Any) -> list[Any]:
-    if obj is None:
-        return []
-    if isinstance(obj, list):
-        return obj
-    return [obj]
-
-
-def _first_nonempty(*values: Any) -> Any:
-    for value in values:
-        if value not in (None, "", [], {}):
-            return value
-    return None
-
-
 def _iter_fever_alternate(n: int | None = None, seed: int = 0) -> Iterator[QAExample]:
     """Deterministic FEVER-shaped alternate for environment preflight only."""
     base = [
-        (
-            "The Eiffel Tower is located in Paris.",
-            "SUPPORTS",
-            "The Eiffel Tower is a wrought-iron tower on the Champ de Mars in Paris, France.",
-            "Eiffel Tower",
-        ),
-        (
-            "The Pacific Ocean is smaller than the Arctic Ocean.",
-            "REFUTES",
-            "The Pacific Ocean is the largest and deepest of Earth's oceanic divisions.",
-            "Pacific Ocean",
-        ),
-        (
-            "Marie Curie won a Nobel Prize.",
-            "SUPPORTS",
-            "Marie Curie was awarded Nobel Prizes in Physics and Chemistry.",
-            "Marie Curie",
-        ),
+        ("The Eiffel Tower is located in Paris.", "SUPPORTS",
+         "The Eiffel Tower is a wrought-iron tower on the Champ de Mars in Paris, France.",
+         "Eiffel_Tower"),
+        ("The Pacific Ocean is smaller than the Arctic Ocean.", "REFUTES",
+         "The Pacific Ocean is the largest and deepest of Earths oceanic divisions.",
+         "Pacific_Ocean"),
+        ("Marie Curie won a Nobel Prize.", "SUPPORTS",
+         "Marie Curie was awarded Nobel Prizes in Physics and Chemistry.",
+         "Marie_Curie"),
+        ("Mount Everest is in Antarctica.", "REFUTES",
+         "Mount Everest is Earths highest mountain above sea level, located in the Himalayas.",
+         "Mount_Everest"),
+        ("Jane Austen wrote Pride and Prejudice.", "SUPPORTS",
+         "Pride and Prejudice is an 1813 novel of manners by Jane Austen.",
+         "Pride_and_Prejudice"),
     ]
-
     total = 500 if n is None else n
     for i in range(total):
         claim, label, text, title = base[i % len(base)]
@@ -73,12 +62,9 @@ def _iter_fever_alternate(n: int | None = None, seed: int = 0) -> Iterator[QAExa
             evidence=(
                 EvidenceItem(
                     id=f"fever_alternate_{seed}_{i}_e0",
-                    title=title,
-                    text=text,
-                    source_url=None,
-                    publisher="alternate_fever",
-                    domain="fever.local",
-                    is_gold=True,
+                    title=title, text=text,
+                    source_url=None, publisher="alternate_fever",
+                    domain="fever.local", is_gold=True,
                 ),
             ),
             task_type="fact_verification",
@@ -86,137 +72,76 @@ def _iter_fever_alternate(n: int | None = None, seed: int = 0) -> Iterator[QAExa
         )
 
 
+def _parse_evidence(raw: Any) -> list[tuple[str, str]]:
+    """Return list of (title, sentence_text) tuples from copenlu evidence field.
+
+    The evidence field is a list of [wiki_page_id, sent_idx, sentence_text, _]
+    quadruples. We deduplicate by (page_id, sent_idx) and return display-ready
+    (title, text) pairs.
+    """
+    out: list[tuple[str, str]] = []
+    seen: set[tuple[str, int]] = set()
+    if not isinstance(raw, list):
+        return out
+    for item in raw:
+        if not isinstance(item, (list, tuple)) or len(item) < 3:
+            continue
+        page = str(item[0]) if item[0] is not None else ""
+        try:
+            sidx = int(item[1]) if item[1] is not None else -1
+        except Exception:
+            sidx = -1
+        sent = str(item[2]) if item[2] is not None else ""
+        key = (page, sidx)
+        if key in seen or not sent.strip():
+            continue
+        seen.add(key)
+        title = page.replace("_", " ").replace("-LRB-", "(").replace("-RRB-", ")")
+        out.append((title, sent))
+    return out
+
+
 def _row_to_example(row: dict[str, Any], idx: int) -> QAExample:
-    qid = str(
-        _first_nonempty(
-            row.get("_id"),
-            row.get("id"),
-            row.get("query-id"),
-            row.get("query_id"),
-            f"fever_{idx}",
-        )
-    )
+    qid = str(row.get("id") or row.get("original_id") or f"fever_{idx}")
+    claim = str(row.get("claim") or "").strip()
+    label = str(row.get("label") or "NOT ENOUGH INFO").strip().upper()
+    if label not in {"SUPPORTS", "REFUTES", "NOT ENOUGH INFO"}:
+        label = "NOT ENOUGH INFO"
 
-    claim = str(
-        _first_nonempty(
-            row.get("query"),
-            row.get("question"),
-            row.get("claim"),
-            row.get("text"),
-            "",
-        )
-    )
-
-    answer = _first_nonempty(
-        row.get("label"),
-        row.get("answer"),
-        row.get("gold_answer"),
-        row.get("relevance"),
-        "SUPPORTS",
-    )
-
-    title = str(_first_nonempty(row.get("title"), row.get("docid"), row.get("_id"), "FEVER evidence"))
-    evidence_text = str(
-        _first_nonempty(
-            row.get("text"),
-            row.get("contents"),
-            row.get("passage"),
-            row.get("document"),
-            claim,
-        )
-    )
-
-    evidence = (
-        EvidenceItem(
-            id=f"{qid}_e0",
-            title=title,
-            text=evidence_text,
+    ev_pairs = _parse_evidence(row.get("evidence"))
+    evidence_items: list[EvidenceItem] = []
+    for i, (title, text) in enumerate(ev_pairs[:8]):    # cap evidence pool size
+        evidence_items.append(EvidenceItem(
+            id=f"{qid}_e{i}",
+            title=title or "FEVER evidence",
+            text=text,
             source_url=None,
-            publisher="BEIR/fever",
-            domain="beir",
+            publisher="copenlu/fever_gold_evidence",
+            domain="wikipedia",
             is_gold=True,
-        ),
-    )
+        ))
+    if not evidence_items:
+        # NEI claims may have empty evidence — keep a placeholder so retrieval
+        # pool is never empty, but mark non-gold.
+        evidence_items.append(EvidenceItem(
+            id=f"{qid}_e0",
+            title="No evidence",
+            text=claim,
+            source_url=None,
+            publisher="copenlu/fever_gold_evidence",
+            domain="wikipedia",
+            is_gold=False,
+        ))
 
     return QAExample(
         id=qid,
         question=claim,
-        gold_answers=(str(answer),),
-        evidence=evidence,
+        gold_answers=(label,),
+        evidence=tuple(evidence_items),
         task_type="fact_verification",
-        meta={"dataset": "fever", "source": "BeIR/fever"},
+        meta={"dataset": "fever", "source": _HF_DATASET,
+              "verifiable": row.get("verifiable")},
     )
-
-
-def _unwrap_dataset(obj):
-    """Return an iterable dataset from DatasetDict/IterableDatasetDict variants."""
-    if hasattr(obj, "keys") and not hasattr(obj, "__iter__"):
-        # Defensive, rarely used.
-        keys = list(obj.keys())
-        return obj[keys[0]]
-
-    if hasattr(obj, "keys") and not isinstance(obj, dict):
-        keys = list(obj.keys())
-        preferred = ["queries", "test", "validation", "train", "corpus"]
-        for key in preferred:
-            if key in keys:
-                return obj[key]
-        return obj[keys[0]]
-
-    if isinstance(obj, dict):
-        preferred = ["queries", "test", "validation", "train", "corpus"]
-        for key in preferred:
-            if key in obj:
-                return obj[key]
-        return obj[next(iter(obj.keys()))]
-
-    return obj
-
-
-def _try_load_beir_split(split: str, streaming: bool):
-    from datasets import load_dataset
-
-    # BeIR/fever exposes named configs. Some environments expose config-level
-    # DatasetDicts, while others expose split-addressable datasets. Try both.
-    attempts = [
-        # Most likely for modern datasets: config only, then unwrap.
-        {"path": _BEIR_DATASET, "name": "queries", "split": None},
-        {"path": _BEIR_DATASET, "name": "corpus", "split": None},
-
-        # Split-addressable variants.
-        {"path": _BEIR_DATASET, "name": "queries", "split": split},
-        {"path": _BEIR_DATASET, "name": "queries", "split": "queries"},
-        {"path": _BEIR_DATASET, "name": "queries", "split": "test"},
-        {"path": _BEIR_DATASET, "name": "queries", "split": "train"},
-
-        {"path": _BEIR_DATASET, "name": "corpus", "split": split},
-        {"path": _BEIR_DATASET, "name": "corpus", "split": "corpus"},
-        {"path": _BEIR_DATASET, "name": "corpus", "split": "train"},
-    ]
-
-    last_exc: Exception | None = None
-
-    for attempt in attempts:
-        try:
-            kwargs = {
-                "path": attempt["path"],
-                "name": attempt["name"],
-                "streaming": streaming,
-            }
-            if attempt["split"] is not None:
-                kwargs["split"] = attempt["split"]
-
-            ds = load_dataset(**kwargs)
-            return _unwrap_dataset(ds)
-
-        except Exception as exc:
-            last_exc = exc
-            continue
-
-    if last_exc is not None:
-        raise last_exc
-
-    raise RuntimeError("Unable to load BEIR FEVER.")
 
 
 def iter_fever(
@@ -227,9 +152,11 @@ def iter_fever(
     streaming: bool = True,
     shuffle_buffer: int = 1024,
 ) -> Iterator[QAExample]:
-    """Yield FEVER-compatible examples."""
+    """Yield FEVER claim-verification examples from copenlu/fever_gold_evidence."""
+    from datasets import load_dataset
+
     try:
-        ds = _try_load_beir_split(split=split, streaming=streaming)
+        ds = load_dataset(_HF_DATASET, split=split, streaming=streaming)
     except Exception:
         if _allow_dataset_alternate():
             yield from _iter_fever_alternate(n=n, seed=seed)

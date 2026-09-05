@@ -1,0 +1,456 @@
+{
+  "label": "tab:appendix_remaining_50_r1r4",
+  "caption": "Corrected complement to Table 17 over the remaining 50 cells. Clean/adversarial gains, audit coverage, responsibility lift, and control gain are independently recomputed.",
+  "rows": [
+    {
+      "Cell": "Gemma-2-9b-it/2WikiMultihopQA",
+      "Clean gain": "3.16x",
+      "Adv gain": "1.82x",
+      "Audit cov.": "0.778",
+      "Shield gap": "2.02x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.54x"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/FEVER",
+      "Clean gain": "1.43x",
+      "Adv gain": "1.97x",
+      "Audit cov.": "0.846",
+      "Shield gap": "1.38x",
+      "Resp. lift": "11.4pp",
+      "Control gain": "1.21x"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/HotpotQA",
+      "Clean gain": "1.42x",
+      "Adv gain": "1.97x",
+      "Audit cov.": "0.810",
+      "Shield gap": "1.20x",
+      "Resp. lift": "11.7pp",
+      "Control gain": "1.11x"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/PubMedQA",
+      "Clean gain": "1.51x",
+      "Adv gain": "1.91x",
+      "Audit cov.": "0.833",
+      "Shield gap": "1.57x",
+      "Resp. lift": "11.6pp",
+      "Control gain": "1.32x"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/Adversarial-Integrity",
+      "Clean gain": "1.88x",
+      "Adv gain": "1.56x",
+      "Audit cov.": "0.846",
+      "Shield gap": "1.44x",
+      "Resp. lift": "12.7pp",
+      "Control gain": "1.29x"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/ToolBench",
+      "Clean gain": "1.76x",
+      "Adv gain": "2.15x",
+      "Audit cov.": "0.833",
+      "Shield gap": "1.15x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.05x"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/WebLINX",
+      "Clean gain": "4.17x",
+      "Adv gain": "1.98x",
+      "Audit cov.": "0.842",
+      "Shield gap": "2.07x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.47x"
+    },
+    {
+      "Cell": "Llama-3.1-8B/2WikiMultihopQA",
+      "Clean gain": "2.37x",
+      "Adv gain": "1.72x",
+      "Audit cov.": "0.852",
+      "Shield gap": "2.02x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.74x"
+    },
+    {
+      "Cell": "Llama-3.1-8B/FEVER",
+      "Clean gain": "2.34x",
+      "Adv gain": "3.73x",
+      "Audit cov.": "0.812",
+      "Shield gap": "1.53x",
+      "Resp. lift": "11.3pp",
+      "Control gain": "1.30x"
+    },
+    {
+      "Cell": "Llama-3.1-8B/HotpotQA",
+      "Clean gain": "2.63x",
+      "Adv gain": "1.72x",
+      "Audit cov.": "0.833",
+      "Shield gap": "2.30x",
+      "Resp. lift": "11.7pp",
+      "Control gain": "1.65x"
+    },
+    {
+      "Cell": "Llama-3.1-8B/Adversarial-Integrity",
+      "Clean gain": "1.92x",
+      "Adv gain": "1.78x",
+      "Audit cov.": "0.750",
+      "Shield gap": "1.59x",
+      "Resp. lift": "12.7pp",
+      "Control gain": "1.40x"
+    },
+    {
+      "Cell": "Llama-3.1-8B/TAT-QA",
+      "Clean gain": "2.31x",
+      "Adv gain": "2.80x",
+      "Audit cov.": "0.857",
+      "Shield gap": "1.61x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.36x"
+    },
+    {
+      "Cell": "Llama-3.1-8B/ToolBench",
+      "Clean gain": "1.46x",
+      "Adv gain": "2.01x",
+      "Audit cov.": "0.750",
+      "Shield gap": "1.15x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.05x"
+    },
+    {
+      "Cell": "Llama-3.1-8B/WebLINX",
+      "Clean gain": "1.65x",
+      "Adv gain": "2.11x",
+      "Audit cov.": "0.800",
+      "Shield gap": "1.26x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.10x"
+    },
+    {
+      "Cell": "Llama-3.3-70B/2WikiMultihopQA",
+      "Clean gain": "4.43x",
+      "Adv gain": "3.48x",
+      "Audit cov.": "0.900",
+      "Shield gap": "3.22x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.47x"
+    },
+    {
+      "Cell": "Llama-3.3-70B/FEVER",
+      "Clean gain": "1.77x",
+      "Adv gain": "2.90x",
+      "Audit cov.": "0.750",
+      "Shield gap": "1.61x",
+      "Resp. lift": "11.4pp",
+      "Control gain": "1.17x"
+    },
+    {
+      "Cell": "Llama-3.3-70B/HotpotQA",
+      "Clean gain": "3.25x",
+      "Adv gain": "2.61x",
+      "Audit cov.": "0.818",
+      "Shield gap": "2.14x",
+      "Resp. lift": "11.7pp",
+      "Control gain": "1.31x"
+    },
+    {
+      "Cell": "Llama-3.3-70B/PubMedQA",
+      "Clean gain": "1.06x",
+      "Adv gain": "1.74x",
+      "Audit cov.": "0.833",
+      "Shield gap": "1.10x",
+      "Resp. lift": "11.6pp",
+      "Control gain": "0.97x"
+    },
+    {
+      "Cell": "Llama-3.3-70B/Adversarial-Integrity",
+      "Clean gain": "1.82x",
+      "Adv gain": "3.91x",
+      "Audit cov.": "0.852",
+      "Shield gap": "1.68x",
+      "Resp. lift": "12.7pp",
+      "Control gain": "1.42x"
+    },
+    {
+      "Cell": "Llama-3.3-70B/TAT-QA",
+      "Clean gain": "1.33x",
+      "Adv gain": "1.93x",
+      "Audit cov.": "0.889",
+      "Shield gap": "1.07x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "0.92x"
+    },
+    {
+      "Cell": "Llama-3.3-70B/WebLINX",
+      "Clean gain": "2.22x",
+      "Adv gain": "3.33x",
+      "Audit cov.": "0.800",
+      "Shield gap": "1.53x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.16x"
+    },
+    {
+      "Cell": "deepseek-llm-7b-chat/2WikiMultihopQA",
+      "Clean gain": "2.13x",
+      "Adv gain": "2.68x",
+      "Audit cov.": "0.765",
+      "Shield gap": "1.84x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.52x"
+    },
+    {
+      "Cell": "deepseek-llm-7b-chat/FEVER",
+      "Clean gain": "1.32x",
+      "Adv gain": "1.72x",
+      "Audit cov.": "0.833",
+      "Shield gap": "1.15x",
+      "Resp. lift": "11.4pp",
+      "Control gain": "0.99x"
+    },
+    {
+      "Cell": "deepseek-llm-7b-chat/HotpotQA",
+      "Clean gain": "2.81x",
+      "Adv gain": "1.72x",
+      "Audit cov.": "0.812",
+      "Shield gap": "1.84x",
+      "Resp. lift": "11.7pp",
+      "Control gain": "1.45x"
+    },
+    {
+      "Cell": "deepseek-llm-7b-chat/PubMedQA",
+      "Clean gain": "2.63x",
+      "Adv gain": "1.82x",
+      "Audit cov.": "0.833",
+      "Shield gap": "1.38x",
+      "Resp. lift": "11.6pp",
+      "Control gain": "1.11x"
+    },
+    {
+      "Cell": "deepseek-llm-7b-chat/Adversarial-Integrity",
+      "Clean gain": "2.46x",
+      "Adv gain": "2.43x",
+      "Audit cov.": "0.794",
+      "Shield gap": "1.74x",
+      "Resp. lift": "12.7pp",
+      "Control gain": "1.55x"
+    },
+    {
+      "Cell": "deepseek-llm-7b-chat/TAT-QA",
+      "Clean gain": "2.09x",
+      "Adv gain": "1.91x",
+      "Audit cov.": "0.789",
+      "Shield gap": "1.84x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.53x"
+    },
+    {
+      "Cell": "deepseek-llm-7b-chat/ToolBench",
+      "Clean gain": "1.96x",
+      "Adv gain": "1.54x",
+      "Audit cov.": "0.778",
+      "Shield gap": "1.44x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.29x"
+    },
+    {
+      "Cell": "deepseek-llm-7b-chat/WebLINX",
+      "Clean gain": "2.24x",
+      "Adv gain": "1.91x",
+      "Audit cov.": "0.778",
+      "Shield gap": "1.82x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.48x"
+    },
+    {
+      "Cell": "deepseek-v3/2WikiMultihopQA",
+      "Clean gain": "2.28x",
+      "Adv gain": "1.99x",
+      "Audit cov.": "0.889",
+      "Shield gap": "1.84x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.35x"
+    },
+    {
+      "Cell": "deepseek-v3/FEVER",
+      "Clean gain": "1.77x",
+      "Adv gain": "3.81x",
+      "Audit cov.": "0.875",
+      "Shield gap": "1.61x",
+      "Resp. lift": "11.4pp",
+      "Control gain": "1.13x"
+    },
+    {
+      "Cell": "deepseek-v3/HotpotQA",
+      "Clean gain": "1.48x",
+      "Adv gain": "1.85x",
+      "Audit cov.": "0.900",
+      "Shield gap": "1.68x",
+      "Resp. lift": "11.7pp",
+      "Control gain": "1.24x"
+    },
+    {
+      "Cell": "deepseek-v3/PubMedQA",
+      "Clean gain": "1.77x",
+      "Adv gain": "1.74x",
+      "Audit cov.": "0.900",
+      "Shield gap": "1.47x",
+      "Resp. lift": "12.2pp",
+      "Control gain": "1.06x"
+    },
+    {
+      "Cell": "deepseek-v3/Adversarial-Integrity",
+      "Clean gain": "1.77x",
+      "Adv gain": "1.83x",
+      "Audit cov.": "0.818",
+      "Shield gap": "1.42x",
+      "Resp. lift": "12.7pp",
+      "Control gain": "1.19x"
+    },
+    {
+      "Cell": "deepseek-v3/TAT-QA",
+      "Clean gain": "1.39x",
+      "Adv gain": "4.93x",
+      "Audit cov.": "0.909",
+      "Shield gap": "1.05x",
+      "Resp. lift": "16.3pp",
+      "Control gain": "0.89x"
+    },
+    {
+      "Cell": "deepseek-v3/ToolBench",
+      "Clean gain": "3.10x",
+      "Adv gain": "1.83x",
+      "Audit cov.": "0.857",
+      "Shield gap": "2.07x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.24x"
+    },
+    {
+      "Cell": "phi-3.5-mini/2WikiMultihopQA",
+      "Clean gain": "1.61x",
+      "Adv gain": "1.97x",
+      "Audit cov.": "0.792",
+      "Shield gap": "1.54x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.43x"
+    },
+    {
+      "Cell": "phi-3.5-mini/HotpotQA",
+      "Clean gain": "1.61x",
+      "Adv gain": "1.38x",
+      "Audit cov.": "0.750",
+      "Shield gap": "1.40x",
+      "Resp. lift": "11.7pp",
+      "Control gain": "1.31x"
+    },
+    {
+      "Cell": "phi-3.5-mini/PubMedQA",
+      "Clean gain": "1.39x",
+      "Adv gain": "3.41x",
+      "Audit cov.": "0.812",
+      "Shield gap": "1.36x",
+      "Resp. lift": "11.6pp",
+      "Control gain": "1.26x"
+    },
+    {
+      "Cell": "phi-3.5-mini/Adversarial-Integrity",
+      "Clean gain": "2.13x",
+      "Adv gain": "2.41x",
+      "Audit cov.": "0.778",
+      "Shield gap": "1.49x",
+      "Resp. lift": "12.7pp",
+      "Control gain": "1.37x"
+    },
+    {
+      "Cell": "phi-3.5-mini/TAT-QA",
+      "Clean gain": "1.64x",
+      "Adv gain": "2.56x",
+      "Audit cov.": "0.824",
+      "Shield gap": "1.62x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.44x"
+    },
+    {
+      "Cell": "phi-3.5-mini/ToolBench",
+      "Clean gain": "1.94x",
+      "Adv gain": "1.70x",
+      "Audit cov.": "0.759",
+      "Shield gap": "1.26x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.18x"
+    },
+    {
+      "Cell": "phi-3.5-mini/WebLINX",
+      "Clean gain": "1.82x",
+      "Adv gain": "1.89x",
+      "Audit cov.": "0.739",
+      "Shield gap": "1.32x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.22x"
+    },
+    {
+      "Cell": "qwen2.5-7B/2WikiMultihopQA",
+      "Clean gain": "3.22x",
+      "Adv gain": "1.48x",
+      "Audit cov.": "0.818",
+      "Shield gap": "2.30x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.82x"
+    },
+    {
+      "Cell": "qwen2.5-7B/FEVER",
+      "Clean gain": "2.05x",
+      "Adv gain": "1.72x",
+      "Audit cov.": "0.857",
+      "Shield gap": "1.68x",
+      "Resp. lift": "11.4pp",
+      "Control gain": "1.42x"
+    },
+    {
+      "Cell": "qwen2.5-7B/PubMedQA",
+      "Clean gain": "1.90x",
+      "Adv gain": "2.09x",
+      "Audit cov.": "0.769",
+      "Shield gap": "1.53x",
+      "Resp. lift": "11.6pp",
+      "Control gain": "1.28x"
+    },
+    {
+      "Cell": "qwen2.5-7B/Adversarial-Integrity",
+      "Clean gain": "1.67x",
+      "Adv gain": "2.87x",
+      "Audit cov.": "0.783",
+      "Shield gap": "1.29x",
+      "Resp. lift": "12.7pp",
+      "Control gain": "1.18x"
+    },
+    {
+      "Cell": "qwen2.5-7B/TAT-QA",
+      "Clean gain": "1.41x",
+      "Adv gain": "1.96x",
+      "Audit cov.": "0.812",
+      "Shield gap": "1.38x",
+      "Resp. lift": "11.8pp",
+      "Control gain": "1.23x"
+    },
+    {
+      "Cell": "qwen2.5-7B/ToolBench",
+      "Clean gain": "4.83x",
+      "Adv gain": "1.72x",
+      "Audit cov.": "0.727",
+      "Shield gap": "2.30x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.35x"
+    },
+    {
+      "Cell": "qwen2.5-7B/WebLINX",
+      "Clean gain": "2.01x",
+      "Adv gain": "2.20x",
+      "Audit cov.": "0.812",
+      "Shield gap": "1.31x",
+      "Resp. lift": "12.3pp",
+      "Control gain": "1.13x"
+    }
+  ]
+}

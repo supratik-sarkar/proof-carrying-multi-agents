@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "v3.0-gate0.1-frozen",
+  "title": "PCG-MAS Pre-Registered Benchmark Sample Size Protocol",
+  "freeze_timestamp_utc": "2026-09-05T15:55:00Z",
+  "status": "PRE_REGISTERED_PROTOCOL",
+  "calibration_pilot_sample": {
+    "role": "variance_cost_and_prevalence_estimation",
+    "partition": "non_overlapping_held_out_pilot_split",
+    "estimated_parameters": [
+      "variance_of_paired_harm_difference",
+      "baseline_failure_prevalence",
+      "api_token_latency_and_cost",
+      "dependence_event_frequency"
+    ],
+    "isolation_guarantee": "ZERO_CONTAMINATION: Observations from the calibration partition are strictly forbidden from entering final manuscript evaluation statistics."
+  },
+  "final_evaluation_sample_protocol": {
+    "selection_mode": "PRE_REGISTERED_POWER_AND_PRECISION_RULE",
+    "primary_metrics": [
+      "delta_harm_avoided_S_plus_V",
+      "certification_coverage_cov_cert",
+      "empirical_checkability_rate"
+    ],
+    "target_parameters": {
+      "alpha_significance": 0.05,
+      "target_power": 0.80,
+      "desired_ci_half_width": 0.03,
+      "min_detectable_paired_effect_delta": 0.05
+    },
+    "sample_size_formula": {
+      "paired_effect_model": "N >= (z_{alpha/2} + z_{beta})^2 * sigma_d^2 / delta^2",
+      "finite_population_correction": "N_adj = N / (1 + (N - 1) / N_pop) when evaluating against finite benchmark splits"
+    },
+    "missing_and_invalid_responses": {
+      "policy": "FAIL_CLOSED",
+      "handling": "Timeouts, rate-limit drops, and schema-invalid outputs are scored as uncertified / verification failures, not pruned or replaced."
+    },
+    "deterministic_sampling": {
+      "prng_method": "sha256_seeded_reservoir_sampling",
+      "seed_derivation": "sha256(dataset_name + split_name + experiment_seed)"
+    },
+    "budget_ceiling_and_fallback": {
+      "max_budget_usd": 5000.0,
+      "budget_exhaustion_fallback": "If the required N for delta=0.05 exceeds budget ceiling, N is truncated to max affordable budget with pre-declared wider confidence interval reporting."
+    }
+  },
+  "matrix_cell_target_status": "PENDING_SAMPLE_SIZE_FREEZE"
+}

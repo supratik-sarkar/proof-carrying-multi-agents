@@ -24,7 +24,7 @@
       "model": "phi-3.5-mini",
       "model_name": "microsoft/Phi-3.5-mini-instruct",
       "command": [
-        "/Users/supratiksarkar/Desktop/pcg-neurips2026/multi-agents/bin/python",
+        "${PCG_ROOT}/multi-agents/bin/python",
         "scripts/experiments/run_r1_checkability.py",
         "--config",
         "configs/r1_fever.yaml",

@@ -1,0 +1,2 @@
+model_id,backend_type,dtype,quantization
+phi-3.5-mini,vllm,float16,none

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "v3.0-gate0.1-frozen",
+  "freeze_timestamp_utc": "2026-09-05T15:55:00Z",
+  "seed_architecture": {
+    "experiment_seeds": {
+      "values": [0, 1, 2, 3],
+      "holdout_seed": 4,
+      "role": "Governs repository-side stochasticity: dataset subsampling, paired bootstrap resamples, adversarial perturbation generation, and branch construction."
+    },
+    "provider_sampling_seeds": {
+      "role": "Provider-specific API parameter where supported. Distinct from repository experiment seed.",
+      "derivation_rule": "provider_seed = (experiment_seed * 1000 + 42) if provider_supports_seed else null",
+      "determinism_caveat": "API seed parameters provide best-effort reproducibility on backend infrastructure but do NOT guarantee bitwise determinism across GPU cluster reconfigurations."
+    }
+  },
+  "bootstrap_inference": {
+    "method": "paired_crossed_seed_example_bootstrap",
+    "n_bootstraps": 2000,
+    "confidence_level": 0.95,
+    "ci_type": "percentile_bca_fallback"
+  },
+  "invariants": {
+    "sv_decomposition": {
+      "formula": "S + V = Delta",
+      "tolerance": 1e-9,
+      "description": "Selectivity harm avoided (S) plus verification harm avoided (V) exactly equals total harm reduction (Delta)."
+    }
+  }
+}

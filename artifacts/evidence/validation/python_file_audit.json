@@ -1,0 +1,439 @@
+{
+  "total_files": 54,
+  "failures": 0,
+  "audit_status": "BASIC_STATIC_AUDIT_PASS",
+  "files": [
+    {
+      "path": "artifacts/evidence/audit_sampling/scripts/reproduce_all.py",
+      "classification": "REAL_REPRODUCE_ALL",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/audit_sampling/scripts/run_sampling_designs.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/audit_sampling/tests/test_audit_sampling.py",
+      "classification": "REAL_TEST",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/backend_manifest/scripts/reproduce_all.py",
+      "classification": "REAL_REPRODUCE_ALL",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/backend_manifest/scripts/verify_manifest.py",
+      "classification": "VALIDATOR",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/backend_manifest/tests/test_backend_manifest.py",
+      "classification": "REAL_TEST",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/citation_only/citation_only_baseline.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/citation_only/scripts/match_coverage.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/citation_only/scripts/reproduce_all.py",
+      "classification": "REAL_REPRODUCE_ALL",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/citation_only/tests/test_citation_only.py",
+      "classification": "REAL_TEST",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/figures/verify_figure_extraction.py",
+      "classification": "VALIDATOR",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/injection/scripts/reproduce_all.py",
+      "classification": "REAL_REPRODUCE_ALL",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/injection/scripts/run_injection_matrix.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/injection/tests/test_injection.py",
+      "classification": "REAL_TEST",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/separating_witnesses/scripts/reproduce_all.py",
+      "classification": "REAL_REPRODUCE_ALL",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/separating_witnesses/scripts/run_witness_suite.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/separating_witnesses/tests/test_separating_witnesses.py",
+      "classification": "REAL_TEST",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/separating_witnesses/witness_generators.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/shift/scripts/apply_validity_gate.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/shift/scripts/reproduce_all.py",
+      "classification": "REAL_REPRODUCE_ALL",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/shift/tests/test_shift.py",
+      "classification": "REAL_TEST",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/sv_decomposition/run_sv_decomposition.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/sv_decomposition/scripts/compute_sv.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/sv_decomposition/scripts/paired_bootstrap.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/sv_decomposition/scripts/reproduce_all.py",
+      "classification": "REAL_REPRODUCE_ALL",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/sv_decomposition/tests/test_sv_decomposition.py",
+      "classification": "REAL_TEST",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/table_reconciliation/scripts/canonical_metrics.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/table_reconciliation/scripts/reconcile_tables.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/table_reconciliation/scripts/reproduce_all.py",
+      "classification": "REAL_REPRODUCE_ALL",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/table_reconciliation/tests/test_table_reconciliation.py",
+      "classification": "REAL_TEST",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "artifacts/evidence/validation/validate_artifact.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/audit_artifact_python.py",
+      "classification": "VALIDATOR",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/execute_all_gates.py",
+      "classification": "VALIDATOR",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/execute_full_workflow.py",
+      "classification": "VALIDATOR",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/finalize_artifacts.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/generate_execution_matrix.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/plan_56cell_run.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/run_56cell_server.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/run_mutation_tests.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/run_phase1_audit.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/sanitize_figures.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/scan_ai_watermarks.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/sync_to_git_repo.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/tables/canonical_metrics.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/tables/generate_all.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/tables/generate_records.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/tables/render_manuscript_tables.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/tables/render_benchmark_tables.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": false,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/tables/validate_all_tables.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/validate_executed_protocol.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/validate_submitted_protocol.py",
+      "classification": "REAL_IMPLEMENTATION",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/verify_clean_room.py",
+      "classification": "VALIDATOR",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/verify_protocol_completion.py",
+      "classification": "VALIDATOR",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    },
+    {
+      "path": "scripts/validation/verify_source_record_integrity.py",
+      "classification": "VALIDATOR",
+      "reads_files": true,
+      "has_absolute_paths": false,
+      "status": "PASS",
+      "failure_reason": ""
+    }
+  ]
+}

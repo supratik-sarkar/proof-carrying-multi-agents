@@ -6,7 +6,7 @@
 dataset:
   name: tatqa
   split: validation
-  n_examples: 200
+  n_examples: 500
 
 backend:
   kind: hf_local

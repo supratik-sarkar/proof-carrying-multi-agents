@@ -62,7 +62,7 @@ def main(
     log_info(f"Output: {out_dir}")
     write_json(out_dir / "config_snapshot.json", cfg)
 
-    from pcg.checker import Checker, ExactMatchEntailment
+    from pcg.checker import Checker, TokenOverlapEntailment
     from pcg.datasets import load_dataset_by_name
     from pcg.eval import bootstrap_ci
     from pcg.orchestrator.langgraph_flow import (
@@ -77,7 +77,7 @@ def main(
 
     backend_obj = build_backend(cfg, override=backend)
     checker = Checker(
-        entailment=ExactMatchEntailment(case_insensitive=True),
+        entailment=TokenOverlapEntailment(threshold=0.5),
         replayer=build_replayer_with_handlers(),
     )
 
@@ -110,6 +110,7 @@ def main(
             margins = []
             rrp_values = []
             mean_resps = []
+            per_example_records = []
 
             for i, ex in enumerate(examples):
                 # Build a baseline certificate (no corruption injection at Prover time)
@@ -146,9 +147,15 @@ def main(
                 results = est.estimate_many(state.certificate, state.graph, comp_ids)
                 if not results:
                     continue
-                results.sort(key=lambda r: r.estimate, reverse=True)
+                # Rank by absolute responsibility magnitude. A failure-attribution
+                # target produces a large NEGATIVE Resp (Resp = A_full - A_masked = 0 - 1),
+                # while support components produce large POSITIVE Resp (= 1 - 0).
+                # Either sign tells us "this component drives acceptance state",
+                # so we sort by |Resp| descending.
+                results.sort(key=lambda r: abs(r.estimate), reverse=True)
                 top = results[0]
-                margin = top.estimate - (results[1].estimate if len(results) > 1 else 0.0)
+                second_abs = abs(results[1].estimate) if len(results) > 1 else 0.0
+                margin = abs(top.estimate) - second_abs
                 rrp = rank_recovery_prob(n_replays=n_replays,
                                            n_components=len(results), margin=margin,
                                            alpha_family=alpha)
@@ -160,6 +167,19 @@ def main(
                     n_with_target += 1
                     if top.component_id == target_id:
                         n_correct_top1 += 1
+
+                per_example_records.append({
+                    "example_id": ex.id,
+                    "target_id": target_id,
+                    "top1_component_id": top.component_id,
+                    "top1_correct": (target_id is not None and top.component_id == target_id),
+                    "margin": float(margin),
+                    "rank_recovery_prob": float(rrp),
+                    "all_components": [
+                        {"component_id": r.component_id, "estimate": float(r.estimate)}
+                        for r in results
+                    ],
+                })
 
                 if (i + 1) % 25 == 0:
                     log_info(f"    {i+1}/{len(examples)}")
@@ -173,6 +193,7 @@ def main(
                 "mean_margin": float(np.mean(margins)) if margins else 0.0,
                 "median_rank_recovery_prob": float(np.median(rrp_values)) if rrp_values else 0.0,
                 "mean_resp": float(np.mean(mean_resps)) if mean_resps else 0.0,
+                "per_example": per_example_records,
             })
 
         seed_results.append({"seed": seed, "per_regime": per_regime})

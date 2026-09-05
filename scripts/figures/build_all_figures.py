@@ -14,7 +14,7 @@ GENERATOR = ROOT / "scripts" / "figures" / "make_paper_figures.py"
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build all PCG-MAS paper figures.")
     parser.add_argument(
-        "--allow-partial",
+        "--DISABLED-allow-partial",
         action="store_true",
         help="Allow private layout/debug figure generation when some headline metrics are missing.",
     )
@@ -30,8 +30,8 @@ def main() -> int:
 
     # Strictly validate before the plotting code can fall back to defaults.
     validate_cmd = [sys.executable, "scripts/tables/validate_paper_metrics.py", "--rows", str(ROWS)]
-    if args.allow_partial:
-        validate_cmd.append("--allow-partial")
+    if args.allow_partial_DISABLED:
+        validate_cmd.append("--DISABLED-allow-partial")
 
     subprocess.run(
         validate_cmd,
@@ -49,8 +49,8 @@ def main() -> int:
         "--outdir",
         str(OUT_DIR),
     ]
-    if args.allow_partial:
-        cmd.append("--allow-partial")
+    if args.allow_partial_DISABLED:
+        cmd.append("--DISABLED-allow-partial")
     print("[run]", " ".join(cmd))
     subprocess.run(cmd, cwd=ROOT, check=True)
 
