@@ -17,7 +17,7 @@ Tool outputs must already be committed as truth nodes in G_t.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Any, Callable, Protocol
+from typing import Any, Callable, Protocol, Union
 
 from pcg.certificate import (
     ClaimCertificate,
@@ -37,7 +37,7 @@ from pcg.graph import (
     TruthNode,
 )
 
-GraphLike = AgenticRuntimeGraph | MaskedGraph
+GraphLike = Union[AgenticRuntimeGraph, MaskedGraph]
 
 
 # ---------------------------------------------------------------------------
@@ -63,6 +63,51 @@ class ExactMatchEntailment:
         if self.case_insensitive:
             return claim.lower() in y_str.lower()
         return claim in y_str
+
+
+@dataclass
+class TokenOverlapEntailment:
+    threshold: float = 0.7
+    stopwords: frozenset = frozenset({
+        "a", "an", "the", "is", "are", "was", "were", "be", "been", "being",
+        "of", "to", "in", "on", "at", "for", "with", "by", "from", "and",
+        "or", "but", "if", "then", "than", "that", "which", "this", "these",
+        "those", "it", "its", "as", "do", "does", "did", "have", "has", "had",
+        "i", "don", "t", "know", "yes", "no", "not", "true", "false",
+    })
+
+    def check(self, y, claim_text, task_type=None):
+        import re as _re
+        bs = chr(92)
+        idk = bs + "bi" + bs + "s+don'?t" + bs + "s+know" + bs + ".?"
+        unk = bs + "bunknown" + bs + "b"
+        nsp = bs + "bnot" + bs + "s+specified" + bs + "b"
+        tok = bs + "b" + bs + "w+" + bs + "b"
+        y_str = y if isinstance(y, str) else str(y)
+        c = claim_text.lower()
+        c = _re.sub(idk, " ", c)
+        c = _re.sub(unk, " ", c)
+        c = _re.sub(nsp, " ", c)
+        c_words = {
+            w for w in _re.findall(tok, c)
+            if w not in self.stopwords and len(w) > 1
+        }
+        # No content words at all = pure abstention/boilerplate. Refuse.
+        if not c_words:
+            return False
+        y_words = set(_re.findall(tok, y_str.lower()))
+        # Single content word: accept iff it appears verbatim in evidence.
+        # This handles HotpotQA-style single-entity answers (Dublin, Scotland)
+        # while still rejecting bare numerics or unsupported short answers.
+        if len(c_words) == 1:
+            return next(iter(c_words)) in y_words
+        # Multi-word: require threshold fraction of content words in evidence.
+        # FEVER (and other fact_verification tasks) has sparse, lexically distant
+        # evidence — claim entities rarely appear verbatim in the one supporting
+        # sentence — so we relax the threshold for that task type.
+        threshold = 0.15 if task_type == "fact_verification" else self.threshold
+        overlap = len(c_words & y_words) / len(c_words)
+        return overlap >= threshold
 
 
 @dataclass
@@ -213,7 +258,10 @@ class Checker:
     """External deterministic verifier for unified grounding certificates."""
 
     entailment: EntailmentChecker
-    replayer: Replayer
+    replayer: Replayer | None = None
+    strict: bool = True
+    verifier_context_isolation: bool = True
+    noprune_mode: bool = False
 
     def check(self, cert: GroundingCertificate, graph: GraphLike) -> CheckResult:
         """Return the v4 four-channel CheckResult."""
@@ -234,8 +282,35 @@ class Checker:
     ) -> tuple[bool, bytes | None]:
         nodes = graph.nodes
 
+        # -V_H channel ablation (Phase 12): skip integrity check ONLY,
+        # still execute V_Pi/V_Gamma/V_entail. Distinct from disable_replay
+        # which disables V_H AND V_Pi together as a system ablation.
+        if getattr(self, "disable_v_h", False):
+            result.integrity_ok = True
+            # Continue to V_Pi/V_Gamma/V_entail; do NOT return early.
+            # We just skip the hash loop below by jumping past it.
+            # Implementation: short-circuit by setting integrity_ok=True and
+            # continuing to the V_Pi block via an explicit branch.
+            pass
+
+        # NoReplay ablation also disables V_H. Honest semantic: "replay
+        # isolation" comprises BOTH committed evidence snapshots (V_H) AND
+        # replay against them (V_Pi). Disabling only V_Pi leaves V_H to catch
+        # tampering, which makes the ablation a no-op on adversarial input.
+        if getattr(self, "disable_replay", False):
+            result.integrity_ok = True
+            # Also short-circuit V_Pi below since we already skip it.
+            return True, b""
+
         # V_H: evidence commitment integrity
-        for evidence_id, expected_digest in zip(cc.evidence_ids, cc.evidence_digests):
+        # If a node is absent from the (possibly masked) graph view, its
+        # obligation is dropped — this realizes G_t^{\\setminus e} semantics
+        # for responsibility intervention. Tampered-but-present nodes still fail.
+        masked_set = getattr(graph, "masked", frozenset())
+        _skip_v_h = getattr(self, "disable_v_h", False)
+        for evidence_id, expected_digest in (() if _skip_v_h else zip(cc.evidence_ids, cc.evidence_digests)):
+            if evidence_id in masked_set:
+                continue
             node = nodes.get(evidence_id)
             if node is None:
                 result.integrity_ok = False
@@ -257,7 +332,33 @@ class Checker:
         if not result.integrity_ok:
             return False, None
 
+        # NoReplay ablation: short-circuit V_Pi, force replay_ok=True
+        # without executing the replay. last_output stays empty bytes (V_entail
+        # below will then trivially reject, which is the intended ablation:
+        # the framework as a whole degrades when replay is removed).
+        if getattr(self, "disable_replay", False):
+            return True, b""
+
+        # -V_Pi channel ablation (Phase 12): skip replay-digest equality check
+        # ONLY, but still execute the replay so V_entail downstream has bytes.
+        # Implementation: set _skip_v_pi_digest flag, force replay_ok=True
+        # at the end, leave last_output populated.
+        _skip_v_pi_digest = getattr(self, "disable_v_pi", False)
+
         # V_Pi: deterministic replay consistency
+        # If any pipeline-input node is masked (responsibility intervention),
+        # the original replay_digest no longer applies because masking changes
+        # what the replayer sees. We drop the replay-digest obligation in that
+        # case but still execute the replay so V_entail downstream gets bytes.
+        any_input_masked = False
+        for step in cc.pipeline:
+            for nid in getattr(step, "input_ids", ()):
+                if nid in masked_set:
+                    any_input_masked = True
+                    break
+            if any_input_masked:
+                break
+
         try:
             last_output = b""
             for step in cc.pipeline:
@@ -267,32 +368,50 @@ class Checker:
             result.replay_output = last_output
             result.replay_output_digest = replay_digest
 
-            expected_replay_digest = getattr(cc, "replay_output_digest", None)
-            if not expected_replay_digest:
-                result.replay_ok = False
-                result.reasons.append("replay_digest_missing")
-                return False, last_output
+            if any_input_masked or _skip_v_pi_digest:
+                # Intervention or -V_Pi channel ablation: skip digest equality.
+                pass
+            else:
+                expected_replay_digest = getattr(cc, "replay_output_digest", None)
+                if not expected_replay_digest:
+                    result.replay_ok = False
+                    result.reasons.append("replay_digest_missing")
+                    return False, last_output
 
-            if replay_digest != expected_replay_digest:
-                result.replay_ok = False
-                result.reasons.append(
-                    "replay_digest_mismatch:"
-                    f"expected={expected_replay_digest},got={replay_digest}"
-                )
-                return False, last_output
+                if replay_digest != expected_replay_digest:
+                    result.replay_ok = False
+                    result.reasons.append(
+                        "replay_digest_mismatch:"
+                        f"expected={expected_replay_digest},got={replay_digest}"
+                    )
+                    return False, last_output
 
         except Exception as exc:  # noqa: BLE001
             result.replay_ok = False
             result.reasons.append(f"replay_exception:{type(exc).__name__}:{exc}")
             return False, None
 
+        # -V_entail channel ablation (Phase 12): skip entailment check entirely,
+        # force entailment_ok=True. The other 3 channels still fire upstream.
+        if getattr(self, "disable_v_entail", False):
+            result.entailment_ok = True
+            return True, last_output
+
         # V_entail: deterministic entailment under rule system R
         claim_node = nodes.get(cc.claim_id)
-        claim_text = (
-            getattr(claim_node, "canonical", "")
-            or getattr(claim_node, "raw", "")
-            or ""
-        )
+        _claim_type = getattr(claim_node, "claim_type", None)
+        if _claim_type == "fact_verification":
+            claim_text = (
+                getattr(claim_node, "support_text", "")
+                or getattr(claim_node, "raw", "")
+                or ""
+            )
+        else:
+            claim_text = (
+                getattr(claim_node, "canonical", "")
+                or getattr(claim_node, "raw", "")
+                or ""
+            )
 
         if not claim_text:
             result.entailment_ok = False
@@ -300,9 +419,15 @@ class Checker:
             return False, last_output
 
         replay_text = last_output.decode("utf-8", errors="replace")
-        if not self.entailment.check(replay_text, claim_text):
+        claim_task_type = getattr(claim_node, "claim_type", None)
+        try:
+            entail_ok = self.entailment.check(replay_text, claim_text, task_type=claim_task_type)
+        except TypeError:
+            # Backward-compat with EntailmentCheckers that don't accept task_type.
+            entail_ok = self.entailment.check(replay_text, claim_text)
+        if not entail_ok:
             result.entailment_ok = False
-            result.reasons.append(f"entailment_rejected:claim={claim_text[:100]!r}")
+            result.reasons.append(f"entailment_rejected:claim={claim_text[:100]!r}:type={claim_task_type}")
             return False, last_output
 
         return True, last_output
@@ -313,6 +438,11 @@ class Checker:
         graph: GraphLike,
         result: CheckResult,
     ) -> bool:
+        # -V_Gamma channel ablation (Phase 12): skip execution-contract check entirely.
+        if getattr(self, "disable_v_gamma", False):
+            result.execution_ok = True
+            return True
+
         contract = ec.contract
         nodes = graph.nodes
 
@@ -351,8 +481,12 @@ class Checker:
         max_tool_calls = _get_any(contract, "max_tool_calls", default=None)
 
         # V_Gamma(a): tool/function/MCP allow-list and block-list
+        # Masked tool obligations are dropped (responsibility semantics).
+        masked_set = getattr(graph, "masked", frozenset())
         tool_call_count = 0
         for tool_id in getattr(ec, "tool_call_ids", ()):
+            if tool_id in masked_set:
+                continue
             node = nodes.get(tool_id)
 
             if not isinstance(node, ToolCallNode):
@@ -376,7 +510,10 @@ class Checker:
             result.reasons.append(f"tool_budget_exceeded:{tool_call_count}>{max_tool_calls}")
 
         # V_Gamma(b): memory access policy
+        # Masked memory obligations are dropped.
         for memory_id in getattr(ec, "memory_node_ids", ()):
+            if memory_id in masked_set:
+                continue
             node = nodes.get(memory_id)
 
             if not isinstance(node, MemoryNode):

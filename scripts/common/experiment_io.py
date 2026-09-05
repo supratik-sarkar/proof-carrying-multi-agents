@@ -16,7 +16,29 @@ from dataclasses import asdict, is_dataclass
 from pathlib import Path
 from typing import Any
 
-import yaml
+
+def log_info(msg: str) -> None:
+    print(f"[INFO] {msg}", flush=True)
+
+
+def log_success(msg: str) -> None:
+    print(f"[SUCCESS] {msg}", flush=True)
+
+
+def log_warning(msg: str) -> None:
+    print(f"[WARNING] {msg}", flush=True)
+
+
+def log_error(msg: str) -> None:
+    print(f"[ERROR] {msg}", flush=True)
+
+
+def log_stage(stage: str, msg: str) -> None:
+    print(f"[{stage}] {msg}", flush=True)
+
+
+def log_section(name: str) -> None:
+    print(f"\n=== {name} ===", flush=True)
 
 
 # ---------------------------------------------------------------------------
@@ -31,6 +53,41 @@ def project_root() -> Path:
         if (ancestor / "pyproject.toml").exists():
             return ancestor
     return here.parent
+
+
+def make_output_dir(cfg_or_name: Any, run_id: str | None = None) -> Path:
+    if isinstance(cfg_or_name, str):
+        name = cfg_or_name
+    elif isinstance(cfg_or_name, dict):
+        name = cfg_get(cfg_or_name, "experiment.id", "exp")
+    else:
+        name = str(cfg_or_name)
+
+    if run_id:
+        p = project_root() / "results" / "tables" / "csv" / "experiment_json" / f"{run_id}_{name}"
+    else:
+        p = project_root() / "results" / "tables" / "csv" / "experiment_json" / name
+    p.mkdir(parents=True, exist_ok=True)
+    return p
+
+
+def write_json(path_or_data: Any, data_or_path: Any) -> None:
+    if isinstance(path_or_data, (str, Path)):
+        p = Path(path_or_data)
+        d = data_or_path
+    else:
+        d = path_or_data
+        p = Path(data_or_path)
+
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("w") as fh:
+        json.dump(d, fh, indent=2, default=str)
+
+
+def read_json(path: str | Path) -> Any:
+    p = Path(path)
+    with p.open("r") as fh:
+        return json.load(fh)
 
 
 # ---------------------------------------------------------------------------
@@ -64,14 +121,63 @@ def make_run_id(config_path: str | Path) -> str:
 # ---------------------------------------------------------------------------
 
 
+def _simple_yaml_load(text: str) -> dict[str, Any]:
+    """Lightweight fallback YAML parser for standard key-value configs when PyYAML is absent."""
+    result: dict[str, Any] = {}
+    stack = [(0, result)]
+
+    for line in text.splitlines():
+        # Strip inline comment
+        clean_line = line.split("#")[0]
+        line_strip = clean_line.strip()
+        if not line_strip:
+            continue
+
+        indent = len(clean_line) - len(clean_line.lstrip())
+
+        while len(stack) > 1 and indent <= stack[-1][0]:
+            stack.pop()
+
+        target = stack[-1][1]
+
+        if ":" in line_strip:
+            k, v = line_strip.split(":", 1)
+            k = k.strip()
+            v = v.strip()
+
+            if not v:
+                new_dict: dict[str, Any] = {}
+                target[k] = new_dict
+                stack.append((indent, new_dict))
+            else:
+                if v.lower() == "true":
+                    val = True
+                elif v.lower() == "false":
+                    val = False
+                elif v.lower() in ("null", "~", "none"):
+                    val = None
+                else:
+                    try:
+                        val = int(v) if "." not in v else float(v)
+                    except ValueError:
+                        val = v.strip('"').strip("'")
+                target[k] = val
+    return result
+
+
 def load_config(path: str | Path) -> dict[str, Any]:
     p = Path(path)
     if not p.is_absolute():
         p = project_root() / p
     if not p.exists():
         raise FileNotFoundError(f"Config not found: {p}")
-    with p.open("r") as fh:
-        return yaml.safe_load(fh)
+
+    try:
+        import yaml
+        with p.open("r") as fh:
+            return yaml.safe_load(fh)
+    except ImportError:
+        return _simple_yaml_load(p.read_text())
 
 
 def cfg_get(cfg: dict, dotted_key: str, default=None):
@@ -90,102 +196,38 @@ def cfg_get(cfg: dict, dotted_key: str, default=None):
 
 
 def resolved_backend_model_name(cfg: dict, default: str) -> str:
-    """Resolve actual backend HF repo.
-
-    PCG_BACKEND_MODEL_NAME is set by run_matrix.py from the user-facing
-    --models label. This prevents a run labeled as one model while YAML points
-    to another backend.model_name.
-    """
-    import os
-
-    return os.environ.get("PCG_BACKEND_MODEL_NAME") or cfg_get(cfg, "backend.model_name", default)
+    """Resolve actual backend HF repo."""
+    env_override = os.environ.get("PCG_BACKEND_MODEL_NAME")
+    if env_override and env_override.strip():
+        return env_override.strip()
+    return cfg_get(cfg, "backend.model_name", default)
 
 
-def build_backend(cfg: dict, override: str | None = None):
-    """Build the LLM backend specified by cfg['backend']['kind'].
+def create_backend(cfg: dict, override: str | None = None, backend_type: str | None = None) -> Any:
+    """Factory creating an LLMBackend instance from config."""
+    from pcg.backends.mock import MockBackend
+    from pcg.backends.hf_local import HFLocalBackend
+    from pcg.backends.hf_inference import HFInferenceBackend
+    from pcg.backends.deepseek import DeepSeekBackend
 
-    `override` is a CLI flag that lets the user override the config-specified
-    backend without editing the YAML — useful for forcing mock during debugging.
-    """
-    kind = override or cfg_get(cfg, "backend.kind", "mock")
-    if kind == "mock":
-        from pcg.backends import MockBackend
+    btype = override or backend_type or cfg_get(cfg, "backend.type", cfg_get(cfg, "backend.kind", "mock"))
+
+    if btype == "mock":
         return MockBackend()
-    elif kind == "hf_local":
-        from pcg.backends.hf_local import HFLocalBackend
-        return HFLocalBackend(
-            model_name=resolved_backend_model_name(cfg, "Qwen/Qwen2.5-7B-Instruct"),
-            dtype=cfg_get(cfg, "backend.dtype", "float16"),
-            load_in_4bit=cfg_get(cfg, "backend.load_in_4bit", False),
-            trust_remote_code=cfg_get(cfg, "backend.trust_remote_code", False),
-        )
-    elif kind == "hf_inference":
-        import os
-        from pcg.backends.hf_inference import HFInferenceBackend
-
-        cache = cfg_get(cfg, "backend.cache_dir", str(project_root() / ".cache" / "hf_inference"))
-        token = (
-            os.environ.get("HF_INFERENCE")
-            or os.environ.get("HF_TOKEN")
-            or os.environ.get("HUGGINGFACE_HUB_TOKEN")
-        )
-
-        return HFInferenceBackend(
-            model_name=resolved_backend_model_name(cfg, "meta-llama/Llama-3.3-70B-Instruct"),
-            token=token,
-            max_new_tokens=cfg_get(cfg, "backend.max_new_tokens", 256),
-            temperature=cfg_get(cfg, "backend.temperature", 0.0),
-            cache_dir=cache,
-        )
+    elif btype == "hf_local":
+        mname = resolved_backend_model_name(cfg, "phi-3.5-mini")
+        dtype = cfg_get(cfg, "backend.dtype", "float16")
+        l4b = cfg_get(cfg, "backend.load_in_4bit", False)
+        return HFLocalBackend(model_name=mname, dtype=dtype, load_in_4bit=l4b)
+    elif btype == "hf_inference":
+        mname = resolved_backend_model_name(cfg, "phi-3.5-mini")
+        token = os.environ.get("HF_INFERENCE") or os.environ.get("HF_HUB_READ") or os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_HUB_TOKEN")
+        return HFInferenceBackend(model_name=mname, token=token)
+    elif btype == "deepseek":
+        mname = resolved_backend_model_name(cfg, "deepseek-chat")
+        token = os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("DEEPSEEK_TOKEN")
+        return DeepSeekBackend(model_name=mname, token=token)
     else:
-        raise ValueError(f"Unknown backend kind: {kind}")
+        raise ValueError(f"Unknown backend type: {btype}")
 
-
-# ---------------------------------------------------------------------------
-# Output directory + result writing
-# ---------------------------------------------------------------------------
-
-
-def make_output_dir(cfg: dict, run_id: str) -> Path:
-    """Return canonical JSON-output dir for experiment runs."""
-    base = project_root() / "results" / "tables" / "csv" / "experiment_json"
-    out = base / run_id
-    out.mkdir(parents=True, exist_ok=True)
-    return out
-
-
-def write_json(path: Path, data: Any) -> None:
-    """Serialize anything reasonable. Handles dataclasses, sets, numpy."""
-    def _coerce(o: Any) -> Any:
-        if is_dataclass(o):
-            return asdict(o)
-        if isinstance(o, (set, frozenset)):
-            return sorted(o)
-        try:
-            import numpy as np
-            if isinstance(o, np.ndarray):
-                return o.tolist()
-            if isinstance(o, (np.integer, np.floating)):
-                return o.item()
-        except ImportError:
-            pass
-        if hasattr(o, "to_dict"):
-            return o.to_dict()
-        raise TypeError(f"Not JSON-serializable: {type(o).__name__}")
-
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w") as fh:
-        json.dump(data, fh, indent=2, default=_coerce, sort_keys=True)
-
-
-# ---------------------------------------------------------------------------
-# Logging shim
-# ---------------------------------------------------------------------------
-
-
-def log_section(title: str) -> None:
-    print(f"\n{'='*60}\n  {title}\n{'='*60}", flush=True)
-
-
-def log_info(msg: str) -> None:
-    print(f"[{time.strftime('%H:%M:%S')}] {msg}", flush=True)
+build_backend = create_backend

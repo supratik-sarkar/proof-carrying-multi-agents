@@ -56,7 +56,7 @@ fi
 if [[ "$BACKEND_MODE" == "openai" ]]; then
   read -r -s -p "OPENAI_API_KEY [hidden; required]: " OPENAI_API_KEY_INPUT
   echo ""
-  export OPENAI_API_KEY="${OPENAI_API_KEY_INPUT:-${OPENAI_API_KEY:-}}"
+export OPENAI_API_KEY="${OPENAI_API_KEY:-}"
   if [[ -z "${OPENAI_API_KEY:-}" ]]; then
     echo "OPENAI_API_KEY is required for backend=openai."
     return 1 2>/dev/null || exit 1
@@ -68,7 +68,7 @@ else
   read -r -s -p "HF_TOKEN [hidden; optional/public, required for gated models]: " HF_TOKEN_INPUT
   echo ""
   if [[ -n "$HF_TOKEN_INPUT" ]]; then
-    export HF_TOKEN="$HF_TOKEN_INPUT"
+export HF_TOKEN="${HF_TOKEN:-}"
   fi
 fi
 

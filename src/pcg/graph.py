@@ -294,7 +294,8 @@ class ClaimNode(GraphNode):
 
     raw: str = ""
     canonical: str = ""     # after Unicode NFKC + whitespace + locale-invariant normalization
-    claim_type: str = "text"    # text | entity_relation_triple | typed_kv
+    claim_type: str = "text"    # text | entity_relation_triple | typed_kv | fact_verification
+    support_text: str = ""  # original claim/question text to be grounded in evidence
     type: NodeType = NodeType.CLAIM
 
     def content_for_hash(self) -> bytes:

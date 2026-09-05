@@ -121,6 +121,11 @@ class HFLocalBackend:
             "max_new_tokens": max_tokens,
             "do_sample": temperature > 0,
             "pad_token_id": self._tokenizer.pad_token_id,
+            # Disable KV cache for cross-version robustness. transformers
+            # ships breaking changes to the cache class between minor versions
+            # (e.g. DynamicCache.seen_tokens removed in 5.x); use_cache=False
+            # bypasses that surface area at a ~10-15% latency cost.
+            "use_cache": False,
         }
         if temperature > 0:
             gen_kwargs["temperature"] = temperature

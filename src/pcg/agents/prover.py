@@ -44,7 +44,7 @@ from pcg.graph import (
     TruthNode,
 )
 from pcg.orchestrator.langgraph_flow import PCGState
-from pcg.retrieval import BM25Index
+from pcg.retrieval import BM25Index, build_retriever
 
 
 # ---------------------------------------------------------------------------
@@ -77,6 +77,96 @@ Question: {question}
 Answer:"""
 
 
+_FEVER_PROMPT = """\
+You are a fact-verification assistant. Read the evidence and decide whether
+the CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.
+
+Reply with EXACTLY one of these three labels and nothing else:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Evidence:
+{context}
+
+Claim: {question}
+
+Label:"""
+
+
+_QA_PROMPT_VARIANTS = (
+    _QA_PROMPT,
+    """\
+Answer the question strictly using the context. If absent, say "I don't know."
+Keep the answer short (1-5 words).
+
+Reference passages:
+{context}
+
+Q: {question}
+A:""",
+    """\
+Use the passages below as the sole source of truth. Reply with a concise
+phrase (1-5 words). If the passages do not contain the answer, output
+exactly: I don't know.
+
+Passages:
+{context}
+
+Question: {question}
+
+Concise answer:""",
+    """\
+You are answering from the cited evidence only. Be brief (1-5 words).
+If the evidence does not contain enough information, respond "I don't know."
+
+Evidence:
+{context}
+
+Query: {question}
+
+Response:""",
+)
+
+
+_FEVER_PROMPT_VARIANTS = (
+    _FEVER_PROMPT,
+    """\
+Classify the claim against the evidence. Output exactly one of:
+SUPPORTS / REFUTES / NOT ENOUGH INFO
+
+Evidence:
+{context}
+
+Claim: {question}
+
+Verdict:""",
+    """\
+Read the supporting passages and decide whether the claim is verified.
+Reply with one label only and no other text:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Passages:
+{context}
+
+Statement: {question}
+
+Label:""",
+    """\
+Determine the relationship between the claim and the evidence below.
+Permitted outputs (one only, exact wording): SUPPORTS, REFUTES, NOT ENOUGH INFO
+
+Evidence:
+{context}
+
+Claim: {question}
+
+Answer:""",
+)
+
+
 # ---------------------------------------------------------------------------
 # Confidence estimation
 # ---------------------------------------------------------------------------
@@ -98,9 +188,16 @@ def _estimate_confidence(
     Prover only needs to provide a monotone signal.
     """
     import math
-    has_answer = bool(answer_text.strip()) and answer_text.lower().strip() not in {
-        "i don't know.", "i don't know", "unknown", ""
-    }
+    import re as _re
+    _bs = chr(92)
+    _idk_pat = _bs + "bi" + _bs + "s+don'?t" + _bs + "s+know" + _bs + ".?"
+    _ns_pat  = _bs + "bnot" + _bs + "s+specified" + _bs + "b"
+    _tok_pat = _bs + "b" + _bs + "w+" + _bs + "b"
+    ans_clean = _re.sub(_idk_pat, " ", answer_text.lower()).strip()
+    ans_clean = _re.sub(_ns_pat,  " ", ans_clean).strip()
+    content_tokens = [w for w in _re.findall(_tok_pat, ans_clean)
+                       if w not in {"a","an","the","is","of","to","in","yes","no","not"} and len(w) > 1]
+    has_answer = len(content_tokens) >= 2
     base = 0.85 if has_answer else 0.05
 
     # Retrieval contribution: clip top score, normalize. BM25 scores live
@@ -163,6 +260,7 @@ def _add_pipeline_to_graph(
     selected_indices: list[int],
     answer_text: str,
     claim_text: str,
+    claim_type: str = 'text',
 ) -> tuple[list[str], str, list[ReplayableStep]]:
     """Add ToolCall nodes (representing retrieval + extraction) and edges
     connecting them to a claim node. Returns (tool_call_ids, claim_node_id,
@@ -184,7 +282,8 @@ def _add_pipeline_to_graph(
     claim = ClaimNode(
         raw=answer_text,
         canonical=re.sub(r"\s+", " ", answer_text).strip().lower(),
-        claim_type="text",
+        claim_type=claim_type,
+        support_text=claim_text,
     )
     graph.add_node(claim)
     # Connect every selected truth to the claim through SUPPORTS edges
@@ -258,6 +357,7 @@ class ProverConfig:
     seed: int = 0
     retriever: str = "bm25"            # "bm25" | "dense" | "hybrid"
     use_concat_replay: bool = True
+    prompt_variant: int = 0            # deterministic prompt paraphrase index (R2 branch independence)
 
 
 def build_default_prover(
@@ -291,10 +391,12 @@ def build_default_prover(
             for _ in truth_ids:
                 state.meter.record_hash()
 
-        # 2. Retrieval
+        # 2. Retrieval (per-branch retriever from cfg.retriever)
         with state.meter.phase("prover_retrieval"):
-            idx = BM25Index.build(ev_list)
-            hits = idx.search(ex.question, top_k=cfg.top_k)
+            idx = build_retriever(cfg.retriever, ev_list)
+            # NoRedundancy ablation: force top_k=1 if requested via state.meta.
+            effective_top_k = 1 if state.meta.get("disable_redundancy", False) else cfg.top_k
+            hits = idx.search(ex.question, top_k=effective_top_k)
             # Map hits back to indices in ev_list
             id_to_pos = {ev.id: i for i, ev in enumerate(ev_list)}
             selected_pos = [id_to_pos[item.id] for item, _ in hits]
@@ -307,10 +409,16 @@ def build_default_prover(
                 tool_evidence = [ev for ev in ev_list if ev.publisher == "tool"]
                 tool_output = "\n".join(ev.text for ev in tool_evidence) if tool_evidence else ""
                 prompt = _TOOL_PROMPT.format(question=ex.question, tool_output=tool_output)
+            elif ex.task_type == "fact_verification":
+                ctx = "\n\n".join(f"[{i+1}] {hits[i][0].title}: {hits[i][0].text}"
+                                  for i in range(len(hits)))
+                tmpl = _FEVER_PROMPT_VARIANTS[cfg.prompt_variant % len(_FEVER_PROMPT_VARIANTS)]
+                prompt = tmpl.format(context=ctx, question=ex.question)
             else:
                 ctx = "\n\n".join(f"[{i+1}] {hits[i][0].title}: {hits[i][0].text}"
                                   for i in range(len(hits)))
-                prompt = _QA_PROMPT.format(context=ctx, question=ex.question)
+                tmpl = _QA_PROMPT_VARIANTS[cfg.prompt_variant % len(_QA_PROMPT_VARIANTS)]
+                prompt = tmpl.format(context=ctx, question=ex.question)
             gen_out = backend.generate(
                 prompt,
                 max_tokens=cfg.max_answer_tokens,
@@ -337,6 +445,7 @@ def build_default_prover(
                 selected_indices=selected_pos,
                 answer_text=answer_text,
                 claim_text=ex.question,
+                claim_type=ex.task_type,
             )
 
         # 6. Replay locally to compute the y digest the certificate will commit to

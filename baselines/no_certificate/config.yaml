@@ -1,0 +1,6 @@
+# Configuration for baseline: No Certificate
+name: "no_certificate"
+label: "No Certificate"
+paper_title: "Matched-Stack Control: Uncertified Agent Execution"
+arxiv_id: "n/a"
+adapter_type: "matched_stack_control"

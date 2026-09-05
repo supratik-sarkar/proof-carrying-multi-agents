@@ -7,12 +7,12 @@
 
 dataset:
   name: fever
-  split: labelled_dev
-  n_examples: 200
+  split: validation
+  n_examples: 100
 
 backend:
   kind: hf_local
-  model_name: Qwen/Qwen2.5-7B-Instruct
+  model_name: microsoft/Phi-3.5-mini-instruct
   dtype: float16
   load_in_4bit: false
 
@@ -28,7 +28,7 @@ checker:
 
 adversarial:
   enabled: true
-  fraction: 0.30
+  fraction: 1.0
   attack_kinds: [evidence_swap, schema_break, policy_violation]
 
 stats:

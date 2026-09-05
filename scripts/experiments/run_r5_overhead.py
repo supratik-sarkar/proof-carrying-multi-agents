@@ -72,6 +72,18 @@ def _build_backend_from_dict(d: dict, override: str | None = None):
             cache_dir=d.get("cache_dir", "artifacts/hf_cache"),
         )
 
+    if kind == "deepseek":
+        import os
+        from pcg.backends.deepseek import DeepSeekBackend
+        token = os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("DEEPSEEK_TOKEN")
+        return DeepSeekBackend(
+            model_name=model_name,
+            token=token,
+            max_new_tokens=d.get("max_new_tokens", 256),
+            temperature=d.get("temperature", 0.0),
+            cache_dir=d.get("cache_dir", "artifacts/deepseek_cache"),
+        )
+
     raise ValueError(kind)
 
 

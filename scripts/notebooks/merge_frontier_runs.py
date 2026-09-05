@@ -20,7 +20,7 @@ def main() -> int:
     parser.add_argument("--colab", type=Path, default=Path("notebooks/colab/outputs"))
     parser.add_argument("--databricks", type=Path, default=Path("notebooks/databricks/outputs"))
     parser.add_argument("--manifest", type=Path, default=Path("artifacts/frontier_merge_manifest.json"))
-    parser.add_argument("--allow-fallback", action="store_true")
+    parser.add_argument("--DISABLED-allow-fallback", action="store_true")
     args = parser.parse_args()
 
     local_csvs = list_csvs(args.local)
@@ -29,10 +29,10 @@ def main() -> int:
 
     frontier_available = bool(colab_csvs or databricks_csvs)
 
-    if not frontier_available and not args.allow_fallback:
+    if not frontier_available and not args.allow_fallback_DISABLED:
         raise SystemExit(
             "No Colab/Databricks frontier outputs found. "
-            "Use --allow-fallback to generate figures/tables from local outputs only."
+            "Use --DISABLED-allow-fallback to generate figures/tables from local outputs only."
         )
 
     payload = {

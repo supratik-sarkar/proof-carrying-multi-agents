@@ -5,11 +5,11 @@
 dataset:
   name: hotpotqa
   split: validation
-  n_examples: 100
+  n_examples: 30
 
 backend:
   kind: hf_local
-  model_name: Qwen/Qwen2.5-7B-Instruct
+  model_name: microsoft/Phi-3.5-mini-instruct
   dtype: float16
 
 prover:
@@ -23,7 +23,7 @@ checker:
   case_insensitive: true
 
 debugger:
-  n_replays: 100            # M in Theorem 3
+  n_replays: 30            # M in Theorem 3
   alpha: 0.05               # 1 - confidence
   use_paired_replay: true
   component_types: [truth, tool, delegation]

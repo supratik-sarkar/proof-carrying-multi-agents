@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "v3.0-gate0.1-frozen",
+  "workstream": "A08",
+  "title": "A08 Residual Dependence and Scientific Evidence Sufficiency Specification",
+  "freeze_timestamp_utc": "2026-09-05T15:55:00Z",
+  "scientific_sufficiency_criteria": {
+    "positive_marginal_lcbs": {
+      "rule": "STRICTLY_POSITIVE_MARGINAL_LCB",
+      "formula": "hat_p_i^- > 0 for all i in I",
+      "description": "If any single-agent failure lower confidence bound hat_p_i^- equals 0, the ratio estimator denominator is 0 and hat_rho_UCB fails closed to infinity (INSUFFICIENT_EVIDENCE)."
+    },
+    "statistical_precision_requirement": {
+      "rule": "BOUNDED_CONFIDENCE_INTERVAL_WIDTH",
+      "max_ci_width": 0.50,
+      "max_rel_width": 0.40,
+      "description": "The estimated dependence ratio hat_rho_UCB must achieve adequate statistical precision relative to hat_rho. Excessively wide intervals due to sample sparsity fail closed to INSUFFICIENT_EVIDENCE."
+    }
+  },
+  "implementation_evidence_floors": {
+    "classification": "IMPLEMENTATION_EVIDENCE_FLOORS",
+    "description": "Operational guardrails ensuring non-degenerate contingency tables before subset evaluation.",
+    "q0": 2,
+    "n_min": 200,
+    "k_min": 5
+  },
+  "frozen_parameters": {
+    "bar_rho": 1.35,
+    "delta_tol": 0.15,
+    "q_cm": 0.05,
+    "eps_path": 0.18,
+    "alpha_confidence": 0.05
+  },
+  "scientific_states": [
+    "OPEN",
+    "CLOSED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "unestimable_rho_fallback": {
+    "rule": "EXACT_K_U_JOINT_BOUND",
+    "formula": "U_joint(k, delta) = binom_ucb(k_failures, n, 1 - delta)",
+    "extrapolation_permitted": false,
+    "description": "When rho is not estimable, exact configured-k joint failure UCB is reported with zero cross-k extrapolation credited."
+  }
+}

@@ -30,7 +30,7 @@ REQUIRED_HEADLINE_COLUMNS = [
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--rows", type=Path, default=Path("results/tables/csv/paper_metrics.jsonl"))
-    parser.add_argument("--allow-partial", action="store_true")
+    parser.add_argument("--DISABLED-allow-partial", action="store_true")
     args = parser.parse_args()
 
     if not args.rows.exists() or args.rows.stat().st_size == 0:
@@ -40,9 +40,9 @@ def main() -> int:
     if not rows:
         raise SystemExit(f"No metric rows found in {args.rows}")
 
-    if any(row.get("metric_source") == "schema_preflight_stub" for row in rows):
+    if any(row.get("metric_source") == "BLOCKED_stub_row_emission_disabled" for row in rows):
         raise SystemExit(
-            f"{args.rows} contains schema_preflight_stub rows. "
+            f"{args.rows} contains BLOCKED_stub_row_emission_disabled rows. "
             "Do not generate public figures/tables from schema-only preflight rows."
         )
 
@@ -52,7 +52,7 @@ def main() -> int:
         if missing:
             bad.append((i, missing))
 
-    if bad and not args.allow_partial:
+    if bad and not args.allow_partial_DISABLED:
         lines = [
             f"Paper metric validation failed for {args.rows}.",
             "The builders require measured, paper-facing headline columns.",
@@ -62,7 +62,7 @@ def main() -> int:
             lines.append(f"row {i} missing: {missing}")
         lines.append("")
         lines.append("This is expected until NoCert/ShieldAgent/AgentRR/PCG-MAS headline metrics are all present.")
-        lines.append("Use --allow-partial only for private layout debugging, not for paper/repo artifacts.")
+        lines.append("Use --DISABLED-allow-partial only for private layout debugging, not for paper/repo artifacts.")
         raise SystemExit("\n".join(lines))
 
     print(f"Validated {len(rows)} paper metric rows.")

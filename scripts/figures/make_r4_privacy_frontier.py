@@ -36,7 +36,7 @@ def recompute_private_stats(summary: dict) -> dict:
     rho_hat = 1.0 + 1.5 * summary.get("overlap", 0.1)
     eps_hat = summary.get("path_false_accept", 0.04)
     risk_hat = summary.get("risk", 0.05)
-    utility = max(0.0, min(1.0, summary.get("utility", 0.85) - 0.20 * risk_hat))
+    utility = max(0.0, min(1.0, summary.get("utility") - 0.20 * risk_hat))
     return {
         "rho_hat": rho_hat,
         "eps_hat": eps_hat,

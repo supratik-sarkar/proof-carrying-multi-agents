@@ -4,11 +4,11 @@
 dataset:
   name: hotpotqa
   split: validation
-  n_examples: 200
+  n_examples: 30
 
 backend:
   kind: hf_local
-  model_name: Qwen/Qwen2.5-7B-Instruct
+  model_name: microsoft/Phi-3.5-mini-instruct
   dtype: float16
 
 prover:

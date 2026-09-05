@@ -94,7 +94,7 @@ def build_preflight_metric_rows(
                             "shield_to_pcg_gap": 6.0 + 0.2 * cell_idx,
                             "responsibility_lift_pp": 20.0,
                             "control_gain": 1.35 - 0.15 * cell_idx,
-                            "metric_source": "schema_preflight_stub",
+                            "metric_source": "BLOCKED_stub_row_emission_disabled",
                         },
                     )
                 )

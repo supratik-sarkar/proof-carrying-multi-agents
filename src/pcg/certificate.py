@@ -151,22 +151,22 @@ class ExecutionContract:
     # v4 Enhanced tool control
     allowed_tools: frozenset[str] = frozenset()
     blocked_tools: frozenset[str] = frozenset()
-    
+
     # v4 Schema registry (maps schema_id -> JSON Schema dict)
     schemas: dict[str, Any] = field(default_factory=dict)
-    
+
     # v4 Refined memory policy (per-scope read/write constraints)
     memory_policy: dict[str, Any] = field(default_factory=dict)
-    
+
     # v4 Refined delegation policy (sub-agent constraints)
     delegation_policy: dict[str, Any] = field(default_factory=dict)
-    
+
     # v4 Policy/guardrail rules (structured clauses)
     policy_rules: list[dict[str, Any]] = field(default_factory=list)
-    
+
     # v4 MCP endpoint configurations
     mcp_endpoints: dict[str, Any] = field(default_factory=dict)
-    
+
     # Resource budget (unified v4)
     resource_budget: dict[str, int | float | None] = field(default_factory=lambda: {
         "max_tokens": None,
@@ -202,30 +202,30 @@ class ExecutionContract:
                 self.resource_budget.setdefault("max_latency_ms", self.max_latency_ms)
             if self.max_tool_calls is not None:
                 self.resource_budget.setdefault("max_tool_calls", self.max_tool_calls)
-        
+
         # Migrate v2 tool_allowlist -> allowed_tools if needed
         if self.tool_allowlist and not self.allowed_tools:
             object.__setattr__(self, "allowed_tools", self.tool_allowlist)
-        
+
         # Migrate v2 memory_access -> memory_policy if needed
         if self.memory_access and not self.memory_policy:
             self.memory_policy = {
                 "allowed_scopes": sorted(self.memory_access)
             }
-        
+
         # Migrate v2 allowed_delegations -> delegation_policy if needed
         if self.allowed_delegations and not self.delegation_policy:
             self.delegation_policy = {
                 "allowed_delegations": sorted(self.allowed_delegations)
             }
-        
+
         # Migrate v2 required_schema_ids into schemas if needed
         if self.required_schema_ids and not self.schemas:
             schema_dict = {}
             for sid in self.required_schema_ids:
                 schema_dict[sid] = {"$schema": "http://json-schema.org/draft-07/schema#", "type": "object"}
             self.schemas = schema_dict
-        
+
         # Migrate v2 required_policy_ids -> policy_rules if needed
         if self.required_policy_ids and not self.policy_rules:
             rules = []
@@ -262,31 +262,31 @@ class ExecutionContract:
     def get_allowed_tools(self) -> frozenset[str]:
         """Get allowed tools from v4 field, fall back to v2 field if needed."""
         return self.allowed_tools or self.tool_allowlist
-    
+
     def get_memory_scopes(self) -> frozenset[str]:
         """Get memory access scopes from v4 field, fall back to v2 field."""
         if self.memory_policy and "allowed_scopes" in self.memory_policy:
             return frozenset(self.memory_policy["allowed_scopes"])
         return self.memory_access
-    
+
     def get_allowed_delegations(self) -> frozenset[str]:
         """Get allowed delegations from v4 field, fall back to v2 field."""
         if self.delegation_policy and "allowed_delegations" in self.delegation_policy:
             return frozenset(self.delegation_policy["allowed_delegations"])
         return self.allowed_delegations
-    
+
     def get_required_schema_ids(self) -> frozenset[str]:
         """Get required schema IDs from v4 field, fall back to v2 field."""
         if self.schemas:
             return frozenset(self.schemas.keys())
         return self.required_schema_ids
-    
+
     def get_required_policy_ids(self) -> frozenset[str]:
         """Get required policy IDs from v4 field, fall back to v2 field."""
         if self.policy_rules:
             return frozenset(r.get("policy_id") for r in self.policy_rules if "policy_id" in r)
         return self.required_policy_ids
-    
+
     @classmethod
     def from_v2(cls,
                 tool_allowlist: frozenset[str] = frozenset(),
@@ -479,11 +479,11 @@ class GroundingCertificate:
             replay_output_digest=cc_d["replay_output_digest"],
             meta=cc_d.get("meta", {}),
         )
-        
+
         # Load contract with v4/v2 compatibility
         contract_d = ec_d["contract"]
         contract_version = contract_d.get("version", 2)  # Default to v2 if not specified
-        
+
         if contract_version >= 4:
             # v4 format
             contract = ExecutionContract(
@@ -516,7 +516,7 @@ class GroundingCertificate:
             v2_delegation = frozenset(contract_d.get("allowed_delegations", []))
             v2_schemas = frozenset(contract_d.get("required_schema_ids", []))
             v2_policies = frozenset(contract_d.get("required_policy_ids", []))
-            
+
             contract = ExecutionContract(
                 allowed_tools=v2_tools,
                 blocked_tools=frozenset(),
@@ -540,7 +540,7 @@ class GroundingCertificate:
                 max_tokens=contract_d.get("max_tokens"),
                 max_latency_ms=contract_d.get("max_latency_ms"),
             )
-        
+
         exec_cert = ExecutionCertificate(
             pipeline=tuple(
                 ReplayableStep(

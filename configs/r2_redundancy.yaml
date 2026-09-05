@@ -4,7 +4,7 @@
 dataset:
   name: hotpotqa
   split: validation
-  n_examples: 150           # smaller because each example runs k retrievers
+  n_examples: 150          # smaller because each example runs k retrievers
 
 backend:
   kind: hf_local
@@ -18,9 +18,10 @@ prover:
   # Multiple retrievers => k branches with different tool steps
   retrievers_for_branches:
     - bm25
-    - dense
-    - hybrid
     - bm25_with_query_paraphrase
+    # NOTE: dense + hybrid removed to avoid sentence-transformers/torchcodec
+    # dependency stack on Colab; reintroduce by re-adding the lines above and
+    # ensuring `apt-get install -y ffmpeg libavutil-dev` is run on the target.
 
 checker:
   entailment: exact_match

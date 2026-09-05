@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pcg.direct_execution_record/2",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "record_id",
+    "run_id",
+    "identity",
+    "identity_digest",
+    "evidence",
+    "status",
+    "provenance_class",
+    "execution_class"
+  ],
+  "properties": {
+    "schema_id": {
+      "const": "pcg.direct_execution_record/2"
+    },
+    "provenance_class": {
+      "enum": [
+        "DIRECT",
+        "DIRECT_WITH_PARTIAL_USAGE",
+        "DIRECT_ATTEMPT_NO_OUTCOME",
+        "MOCK",
+        "TEST_FIXTURE",
+        "REPLAY",
+        "INCOMPLETE",
+        "UNKNOWN"
+      ]
+    },
+    "usage_completeness": {
+      "enum": [
+        "FULL",
+        "PARTIAL",
+        "ABSENT",
+        null
+      ]
+    },
+    "latency_ms": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    }
+  }
+}

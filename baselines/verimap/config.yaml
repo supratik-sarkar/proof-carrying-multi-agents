@@ -1,0 +1,6 @@
+# Configuration for baseline: VERIMAP
+name: "verimap"
+label: "VERIMAP"
+paper_title: "VeriMAP: Verified Model-Driven Contract Verification for Multi-Agent Systems"
+arxiv_id: "2408.05678"
+adapter_type: "author_vendored_contract_verifier"

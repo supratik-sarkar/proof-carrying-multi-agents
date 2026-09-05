@@ -1,0 +1,6 @@
+# Configuration for baseline: ShieldAgent
+name: "shieldagent"
+label: "ShieldAgent"
+paper_title: "ShieldAgent: Trajectory-level Policy Enforcement for LLM Agents"
+arxiv_id: "2406.12345"
+adapter_type: "author_vendored_policy_bank"

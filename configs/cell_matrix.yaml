@@ -1,0 +1,102 @@
+matrix_metadata:
+  name: pcgmas_56cell_benchmark_matrix
+  description: Single source of truth for PCG-MAS 56-cell benchmark matrix (5 local LLMs x 8 datasets + 2 remote LLMs x 8 datasets).
+  total_cells: 56
+  local_cells: 40
+  colab_cells: 16
+  headline_cell_count: 6
+
+axes:
+  datasets:
+    - name: hotpotqa
+      split: validation
+      n_examples: 30
+    - name: twowiki
+      split: validation
+      n_examples: 30
+    - name: tatqa
+      split: validation
+      n_examples: 30
+    - name: toolbench
+      split: validation
+      n_examples: 30
+    - name: fever
+      split: validation
+      n_examples: 30
+    - name: pubmedqa
+      split: validation
+      n_examples: 30
+    - name: weblinx
+      split: validation
+      n_examples: 30
+    - name: synthetic_adv
+      split: test
+      n_examples: 30
+
+  backends:
+    local:
+      - id: phi-3.5-mini
+        hf_repo: microsoft/Phi-3.5-mini-instruct
+        revision: main
+        dtype: float16
+        tier: local-mps
+      - id: qwen2.5-7B
+        hf_repo: Qwen/Qwen2.5-7B-Instruct
+        revision: main
+        dtype: float16
+        tier: local-mps
+      - id: deepseek-llm-7b-chat
+        hf_repo: deepseek-ai/deepseek-llm-7b-chat
+        revision: main
+        dtype: float16
+        tier: local-mps
+      - id: Llama-3.1-8B
+        hf_repo: meta-llama/Llama-3.1-8B-Instruct
+        revision: main
+        dtype: bfloat16
+        tier: local-mps
+      - id: Gemma-2-9b-it
+        hf_repo: google/gemma-2-9b-it
+        revision: main
+        dtype: bfloat16
+        tier: local-mps
+
+    colab:
+      - id: Llama-3.3-70B
+        hf_repo: meta-llama/Llama-3.3-70B-Instruct
+        revision: main
+        dtype: bfloat16
+        tier: colab
+        provider_route: hf_inference
+      - id: deepseek-v3
+        hf_repo: deepseek-ai/DeepSeek-V3
+        revision: main
+        dtype: bfloat16
+        tier: colab
+        provider_route: deepseek_api
+
+headline_cells:
+  - dataset: toolbench
+    model: Llama-3.3-70B
+    tier: colab
+  - dataset: weblinx
+    model: deepseek-v3
+    tier: colab
+  - dataset: hotpotqa
+    model: phi-3.5-mini
+    tier: local-mps
+  - dataset: fever
+    model: qwen2.5-7B
+    tier: local-mps
+  - dataset: tatqa
+    model: Llama-3.1-8B
+    tier: local-mps
+  - dataset: pubmedqa
+    model: Gemma-2-9b-it
+    tier: local-mps
+
+default_decoding_config:
+  temperature: 0.0
+  top_p: 1.0
+  max_new_tokens: 1024
+  seed: 0

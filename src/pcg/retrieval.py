@@ -188,3 +188,144 @@ def hybrid_search(
 
     ranked = sorted(rrf.items(), key=lambda x: x[1], reverse=True)
     return [(item_by_id[i], s) for i, s in ranked[:top_k]]
+
+
+
+# ---------------------------------------------------------------------------
+# DenseIndex (sentence-transformers)
+# ---------------------------------------------------------------------------
+
+
+_DENSE_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+_dense_model_cache = {}
+
+
+def _load_dense_model():
+    name = _DENSE_MODEL_NAME
+    if name not in _dense_model_cache:
+        from sentence_transformers import SentenceTransformer
+        _dense_model_cache[name] = SentenceTransformer(name)
+    return _dense_model_cache[name]
+
+
+@dataclass
+class DenseIndex:
+    """Sentence-Transformers all-MiniLM-L6-v2 cosine-similarity retrieval.
+
+    Operationally separated from BM25: dense embeddings capture paraphrastic
+    similarity that BM25 cannot. Replayable because the model is deterministic
+    given the same input and weights.
+    """
+
+    items: tuple[EvidenceItem, ...]
+    doc_embeddings: object   # numpy array (n, d)
+
+    @classmethod
+    def build(cls, items):
+        import numpy as np
+        model = _load_dense_model()
+        texts = [it.title + ": " + it.text for it in items] if items else []
+        if not texts:
+            return cls(items=tuple(items), doc_embeddings=np.zeros((0, 384), dtype="float32"))
+        embs = model.encode(texts, normalize_embeddings=True, show_progress_bar=False)
+        return cls(items=tuple(items), doc_embeddings=embs)
+
+    def search(self, query: str, top_k: int = 4):
+        import numpy as np
+        if len(self.items) == 0:
+            return []
+        model = _load_dense_model()
+        q = model.encode([query], normalize_embeddings=True, show_progress_bar=False)[0]
+        sims = self.doc_embeddings @ q
+        idxs = np.argsort(-sims)[:top_k]
+        return [(self.items[i], float(sims[i])) for i in idxs]
+
+
+# ---------------------------------------------------------------------------
+# HybridIndex (BM25 + Dense, score fusion)
+# ---------------------------------------------------------------------------
+
+
+@dataclass
+class HybridIndex:
+    """Reciprocal-rank fusion of BM25 + Dense rankings."""
+
+    bm25: BM25Index
+    dense: DenseIndex
+    rrf_k: int = 60
+
+    @classmethod
+    def build(cls, items):
+        return cls(bm25=BM25Index.build(items), dense=DenseIndex.build(items))
+
+    def search(self, query: str, top_k: int = 4):
+        bm25_hits = self.bm25.search(query, top_k=max(top_k * 3, 10))
+        dense_hits = self.dense.search(query, top_k=max(top_k * 3, 10))
+        # RRF: score = sum over rankers of 1 / (k + rank)
+        fused: dict = {}
+        for rank, (item, _) in enumerate(bm25_hits):
+            fused.setdefault(item.id, [item, 0.0])[1] += 1.0 / (self.rrf_k + rank)
+        for rank, (item, _) in enumerate(dense_hits):
+            fused.setdefault(item.id, [item, 0.0])[1] += 1.0 / (self.rrf_k + rank)
+        ranked = sorted(fused.values(), key=lambda x: -x[1])[:top_k]
+        return [(item, score) for item, score in ranked]
+
+
+# ---------------------------------------------------------------------------
+# ParaphraseBM25 (deterministic query paraphrase)
+# ---------------------------------------------------------------------------
+
+
+_QUERY_STOPWORDS = frozenset({
+    "a", "an", "the", "of", "in", "on", "at", "for", "with", "by", "to",
+    "is", "are", "was", "were", "be", "been", "being",
+    "what", "which", "who", "whom", "whose", "when", "where", "why", "how",
+    "did", "does", "do", "had", "has", "have",
+})
+
+
+def _paraphrase_query(q: str) -> str:
+    """Deterministic content-word-only paraphrase.
+
+    Drops function words and reorders content tokens alphabetically. Same
+    information content, different token ordering — exercises BM25 over a
+    structurally different query without changing semantics.
+    """
+    toks = _tokenize(q)
+    content = sorted({t for t in toks if t not in _QUERY_STOPWORDS and len(t) > 1})
+    return " ".join(content) if content else q
+
+
+@dataclass
+class ParaphraseBM25Index:
+    """BM25 over the same evidence pool, but the query is deterministically
+    paraphrased before scoring."""
+
+    bm25: BM25Index
+
+    @classmethod
+    def build(cls, items):
+        return cls(bm25=BM25Index.build(items))
+
+    def search(self, query: str, top_k: int = 4):
+        return self.bm25.search(_paraphrase_query(query), top_k=top_k)
+
+
+# ---------------------------------------------------------------------------
+# Dispatcher
+# ---------------------------------------------------------------------------
+
+
+def build_retriever(kind: str, items):
+    """Build a retriever by kind. All retrievers expose `.search(query, top_k)`
+    returning a list of (EvidenceItem, score) tuples."""
+    kind = (kind or "bm25").lower()
+    if kind in ("bm25", "bm25_default"):
+        return BM25Index.build(items)
+    if kind in ("dense", "minilm", "sentence_transformer"):
+        return DenseIndex.build(items)
+    if kind in ("hybrid", "rrf", "bm25_dense_rrf"):
+        return HybridIndex.build(items)
+    if kind in ("bm25_with_query_paraphrase", "paraphrase_bm25", "paraphrase"):
+        return ParaphraseBM25Index.build(items)
+    raise ValueError(f"Unknown retriever kind: {kind!r}")

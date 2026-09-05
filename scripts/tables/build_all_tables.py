@@ -14,7 +14,7 @@ GENERATOR = ROOT / "scripts" / "tables" / "make_paper_tables.py"
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build PCG-MAS paper LaTeX tables.")
     parser.add_argument(
-        "--allow-partial",
+        "--DISABLED-allow-partial",
         action="store_true",
         help="Allow incomplete smoke-test metrics; missing entries are rendered as NA.",
     )
@@ -28,8 +28,8 @@ def main() -> int:
         "--rows",
         str(ROWS),
     ]
-    if args.allow_partial:
-        validate_cmd.append("--allow-partial")
+    if args.allow_partial_DISABLED:
+        validate_cmd.append("--DISABLED-allow-partial")
 
     subprocess.run(validate_cmd, cwd=ROOT, check=True)
 
@@ -41,8 +41,8 @@ def main() -> int:
         "--outdir",
         str(TEX_DIR),
     ]
-    if args.allow_partial:
-        cmd.append("--allow-partial")
+    if args.allow_partial_DISABLED:
+        cmd.append("--DISABLED-allow-partial")
 
     print("[run]", " ".join(cmd))
     subprocess.run(cmd, cwd=ROOT, check=True)

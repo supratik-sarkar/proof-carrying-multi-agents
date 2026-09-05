@@ -1,0 +1,6 @@
+# Configuration for baseline: Citation-Only
+name: "citation_only"
+label: "Citation-Only"
+paper_title: "Scope-Matched Control: Citation Validity & Entailment Verification"
+arxiv_id: "n/a"
+adapter_type: "scope_matched_control"

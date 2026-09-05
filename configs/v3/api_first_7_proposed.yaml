@@ -1,0 +1,114 @@
+# configs/v3/api_first_7_proposed.yaml
+# ============================================================================
+# PCG-MAS v3.0 Proposed Gate-0 API-First Model Panel Configuration
+# ============================================================================
+# Status: PROPOSED (Engineering Target awaiting final Professor approval)
+# Constraint: Gate-0 design freeze required before any real API execution.
+# Execution Mode: api_first
+# Primary Orchestration Host: MacBook Pro M4 Pro (Local Orchestration + Provenance)
+# ============================================================================
+
+panel_version: "v3.0-gate0-proposed"
+created_at: "2026-09-05"
+execution_mode: "api_first"
+
+observability:
+  langsmith:
+    api_key_env: "LANGSMITH_API_KEY"
+    tracing_env: "LANGSMITH_TRACING"
+    default_tracing: false
+    project_env: "LANGSMITH_PROJECT"
+    default_project: "pcg-mas-v3-0-private"
+  opentelemetry:
+    enabled: true
+    canonical_local_traces: true
+
+providers:
+  openai:
+    provider_name: "openai"
+    canonical_model_id: "gpt-5.6-sol"
+    api_key_env: "OPENAI_API_KEY"
+    endpoint_mode: "chat_completions"
+    temperature: 0.0
+    seed: 42
+    provenance_required: true
+
+  anthropic:
+    provider_name: "anthropic"
+    canonical_model_id: "claude-opus-5"
+    api_key_env: "ANTHROPIC_API_KEY"
+    endpoint_mode: "messages"
+    temperature: 0.0
+    seed: 42
+    provenance_required: true
+
+  deepseek:
+    provider_name: "deepseek"
+    canonical_model_id: "deepseek-v4-pro"
+    api_key_env: "DEEPSEEK_API_KEY"
+    endpoint_mode: "chat_completions"
+    temperature: 0.0
+    seed: 42
+    provenance_required: true
+
+  gemini:
+    provider_name: "google"
+    canonical_model_id: "gemini-3.1-pro-preview"
+    api_key_env: "GEMINI_API_KEY"
+    endpoint_mode: "generate_content"
+    temperature: 0.0
+    seed: 42
+    provenance_required: true
+
+  xai:
+    provider_name: "xai"
+    canonical_model_id: "grok-4.6"
+    api_key_env: "XAI_API_KEY"
+    endpoint_mode: "chat_completions"
+    temperature: 0.0
+    seed: 42
+    provenance_required: true
+
+  mistral:
+    provider_name: "mistral"
+    canonical_model_id: "mistral-medium-3-5"
+    api_key_env: "MISTRAL_API_KEY"
+    endpoint_mode: "chat_completions"
+    temperature: 0.0
+    seed: 42
+    provenance_required: true
+
+  cohere:
+    provider_name: "cohere"
+    canonical_model_id: "command-a-plus-05-2026"
+    api_key_env: "COHERE_API_KEY"
+    endpoint_mode: "chat"
+    temperature: 0.0
+    seed: 42
+    provenance_required: true
+
+provenance_contract:
+  mandatory_fields:
+    - provider
+    - requested_model_id
+    - returned_model_id
+    - returned_revision
+    - timestamp_utc
+    - sdk_version
+    - endpoint_mode
+    - prompt_sha256
+    - system_prompt_sha256
+    - tool_schema_sha256
+    - retriever_snapshot_sha256
+    - reasoning_config
+    - sampling_config
+    - max_output
+    - response_id
+    - input_tokens
+    - cached_input_tokens
+    - reasoning_tokens
+    - output_tokens
+    - latency_ms
+    - price_manifest_sha256
+    - billed_cost_usd
+    - raw_response_sha256

@@ -291,7 +291,7 @@ def make_na_grid(outdir: Path, filename: str, caption: str, label: str, colspec:
     write(outdir / filename, table(body, caption, label, colspec, header, body))
 
 
-def make_all_tables(rows: List[Dict[str, Any]], outdir: Path, allow_partial: bool) -> None:
+def make_all_tables(rows: List[Dict[str, Any]], outdir: Path, allow_partial_DISABLED: bool) -> None:
     outdir.mkdir(parents=True, exist_ok=True)
 
     make_main_six(rows, outdir)
@@ -301,80 +301,100 @@ def make_all_tables(rows: List[Dict[str, Any]], outdir: Path, allow_partial: boo
     make_replay_drift(rows, outdir)
     make_r3(rows, outdir)
 
-    if allow_partial:
-        make_na_grid(
-            outdir,
-            "table_r4_privacy.tex",
-            "R4 privacy frontier. Partial smoke-test builds show unavailable measurements as NA.",
-            "table_r4_privacy",
-            "rrrrr",
-            r"\(B_{\mathrm{info}}\) & \(\eta\) & \(\widehat\rho\) & Harm & Utility",
-            ["32", "64", "128", "256"],
-        )
-        make_na_grid(
-            outdir,
-            "table_r5_scaling.tex",
-            "R5 scaling summary. Partial smoke-test builds show unavailable measurements as NA.",
-            "table_r5_scaling",
-            "llll",
-            "Variable & Sweep & Token slope & Latency slope",
-            [r"Redundancy \(k\)", r"Support size \(|S_0|\)", r"Chain depth \(d\)"],
-        )
-        make_na_grid(
-            outdir,
-            "table_appendix_remaining_50_summary.tex",
-            "Remaining-cell summary. Partial smoke-test builds show unavailable measurements as NA.",
-            "table_appendix_remaining_50_summary",
-            "lrrrrrrrr",
-            "Cell & Clean NoCert & Clean ShieldAgent & Clean PCG & Adv. NoCert & Adv. ShieldAgent & Adv. PCG & Resp.@1 & Utility",
-            [cell_tex(r) for r in rows],
-        )
-    else:
-        make_na_grid(
-            outdir,
-            "table_r4_privacy.tex",
-            "R4 privacy frontier.",
-            "table_r4_privacy",
-            "rrrrr",
-            r"\(B_{\mathrm{info}}\) & \(\eta\) & \(\widehat\rho\) & Harm & Utility",
-            ["32", "64", "128", "256"],
-        )
-        make_na_grid(
-            outdir,
-            "table_r5_scaling.tex",
-            "R5 scaling summary.",
-            "table_r5_scaling",
-            "llll",
-            "Variable & Sweep & Token slope & Latency slope",
-            [r"Redundancy \(k\)", r"Support size \(|S_0|\)", r"Chain depth \(d\)"],
-        )
-        make_na_grid(
-            outdir,
-            "table_appendix_remaining_50_summary.tex",
-            "Remaining-cell summary.",
-            "table_appendix_remaining_50_summary",
-            "lrrrrrrrr",
-            "Cell & Clean NoCert & Clean ShieldAgent & Clean PCG & Adv. NoCert & Adv. ShieldAgent & Adv. PCG & Resp.@1 & Utility",
-            [cell_tex(r) for r in rows],
-        )
+    make_appendix_summary(rows, outdir)
+    make_appendix_r1r4(rows, outdir)
+    make_appendix_cost(rows, outdir)
 
     make_na_grid(
         outdir,
-        "table_appendix_remaining_50_r1r4.tex",
-        "Remaining-cell R1/R4 appendix summary. Missing measurements are shown as NA.",
-        "table_appendix_remaining_50_r1r4",
-        "lrrrrr",
-        "Cell & Clean harm & Adv. harm & Gain clean & Gain adv. & 95\\% CI",
-        [cell_tex(r) for r in rows],
+        "table_r4_privacy.tex",
+        "R4 privacy frontier.",
+        "table_r4_privacy",
+        "rrrrr",
+        r"\(B_{\mathrm{info}}\) & \(\eta\) & \(\widehat\rho\) & Harm & Utility",
+        ["32", "64", "128", "256"],
     )
     make_na_grid(
         outdir,
-        "table_appendix_remaining_50_cost.tex",
-        "Remaining-cell cost appendix summary. Missing measurements are shown as NA.",
-        "table_appendix_remaining_50_cost",
-        "lrrrrr",
-        "Cell & NoCert tok. & ShieldAgent tok. & PCG tok. & ShieldAgent lat. & PCG lat.",
-        [cell_tex(r) for r in rows],
+        "table_r5_scaling.tex",
+        "R5 scaling summary.",
+        "table_r5_scaling",
+        "llll",
+        "Variable & Sweep & Token slope & Latency slope",
+        [r"Redundancy \(k\)", r"Support size \(|S_0|\)", r"Chain depth \(d\)"],
+    )
+def make_appendix_summary(rows: List[Dict[str, Any]], outdir: Path) -> None:
+    body = []
+    for r in rows:
+        body.append(
+            f"{cell_tex(r)} & "
+            f"{fmt(val(r, 'clean_harm_nocert', 'harm_clean_no_cert'))} & "
+            f"{fmt(val(r, 'clean_harm_shieldagent', 'harm_clean_shield'))} & "
+            f"{fmt(val(r, 'clean_harm_pcg_mas', 'harm_clean_pcg'))} & "
+            f"{fmt(val(r, 'adv_harm_nocert', 'harm_adv_no_cert'))} & "
+            f"{fmt(val(r, 'adv_harm_shieldagent', 'harm_adv_shield'))} & "
+            f"{fmt(val(r, 'adv_harm_pcg_mas', 'harm_adv_pcg'))} & "
+            f"{fmt(val(r, 'responsibility_top1', 'resp_top1'))} & "
+            f"{fmt(val(r, 'utility'))} \\\\"
+        )
+    write(
+        outdir / "table_appendix_remaining_50_summary.tex",
+        table(
+            body,
+            "Full matrix summary across evaluated cells.",
+            "table_appendix_remaining_50_summary",
+            "lrrrrrrrr",
+            "Cell & Clean NoCert & Clean ShieldAgent & Clean PCG & Adv. NoCert & Adv. ShieldAgent & Adv. PCG & Resp.@1 & Utility",
+            body,
+        ),
+    )
+
+
+def make_appendix_r1r4(rows: List[Dict[str, Any]], outdir: Path) -> None:
+    body = []
+    for r in rows:
+        clean_pcg = val(r, "clean_harm_pcg_mas", "harm_clean_pcg")
+        adv_pcg = val(r, "adv_harm_pcg_mas", "harm_adv_pcg")
+        gain_clean = ratio(val(r, "clean_harm_nocert", "harm_clean_no_cert"), clean_pcg)
+        gain_adv = ratio(val(r, "adv_harm_nocert", "harm_adv_no_cert"), adv_pcg)
+        body.append(
+            f"{cell_tex(r)} & {fmt(clean_pcg)} & {fmt(adv_pcg)} & "
+            f"{fmt_gain(gain_clean)} & {fmt_gain(gain_adv)} & NA \\\\"
+        )
+    write(
+        outdir / "table_appendix_remaining_50_r1r4.tex",
+        table(
+            body,
+            "Full matrix R1/R4 appendix risk-control summary.",
+            "table_appendix_remaining_50_r1r4",
+            "lrrrrr",
+            "Cell & Clean harm & Adv. harm & Gain clean & Gain adv. & 95\\% CI",
+            body,
+        ),
+    )
+
+
+def make_appendix_cost(rows: List[Dict[str, Any]], outdir: Path) -> None:
+    body = []
+    for r in rows:
+        body.append(
+            f"{cell_tex(r)} & "
+            f"{fmt_gain(val(r, 'tokens_nocert'))} & "
+            f"{fmt_gain(val(r, 'tokens_shieldagent'))} & "
+            f"{fmt_gain(val(r, 'tokens_pcg_mas'))} & "
+            f"{fmt_gain(val(r, 'latency_shieldagent'))} & "
+            f"{fmt_gain(val(r, 'latency_pcg_mas'))} \\\\"
+        )
+    write(
+        outdir / "table_appendix_remaining_50_cost.tex",
+        table(
+            body,
+            "Full matrix cost and overhead appendix summary.",
+            "table_appendix_remaining_50_cost",
+            "lrrrrr",
+            "Cell & NoCert tok. & ShieldAgent tok. & PCG tok. & ShieldAgent lat. & PCG lat.",
+            body,
+        ),
     )
 
 
@@ -382,16 +402,16 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Build PCG-MAS paper LaTeX tables.")
     parser.add_argument("--rows", type=Path, required=True)
     parser.add_argument("--outdir", type=Path, required=True)
-    parser.add_argument("--allow-partial", action="store_true")
+    parser.add_argument("--DISABLED-allow-partial", action="store_true")
     args = parser.parse_args()
 
     rows = read_jsonl(args.rows)
-    validate_headline_rows(rows, source=str(args.rows), allow_partial=args.allow_partial)
+    validate_headline_rows(rows, source=str(args.rows), allow_partial_DISABLED=args.allow_partial_DISABLED)
 
     # Keep compatibility with older code expectations: measured cells are read from rows.
     _ = cells_from_rows(rows)
 
-    make_all_tables(rows, args.outdir, allow_partial=args.allow_partial)
+    make_all_tables(rows, args.outdir, allow_partial_DISABLED=args.allow_partial_DISABLED)
 
     produced = sorted(args.outdir.glob("*.tex"))
     print(f"Wrote {len(produced)} LaTeX tables to {args.outdir}")

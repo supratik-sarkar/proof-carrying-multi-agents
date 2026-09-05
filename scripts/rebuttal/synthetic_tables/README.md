@@ -1,9 +1,9 @@
 # Synthetic Placeholder Table Generation Pipeline
 
-provenance: SYNTHETIC_PLACEHOLDER  
-empirical_status: NOT_EXECUTED  
-formal_reporting_allowed: false  
-server_run_status: PENDING  
+provenance: SYNTHETIC_PLACEHOLDER
+empirical_status: NOT_EXECUTED
+formal_reporting_allowed: false
+server_run_status: PENDING
 
 ## Overview
 This directory contains project-owned scripts for generating deterministic synthetic placeholder tables across all 56 cells (7 models x 8 datasets) for internal review with the professor prior to the real server execution.

@@ -707,6 +707,38 @@ def summarize_cell(dataset: str, model: str, seed: int, n_examples: int, backend
     return summary
 
 
+
+def _load_all_existing_summaries() -> list[dict]:
+    """Discover every summary.json under OUT_ROOT.
+
+    Aggregation across multiple runs (e.g. seed=0 then seed=1) requires
+    pulling in previously-written summaries, not just the current run's
+    in-memory list. We dedup by (dataset, model, seed, backend_mode), keyed
+    against the canonical fields each summary stores.
+    """
+    import json as _json
+    found = []
+    if not OUT_ROOT.exists():
+        return found
+    for p in OUT_ROOT.glob("*/summary.json"):
+        try:
+            d = _json.loads(p.read_text(encoding="utf-8"))
+            if all(k in d for k in ("dataset", "model", "seed", "backend_mode")):
+                found.append(d)
+        except Exception:
+            continue
+    return found
+
+
+def _merge_summaries(current: list[dict], existing: list[dict]) -> list[dict]:
+    """Dedup by (dataset, model, seed, backend_mode); current run wins on collision."""
+    key = lambda s: (s.get("dataset"), s.get("model"), s.get("seed"), s.get("backend_mode"))
+    by_key = {key(s): s for s in existing}
+    for s in current:
+        by_key[key(s)] = s
+    return sorted(by_key.values(), key=lambda s: (s.get("dataset",""), s.get("model",""), s.get("seed",0)))
+
+
 def aggregate(summaries: list[dict[str, Any]]) -> list[dict[str, Any]]:
     groups: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for s in summaries:
@@ -813,7 +845,10 @@ def main() -> int:
     }
     (OUT_ROOT / "manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True))
 
-    agg = aggregate(summaries)
+    # Merge in summaries from previous runs on disk so aggregate covers all seeds
+    _existing = _load_all_existing_summaries()
+    _merged = _merge_summaries(summaries, _existing)
+    agg = aggregate(_merged)
     (OUT_ROOT / "aggregate_by_dataset_model.json").write_text(json.dumps(agg, indent=2, sort_keys=True))
 
     out_csv = ROOT / "results/tables/csv/verimap_outputs"

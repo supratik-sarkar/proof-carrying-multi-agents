@@ -1,0 +1,6 @@
+# Configuration for baseline: AgentRR
+name: "agentrr"
+label: "AgentRR"
+paper_title: "AgentRR: Record-and-Replay Verification for LLM Tool Trajectories"
+arxiv_id: "2409.09876"
+adapter_type: "author_vendored_replay_verifier"

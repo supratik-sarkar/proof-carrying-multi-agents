@@ -8,19 +8,19 @@
 dataset:
   name: hotpotqa
   split: validation
-  n_examples: 100
+  n_examples: 30
 
 backends:
   # --- Always-available, no gate, no token strictly required ---
   - kind: hf_local
     model_name: microsoft/Phi-3.5-mini-instruct
     dtype: float16
-  - kind: hf_local
-    model_name: Qwen/Qwen2.5-7B-Instruct
-    dtype: float16
-  - kind: hf_local
-    model_name: deepseek-ai/deepseek-llm-7b-chat
-    dtype: float16
+  # - kind: hf_local
+  #   model_name: Qwen/Qwen2.5-7B-Instruct
+  #   dtype: float16
+  # - kind: hf_local
+  #   model_name: deepseek-ai/deepseek-llm-7b-chat
+  #   dtype: float16
 
   # --- Optional gated comparators — uncomment after license acceptance ---
   # - kind: hf_local
