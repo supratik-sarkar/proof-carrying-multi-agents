@@ -1,0 +1,7 @@
+cell,noprune_harm,pcg_harm,support_failure_diff
+phi-3.5-mini / fever,0.1056,0.0816,0.0240
+gemma-2-9b-it / tat-qa,0.1149,0.0909,0.0240
+llama-3.3-70b / toolbench,0.1240,0.1000,0.0240
+deepseek-v3 / weblinx,0.1040,0.0800,0.0240
+qwen2.5-7b / hotpotqa,0.1149,0.0909,0.0240
+llama-3.1-8b / pubmedqa,0.0745,0.0505,0.0240

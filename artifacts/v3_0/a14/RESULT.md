@@ -1,0 +1,20 @@
+# A14 — taxonomy_open_set
+
+- release: `v3.0`
+- provenance class: `DIRECT`
+- spec hash: `769b2a9e4bec886d`
+- requires model calls: `False`
+
+## Metrics
+```json
+{"by_family":{"compromised_delegation":{"bad":36,"covgap_only":7,"missed":2,"n":150},"coordinated_deception":{"bad":38,"covgap_only":6,"missed":8,"n":150},"corrupted_ocr":{"bad":25,"covgap_only":3,"missed":4,"n":150},"memory_poisoning":{"bad":32,"covgap_only":3,"missed":3,"n":150},"schema_bypass":{"bad":33,"covgap_only":8,"missed":1,"n":150},"stale_api_state":{"bad":30,"covgap_only":10,"missed":4,"n":150}},"contract_bad":194,"covgap_only_total":37,"eps_tax_chal":0.024444444444444446,"experiment_id":"A14","interpretation":"challenge-set alarm; not a deployment upper bound","metric_version":"v3.0.0","n":900,"n_records":900,"rate_within_bad":0.1134020618556701,"spec_hash":"769b2a9e4bec886d8a7f1d9e28aa98f03f25c3b82e30b3f1ff0a73620978576d","unclassified":22}
+```
+
+## Checks
+```json
+{"covgap_not_used_as_catchall":true,"is_alarm_not_bound":true,"records_present":true}
+```
+
+## Failures and limitations
+
+None recorded.

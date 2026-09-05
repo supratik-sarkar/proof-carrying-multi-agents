@@ -1,0 +1,60 @@
+{
+  "label": "tab:responsibility_detail",
+  "caption": "Responsibility detail from seeded mask-and-replay diagnostics. Top-k accuracy, margin, Unresolved rate, and oracle-intervention improvement are diagnostic utilities.",
+  "rows": [
+    {
+      "Cell": "phi-3.5-mini/FEVER",
+      "Top-1": "0.667",
+      "Top-3": "0.842",
+      "Margin": "0.268",
+      "Unresolved": "0.050",
+      "Top component": "retrieval",
+      "DeltaSuccess": "0.164"
+    },
+    {
+      "Cell": "qwen2.5-7B/HotpotQA",
+      "Top-1": "0.692",
+      "Top-3": "0.883",
+      "Margin": "0.303",
+      "Unresolved": "0.008",
+      "Top component": "retrieval",
+      "DeltaSuccess": "0.173"
+    },
+    {
+      "Cell": "Llama-3.1-8B/PubMedQA",
+      "Top-1": "0.650",
+      "Top-3": "0.900",
+      "Margin": "0.318",
+      "Unresolved": "0.017",
+      "Top component": "retrieval",
+      "DeltaSuccess": "0.165"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/TAT-QA",
+      "Top-1": "0.767",
+      "Top-3": "0.892",
+      "Margin": "0.311",
+      "Unresolved": "0.017",
+      "Top component": "checker",
+      "DeltaSuccess": "0.186"
+    },
+    {
+      "Cell": "Llama-3.3-70B/ToolBench",
+      "Top-1": "0.725",
+      "Top-3": "0.883",
+      "Margin": "0.332",
+      "Unresolved": "0.017",
+      "Top component": "tool",
+      "DeltaSuccess": "0.178"
+    },
+    {
+      "Cell": "deepseek-v3/WebLINX",
+      "Top-1": "0.733",
+      "Top-3": "0.883",
+      "Margin": "0.355",
+      "Unresolved": "0.000",
+      "Top component": "tool",
+      "DeltaSuccess": "0.182"
+    }
+  ]
+}

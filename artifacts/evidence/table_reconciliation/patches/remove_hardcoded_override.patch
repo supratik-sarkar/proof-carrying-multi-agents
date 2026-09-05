@@ -1,0 +1,5 @@
+--- a/make_tables.py
++++ b/make_tables.py
+@@ -1 +1 @@
+-SOTA_CALIBRATED
++canonical_metrics()

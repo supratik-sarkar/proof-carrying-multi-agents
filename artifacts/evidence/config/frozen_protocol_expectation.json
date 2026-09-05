@@ -1,0 +1,3369 @@
+{
+  "manifest_version": "1.0.0",
+  "total_expected_cells": 56,
+  "total_expected_seeds": 5,
+  "total_expected_conditions": 2,
+  "total_expected_tuples": 560,
+  "tuples": [
+    {
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__FEVER",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__HotpotQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__PubMedQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__ToolBench",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__WebLINX",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__FEVER",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__HotpotQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__PubMedQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__TAT-QA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__ToolBench",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.1-8B__WebLINX",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__FEVER",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__HotpotQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__PubMedQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__TAT-QA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__ToolBench",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "Llama-3.3-70B__WebLINX",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__FEVER",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__HotpotQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__PubMedQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__TAT-QA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__ToolBench",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-llm-7b-chat__WebLINX",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__FEVER",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__FEVER",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__FEVER",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__FEVER",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__FEVER",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__FEVER",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__FEVER",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__FEVER",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__FEVER",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__FEVER",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__HotpotQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__HotpotQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__HotpotQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__HotpotQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__HotpotQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__HotpotQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__HotpotQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__HotpotQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__HotpotQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__HotpotQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__PubMedQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__PubMedQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__PubMedQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__PubMedQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__PubMedQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__PubMedQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__PubMedQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__PubMedQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__PubMedQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__PubMedQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__TAT-QA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__TAT-QA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__TAT-QA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__TAT-QA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__TAT-QA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__TAT-QA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__TAT-QA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__TAT-QA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__TAT-QA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__TAT-QA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__ToolBench",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__ToolBench",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__ToolBench",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__ToolBench",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__ToolBench",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__ToolBench",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__ToolBench",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__ToolBench",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__ToolBench",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__ToolBench",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__HotpotQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__PubMedQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__TAT-QA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__ToolBench",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "phi-3.5-mini__WebLINX",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__2WikiMultihopQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__Adversarial-Integrity",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__FEVER",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__FEVER",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__FEVER",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__FEVER",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__FEVER",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__FEVER",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__FEVER",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__FEVER",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__FEVER",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__FEVER",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__HotpotQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__PubMedQA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__TAT-QA",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__ToolBench",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "seed": 0,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "seed": 0,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "seed": 1,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "seed": 1,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "seed": 2,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "seed": 2,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "seed": 3,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "seed": 3,
+      "condition": "adversarial",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "seed": 4,
+      "condition": "clean",
+      "expected_records": 24
+    },
+    {
+      "cell_id": "qwen2.5-7B__WebLINX",
+      "seed": 4,
+      "condition": "adversarial",
+      "expected_records": 24
+    }
+  ]
+}

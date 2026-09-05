@@ -1,0 +1,3 @@
+mode: canonical
+tolerance: 1e-4
+cell_count: 56

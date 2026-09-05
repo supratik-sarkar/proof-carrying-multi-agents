@@ -1,0 +1,1 @@
+{"experiment_id":"A08","metric_version":"v3.0.0","name":"injection","params":{"bar_rho":1.35,"delta_tol":0.15,"eps_path":0.18,"evidence_floor":{"k_min":5,"n_min":200,"q0":2},"q_cm":0.05},"provenance_class":"DIRECT","release":"v3.0","requires_model_calls":true,"seeds":[0,1,2,3],"tier":"T2"}

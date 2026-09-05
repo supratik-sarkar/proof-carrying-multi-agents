@@ -1,0 +1,1 @@
+{"experiment_id":"A10","metric_version":"v3.0.0","name":"direct_r5_timing","params":{},"provenance_class":"DIRECT","release":"v3.0","requires_model_calls":true,"seeds":[0,1,2,3],"tier":"T1"}

@@ -1,0 +1,6 @@
+source,dataset_id,canonical_display_name,submission_name,match
+manuscript_latex,adversarial_integrity,empirical adversarial split,empirical adversarial split,True
+manuscript_appendix,adversarial_integrity,empirical adversarial split,empirical adversarial,True
+dataset_config,adversarial_integrity,empirical adversarial split,empirical adversarial split,True
+cell_ids,adversarial_integrity,empirical adversarial split,empirical adversarial split,True
+per_example_records,adversarial_integrity,empirical adversarial split,empirical adversarial split,True

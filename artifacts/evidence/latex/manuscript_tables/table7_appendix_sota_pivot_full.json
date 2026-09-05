@@ -1,0 +1,48 @@
+{
+  "label": "tab:appendix_sota_pivot_full",
+  "caption": "Pivoted SOTA headline comparison. Each entry is clean/adversarial accepted harm; lower is better. Native-scope support and execution decompositions are separately reported.",
+  "rows": [
+    {
+      "System": "NoCert",
+      "phi-3.5-mini/FEVER": "0.122/0.139",
+      "Gemma-2-9b-it/TAT-QA": "0.139/0.174",
+      "Llama-3.3-70B/ToolBench": "0.139/0.191",
+      "deepseek-v3/WebLINX": "0.139/0.165"
+    },
+    {
+      "System": "CitationOnly",
+      "phi-3.5-mini/FEVER": "0.085/0.086",
+      "Gemma-2-9b-it/TAT-QA": "0.131/0.094",
+      "Llama-3.3-70B/ToolBench": "0.103/0.170",
+      "deepseek-v3/WebLINX": "0.121/0.123"
+    },
+    {
+      "System": "ShieldAgent",
+      "phi-3.5-mini/FEVER": "0.073/0.128",
+      "Gemma-2-9b-it/TAT-QA": "0.127/0.165",
+      "Llama-3.3-70B/ToolBench": "0.099/0.118",
+      "deepseek-v3/WebLINX": "0.063/0.127"
+    },
+    {
+      "System": "AgentRR",
+      "phi-3.5-mini/FEVER": "0.065/0.103",
+      "Gemma-2-9b-it/TAT-QA": "0.130/0.130",
+      "Llama-3.3-70B/ToolBench": "0.101/0.130",
+      "deepseek-v3/WebLINX": "0.101/0.093"
+    },
+    {
+      "System": "VERIMAP",
+      "phi-3.5-mini/FEVER": "0.057/0.076",
+      "Gemma-2-9b-it/TAT-QA": "0.113/0.133",
+      "Llama-3.3-70B/ToolBench": "0.038/0.075",
+      "deepseek-v3/WebLINX": "0.084/0.104"
+    },
+    {
+      "System": "PCG-MAS",
+      "phi-3.5-mini/FEVER": "0.040/0.082",
+      "Gemma-2-9b-it/TAT-QA": "0.119/0.091",
+      "Llama-3.3-70B/ToolBench": "0.069/0.100",
+      "deepseek-v3/WebLINX": "0.069/0.080"
+    }
+  ]
+}

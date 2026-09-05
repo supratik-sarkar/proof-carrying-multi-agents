@@ -1,0 +1,8 @@
+Channel,fires,rate,Lambda_union contribution
+check_fail,80,0.08888888888888889,
+cov_gap,88,0.09777777777777778,
+drift_fail,83,0.09222222222222222,
+int_fail,102,0.11333333333333333,
+replay_fail,88,0.09777777777777778,
+Lambda_union = E[(N_F-1)_+],,0.14222222222222222,
+sum marginals - Pr(union),,0.1422222222222222,

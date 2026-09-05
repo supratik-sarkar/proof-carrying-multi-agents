@@ -1,0 +1,78 @@
+{
+  "label": "tab:main_six_summary",
+  "caption": "End-to-end performance on six highlighted cells. Clean/adversarial accepted harm, certificate coverage, responsibility top-1, and utility share the same paired records.",
+  "rows": [
+    {
+      "Cell": "phi-3.5-mini/FEVER",
+      "NoCert C": "0.122",
+      "Shield C": "0.073",
+      "PCG C": "0.040",
+      "NoCert A": "0.139",
+      "Shield A": "0.128",
+      "PCG A": "0.082",
+      "Cert. cov.": "0.833",
+      "Resp.@1": "0.667",
+      "Utility": "0.704"
+    },
+    {
+      "Cell": "qwen2.5-7B/HotpotQA",
+      "NoCert C": "0.165",
+      "Shield C": "0.136",
+      "PCG C": "0.059",
+      "NoCert A": "0.217",
+      "Shield A": "0.165",
+      "PCG A": "0.091",
+      "Cert. cov.": "0.842",
+      "Resp.@1": "0.692",
+      "Utility": "0.697"
+    },
+    {
+      "Cell": "Llama-3.1-8B/PubMedQA",
+      "NoCert C": "0.078",
+      "Shield C": "0.055",
+      "PCG C": "0.030",
+      "NoCert A": "0.148",
+      "Shield A": "0.138",
+      "PCG A": "0.051",
+      "Cert. cov.": "0.842",
+      "Resp.@1": "0.650",
+      "Utility": "0.719"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/TAT-QA",
+      "NoCert C": "0.139",
+      "Shield C": "0.127",
+      "PCG C": "0.119",
+      "NoCert A": "0.174",
+      "Shield A": "0.165",
+      "PCG A": "0.091",
+      "Cert. cov.": "0.842",
+      "Resp.@1": "0.767",
+      "Utility": "0.653"
+    },
+    {
+      "Cell": "Llama-3.3-70B/ToolBench",
+      "NoCert C": "0.139",
+      "Shield C": "0.099",
+      "PCG C": "0.069",
+      "NoCert A": "0.191",
+      "Shield A": "0.118",
+      "PCG A": "0.100",
+      "Cert. cov.": "0.850",
+      "Resp.@1": "0.725",
+      "Utility": "0.697"
+    },
+    {
+      "Cell": "deepseek-v3/WebLINX",
+      "NoCert C": "0.139",
+      "Shield C": "0.063",
+      "PCG C": "0.069",
+      "NoCert A": "0.165",
+      "Shield A": "0.127",
+      "PCG A": "0.080",
+      "Cert. cov.": "0.850",
+      "Resp.@1": "0.733",
+      "Utility": "0.697"
+    }
+  ]
+}

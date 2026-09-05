@@ -1,0 +1,4 @@
+Quantity,Estimate,CI low,CI high,N,N_acc,scheme
+S (selectivity),-0.0037910843750000867,-0.0172130162621556,0.009047379009360368,800,640,paired_crossed_seed_x_example_bootstrap_v3
+V (verification),0.30911523593750007,0.2894080345911949,0.32910570607028766,800,640,paired_crossed_seed_x_example_bootstrap_v3
+Delta = S + V,0.3053241515625,0.285290755625,0.32420978625,800,640,paired_crossed_seed_x_example_bootstrap_v3

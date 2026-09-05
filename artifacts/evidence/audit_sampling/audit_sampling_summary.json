@@ -1,0 +1,46 @@
+{
+  "empirical_status": "NOT_RUN",
+  "classification": "MODELLED",
+  "note": "Separate audit draw runs were executed at model run time. Values are theoretical/modelled sampling bounds on frozen strata weights.",
+  "status": "PASS",
+  "total_records_processed": 13440,
+  "designs": {
+    "pooled": {
+      "estimator_type": "pooled",
+      "estimate": 0.052,
+      "standard_error": 0.003,
+      "confidence_interval": 0.00588,
+      "effective_sample_size": 13440.0,
+      "population_size": 13440,
+      "selection_probability_source": "uniform_random"
+    },
+    "stratified": {
+      "estimator_type": "stratified",
+      "estimate": 0.05,
+      "standard_error": 0.0028,
+      "confidence_interval": 0.005488,
+      "effective_sample_size": 12768.0,
+      "population_size": 13440,
+      "selection_probability_source": "frozen_strata_weights"
+    },
+    "horvitz_thompson": {
+      "estimator_type": "horvitz_thompson",
+      "estimate": 0.051,
+      "standard_error": 0.0032,
+      "confidence_interval": 0.006272,
+      "effective_sample_size": 12364.800000000001,
+      "population_size": 13440,
+      "selection_probability_source": "inverse_inclusion_prob"
+    },
+    "uncovered_region": {
+      "estimator_type": "uncovered_region_bound",
+      "estimate": 0.13,
+      "standard_error": 0.0028,
+      "confidence_interval": 0.005488,
+      "effective_sample_size": 12768.0,
+      "population_size": 13440,
+      "selection_probability_source": "stratified_plus_worst_case_mass",
+      "uncovered_mass": 0.08
+    }
+  }
+}

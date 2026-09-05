@@ -1,0 +1,78 @@
+{
+  "label": "tab:cost_overhead_main",
+  "caption": "Cost overhead on the six highlighted cells. Multipliers are relative to NoCert; absolute p50/p95 latency and token counts expose the certification cost.",
+  "rows": [
+    {
+      "Cell": "phi-3.5-mini/FEVER",
+      "Shield tok×": "1.37x",
+      "AgentRR tok×": "1.43x",
+      "PCG tok×": "1.89x",
+      "Shield lat×": "1.27x",
+      "AgentRR lat×": "1.44x",
+      "PCG lat×": "1.90x",
+      "PCG p50": "775",
+      "PCG p95": "1190",
+      "PCG tokens": "918"
+    },
+    {
+      "Cell": "qwen2.5-7B/HotpotQA",
+      "Shield tok×": "1.37x",
+      "AgentRR tok×": "1.47x",
+      "PCG tok×": "1.89x",
+      "Shield lat×": "1.31x",
+      "AgentRR lat×": "1.52x",
+      "PCG lat×": "1.95x",
+      "PCG p50": "1021",
+      "PCG p95": "1525",
+      "PCG tokens": "1496"
+    },
+    {
+      "Cell": "Llama-3.1-8B/PubMedQA",
+      "Shield tok×": "1.40x",
+      "AgentRR tok×": "1.48x",
+      "PCG tok×": "1.92x",
+      "Shield lat×": "1.33x",
+      "AgentRR lat×": "1.50x",
+      "PCG lat×": "2.01x",
+      "PCG p50": "1185",
+      "PCG p95": "1641",
+      "PCG tokens": "1713"
+    },
+    {
+      "Cell": "Gemma-2-9b-it/TAT-QA",
+      "Shield tok×": "1.41x",
+      "AgentRR tok×": "1.51x",
+      "PCG tok×": "1.96x",
+      "Shield lat×": "1.24x",
+      "AgentRR lat×": "1.46x",
+      "PCG lat×": "1.88x",
+      "PCG p50": "1243",
+      "PCG p95": "1704",
+      "PCG tokens": "1945"
+    },
+    {
+      "Cell": "Llama-3.3-70B/ToolBench",
+      "Shield tok×": "1.38x",
+      "AgentRR tok×": "1.48x",
+      "PCG tok×": "1.93x",
+      "Shield lat×": "1.37x",
+      "AgentRR lat×": "1.54x",
+      "PCG lat×": "2.03x",
+      "PCG p50": "1765",
+      "PCG p95": "2661",
+      "PCG tokens": "3574"
+    },
+    {
+      "Cell": "deepseek-v3/WebLINX",
+      "Shield tok×": "1.37x",
+      "AgentRR tok×": "1.48x",
+      "PCG tok×": "1.90x",
+      "Shield lat×": "1.27x",
+      "AgentRR lat×": "1.46x",
+      "PCG lat×": "2.02x",
+      "PCG p50": "2021",
+      "PCG p95": "2621",
+      "PCG tokens": "4207"
+    }
+  ]
+}

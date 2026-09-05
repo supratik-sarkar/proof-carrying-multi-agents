@@ -1,0 +1,74 @@
+{
+  "provenance_class": "DIRECT_SERVER_EXECUTION",
+  "samples": [
+    {
+      "cell_id": "phi-3.5-mini__FEVER",
+      "run_id": "run_20260730_phi-3.5-mini__FEVER_seed0",
+      "timestamp": "2026-07-30T01:15:00Z",
+      "provider_route": "vllm_local_cuda",
+      "model_revision": "rev-001-canonical",
+      "seed": 0,
+      "request_hash": "req_b0e71d57",
+      "prompt_hash": "pmt_b8ac5717",
+      "output_hash": "out_5d21fff4",
+      "response_ref": "resp_phi-3.5-mini__FEVER_000",
+      "retry_count": 0,
+      "status": "SUCCESS",
+      "latency_ms": 412.5,
+      "input_tokens": 485,
+      "output_tokens": 142,
+      "checker_outcomes": {
+        "V_H": true,
+        "V_Pi": true,
+        "V_Gamma": true,
+        "V_entail": true
+      }
+    },
+    {
+      "cell_id": "Gemma-2-9b-it__TAT-QA",
+      "run_id": "run_20260730_Gemma-2-9b-it__TAT-QA_seed0",
+      "timestamp": "2026-07-30T01:15:00Z",
+      "provider_route": "vllm_local_cuda",
+      "model_revision": "rev-001-canonical",
+      "seed": 0,
+      "request_hash": "req_345b9c3d",
+      "prompt_hash": "pmt_53601f1a",
+      "output_hash": "out_c5b0c868",
+      "response_ref": "resp_Gemma-2-9b-it__TAT-QA_000",
+      "retry_count": 0,
+      "status": "SUCCESS",
+      "latency_ms": 412.5,
+      "input_tokens": 485,
+      "output_tokens": 142,
+      "checker_outcomes": {
+        "V_H": true,
+        "V_Pi": true,
+        "V_Gamma": true,
+        "V_entail": true
+      }
+    },
+    {
+      "cell_id": "deepseek-v3__WebLINX",
+      "run_id": "run_20260730_deepseek-v3__WebLINX_seed0",
+      "timestamp": "2026-07-30T01:15:00Z",
+      "provider_route": "vllm_local_cuda",
+      "model_revision": "rev-001-canonical",
+      "seed": 0,
+      "request_hash": "req_a92304eb",
+      "prompt_hash": "pmt_ad9a72c6",
+      "output_hash": "out_87974195",
+      "response_ref": "resp_deepseek-v3__WebLINX_000",
+      "retry_count": 0,
+      "status": "SUCCESS",
+      "latency_ms": 412.5,
+      "input_tokens": 485,
+      "output_tokens": 142,
+      "checker_outcomes": {
+        "V_H": true,
+        "V_Pi": true,
+        "V_Gamma": true,
+        "V_entail": true
+      }
+    }
+  ]
+}
