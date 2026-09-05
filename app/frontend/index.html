@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PCG-MAS — Auditable Agent Execution Control Plane</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="mark" aria-hidden="true"></span>
+    <div>
+      <h1>PCG-MAS</h1>
+      <p class="sub">Replayable acceptance certificates for multi-agent LLMs</p>
+    </div>
+  </div>
+  <div class="topmeta">
+    <span class="chip" id="mode-chip" title="Demo mode">offline synthetic</span>
+    <span class="chip ghost" id="release-chip">v3.0</span>
+    <button class="ghostbtn" id="theme" aria-label="Toggle contrast">contrast</button>
+  </div>
+</header>
+
+<div class="banner" id="banner" role="status">
+  <strong>SYNTHETIC DEMO.</strong> Values below are deterministic fixtures, clearly marked.
+  Nothing here is a <span class="tag direct">DIRECT</span> experimental result.
+</div>
+
+<nav class="tabs" role="tablist">
+  <button role="tab" class="tab active" data-view="run">Live Run</button>
+  <button role="tab" class="tab" data-view="cert">Certificate</button>
+  <button role="tab" class="tab" data-view="channels">Audit Channels</button>
+  <button role="tab" class="tab" data-view="replay">Replay</button>
+  <button role="tab" class="tab" data-view="resp">Attribution</button>
+  <button role="tab" class="tab" data-view="dep">Dependence</button>
+  <button role="tab" class="tab" data-view="policy">Policy</button>
+  <button role="tab" class="tab" data-view="trace">Trace</button>
+  <button role="tab" class="tab" data-view="cost">Cost</button>
+  <button role="tab" class="tab" data-view="results">Results</button>
+  <button role="tab" class="tab" data-view="artifacts">Manuscript</button>
+</nav>
+
+<main id="main">
+  <!-- LIVE RUN -->
+  <section class="view active" id="view-run">
+    <div class="grid two">
+      <div class="card">
+        <h2>Request</h2>
+        <textarea id="req" rows="3">Does Policy X permit Action Y?</textarea>
+        <label class="lbl">Scenario</label>
+        <select id="scenario">
+          <option value="accept">accepted — all four conjuncts hold</option>
+          <option value="replay_failure">replay failure — V_Pi fails</option>
+          <option value="drift">drift — pinned replay passes, fresh environment diverges</option>
+          <option value="checker_failure">checker rejects — V_vdash fails</option>
+          <option value="policy_failure">policy violation — V_Gamma fails</option>
+          <option value="verifier_shared">verifier isolation breached (Gamma clause)</option>
+          <option value="dependence_insufficient">dependence: INSUFFICIENT_EVIDENCE</option>
+          <option value="high_risk">high risk — controller refuses</option>
+        </select>
+        <button class="primary" id="go">Execute graph</button>
+        <p class="hint">Deterministic. No model call, no network, no key.</p>
+      </div>
+      <div class="card">
+        <h2>Execution path</h2>
+        <ol class="pipeline" id="pipeline"></ol>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Terminal state</h2>
+      <div class="terminal" id="terminal">—</div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATE -->
+  <section class="view" id="view-cert">
+    <div class="card">
+      <h2>Certificate inspector</h2>
+      <p class="hint">Acceptance is <em>checker-relative external recomputability</em>, not proof of world truth.
+      Unknown counts as failure.</p>
+      <div class="conjuncts" id="conjuncts"></div>
+      <div class="kv" id="cert-meta"></div>
+    </div>
+  </section>
+
+  <!-- CHANNELS -->
+  <section class="view" id="view-channels">
+    <div class="card">
+      <h2>Five audit channels</h2>
+      <p class="hint">These are a <strong>different layer</strong> from the four certificate conjuncts.
+      Channels are defined over accepted-and-bad runs, so a correct rejection fires none of them.</p>
+      <div class="channels" id="channels"></div>
+      <h3>Residuals outside every channel</h3>
+      <div class="residuals">
+        <div class="resid"><code>&epsilon;<sub>tax</sub></code><span>open-world taxonomy residual — challenge-set alarm, never a deployment bound</span></div>
+        <div class="resid"><code>&epsilon;<sub>src</sub></code><span>source / world-truth residual — outside the certificate entirely</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPLAY -->
+  <section class="view" id="view-replay">
+    <div class="card">
+      <h2>Replay timeline</h2>
+      <div class="timeline" id="timeline"></div>
+      <p class="hint">Snapshot replay and fresh-environment execution are separate channels:
+      <code>ReplayFail</code> vs <code>DriftFail</code>.</p>
+    </div>
+  </section>
+
+  <!-- RESPONSIBILITY -->
+  <section class="view" id="view-resp">
+    <div class="card">
+      <h2>Replay-interventional attribution</h2>
+      <p class="hint">Certificate-sensitive components under masking. This is <strong>not</strong>
+      causal root-cause identification, and <code>Unresolved</code> is a first-class outcome.</p>
+      <table class="tbl" id="resp-tbl"></table>
+    </div>
+  </section>
+
+  <!-- DEPENDENCE -->
+  <section class="view" id="view-dep">
+    <div class="card">
+      <h2>Redundancy &amp; dependence gate</h2>
+      <div class="gatebox" id="gatebox"></div>
+      <p class="hint">When <code>&rho;</code> is not estimable the state is
+      <code>INSUFFICIENT_EVIDENCE</code> and only <code>U<sub>joint</sub>(k,&delta;)</code> is reported —
+      for that exact <em>k</em>, with no extrapolation.</p>
+    </div>
+  </section>
+
+  <!-- POLICY -->
+  <section class="view" id="view-policy">
+    <div class="card">
+      <h2>Policy inspector (V<sub>&Gamma;</sub>)</h2>
+      <div class="kv" id="policy-kv"></div>
+      <p class="hint">OPA is one backend for V<sub>&Gamma;</sub>; it does not redefine its meaning.
+      A deterministic local evaluator runs with OPA absent.</p>
+    </div>
+  </section>
+
+  <!-- TRACE -->
+  <section class="view" id="view-trace">
+    <div class="card">
+      <h2>Trace explorer</h2>
+      <table class="tbl" id="spans"></table>
+      <p class="hint">The same telemetry feeds A10 cost analysis — there is no separate UI timing system.</p>
+    </div>
+  </section>
+
+  <!-- COST -->
+  <section class="view" id="view-cost">
+    <div class="card">
+      <h2>Cost console</h2>
+      <div class="kv" id="cost-kv"></div>
+      <table class="tbl" id="cost-tbl"></table>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="view" id="view-results">
+    <div class="card">
+      <h2>Results browser</h2>
+      <p class="hint">Reads generated artifacts under <code>artifacts/v3_0/</code>. The app is never a second results store.</p>
+      <table class="tbl" id="ws-tbl"></table>
+    </div>
+  </section>
+
+  <!-- MANUSCRIPT -->
+  <section class="view" id="view-artifacts">
+    <div class="card">
+      <h2>Manuscript artifact explorer</h2>
+      <div class="kv" id="reg-kv"></div>
+      <table class="tbl" id="reg-tbl"></table>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span id="foot-version">PCG-MAS v3.0</span>
+  <span class="sep">·</span>
+  <span>Acceptance is checker-relative, not a claim of world truth.</span>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
