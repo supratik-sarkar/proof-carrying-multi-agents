@@ -51,6 +51,27 @@ def check(v_h, v_pi, v_gamma, v_entail):
     return all(bool(b) for b in bits)
 
 
+def check_applicable(
+    v_h: object,
+    v_pi: object,
+    v_gamma: object,
+    v_entail: object,
+    *,
+    grounding_applicable: bool = True,
+    policy_applicable: bool = True,
+    replay_applicable: bool = True,
+) -> bool:
+    """Applicability-aware acceptance predicate (S01 prospective protocol).
+    
+    Non-applicable obligations evaluate vacuously to True.
+    """
+    eff_h = bool(v_h) if grounding_applicable else True
+    eff_entail = bool(v_entail) if grounding_applicable else True
+    eff_gamma = bool(v_gamma) if policy_applicable else True
+    eff_pi = bool(v_pi) if replay_applicable else True
+    return eff_h and eff_entail and eff_gamma and eff_pi
+
+
 def n_channels_fired(**fired) -> int:
     """N_F for the multiplicity-weighted union slack E[(N_F-1)_+]."""
     return sum(1 for c in CHANNELS if bool(fired.get(_snake(c), False)))
