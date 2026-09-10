@@ -92,6 +92,40 @@ def compute_harm_decomposition(records: Sequence[Dict[str, Any]]) -> Dict[str, f
     }
 
 
+def compute_applicability_aware_harm(
+    records: Sequence[Dict[str, Any]],
+    *,
+    grounding_applicable: bool = True,
+    policy_applicable: bool = True,
+) -> Dict[str, Any]:
+    """Computes applicability-aware harm decomposition.
+    Non-applicable harm channels evaluate to False (0).
+    Zero denominator yields None (UNDEFINED), never 0.0000.
+    """
+    if not records:
+        return {"H_support": None, "H_exec": None, "H_joint": None, "N": 0}
+
+    n = len(records)
+    supp_count = sum(1 for r in records if r.get("h_support", False)) if grounding_applicable else 0
+    exec_count = sum(1 for r in records if r.get("h_exec", False)) if policy_applicable else 0
+
+    joint_count = 0
+    for r in records:
+        s = bool(r.get("h_support", False)) if grounding_applicable else False
+        e = bool(r.get("h_exec", False)) if policy_applicable else False
+        if s or e:
+            joint_count += 1
+
+    return {
+        "H_support": round(supp_count / n, 4) if grounding_applicable else 0.0,
+        "H_exec": round(exec_count / n, 4) if policy_applicable else 0.0,
+        "H_joint": round(joint_count / n, 4),
+        "N": n,
+        "numerator": joint_count,
+        "denominator": n,
+    }
+
+
 def compute_sv_decomposition(
     harm_nocert: float,
     harm_pcg: float,
