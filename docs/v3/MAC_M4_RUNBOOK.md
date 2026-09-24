@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-cd ~/Desktop/pcg-mas-2026
+cd /path/to/pcg-mas
 python3.12 -m venv .venv-pcg-mas
 source .venv-pcg-mas/bin/activate
 python -V                                  # Python 3.12.13
@@ -46,4 +46,4 @@ Runs with or without FastAPI installed.
 
 ## Housekeeping
 
-Never archive `.venv-pcg-mas`. Do not restore `__pycache__` from a 3.10 interpreter. Rebuild an upload archive with the exclusions in `V3_0_HANDOFF.md`.
+Never archive `.venv-pcg-mas`. Do not restore `__pycache__` from a 3.10 interpreter. Rebuild an upload archive with the exclusions in `DEVELOPMENT_NOTES.md`.

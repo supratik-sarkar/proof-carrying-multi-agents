@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-05
 **Pass:** Gate-0.1 Scientific Correction Pass
-**Author:** Antigravity (Independent Release & Verification Operator)
+**Author:** Automated Release & Verification Suite
 **Target:** `.` (PCG-MAS v3.0 Repository Root)
 
 ---

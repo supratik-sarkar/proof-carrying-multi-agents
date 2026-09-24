@@ -1,10 +1,10 @@
 # GIT_SYNC_DIFF_V3.md — PCG-MAS v3.0 Controlled Git Synchronization Report
 
 **Date:** 2026-09-05
-**Source Workspace:** `~/Desktop/pcg-mas-2026` (Authoritative v3.0 Gate-0.1 source)
-**Destination Repository:** `~/Desktop/My_Git/proof-carrying-multi-agents`
+**Source Workspace:** local release directory (Authoritative v3.0 Gate-0.1 source)
+**Destination Repository:** repository root
 **Target Git Branch:** `release/pcg-mas-v3.0-gate0.1`
-**Author:** Antigravity (Independent Release & Verification Operator)
+**Author:** Automated Release & Verification Suite
 
 ---
 
@@ -26,9 +26,9 @@
 |---|---|---|
 | `.env.secrets` | `INTERNAL_LOCAL_ONLY` / `SECRET` | Contains uncommitted local API keys — excluded by security policy |
 | `.venv-pcg-mas` | `INTERNAL_LOCAL_ONLY` / `SECRET` | Local Python 3.12 virtual environment — runtime only |
-| `ANTIGRAVITY_DEFERRED_FIX_RESOLUTION.md` | `INTERNAL_LOCAL_ONLY` / `SECRET` | Internal workspace transition audit |
-| `ANTIGRAVITY_V3_FINAL_VERIFICATION.md` | `INTERNAL_LOCAL_ONLY` / `SECRET` | Internal workspace transition audit |
-| `ANTIGRAVITY_V3_SYNC_AUDIT.md` | `INTERNAL_LOCAL_ONLY` / `SECRET` | Internal workspace transition audit |
+| `WORKSPACE_DEFERRED_FIX_RESOLUTION.md` | `INTERNAL_LOCAL_ONLY` / `SECRET` | Internal workspace transition audit |
+| `WORKSPACE_FINAL_VERIFICATION.md` | `INTERNAL_LOCAL_ONLY` / `SECRET` | Internal workspace transition audit |
+| `WORKSPACE_SYNC_AUDIT.md` | `INTERNAL_LOCAL_ONLY` / `SECRET` | Internal workspace transition audit |
 | `POST_SYNC_SHA256SUMS.txt` | `INTERNAL_LOCAL_ONLY` / `SECRET` | Internal workspace sync forensics |
 | `POST_SYNC_TREE.txt` | `INTERNAL_LOCAL_ONLY` / `SECRET` | Internal workspace sync forensics |
 | `PRE_SYNC_SHA256SUMS.txt` | `INTERNAL_LOCAL_ONLY` / `SECRET` | Internal workspace sync forensics |

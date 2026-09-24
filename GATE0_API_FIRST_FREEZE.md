@@ -5,7 +5,7 @@
 **Target Platform:** macOS Darwin `arm64` (Apple Silicon M-Series Host)
 **Target Workspace:** `.` (PCG-MAS v3.0 Repository Root)
 **Environment:** `.venv-pcg-mas` (`Python 3.12.13`)
-**Author:** Antigravity (Independent Release & Verification Operator)
+**Author:** Automated Release & Verification Suite
 
 ---
 

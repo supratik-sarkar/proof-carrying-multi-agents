@@ -4,7 +4,7 @@
 import re
 from pathlib import Path
 
-RES_DIR = Path("/Users/supratiksarkar/Desktop/My_Git/proof-carrying-multi-agents/results")
+RES_DIR = Path(__file__).resolve().parent.parent / "results"
 
 for p in RES_DIR.rglob("*"):
     if p.is_file() and not p.name.startswith("."):

@@ -1,7 +1,7 @@
 # GIT_ANONYMITY_PRECOMMIT_AUDIT.md — PCG-MAS v3.0 Pre-Commit Anonymity Audit Report
 
 **Date:** 2026-09-05
-**Auditor:** Antigravity (Independent Release & Verification Operator)
+**Auditor:** Automated Release & Verification Suite
 **Target Git Branch:** `release/pcg-mas-v3.0-gate0.1`
 **Evaluation:** **PASS** (Zero Leaks Detected Across All Reviewer-Facing & Scientific Sources)
 
@@ -33,7 +33,7 @@ The following files are explicitly quarantined as local-only or sensitive, and a
 - `.env.secrets` (Contains local API keys — excluded by `.gitignore`)
 - `.venv-pcg-mas/` (Local Python 3.12 virtual environment)
 - `PRE_SYNC_*.txt`, `POST_SYNC_*.txt`, `SYNC_DIFF_V3.md` (Local workspace forensic logs)
-- `ANTIGRAVITY_V3_SYNC_AUDIT.md`, `ANTIGRAVITY_V3_FINAL_VERIFICATION.md`, `ANTIGRAVITY_DEFERRED_FIX_RESOLUTION.md` (Local workspace transition audits)
+- `WORKSPACE_SYNC_AUDIT.md`, `WORKSPACE_FINAL_VERIFICATION.md`, `WORKSPACE_DEFERRED_FIX_RESOLUTION.md` (Local workspace transition audits)
 - `v3-0.rtf` (Unformatted local sync notes)
 - `.pytest_cache/`, `__pycache__/`, `.DS_Store` (Transient compilation and cache files)
 

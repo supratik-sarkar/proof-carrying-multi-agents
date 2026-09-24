@@ -44,7 +44,7 @@ def count_tokens(text: str, model: str = "cl100k_base") -> int:
 
     For research overhead metrics we don't need exact tokenizer agreement with
     the serving LLM, only consistent accounting across runs. tiktoken's
-    cl100k_base (OpenAI ChatGPT) is a reasonable default; HF tokenizers
+    cl100k_base is a reasonable default; HF tokenizers
     typically give counts within ~5% of this for English.
     """
     if _HAS_TIKTOKEN:

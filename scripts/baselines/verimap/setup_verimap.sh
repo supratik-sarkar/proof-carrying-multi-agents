@@ -10,9 +10,9 @@ printf "Path to local VeriMAP clone [default: empty => clone into external path]
 read -r VERIMAP_SOURCE_REPO
 
 if [[ -z "${VERIMAP_SOURCE_REPO}" ]]; then
-  printf "External parent directory for VeriMAP clone [default: $HOME/Desktop/My_Git]: "
+  printf "External parent directory for VeriMAP clone [default: $HOME/workspace]: "
   read -r EXTERNAL_PARENT
-  EXTERNAL_PARENT="${EXTERNAL_PARENT:-$HOME/Desktop/My_Git}"
+  EXTERNAL_PARENT="${EXTERNAL_PARENT:-$HOME/workspace}"
 
   mkdir -p "$EXTERNAL_PARENT"
   VERIMAP_SOURCE_REPO="$EXTERNAL_PARENT/veriMAP"

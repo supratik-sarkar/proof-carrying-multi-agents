@@ -20,9 +20,9 @@ printf "Path to local MobiAgent clone [default: empty => clone into external pat
 read -r AGENTRR_SOURCE_REPO
 
 if [[ -z "$AGENTRR_SOURCE_REPO" ]]; then
-  printf "External parent directory for MobiAgent clone [default: $HOME/Desktop/My_Git]: "
+  printf "External parent directory for MobiAgent clone [default: $HOME/workspace]: "
   read -r EXT_PARENT
-  EXT_PARENT="${EXT_PARENT:-$HOME/Desktop/My_Git}"
+  EXT_PARENT="${EXT_PARENT:-$HOME/workspace}"
   mkdir -p "$EXT_PARENT"
   AGENTRR_SOURCE_REPO="$EXT_PARENT/MobiAgent"
   if [[ ! -d "$AGENTRR_SOURCE_REPO" ]]; then

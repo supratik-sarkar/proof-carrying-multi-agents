@@ -12,7 +12,7 @@ bash scripts/v3/verify_offline.sh
 
 | | |
 |---|---|
-| Start here | `V3_0_HANDOFF.md` |
+| Start here | `DEVELOPMENT_NOTES.md` |
 | Audit | `docs/v3/ARCHITECTURE_AUDIT_V3.md` |
 | Spec conformance | `docs/v3/SCIENTIFIC_SPEC_ALIGNMENT_V3.md` |
 | Run experiments | `docs/v3/EXPERIMENT_RUNBOOK_V3.md` |
