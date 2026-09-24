@@ -18,7 +18,7 @@
 
 **App** — `app/{shared,backend,frontend,cloudflare,render}/`, `app/DEPLOYMENT.md`, `app/APP_V3_ARCHITECTURE.md`.
 
-**Docs** — this directory, plus `V3_0_HANDOFF.md` at the root.
+**Docs** — this directory, plus `DEVELOPMENT_NOTES.md` at the root.
 
 **Generated artifacts** — `artifacts/v3_0/`: 18 workstream directories, 32 CSV + 32 LaTeX tables, 9 figures as PNG + vector PDF with source data, `checks/{figure_gate,verification}.json`.
 

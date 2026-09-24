@@ -23,9 +23,9 @@ echo "ShieldAgent / AutoPolicy setup for PCG-MAS"
 
 PCG_ROOT="$(pwd)"
 
-printf "Path to local AutoPolicy clone [default: $HOME/Desktop/My_Git/ShieldAgent_AutoPolicy]: "
+printf "Path to local AutoPolicy clone [default: $HOME/workspace/ShieldAgent_AutoPolicy]: "
 read -r SHIELD_SOURCE_REPO
-SHIELD_SOURCE_REPO="${SHIELD_SOURCE_REPO:-$HOME/Desktop/My_Git/ShieldAgent_AutoPolicy}"
+SHIELD_SOURCE_REPO="${SHIELD_SOURCE_REPO:-$HOME/workspace/ShieldAgent_AutoPolicy}"
 
 printf "ShieldAgent virtual environment name [default: shield-agent]: "
 read -r SHIELD_VENV_NAME
@@ -49,8 +49,8 @@ if [[ ! -d "$SHIELD_SOURCE_REPO" ]]; then
   echo "AutoPolicy clone not found: $SHIELD_SOURCE_REPO"
   echo ""
   echo "Clone it first, for example:"
-  echo "  mkdir -p ~/Desktop/My_Git"
-  echo "  git clone https://github.com/BillChan226/AutoPolicy.git ~/Desktop/My_Git/ShieldAgent_AutoPolicy"
+  echo "  mkdir -p ~/workspace"
+  echo "  git clone https://github.com/BillChan226/AutoPolicy.git ~/workspace/ShieldAgent_AutoPolicy"
   exit 1
 fi
 

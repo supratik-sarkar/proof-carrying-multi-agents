@@ -15,8 +15,8 @@ scientific definitions cannot drift between Python and JS.
 ## Local development
 
 ```bash
-cd ~/Desktop/pcg-mas-2026
-source .venv-pcg-mas/bin/activate            # Python 3.12.13
+cd /path/to/pcg-mas
+source .venv-pcg-mas/bin/activate            # Python 3.12
 python app/shared/generate_contract.py
 PYTHONPATH=src python app/backend/main.py     # http://127.0.0.1:8000
 ```

@@ -4,7 +4,6 @@
 [![Python: 3.10--3.12](https://img.shields.io/badge/Python-3.10%20--%203.12-3776AB.svg?logo=python&logoColor=white)](pyproject.toml)
 [![Research Status: Active](https://img.shields.io/badge/Research-Ongoing%20Implementation-blueviolet.svg)](#research-status--scope)
 [![Package: pcg-mas v0.1.0](https://img.shields.io/badge/Package-pcg--mas%20v0.1.0-informational.svg)](pyproject.toml)
-[![X: @SupratikSarkar_](https://img.shields.io/badge/X-@SupratikSarkar__-black.svg?logo=x&logoColor=white)](https://x.com/SupratikSarkar_)
 
 > **Certificate-backed execution verification and risk-aware control for multi-agent LLM systems via evidence integrity verification, replay validation, and execution-policy checks.**
 
@@ -161,13 +160,3 @@ proof-carrying-multi-agents/
 ├── pyproject.toml      # Build metadata (name: pcg-mas v0.1.0)
 └── LICENSE             # MIT License
 ```
-
----
-
-## Portfolio Navigation
-
-Part of the **Research Systems Portfolio** by [Supratik Sarkar](https://github.com/supratik-sarkar):
-* [proof-carrying-multi-agents](https://github.com/supratik-sarkar/proof-carrying-multi-agents) — Proof-carrying generation and verification in multi-agent systems.
-* [quantifying-hallucinations](https://github.com/supratik-sarkar/quantifying-hallucinations) — Spectral hypergraph diffusion for multimodal hallucination bounding.
-* [transmission-vs-reconstruction](https://github.com/supratik-sarkar/transmission-vs-reconstruction) — Channel-theoretic analysis of generative representation models.
-* [safe-discharge-summary](https://github.com/supratik-sarkar/safe-discharge-summary) — Grounding and clinical safety audit frameworks.

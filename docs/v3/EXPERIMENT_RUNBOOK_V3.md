@@ -5,7 +5,7 @@ Four phases, strictly separated. **Preparation and verification make no model or
 ## Phase 0 — preparation (offline, either machine)
 
 ```bash
-cd ~/Desktop/pcg-mas-2026
+cd /path/to/pcg-mas
 python3.12 -m venv .venv-pcg-mas && source .venv-pcg-mas/bin/activate
 python -V                                    # expect Python 3.12.13
 python -m pip install -U pip setuptools wheel

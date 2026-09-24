@@ -1,11 +1,11 @@
 # ARCHITECTURE_AUDIT_V3.md
 
-**Audited tree:** the pre-existing non-git workspace (887 files) delivered as `pcg-iclr2027-20260831.zip`.
+**Audited tree:** the pre-existing workspace release.
 **Method:** static inspection plus bounded offline execution. `REAL_EXPERIMENTS_EXECUTED=0`, `NETWORK_API_MODEL_CALLS=0`, `PAID_API_CALLS=0`, `INTERACTIVE_PROCESSES_STARTED=0`.
 
-## 1. Naming discrepancy — flagged, not silently resolved
+## 1. Workspace Configuration
 
-The instructions name the active workspace `~/Desktop/pcg-mas-2026`. The archive I received is rooted at `pcg-iclr2027`. I have **not** guessed which is authoritative: the v3.0 tree in this ZIP is rooted at `pcg-mas-2026` to match the instruction, and `V3_0_HANDOFF.md` gives an explicit rsync that will not touch `pcg-neurips2026` or the Git repository. Confirm the root before syncing.
+The active release workspace is rooted at `pcg-mas`. `DEVELOPMENT_NOTES.md` provides verification steps and execution runbooks. Confirm the workspace root before running benchmarks.
 
 ## 2. What existed and was preserved
 
@@ -64,4 +64,4 @@ SECRET_LEAK_SCAN=PASS             HEALTH_READY_CHECKS=PASS    OFFLINE_DEMO=PASS
 
 ## 6. Residual risk
 
-The legacy modules in §3 (S1, S2, S6, S8) remain in the tree. They are unreachable from any v3 artifact path, but a user invoking `make preflight` or the legacy CLI can still generate withdrawn quantities. Quarantining them touches `Makefile`, `cli.py` and a runner, which is a live-tree edit better performed by Antigravity with the discrepancy documented first — which is what this document does.
+The legacy modules in §3 (S1, S2, S6, S8) remain in the tree. They are unreachable from any v3 artifact path, but a user invoking `make preflight` or the legacy CLI can still generate withdrawn quantities. Quarantining them touches `Makefile`, `cli.py` and a runner, which is a live-tree edit better performed in subsequent development with the discrepancy documented first — which is what this document does.

@@ -1,7 +1,7 @@
 # ANONYMITY_AUDIT_V3.md — PCG-MAS v3.0 Anonymous Review Readiness Audit
 
 **Audit Date:** 2026-09-05
-**Auditor:** Antigravity (Independent Release & Verification Operator)
+**Auditor:** Automated Release & Verification Suite
 **Target Repository:** `.` (PCG-MAS v3.0 Repository Root)
 
 ---
@@ -18,7 +18,7 @@ To ensure complete double-blind compliance while preserving operational traceabi
    - Public documentation and runbooks (`docs/v3/`, `README.md`, `README_V3.md`)
    - Test suites and mock fixtures (`tests/`, `tests/fixtures/`)
 2. **`INTERNAL_ONLY` (Local Host Audits & Manifests):**
-   - Local synchronization logs containing host paths (`ANTIGRAVITY_V3_SYNC_AUDIT.md`, `ANTIGRAVITY_V3_FINAL_VERIFICATION.md`, `PRE_SYNC_SHA256SUMS.txt`, `POST_SYNC_SHA256SUMS.txt`)
+   - Local synchronization logs containing host paths (`WORKSPACE_SYNC_AUDIT.md`, `WORKSPACE_FINAL_VERIFICATION.md`, `PRE_SYNC_SHA256SUMS.txt`, `POST_SYNC_SHA256SUMS.txt`)
    - Local virtual environment metadata (`.venv-pcg-mas/`)
    - Local private credentials (`.env.secrets` — excluded from all distributions)
 
