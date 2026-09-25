@@ -1,0 +1,11 @@
+{
+  "gold_leakage_forbidden": true,
+  "new_dataset_semantic_gate": "Certification may use only output structure, offered candidates/tool schemas, and recorded action trace. Benchmark gold/utility/security joins strictly downstream.",
+  "principle": "Replacement datasets inherit the acceptance-profile semantics of the superseded dataset category, while actual dataset_id and benchmark-native ground truth remain separate.",
+  "profiles": {
+    "agentdojo": "adversarial_integrity",
+    "bfcl_v1": "toolbench",
+    "mind2web": "weblinx"
+  },
+  "schema": "PCG_MAS_V3_6_CERTIFICATION_PROFILE_MAP_V2"
+}

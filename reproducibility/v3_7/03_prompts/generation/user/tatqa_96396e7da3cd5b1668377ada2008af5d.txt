@@ -1,0 +1,21 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] TAT-QA table: row 0:  |  | Year Ended December 31, | 
+row 1:  | 2019 | 2018 | 2017
+row 2: Gross profit | $137,347 | $100,284 | $72,849
+row 3: Amortization of acquired intangibles | 2,114 | 1,268 | 1,614
+row 4: Stock-based compensation | 1,966 | 2,306 | 578
+row 5: Adjusted gross margin | $141,427 | $103,858 | $75,041
+
+[2] TAT-QA 3: Nevertheless, our use of adjusted gross margin has limitations as an analytical tool, and you should not consider it in isolation or as a substitute for analysis of our financial results as reported under GAAP. You should consider adjusted gross margin alongside our other GAAP-based financial performance measures, gross profit and our other GAAP financial results. The following table presents a reconciliation of adjusted gross margin to gross profit, the most directly comparable GAAP measure, for each of the periods indicated (in thousands):
+
+[3] TAT-QA 2: In the near term, we expect these expenses to continue to negatively impact our gross profit. Adjusted gross margin is not a measure calculated in accordance with GAAP. We believe that adjusted gross margin provides useful information to investors and others in understanding and evaluating our operating results in the same manner as our management and board of directors.
+
+[4] TAT-QA 1: Adjusted Gross Margin. Adjusted gross margin represents gross profit plus amortization of acquired intangibles and stock-based compensation. Adjusted gross margin is a measure used by management to understand and evaluate our core operating performance and trends and to generate future operating plans. The exclusion of stock-based compensation expense and amortization of acquired intangibles facilitates comparisons of our operating performance on a period-to-period basis.
+
+Question: What is the average Gross Profit for 2017-2019?
+
+Answer:

@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "a26fbbab146a54ff68872507e602b432c6e3efb36d09d0335bf4fcfe5cc04584",
+  "example_id": "ee15fdb381af171a8b22db542036d46d",
+  "finish": "stop",
+  "input_sha256": "e3a9e94f3857ad930c7bf4242f893cb6695bad8d56e25826ad2e0782ce4428d5",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "ee15fdb381af171a8b22db542036d46d",
+  "prompt_sha256": "9dd3573b3a23cbec54941307a055697b2d255a47a857625c3278976256b72a35",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Samwell Tarly: He subsequently appeared in Martin 's A Clash of Kings before being a POV character in the later novels .\n\n[2] A Clash of Kings: A Clash of Kings is the second novel in A Song of Ice and Fire , an epic fantasy series by American author George R. R. Martin expected to consist of seven volumes .\n\nClaim: Samwell Tarly appears in novels.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c159ef8dd7ae129325743ec7037536a171ae9a983c46049f5036238c1a3a099d",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:ee15fdb381af171a8b22db542036d46d",
+  "task_key": "576102616ab86b0a724a8b53fc3cc3b20e38be7174ca2cc6ddfecdc67e984d02",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:31.099652+00:00",
+  "tokens_in": 218,
+  "tokens_out": 70,
+  "usage": {
+    "completion_tokens": 70,
+    "neurons": 11.709049224853516,
+    "prompt_tokens": 218,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 288
+  }
+}

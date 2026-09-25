@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "4dee65a725322a0a3d82afe480add3b67f76fbbce9d6de43759513cd2cdcf050",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:parallel_function_178",
+  "prompt_sha256": "4dee65a725322a0a3d82afe480add3b67f76fbbce9d6de43759513cd2cdcf050",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "041836b4ed574d3af13c67a4585a6118392cb20877a4870c320e02128f33a085",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"company_name\":\"Microsoft\",\"date\":\"2022-01-01\",\"exchange\":\"NASDAQ\"}",
+        "name": "get_stock_price"
+      },
+      "id": "call_1789655664419",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\":\"Microsoft\",\"date\":\"2022-02-01\",\"exchange\":\"NASDAQ\"}",
+        "name": "get_stock_price"
+      },
+      "id": "call_1789655664419",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\":\"Apple\",\"date\":\"2022-01-01\",\"exchange\":\"NASDAQ\"}",
+        "name": "get_stock_price"
+      },
+      "id": "call_1789655664419",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\":\"Apple\",\"date\":\"2022-02-01\",\"exchange\":\"NASDAQ\"}",
+        "name": "get_stock_price"
+      },
+      "id": "call_1789655664419",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 88,
+    "neurons": 24.865455627441406,
+    "prompt_tokens": 736,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 824
+  }
+}

@@ -17,7 +17,7 @@ DEFAULT_INCLUDE = ("src", "scripts", "configs", "pyproject.toml")
 
 #: Excluded because they are environment, output, data or secrets — not code.
 EXCLUDE_DIRS = {
-    ".venv", ".venv-pcg-mas", "venv", "pcg-iclr2027.venv", "__pycache__", ".pytest_cache", ".mypy_cache",
+    ".venv", "venv", "pcg-manuscript.venv", "__pycache__", ".pytest_cache", ".mypy_cache",
     ".ruff_cache", ".git", "node_modules", "results", "runs", "reports", "quarantine",
     "artifacts", "data", "external", ".sota_src", "figures", "site-packages",
 }

@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "9430c45cbe51a8e0bbee7fafdf6f7a051245aaef820963dc725f1be53c2fd9b6",
+  "candidate_text": "1.18%",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "8dba17bb3418108e7515e3f0a44f848caf3bae64f24560e6d9b0a10cc027d948",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "f093e04e3aa431f793d1a68888e13bea",
+  "prompt_sha256": "6cf3ce869589dd56fbdb9dbb335e8c8226d8084f47f0ef463bd4a9e85de1abf3",
+  "provider": "gemini",
+  "provider_raw_sha256": "d37d9e86dc2e9332828d7eec71bb018e554d0f3c4b16041ee7916dab1caa8957",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:f093e04e3aa431f793d1a68888e13bea",
+  "text": "1.18%",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "prompt_tokens": 851,
+    "total_tokens": 856
+  }
+}

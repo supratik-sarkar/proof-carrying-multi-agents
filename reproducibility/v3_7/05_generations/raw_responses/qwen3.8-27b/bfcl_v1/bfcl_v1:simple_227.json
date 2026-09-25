@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "892aa8bfcb81a725128a51edfd370eaf6279445c05683e3f874510bdd899186c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:simple_227",
+  "prompt_sha256": "892aa8bfcb81a725128a51edfd370eaf6279445c05683e3f874510bdd899186c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "2ba62707329be8a0214896efb682ee8f35e01ed093720ec7eefb5aa75afbcec6",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"type\": \"ENFJ\", \"traits\": [\"strengths\", \"weaknesses\"]}",
+        "name": "get_personality_traits"
+      },
+      "id": "chatcmpl-tool-a200c004fe793773",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 92,
+    "neurons": 42.554542541503906,
+    "prompt_tokens": 386,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 478
+  }
+}

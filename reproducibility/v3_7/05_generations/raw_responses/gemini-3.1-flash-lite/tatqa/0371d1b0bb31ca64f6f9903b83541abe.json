@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "8b25c0b1f441d65050b465ab0448a22e36ebd3669c8fb08f84301e1e156740e8",
+  "candidate_text": "One year.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "413723131dbafd8e3d2f4443488a3b32b51f5640c7e63f6b0abfa290eb53f486",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "0371d1b0bb31ca64f6f9903b83541abe",
+  "prompt_sha256": "74f03b12da0269cb115ce9b044b04f76ace4e7d21e30aa984a89c6d6e0d1122f",
+  "provider": "gemini",
+  "provider_raw_sha256": "d196cb1131ffbb1e44b3678ba0c2b245ac085b4b41205559e50aabc70b4f1377",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:0371d1b0bb31ca64f6f9903b83541abe",
+  "text": "One year.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "prompt_tokens": 835,
+    "total_tokens": 838
+  }
+}

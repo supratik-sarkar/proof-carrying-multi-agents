@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "a614217b2a3d7a02f7d37399647510b44f5ec7d9d825dbeb63f2b4a5180402ff",
+  "candidate_text": "Miller Brewing",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "59ac74c2b6482723eb4c4704812b9133264b6b20eb878ef58be83b9243afcbe5",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5ab9d44255429939ce03dc36",
+  "prompt_sha256": "82a25dcb9a1380ba35246515217ca76c02fefa3540c7d502bd0570cf8bc20cc6",
+  "provider": "gemini",
+  "provider_raw_sha256": "bd2c9080835fff3e9b7f336bd161a480bd13e5b68890b0bc6767d3bf3c4a9434",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ab9d44255429939ce03dc36",
+  "text": "Miller Brewing",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 661,
+    "total_tokens": 663
+  }
+}

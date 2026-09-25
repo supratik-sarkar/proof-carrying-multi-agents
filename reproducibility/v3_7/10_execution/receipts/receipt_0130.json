@@ -1,0 +1,840 @@
+{
+  "models": {
+    "gemma-4-26b-a4b-it": {
+      "chosen_max_completion_tokens": 512,
+      "chosen_policy": "reasoning_low",
+      "decision": "RECOVER_WITH_APPROVED_POLICY",
+      "generation_policy": {
+        "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+        "max_completion_tokens": 512,
+        "model_id": "gemma-4-26b-a4b-it",
+        "provider": "cloudflare",
+        "reasoning_control": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        },
+        "schema": "PCG_MAS_V3_6_CF_RECOVERY_NATIVE_REASONING_POLICY_V1",
+        "temperature": 0.0
+      },
+      "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+      "primary_512_samples": [
+        {
+          "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+          "dataset_id": "fever",
+          "result": {
+            "budget": 512,
+            "chars": 7,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 3,
+              "neurons": 1.2636363506317139,
+              "prompt_tokens": 130,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 133
+            }
+          },
+          "task_id": "GEN-d70e0406b358cb28a211"
+        },
+        {
+          "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+          "dataset_id": "hotpotqa",
+          "result": {
+            "budget": 512,
+            "chars": 31,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 8,
+              "neurons": 6.56363582611084,
+              "prompt_tokens": 698,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 706
+            }
+          },
+          "task_id": "GEN-51ac1b0ff416a6541f88"
+        },
+        {
+          "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+          "dataset_id": "pubmedqa",
+          "result": {
+            "budget": 512,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 7,
+              "neurons": 3.4272727966308594,
+              "prompt_tokens": 356,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 363
+            }
+          },
+          "task_id": "GEN-a9747c814e9dc896b5e7"
+        },
+        {
+          "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+          "dataset_id": "tatqa",
+          "result": {
+            "budget": 512,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 7,
+              "neurons": 9.590909004211426,
+              "prompt_tokens": 1034,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 1041
+            }
+          },
+          "task_id": "GEN-7800ead1bc6c4cdfbb51"
+        },
+        {
+          "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+          "dataset_id": "twowiki",
+          "result": {
+            "budget": 512,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 7,
+              "neurons": 6.736363410949707,
+              "prompt_tokens": 720,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 727
+            }
+          },
+          "task_id": "GEN-05f430336933827ccc29"
+        }
+      ],
+      "samples": [
+        {
+          "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+          "dataset_id": "fever",
+          "result": {
+            "budget": 512,
+            "chars": 7,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 3,
+              "neurons": 1.2636363506317139,
+              "prompt_tokens": 130,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 133
+            }
+          },
+          "task_id": "GEN-d70e0406b358cb28a211"
+        },
+        {
+          "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+          "dataset_id": "hotpotqa",
+          "result": {
+            "budget": 512,
+            "chars": 31,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 8,
+              "neurons": 6.56363582611084,
+              "prompt_tokens": 698,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 706
+            }
+          },
+          "task_id": "GEN-51ac1b0ff416a6541f88"
+        },
+        {
+          "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+          "dataset_id": "pubmedqa",
+          "result": {
+            "budget": 512,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 7,
+              "neurons": 3.4272727966308594,
+              "prompt_tokens": 356,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 363
+            }
+          },
+          "task_id": "GEN-a9747c814e9dc896b5e7"
+        },
+        {
+          "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+          "dataset_id": "tatqa",
+          "result": {
+            "budget": 512,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 7,
+              "neurons": 9.590909004211426,
+              "prompt_tokens": 1034,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 1041
+            }
+          },
+          "task_id": "GEN-7800ead1bc6c4cdfbb51"
+        },
+        {
+          "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+          "dataset_id": "twowiki",
+          "result": {
+            "budget": 512,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 7,
+              "neurons": 6.736363410949707,
+              "prompt_tokens": 720,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 727
+            }
+          },
+          "task_id": "GEN-05f430336933827ccc29"
+        }
+      ]
+    },
+    "glm-4.7-flash": {
+      "chosen_max_completion_tokens": null,
+      "chosen_policy": null,
+      "decision": "BLOCKED_PANEL_DECISION",
+      "generation_policy": null,
+      "generation_policy_sha256": null,
+      "primary_512_samples": [
+        {
+          "api_model_id": "@cf/zai-org/glm-4.7-flash",
+          "dataset_id": "fever",
+          "result": {
+            "budget": 512,
+            "chars": 7,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 332,
+              "neurons": 12.772300000000001,
+              "prompt_tokens": 125,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 457
+            }
+          },
+          "task_id": "GEN-4519fc399364e3e39864"
+        },
+        {
+          "api_model_id": "@cf/zai-org/glm-4.7-flash",
+          "dataset_id": "hotpotqa",
+          "result": {
+            "budget": 512,
+            "chars": 0,
+            "error": null,
+            "finish_reason": "length",
+            "ok": false,
+            "usage": {
+              "completion_tokens": 512,
+              "neurons": 22.305300000000003,
+              "prompt_tokens": 667,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 1179
+            }
+          },
+          "task_id": "GEN-7d8404b4cfe5cc8f97ae"
+        },
+        {
+          "api_model_id": "@cf/zai-org/glm-4.7-flash",
+          "dataset_id": "pubmedqa",
+          "result": {
+            "budget": 512,
+            "chars": 0,
+            "error": null,
+            "finish_reason": "length",
+            "ok": false,
+            "usage": {
+              "completion_tokens": 512,
+              "neurons": 20.5618,
+              "prompt_tokens": 350,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 862
+            }
+          },
+          "task_id": "GEN-1452bce306488775f8b4"
+        },
+        {
+          "api_model_id": "@cf/zai-org/glm-4.7-flash",
+          "dataset_id": "tatqa",
+          "result": {
+            "budget": 512,
+            "chars": 0,
+            "error": null,
+            "finish_reason": "length",
+            "ok": false,
+            "usage": {
+              "completion_tokens": 512,
+              "neurons": 23.7188,
+              "prompt_tokens": 924,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 1436
+            }
+          },
+          "task_id": "GEN-27edf38d66f4e7072b2d"
+        },
+        {
+          "api_model_id": "@cf/zai-org/glm-4.7-flash",
+          "dataset_id": "twowiki",
+          "result": {
+            "budget": 512,
+            "chars": 0,
+            "error": null,
+            "finish_reason": "length",
+            "ok": false,
+            "usage": {
+              "completion_tokens": 512,
+              "neurons": 22.4208,
+              "prompt_tokens": 688,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 1200
+            }
+          },
+          "task_id": "GEN-91a21dad8f18fb15e698"
+        }
+      ],
+      "samples": [
+        {
+          "api_model_id": "@cf/zai-org/glm-4.7-flash",
+          "dataset_id": "fever",
+          "result": {
+            "budget": 1024,
+            "chars": 7,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 342,
+              "neurons": 13.1363,
+              "prompt_tokens": 125,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 467
+            }
+          },
+          "task_id": "GEN-4519fc399364e3e39864"
+        },
+        {
+          "api_model_id": "@cf/zai-org/glm-4.7-flash",
+          "dataset_id": "hotpotqa",
+          "result": {
+            "budget": 1024,
+            "chars": 31,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 503,
+              "neurons": 21.9777,
+              "prompt_tokens": 667,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 1170
+            }
+          },
+          "task_id": "GEN-7d8404b4cfe5cc8f97ae"
+        },
+        {
+          "api_model_id": "@cf/zai-org/glm-4.7-flash",
+          "dataset_id": "pubmedqa",
+          "result": {
+            "budget": 1024,
+            "chars": 0,
+            "error": null,
+            "finish_reason": "length",
+            "ok": false,
+            "usage": {
+              "completion_tokens": 1024,
+              "neurons": 39.1986,
+              "prompt_tokens": 350,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 1374
+            }
+          },
+          "task_id": "GEN-1452bce306488775f8b4"
+        },
+        {
+          "api_model_id": "@cf/zai-org/glm-4.7-flash",
+          "dataset_id": "tatqa",
+          "result": {
+            "budget": 1024,
+            "chars": 0,
+            "error": null,
+            "finish_reason": "length",
+            "ok": false,
+            "usage": {
+              "completion_tokens": 1024,
+              "neurons": 42.3556,
+              "prompt_tokens": 924,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 1948
+            }
+          },
+          "task_id": "GEN-27edf38d66f4e7072b2d"
+        },
+        {
+          "api_model_id": "@cf/zai-org/glm-4.7-flash",
+          "dataset_id": "twowiki",
+          "result": {
+            "budget": 1024,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 631,
+              "neurons": 26.7524,
+              "prompt_tokens": 688,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 1319
+            }
+          },
+          "task_id": "GEN-91a21dad8f18fb15e698"
+        }
+      ]
+    },
+    "nemotron-3-120b-a12b": {
+      "chosen_max_completion_tokens": 1024,
+      "chosen_policy": "reasoning_low",
+      "decision": "RECOVER_WITH_APPROVED_POLICY",
+      "generation_policy": {
+        "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+        "max_completion_tokens": 1024,
+        "model_id": "nemotron-3-120b-a12b",
+        "provider": "cloudflare",
+        "reasoning_control": {
+          "reasoning_effort": "low"
+        },
+        "schema": "PCG_MAS_V3_6_CF_RECOVERY_NATIVE_REASONING_POLICY_V1",
+        "temperature": 0.0
+      },
+      "generation_policy_sha256": "4ecfa9b911b094e57dc4cc9f197bd1da2e847d0cf657155bf9edddcd5b6aa0b3",
+      "primary_512_samples": [
+        {
+          "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+          "dataset_id": "fever",
+          "result": {
+            "budget": 512,
+            "chars": 0,
+            "error": null,
+            "finish_reason": "length",
+            "ok": false,
+            "usage": {
+              "completion_tokens": 512,
+              "neurons": 76.967,
+              "prompt_tokens": 163,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 675
+            }
+          },
+          "task_id": "GEN-93efa03c20dfa32a6d6e"
+        },
+        {
+          "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+          "dataset_id": "hotpotqa",
+          "result": {
+            "budget": 512,
+            "chars": 7,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 360,
+              "neurons": 69.57,
+              "prompt_tokens": 458,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 818
+            }
+          },
+          "task_id": "GEN-703be6140644a2608ae7"
+        },
+        {
+          "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+          "dataset_id": "tatqa",
+          "result": {
+            "budget": 512,
+            "chars": 54,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 469,
+              "neurons": 82.27900000000001,
+              "prompt_tokens": 411,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 880
+            }
+          },
+          "task_id": "GEN-d410ee7585ec1ef183f2"
+        },
+        {
+          "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+          "dataset_id": "twowiki",
+          "result": {
+            "budget": 512,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 397,
+              "neurons": 80.272,
+              "prompt_tokens": 584,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 981
+            }
+          },
+          "task_id": "GEN-c5605248b9dfe5ac4704"
+        }
+      ],
+      "samples": [
+        {
+          "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+          "dataset_id": "fever",
+          "result": {
+            "budget": 1024,
+            "chars": 8,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 435,
+              "neurons": 66.495,
+              "prompt_tokens": 163,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 598
+            }
+          },
+          "task_id": "GEN-93efa03c20dfa32a6d6e"
+        },
+        {
+          "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+          "dataset_id": "hotpotqa",
+          "result": {
+            "budget": 1024,
+            "chars": 7,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 277,
+              "neurons": 58.282000000000004,
+              "prompt_tokens": 458,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 735
+            }
+          },
+          "task_id": "GEN-703be6140644a2608ae7"
+        },
+        {
+          "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+          "dataset_id": "tatqa",
+          "result": {
+            "budget": 1024,
+            "chars": 63,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 493,
+              "neurons": 85.543,
+              "prompt_tokens": 411,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 904
+            }
+          },
+          "task_id": "GEN-d410ee7585ec1ef183f2"
+        },
+        {
+          "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+          "dataset_id": "twowiki",
+          "result": {
+            "budget": 1024,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 267,
+              "neurons": 62.592,
+              "prompt_tokens": 584,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 851
+            }
+          },
+          "task_id": "GEN-c5605248b9dfe5ac4704"
+        }
+      ]
+    },
+    "qwen3.8-27b": {
+      "chosen_max_completion_tokens": 512,
+      "chosen_policy": "reasoning_low",
+      "decision": "RECOVER_WITH_APPROVED_POLICY",
+      "generation_policy": {
+        "api_model_id": "@cf/qwen/qwen3.8-27b",
+        "max_completion_tokens": 512,
+        "model_id": "qwen3.8-27b",
+        "provider": "cloudflare",
+        "reasoning_control": {
+          "reasoning_effort": "low"
+        },
+        "schema": "PCG_MAS_V3_6_CF_RECOVERY_NATIVE_REASONING_POLICY_V1",
+        "temperature": 0.0
+      },
+      "generation_policy_sha256": "d305a218c053735a47380aa0b4733b3855084cd9be1df2d9b8144a998a4e0abe",
+      "primary_512_samples": [
+        {
+          "api_model_id": "@cf/qwen/qwen3.8-27b",
+          "dataset_id": "hotpotqa",
+          "result": {
+            "budget": 512,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 237,
+              "neurons": 97.09090423583984,
+              "prompt_tokens": 688,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 925
+            }
+          },
+          "task_id": "GEN-6c46f0b0c0e946ad1197"
+        },
+        {
+          "api_model_id": "@cf/qwen/qwen3.8-27b",
+          "dataset_id": "pubmedqa",
+          "result": {
+            "budget": 512,
+            "chars": 3,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 118,
+              "neurons": 50.486358642578125,
+              "prompt_tokens": 395,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 513
+            }
+          },
+          "task_id": "GEN-db0fc688adfbcd08614e"
+        },
+        {
+          "api_model_id": "@cf/qwen/qwen3.8-27b",
+          "dataset_id": "tatqa",
+          "result": {
+            "budget": 512,
+            "chars": 5,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 145,
+              "neurons": 85.54545593261719,
+              "prompt_tokens": 1060,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 1205
+            }
+          },
+          "task_id": "GEN-3921fc6a3b9ad3706a3e"
+        },
+        {
+          "api_model_id": "@cf/qwen/qwen3.8-27b",
+          "dataset_id": "twowiki",
+          "result": {
+            "budget": 512,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 192,
+              "neurons": 86.61817932128906,
+              "prompt_tokens": 752,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 944
+            }
+          },
+          "task_id": "GEN-5cdb698d3bfa2a4404e1"
+        }
+      ],
+      "samples": [
+        {
+          "api_model_id": "@cf/qwen/qwen3.8-27b",
+          "dataset_id": "hotpotqa",
+          "result": {
+            "budget": 512,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 237,
+              "neurons": 97.09090423583984,
+              "prompt_tokens": 688,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 925
+            }
+          },
+          "task_id": "GEN-6c46f0b0c0e946ad1197"
+        },
+        {
+          "api_model_id": "@cf/qwen/qwen3.8-27b",
+          "dataset_id": "pubmedqa",
+          "result": {
+            "budget": 512,
+            "chars": 3,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 118,
+              "neurons": 50.486358642578125,
+              "prompt_tokens": 395,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 513
+            }
+          },
+          "task_id": "GEN-db0fc688adfbcd08614e"
+        },
+        {
+          "api_model_id": "@cf/qwen/qwen3.8-27b",
+          "dataset_id": "tatqa",
+          "result": {
+            "budget": 512,
+            "chars": 5,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 145,
+              "neurons": 85.54545593261719,
+              "prompt_tokens": 1060,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 1205
+            }
+          },
+          "task_id": "GEN-3921fc6a3b9ad3706a3e"
+        },
+        {
+          "api_model_id": "@cf/qwen/qwen3.8-27b",
+          "dataset_id": "twowiki",
+          "result": {
+            "budget": 512,
+            "chars": 13,
+            "error": null,
+            "finish_reason": "stop",
+            "ok": true,
+            "usage": {
+              "completion_tokens": 192,
+              "neurons": 86.61817932128906,
+              "prompt_tokens": 752,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 944
+            }
+          },
+          "task_id": "GEN-5cdb698d3bfa2a4404e1"
+        }
+      ]
+    }
+  },
+  "old_probe_classification": "INVALID_POLICY_BINDING",
+  "provider_calls": 27,
+  "schema": "PCG_MAS_V3_6_CORRECTED_REASONING_PROBE_RECEIPT_V1",
+  "status": "FAIL"
+}

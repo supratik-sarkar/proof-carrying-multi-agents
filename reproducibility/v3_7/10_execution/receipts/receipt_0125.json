@@ -1,0 +1,38 @@
+{
+  "LOCAL_GENERATOR_WEIGHTS_DOWNLOADED": false,
+  "LOCAL_VERIFIER_CHECKPOINTS_DOWNLOADED": false,
+  "UNPINNED_ARBITRARY_PACKAGES_ADDED": false,
+  "VENV_PCG_MAS_USED_AS_FINAL_INTERPRETER": false,
+  "after_freeze_file": "R0_CLEAN_ENV_POSTCHANGE_FREEZE.txt",
+  "after_freeze_sha256": "599e532ded4cd22310eec511d1c32a95d478267c2770f411f8b140e363f4697a",
+  "authoritative_dependency_sources": [
+    "pyproject.toml (datasets>=2.20, numpy>=1.26,<2.2)",
+    "requirements.txt (datasets==4.8.4, numpy==2.1.3)"
+  ],
+  "before_freeze_file": "R0_CLEAN_ENV_PRECHANGE_FREEZE.txt",
+  "before_freeze_sha256": "aefa17803bc48822993f4808acf4e65c8f31c484c32690f36748e6bd12dfde37",
+  "interpreter": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "missing_packages_identified": [
+    "datasets",
+    "numpy (version alignment for scipy)"
+  ],
+  "packages_installed_or_updated": {
+    "datasets": "5.0.1",
+    "dill": "0.4.1",
+    "fsspec": "2026.6.0",
+    "multiprocess": "0.70.19",
+    "numpy": "2.1.3",
+    "pyarrow": "25.0.1"
+  },
+  "schema": "PCG_MAS_V3_6_R0_CLEAN_ENV_DEPENDENCY_RECONCILIATION",
+  "smokes": {
+    "agentdojo_import_smoke": "PASS",
+    "bfcl_import_smoke": "PASS",
+    "fit_dataset_import_smoke": "PASS",
+    "fit_preparation_smoke": "PASS",
+    "mind2web_import_smoke": "PASS",
+    "strict_fit_validator_smoke": "PASS"
+  },
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:07:08.208040+00:00"
+}

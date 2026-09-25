@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "d83239e291e560393e5d3d6787b7b6d182d45b3362ef08c73e07372ee62efa1c",
+  "example_id": "b60fd6a20bdc11eba7f7acde48001122",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "c76f7f7ad28668fd3b75330f10b8f79dc2ade5edf0431f9fbb5ace81f05a588d",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "b60fd6a20bdc11eba7f7acde48001122",
+  "prompt_sha256": "f39999107e8ebfd67f7bde7fcbb65d574f0af95f34793685cb2a93de1b83665d",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"David Flair\": [\"David Richard Fliehr (born March 6, 1979), better known by his ring name David Flair, is an American retired professional wrestler best known for his time in World Championship Wrestling (WCW), where he held the United States and World Tag Team championships.\",\"He is the son of former wrestling world champion Ric Flair and the older half brother of Charlotte Flair and Reid Flair.\"]\n\n[2] \"David Shute\": [\"David Shute is a British journalist, best known for his work at the BBC.\"]\n\n[3] \"Emanuel Glicen Romano\": [\"Emanuel Glicen Romano or Emanuel Glicenstein( 1897 \\u2013 1984) was a painter born in Italy.\",\"He emigrated to America and spent some time in Safed in Israel.\",\"where he organised a museum for his father's work.\"]\n\n[4] \"Reid Flair\": [\"Richard Reid Fliehr( February 26, 1988 March 29, 2013), better known by his ring name Reid Flair, was an American professional wrestler.\",\"He was the youngest son of retired professional wrestler Ric Flair, younger half- brother of wrestler David Flair, and younger brother of Charlotte Flair.\"]\n\nQuestion: Where does David Flair's father work at?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "9f6726b165d9e5f0d71f6219a67685d9ba99ab1dd5ad202979dbd3eb800c0a0b",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:b60fd6a20bdc11eba7f7acde48001122",
+  "task_key": "4f4cb37e2b45f9eb265786d148751bc4c97a158cc3890269daa3ab23d794c1b8",
+  "text": "I don't know.",
+  "timestamp": "2026-09-15T09:34:04.473794+00:00",
+  "tokens_in": 336,
+  "tokens_out": 5,
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 8.633637428283691,
+    "prompt_tokens": 336,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 341
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "4cf93599be1733596872bbaaedb8fc913123d4d7cc81537d76a74f1512f03b5e",
+  "candidate_text": "\n\nplaying",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "d69e0de50fd1a43c0a692260587345368453df3c65bad0fa930560d531645dd4",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "4ecfa9b911b094e57dc4cc9f197bd1da2e847d0cf657155bf9edddcd5b6aa0b3",
+  "lane": "recovery",
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5abf04ae5542993fe9a41dbf",
+  "prompt_sha256": "8b3bf9c3d25606619838c4403e69401a21b8f4afdfce39f5ecd02f16447f8e16",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "f89416dc0f90f948d2c9c71f03dfadd184ac1c202c3ee9ff838aca8ffc5966cf",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5abf04ae5542993fe9a41dbf",
+  "text": "\n\nplaying",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 279,
+    "neurons": 58.554,
+    "prompt_tokens": 458,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 737
+  }
+}

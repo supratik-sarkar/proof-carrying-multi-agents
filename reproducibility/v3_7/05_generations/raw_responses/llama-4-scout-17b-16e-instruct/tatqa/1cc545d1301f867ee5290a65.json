@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "07df1cc36236005b5162d148ca7c511663a563d19937b8b0162c897650c02f2f",
+  "candidate_text": "$8,736 million. \n\n Reasoning: \nThe recorded investment in 2018 was $31,182 and in 2019 was $22,446. \nThe decline is $31,182 - $22,446 = $8,736.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "5fa5cbf01dea1c4a708f34e3e0dfc4f30c703f156840b79ace83081cfdf67e4a",
+  "example_id": "af210e7802c2b09ca96288fca5dd9304",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "de5a8d376dbf42dcea9ed3fa876b8b25010e2af1c40452bc44a9056aa2145490",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "af210e7802c2b09ca96288fca5dd9304",
+  "prompt_sha256": "517e0b3c6354e0d839d31d1fb86f7b46ed88c322ff9beefe4aec3e3b9cda2280",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 4: The percentage of Global Financing receivables reserved was 1.0 percent at December 31, 2019, compared to 0.9 percent at December 31, 2018. The decline in the allowance for credit losses was driven by write-offs of $64 million, primarily of receivables previously reserved, and net releases of $7 million as a result of lower average asset balances in client and commercial financing. See note K, “Financing Receivables,” for additional information.\n\n[2] TAT-QA 2: The following table presents external Global Financing receivables excluding residual values, the allowance for credit losses and immaterial miscellaneous receivables:\n\n[3] TAT-QA 1: Global Financing Receivables and Allowances\n\n[4] TAT-QA table: row 0: ($ in millions) |  | \nrow 1: At December 31: | 2019 | 2018\nrow 2: Recorded investment (1) | $22,446 | $31,182\nrow 3: Specific allowance for credit losses | 177 | 220\nrow 4: Unallocated allowance for credit losses | 45 | 72\nrow 5: Total allowance for credit losses | 221 | 292\nrow 6: Net financing receivables | $22,224 | $30,890\n\nQuestion: What was the decline in the global financing receivables?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b79c8764c36e2e04df0a5b6280efa9d489a262a75938e4e665f8cfaa93f06967",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:af210e7802c2b09ca96288fca5dd9304",
+  "task_key": "df44dffdce326df522ecc4544424354cec67bd266561c46578fa17ff0bc0f6c1",
+  "text": "$8,736 million. \n\n Reasoning: \nThe recorded investment in 2018 was $31,182 and in 2019 was $22,446. \nThe decline is $31,182 - $22,446 = $8,736.",
+  "timestamp": "2026-09-15T09:34:32.719105+00:00",
+  "tokens_in": 350,
+  "tokens_out": 53,
+  "usage": {
+    "completion_tokens": 53,
+    "neurons": 12.686363220214844,
+    "prompt_tokens": 350,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 403
+  }
+}

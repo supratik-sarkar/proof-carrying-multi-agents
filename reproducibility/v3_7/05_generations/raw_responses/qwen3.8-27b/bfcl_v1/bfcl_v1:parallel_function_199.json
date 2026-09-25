@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "dec818c606c6c62b7ada600647f2eb905c4be237f2b472b7e3e870ec09611b7c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_function_199",
+  "prompt_sha256": "dec818c606c6c62b7ada600647f2eb905c4be237f2b472b7e3e870ec09611b7c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "7cd00141665783c0fdf65f24fb2b2a81494f7575bbc9c97cfca64feecb47d28e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York\", \"include_temperature\": true, \"include_humidity\": true}",
+        "name": "get_current_weather"
+      },
+      "id": "chatcmpl-tool-9079f64af5b951cf",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"Los Angeles\", \"include_temperature\": true, \"include_humidity\": true}",
+        "name": "get_current_weather"
+      },
+      "id": "chatcmpl-tool-8708a88f64f06abb",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"London\", \"include_temperature\": true, \"include_humidity\": true}",
+        "name": "get_current_weather"
+      },
+      "id": "chatcmpl-tool-894f27531d98c183",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"Tokyo\", \"include_temperature\": true, \"include_humidity\": true}",
+        "name": "get_current_weather"
+      },
+      "id": "chatcmpl-tool-9101329a2db8c9cc",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 306,
+    "neurons": 105.83181762695312,
+    "prompt_tokens": 411,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 717
+  }
+}

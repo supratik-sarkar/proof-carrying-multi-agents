@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "d302be0e51281dad85da4a0b8e96fd707e0f44393379fe1575b276f7eeccfa80",
+  "candidate_text": "June 6, 1959",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "0cece02f378afc8b7f105af70367e551cb1168a9072247e7eafa0eeaf6399832",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5ae491155542995ad6573da3",
+  "prompt_sha256": "e8639754c5a9af8e6f55a02838d3736daa6bf1c0fe14ce676e6ed72a103d3d1f",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "469a9ee9e080ecf36203f852db0bfdbed6ea71a39ebe7c7e087d42337ce6df0c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ae491155542995ad6573da3",
+  "text": "June 6, 1959",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 10,
+    "neurons": 6.290909290313721,
+    "prompt_tokens": 662,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 672
+  }
+}

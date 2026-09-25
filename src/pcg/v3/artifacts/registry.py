@@ -3,11 +3,19 @@ from __future__ import annotations
 import json, os
 from typing import Dict, List, Optional
 
-REGISTRY_PATH = os.environ.get("PCG_REGISTRY", "manuscript_artifact_registry.json")
+REGISTRY_PATH = os.environ.get("PCG_REGISTRY", "manuscript/manuscript_artifact_registry.json")
 
 
 def load(path: Optional[str] = None) -> dict:
-    with open(path or REGISTRY_PATH) as fh:
+    target = path or REGISTRY_PATH
+    if not os.path.exists(target):
+        # Fallback to root or manuscript/ relative to repo
+        alt = os.path.join("manuscript", os.path.basename(target))
+        if os.path.exists(alt):
+            target = alt
+        elif os.path.exists(os.path.basename(target)):
+            target = os.path.basename(target)
+    with open(target) as fh:
         return json.load(fh)
 
 

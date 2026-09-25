@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "88e7f81245e2383644c44c0c0c0d0667253fd82ad8124e977d9f8ebd7161bfe8",
+  "candidate_text": "John Waters",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "2f39390276d19552d71cf89476f6a4068264a3c758410478dec22ba439d29f3d",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5ac3165c5542995ef918c10a",
+  "prompt_sha256": "05ea5fa90f2bd67fff74d9939c83f2ec5bc94795403cb79af97cba0540a9c765",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "e374675abc9a09f3fd6b1a43c916264dc74b0befac3e92488a3a7f6374b8d944",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ac3165c5542995ef918c10a",
+  "text": "John Waters",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 3.4454543590545654,
+    "prompt_tokens": 370,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 373
+  }
+}

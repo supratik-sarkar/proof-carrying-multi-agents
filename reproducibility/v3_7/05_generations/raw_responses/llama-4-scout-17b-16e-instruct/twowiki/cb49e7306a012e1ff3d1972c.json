@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "6722c3e15c9ae658b6378d678fe9c15d6fef2622cb956a0938049ffc291a7afb",
+  "candidate_text": "Sunday's Illness. \n\nReasoning: \nRamón Salazar, director of Sunday's Illness, was born in 1973. \nJohn English, director of Gene Autry and the Mounties, was born in 1903. \n1973 is later than 1903.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "7236361adafba8943c7c4843aae4b32e8745ac70d38e05e7c5b2b855b36b7bd9",
+  "example_id": "b9329b0b08ce11ebbd94ac1f6bf848b6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "c93dcff4bdd1c7f1cafda9bebcb0a309c4974d082d3f6b20165b257f9cb7c68c",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "b9329b0b08ce11ebbd94ac1f6bf848b6",
+  "prompt_sha256": "1bf53a8d187dbb0df20b0eafa32075090cd7a0762d53c81c938e15bd320dea9a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Sunday's Illness\": [\"Sunday's Illness is a 2018 Spanish drama film directed by Ram\\u00f3n Salazar.\",\"It was screened in the Panorama section at the 68th Berlin International Film Festival.\"]\n\n[2] \"Ram\\u00f3n Salazar (director)\": [\"Ram\\u00f3n Salazar( born 28 May 1973 M\\u00e1laga) is a Spanish film director and screenwriter.\",\"He was nominated for the 2003 Goya Award for Best New Director for the film\\\" Stones\\\".\"]\n\n[3] \"Gene Autry and the Mounties\": [\"Gene Autry and the Mounties is a 1951 American Western film directed by John English and written by Norman S. Hall.\",\"The film stars Gene Autry, Elena Verdugo, Carleton Young, Richard Emory, Herbert Rawlinson and Trevor Bardette.\",\"The film was released on January 30, 1951, by Columbia Pictures.\"]\n\n[4] \"John English (director)\": [\"John Wilkinson English( 25 June 1903 \\u2013 11 October 1969) was a British film editor and film director.\",\"He is most famous for the film serials he co-directed with William Witney for Republic Pictures such as\\\" Zorro's Fighting Legion\\\" and\\\" Drums of Fu Manchu\\\".\",\"He was credited variously as John W English, John English or Jack English.\"]\n\nQuestion: Which film has the director born later, Gene Autry And The Mounties or Sunday'S Illness?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "d50bc30ed8fd7569504aeb2d8d2230ac23902f193cf6bd2e1016a8acbd712177",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:b9329b0b08ce11ebbd94ac1f6bf848b6",
+  "task_key": "0bf7d250f3e83857e7d9c044e84bcf45284bb0989cbd3dea4d3ff1f429bd6673",
+  "text": "Sunday's Illness. \n\nReasoning: \nRamón Salazar, director of Sunday's Illness, was born in 1973. \nJohn English, director of Gene Autry and the Mounties, was born in 1903. \n1973 is later than 1903.",
+  "timestamp": "2026-09-15T09:33:54.333266+00:00",
+  "tokens_in": 379,
+  "tokens_out": 60,
+  "usage": {
+    "completion_tokens": 60,
+    "neurons": 13.939090728759766,
+    "prompt_tokens": 379,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 439
+  }
+}

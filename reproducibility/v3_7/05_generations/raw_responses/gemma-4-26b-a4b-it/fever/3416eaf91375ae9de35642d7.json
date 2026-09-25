@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "9573ce625cf252515fefa26059f75c30cfcccf2aafbadf8b189572e118da83dc",
+  "example_id": "e3d6a422e086a8fea845ea355a9400a1",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "c9f510cb2d56e7dcd172f9397429575b0a064973045ee2a6951913a79acb1538",
+  "max_output_tokens": 256,
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "e3d6a422e086a8fea845ea355a9400a1",
+  "prompt_sha256": "751c178215bde4d59a9b7e7a603ba4bea61409be2ea8eaeac4f9003756f96bf5",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Epistemology: Epistemology studies the nature of knowledge , justification , and the rationality of belief .\n\nClaim: Epistemology has nothing to do with the study of the rationality of belief.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c15003cb8a73c369587451c2ef3b874646f850b96265253172fd358753d56b31",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:e3d6a422e086a8fea845ea355a9400a1",
+  "task_key": "dfa4a5b507318facc564b392b15f760431e65155a11b6606b2cfe19e7c0a6fe4",
+  "text": "REFUTES",
+  "timestamp": "2026-09-15T10:23:41.588886+00:00",
+  "tokens_in": 131,
+  "tokens_out": 150,
+  "usage": {
+    "completion_tokens": 150,
+    "neurons": 5.28181791305542,
+    "prompt_tokens": 131,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 281
+  }
+}

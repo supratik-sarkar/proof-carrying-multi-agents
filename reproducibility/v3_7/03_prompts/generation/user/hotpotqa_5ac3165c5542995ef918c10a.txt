@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] 18th Independent Spirit Awards: The 2002 Independent Spirit Awards, honoring the best in independent filmmaking for 2002, were announced on March 22, 2003.  It was hosted by John Waters.
+
+[2] John Waters: John Samuel Waters Jr. (born April 22, 1946) is an American film director, screenwriter, author, actor, stand-up comedian, journalist, visual artist, and art collector, who rose to fame in the early 1970s for his transgressive cult films.
+
+[3] Independent Spirit Award for Best First Feature: The Independent Spirit Award for Best First Feature is one of the annual Independent Spirit Awards.  It is usually given to the director (or directors) and producer (or producers).  The "first feature" designation is applied to the director not the producer(s).  Therefore, producers have been nominated multiple times.
+
+[4] 28th Independent Spirit Awards: The 2012 Independent Spirit Awards was the 28th annual occasion of the Film Independent Spirit Awards.  It announced its nominees on November 27, 2012.  The winners were announced on February 23, 2013 during an awards ceremony hosted by Andy Samberg.
+
+Question: Which American film director hosted the 18th Independent Spirit Awards in 2002?
+
+Answer:

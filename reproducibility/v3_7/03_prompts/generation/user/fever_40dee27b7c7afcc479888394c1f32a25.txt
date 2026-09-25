@@ -1,0 +1,16 @@
+You are a fact-verification assistant. Read the evidence and decide whether
+the CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.
+
+Reply with EXACTLY one of these three labels and nothing else:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Evidence:
+[1] Mirny (sloop-of-war): Mirny was a 20-gun sloop-of-war of the Imperial Russian Navy , the second ship of the First Russian Antarctic Expedition in 1819 -- 1821 , during which Faddey Bellingshausen -LRB- commander of the lead ship Vostok -RRB- and Mikhail Lazarev -LRB- commanding Mirny -RRB- circumnavigated the globe , discovered the continent of Antarctica and twice circumnavigated it , and discovered a number of islands and archipelagos in the Southern Ocean and the Pacific .
+
+[2] Mikhail Lazarev: Admiral Mikhail Petrovich Lazarev -LRB- Михаил Петрович Лазарев , 3 November 1788 -- 11 April 1851 -RRB- was a Russian fleet commander and an explorer .
+
+Claim: The Mirny (sloop-of-war) was commanded by artificial intelligence.
+
+Label:

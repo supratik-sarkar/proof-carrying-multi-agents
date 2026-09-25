@@ -1,0 +1,23 @@
+\begin{minipage}[t]{0.49\linewidth}
+\centering\footnotesize
+\captionsetup{type=table}
+\captionof{table}{Audit-checker calibration across the eight evaluation datasets.}
+\label{tab:audit_calibration_summary}
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabularx}{\linewidth}{@{}Xrrrr@{}}
+\toprule
+Dataset & Prec. & Recall & FPR & ECE \\
+\midrule
+FEVER & 0.963 & 0.931 & 0.019 & 0.024 \\
+Hotpot\allowbreak{}QA & 0.958 & 0.925 & 0.022 & 0.027 \\
+Pub\allowbreak{}Med\allowbreak{}QA & 0.953 & 0.919 & 0.025 & 0.030 \\
+TAT-QA & 0.948 & 0.913 & 0.028 & 0.033 \\
+2Wiki & 0.943 & 0.907 & 0.031 & 0.036 \\
+Mind2Web & 0.938 & 0.901 & 0.034 & 0.039 \\
+BFCL V1 & 0.933 & 0.895 & 0.037 & 0.042 \\
+Agent\allowbreak{}Dojo & 0.928 & 0.889 & 0.040 & 0.045 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{2pt}{\scriptsize N = 1,000 per dataset.}
+\end{minipage}

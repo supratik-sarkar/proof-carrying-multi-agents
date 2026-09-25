@@ -1,0 +1,18 @@
+{
+  "<PUBLIC_TERM:ac0a3dfd6dddb209>_MONITORING_STOPPED": "YES",
+  "PROCESS_LEFT_RUNNING": "YES",
+  "TERMINAL_LEFT_OPEN": "YES",
+  "active_process_table": [
+    "<LOCAL_USER>   26039   0.0  0.0 435305296   1824 s000  S+    4:54AM   0:00.01 caffeinate -dimsu",
+    "<LOCAL_USER>   25634   0.0  0.0 435305760   1744   ??  SN    4:39AM   0:00.01 caffeinate -dimsu",
+    "<LOCAL_USER>   31739   0.0  0.1 435269648  16944 s002  S+    4:23PM   0:00.03 /opt/homebrew/Cellar/python@3.12/3.12.13_4/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python <LOCAL_PATH:78d9a32f7720cffb> --repo-root <LOCAL_PATH:b0f2ecb535f6b59f> --runtime-root <LOCAL_PATH:62ffa5c4fc729f1a>",
+    "<LOCAL_USER>   31740   0.0  0.0 435301792   3632 s002  S+    4:23PM   0:00.00 /usr/bin/caffeinate -dimsu /bin/zsh <LOCAL_PATH:bd14a902e2d9804e>",
+    "<LOCAL_USER>   31640   0.0  0.0 435301792   2544 s005  S+    4:18PM   0:00.01 caffeinate -dimsu <LOCAL_PATH:524ae6cd7dc69b9e> <LOCAL_PATH:40a5d8f5f5822100> --initial-scientific-faults 0 --initial-provider-interruptions 5"
+  ],
+  "monitored_duration_seconds": 10,
+  "process_alive": true,
+  "schema": "PCG_MAS_V3_6_FINAL_10S_LIVENESS_CONFIRMATION",
+  "status": "PASS",
+  "terminal_window_id": "tab 1 of window id 61052",
+  "timestamp": "2026-09-19T10:53:17.204562+00:00"
+}

@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Chris Squire": ["Christopher Russell Edward Squire (4March 1948 \u2013 27June 2015) was an English musician, singer and songwriter best known as the bassist and a founding member of the progressive rock band","Yes.","He was the longest-serving original member, having remained in the band until his death and appearing on every studio album released from 1969 to 2014.","Born in Kingsbury, London, Squire took an early interest in church music and sang in the local church and school choirs.","After he took up the bass guitar at age sixteen, his earliest gigs were in 1964 for the Selfs, which later evolved into the Syn.","In 1968, Squire formed Yes with singer Jon Anderson; he would remain the band's sole bassist for the next 47 years.","Squire was widely regarded as the dominant bassist among the English progressive rock bands, influencing peers and later generations of bassists with his incisive sound and elaborately contoured, melodic bass lines.","His name was associated with his trademark instrument, the Rickenbacker 4001.","In May 2015, Squire announced a hiatus from","Yes after he was diagnosed with acute erythroid leukemia, and subsequently died on 27 June at his home in Phoenix, Arizona.","The band's first show of their tour with Toto on 7 August 2015 marked the first Yes concert ever performed without Squire, with longtime friend and frequent collaborator Billy Sherwood performing in his place.","From 1991 to 2000, Rickenbacker produced a limited edition signature model bass in his name, the 4001CS.","Squire released two solo albums, \"Fish Out of Water\" (1975) and \"Chris Squire's Swiss Choir\" (2007), a Christmas album.","He was posthumously inducted into the Rock and Roll Hall of Fame as a member of Yes in 2017."]
+
+[2] "XYZ (English band)": ["XYZ were a short-lived rock supergroup.","The name XYZ is taken from eX-Yes-&-Zeppelin as the group consisted of ex-Led Zeppelin guitarist Jimmy Page, along with ex-","Yes members Chris Squire (bass guitar, vocals, keyboards) and Alan White (drums)."]
+
+[3] "Andrew Dismore": ["Andrew Hartley Dismore( born 2 September 1954) is a British Labour politician who has been the Member of the London Assembly for Barnet and Camden since 2012, and was the Member of Parliament( MP) for Hendon from 1997 until 2010."]
+
+[4] "Mamta Meena": ["Mamta Raghuveer Singh Meena( born 4 April 1976) is an Indian politician and the member of Bharatiya Janata Party( BJP).","She previously served as the Member of Madhya Pradesh Vidhan Sabha from 2013 to 2019."]
+
+Question: Where was the keyboardist of Xyz (English Band) born?
+
+Answer:

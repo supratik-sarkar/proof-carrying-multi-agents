@@ -1,0 +1,14 @@
+{
+  "authority": "14_artifacts/manuscript_stack/data/cell_registry_56.csv",
+  "count": 7,
+  "immutable_provider_revision": "NOT_RETAINED",
+  "models": [
+    "GLM-4.7 Flash",
+    "GPT-OSS 120B",
+    "Gemini 3.1 Flash-Lite",
+    "Gemma 4 26B-A4B",
+    "Llama 4 Scout",
+    "Nemotron 3 120B-A12B",
+    "Qwen 3.8 27B"
+  ]
+}

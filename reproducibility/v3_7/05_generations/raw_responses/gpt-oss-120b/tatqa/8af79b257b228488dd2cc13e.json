@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "93d958a771f2173f88f45861131ce131e770ce23636ee644222395c5f049a7c8",
+  "candidate_text": "≈28% decrease.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "78a4643fdd92efb654c31abaed1b360fff83bfde04dc6d95008202d1afc4bf34",
+  "example_id": "0e57354739d459ac478c35d442af6fdf",
+  "finish": "stop",
+  "input_sha256": "215ea26f0486b92a1960464c5c0d886da047314e0fef940af9617c8a7942d25f",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "0e57354739d459ac478c35d442af6fdf",
+  "prompt_sha256": "302037c31d7fca240f72daa85517351b4fe659f547334bc6f8f8d146e91a842f",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 4: The percentage of Global Financing receivables reserved was 1.0 percent at December 31, 2019, compared to 0.9 percent at December 31, 2018. The decline in the allowance for credit losses was driven by write-offs of $64 million, primarily of receivables previously reserved, and net releases of $7 million as a result of lower average asset balances in client and commercial financing. See note K, “Financing Receivables,” for additional information.\n\n[2] TAT-QA 2: The following table presents external Global Financing receivables excluding residual values, the allowance for credit losses and immaterial miscellaneous receivables:\n\n[3] TAT-QA table: row 0: ($ in millions) |  | \nrow 1: At December 31: | 2019 | 2018\nrow 2: Recorded investment (1) | $22,446 | $31,182\nrow 3: Specific allowance for credit losses | 177 | 220\nrow 4: Unallocated allowance for credit losses | 45 | 72\nrow 5: Total allowance for credit losses | 221 | 292\nrow 6: Net financing receivables | $22,224 | $30,890\n\n[4] TAT-QA 1: Global Financing Receivables and Allowances\n\nQuestion: What is the percentage increase / (decrease) in the Net financing receivables from 2018 to 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "dd9586886af1fe257052d4945bd2b420d2e8ba74150d77575eb51c11939f2cfb",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:0e57354739d459ac478c35d442af6fdf",
+  "task_key": "8318f1f00b583f3779b353262961279538fab968f474700b8039a73ef407e309",
+  "text": "≈28% decrease.",
+  "timestamp": "2026-09-14T10:33:44.030070+00:00",
+  "tokens_in": 435,
+  "tokens_out": 134,
+  "usage": {
+    "completion_tokens": 134,
+    "neurons": 22.977191925048828,
+    "prompt_tokens": 435,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 569
+  }
+}

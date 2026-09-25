@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "528b86d624d7badf9390027a3d10f01c716cd3063f67b1e0656e34ff0363c309",
+  "example_id": "5097bb43f9f32c426fff2bd028570c59",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "9414ba8c541a18f0861418dbed8a5b32f53710b00674e52e4748a885cfba26c0",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "5097bb43f9f32c426fff2bd028570c59",
+  "prompt_sha256": "c688b36f3a2c8d2f6b6207d1f5c195cef55705e9fe2ef2aa1faad798bdd60648",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Stanley Williams: Stanley `` Tookie '' Williams III -LRB- December 29 , 1953 -- December 13 , 2005 -RRB- was an American gang member and convicted murderer , who was part of the West Side Crips , a street gang which has its roots in South Central Los Angeles in 1969 .\n\nClaim: Stanley Williams was a law-abiding citizen without any convictions.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "34fffbc635a179564631fb220f5d304e431d71bc00ea3ffe90c948d3e5922990",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:5097bb43f9f32c426fff2bd028570c59",
+  "task_key": "95f03bfd9e57dcb24f8c591a1fe155f9b298831c5b16767ceea5b2274916de55",
+  "text": "REFUTES",
+  "timestamp": "2026-09-15T09:34:36.445170+00:00",
+  "tokens_in": 166,
+  "tokens_out": 3,
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 4.306363582611084,
+    "prompt_tokens": 166,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 169
+  }
+}

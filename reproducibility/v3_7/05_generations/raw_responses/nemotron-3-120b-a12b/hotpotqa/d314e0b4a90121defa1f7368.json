@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "2abcbcf4fd48a7fc798bda99271f556df53a8b2a5a7af2a62335fad9ab5da9fc",
+  "example_id": "5a733c925542991f9a20c6b7",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "d79753bf8bac7b453668896b4a30b5ac13e32adff73bd7ac50232d2e3c671475",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5a733c925542991f9a20c6b7",
+  "prompt_sha256": "80037e1f1f65e4514909aceb7c959351a170c934f99e2a9598a52a20b1790f86",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Bill Martin Jr.: William Ivan \"Bill\" Martin Jr. (March 20, 1916 – August 11, 2004) was an American educator, publishing executive, and author of more than 300 children's books including \"The Sounds of Mystery,\" \"Chicka Chicka Boom Boom\", (co-authored with John Archambault) \"Brown Bear, Brown Bear, What Do You See? \", \"Baby Bear, Baby Bear, What Do You See?\" , \"Panda Bear, Panda Bear, What Do You See? \", and \"Polar Bear, Polar Bear, What Do You Hear?\"  The Bill Martin Jr.  Award, which is the Kansas state award for best children's picture book, was established in his honor in 1996.\n\n[2] Daiquiri: Daiquiri ( ; Spanish: \"daiquirí\" ] ) is a family of cocktails whose main ingredients are rum, citrus juice (typically lime juice), and sugar or other sweetener.\n\n[3] Polar bear plunge: A polar bear plunge is an event held during the winter where participants enter a body of water despite the low temperature.  In the United States, polar bear plunges are usually held to raise money for a charitable organization.  In Canada, polar bear swims are usually held on New Year's Day to celebrate the new year.\n\n[4] Polar bear: The polar bear (\"Ursus maritimus\") is a carnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses.  It is a large bear, approximately the same size as the omnivorous Kodiak bear (\"Ursus arctos middendorffi\").  A boar (adult male) weighs around 350 – , while a sow (adult female) is about half that size.  Although it is the sister species of the brown bear, it has evolved to occupy a narrower ecological niche, with many body characteristics adapted for cold temperatures, for moving across snow, ice and open water, and for hunting seals, which make up most of its diet.  Although most polar bears are born on land, they spend most of their time on the sea ice.  Their scientific name means \"maritime bear\" and derives from this fact.  Polar bears hunt their preferred food of seals from the edge of sea ice, often living off fat reserves when no sea ice is present.  Because of their dependence on the sea ice, polar bears are classified as marine mammals.\n\nQuestion: The Polar Bear and Daiquiri are both examples of what?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "9c05ec8f6bf3c2bc5c6338737e588316e5410916fce777ea69b6e25cd82466b9",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a733c925542991f9a20c6b7",
+  "task_key": "2ed3078c97255d950c869a129e4c06f2732b0a047104aca905131afdfe6146b1",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-15T09:36:44.937368+00:00",
+  "tokens_in": 619,
+  "tokens_out": 252,
+  "usage": {
+    "completion_tokens": 252,
+    "neurons": 62.12700000000001,
+    "prompt_tokens": 619,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 871
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "0a1fc3a49f232f44307f8d59701cfefa1e86da4bb16145f04bb3d80080d1dbfa",
+  "example_id": "52d508d7288b8c678db6f5fada6607b4",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "af10b7ed431066a077e1c176f7e091bbb5970ab5fcf59fd9fe3475eee689e540",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "52d508d7288b8c678db6f5fada6607b4",
+  "prompt_sha256": "56e1d0c5d5cd8e3eb0892b57825c49e5b644240b46402483b24c60cc5825a498",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Belov: Alexey Belov -LRB- officer -RRB- -LRB- 1909 -- 1992 -RRB- , Soviet army officer and Hero of the Soviet Union\n\nClaim: Soyuz was part of the Soviet army.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "61e4b61d691e35564ecad2f54a3312c3c8f6ff9e6f24a6aeffd5e2bfd3b3c2cf",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:52d508d7288b8c678db6f5fada6607b4",
+  "task_key": "31d95430121430b51a095b7bad22e376293d8e7efaf7edbe3071d94b0549daa4",
+  "text": "NOT ENOUGH INFO",
+  "timestamp": "2026-09-15T09:34:44.405636+00:00",
+  "tokens_in": 134,
+  "tokens_out": 5,
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 3.675454616546631,
+    "prompt_tokens": 134,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 139
+  }
+}

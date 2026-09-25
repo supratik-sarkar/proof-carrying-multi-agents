@@ -1,0 +1,27 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "correct": false
+  },
+  "candidate_sha256": "3fbb5f2053e019971428d1e72957a61a08c9949ced8e66b923f17919e8527ff9",
+  "candidate_text": "{\"choice\":\"C9\",\"operation\":\"CLICK\",\"value\":\"\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "501c9db0658d5d8b4365401ca3ee799aaf82e43e773f88a179b482b4fd7362bb",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "mind2web:18407b93-9c3c-4b03-b99e-37d5e6024787",
+  "prompt_sha256": "501c9db0658d5d8b4365401ca3ee799aaf82e43e773f88a179b482b4fd7362bb",
+  "provider": "gemini",
+  "provider_raw_sha256": "e578811ee1435bfb3ac62fbdbb2a70f72c786cec30621caa3ff41127cbf00f93",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C9\",\"operation\":\"CLICK\",\"value\":\"\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 340,
+    "total_tokens": 354
+  }
+}

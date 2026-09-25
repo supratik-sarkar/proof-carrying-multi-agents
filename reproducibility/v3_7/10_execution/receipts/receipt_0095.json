@@ -1,0 +1,1084 @@
+[
+  {
+    "artifact_identity": "FINAL_STATISTICAL_SUMMARY.json",
+    "panel": "Overall (2240)",
+    "table_identity": "table_01_main_six_summary",
+    "metric": "macro_accepted_coverage",
+    "mock_value": 0.421,
+    "actual_value": 0.36116071428571433,
+    "absolute_difference": -0.05983928571428565,
+    "relative_difference": -0.14213607058025096,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.3411607142857143,
+      0.38116071428571435
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_STATISTICAL_SUMMARY.json",
+    "panel": "Overall (2240)",
+    "table_identity": "table_01_main_six_summary",
+    "metric": "macro_accepted_risk",
+    "mock_value": 0.082,
+    "actual_value": 0.5647419831630358,
+    "absolute_difference": 0.4827419831630358,
+    "relative_difference": 5.887097355646778,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.5447419831630358,
+      0.5847419831630358
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_STATISTICAL_SUMMARY.json",
+    "panel": "Factual (1400)",
+    "table_identity": "table_01_main_six_summary",
+    "metric": "factual_coverage",
+    "mock_value": 0.245,
+    "actual_value": 0.16785714285714284,
+    "absolute_difference": -0.07714285714285715,
+    "relative_difference": -0.31486880466472306,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.14785714285714285,
+      0.18785714285714283
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_STATISTICAL_SUMMARY.json",
+    "panel": "Factual (1400)",
+    "table_identity": "table_01_main_six_summary",
+    "metric": "factual_risk",
+    "mock_value": 0.075,
+    "actual_value": 0.6577162916448632,
+    "absolute_difference": 0.5827162916448633,
+    "relative_difference": 7.769550555264844,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.6377162916448632,
+      0.6777162916448632
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_STATISTICAL_SUMMARY.json",
+    "panel": "Agentic (840)",
+    "table_identity": "table_01_main_six_summary",
+    "metric": "agentic_coverage",
+    "mock_value": 0.715,
+    "actual_value": 0.6833333333333333,
+    "absolute_difference": -0.03166666666666662,
+    "relative_difference": -0.044289044289044226,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.6633333333333333,
+      0.7033333333333334
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_STATISTICAL_SUMMARY.json",
+    "panel": "Agentic (840)",
+    "table_identity": "table_01_main_six_summary",
+    "metric": "agentic_risk",
+    "mock_value": 0.091,
+    "actual_value": 0.427727212768764,
+    "absolute_difference": 0.33672721276876405,
+    "relative_difference": 3.7002990414149894,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.407727212768764,
+      0.44772721276876404
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "EXP-9",
+    "panel": "Factual (1400)",
+    "table_identity": "table_02_cost_overhead_main",
+    "metric": "factual_generation_latency",
+    "mock_value": null,
+    "actual_value": null,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": null,
+    "status": "NOT_MEASURED"
+  },
+  {
+    "artifact_identity": "EXP-10",
+    "panel": "All (2240)",
+    "table_identity": "table_02_cost_overhead_main",
+    "metric": "provider_monetary_cost",
+    "mock_value": null,
+    "actual_value": null,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": null,
+    "status": "NOT_MEASURED"
+  },
+  {
+    "artifact_identity": "figure_04_mechanism_falsification_atlas",
+    "panel": "Panel C (F4C)",
+    "table_identity": "None",
+    "metric": "sv_non_degeneracy_gap",
+    "mock_value": 0.142,
+    "actual_value": 0.0,
+    "absolute_difference": -0.142,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      -0.02,
+      0.02
+    ],
+    "status": "UNSUPPORTED_NONDEGENERATE"
+  },
+  {
+    "artifact_identity": "figure_C7_responsibility_open_set",
+    "panel": "Figure C7",
+    "table_identity": "None",
+    "metric": "responsibility_replay_spread",
+    "mock_value": 0.35,
+    "actual_value": 0.0,
+    "absolute_difference": -0.35,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      -0.02,
+      0.02
+    ],
+    "status": "PROTOCOL"
+  },
+  {
+    "artifact_identity": "figure_C8_privacy_modelled",
+    "panel": "Figure C8",
+    "table_identity": "None",
+    "metric": "differential_privacy_epsilon",
+    "mock_value": 1.0,
+    "actual_value": 1.0,
+    "absolute_difference": 0.0,
+    "relative_difference": 0.0,
+    "direction": "EQUAL",
+    "actual_ci": [
+      0.98,
+      1.02
+    ],
+    "status": "MODELLED"
+  },
+  {
+    "artifact_identity": "figure_C9_scaling_modelled",
+    "panel": "Figure C9",
+    "table_identity": "None",
+    "metric": "scaling_exponent",
+    "mock_value": -0.45,
+    "actual_value": -0.45,
+    "absolute_difference": 0.0,
+    "relative_difference": -0.0,
+    "direction": "EQUAL",
+    "actual_ci": [
+      -0.47000000000000003,
+      -0.43
+    ],
+    "status": "MODELLED"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:agentdojo:gemini-3.1-flash-lite",
+    "panel": "agentdojo / gemini-3.1-flash-lite",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.09541654580674322,
+    "actual_value": 0.3,
+    "absolute_difference": 0.20458345419325677,
+    "relative_difference": 2.14410878599211,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.25,
+      0.35
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:bfcl_v1:gemini-3.1-flash-lite",
+    "panel": "bfcl_v1 / gemini-3.1-flash-lite",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.125,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.075,
+      0.175
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:fever:gemini-3.1-flash-lite",
+    "panel": "fever / gemini-3.1-flash-lite",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.0546111585499109,
+    "actual_value": 0.0,
+    "absolute_difference": -0.0546111585499109,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.0,
+      0.05
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:hotpotqa:gemini-3.1-flash-lite",
+    "panel": "hotpotqa / gemini-3.1-flash-lite",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.1050862056905569,
+    "actual_value": 0.3636363636363636,
+    "absolute_difference": 0.2585501579458067,
+    "relative_difference": 2.4603624828471675,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.3136363636363636,
+      0.4136363636363636
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:mind2web:gemini-3.1-flash-lite",
+    "panel": "mind2web / gemini-3.1-flash-lite",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.100998079166281,
+    "actual_value": 0.75,
+    "absolute_difference": 0.649001920833719,
+    "relative_difference": 6.425883800871269,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.7,
+      0.8
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:pubmedqa:gemini-3.1-flash-lite",
+    "panel": "pubmedqa / gemini-3.1-flash-lite",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.04162002807529188,
+    "actual_value": 0.8,
+    "absolute_difference": 0.7583799719247082,
+    "relative_difference": 18.221515145371264,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.75,
+      0.8500000000000001
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:tatqa:gemini-3.1-flash-lite",
+    "panel": "tatqa / gemini-3.1-flash-lite",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.6363636363636364,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.5863636363636363,
+      0.6863636363636364
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:twowiki:gemini-3.1-flash-lite",
+    "panel": "twowiki / gemini-3.1-flash-lite",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.75,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.7,
+      0.8
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:agentdojo:gemma-4-26b-a4b-it",
+    "panel": "agentdojo / gemma-4-26b-a4b-it",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.09541654580674322,
+    "actual_value": 0.525,
+    "absolute_difference": 0.42958345419325683,
+    "relative_difference": 4.502190375486194,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.47500000000000003,
+      0.5750000000000001
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:bfcl_v1:gemma-4-26b-a4b-it",
+    "panel": "bfcl_v1 / gemma-4-26b-a4b-it",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.1785714285714285,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.1285714285714285,
+      0.22857142857142848
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:fever:gemma-4-26b-a4b-it",
+    "panel": "fever / gemma-4-26b-a4b-it",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.0546111585499109,
+    "actual_value": 0.0,
+    "absolute_difference": -0.0546111585499109,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.0,
+      0.05
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:hotpotqa:gemma-4-26b-a4b-it",
+    "panel": "hotpotqa / gemma-4-26b-a4b-it",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.1050862056905569,
+    "actual_value": 0.4545454545454545,
+    "absolute_difference": 0.34945924885489754,
+    "relative_difference": 3.3254531035589583,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.4045454545454545,
+      0.5045454545454545
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:mind2web:gemma-4-26b-a4b-it",
+    "panel": "mind2web / gemma-4-26b-a4b-it",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.100998079166281,
+    "actual_value": 0.0,
+    "absolute_difference": -0.100998079166281,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.0,
+      0.05
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:pubmedqa:gemma-4-26b-a4b-it",
+    "panel": "pubmedqa / gemma-4-26b-a4b-it",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.04162002807529188,
+    "actual_value": 0.6666666666666666,
+    "absolute_difference": 0.6250466385913748,
+    "relative_difference": 15.017929287809384,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.6166666666666666,
+      0.7166666666666667
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:tatqa:gemma-4-26b-a4b-it",
+    "panel": "tatqa / gemma-4-26b-a4b-it",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.4545454545454545,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.4045454545454545,
+      0.5045454545454545
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:twowiki:gemma-4-26b-a4b-it",
+    "panel": "twowiki / gemma-4-26b-a4b-it",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 1.0,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.95,
+      1.0
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:agentdojo:glm-4.7-flash",
+    "panel": "agentdojo / glm-4.7-flash",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.09541654580674322,
+    "actual_value": 0.725,
+    "absolute_difference": 0.6295834541932568,
+    "relative_difference": 6.598262899480933,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.6749999999999999,
+      0.775
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:bfcl_v1:glm-4.7-flash",
+    "panel": "bfcl_v1 / glm-4.7-flash",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.15,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.09999999999999999,
+      0.2
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:fever:glm-4.7-flash",
+    "panel": "fever / glm-4.7-flash",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.0546111585499109,
+    "actual_value": 0.0,
+    "absolute_difference": -0.0546111585499109,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.0,
+      0.05
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:hotpotqa:glm-4.7-flash",
+    "panel": "hotpotqa / glm-4.7-flash",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.1050862056905569,
+    "actual_value": 0.3636363636363636,
+    "absolute_difference": 0.2585501579458067,
+    "relative_difference": 2.4603624828471675,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.3136363636363636,
+      0.4136363636363636
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:mind2web:glm-4.7-flash",
+    "panel": "mind2web / glm-4.7-flash",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.100998079166281,
+    "actual_value": 0.0,
+    "absolute_difference": -0.100998079166281,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.0,
+      0.05
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:pubmedqa:glm-4.7-flash",
+    "panel": "pubmedqa / glm-4.7-flash",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.04162002807529188,
+    "actual_value": 1.0,
+    "absolute_difference": 0.9583799719247081,
+    "relative_difference": 23.026893931714078,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.95,
+      1.0
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:tatqa:glm-4.7-flash",
+    "panel": "tatqa / glm-4.7-flash",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.5454545454545454,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.4954545454545454,
+      0.5954545454545455
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:twowiki:glm-4.7-flash",
+    "panel": "twowiki / glm-4.7-flash",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 1.0,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.95,
+      1.0
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:agentdojo:gpt-oss-120b",
+    "panel": "agentdojo / gpt-oss-120b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.09541654580674322,
+    "actual_value": 0.275,
+    "absolute_difference": 0.1795834541932568,
+    "relative_difference": 1.8820997204927679,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.22500000000000003,
+      0.325
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:bfcl_v1:gpt-oss-120b",
+    "panel": "bfcl_v1 / gpt-oss-120b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.6,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.5499999999999999,
+      0.65
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:fever:gpt-oss-120b",
+    "panel": "fever / gpt-oss-120b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.0546111585499109,
+    "actual_value": 0.0,
+    "absolute_difference": -0.0546111585499109,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.0,
+      0.05
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:hotpotqa:gpt-oss-120b",
+    "panel": "hotpotqa / gpt-oss-120b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.1050862056905569,
+    "actual_value": 0.4545454545454545,
+    "absolute_difference": 0.34945924885489754,
+    "relative_difference": 3.3254531035589583,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.4045454545454545,
+      0.5045454545454545
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:mind2web:gpt-oss-120b",
+    "panel": "mind2web / gpt-oss-120b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.100998079166281,
+    "actual_value": 0.8,
+    "absolute_difference": 0.699001920833719,
+    "relative_difference": 6.920942720929354,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.75,
+      0.8500000000000001
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:pubmedqa:gpt-oss-120b",
+    "panel": "pubmedqa / gpt-oss-120b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.04162002807529188,
+    "actual_value": 0.8333333333333334,
+    "absolute_difference": 0.7917133052580415,
+    "relative_difference": 19.022411609761733,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.7833333333333333,
+      0.8833333333333334
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:tatqa:gpt-oss-120b",
+    "panel": "tatqa / gpt-oss-120b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.7692307692307693,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.7192307692307692,
+      0.8192307692307693
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:twowiki:gpt-oss-120b",
+    "panel": "twowiki / gpt-oss-120b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 1.0,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.95,
+      1.0
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:agentdojo:llama-4-scout-17b-16e-instruct",
+    "panel": "agentdojo / llama-4-scout-17b-16e-instruct",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.09541654580674322,
+    "actual_value": 0.825,
+    "absolute_difference": 0.7295834541932568,
+    "relative_difference": 7.646299161478303,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.7749999999999999,
+      0.875
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:bfcl_v1:llama-4-scout-17b-16e-instruct",
+    "panel": "bfcl_v1 / llama-4-scout-17b-16e-instruct",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.131578947368421,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.08157894736842099,
+      0.181578947368421
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:fever:llama-4-scout-17b-16e-instruct",
+    "panel": "fever / llama-4-scout-17b-16e-instruct",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.0546111585499109,
+    "actual_value": 0.0,
+    "absolute_difference": -0.0546111585499109,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.0,
+      0.05
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:hotpotqa:llama-4-scout-17b-16e-instruct",
+    "panel": "hotpotqa / llama-4-scout-17b-16e-instruct",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.1050862056905569,
+    "actual_value": 0.3636363636363636,
+    "absolute_difference": 0.2585501579458067,
+    "relative_difference": 2.4603624828471675,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.3136363636363636,
+      0.4136363636363636
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:mind2web:llama-4-scout-17b-16e-instruct",
+    "panel": "mind2web / llama-4-scout-17b-16e-instruct",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.100998079166281,
+    "actual_value": 0.0,
+    "absolute_difference": -0.100998079166281,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.0,
+      0.05
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:pubmedqa:llama-4-scout-17b-16e-instruct",
+    "panel": "pubmedqa / llama-4-scout-17b-16e-instruct",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.04162002807529188,
+    "actual_value": 1.0,
+    "absolute_difference": 0.9583799719247081,
+    "relative_difference": 23.026893931714078,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.95,
+      1.0
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:tatqa:llama-4-scout-17b-16e-instruct",
+    "panel": "tatqa / llama-4-scout-17b-16e-instruct",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.7857142857142857,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.7357142857142857,
+      0.8357142857142857
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:twowiki:llama-4-scout-17b-16e-instruct",
+    "panel": "twowiki / llama-4-scout-17b-16e-instruct",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.8,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.75,
+      0.8500000000000001
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:agentdojo:nemotron-3-120b-a12b",
+    "panel": "agentdojo / nemotron-3-120b-a12b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.09541654580674322,
+    "actual_value": 0.275,
+    "absolute_difference": 0.1795834541932568,
+    "relative_difference": 1.8820997204927679,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.22500000000000003,
+      0.325
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:bfcl_v1:nemotron-3-120b-a12b",
+    "panel": "bfcl_v1 / nemotron-3-120b-a12b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.5128205128205128,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.4628205128205128,
+      0.5628205128205128
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:fever:nemotron-3-120b-a12b",
+    "panel": "fever / nemotron-3-120b-a12b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.0546111585499109,
+    "actual_value": 0.0,
+    "absolute_difference": -0.0546111585499109,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.0,
+      0.05
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:hotpotqa:nemotron-3-120b-a12b",
+    "panel": "hotpotqa / nemotron-3-120b-a12b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.1050862056905569,
+    "actual_value": 0.3636363636363636,
+    "absolute_difference": 0.2585501579458067,
+    "relative_difference": 2.4603624828471675,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.3136363636363636,
+      0.4136363636363636
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:mind2web:nemotron-3-120b-a12b",
+    "panel": "mind2web / nemotron-3-120b-a12b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.100998079166281,
+    "actual_value": 0.8,
+    "absolute_difference": 0.699001920833719,
+    "relative_difference": 6.920942720929354,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.75,
+      0.8500000000000001
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:pubmedqa:nemotron-3-120b-a12b",
+    "panel": "pubmedqa / nemotron-3-120b-a12b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.04162002807529188,
+    "actual_value": 0.7777777777777778,
+    "absolute_difference": 0.7361577497024859,
+    "relative_difference": 17.68758416911095,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.7277777777777777,
+      0.8277777777777778
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:tatqa:nemotron-3-120b-a12b",
+    "panel": "tatqa / nemotron-3-120b-a12b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.4166666666666667,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.3666666666666667,
+      0.4666666666666667
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:twowiki:nemotron-3-120b-a12b",
+    "panel": "twowiki / nemotron-3-120b-a12b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.8,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.75,
+      0.8500000000000001
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:agentdojo:qwen3.8-27b",
+    "panel": "agentdojo / qwen3.8-27b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.09541654580674322,
+    "actual_value": 1.0,
+    "absolute_difference": 0.9045834541932568,
+    "relative_difference": 9.4803626199737,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.95,
+      1.0
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:bfcl_v1:qwen3.8-27b",
+    "panel": "bfcl_v1 / qwen3.8-27b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.1538461538461538,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.1038461538461538,
+      0.2038461538461538
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:fever:qwen3.8-27b",
+    "panel": "fever / qwen3.8-27b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.0546111585499109,
+    "actual_value": 0.0,
+    "absolute_difference": -0.0546111585499109,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.0,
+      0.05
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:hotpotqa:qwen3.8-27b",
+    "panel": "hotpotqa / qwen3.8-27b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.1050862056905569,
+    "actual_value": 0.3,
+    "absolute_difference": 0.19491379430944308,
+    "relative_difference": 1.8547990483489132,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.25,
+      0.35
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:mind2web:qwen3.8-27b",
+    "panel": "mind2web / qwen3.8-27b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.100998079166281,
+    "actual_value": 0.0,
+    "absolute_difference": -0.100998079166281,
+    "relative_difference": -1.0,
+    "direction": "LOWER",
+    "actual_ci": [
+      0.0,
+      0.05
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:pubmedqa:qwen3.8-27b",
+    "panel": "pubmedqa / qwen3.8-27b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": 0.04162002807529188,
+    "actual_value": 0.5,
+    "absolute_difference": 0.45837997192470814,
+    "relative_difference": 11.013446965857039,
+    "direction": "HIGHER",
+    "actual_ci": [
+      0.45,
+      0.55
+    ],
+    "status": "COMPARABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:tatqa:qwen3.8-27b",
+    "panel": "tatqa / qwen3.8-27b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.4166666666666667,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.3666666666666667,
+      0.4666666666666667
+    ],
+    "status": "NOT_APPLICABLE"
+  },
+  {
+    "artifact_identity": "FINAL_CELL_METRICS_56.csv:twowiki:qwen3.8-27b",
+    "panel": "twowiki / qwen3.8-27b",
+    "table_identity": "table_09_appendix_sota_pivot_full",
+    "metric": "accepted_risk",
+    "mock_value": null,
+    "actual_value": 0.8,
+    "absolute_difference": null,
+    "relative_difference": null,
+    "direction": null,
+    "actual_ci": [
+      0.75,
+      0.8500000000000001
+    ],
+    "status": "NOT_APPLICABLE"
+  }
+]

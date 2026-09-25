@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "a33d5cec1627ab1629bcbdd9e83e5ca6d299038d22e9b80ac861451379e3b1c8",
+  "example_id": "18f2e7f282b727da282aef718bb5aeb3",
+  "finish": "stop",
+  "input_sha256": "58a2c25ead30c2753bc061b3358f0824555d8f052591ca8cedaee55ac71568b6",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "18f2e7f282b727da282aef718bb5aeb3",
+  "prompt_sha256": "aded5607430c84f85dbfa3191017a7a0fd9e83172887b841fe90b79fb4884f68",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Taran Killam: Taran Hourie Killam -LRB- born April 1 , 1982 -RRB- is an American actor , comedian , and writer .\n\nClaim: Taran Killam wasn't born in April.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "516133067a925a0e94f21e5d2fa0b91b97790d80cf04a35faed36171469dd69f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:18f2e7f282b727da282aef718bb5aeb3",
+  "task_key": "4c882c297c3bbaaefb47b2815fdeeabd9f57ba8316714bf0a59182b34079dd07",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:36:14.128277+00:00",
+  "tokens_in": 186,
+  "tokens_out": 66,
+  "usage": {
+    "completion_tokens": 66,
+    "neurons": 10.418146133422852,
+    "prompt_tokens": 186,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 252
+  }
+}

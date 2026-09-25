@@ -1,0 +1,32 @@
+{
+  "models": {
+    "gemma-4-26b-a4b-it": {
+      "chosen_max_completion_tokens": 512,
+      "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+      "policy": "thinking_disabled"
+    },
+    "glm-4.7-flash": {
+      "chosen_max_completion_tokens": 512,
+      "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+      "policy": "thinking_disabled"
+    },
+    "nemotron-3-120b-a12b": {
+      "chosen_max_completion_tokens": 1024,
+      "generation_policy_sha256": "4ecfa9b911b094e57dc4cc9f197bd1da2e847d0cf657155bf9edddcd5b6aa0b3",
+      "policy": "reasoning_low"
+    },
+    "qwen3.8-27b": {
+      "chosen_max_completion_tokens": 512,
+      "generation_policy_sha256": "d305a218c053735a47380aa0b4733b3855084cd9be1df2d9b8144a998a4e0abe",
+      "policy": "reasoning_low"
+    }
+  },
+  "panel_decision": "CORRECTED_REASONING_PROBE=PASS",
+  "recovery_policy_summary": "gemma-4-26b-a4b-it:thinking_disabled:512,glm-4.7-flash:thinking_disabled:512,nemotron-3-120b-a12b:reasoning_low:1024,qwen3.8-27b:reasoning_low:512",
+  "schema": "PCG_MAS_V3_6_CANONICAL_RECOVERY_POLICY_AUTHORITY_RECEIPT_V1",
+  "status": "PASS",
+  "underlying_receipts": [
+    "artifacts/v3_6/dataset_amendment_runtime_v2/receipts/REASONING_PROBE_RECEIPT_RAW_CORRECTED.json",
+    "artifacts/v3_6/dataset_amendment_runtime_v2/receipts/GLM_NATIVE_THINKING_OFF_PROBE.json"
+  ]
+}

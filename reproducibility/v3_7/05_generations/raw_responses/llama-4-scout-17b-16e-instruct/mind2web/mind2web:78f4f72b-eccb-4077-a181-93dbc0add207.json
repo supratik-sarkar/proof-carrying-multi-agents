@@ -1,0 +1,31 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "correct": false
+  },
+  "candidate_sha256": "1616eb813eed03b219eaba233f00fd2e3d96f598a673bb3a1a7ee18a828050dd",
+  "candidate_text": "{\"choice\":\"C#\",\"operation\":\"CLICK|TYPE|SELECT\",\"value\":\"tuition & fees\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "27022b31ddeb3ec377e0229caaf4ce6512225ae313c0afab9438fccab27a5e9c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+  "prompt_sha256": "27022b31ddeb3ec377e0229caaf4ce6512225ae313c0afab9438fccab27a5e9c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "0f777298055d64b1783d58ae4e35bb1ab878a6b1d53b73b6646d7ddb15a2ac70",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C#\",\"operation\":\"CLICK|TYPE|SELECT\",\"value\":\"tuition & fees\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 23,
+    "neurons": 10.368181228637695,
+    "prompt_tokens": 350,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 373
+  }
+}

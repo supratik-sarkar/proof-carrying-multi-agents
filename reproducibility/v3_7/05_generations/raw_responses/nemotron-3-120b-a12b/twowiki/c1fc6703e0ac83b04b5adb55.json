@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "779e4de305d7fc1c96f5ef3c593735a9b197c59cf4cd7ba68ccdfcaa8a583a41",
+  "example_id": "740e162f08cb11ebbd92ac1f6bf848b6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "ca20c22cca156e9dd8a28392f21909e608c166580e96550ed6d97a0ec1516f68",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "740e162f08cb11ebbd92ac1f6bf848b6",
+  "prompt_sha256": "3990f715da77899599b9a8976fd0f78fc2cf3e345b80521a0be8f909290495b9",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Rhythm in the Clouds\": [\"Rhythm in the Clouds is a 1937 American film directed by John H. Auer.\"]\n\n[2] \"South of the Clouds (2004 film)\": [\"South of the Clouds is a 2004 Chinese film and the second film directed by the writer Zhu Wen.\",\"The film stands in stark contrast to Zhu's previous film.\",\"In terms of production,\\\" South of the Clouds\\\" received the cooperation of the state apparatus unlike 2001's\\\" Seafood\\\" which was an underground production shot on digital hand- held cameras.\",\"In terms of story, the transgressive tale of a prostitute and a policeman in\\\" Seafood\\\" is a far cry from\\\" South of the Cloud\\\"'s gentle tale of a retiree who fulfills a lifelong desire to travel to the southern province of Yunnan( literally\\\" South of the Clouds\\\").\",\"\\\" South of the Clouds\\\" stars Li Xuejian as the protagonist, Xu Daqin, and features a cameo by director Tian Zhuangzhuang as the police chief in a small town in Yunnan.\",\"It was produced by China Film Assist, an independent production company in China;\\\" South of the Clouds\\\" was the company's first production.\"]\n\n[3] \"James Alexander Lougheed\": [\"Sir James Alexander Lougheed,( or; 1 September 1854 \\u2013 2 November 1925) was a businessman and politician from Alberta, Canada.\"]\n\n[4] \"Le Masque de la M\\u00e9duse\": [\"Le masque de la M\\u00e9duse is a 2009 fantasy horror film directed by Jean Rollin.\",\"The film is a modern-day telling of the Greek mythological tale of the Gorgon and was inspired by the 1964 classic Hammer Horror film of the same name and the 1981 cult classic\\\" Clash of the Titans\\\".\",\"It was Rollin's final film, as the director died in 2010.\"]\n\nQuestion: Which film has the director died later, Rhythm In The Clouds or September Affair?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "1591817357bb7242bb0811c2af1d6d917d348b34a018b3cf019d16d206fa6ef2",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:740e162f08cb11ebbd92ac1f6bf848b6",
+  "task_key": "04a29a052cf9c4472a6a2df6049c1a2c2032ceeba4123af1df7c5eb67bf59738",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-15T09:36:50.625113+00:00",
+  "tokens_in": 536,
+  "tokens_out": 128,
+  "usage": {
+    "completion_tokens": 128,
+    "neurons": 41.528,
+    "prompt_tokens": 536,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 664
+  }
+}

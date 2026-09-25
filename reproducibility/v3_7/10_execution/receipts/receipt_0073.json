@@ -1,0 +1,33 @@
+{
+  "CLOUDFLARE_BILLING_GUARD": "PASS",
+  "GEMINI_BILLING_GUARD": "PASS",
+  "ZERO_COST_EXECUTION_ADMISSIBLE": "YES",
+  "cloudflare_authoritative_evidence": {
+    "behavior_on_exhaustion": "HTTP 429 daily free allocation exceeded, fail-closed, no paid overage",
+    "evidence_file": "artifacts/v3_6/v2_3_1/operator_binding/evidence/plan_cloudflare.json",
+    "evidence_file_sha256": "92f25edd81835a4f215d17a2d73249624d744e5c1da3a77eb7c2f2c6dade436f",
+    "neurons_free_per_day": 10000,
+    "paid_upgrade": "NONE",
+    "plan": "WORKERS_FREE",
+    "source": "<ENDPOINT:0be48c3457df796f>",
+    "zero_dollar": true
+  },
+  "cost_usd_max": 0.0,
+  "gemini_authoritative_evidence": {
+    "behavior_on_exhaustion": "HTTP 429 RESOURCE_EXHAUSTED, fail-closed, no billing account attached",
+    "billing": "DISABLED",
+    "evidence_file": "artifacts/v3_6/v2_3_1/operator_binding/evidence/plan_gemini.json",
+    "evidence_file_sha256": "4bdcdc0e886b7724b0708ff60e36fb27ed3dc28d223dedb79b7728077a3519c8",
+    "plan": "FREE_TIER",
+    "replacement_authority_file": "artifacts/v3_6/postrun_authority_v1/authority/GEMINI_REPLACEMENT_AUTHORITY.json",
+    "replacement_authority_sha256": "5bdb0265373a4d7589dfbc6a7b7a585045358004ef236e8a479646f7f160db30",
+    "source": "<ENDPOINT:b88c4950bbf39196>",
+    "tier": "FREE_TIER",
+    "zero_dollar": true
+  },
+  "schema": "PCG_MAS_V3_6_G1_ZERO_COST_BILLING_GUARD_V3",
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:49:20.375489+00:00",
+  "transaction_id": "TX-20260917T124848Z-d0139466c44e"
+}

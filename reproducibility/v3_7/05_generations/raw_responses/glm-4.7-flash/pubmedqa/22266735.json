@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "431aa93adcfdb591944a6743f8578666b5ad35a6962b016f52beda8669269f50",
+  "candidate_text": "Yes, the IADPSG criteria are cost-effective.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "8c4805cbca2e396ca38e1fbb376e97f9a714958adc98108b2ffd159a1131760e",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "22266735",
+  "prompt_sha256": "1b0e3d774d6fd93825ccd297b976e6fad86259ed3cfaa5bd0988d9234fd8da23",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "089e3290399c2205c6b7fbf07e2e3e7a8cc39ff656320537d17133dbce562fd0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:22266735",
+  "text": "Yes, the IADPSG criteria are cost-effective.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 13,
+    "neurons": 3.0416999999999996,
+    "prompt_tokens": 467,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 480
+  }
+}

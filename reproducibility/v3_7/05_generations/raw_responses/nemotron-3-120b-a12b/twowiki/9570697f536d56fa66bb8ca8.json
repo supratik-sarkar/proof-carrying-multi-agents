@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "00c3b1ec470e4f98aabb829dff116eae00c0fefdcdbf40f8f87ec0d0ca2720cb",
+  "example_id": "4c61cd2c088111ebbd6dac1f6bf848b6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "2bc43b4f9abb1fef6e6ebc1491f49c0a8ce2132fbe49942898c9c969e9373bcf",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "4c61cd2c088111ebbd6dac1f6bf848b6",
+  "prompt_sha256": "af186126d321dabb405aa8fa7e09e334a991fe8069f3591e967e1962eed60051",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Robert M. Young (director)\": [\"Robert Milton\",\"Young, usually known as Robert M. Young( born November 22, 1924 in New York City, New York), is an American multi-award- winning director, cinematographer, screenwriter, and producer.\",\"In 1985 he was a member of the jury at the 14th Moscow International Film Festival.\",\"He has frequently cast Edward James Olmos in his movies, directing him in\\\" Alambrista!\\\"( 1977),\\\" The Ballad of Gregorio Cortez\\\"( 1982),\\\" Saving Grace\\\"( 1986),\\\" Triumph of the Spirit\\\"( 1989),\\\" Talent for the Game\\\"( 1991),\\\" Roosters\\\"( 1993),\\\" Slave of Dreams\\\"( 1995) and\\\" Caught\\\"( 1996).\",\"He produced Olmos's directorial debut,\\\" American Me\\\"( 1992).\"]\n\n[2] \"Henry Moore (cricketer)\": [\"Henry Walter Moore( 1849 \\u2013 20 August 1916) was an English- born first- class cricketer who spent most of his life in New Zealand.\"]\n\n[3] \"The Ballad of Gregorio Cortez\": [\"The Ballad of Gregorio Cortez is a 1982 American biographical Western film directed by Robert M. Young and starring Edward James Olmos as Gregorio Cortez.\",\"It is based on the book\\\" With His Pistol in His Hand\\\" by Americo Paredes.\"]\n\n[4] \"Bodie Olmos\": [\"Bodie James Olmos( born August 27, 1975) is an American actor.\",\"He is the son of Edward James Olmos and Kaija Keel, and grandson of Howard Keel.\",\"His older brother is actor Mico Olmos, and his younger sister is Daniela Olmos.\",\"His first on screen appearance was on\\\" The Ballad of Gregorio Cortez\\\" in 1982 when he was 7 years old.\",\"His most recent appearance on television is alongside his father in\\\" Battlestar Galactica\\\" as Lieutenant Junior Grade Brendan\\\" Hotdog\\\" Costanza.\",\"He also acted in a film directed by his father named\\\" Walkout\\\".\"]\n\nQuestion: Which film has the director who was born first, The Ballad Of Gregorio Cortez or Naiyya?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "a0e61cfff307130595ffb9de7694fd6e5590a27c83703d620135febebf8ca85a",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:4c61cd2c088111ebbd6dac1f6bf848b6",
+  "task_key": "97a642869a5399d5d3a47545e6030d4c5824d10968e17d1d5d472179a81177d8",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-15T09:36:28.138348+00:00",
+  "tokens_in": 606,
+  "tokens_out": 157,
+  "usage": {
+    "completion_tokens": 157,
+    "neurons": 48.622,
+    "prompt_tokens": 606,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 763
+  }
+}

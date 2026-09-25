@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "ad75af1450aa4bde6b709d97cfdba24bdd0591e2ccaacd85f1d308cbf7a2ca3b",
+  "candidate_text": "\n\nFleetwood Sheppard",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "0f82965d5eeac42b01ecbb27a8ad54d3277940123e3d3cf2386b7cf7dbe8b0b8",
+  "example_id": "ada1b358085211ebbd58ac1f6bf848b6",
+  "finish": "stop",
+  "input_sha256": "b5e2209ffdf790181baca860cea6ca09e8de004ae4e188b2ac59771b4286309a",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "ada1b358085211ebbd58ac1f6bf848b6",
+  "prompt_sha256": "24b92e821a68600f62de89adede1d6d64b603e691b9c4419d779d284f94ebb75",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Nicholas Sheppard\": [\"Nicholas Sheppard( or Shepherd)( died 1587) was an English churchman and academic, Master of St John's College, Cambridge and Archdeacon of Northampton.\"]\n\n[2] \"Fleetwood Sheppard\": [\"Fleetwood Sheppard (sometimes spelled as \\\"Shepphard,Sheppheard,\\\" and \\\"Sheppeard\\\") (1 January 1634 \\u2013 25 August 1698) was a British courtier and literary wit who was instrumental in the courts of Charles II of England and William of Orange.\",\"He was an educated man known for his lively wit and honesty, and he was an important figure in the poetry of the 1680s and 1690s.\",\"He was born in Oxfordshire, attended Magdalen Hall and Christ Church, Oxford, gaining the Bachelor of Arts in 1654 and Master of Arts in 1657.\",\"When all persons attaining an M.A. were required to join the Church of England, King Charles intervened and said that Sheppard had a background in civil law (having studied at Gray's Inn) and was \\\"not prepared to take orders, he being a person of much ability\\\" (Ellis 255).\",\"Instead, Sheppard became a courtier.\",\"He was introduced to Nell Gwynn and became one of her favourite companions, along with Charles Sackville, Lord Buckhurst (later Earl of Dorset).\",\"He would remain one of Dorset's closest friends throughout his life.\",\"While satirists and gossips (such as Anthony \\u00e1 Wood) said that Sheppard spent his time as \\\"a debauchee and atheist, a grand companion,\\\" others suggested that he was a fundamentally honest man who was always interested in a good joke.\",\"He became one of Charles II's dining companions, and when Nell Gwynn gave birth to a male child, he was made the steward of Gwynn's household.\",\"This prompted a satirist to accuse him of being the best paid pimp in the land.\",\"There is little truth to this charge, however, as Sheppard was not paid by the crown for his services, except for two grants of \\u00a3200.\",\"Dorset and Sheppard went to Paris together.\",\"Additionally, Dorset would travel out to meet Sheppard when the latter went out to the country.\",\"Whether he and Dorset got in trouble in Paris for some scandalous behaviour, as Wood suggests, or not, it is true that Sheppard lived a very active life.\",\"He was stabbed beneath the eye while separating Henry Bulkeley and George Etheridge in a quarrel in a tavern.\",\"Sheppard was not liked by James II, and Sheppard did not like James, either.\",\"When Charles II died, Sheppard went into retirement.\",\"However, when William came to the throne, Sheppard was back at court and back in favour.\",\"Dorset was made the chamberlain of the royal household, and that gave him a great many places to dispense in patronage.\",\"For this, he employed Sheppard.\",\"Sheppard received the proceeds from those wishing to purchase places, and he received the favours of those wishing a good word to be placed on their behalf.\",\"At the same time, Sheppard was a favourite of the new Queen's, and John Oldmixon said that he made the Queen \\\"very merry.\\\"\",\"In \\\"A New Way of Selling Places at Court\\\" in 1712, Jonathan Swift would say that Fleetwood Sheppard sold places that did not exist and named successors for posts that were not vacant, that he enriched himself greatly.\",\"In 1690 he was made a gentleman usher to the king.\",\"In 1694 he was knighted, became a gentleman usher to the black rod in the House of Lords, and was inducted as a knight of the garter.\",\"Sheppard was a patron of many poets and one of those who discovered others.\",\"He was one of the ones, for example, who \\\"discoveredParadise Lost\\\" when Buckhurst bought it from a small stall at a fair.\",\"He was also present when Matthew Prior was discovered reading Horace as a tap puller in a bar and sent to school to cultivate his talents.\",\"He was also one of the main supports of Robert Gould, as well as John Oldmixon.\",\"He may have embraced the Puritan cause around 1695, and some of his old friends were disaffected by this change.\",\"Charles Gildon, Thomas Rymer, and John Dennis dedicated volumes of literary criticism to Sheppard, and John Wilmot, 2nd Earl of Rochester regarded Sheppard as the only critic he needed for his verses.\",\"In his last years, Sheppard was reported dead several times before he died.\",\"In 1694, Lord Godolphin heard a report that Sheppard had died, but Sheppard himself responded, saying that he was alive, but that he had suffered from \\\"the stone\\\" for twelve to fourteen years.\",\"In December 1697, he was again reported as dead.\",\"In July 1698, he was \\\"again\\\" reported as dead.\",\"He did die shortly afterward, but in 1768 a joking \\\"Annual Register\\\" announced that Sheppard was still alive, in good health, and 120 years old.\"]\n\n[3] \"Billy Whitaker\": [\"William Whitaker( 1923\\u20131995) was an English professional footballer who played in the Football League, as a defender.\"]\n\n[4] \"George William Whitaker\": [\"George William Whitaker( September 25, 1840 \\u2013 March 6, 1916) was a prominent Rhode Island landscape painter during the late 19th and early 20th century, known as the\\\" Dean of Providence painters\\\" or the\\\" Dean of Rhode Island Artists.\\\"\"]\n\nQuestion: Who died first, Fleetwood Sheppard or George William Whitaker?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "27619b27abfb0118a263770322584572cc1fd93b3fef8e3c6f100c40d4e6c64f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:ada1b358085211ebbd58ac1f6bf848b6",
+  "task_key": "0bb8362610b3d6ac719ce218f6da42706ac03c15e1faf8ce27eafef8c9f0d01c",
+  "text": "\n\nFleetwood Sheppard",
+  "timestamp": "2026-09-14T10:48:18.193157+00:00",
+  "tokens_in": 1379,
+  "tokens_out": 99,
+  "usage": {
+    "completion_tokens": 99,
+    "neurons": 85.21363830566406,
+    "prompt_tokens": 1379,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1478
+  }
+}

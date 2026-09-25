@@ -1,0 +1,44 @@
+{
+  "counts": {
+    "aggregate_method_cell_rows": 392,
+    "captured_prompts": 240,
+    "cells": 56,
+    "certificate_identities": 2240,
+    "datasets": 8,
+    "declared_prompts": 320,
+    "donor_artifacts_admitted": 3139,
+    "execution_receipts": 140,
+    "generations_per_cell": 40,
+    "models": 7,
+    "raw_agent_trajectories": 434,
+    "raw_generation_responses": 2240,
+    "sanitized_public_projections": 674,
+    "tool_calls": 1694,
+    "tool_outputs": 1681,
+    "verifier_slots": 4200
+  },
+  "current_scientific_layers": {
+    "07_verification_per_observation_values": "NOT_RETAINED",
+    "08_certificate_per_observation_values": "NOT_RETAINED",
+    "09_outcome_per_observation_values": "NOT_RETAINED",
+    "13_metrics": "CAPTURED",
+    "14_artifacts": "CAPTURED"
+  },
+  "donor_binding": {
+    "admitted_artifacts": 3139,
+    "artifact_binding": "15_change_control/donor_artifact_binding.jsonl",
+    "donor_checksum_list_sha256": "55efcd3443d9e5d7cdba40d71c850028e6f8c4e06328589fbfbe9a00597b07a8",
+    "donor_record_manifest_sha256": "20391ff9b76ebfd13ce1fa1c8db0fcbfdc5feb74172fe2350080bb0035eaa753",
+    "donor_record_seal_sha256": "9931bc0713a61282e5261f73ba4f30d25be16874c0d7c5b408809de40a607787",
+    "donor_release": "v3.6",
+    "donor_seal_status": "SEALED_IMMUTABLE_RECORD",
+    "legacy_result_values_admitted_from_restricted_layers": 0,
+    "schema": "pcg_mas_v3_7_donor_binding_v1",
+    "scientific_result_authority": "v3_7"
+  },
+  "status_semantics": {
+    "CAPTURED": "Public bytes are included and hash bound.",
+    "NOT_RETAINED": "The historical value is unavailable and was not inferred.",
+    "SANITIZED_PROJECTION": "Original and public hashes are retained with a redaction reason."
+  }
+}

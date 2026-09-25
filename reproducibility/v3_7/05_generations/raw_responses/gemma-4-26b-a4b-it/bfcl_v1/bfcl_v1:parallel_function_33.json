@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "377fc830167add3f460c8f0a65e05eb20d92922d903c2d6004d6eda6d16b9beb",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_function_33",
+  "prompt_sha256": "377fc830167add3f460c8f0a65e05eb20d92922d903c2d6004d6eda6d16b9beb",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "d746ef814b877d6c48082c4896916ffedf98e2b6a5611f6efff1780157060879",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"position\": \"president\", \"year\": 1980}",
+        "name": "get_president_and_vp"
+      },
+      "id": "chatcmpl-tool-931371d8e94fa832",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"position\": \"president\", \"year\": 2016}",
+        "name": "get_president_and_vp"
+      },
+      "id": "chatcmpl-tool-93d2890ad41356d8",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"position\": \"vice president\", \"year\": 1975}",
+        "name": "get_president_and_vp"
+      },
+      "id": "chatcmpl-tool-96c65e3a9245bc0b",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"position\": \"vice president\", \"year\": 2011}",
+        "name": "get_president_and_vp"
+      },
+      "id": "chatcmpl-tool-987505bf4d5bb83d",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 314,
+    "neurons": 9.981818199157715,
+    "prompt_tokens": 156,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 470
+  }
+}

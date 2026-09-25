@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "30f4c2f70eed188feaba2ec04450fdc965f9cd69088cc0b7a5f9d3b409e5d621",
+  "example_id": "0bedb7e80bdc11eba7f7acde48001122",
+  "finish": "stop",
+  "input_sha256": "1e17c873440336b463f099a3fbfd4a353a1cdaf2a269e5ac2631676215e868bd",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "0bedb7e80bdc11eba7f7acde48001122",
+  "prompt_sha256": "10bd39fa90b8641c871461ceb454965b86b193712b9d6ce8da205b4e1ae9e0e5",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Lamman Rucker\": [\"Lamman Rucker( born October 6, 1971) is an American actor.\",\"Rucker began his career on the daytime soap operas\\\" As the World Turns\\\" and\\\" All My Children\\\", before roles in Tyler Perry's films\",\"\\\" Why Did I Get Married?\",\"Why Did I Get Married Too?\\\", and\\\" Meet the Browns\\\", and its television adaptation.\",\"In 2016, he began starring as Jacob Greenleaf in the Oprah Winfrey Network drama series,\\\" Greenleaf\\\".\"]\n\n[2] \"Richard T. Jones\": [\"Richard Timothy Jones( born January 16, 1972) is an American actor.\",\"Jones is best known for his portrayals of Laveinio in the dramatic film\\\" The Wood\\\"( 1999) and Mike of the dramatic films\\\" Why Did I Get Married?\\\"( 2007) and\\\" Why Did I Get Married Too?\\\"( 2010).\",\"He is also well known for his role as Bruce Van Exel, court services officer on the CBS television series\\\" Judging Amy\\\" that aired from 1999 to 2005.\"]\n\n[3] \"John Middleton Murry\": [\"John Middleton Murry (6 August 1889 \\u2013 12 March 1957) was an English writer.\",\"He was a prolific author, producing more than 60 books and thousands of essays and reviews on literature, social issues, politics, and religion during his lifetime.\",\"A prominent critic, Murry is best remembered for his association with Katherine Mansfield, whom he married in 1918 as her second husband, for his friendship with D. H. Lawrence and T. S. Eliot, and for his friendship (and brief affair) with Frieda Lawrence.\",\"Following Mansfield's death, Murry edited her work.\"]\n\n[4] \"J. W. N. Sullivan\": [\"John William Navin Sullivan( 1886\\u20131937) was a popular science writer and literary journalist, and the author of a study of Beethoven.\",\"He wrote some of the earliest non-technical accounts of Einstein \\u2019s General Theory of Relativity, and was known personally to many important writers in London in the 1920s, including Aldous Huxley, John Middleton Murry, Wyndham Lewis, Aleister Crowley and T. S. Eliot.\"]\n\nQuestion: Why did John Middleton Murry's wife die?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c278049db88a80ce878493f896e31ccd43278f2f6f4ec3cb757ec5c3a12129bb",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:0bedb7e80bdc11eba7f7acde48001122",
+  "task_key": "b227e2f9f37802b3069291fe0a9f8a90b39fac3205ac5f5f09d05a4ceb54b6e4",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-14T10:51:29.690456+00:00",
+  "tokens_in": 651,
+  "tokens_out": 95,
+  "usage": {
+    "completion_tokens": 95,
+    "neurons": 54.26818084716797,
+    "prompt_tokens": 651,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 746
+  }
+}

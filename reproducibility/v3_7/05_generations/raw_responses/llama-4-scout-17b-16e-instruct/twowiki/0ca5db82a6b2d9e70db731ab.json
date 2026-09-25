@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "45be0aac9f6112e295cf4655ccb743f8e68922fd0e10a27852ee69be17347dba",
+  "candidate_text": "Anna Margarete Stegmann.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "58fa785f4afc5b2bacaa106e9526ffb4a5417f324ce1ffd396f84701336d1d91",
+  "example_id": "87e34cd908ac11ebbd83ac1f6bf848b6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "b07445e243bffd63e1f344c3254c510818b349cb72d699d05eaae5b6fa1edd78",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "87e34cd908ac11ebbd83ac1f6bf848b6",
+  "prompt_sha256": "89913bc3380d6b6499d468e6d237cf686d2df20f52384d4905ce870608435ca9",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Mouloud Feraoun\": [\"Mouloud Feraoun( 8 March 1913 \\u2013 15 March 1962) was an Algerian writer and martyr of the Algerian revolution born in Tizi Hibel, Kabylie.\",\"Some of his books, written in French, have been translated into several languages including English and German.\",\"He was assassinated by the French OAS on 15 March 1962.\"]\n\n[2] \"Anna Margarete Stegmann\": [\"Anna Margarete Stegmann( July 12, 1871 \\u2013 July 1, 1936) was a Swiss- German neurologist, psychoanalyst and politician.\",\"She was a Social Democratic Party member of the Reichstag of the Weimar Republic.\",\"The daughter of a farmer, she was born Anna Margarete Meyer in Z\\u00fcrich, Switzerland.\",\"Both her parents had died by the time that she was sixteen.\",\"She worked for the Swiss postal service, completed her secondary education and went on to study medicine.\",\"Stegmann earned her doctorate in 1910 in Zurich.\",\"She joined the Social Democratic Party in 1918.\",\"After completing her internship, she received her license to practise medicine in 1920 and set up practice in Dresden.\",\"During the 1920s, she was a member of the International Psychoanalytical Association, the Schopenhauer Society and the Women's International League for Peace and Freedom.\",\"When the Nazi Party gained power in Germany, she left for Switzerland.\",\"From 1920 to 1924, she was an unpaid member of the city council of Dresden.\",\"She served as a member of the Reichstag from May 1924 to September 1930.\",\"In 1924, she argued for the right of women to abortion; in the spirit of those times, eugenic reasons were used to justify abortion in certain cases.\",\"She married Arnold Stegmann in 1911 but he died in 1914.\",\"She died in Arlesheim at the age of 64.\"]\n\n[3] \"Gerrit Maritz\": [\"Gerhardus Marthinus( Gert or Gerrit) Maritz( 1 March 1797 \\u2013 23 September 1838), b 1c8d2, was a Voortrekker pioneer and leader, wagon builder.\",\"Gerrit Maritz was the son of Salamo Stefanus Maritz and Maria Elizabeth Oosthuizen.\",\"He married Agnita Maria Olivier and later Anna Carolina Agatha van Rooyen and from them he fathered six children.\"]\n\n[4] \"Princess Iniga of Thurn and Taxis\": [\"Princess Iniga Anna Margarete Wilhelmine Luise of Thurn and Taxis( German Iniga Anna Margarete Wilhelmine Luise, Prinzessin von Thurn und Taxis, 25 August 1925, Schloss Niederaichbach, Niederaichbach, Bavaria, Germany \\u2013 17 September 2008, Aufhausen, Germany) was a princess of the House of Thurn and Taxis by birth and a Princess of Urach through her marriage to Prince Eberhard von Urach, member of a morganatic branch of the former royal House of W\\u00fcrttemberg.\"]\n\nQuestion: Who was born later, Anna Margarete Stegmann or Mouloud Feraoun?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "9b1e721704ef881742a2de1f698cae194a5c2ed46da37b54e5b0c38e31eec325",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:87e34cd908ac11ebbd83ac1f6bf848b6",
+  "task_key": "9a838632f1367012845f627348f10fefe5abce5f04b24691efaa79547a8417dc",
+  "text": "Anna Margarete Stegmann.",
+  "timestamp": "2026-09-15T09:34:19.364169+00:00",
+  "tokens_in": 761,
+  "tokens_out": 9,
+  "usage": {
+    "completion_tokens": 9,
+    "neurons": 19.37454605102539,
+    "prompt_tokens": 761,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 770
+  }
+}

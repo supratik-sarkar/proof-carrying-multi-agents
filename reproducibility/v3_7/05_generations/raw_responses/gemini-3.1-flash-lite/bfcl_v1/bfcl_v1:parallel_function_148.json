@@ -1,0 +1,59 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "aba9743ca33a5691187b2bec45ab0087bc465b66fb3e2803b068c16f9a926695",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_function_148",
+  "prompt_sha256": "aba9743ca33a5691187b2bec45ab0087bc465b66fb3e2803b068c16f9a926695",
+  "provider": "gemini",
+  "provider_raw_sha256": "fe7ed7fc0fae33a028d856ada2db87d9de7ddd6fadc90c37e0f487bcf551fc32",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPWUePLzYTGV2rgbVY+0qWWRfOEkCelY5ZVNJ75ftwUMju1PBu5DKd8IW1D7DM/zLFL7UUD2vsBLMIoAPEo+wYPMbteGiLh9LxNfjFhTE4qx+AV8RF5bd5fO30/88nnQs2CM2OLuSzPSSaNA=="
+        }
+      },
+      "function": {
+        "arguments": "{\"time\":25,\"to_unit\":\"km/h\",\"distance\":500}",
+        "name": "calculate_speed"
+      },
+      "id": "call_1215379",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"distance\":1000,\"to_unit\":\"m/s\",\"time\":200}",
+        "name": "calculate_speed"
+      },
+      "id": "call_1215380",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"time\":600,\"to_unit\":\"km/h\",\"distance\":10000}",
+        "name": "calculate_speed"
+      },
+      "id": "call_1215381",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 98,
+    "prompt_tokens": 233,
+    "total_tokens": 331
+  }
+}

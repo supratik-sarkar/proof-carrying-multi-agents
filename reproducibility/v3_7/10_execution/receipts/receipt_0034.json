@@ -1,0 +1,554 @@
+{
+  "agentdojo_cases": [],
+  "bfcl_cases": [
+    {
+      "api_model_id": "@cf/openai/gpt-oss-120b",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/gpt-oss-120b/bfcl_v1/bfcl_v1:simple_124.json",
+      "artifact_sha256": "de95641747ca3d95e2f170826990248f6aed0279b64624cab457f0434d68ab62",
+      "benchmark_score": {
+        "error": [
+          "Missing required parameter: 'dataset_A'."
+        ],
+        "error_type": "simple_function_checker:missing_required",
+        "valid": false
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "bfcl_v1:simple_124",
+      "lane": "bfcl_v1",
+      "model_id": "gpt-oss-120b",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/qwen/qwen3.8-27b",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/qwen3.8-27b/bfcl_v1/bfcl_v1:simple_124.json",
+      "artifact_sha256": "943d57fb4d3788d86e1477f7f33bf49a1449e99886426492edf82056a8baf8be",
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "bfcl_v1:simple_124",
+      "lane": "bfcl_v1",
+      "model_id": "qwen3.8-27b",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "gemini-3.1-flash-lite",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/gemini-3.1-flash-lite/bfcl_v1/bfcl_v1:simple_124.json",
+      "artifact_sha256": "763cc3776af978c33993d5917bd92977245a188d6711b10c2775cd67926adbbd",
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "bfcl_v1:simple_124",
+      "lane": "bfcl_v1",
+      "model_id": "gemini-3.1-flash-lite",
+      "physical_calls": 1,
+      "provider": "gemini"
+    },
+    {
+      "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/llama-4-scout-17b-16e-instruct/bfcl_v1/bfcl_v1:simple_124.json",
+      "artifact_sha256": "6c1bae5c9b7fb2c1856875c536354016055731da29f4e601505fd2993aac9a67",
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "bfcl_v1:simple_124",
+      "lane": "bfcl_v1",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/nemotron-3-120b-a12b/bfcl_v1/bfcl_v1:simple_124.json",
+      "artifact_sha256": "1bf50c0c142a22293593856ef1c4308cfaf95735fca4ff0bf00afdd7a5108278",
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "bfcl_v1:simple_124",
+      "lane": "bfcl_v1",
+      "model_id": "nemotron-3-120b-a12b",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/gemma-4-26b-a4b-it/bfcl_v1/bfcl_v1:simple_124.json",
+      "artifact_sha256": "1f2f7966dad09f9950904335f4d49503297e96eac2b9e824cf686f44771d907f",
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "bfcl_v1:simple_124",
+      "lane": "bfcl_v1",
+      "model_id": "gemma-4-26b-a4b-it",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/zai-org/glm-4.7-flash",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/glm-4.7-flash/bfcl_v1/bfcl_v1:simple_124.json",
+      "artifact_sha256": "0e5345f66e3f1aa4111bd5ec4b4d0ce99c510f116c9a7da2a595ee0b408c74db",
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "bfcl_v1:simple_124",
+      "lane": "bfcl_v1",
+      "model_id": "glm-4.7-flash",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    }
+  ],
+  "blocker_details": {
+    "error_message": "Error: Invalid value for \"--model\": \"openai-compatible\" is not one of \"GPT_4O_2024_05_13\", ..., \"OPENAI_COMPATIBLE\".",
+    "file": "artifacts/v3_6/dataset_amendment_v2/integration/agentdojo_case_runner.py",
+    "line": 38,
+    "passed_cmd_arg": "--model openai-compatible",
+    "required_click_choice": "--model OPENAI_COMPATIBLE"
+  },
+  "mind2web_cases": [
+    {
+      "api_model_id": "@cf/openai/gpt-oss-120b",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/gpt-oss-120b/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "artifact_sha256": "3267ffcd5a49e498ca84595fbab8187516d3e3ae543918a35bf5396156d52ab0",
+      "benchmark_score": {
+        "correct": false,
+        "parse_status": "NO_JSON"
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "lane": "mind2web",
+      "model_id": "gpt-oss-120b",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/qwen/qwen3.8-27b",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/qwen3.8-27b/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "artifact_sha256": "d2f36854d30a7773a1a662c38de41f47e74c3cd34cf0c73c14a6b875b9b92764",
+      "benchmark_score": {
+        "correct": false,
+        "parse_status": "NO_JSON"
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "lane": "mind2web",
+      "model_id": "qwen3.8-27b",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "gemini-3.1-flash-lite",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/gemini-3.1-flash-lite/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "artifact_sha256": "098c1a05bcf165b68c919625e91259d9fc699d72e9abbc0dbbb1aab153e7f4c2",
+      "benchmark_score": {
+        "correct": false
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "lane": "mind2web",
+      "model_id": "gemini-3.1-flash-lite",
+      "physical_calls": 1,
+      "provider": "gemini"
+    },
+    {
+      "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/llama-4-scout-17b-16e-instruct/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "artifact_sha256": "66a9d7d735bdce252b5bbc2e0c3e2bf3e4408f38e53323a88567d0a41645dbb8",
+      "benchmark_score": {
+        "correct": false
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "lane": "mind2web",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/nemotron-3-120b-a12b/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "artifact_sha256": "5dcb04204b957d3b5a498a2c2c57f8af913fbc329a0df91635b3c872a28f0e44",
+      "benchmark_score": {
+        "correct": false,
+        "parse_status": "NO_JSON"
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "lane": "mind2web",
+      "model_id": "nemotron-3-120b-a12b",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/gemma-4-26b-a4b-it/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "artifact_sha256": "9a4011f6db6d5e306e4401a5853aa9d98cbbde626e29bc0719bfd2a3b99692fa",
+      "benchmark_score": {
+        "correct": false,
+        "parse_status": "NO_JSON"
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "lane": "mind2web",
+      "model_id": "gemma-4-26b-a4b-it",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/zai-org/glm-4.7-flash",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/glm-4.7-flash/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "artifact_sha256": "486e47e0667a3598fc56989d800f35fd4f72f0de9b67ccb0d6d86d67df315c27",
+      "benchmark_score": {
+        "correct": false,
+        "parse_status": "NO_JSON"
+      },
+      "canary_role": true,
+      "canonical_generation_reusable": true,
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "lane": "mind2web",
+      "model_id": "glm-4.7-flash",
+      "physical_calls": 1,
+      "provider": "cloudflare"
+    }
+  ],
+  "physical_provider_calls_log": [
+    {
+      "api_model_id": "@cf/openai/gpt-oss-120b",
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "finish_reason": "length",
+      "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+      "model_id": "gpt-oss-120b",
+      "provider": "cloudflare",
+      "provider_response_sha256": "9d2305f5d780ecb7064cd0c7c9dc85a304db2d399b98afdad3ef3d597a781b08",
+      "request_policy_sha256": "83d52a739547a21f9c2a49b66c27c331e41d20107d31a0fb75d9dc9047c1e3ee",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 256,
+        "neurons": 30.37264633178711,
+        "prompt_tokens": 406,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 662
+      }
+    },
+    {
+      "api_model_id": "@cf/qwen/qwen3.8-27b",
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "finish_reason": "length",
+      "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+      "model_id": "qwen3.8-27b",
+      "provider": "cloudflare",
+      "provider_response_sha256": "80d9bc2a569e82d7ab29f17b7f58869c356b7c059af2bcff9d8aa0474f145ae4",
+      "request_policy_sha256": "6e650ecaeac27074b1af712f3c6a0e271f923440cef67b8a082d21f50083e334",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 256,
+        "neurons": 90.87727355957031,
+        "prompt_tokens": 401,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 657
+      }
+    },
+    {
+      "api_model_id": "gemini-3.1-flash-lite",
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "finish_reason": "stop",
+      "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+      "model_id": "gemini-3.1-flash-lite",
+      "provider": "gemini",
+      "provider_response_sha256": "f73eec02ca68ed97c8697cc37fa1bf0fe34eb9b573657da7d83008e8238a2954",
+      "request_policy_sha256": "be36d11775f98c6def5e38ed86923cd0027f93ce810561258b2d4f56ef2cb45e",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 349,
+        "total_tokens": 363
+      }
+    },
+    {
+      "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "finish_reason": "stop",
+      "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "provider": "cloudflare",
+      "provider_response_sha256": "0f777298055d64b1783d58ae4e35bb1ab878a6b1d53b73b6646d7ddb15a2ac70",
+      "request_policy_sha256": "23bc7b7f3fd6b64473cbdb43e6d8897d2e2339805000d63bf060a7c67319e15d",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 23,
+        "neurons": 10.368181228637695,
+        "prompt_tokens": 350,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 373
+      }
+    },
+    {
+      "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "finish_reason": "length",
+      "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+      "model_id": "nemotron-3-120b-a12b",
+      "provider": "cloudflare",
+      "provider_response_sha256": "2b3aaf0eb18d2ef3372845ad74cb17017a9300bd7972805db9602aaf9dbc999e",
+      "request_policy_sha256": "66401605600dedb3f4637755b508c0e62ce25d21f49ca3446deea7a83bcde72a",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 256,
+        "neurons": 51.556,
+        "prompt_tokens": 372,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 628
+      }
+    },
+    {
+      "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "finish_reason": "length",
+      "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+      "model_id": "gemma-4-26b-a4b-it",
+      "provider": "cloudflare",
+      "provider_response_sha256": "6682e7c55b0a3c5d11e3a56e09d6233ac9fdde32bc96e344fba07ed312d12c38",
+      "request_policy_sha256": "ab308e2282b8da9ed9066ca4d5ec6da669030409c3d044efc08732bef7db0d7f",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 256,
+        "neurons": 10.290908813476562,
+        "prompt_tokens": 364,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 620
+      }
+    },
+    {
+      "api_model_id": "@cf/zai-org/glm-4.7-flash",
+      "case_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "finish_reason": "length",
+      "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+      "model_id": "glm-4.7-flash",
+      "provider": "cloudflare",
+      "provider_response_sha256": "b25a030d8bec31551ec5adf88465164f0acc506fdd8471f45eadbe6f320f6251",
+      "request_policy_sha256": "65d24b752fa1ad81f50b70ed0c5cdfe288f0e1c0b8034e079b49a015ef0a2900",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 256,
+        "neurons": 11.2104,
+        "prompt_tokens": 344,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 600
+      }
+    },
+    {
+      "api_model_id": "@cf/openai/gpt-oss-120b",
+      "case_id": "bfcl_v1:simple_124",
+      "finish_reason": "tool_calls",
+      "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+      "model_id": "gpt-oss-120b",
+      "provider": "cloudflare",
+      "provider_response_sha256": "712ddc82d7713f2aea3ed770e4b105731067b000b636fc2b3786c1fa17394e65",
+      "request_policy_sha256": "ecc5140db3dec372ed41ffb33d0dcb78c750ab3c1eec038aae66831b93bd8536",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 92,
+        "neurons": 11.522695541381836,
+        "prompt_tokens": 165,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 257
+      }
+    },
+    {
+      "api_model_id": "@cf/qwen/qwen3.8-27b",
+      "case_id": "bfcl_v1:simple_124",
+      "finish_reason": "tool_calls",
+      "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+      "model_id": "qwen3.8-27b",
+      "provider": "cloudflare",
+      "provider_response_sha256": "7b57420fc389cefb18edec22a17d74a8b9ba68c3330e6ab27369240f46c02949",
+      "request_policy_sha256": "cdc632437c2592ba4a645c7cf3084d72ccf3fc6cf5bd5a1f74eaf8dabbd247f6",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 143,
+        "neurons": 59.14999771118164,
+        "prompt_tokens": 429,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 572
+      }
+    },
+    {
+      "api_model_id": "gemini-3.1-flash-lite",
+      "case_id": "bfcl_v1:simple_124",
+      "finish_reason": "tool_calls",
+      "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+      "model_id": "gemini-3.1-flash-lite",
+      "provider": "gemini",
+      "provider_response_sha256": "1474134b9feb5ee66e7cf04faf45aea3f80678035a99fc48f4a3d4065e94ac10",
+      "request_policy_sha256": "b78192d745e8faccefa3ac64f4e965fa68bc1790b2c942f8867aa2e5393362ea",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 36,
+        "prompt_tokens": 187,
+        "total_tokens": 223
+      }
+    },
+    {
+      "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "case_id": "bfcl_v1:simple_124",
+      "finish_reason": "tool_calls",
+      "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "provider": "cloudflare",
+      "provider_response_sha256": "d5f3cbdb9dc90e2c6a55a25b82ac2b89372e91df4b27334e1ccbe5063b160baf",
+      "request_policy_sha256": "1c94c7e5684755f5bd3e2c6485fbc8a548ce5c8761472bbbf8a0ec7b7c32f39f",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 26,
+        "neurons": 20.712726593017578,
+        "prompt_tokens": 762,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 788
+      }
+    },
+    {
+      "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+      "case_id": "bfcl_v1:simple_124",
+      "finish_reason": "tool_calls",
+      "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+      "model_id": "nemotron-3-120b-a12b",
+      "provider": "cloudflare",
+      "provider_response_sha256": "e058e119ce91225384a57db32de8dce94aa96ebeddc57e192847ded72a49eb58",
+      "request_policy_sha256": "9b94e59c381e054bc21077dd6775f8ad2b41865b329215f6421712a615f0bef6",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 127,
+        "neurons": 36.847,
+        "prompt_tokens": 435,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 562
+      }
+    },
+    {
+      "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+      "case_id": "bfcl_v1:simple_124",
+      "finish_reason": "tool_calls",
+      "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+      "model_id": "gemma-4-26b-a4b-it",
+      "provider": "cloudflare",
+      "provider_response_sha256": "964792abdef54fe7b55d6399b017db088e50cfd7641e91f296df8119b3556355",
+      "request_policy_sha256": "248c02b668f94041645e286570d3576b53d93e7c88d27e233558afe21ec3b762",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 35,
+        "neurons": 2.8090908527374268,
+        "prompt_tokens": 204,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 239
+      }
+    },
+    {
+      "api_model_id": "@cf/zai-org/glm-4.7-flash",
+      "case_id": "bfcl_v1:simple_124",
+      "finish_reason": "tool_calls",
+      "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+      "model_id": "glm-4.7-flash",
+      "provider": "cloudflare",
+      "provider_response_sha256": "fb7d80a9fbb096c79381dbf91d05a8bfa50e208fb28ba02b67a033bb9b5432ff",
+      "request_policy_sha256": "79cd546e835739b9019f7f97f1e6fc7b9d53e29e629dfcaec06128c795eecc4d",
+      "timestamp": "2026-09-17T10:22:26Z",
+      "turn_index": 0,
+      "usage": {
+        "completion_tokens": 55,
+        "neurons": 3.5695,
+        "prompt_tokens": 285,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 340
+      }
+    }
+  ],
+  "provenance": {
+    "clean_agentdojo_call_profile_sha256": "07b7b87fcb8b51468c87753d740196d0b2a1e894a4946c19d3f9670b35b24c3f",
+    "clean_provider_capacity_receipt_sha256": "82bfcb6e0e67f1cbddc2bffc56e06a85760d524b91b75439e10255cbcc5a180c",
+    "clean_tool_canary_plan_sha256": "f5990a7bed9b68e08bcd5ddf19c4eff21f00979d559ce835e3816802cb5032c8",
+    "immutable_core_sha256": "b2b48f97f8a9924a0c50a78faaf00fe898689ddb874cb32f3792677fb3fce44f",
+    "protected_observations_count": 594,
+    "protected_observations_manifest_sha256": "84501c2559ddfdcc2baecfb924e26d3e3e92483e88ae5904d4ff56d9e7c41da8"
+  },
+  "schema": "PCG_MAS_V3_6_CLEAN_TOOL_CANARY_RECEIPT",
+  "status": "FAIL",
+  "summary": {
+    "agentdojo_canary_cases": 10,
+    "agentdojo_canary_execution": "FAIL",
+    "agentdojo_physical_calls": 0,
+    "bfcl_canary_cases": 7,
+    "bfcl_canary_execution": "PASS",
+    "bfcl_physical_calls": 7,
+    "canary_gate": "FAIL",
+    "exact_blocker": "BLOCKED_AGENTDOJO_ADAPTER_CLI_OPTION_MISMATCH",
+    "mind2web_canary_cases": 7,
+    "mind2web_canary_execution": "PASS",
+    "mind2web_physical_calls": 7,
+    "total_canary_cases": 24,
+    "total_canary_physical_call_ceiling": 94,
+    "total_physical_provider_calls": 14
+  },
+  "timestamp": "2026-09-17T10:22:26Z"
+}

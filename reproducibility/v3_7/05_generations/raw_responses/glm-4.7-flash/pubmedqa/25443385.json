@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "82ec69ba0b995713ef285f633269c5346631ffc5cb5d207dbabb8bae3ff06526",
+  "candidate_text": "Yes, virtual planning and guided surgery are financially viable.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "ce18b42f8c219d64e90ee8924fd9a8fc3267db87703791e7726f51c3cab2a85f",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "25443385",
+  "prompt_sha256": "c32c336bc1dcde75b8877d7770c90bb0ff42bf65dc1c120bebed4decd95cf06b",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "4f7b4b3463c53291303fa757c9902bf81f4ea1d5cfa8918c4e986d7d4f46333e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:25443385",
+  "text": "Yes, virtual planning and guided surgery are financially viable.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 12,
+    "neurons": 2.6203,
+    "prompt_tokens": 397,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 409
+  }
+}

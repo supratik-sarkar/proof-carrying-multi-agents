@@ -1,0 +1,35 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "simple_function_checker:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "a2165ef84b6bd3bfd9d4a5e9f6485380c9284bdedcb4e2f9eaea25c342701421",
+  "candidate_text": "The area \\(A\\) of a triangle is given by  \n\n\\[\nA = \\frac{1}{2} \\times \\text{base} \\times \\text{height}.\n\\]\n\nPlugging in the values:\n\n\\[\nA = \\frac{1}{2} \\times 5\\ \\text{m} \\times 3\\ \\text{m}\n   = 0.5 \\times 15\\ \\text{m}^2\n   = 7.5\\ \\text{m}^2.\n\\]\n\n**The area of the triangle is 7.5 m².**",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "1d2c78f11a80c03a991938fa6cf56fef96a23e19cf0bcc2f1ad51074b3bc7d2d",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:simple_95",
+  "prompt_sha256": "1d2c78f11a80c03a991938fa6cf56fef96a23e19cf0bcc2f1ad51074b3bc7d2d",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "aeddcbe37378e88cf6a1a77249f011a0d514385c6049bbecfbb5efe80a0e1358",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "The area \\(A\\) of a triangle is given by  \n\n\\[\nA = \\frac{1}{2} \\times \\text{base} \\times \\text{height}.\n\\]\n\nPlugging in the values:\n\n\\[\nA = \\frac{1}{2} \\times 5\\ \\text{m} \\times 3\\ \\text{m}\n   = 0.5 \\times 15\\ \\text{m}^2\n   = 7.5\\ \\text{m}^2.\n\\]\n\n**The area of the triangle is 7.5 m².**",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 173,
+    "neurons": 16.47269630432129,
+    "prompt_tokens": 147,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 320
+  }
+}

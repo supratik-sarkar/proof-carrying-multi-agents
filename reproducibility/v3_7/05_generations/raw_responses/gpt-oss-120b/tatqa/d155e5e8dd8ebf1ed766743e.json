@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "980e59239e7390e5a72fe06249c07a073cc0af94e40462ba404d9984c026d142",
+  "candidate_text": "$227 k (2018) and $173 k (2019)",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "ba0e5f6fb3b8fc11db9537a29b8ed4453e1852228759a28c1a584fc533fa0026",
+  "example_id": "46f35aee845bc1419a183c18c5f03008",
+  "finish": "stop",
+  "input_sha256": "7c80b7b53916a514ca7f2fecb562a2663aff02b59c9890013ed7ad855e82ea3f",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "46f35aee845bc1419a183c18c5f03008",
+  "prompt_sha256": "3babd12dcba2fd28aa1e0034500e050c590f60bce1feb31a6034d02cb76de37e",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 2: In fiscal years 2019 and 2018, the Company continued to maintain a full valuation allowance on deferred tax assets. The valuation allowance increased by $1.7 million in fiscal year 2019. The Company recorded an income tax expense from continuing operations of $39,000 in fiscal year 2019. In fiscal year 2018, the Company recorded an income tax benefit from continuing operations of $597,000. The fiscal year 2018 income tax benefit was due primarily from the release of the tax valuation allowance associated with previously generated alternative minimum tax (AMT) credits due to the December 22, 2017 Tax Cuts and Jobs Act Tax Reform (the “Tax Act”).\n\n[2] TAT-QA table: row 0:  | March 31, | \nrow 1: (in thousands) | 2019 | 2018\nrow 2: Deferred income tax assets: |  | \nrow 3: Allowance for doubtful accounts | $26 | $24\nrow 4: Foreign tax credit carryforward | 810 | 812\nrow 5: Depreciation | 173 | 227\nrow 6: Deferred revenue | 425 | 675\nrow 7: Accrued compensation | 412 | 358\nrow 8: Inventory reserves | 757 | 948\nrow 9: Accrued warranty | 33 | 77\nrow 10: Net operating loss carryforward | 35,024 | 34,924\nrow 11: Accrued restructuring | — | 16\nrow 12: Intangibles and goodwill | 272 | —\nrow 13: Other | 839 | 660\nrow 14: Gross deferred tax assets | 38,771 | 38,721\nrow 15: Valuation allowance | (38,771) | (37,103)\nrow 16: Net deferred income tax assets | — | 1,618\nrow 17: Deferred income tax liabilities: |  | \nrow 18: Intangibles and goodwill | — | (1,618)\nrow 19: Net deferred income tax liabilities | $— | $—\n\n[3] TAT-QA 3: The Company has, on a tax-effected basis, approximately $0.8 million in tax credit carryforwards and $26.9 million of federal net operating loss carryforwards that are available to offset taxable income in the future. The tax credit carryforwards will begin to expire in fiscal year 2021. The federal net operating loss carryforwards begin to expire in fiscal year 2022. State tax credit carryforwards and net operating loss carryforwards, on a tax effected basis and net of federal tax benefits, are $0.1 million and $8.1 million, respectively. The remaining state tax credit carryforwards and state net operating loss carry forwards begin to expire in fiscal year 2020. In fiscal year 2019, $1.2 million of state net operating loss carryforwards expired.\n\n[4] TAT-QA 1: Components of the net deferred income tax assets are as follows:\n\nQuestion: How much were the deferred income tax assets from depreciation in 2018 and 2019, respectively?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "5f938645c13f631a6f531f0984ccb117f8460e15b5dd651ceb1c491a4128931b",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:46f35aee845bc1419a183c18c5f03008",
+  "task_key": "9f0669d711afff314f811d5860aac4f5b4f934ed64f7c6009421300ebc270b20",
+  "text": "$227 k (2018) and $173 k (2019)",
+  "timestamp": "2026-09-14T10:33:32.241765+00:00",
+  "tokens_in": 802,
+  "tokens_out": 150,
+  "usage": {
+    "completion_tokens": 150,
+    "neurons": 35.74530792236328,
+    "prompt_tokens": 802,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 952
+  }
+}

@@ -1,0 +1,67 @@
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.21\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.12\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.31\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.15\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.21\dimexpr\linewidth-8\tabcolsep\relax}@{}}
+\caption{\textbf{Notation, part I: runtime graph, certificate, acceptance, and replay intervention.} Core objects used in Sections~\ref{sec:prelim}--\ref{sec:method}.}\label{tab:notation-core}\\
+\toprule
+Symbol & Type / range & Meaning & First use & Principal use \\
+\midrule
+\endfirsthead
+\multicolumn{5}{l}{\footnotesize Notation (continued)} \\
+\toprule
+Symbol & Type / range & Meaning & First use & Principal use \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\footnotesize Continued on next page} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multicolumn{5}{l}{\emph{1. Runtime graph and committed objects}}\\
+$t$ & time index & runtime snapshot / commitment time & Def.~\ref{def:eg} & throughout \\
+$G_t$ & typed graph & committed agentic runtime graph & Def.~\ref{def:eg} & acceptance, replay, diagnosis \\
+$\mathcal V_t,E_t$ & node / edge sets & vertices and edges of $G_t$ & Def.~\ref{def:eg} & App.~\ref{appendix:notes:runtime_graph} \\
+$\tau_{\mathcal V},\tau_E$ & typing maps & node-type and edge-type maps & Def.~\ref{def:eg} & graph construction \\
+$\mathrm{attr}_t$ & attribute map & committed runtime attributes (IDs, versions, latency, tokens, scores, hashes, etc.) & Def.~\ref{def:eg} & App.~\ref{appendix:notes:runtime_graph} \\
+$\mathcal V_t^{\rm src}$ & node subset & evidence-bearing / source nodes & Def.~\ref{def:eg} & replay, integrity \\
+$v,e$ & node, component & generic runtime node $v$; generic maskable component / edge $e$ & Def.~\ref{def:eg}; Eq.~\eqref{eq:resp} & replay interventions \\
+$x(v)$ & payload & committed payload stored at source node $v$ & Def.~\ref{def:eg} & hashing, replay \\
+$H(\cdot)$ & hash / commitment map & cryptographic commitment function & Def.~\ref{def:eg} & integrity bit $V_H$ \\
+$h(v)$ & digest & stored commitment $H(x(v))$ & Def.~\ref{def:eg} & App.~Eq.~\eqref{eq:eg1} \\
+\midrule
+\multicolumn{5}{l}{\emph{2. Certificate and acceptance contract}}\\
+$c$ & claim & emitted claim being certified & Def.~\ref{def:cert} & all certificate equations \\
+$Z$ & tuple & replayable acceptance certificate & Def.~\ref{def:cert} & $\mathrm{Check}(Z;G_t)$ \\
+$S$ (certificate context) & set & committed evidence set carried by $Z$ & Def.~\ref{def:cert} & replay, pruning \\
+$S_0$ & set & initial committed support set before certifying-evidence minimization & Eq.~\eqref{eq:certifying_search} & Eq.~\eqref{eq:min_certifying_subset} \\
+$S^\star$ & set & de\-ter\-min\-is\-tic minimal certifying subset & Eq.~\eqref{eq:min_certifying_subset} & accepted certificate \\
+$\Pi$ & trans\-for\-ma\-tion / replay trace & pinned replay transcript / trans\-for\-ma\-tion sequence & Def.~\ref{def:cert} & $V_\Pi$, snapshot replay \\
+$\Gamma$ & contract & execution-policy / runtime contract & Def.~\ref{def:cert} & $V_\Gamma$ \\
+$\mathcal A(x)$ & set & obligations applicable to example $x$ & Sec.~\ref{sec:method} & Eq.~\eqref{eq:trace_factor} \\
+$\chi$ & checker bundle & declared checker identities, configurations, and committed outputs & Def.~\ref{def:cert} & external recomputation \\
+$\mathrm{meta}$ & metadata & metadata needed to resolve and replay committed objects & Def.~\ref{def:cert} & replay / checker TCB \\
+$j$ & obligation index & one of $\{H,\Pi,\Gamma,\vdash\}$ & Sec.~\ref{sec:method} & ternary acceptance rule \\
+$T_j(x)$ & ternary state & pre-projection state $\{\textsc{Pass},\allowbreak\textsc{Fail},\allowbreak\textsc{Indeterminate}\}$ & Sec.~\ref{sec:method} & Eq.~\eqref{eq:trace_factor} \\
+$V_j(x)$ & $\{0,1\}$ & applicability-aware projected acceptance bit for obligation $j$ & Eq.~\eqref{eq:trace_factor} & final conjunction \\
+$V_H$ & $\{0,1\}$ & evidence commitment / integrity bit & Eq.~\eqref{eq:trace_factor} & online acceptance \\
+$V_\Pi$ & $\{0,1\}$ & pinned replay bit & Eq.~\eqref{eq:trace_factor} & online acceptance \\
+$V_\Gamma$ & $\{0,1\}$ & execution-policy compliance bit & Eq.~\eqref{eq:trace_factor} & online acceptance \\
+$V_\vdash$ & $\{0,1\}$ & checker-relative semantic-support bit & Eq.~\eqref{eq:trace_factor} & online acceptance \\
+$\mathrm{Check}(Z;G_t)$ & $\{0,1\}$ & product $V_HV_\Pi V_\Gamma V_\vdash$ after applicability projection & Eq.~\eqref{eq:trace_factor} & acceptance decision \\
+$\varepsilon_{\rm src}$ & probability & residual false-claim mass that still passes all four certificate bits & Sec.~\ref{sec:prelim:acceptance} & Eq.~\eqref{eq:theory_endgame} \\
+\midrule
+\multicolumn{5}{l}{\emph{3. Support separation and intervention}}\\
+$\pi_i,\pi_j$ & paths & realized support paths / redundant certificate branches & Def.~\ref{def:indep} & separation, redundancy \\
+$\delta$ (separation) & $[0,1]$ & maximum allowed evidence-set overlap & Def.~\ref{def:indep} & path-separation gate \\
+$\kappa$ & nonnegative bound & maximum allowed shared runtime components & Def.~\ref{def:indep} & path-separation gate \\
+$\zeta$ & $[0,1]$ & maximum allowed semantic similarity between support paths & Def.~\ref{def:indep} & path-separation gate \\
+$G_t^{\setminus e}$ & graph & runtime graph with component $e$ masked & Eq.~\eqref{eq:resp} & replay-interventional diagnosis \\
+$\xi,\xi_m$ & randomness & declared / seeded replay randomness & Eq.~\eqref{eq:resp} & responsibility estimator \\
+$\mathsf{Resp}(e;Z,G_t)$ & $[-1,1]$ & population replay-interventional responsibility of component $e$ & Eq.~\eqref{eq:resp} & diagnosis \\
+$M$ & integer & number of bounded seeded replay interventions & Eq.~\eqref{eq:resp_estimator} & concentration / ranking \\
+$\widehat{\mathsf{Resp}}_M(e)$ & $[-1,1]$ & empirical mean replay-interventional responsibility & Eq.~\eqref{eq:resp_estimator} & Prop.~\ref{thm:threshold_refusal} \\
+
+\end{longtable}
+\endgroup

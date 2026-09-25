@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "5085fa97d6bcc93f7b6abac6223ff78390150bf893711d1703ac524f03b11b8f",
+  "candidate_text": "\n\n$8.0 million",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "ffc3b71b66cf6c0b7f58db375be48847f7ec8a7cd69f0f3784683ab3e5124624",
+  "example_id": "c84eaefa04edafcc05b81ed8b66415d3",
+  "finish": "stop",
+  "input_sha256": "7ac5ac5d027ccdedfd87bb45a0a8a9b85b582e5fd7a6593663bc9b18e9bcf86e",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "c84eaefa04edafcc05b81ed8b66415d3",
+  "prompt_sha256": "15469d9646f8b4f71bd6482134ef4f0233a7ea39c37bbbe91fe6184ce96e6284",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 2: In December 2019, the Company made a minority investment in a privately-held company, Talespin, Inc., for $8.0 million, representing approximately 13% equity ownership. The investment is accounted for using the equity method of accounting due to the Company’s ability to exercise significant influence.\n\n[2] TAT-QA 3: The Company’s non-marketable investments are composed of the following (in thousands):\n\n[3] TAT-QA table: row 0:  | December 31, | \nrow 1:  | 2019 | 2018\nrow 2: Accounted for at cost, adjusted for observable price changes | $1,750 | $1,250\nrow 3: Accounted for using the equity method | 8,000 | —\nrow 4: Total non-marketable investments | $9,750 | $1,250\n\n[4] TAT-QA 1: Strategic Investments\n\nQuestion: How much was the company's investment in Talespin, Inc?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "3fa8c9f07d6b5ea1ea6622bcfeb0f14ceb293540ff8ec94d68019564800aeebe",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:c84eaefa04edafcc05b81ed8b66415d3",
+  "task_key": "3db6e4d2b315d4a9ca3f50caaa509ff80794c656599e9c5d293478e35a7f5331",
+  "text": "\n\n$8.0 million",
+  "timestamp": "2026-09-14T10:55:45.108069+00:00",
+  "tokens_in": 347,
+  "tokens_out": 62,
+  "usage": {
+    "completion_tokens": 62,
+    "neurons": 32.23181915283203,
+    "prompt_tokens": 347,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 409
+  }
+}

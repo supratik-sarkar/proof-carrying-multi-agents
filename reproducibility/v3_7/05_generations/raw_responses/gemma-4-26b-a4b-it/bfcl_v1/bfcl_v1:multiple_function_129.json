@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "904a15185581b752c6704017d7e3b92c3108459cc7ca2796e8327864d4fb773e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:multiple_function_129",
+  "prompt_sha256": "904a15185581b752c6704017d7e3b92c3108459cc7ca2796e8327864d4fb773e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "bd3c2070ab41147a697a0cef36cefcca3d574f47ef3d7b996a5f4ae8655f7c0c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"annual_rate\": 5, \"compounding_freq\": \"monthly\", \"principal\": 10000, \"time_in_years\": 5}",
+        "name": "compound_interest"
+      },
+      "id": "call_6f68ce989b6b4d2383aabbcc",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 140,
+    "neurons": 7.399999618530273,
+    "prompt_tokens": 394,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 534
+  }
+}

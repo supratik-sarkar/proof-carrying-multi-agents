@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "51c637d928be0fcb7b6ac96bc4d14d782dfc842e4d7ac2c77853cd5ae5b6c3a4",
+  "candidate_text": "Yes, it could.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "703a5d37093372123ff0196b7b7c0fb1ac6f8e6bed8ce93e3a2b573359874f45",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "26907557",
+  "prompt_sha256": "2073631c3fcf1be8ca1daa28aed2a9a0551bb558776a107e6c9f66d06c9958de",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "f82b40f5d9204c5f2c76ee7837dbccc88f30c1d82ad5b4ed25db01d000f9a2fa",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:26907557",
+  "text": "Yes, it could.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 3.090909004211426,
+    "prompt_tokens": 322,
+    "prompt_tokens_details": {
+      "cached_tokens": 64
+    },
+    "total_tokens": 328
+  }
+}

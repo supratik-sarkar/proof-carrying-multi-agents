@@ -1,0 +1,218 @@
+{
+  "<PUBLIC_TERM:4d86ae7524ddf7a1>_NUMERIC_COLUMNS_IMPORTED": 0,
+  "<PUBLIC_TERM:4d86ae7524ddf7a1>_NUMERIC_ROWS_IMPORTED": 0,
+  "<PUBLIC_TERM:4d86ae7524ddf7a1>_VISUAL_DONORS": {
+    "Fig11": "images/r1b_five_channel_audit.pdf",
+    "Fig12": "images/ablations.pdf",
+    "Fig17": "images/r3b_open_mixed.pdf",
+    "Fig18": "images/r4b_privacy_frontier.pdf",
+    "Fig19": "images/r5b_scaling.pdf",
+    "Fig2": "images/pcg-mas-workflow.pdf",
+    "Fig21": "images/r5_overhead_v4.pdf"
+  },
+  "ALL_DATASETS_MEDIAN_AGGREGATION": "MEDIAN_OF_DATASET_MEDIANS",
+  "AUTHORITATIVE_FIXTURE_FILES_MODIFIED": 0,
+  "BEST_COMPARATOR_TIE_CELLS": 0,
+  "FABRICATED_VALUES": 0,
+  "FIG1_CI_METHOD": "PAIRED_NORMAL_APPROX_CI95",
+  "METHOD_TOTAL_ABSOLUTE_COST_PRESENT": "YES",
+  "MODIFIED_AUTHORITATIVE_FILES": [],
+  "NOCERT_REDUCTION_PAIRING": "COMMON_APPLICABLE_CELL_PAIRED",
+  "WITNESS_PARTIAL_SCOPE_RETAINED": "YES",
+  "description": "Cryptographically auditable manifest of plot-ready CSV inputs prepared strictly from local authoritative fixtures under Patch R1 specifications",
+  "new_csvs": {
+    "ablation_summary.csv": {
+      "all_datasets_median_rule": "MEDIAN_OF_DATASET_MEDIANS",
+      "columns": [
+        "variant",
+        "dataset",
+        "n",
+        "mean_risk_increase_pp",
+        "median_risk_increase_pp"
+      ],
+      "derivation": "Variant x dataset summary with sample count, mean, median, and ALL_DATASETS equal-weight aggregation (mean of dataset means, median of dataset medians)",
+      "row_count": 81,
+      "sha256": "21d24005a0ec4f36db186282cfc173424bbd97aa3ade7ae1bd968d9e44160da7",
+      "source_files": [
+        "ablation_samples.csv"
+      ]
+    },
+    "backend_invariance_atlas.csv": {
+      "derivation": "Backend invariance summary bound to the embedded v3.7 authority.",
+      "row_count": 71,
+      "sha256": "ae6712d3462b0968ef71f2fb0d954eab28fdb9e42f2d2e85d34aa73fa8fd9be9",
+      "source_files": [
+        "cell_metrics.csv",
+        "table_26_protocol_coverage.csv",
+        "cell_registry_56.csv"
+      ]
+    },
+    "capability_scope_matrix.csv": {
+      "columns": [
+        "method",
+        "channel",
+        "level",
+        "state"
+      ],
+      "derivation": "Discrete capability matrix mapping (1->FULL, 0<level<1->PARTIAL, 0->N/A)",
+      "row_count": 35,
+      "sha256": "a9f759b5cf15638db653e9db09bf16cd273fa7b72f588f8b7a2c9b40f1f5f2e7",
+      "source_files": [
+        "plot_parameters.json"
+      ]
+    },
+    "figure_C1_certificate_failure_channel_atlas.csv": {
+      "columns": [
+        "panel",
+        "channel",
+        "metric",
+        "value",
+        "dispersion",
+        "source_file"
+      ],
+      "derivation": "Joint panel atlas combining online certificate channel ablations and audit sidecar failure rates",
+      "row_count": 7,
+      "sha256": "5c6fdbfa854efd51564d5d74fd3f9c268d70d72cbc1e376b9137a4ec1ac107ee",
+      "source_files": [
+        "table_07_channel_ablation.csv",
+        "table_10_replay_drift_covgap.csv"
+      ]
+    },
+    "figure_D2_cost_telemetry.csv": {
+      "columns": [
+        "row_type",
+        "method",
+        "phase",
+        "share",
+        "token_multiplier",
+        "absolute_normalized_cost",
+        "path"
+      ],
+      "cross_check_cost_telemetry": "EXACT_MATCH",
+      "derivation": "Method token multipliers (with absolute_normalized_cost = token_multiplier) and PCG phase breakdown (with absolute_normalized_cost = share * PCG token mult)",
+      "method_total_absolute_cost_present": "YES",
+      "phase_shares_sum": 1.0,
+      "phase_shares_sum_to_one": true,
+      "row_count": 12,
+      "sha256": "9d5aeb14b8fced3d0004631d40c792d1d7509e32dbdd42e93754480feaecf207",
+      "source_files": [
+        "cell_metrics.csv",
+        "table_28_protocol_cost.csv",
+        "cost_telemetry.csv"
+      ]
+    },
+    "method_dataset_summary.csv": {
+      "columns": [
+        "method",
+        "dataset",
+        "n_applicable_models",
+        "mean_risk",
+        "mean_coverage",
+        "mean_utility",
+        "mean_native_utility",
+        "mean_token_multiplier"
+      ],
+      "derivation": "Method x dataset aggregate summary with n_applicable_models and intentional N/A scope representation",
+      "row_count": 56,
+      "sha256": "006c179714f79a786f71eadb2d30c8b3b4488804dd4025e940f4b0e9db187e8a",
+      "source_files": [
+        "cell_metrics.csv"
+      ]
+    },
+    "method_summary.csv": {
+      "columns": [
+        "method",
+        "applicable_cells",
+        "mean_risk",
+        "mean_coverage",
+        "mean_utility",
+        "mean_native_utility",
+        "mean_token_multiplier",
+        "risk_gap_vs_pcg_pp",
+        "risk_gap_ci95_low_pp",
+        "risk_gap_ci95_high_pp",
+        "risk_reduction_vs_nocert_pp"
+      ],
+      "derivation": "Grouped means across applicable cells with Fig. 1 paired risk gap vs PCG-MAS (paired normal approx CI95) and common-applicable-cell paired risk reduction vs NoCert",
+      "nocert_pairing": "COMMON_APPLICABLE_CELL_PAIRED",
+      "risk_gap_ci_method": "PAIRED_NORMAL_APPROX_CI95",
+      "row_count": 7,
+      "sha256": "0b7d4de0c9537a5f78688d9c546096e3545a0510e45a95dbfc51ffc80b8f48d8",
+      "source_files": [
+        "cell_metrics.csv"
+      ]
+    },
+    "paired_cell_effects.csv": {
+      "best_comparator_tie_cells": 0,
+      "columns": [
+        "cell_id",
+        "model",
+        "dataset",
+        "pcg_risk",
+        "pcg_coverage",
+        "best_applicable_method",
+        "best_applicable_risk",
+        "delta_pcg_minus_best_pp"
+      ],
+      "derivation": "Cell-level paired comparison between PCG-MAS and best applicable non-PCG comparator per model-dataset cell",
+      "row_count": 56,
+      "sha256": "b58c3b8cc3d41f67d769a3710320b66b57df5ddcc4cefa8124989a63fdd1f09e",
+      "source_files": [
+        "cell_metrics.csv",
+        "cell_registry_56.csv"
+      ]
+    },
+    "risk_coverage_summary.csv": {
+      "columns": [
+        "method",
+        "threshold_index",
+        "n_datasets",
+        "mean_coverage",
+        "mean_risk",
+        "q15_risk",
+        "q85_risk"
+      ],
+      "derivation": "Threshold-indexed envelope aggregation over datasets calculating mean coverage/risk and 15th/85th percentiles",
+      "row_count": 150,
+      "sha256": "ac28524c2f012b76b8bdc7b7663c3fbcbd8816653b67bb876f59e149c3b059af",
+      "source_files": [
+        "risk_coverage_curves.csv"
+      ]
+    },
+    "timing_summary.csv": {
+      "columns": [
+        "method",
+        "n",
+        "median_latency_s",
+        "p95_latency_s"
+      ],
+      "derivation": "Run-level wall-clock latency summary calculating sample count, median, and 95th percentile",
+      "row_count": 7,
+      "sha256": "cea15e7cde8d6e6867168a6c3e19efc1778b8eb495287a8a35ca2d7b84b87fb6",
+      "source_files": [
+        "timing_samples.csv"
+      ]
+    },
+    "witness_matrix_scoped.csv": {
+      "columns": [
+        "method",
+        "witness",
+        "accept_rate",
+        "mapped_channel",
+        "capability_state",
+        "native_scope",
+        "plot_value"
+      ],
+      "derivation": "Channel-mapped separating witness matrix with native scope masking: native_scope = (state != N/A); FULL/PARTIAL retained, N/A masked to plot_value=NA",
+      "row_count": 28,
+      "sha256": "c2ff8f1bc2cd5687de5e9902bdd33e12b79b8877b3033dc0fd522e6872a42046",
+      "source_files": [
+        "witness_matrix.csv",
+        "capability_scope_matrix.csv"
+      ],
+      "witness_partial_scope_retained": "YES"
+    }
+  },
+  "not_derivable": [],
+  "title": "PCG-MAS Manuscript Figure Data Derivation Manifest (Patch R1)"
+}

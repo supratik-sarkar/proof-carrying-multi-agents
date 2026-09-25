@@ -1,0 +1,79 @@
+{
+  "canonical_cardinality": 2240,
+  "comparators": {
+    "AgentRR": "NATIVE_SCOPE_NA on Old Five; APPLICABLE on Agentic lanes",
+    "CitationOnly": "APPLICABLE on Old Five; NATIVE_SCOPE_NA on Agentic lanes",
+    "CoverageMatchedVerifierOnly": "AUTHORITATIVE_CORE_ADAPTER_RESULT",
+    "NoCert": "DERIVE_FROM_BENCHMARK_NATIVE_SCORE_WITHOUT_CERTIFICATE_GATE",
+    "ShieldAgent": "AUTHORITY_REQUIRED (method-faithful adaptation required for current panel)",
+    "SignalMatchedFusion": "AUTHORITATIVE_CORE_ADAPTER_RESULT"
+  },
+  "datasets": [
+    "fever",
+    "hotpotqa",
+    "pubmedqa",
+    "tatqa",
+    "twowiki",
+    "mind2web",
+    "bfcl_v1",
+    "agentdojo"
+  ],
+  "external_verifiers": {
+    "bonferroni_denominator": 3,
+    "expected_score_count": 4200,
+    "score_count": 4200,
+    "status": "INGESTED"
+  },
+  "headline_metrics": {
+    "accepted_coverage_rate": {
+      "provenance": "DERIVED",
+      "value": 0.3333
+    },
+    "canonical_complete": {
+      "provenance": "DIRECT",
+      "value": 2240
+    },
+    "certified_count": {
+      "provenance": "DIRECT",
+      "value": 280
+    },
+    "decomposition_identity": {
+      "exact_satisfied": true,
+      "formula": "Delta = S + V",
+      "provenance": "DERIVED"
+    },
+    "delta_risk_mean": {
+      "ci_95": [
+        -0.083,
+        0.015
+      ],
+      "provenance": "DERIVED",
+      "value": -0.035
+    },
+    "s_specialist_mean": {
+      "provenance": "DERIVED",
+      "value": 0.212
+    },
+    "v_verifier_mean": {
+      "provenance": "DERIVED",
+      "value": -0.247
+    }
+  },
+  "panel_models": [
+    "gpt-oss-120b",
+    "qwen3.8-27b",
+    "gemini-3.1-flash-lite",
+    "llama-4-scout-17b-16e-instruct",
+    "nemotron-3-120b-a12b",
+    "gemma-4-26b-a4b-it",
+    "glm-4.7-flash"
+  ],
+  "provenance_summary": {
+    "DERIVED": "Deterministically computed via paired crossed resampling / mathematical decomposition",
+    "DIRECT": "Empirically measured from 2240 canonical trajectories and PCG certificates",
+    "MODELLED": "Theoretical differential privacy bounds and asymptotic scaling frontiers",
+    "STATIC": "Experimental protocols, notation definitions, and baseline capability matrices"
+  },
+  "schema": "PCG_MAS_V3_6_FINAL_RESULT_REGISTRY_V1",
+  "timestamp": "2026-09-19T10:53:04.915102+00:00"
+}

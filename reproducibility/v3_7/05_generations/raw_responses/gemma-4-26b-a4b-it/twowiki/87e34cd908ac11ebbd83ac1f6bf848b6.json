@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "33d38401bd28fa6ab769ce0644ea2fb61ef19b45c009a36ac1040d9ab932b456",
+  "candidate_text": "Mouloud Feraoun",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "58fa785f4afc5b2bacaa106e9526ffb4a5417f324ce1ffd396f84701336d1d91",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "87e34cd908ac11ebbd83ac1f6bf848b6",
+  "prompt_sha256": "89913bc3380d6b6499d468e6d237cf686d2df20f52384d4905ce870608435ca9",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "74916f74c03dbfce4961674fc4339d207e5f2579be86bc27d530e7ab3392ee8c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:87e34cd908ac11ebbd83ac1f6bf848b6",
+  "text": "Mouloud Feraoun",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 7.7272725105285645,
+    "prompt_tokens": 829,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 836
+  }
+}

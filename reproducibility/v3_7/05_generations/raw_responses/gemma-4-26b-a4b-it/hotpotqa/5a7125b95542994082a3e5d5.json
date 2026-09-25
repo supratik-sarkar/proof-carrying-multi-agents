@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "0b2af5263e95f2a9744163d54e170197c24bd06cfe17e1a195dddf857c0c0545",
+  "candidate_text": "Gardnerville, Nevada",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "262d16b447c785b9d925d6ac7dbf744a9576a9f9c3de0974464e6871386cc080",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5a7125b95542994082a3e5d5",
+  "prompt_sha256": "f76d497498e11a47feea03406437c4d91a13edd853663f810773dc01a5b0621b",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "514fcb3ab284e38c97106c49a915248899a9201aa1e1eff5c488dd8f46f68a08",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a7125b95542994082a3e5d5",
+  "text": "Gardnerville, Nevada",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 4.418181419372559,
+    "prompt_tokens": 468,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 474
+  }
+}

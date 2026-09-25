@@ -1,0 +1,31 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "correct": false
+  },
+  "candidate_sha256": "2e1e84439f31e3023a7aec466221fcdfc4370914c1647425b66837810c6c3857",
+  "candidate_text": "{\"choice\":\"C#\",\"operation\":\"CLICK|TYPE|SELECT\",\"value\":\"Young\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "5c463d2a764fb42f5a95cb224ae83d66bc6d589dd2e03499294f173095f78ae2",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "mind2web:731c288e-1984-4347-b519-4067b9d9389a",
+  "prompt_sha256": "5c463d2a764fb42f5a95cb224ae83d66bc6d589dd2e03499294f173095f78ae2",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "b13622e789f2ba69f033dc4ec9fb8755066e0c952f44e0c5182ce278ec1a34cb",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C#\",\"operation\":\"CLICK|TYPE|SELECT\",\"value\":\"Young\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 20,
+    "neurons": 9.792728424072266,
+    "prompt_tokens": 336,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 356
+  }
+}

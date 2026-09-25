@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "aebf6f09e6e7636e06ea354ee67d4c629c16c66f7b1ece82aa0c41e92cc9a355",
+  "candidate_text": "due to the release of the tax valuation allowance associated with previously generated alternative minimum tax (AMT) credits due to the Tax Act",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "ee9d5ea23e6d9e8a9102e8126d8f3fb4c89e8ff44d20514dbb5716a04bfbe7bc",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "b12fd793c91be88dcb03f2d95768003b",
+  "prompt_sha256": "6b440d6987cbcfce1b66a7e313d7d6ce176475071a024ccd3e9243f6949f42bd",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "91366bfffbe2f6d0c887e6c0795efcd076b202c7f7787f8b12e982a3956ff1c8",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:b12fd793c91be88dcb03f2d95768003b",
+  "text": "due to the release of the tax valuation allowance associated with previously generated alternative minimum tax (AMT) credits due to the Tax Act",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 27,
+    "neurons": 5.1297999999999995,
+    "prompt_tokens": 754,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 781
+  }
+}

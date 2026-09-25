@@ -1,0 +1,50 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "9d5b2c52bf182e08ca9f2c7275a60ad8b6c78d4807c8d6057d8e7584a069359b",
+  "candidate_text": "I'll calculate the resistance of the wire for both copper and aluminum materials.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "36b89f60f7280731be96b9ed8ef779ff4ec60173ccd26a48d3cc7ed10e69068b",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_function_2",
+  "prompt_sha256": "36b89f60f7280731be96b9ed8ef779ff4ec60173ccd26a48d3cc7ed10e69068b",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "7bc18bf076d0c5b613501d6e6596663a2453b0d77472236826e7cc5384ff0512",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll calculate the resistance of the wire for both copper and aluminum materials.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"length\": 5, \"area\": 0.01, \"resistivity\": \"copper\"}",
+        "name": "calculate_resistance"
+      },
+      "id": "chatcmpl-tool-a67fe214e8c89f7f",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"length\": 5, \"area\": 0.01, \"resistivity\": \"aluminum\"}",
+        "name": "calculate_resistance"
+      },
+      "id": "chatcmpl-tool-bd45507272c5c48d",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 183,
+    "neurons": 8.1792,
+    "prompt_tokens": 276,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 459
+  }
+}

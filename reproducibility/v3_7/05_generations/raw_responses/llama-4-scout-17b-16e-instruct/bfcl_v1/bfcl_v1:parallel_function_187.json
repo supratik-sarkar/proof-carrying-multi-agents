@@ -1,0 +1,58 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "47b97783ec5233da0aea729aa887499a6b64eb875d4037f6043d19521f491006",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:parallel_function_187",
+  "prompt_sha256": "47b97783ec5233da0aea729aa887499a6b64eb875d4037f6043d19521f491006",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "bd152cec94df19aae8a96b25c14719fac4560509bcd7b964f70940645045ec68",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"detail\":true,\"historical\":\"2023-05-05\",\"location\":\"New York City\"}",
+        "name": "get_air_quality"
+      },
+      "id": "call_1789655673097",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"detail\":true,\"historical\":\"2023-05-04\",\"location\":\"New York City\"}",
+        "name": "get_air_quality"
+      },
+      "id": "call_1789655673097",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"detail\":true,\"historical\":\"2023-05-03\",\"location\":\"New York City\"}",
+        "name": "get_air_quality"
+      },
+      "id": "call_1789655673097",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 66,
+    "neurons": 24.245454788208008,
+    "prompt_tokens": 780,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 846
+  }
+}

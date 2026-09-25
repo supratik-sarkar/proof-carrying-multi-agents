@@ -1,0 +1,10 @@
+{
+  "phase": "CANONICAL_COMPLETE",
+  "task_index": 9,
+  "task_count": 9,
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "agentdojo:slack:user_task_1:injection_task_3",
+  "updated": "2026-09-18T07:23:50.502558+00:00",
+  "canonical_complete": 2240,
+  "agentdojo_complete": 280
+}

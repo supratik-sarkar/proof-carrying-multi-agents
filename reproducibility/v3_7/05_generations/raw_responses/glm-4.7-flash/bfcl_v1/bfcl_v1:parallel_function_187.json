@@ -1,0 +1,58 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "8486091d2d2743b5747df75bc41a331f14b2a00f29a221f9c0e8d2b34e4f0fba",
+  "candidate_text": "I'll retrieve the air quality data for New York City for today, yesterday, and the day before yesterday, including the additional data you requested.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "47b97783ec5233da0aea729aa887499a6b64eb875d4037f6043d19521f491006",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_function_187",
+  "prompt_sha256": "47b97783ec5233da0aea729aa887499a6b64eb875d4037f6043d19521f491006",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "bbd3bf7d9b723d473f80e93e445759b6943f2b0834ed884cbcc3692cd818b609",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll retrieve the air quality data for New York City for today, yesterday, and the day before yesterday, including the additional data you requested.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York City\", \"detail\": true, \"historical\": \"2023-05-05\"}",
+        "name": "get_air_quality"
+      },
+      "id": "chatcmpl-tool-840123f51a5ab89c",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York City\", \"detail\": true, \"historical\": \"2023-05-04\"}",
+        "name": "get_air_quality"
+      },
+      "id": "chatcmpl-tool-a5b29b376f03348c",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York City\", \"detail\": true, \"historical\": \"2023-05-03\"}",
+        "name": "get_air_quality"
+      },
+      "id": "chatcmpl-tool-8170f68c7a9dc0a6",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 299,
+    "neurons": 12.6051,
+    "prompt_tokens": 313,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 612
+  }
+}

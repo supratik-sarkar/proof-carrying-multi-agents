@@ -1,0 +1,3507 @@
+{
+  "manifest_sha256": "222b2530cff2516b44d25f13893d9389fed4188d163e804e99fa587cdcd526f7",
+  "official_scorer_commit": "ea13468e4423454d0c213704fb87cf7cb3990433",
+  "patch_release": "v2.1",
+  "records": [
+    {
+      "category": "simple_python",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Perform a statistical t-test to check if the means of two independent datasets are statistically different.",
+          "name": "t_test",
+          "parameters": {
+            "properties": {
+              "alpha": {
+                "description": "Significance level for the test. Default is 0.05.",
+                "type": "float"
+              },
+              "dataset_A": {
+                "description": "Dataset A for comparison.",
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "dataset_B": {
+                "description": "Dataset B for comparison.",
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "dataset_A",
+              "dataset_B"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "t_test": {
+              "alpha": [
+                0.05,
+                ""
+              ],
+              "dataset_A": [
+                [
+                  12,
+                  24,
+                  36
+                ]
+              ],
+              "dataset_B": [
+                [
+                  15,
+                  30,
+                  45
+                ]
+              ]
+            }
+          },
+          "id": "simple_124"
+        }
+      ],
+      "observation_id": "bfcl_v1:simple_124",
+      "question": "Find the statistical significance between two set of variables, dataset_A with the values 12, 24, 36 and dataset_B with the values 15, 30, 45.",
+      "source_id": "simple_124",
+      "source_index": 124
+    },
+    {
+      "category": "simple_python",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Retrieve the personality traits for a specific personality type, including their strengths and weaknesses.",
+          "name": "get_personality_traits",
+          "parameters": {
+            "properties": {
+              "traits": {
+                "description": "List of traits to be retrieved, default is ['strengths'].",
+                "items": {
+                  "enum": [
+                    "strengths",
+                    "weaknesses"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "type": {
+                "description": "The personality type.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "get_personality_traits": {
+              "traits": [
+                [
+                  "strengths",
+                  "weaknesses"
+                ]
+              ],
+              "type": [
+                "ENFJ"
+              ]
+            }
+          },
+          "id": "simple_227"
+        }
+      ],
+      "observation_id": "bfcl_v1:simple_227",
+      "question": "Get me strength and weakness traits for ENFJ personality type.",
+      "source_id": "simple_227",
+      "source_index": 227
+    },
+    {
+      "category": "simple_python",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Performs a Chi-Squared test for independence on a 2x2 contingency table.",
+          "name": "chi_squared_test",
+          "parameters": {
+            "properties": {
+              "alpha": {
+                "description": "Significance level for the Chi-Squared test. Default is 0.05.",
+                "type": "float"
+              },
+              "table": {
+                "description": "A 2x2 contingency table presented in array form.",
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "table"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "chi_squared_test": {
+              "alpha": [
+                0.05,
+                ""
+              ],
+              "table": [
+                [
+                  [
+                    10,
+                    20
+                  ],
+                  [
+                    30,
+                    40
+                  ]
+                ]
+              ]
+            }
+          },
+          "id": "simple_122"
+        }
+      ],
+      "observation_id": "bfcl_v1:simple_122",
+      "question": "Perform a Chi-Squared test for independence on a 2x2 contingency table [ [10, 20], [30, 40] ]",
+      "source_id": "simple_122",
+      "source_index": 122
+    },
+    {
+      "category": "simple_python",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Sorts a given list in ascending or descending order.",
+          "name": "array_sort",
+          "parameters": {
+            "properties": {
+              "list": {
+                "description": "The list of numbers to be sorted.",
+                "items": {
+                  "type": "float"
+                },
+                "type": "array"
+              },
+              "order": {
+                "description": "Order of sorting.",
+                "enum": [
+                  "ascending",
+                  "descending"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "list",
+              "order"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "array_sort": {
+              "list": [
+                [
+                  5.0,
+                  3.0,
+                  4.0,
+                  1.0,
+                  2.0
+                ]
+              ],
+              "order": [
+                "ascending"
+              ]
+            }
+          },
+          "id": "simple_87"
+        }
+      ],
+      "observation_id": "bfcl_v1:simple_87",
+      "question": "Sort the list [5, 3, 4, 1, 2] in ascending order.",
+      "source_id": "simple_87",
+      "source_index": 87
+    },
+    {
+      "category": "simple_python",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Retrieves information about a specific stock based on company's name.",
+          "name": "get_stock_info",
+          "parameters": {
+            "properties": {
+              "company_name": {
+                "description": "The name of the company.",
+                "type": "string"
+              },
+              "detail_level": {
+                "description": "Level of detail for stock information. Can be 'summary' or 'detailed'.",
+                "type": "string"
+              },
+              "market": {
+                "description": "The stock market of interest. Default is 'NASDAQ'",
+                "type": "string"
+              }
+            },
+            "required": [
+              "company_name",
+              "detail_level"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "get_stock_info": {
+              "company_name": [
+                "Apple Inc."
+              ],
+              "detail_level": [
+                "detailed"
+              ],
+              "market": [
+                "",
+                "NASDAQ"
+              ]
+            }
+          },
+          "id": "simple_212"
+        }
+      ],
+      "observation_id": "bfcl_v1:simple_212",
+      "question": "Give me detail information about stocks of Apple Inc.",
+      "source_id": "simple_212",
+      "source_index": 212
+    },
+    {
+      "category": "simple_python",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Fetch the ranking of a specific sports team in a specific league",
+          "name": "sports_ranking",
+          "parameters": {
+            "properties": {
+              "league": {
+                "description": "The name of the league.",
+                "type": "string"
+              },
+              "season": {
+                "description": "Optional parameter to specify the season, default is the current season if not specified.",
+                "type": "integer"
+              },
+              "team": {
+                "description": "The name of the team.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "team",
+              "league"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "sports_ranking": {
+              "league": [
+                "Premier League"
+              ],
+              "season": [
+                ""
+              ],
+              "team": [
+                "Manchester United",
+                "Man United",
+                "Man U",
+                "MUFC"
+              ]
+            }
+          },
+          "id": "simple_319"
+        }
+      ],
+      "observation_id": "bfcl_v1:simple_319",
+      "question": "What is the ranking of Manchester United in Premier League?",
+      "source_id": "simple_319",
+      "source_index": 319
+    },
+    {
+      "category": "simple_python",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Fetch records from a specified database table based on certain conditions.",
+          "name": "db_fetch_records",
+          "parameters": {
+            "properties": {
+              "conditions": {
+                "description": "The conditions based on which records are to be fetched.",
+                "properties": {
+                  "department": {
+                    "description": "The name of the department of students.",
+                    "type": "string"
+                  },
+                  "school": {
+                    "description": "The name of the school students are enrolled in.",
+                    "type": "string"
+                  }
+                },
+                "type": "dict"
+              },
+              "database_name": {
+                "description": "The name of the database.",
+                "type": "string"
+              },
+              "fetch_limit": {
+                "description": "Limits the number of records to be fetched. Default is 0, which means no limit.",
+                "type": "integer"
+              },
+              "table_name": {
+                "description": "The name of the table from which records need to be fetched.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "database_name",
+              "table_name",
+              "conditions"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "db_fetch_records": {
+              "conditions": [
+                {
+                  "department": [
+                    "Science"
+                  ],
+                  "school": [
+                    "Bluebird High School",
+                    "Bluebird HS"
+                  ]
+                }
+              ],
+              "database_name": [
+                "StudentDB"
+              ],
+              "fetch_limit": [
+                "",
+                0
+              ],
+              "table_name": [
+                "students"
+              ]
+            }
+          },
+          "id": "simple_89"
+        }
+      ],
+      "observation_id": "bfcl_v1:simple_89",
+      "question": "Fetch all records for students studying Science in 'Bluebird High School' from the StudentDB.",
+      "source_id": "simple_89",
+      "source_index": 89
+    },
+    {
+      "category": "simple_python",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the prime factorization of a given integer.",
+          "name": "prime_factorize",
+          "parameters": {
+            "properties": {
+              "number": {
+                "description": "The number for which to calculate the prime factorization.",
+                "type": "integer"
+              },
+              "return_type": {
+                "description": "Determines the format of the returned prime factorization. Can be 'list' for a list of all prime factors or 'dictionary' for a count of each prime factor. Default is 'list'.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "number"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "prime_factorize": {
+              "number": [
+                60
+              ],
+              "return_type": [
+                "dictionary"
+              ]
+            }
+          },
+          "id": "simple_23"
+        }
+      ],
+      "observation_id": "bfcl_v1:simple_23",
+      "question": "What is the prime factorization of the number 60? Return them in the form of dictionary",
+      "source_id": "simple_23",
+      "source_index": 23
+    },
+    {
+      "category": "simple_python",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the area of a triangle with the formula area = 0.5 * base * height.",
+          "name": "calc_area_triangle",
+          "parameters": {
+            "properties": {
+              "base": {
+                "description": "The length of the base of the triangle in meters.",
+                "type": "integer"
+              },
+              "height": {
+                "description": "The perpendicular height of the triangle from the base to the opposite vertex in meters.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "base",
+              "height"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "calc_area_triangle": {
+              "base": [
+                5
+              ],
+              "height": [
+                3
+              ]
+            }
+          },
+          "id": "simple_95"
+        }
+      ],
+      "observation_id": "bfcl_v1:simple_95",
+      "question": "Calculate the area of a triangle with base 5m and height 3m.",
+      "source_id": "simple_95",
+      "source_index": 95
+    },
+    {
+      "category": "simple_python",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the Body Mass Index (BMI) of a person.",
+          "name": "calculate_bmi",
+          "parameters": {
+            "properties": {
+              "height": {
+                "description": "Height of the person in centimeters.",
+                "type": "integer"
+              },
+              "unit": {
+                "description": "Optional parameter to choose between 'imperial' and 'metric' systems. Default is 'metric'.",
+                "type": "string"
+              },
+              "weight": {
+                "description": "Weight of the person in kilograms.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "weight",
+              "height"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "calculate_bmi": {
+              "height": [
+                180
+              ],
+              "unit": [
+                "metric",
+                ""
+              ],
+              "weight": [
+                85
+              ]
+            }
+          },
+          "id": "simple_84"
+        }
+      ],
+      "observation_id": "bfcl_v1:simple_84",
+      "question": "Calculate the Body Mass Index (BMI) of a person with a weight of 85 kilograms and height of 180 cm.",
+      "source_id": "simple_84",
+      "source_index": 84
+    },
+    {
+      "category": "multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Get restaurant information for a specific area.",
+          "name": "restaurant_info",
+          "parameters": {
+            "properties": {
+              "food_type": {
+                "description": "Type of cuisine for which to find restaurants. Default 'any'",
+                "enum": [
+                  "Italian",
+                  "Chinese",
+                  "Mexican",
+                  "American"
+                ],
+                "type": "string"
+              },
+              "location": {
+                "description": "Location for which to find restaurants.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Get exhibition information for a specific museum.",
+          "name": "exhibition_info",
+          "parameters": {
+            "properties": {
+              "month": {
+                "description": "Number of upcoming months for which to retrieve exhibition details. Default 1",
+                "type": "integer"
+              },
+              "museum_name": {
+                "description": "Name of the museum for which to find exhibitions.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "museum_name"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "exhibition_info": {
+              "month": [
+                "",
+                1
+              ],
+              "museum_name": [
+                "Museum of Modern Art",
+                "MOMA",
+                "Museum of Modern Art, New York"
+              ]
+            }
+          },
+          "id": "multiple_function_79"
+        }
+      ],
+      "observation_id": "bfcl_v1:multiple_function_79",
+      "question": "Find art exhibitions for the upcoming month in the Museum of Modern Art, New York.",
+      "source_id": "multiple_function_79",
+      "source_index": 79
+    },
+    {
+      "category": "multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Predict the house prices for a specific location and time frame.",
+          "name": "house_price_forecast",
+          "parameters": {
+            "properties": {
+              "features": {
+                "description": "Additional features considered for prediction. Not required. Default empty array",
+                "items": {
+                  "enum": [
+                    "SqFt",
+                    "Bedrooms",
+                    "Bathrooms",
+                    "Location"
+                  ],
+                  "type": "string"
+                },
+                "optional": true,
+                "type": "array"
+              },
+              "location": {
+                "description": "The city that you want to get the house price prediction for.",
+                "type": "string"
+              },
+              "months": {
+                "description": "Number of future months for the prediction.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "location",
+              "months"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Retrieve a weather forecast for a specific location and time frame.",
+          "name": "weather_forecast",
+          "parameters": {
+            "properties": {
+              "days": {
+                "description": "Number of days for the forecast.",
+                "type": "integer"
+              },
+              "location": {
+                "description": "The city that you want to get the weather for.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location",
+              "days"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Predict the stock prices for a specific company and time frame.",
+          "name": "stock_market_forecast",
+          "parameters": {
+            "properties": {
+              "company": {
+                "description": "The company that you want to get the stock price prediction for.",
+                "type": "string"
+              },
+              "days": {
+                "description": "Number of future days for the prediction.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "company",
+              "days"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "house_price_forecast": {
+              "features": [
+                [],
+                ""
+              ],
+              "location": [
+                "New York",
+                "New York, NY",
+                "NYC",
+                "New York City"
+              ],
+              "months": [
+                1
+              ]
+            }
+          },
+          "id": "multiple_function_50"
+        }
+      ],
+      "observation_id": "bfcl_v1:multiple_function_50",
+      "question": "Predict the house prices for the next month in New York.",
+      "source_id": "multiple_function_50",
+      "source_index": 50
+    },
+    {
+      "category": "multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the probability of an event.",
+          "name": "calculate_probability",
+          "parameters": {
+            "properties": {
+              "favorable_outcomes": {
+                "description": "Number of outcomes considered as 'successful'.",
+                "type": "integer"
+              },
+              "round_to": {
+                "default": 2,
+                "description": "Number of decimal places to round the result to.",
+                "type": "integer"
+              },
+              "total_outcomes": {
+                "description": "Total number of possible outcomes.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "total_outcomes",
+              "favorable_outcomes"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Retrieve all lawsuits involving a particular entity from specified jurisdiction.",
+          "name": "lawsuit_search",
+          "parameters": {
+            "properties": {
+              "county": {
+                "description": "The jurisdiction for the lawsuit search.",
+                "type": "string"
+              },
+              "entity": {
+                "description": "The entity involved in lawsuits.",
+                "type": "string"
+              },
+              "state": {
+                "description": "The state for the lawsuit search. Default is California.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "entity",
+              "county"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Predict house price based on area, number of rooms and year of construction.",
+          "name": "predict_house_price",
+          "parameters": {
+            "properties": {
+              "area": {
+                "description": "Area of the house in square feet.",
+                "type": "integer"
+              },
+              "location": {
+                "description": "The location or city of the house.",
+                "type": "string"
+              },
+              "rooms": {
+                "description": "Number of rooms in the house.",
+                "type": "integer"
+              },
+              "year": {
+                "description": "Year when the house was constructed.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "area",
+              "rooms",
+              "year",
+              "location"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "calculate_probability": {
+              "favorable_outcomes": [
+                4
+              ],
+              "round_to": [
+                "",
+                2
+              ],
+              "total_outcomes": [
+                52
+              ]
+            }
+          },
+          "id": "multiple_function_123"
+        }
+      ],
+      "observation_id": "bfcl_v1:multiple_function_123",
+      "question": "Calculate the probability of drawing a king from a deck of cards.",
+      "source_id": "multiple_function_123",
+      "source_index": 123
+    },
+    {
+      "category": "multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Retrieve the defence ranking of NBA teams in a specified season.",
+          "name": "get_defense_ranking",
+          "parameters": {
+            "properties": {
+              "season": {
+                "description": "The NBA season to get defence ranking from.",
+                "type": "integer"
+              },
+              "top": {
+                "default": 1,
+                "description": "Number of top teams in defence ranking to fetch.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "season"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Sorts a given list in ascending or descending order.",
+          "name": "array_sort",
+          "parameters": {
+            "properties": {
+              "list": {
+                "description": "The list of numbers to be sorted.",
+                "items": {
+                  "type": "float"
+                },
+                "type": "array"
+              },
+              "order": {
+                "description": "Order of sorting. If not specified, it will default to ascending.",
+                "enum": [
+                  "ascending",
+                  "descending"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "list",
+              "order"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Calculate the Compound Annual Growth Rate (CAGR) given an initial investment value, a final investment value, and the number of years.",
+          "name": "calculate_cagr",
+          "parameters": {
+            "properties": {
+              "final_value": {
+                "description": "The final investment value.",
+                "type": "float"
+              },
+              "initial_value": {
+                "description": "The initial investment value.",
+                "type": "float"
+              },
+              "period_in_years": {
+                "description": "The period of the investment in years.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "initial_value",
+              "final_value",
+              "period_in_years"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "get_defense_ranking": {
+              "season": [
+                2021
+              ],
+              "top": [
+                1,
+                ""
+              ]
+            }
+          },
+          "id": "multiple_function_173"
+        }
+      ],
+      "observation_id": "bfcl_v1:multiple_function_173",
+      "question": "Get the NBA team's ranking with the best defence in the 2021 season.",
+      "source_id": "multiple_function_173",
+      "source_index": 173
+    },
+    {
+      "category": "multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Search for lawsuits against a specific company within a specific time and location.",
+          "name": "lawsuits_search",
+          "parameters": {
+            "properties": {
+              "case_type": {
+                "description": "The type of the case. Options include: 'civil', 'criminal', 'small_claims', etc. If not specified, search for all types. Default is 'all'",
+                "type": "string"
+              },
+              "company_name": {
+                "description": "The name of the company.",
+                "type": "string"
+              },
+              "location": {
+                "description": "The location where the lawsuit was filed.",
+                "type": "string"
+              },
+              "year": {
+                "description": "The year when the lawsuit was filed.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "company_name",
+              "location",
+              "year"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Calculate compound interest for a certain time period.",
+          "name": "compound_interest",
+          "parameters": {
+            "properties": {
+              "annual_rate": {
+                "description": "The interest rate for a year as a percentage.",
+                "type": "float"
+              },
+              "compounding_freq": {
+                "description": "The number of times that interest is compounded per unit period.",
+                "enum": [
+                  "monthly",
+                  "quarterly",
+                  "annually"
+                ],
+                "type": "string"
+              },
+              "principal": {
+                "description": "The initial amount of money that was invested or loaned out.",
+                "type": "integer"
+              },
+              "time_in_years": {
+                "description": "The time the money is invested for in years.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "principal",
+              "annual_rate",
+              "compounding_freq",
+              "time_in_years"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "compound_interest": {
+              "annual_rate": [
+                5
+              ],
+              "compounding_freq": [
+                "monthly"
+              ],
+              "principal": [
+                10000
+              ],
+              "time_in_years": [
+                5
+              ]
+            }
+          },
+          "id": "multiple_function_129"
+        }
+      ],
+      "observation_id": "bfcl_v1:multiple_function_129",
+      "question": "Find the compound interest for an investment of $10000 with an annual interest rate of 5% compounded monthly for 5 years.",
+      "source_id": "multiple_function_129",
+      "source_index": 129
+    },
+    {
+      "category": "multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the final temperature when different quantities of the same gas at different temperatures are mixed.",
+          "name": "calculate_final_temperature",
+          "parameters": {
+            "properties": {
+              "quantity1": {
+                "description": "The quantity of the first sample of gas.",
+                "type": "integer"
+              },
+              "quantity2": {
+                "description": "The quantity of the second sample of gas.",
+                "type": "integer"
+              },
+              "temperature1": {
+                "description": "The temperature of the first sample of gas.",
+                "type": "integer"
+              },
+              "temperature2": {
+                "description": "The temperature of the second sample of gas.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "quantity1",
+              "temperature1",
+              "quantity2",
+              "temperature2"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Calculate the mass of a gas given its quantity and molar mass.",
+          "name": "calculate_mass",
+          "parameters": {
+            "properties": {
+              "molar_mass": {
+                "description": "The molar mass of the gas.",
+                "type": "integer"
+              },
+              "quantity": {
+                "description": "The quantity of the gas.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "quantity",
+              "molar_mass"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "calculate_final_temperature": {
+              "quantity1": [
+                2
+              ],
+              "quantity2": [
+                3
+              ],
+              "temperature1": [
+                300
+              ],
+              "temperature2": [
+                400
+              ]
+            }
+          },
+          "id": "multiple_function_42"
+        }
+      ],
+      "observation_id": "bfcl_v1:multiple_function_42",
+      "question": "Calculate the final temperature when 2 moles of gas at 300 K are mixed with 3 moles of the same gas at 400 K.",
+      "source_id": "multiple_function_42",
+      "source_index": 42
+    },
+    {
+      "category": "multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Fetch the ranking of a specific sports team in a specific league",
+          "name": "sports_ranking",
+          "parameters": {
+            "properties": {
+              "league": {
+                "description": "The name of the league.",
+                "type": "string"
+              },
+              "season": {
+                "description": "Optional parameter to specify the season, default is the current season, 2024",
+                "type": "integer"
+              },
+              "team": {
+                "description": "The name of the team.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "team",
+              "league"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Calculates the compound interest of an investment over a given time period.",
+          "name": "calculate_compound_interest",
+          "parameters": {
+            "properties": {
+              "compounds_per_year": {
+                "description": "The number of times the interest is compounded per year. Default is 1 (interest is compounded yearly).",
+                "type": "integer"
+              },
+              "interest_rate": {
+                "description": "The yearly interest rate of the investment.",
+                "type": "float"
+              },
+              "principle": {
+                "description": "The initial amount of the investment.",
+                "type": "float"
+              },
+              "time": {
+                "description": "The time, in years, the money is invested or borrowed for.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "principle",
+              "interest_rate",
+              "time"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "sports_ranking": {
+              "league": [
+                "Premier League"
+              ],
+              "season": [
+                "",
+                2024
+              ],
+              "team": [
+                "Manchester United",
+                "Man United",
+                "Man U",
+                "MUFC"
+              ]
+            }
+          },
+          "id": "multiple_function_174"
+        }
+      ],
+      "observation_id": "bfcl_v1:multiple_function_174",
+      "question": "What is the ranking of Manchester United in Premier League?",
+      "source_id": "multiple_function_174",
+      "source_index": 174
+    },
+    {
+      "category": "multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Retrieve the current time in a specific time zone.",
+          "name": "get_current_time",
+          "parameters": {
+            "properties": {
+              "country": {
+                "description": "The name of the country.",
+                "type": "string"
+              },
+              "location": {
+                "description": "The name of the city.",
+                "type": "string"
+              },
+              "timezone": {
+                "description": "The optional timezone to get current time. Default ''",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location",
+              "country"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Retrieves information about a specific stock based on company's name.",
+          "name": "get_stock_info",
+          "parameters": {
+            "properties": {
+              "company_name": {
+                "description": "The name of the company.",
+                "type": "string"
+              },
+              "detail_level": {
+                "description": "Level of detail for stock information. Can be 'summary' or 'detailed'.",
+                "type": "string"
+              },
+              "market": {
+                "description": "The stock market of interest. Default is 'NASDAQ'",
+                "type": "string"
+              }
+            },
+            "required": [
+              "company_name",
+              "detail_level"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "get_stock_info": {
+              "company_name": [
+                "Apple Inc.",
+                "Apple"
+              ],
+              "detail_level": [
+                "detailed"
+              ],
+              "market": [
+                "NASDAQ",
+                ""
+              ]
+            }
+          },
+          "id": "multiple_function_148"
+        }
+      ],
+      "observation_id": "bfcl_v1:multiple_function_148",
+      "question": "Give me detail information about stocks of Apple Inc.",
+      "source_id": "multiple_function_148",
+      "source_index": 148
+    },
+    {
+      "category": "multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Retrieve an air quality forecast for a specific location and time frame.",
+          "name": "air_quality_forecast",
+          "parameters": {
+            "properties": {
+              "days": {
+                "description": "Number of days for the forecast.",
+                "type": "integer"
+              },
+              "location": {
+                "description": "The city that you want to get the air quality forecast for.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location",
+              "days"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Retrieve a weather forecast for a specific location and time frame.",
+          "name": "weather_forecast",
+          "parameters": {
+            "properties": {
+              "days": {
+                "description": "Number of days for the forecast.",
+                "type": "integer"
+              },
+              "location": {
+                "description": "The city that you want to get the weather for.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location",
+              "days"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Retrieve news articles for a specific topic.",
+          "name": "news",
+          "parameters": {
+            "properties": {
+              "days": {
+                "description": "Number of past days for which to retrieve the news.",
+                "type": "integer"
+              },
+              "topic": {
+                "description": "The topic that you want to get the news for.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "topic",
+              "days"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "air_quality_forecast": {
+              "days": [
+                7
+              ],
+              "location": [
+                "New York",
+                "New York, NY",
+                "New York City",
+                "NYC"
+              ]
+            }
+          },
+          "id": "multiple_function_63"
+        }
+      ],
+      "observation_id": "bfcl_v1:multiple_function_63",
+      "question": "What will be the air quality index of New York for the next week?",
+      "source_id": "multiple_function_63",
+      "source_index": 63
+    },
+    {
+      "category": "multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the total volume of stocks traded over a certain period of time",
+          "name": "volume_traded",
+          "parameters": {
+            "properties": {
+              "company": {
+                "description": "Name of the company to get data for",
+                "type": "string"
+              },
+              "data_source": {
+                "description": "Source to fetch the financial data. default is 'yahoo finance'",
+                "type": "string"
+              },
+              "days": {
+                "description": "Number of past days to calculate volume traded for",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "company",
+              "days"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Calculate the total revenue of a company over a specific period of time",
+          "name": "total_revenue",
+          "parameters": {
+            "properties": {
+              "company": {
+                "description": "Name of the company to get data for",
+                "type": "string"
+              },
+              "data_source": {
+                "description": "Source to fetch the financial data. default is 'google finance'",
+                "type": "string"
+              },
+              "days": {
+                "description": "Number of past days to calculate total revenue for",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "company",
+              "days"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Calculate the average closing price of a specific company over a given period of time",
+          "name": "avg_closing_price",
+          "parameters": {
+            "properties": {
+              "company": {
+                "description": "Name of the company to get data for",
+                "type": "string"
+              },
+              "data_source": {
+                "description": "Source to fetch the stock data. default is 'yahoo finance'",
+                "type": "string"
+              },
+              "days": {
+                "description": "Number of past days to calculate average closing price for",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "company",
+              "days"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "avg_closing_price": {
+              "company": [
+                "Apple"
+              ],
+              "data_source": [
+                "yahoo finance",
+                ""
+              ],
+              "days": [
+                60
+              ]
+            }
+          },
+          "id": "multiple_function_56"
+        }
+      ],
+      "observation_id": "bfcl_v1:multiple_function_56",
+      "question": "Find the average closing price of Apple stock in the past 60 days",
+      "source_id": "multiple_function_56",
+      "source_index": 56
+    },
+    {
+      "category": "parallel",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Get the closing stock price for a specific company on a specified date.",
+          "name": "get_stock_price",
+          "parameters": {
+            "properties": {
+              "company_name": {
+                "description": "Name of the company.",
+                "type": "string"
+              },
+              "date": {
+                "description": "Date of when to get the stock price. Format: yyyy-mm-dd.",
+                "type": "string"
+              },
+              "exchange": {
+                "description": "Name of the stock exchange market where the company's stock is listed. Default is 'NASDAQ'",
+                "type": "string"
+              }
+            },
+            "required": [
+              "company_name",
+              "date"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "get_stock_price 1": {
+              "company_name": [
+                "Microsoft",
+                "Apple"
+              ],
+              "date": [
+                "2022-01-01",
+                "01/01/2022",
+                "Jan.1,2022"
+              ],
+              "exchange": [
+                "NASDAQ",
+                ""
+              ]
+            },
+            "get_stock_price 2": {
+              "company_name": [
+                "Microsoft"
+              ],
+              "date": [
+                "2022-02-01",
+                "02/01/2022",
+                "Feb.1,2022"
+              ],
+              "exchange": [
+                "NASDAQ",
+                ""
+              ]
+            },
+            "get_stock_price 3": {
+              "company_name": [
+                "Apple"
+              ],
+              "date": [
+                "2022-01-01",
+                "01/01/2022",
+                "Jan.1,2022"
+              ],
+              "exchange": [
+                "NASDAQ",
+                ""
+              ]
+            },
+            "get_stock_price 4": {
+              "company_name": [
+                "Apple"
+              ],
+              "date": [
+                "2022-02-01",
+                "02/01/2022",
+                "Feb.1,2022"
+              ],
+              "exchange": [
+                "NASDAQ",
+                ""
+              ]
+            }
+          },
+          "id": "parallel_function_178"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_function_178",
+      "question": "What were the closing stock prices for Microsoft and Apple on NASDAQ on the dates 2022-01-01 and 2022-02-01?",
+      "source_id": "parallel_function_178",
+      "source_index": 178
+    },
+    {
+      "category": "parallel",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the resistance of a wire using resistivity, length, and cross-sectional area.",
+          "name": "calculate_resistance",
+          "parameters": {
+            "properties": {
+              "area": {
+                "description": "The cross-sectional area of the wire in square meters.",
+                "type": "float"
+              },
+              "length": {
+                "description": "The length of the wire in meters.",
+                "type": "integer"
+              },
+              "resistivity": {
+                "description": "Resistivity of the material (Default: 'copper'). Allowed values: 'copper', 'aluminum'",
+                "type": "string"
+              }
+            },
+            "required": [
+              "length",
+              "area"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "calculate_resistance_1": {
+              "area": [
+                0.01
+              ],
+              "length": [
+                5
+              ],
+              "resistivity": [
+                "copper",
+                ""
+              ]
+            },
+            "calculate_resistance_2": {
+              "area": [
+                0.01
+              ],
+              "length": [
+                5
+              ],
+              "resistivity": [
+                "aluminum"
+              ]
+            }
+          },
+          "id": "parallel_function_2"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_function_2",
+      "question": "Calculate the resistance of a wire with a length of 5m and cross sectional area 0.01m² with resistivity of copper and aluminum",
+      "source_id": "parallel_function_2",
+      "source_index": 2
+    },
+    {
+      "category": "parallel",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Get the President and Vice President of United States for a specified year.",
+          "name": "get_president_and_vp",
+          "parameters": {
+            "properties": {
+              "position": {
+                "description": "The position: either 'president' or 'vice president'.",
+                "type": "string"
+              },
+              "year": {
+                "description": "The year for which president or vice president information is needed.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "year",
+              "position"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "get_president_and_vp_1": {
+              "position": [
+                "president"
+              ],
+              "year": [
+                1980
+              ]
+            },
+            "get_president_and_vp_2": {
+              "position": [
+                "president"
+              ],
+              "year": [
+                2016
+              ]
+            },
+            "get_president_and_vp_3": {
+              "position": [
+                "vice president"
+              ],
+              "year": [
+                1975
+              ]
+            },
+            "get_president_and_vp_4": {
+              "position": [
+                "vice president"
+              ],
+              "year": [
+                2011
+              ]
+            }
+          },
+          "id": "parallel_function_33"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_function_33",
+      "question": "Find out who was the president of United States in 1980 and 2016, and the vice president in 1975 and 2011.",
+      "source_id": "parallel_function_33",
+      "source_index": 33
+    },
+    {
+      "category": "parallel",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Retrieves the current temperature and humidity for a specific location.",
+          "name": "get_current_weather",
+          "parameters": {
+            "properties": {
+              "include_humidity": {
+                "description": "Whether to include the humidity in the result. Default is true.",
+                "type": "boolean"
+              },
+              "include_temperature": {
+                "description": "Whether to include the temperature in the result. Default is true.",
+                "type": "boolean"
+              },
+              "location": {
+                "description": "The location to get the weather for.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "get_current_weather_1": {
+              "include_humidity": [
+                true,
+                ""
+              ],
+              "include_temperature": [
+                true,
+                ""
+              ],
+              "location": [
+                "New York",
+                "New York, NY",
+                "New York City",
+                "NYC"
+              ]
+            },
+            "get_current_weather_2": {
+              "include_humidity": [
+                true,
+                ""
+              ],
+              "include_temperature": [
+                true,
+                ""
+              ],
+              "location": [
+                "Los Angeles",
+                "Los Angeles, CA",
+                "LA"
+              ]
+            },
+            "get_current_weather_3": {
+              "include_humidity": [
+                true,
+                ""
+              ],
+              "include_temperature": [
+                true,
+                ""
+              ],
+              "location": [
+                "London"
+              ]
+            },
+            "get_current_weather_4": {
+              "include_humidity": [
+                true,
+                ""
+              ],
+              "include_temperature": [
+                true,
+                ""
+              ],
+              "location": [
+                "Tokyo"
+              ]
+            }
+          },
+          "id": "parallel_function_199"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_function_199",
+      "question": "What is the current temperature and humidity in New York, Los Angeles, London and Tokyo, if I want to include both temperature and humidity in the results?",
+      "source_id": "parallel_function_199",
+      "source_index": 199
+    },
+    {
+      "category": "parallel",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Identify a bird species based on certain characteristics.",
+          "name": "identify_bird",
+          "parameters": {
+            "properties": {
+              "color": {
+                "description": "Color of the bird.",
+                "type": "string"
+              },
+              "habitat": {
+                "description": "Habitat of the bird.",
+                "type": "string"
+              },
+              "size": {
+                "default": "small",
+                "description": "Size of the bird.",
+                "enum": [
+                  "small",
+                  "medium",
+                  "large"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "color",
+              "habitat"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "identify_bird_1": {
+              "color": [
+                "blue"
+              ],
+              "habitat": [
+                "forest"
+              ],
+              "size": [
+                "small",
+                ""
+              ]
+            },
+            "identify_bird_2": {
+              "color": [
+                "black"
+              ],
+              "habitat": [
+                "lake"
+              ],
+              "size": [
+                "large"
+              ]
+            },
+            "identify_bird_3": {
+              "color": [
+                "brown"
+              ],
+              "habitat": [
+                "desert"
+              ],
+              "size": [
+                "medium"
+              ]
+            },
+            "identify_bird_4": {
+              "color": [
+                "green"
+              ],
+              "habitat": [
+                "tropical rainforest"
+              ],
+              "size": [
+                "large"
+              ]
+            }
+          },
+          "id": "parallel_function_119"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_function_119",
+      "question": "\"Can you help me identify the bird species I saw during my recent trip? The first one was a small bird with a vibrant blue color that I spotted in a forest. The second one was a large bird with a mix of black colors that I saw near a lake. The third one was a medium-sized bird with a brown color that I noticed in a desert. Lastly, the fourth one was a large bird with a green color that I observed in a tropical rainforest. What could these birds be?\"",
+      "source_id": "parallel_function_119",
+      "source_index": 119
+    },
+    {
+      "category": "parallel",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Retrieve real-time air quality and pollution data for a specific location.",
+          "name": "get_air_quality",
+          "parameters": {
+            "properties": {
+              "detail": {
+                "description": "If true, additional data like PM2.5, PM10, ozone levels, and pollution sources will be retrieved. the value is set to false to default.",
+                "type": "boolean"
+              },
+              "historical": {
+                "default": "today",
+                "description": "Optional date (in 'YYYY-MM-DD' format) to retrieve historical data.",
+                "type": "string"
+              },
+              "location": {
+                "description": "The city that you want to get the air quality data for.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "get_air_quality_1": {
+              "detail": [
+                true
+              ],
+              "historical": [
+                "2023-05-05"
+              ],
+              "location": [
+                "New York City",
+                "NYC"
+              ]
+            },
+            "get_air_quality_2": {
+              "detail": [
+                true
+              ],
+              "historical": [
+                "2023-05-04"
+              ],
+              "location": [
+                "New York City",
+                "NYC"
+              ]
+            },
+            "get_air_quality_3": {
+              "detail": [
+                true
+              ],
+              "historical": [
+                "2023-05-03"
+              ],
+              "location": [
+                "New York City",
+                "NYC"
+              ]
+            }
+          },
+          "id": "parallel_function_187"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_function_187",
+      "question": "What is the air quality data for New York City, including additional data like PM2.5, PM10, ozone levels, and pollution sources, for today, yesterday, and the day before yesterday? Today is May 5, 2023",
+      "source_id": "parallel_function_187",
+      "source_index": 187
+    },
+    {
+      "category": "parallel",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Retrieve all lawsuits involving a particular entity from specified jurisdiction.",
+          "name": "lawsuit_search",
+          "parameters": {
+            "properties": {
+              "county": {
+                "description": "The jurisdiction for the lawsuit search.",
+                "type": "string"
+              },
+              "entity": {
+                "description": "The entity involved in lawsuits.",
+                "type": "string"
+              },
+              "state": {
+                "description": "The state for the lawsuit search. Default is California.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "entity",
+              "county"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "lawsuit_search_1": {
+              "county": [
+                "Santa Clara"
+              ],
+              "entity": [
+                "Google"
+              ],
+              "state": [
+                "California",
+                "CA",
+                ""
+              ]
+            },
+            "lawsuit_search_2": {
+              "county": [
+                "San Mateo"
+              ],
+              "entity": [
+                "Facebook"
+              ],
+              "state": [
+                "California",
+                "CA",
+                ""
+              ]
+            }
+          },
+          "id": "parallel_function_198"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_function_198",
+      "question": "Can you use the lawsuit_search function to retrieve all lawsuits involving the entity \"Google\" from the county of \"Santa Clara\" and then do the same for the entity \"Facebook\" in the county of \"San Mateo\", both in the state of California?",
+      "source_id": "parallel_function_198",
+      "source_index": 198
+    },
+    {
+      "category": "parallel",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the electric field strength at a certain distance from a point charge.",
+          "name": "calculate_electric_field_strength",
+          "parameters": {
+            "properties": {
+              "charge": {
+                "description": "The charge in Coulombs.",
+                "type": "integer"
+              },
+              "distance": {
+                "description": "The distance from the charge in meters.",
+                "type": "float"
+              },
+              "medium": {
+                "description": "The medium in which the charge and the point of calculation is located. Default is 'vacuum'.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "charge",
+              "distance"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "calculate_electric_field_strength_1": {
+              "charge": [
+                2
+              ],
+              "distance": [
+                0.5
+              ],
+              "medium": [
+                "vacuum",
+                ""
+              ]
+            },
+            "calculate_electric_field_strength_2": {
+              "charge": [
+                2
+              ],
+              "distance": [
+                1
+              ],
+              "medium": [
+                "vacuum",
+                ""
+              ]
+            },
+            "calculate_electric_field_strength_3": {
+              "charge": [
+                2
+              ],
+              "distance": [
+                2
+              ],
+              "medium": [
+                "vacuum",
+                ""
+              ]
+            },
+            "calculate_electric_field_strength_4": {
+              "charge": [
+                2
+              ],
+              "distance": [
+                1
+              ],
+              "medium": [
+                "air"
+              ]
+            }
+          },
+          "id": "parallel_function_98"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_function_98",
+      "question": "\"Can you calculate the electric field strength at a distance of 0.5 meters from a point charge of 2 Coulombs located in a vacuum? Then, can you also calculate the electric field strength at a distance of 1 meter and 2 meters from the same point charge? Lastly, can you calculate the electric field strength at a distance of 1 meter from the same point charge but this time located in air?\"",
+      "source_id": "parallel_function_98",
+      "source_index": 98
+    },
+    {
+      "category": "parallel",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Predict the likelihood of diabetes type 2 based on a person's weight and height.",
+          "name": "diabetes_prediction",
+          "parameters": {
+            "properties": {
+              "activity_level": {
+                "description": "Physical activity level of the person.",
+                "enum": [
+                  "sedentary",
+                  "lightly active",
+                  "moderately active",
+                  "very active",
+                  "extra active"
+                ],
+                "type": "string"
+              },
+              "height": {
+                "description": "Height of the person in inches.",
+                "type": "integer"
+              },
+              "weight": {
+                "description": "Weight of the person in lbs.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "weight",
+              "height",
+              "activity_level"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "diabetes_prediction_1": {
+              "activity_level": [
+                "lightly active"
+              ],
+              "height": [
+                70
+              ],
+              "weight": [
+                180
+              ]
+            },
+            "diabetes_prediction_2": {
+              "activity_level": [
+                "very active"
+              ],
+              "height": [
+                65
+              ],
+              "weight": [
+                200
+              ]
+            },
+            "diabetes_prediction_3": {
+              "activity_level": [
+                "moderately active"
+              ],
+              "height": [
+                72
+              ],
+              "weight": [
+                150
+              ]
+            },
+            "diabetes_prediction_4": {
+              "activity_level": [
+                "extra active"
+              ],
+              "height": [
+                68
+              ],
+              "weight": [
+                220
+              ]
+            }
+          },
+          "id": "parallel_function_113"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_function_113",
+      "question": "\"Could you please predict the likelihood of type 2 diabetes for four individuals with the following characteristics: The first person weighs 180 lbs, is 70 inches tall, and has a 'lightly active' lifestyle. The second person weighs 200 lbs, is 65 inches tall, and is 'very active'. The third person weighs 150 lbs, is 72 inches tall, and is 'moderately active'. The fourth person weighs 220 lbs, is 68 inches tall, and is 'extra active'.\"",
+      "source_id": "parallel_function_113",
+      "source_index": 113
+    },
+    {
+      "category": "parallel",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the speed of an object based on the distance travelled and the time taken.",
+          "name": "calculate_speed",
+          "parameters": {
+            "properties": {
+              "distance": {
+                "description": "The distance the object travelled in meters.",
+                "type": "integer"
+              },
+              "time": {
+                "description": "The time it took for the object to travel in seconds.",
+                "type": "integer"
+              },
+              "to_unit": {
+                "description": "The unit in which the speed should be calculated, default is m/s.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "distance",
+              "time"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "calculate_speed 1": {
+              "distance": [
+                500
+              ],
+              "time": [
+                25
+              ],
+              "to_unit": [
+                "km/h"
+              ]
+            },
+            "calculate_speed 2": {
+              "distance": [
+                1000
+              ],
+              "time": [
+                200
+              ],
+              "to_unit": [
+                "m/s",
+                ""
+              ]
+            },
+            "calculate_speed 3": {
+              "distance": [
+                10000
+              ],
+              "time": [
+                600
+              ],
+              "to_unit": [
+                "km/h"
+              ]
+            }
+          },
+          "id": "parallel_function_148"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_function_148",
+      "question": "\"Can you calculate the speed of a car that traveled a distance of 500 meters in 25 seconds and provide the answer in km/h? Also, can you calculate the speed of a bicycle that traveled a distance of 1000 meters in 200 seconds and provide the answer in m/s? Lastly, can you calculate the speed of a train that traveled a distance of 10000 meters in 600 seconds and provide the answer in km/h?\"",
+      "source_id": "parallel_function_148",
+      "source_index": 148
+    },
+    {
+      "category": "parallel_multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Retrieve the air quality index for a specific location.",
+          "name": "air_quality",
+          "parameters": {
+            "properties": {
+              "date": {
+                "description": "The date you want to get the air quality index for. Default is today.",
+                "type": "string"
+              },
+              "location": {
+                "description": "The city that you want to get the air quality index for.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location",
+              "date"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Fetch the ranking of a specific sports team in a specific league",
+          "name": "sports_ranking",
+          "parameters": {
+            "properties": {
+              "league": {
+                "description": "The name of the league.",
+                "type": "string"
+              },
+              "season": {
+                "description": "Optional parameter to specify the season, default is the current season.",
+                "type": "integer"
+              },
+              "team": {
+                "description": "The name of the team.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "team",
+              "league"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "air_quality_1": {
+              "date": [
+                "2020-12-25",
+                "12/25/2020",
+                "Dec 25, 2020",
+                "December 25, 2020"
+              ],
+              "location": [
+                "Los Angeles",
+                "Los Angeles, California",
+                "LA"
+              ]
+            },
+            "air_quality_2": {
+              "date": [
+                "2021-01-01",
+                "01/01/2021",
+                "Jan 1, 2021",
+                "January 1, 2021"
+              ],
+              "location": [
+                "New York",
+                "New York, NY",
+                "NY"
+              ]
+            },
+            "sports_ranking_1": {
+              "league": [
+                "Major League Baseball",
+                "MLB"
+              ],
+              "season": [
+                2019
+              ],
+              "team": [
+                "New York Yankees",
+                "NY Yankees"
+              ]
+            },
+            "sports_ranking_2": {
+              "league": [
+                "National Basketball Association",
+                "NBA"
+              ],
+              "season": [
+                2020
+              ],
+              "team": [
+                "Los Angeles Lakers",
+                "LA Lakers"
+              ]
+            }
+          },
+          "id": "parallel_multiple_function_171"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_multiple_function_171",
+      "question": "\"Could you please tell me the ranking of the New York Yankees in the Major League Baseball for the 2019 season, then check the ranking of the Los Angeles Lakers in the National Basketball Association for the 2020 season, and finally, could you provide the air quality index for Los Angeles on December 25, 2020 and for New York on January 1, 2021?\"",
+      "source_id": "parallel_multiple_function_171",
+      "source_index": 171
+    },
+    {
+      "category": "parallel_multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Retrieves information about a specific stock based on company's name.",
+          "name": "get_stock_info",
+          "parameters": {
+            "properties": {
+              "company_name": {
+                "description": "The name of the company.",
+                "type": "string"
+              },
+              "detail_level": {
+                "description": "Level of detail for stock information. Can be 'summary' or 'detailed'.",
+                "type": "string"
+              },
+              "market": {
+                "description": "The stock market of interest. Default is 'NASDAQ'",
+                "type": "string"
+              }
+            },
+            "required": [
+              "company_name",
+              "detail_level"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Retrieve the current time in a specific time zone.",
+          "name": "get_current_time",
+          "parameters": {
+            "properties": {
+              "country": {
+                "description": "The name of the country.",
+                "type": "string"
+              },
+              "location": {
+                "description": "The name of the city.",
+                "type": "string"
+              },
+              "timezone": {
+                "description": "The optional timezone to get current time. Default is 'UTC'.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location",
+              "country"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "get_current_time_1": {
+              "country": [
+                "Japan",
+                "JP"
+              ],
+              "location": [
+                "Tokyo"
+              ],
+              "timezone": [
+                "Asia/Tokyo"
+              ]
+            },
+            "get_current_time_2": {
+              "country": [
+                "United States",
+                "US",
+                "USA"
+              ],
+              "location": [
+                "New York",
+                "NY"
+              ],
+              "timezone": [
+                "America/New_York"
+              ]
+            },
+            "get_stock_info_1": {
+              "company_name": [
+                "Microsoft"
+              ],
+              "detail_level": [
+                "detailed"
+              ],
+              "market": [
+                "NASDAQ",
+                ""
+              ]
+            },
+            "get_stock_info_2": {
+              "company_name": [
+                "Apple"
+              ],
+              "detail_level": [
+                "summary"
+              ],
+              "market": [
+                "NASDAQ",
+                ""
+              ]
+            }
+          },
+          "id": "parallel_multiple_function_175"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_multiple_function_175",
+      "question": "\"Could you please first use the 'get_current_time' function to find out the current time in Tokyo, Japan, in the 'Asia/Tokyo' timezone? Then, could you use the same function again to find out the current time in New York, United States, in the 'America/New_York' timezone? After that, could you use the 'get_stock_info' function to retrieve a detailed information about the stock of the company 'Microsoft' in the 'NASDAQ' market? Finally, could you use the same function again to retrieve a summary information about the stock of the company 'Apple' in the 'NASDAQ' market?\"",
+      "source_id": "parallel_multiple_function_175",
+      "source_index": 175
+    },
+    {
+      "category": "parallel_multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Fit a linear regression model to data.",
+          "name": "linear_regression_fit",
+          "parameters": {
+            "properties": {
+              "return_residuals": {
+                "default": "false",
+                "description": "Flag indicating whether to return the residuals (the difference between the observed and predicted values). Optional.",
+                "type": "boolean"
+              },
+              "x": {
+                "description": "Array of the predictor variable.",
+                "items": {
+                  "type": "float"
+                },
+                "type": "array"
+              },
+              "y": {
+                "description": "Array of the dependent variable.",
+                "items": {
+                  "type": "float"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "x",
+              "y"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Load data from a csv file into a data structure.",
+          "name": "data_loading",
+          "parameters": {
+            "properties": {
+              "delimiter": {
+                "default": ",",
+                "description": "The character used to separate values in the file. Optional.",
+                "type": "string"
+              },
+              "file_path": {
+                "description": "The path to the file to load.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "file_path"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "data_loading": {
+              "delimiter": [
+                ",",
+                ""
+              ],
+              "file_path": [
+                "dataset.csv"
+              ]
+            },
+            "linear_regression_fit": {
+              "return_residuals": [
+                true
+              ],
+              "x": [
+                "data['sales']"
+              ],
+              "y": [
+                "data['future_sales']"
+              ]
+            }
+          },
+          "id": "parallel_multiple_function_21"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_multiple_function_21",
+      "question": "Use the data from dataset.csv file and fit a linear regression model to predict future sales by setting x=data['sales'] and y=data['future_sales']. Additionally, calculate and return the residuals.",
+      "source_id": "parallel_multiple_function_21",
+      "source_index": 21
+    },
+    {
+      "category": "parallel_multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the estimated preparation and cooking time for a specified recipe.",
+          "name": "recipe_prep_time",
+          "parameters": {
+            "properties": {
+              "recipe": {
+                "description": "Name of the recipe to calculate time for.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "recipe"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Provide detailed nutritional information for a specified recipe.",
+          "name": "recipe_nutrition_info",
+          "parameters": {
+            "properties": {
+              "recipe": {
+                "description": "Name of the recipe to fetch nutrition info for.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "recipe"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Search for a recipe based on a particular ingredient or dietary requirement.",
+          "name": "recipe_search",
+          "parameters": {
+            "properties": {
+              "dietary_requirements": {
+                "description": "Dietary requirements in the recipe.",
+                "items": {
+                  "enum": [
+                    "gluten_free",
+                    "dairy_free",
+                    "vegetarian",
+                    "vegan"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "ingredient": {
+                "description": "The ingredient that you want to have in the recipe.",
+                "type": "string"
+              },
+              "isHomemade": {
+                "description": "If true, returns homemade recipe; otherwise, return not homemade recipe.",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "ingredient",
+              "dietary_requirements",
+              "isHomemade"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "recipe_nutrition_info": {
+              "recipe": [
+                "homemade_spaghetti",
+                "homemade healthy spaghetti",
+                "spaghetti",
+                "Homemade healthy gluten free spaghetti"
+              ]
+            },
+            "recipe_prep_time": {
+              "recipe": [
+                "spaghetti",
+                "homemade healthy spaghetti",
+                "Homemade healthy gluten free spaghetti",
+                "homemade_spaghetti"
+              ]
+            },
+            "recipe_search": {
+              "dietary_requirements": [
+                [
+                  "gluten_free"
+                ]
+              ],
+              "ingredient": [
+                "spaghetti"
+              ],
+              "isHomemade": [
+                true
+              ]
+            }
+          },
+          "id": "parallel_multiple_function_55"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_multiple_function_55",
+      "question": "I want a homemade healthy spaghetti recipe that is gluten free, how long will it take to prepare and cook, and what nutritional information could it provide me.",
+      "source_id": "parallel_multiple_function_55",
+      "source_index": 55
+    },
+    {
+      "category": "parallel_multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the Body Mass Index (BMI) for a person based on their weight and height.",
+          "name": "calculate_bmi",
+          "parameters": {
+            "properties": {
+              "height": {
+                "description": "The height of the person in centimeters.",
+                "type": "integer"
+              },
+              "system": {
+                "description": "The system of units to be used, 'metric' or 'imperial'. Default is 'metric'.",
+                "type": "string"
+              },
+              "weight": {
+                "description": "The weight of the person in kilograms.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "weight",
+              "height"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Books a hotel room for a specific date range.",
+          "name": "hotel_booking",
+          "parameters": {
+            "properties": {
+              "end_date": {
+                "description": "The end date of the reservation. Use format 'YYYY-MM-DD'.",
+                "type": "string"
+              },
+              "hotel_name": {
+                "description": "The name of the hotel.",
+                "type": "string"
+              },
+              "location": {
+                "description": "The city and state, e.g. New York, NY.",
+                "type": "string"
+              },
+              "rooms": {
+                "default": 1,
+                "description": "The number of rooms to reserve.",
+                "type": "integer"
+              },
+              "start_date": {
+                "description": "The start date of the reservation. Use format 'YYYY-MM-DD'.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "hotel_name",
+              "location",
+              "start_date",
+              "end_date"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Perform sentiment analysis on a given piece of text.",
+          "name": "sentiment_analysis",
+          "parameters": {
+            "properties": {
+              "language": {
+                "description": "The language in which the text is written.",
+                "type": "string"
+              },
+              "text": {
+                "description": "The text on which to perform sentiment analysis.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "text",
+              "language"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Get the time difference between two places.",
+          "name": "get_time_difference",
+          "parameters": {
+            "properties": {
+              "place1": {
+                "description": "The first place for time difference.",
+                "type": "string"
+              },
+              "place2": {
+                "description": "The second place for time difference.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "place1",
+              "place2"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "calculate_bmi": {
+              "height": [
+                180
+              ],
+              "system": [
+                "metric",
+                ""
+              ],
+              "weight": [
+                75
+              ]
+            },
+            "get_time_difference": {
+              "place1": [
+                "New York, NY",
+                "NY, NY",
+                "New York, New York"
+              ],
+              "place2": [
+                "Los Angeles, CA",
+                "LA, CA",
+                "Los Angeles, California"
+              ]
+            },
+            "hotel_booking": {
+              "end_date": [
+                "2022-05-10",
+                "05/10/2022",
+                "May 10, 2022"
+              ],
+              "hotel_name": [
+                "Hilton"
+              ],
+              "location": [
+                "Los Angeles, CA",
+                "LA, CA",
+                "Los Angeles, California"
+              ],
+              "rooms": [
+                2
+              ],
+              "start_date": [
+                "2022-05-01",
+                "05/01/2022",
+                "May 1, 2022"
+              ]
+            },
+            "sentiment_analysis": {
+              "language": [
+                "English"
+              ],
+              "text": [
+                "I had a wonderful day at the beach. The weather was perfect and I enjoyed a delicious ice cream."
+              ]
+            }
+          },
+          "id": "parallel_multiple_function_176"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_multiple_function_176",
+      "question": "\"Could you help me with a few tasks? First, I'd like to book a hotel room at the 'Hilton' in 'Los Angeles, CA' from '2022-05-01' to '2022-05-10' and I need '2' rooms. Second, I'm curious about the time difference between 'New York, NY' and 'Los Angeles, CA'. Third, I've been trying to keep track of my health and I'd like to calculate my Body Mass Index (BMI). I weigh '75' kilograms and I'm '180' centimeters tall, and I'd like to use the 'metric' system. Lastly, I've written a piece of text in 'English' and I'd like to perform a sentiment analysis on it. The text is 'I had a wonderful day at the beach. The weather was perfect and I enjoyed a delicious ice cream.' Can you assist me with these?\"",
+      "source_id": "parallel_multiple_function_176",
+      "source_index": 176
+    },
+    {
+      "category": "parallel_multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Search for lawsuits against a specific company within a specific time and location.",
+          "name": "lawsuits_search",
+          "parameters": {
+            "properties": {
+              "case_type": {
+                "description": "The type of the case. Options include: 'civil', 'criminal', 'small_claims', etc. If not specified, default to search for all types.",
+                "type": "string"
+              },
+              "company_name": {
+                "description": "The name of the company.",
+                "type": "string"
+              },
+              "location": {
+                "description": "The location where the lawsuit was filed.",
+                "type": "string"
+              },
+              "year": {
+                "description": "The year when the lawsuit was filed.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "company_name",
+              "location",
+              "year"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Calculate compound interest for a certain time period.",
+          "name": "compound_interest",
+          "parameters": {
+            "properties": {
+              "annual_rate": {
+                "description": "The interest rate for a year as a percentage.",
+                "type": "float"
+              },
+              "compounding_freq": {
+                "description": "The number of times that interest is compounded per unit period.",
+                "enum": [
+                  "monthly",
+                  "quarterly",
+                  "annually"
+                ],
+                "type": "string"
+              },
+              "principal": {
+                "description": "The initial amount of money that was invested or loaned out.",
+                "type": "integer"
+              },
+              "time_in_years": {
+                "description": "The time the money is invested for in years.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "principal",
+              "annual_rate",
+              "compounding_freq",
+              "time_in_years"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "compound_interest": {
+              "annual_rate": [
+                0.05
+              ],
+              "compounding_freq": [
+                "quarterly"
+              ],
+              "principal": [
+                5000
+              ],
+              "time_in_years": [
+                7
+              ]
+            },
+            "lawsuits_search": {
+              "case_type": [
+                ""
+              ],
+              "company_name": [
+                "Tech Corp"
+              ],
+              "location": [
+                "San Francisco",
+                "SF"
+              ],
+              "year": [
+                2018
+              ]
+            }
+          },
+          "id": "parallel_multiple_function_160"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_multiple_function_160",
+      "question": "\"Can you help me with two tasks? First, I want to calculate the compound interest on an investment I made. I invested $5000 with an annual interest rate of 5%. The interest is compounded quarterly and I plan to keep the money invested for 7 years. Secondly, I heard some rumors about a company named 'Tech Corp' and I want to check if there were any lawsuits filed against them in 'San Francisco' in the year 2018. Can you find this information for me?\"",
+      "source_id": "parallel_multiple_function_160",
+      "source_index": 160
+    },
+    {
+      "category": "parallel_multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Find the tallest mountains within a specified radius of a location.",
+          "name": "locate_tallest_mountains",
+          "parameters": {
+            "properties": {
+              "amount": {
+                "description": "The number of mountains to find, listed from tallest to smallest.",
+                "type": "integer"
+              },
+              "location": {
+                "description": "The city from which to calculate distance.",
+                "type": "string"
+              },
+              "radius": {
+                "description": "The radius within which to find mountains, measured in kilometers.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "location",
+              "radius",
+              "amount"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Calculate the entropy change for an isothermal and reversible process.",
+          "name": "calculate_entropy_change",
+          "parameters": {
+            "properties": {
+              "final_temp": {
+                "description": "The final temperature in Kelvin.",
+                "type": "integer"
+              },
+              "heat_capacity": {
+                "description": "The heat capacity in J/K.",
+                "type": "float"
+              },
+              "initial_temp": {
+                "description": "The initial temperature in Kelvin.",
+                "type": "integer"
+              },
+              "isothermal": {
+                "description": "Whether the process is isothermal. Default is True.",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "initial_temp",
+              "final_temp",
+              "heat_capacity"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Retrieve the date of a historical event.",
+          "name": "get_event_date",
+          "parameters": {
+            "properties": {
+              "event": {
+                "description": "The name of the historical event.",
+                "type": "string"
+              },
+              "location": {
+                "description": "Location where the event took place. Defaults to global if not specified",
+                "type": "string"
+              }
+            },
+            "required": [
+              "event"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "calculate_entropy_change": {
+              "final_temp": [
+                350
+              ],
+              "heat_capacity": [
+                1.5
+              ],
+              "initial_temp": [
+                300
+              ],
+              "isothermal": [
+                "",
+                true
+              ]
+            },
+            "get_event_date": {
+              "event": [
+                "Battle of Waterloo"
+              ],
+              "location": [
+                "Belgium"
+              ]
+            },
+            "locate_tallest_mountains": {
+              "amount": [
+                5
+              ],
+              "location": [
+                "Tokyo"
+              ],
+              "radius": [
+                200
+              ]
+            }
+          },
+          "id": "parallel_multiple_function_178"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_multiple_function_178",
+      "question": "\"Can you help me with a few things? First, I'm planning a trip and I'm interested in mountains. I'm currently in Tokyo and I want to find the 5 tallest mountains within a 200 kilometer radius of my location. Second, I'm working on a physics problem and I need to calculate the entropy change for an isothermal and reversible process. The initial temperature is 300 Kelvin, the final temperature is 350 Kelvin, and the heat capacity is 1.5 J/K. Lastly, I'm curious about a historical event. Can you tell me the date of the 'Battle of Waterloo'? I believe it took place in Belgium.\"",
+      "source_id": "parallel_multiple_function_178",
+      "source_index": 178
+    },
+    {
+      "category": "parallel_multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Retrieve a weather forecast for a specific location and time frame.",
+          "name": "weather_forecast",
+          "parameters": {
+            "properties": {
+              "days": {
+                "description": "Number of days for the forecast.",
+                "type": "integer"
+              },
+              "location": {
+                "description": "The city that you want to get the weather for.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "location",
+              "days"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Predict the future stock price for a specific company and time frame.",
+          "name": "stock_forecast",
+          "parameters": {
+            "properties": {
+              "company": {
+                "description": "The company that you want to get the stock price prediction for.",
+                "type": "string"
+              },
+              "days": {
+                "description": "Number of future days for which to predict the stock price.",
+                "type": "integer"
+              },
+              "model": {
+                "description": "The model to use for prediction. Default is 'ARIMA'.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "company",
+              "days"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "stock_forecast_1": {
+              "company": [
+                "Apple Inc.",
+                "AAPL"
+              ],
+              "days": [
+                30
+              ],
+              "model": [
+                "ARIMA",
+                ""
+              ]
+            },
+            "stock_forecast_2": {
+              "company": [
+                "Microsoft Corporation",
+                "MSFT"
+              ],
+              "days": [
+                45
+              ],
+              "model": [
+                "LSTM"
+              ]
+            },
+            "weather_forecast_1": {
+              "days": [
+                7
+              ],
+              "location": [
+                "New York City",
+                "NYC",
+                "New York",
+                "NY"
+              ]
+            },
+            "weather_forecast_2": {
+              "days": [
+                14
+              ],
+              "location": [
+                "Los Angeles",
+                "LA",
+                "Los Angeles, California",
+                "CA"
+              ]
+            }
+          },
+          "id": "parallel_multiple_function_100"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_multiple_function_100",
+      "question": "\"Can you tell me what the stock price prediction for Apple Inc. is for the next 30 days using the ARIMA model, and then provide the stock forecast for Microsoft Corporation for the next 45 days using the LSTM model? After that, could you provide the weather forecast for New York City for the next 7 days, and then give the weather forecast for Los Angeles for the next 14 days?\"",
+      "source_id": "parallel_multiple_function_100",
+      "source_index": 100
+    },
+    {
+      "category": "parallel_multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the voltage difference between two points in an electric field.",
+          "name": "calculate_voltage_difference",
+          "parameters": {
+            "properties": {
+              "charge": {
+                "default": 0,
+                "description": "The charge of the test particle, typically an electron, in coulombs. Default to 0",
+                "type": "float"
+              },
+              "distance": {
+                "description": "The distance between the two points in the direction of the field in meters.",
+                "type": "float"
+              },
+              "electric_field": {
+                "description": "The electric field in newtons per coulomb.",
+                "type": "float"
+              }
+            },
+            "required": [
+              "electric_field",
+              "distance"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Calculate the magnetic field produced by a current-carrying wire.",
+          "name": "calculate_magnetic_field",
+          "parameters": {
+            "properties": {
+              "current": {
+                "description": "The current in the wire in amperes.",
+                "type": "float"
+              },
+              "distance": {
+                "description": "The perpendicular distance from the wire in meters.",
+                "type": "float"
+              },
+              "permeability": {
+                "description": "The permeability of free space, a constant value. Default 0.1",
+                "type": "float"
+              }
+            },
+            "required": [
+              "current",
+              "distance"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "calculate_magnetic_field": {
+              "current": [
+                4.0
+              ],
+              "distance": [
+                2.0
+              ]
+            },
+            "calculate_voltage_difference": {
+              "charge": [
+                0.0,
+                ""
+              ],
+              "distance": [
+                3.0
+              ],
+              "electric_field": [
+                5.0
+              ],
+              "permeability": [
+                "",
+                0.1
+              ]
+            }
+          },
+          "id": "parallel_multiple_function_12"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_multiple_function_12",
+      "question": "Calculate the magnetic field produced by a wire carrying a current of 4 amps with a distance of 2 m from the wire. And find the voltage difference of a region in the direction of the electric field that is 3 m apart, assuming the electric field is 5 N/C.",
+      "source_id": "parallel_multiple_function_12",
+      "source_index": 12
+    },
+    {
+      "category": "parallel_multiple",
+      "dataset_id": "bfcl_v1",
+      "functions": [
+        {
+          "description": "Calculate the area of a triangle given its base and height.",
+          "name": "calculate_triangle_area",
+          "parameters": {
+            "properties": {
+              "base": {
+                "description": "The base of the triangle.",
+                "type": "integer"
+              },
+              "height": {
+                "description": "The height of the triangle.",
+                "type": "integer"
+              },
+              "unit": {
+                "description": "The unit of measure (defaults to 'units' if not specified)",
+                "type": "string"
+              }
+            },
+            "required": [
+              "base",
+              "height"
+            ],
+            "type": "dict"
+          }
+        },
+        {
+          "description": "Retrieve case details using a specific case docket number and court location.",
+          "name": "get_case_info",
+          "parameters": {
+            "properties": {
+              "court": {
+                "description": "Court in which the case was heard.",
+                "type": "string"
+              },
+              "docket": {
+                "description": "Docket number for the specific court case.",
+                "type": "string"
+              },
+              "info_type": {
+                "description": "Specify the information type needed for the case. i.e., victim, accused, verdict etc.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "docket",
+              "court",
+              "info_type"
+            ],
+            "type": "dict"
+          }
+        }
+      ],
+      "ground_truth": [
+        {
+          "ground_truth": {
+            "calculate_triangle_area": {
+              "base": [
+                10
+              ],
+              "height": [
+                5
+              ],
+              "unit": [
+                "square meters",
+                "m^2",
+                "sq m",
+                "sq. meters"
+              ]
+            },
+            "get_case_info_1": {
+              "court": [
+                "Supreme Court"
+              ],
+              "docket": [
+                "12345"
+              ],
+              "info_type": [
+                "accused"
+              ]
+            },
+            "get_case_info_2": {
+              "court": [
+                "High Court"
+              ],
+              "docket": [
+                "67890"
+              ],
+              "info_type": [
+                "verdict"
+              ]
+            }
+          },
+          "id": "parallel_multiple_function_164"
+        }
+      ],
+      "observation_id": "bfcl_v1:parallel_multiple_function_164",
+      "question": "\"John is a lawyer who is working on a case with docket number '12345' in the 'Supreme Court'. He needs to retrieve the details of the 'accused' from this case. After his work, he plans to help his son with his homework. His son is learning about triangles and he needs to calculate the area of a triangle with a base of 10 units and a height of 5 units. The unit of measure is 'square meters'. Later, John has to go back to his work and retrieve the 'verdict' details of another case with docket number '67890' in the 'High Court'. Can you assist John with these tasks?\"",
+      "source_id": "parallel_multiple_function_164",
+      "source_index": 164
+    }
+  ],
+  "schema": "PCG_MAS_V3_6_BFCL_V1_MANIFEST_V2_1",
+  "source_commit": "9df5c346ee0556c8a7cb09fd7206a39aadd904c2",
+  "source_release": "v1.0"
+}

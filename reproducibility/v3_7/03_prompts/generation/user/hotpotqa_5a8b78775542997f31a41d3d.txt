@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Baji Rao I: Baji Rao (18 August 1700 – 28 April 1740) was a general of the Maratha Empire in India.  He served as "Peshwa" (Prime Minister) to the fifth Maratha Chhatrapati (Emperor) Shahu from 1720 until his death.  He is also known by the name Bajirao Ballal.
+
+[2] Chimaji Appa: Shreemant Chimaji Ballal Peshwa (aka Chimaji Appa)(1707–1740) was the son of Balaji Vishwanath Bhat and the younger brother of Bajirao Peshwa of Maratha Empire.  He was an able military commander who liberated the western coast of India from Portuguese rule.  The high watermark of his career was the capture of Vasai fort from the Portuguese in a hard fought battle.
+
+[3] Balaji Vishwanath: Balaji Vishwanath (Bhatt) was born into a Konkanastha Brahmin (aka Chitpavan) family.  The family hailed from the coastal Konkan region of present-day Maharashtra and were the hereditary Deshmukh for Shrivardhan under the Siddi of Janjira.  He went out in search of employment to the upper regions of western ghats and worked as a mercenary trooper under various Maratha generals.  According to Kincaid & Parasnis, Balaji Vishwanath entered the Maratha administration during the reign of Chhatrapati Sambhaji or the regency of his brother, Rajaram. Later he served as an accountant for the Maratha general, Dhanaji Jadhav, at Janjira.  Between 1699 and 1702, he served as the "Sar-subhedar" or head-administrator at Pune and from 1704 to 1707 as Sarsubedar of Daulatabad.  By the time Dhanaji died, Balaji had proven himself as an honest and able officer.Balaji fell out with Dhanaji's son and successor , Chandrarao Jadhav and went over to the newly released Maratha ruler Chhatrapati Shahu who took note of his abilities and appointed Balaji as his assistant ("c."1708).
+
+[4] Shahu I: Shahu Bhonsle (1682–1749 CE) was the fifth Chhatrapati of the Maratha Empire created by his grandfather, Shivaji.  Shahu, he was taken prisoner with his mother in 1689 by Mughal General,Nusrat Jang.  He came out of captivity by the Mughals and defeated his aunt Tarabai in an internecine conflict to gain the throne in 1708.  After the death of Aurangzeb, leading Mughal courtiers released Shahu with a force of fifty men, thinking that a friendly Maratha leader would be a useful ally.
+
+Question: Chimaja Appawas the younger brother of a general of the Maratha Empire in India, who served as what to the fifth Maratha Chhatrapati Shahu from 1720 until his death?
+
+Answer:

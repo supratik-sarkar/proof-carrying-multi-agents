@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "c73aee23dcd93e8a7b50029849866f76589e2621b9ed945d5160b7ce05be7006",
+  "candidate_text": "Peshwa (Prime Minister)",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "89c61a2a0c71dfe445a29ccff494c5a7dd43460cfec0ae35b1a84f8c8e28210c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5a8b78775542997f31a41d3d",
+  "prompt_sha256": "9a8f8a81a703254a5610b4a5a5ecdb2fda0da23b6bc0d1b7a89b92159d77f90e",
+  "provider": "gemini",
+  "provider_raw_sha256": "afd4a86a09aab3d3b656042a74b8f38501b2baec484481b14c3f2f6e09a6e6e8",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a8b78775542997f31a41d3d",
+  "text": "Peshwa (Prime Minister)",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "prompt_tokens": 714,
+    "total_tokens": 721
+  }
+}

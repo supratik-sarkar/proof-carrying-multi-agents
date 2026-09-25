@@ -1,0 +1,35 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "simple_function_checker:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "cc4b426d4b7c1a0b1234ec60463d0cdef1440cda08b6e502e81ce3a3829397ac",
+  "candidate_text": "The prime factorization of **60** is:\n\n\\[\n60 = 2^2 \\times 3^1 \\times 5^1\n\\]\n\nRepresented as a dictionary (mapping each prime factor to its exponent):\n\n```json\n{\n  \"2\": 2,\n  \"3\": 1,\n  \"5\": 1\n}\n```",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "6cb1243b03ee2615b70ac4a0f37d0a2c1e964c7c30377151d9186e7b1c222ff2",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:simple_23",
+  "prompt_sha256": "6cb1243b03ee2615b70ac4a0f37d0a2c1e964c7c30377151d9186e7b1c222ff2",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "85a8f2595513836596fd9c27c9b3615d772f8d2f25440e1739d954725badf5ea",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "The prime factorization of **60** is:\n\n\\[\n60 = 2^2 \\times 3^1 \\times 5^1\n\\]\n\nRepresented as a dictionary (mapping each prime factor to its exponent):\n\n```json\n{\n  \"2\": 2,\n  \"3\": 1,\n  \"5\": 1\n}\n```",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 138,
+    "neurons": 13.83178997039795,
+    "prompt_tokens": 139,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 277
+  }
+}

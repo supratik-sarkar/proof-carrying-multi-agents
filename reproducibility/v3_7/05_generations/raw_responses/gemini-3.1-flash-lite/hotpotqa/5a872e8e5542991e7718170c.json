@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "db9b02ff4d9f00c0b8284ed77dd7c7f87866dd352bfed71331082e597f4e7e00",
+  "candidate_text": "Portraits.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "d48dbe188a1e81579b95a043e0a6714e729ec696cba4ab63fac96cac7f3fdf4c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5a872e8e5542991e7718170c",
+  "prompt_sha256": "11b3c70ec0def364a492c846136296041cec584fb6ecb12db4bc783e6ba1eafe",
+  "provider": "gemini",
+  "provider_raw_sha256": "5b4e02385b7a490e7c4b05da7df8982e5d9cfebb5dbab1ed1b3a6725661534b4",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a872e8e5542991e7718170c",
+  "text": "Portraits.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "prompt_tokens": 772,
+    "total_tokens": 775
+  }
+}

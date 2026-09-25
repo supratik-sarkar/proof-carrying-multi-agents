@@ -1,0 +1,46 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b4b85b239e43c5a8676b71aca0240d76d92e652663981f1db45890eb77664b5b",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_multiple_function_55",
+  "prompt_sha256": "b4b85b239e43c5a8676b71aca0240d76d92e652663981f1db45890eb77664b5b",
+  "provider": "gemini",
+  "provider_raw_sha256": "ac9c99d304386450aa1826c632a6553af24d4b3221c47e827a32a433bfb6e11c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPUFONW3M9Z1dTfjg1zBGAE5LHF8wgbb6VuO4ZJenY7eL5JmwPEo7nXqcbCV2zKVY2o5J9dhSLvEvprXCoR2GetXwuwbBtEF9dTPDP1e5Y9jveRszVLhO1ZzbSfU9S66ZNx5jva1Q56rrbxA=="
+        }
+      },
+      "function": {
+        "arguments": "{\"isHomemade\":true,\"ingredient\":\"spaghetti\",\"dietary_requirements\":[\"gluten_free\"]}",
+        "name": "recipe_search"
+      },
+      "id": "call_1202787",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 33,
+    "prompt_tokens": 326,
+    "total_tokens": 359
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "d9f9a2fcc5cedbac3ab2c7326568bf630e48829448ab4047aafc03cb4222eff5",
+  "candidate_text": "Release of valuation allowance.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "ee9d5ea23e6d9e8a9102e8126d8f3fb4c89e8ff44d20514dbb5716a04bfbe7bc",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "b12fd793c91be88dcb03f2d95768003b",
+  "prompt_sha256": "6b440d6987cbcfce1b66a7e313d7d6ce176475071a024ccd3e9243f6949f42bd",
+  "provider": "gemini",
+  "provider_raw_sha256": "934c36a0fc5c777050a0d897909a09333a2536eae616c46f77c1f73bdeb3eaf6",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:b12fd793c91be88dcb03f2d95768003b",
+  "text": "Release of valuation allowance.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "prompt_tokens": 839,
+    "total_tokens": 844
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "24f9fae78fdf2b47ac873c7ae8dc89e3907a9e0672668f1a0096dbc6e1f32683",
+  "example_id": "bd53bbd31a083a9da8902139f5ea74c2",
+  "finish": "stop",
+  "input_sha256": "4d1360bcca62302ddfd6f7360ecf752cf11b49632fac96538faa9ca9a8d1411b",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bd53bbd31a083a9da8902139f5ea74c2",
+  "prompt_sha256": "90e0680c8d003b14785c3ba23d5f69085021697720b4fbe607624cdec8bea38c",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] South African Communist Party: It is a partner of the Tripartite Alliance with the African National Congress and the Congress of South African Trade Unions -LRB- COSATU -RRB- and through this it influences the South African government .\n\nClaim: South African Communist Party is incapable of influencing the South African government.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c3d17285942463b74cb24085dc8e0d66b045d312e99985cf570fd7f64e6dd837",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:bd53bbd31a083a9da8902139f5ea74c2",
+  "task_key": "b8f181d049d0cef22614dff19fe2743b96275138d58130dcab057cd1b28265cb",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:36:06.222570+00:00",
+  "tokens_in": 203,
+  "tokens_out": 105,
+  "usage": {
+    "completion_tokens": 105,
+    "neurons": 13.618142127990723,
+    "prompt_tokens": 203,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 308
+  }
+}

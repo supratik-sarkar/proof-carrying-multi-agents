@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "9554653c055166e6734cbd4fd1a07ef4d2ff0ce76bc5f60ee41a7e2c19ce475c",
+  "candidate_text": "Yes—MRI can replace arthroscopy.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "d18b2d8d8d3f0e43efbc148792370abe18939c01671922b0a3574b0ba8cb813d",
+  "example_id": "9465206",
+  "finish": "stop",
+  "input_sha256": "3fc78166e4e0acc6f5ff7e4b9e046e2fb1b0b0b87841a3b534f80740a59ca544",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "9465206",
+  "prompt_sha256": "7046f76bd54554b39b2b7f24bed3711be5226bdd004d56b34b0709622e5bcb98",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: PURPOSE: We investigated the actual role of MRI versus arthroscopy in the detection and characterization of occult bone and/or cartilage injuries in patients with previous musculoskeletal trauma of the knee, pain and severe functional impairment. Occult post-traumatic osteochondral injuries of the knee are trauma-related bone and/or cartilage damage missed at plain radiography. MATERIAL AND METHODS: We retrospectively selected 70 patients (men:women = 7:3; age range: 35 +/- 7 years) with a history of acute musculoskeletal trauma, negative conventional radiographs, pain and limited joint movements. All patients were submitted to conventional radiography, arthroscopy and MRI, the latter with 0.5 T units and T1-weighted SE. T2-weighted GE and FIR sequences with fat suppression. RESULTS AND DISCUSSION: We identified three types of occult post-traumatic injuries by morpho-topographic and signal intensity patterns: bone bruises (no. 25), subchondral (no. 33) and osteochondral (no. 35) injuries. Arthroscopy depicted 45 osteochondral and 19 chondral injuries. A bone bruise was defined as a typical subcortical area of signal loss, with various shapes, on T1-weighted images and of increased signal intensity on T2-weighted and FIR images. The cortical bone and articular cartilage were normal in all cases, while osteochondral injuries exhibited associated bone and cartilage damage with the same abnormal MR signal intensity. Sprain was the mechanism of injury in 52 cases, bruise in 12 and stress in 6. In 52 sprains (30 in valgus), the injury site was the lateral compartment in 92.3% of cases (100% in valgus), associated with meniscal damage in 73% of cases (90% in valgus) and with ligament injury in 90.4% (100% in valgus). In 12 bruises, the injury site was the lateral compartment in 58.3% of cases, the knee cap in 25% and the medial compartment in 16.7%; meniscal damage was associated in 25% of cases and ligament damage in 8.3%. In 6 stress injuries, the injury site was localized in the medial tibial condyle in 80% of cases, while meniscal and ligament tears were absent.\n\nLong answer: After comparing MR with arthroscopic findings and reviewing the available literature, we conclude that arthroscopy permits the direct visualization of even fine articular surface changes but does not depict the subchondral bone, the most frequent site of injury detected with MRI. MRI was a very useful tool in the detection and characterization of the different types of occult bone and/or cartilage injuries and showed a statistically significant correlation between site and distribution of bone and cartilage injuries and between internal damage and trauma mechanisms. Therefore, we believe that MRI can help avoid diagnostic arthroscopy in the patients with a history of post-traumatic pain, acute articular blocks and negative radiographic findings.\n\nQuestion: \"Occult\" posttraumatic lesions of the knee: can magnetic resonance substitute for diagnostic arthroscopy?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "0823b4115f85c97f982ecc7712ac719be852167319bdea59e817a78e26967378",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:9465206",
+  "task_key": "86675d58dcab4a744921e62652696dd170792170bd899680a1d803c3a7f8fc0f",
+  "text": "Yes—MRI can replace arthroscopy.",
+  "timestamp": "2026-09-14T10:36:50.069715+00:00",
+  "tokens_in": 765,
+  "tokens_out": 77,
+  "usage": {
+    "completion_tokens": 77,
+    "neurons": 29.59076690673828,
+    "prompt_tokens": 765,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 842
+  }
+}

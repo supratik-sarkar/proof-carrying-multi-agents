@@ -1,0 +1,70 @@
+{
+  "final_canonical_observations": 2240,
+  "final_cells": 56,
+  "final_datasets": [
+    "fever",
+    "hotpotqa",
+    "pubmedqa",
+    "tatqa",
+    "twowiki",
+    "mind2web",
+    "bfcl_v1",
+    "agentdojo"
+  ],
+  "final_models": [
+    {
+      "api_model_id": "@cf/openai/gpt-oss-120b",
+      "model_id": "gpt-oss-120b",
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/qwen/qwen3.8-27b",
+      "model_id": "qwen3.8-27b",
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "gemini-3.1-flash-lite",
+      "model_id": "gemini-3.1-flash-lite",
+      "provider": "gemini"
+    },
+    {
+      "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+      "model_id": "nemotron-3-120b-a12b",
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+      "model_id": "gemma-4-26b-a4b-it",
+      "provider": "cloudflare"
+    },
+    {
+      "api_model_id": "@cf/zai-org/glm-4.7-flash",
+      "model_id": "glm-4.7-flash",
+      "provider": "cloudflare"
+    }
+  ],
+  "gemini_3_1_final_canonical_observations": 320,
+  "gemini_3_8_final_row_reuse": 0,
+  "gemini_3_8_historical_outputs_preserved": 19,
+  "new_three": {
+    "agentdojo": 280,
+    "bfcl_v1": 280,
+    "canonical_total": 840,
+    "mind2web": 280
+  },
+  "observations_per_cell": 40,
+  "old_five": {
+    "canonical_total": 1400,
+    "fresh_gemini_3_1": 200,
+    "non_gemini_recovery_candidates": 393,
+    "reused_non_gemini_complete": 807
+  },
+  "recovery_increases_scientific_denominator": false,
+  "schema": "PCG_MAS_V3_6_DATASET_PANEL_AMENDMENT_V2",
+  "status": "USER_APPROVED_AND_REVIEWED"
+}

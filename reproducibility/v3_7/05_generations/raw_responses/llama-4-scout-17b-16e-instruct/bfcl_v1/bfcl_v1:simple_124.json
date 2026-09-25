@@ -1,0 +1,41 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ca747c2d7c6282917a3a9fa061c088b0b7a717ce2d90d2fc6b69a9fbb14d0fae",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:simple_124",
+  "prompt_sha256": "ca747c2d7c6282917a3a9fa061c088b0b7a717ce2d90d2fc6b69a9fbb14d0fae",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "d5f3cbdb9dc90e2c6a55a25b82ac2b89372e91df4b27334e1ccbe5063b160baf",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"dataset_A\":[12,24,36],\"dataset_B\":[15,30,45]}",
+        "name": "t_test"
+      },
+      "id": "call_1789640465005",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 26,
+    "neurons": 20.712726593017578,
+    "prompt_tokens": 762,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 788
+  }
+}

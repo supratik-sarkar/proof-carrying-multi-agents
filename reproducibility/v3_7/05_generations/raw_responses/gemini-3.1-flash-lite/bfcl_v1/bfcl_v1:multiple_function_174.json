@@ -1,0 +1,43 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ba036016272b455b4a5206fbdbdf65f3d44c9eeda124b9ecf53641f9aa812b58",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:multiple_function_174",
+  "prompt_sha256": "ba036016272b455b4a5206fbdbdf65f3d44c9eeda124b9ecf53641f9aa812b58",
+  "provider": "gemini",
+  "provider_raw_sha256": "6b74e4abe8193ae6265a0f554ae2754f8b087faaf905f2618d4495e8d85e3611",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIP1ri7b2qCgBH366MF+yVoUU08WhFOUUC3hpOJ7YDblfl2zfj7dyMUyyRnfJJGwUsX3uEHQrz39ZwbH7JLubI6FYcUjMtglU//KxghjVtGn66J1ZVWbx5XEdTOv7YRDAKdyOESANw1d/n1Ig=="
+        }
+      },
+      "function": {
+        "arguments": "{\"team\":\"Manchester United\",\"league\":\"Premier League\"}",
+        "name": "sports_ranking"
+      },
+      "id": "call_1164183",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 24,
+    "prompt_tokens": 292,
+    "total_tokens": 316
+  }
+}

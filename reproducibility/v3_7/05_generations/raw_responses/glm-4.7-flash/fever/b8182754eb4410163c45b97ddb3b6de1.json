@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "dataset_id": "fever",
+  "evidence_sha256": "738a146cd66ced965c6bb994dae6e79c8c9598e11ba69e71812c943199ff23df",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "b8182754eb4410163c45b97ddb3b6de1",
+  "prompt_sha256": "e04f8a6fe201b144dd2f860ae45b291d52ab15ffa436db3ae8f65b7c420a5ec1",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "38834c9a4160fd0294795d7342f9dd45eac8c448eb74ba3e0bbd0991118e143e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "fever:b8182754eb4410163c45b97ddb3b6de1",
+  "text": "SUPPORTS",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 0.9046000000000001,
+    "prompt_tokens": 138,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 142
+  }
+}

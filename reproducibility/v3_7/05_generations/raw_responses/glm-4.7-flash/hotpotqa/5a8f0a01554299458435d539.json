@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "0a72673ede7dbbfe413a101e62a5051fff5bc8e4b0727488bc4302363ccd7ec0",
+  "candidate_text": "Indianapolis",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "84e32bf962064a4e3d15a5cf168a5ee386ad21d3ad9a095619a874011c0f0aa7",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "5a8f0a01554299458435d539",
+  "prompt_sha256": "249be61c88639c0182e559032389d911fd27353a854f19ddad062bcb81fb2d15",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "fbd4abcae5338f7521aba8d8e394e62078069527b04dd185b0600cab42f564b8",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a8f0a01554299458435d539",
+  "text": "Indianapolis",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 5.1637,
+    "prompt_tokens": 919,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 922
+  }
+}

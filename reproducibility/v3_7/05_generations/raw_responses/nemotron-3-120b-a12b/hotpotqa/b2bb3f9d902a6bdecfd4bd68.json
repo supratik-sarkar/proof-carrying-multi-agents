@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "a4e0aa3967f3927d1b17b3690cd91dbcbfef797d337c37c607a29a701c3a4c86",
+  "candidate_text": "\n\nMark Neveldine and Brian Taylor",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "dd36f53aefd795a45b03c986bcefc6fd21da1cb2bfc4430a9596c239cefefeca",
+  "example_id": "5abba4855542993f40c73b68",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "fc31ca8328cabf4f6532b49cc2d3800f121225bccf31af0a2d697938c4e68a22",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5abba4855542993f40c73b68",
+  "prompt_sha256": "5143344b8acd2b116017d9e732e92858763b0073f644c2c1b05e54721efc67b9",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Gamer (film): Gamer is a 2009 American science fiction action film written and directed by Mark Neveldine and Brian Taylor.  The film stars Gerard Butler as a participant in an online game in which participants can control human beings as players, and Logan Lerman as the player who controls him.  Alongside Butler and Lerman, it also stars Michael C. Hall, Ludacris, Amber Valletta, Terry Crews, Alison Lohman, John Leguizamo, and Zoë Bell.\n\n[2] Michael C. Hall: Michael Carlyle Hall (born February 1, 1971) is an American actor, known for his roles as Dexter Morgan, a serial killer and blood spatter analyst, in the Showtime TV Network series \"Dexter\", and as David Fisher in the HBO drama series \"Six Feet Under\".  In 2010, Hall won a Golden Globe Award and a Screen Actors Guild Award for his role in \"Dexter\".\n\n[3] Dexter (TV series): Dexter is an American television crime drama mystery series that aired on Showtime from October 1, 2006, to September 22, 2013.  Set in Miami, the series centers on Dexter Morgan (Michael C. Hall), a forensic technician specializing in blood spatter pattern analysis for the fictional Miami Metro Police Department, who leads a secret parallel life as a vigilante serial killer, hunting down murderers who have slipped through the cracks of the justice system.  The show's first season was derived from the novel \"Darkly Dreaming Dexter\" (2004), the first of the Dexter series novels by Jeff Lindsay.  It was adapted for television by screenwriter James Manos, Jr., who wrote the first episode.  Subsequent seasons evolved independently of Lindsay's works.\n\n[4] List of Dexter episodes: \"Dexter\" is an American television drama that was broadcast on the premium cable channel Showtime from October 1, 2006 to September 22, 2013.  A total of 96 episodes of \"Dexter\" were broadcast over eight seasons.  The series is based on characters created by Jeff Lindsay for his \"Dexter\" series of novels.  The series follows the life of Dexter Morgan (Michael C. Hall), a Miami Metro Police Department blood pattern analyst with a double life.  While investigating murders in the homicide division, Dexter hunts and kills murderers and criminals who have escaped the justice system.  Although the first season is based on the events of \"Darkly Dreaming Dexter\", the series' subsequent seasons do not follow the novels in the series.  Departing from the narrative of Lindsay's second Dexter novel \"Dearly Devoted Dexter\", the show's writer Daniel Cerone said that the writers \"didn't see the opportunity in the second book\" to adapt it.\n\nQuestion: Who were the directors of the 2009 American science fiction film starring the actor who played Dexter Morgan in the Showtime TV Network series \"Dexter\"?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "61dbd610e94029a464f8070f5cdecf4f593a8d6461932761620bcad9094bb3c3",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5abba4855542993f40c73b68",
+  "task_key": "2a94977645653b8874c4c5c6ae80c5395ab100a86ff63ac843d366389848d592",
+  "text": "\n\nMark Neveldine and Brian Taylor",
+  "timestamp": "2026-09-15T09:35:59.634171+00:00",
+  "tokens_in": 710,
+  "tokens_out": 185,
+  "usage": {
+    "completion_tokens": 185,
+    "neurons": 57.11,
+    "prompt_tokens": 710,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 895
+  }
+}

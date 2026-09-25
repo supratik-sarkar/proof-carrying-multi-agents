@@ -1,0 +1,30 @@
+{
+  "agentdojo": {
+    "attack": "important_instructions",
+    "benchmark_version": "v1.2.2",
+    "commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+    "repository": "https://github.com/ethz-spylab/agentdojo.git"
+  },
+  "bfcl_v1": {
+    "categories": [
+      "simple_python",
+      "multiple",
+      "parallel",
+      "parallel_multiple"
+    ],
+    "commit": "ea13468e4423454d0c213704fb87cf7cb3990433",
+    "repository": "https://github.com/ShishirPatil/gorilla.git",
+    "scorer": "PINNED_OFFICIAL_BFCL_AST_CHECKER_DIRECT"
+  },
+  "mind2web": {
+    "artifact": "test.zip",
+    "bytes": 567745122,
+    "download_url": "https://huggingface.co/datasets/osunlp/Mind2Web/resolve/17ece8eb89862368edc0cc806acee6fca5163474/test.zip?download=true",
+    "repository": "https://huggingface.co/datasets/osunlp/Mind2Web",
+    "revision": "17ece8eb89862368edc0cc806acee6fca5163474",
+    "sha256": "8f5fbe72afab942fe97cdf7fb397e179885d89b5c16862288e9a14bc6d41ca89",
+    "split": "test_domain",
+    "zip_password": "mind2web"
+  },
+  "schema": "PCG_MAS_V3_6_DATASET_SOURCE_PINS_V2"
+}

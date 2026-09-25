@@ -1,0 +1,613 @@
+{
+  "authoritative_fit_prepared_sha256": "2354c9298fc353f5ca4aaa3ade84a7694502f63a54d87b65f64b56051707e895",
+  "generations_expected": 700,
+  "manifest_file": "artifacts/v3_6/author_v5/NATURAL_FUSION_FIT_MANIFEST.json",
+  "manifest_sha256": "c4555cb8797562b894a29cdb1e41e8fe9c9414b0a0e66fb2aebc81a569e74524",
+  "records": [
+    {
+      "dataset": "fever",
+      "evidence_sha256": "79a9ed1fb66ba128c29be50b5c0a4af7577ba54a912167d2f0e27ea5e0bf5fdc",
+      "example_id": "0cb4dda42bb7410bc1bf6aadb5ff0442",
+      "prompt_sha256": "de6b49fe9c2675bce2d4628e6e0d8f5f81be614319c7633b26962ca67090b7aa"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "a5cfbad39acb415bcc34975532f9d1c712bff60e8605b4d10c2aeb570fb2b5f6",
+      "example_id": "19dcbcf426e8567bf095b29d27371df8",
+      "prompt_sha256": "8046139bc1c862ce5fbec80bf76119daa3555aaedf3485eda449b4c523fc0efe"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "4765f6ed00eb33abe243ecc96db58c6998c8765056a889010588a88f7757bf12",
+      "example_id": "27b76936692698cd053ca2fe5c8d70ae",
+      "prompt_sha256": "effadead36da681bad03843546136a8ead5c626324815fc2ef14d217021b79eb"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "e020359812da59fd78f86d101be25021db9d1e3aae3ecd584d83ce75da2de949",
+      "example_id": "5298d11adcaa56464c820198a66c5953",
+      "prompt_sha256": "39084253ff9697b54bcac385a04a5d9c16229c6736faffca94caf20a717a801a"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "6a90cfae50b996cab79b814e0eaf1c5666604e2fc6ad93ee389db7d3148de1d8",
+      "example_id": "540d6d8173794de1aeb6e1afa50e13b3",
+      "prompt_sha256": "27f515433e4ad6f17497884a5b7e2c976c7374c6b64ed2cb3260c5cc8632674b"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "4a7f8f9fec4d8a81e4eeb2db90f0300fb544b7e6c07b4a0a6ab30d59938a3821",
+      "example_id": "55511a7c60d8b264de2bf77af24c5c52",
+      "prompt_sha256": "9c05916b98b17108fe4ada1ef143103849973360a788f2c6187882be381a69e4"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "3b693e9e55051dc14011faa45b003910ed075967808eb651c3fbf71ccd1ca3bf",
+      "example_id": "5ba52f6136eedce54be9251164a59c14",
+      "prompt_sha256": "4c27c56a07e4e835cbc6cf4bd8493be6c2f1daf00953ade5fd848f54f104d93b"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "d4eb7d520e27638ed73119af205470a712d766c38163c384fdddbfac5af85303",
+      "example_id": "5be765ac07c581a74d8b2686eacd5602",
+      "prompt_sha256": "9679a9fbb88659f3a410843877b58a5e185c0867a3fe47dbd2582a077622eceb"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "5c4b9ab7f7cf6144e94c11ef94280b24e4079256c8ff8917bd15ca1b117ed0a0",
+      "example_id": "68b360a51e5295a5192324eb60d716ef",
+      "prompt_sha256": "6f3ea6ae771904b8f1f309ecedb2c90f841387f5a8cd820894c84355c10afd98"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "2f26252c27d033135c306ba7552b1db2d2cd7df8cc4cd1fd9bc6fccdf1e80aa9",
+      "example_id": "7151e6bb2156e0cd9ae593c97c91408c",
+      "prompt_sha256": "146b4cefa32c9ad1080c7cdac87ac1e4b770cf4f5a29c7cfece67558948cf337"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "cb66300ae63f54017625b7d97612d8827634d0bdd5a8f166cdc5b01fb0a66201",
+      "example_id": "8b1826bc9b5ba28ba61400303f6c086a",
+      "prompt_sha256": "685064034268a665329a24e3a3d7047da599144e911505a65fc96c957583f452"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "82be62c3930ed99a28ab9c7126b16cddbf4a69c5b17b5064ea1b1931f35d09c6",
+      "example_id": "954d147be405cfc5bd6ea62c5b5a1768",
+      "prompt_sha256": "68c2a2be36e46b9247fc1b0140f33fc15ec11fa8434b2342aa1e9b3468fe68c7"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "6f585d250e353951a21dbdda9a2536ede7e1c160754bce61aaa346569171cfd8",
+      "example_id": "99766f2ed0b148574a614009715cf012",
+      "prompt_sha256": "8c2cd2610094faeffb260d9c545646fc378ebd15f373591a1e41a9d77c15b80a"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "c49b24d930f94383be52f804941c26cf7b2aaaf98c69fc5edb2c8640bfc629a5",
+      "example_id": "ad8d5ed8f79411fe7b852501e1f15495",
+      "prompt_sha256": "3e309b9b02a027b7d9e156c01646f11c03444e24d10b771ebd2035e693132293"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "a06e8151edf3841217d73569f73a85b6d69e075da6879f4e4314a4c96084cdd8",
+      "example_id": "b7ef817a7866389d9e84df22b3b4cd0c",
+      "prompt_sha256": "6134d3f53a6f68ace8689f4fa4b0602375eece4c58602f3101c1bb5969d3c354"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "2b737685242befff60c9c10a28d52064bedf6d2eb647ef6c05d53e1e4a8ba784",
+      "example_id": "b94b6b08f2d2ab5a857760756e09cda4",
+      "prompt_sha256": "8c5613430fc63b60a8ff4fbd0af36b84aa7c10e28cdc1bbc6322c9c78d82d29b"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "9bbb96f6ce914c58cea0831034a30d2e892cd2463443a70f087c8b7d25e304cd",
+      "example_id": "c2d71eb1601668661343cb5a513259a7",
+      "prompt_sha256": "bbd3f8bbe8e4554dcd0d9f90e8aecf162c090f83d749f35fbfa6ff27d2d0fd27"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "e3b74acf1bec8b549dddc9a2a038be4b7a8929e26567cdb08c4314b563c726e3",
+      "example_id": "c4e50cfc13f7d83e9c7154009b622806",
+      "prompt_sha256": "3e61f7d66be27223e58fff877143a65b8f28716d5ce77d7a62fbcfe78b3a4f7a"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "5aadf34892ebb1bac9541e21c2450340613710ce4575d1bb2e8d76e43e6a5bdd",
+      "example_id": "cfeafb11cce24c111273cc52faf0a37d",
+      "prompt_sha256": "d22df52596d329e8e7a524bab6f6998b7af4f68dd5b7cc3a626905a0d484d8e1"
+    },
+    {
+      "dataset": "fever",
+      "evidence_sha256": "ccef588a060853105bf1b02f294f7d81025460e25b0991a1f3a0aae26d72582d",
+      "example_id": "eb7a0368807a4987f2c1065518680830",
+      "prompt_sha256": "19d1f7357af1e4f7660e006f206ca9d8d1c72e17e894d942dee00cfbc438de7d"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "10afc00ae035152198d0b70e5dad887c1b953d3786c0c2653623a88020097bb4",
+      "example_id": "5a714f6f5542994082a3e7b3",
+      "prompt_sha256": "d91aa0211ca1c8362c5e64e31ae321784e80abd9d20f8975de6d0a4353492e30"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "4d6836673d3f7213f1533795330cd31b7df5bf1a9ee69de809a2241a34d8ee5b",
+      "example_id": "5a77767a55429967ab10519b",
+      "prompt_sha256": "74dee52173b1f053c5ffae76bddcb5d00fe58742051b4d52022e4d8b61ddc49b"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "26b94a94bd53a63955103c9f31256ca333c5d32b9e9d30b4a66523bf6564319b",
+      "example_id": "5a79fe3b5542994f819ef119",
+      "prompt_sha256": "1b88135bf16b92adf40b682c5d604de4e01fffd27115db878e67d654a3fce14c"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "5703031142f87cbf565bee8a09d33eb7e6c2d005c49c85ad6aa051abe55dee4e",
+      "example_id": "5a7bc5f255429927d897c03e",
+      "prompt_sha256": "c71c3d6c8aaa3b0852f92644b8435cf8fa9d45f2f389df15ca60bfaad0e2a653"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "1aae80f1b15638ccb849a275efb9137d95066e0f209a30dd6f7944025672e31b",
+      "example_id": "5a840a9e5542992ef85e2397",
+      "prompt_sha256": "3ec046300b48fd1897c285e5187d19a3f26377ee03c5b9999f635965a2ba7601"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "df1f48dc7dae1e842f2cbc5d1f26b0b99915ecf33eedbb40b0212808ac218654",
+      "example_id": "5a8ad8305542992d82986f9d",
+      "prompt_sha256": "465fa5ae5bfac98dc2621d11479b99914e5b05cb75d43d77482ffd90c3f5b302"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "7cc8dff7de024be3c0d1807c83d0395b2fa86792b4e9619831e27a2f9c6b03ca",
+      "example_id": "5a906a685542990a9849362e",
+      "prompt_sha256": "f688cf76fbb096a3b084af257d46fc77cb4046f1e21c81584ae612cc6103d6dd"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "4f20016a4bd80f05fbc4bf97dcf6e618fdcd0d72e1805a2ce2e082ffbcb16d2c",
+      "example_id": "5ab3cc395542992ade7c6e9f",
+      "prompt_sha256": "e6341a63b49a9d930b7c78d73b11d9d2d28b4a8946c727f9350b76d0880a85bb"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "7c45ab80947f33535afc37b33d4ae1e023e8c4036220608074e6ec562a32a1c9",
+      "example_id": "5ab56e32554299637185c594",
+      "prompt_sha256": "7b4b87704e5d1e658b3afc14a76e2fea7e9be50e88e1e66d01318760b2a912cb"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "f4a3c2356deaa5da1f8d70b664115c0ef7dbf29e52031e83c4e2d4b2cee829fb",
+      "example_id": "5ab6fcf55542991d32223718",
+      "prompt_sha256": "34d5ee2cef2b0523b6e6f9087f27c33c4e23cd3b3717ae10c7862db20db9af43"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "4e614181359478b03a3e7a97148adc2bae261cf61601c8419dd910593a9b8ad2",
+      "example_id": "5ab802085542990e739ec7ca",
+      "prompt_sha256": "ea672e3d8561333ef659bc0427f240b444ed5155c29aad58e0c0e9fd9d9e4c07"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "006af4159298432b4746b2e1f9784d57f10abd651fe0d1f1513daf28e274e1f5",
+      "example_id": "5abab36455429955dce3eed1",
+      "prompt_sha256": "ef55050bdf2f578b02bae9a728773e5f878c4187a2361f5d3938746f7359e8a6"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "2ef534734c8d242575b1af690fa058d487974dbf1f38410c409b191167e08e3f",
+      "example_id": "5abaee665542992ccd8e7e5f",
+      "prompt_sha256": "30c077cc28a6c49b0869cfe79d72baeafeeb66114d7129a5ebaa3e639d4d9757"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "d06f7afa5cf4e6cb38cb434bfdd33b72e9d530b638e71cc7112aa72bb17fbc42",
+      "example_id": "5abcf84d55429959677d6b86",
+      "prompt_sha256": "aeb2880a57cabbc79cffdbd620bc7b942ee2f3b88cb01f96819c0a7090e0db25"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "7cb6fe4213af4f20ad55aa63a96d34bab142cf4c5a304074fcf6e4a69f6f934a",
+      "example_id": "5ac05e035542992a796decf7",
+      "prompt_sha256": "cd25b1fae591d3067870f9062f07b33e5a57eb604a4b5a24c0fbf7de5c9f3153"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "d898c41b718fe3d320e02d417df58eed07ee479efdede155a0b4799249cc6164",
+      "example_id": "5ac406c155429919431738fc",
+      "prompt_sha256": "66e49bcb9a33f5aecd15b6483181e1320345b07abc1d9e9ef02df59e4f21ac3f"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "c8b2b3574684d198a5cf035a7a2d389077adf927f38a69f7df364b174893cf20",
+      "example_id": "5addfe1c5542995b365fabaf",
+      "prompt_sha256": "58694d97ec3275118f7fd6de075b7d040929ee871cd18e61fcc825704ec97cfc"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "0e72e53a6a0db6c587734324031a31c3a6406cc6e224481ac3630d2bf7f668a7",
+      "example_id": "5adf69055542995534e8c7a4",
+      "prompt_sha256": "97efe57c591b1b3a90171a85b8c8ff8411190afef917755312a21abf19e99618"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "e8190eac58b9745c615c537213497de66aff6f0bebf51d827fabd790e678b724",
+      "example_id": "5ae0b0af55429945ae959424",
+      "prompt_sha256": "7e5c25a61bd07af6eed45f72363a86195d1c322d38413a8406f79d1e07599138"
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_sha256": "b76e47dcfb1706896ff07a225d14684a034521dcc615e7e00b577bdeff25f058",
+      "example_id": "5ae2f5b955429928c423957e",
+      "prompt_sha256": "db7051f2e8117a2d0a72e5b22c90d1573f68722860f7af6eba387172510d6650"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "7b73b467d1a1d994a175a6e7eaa0a87646c2e695f24a81e7f2e0aae28ccc6dbb",
+      "example_id": "11955750",
+      "prompt_sha256": "8be979b0c430efe2c39919d596f81d2d2c7bd29d42ef49a85c0c72708fdc3f85"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "6700b92c6e39c5465a6dfac87904a5c96f8185aca08bc0d8c8ba382b50641476",
+      "example_id": "12442934",
+      "prompt_sha256": "e64d6a17340f1661b258ab3a706e2353c6e13c83207d58db9eb7015a29538ba5"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "ca7859a7b84695e9d0db08f29025040c22e83dd44e698c8aff69b11d7b999b48",
+      "example_id": "12765819",
+      "prompt_sha256": "8350210cadb12da02f907b827d1396e7a5049d03b96ce5a0c7d976d477e21ff9"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "22f5432c0dbf2dbfb2920238199ee621e41609d45d70582a381a67779d1790e9",
+      "example_id": "15943725",
+      "prompt_sha256": "73dd7090e6b67ba39dfd3ef97cb0be171cac429d85a42b7e68dfd945c3d213d1"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "663d33738dd2899de98cfdd160785d5632999986eaf68db1134773baa79b9c47",
+      "example_id": "18403944",
+      "prompt_sha256": "2e5b69c10de54439a66fed7c01c71f0c0e82efd35b33db00003d75ec72af46ef"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "df3997581ea4f87e3f5ab85faea657bed8e708229fac1fd96cdfaa1f0e51e412",
+      "example_id": "18799291",
+      "prompt_sha256": "fd0da96e8db98b480f50a75a3084ec36b5bf99c4d54046cc8f0afbccfcd25f54"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "4f3129eeff86afa8d1de2c967efb8e302bc7f2793fafe384635f3addf7aff7da",
+      "example_id": "19106867",
+      "prompt_sha256": "57b69453af298753fc41f1e741ac2068144936c2d3cad8269890e1cfb10d00d5"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "ffeccc3722071eaff65ec37141ff119ffeb550de12b69ecf45d9c8a10063eafc",
+      "example_id": "21550158",
+      "prompt_sha256": "d4b7cb8f78de8c6163ae06efca3d202d6668d4d018f788aa898d10685e7ec3f9"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "8c81683ac316d78b0e4958086b7d0cc2e79211a49cd48b28da47901e96517162",
+      "example_id": "22382608",
+      "prompt_sha256": "87d00386b00eac82adf23e44b663fe99f2311864552e55079541f754aacc1dab"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "10b86cef01ee54f9f680e9846dc67691d422c3cc992eb02ef2cddd4851ff4799",
+      "example_id": "23052500",
+      "prompt_sha256": "802b044064c75fa954f96a9a0a4c6444b416d46dbe5d2292cf17b1265ee29250"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "e9bc834edfe5ac8207cf5e0ca6a197930ca6201107624282ad85a9da8d819926",
+      "example_id": "23414523",
+      "prompt_sha256": "01c64b5cb631bd7a67c8c20181d48af22549f0b44b97af1a0f41f4b18d6bdd55"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "b2db1a0ca4cfa1f03f30e6c42b338c7bebd63d3cb5c0b81f67e8d45b4136949f",
+      "example_id": "24061619",
+      "prompt_sha256": "6b8660d70c5e9b1f5cd059e22f01e544db9968af32aad6f7bc8676144b9cfba9"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "b5b630d148bdf6dc4eebcdcf5de255b2089f5f1bc2b936e3c8def19d7937e0e9",
+      "example_id": "24245816",
+      "prompt_sha256": "8925d3116a45047dd8db91495eb03c1a69863528d49601a01e7c53863b9f9965"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "f981411f003da511d506808173a1045e510112643e56e5f36c95698ee13b9b63",
+      "example_id": "24606627",
+      "prompt_sha256": "de79b1d3e17ee6b6a595333e5b576ceb4fe395aba84da6641b00ca5d22df2879"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "d758b95c5bcf70980d9dc622c0eb27e6f86c4fd80ee2df763e23ce20bd190492",
+      "example_id": "25779009",
+      "prompt_sha256": "90d2ea2f4510f1a668d2800105884b1f1385ad7446d23d4f27924fb129ab474d"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "296ecba223decb68c4b3b20f612998adfd60b51c5439df6c072c8119a7a037a3",
+      "example_id": "26556589",
+      "prompt_sha256": "d16726c7ec7a064f72cdb75a3f3f2c4e5a25634bd363a2d0dbbf8ee69a271b09"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "11894f2a646b25126a2630ab21f42ce4d5a70c99476466a6d63361a14677b945",
+      "example_id": "27456836",
+      "prompt_sha256": "df54cf01febc0944551218f723ad03deeb4f9b4b167df89d92191bb8ff38ff10"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "c60fc195f1d5505bbd6329eb4de853831ba3af1b636eac5ae317827d33765b19",
+      "example_id": "28027677",
+      "prompt_sha256": "46e561fb04d895a3a0b7899a84e844d4e4051479d977ddaea010798deb9e9e1a"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "de94fbdb9e51074858080492ce9cf166b7d83e523e066044f326aecf66c87880",
+      "example_id": "28359277",
+      "prompt_sha256": "1105b80c001b8706dcebb989a7a34566813879cafba410555ddac21cd6ca4519"
+    },
+    {
+      "dataset": "pubmedqa",
+      "evidence_sha256": "295470cb342a92ab8962b020ee9bd307d1bbb55620e421723c15b026721fc949",
+      "example_id": "9645785",
+      "prompt_sha256": "69e978e1a1fe44a66256f456a4e54b0ecb71105e68b5270b34e88a24d86ca42f"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "db6d3c9a9ced279c52fcf175b64adb710f23fc0d0576ce9015495be8a81c8903",
+      "example_id": "17bb4291a76f679e93cc5e59a8ed72e7",
+      "prompt_sha256": "21369faf08e437a043f937efa610131df5b2267701ac056b534248bc05714254"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "7bb2470db5a7862f8da0bfbae6622e6ad8160958ad767aff7a014983f74f58b3",
+      "example_id": "1e21163099e89001bca30b9ce59d6a34",
+      "prompt_sha256": "b14040c79c54741a8d3dbc5f2154d6ff2cfbfa13708c5af90229540ffce49c5f"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "3b81de5853eb882d0bf7b268c5f128a2c59f984a87aa71ea0af3d3f86047d10c",
+      "example_id": "3550c8a7b8169ea69b73939da439370f",
+      "prompt_sha256": "1bb6c820881830e93bf79b56355cad9ae272a3bfc2962445cc4fba87350cec77"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "49fa0c2409782a3f5720cc281e6a38d9adde3a26039c40c866bf22514be94e63",
+      "example_id": "42ba99e485a67a2f515cfe4d6b6ae4f5",
+      "prompt_sha256": "90bd06fa467dc14735396cf8e62a2f5f3ad74a87b508de7a9d1b9bb9fca7a6fb"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "941dce28fe303f9dc017b071d73cb5521b2416985215a4bd36425b794d7b911b",
+      "example_id": "5443b9c30b4e6ab6df3d63499e2b87a2",
+      "prompt_sha256": "e5383a1343c5526ac2d3e2f85a729e696c7aec7f2bd8043eb865c4eb00349e5a"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "a6f709f77c306565499d6803c50da282f45110995b153b71e2a5c6c70962e7e4",
+      "example_id": "55f69b42bc6bebfe50946d8cfc428734",
+      "prompt_sha256": "644e90e26876fcae85214c34603ffc1840d9dbc1025604ddbc2dc4873c61347a"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "6b168e9f6eb90e9076e35c9bf33d0afe49b101cf8e974e48e21d37c943f2e171",
+      "example_id": "6fe90ab74b0b05a50e131e9dc5dc6b60",
+      "prompt_sha256": "8ddb59dd2351edb83cd7da8410b076b74b9692b57d4e3f1bd2f7fc6e35c3e3b4"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "b5d0d6bc0d0ae7311a99d9bd8d41a953e88b26a0b93738149b8ec27293241055",
+      "example_id": "747f23c14430e46e231f7672ad8e6078",
+      "prompt_sha256": "f7ccaa8d81a473ffbe72dd5192a2a5c56e3d0d1ac81e91c39073d6281c4405fb"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "0acab0961244c050fe5738a35748ce12dfc21e16a0b79707c27178a7cf3ec330",
+      "example_id": "871af62021e2bd9a6ff15f9b1ba26d79",
+      "prompt_sha256": "e11690826465dde871d66c62e1c15e3799c6c8f091bf3c75271ea116e461e65e"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "dfa62eb2828bea72894a335198a5166602099204454b48c0a5f2a7050e5e4b51",
+      "example_id": "9ad834f7abe94ad8d0da0d20eff566ea",
+      "prompt_sha256": "a8d41e5ee91eb807f259bf6d42503d77c668e7a8f502a63c4b7ac2b955de8db9"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "69f220e9c6680632c8c2b89107c83392989809ce0526d987a694bafad4f44b39",
+      "example_id": "9d14a6ca1839396a5951a3003f06a058",
+      "prompt_sha256": "1015c843fd3eb5bd48883cba00939291adc8889179e61cf8f7f0efb8fbe44b08"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "3fa94b56625bde5d722362055ee9b4176afcaac976e975aec4e8dcd84c4aabc9",
+      "example_id": "a23e7581f99201d7a2d67b2b2dad2ed8",
+      "prompt_sha256": "c3e85a2888915b27bd8530e303f9a7edff47dda5fdbfafc96a9d28c69ef788d6"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "b39394e7c06fcb651f8e980e5a3cbb6a6bdb38d589e97825f69edb0c56980eab",
+      "example_id": "a3ca1acfa5687eec00ab3bbc3660b0fc",
+      "prompt_sha256": "b32ec17789ab72b240599c2529000243406a303d8364f58aecaae671f804c774"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "571a9939247f92dec75c301554d29ede347c62cee8607ad6b1279707722cb29b",
+      "example_id": "abc87ff0305696fe80f33e5d26818d76",
+      "prompt_sha256": "ae651e86d5519934501fecb0f037bedf43d547b190211fce5f069d21997d5ad5"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "e8d102a9d26198a9077df1a3d8b6b85a262a010656bdb956760ca439d0b7bd31",
+      "example_id": "b889a419062af9968a46e6d45255e648",
+      "prompt_sha256": "fc0b518f757876ae98cb1b71c323634ef637f356f5a6f9d00d3febfe76d145b5"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "39d3a563de1ecec507e353c9f0aabfed910dfaf08f652d9ba2945c5c72ea87b1",
+      "example_id": "ccfffb87fd692319c799c3c35580cb71",
+      "prompt_sha256": "22d171f690f837c85c76c03f1019873356419d0547cd4bdcde5d472070e77796"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "ba734bd7ffcca03a93674de4fc3636f45381a38d75d44368087a693700ec076d",
+      "example_id": "e7e3b2b14946d8d0eb55d04ffc175d34",
+      "prompt_sha256": "6f7eb0b778f6ab256c710545d7f6a49dfcf624e00441ef3533882ad9f644601a"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "c80797b233c9191659309bb7d4c6a2259cd3592983052a4f87052948f55a4455",
+      "example_id": "ef0eca56ee563b50849f725cce0a585e",
+      "prompt_sha256": "1e9451c9f3d7683c9e4c14925ba72556e50b35d1ece1f96afe84a2e7b747de34"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "a6ca3b792104f6a2faa51a66c2cd2165b42ef64fae3e33481741db366cd67d62",
+      "example_id": "f7386be495bb2f55a358d69b373daeba",
+      "prompt_sha256": "2fa5165efbde85a7ffbd9db66c76f8a4a6209e4edb6478a60b70dc449c752296"
+    },
+    {
+      "dataset": "tatqa",
+      "evidence_sha256": "356f4f8d42fd74ac8b3565b5ec3e6a9dd175e3bbf4efcf3d707d2112fcf15153",
+      "example_id": "fde2593bf36a6288ab56ac538b826209",
+      "prompt_sha256": "542a04defafd43ffe3db82a57ca6e0620c01e1ad28fa8f7409994000e9994212"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "abcde670da18b14e0388ed6e5f12cf53d359e9ac9f47873b0a042fa7e83e29ce",
+      "example_id": "262fa5ee0bdc11eba7f7acde48001122",
+      "prompt_sha256": "8e6e808d24e800203a3fd03feb41b468bf8b829665ff9d2929f2464bc9af9899"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "79770ebde3314356f0bb99aabb11ef88d0720a6d05a03a2ad1485c28c4794f9b",
+      "example_id": "36a793e40bde11eba7f7acde48001122",
+      "prompt_sha256": "06ee6351d021fc3efc40ffbd43ebf23ba18c5d530bb4b830354ee2929af9a454"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "4281380bf119b2812b6529aec84472313491709747b24e9a8d668adcc99c271e",
+      "example_id": "3844bfc4089611ebbd76ac1f6bf848b6",
+      "prompt_sha256": "8c8d53399d47553ac4c4da17af8822f37dc6acbc4b52e124712e9a1733ad25ae"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "734cebe8db873a230a6556531b4dcb515356a65a087731f04a70de4d20f703c2",
+      "example_id": "391edf020bb011ebab90acde48001122",
+      "prompt_sha256": "a6bfcc5709dd1743b914120fdf72c5c7db07735a85af80e307388ef6a5bd9354"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "47c6aec53d2b5cbddf92b89b9aa75a189177ac54d45d6ddf6be22967ffbd1eb8",
+      "example_id": "3b9eb6a00bdb11eba7f7acde48001122",
+      "prompt_sha256": "ac638cda0e9b7e148236e97212a4b32371c45ce425fcd619dd4ddf7dcd51056e"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "5c328f40783069ce09fd00c53b3b2006f36754ee0bd0bcf939d5b82ea2be292e",
+      "example_id": "3f3cd37408e711ebbda5ac1f6bf848b6",
+      "prompt_sha256": "995077506caeccdebacd638f931c53454e9baa00fd565e8b8fa5116703e36b98"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "454729b541dcb7b4e470bf46ff3c78fd586cbe56655f388e55c2ac5d63af6753",
+      "example_id": "4175aadc0bdd11eba7f7acde48001122",
+      "prompt_sha256": "ed6b2f9c8a0562398d0fa9b08b1762c0df369fbbe2ad3c73d2b1d7e89f8d94c8"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "2a7074033cafc4fdb1965e271c4b1ed404631d1ee95cd96149c009bdb5a958ee",
+      "example_id": "52d807db08c611ebbd90ac1f6bf848b6",
+      "prompt_sha256": "dae87669f3b187c7a425c87002d62b090bbe07e6d45fd463f7496415fd771f25"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "7adbedcd59c7d31bf252a50bccbdf26fd870377ad232817e5e1df228525bb0ce",
+      "example_id": "567300700bdc11eba7f7acde48001122",
+      "prompt_sha256": "2d18320aff6fdaae4722b177a104bf4b075b7dc1de46204f090664d0bceb34dd"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "5456ebceb1809b4ba8e7818df62a725a85177c702c7200881acc98f769da501c",
+      "example_id": "90b5ca2c0bd911eba7f7acde48001122",
+      "prompt_sha256": "c2b82a4861a4d39d4dc11283290a56e1731928d24e4a331e7bb6a1187559b4e2"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "64cd553aa53adafb7fb20ee1e480c27cf9a3ea4bfcd0920b4e0a379ded3b70ba",
+      "example_id": "92e4c1960bdd11eba7f7acde48001122",
+      "prompt_sha256": "ce25b37d7594f187f18c7f3d981672bb50f34baafd9138228de824bc3e17a4f8"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "de2dfadb8ac90b98069dd067a957594156cfe46078ebb55c9c5e84a5585cebef",
+      "example_id": "98f909d40bdd11eba7f7acde48001122",
+      "prompt_sha256": "2b778c55bb4780f655cdb2437584762f3e8ce30269bbe78686e3d4bce6da52a7"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "15f94581b5cdf0a183fae914a1eaf08d07e73d319a9a67a8a9f0815df456dfd9",
+      "example_id": "a0c452c0088d11ebbd70ac1f6bf848b6",
+      "prompt_sha256": "3f351411f6b0759df7bec95e7aed8c270b3c84ab3a67d2bc98759b2743847832"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "5a573422e1a08a12dcf2941194e37a9859432b1b3748d5c1b0b563f3efb01750",
+      "example_id": "b65674d40bd911eba7f7acde48001122",
+      "prompt_sha256": "6351cafc7bcfdc07b15a88d75a0cf6890e302f76eefff14232fbf1b45cf7956e"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "b3f7987f1a02871ece0e2ff4b935402ae4912e5b25126e7d5d9131d9c8e91812",
+      "example_id": "c07f9b1a08ab11ebbd82ac1f6bf848b6",
+      "prompt_sha256": "d2f326c1f9371752e9ed9bef7958587fe057629c1c8de873505341a8e9ebc423"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "bdf7459af7c712b19918699c4f65259f631e3fde2a4aeda9bf0f3e5d7c3c6d58",
+      "example_id": "d39db00008c711ebbd91ac1f6bf848b6",
+      "prompt_sha256": "e6deeb0f2e68b757d5487466ae03893326a32fcc269287762f70689d2696275d"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "f683983dda8472d5bb98df98c3d38e71508597d65e07ad47b912457813f32ad5",
+      "example_id": "da8b3d7708fc11ebbdadac1f6bf848b6",
+      "prompt_sha256": "f08936edb9f490beb112f78da8932023f951ec19c42c322b9ad3e0e70c6f4531"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "076b2d28b18e08bee9401614f26f07764fefc794bdc7177fde5c826426b18858",
+      "example_id": "ebd650640bae11ebab90acde48001122",
+      "prompt_sha256": "2e20cc9eec802a3c51be25fbfd1b8df051c6d89e5bc980f2b5f420cbe60a4d75"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "a6f232a0214114fa1b88b8b2d84a77587e8ed7059d3a2af22f04c385fc4d4883",
+      "example_id": "fb65a4c40bdd11eba7f7acde48001122",
+      "prompt_sha256": "a6bd0e78e101f8b0da0a4696a8f318ea9b3e4559b221d2f1a433a2b0972cf921"
+    },
+    {
+      "dataset": "twowiki",
+      "evidence_sha256": "777697c0cf0f1587b379db449cd1adaf97f4ab52db21503c971bb1afcd6895a5",
+      "example_id": "fb9a9b0c089011ebbd72ac1f6bf848b6",
+      "prompt_sha256": "71d3fbe743f4d1a322d1ccdf6df9f8162211b8952cb414e219c838491979f652"
+    }
+  ],
+  "records_count": 100,
+  "schema": "PCG_MAS_V3_6_FIT_PREPARATION_AUTHORITY_V2",
+  "source_examples_count": 100,
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:49:20.024664+00:00"
+}

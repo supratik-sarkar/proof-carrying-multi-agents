@@ -17,17 +17,6 @@ def redact(headers: Dict[str, str]) -> Dict[str, str]:
             for k, v in headers.items()}
 
 
-API_FIRST_SEVEN = {
-    "openai": {"model_id": "gpt-5.6-sol", "api_key_env": "OPENAI_API_KEY"},
-    "anthropic": {"model_id": "claude-opus-5", "api_key_env": "ANTHROPIC_API_KEY"},
-    "deepseek": {"model_id": "deepseek-v4-pro", "api_key_env": "DEEPSEEK_API_KEY"},
-    "gemini": {"model_id": "gemini-3.1-pro-preview", "api_key_env": "GEMINI_API_KEY"},
-    "xai": {"model_id": "grok-4.6", "api_key_env": "XAI_API_KEY"},
-    "mistral": {"model_id": "mistral-medium-3-5", "api_key_env": "MISTRAL_API_KEY"},
-    "cohere": {"model_id": "command-a-plus-05-2026", "api_key_env": "COHERE_API_KEY"},
-}
-
-
 class HostedProvider:
     route = "hosted_provider"
 
@@ -55,10 +44,3 @@ class HostedProvider:
         if pin is None or pout is None:
             return None
         return tokens_in / 1000 * pin + tokens_out / 1000 * pout
-
-
-def get_api_provider(name: str, **kw) -> HostedProvider:
-    if name not in API_FIRST_SEVEN:
-        raise ValueError(f"Unknown API provider {name!r}. Available: {list(API_FIRST_SEVEN.keys())}")
-    cfg = API_FIRST_SEVEN[name]
-    return HostedProvider(model_id=cfg["model_id"], api_key_env=cfg["api_key_env"], **kw)

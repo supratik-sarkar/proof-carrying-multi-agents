@@ -1,0 +1,41 @@
+{
+ "err": {
+  "body": {
+   "error": {
+    "message": "rate limit"
+   }
+  },
+  "status": 429
+ },
+ "ok": {
+  "choices": [
+   {
+    "finish_reason": "tool_calls",
+    "message": {
+     "content": "recorded openai answer",
+     "tool_calls": [
+      {
+       "function": {
+        "arguments": "{\"q\":\"policy\"}",
+        "name": "lookup"
+       }
+      }
+     ]
+    }
+   }
+  ],
+  "id": "chatcmpl-REC1",
+  "model": "gpt-x-2026-01",
+  "system_fingerprint": "fp_rec_1",
+  "usage": {
+   "completion_tokens": 42,
+   "completion_tokens_details": {
+    "reasoning_tokens": 9
+   },
+   "prompt_tokens": 118,
+   "prompt_tokens_details": {
+    "cached_tokens": 64
+   }
+  }
+ }
+}

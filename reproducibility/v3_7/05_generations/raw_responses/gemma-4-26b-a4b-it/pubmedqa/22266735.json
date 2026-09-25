@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "6af667e1190a345ddd8c09cc646f3a7d8fd32280b92c0dd13e8134ba54dec7b7",
+  "candidate_text": "Only if postdelivery care reduces diabetes.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "8c4805cbca2e396ca38e1fbb376e97f9a714958adc98108b2ffd159a1131760e",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "22266735",
+  "prompt_sha256": "1b0e3d774d6fd93825ccd297b976e6fad86259ed3cfaa5bd0988d9234fd8da23",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "30a57bdfcab17c51ed8be4380f4fac1e69176353ebd2dd8d95e96c26e763c3fb",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:22266735",
+  "text": "Only if postdelivery care reduces diabetes.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 9,
+    "neurons": 4.699999809265137,
+    "prompt_tokens": 490,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 499
+  }
+}

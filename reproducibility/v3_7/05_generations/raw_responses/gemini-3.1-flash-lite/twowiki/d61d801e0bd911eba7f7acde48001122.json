@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "fde5f6b788607550ce004c4988d3bd55546994e57d7e162ff8889ef4263d005c",
+  "candidate_text": "Rudolf Hausner",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "89aa18f16fe1858e008a439bf82622febe17eb39be1020c3a542736bc7c2bb22",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "d61d801e0bd911eba7f7acde48001122",
+  "prompt_sha256": "9cdb6a0e54733e8952ba6017b24f6bec93f6312e9aa4a26549ad54431741012c",
+  "provider": "gemini",
+  "provider_raw_sha256": "df3e51ff15a1c900b329b877d9f774b903bc23ce4517fc26d75a0a075868fe50",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:d61d801e0bd911eba7f7acde48001122",
+  "text": "Rudolf Hausner",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 655,
+    "total_tokens": 659
+  }
+}

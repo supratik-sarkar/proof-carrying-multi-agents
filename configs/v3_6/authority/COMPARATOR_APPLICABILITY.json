@@ -1,0 +1,77 @@
+{
+  "masks": {
+    "AgentRR": {
+      "applicable": [
+        "mind2web",
+        "bfcl_v1",
+        "agentdojo"
+      ],
+      "native_scope_na": [
+        "fever",
+        "hotpotqa",
+        "pubmedqa",
+        "tatqa",
+        "twowiki"
+      ]
+    },
+    "CitationOnly": {
+      "applicable": [
+        "fever",
+        "hotpotqa",
+        "pubmedqa",
+        "tatqa",
+        "twowiki"
+      ],
+      "native_scope_na": [
+        "mind2web",
+        "bfcl_v1",
+        "agentdojo"
+      ]
+    },
+    "CoverageMatchedVerifierOnly": {
+      "applicable": [
+        "fever",
+        "hotpotqa",
+        "pubmedqa",
+        "tatqa",
+        "twowiki"
+      ]
+    },
+    "NoCert": {
+      "applicable": [
+        "*"
+      ]
+    },
+    "PCG-MAS": {
+      "applicable": [
+        "*"
+      ]
+    },
+    "ShieldAgent": {
+      "applicable": [
+        "mind2web",
+        "bfcl_v1",
+        "agentdojo"
+      ],
+      "native_scope_na": [
+        "fever",
+        "hotpotqa",
+        "pubmedqa",
+        "tatqa",
+        "twowiki"
+      ]
+    },
+    "SignalMatchedFusion": {
+      "applicable": [
+        "fever",
+        "hotpotqa",
+        "pubmedqa",
+        "tatqa",
+        "twowiki"
+      ]
+    }
+  },
+  "non_applicable_value": "NATIVE_SCOPE_NA",
+  "rule": "Numerical results require method-faithful implementation authority; never promote placeholders or N/A to zero.",
+  "schema": "PCG_MAS_V3_6_COMPARATOR_APPLICABILITY_V2"
+}

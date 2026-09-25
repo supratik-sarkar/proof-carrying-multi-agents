@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "3a1d71419d753a0c120c955d62695b11ae573d0510bb5ca2b2e5063165ad013a",
+  "candidate_text": "Yes, both are American.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "b1d8607cffa1e670b34816506bf99b82b2daf512ed6fce92456d3b97fff6ecdf",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "f1ff478c089011ebbd72ac1f6bf848b6",
+  "prompt_sha256": "ffd53623b62b05e12836b3b336403ea7ecd8ce92eb1a9425228556c340d9c072",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "eade00c7c51dfbe5679c1c1e20642a515ec68eeb40fccb44fad919e64bf27917",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:f1ff478c089011ebbd72ac1f6bf848b6",
+  "text": "Yes, both are American.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 8.836363792419434,
+    "prompt_tokens": 951,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 958
+  }
+}

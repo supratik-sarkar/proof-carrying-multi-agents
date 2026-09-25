@@ -1,0 +1,32 @@
+{
+  "compliance_status": "PASS",
+  "execution_policy_rules": [
+    "1. Every terminal generation artifact is persisted immediately",
+    "2. Existing terminal observations are reused and never regenerated",
+    "3. Benchmark-wrong outputs are terminal scientific observations",
+    "4. Malformed Mind2Web generation is terminal fail-closed scientific output when provider generation completed (correct=false, parse_status=NO_JSON)",
+    "5. Provider quota/rate-limit exhaustion is infrastructure state, NOT scientific failure",
+    "6. Daily/free-allocation exhaustion causes: checkpoint, flush ledger, graceful process stop",
+    "7. No retry storm",
+    "8. No automatic provider substitution",
+    "9. No paid fallback",
+    "10. No billing/plan upgrade",
+    "11. No local generator weights",
+    "12. Future resume begins only from stable missing task IDs",
+    "13. Already terminal artifacts must pass structural/hash validation before being skipped",
+    "14. AgentDojo runs to natural upstream termination, with the 48-call outer runaway fuse only",
+    "15. Attempted AgentDojo call 49: STOP case/run with explicit infrastructure blocker",
+    "16. Bounded transient transport retry behavior may use only the already authorized provider-client retry contract",
+    "17. A daily quota/allocation error must NOT be hidden by arbitrary retries"
+  ],
+  "runners_audited": [
+    "fit_v2.py",
+    "execute_lane.py",
+    "agentdojo_case_runner.py",
+    "run_pipeline.py"
+  ],
+  "schema": "PCG_MAS_V3_6_G2_RESUMABLE_ZERO_COST_EXECUTION_AUTHORITY",
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:11:15.079793+00:00"
+}

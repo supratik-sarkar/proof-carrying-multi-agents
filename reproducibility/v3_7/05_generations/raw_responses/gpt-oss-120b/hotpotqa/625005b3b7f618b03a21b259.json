@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "94b26382496e627ca379643f8da1c0516c155b3c496ad24187b40f17899ec8a8",
+  "candidate_text": "Maria von Trapp",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "f26f344ceb1272a083248ca9102d57fb0160da39cd2f404ecb7e69f8c9a7ad46",
+  "example_id": "5a73b2cb55429908901be31a",
+  "finish": "stop",
+  "input_sha256": "480cb4be0658baa0aaf3eca9aaa3d21308c6eff4700248acf1d16a5030f0a242",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5a73b2cb55429908901be31a",
+  "prompt_sha256": "b6615976ad33cacaacf0894594abade268a1eb972e819a0ce53854a793280106",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] The Trapp Family: The Trapp Family (German: \"Die Trapp-Familie\" ) is a 1956 West German comedy drama film directed by Wolfgang Liebeneiner and starring Ruth Leuwerik, Hans Holt, and Maria Holst.  Based on Maria von Trapp's memoir, \"The Story of the Trapp Family Singers\", the film is about a novice nun sent to care for the unruly children of a wealthy baron, who falls in love with and marries the young woman.  Through her caring influence, the family becomes a famous singing group.  When the baron is pressured to join Hitler's army, the family escapes to the United States where they establish themselves as singers.\n\n[2] Maria von Trapp: Maria Augusta von Trapp (née Kutschera; 26 January 1905 – 28 March 1987), also known as Baroness von Trapp, was the stepmother and matriarch of the Trapp Family Singers.  She wrote \"The Story of the Trapp Family Singers\" which was published in 1949.  The story served as the inspiration for the 1956 West German film \"The Trapp Family\", which in turn inspired the Broadway musical \"The Sound of Music\" (1959) and the 1965 film of the same name.\n\n[3] The von Trapps: The von Trapps (formerly The von Trapp Children) is a musical group made up of Sofia, Melanie, Amanda and August (formerly Justin) von Trapp, descendants of the Trapp Family Singers.  They are the grandchildren of Werner von Trapp, who was portrayed as Kurt in \"The Sound of Music\", and the great-grandchildren of Georg Ritter von Trapp and his first wife Agathe Whitehead, and the step-great-grandchildren of Maria von Trapp, Georg's second wife.\n\n[4] Alix Williamson: Alix Williamson (5 April 1916 – 26 August 2001) was an American publicist who specialized in promoting musical artists both in the United States and abroad.  A graduate of Hunter College, she promoted the Juilliard String Quartet for 23 years and The Chamber Music Society of Lincoln Center for 22 years.  For 15 years she was the press representative for pianist André Watts, and also spent 15 years as tenor Richard Tucker's press agent.  She managed the career of the Trapp Family Singers for more than two decades; and it was she who came up with the idea for Maria von Trapp's autobiographical work \"The Story of the Trapp Family Singers\" (1949) (the basis for the Rodgers and Hammerstein musical \"The Sound of Music\").  She also worked as a promoter for the New York Philharmonic for 15 years.\n\nQuestion: The members of the von Trapp musical group are related to which woman who wrote \"The Story of the Trapp Family Singers\"?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "85ea66fff38200251fd2ac7807591ba07430482c6f05cd0a017d266c4100ee2e",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a73b2cb55429908901be31a",
+  "task_key": "c60bf6c3b6f3743e2c7e086fadf7a58ff277b0710f630363f03fb6a01736a11d",
+  "text": "Maria von Trapp",
+  "timestamp": "2026-09-14T10:32:29.089222+00:00",
+  "tokens_in": 722,
+  "tokens_out": 72,
+  "usage": {
+    "completion_tokens": 72,
+    "neurons": 27.881685256958008,
+    "prompt_tokens": 722,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 794
+  }
+}

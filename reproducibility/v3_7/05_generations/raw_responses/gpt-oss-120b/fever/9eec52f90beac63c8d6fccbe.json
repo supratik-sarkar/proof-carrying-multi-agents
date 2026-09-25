@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "231fb99f27de8354d8e7dc6a86f27393953d0c154d8a05bbe11a99a9bf6e86fd",
+  "example_id": "9053e63c6044d819afd41191405a9fe1",
+  "finish": "stop",
+  "input_sha256": "63c57f2132380cb3dee53fff7d5b840e59ff934d0e00cd9f145b00e0ab186801",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "9053e63c6044d819afd41191405a9fe1",
+  "prompt_sha256": "d49d19e42246ab9f238320c0bdcf8bdfd8c7faafecbd9d1e92ae2993456ab51d",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Johnny Galecki: He is known for playing David Healy in the ABC sitcom Roseanne from 1992 -- 1997 and Dr. Leonard Hofstadter in the CBS sitcom The Big Bang Theory since 2007 .\n\nClaim: Johnny Galecki acted in Roseanne for five years.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "a5c1769667c56140b6e7257a80af33b4fa58260901528b22d923bd46f294ca7f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:9053e63c6044d819afd41191405a9fe1",
+  "task_key": "36d17adc05b39d4a04cfa33230fe797b0cb8cf43e1f568ba8bf779a9966c3e64",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:27.362167+00:00",
+  "tokens_in": 197,
+  "tokens_out": 189,
+  "usage": {
+    "completion_tokens": 189,
+    "neurons": 19.15450668334961,
+    "prompt_tokens": 197,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 386
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "0d47ef2b1d42c5a1dc7352bee8473ab1ec0905d3075836968e04e60b63302181",
+  "candidate_text": "No, not always.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "b8349c0b3d5c06eeb9378e0d98f6914a1a192e067ad1b77551744574fa146ee2",
+  "example_id": "10966943",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "299eea0f2717230eac7565075dd6a2d4af56b7e548a93f0b09986fa5bd44a5bc",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "10966943",
+  "prompt_sha256": "42334749cd6edb1ab3b36536c79268cfb2b821d6e8907ea49b892b24c943c049",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: METHODS: The records of 465 patients with an established diagnosis of age related macular degeneration who had attended a specialist macular clinic between 1990 and 1998 were scrutinised. A full clinical examination and standardised refraction had been carried out in 189 of these cases on a minimum of two occasions. Cases were looked for where an improvement of one or more lines of either distance or near acuity was recorded in the eye unaffected by macular disease. In each one of these cases the improvement in visual acuity could not be attributed to treatment of other existing pathology. RESULTS: 12 such cases were detected. In nine of these the eye showing improvement of acuity had a history of amblyopia. The mean improvement in distance and near acuity in amblyopic eyes by 12 months was 3.3 and 1.9 lines logMAR respectively. The improvement in acuity generally occurred between 1 and 12 months from baseline and remained stable over the period of follow up.\n\nLong answer: Older people with a history of amblyopia who develop visual loss in the previously normal eye can experience recovery of visual function in the amblyopic eye over a period of time. This recovery in visual function occurs in the wake of visual loss in the fellow eye and the improvement appears to be sustained.\n\nQuestion: Amblyopia: is visual loss permanent?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "6ad1c1c9271df85316cbc4909d8a7d4a529b5f437162f3ed5b71225c0cb77904",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:10966943",
+  "task_key": "c1bc6b5ed9f0e6b2c38ca7186185d22451e11618d021a06e0aafa8173abcf5c4",
+  "text": "No, not always.",
+  "timestamp": "2026-09-15T09:34:53.442027+00:00",
+  "tokens_in": 340,
+  "tokens_out": 6,
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 8.809091567993164,
+    "prompt_tokens": 340,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 346
+  }
+}

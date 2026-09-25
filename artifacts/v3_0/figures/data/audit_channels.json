@@ -1,1 +1,0 @@
-{"data":{"lambda_union":0.14222222222222222,"per_channel":{"check_fail":80,"cov_gap":88,"drift_fail":83,"int_fail":102,"replay_fail":88}},"dpi":300,"provenance_class":"DERIVED","release":"v3.0","stem":"audit_channels","synthetic":true}

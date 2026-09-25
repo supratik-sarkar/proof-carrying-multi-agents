@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "80db4ccdca106d37b920206331fcfe3e9e50a9e763d89b54ce3ad5ac8cf30f03",
+  "candidate_text": "Germany",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "1210f24f1652d6bf746344fc21e661928bced985bb31b17d9f3779179d74ca26",
+  "example_id": "b3110a5e0bda11eba7f7acde48001122",
+  "finish": "stop",
+  "input_sha256": "f49bea03b0b8560cb0b66536929b379d028ae42195ea5614e904304170edd27f",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "b3110a5e0bda11eba7f7acde48001122",
+  "prompt_sha256": "021973031a4a772ea0fddbd52a8d5bda073e93da4cb28bf6a31b0fcdbe56ca16",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Prince Nikolaus Wilhelm of Nassau\": [\"Prince Nikolaus Wilhelm of Nassau (20 September 1832 \\u2013 17 September 1905), was the only son of William, Duke of Nassau by his second wife Princess Pauline of W\\u00fcrttemberg.\"]\n\n[2] \"Frederick Augustus, Duke of Nassau\": [\"Friedrich August, Duke of Nassau, Prince of Nassau- Usingen( 23 April 1738 in Usingen \\u2013 24 March 1816 in Wiesbaden) was the last Prince of Nassau- Usingen and, jointly with his cousin, Friedrich Wilhelm of Nassau- Weilburg, first Duke of Nassau.\",\"He died without surviving male issue and was succeeded by his cousin's son, Wilhelm.\"]\n\n[3] \"Sophie of Merenberg\": [\"Countess Sophie Nikolaievna of Merenberg, Countess de Torby( 1 June 1868 \\u2013 14 September 1927), also known as\\\" Countess Torbay\\\", was the elder daughter of Prince Nikolaus Wilhelm of Nassau and his morganatic wife, Natalia Alexandrovna Pushkina( who had been granted the title of Countess of Merenberg).\"]\n\n[4] \"Frederick William, Prince of Nassau-Weilburg\": [\"Frederick William, Prince of Nassau- Weilburg( 25 October 1768, The Hague \\u2013 9 January 1816, Weilburg) was a ruler of Nassau- Weilburg.\",\"In 1806 he was given the title of Prince of Nassau, while his cousin, Prince Frederick Augustus of Nassau- Usingen, became the Duke of Nassau.\",\"Frederick William died in January 1816, only two months before his cousin.\",\"Both men were succeeded by Frederick William's son, William.\"]\n\nQuestion: Which country Prince Nikolaus Wilhelm Of Nassau's mother is from?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "6e2ac603b5ffc876295b98b07d42758e71c00f9178646acd7609dc95498ce102",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:b3110a5e0bda11eba7f7acde48001122",
+  "task_key": "8db97be23a60e01ea8695f4af21144f13fd238d24c175da8c9faabf23feec6b3",
+  "text": "Germany",
+  "timestamp": "2026-09-14T10:32:48.899657+00:00",
+  "tokens_in": 506,
+  "tokens_out": 98,
+  "usage": {
+    "completion_tokens": 98,
+    "neurons": 22.781723022460938,
+    "prompt_tokens": 506,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 604
+  }
+}

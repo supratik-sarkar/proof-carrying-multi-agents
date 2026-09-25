@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "77f0429ded256529b85f56b60cdd75a472019a98bb5a4660fb157631dcc76118",
+  "example_id": "146c16520bdd11eba7f7acde48001122",
+  "finish": "stop",
+  "input_sha256": "f188e2564ae0c6de2179cd61154c10b06e05f9f96003022fdd05aa6df1e2ffdb",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "146c16520bdd11eba7f7acde48001122",
+  "prompt_sha256": "d158d614d6d371e369b0b01e86642755c53ee4ad5d9d435d805c6af1d217ef0a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Now Where Did the 7th Company Get to?\": [\"Now Where Did the 7th Company Get To? is a 1973 French- Italian comedy war film directed by Robert Lamoureux.\",\"The film portrays the adventures of a French Army squad lost somewhere on the front in May 1940 during the Battle of France.\"]\n\n[2] \"The Seventh Company Outdoors\": [\"The Seventh Company Outdoors is a 1977 French comedy film directed by Robert Lamoureux.\",\"It is a sequel to Now Where Did the 7th Company Get to ?.\"]\n\n[3] \"Barracuda (1978 film)\": [\"Barracuda is a 1977 American horror\\/thriller film about a small Florida coastal town that is menaced by chemically induced and highly aggressive barracuda fish.\",\"The cast included Wayne Crawford, Jason Evers, Roberta Leighton, Cliff Emmich, William Kerwin and Bert Freed.\",\"It was directed by Harry Kerwin, with the underwater sequences handled by Wayne Crawford.\"]\n\n[4] \"Dana Blankstein\": [\"Dana Blankstein- Cohen( born March 3, 1981) is the director of the Israeli Academy of Film and Television.\",\"She is a film director, and an Israeli culture entrepreneur.\"]\n\nQuestion: Where did the director of film Barracuda (1978 Film) study?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b12152392f772583cab8908df1fcfc7ed1d95b5b0d2f194ce7d867bed1ed2457",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:146c16520bdd11eba7f7acde48001122",
+  "task_key": "4aca4d4b9a7f15ee3e63e602592df96982221e1f53fef8fc54cf9ad1189727b1",
+  "text": "I don't know.",
+  "timestamp": "2026-09-14T10:32:43.327021+00:00",
+  "tokens_in": 388,
+  "tokens_out": 93,
+  "usage": {
+    "completion_tokens": 93,
+    "neurons": 18.686290740966797,
+    "prompt_tokens": 388,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 481
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "5085fa97d6bcc93f7b6abac6223ff78390150bf893711d1703ac524f03b11b8f",
+  "candidate_text": "\n\n$8.0 million",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "ffc3b71b66cf6c0b7f58db375be48847f7ec8a7cd69f0f3784683ab3e5124624",
+  "example_id": "c84eaefa04edafcc05b81ed8b66415d3",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "7ac5ac5d027ccdedfd87bb45a0a8a9b85b582e5fd7a6593663bc9b18e9bcf86e",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "c84eaefa04edafcc05b81ed8b66415d3",
+  "prompt_sha256": "15469d9646f8b4f71bd6482134ef4f0233a7ea39c37bbbe91fe6184ce96e6284",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 2: In December 2019, the Company made a minority investment in a privately-held company, Talespin, Inc., for $8.0 million, representing approximately 13% equity ownership. The investment is accounted for using the equity method of accounting due to the Company’s ability to exercise significant influence.\n\n[2] TAT-QA 3: The Company’s non-marketable investments are composed of the following (in thousands):\n\n[3] TAT-QA table: row 0:  | December 31, | \nrow 1:  | 2019 | 2018\nrow 2: Accounted for at cost, adjusted for observable price changes | $1,750 | $1,250\nrow 3: Accounted for using the equity method | 8,000 | —\nrow 4: Total non-marketable investments | $9,750 | $1,250\n\n[4] TAT-QA 1: Strategic Investments\n\nQuestion: How much was the company's investment in Talespin, Inc?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "59663eebb4113cccd14324542bdcc96653f06f3149d278da7469e2ecdb823a5d",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:c84eaefa04edafcc05b81ed8b66415d3",
+  "task_key": "39ab543f2788dd15daf4a7e4bc42353bd442672206319c03c0b004286e32c52d",
+  "text": "\n\n$8.0 million",
+  "timestamp": "2026-09-15T09:38:41.102688+00:00",
+  "tokens_in": 306,
+  "tokens_out": 143,
+  "usage": {
+    "completion_tokens": 143,
+    "neurons": 33.218,
+    "prompt_tokens": 306,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 449
+  }
+}

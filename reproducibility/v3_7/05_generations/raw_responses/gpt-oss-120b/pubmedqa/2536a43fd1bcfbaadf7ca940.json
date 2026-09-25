@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "38178a20b470cfd18299fb1593dd4ba706f1a83321dac051d01086efd8b7a96f",
+  "candidate_text": "No.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "ef016885639d8670303e4beee0db1fbde82e6600026aa128b90a57bbb1300c8d",
+  "example_id": "26471488",
+  "finish": "stop",
+  "input_sha256": "d6f9acd4a36bc80ba47fba85127313a0b705f01e15e78372e46551ae112aaabc",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "26471488",
+  "prompt_sha256": "d4b95c6de6686abc89c4f1b27ecced0bf916930f7066496ab31566c18fc4fff3",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: BACKGROUND: Limited and conflicting data exist on an association between mammographic density (MD) and re-excision rates after breast-conserving surgery (BCS). Additionally, the correlation of MD with resection of unnecessary margins during initial BCS is unknown. METHODS: All women with a diagnosis of breast cancer from 2003 to 2012 and enrolled in a larger study on MD were evaluated. Operative and pathology reports were reviewed to determine margin resection and involvement. Mammographic density was determined both by breast imaging-reporting and data system (BI-RADS) classification and by an automated software program (Volpara Solutions). Additional margins were deemed unnecessary if the lumpectomy specimen margin was free of invasive tumor [≥2 mm for ductal carcinoma in situ (DCIS)] or if further re-excision was needed. RESULTS: Of 655 patients, 398 (60.8%) had BCS, whereas 226 (34.5%) underwent initial mastectomy. The women with denser breasts (BI-RADS 3 or 4) underwent initial mastectomy more frequently than the women with less dense breasts (40.0 vs. 30.5%, respectively; p = 0.0118). Of the patients with BCS, 166 (41.7%) required separate re-excision. Additional margins were taken during BCS in 192 (48.2%) patients, with 151 (78.6%) proving to be unnecessary. In the bivariable analysis, the patients with denser breasts according to BI-RADS classification and volumetric density showed a trend toward requiring more frequent re-excision, but this association was not seen in the multivariable analysis. The rate of unnecessary margins did not differ by breast density. In the multivariate analysis, the re-excision rates increased with DCIS (p<0.0003) and decreased with resection of additional margins (p = 0.0043).\n\nLong answer: Mammographic density is not associated with an increased need for re-excision or resection of unnecessary margins at initial BCS.\n\nQuestion: Does Mammographic Density have an Impact on the Margin Re-excision Rate After Breast-Conserving Surgery?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b624c2366e266f550d88d0319c4e7ff0db252319d0e8d5f3d0c5771f30db8e3b",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:26471488",
+  "task_key": "b51be9b9000678244197a83e55d7d6c1a05e6f4403e988ee90bd3bdbeb7747ba",
+  "text": "No.",
+  "timestamp": "2026-09-14T10:37:05.279648+00:00",
+  "tokens_in": 569,
+  "tokens_out": 128,
+  "usage": {
+    "completion_tokens": 128,
+    "neurons": 26.831710815429688,
+    "prompt_tokens": 569,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 697
+  }
+}

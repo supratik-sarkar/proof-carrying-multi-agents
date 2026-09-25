@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "7fe7109c8a9bd5bc3beaf4ef1e38d05906b1dda043eece220e60199da36cb559",
+  "candidate_text": "Yes, it is possible.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "d21833f7d80608ea47c37eedc691a175b7b23bab2d02ce9fdf1e7502234b97f0",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "17445978",
+  "prompt_sha256": "4a81cd40ad24e58b093f541e60ba45034593d667f44460a90c757a750a59a295",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "a4cf6a825e3419706214f3548bd93849b83ccb27c291f37ace9d667752693b35",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:17445978",
+  "text": "Yes, it is possible.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 2.8232999999999997,
+    "prompt_tokens": 467,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 474
+  }
+}

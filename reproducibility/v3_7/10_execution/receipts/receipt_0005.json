@@ -1,0 +1,13 @@
+{
+  "benchmark_semantics_changed": false,
+  "exact_changed_from": "'--model','openai-compatible'",
+  "exact_changed_to": "'--model','OPENAI_COMPATIBLE'",
+  "file": "artifacts/v3_6/dataset_amendment_v2/integration/agentdojo_case_runner.py",
+  "line": 38,
+  "new_sha256": "ab85c6287dc947f2b8a7dac6c98c7f0fa5586eec54e90e379a075d9401d5a309",
+  "old_sha256": "a45b3b6785cb828fb8412e86b8b8eed7be601af0f4a16042edf6faf886555bf2",
+  "reason": "Pinned upstream AgentDojo v1.2.2 Click CLI in agentdojo.scripts.benchmark validates --model against ModelsEnum enum member names, which are uppercase (OPENAI_COMPATIBLE). The project-owned adapter previously passed lowercase openai-compatible, causing Click to reject the argument before benchmark execution.",
+  "schema": "PCG_MAS_V3_6_AGENTDOJO_CLI_ADAPTER_FIX_RECEIPT",
+  "status": "APPLIED",
+  "timestamp": "2026-09-17T10:38:52Z"
+}

@@ -1,0 +1,12 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] PubMedQA abstract context: OBJECTIVE: The use of three-dimensional (3D) ultrasound may help to determine the exact position of the needle during breast biopsy, thereby reducing the number of core samples that are needed to achieve a reliable histological diagnosis. The aim of this study was to demonstrate the efficacy of 3D ultrasound-validated large-core needle biopsy (LCNB) of the breast. METHODS: A total of 360 core needle biopsies was obtained from 169 breast lesions in 146 patients. Additional open breast biopsy was performed in 111 women (127/169 breast lesions); the remaining 42 lesions were followed up for at least 24 months. 3D ultrasound visualization of the needle in the postfiring position was used to classify the biopsy as central, marginal or outside the lesion. Based on this classification it was decided whether another sample had to be obtained. RESULTS: A median of two core samples per lesion provided for all the lesions a sensitivity for malignancy of 96.9%, specificity of 100%, false-positive rate of 0% and false-negative rate of 3.1%, and for the excised lesions a sensitivity of 96.5%, specificity of 100%, false-positive rate of 0%, false-negative rate of 3.5% and an underestimation rate of 3.4%.
+
+Long answer: 3D ultrasound validation of the postfiring needle position is an efficient adjunct to ultrasound-guided LCNB. The advantages of 3D ultrasound validation are likely to include a reduction in the number of core samples needed to achieve a reliable histological diagnosis (and a possible reduction in the risk of tumor cell displacement), reduced procedure time and lower costs.
+
+Question: Three-dimensional ultrasound-validated large-core needle biopsy: is it a reliable method for the histological assessment of breast lesions?
+
+Answer:

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "7d8422557c06c57b9e66a07e16b81253ca2942fdd3a1b1c4ca42baed16d993e5",
+  "candidate_text": "House of Saxe-Coburg and Gotha",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "6589120ff4feda3ed74017167193b8504285e0d8e00d8504af8bb2d13104b487",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "5ac3bab155429939154138fb",
+  "prompt_sha256": "479678677c504efec2c62fd50f360b96bdee1667d9d52554e07f8a721b734994",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "35a8ff463c51900a382f2e75b999a1c8fd1a235750491f72be45f4ac783e6c51",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ac3bab155429939154138fb",
+  "text": "House of Saxe-Coburg and Gotha",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 11,
+    "neurons": 3.8653999999999997,
+    "prompt_tokens": 630,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 641
+  }
+}

@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Passer l'hiver": ["Passer l'hiver is a 2013 French drama film directed by Aur\u00e9lia Barbet and starring Gabrielle Lazure and Lolita Chammah.","The film is loosely based on a short story by Olivier Adam."]
+
+[2] "At the Movies": ["At the Movies may refer to:"]
+
+[3] "A Night at the Movies": ["A Night at the Movies can be:"]
+
+[4] "On My Skin": ["On My Skin( also known as\" Upon My Skin\") is a 2003 Italian crime- drama film written and directed by Valerio Jalongo.","It was screened in competition at the 2003 Turin Film Festival."]
+
+Question: Did the movies Passer L'Hiver and In My Skin, originate from the same country?
+
+Answer:

@@ -1,0 +1,38 @@
+{
+  "schema": "PCG_MAS_V3_6_RUNTIME_RECONCILIATION_AUTHORITY_BFCL_HARDENED",
+  "status": "PASS",
+  "timestamp": "2026-09-17T14:18:06.813986+00:00",
+  "supersedes": "RUNTIME_RECONCILIATION_AUTHORITY.json",
+  "modified_files": [
+    {
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/bfcl_official.py",
+      "old_sha256": "e8ff5880055a8141f8c5c35605be23e46d92b7ebb317d5ea69bccf9e20e4738c",
+      "new_sha256": "7e16dc949d0ee57b187c33c1a15d4ccf0c1509db96763ffe478ad47f8e64c5e1",
+      "exact_change": "Pre-validation of tool calls against case['functions'] (failing closed as invalid instead of crashing when function name cannot be resolved), and ground truth key normalization for parallel and parallel_multiple cases.",
+      "reason": "Prevent TypeError in simple_function_checker when ground truth has suffixed keys or candidate output has unknown functions.",
+      "benchmark_semantics_changed": false
+    },
+    {
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/execute_lane.py",
+      "old_sha256": "870212ab750b00b2bea65443e4fb25298c80fa5c0a3e1e9655276d51407c00b9",
+      "new_sha256": "19de1acaad6413cb0d682187442f75f5d05b0a99af5c88b8df9dd493863ebd26",
+      "exact_change": "Removed redundant transport retry loop in call_write (delegated to provider_client); added durable BFCL raw response staging before scoring and offline resume scoring.",
+      "reason": "Eliminate nested retry multiplication and ensure BFCL provider responses survive scorer crashes.",
+      "benchmark_semantics_changed": false
+    },
+    {
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/run_pipeline.py",
+      "old_sha256": "5bf3544f4316cb900f984283aee0d47fc8cddbc5c197ede46b934326552b1b6d",
+      "new_sha256": "1dda03f7107974b0560b8fadaf9eb1a9574e071180c0eae4407ff935d11953b9",
+      "exact_change": "Check stage_status and silently skip stages that are already marked COMPLETE.",
+      "reason": "Resume execution directly at BFCL without re-traversing or printing completed stages.",
+      "benchmark_semantics_changed": false
+    }
+  ],
+  "pinned_sources": {
+    "gorilla_head": "ea13468e4423454d0c213704fb87cf7cb3990433",
+    "gorilla_clean": true,
+    "agentdojo_head": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+    "agentdojo_clean": true
+  }
+}

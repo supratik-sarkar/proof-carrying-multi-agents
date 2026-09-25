@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "c46c39c3daa294606477b80ebb8fd2f6c6358911d4d2f02ee73376e3d42b0a6d",
+  "example_id": "157e2423493fbab010a67768325134ac",
+  "finish": "stop",
+  "input_sha256": "baf9e305f180df94d3e9e7fd0a71213b5b54956685140226b13ba88ffc673083",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "157e2423493fbab010a67768325134ac",
+  "prompt_sha256": "460ae0e65bba382bafe1509094a0615a3bb607283e55eba7307b8fd6d76fbadc",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA table: row 0: ($ in millions) |  | \nrow 1: At December 31: | 2019 | 2018\nrow 2: Recorded investment (1) | $22,446 | $31,182\nrow 3: Specific allowance for credit losses | 177 | 220\nrow 4: Unallocated allowance for credit losses | 45 | 72\nrow 5: Total allowance for credit losses | 221 | 292\nrow 6: Net financing receivables | $22,224 | $30,890\n\n[2] TAT-QA 2: The following table presents external Global Financing receivables excluding residual values, the allowance for credit losses and immaterial miscellaneous receivables:\n\n[3] TAT-QA 4: The percentage of Global Financing receivables reserved was 1.0 percent at December 31, 2019, compared to 0.9 percent at December 31, 2018. The decline in the allowance for credit losses was driven by write-offs of $64 million, primarily of receivables previously reserved, and net releases of $7 million as a result of lower average asset balances in client and commercial financing. See note K, “Financing Receivables,” for additional information.\n\n[4] TAT-QA 1: Global Financing Receivables and Allowances\n\nQuestion: What does the recorded investment include?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c9561999f4b87c7f8cf70c30b3e7bee96fa7fa8ca149915414e7f3a63a588fcc",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:157e2423493fbab010a67768325134ac",
+  "task_key": "6e5ea1d5a9d81ae775a02a0cbf4d4e29b91f06da98a4b0e46296023dcf1ff722",
+  "text": "I don't know.",
+  "timestamp": "2026-09-14T10:33:39.268835+00:00",
+  "tokens_in": 416,
+  "tokens_out": 110,
+  "usage": {
+    "completion_tokens": 110,
+    "neurons": 20.736284255981445,
+    "prompt_tokens": 416,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 526
+  }
+}

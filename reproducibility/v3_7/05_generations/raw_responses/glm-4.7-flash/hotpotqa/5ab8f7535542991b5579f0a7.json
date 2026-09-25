@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "39c9e1686bd45595a0e100f75dddef0319c3851b832ff4c8d315de5b68b7456f",
+  "candidate_text": "Oz the Great and Powerful",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "c809bf31573de1c8491f984254246e247a5ce827a09ab4feff2198667db652c6",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "5ab8f7535542991b5579f0a7",
+  "prompt_sha256": "ebb7645a7ea4fd7a3bced92180019ae095623e0607dcd864c89fe1155c4485df",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "23d7c4095f17e3ba1e8c6c35f193a0a7b0bb15a987b32eea384a12956915065b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ab8f7535542991b5579f0a7",
+  "text": "Oz the Great and Powerful",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 4.4348,
+    "prompt_tokens": 760,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 767
+  }
+}

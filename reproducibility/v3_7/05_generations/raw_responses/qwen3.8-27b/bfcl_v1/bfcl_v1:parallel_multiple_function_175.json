@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "a289bc33330d3383e7b3ddc0e6c6d994ca228fe2357d998298f22cdba558fd8b",
+  "candidate_text": "I'll help you with that! Let me make all four requests for you.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "89cb69956afce1c69345049f6def021c5b3366beb0b8e701cfad2e7b2bc906d6",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_175",
+  "prompt_sha256": "89cb69956afce1c69345049f6def021c5b3366beb0b8e701cfad2e7b2bc906d6",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "d361838b4d48f54237ec8c6b3b6476a3e67e995eff85e847318661fecd38b8f5",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you with that! Let me make all four requests for you.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"Tokyo\", \"country\": \"Japan\", \"timezone\": \"Asia/Tokyo\"}",
+        "name": "get_current_time"
+      },
+      "id": "chatcmpl-tool-b7821ab5589020bc",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York\", \"country\": \"United States\", \"timezone\": \"America/New_York\"}",
+        "name": "get_current_time"
+      },
+      "id": "chatcmpl-tool-aba25537cbe01e24",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\": \"Microsoft\", \"detail_level\": \"detailed\", \"market\": \"NASDAQ\"}",
+        "name": "get_stock_info"
+      },
+      "id": "chatcmpl-tool-90f4b7f01126abed",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\": \"Apple\", \"detail_level\": \"summary\", \"market\": \"NASDAQ\"}",
+        "name": "get_stock_info"
+      },
+      "id": "chatcmpl-tool-9bfb9c975bd9021f",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 377,
+    "neurons": 135.69090270996094,
+    "prompt_tokens": 636,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1013
+  }
+}

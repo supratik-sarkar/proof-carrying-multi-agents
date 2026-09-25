@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "702ab1b559dbeddf961fea71ecd55f621e1f72179fc7a86fed455d8137ea2049",
+  "candidate_text": "The Machine to Kill Bad People.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "b5463c1d36be8ab705f83cae654c123d3da8c0ca992a506d7458cb253ebb29c3",
+  "example_id": "7abc1e3008d511ebbd98ac1f6bf848b6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "49c6e3dfa594fe56b591ca95b8ead845f72e156d7406caf9d93ff06969c57d12",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "7abc1e3008d511ebbd98ac1f6bf848b6",
+  "prompt_sha256": "556127d1d904e2ec75920ad9ac49a52395c88dce7b4addeed9af6c0ac934af68",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"The Machine to Kill Bad People\": [\"The Machine to Kill Bad People( Italian: La Macchina ammazzacattivi) is a 1952 Italian fantasy comedy film directed by Roberto Rossellini and featuring Marilyn Buferd, William Tubbs and Clara Bindi.\",\"It is part of the tradition of neorealism of the post-war years.\",\"Having helped neorealism gain international recognition with his 1945 work\\\" Rome, Open City\\\", Rossellini was trying to branch out into different styles.\"]\n\n[2] \"Luigi Torchi\": [\"Luigi Torchi invented the first direct multiplication machine in 1834.\",\"This was also the second key- driven machine in the world, following that of James White( 1822).\",\"Very little is known about the inventor and the machine.\",\"We only know that he was a carpenter; his machine was awarded of a gold metal from the Imperial- regio istituto lombardo di scienze, lettere e arti in Milan in 1834.\",\"A document of such occasion provides the known details of the machine, where a second document shows a drawing of the machine itself.\",\"However, no detailed documents about how it worked are known to exist.\",\"The machine was exhibited in Brera between 1834 and 1837; it was later found by Giovanni Schiaparelli in bad conditions.\",\"After that, are not known further information about the machine.\"]\n\n[3] \"Poker in Bed\": [\"La signora gioca bene a scopa?, internationally released as Poker in Bed, is a 1974 commedia sexy all'italiana directed by Giuliano Carnimeo.\"]\n\n[4] \"Charles Redheffer\": [\"Charles Redheffer was an American inventor who claimed to have invented a perpetual motion machine.\",\"First appearing in Philadelphia, Redheffer exhibited his machine to the public, charging high prices for viewing.\",\"When he applied to the government for more money, a group of inspectors were sent to examine the machine.\",\"It was discovered the machine was actually powered by a device Redheffer claimed was powered by the machine.\",\"Redheffer moved to New York City and set up a similar scam after rebuilding his machine.\",\"However, an engineer detected that it was a fake by listening to its unsteady motions at an exhibition.\",\"He discovered that the machine was operated by a man using a crank in a room on the floor above.\",\"Redheffer returned to Philadelphia.\",\"He later claimed to have created another machine, but refused to demonstrate it to anyone.\",\"He managed to get a patent for his machine in 1820, but after this his fate is unknown.\"]\n\nQuestion: Which film has the director died earlier, Poker In Bed or The Machine To Kill Bad People?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "55b7ec90283082b4cdb6952360d85fc25daf690db702f2119e2f72f143d7f17d",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:7abc1e3008d511ebbd98ac1f6bf848b6",
+  "task_key": "843256418c299309bf272e57061de94b68329f8ecd48799e5f6770ee4d576c2e",
+  "text": "The Machine to Kill Bad People.",
+  "timestamp": "2026-09-15T09:34:18.558784+00:00",
+  "tokens_in": 610,
+  "tokens_out": 8,
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 15.590909957885742,
+    "prompt_tokens": 610,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 618
+  }
+}

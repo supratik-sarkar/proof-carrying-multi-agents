@@ -1,0 +1,53 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [
+      "Malformed JSON arguments: Extra data: line 1 column 78 (char 77)."
+    ],
+    "error_type": "bfcl_adapter:malformed_arguments",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "89cb69956afce1c69345049f6def021c5b3366beb0b8e701cfad2e7b2bc906d6",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_multiple_function_175",
+  "prompt_sha256": "89cb69956afce1c69345049f6def021c5b3366beb0b8e701cfad2e7b2bc906d6",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "b4b2b60f54bd064e03c9b6e33c8fe18bdb3b2737f7a4f1fe9853e4c7e2cf64fe",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"company_name\": \"Microsoft\", \"detail_level\": \"detailed\", \"market\": \"NASDAQ\"}{\"company_name\": \"Apple\", \"detail_level\": \"summary\", \"market\": \"NASDAQ\"}",
+        "name": "get_stock_info"
+      },
+      "id": "call_426e5bdc58fe4162b07eb2da",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"country\": \"Japan\", \"location\": \"Tokyo\", \"timezone\": \"Asia/Tokyo\"}{\"country\": \"United States\", \"location\": \"New York\", \"timezone\": \"America/New_York\"}",
+        "name": "get_current_time"
+      },
+      "id": "call_44a7942d09844120bae7be3e",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 383,
+    "neurons": 13.972726821899414,
+    "prompt_tokens": 388,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 771
+  }
+}

@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Eighth Wonder of the World: Eighth Wonder of the World is an unofficial title sometimes given to new buildings, structures, projects, or even designs that are deemed to be comparable to the seven Wonders of the World.
+
+[2] Astrodome: The NRG Astrodome, also known as the Houston Astrodome or simply The Astrodome, is the world's first multi-purpose, domed sports stadium, located in Houston, Texas.  Construction on the stadium began in 1962, and it officially opened in 1965.  It served as home to the Houston Astros of Major League Baseball (MLB) from its opening in 1965 until 1999, and the home to the Houston Oilers of the National Football League (NFL) from 1968 until 1996, and also the part-time home of the Houston Rockets of the National Basketball Association (NBA) from 1971 until 1975.  Additionally, the Astrodome was the primary venue of the Houston Livestock Show and Rodeo from 1966 until 2002.  When opened, it was named the Harris County Domed Stadium and was nicknamed the "Eighth Wonder of the World".
+
+[3] Fearless (Eighth Wonder album): Fearless is the 1988 debut album by British pop group Eighth Wonder.  It is the group's only UK album release, is entirely uptempo, and contains six UK-issued singles (the earliest, "Stay With Me", dating back to 1985) including their highest-selling and best-remembered track, the Pet Shop Boys-produced and written "I'm Not Scared" (a #7 hit), and "Cross My Heart" (#13).  "Fearless" peaked at #47 on the UK Albums Chart.  Eighth Wonder split up in 1989, with lead singer Patsy Kensit going on to devote herself to her acting career.
+
+[4] Shreveport Steamer: The Shreveport Steamer were a professional American football team in the World Football League.  The franchise began the 1974 season in Houston, Texas, as the Houston Texans, who are in no way related to the current NFL team of the same name, playing their home games at the Houston Astrodome.  Toward the end of the season the team relocated to Shreveport, Louisiana, and became the Shreveport Steamer.  They played at the 30,000-seat State Fair Stadium, now named Independence Stadium.
+
+Question: What criteria subjectively qualifies the Houston Astrodome to be called the Eighth Wonder of the World?
+
+Answer:

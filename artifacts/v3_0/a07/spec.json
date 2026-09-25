@@ -1,1 +1,0 @@
-{"experiment_id":"A07","metric_version":"v3.0.0","name":"audit_sampling","params":{"delta":0.05,"n_min":200},"provenance_class":"DERIVED","release":"v3.0","requires_model_calls":false,"seeds":[0,1,2,3],"tier":"T1"}

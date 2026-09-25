@@ -1,0 +1,8 @@
+{
+  "current_aggregate_authority": "14_artifacts/manuscript_stack/data",
+  "generation_identity_and_hash_reconciliation": "PASS",
+  "legacy_result_values_admitted": 0,
+  "receipt_identity_and_hash_reconciliation": "PASS",
+  "status": "PASS_WITH_EXPLICIT_PER_OBSERVATION_GAP",
+  "trajectory_identity_and_hash_reconciliation": "PASS"
+}

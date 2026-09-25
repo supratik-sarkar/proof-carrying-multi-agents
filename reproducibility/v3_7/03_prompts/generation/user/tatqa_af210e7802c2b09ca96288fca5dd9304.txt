@@ -1,0 +1,22 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] TAT-QA 4: The percentage of Global Financing receivables reserved was 1.0 percent at December 31, 2019, compared to 0.9 percent at December 31, 2018. The decline in the allowance for credit losses was driven by write-offs of $64 million, primarily of receivables previously reserved, and net releases of $7 million as a result of lower average asset balances in client and commercial financing. See note K, “Financing Receivables,” for additional information.
+
+[2] TAT-QA 2: The following table presents external Global Financing receivables excluding residual values, the allowance for credit losses and immaterial miscellaneous receivables:
+
+[3] TAT-QA 1: Global Financing Receivables and Allowances
+
+[4] TAT-QA table: row 0: ($ in millions) |  | 
+row 1: At December 31: | 2019 | 2018
+row 2: Recorded investment (1) | $22,446 | $31,182
+row 3: Specific allowance for credit losses | 177 | 220
+row 4: Unallocated allowance for credit losses | 45 | 72
+row 5: Total allowance for credit losses | 221 | 292
+row 6: Net financing receivables | $22,224 | $30,890
+
+Question: What was the decline in the global financing receivables?
+
+Answer:

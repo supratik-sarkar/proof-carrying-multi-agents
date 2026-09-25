@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "4738cc6c7fed1ba416ac21365e95beb321ec585de162defddef256d2f0b70663",
+  "candidate_text": "\n\nYes",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "4e3166e7026a5598f2b7a67fb568d37d717745c1afc0126cd0014aac5313ac29",
+  "example_id": "17355582",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "a0df76b6c57f2f3c930298454e9aaa247785ab400433e115431f59143da6e0df",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "17355582",
+  "prompt_sha256": "eacd34c80e684c204ae691f1d32e24056ce9727e8e12b2f755d959110f126ed7",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: OBJECTIVE: The validity of quality of care measurement has important implications for practicing clinicians, their patients, and all involved with health care delivery. We used empirical data from managed care patients enrolled in west coast physician organizations to test the hypothesis that observed changes in health-related quality of life across a 2.5-year window reflecting process of care.DATA SOURCES/ STUDY SETTING: Patient self-report data as well as clinically detailed medical record review regarding 963 patients with chronic disease associated with managed care from three west coast states. STUDY DESIGN: Prospective cohort study of change in health-related quality of life scores across 30 months as measured by change in SF-12 physical component scores.DATA COLLECTION/ EXTRACTION METHODS: Patient self-report and medical record abstraction. PRINCIPAL FINDINGS: We found a positive relationship between better process scores and higher burden of illness (p<.05). After adjustment for burden of illness, using an instrumental variables approach revealed better process is associated with smaller declines in SF-12 scores across a 30-month observation window (p=.014). The application of the best quartile of process of care to patients currently receiving poor process is associated with a 4.24 increment in delta SF-12-physical component summary scores.\n\nLong answer: The use of instrumental variables allowed us to demonstrate a significant relationship between better ambulatory process of care and better health-related quality of life. This finding underscores the importance of efforts to improve the process of care.\n\nQuestion: Does ambulatory process of care predict health-related quality of life outcomes for patients with chronic disease?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "41d72c6d4c48432e52d2176b0d3cce2ea2d6144f2c58b5dc4cba1541322fdadb",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:17355582",
+  "task_key": "a7adb3a13e454f3eed828e7b1b4ade16ec3e54970628595d1814faddb269adb6",
+  "text": "\n\nYes",
+  "timestamp": "2026-09-15T09:27:56.194381+00:00",
+  "tokens_in": 442,
+  "tokens_out": 72,
+  "usage": {
+    "completion_tokens": 72,
+    "neurons": 39.02727127075195,
+    "prompt_tokens": 442,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 514
+  }
+}

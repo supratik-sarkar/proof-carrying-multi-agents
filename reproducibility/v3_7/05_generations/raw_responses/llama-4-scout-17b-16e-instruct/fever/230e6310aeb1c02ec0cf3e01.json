@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "43523816e8d22421e81011d62bf742d344b05805703e91938658339cedf1d87d",
+  "example_id": "6525ac9b01d826e066963adc9faead8e",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "96498df0a7210e637da456a07521f73a265f3bec5b54d5a23dd89991816aeba0",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "6525ac9b01d826e066963adc9faead8e",
+  "prompt_sha256": "0af513b622f006571133b393636b3a32236f786ea96da75072b149fd2577ff35",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Philip Glass: Glass 's compositions have been described as minimal music , similar to other `` minimalist '' composers including La Monte Young , Steve Reich and Terry Riley .\n\nClaim: There are no musical or creative works in existence that have been created by Phillip Glass.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "96becebf91d333862b883c1dfa04790846fc73bb2f220f3b59d175d065966425",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:6525ac9b01d826e066963adc9faead8e",
+  "task_key": "670967248ebb9106b9724902522f6c5be5afc63378172820d92d0226400765c2",
+  "text": "REFUTES",
+  "timestamp": "2026-09-15T09:34:42.939285+00:00",
+  "tokens_in": 134,
+  "tokens_out": 3,
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 3.520909309387207,
+    "prompt_tokens": 134,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 137
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "637f9ae2b0902bc526ed60ec903e351b159eaf4c2b8bcc22d68249464aa7133b",
+  "candidate_text": "I'll help you get all that information. Let me make the function calls for you.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "89cb69956afce1c69345049f6def021c5b3366beb0b8e701cfad2e7b2bc906d6",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_multiple_function_175",
+  "prompt_sha256": "89cb69956afce1c69345049f6def021c5b3366beb0b8e701cfad2e7b2bc906d6",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "615925637c1532ff70628e355a094ec6de0a366c82056527a6471405d4e99106",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you get all that information. Let me make the function calls for you.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"Tokyo\", \"country\": \"Japan\", \"timezone\": \"Asia/Tokyo\"}",
+        "name": "get_current_time"
+      },
+      "id": "chatcmpl-tool-aacb6531327e7ccc",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York\", \"country\": \"United States\", \"timezone\": \"America/New_York\"}",
+        "name": "get_current_time"
+      },
+      "id": "chatcmpl-tool-9e5a51ecabf7dfc3",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\": \"Microsoft\", \"detail_level\": \"detailed\", \"market\": \"NASDAQ\"}",
+        "name": "get_stock_info"
+      },
+      "id": "chatcmpl-tool-b2d7cc95b2ff4234",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\": \"Apple\", \"detail_level\": \"summary\", \"market\": \"NASDAQ\"}",
+        "name": "get_stock_info"
+      },
+      "id": "chatcmpl-tool-a01e42a00e88bfab",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 359,
+    "neurons": 15.7406,
+    "prompt_tokens": 486,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 845
+  }
+}

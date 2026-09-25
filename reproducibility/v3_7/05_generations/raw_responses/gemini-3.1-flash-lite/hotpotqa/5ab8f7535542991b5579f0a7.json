@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "67724ee272dea6ce3c4d411e73ecc5848c3c6812b0a49b04a436f4e22e897f21",
+  "candidate_text": "Sacred Planet.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "c809bf31573de1c8491f984254246e247a5ce827a09ab4feff2198667db652c6",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5ab8f7535542991b5579f0a7",
+  "prompt_sha256": "ebb7645a7ea4fd7a3bced92180019ae095623e0607dcd864c89fe1155c4485df",
+  "provider": "gemini",
+  "provider_raw_sha256": "808596843687a907580faf2b0a2e20236f134270974797316eb1056cdb97151f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ab8f7535542991b5579f0a7",
+  "text": "Sacred Planet.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 797,
+    "total_tokens": 801
+  }
+}

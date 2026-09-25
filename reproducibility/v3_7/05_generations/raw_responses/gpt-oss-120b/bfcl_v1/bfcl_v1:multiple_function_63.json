@@ -1,0 +1,44 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Missing required parameter: 'days'."
+    ],
+    "error_type": "simple_function_checker:missing_required",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "fe0797facfd5d7fe869fd26c2d9250fa270102c829aa09dd89bb9f21b760eeca",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:multiple_function_63",
+  "prompt_sha256": "fe0797facfd5d7fe869fd26c2d9250fa270102c829aa09dd89bb9f21b760eeca",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "e1bcfda1fc6ac15c5cfb3698509ea907d5ae7500a96e03848bb620dea925b1f1",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York, NY, USA\", \"time_frame\": \"next week\"}",
+        "name": "air_quality_forecast"
+      },
+      "id": "chatcmpl-tool-8f86ab068a298fea",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 138,
+    "neurons": 15.168146133422852,
+    "prompt_tokens": 181,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 319
+  }
+}

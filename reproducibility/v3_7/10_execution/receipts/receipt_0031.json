@@ -1,0 +1,13 @@
+{
+  "CLEAN_ENV_ACTIVE_FOR_EXECUTION": "YES",
+  "agentdojo_python": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "bfcl_python": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "execute_lane_python": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "launcher_python": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "mind2web_python": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "pipeline_python": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "schema": "PCG_MAS_V3_6_CLEAN_RUNTIME_BINDING_RECEIPT",
+  "status": "PASS",
+  "task_batch_python": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "timestamp": "2026-09-17T06:56:00Z"
+}

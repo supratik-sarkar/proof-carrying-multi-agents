@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "c891cad1145b875b46889b5e8d48eeb02130838878c11a134df4ad72e836c4ab",
+  "example_id": "a7b05294088a11ebbd6fac1f6bf848b6",
+  "finish": "stop",
+  "input_sha256": "404805b2351500108556e3d5d69342925c82726a7fcecc3b937d9b300f2658a3",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "a7b05294088a11ebbd6fac1f6bf848b6",
+  "prompt_sha256": "a1fff15f11fc852f0047c2ee38fb8e8260afcc22fe7be65101fb31d76e142a9e",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"The Gentle Sex\": [\"The Gentle Sex is a 1943 British, black- and- white romantic comedy- drama war film, directed and narrated by Leslie Howard.\",\"It was produced by Concanen Productions, Two Cities Films and Derrick de Marney.\",\"\\\" The Gentle Sex\\\" was Howard's last film before his death.\"]\n\n[2] \"John Ford\": [\"John Ford( February 1, 1894 \\u2013 August 31, 1973) was an American film director.\",\"He is renowned both for Westerns such as\\\" Stagecoach\\\"( 1939),\\\" The Searchers\\\"( 1956), and\\\" The Man Who Shot Liberty Valance\\\"( 1962), as well as adaptations of classic 20th- century American novels such as the film\\\" The Grapes of Wrath\\\"( 1940).\",\"His four Academy Awards for Best Director( in 1935, 1940, 1941, and 1952) remain a record.\",\"One of the films for which he won the award,\\\" How Green Was My Valley\\\", also won Best Picture.\",\"In a career that spanned more than 50 years, Ford directed more than 140 films( although most of his silent films are now lost) and he is widely regarded as one of the most important and influential filmmakers of his generation.\",\"Ford's work was held in high regard by his colleagues, with Orson Welles and Ingmar Bergman among those who have named him one of the greatest directors of all time.\",\"Ford made frequent use of location shooting and long shots, in which his characters were framed against a vast, harsh, and rugged natural terrain.\"]\n\n[3] \"The Searchers\": [\"The Searchers is a 1956 American Technicolor VistaVision Western film directed by John Ford, based on the 1954 novel by Alan Le May, set during the Texas \\u2013 Indian wars, and starring John Wayne as a middle- aged Civil War veteran who spends years looking for his abducted niece( Natalie Wood), accompanied by his adoptive nephew( Jeffrey Hunter).\",\"Critic Roger Ebert found Wayne's character, Ethan Edwards,\\\" one of the most compelling characters Ford and Wayne ever created\\\".\",\"The film was a commercial success.\",\"Since its release, it has come to be considered a masterpiece and one of the greatest and most influential films ever made.\",\"It was named the greatest American Western by the American Film Institute in 2008, and it placed 12th on the same organization's 2007 list of the 100 greatest American movies of all time.\",\"\\\" Entertainment Weekly\\\" also named it the best Western.\",\"The British Film Institute's\\\" Sight& Sound\\\" magazine ranked it as the seventh- best film of all time based on a 2012 international survey of film critics and in 2008, the French magazine\\\" Cahiers du Cin\\u00e9ma\\\" ranked\\\" The Searchers\\\" number 10 in their list of the 100 best films ever made.\",\"In 1989,\\\" The Searchers\\\" was deemed\\\" culturally, historically, or aesthetically significant\\\" by the United States Library of Congress, and selected for preservation in its National Film Registry; it was one of the first 25 films selected for the registry.\",\"\\\" The Searchers\\\" was the first major film to have a purpose- filmed making- of, requested by John Ford.\",\"It deals with most aspects of making the movie, including preparation of the site, construction of props, and filming techniques.\"]\n\n[4] \"Ben Palmer\": [\"Ben Palmer is a British film and television director who is known for being the director of\\\" Bo' Selecta\\\" and\\\" The Inbetweeners\\\".\"]\n\nQuestion: Which film has the director who is older, The Gentle Sex or The Searchers?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "07210a5359abafce32435dc0b868c18d410bfcbe7de8b609b570d2121c24adec",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:a7b05294088a11ebbd6fac1f6bf848b6",
+  "task_key": "ff82176370a58b8e800def99e653ccbaad3b77d478e7a8bccd3a04d52f4f66b2",
+  "text": "I don't know.",
+  "timestamp": "2026-09-14T10:33:10.361791+00:00",
+  "tokens_in": 891,
+  "tokens_out": 115,
+  "usage": {
+    "completion_tokens": 115,
+    "neurons": 36.19074249267578,
+    "prompt_tokens": 891,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1006
+  }
+}

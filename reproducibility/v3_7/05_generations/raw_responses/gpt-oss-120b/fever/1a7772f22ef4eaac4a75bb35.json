@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "fbfcf0f48a2029b58901aae3836ce9a6e8881760019671b5401cb5824e7e4363",
+  "example_id": "56701244cd5e29e1fccaf69e54516549",
+  "finish": "stop",
+  "input_sha256": "e86ab8fd1dc7b7519c93689dd23ba2c2536751f5a921f6f26e76fdbce3620b4d",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "56701244cd5e29e1fccaf69e54516549",
+  "prompt_sha256": "dbf0c6a74df60c8cf0d3b6da9474008b1fdf51cd745b3e8470849c17a2000aa1",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Hush (2016 film): The film was produced by Trevor Macy , through Intrepid Pictures , and Jason Blum through his Blumhouse Productions banner .\n\nClaim: Hush (2016 film) was produced.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "ed3794e471ea34441116260e5f3bc6c8c24a1a99f4d14428937e1689667036f8",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:56701244cd5e29e1fccaf69e54516549",
+  "task_key": "81c086bbfd7574eb920f21fa27fc8952e296677c9d563fca6fbbe8c1c9d18d55",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:28.251312+00:00",
+  "tokens_in": 180,
+  "tokens_out": 70,
+  "usage": {
+    "completion_tokens": 70,
+    "neurons": 10.49996566772461,
+    "prompt_tokens": 180,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 250
+  }
+}

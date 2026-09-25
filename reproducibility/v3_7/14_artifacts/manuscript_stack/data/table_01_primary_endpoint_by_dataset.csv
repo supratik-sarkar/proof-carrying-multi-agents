@@ -1,0 +1,9 @@
+dataset,pcg_accepted_risk,best_applicable_risk,delta_primary_pp,retained_coverage,model_cells,source_file,aggregation
+FEVER,6.93940419286489,8.39519825064255,-1.45579405777766,83.6891137456092,7,paired_cell_effects.csv,Arithmetic mean over the seven paired model cells; comparator chosen within each cell
+HotpotQA,10.814680911431,12.4347613727282,-1.62008046129716,83.8602859543238,7,paired_cell_effects.csv,Arithmetic mean over the seven paired model cells; comparator chosen within each cell
+PubMedQA,5.43724205232874,7.15334948325185,-1.71610743092311,82.4710650339924,7,paired_cell_effects.csv,Arithmetic mean over the seven paired model cells; comparator chosen within each cell
+TAT-QA,9.0716020088082,10.9064827148509,-1.83488070604269,82.6866947562496,7,paired_cell_effects.csv,Arithmetic mean over the seven paired model cells; comparator chosen within each cell
+2Wiki,10.310580027113,11.857241158127,-1.54666113101397,82.2668729949042,7,paired_cell_effects.csv,Arithmetic mean over the seven paired model cells; comparator chosen within each cell
+Mind2Web,10.3405647769702,12.8785374984169,-2.53797272144667,81.8624308228456,7,paired_cell_effects.csv,Arithmetic mean over the seven paired model cells; comparator chosen within each cell
+BFCL V1,9.13093057013371,11.6948100133055,-2.56387944317182,82.3325620456194,7,paired_cell_effects.csv,Arithmetic mean over the seven paired model cells; comparator chosen within each cell
+AgentDojo,10.8141343024618,13.5157401690269,-2.70160586656508,81.4085713105142,7,paired_cell_effects.csv,Arithmetic mean over the seven paired model cells; comparator chosen within each cell

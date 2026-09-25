@@ -1,0 +1,9 @@
+{
+  "donor_binding": "15_change_control/v3_6_donor_binding.json",
+  "historical_execution_evidence": "HASH_RECONCILED_SEALED_DONOR_PROJECTIONS",
+  "project": "PCG-MAS",
+  "record_status": "READY_FOR_SEALING",
+  "record_type": "PUBLIC_REPRODUCIBILITY_RECORD",
+  "scientific_release": "v3.7",
+  "scientific_result_authority": "14_artifacts/manuscript_stack/data"
+}

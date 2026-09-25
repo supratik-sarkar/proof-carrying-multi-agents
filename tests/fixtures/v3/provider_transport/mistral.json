@@ -1,0 +1,24 @@
+{
+ "err": {
+  "body": {
+   "message": "unauthorized"
+  },
+  "status": 401
+ },
+ "ok": {
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "message": {
+     "content": "recorded mistral answer"
+    }
+   }
+  ],
+  "id": "mist-REC1",
+  "model": "mistral-x-2026",
+  "usage": {
+   "completion_tokens": 31,
+   "prompt_tokens": 105
+  }
+ }
+}

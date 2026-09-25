@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "927fb042ad4ff50c91a01b2e05e43163e0dd497cb157edeca827b19ede9b6fb6",
+  "candidate_text": "Miller Brewing.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "59ac74c2b6482723eb4c4704812b9133264b6b20eb878ef58be83b9243afcbe5",
+  "example_id": "5ab9d44255429939ce03dc36",
+  "finish": "stop",
+  "input_sha256": "6ab349a83849692782d6e3e2df4b9e7e22bc8aff29f6b6493273318978713630",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5ab9d44255429939ce03dc36",
+  "prompt_sha256": "82a25dcb9a1380ba35246515217ca76c02fefa3540c7d502bd0570cf8bc20cc6",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] The History of Ranching (Winn): The History of Ranching is a mural that was originally located at the Pearl Brewery in San Antonio, Texas.  The Pearl Brewing Company had always preferred to use Texas artists whenever possible.  Long after other brewers had moved to using only photographs in their advertising campaigns, Pearl continued to use ads that featured sketches, drawings, or paintings of the concept or product.  The more famous of Pearl's artistic advertisements were of Judge Roy Bean's Jersey Lilly and a collage called \"The Last Fight of Manolete\".  Both works saw wide distribution as large printed pictures framed and intended to hang in pubs and bars.  The subjects and sizes changed constantly in Pearl's ads, but one thing remained the same, Pearl made it a point to use local artists.\n\n[2] Pearl Brewing Company: The Pearl Brewing Company (also known as the Pearl Brewery or just Pearl) was an American brewery, established in 1883 in Downtown San Antonio, Texas, USA.  In 1985, Pearl's parent company purchased the Pabst Brewing Company and assumed the Pabst name.  In 1999, the Pabst Brewing Company began transferring its production to Miller Brewing, on a contract basis, and closing all of its breweries.  Pearl beer is still in production at Miller's Ft. Worth, Texas facility, but the Pearl Brewery in San Antonio was closed in 2001.  Since then, the former brewery was purchased by Silver Ventures, Inc., which has made the property the crown jewel in revitalization efforts of southern Midtown and northern Downtown San Antonio.\n\n[3] Untitled (Urban Wall): Untitled (Urban Wall) is an outdoor mural by Austrian artist Roland Hobart located at 32 North Delaware Street in downtown Indianapolis, Indiana.  The mural originally occupied two exterior walls of two four-story commercial buildings at this site.  The mural was commissioned by the City of Indianapolis for the Indianapolis Urban Walls Project in 1973.  Fabrication of the mural began in September 1973 and finished by the end of the year.\n\n[4] Pueblo Levee Mural Project: The Pueblo Levee Mural Project is a mural along a levee of the Arkansas River certified by the Guinness Book of Records as the longest painting in the world.  It is a 3-mile long continuous mural located in Pueblo, Colorado.  The mural was originally started in the 1970s, according to the city website, when students of nearby Colorado State University–Pueblo began painting over existing graffiti.  They worked at night to evade notice by the police, and in the end the work received support from the community; since 1988 it has a dedicated coordinator.\n\nQuestion: The History of Ranching is a mural that was originally located at an American brewery that in 1999 began trasfering its production to who?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "69c4fb471d38f6bd344a47b07adc8608581a057d03dc39cb8dcfa20f31db9dda",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ab9d44255429939ce03dc36",
+  "task_key": "6817d1f8c9e47c480d36d3755307f64fac3fe128e99d335571c07ec0150d0d46",
+  "text": "Miller Brewing.",
+  "timestamp": "2026-09-14T10:32:33.184876+00:00",
+  "tokens_in": 697,
+  "tokens_out": 54,
+  "usage": {
+    "completion_tokens": 54,
+    "neurons": 25.858963012695312,
+    "prompt_tokens": 697,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 751
+  }
+}

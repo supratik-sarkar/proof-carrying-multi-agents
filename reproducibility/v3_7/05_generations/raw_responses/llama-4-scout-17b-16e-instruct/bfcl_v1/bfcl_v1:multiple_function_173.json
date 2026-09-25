@@ -1,0 +1,43 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "fb93440b22652e20718c52139de95acb8913e173bad970f63395cf95835fc649",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:multiple_function_173",
+  "prompt_sha256": "fb93440b22652e20718c52139de95acb8913e173bad970f63395cf95835fc649",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "3fe704c5545f7e6ad7260d3a17f6107a7cae8cb1c1a1abadcc441d26cd39e2fc",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"season\":2021,\"top\":1}",
+        "name": "get_defense_ranking"
+      },
+      "id": "call_1789655656971",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 16,
+    "neurons": 26.665456771850586,
+    "prompt_tokens": 1036,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1052
+  }
+}

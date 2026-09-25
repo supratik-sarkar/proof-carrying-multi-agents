@@ -1,0 +1,59 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ee1d66062315600501e74a84f038529354ae3253a7f6f211da065fba45ef4a76",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_multiple_function_178",
+  "prompt_sha256": "ee1d66062315600501e74a84f038529354ae3253a7f6f211da065fba45ef4a76",
+  "provider": "gemini",
+  "provider_raw_sha256": "fd8b1f7323962368819ffa485d0a373986bec30089f4c49693587b0c6bb2af7c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIP79qdS+zHKnjhBHRUJHQFIcdgE1B4bLNENLpjtDmM75C61HLozfdWJZz9qeSQbk3DGRlkCIRUA2frrHFYopSsOCke0B7XAFnhuQoJbfUAXBJg1VWhbkt08Vh4pN8Jf9cY1d0gZ1qF7xPntQ=="
+        }
+      },
+      "function": {
+        "arguments": "{\"radius\":200,\"amount\":5,\"location\":\"Tokyo\"}",
+        "name": "locate_tallest_mountains"
+      },
+      "id": "call_1139961",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"final_temp\":350,\"initial_temp\":300,\"isothermal\":true,\"heat_capacity\":1.5}",
+        "name": "calculate_entropy_change"
+      },
+      "id": "call_1139962",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"event\":\"Battle of Waterloo\",\"location\":\"Belgium\"}",
+        "name": "get_event_date"
+      },
+      "id": "call_1139963",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 97,
+    "prompt_tokens": 501,
+    "total_tokens": 598
+  }
+}

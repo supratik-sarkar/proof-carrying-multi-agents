@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "3d0b18d0e0d64b1e37f718a540c98bb92ec88c2eff299ff3ffc97a87aee94e47",
+  "example_id": "8465c2034de85a7aea79c9342cc9ec5d",
+  "finish": "stop",
+  "input_sha256": "20848cd57ea8479e86a37ea87eea0ad89b7bc7e7f14af7fd222ea5a494794e87",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "8465c2034de85a7aea79c9342cc9ec5d",
+  "prompt_sha256": "122608ba41a2251db7c5d69829d4c021d26d614db033a3aefdaf3af00823f09e",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Juventus F.C.: The club is the second oldest of its kind still active in the country after Genoa 's football section -LRB- 1893 -RRB- , has traditionally worn a black and white striped home kit since 1903 and has played its home matches in several grounds , being the latest the 41,507-capacity Juventus Stadium .\n\nClaim: Juventus F.C. adopted its characteristic black-and-white-striped home uniform in 1903.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "ddc2b031126dd091e0a9267b0428585efdc3cc2d4ddf5561e917d8baf214db7a",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:8465c2034de85a7aea79c9342cc9ec5d",
+  "task_key": "7a44cc98dbeeb4451e75b20fb69f96578731983bda46fb7ee0dc4f9c22a2e26d",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:28.648436+00:00",
+  "tokens_in": 232,
+  "tokens_out": 59,
+  "usage": {
+    "completion_tokens": 59,
+    "neurons": 11.404501914978027,
+    "prompt_tokens": 232,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 291
+  }
+}

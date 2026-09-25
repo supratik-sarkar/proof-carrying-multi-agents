@@ -1,0 +1,32 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "correct": false,
+    "parse_status": "NO_JSON"
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "6418cf4598d204e7dbaa52eb3394ad33ed76925e31fc9c13e185990b6dba3d8f",
+  "finish_reason": "length",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "mind2web:b35fe3ca-8837-43eb-9211-42ddbf38657f",
+  "prompt_sha256": "6418cf4598d204e7dbaa52eb3394ad33ed76925e31fc9c13e185990b6dba3d8f",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "d776cc2049971f68bfcfea1ee683c99f0238c3d8130be4f328172c7dc4cee87e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 256,
+    "neurons": 32.6317253112793,
+    "prompt_tokens": 477,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 733
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "a85ba64b3aedb65577d9af6fc598afc85574b00f20a231ef81b9f5addf1d2ba5",
+  "candidate_text": "$466 decrease",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "3dc0c2335bf3a789d899a0b6b94d4006cb5da6af50d8c9f94e09a3b9ceaa640c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5d6a71d31093d7854e91f6525e49a1f4",
+  "prompt_sha256": "a63261d5606189a9b2dd2310376014ef56ec903b9b19eba231eec5d9a2d55819",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "474ecc76b9865affc55957731d07ec4a218d1b1b337125ef47e07a85dadf6646",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:5d6a71d31093d7854e91f6525e49a1f4",
+  "text": "$466 decrease",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 7.972726821899414,
+    "prompt_tokens": 859,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 865
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "2c7d648bf8bc40a7585cc8b8cb5bc736979e082d13d959c17f465e3099a4bfa3",
+  "candidate_text": "$227,000 and $173,000",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "ba0e5f6fb3b8fc11db9537a29b8ed4453e1852228759a28c1a584fc533fa0026",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "46f35aee845bc1419a183c18c5f03008",
+  "prompt_sha256": "3babd12dcba2fd28aa1e0034500e050c590f60bce1feb31a6034d02cb76de37e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "19cdc53d8120411bb1739713e935a566d5f4822ca4263595707fa5f9c397e74a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:46f35aee845bc1419a183c18c5f03008",
+  "text": "$227,000 and $173,000",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 11,
+    "neurons": 4.5969,
+    "prompt_tokens": 763,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 774
+  }
+}

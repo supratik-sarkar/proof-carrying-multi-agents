@@ -1,0 +1,18 @@
+{
+  "excluded": [
+    "credentials",
+    "private paths",
+    "account identifiers",
+    "network endpoints",
+    "legacy scientific result values"
+  ],
+  "external_private_tree_dependency": false,
+  "included": [
+    "00_release through 16_replay",
+    "embedded manuscript data/source/artifacts",
+    "sanitized historical execution evidence"
+  ],
+  "public_root": "reproducibility/v3_7",
+  "release": "v3.7",
+  "standalone_replay": true
+}

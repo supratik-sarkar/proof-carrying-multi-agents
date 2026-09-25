@@ -1,0 +1,43 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "32c08a1bb519c482071f5a73ace4091d3d699e9071ccbdf334452d3d98d428b9",
+  "candidate_text": "I'll calculate the probability of drawing a king from a standard deck of cards.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b07dbfffa5aa3e2dea3be40739de6c6983019cfa88278036151bdd0eea18c8cf",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:multiple_function_123",
+  "prompt_sha256": "b07dbfffa5aa3e2dea3be40739de6c6983019cfa88278036151bdd0eea18c8cf",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "967595bbfb8bf1eecd3e0db351e156598a88697d0c1977af6f24cee789dc32ff",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll calculate the probability of drawing a king from a standard deck of cards.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"total_outcomes\": 52, \"favorable_outcomes\": 4}",
+        "name": "calculate_probability"
+      },
+      "id": "chatcmpl-tool-8940a181b17e02ac",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 166,
+    "neurons": 8.8474,
+    "prompt_tokens": 510,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 676
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "59a4f6986d37adcaa6fc80faafa37529db40dcd65a2a176199559af3acd2f0aa",
+  "candidate_text": "Decrease of $4 million.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "a03984bddfeb5249b898fa15bdce5bc18e5f1989bda82d6e826ec9c80abb3f30",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "530a48e799250396beb8fccff5acb9ce",
+  "prompt_sha256": "ad3f61465674a26c993d1b115658745fe0cbaf00e4d5dfa254602a1cb363002b",
+  "provider": "gemini",
+  "provider_raw_sha256": "5958179297babea528fd9f9f9e56748436a30fdf3cbd887c93e6fe73c4f9275e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:530a48e799250396beb8fccff5acb9ce",
+  "text": "Decrease of $4 million.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 707,
+    "total_tokens": 713
+  }
+}

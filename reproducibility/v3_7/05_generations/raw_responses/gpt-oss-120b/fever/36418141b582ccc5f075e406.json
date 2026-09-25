@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "6e2049d64ab357abedc48a1c3a79061a8ffcaf7cf5f1e7f62a7f57b2f0f4c875",
+  "example_id": "3bf0343e3e9d0ddcf76e978fad3fbdc6",
+  "finish": "stop",
+  "input_sha256": "719afa67cd088d48b3cca68375bab460416cba0cd067d53e6735387a7998ea34",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "3bf0343e3e9d0ddcf76e978fad3fbdc6",
+  "prompt_sha256": "6fad5b6bfa3a725615f8e1a10f1384a64f49053fdb8999ab8848320efb5607e3",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] House of Cards (season 1): The series also stars Robin Wright , Kate Mara , and Corey Stoll in lead roles .\n\nClaim: Billboard Dad stars Robin Wright.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "627fd44ca53f5855d9ed23ce9ef5a315ade7a5f62e13377e519f60c51e1dd535",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:3bf0343e3e9d0ddcf76e978fad3fbdc6",
+  "task_key": "7c4deb0b9b616f407729c4669f546a922bdf8b745229a3ce3555e6e4ae656d08",
+  "text": "NOT ENOUGH INFO",
+  "timestamp": "2026-09-14T10:35:54.262785+00:00",
+  "tokens_in": 172,
+  "tokens_out": 94,
+  "usage": {
+    "completion_tokens": 94,
+    "neurons": 11.881784439086914,
+    "prompt_tokens": 172,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 266
+  }
+}

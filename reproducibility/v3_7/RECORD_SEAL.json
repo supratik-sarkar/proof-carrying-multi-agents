@@ -1,0 +1,10 @@
+{
+  "donor_record_manifest_sha256": "20391ff9b76ebfd13ce1fa1c8db0fcbfdc5feb74172fe2350080bb0035eaa753",
+  "donor_record_seal_sha256": "9931bc0713a61282e5261f73ba4f30d25be16874c0d7c5b408809de40a607787",
+  "record_created_utc": "2026-09-25T13:19:34.381027+00:00",
+  "record_manifest_sha256": "008301f559427d58d6c66b401f8f1372e043b07ec72ecb3862f7204614bf5842",
+  "schema": "pcg_mas_v3_7_record_seal_v1",
+  "seal_scope": "PCG_MAS_V3_7_PUBLIC_REPRODUCIBILITY_RECORD",
+  "sha256sums_sha256": "1dff43c170e407ea920f276631ed0a2ef8fcbadcbc364a7fd97571f4fb601254",
+  "status": "SEALED_STANDALONE_RECORD"
+}

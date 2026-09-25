@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "7c23285368da2256d6d97127d0fa42a5c280e4541b8dd7b22b2369f50b2642c4",
+  "candidate_text": "\n\nNo",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "4f3a221befa310445adce2f20a317b7cf8325814f82acd0230bef7202838071e",
+  "example_id": "12040336",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "3e6e39f61a80f9b725584d16028dbb2a223ebb7b6fb48202bcc2d97facc09a62",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "12040336",
+  "prompt_sha256": "c35b352b6fa404251524b1a19c51c3849a7f130c94d5a5ab10499e1789c5d8f9",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: BACKGROUND: The role of early revascularization among patients with acute myocardial infarction complicated by cardiogenic shock remains controversial. Angioplasty registries, while suggesting a benefit, are subject to selection bias, and clinical trials have been underpowered to detect early benefits. If an invasive strategy is beneficial in this population, patients admitted to hospitals with onsite coronary revascularization might be expected to have a better prognosis. We sought to determine whether access to cardiovascular resources at the admitting hospital influenced the prognosis of patients with acute myocardial infarction complicated by cardiogenic shock. METHODS: By use of the Cooperative Cardiovascular Project database (a retrospective medical record review of Medicare patients discharged with acute myocardial infarction), we identified patients aged>or =65 years whose myocardial infarction was complicated by cardiogenic shock. RESULTS: Of the 601 patients with cardiogenic shock, 287 (47.8%) were admitted to hospitals without revascularization services and 314 (52.2%) were admitted to hospitals with coronary angioplasty and coronary artery bypass surgery facilities. Clinical characteristics were similar across the subgroups. Patients admitted to hospitals with revascularization services were more likely to undergo coronary revascularization during the index hospitalization and during the first month after acute myocardial infarction. After adjustment for demographic, clinical, hospital, and treatment strategies, the presence of onsite revascularization services was not associated with a significantly lower 30-day (odds ratio 0.83, 95% CI 0.47, 1.45) or 1-year mortality (odds ratio 0.91, 95% CI 0.49, 1.72).\n\nLong answer: In a community-based cohort, patients with acute myocardial infarction complicated by cardiogenic shock did not have significantly different adjusted 30-day and 1-year mortality, irrespective of the revascularization capabilities of the admitting hospital.\n\nQuestion: Cardiogenic shock complicating acute myocardial infarction in elderly patients: does admission to a tertiary center improve survival?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "6d4b8d8bf9201dd1cb45d33383c295ff18574117127da2100e98e9b269460447",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:12040336",
+  "task_key": "67dbb964ca1ee554de896c8232f5320388b5b1e3959f5c67620bd93ab4be741d",
+  "text": "\n\nNo",
+  "timestamp": "2026-09-15T09:26:54.839942+00:00",
+  "tokens_in": 553,
+  "tokens_out": 115,
+  "usage": {
+    "completion_tokens": 115,
+    "neurons": 56.0772705078125,
+    "prompt_tokens": 553,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 668
+  }
+}

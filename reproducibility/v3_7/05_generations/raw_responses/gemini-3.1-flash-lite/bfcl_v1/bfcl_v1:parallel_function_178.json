@@ -1,0 +1,67 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "4dee65a725322a0a3d82afe480add3b67f76fbbce9d6de43759513cd2cdcf050",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_function_178",
+  "prompt_sha256": "4dee65a725322a0a3d82afe480add3b67f76fbbce9d6de43759513cd2cdcf050",
+  "provider": "gemini",
+  "provider_raw_sha256": "ced2964f7622de2c1d937f576430a09000091e99921c5d12e186599b3cff3eb2",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPq78U1cX/oTsI41/YWOIzdJWK2Gf6mxdf0kXvYeOn+RHhmLJBlcIEBIRcYVTaOEBsxKd/7buV2qsUCPUzLyWEWtju6Bs7Hl/atP1nmrOVoxLNg0oaVfFPLL9Ra5SZZg0OjJnbsJkE85tJsQ=="
+        }
+      },
+      "function": {
+        "arguments": "{\"company_name\":\"Microsoft\",\"date\":\"2022-01-01\"}",
+        "name": "get_stock_price"
+      },
+      "id": "call_1328425",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"date\":\"2022-02-01\",\"company_name\":\"Microsoft\"}",
+        "name": "get_stock_price"
+      },
+      "id": "call_1328426",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"date\":\"2022-01-01\",\"company_name\":\"Apple\"}",
+        "name": "get_stock_price"
+      },
+      "id": "call_1328427",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\":\"Apple\",\"date\":\"2022-02-01\"}",
+        "name": "get_stock_price"
+      },
+      "id": "call_1328428",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 140,
+    "prompt_tokens": 176,
+    "total_tokens": 316
+  }
+}

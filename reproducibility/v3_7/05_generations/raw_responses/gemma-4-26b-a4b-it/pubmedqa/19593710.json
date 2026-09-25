@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "f2b76ad0edeff3e29207c0dd4a9fd3a8fbc9c6d905f5e5c6fbea328ecb4b6f0d",
+  "candidate_text": "Yes, behavioral adaptation is likely.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "7ce226b94774bc257ca835b34070c5d7b210a80b7d6b637c96b4da5c85611c8a",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "19593710",
+  "prompt_sha256": "e9e014547c8e3e547199a131be82f6ec98d317755458e2d7209fcf6add20775a",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "2609aa3c9ad1fc15d1db99f510c70c6a315dc4fb9689501948621034f2e18d0f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:19593710",
+  "text": "Yes, behavioral adaptation is likely.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 4.7909088134765625,
+    "prompt_tokens": 503,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 511
+  }
+}

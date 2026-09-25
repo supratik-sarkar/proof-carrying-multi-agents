@@ -1,0 +1,29 @@
+{
+  "READY": "YES",
+  "canonical_complete_before_launch": 1425,
+  "canonical_remaining_at_launch": 815,
+  "environment": "DEV",
+  "fit_generations": 700,
+  "immutable_core": 807,
+  "predicates": {
+    "BASELINE_AUTHORITY": "PASS",
+    "CLEAN_RUNTIME_BINDING": "PASS",
+    "FINAL_PREFLIGHT": "PASS",
+    "FINAL_WORKPLAN": "PASS",
+    "FIT_STRICT_700": "PASS",
+    "IMMUTABLE_CORE": "PASS",
+    "NO_DUPLICATE_PROCESS": "PASS",
+    "PINNED_SOURCE_INTEGRITY": "PASS",
+    "PROTECTED_ARTIFACTS": "PASS",
+    "RESUMABLE_ZERO_COST_POLICY": "PASS",
+    "TOOL_CANARY_GATE": "PASS",
+    "ZERO_COST_BILLING_GUARD": "PASS"
+  },
+  "project_release": "v3.6",
+  "protected_followon": 618,
+  "schema": "PCG_MAS_V3_6_G7_FINAL_DEV_LAUNCH_ACCEPTANCE_V2",
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:57:13.224428+00:00",
+  "transaction_id": "TX-20260917T124848Z-d0139466c44e"
+}

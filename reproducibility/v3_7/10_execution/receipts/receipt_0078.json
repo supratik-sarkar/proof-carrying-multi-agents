@@ -1,0 +1,20 @@
+{
+  "distribution": {
+    "gemini-3.1-flash-lite": 100,
+    "gemma-4-26b-a4b-it": 100,
+    "glm-4.7-flash": 100,
+    "gpt-oss-120b": 100,
+    "llama-4-scout-17b-16e-instruct": 100,
+    "nemotron-3-120b-a12b": 100,
+    "qwen3.8-27b": 100
+  },
+  "fit_expected": 700,
+  "fit_missing": 0,
+  "fit_present": 700,
+  "provider_calls_made": 67,
+  "schema": "PCG_MAS_V3_6_G3_FIT_COMPLETE_V2",
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:57:12.620957+00:00",
+  "transaction_id": "TX-20260917T124848Z-d0139466c44e"
+}

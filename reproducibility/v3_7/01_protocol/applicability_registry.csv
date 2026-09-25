@@ -1,0 +1,393 @@
+model,dataset,method,applicable,authority
+GPT-OSS 120B,FEVER,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,FEVER,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,FEVER,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,FEVER,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,FEVER,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,FEVER,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,FEVER,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,HotpotQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,HotpotQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,HotpotQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,HotpotQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,HotpotQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,HotpotQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,HotpotQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,PubMedQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,PubMedQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,PubMedQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,PubMedQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,PubMedQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,PubMedQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,PubMedQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,TAT-QA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,TAT-QA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,TAT-QA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,TAT-QA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,TAT-QA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,TAT-QA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,TAT-QA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,2Wiki,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,2Wiki,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,2Wiki,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,2Wiki,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,2Wiki,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,2Wiki,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,2Wiki,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,Mind2Web,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,Mind2Web,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,Mind2Web,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,Mind2Web,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,Mind2Web,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,Mind2Web,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,Mind2Web,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,BFCL V1,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,BFCL V1,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,BFCL V1,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,BFCL V1,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,BFCL V1,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,BFCL V1,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,BFCL V1,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,AgentDojo,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,AgentDojo,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,AgentDojo,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,AgentDojo,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,AgentDojo,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,AgentDojo,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GPT-OSS 120B,AgentDojo,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,FEVER,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,FEVER,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,FEVER,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,FEVER,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,FEVER,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,FEVER,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,FEVER,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,HotpotQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,HotpotQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,HotpotQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,HotpotQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,HotpotQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,HotpotQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,HotpotQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,PubMedQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,PubMedQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,PubMedQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,PubMedQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,PubMedQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,PubMedQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,PubMedQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,TAT-QA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,TAT-QA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,TAT-QA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,TAT-QA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,TAT-QA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,TAT-QA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,TAT-QA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,2Wiki,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,2Wiki,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,2Wiki,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,2Wiki,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,2Wiki,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,2Wiki,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,2Wiki,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,Mind2Web,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,Mind2Web,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,Mind2Web,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,Mind2Web,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,Mind2Web,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,Mind2Web,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,Mind2Web,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,BFCL V1,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,BFCL V1,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,BFCL V1,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,BFCL V1,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,BFCL V1,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,BFCL V1,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,BFCL V1,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,AgentDojo,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,AgentDojo,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,AgentDojo,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,AgentDojo,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,AgentDojo,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,AgentDojo,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Qwen 3.8 27B,AgentDojo,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,FEVER,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,FEVER,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,FEVER,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,FEVER,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,FEVER,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,FEVER,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,FEVER,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,HotpotQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,HotpotQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,HotpotQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,HotpotQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,HotpotQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,HotpotQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,HotpotQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,PubMedQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,PubMedQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,PubMedQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,PubMedQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,PubMedQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,PubMedQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,PubMedQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,TAT-QA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,TAT-QA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,TAT-QA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,TAT-QA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,TAT-QA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,TAT-QA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,TAT-QA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,2Wiki,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,2Wiki,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,2Wiki,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,2Wiki,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,2Wiki,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,2Wiki,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,2Wiki,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,Mind2Web,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,Mind2Web,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,Mind2Web,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,Mind2Web,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,Mind2Web,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,Mind2Web,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,Mind2Web,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,BFCL V1,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,BFCL V1,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,BFCL V1,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,BFCL V1,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,BFCL V1,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,BFCL V1,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,BFCL V1,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,AgentDojo,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,AgentDojo,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,AgentDojo,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,AgentDojo,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,AgentDojo,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,AgentDojo,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemini 3.1 Flash-Lite,AgentDojo,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,FEVER,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,FEVER,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,FEVER,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,FEVER,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,FEVER,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,FEVER,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,FEVER,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,HotpotQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,HotpotQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,HotpotQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,HotpotQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,HotpotQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,HotpotQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,HotpotQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,PubMedQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,PubMedQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,PubMedQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,PubMedQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,PubMedQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,PubMedQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,PubMedQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,TAT-QA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,TAT-QA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,TAT-QA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,TAT-QA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,TAT-QA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,TAT-QA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,TAT-QA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,2Wiki,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,2Wiki,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,2Wiki,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,2Wiki,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,2Wiki,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,2Wiki,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,2Wiki,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,Mind2Web,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,Mind2Web,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,Mind2Web,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,Mind2Web,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,Mind2Web,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,Mind2Web,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,Mind2Web,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,BFCL V1,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,BFCL V1,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,BFCL V1,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,BFCL V1,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,BFCL V1,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,BFCL V1,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,BFCL V1,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,AgentDojo,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,AgentDojo,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,AgentDojo,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,AgentDojo,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,AgentDojo,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,AgentDojo,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Llama 4 Scout,AgentDojo,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,FEVER,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,FEVER,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,FEVER,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,FEVER,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,FEVER,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,FEVER,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,FEVER,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,HotpotQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,HotpotQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,HotpotQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,HotpotQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,HotpotQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,HotpotQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,HotpotQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,PubMedQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,PubMedQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,PubMedQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,PubMedQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,PubMedQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,PubMedQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,PubMedQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,TAT-QA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,TAT-QA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,TAT-QA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,TAT-QA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,TAT-QA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,TAT-QA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,TAT-QA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,2Wiki,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,2Wiki,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,2Wiki,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,2Wiki,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,2Wiki,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,2Wiki,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,2Wiki,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,Mind2Web,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,Mind2Web,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,Mind2Web,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,Mind2Web,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,Mind2Web,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,Mind2Web,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,Mind2Web,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,BFCL V1,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,BFCL V1,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,BFCL V1,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,BFCL V1,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,BFCL V1,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,BFCL V1,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,BFCL V1,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,AgentDojo,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,AgentDojo,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,AgentDojo,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,AgentDojo,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,AgentDojo,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,AgentDojo,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Nemotron 3 120B-A12B,AgentDojo,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,FEVER,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,FEVER,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,FEVER,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,FEVER,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,FEVER,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,FEVER,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,FEVER,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,HotpotQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,HotpotQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,HotpotQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,HotpotQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,HotpotQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,HotpotQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,HotpotQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,PubMedQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,PubMedQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,PubMedQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,PubMedQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,PubMedQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,PubMedQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,PubMedQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,TAT-QA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,TAT-QA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,TAT-QA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,TAT-QA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,TAT-QA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,TAT-QA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,TAT-QA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,2Wiki,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,2Wiki,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,2Wiki,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,2Wiki,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,2Wiki,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,2Wiki,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,2Wiki,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,Mind2Web,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,Mind2Web,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,Mind2Web,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,Mind2Web,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,Mind2Web,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,Mind2Web,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,Mind2Web,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,BFCL V1,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,BFCL V1,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,BFCL V1,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,BFCL V1,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,BFCL V1,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,BFCL V1,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,BFCL V1,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,AgentDojo,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,AgentDojo,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,AgentDojo,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,AgentDojo,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,AgentDojo,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,AgentDojo,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+Gemma 4 26B-A4B,AgentDojo,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,FEVER,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,FEVER,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,FEVER,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,FEVER,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,FEVER,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,FEVER,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,FEVER,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,HotpotQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,HotpotQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,HotpotQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,HotpotQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,HotpotQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,HotpotQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,HotpotQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,PubMedQA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,PubMedQA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,PubMedQA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,PubMedQA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,PubMedQA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,PubMedQA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,PubMedQA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,TAT-QA,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,TAT-QA,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,TAT-QA,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,TAT-QA,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,TAT-QA,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,TAT-QA,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,TAT-QA,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,2Wiki,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,2Wiki,MiniCheck,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,2Wiki,AlignScore,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,2Wiki,QAFactEval,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,2Wiki,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,2Wiki,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,2Wiki,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,Mind2Web,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,Mind2Web,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,Mind2Web,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,Mind2Web,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,Mind2Web,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,Mind2Web,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,Mind2Web,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,BFCL V1,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,BFCL V1,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,BFCL V1,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,BFCL V1,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,BFCL V1,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,BFCL V1,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,BFCL V1,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,AgentDojo,NoCert,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,AgentDojo,MiniCheck,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,AgentDojo,AlignScore,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,AgentDojo,QAFactEval,False,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,AgentDojo,CMVO,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,AgentDojo,SignalMatchedFusion,True,14_artifacts/manuscript_stack/data/cell_metrics.csv
+GLM-4.7 Flash,AgentDojo,PCG-MAS,True,14_artifacts/manuscript_stack/data/cell_metrics.csv

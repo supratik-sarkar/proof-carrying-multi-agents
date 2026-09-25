@@ -1,0 +1,97 @@
+{
+  "modifications": [
+    {
+      "benchmark_semantics_changed": false,
+      "exact_purpose": "Category A, B, D: GLM native thinking-disabled request binding, Gemini thought_signature cache round-trip preservation, and BFCL/Gemini schema type normalization; Bounded transient transport retry for HTTP 500/502/503/504 errors",
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/provider_client.py",
+      "new_sha256": "3d2f89d073eaf8ccb3820ba5133b0c58f5609374abb0ffc78e4e52a3b4699d6b",
+      "old_sha256": "6eeb4b260f3b53caba8d0e54413f10a270b0367fb4c4cd144e9c2387e0ee08d2",
+      "semantic_effect": "Ensures payload compatibility with Cloudflare and Gemini API schemas while preserving model response contents and thought signatures."
+    },
+    {
+      "benchmark_semantics_changed": false,
+      "exact_purpose": "Category C, E: Provider-compatible message content normalization, absolute python interpreter path resolution, and run isolation without --force-rerun baseline explosion",
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/agentdojo_case_runner.py",
+      "new_sha256": "a45b3b6785cb828fb8412e86b8b8eed7be601af0f4a16042edf6faf886555bf2",
+      "old_sha256": "63942db5d84c3994a3643926d32b51d8a18f4be27dc27e04cccf3cf80aa2f0ea",
+      "semantic_effect": "Permits isolated invocation of pinned AgentDojo CLI against local proxy without modifying upstream AgentDojo sources."
+    },
+    {
+      "benchmark_semantics_changed": false,
+      "exact_purpose": "Execution wrapper fail-closed error handling for Mind2Web NO_JSON malformed model outputs and Cloudflare recovery policy execution; Bounded retry for transient provider calls",
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/execute_lane.py",
+      "new_sha256": "870212ab750b00b2bea65443e4fb25298c80fa5c0a3e1e9655276d51407c00b9",
+      "old_sha256": "82d9785c72d308d84a04e0989b360fcecc38cd328d548c730180a68f8ae5203a",
+      "semantic_effect": "Catches malformed output exceptions during scoring and records correct=False with parse_status=NO_JSON without terminating pipeline."
+    },
+    {
+      "benchmark_semantics_changed": false,
+      "exact_purpose": "Language enum fallback in adapter to support clean upstream Gorilla checkout without modifying upstream files",
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/bfcl_official.py",
+      "new_sha256": "e8ff5880055a8141f8c5c35605be23e46d92b7ebb317d5ea69bccf9e20e4738c",
+      "old_sha256": "d19d11d98d06e1837e96f5cb9bdaed3fb003c28821d55c9c4c2dea39a9c6211a",
+      "semantic_effect": "Supplies Language.PYTHON constant directly to official ast_checker without requiring non-upstream enums.py file in Gorilla repository."
+    },
+    {
+      "benchmark_semantics_changed": false,
+      "exact_purpose": "Enforce strict real FIT 700 requirement and block ASSUMPTION_OR_<PUBLIC_TERM:b3cc0475bb78a502> capacity receipts",
+      "file": "artifacts/v3_6/dataset_amendment_v2/scripts/acceptance_v2.py",
+      "new_sha256": "d8a0dcdb4a80cf22da44ee7d2ef995595dc8196bbba3e796a21e0a65d28dfcf2",
+      "old_sha256": "7a0519d90e7eedcdbc610ec8cc90482b0a81b9f64cd49e09f433e1a2715324ee",
+      "semantic_effect": "Prevents premature READY=YES by requiring FIT_PRESENT=700, FIT_MISSING=0, FIT_STRICT_STATUS=PASS, and genuine non-<PUBLIC_TERM:b3cc0475bb78a502> capacity evidence."
+    },
+    {
+      "benchmark_semantics_changed": false,
+      "exact_purpose": "Reject ASSUMPTION_OR_<PUBLIC_TERM:b3cc0475bb78a502> capacity receipts during preflight validation",
+      "file": "artifacts/v3_6/dataset_amendment_v2/scripts/validate_preflight_receipts.py",
+      "new_sha256": "816e3af72740e822a856ad92532f018223a15f85621789a71440516be69121b8",
+      "old_sha256": "52f60607aadaf02339a5c56ea769df298831686ca21d6e00f1baacd0c67881ad",
+      "semantic_effect": "Requires capacity receipts to provide auditable empirical evidence before preflight marker can be issued."
+    },
+    {
+      "benchmark_semantics_changed": false,
+      "exact_purpose": "Authoritative model panel alignment and reasoning probe policy integration for missing FIT generation",
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/fit_v2.py",
+      "new_sha256": "81fcddc17f6ac4cf93552bd6a5b25cbd295473a9c3c03bfc4b66ccefd3b5fb9b",
+      "old_sha256": "183f3e1b716f9f30209670f5e317c7baea734293f77df506bf18d18471131efc",
+      "semantic_effect": "Enables missing FIT records generation against authorized 7-model panel with audited probe policies."
+    },
+    {
+      "benchmark_semantics_changed": false,
+      "exact_purpose": "Bind launch runner interpreter to venv_clean/bin/python",
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/launch_amended_followon.sh",
+      "new_sha256": "87782121950fd7b7c2e9bfc4ec0309fd90fd9b8a53873161a9f5a2b7819253f5",
+      "old_sha256": "90f96fa5eb59aa12d46e30b13cfba342e564ea7d87bc4ba5fc346908581e2850",
+      "semantic_effect": "Ensures execution is driven by isolated clean execution environment without environment drift."
+    },
+    {
+      "benchmark_semantics_changed": false,
+      "exact_purpose": "Bind task batch commands to venv_clean/bin/python",
+      "file": "artifacts/v3_6/dataset_amendment_v2/scripts/materialize_task_batches.py",
+      "new_sha256": "8a5cafafbb49ecd64a8a9cafaedd768dc90f9d2f0be53a83f1e95cffff1eea45",
+      "old_sha256": "40be35749f7bb1593876e7371589d81d4512e061ef3be8b32115f5ccb9a3e2ee",
+      "semantic_effect": "Materializes runtime task execution batches using clean environment interpreter."
+    },
+    {
+      "applied_timestamp": "2026-09-17T10:38:52Z",
+      "benchmark_semantics_changed": false,
+      "exact_purpose": "Align AgentDojo CLI invocation --model argument with upstream Click Enum member name OPENAI_COMPATIBLE",
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/agentdojo_case_runner.py",
+      "new_sha256": "ab85c6287dc947f2b8a7dac6c98c7f0fa5586eec54e90e379a075d9401d5a309",
+      "old_sha256": "a45b3b6785cb828fb8412e86b8b8eed7be601af0f4a16042edf6faf886555bf2",
+      "semantic_effect": "Allows upstream Click CLI parser to accept model option without mutating upstream AgentDojo source code."
+    },
+    {
+      "applied_timestamp": "2026-09-17T10:54:00Z",
+      "benchmark_semantics_changed": false,
+      "exact_purpose": "Amend AgentDojo local outer safety ceiling from 8 to 48 calls matching upstream max execution structure",
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/agentdojo_case_runner.py",
+      "new_sha256": "135cf68fd469d657d358144bcf6c821c7e614cdc1920d0a1ecb61488dd03a6d3",
+      "old_sha256": "ab85c6287dc947f2b8a7dac6c98c7f0fa5586eec54e90e379a075d9401d5a309",
+      "semantic_effect": "Removes PCG-authored premature truncation at call 9 and enforces 48-call outer runaway fuse."
+    }
+  ],
+  "schema": "PCG_MAS_V3_6_RUNTIME_RECONCILIATION_AUTHORITY",
+  "status": "PASS",
+  "timestamp": "2026-09-17T13:25:10.484515+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "34672ac5000964a6cc7625b79f146460de9842aceb06c6c22104e78b9145c01b",
+  "candidate_text": "Yes, the VMPA can improve access and reduce complications.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "703a5d37093372123ff0196b7b7c0fb1ac6f8e6bed8ce93e3a2b573359874f45",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "26907557",
+  "prompt_sha256": "2073631c3fcf1be8ca1daa28aed2a9a0551bb558776a107e6c9f66d06c9958de",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "59f25d1efb2ec203978d80ae0e95251013e40d31f8b97476baed5b372628c8a4",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:26907557",
+  "text": "Yes, the VMPA can improve access and reduce complications.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 14,
+    "neurons": 2.2366,
+    "prompt_tokens": 314,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 328
+  }
+}

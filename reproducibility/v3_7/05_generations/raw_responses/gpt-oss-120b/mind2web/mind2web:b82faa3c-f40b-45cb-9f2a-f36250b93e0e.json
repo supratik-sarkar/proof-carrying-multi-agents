@@ -1,0 +1,32 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "correct": false,
+    "parse_status": "NO_JSON"
+  },
+  "candidate_sha256": "3522eeb1452ebbe253c42445be31eafcf9a0ef0191d58d44be73f77ab13cc5e3",
+  "candidate_text": "{\"choice\":\"C1\",\"operation\":\"CLICK\",\"value",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "185170a196ae696e4298d4e26c3add1623c235a4f0cced85bcfe1c9a4d64d41a",
+  "finish_reason": "length",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "mind2web:b82faa3c-f40b-45cb-9f2a-f36250b93e0e",
+  "prompt_sha256": "185170a196ae696e4298d4e26c3add1623c235a4f0cced85bcfe1c9a4d64d41a",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "71cbac7c48369a43f8a2c6e5af807ab79c43e209ca44c98c47c7da576406713e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C1\",\"operation\":\"CLICK\",\"value",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 256,
+    "neurons": 31.16809844970703,
+    "prompt_tokens": 431,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 687
+  }
+}

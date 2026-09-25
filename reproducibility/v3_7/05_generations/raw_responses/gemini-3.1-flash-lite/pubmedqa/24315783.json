@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "d0fbe7c000d13dc6c51be64ab0d94f6eea16284f8af4bdb2231a9b2738076176",
+  "candidate_text": "It is a possible factor.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "e9ab241e007107ccd6814b533a6e7b53a1d2ed544775e83934d486b5a74fe5f6",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "24315783",
+  "prompt_sha256": "9b80b9866ff552198b27a4309d9e6d2060d6afd3b7bedbd4d0b2b526e64e1a18",
+  "provider": "gemini",
+  "provider_raw_sha256": "f0d5671485ff6339ee0c5a162410145a16916faf5f872455a2a553b4eab1069f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:24315783",
+  "text": "It is a possible factor.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 303,
+    "total_tokens": 309
+  }
+}

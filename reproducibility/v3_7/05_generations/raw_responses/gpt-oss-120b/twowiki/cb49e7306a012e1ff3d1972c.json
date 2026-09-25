@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "efe0d1339eb987727885f85a67b0417f05dcd5d129a5647f8e249e7ee6517f00",
+  "candidate_text": "Sunday’s Illness",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "7236361adafba8943c7c4843aae4b32e8745ac70d38e05e7c5b2b855b36b7bd9",
+  "example_id": "b9329b0b08ce11ebbd94ac1f6bf848b6",
+  "finish": "stop",
+  "input_sha256": "c93dcff4bdd1c7f1cafda9bebcb0a309c4974d082d3f6b20165b257f9cb7c68c",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "b9329b0b08ce11ebbd94ac1f6bf848b6",
+  "prompt_sha256": "1bf53a8d187dbb0df20b0eafa32075090cd7a0762d53c81c938e15bd320dea9a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Sunday's Illness\": [\"Sunday's Illness is a 2018 Spanish drama film directed by Ram\\u00f3n Salazar.\",\"It was screened in the Panorama section at the 68th Berlin International Film Festival.\"]\n\n[2] \"Ram\\u00f3n Salazar (director)\": [\"Ram\\u00f3n Salazar( born 28 May 1973 M\\u00e1laga) is a Spanish film director and screenwriter.\",\"He was nominated for the 2003 Goya Award for Best New Director for the film\\\" Stones\\\".\"]\n\n[3] \"Gene Autry and the Mounties\": [\"Gene Autry and the Mounties is a 1951 American Western film directed by John English and written by Norman S. Hall.\",\"The film stars Gene Autry, Elena Verdugo, Carleton Young, Richard Emory, Herbert Rawlinson and Trevor Bardette.\",\"The film was released on January 30, 1951, by Columbia Pictures.\"]\n\n[4] \"John English (director)\": [\"John Wilkinson English( 25 June 1903 \\u2013 11 October 1969) was a British film editor and film director.\",\"He is most famous for the film serials he co-directed with William Witney for Republic Pictures such as\\\" Zorro's Fighting Legion\\\" and\\\" Drums of Fu Manchu\\\".\",\"He was credited variously as John W English, John English or Jack English.\"]\n\nQuestion: Which film has the director born later, Gene Autry And The Mounties or Sunday'S Illness?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "7f912b29dc9e9c28e7280f36a464cd3a058f82ace0c6b3dc371588d3a0a7ec65",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:b9329b0b08ce11ebbd94ac1f6bf848b6",
+  "task_key": "2f0bbaf57c8c461925c47cb8218d0101d0dc7ea3e5d5c9635672efdb70054cf2",
+  "text": "Sunday’s Illness",
+  "timestamp": "2026-09-14T10:32:52.704175+00:00",
+  "tokens_in": 439,
+  "tokens_out": 114,
+  "usage": {
+    "completion_tokens": 114,
+    "neurons": 21.740825653076172,
+    "prompt_tokens": 439,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 553
+  }
+}

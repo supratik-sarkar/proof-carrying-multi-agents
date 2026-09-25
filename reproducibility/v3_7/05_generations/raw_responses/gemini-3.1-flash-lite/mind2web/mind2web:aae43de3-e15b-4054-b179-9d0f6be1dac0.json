@@ -1,0 +1,27 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "correct": false
+  },
+  "candidate_sha256": "17894537fffe5a414ccf627cd5c9ffd72288919973e18e5dfbc46007c30a7fce",
+  "candidate_text": "{\"choice\":\"C9\",\"operation\":\"CLICK\",\"value\":\"Python for Beginners\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "97c671fbe5b010b5639724d8987b0574613df7e15cec9f0ab0deb90ac8a67b69",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "mind2web:aae43de3-e15b-4054-b179-9d0f6be1dac0",
+  "prompt_sha256": "97c671fbe5b010b5639724d8987b0574613df7e15cec9f0ab0deb90ac8a67b69",
+  "provider": "gemini",
+  "provider_raw_sha256": "261991d8d7c8c3fbb6c343a50154895117774241d93c76dbf5fa962bf3a7ad8e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C9\",\"operation\":\"CLICK\",\"value\":\"Python for Beginners\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 319,
+    "total_tokens": 335
+  }
+}

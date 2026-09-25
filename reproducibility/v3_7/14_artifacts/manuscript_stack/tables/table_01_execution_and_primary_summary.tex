@@ -1,0 +1,52 @@
+\begin{table}[!b]
+\centering
+\captionsetup{font=small,skip=2pt}
+\caption{Execution verifiability and primary dataset-level results.}
+\label{tab:main_results_pair}
+\captionsetup[subtable]{font=scriptsize,skip=1pt}
+\begin{subtable}[t]{0.35\linewidth}
+\centering\scriptsize
+\caption{Verifiability and execution ledger.}
+\label{tab:main_verifiability_ledger}
+\setlength{\tabcolsep}{1.6pt}
+\renewcommand{\arraystretch}{0.97}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xr@{}}
+\toprule
+Quantity & Value \\
+\midrule
+Models / datasets / cells & 7 / 8 / 56 \\
+Observations / cell & 40 \\
+Canonical observations & 2,240 \\
+Frozen generators & 7 \\
+$V_H$ agreement & 100.00\% \\
+$V_\Pi$ agreement & 99.96\% \\
+$V_\Gamma$ agreement & 100.00\% \\
+$V_\vdash$ agreement & 99.92\% \\
+Final-check agreement & 99.92\% \\
+Final disagreements & 2 \\
+\bottomrule
+\end{tabularx}
+\end{subtable}\hfill
+\begin{subtable}[t]{0.63\linewidth}
+\centering\scriptsize
+\caption{Primary dataset-level accepted risk and retained coverage; negative $\Delta_{\rm primary}$ favors PCG-MAS.}
+\label{tab:main_six_summary}
+\setlength{\tabcolsep}{1.3pt}
+\renewcommand{\arraystretch}{0.97}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xrrrr@{}}
+\toprule
+Dataset & \makecell{PCG risk\\(\%)} & \makecell{Best risk\\(\%)} & \makecell{$\Delta_{\rm primary}$\\(pp)} & \makecell{Coverage\\(\%)} \\
+\midrule
+FEVER & 6.94 & 8.40 & -1.46 & 83.69 \\
+Hotpot\allowbreak{}QA & 10.81 & 12.43 & -1.62 & 83.86 \\
+Pub\allowbreak{}Med\allowbreak{}QA & 5.44 & 7.15 & -1.72 & 82.47 \\
+TAT-QA & 9.07 & 10.91 & -1.83 & 82.69 \\
+2Wiki & 10.31 & 11.86 & -1.55 & 82.27 \\
+Mind2Web & 10.34 & 12.88 & -2.54 & 81.86 \\
+BFCL V1 & 9.13 & 11.69 & -2.56 & 82.33 \\
+Agent\allowbreak{}Dojo & 10.81 & 13.52 & -2.70 & 81.41 \\
+\bottomrule
+\end{tabularx}
+\end{subtable}
+\par\vspace{1pt}{\scriptsize Best applicable comparator is selected within each cell; $\Delta_{\rm primary}=R_{\rm PCG}-R_{\rm best}$, so negative favors PCG-MAS.}
+\end{table}

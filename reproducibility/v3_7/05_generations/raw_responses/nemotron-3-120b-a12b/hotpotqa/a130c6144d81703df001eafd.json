@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "2364b7fede42441d0c8aea2667210a7714eada65fb8e8496d5ae284cc5941a1d",
+  "example_id": "5a835478554299123d8c20ed",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "cc499c05c4de9ab1beb8d4f62f797cae7e3f76ce10aa6a1d847f36f753cc7db6",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5a835478554299123d8c20ed",
+  "prompt_sha256": "1f78355d3847a5078239a7d03625379b5739010e3cd6bc99f41afdb3fedeba10",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Mrs. Bixby and the Colonel's Coat: \"Mrs. Bixby and the Colonel's Coat\" is a short story by Roald Dahl that first appeared in the 1959 issue of \"Nugget\".  The story is Dahl's variation on a popular anecdote dating back at least to 1939: a married woman receives a glamorous mink coat from a man with whom she had an affair.  She hopes to sneak the coat into her home without arousing her husband's suspicions, but soon discovers that her husband has plans of his own.\n\n[2] Roald Dahl: Roald Dahl ( , ] ; 13 September 1916 – 23 November 1990) was a British novelist, short story writer, poet, screenwriter, and fighter pilot.  His books have sold more than 250 million copies worldwide.\n\n[3] Roald Dahl Children's Gallery: The Roald Dahl Children's Gallery is in Church Street, Aylesbury, Buckinghamshire, England.  A children's museum in honour of Roald Dahl, it was opened on 23 November 1996 by Terence Hardiman, an actor popular with children due to his role as the titular role in \"The Demon Headmaster\".  The building was previously a coach-house.\n\n[4] The Collected Short Stories of Roald Dahl: The Collected Short Stories of Roald Dahl is a 1991 short story collection for adults by Roald Dahl.  The collection, containing tales of macabre malevolence, comprises many of Dahl's stories seen in the television series \"Tales of the Unexpected\" and previously collected in \"Someone Like You\" (1953), \"Kiss, Kiss\" (1960), \"Twenty-Nine Kisses from Roald Dahl\" (1969), \"Ppo poo face\" (1974), and \"\" (1989).\n\nQuestion: How many copies of Roald Dahl's variation on a popular anecdote sold?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "09ecb212c6be469fd3ae7d5f3cc2f0f96783da9f6b5a90e78dfcc309a08b4bee",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a835478554299123d8c20ed",
+  "task_key": "216cf07f8fdcf97742f6148f9232975c967323432c29114082d90add0938ff0b",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-15T09:35:35.545965+00:00",
+  "tokens_in": 497,
+  "tokens_out": 179,
+  "usage": {
+    "completion_tokens": 179,
+    "neurons": 46.709,
+    "prompt_tokens": 497,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 676
+  }
+}

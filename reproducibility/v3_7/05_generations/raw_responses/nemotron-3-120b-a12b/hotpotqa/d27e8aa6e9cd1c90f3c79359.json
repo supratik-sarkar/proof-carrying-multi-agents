@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "59a1bf6b762f0cc7e72e39e0bfe1657a6ef814fb91da346408ccd9c24e23848a",
+  "candidate_text": "\n\nYes, both are flowering plants.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "672fb94f4ab2d779266cb1698145dbff408f6055b2e1b9fad0eae2bf96669374",
+  "example_id": "5adeb95d5542992fa25da827",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "4149d102064816eb4b7378b61da93d86a4df4871b92bb221858a71949593b5d5",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5adeb95d5542992fa25da827",
+  "prompt_sha256": "8fccbd8f836f22529fad21e2b0d25bd8357dd56179b15ca04db303dda52676d5",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Maianthemum: Maianthemum (Latin \"Māia \" \"May\" and Greek \"ánthemon \" \"flower\"; including former \"Smilacina\") is a genus of rhizomatous, herbaceous, perennial flowering plants, native to the understory of woodlands.  It is widespread across much of North America, Europe and Asia.\n\n[2] Chlidanthus: Chlidanthus is a genus that consists of 10 species of tender bulbs from tropical South America, mostly natives to the Andes.  The botanical name comes from the Greek, meaning \"delicate flower\".  The plants have large spherical bulbs with gray-green, strap-shaped leaves 30cm long arising from the base.  In late spring to early summer, clusters of 3-4 large, strong citrus-scented fragrant, funnel-shaped flowers 10-13cm long held terminally on stalks 25cm high, colored in yellow, pink or red.\n\nQuestion: Are Chlidanthus and Maianthemum both flowering plants?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "fe50021c93cb2fe5245bf4a40f173f73a34c96d0adf64f7a7abe0841f8bef4ba",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5adeb95d5542992fa25da827",
+  "task_key": "2c349cc14c1924ca5678be274473fcc84183c0ff6c35bb04a0e404e13d568bb8",
+  "text": "\n\nYes, both are flowering plants.",
+  "timestamp": "2026-09-15T09:35:26.333082+00:00",
+  "tokens_in": 289,
+  "tokens_out": 150,
+  "usage": {
+    "completion_tokens": 150,
+    "neurons": 33.405,
+    "prompt_tokens": 289,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 439
+  }
+}

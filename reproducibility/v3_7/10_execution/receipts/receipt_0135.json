@@ -1,0 +1,28 @@
+{
+  "schema": "PCG_MAS_V3_6_RUNTIME_RECONCILIATION_AUTHORITY_AGENTDOJO_CONTROL_V2",
+  "status": "PASS",
+  "timestamp": "2026-09-17T17:49:34.766314+00:00",
+  "supersedes": "RUNTIME_RECONCILIATION_AUTHORITY_BFCL_HARDENED.json",
+  "modified_files": [
+    {
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/provider_client.py",
+      "new_sha256": "3f08c009a11ee3c0a584561dc189e5340737a1cb6046854cd078306a87004513",
+      "exact_change": "Added attempt count tracking and return_attempts support in _post; returned attempts in chat() dictionary for physical telemetry.",
+      "reason": "Expose physical attempt telemetry to callers to separate physical transport retries from logical model calls.",
+      "benchmark_semantics_changed": false
+    },
+    {
+      "file": "artifacts/v3_6/dataset_amendment_v2/integration/agentdojo_case_runner.py",
+      "new_sha256": "bcfb71017deb9c01250fb276b2de0759271dc6202c9cf054df0738525983ad4c",
+      "exact_change": "Differentiate logical model calls vs physical provider attempts; scope 48-call safety ceiling per native query phase; surface project-local control signals (fuse hit, provider transient exhausted, provider quota exhausted) as non-retryable HTTP 400 with durable sidecar receipts.",
+      "reason": "Prevent OpenAI SDK / Tenacity retry storm on project-local control signals and prevent false fuse firing due to upstream transport retries or cross-phase accumulation.",
+      "benchmark_semantics_changed": false
+    }
+  ],
+  "pinned_sources": {
+    "gorilla_head": "ea13468e4423454d0c213704fb87cf7cb3990433",
+    "gorilla_clean": true,
+    "agentdojo_head": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+    "agentdojo_clean": true
+  }
+}

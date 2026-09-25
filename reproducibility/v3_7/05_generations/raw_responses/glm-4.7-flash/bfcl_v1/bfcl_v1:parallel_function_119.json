@@ -1,0 +1,185 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [
+      "Could not find a matching function among index [0, 1, 2, 3] of model output for index 0 of possible answers.",
+      {
+        "Model Result Index 0": {
+          "model_output_item": {
+            "identify_bird": {
+              "color": "vibrant blue",
+              "habitat": "forest",
+              "size": "small"
+            }
+          },
+          "possible_answer_item": {
+            "identify_bird": {
+              "color": [
+                "blue"
+              ],
+              "habitat": [
+                "forest"
+              ],
+              "size": [
+                "small",
+                ""
+              ]
+            }
+          },
+          "sub_error": [
+            "Invalid value for parameter 'color': 'vibrant blue'. Expected one of ['blue']. Case insensitive."
+          ],
+          "sub_error_type": "value_error:string"
+        }
+      },
+      {
+        "Model Result Index 1": {
+          "model_output_item": {
+            "identify_bird": {
+              "color": "mix of black colors",
+              "habitat": "near a lake",
+              "size": "large"
+            }
+          },
+          "possible_answer_item": {
+            "identify_bird": {
+              "color": [
+                "blue"
+              ],
+              "habitat": [
+                "forest"
+              ],
+              "size": [
+                "small",
+                ""
+              ]
+            }
+          },
+          "sub_error": [
+            "Invalid value for parameter 'color': 'mix of black colors'. Expected one of ['blue']. Case insensitive."
+          ],
+          "sub_error_type": "value_error:string"
+        }
+      },
+      {
+        "Model Result Index 2": {
+          "model_output_item": {
+            "identify_bird": {
+              "color": "brown",
+              "habitat": "desert",
+              "size": "medium"
+            }
+          },
+          "possible_answer_item": {
+            "identify_bird": {
+              "color": [
+                "blue"
+              ],
+              "habitat": [
+                "forest"
+              ],
+              "size": [
+                "small",
+                ""
+              ]
+            }
+          },
+          "sub_error": [
+            "Invalid value for parameter 'color': 'brown'. Expected one of ['blue']. Case insensitive."
+          ],
+          "sub_error_type": "value_error:string"
+        }
+      },
+      {
+        "Model Result Index 3": {
+          "model_output_item": {
+            "identify_bird": {
+              "color": "green",
+              "habitat": "tropical rainforest",
+              "size": "large"
+            }
+          },
+          "possible_answer_item": {
+            "identify_bird": {
+              "color": [
+                "blue"
+              ],
+              "habitat": [
+                "forest"
+              ],
+              "size": [
+                "small",
+                ""
+              ]
+            }
+          },
+          "sub_error": [
+            "Invalid value for parameter 'color': 'green'. Expected one of ['blue']. Case insensitive."
+          ],
+          "sub_error_type": "value_error:string"
+        }
+      }
+    ],
+    "error_type": "parallel_function_checker_no_order:cannot_find_match",
+    "valid": false
+  },
+  "candidate_sha256": "c41feef190d480173cb66087462818aa5449a1a22a0af9ca91816f0284cac1c4",
+  "candidate_text": "I'd be happy to help you identify those bird species! Let me analyze each one based on the characteristics you provided.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ad4ae499114c1ce514b449b25f17437773c9038c82569e08f5bd27c015d82632",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_function_119",
+  "prompt_sha256": "ad4ae499114c1ce514b449b25f17437773c9038c82569e08f5bd27c015d82632",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "0effdcf9cac5df72f543c3f3b8647bd2c51983d696d475edd3b01c191d5b01f0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'd be happy to help you identify those bird species! Let me analyze each one based on the characteristics you provided.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"color\": \"vibrant blue\", \"habitat\": \"forest\", \"size\": \"small\"}",
+        "name": "identify_bird"
+      },
+      "id": "chatcmpl-tool-8fbf51a879069e7e",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"color\": \"mix of black colors\", \"habitat\": \"near a lake\", \"size\": \"large\"}",
+        "name": "identify_bird"
+      },
+      "id": "chatcmpl-tool-afb6d6c3201cac32",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"color\": \"brown\", \"habitat\": \"desert\", \"size\": \"medium\"}",
+        "name": "identify_bird"
+      },
+      "id": "chatcmpl-tool-8a7062a40b9f6b99",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"color\": \"green\", \"habitat\": \"tropical rainforest\", \"size\": \"large\"}",
+        "name": "identify_bird"
+      },
+      "id": "chatcmpl-tool-ad3b269e63a15d68",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 373,
+    "neurons": 15.408700000000001,
+    "prompt_tokens": 333,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 706
+  }
+}

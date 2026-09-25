@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "7acf38883b724c463220c2e420caa7ab76f48fe544974900cfbcdf6a0c45b9d5",
+  "candidate_text": "Peshwa",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "89c61a2a0c71dfe445a29ccff494c5a7dd43460cfec0ae35b1a84f8c8e28210c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "5a8b78775542997f31a41d3d",
+  "prompt_sha256": "9a8f8a81a703254a5610b4a5a5ecdb2fda0da23b6bc0d1b7a89b92159d77f90e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "5fb6d1f56091bc2b688a93d2ae716ca60ce30789d5887b32b3aa9c956014fcaa",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a8b78775542997f31a41d3d",
+  "text": "Peshwa",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 4.0725999999999996,
+    "prompt_tokens": 714,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 718
+  }
+}

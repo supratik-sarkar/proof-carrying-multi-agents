@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 *.so
 
-# C extensions
+# C extensions / build artifacts
 .Python
 build/
 develop-eggs/
@@ -23,31 +23,13 @@ wheels/
 *.egg
 
 # Virtual environments
-.env
-.env.*
-!.env.example
 .venv/
+.venv-*/
 venv/
 env/
+envs/
 ENV/
-.venv*/
 .venvs/
-
-# Secrets — never commit
-.env.secrets
-*.secrets
-*.pem
-*.key
-
-# macOS / IDE clutter
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-.idea/
-.vscode/
-*.swp
-*.swo
 
 # Test / type / lint caches
 .pytest_cache/
@@ -57,14 +39,48 @@ ENV/
 .coverage
 htmlcov/
 .cache/
+.hypothesis/
+
+# OS / IDE clutter
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.log
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+.secrets/
+.env.secrets
+*.secrets
+*.pem
+*.key
 
 # Node modules
 node_modules/
 
-# Local temporary scratch directories
-scratch/
-runs/
-tmp/
+# Local workspace absolute exclusions (root level only)
+/manuscript/
+/Bucket_2/
+/INTERNAL_ONLY/
+/external_baselines/
+/models/
 
-# Runtime output results
-results/
+# Local temporary scratch directories (root level only)
+/scratch/
+/runs/
+/tmp/
+
+# Legacy results and artifacts (root level only)
+/results/
+/artifacts/
+
+# Never ignore sealed reproducibility assets
+!/reproducibility/**

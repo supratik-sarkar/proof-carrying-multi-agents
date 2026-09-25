@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "2e42fbbfa1c5139b327c2eb08bbd517d293b52ad550b3fd8720cf206d273f62f",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_100",
+  "prompt_sha256": "2e42fbbfa1c5139b327c2eb08bbd517d293b52ad550b3fd8720cf206d273f62f",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "5a59b4345a04f35370c02b8068ecd3edce98fbe5ee46e4993b9ae23a5e74403f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"company\": \"Apple Inc.\", \"days\": 30, \"model\": \"ARIMA\"}",
+        "name": "stock_forecast"
+      },
+      "id": "chatcmpl-tool-8106206f626dd300",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 126,
+    "neurons": 43.011,
+    "prompt_tokens": 575,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 701
+  }
+}

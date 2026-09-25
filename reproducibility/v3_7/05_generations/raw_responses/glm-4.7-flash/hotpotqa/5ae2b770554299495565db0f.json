@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "028acdb7da7207b1e518c6d9e65652b6593170a3ae392a55bd8716887649d7ee",
+  "candidate_text": "March and April",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "0dbd4def9164f3ca97db66633b1adf9aa31f8c0e887ccc361be8b1c7af0a07b5",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "5ae2b770554299495565db0f",
+  "prompt_sha256": "ef7ca0ab926b3f57646b386ad2fa6584cda3960339189747cbed09da8dc2cbbc",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "bf2c0d6bff2c2bbc63b10d413f5f6081f779aab35d085df9183e28c4fe7980bd",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ae2b770554299495565db0f",
+  "text": "March and April",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 2.6260999999999997,
+    "prompt_tokens": 451,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 455
+  }
+}

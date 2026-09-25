@@ -1,0 +1,67 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "2e42fbbfa1c5139b327c2eb08bbd517d293b52ad550b3fd8720cf206d273f62f",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_multiple_function_100",
+  "prompt_sha256": "2e42fbbfa1c5139b327c2eb08bbd517d293b52ad550b3fd8720cf206d273f62f",
+  "provider": "gemini",
+  "provider_raw_sha256": "83d91a1f3a5ff0899cb224be120ccb37cf29e31c6fcfe2b226cd4e375e4b9953",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPU4Nsg5S4CQyI1DAEWGAA1x4alOOFv4UBZmE6b/Eqxek04mNZuK6/5xo8Gc5uwOPskl0Wd+JP13AZelWuqR77ElOMW/PnNQrNpc3R0UYNI46WDQFz7/p7W6OriC0HepE40SqRVOv5+CUeWQ=="
+        }
+      },
+      "function": {
+        "arguments": "{\"company\":\"Apple Inc.\",\"days\":30,\"model\":\"ARIMA\"}",
+        "name": "stock_forecast"
+      },
+      "id": "call_906073",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"days\":45,\"company\":\"Microsoft Corporation\",\"model\":\"LSTM\"}",
+        "name": "stock_forecast"
+      },
+      "id": "call_906074",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"days\":7,\"location\":\"New York City\"}",
+        "name": "weather_forecast"
+      },
+      "id": "call_906075",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"days\":14,\"location\":\"Los Angeles\"}",
+        "name": "weather_forecast"
+      },
+      "id": "call_906076",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 102,
+    "prompt_tokens": 298,
+    "total_tokens": 400
+  }
+}

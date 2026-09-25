@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "73976a81ed39847753b785896db1f9f3cdde0e1daa6d588f051a466d05a1812d",
+  "candidate_text": "Saxe-Coburg and Gotha.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "6589120ff4feda3ed74017167193b8504285e0d8e00d8504af8bb2d13104b487",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5ac3bab155429939154138fb",
+  "prompt_sha256": "479678677c504efec2c62fd50f360b96bdee1667d9d52554e07f8a721b734994",
+  "provider": "gemini",
+  "provider_raw_sha256": "8264fd187ee971f7abc4c0617787e1af1a22e17021d5424b8912b905e2435ced",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ac3bab155429939154138fb",
+  "text": "Saxe-Coburg and Gotha.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 9,
+    "prompt_tokens": 629,
+    "total_tokens": 638
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "a4677c0dbb788bc80ccd6d38ad4e8a862862ef9c02086a0d818f39037a67ad69",
+  "candidate_text": "Yes, the PHQ-9 is suitable for assessing depression in people with vision loss.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "bdb92dcd42d7c783ab583bab85922a2a3cb4897231ba20f251a72bfd2fe2ecb9",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "19156007",
+  "prompt_sha256": "1c0f335575f430537180fa1be51c88edcfd4952c1b6b3030e905f3a1651206d3",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "5b711f100d084948d367c7916410eb396832e96a8d0e0836dffa9524dff5511b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:19156007",
+  "text": "Yes, the PHQ-9 is suitable for assessing depression in people with vision loss.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 19,
+    "neurons": 3.0070999999999994,
+    "prompt_tokens": 421,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 440
+  }
+}

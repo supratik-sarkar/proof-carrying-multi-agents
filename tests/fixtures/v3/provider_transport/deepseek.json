@@ -1,0 +1,32 @@
+{
+ "err": {
+  "body": {
+   "error": {
+    "message": "server error"
+   }
+  },
+  "status": 500
+ },
+ "ok": {
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "message": {
+     "content": "recorded deepseek answer",
+     "reasoning_content": "..."
+    }
+   }
+  ],
+  "id": "ds-REC1",
+  "model": "deepseek-chat-2026",
+  "system_fingerprint": "fp_ds",
+  "usage": {
+   "completion_tokens": 51,
+   "completion_tokens_details": {
+    "reasoning_tokens": 17
+   },
+   "prompt_cache_hit_tokens": 80,
+   "prompt_tokens": 130
+  }
+ }
+}

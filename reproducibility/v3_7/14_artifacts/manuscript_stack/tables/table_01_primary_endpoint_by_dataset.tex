@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering\footnotesize
+\captionsetup{type=table}
+\captionof{table}{Primary dataset-level accepted-risk and retained-coverage summary; negative $\Delta_{\rm primary}$ means lower PCG-MAS risk than the best applicable comparator.}
+\label{tab:main_six_summary}
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabularx}{\linewidth}{@{}Xrrrr@{}}
+\toprule
+Dataset & \makecell{PCG risk\\(\%)} & \makecell{Best comparator\\risk (\%)} & \makecell{$\Delta_{\rm primary}$\\(pp)} & \makecell{Coverage\\(\%)} \\
+\midrule
+FEVER & 6.94 & 8.40 & -1.46 & 83.69 \\
+Hotpot\allowbreak{}QA & 10.81 & 12.43 & -1.62 & 83.86 \\
+Pub\allowbreak{}Med\allowbreak{}QA & 5.44 & 7.15 & -1.72 & 82.47 \\
+TAT-QA & 9.07 & 10.91 & -1.83 & 82.69 \\
+2Wiki & 10.31 & 11.86 & -1.55 & 82.27 \\
+Mind2Web & 10.34 & 12.88 & -2.54 & 81.86 \\
+BFCL V1 & 9.13 & 11.69 & -2.56 & 82.33 \\
+Agent\allowbreak{}Dojo & 10.81 & 13.52 & -2.70 & 81.41 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{2pt}{\scriptsize Means over seven models per dataset; best applicable comparator selected within each cell. $\Delta_{\rm primary}=R_{\rm PCG}-R_{\rm best}$; negative favors PCG-MAS. No matched-coverage comparator estimate is inferred.}
+\end{table}

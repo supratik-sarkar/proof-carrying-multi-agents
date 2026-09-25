@@ -1,8 +1,0 @@
-Attack family,n,ContractBad,unclassified,CovGap only
-compromised_delegation,150,36,2,7
-coordinated_deception,150,38,8,6
-corrupted_ocr,150,25,4,3
-memory_poisoning,150,32,3,3
-schema_bypass,150,33,1,8
-stale_api_state,150,30,4,10
-"eps_tax^chal (alarm, not a bound)",900,194,22,0.024444444444444446

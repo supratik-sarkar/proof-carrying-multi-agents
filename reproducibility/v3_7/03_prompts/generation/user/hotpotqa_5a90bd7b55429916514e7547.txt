@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Aichryson: Aichryson is a genus of about 15 species of succulent, subtropical plants, mostly native to the Canary Islands, with a few in the Azores, Madeira and Morocco, and one in Portugal.
+
+[2] Polypodium australe: Polypodium is derived from the Greek "Polus", many, and "podion", small foot, since the rhizome bears numerous roots.  "Australe" comes from the Latin "auter", wind of the south, for in Europe, this species grows more particularly in southern France.  The common polypody is medicinal plant known since the times of Dioscorides, and its rhizome is used against cough and liver diseases.
+
+[3] Polypodium rimbachii: Polypodium rimbachii is a species of fern in the Polypodiaceae family.  It is endemic to Ecuador.  Its natural habitat is subtropical or tropical moist montane forests.  It is threatened by habitat loss.
+
+[4] Polypodium cambricum: Polypodium cambricum, the southern polypody or Welsh polypody, is a species of fern in the family Polypodiaceae, native to southern and western Europe.  It is a spreading, terrestrial, deciduous fern growing to 60 cm tall, with pinnate fronds.  The sori are yellow in winter.
+
+Question: Which has more species, Aichryson or Polypodium?
+
+Answer:

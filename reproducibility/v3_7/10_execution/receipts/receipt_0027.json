@@ -1,0 +1,202 @@
+{
+  "artifacts": [
+    {
+      "benchmark_score": {
+        "correct": false,
+        "parse_status": "NO_JSON"
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "mind2web",
+      "model_id": "gpt-oss-120b",
+      "observation_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/gpt-oss-120b/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "sha256": "3267ffcd5a49e498ca84595fbab8187516d3e3ae543918a35bf5396156d52ab0"
+    },
+    {
+      "benchmark_score": {
+        "correct": false,
+        "parse_status": "NO_JSON"
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "mind2web",
+      "model_id": "qwen3.8-27b",
+      "observation_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/qwen3.8-27b/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "sha256": "d2f36854d30a7773a1a662c38de41f47e74c3cd34cf0c73c14a6b875b9b92764"
+    },
+    {
+      "benchmark_score": {
+        "correct": false
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "mind2web",
+      "model_id": "gemini-3.1-flash-lite",
+      "observation_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/gemini-3.1-flash-lite/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "sha256": "098c1a05bcf165b68c919625e91259d9fc699d72e9abbc0dbbb1aab153e7f4c2"
+    },
+    {
+      "benchmark_score": {
+        "correct": false
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "mind2web",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "observation_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/llama-4-scout-17b-16e-instruct/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "sha256": "66a9d7d735bdce252b5bbc2e0c3e2bf3e4408f38e53323a88567d0a41645dbb8"
+    },
+    {
+      "benchmark_score": {
+        "correct": false,
+        "parse_status": "NO_JSON"
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "mind2web",
+      "model_id": "nemotron-3-120b-a12b",
+      "observation_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/nemotron-3-120b-a12b/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "sha256": "5dcb04204b957d3b5a498a2c2c57f8af913fbc329a0df91635b3c872a28f0e44"
+    },
+    {
+      "benchmark_score": {
+        "correct": false,
+        "parse_status": "NO_JSON"
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "mind2web",
+      "model_id": "gemma-4-26b-a4b-it",
+      "observation_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/gemma-4-26b-a4b-it/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "sha256": "9a4011f6db6d5e306e4401a5853aa9d98cbbde626e29bc0719bfd2a3b99692fa"
+    },
+    {
+      "benchmark_score": {
+        "correct": false,
+        "parse_status": "NO_JSON"
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "mind2web",
+      "model_id": "glm-4.7-flash",
+      "observation_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/mind2web/glm-4.7-flash/mind2web/mind2web:78f4f72b-eccb-4077-a181-93dbc0add207.json",
+      "sha256": "486e47e0667a3598fc56989d800f35fd4f72f0de9b67ccb0d6d86d67df315c27"
+    },
+    {
+      "benchmark_score": {
+        "error": [
+          "Missing required parameter: 'dataset_A'."
+        ],
+        "error_type": "simple_function_checker:missing_required",
+        "valid": false
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "bfcl_v1",
+      "model_id": "gpt-oss-120b",
+      "observation_id": "bfcl_v1:simple_124",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/gpt-oss-120b/bfcl_v1/bfcl_v1:simple_124.json",
+      "sha256": "de95641747ca3d95e2f170826990248f6aed0279b64624cab457f0434d68ab62"
+    },
+    {
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "bfcl_v1",
+      "model_id": "qwen3.8-27b",
+      "observation_id": "bfcl_v1:simple_124",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/qwen3.8-27b/bfcl_v1/bfcl_v1:simple_124.json",
+      "sha256": "943d57fb4d3788d86e1477f7f33bf49a1449e99886426492edf82056a8baf8be"
+    },
+    {
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "bfcl_v1",
+      "model_id": "gemini-3.1-flash-lite",
+      "observation_id": "bfcl_v1:simple_124",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/gemini-3.1-flash-lite/bfcl_v1/bfcl_v1:simple_124.json",
+      "sha256": "763cc3776af978c33993d5917bd92977245a188d6711b10c2775cd67926adbbd"
+    },
+    {
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "bfcl_v1",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "observation_id": "bfcl_v1:simple_124",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/llama-4-scout-17b-16e-instruct/bfcl_v1/bfcl_v1:simple_124.json",
+      "sha256": "6c1bae5c9b7fb2c1856875c536354016055731da29f4e601505fd2993aac9a67"
+    },
+    {
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "bfcl_v1",
+      "model_id": "nemotron-3-120b-a12b",
+      "observation_id": "bfcl_v1:simple_124",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/nemotron-3-120b-a12b/bfcl_v1/bfcl_v1:simple_124.json",
+      "sha256": "1bf50c0c142a22293593856ef1c4308cfaf95735fca4ff0bf00afdd7a5108278"
+    },
+    {
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "bfcl_v1",
+      "model_id": "gemma-4-26b-a4b-it",
+      "observation_id": "bfcl_v1:simple_124",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/gemma-4-26b-a4b-it/bfcl_v1/bfcl_v1:simple_124.json",
+      "sha256": "1f2f7966dad09f9950904335f4d49503297e96eac2b9e824cf686f44771d907f"
+    },
+    {
+      "benchmark_score": {
+        "error": [],
+        "valid": true
+      },
+      "canonical_generation_reusable": true,
+      "dataset_id": "bfcl_v1",
+      "model_id": "glm-4.7-flash",
+      "observation_id": "bfcl_v1:simple_124",
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/bfcl_v1/glm-4.7-flash/bfcl_v1/bfcl_v1:simple_124.json",
+      "sha256": "0e5345f66e3f1aa4111bd5ec4b4d0ce99c510f116c9a7da2a595ee0b408c74db"
+    }
+  ],
+  "canonical_accounting": {
+    "AGENTDOJO_COMPLETE": 0,
+    "AGENTDOJO_REMAINING": 280,
+    "BFCL_COMPLETE": 7,
+    "BFCL_REMAINING": 273,
+    "CANONICAL_COMPLETE": 1415,
+    "FINAL_PANEL_GENERATIONS_REMAINING": 825,
+    "MIND2WEB_COMPLETE": 8,
+    "MIND2WEB_REMAINING": 272,
+    "PROTECTED_OBSERVATIONS": 608,
+    "protected_observations_breakdown": {
+      "gemini_primary": 200,
+      "new_clean_canaries": 14,
+      "prior_fail_closed_mind2web": 1,
+      "recovery": 393,
+      "total": 608
+    }
+  },
+  "schema": "PCG_MAS_V3_6_CLEAN_CANARY_14_PRESERVATION_RECEIPT",
+  "status": "SEALED_PRESERVED",
+  "summary": {
+    "aggregate_sha256": "b7ae65ba2eede62ca373de3512dd5b0673117f9a8916ed47aa0c0df1d89822ed",
+    "all_canonical_reusable": true,
+    "all_valid_json": true,
+    "bfcl_canaries_count": 7,
+    "mind2web_canaries_count": 7,
+    "total_sealed_canaries": 14
+  },
+  "timestamp": "2026-09-17T10:38:22Z"
+}

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "67546201efb22904ccf6a47a808185e4f0432bea34217c490ca76bead1b40bb9",
+  "candidate_text": "Yes, rural residence does.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "3aff8960310ad3e8f82ca111bd4912e5071501a9d5c9a4be35a585dcc7d870ff",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "16428354",
+  "prompt_sha256": "85236af431dd74086dd093f08673b210d7758205d20d7a305bfd6c9b1c8ba399",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "905a9413b70b30cb4507a0453edbe4700ab4fce14284ecaee92bc65c7c828137",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:16428354",
+  "text": "Yes, rural residence does.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 4.472726821899414,
+    "prompt_tokens": 471,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 478
+  }
+}

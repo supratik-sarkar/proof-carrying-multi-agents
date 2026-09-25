@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "b6b144be719f1791113088394cc613173ede394efa72c013b168a6edf4c150dd",
+  "candidate_text": "Yes, it is present.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "3cd34ae003db7ec03fd1d3eac790ad32aaa46cebba688e74ce44748066c132c9",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "22108230",
+  "prompt_sha256": "b87f1ae8f5a216f0ef1f72ba1824fb45ba552fe72b83de99f3fdea4f329bc8cb",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "510720aacef45de41420a369e862bde13659c580996fc7795927d0f5dfdeb829",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:22108230",
+  "text": "Yes, it is present.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 3.2302999999999997,
+    "prompt_tokens": 541,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 548
+  }
+}

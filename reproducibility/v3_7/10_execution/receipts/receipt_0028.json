@@ -1,0 +1,16 @@
+{
+  "schema": "PCG_MAS_V3_6_CLEAN_EXECUTION_ENV_RECEIPT",
+  "python_version": "Python 3.12.13",
+  "pip_freeze_sha256": "aefa17803bc48822993f4808acf4e65c8f31c484c32690f36748e6bd12dfde37",
+  "dependency_source_files": [
+    "pyproject.toml",
+    "requirements.txt",
+    "artifacts/v3_6/dataset_amendment_runtime_v2/sources/gorilla/berkeley-function-call-leaderboard/pyproject.toml",
+    "artifacts/v3_6/dataset_amendment_runtime_v2/sources/agentdojo/pyproject.toml"
+  ],
+  "BFCL_import_smoke": "PASS",
+  "AgentDojo_import_smoke": "PASS",
+  "Mind2Web_import_smoke": "PASS",
+  "LOCAL_MODEL_WEIGHT_DOWNLOADS": 0,
+  "status": "PASS"
+}

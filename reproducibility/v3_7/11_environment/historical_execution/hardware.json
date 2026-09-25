@@ -1,0 +1,12 @@
+{
+  "schema": "PCG_MAS_V3_6_HARDWARE_PROVENANCE_V2",
+  "historical_hardware": {
+    "external_verifier_acceleration": "NVIDIA A100 Tensor Core GPU (via Colab build v3.6-a100-build-0919-cuda-preflight-v14)",
+    "generator_execution": "Cloudflare Edge Infrastructure & Google Cloud Platform"
+  },
+  "replay_workstation": {
+    "role": "DETERMINISTIC_REPLAY_ONLY",
+    "machine": "arm64",
+    "cpu": "arm"
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "source_file": "artifacts/rebuttal/source_records/per_example_records.jsonl",
-  "file_size_bytes": 39989050,
-  "file_sha256": "c63babd59efe28b52797379d19e2dffbc500416fd53fc0d45e0e953ebd3d3cef",
-  "total_records": 13440,
-  "corrupted_records": 0,
-  "line_hashes_count": 13440,
-  "integrity_status": "PASS"
-}

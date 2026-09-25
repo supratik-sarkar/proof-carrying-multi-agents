@@ -1,0 +1,43 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ff658fd9d85870a408a48d6c509b4c4aab95ffac9433e48d8fba6552a88135dd",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "bfcl_v1:multiple_function_42",
+  "prompt_sha256": "ff658fd9d85870a408a48d6c509b4c4aab95ffac9433e48d8fba6552a88135dd",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "88adcf986c47e4f29f3f4e79a19d529fb8bb81e6c87a6cf205644e9bda458b21",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"quantity1\": 2, \"temperature1\": 300, \"quantity2\": 3, \"temperature2\": 400}",
+        "name": "calculate_final_temperature"
+      },
+      "id": "chatcmpl-tool-975050e90160888e",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 171,
+    "neurons": 48.411,
+    "prompt_tokens": 559,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 730
+  }
+}

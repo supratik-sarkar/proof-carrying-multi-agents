@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "067a65ef8a67fb2bfa0fd12e99b29d29acede746762cc0930fbb7f090b7b955e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:simple_89",
+  "prompt_sha256": "067a65ef8a67fb2bfa0fd12e99b29d29acede746762cc0930fbb7f090b7b955e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "17a37246e1945dff9e82b5c1f7dd695b185da45391bf37d292f0b3f657b9d524",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"conditions\":{\"department\":\"Science\",\"school\":\"Bluebird High School\"},\"database_name\":\"StudentDB\",\"fetch_limit\":0,\"table_name\":\"students\"}",
+        "name": "db_fetch_records"
+      },
+      "id": "call_1789655648400",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 37,
+    "neurons": 23.03545570373535,
+    "prompt_tokens": 822,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 859
+  }
+}

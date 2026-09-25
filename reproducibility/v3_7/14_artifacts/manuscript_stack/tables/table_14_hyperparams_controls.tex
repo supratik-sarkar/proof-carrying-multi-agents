@@ -1,0 +1,20 @@
+\begin{table}[tbp]
+\centering
+\footnotesize
+\caption{Frozen evaluation controls for the 56-cell design.}
+\label{tab:table_14_hyperparams_controls}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lc}
+\toprule
+Field & Frozen value \\
+\midrule
+Structural matrix & 7 models x 8 datasets = 56 cells \\
+Examples & 40 unique generations / cell \\
+External verifier family & Mini\allowbreak{}Check, Align\allowbreak{}Score, QAFact\allowbreak{}Eval \\
+Internal comparators & CMVO, Signal\allowbreak{}Matched\allowbreak{}Fusion \\
+Multiple testing & Bonferroni over 3 external verifiers \\
+Primary seed & 1729 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

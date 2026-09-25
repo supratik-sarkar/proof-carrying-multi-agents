@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "8ff3e87bbf58314bc49377bb49f4d450216d2824ebd0d78b8f6e326c2f8b85e6",
+  "candidate_text": "Sacred Planet",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "c809bf31573de1c8491f984254246e247a5ce827a09ab4feff2198667db652c6",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5ab8f7535542991b5579f0a7",
+  "prompt_sha256": "ebb7645a7ea4fd7a3bced92180019ae095623e0607dcd864c89fe1155c4485df",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "491199388e9d2d03573beaab509860fb0f84fe766305c2eff502c4a4049bf133",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ab8f7535542991b5579f0a7",
+  "text": "Sacred Planet",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 7.4636359214782715,
+    "prompt_tokens": 809,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 813
+  }
+}

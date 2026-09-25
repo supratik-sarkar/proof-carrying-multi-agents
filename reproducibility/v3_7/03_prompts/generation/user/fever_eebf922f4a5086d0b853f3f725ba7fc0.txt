@@ -1,0 +1,14 @@
+You are a fact-verification assistant. Read the evidence and decide whether
+the CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.
+
+Reply with EXACTLY one of these three labels and nothing else:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Evidence:
+[1] John Deighton: By 1864 , Deighton was forced to pursue other lines of work as he developed health problems -LRB- swelling of the legs and feet -RRB- .
+
+Claim: John Deighton developed swelling of the legs.
+
+Label:

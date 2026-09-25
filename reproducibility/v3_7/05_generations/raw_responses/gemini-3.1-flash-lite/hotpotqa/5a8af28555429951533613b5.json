@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "0c5bf7fc23eaa3e5e53a580acb774f8fa579b5ae6f8000c545d2bdb677adf291",
+  "candidate_text": "Albert Park.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "102965208a15bcd1e6d582b092cfa4d258fc4e8be13c5e253da6cd2afb28b81b",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5a8af28555429951533613b5",
+  "prompt_sha256": "e2c586661401f4e923af8f06852b2fa7e56784d34377a3de9bd828a98f4aa7da",
+  "provider": "gemini",
+  "provider_raw_sha256": "5f1fae53c05df8b2cdaf6fe490c2d197bcf9388598e1d09cf8e7a7d7603193c5",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a8af28555429951533613b5",
+  "text": "Albert Park.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "prompt_tokens": 703,
+    "total_tokens": 706
+  }
+}

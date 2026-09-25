@@ -1,0 +1,690 @@
+{
+  "scope": "Embedded v3.7 artifact source only",
+  "symbols": {
+    "14_artifacts/manuscript_stack/source/appendix_figure_layouts.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 7,
+        "name": "figure5"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 33,
+        "name": "checked_channels"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 43,
+        "name": "figure11"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 50,
+        "name": "checked_cost"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 65,
+        "name": "figure21"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/build_figure_02_certificate_runtime_workflow.py": [],
+    "14_artifacts/manuscript_stack/source/build_figure_architecture.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 6,
+        "name": "digest"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 7,
+        "name": "protected"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 8,
+        "name": "macros"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 13,
+        "name": "seal"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 28,
+        "name": "main"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/build_theory_dependency.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 9,
+        "name": "main"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/check_appendix_figures.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 10,
+        "name": "main"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/check_bibliography.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 19,
+        "name": "field"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/check_data_refresh.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 13,
+        "name": "main"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 16,
+        "name": "capture"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/check_figure_01.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 9,
+        "name": "main"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/check_figure_03_04.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 11,
+        "name": "main"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/compile_manuscript.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 18,
+        "name": "run"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 24,
+        "name": "build"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 51,
+        "name": "main"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/derive_backend_invariance_atlas.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 15,
+        "name": "compute_sha256"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 18,
+        "name": "derive_strata"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 121,
+        "name": "derive"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/derive_verifiability_execution_ledger.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 13,
+        "name": "compute_sha256"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 16,
+        "name": "derive_ledger"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/figure_01_executive_safety_performance_atlas.py": [],
+    "14_artifacts/manuscript_stack/source/figure_01_layout.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 12,
+        "name": "_render"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 90,
+        "name": "render"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/figure_02_certificate_runtime_workflow.py": [],
+    "14_artifacts/manuscript_stack/source/figure_03_04_layouts.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 15,
+        "name": "config"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 19,
+        "name": "selection_diagnostic"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 29,
+        "name": "wilson_interval"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 37,
+        "name": "figure3"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 79,
+        "name": "render_decomposition"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 98,
+        "name": "figure4"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/figure_03_release_control_funnel.py": [],
+    "14_artifacts/manuscript_stack/source/figure_03_theory_sota_geometry.py": [],
+    "14_artifacts/manuscript_stack/source/figure_04_mechanism_falsification_atlas.py": [],
+    "14_artifacts/manuscript_stack/source/figure_05_adversarial_shift_robustness_atlas.py": [],
+    "14_artifacts/manuscript_stack/source/figure_06_backend_invariance_atlas.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 25,
+        "name": "compute_sha256"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 28,
+        "name": "title"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 31,
+        "name": "tidy"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 35,
+        "name": "render"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/figure_A0_full_56_cell_sota_atlas.py": [],
+    "14_artifacts/manuscript_stack/source/figure_A1_guarantee_boundary.py": [],
+    "14_artifacts/manuscript_stack/source/figure_A2_algorithm_schematic.py": [],
+    "14_artifacts/manuscript_stack/source/figure_A3_snapshot_fresh_replay.py": [],
+    "14_artifacts/manuscript_stack/source/figure_A4_support_path_separation.py": [],
+    "14_artifacts/manuscript_stack/source/figure_B1_theory_dependency.py": [],
+    "14_artifacts/manuscript_stack/source/figure_C1_certificate_failure_channel_atlas.py": [],
+    "14_artifacts/manuscript_stack/source/figure_C2_expanded_ablations.py": [],
+    "14_artifacts/manuscript_stack/source/figure_C3_audit_sampling_atlas.py": [],
+    "14_artifacts/manuscript_stack/source/figure_C4_separating_witness_matrix.py": [],
+    "14_artifacts/manuscript_stack/source/figure_C5_injection_common_mode.py": [],
+    "14_artifacts/manuscript_stack/source/figure_C6_shift_validity_atlas.py": [],
+    "14_artifacts/manuscript_stack/source/figure_C7_responsibility_open_set.py": [],
+    "14_artifacts/manuscript_stack/source/figure_C8_privacy_modelled.py": [],
+    "14_artifacts/manuscript_stack/source/figure_C9_scaling_modelled.py": [],
+    "14_artifacts/manuscript_stack/source/figure_D1_timing_distributions.py": [],
+    "14_artifacts/manuscript_stack/source/figure_D2_cost_telemetry.py": [],
+    "14_artifacts/manuscript_stack/source/figure_common.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 3,
+        "name": "generate"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/figure_contract.py": [],
+    "14_artifacts/manuscript_stack/source/figure_labels.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 10,
+        "name": "direct_labels"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/generate_all_artifacts.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 15,
+        "name": "main"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/generate_prompt_io_examples.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 26,
+        "name": "load_jsonl"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 33,
+        "name": "load_csv"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 40,
+        "name": "first"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 49,
+        "name": "key"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 57,
+        "name": "latex_escape"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 86,
+        "name": "add_soft_breaks"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 96,
+        "name": "breakable_sha"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 106,
+        "name": "clean_sha"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 118,
+        "name": "state_tex"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 210,
+        "name": "choose_example"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 269,
+        "name": "input_text"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 301,
+        "name": "generated_output"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 320,
+        "name": "cert_channels"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 351,
+        "name": "decision_text"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 369,
+        "name": "outcome_text"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 398,
+        "name": "output_sha"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 439,
+        "name": "semantic_input_sha"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 463,
+        "name": "render_group"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 470,
+        "name": "cmd"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/generate_tables.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 5,
+        "name": "esc"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/main_result_layouts.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 7,
+        "name": "require"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 12,
+        "name": "funnel_data"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 24,
+        "name": "release_funnel"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 46,
+        "name": "robustness"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/plot_support.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 19,
+        "name": "metrics"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 28,
+        "name": "token_multipliers"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 32,
+        "name": "panel_description"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 37,
+        "name": "contrast"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 42,
+        "name": "effect_limit"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 46,
+        "name": "point_labels"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 65,
+        "name": "save"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/prepare_main_tables.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 15,
+        "name": "prepare"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 28,
+        "name": "build"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 30,
+        "name": "emit"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/protocol_figures.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 5,
+        "name": "workflow"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 11,
+        "name": "txt"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 13,
+        "name": "arrow"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/regenerate_canonical_empirical_atlases.py": [],
+    "14_artifacts/manuscript_stack/source/render_result_figures.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 29,
+        "name": "read"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 34,
+        "name": "title"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 37,
+        "name": "canvas"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 42,
+        "name": "tidy"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 45,
+        "name": "finish"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 62,
+        "name": "labels"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 68,
+        "name": "heat"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 89,
+        "name": "paired_points"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 97,
+        "name": "fig1"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 102,
+        "name": "fig3"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 107,
+        "name": "fig4"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 113,
+        "name": "fig5"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 119,
+        "name": "fig11"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 125,
+        "name": "fig12"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 135,
+        "name": "fig13"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 141,
+        "name": "fig14"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 146,
+        "name": "fig15"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 152,
+        "name": "fig16"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 160,
+        "name": "fig17"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 166,
+        "name": "fig18"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 170,
+        "name": "fig19"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 173,
+        "name": "fig20"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 180,
+        "name": "fig21"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 185,
+        "name": "fig22"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 190,
+        "name": "fig23"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 196,
+        "name": "generate"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/render_static_schematics.py": [
+      {
+        "kind": "ClassDef",
+        "line": 20,
+        "name": "Art"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 54,
+        "name": "workflow"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 58,
+        "name": "replay"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 68,
+        "name": "support"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 78,
+        "name": "boundary"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 84,
+        "name": "search"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 95,
+        "name": "dag"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 21,
+        "name": "__init__"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 26,
+        "name": "text"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 30,
+        "name": "box"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 40,
+        "name": "line"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 46,
+        "name": "banner"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 48,
+        "name": "finish"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/validate_manuscript_artifacts.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 14,
+        "name": "digest"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 16,
+        "name": "main"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 18,
+        "name": "check"
+      },
+      {
+        "kind": "FunctionDef",
+        "line": 83,
+        "name": "fonts"
+      }
+    ],
+    "14_artifacts/manuscript_stack/source/validate_package.py": [
+      {
+        "kind": "FunctionDef",
+        "line": 10,
+        "name": "validate"
+      }
+    ]
+  }
+}

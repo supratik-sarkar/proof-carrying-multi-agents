@@ -1,0 +1,43 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "faafa4ce754d6b35e391510c4838564e2ab25db80bdb5147457323515d507897",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:simple_84",
+  "prompt_sha256": "faafa4ce754d6b35e391510c4838564e2ab25db80bdb5147457323515d507897",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "3efc2e46316c2d734eccda4f75977b7944f3509ff68edf180dffcff0a3818570",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"height\": 180, \"weight\": 85}",
+        "name": "calculate_bmi"
+      },
+      "id": "call_1c5f55f47e2b4fff84b2d4f1",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 154,
+    "neurons": 5.663636207580566,
+    "prompt_tokens": 161,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 315
+  }
+}

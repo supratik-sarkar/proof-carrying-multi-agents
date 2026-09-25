@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "32337527ac58fcc87b63d734eec33321dc9ad533983e09ba4897e131fed4fc2d",
+  "candidate_text": "Indianapolis, Indiana",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "84e32bf962064a4e3d15a5cf168a5ee386ad21d3ad9a095619a874011c0f0aa7",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5a8f0a01554299458435d539",
+  "prompt_sha256": "249be61c88639c0182e559032389d911fd27353a854f19ddad062bcb81fb2d15",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "b67d0942cd2fc375bc253b1f53ccf6971c45066d9b999031612c96589a1cd39d",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a8f0a01554299458435d539",
+  "text": "Indianapolis, Indiana",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 8.818181037902832,
+    "prompt_tokens": 958,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 962
+  }
+}

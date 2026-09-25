@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "738a146cd66ced965c6bb994dae6e79c8c9598e11ba69e71812c943199ff23df",
+  "example_id": "b8182754eb4410163c45b97ddb3b6de1",
+  "finish": "stop",
+  "input_sha256": "e6c491c66c262257c5defc5ae898ecff33d583ff65872ed8156d3f742691061e",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "b8182754eb4410163c45b97ddb3b6de1",
+  "prompt_sha256": "e04f8a6fe201b144dd2f860ae45b291d52ab15ffa436db3ae8f65b7c420a5ec1",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Syracuse, New York: At the 2010 census , the city population was 145,170 , and its metropolitan area had a population of 662,577 .\n\nClaim: Syracuse, New York, had a population of 145,170 according to the 2010 United States Census.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "db089afdbd47543fb91498c27d29d883cdfdeabd4416001aeea21b2602c9699f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:b8182754eb4410163c45b97ddb3b6de1",
+  "task_key": "ab6e0560613333da8c1372d4d300101e283ab9623a61286722a60d2f4cd88e1c",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:07.299936+00:00",
+  "tokens_in": 197,
+  "tokens_out": 99,
+  "usage": {
+    "completion_tokens": 99,
+    "neurons": 13.018143653869629,
+    "prompt_tokens": 197,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 296
+  }
+}

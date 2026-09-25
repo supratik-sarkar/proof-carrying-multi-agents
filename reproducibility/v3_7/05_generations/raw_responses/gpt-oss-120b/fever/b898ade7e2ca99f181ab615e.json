@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "528b86d624d7badf9390027a3d10f01c716cd3063f67b1e0656e34ff0363c309",
+  "example_id": "5097bb43f9f32c426fff2bd028570c59",
+  "finish": "stop",
+  "input_sha256": "9414ba8c541a18f0861418dbed8a5b32f53710b00674e52e4748a885cfba26c0",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5097bb43f9f32c426fff2bd028570c59",
+  "prompt_sha256": "c688b36f3a2c8d2f6b6207d1f5c195cef55705e9fe2ef2aa1faad798bdd60648",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Stanley Williams: Stanley `` Tookie '' Williams III -LRB- December 29 , 1953 -- December 13 , 2005 -RRB- was an American gang member and convicted murderer , who was part of the West Side Crips , a street gang which has its roots in South Central Los Angeles in 1969 .\n\nClaim: Stanley Williams was a law-abiding citizen without any convictions.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "e2c1b9a57f16441ba02d1a09d885c36d11ce71f219c7519381ca0703d32596fd",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:5097bb43f9f32c426fff2bd028570c59",
+  "task_key": "fdf30df765070db9cc5af5b39d12bc56db6f269e7216d54b65c7b8a55a1d20be",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:35:49.120992+00:00",
+  "tokens_in": 221,
+  "tokens_out": 61,
+  "usage": {
+    "completion_tokens": 61,
+    "neurons": 11.19086742401123,
+    "prompt_tokens": 221,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 282
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "44af6cb96f1f351484eed8df38dbbb876b2baf8b81b9e4ad88738465c4817e59",
+  "candidate_text": "\n\nSUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "8e34fa7f5ba9a081018fe1d9f8611632f1254e00d3d32f78d8d26e80a484086b",
+  "example_id": "07608521542737c3c42a0604b590c1fd",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "800b757400a4006f10f8063428eddb245bf9ffc8f8dfe31c100711c7090892a7",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "07608521542737c3c42a0604b590c1fd",
+  "prompt_sha256": "c83c61bdeb54224a0810cfce457a44edc3397799fbcc5d482d564e45a99c8ba0",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] John Dolmayan: Dolmayan is also the drummer for the band Indicator and former drummer for Scars on Broadway .\n\nClaim: John Dolmayan is a musician.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "33dbfc6c163dc55d1a2bd2937ca16dfab5bc88b0ef4dfa471df27c7fbb25eb5a",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:07608521542737c3c42a0604b590c1fd",
+  "task_key": "9c1be5271889d6eff32ca924110c7e6cdff30ed3a8b5255d6d1263a23c609801",
+  "text": "\n\nSUPPORTS",
+  "timestamp": "2026-09-15T09:26:50.939680+00:00",
+  "tokens_in": 161,
+  "tokens_out": 54,
+  "usage": {
+    "completion_tokens": 54,
+    "neurons": 22.295454025268555,
+    "prompt_tokens": 161,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 215
+  }
+}

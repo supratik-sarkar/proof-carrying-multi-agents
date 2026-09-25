@@ -1,0 +1,50 @@
+{
+  "schema": "PCG_MAS_V3_6_R0_POST_TERMINATION_RECOVERY_RECEIPT",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:08:34.195395+00:00",
+  "ORPHAN_MASTER_OPERATOR_PROCESS": "NO",
+  "ORPHAN_FIT_PROCESS": "NO",
+  "ORPHAN_DEV_PROCESS": "NO",
+  "CANONICAL_ACCOUNTING": "PASS",
+  "canonical_target": 2240,
+  "canonical_complete": 1425,
+  "final_panel_remaining": 815,
+  "breakdown": {
+    "mind2web": {
+      "complete": 8,
+      "remaining": 272
+    },
+    "bfcl": {
+      "complete": 7,
+      "remaining": 273
+    },
+    "agentdojo": {
+      "complete": 10,
+      "remaining": 270
+    }
+  },
+  "PROTECTED_STATE": "PASS",
+  "protected_observations_count": 618,
+  "protected_observations_sha256": "1f726fbb65ade9df37e1373727d075545200f475047ea0280dfea462a42e21f4",
+  "IMMUTABLE_CORE": "PASS",
+  "immutable_dev_core_count": 807,
+  "immutable_core_sha256": "b2b48f97f8a9924a0c50a78faaf00fe898689ddb874cb32f3792677fb3fce44f",
+  "total_complete_verified": "807 + 618 = 1425",
+  "PINNED_SOURCES": "PASS",
+  "bfcl_pinned_head": "ea13468e4423454d0c213704fb87cf7cb3990433",
+  "bfcl_worktree_clean": true,
+  "agentdojo_pinned_head": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "agentdojo_worktree_clean": true,
+  "RECONCILED_RUNTIME": "PASS",
+  "agentdojo_ceiling_amendment": {
+    "outer_safety_ceiling": 48,
+    "CALL_9_ALLOWED": "YES",
+    "CALL_49_BLOCKED": "YES"
+  },
+  "SCRATCH_QUARANTINED": "YES",
+  "CLEAN_ENV_FIT_READY": "YES",
+  "FIT_PREPARATION_AUTHORITY": "PASS",
+  "TEST_ARTIFACT_CLEANUP": "PASS",
+  "PROVIDER_INFERENCE_CALLS_R0": 0,
+  "R0_STATUS": "PASS"
+}

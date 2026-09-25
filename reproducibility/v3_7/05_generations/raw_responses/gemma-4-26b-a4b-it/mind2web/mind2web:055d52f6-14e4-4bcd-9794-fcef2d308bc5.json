@@ -1,0 +1,32 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "correct": false,
+    "parse_status": "NO_JSON"
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "fb63e1f21b34ce2eb2b5fc98ba7fcd345c07beb84d443b665bdafbb24e6af7b6",
+  "finish_reason": "length",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "mind2web:055d52f6-14e4-4bcd-9794-fcef2d308bc5",
+  "prompt_sha256": "fb63e1f21b34ce2eb2b5fc98ba7fcd345c07beb84d443b665bdafbb24e6af7b6",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "2add8a497df243bb9ac4561b8a18f8f67fe768c4a6044594385f3789cd0a2176",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 256,
+    "neurons": 9.790908813476562,
+    "prompt_tokens": 309,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 565
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "4dee65a725322a0a3d82afe480add3b67f76fbbce9d6de43759513cd2cdcf050",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "bfcl_v1:parallel_function_178",
+  "prompt_sha256": "4dee65a725322a0a3d82afe480add3b67f76fbbce9d6de43759513cd2cdcf050",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "699847d725a88bfdf4425aa1e8d4c5682026faa8ffba130068bbc669cec7e50b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"company_name\": \"Microsoft\", \"date\": \"2022-01-01\", \"exchange\": \"NASDAQ\"}",
+        "name": "get_stock_price"
+      },
+      "id": "chatcmpl-tool-9491fae052e2c8a0",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 198,
+    "neurons": 45.783,
+    "prompt_tokens": 419,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 617
+  }
+}

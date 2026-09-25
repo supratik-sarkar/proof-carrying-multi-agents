@@ -1,0 +1,14 @@
+You are a fact-verification assistant. Read the evidence and decide whether
+the CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.
+
+Reply with EXACTLY one of these three labels and nothing else:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Evidence:
+[1] Stanley Williams: Stanley `` Tookie '' Williams III -LRB- December 29 , 1953 -- December 13 , 2005 -RRB- was an American gang member and convicted murderer , who was part of the West Side Crips , a street gang which has its roots in South Central Los Angeles in 1969 .
+
+Claim: Stanley Williams was a law-abiding citizen without any convictions.
+
+Label:

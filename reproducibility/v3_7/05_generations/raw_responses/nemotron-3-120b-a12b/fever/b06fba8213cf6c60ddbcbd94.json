@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "44af6cb96f1f351484eed8df38dbbb876b2baf8b81b9e4ad88738465c4817e59",
+  "candidate_text": "\n\nSUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "1eb3786016b5494a8eaba686fea6fb47cbe2877025621617a699886b9a04766c",
+  "example_id": "75b69c74cd08062aeebb23326d6d9879",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "f9a1f7b932b4088d5032e247d7716f588734238b317fe9338c89574caf1514d0",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "75b69c74cd08062aeebb23326d6d9879",
+  "prompt_sha256": "8eade79d58067bf07de7d1f2451384a151fe26f3e4ec4b02b38a9d93261d5845",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Lizzy Caplan: Caplan also starred in television shows The Class , True Blood , and Party Down .\n\nClaim: Lizzy Caplan starred in television show.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "f4381f5d2a2358918170e61895065e0911bf51f65ccd092a6f53cec681f0ab26",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:75b69c74cd08062aeebb23326d6d9879",
+  "task_key": "537fac441d2c2e085e14d7cb7cd69ee3baf83695df22c6ba24245957c606eaae",
+  "text": "\n\nSUPPORTS",
+  "timestamp": "2026-09-15T09:40:06.205682+00:00",
+  "tokens_in": 131,
+  "tokens_out": 127,
+  "usage": {
+    "completion_tokens": 127,
+    "neurons": 23.167,
+    "prompt_tokens": 131,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 258
+  }
+}

@@ -1,0 +1,3299 @@
+{
+  "manifest_sha256": "93fce320a123597a608e468473c6e164818d2bac81b2efa29ed813728dca7d6b",
+  "patch_release": "v2.1",
+  "records": [
+    {
+      "action_uid": "40da8e9e-3166-4a26-a38d-0988d28a5d3f",
+      "annotation_id": "233c9a3e-c07c-4b68-ae56-6f0f05e48104",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "img"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "span"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "span"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C7",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:40da8e9e-3166-4a26-a38d-0988d28a5d3f",
+      "prior_actions": [
+        "[generic]  Find a pet -> CLICK",
+        "[link]  Find a dog -> CLICK",
+        "[label]  Location -> TYPE: 90028",
+        "[span]  Any -> CLICK",
+        "[generic]  Senior -> CLICK",
+        "[textbox]     -> TYPE: boxer",
+        "[generic]  Boxer -> CLICK",
+        "[button]  Get Started -> CLICK",
+        "[label]  Male -> CLICK",
+        "[img]  Photo of Rushmore -> CLICK"
+      ],
+      "task": "Find a male senior boxer near zip code 90028.",
+      "website": "adoptapet"
+    },
+    {
+      "action_uid": "78f4f72b-eccb-4077-a181-93dbc0add207",
+      "annotation_id": "2ecaefad-13d5-4a13-a646-d8899272c470",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "id": "events-list"
+          },
+          "choice": "C3",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "id": "covid19-label"
+          },
+          "choice": "C5",
+          "tag": "h2"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C9",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:78f4f72b-eccb-4077-a181-93dbc0add207",
+      "prior_actions": [
+        "[link]  PROSPECTIVE STUDENTS -> CLICK",
+        "[link]  Costs & Financial Aid  -> CLICK",
+        "[combobox]  Academic Year -> SELECT: 2022-2023",
+        "[combobox]  College/School -> SELECT: College of Engineering",
+        "[combobox]  Full or Half Term -> SELECT: Full Term",
+        "[combobox]  Level of Study -> SELECT: Graduate",
+        "[button]  Apply -> CLICK"
+      ],
+      "task": "Find tuition & fees for full term graduate students in the college of engineering for the academic year 2022-2023",
+      "website": "umich.edu"
+    },
+    {
+      "action_uid": "c0eb12ea-844e-4497-86dd-1d30ed0a2fb5",
+      "annotation_id": "7f19d60c-666e-44d5-aab9-32b56f6a94a9",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "article"
+        },
+        {
+          "attributes": {
+            "id": "aw-header-bottom-left"
+          },
+          "choice": "C1",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "id": "oficialSite"
+          },
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "span"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C6",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:c0eb12ea-844e-4497-86dd-1d30ed0a2fb5",
+      "prior_actions": [
+        "[link]  services for RESIDENTS -> CLICK",
+        "[p]  Check here for the most asked-for resources and in... -> CLICK",
+        "[heading]  Top Services -> CLICK",
+        "[span]  Who qualifies for Medicaid? -> CLICK",
+        "[link]  simple questionnaire, This link will open in a new... -> CLICK",
+        "[heading]  Medicaid Eligibility -> CLICK",
+        "[form]  Which best describes you? -> CLICK",
+        "[input]   -> CLICK",
+        "[button]  Next -> CLICK",
+        "[select]  1 -> SELECT: 1",
+        "[button]  Next -> CLICK",
+        "[input]   -> TYPE: 1000",
+        "[input]   -> TYPE: 32350",
+        "[button]  NEXT -> CLICK",
+        "[input]   -> CLICK",
+        "[input]   -> CLICK",
+        "[input]   -> CLICK",
+        "[input]   -> CLICK",
+        "[input]   -> CLICK",
+        "[input]   -> CLICK"
+      ],
+      "task": "Find the Eligibility details to qualify for Medicaid. The person looking for it has 1 people in household and monthly household income of 1000 USD and zip code of 32350. The person is not pregnant and older or equal to 18. The person is not receving medicare or not age 65 or older. Neither the person nor his/her spouse ever served/are serving in the U.s.military.",
+      "website": "ohio.gov"
+    },
+    {
+      "action_uid": "9bfeee6d-26ee-46af-9a65-40531a72c59b",
+      "annotation_id": "efa85d1d-0bb0-4254-b1a7-0b174eb94683",
+      "choices": [
+        {
+          "attributes": {
+            "id": "DERIVED_CLSRCH_SSR_EXPAND_COLLAPS$149$$2",
+            "name": "DERIVED_CLSRCH_SSR_EXPAND_COLLAPS%24149%24%242"
+          },
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "td"
+        },
+        {
+          "attributes": {
+            "id": "pthdr2ActionList_div"
+          },
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "id": "CLASS_SRCH_WRK2_SSR_PB_CLEAR",
+            "name": "CLASS_SRCH_WRK2_SSR_PB_CLEAR",
+            "title": "Clear Criteria",
+            "type": "button",
+            "value": "Clear"
+          },
+          "choice": "C3",
+          "tag": "input"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "td"
+        },
+        {
+          "attributes": {
+            "id": "actionListIcon"
+          },
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "role": "presentation"
+          },
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "td"
+        },
+        {
+          "attributes": {
+            "id": "ptifrmtgtframe",
+            "name": "TargetContent",
+            "title": "Main Content"
+          },
+          "choice": "C8",
+          "tag": "iframe"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "td"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C4",
+        "operation": "SELECT",
+        "value": "is exactly"
+      },
+      "observation_id": "mind2web:9bfeee6d-26ee-46af-9a65-40531a72c59b",
+      "prior_actions": [
+        "[button]  submenu for Academics -> HOVER",
+        "[menuitem]  Calendar -> CLICK",
+        "[link]  Course & Class Information -> CLICK",
+        "[link]  Search Schedule of Classes -> CLICK",
+        "[combobox]  Institution -> ENTER",
+        "[combobox]  Term -> ENTER",
+        "[combobox]  Campus -> SELECT: Columbus",
+        "[combobox]  Subject -> SELECT: Animal Sciences",
+        "[combobox]  Course Number -> SELECT: is exactly",
+        "[combobox]  Course Career -> SELECT: Medicine",
+        "[checkbox]  Show Open Classes Only -> CLICK",
+        "[button]  Search -> CLICK"
+      ],
+      "task": "Find a class for animal science in The ohio state university",
+      "website": "osu.edu"
+    },
+    {
+      "action_uid": "85a6f355-6b4f-4fa8-9290-b17f0904d9c5",
+      "annotation_id": "a3d2c7ab-eadc-45c8-86a2-69300e358b04",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "role": "button"
+          },
+          "choice": "C5",
+          "tag": "cnx"
+        },
+        {
+          "attributes": {
+            "role": "button"
+          },
+          "choice": "C6",
+          "tag": "cnx"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "svg"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C8",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:85a6f355-6b4f-4fa8-9290-b17f0904d9c5",
+      "prior_actions": [
+        "[svg]   -> CLICK",
+        "[heading]  Radar & Maps -> CLICK",
+        "[link]  WIND FLOW -> CLICK",
+        "[div]  Wind contours -> CLICK",
+        "[div]   -> CLICK"
+      ],
+      "task": "View the wind flow map for Utah, the  United States without contours.",
+      "website": "accuweather"
+    },
+    {
+      "action_uid": "00c4cba1-f215-4132-a25f-5ffe07eefc3d",
+      "annotation_id": "228fc81a-5ffe-4c16-8fd4-59462690373c",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "id": "Company",
+            "name": "Company",
+            "placeholder": "Institution Name",
+            "type": "text"
+          },
+          "choice": "C1",
+          "tag": "input"
+        },
+        {
+          "attributes": {
+            "id": "Primary_Discipline__c",
+            "name": "Primary_Discipline__c"
+          },
+          "choice": "C2",
+          "tag": "select"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "id": "Title",
+            "name": "Title",
+            "placeholder": "Job Title",
+            "type": "text"
+          },
+          "choice": "C5",
+          "tag": "input"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "img"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "div"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C2",
+        "operation": "SELECT",
+        "value": "Accounting"
+      },
+      "observation_id": "mind2web:00c4cba1-f215-4132-a25f-5ffe07eefc3d",
+      "prior_actions": [
+        "[link]  For Universities -> CLICK",
+        "[link]  Resources -> CLICK",
+        "[link]  Job Skills of 2023 Discover the fastest-growing hu... -> CLICK",
+        "[textbox]  * First Name -> TYPE: John",
+        "[textbox]  * Last Name -> TYPE: Doe",
+        "[textbox]  * Job Title -> TYPE: Accounting",
+        "[textbox]  * Work Email Address: -> TYPE: Johndoe@gmail.com",
+        "[textbox]  * Work Phone Number -> TYPE: 234567890",
+        "[textbox]  * Institution Name -> TYPE: University of Michigan",
+        "[combobox]  * Primary Discipline -> SELECT: Accounting",
+        "[combobox]  * Country -> SELECT: United States",
+        "[combobox]  * State -> SELECT: MI",
+        "[button]  Submit -> HOVER"
+      ],
+      "task": "Apply to get the Job Skills of 2023 Report eBook. Name: John Doe, Job: Accounting, Email: Johndoe@gmail.com, Phone number: 234567890, Institution: University of Michigan, Primary Discipline: Accountin\ng",
+      "website": "coursera.org"
+    },
+    {
+      "action_uid": "c9e0cf26-1ee0-444a-9312-9b3c607a9764",
+      "annotation_id": "3f9f6a76-3d97-424e-875f-611483517676",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "placeholder": "Whats on your to-do list?"
+          },
+          "choice": "C6",
+          "tag": "input"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C6",
+        "operation": "TYPE",
+        "value": "videographer"
+      },
+      "observation_id": "mind2web:c9e0cf26-1ee0-444a-9312-9b3c607a9764",
+      "prior_actions": [
+        "[textbox]  Search on Thumbtack -> TYPE: videographer",
+        "[b]  Videographer -> CLICK",
+        "[button]  View Profile -> CLICK",
+        "[span]  Select date -> CLICK",
+        "[gridcell]  Mon Apr 10 2023 -> CLICK",
+        "[span]  Select answer(s) -> CLICK",
+        "[span]  $400 - $700 (typically only for very brief events) -> CLICK",
+        "[combobox]  Event to be filmed -> SELECT: Concert / performance",
+        "[link]  Check them out -> CLICK",
+        "[span]  Full feature video (30 - 40 minutes) -> CLICK",
+        "[button]  View Profile -> CLICK"
+      ],
+      "task": "Find a videographer service for concert performance on 10th, April for 1 day and video time of 1 hour, budget around 500 USD",
+      "website": "thumbtack"
+    },
+    {
+      "action_uid": "058c3589-8dff-42f2-8cd1-7d2bc1518c4b",
+      "annotation_id": "15e1e37c-a21f-4b75-b1c0-41c50e3f514b",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "name": "message",
+            "placeholder": "Message"
+          },
+          "choice": "C3",
+          "tag": "textarea"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "role": "button"
+          },
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "button"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C3",
+        "operation": "TYPE",
+        "value": "Appointment"
+      },
+      "observation_id": "mind2web:058c3589-8dff-42f2-8cd1-7d2bc1518c4b",
+      "prior_actions": [
+        "[link]  Find an Agent -> CLICK",
+        "[textbox]  Enter County or City -> TYPE: Orange County FL",
+        "[button]  Orange County, FL -> CLICK",
+        "[button]  Search -> CLICK",
+        "[heading]  Sunset Ranches -> CLICK",
+        "[button]  Contact -> CLICK",
+        "[textbox]  Name -> TYPE: James SMith",
+        "[textbox]  Phone Number -> TYPE: 8888888888",
+        "[textbox]  Message -> TYPE: Appointment",
+        "[button]  Contact Seller -> HOVER"
+      ],
+      "task": "Find an agent in Orange County, FL and contact seller. Name: James SMith, Phone: 8888888888, Email: buckeye.foobar@gmail.com. Content:",
+      "website": "landwatch"
+    },
+    {
+      "action_uid": "64bb0253-47b3-4488-a971-d15638a12048",
+      "annotation_id": "5b224de7-505b-449d-8a34-8c3c33464bb9",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "button"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "p"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "span"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "name": "XRP"
+          },
+          "choice": "C8",
+          "tag": "img"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "img"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C8",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:64bb0253-47b3-4488-a971-d15638a12048",
+      "prior_actions": [
+        "[div]  Search -> CLICK",
+        "[textbox]  Search coin, pair, contract address or exchange -> TYPE: xrp",
+        "[link]  XRP XRP XRP Select ↵ -> CLICK",
+        "[tab]  1Y -> CLICK"
+      ],
+      "task": "Open the XRP yearly chart.",
+      "website": "coinmarketcap"
+    },
+    {
+      "action_uid": "c96f31bb-bc95-456e-b130-0761f184b1a2",
+      "annotation_id": "aa065caa-40fc-4479-bdaf-284b1b7033bc",
+      "choices": [
+        {
+          "attributes": {
+            "name": "humidity"
+          },
+          "choice": "C0",
+          "tag": "svg"
+        },
+        {
+          "attributes": {
+            "name": "facebook"
+          },
+          "choice": "C1",
+          "tag": "svg"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "span"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C9",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:c96f31bb-bc95-456e-b130-0761f184b1a2",
+      "prior_actions": [
+        "[combobox]  Search City or Zip Code -> TYPE: Denver",
+        "[option]  Denver, CO -> CLICK",
+        "[link]  See Details -> CLICK"
+      ],
+      "task": "Check the air quality index (AQI) details for Denver, CO.",
+      "website": "weather"
+    },
+    {
+      "action_uid": "6ab2d556-4861-4f59-9627-659bf8ce7e7a",
+      "annotation_id": "277e3468-f8cb-45c6-9e4b-0328066c42d3",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "role": "menuitem"
+          },
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "role": "menu"
+          },
+          "choice": "C4",
+          "tag": "ul"
+        },
+        {
+          "attributes": {
+            "id": "chooseAService"
+          },
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "id": "adultCount",
+            "name": "adultCount"
+          },
+          "choice": "C7",
+          "tag": "select"
+        },
+        {
+          "attributes": {
+            "role": "menuitem"
+          },
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "role": "menuitem"
+          },
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C7",
+        "operation": "SELECT",
+        "value": "1"
+      },
+      "observation_id": "mind2web:6ab2d556-4861-4f59-9627-659bf8ce7e7a",
+      "prior_actions": [
+        "[menuitem]  Quick Tools -> CLICK",
+        "[p]  Find USPS Locations -> CLICK",
+        "[textbox]  City and State, or ZIP Code™ -> TYPE: 60505",
+        "[link]  Passport Appointments -> CLICK",
+        "[link]  Schedule an Appointment -> CLICK",
+        "[combobox]  Service Type -> SELECT: New Passport Only",
+        "[combobox]  Adult(s) -> SELECT: 1",
+        "[span]   -> CLICK",
+        "[textbox]  *City and State or ZIP Code™ -> TYPE: 60505",
+        "[textbox]  *City and State or ZIP Code™ -> CLICK",
+        "[button]  Search -> CLICK",
+        "[button]  Select Location -> CLICK",
+        "[textbox]  *First Name -> TYPE: Ellen",
+        "[textbox]  *Last Name -> TYPE: Walker",
+        "[textbox]  *Phone Number -> TYPE: 123-456-7890",
+        "[textbox]  *Email Address -> TYPE: EW@gmail.com",
+        "[span]   -> CLICK",
+        "[button]  Review Appointment -> CLICK"
+      ],
+      "task": "Book an appointment for applying new passport for one adult, Ellen Walker, with phone number 123-456-7890 and email address EW@gmail.com on April 4, 2023 at 1 pm in the post office nearest to zip code 60505. Don't send updates via text message.",
+      "website": "usps"
+    },
+    {
+      "action_uid": "9b42d8f6-813d-41c2-8f3c-d08e631ddc18",
+      "annotation_id": "9967fe53-d305-41ed-b108-04098fc4f39a",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "label"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "section"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "img"
+        },
+        {
+          "attributes": {
+            "title": "College of Medicine and Science Facebook"
+          },
+          "choice": "C5",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "img"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "h3"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "role": "heading"
+          },
+          "choice": "C9",
+          "tag": "div"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C0",
+        "operation": "SELECT",
+        "value": "Internship"
+      },
+      "observation_id": "mind2web:9b42d8f6-813d-41c2-8f3c-d08e631ddc18",
+      "prior_actions": [
+        "[menuitem]  College of Medicine & Science -> CLICK",
+        "[link]  College of Medicine & Science -> CLICK",
+        "[combobox]  Select -> SELECT: Florida",
+        "[combobox]  Select -> SELECT: Internship",
+        "[button]  Search -> CLICK"
+      ],
+      "task": "Find florida internship programs in the Mayo Clinic College of Medicine and Science",
+      "website": "mayoclinic.org"
+    },
+    {
+      "action_uid": "5e44bffa-2fca-4260-9683-1a33e922821b",
+      "annotation_id": "e3661b90-0f58-421c-b274-3f21b7d817dd",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "type": "button"
+          },
+          "choice": "C9",
+          "tag": "button"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C9",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:5e44bffa-2fca-4260-9683-1a33e922821b",
+      "prior_actions": [
+        "[searchbox]  Search doctors, conditions, or procedures -> TYPE: dentist",
+        "[searchbox]  Location -> TYPE: 98011",
+        "[button]  Search -> CLICK",
+        "[button]  Rating -> CLICK",
+        "[span]   -> CLICK",
+        "[button]  Apply -> CLICK",
+        "[button]  Sort: -> CLICK",
+        "[menuitemradio]  Closest -> CLICK",
+        "[div]  FEATURED -> CLICK"
+      ],
+      "task": "Find the closest 5-star rated dentist to zip code 98011",
+      "website": "healthgrades"
+    },
+    {
+      "action_uid": "ed1c7bbb-d60a-4a2e-856d-cf5127bdf46a",
+      "annotation_id": "ab2f0102-cbf3-4863-ac12-bdd20c64b3f4",
+      "choices": [
+        {
+          "attributes": {
+            "title": "Arlington Real Estate"
+          },
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "title": "Ashburn Real Estate"
+          },
+          "choice": "C1",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "role": "link"
+          },
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "role": "button"
+          },
+          "choice": "C6",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "title": "Bluff"
+          },
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C7",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:ed1c7bbb-d60a-4a2e-856d-cf5127bdf46a",
+      "prior_actions": [
+        "[searchbox]  City, Address, School, Agent, ZIP -> TYPE: Bluff, UT",
+        "[link]  Bluff -> CLICK",
+        "[button]  All filters -> CLICK",
+        "[checkbox]  Sold -> CLICK",
+        "[select]  Last 1 week -> SELECT: Last 1 year",
+        "[svg]   -> CLICK"
+      ],
+      "task": "Find a list of all properties sold in Bluff, UT within the past 1 year",
+      "website": "redfin"
+    },
+    {
+      "action_uid": "055d52f6-14e4-4bcd-9794-fcef2d308bc5",
+      "annotation_id": "4a27bf45-226d-4335-a442-b5641b80955c",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "td"
+        },
+        {
+          "attributes": {
+            "name": "sort",
+            "title": "sort"
+          },
+          "choice": "C1",
+          "tag": "select"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "id": "name_16"
+          },
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "tr"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "td"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C1",
+        "operation": "SELECT",
+        "value": "A-Z"
+      },
+      "observation_id": "mind2web:055d52f6-14e4-4bcd-9794-fcef2d308bc5",
+      "prior_actions": [
+        "[link]  BABY NAMES -> CLICK",
+        "[radio]  gender boy -> CLICK",
+        "[radio]  Popularity include only top -> CLICK",
+        "[button]  SEARCH BABY NAMES -> CLICK",
+        "[combobox]  sort -> SELECT: A-Z"
+      ],
+      "task": "Find popular baby names for a boy and sort in A-Z.",
+      "website": "babycenter"
+    },
+    {
+      "action_uid": "aba4ec7d-5f1e-4a1c-b93e-f47249085225",
+      "annotation_id": "869c6676-4263-4e5c-8b4c-f0f4037d36b9",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "h3"
+        },
+        {
+          "attributes": {
+            "title": "Discover your new house"
+          },
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "title": "Rental Manager Overview"
+          },
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "id": "quickSearchLookup_typeahead_0"
+          },
+          "choice": "C7",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "id": "mainSearchWrap"
+          },
+          "choice": "C9",
+          "tag": "div"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C7",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:aba4ec7d-5f1e-4a1c-b93e-f47249085225",
+      "prior_actions": [
+        "[textbox]  Search by Location or Point of Interest -> TYPE: Chicago IL",
+        "[li]  Chicago, IL -> CLICK",
+        "[button]  More  -> CLICK",
+        "[label]  Pool -> CLICK",
+        "[region]  Map -> CLICK"
+      ],
+      "task": "Show apartments with swimming pool in Chicago IL.",
+      "website": "apartments"
+    },
+    {
+      "action_uid": "a3d48a23-067e-4b93-8d7a-c0723c26aab3",
+      "annotation_id": "5d17dbe3-4058-457c-81d6-33b63deb2cf1",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "th"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "tr"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "li"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C0",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:a3d48a23-067e-4b93-8d7a-c0723c26aab3",
+      "prior_actions": [
+        "[textbox]  Search Drugs.com -> TYPE: Paracetamol",
+        "[link]  Paracetamol -> CLICK",
+        "[heading]  Paracetamol Editor's Pick -> CLICK",
+        "[link]  Side effects -> CLICK"
+      ],
+      "task": "Find drug Paracetamol and its side effects.",
+      "website": "drugs"
+    },
+    {
+      "action_uid": "432f5f79-717d-4ed3-8d2e-689d456b0cb1",
+      "annotation_id": "fb498b54-59a3-40a6-ae27-af464ab49860",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "div"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C8",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:432f5f79-717d-4ed3-8d2e-689d456b0cb1",
+      "prior_actions": [
+        "[link]  Open Design & Print menu -> CLICK",
+        "[link]  Explore Print, Products & Design -> CLICK",
+        "[img]  Fashion backlit Poster in a frame -> CLICK",
+        "[generic]  Accordion PAPER SIZE 18x24 -> CLICK",
+        "[li]  24x36 -> CLICK"
+      ],
+      "task": "Find Backlit Poster with 24x36 dimension of paper.",
+      "website": "fedex"
+    },
+    {
+      "action_uid": "5dbb49e4-6967-49da-bbb2-6722f3b3589e",
+      "annotation_id": "7137b440-868e-40ea-9a77-846e7af95cb9",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "fieldset"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "id": "loc_input",
+            "placeholder": "City, State, or Zip",
+            "type": "text"
+          },
+          "choice": "C2",
+          "tag": "input"
+        },
+        {
+          "attributes": {
+            "type": "button"
+          },
+          "choice": "C3",
+          "tag": "button"
+        },
+        {
+          "attributes": {
+            "id": "web-component-container"
+          },
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "form"
+        },
+        {
+          "attributes": {
+            "id": "sFooter_0_0_16_0_0_0_1_0_0_0_1"
+          },
+          "choice": "C6",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "div"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C2",
+        "operation": "TYPE",
+        "value": "Dallas"
+      },
+      "observation_id": "mind2web:5dbb49e4-6967-49da-bbb2-6722f3b3589e",
+      "prior_actions": [
+        "[link]  Locations -> CLICK",
+        "[textbox]  City, State, or Zip -> CLICK",
+        "[textbox]  City, State, or Zip -> TYPE: Dallas",
+        "[span]  Dallas -> CLICK",
+        "[button]  Search -> CLICK"
+      ],
+      "task": "Find truck rental locations near Dallas, Texas",
+      "website": "pensketruckrental"
+    },
+    {
+      "action_uid": "b82faa3c-f40b-45cb-9f2a-f36250b93e0e",
+      "annotation_id": "451c96a3-fef5-4ea1-8488-51bbb2e9d9c9",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "section"
+        },
+        {
+          "attributes": {
+            "title": "View the profile of Dr. Parham Zarrini, MD, MBA, FACC"
+          },
+          "choice": "C1",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "ul"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "role": "gridcell"
+          },
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "div"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C1",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:b82faa3c-f40b-45cb-9f2a-f36250b93e0e",
+      "prior_actions": [
+        "[textbox]  Condition, procedure, doctor... -> TYPE: Cardiologits",
+        "[span]  Cardiologist -> CLICK",
+        "[textbox]  City, state, or zip code -> CLICK",
+        "[textbox]  City, state, or zip code -> TYPE: 96162",
+        "[div]  Truckee, CA -> CLICK",
+        "[button]  Search for doctors -> CLICK",
+        "[div]  Distance -> CLICK",
+        "[div]  50 miles -> CLICK",
+        "[link]  Dr. Parham Zarrini, MD, MBA, FACC -> CLICK"
+      ],
+      "task": "Find a cardiologist within 50 miles of 96162.",
+      "website": "zocdoc"
+    },
+    {
+      "action_uid": "561d7434-b480-40e5-9210-63bf58abb647",
+      "annotation_id": "63b039d1-6dc4-438b-8fd2-cd5fb134fdd1",
+      "choices": [
+        {
+          "attributes": {
+            "id": "_ctl0_PageTemplateContent__ctlResultsRangeAndPageBottom_msgSortBy"
+          },
+          "choice": "C0",
+          "tag": "span"
+        },
+        {
+          "attributes": {
+            "id": "radius"
+          },
+          "choice": "C1",
+          "tag": "select"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "p"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "ul"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "strong"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "id": "nav-search-close",
+            "type": "button",
+            "value": "Close"
+          },
+          "choice": "C6",
+          "tag": "button"
+        },
+        {
+          "attributes": {
+            "id": "nav-utilities"
+          },
+          "choice": "C7",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "id": "omj-my-profile-anchor-footer",
+            "title": "My Profile"
+          },
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "li"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C1",
+        "operation": "SELECT",
+        "value": "20 miles"
+      },
+      "observation_id": "mind2web:561d7434-b480-40e5-9210-63bf58abb647",
+      "prior_actions": [
+        "[searchbox]  Search by job title, skill or company -> TYPE: auto mechanic",
+        "[button]  Search -> CLICK",
+        "[textbox]  Location -> TYPE: Delaware, Ohio",
+        "[link]  Search -> CLICK",
+        "[link]   Filters -> CLICK",
+        "[link]  Career/Education Level -> CLICK",
+        "[link]  Job Type -> CLICK",
+        "[link]  Salary -> CLICK",
+        "[link]  Entry Level Jobs (less than $30K) -> CLICK",
+        "[span]  Display Results -> CLICK",
+        "[textbox]  Job Title -> TYPE: auto mechanic",
+        "[list]  Automotive Master Mechanic Automotive Mechanic Aut... -> CLICK",
+        "[link]  Search -> CLICK",
+        "[combobox]  Radius -> SELECT: 20 miles",
+        "[link]   Filters -> CLICK",
+        "[div]  Display Results -> CLICK"
+      ],
+      "task": "Find\n job postings for an auto mechanic within 20 miles of Delaware, ohio.",
+      "website": "ohiomeansjobs.ohio.gov"
+    },
+    {
+      "action_uid": "3f3a01ed-5477-490a-83c4-8163f5baf59d",
+      "annotation_id": "ebea3aa1-996a-4843-a6c5-ef7ad7374776",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "img"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "label"
+        },
+        {
+          "attributes": {
+            "title": "6501 E 10th Ave, Anchorage, AK 99504"
+          },
+          "choice": "C8",
+          "tag": "img"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C7",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:3f3a01ed-5477-490a-83c4-8163f5baf59d",
+      "prior_actions": [
+        "[button]  Buy -> CLICK",
+        "[textbox]  City, ZIP, School, Address, Neighborhood -> TYPE: anchorage",
+        "[b]  anchorage -> CLICK",
+        "[link]    Bed /   Bath  -> CLICK",
+        "[link]  3 -> CLICK",
+        "[link]  3 -> CLICK",
+        "[div]  Price -> CLICK",
+        "[link]  Filter -> CLICK",
+        "[i]   -> CLICK",
+        "[link]   -> CLICK",
+        "[img]  5467 Sandhill Loop, Anchorage, AK 99502 -> CLICK"
+      ],
+      "task": "Find a three bedroom three bath home for sale in Anchorage Alaska with an upcoming open house.",
+      "website": "movoto"
+    },
+    {
+      "action_uid": "aae43de3-e15b-4054-b179-9d0f6be1dac0",
+      "annotation_id": "b4279cf6-3a5f-42f7-b524-a5c9c158e3b4",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "span"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "span"
+        },
+        {
+          "attributes": {
+            "role": "img"
+          },
+          "choice": "C2",
+          "tag": "svg"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "span"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "role": "img"
+          },
+          "choice": "C5",
+          "tag": "svg"
+        },
+        {
+          "attributes": {
+            "id": "u36-search-form-autocomplete--3",
+            "name": "q",
+            "placeholder": "Search for anything",
+            "role": "combobox",
+            "type": "text"
+          },
+          "choice": "C6",
+          "tag": "input"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "h3"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C6",
+        "operation": "TYPE",
+        "value": "Python courses for beginners"
+      },
+      "observation_id": "mind2web:aae43de3-e15b-4054-b179-9d0f6be1dac0",
+      "prior_actions": [
+        "[combobox]  Search for anything -> CLICK",
+        "[combobox]  Search for anything -> TYPE: Python courses for beginners",
+        "[img]  Submit search -> CLICK",
+        "[combobox]  Sort by -> SELECT: Highest Rated"
+      ],
+      "task": "Find the highest rated best Python courses for beginners.",
+      "website": "udemy"
+    },
+    {
+      "action_uid": "9343e526-9d45-4dc1-8bdd-84b61e119cac",
+      "annotation_id": "eb0e9fc2-7511-47bc-a9ce-67cf0523a1cb",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "type": "button"
+          },
+          "choice": "C3",
+          "tag": "button"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "button"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "div"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C3",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:9343e526-9d45-4dc1-8bdd-84b61e119cac",
+      "prior_actions": [
+        "[searchbox]  Search -> TYPE: covid 19",
+        "[button]  Search GOV.UK -> CLICK",
+        "[button]  Topic -> CLICK",
+        "[combobox]  Topic -> SELECT: Transport",
+        "[combobox]  Sub-topic -> SELECT: Aviation",
+        "[combobox]  Sort by -> SELECT: Updated (newest)"
+      ],
+      "task": "Show me the newest information on covid 19 regarding aviation transport",
+      "website": "gov.uk"
+    },
+    {
+      "action_uid": "ec55e43d-c06d-41a0-beee-92949dd9899c",
+      "annotation_id": "7980ddca-f97f-4afc-80b7-4b54c98943ad",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "table"
+        },
+        {
+          "attributes": {
+            "type": "button"
+          },
+          "choice": "C1",
+          "tag": "button"
+        },
+        {
+          "attributes": {
+            "role": "img"
+          },
+          "choice": "C2",
+          "tag": "svg"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "tr"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "role": "presentation"
+          },
+          "choice": "C6",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "td"
+        },
+        {
+          "attributes": {
+            "type": "button"
+          },
+          "choice": "C9",
+          "tag": "button"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C9",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:ec55e43d-c06d-41a0-beee-92949dd9899c",
+      "prior_actions": [
+        "[button]  Open side menu. -> CLICK",
+        "[svg]   -> CLICK",
+        "[link]  Amazon Delivery Driver -> CLICK",
+        "[button]  Delivery Driver Jobs -> CLICK",
+        "[button]  Accept All -> CLICK",
+        "[textbox]  State -> CLICK",
+        "[div]  CA -> CLICK",
+        "[textbox]  Distance -> CLICK",
+        "[div]  100mi -> CLICK",
+        "[input]   -> CLICK",
+        "[spinbutton]  15.00 -> TYPE: 22",
+        "[button]  Update -> CLICK",
+        "[button]  Apply -> CLICK"
+      ],
+      "task": "Search for a Job as a delivery driver within 100 miles of California, and apply to the highest paying job above at least 22 dollars per hour.",
+      "website": "hiring.amazon"
+    },
+    {
+      "action_uid": "a0ccad02-b8bf-4f0a-9b81-478fd7469288",
+      "annotation_id": "0f55d705-7be3-462a-ae8c-8fb579a180b0",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "label"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "span"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "td"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C1",
+        "operation": "SELECT",
+        "value": "Law"
+      },
+      "observation_id": "mind2web:a0ccad02-b8bf-4f0a-9b81-478fd7469288",
+      "prior_actions": [
+        "[link]  Grad Schools -> HOVER",
+        "[link]  Search for Graduate Schools -> CLICK",
+        "[select]  All Programs -> SELECT: Law",
+        "[select]  All Specialties -> SELECT: Part-time Law",
+        "[textbox]  ex. 150 -> TYPE: 140",
+        "[textbox]  City, State or ZIP -> TYPE: california",
+        "[option]  California -> CLICK"
+      ],
+      "task": "Find highest ranked part-time law programs in California for a LSAT score of 140",
+      "website": "usnews.education"
+    },
+    {
+      "action_uid": "7e4f97fa-03b3-45a0-ba93-ca1b93e892fc",
+      "annotation_id": "f7246831-d6b3-4242-acfa-3c8e5fb586bc",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "title": "Drink Recipes"
+          },
+          "choice": "C2",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "strong"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "role": "banner"
+          },
+          "choice": "C5",
+          "tag": "header"
+        },
+        {
+          "attributes": {
+            "title": "Go to Main Navigation"
+          },
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "title": "Angel Food Cake"
+          },
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C6",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:7e4f97fa-03b3-45a0-ba93-ca1b93e892fc",
+      "prior_actions": [
+        "[link]  Go to Main Navigation -> CLICK",
+        "[link]  RECIPES & MENUS -> CLICK",
+        "[link]  GLUTEN-FREE -> CLICK",
+        "[heading]  INGREDIENT -> CLICK",
+        "[label]  Chicken -> CLICK",
+        "[button]  APPLY -> CLICK"
+      ],
+      "task": "Find a gluten free recipe containing chicken.",
+      "website": "epicurious"
+    },
+    {
+      "action_uid": "a4290d7b-5a86-41a7-9be5-2b13127ba4cf",
+      "annotation_id": "0bae14d0-88f3-4db4-a952-e52298324d10",
+      "choices": [
+        {
+          "attributes": {
+            "title": "stocktwits.com/howardlindzon"
+          },
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "button"
+        },
+        {
+          "attributes": {
+            "name": "desktopSearch",
+            "placeholder": "Search Companies, Crypto, NFTs and @usernames",
+            "type": "text"
+          },
+          "choice": "C3",
+          "tag": "input"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "title": "stocktwits.com/Miro383"
+          },
+          "choice": "C5",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "role": "img"
+          },
+          "choice": "C9",
+          "tag": "div"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C3",
+        "operation": "TYPE",
+        "value": "@WarrenBuffett"
+      },
+      "observation_id": "mind2web:a4290d7b-5a86-41a7-9be5-2b13127ba4cf",
+      "prior_actions": [
+        "[textbox]  Search Stocktwits -> CLICK",
+        "[textbox]  Search Stocktwits -> TYPE: @WarrenBuffett",
+        "[span]  WarrenBuffettCEO -> CLICK",
+        "[button]  Follow -> CLICK"
+      ],
+      "task": "Follow the user \"WarrenBuffett\".",
+      "website": "stocktwits"
+    },
+    {
+      "action_uid": "f6b5b663-4b9a-4644-a8af-2e9416c17fc5",
+      "annotation_id": "e22ebc9c-907f-4bac-a0a3-c96c4f8527c1",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "id": "edit-topic",
+            "name": "topic"
+          },
+          "choice": "C1",
+          "tag": "select"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "html"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "h2"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C1",
+        "operation": "SELECT",
+        "value": "Attorney Fees"
+      },
+      "observation_id": "mind2web:f6b5b663-4b9a-4644-a8af-2e9416c17fc5",
+      "prior_actions": [
+        "[link]  FOIA -> CLICK",
+        "[link]  FOIA Resources -> CLICK",
+        "[link]  Court Decisions -> CLICK",
+        "[combobox]  Topic -> SELECT: Attorney Fees",
+        "[combobox]  Month -> SELECT: Jan",
+        "[combobox]  Year -> SELECT: 2023",
+        "[button]  Search -> CLICK"
+      ],
+      "task": "Find court decisions on the topic of attorney fees in January 2023",
+      "website": "justice.gov"
+    },
+    {
+      "action_uid": "731c288e-1984-4347-b519-4067b9d9389a",
+      "annotation_id": "ce0c4604-a0b0-4901-a619-29d64576f25e",
+      "choices": [
+        {
+          "attributes": {
+            "id": "sort-select_6_nativeSelect",
+            "name": "sort"
+          },
+          "choice": "C0",
+          "tag": "select"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "button"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "id": "petId_59886559"
+          },
+          "choice": "C3",
+          "tag": "pfdc-pet-card"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "img"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "img"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C0",
+        "operation": "SELECT",
+        "value": "Newest addition"
+      },
+      "observation_id": "mind2web:731c288e-1984-4347-b519-4067b9d9389a",
+      "prior_actions": [
+        "[combobox]  Search Terrier, Kitten, etc. -> TYPE: Cats",
+        "[combobox]  Enter City, State, or ZIP location -> TYPE: Seattle",
+        "[img]  begin search -> CLICK",
+        "[combobox]  Select Sort By Field -> SELECT: Newest addition",
+        "[button]  Select Age, Any -> CLICK",
+        "[div]  Young -> CLICK"
+      ],
+      "task": "Find young cats in Seattle and show off newest additions.",
+      "website": "petfinder"
+    },
+    {
+      "action_uid": "452f7778-5bbb-426c-8ced-dc8ba391f93c",
+      "annotation_id": "40d890b9-06ac-4e45-86bb-e7744aabdd64",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "img"
+        },
+        {
+          "attributes": {
+            "role": "combobox"
+          },
+          "choice": "C1",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "h3"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "id": "option_21_cf282e7-5cd7-685-6f-56ebcaadd47",
+            "role": "option"
+          },
+          "choice": "C5",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "id": "sc.keyword",
+            "name": "sc.keyword",
+            "placeholder": "Search for job titles, companies, or keywords"
+          },
+          "choice": "C6",
+          "tag": "input"
+        },
+        {
+          "attributes": {
+            "type": "button"
+          },
+          "choice": "C7",
+          "tag": "button"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "label"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "div"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C6",
+        "operation": "TYPE",
+        "value": "software engineer"
+      },
+      "observation_id": "mind2web:452f7778-5bbb-426c-8ced-dc8ba391f93c",
+      "prior_actions": [
+        "[textbox]  Search Keyword -> TYPE: software engineer",
+        "[textbox]  Search Location -> TYPE: Seattle, WA",
+        "[path]   -> CLICK",
+        "[link]  See All Jobs -> CLICK"
+      ],
+      "task": "Find job openings for software engineers in Seattle, WA.",
+      "website": "glassdoor"
+    },
+    {
+      "action_uid": "4803233d-3903-457b-a342-0a130a603926",
+      "annotation_id": "9d8ba96c-ff70-4846-a91b-818fa43bff04",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "span"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "id": "PickupLocation-TruckOnly",
+            "name": "PickupLocation",
+            "placeholder": "Zip or City, State",
+            "type": "text"
+          },
+          "choice": "C6",
+          "tag": "input"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "id": "Location1Date",
+            "name": "Location1Date",
+            "placeholder": "mm/dd/yyyy",
+            "type": "text",
+            "value": "3/17/2023"
+          },
+          "choice": "C8",
+          "tag": "input"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "div"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C6",
+        "operation": "TYPE",
+        "value": "Birmingham, Alabama"
+      },
+      "observation_id": "mind2web:4803233d-3903-457b-a342-0a130a603926",
+      "prior_actions": [
+        "[textbox]  Pick Up Location -> TYPE: Birmingham, Alabama",
+        "[div]  Birmingham, AL -> CLICK",
+        "[textbox]  Drop Off Location -> TYPE: mobile alabama",
+        "[label]  Pick Up Date* -> CLICK",
+        "[link]   -> CLICK",
+        "[link]  29 -> CLICK",
+        "[button]  Get Rates -> CLICK",
+        "[button]  Select -> CLICK",
+        "[button]  Truck Only -> CLICK",
+        "[combobox]  Preferred Pick Up Time -> SELECT: 12:00 AM Midnight",
+        "[button]  Continue -> CLICK",
+        "[button]  Continue Counter Pick Up -> CLICK",
+        "[button]  Continue -> CLICK",
+        "[link]  No thanks, I do not need SafeTrip® -> CLICK",
+        "[link]  No thanks, I do not need these items -> CLICK",
+        "[link]  No thanks, I do not need storage -> CLICK",
+        "[link]  No thanks, I do not need supplies  -> CLICK",
+        "[button]  No thanks, I do not need help in Birmingham, AL -> CLICK",
+        "[button]  No thanks, I do not need help in Mobile, AL -> CLICK",
+        "[button]  Save This Quote -> CLICK"
+      ],
+      "task": "Get a quote for a 15' truck rental for pick up in Birmingham Alabama on May 29th and dropoff in Mobil Alabama.",
+      "website": "uhaul"
+    },
+    {
+      "action_uid": "d68e0dc9-2fa9-4550-b2cf-a45badaea0e9",
+      "annotation_id": "c0ecc025-94fc-4a4e-ab4e-539c56cc95b0",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C0",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:d68e0dc9-2fa9-4550-b2cf-a45badaea0e9",
+      "prior_actions": [
+        "[link]  Conditions -> CLICK",
+        "[link]  Depression -> CLICK",
+        "[link]  Diagnosis -> CLICK"
+      ],
+      "task": "I want to know information about the diagnosis of depression",
+      "website": "webmd"
+    },
+    {
+      "action_uid": "93b1a840-7e4e-4300-8d4a-1bb5f931c0a7",
+      "annotation_id": "5b20e07c-7c58-495b-b5f1-5c69df102949",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "role": "combobox",
+            "type": "text"
+          },
+          "choice": "C6",
+          "tag": "input"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "role": "listitem"
+          },
+          "choice": "C8",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "li"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C6",
+        "operation": "TYPE",
+        "value": "Euro"
+      },
+      "observation_id": "mind2web:93b1a840-7e4e-4300-8d4a-1bb5f931c0a7",
+      "prior_actions": [
+        "[combobox]  Search for stocks, ETFs & more -> TYPE: Euro",
+        "[div]  Euro -> CLICK",
+        "[div]  Follow -> CLICK"
+      ],
+      "task": "Find current price and follow Euro currency.",
+      "website": "finance.google"
+    },
+    {
+      "action_uid": "69256047-1819-4deb-a826-34196557aa7d",
+      "annotation_id": "81035475-4c20-45e0-93d1-8b51f6f4ca74",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "p"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "p"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "img"
+        },
+        {
+          "attributes": {
+            "id": "disabled"
+          },
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "ul"
+        },
+        {
+          "attributes": {
+            "id": "enabled"
+          },
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "h1"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C1",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:69256047-1819-4deb-a826-34196557aa7d",
+      "prior_actions": [
+        "[menuitem]  Expand Plan options -> CLICK",
+        "[menuitem]  Find a Diet -> CLICK",
+        "[p]  to eat healthier -> CLICK",
+        "[span]  NEXT -> CLICK",
+        "[p]  pescatarian -> CLICK",
+        "[span]  NEXT -> CLICK",
+        "[p]  none -> CLICK",
+        "[img]   -> CLICK",
+        "[button]  COMPARE -> CLICK",
+        "[button]  COMPARE -> CLICK"
+      ],
+      "task": "Compare two pescatarian diets for eating healthier",
+      "website": "healthline"
+    },
+    {
+      "action_uid": "b35fe3ca-8837-43eb-9211-42ddbf38657f",
+      "annotation_id": "9d42f53a-00fe-4741-bac3-15b485d90636",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "select"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "th"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C0",
+        "operation": "SELECT",
+        "value": "May"
+      },
+      "observation_id": "mind2web:b35fe3ca-8837-43eb-9211-42ddbf38657f",
+      "prior_actions": [
+        "[a]  Sports & Events -> CLICK",
+        "[link]  Event Search -> CLICK",
+        "[span]  Search near City -> CLICK",
+        "[textbox]  City, State -> TYPE: brighton",
+        "[button]  Brighton, AL -> CLICK",
+        "[select]  Any Distance -> SELECT: 100 Miles",
+        "[textbox]  MM/DD/YYYY -> CLICK",
+        "[columnheader]  Apr 2023 -> SELECT: May",
+        "[gridcell]  15 -> CLICK",
+        "[columnheader]  Apr 2024 -> SELECT: May",
+        "[gridcell]  30 -> CLICK",
+        "[label]  All-American Dogs -> CLICK",
+        "[div]  Companion Events -> CLICK",
+        "[span]  a -> CLICK",
+        "[span]  a -> CLICK",
+        "[button]  RETRIEVE EVENTS -> CLICK"
+      ],
+      "task": "Find agility and obedience companion events for All American Dogs within a 100 miles of Brighton, AL from May 15, 2023 to May 30, 2024",
+      "website": "akc.org"
+    },
+    {
+      "action_uid": "7c449ec3-e561-429e-ae31-f4ce2a717051",
+      "annotation_id": "26ee4ce0-2fdd-4aa5-88b4-fe5270993337",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "td"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "footer"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "id": "ctl00_ContentPlaceHolder1_btnSearch",
+            "name": "ctl00$ContentPlaceHolder1$btnSearch",
+            "type": "submit",
+            "value": "Search/Filter"
+          },
+          "choice": "C7",
+          "tag": "input"
+        },
+        {
+          "attributes": {
+            "title": "Twitter Link"
+          },
+          "choice": "C8",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "li"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Service",
+      "gold": {
+        "choice": "C7",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:7c449ec3-e561-429e-ae31-f4ce2a717051",
+      "prior_actions": [
+        "[link]  Forms -> CLICK",
+        "[select]  <ALL> -> SELECT: Driver",
+        "[button]  Search/Filter -> CLICK"
+      ],
+      "task": "Search the list of forms for drivers.",
+      "website": "dmv.virginia.gov"
+    },
+    {
+      "action_uid": "ce59d078-a4cb-448b-b7df-7854efba0c25",
+      "annotation_id": "7ffd9e73-ba5d-47a1-b5b9-00476e6f1121",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "object"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "role": "button"
+          },
+          "choice": "C2",
+          "tag": "label"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "li"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "section"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C6",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "id": "location",
+            "name": "location",
+            "placeholder": "All Locations",
+            "type": "text"
+          },
+          "choice": "C9",
+          "tag": "input"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C9",
+        "operation": "TYPE",
+        "value": "Bentonville"
+      },
+      "observation_id": "mind2web:ce59d078-a4cb-448b-b7df-7854efba0c25",
+      "prior_actions": [
+        "[button]  All Career Areas -> CLICK",
+        "[button]  Stores & Clubs -> CLICK",
+        "[textbox]  Search input -> CLICK",
+        "[textbox]  Search input -> TYPE: support services",
+        "[textbox]  Location -> CLICK",
+        "[textbox]  Location -> TYPE: Bentonville",
+        "[button]  Bentonville, AR -> CLICK",
+        "[button]  Search -> CLICK"
+      ],
+      "task": "Find support services jobs in Bentonville in the state of Arkansas.",
+      "website": "careers.walmart"
+    },
+    {
+      "action_uid": "18407b93-9c3c-4b03-b99e-37d5e6024787",
+      "annotation_id": "5c1e0e35-c1e2-4f8d-8540-a4fbf3f0f932",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "html"
+        },
+        {
+          "attributes": {},
+          "choice": "C1",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "role": "link"
+          },
+          "choice": "C2",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "role": "link"
+          },
+          "choice": "C3",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "role": "link"
+          },
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "role": "button"
+          },
+          "choice": "C5",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "role": "link"
+          },
+          "choice": "C6",
+          "tag": "a"
+        },
+        {
+          "attributes": {
+            "role": "button"
+          },
+          "choice": "C7",
+          "tag": "div"
+        },
+        {
+          "attributes": {
+            "title": "Trophy"
+          },
+          "choice": "C8",
+          "tag": "img"
+        },
+        {
+          "attributes": {
+            "role": "link"
+          },
+          "choice": "C9",
+          "tag": "a"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C5",
+        "operation": "CLICK",
+        "value": ""
+      },
+      "observation_id": "mind2web:18407b93-9c3c-4b03-b99e-37d5e6024787",
+      "prior_actions": [
+        "[combobox]  Search query -> TYPE: Football",
+        "[combobox]  Search query -> ENTER",
+        "[span]  People -> CLICK",
+        "[button]  Follow @FIFAcom -> CLICK",
+        "[button]  Follow @LFC -> CLICK",
+        "[button]  Follow @NFL -> CLICK",
+        "[span]  Follow -> CLICK",
+        "[span]  Follow -> CLICK"
+      ],
+      "task": "Search for Football sport topic and follow top 5 people or organizations.",
+      "website": "twitter"
+    },
+    {
+      "action_uid": "ecb3adfb-fb33-43ec-8a00-15fb86781aa2",
+      "annotation_id": "43c8104b-929d-4cca-a6bc-c8d213c5fe4e",
+      "choices": [
+        {
+          "attributes": {},
+          "choice": "C0",
+          "tag": "li"
+        },
+        {
+          "attributes": {
+            "role": "presentation"
+          },
+          "choice": "C1",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C2",
+          "tag": "h3"
+        },
+        {
+          "attributes": {},
+          "choice": "C3",
+          "tag": "img"
+        },
+        {
+          "attributes": {},
+          "choice": "C4",
+          "tag": "a"
+        },
+        {
+          "attributes": {},
+          "choice": "C5",
+          "tag": "p"
+        },
+        {
+          "attributes": {
+            "placeholder": "Search by college, city or property",
+            "type": "text"
+          },
+          "choice": "C6",
+          "tag": "input"
+        },
+        {
+          "attributes": {},
+          "choice": "C7",
+          "tag": "ul"
+        },
+        {
+          "attributes": {},
+          "choice": "C8",
+          "tag": "div"
+        },
+        {
+          "attributes": {},
+          "choice": "C9",
+          "tag": "p"
+        }
+      ],
+      "dataset_id": "mind2web",
+      "domain": "Info",
+      "gold": {
+        "choice": "C6",
+        "operation": "TYPE",
+        "value": "University of Oxford"
+      },
+      "observation_id": "mind2web:ecb3adfb-fb33-43ec-8a00-15fb86781aa2",
+      "prior_actions": [
+        "[textbox]  Search by college, city or property -> TYPE: University of Oxford",
+        "[span]  Oxford, United Kingdom -> CLICK",
+        "[link]  Private Room No need to share in a private room, y... -> CLICK"
+      ],
+      "task": "Find private room accommodation rentals near University of Oxford.",
+      "website": "student"
+    }
+  ],
+  "schema": "PCG_MAS_V3_6_MIND2WEB_MANIFEST_V2_1",
+  "selection": {
+    "quotas": {
+      "CLICK": 20,
+      "SELECT": 10,
+      "TYPE": 10
+    },
+    "website_cap_used": 1
+  }
+}

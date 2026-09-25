@@ -1,0 +1,103 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [
+      "Could not find a matching function among index [0, 1] of model output for index 0 of possible answers.",
+      {
+        "Model Result Index 0": {
+          "model_output_item": {
+            "calculate_magnetic_field": {
+              "current": 4,
+              "distance": 2,
+              "permeability": 0.1
+            }
+          },
+          "possible_answer_item": {
+            "calculate_magnetic_field": {
+              "current": [
+                4.0
+              ],
+              "distance": [
+                2.0
+              ]
+            }
+          },
+          "sub_error": [
+            "Unexpected parameter: 'permeability'."
+          ],
+          "sub_error_type": "simple_function_checker:unexpected_param"
+        }
+      },
+      {
+        "Model Result Index 1": {
+          "model_output_item": {
+            "calculate_voltage_difference": {
+              "charge": 0,
+              "distance": 3,
+              "electric_field": 5
+            }
+          },
+          "possible_answer_item": {
+            "calculate_magnetic_field": {
+              "current": [
+                4.0
+              ],
+              "distance": [
+                2.0
+              ]
+            }
+          },
+          "sub_error": [
+            "Function name 'calculate_magnetic_field' not found in model output."
+          ],
+          "sub_error_type": "simple_function_checker:wrong_func_name"
+        }
+      }
+    ],
+    "error_type": "parallel_function_checker_no_order:cannot_find_match",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b3e7dfd0932b194455b579aa3ea2e9a9d22a8b53e22bf8c9e0e38fb074c100dd",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:parallel_multiple_function_12",
+  "prompt_sha256": "b3e7dfd0932b194455b579aa3ea2e9a9d22a8b53e22bf8c9e0e38fb074c100dd",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "99a4176f5204a134c8cd25127831c54a1db07b4e52d0967895c55126e33210ed",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"current\":4,\"distance\":2,\"permeability\":0.1}",
+        "name": "calculate_magnetic_field"
+      },
+      "id": "call_1789655695325",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"charge\":0,\"distance\":3,\"electric_field\":5}",
+        "name": "calculate_voltage_difference"
+      },
+      "id": "call_1789655695325",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 38,
+    "neurons": 26.229999542236328,
+    "prompt_tokens": 949,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 987
+  }
+}

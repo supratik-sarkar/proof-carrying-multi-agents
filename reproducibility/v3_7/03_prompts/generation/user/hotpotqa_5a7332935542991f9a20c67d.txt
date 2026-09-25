@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Pirate's Cove: Pirate's Cove (in German, Piratenbucht) is a board game designed by Paul Randles and Daniel Stahl, originally published in Germany in 2002 by Amigo Spiele, illustrated by Markus Wagner and Swen Papenbrock.  In 2003, Days of Wonder republished the game with a new graphic design from Julien Delval and Cyrille Daujean.  In the game, players play pirate ship captains seeking treasure from islands and bragging rights from defeating other pirates in naval combat.
+
+[2] Catan: Seafarers: Catan: Seafarers, or Seafarers of Catan in older editions, (German: "Die Seefahrer von Catan" ) is an expansion of the board game "The Settlers of Catan" for three to four players (five-to-six-player play is also possible with both of the respective five-to-six-player extensions).  The main feature of this expansion is the addition of ships, gold rivers, and the pirate to the game, allowing play between multiple islands.  The expansion also provides numerous scenarios, some of which have custom rules.  The "Seafarers" rules and scenarios are also, for the most part, compatible with "" and "".
+
+[3] Catan: Cities &amp; Knights: Catan: Cities & Knights (German: "Städte und Ritter" ), formerly "The Cities and Knights of Catan" is an expansion to the board game "The Settlers of Catan" for three to four players (five to six player play is also possible with the "Settlers" and "Cities & Knights" five to six player extensions; two-player play is possible with the "" expansion).  It contains features taken from "The Settlers of Catan", with emphasis on city development and the use of knights, which are used as a method of attacking other players as well as helping opponents defend Catan against a common foe.  "Cities & Knights" can also be combined with the "" expansion or with scenarios (again, five to six player play only possible with the applicable five to six player extension(s)).
+
+[4] Catan Dice Game: Catan Dice Game is a German-style board game, developed by Klaus Teuber and published in 2007 by Catan GmbH and its licensors, Kosmos in Germany and Mayfair Games in English-speaking countries.  It is a dice game re-imagining of Teuber's most notable title, "Settlers of Catan".  "Catan Dice Game" can be played by any number of players, but is ideally suited for up to four.  A variation, known as "Catan Dice Game Plus", is freely available from the "Catan" website, whose gameplay is closer to its "Settlers" origins.
+
+Question: Which board game was published most recently, Pirate's Cove or Catan?
+
+Answer:

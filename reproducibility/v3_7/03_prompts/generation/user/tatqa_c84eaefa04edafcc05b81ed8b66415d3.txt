@@ -1,0 +1,20 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] TAT-QA 2: In December 2019, the Company made a minority investment in a privately-held company, Talespin, Inc., for $8.0 million, representing approximately 13% equity ownership. The investment is accounted for using the equity method of accounting due to the Company’s ability to exercise significant influence.
+
+[2] TAT-QA 3: The Company’s non-marketable investments are composed of the following (in thousands):
+
+[3] TAT-QA table: row 0:  | December 31, | 
+row 1:  | 2019 | 2018
+row 2: Accounted for at cost, adjusted for observable price changes | $1,750 | $1,250
+row 3: Accounted for using the equity method | 8,000 | —
+row 4: Total non-marketable investments | $9,750 | $1,250
+
+[4] TAT-QA 1: Strategic Investments
+
+Question: How much was the company's investment in Talespin, Inc?
+
+Answer:

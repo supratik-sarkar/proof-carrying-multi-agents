@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "9b34a70c5097b689d8433b3da87d49499312ae61f46e5929b078ca4360498304",
+  "example_id": "57613958fd4917b3f1dd007e3ee2ca77",
+  "finish": "stop",
+  "input_sha256": "775eef1764434793314f9668d5ffe68f30d550a836dd82c6c880c5ede56d9ca9",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "57613958fd4917b3f1dd007e3ee2ca77",
+  "prompt_sha256": "6ea1f5e466692e62f650f2b50878dd034d6a3ccdc91f520ea23556516e0782fa",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Harold Macmillan: Macmillan was the last British prime minister born in the reign of Queen Victoria , the last to have served in the First World War , the last to wear a moustache when in office , and the last to receive an hereditary peerage .\n\nClaim: Harold Macmillan worked in politics.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "8325fd60a3239bbadf34d2a9dce87c69f2ac052363cfbbd4045b41d36aed6458",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:57613958fd4917b3f1dd007e3ee2ca77",
+  "task_key": "8eeb260f2736f88a306b71b61341ccace9ead5f269f8241af5352852eb5e0718",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:22.627530+00:00",
+  "tokens_in": 202,
+  "tokens_out": 141,
+  "usage": {
+    "completion_tokens": 141,
+    "neurons": 16.040868759155273,
+    "prompt_tokens": 202,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 343
+  }
+}

@@ -1,0 +1,4 @@
+Regime,Top-1,Top-3,Unresolved,Median margin
+Closed single-channel,81.2,95.3,6.1,0.312
+Mixed-channel,72.4,91.3,12.8,0.241
+Open-set,63.1,84.6,22.4,0.171

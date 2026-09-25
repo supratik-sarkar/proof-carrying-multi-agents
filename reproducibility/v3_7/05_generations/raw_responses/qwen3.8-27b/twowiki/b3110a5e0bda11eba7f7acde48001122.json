@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "d95c36e6aa3c419c5b23350d609146df36394157dd30aeabd2ff1645c5d07f8c",
+  "candidate_text": "\n\nGermany",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "1210f24f1652d6bf746344fc21e661928bced985bb31b17d9f3779179d74ca26",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "d305a218c053735a47380aa0b4733b3855084cd9be1df2d9b8144a998a4e0abe",
+  "lane": "recovery",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "b3110a5e0bda11eba7f7acde48001122",
+  "prompt_sha256": "021973031a4a772ea0fddbd52a8d5bda073e93da4cb28bf6a31b0fcdbe56ca16",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "a955495a99c0a4fa2938583d189dfaebb20043e9602e026815a9fcd945eafa9c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:b3110a5e0bda11eba7f7acde48001122",
+  "text": "\n\nGermany",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 160,
+    "neurons": 68.63636016845703,
+    "prompt_tokens": 540,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 700
+  }
+}

@@ -240,3 +240,42 @@ def build_all(metrics: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
     for stem, fn in GENERATORS.items():
         out[stem] = fn(metrics)
     return out
+
+
+# ------------------------------------------------- authored workflow schematic
+def fig_pcg_mas_workflow(m):
+    """Figure 2. AUTHORED schematic with a reproducible vector source.
+
+    Class STATIC: it is not data-derived and is never presented as though it were.
+    """
+    import matplotlib.patches as mpatches
+    fig, ax = plt.subplots(figsize=(9.2, 3.5))
+    ax.set_xlim(0, 10.4); ax.set_ylim(0, 3.4); ax.axis("off")
+    stages = [("Request", MUTED), ("Generation", ACCENT), ("Evidence", ACCENT),
+              ("Commitment\n$V_H$", OK), ("Replay\n$V_\\Pi$", OK),
+              ("Policy\n$V_\\Gamma$", OK), ("Entailment\n$V_\\vdash$", OK),
+              ("Audit", SAND), ("Acceptance", ALT)]
+    w, h, gap = 1.02, 0.78, 0.11
+    for i, (label, col) in enumerate(stages):
+        x = 0.18 + i * (w + gap)
+        ax.add_patch(mpatches.FancyBboxPatch((x, 1.75), w, h,
+                     boxstyle="round,pad=0.02,rounding_size=0.06",
+                     linewidth=1.1, edgecolor=col, facecolor="white"))
+        ax.text(x + w / 2, 1.75 + h / 2, label, ha="center", va="center",
+                fontsize=7.4, color=INK)
+        if i < len(stages) - 1:
+            ax.annotate("", xy=(x + w + gap, 2.14), xytext=(x + w, 2.14),
+                        arrowprops=dict(arrowstyle="-|>", color=GRID, lw=1.0))
+    ax.text(0.18, 1.42, "certificate root  $R_Z$  (PCG-CAS-v1 Merkle DAG over committed objects)",
+            fontsize=7.6, color=MUTED)
+    ax.annotate("", xy=(9.9, 1.58), xytext=(0.18, 1.58),
+                arrowprops=dict(arrowstyle="-", color=GRID, lw=0.8, linestyle=(0, (3, 3))))
+    for i, (t, c) in enumerate([("audit channels: IntFail · ReplayFail · DriftFail · CheckFail · CovGap", SAND),
+                                (r"residuals outside every channel: $\varepsilon_{\mathrm{tax}}$ (taxonomy) · $\varepsilon_{\mathrm{src}}$ (source truth)", WARN)]):
+        ax.text(0.18, 0.95 - i * 0.36, t, fontsize=7.2, color=c)
+    ax.text(0.18, 3.06, "PCG-MAS execution contract", fontsize=10, color=INK, weight="600")
+    return save(fig, "pcg_mas_workflow", "STATIC",
+                {"authored": True, "stages": [s for s, _ in stages]}, synthetic=False)
+
+
+GENERATORS["pcg_mas_workflow"] = fig_pcg_mas_workflow

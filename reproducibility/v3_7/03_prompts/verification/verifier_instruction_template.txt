@@ -1,0 +1,1 @@
+NOT_APPLICABLE: External factual verifiers (MiniCheck-Flan-T5-Large, AlignScore-Large, QAFactEval-Electra-Large) are specialized pre-trained neural scoring libraries invoked via Python API endpoints rather than prompted language models. No runtime text prompt template was executed.

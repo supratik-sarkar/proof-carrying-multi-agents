@@ -1,0 +1,40 @@
+{
+  "schema": "POST_VISIBLE_LAUNCH_BFCL_TERMINATION_RECEIPT",
+  "timestamp": "2026-09-17T19:40:00Z",
+  "active_dev_process": false,
+  "failing_observation": {
+    "model_id": "gpt-oss-120b",
+    "observation_id": "bfcl_v1:parallel_function_178",
+    "category": "parallel",
+    "raw_tool_calls_persisted": true,
+    "raw_tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"symbol\": \"MSFT\", \"date\": \"2022-01-01\"}",
+          "name": "get_stock_price"
+        },
+        "id": "chatcmpl-tool-82548bd88d5f9aea",
+        "type": "function"
+      }
+    ],
+    "decoded_bfcl_prediction": [
+      {
+        "get_stock_price": {
+          "symbol": "MSFT",
+          "date": "2022-01-01"
+        }
+      }
+    ],
+    "function_names_supplied": [
+      "get_stock_price"
+    ],
+    "function_names_emitted": [
+      "get_stock_price"
+    ]
+  },
+  "root_cause": {
+    "classification": "BFCL_INVALID_OR_UNRESOLVED_FUNCTION_DESCRIPTION_NOT_FAIL_CLOSED",
+    "mechanism": "In parallel/parallel_multiple cases, ground truth in BFCL_V1_40.json is formatted as a single dict with suffixed keys (e.g. get_stock_price 1). bfcl_official passed this dict wrapped in a list, resulting in length 1 matching the model 1-tool-call output length, causing ast_checker parallel_function_checker_no_order to lookup find_description with suffixed key get_stock_price 1 which returned None, triggering TypeError in simple_function_checker. Additionally, if candidate output contains unknown/unresolved functions or malformed calls, ast_checker/bfcl_official did not fail closed."
+  },
+  "status": "SEALED"
+}

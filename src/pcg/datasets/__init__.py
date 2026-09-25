@@ -14,6 +14,9 @@ Available datasets:
     - pubmedqa     : PubMedQA biomedical QA (HF: qiaojin/PubMedQA)
     - tatqa        : TAT-QA finance table+text QA (HF: next-tat/TAT-QA)
     - weblinx      : WebLINX web navigation traces (HF: McGill-NLP/WebLINX)
+    - adversarial_integrity : Adversarial integrity benchmark (PCG-MAS v3.0)
+
+Scientific dataset registry contains exactly 8 benchmarks (synthetic is preflight only).
 
 Each loader returns objects of type `QAExample` (defined in `base.py`), which
 the agent layer consumes uniformly. This decoupling means the Prover, Verifier
@@ -21,10 +24,17 @@ and experiment scripts never need to know which dataset they're operating on.
 """
 from __future__ import annotations
 
-from pcg.datasets.base import EvidenceItem, QAExample, load_dataset_by_name
+from pcg.datasets.base import (
+    SCIENTIFIC_DATASET_REGISTRY,
+    EvidenceItem,
+    QAExample,
+    load_dataset_by_name,
+)
 
 __all__ = [
     "EvidenceItem",
     "QAExample",
+    "SCIENTIFIC_DATASET_REGISTRY",
     "load_dataset_by_name",
 ]
+

@@ -1,0 +1,21 @@
+{
+  "duration_seconds": 0.10802197456359863,
+  "records_evaluated": 840,
+  "schema": "PCG_MAS_V3_6_EXP12_RECEIPT",
+  "stats": {
+    "agentdojo": {
+      "fail": 0,
+      "pass": 280
+    },
+    "bfcl_v1": {
+      "fail": 46,
+      "pass": 234
+    },
+    "mind2web": {
+      "fail": 220,
+      "pass": 60
+    }
+  },
+  "status": "PASS",
+  "timestamp": "2026-09-19T17:48:57.209836+00:00"
+}

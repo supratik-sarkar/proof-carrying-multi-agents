@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "8e42bc864201e0654029ce1965d21cf2231eefbb484480edf9a8e228fed4b165",
+  "candidate_text": "It depends on location.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "9029d74b7d5c59e3ee555728b01a3d0e86529933ec23b2f8b5ad8c86b226a16a",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "12805495",
+  "prompt_sha256": "2776db320c443f20c211617f7aad3bfb68bf7ffa98b8b6b89fa7ff96eb72e850",
+  "provider": "gemini",
+  "provider_raw_sha256": "40bd69b87defb4ead24f5bc311c6f6bcf933ff7ce98d0e31155a925634276508",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:12805495",
+  "text": "It depends on location.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "prompt_tokens": 430,
+    "total_tokens": 435
+  }
+}

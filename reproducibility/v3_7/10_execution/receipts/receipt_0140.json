@@ -1,0 +1,18 @@
+{
+  "applicable_verifier_groups": 105,
+  "canonical_complete": 2240,
+  "colab_runner_notebook": "artifacts/v3_6/dataset_amendment_runtime_v2/verifier_lane/PCG_MAS_v3_6_EXTERNAL_VERIFIER_RUNNER.ipynb",
+  "expected_verifier_scores": 4200,
+  "factual_generations_frozen": 1400,
+  "native_scope_na_lanes": [
+    "mind2web",
+    "bfcl_v1",
+    "agentdojo"
+  ],
+  "reason": "External verifier scoring (MiniCheck-Flan-T5-Large, AlignScore-Large, QAFactEval) requires Linux GPU runtime and is staged for independent execution.",
+  "schema": "PCG_MAS_V3_6_WAITING_LINUX_VERIFIER_EXECUTION_RECEIPT",
+  "status": "WAITING_LINUX_VERIFIER_EXECUTION",
+  "timestamp": "2026-09-18T22:39:48.168814+00:00",
+  "verifier_inputs_ledger": "artifacts/v3_6/dataset_amendment_runtime_v2/verifier_lane/EXTERNAL_VERIFIER_INPUTS_1400.jsonl",
+  "verifier_inputs_sha256": "d4ab92f7d3ca4c61fede978adfd6a3aa6108d759f128344c2fd974429a9922d5"
+}

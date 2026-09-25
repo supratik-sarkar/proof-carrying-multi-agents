@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "8c32c960fbca6a277efe35cbd5af24a37f82a4a54230f1886a3b6e9dccd52f0d",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_multiple_function_176",
+  "prompt_sha256": "8c32c960fbca6a277efe35cbd5af24a37f82a4a54230f1886a3b6e9dccd52f0d",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "4e32c387a8fe8738304cda8d69fa18a41dbdbbb03a8aa1a823e865d1a36c2d24",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"height\": 180, \"system\": \"metric\", \"weight\": 75}",
+        "name": "calculate_bmi"
+      },
+      "id": "call_d588360da87a4c79a25b0c37",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"end_date\": \"2022-05-10\", \"hotel_name\": \"Hilton\", \"location\": \"Los Angeles, CA\", \"rooms\": 2, \"start_date\": \"2022-05-01\"}",
+        "name": "hotel_booking"
+      },
+      "id": "call_fdb65051d6d3448fabb10342",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"language\": \"English\", \"text\": \"I had a wonderful day at the beach. The weather was perfect and I enjoyed a delicious ice cream.\"}",
+        "name": "sentiment_analysis"
+      },
+      "id": "call_d1514eac679b4ce4a328a3df",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"place1\": \"New York, NY\", \"place2\": \"Los Angeles, CA\"}",
+        "name": "get_time_difference"
+      },
+      "id": "call_12489cd8469c43e2877e46bc",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 460,
+    "neurons": 19.027273178100586,
+    "prompt_tokens": 713,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1173
+  }
+}

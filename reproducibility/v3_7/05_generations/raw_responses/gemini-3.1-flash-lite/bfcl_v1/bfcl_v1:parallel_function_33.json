@@ -1,0 +1,67 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "377fc830167add3f460c8f0a65e05eb20d92922d903c2d6004d6eda6d16b9beb",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_function_33",
+  "prompt_sha256": "377fc830167add3f460c8f0a65e05eb20d92922d903c2d6004d6eda6d16b9beb",
+  "provider": "gemini",
+  "provider_raw_sha256": "eb5eb2930f8b7ca2cb23e23291232c7fa2c3d429d5f579c38682ad45216f8df8",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPD/yckTRjBU25+q1zLMpSkXNNp4mP5520EI6xy4qt2RpQw3s3/YrVC4kfK+LrHWuMRg7Stps25992EGDDT+IARrlEmsTYD1pIKPk+oFjM++ysactKPNCm9TK+zQNnmI51NtPsgvXZxjzt6g=="
+        }
+      },
+      "function": {
+        "arguments": "{\"year\":1980,\"position\":\"president\"}",
+        "name": "get_president_and_vp"
+      },
+      "id": "call_1166456",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"year\":2016,\"position\":\"president\"}",
+        "name": "get_president_and_vp"
+      },
+      "id": "call_1166457",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"year\":1975,\"position\":\"vice president\"}",
+        "name": "get_president_and_vp"
+      },
+      "id": "call_1166458",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"position\":\"vice president\",\"year\":2011}",
+        "name": "get_president_and_vp"
+      },
+      "id": "call_1166459",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 110,
+    "prompt_tokens": 141,
+    "total_tokens": 251
+  }
+}

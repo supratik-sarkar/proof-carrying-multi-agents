@@ -1,0 +1,34 @@
+{
+  "schema": "PROVIDER_RETRY_AUTHORITY_V2",
+  "timestamp": "2026-09-17T19:43:00Z",
+  "authoritative_layer": "provider_client",
+  "MAX_EFFECTIVE_TRANSPORT_ATTEMPTS": 3,
+  "NESTED_RETRY_MULTIPLICATION": "NO",
+  "transient_error_codes": [
+    500,
+    502,
+    503,
+    504
+  ],
+  "transient_exceptions": [
+    "URLError",
+    "TimeoutError"
+  ],
+  "backoff_policy": "finite_bounded_linear (4s, 8s)",
+  "non_transient_error_codes": [
+    400,
+    401,
+    403,
+    429
+  ],
+  "quota_handling": "immediate_fail_no_retry",
+  "verification_results": {
+    "503_bounded_retry": "PASS",
+    "persistent_503_terminal": "PASS",
+    "429_no_retry_storm": "PASS",
+    "400_401_403_no_retry": "PASS",
+    "model_invalid_output_scientific_terminal": "PASS",
+    "bfcl_staging_survives_scorer_crash": "PASS"
+  },
+  "status": "SEALED"
+}

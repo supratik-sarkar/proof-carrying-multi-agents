@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "ba192706d2f90b062025608659d0e4c0aa75d9a9bb6007fc39cf60611702dc46",
+  "candidate_text": "To find the proportion of deferred revenue and accrued warranty over gross deferred tax assets in 2019, first, we need to find the values of deferred revenue, accrued warranty, and gross deferred tax assets in 2019.\n\nDeferred revenue in 2019 = $425 \nAccrued warranty in 2019 = $33 \nGross deferred tax assets in 2019 = $38,771\n\nThe sum of deferred revenue and accrued warranty = $425 + $33 = $458\n\nNow, to find the proportion in percentage: \n($458 / $38,771) * 100 = 1.18%\n\nSo, the proportion is 1.18%.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "8dba17bb3418108e7515e3f0a44f848caf3bae64f24560e6d9b0a10cc027d948",
+  "example_id": "f093e04e3aa431f793d1a68888e13bea",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "0aac6e57b60e4fee94cec7602f69c2a4aadfc92cc892437c33e461ca48448482",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "f093e04e3aa431f793d1a68888e13bea",
+  "prompt_sha256": "6cf3ce869589dd56fbdb9dbb335e8c8226d8084f47f0ef463bd4a9e85de1abf3",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA table: row 0:  | March 31, | \nrow 1: (in thousands) | 2019 | 2018\nrow 2: Deferred income tax assets: |  | \nrow 3: Allowance for doubtful accounts | $26 | $24\nrow 4: Foreign tax credit carryforward | 810 | 812\nrow 5: Depreciation | 173 | 227\nrow 6: Deferred revenue | 425 | 675\nrow 7: Accrued compensation | 412 | 358\nrow 8: Inventory reserves | 757 | 948\nrow 9: Accrued warranty | 33 | 77\nrow 10: Net operating loss carryforward | 35,024 | 34,924\nrow 11: Accrued restructuring | — | 16\nrow 12: Intangibles and goodwill | 272 | —\nrow 13: Other | 839 | 660\nrow 14: Gross deferred tax assets | 38,771 | 38,721\nrow 15: Valuation allowance | (38,771) | (37,103)\nrow 16: Net deferred income tax assets | — | 1,618\nrow 17: Deferred income tax liabilities: |  | \nrow 18: Intangibles and goodwill | — | (1,618)\nrow 19: Net deferred income tax liabilities | $— | $—\n\n[2] TAT-QA 2: In fiscal years 2019 and 2018, the Company continued to maintain a full valuation allowance on deferred tax assets. The valuation allowance increased by $1.7 million in fiscal year 2019. The Company recorded an income tax expense from continuing operations of $39,000 in fiscal year 2019. In fiscal year 2018, the Company recorded an income tax benefit from continuing operations of $597,000. The fiscal year 2018 income tax benefit was due primarily from the release of the tax valuation allowance associated with previously generated alternative minimum tax (AMT) credits due to the December 22, 2017 Tax Cuts and Jobs Act Tax Reform (the “Tax Act”).\n\n[3] TAT-QA 3: The Company has, on a tax-effected basis, approximately $0.8 million in tax credit carryforwards and $26.9 million of federal net operating loss carryforwards that are available to offset taxable income in the future. The tax credit carryforwards will begin to expire in fiscal year 2021. The federal net operating loss carryforwards begin to expire in fiscal year 2022. State tax credit carryforwards and net operating loss carryforwards, on a tax effected basis and net of federal tax benefits, are $0.1 million and $8.1 million, respectively. The remaining state tax credit carryforwards and state net operating loss carry forwards begin to expire in fiscal year 2020. In fiscal year 2019, $1.2 million of state net operating loss carryforwards expired.\n\n[4] TAT-QA 1: Components of the net deferred income tax assets are as follows:\n\nQuestion: What is the proportion, in percentage, of deferred revenue and accrued warranty over gross deferred tax assets in 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "6a0dd66f57a7fb9c609e5f6d9ae61aa8574564977948cc325f3320f92b20f83f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:f093e04e3aa431f793d1a68888e13bea",
+  "task_key": "38676aae33fb2814839b489ed2ba1503aab3ce5297202ecb502206447fa0d5c8",
+  "text": "To find the proportion of deferred revenue and accrued warranty over gross deferred tax assets in 2019, first, we need to find the values of deferred revenue, accrued warranty, and gross deferred tax assets in 2019.\n\nDeferred revenue in 2019 = $425 \nAccrued warranty in 2019 = $33 \nGross deferred tax assets in 2019 = $38,771\n\nThe sum of deferred revenue and accrued warranty = $425 + $33 = $458\n\nNow, to find the proportion in percentage: \n($458 / $38,771) * 100 = 1.18%\n\nSo, the proportion is 1.18%.",
+  "timestamp": "2026-09-15T09:34:30.191123+00:00",
+  "tokens_in": 744,
+  "tokens_out": 136,
+  "usage": {
+    "completion_tokens": 136,
+    "neurons": 28.77090835571289,
+    "prompt_tokens": 744,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 880
+  }
+}

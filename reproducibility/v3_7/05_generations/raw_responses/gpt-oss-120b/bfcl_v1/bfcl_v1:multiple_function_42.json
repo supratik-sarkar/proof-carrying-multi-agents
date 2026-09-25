@@ -1,0 +1,44 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Missing required parameter: 'quantity1'."
+    ],
+    "error_type": "simple_function_checker:missing_required",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ff658fd9d85870a408a48d6c509b4c4aab95ffac9433e48d8fba6552a88135dd",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:multiple_function_42",
+  "prompt_sha256": "ff658fd9d85870a408a48d6c509b4c4aab95ffac9433e48d8fba6552a88135dd",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "c3bf4c695de134f66e16f6cba842d19738c2c6de8e71ec15978c2ef8742faa4f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"n1\": 2, \"t1\": 300, \"n2\": 3, \"t2\": 400}",
+        "name": "calculate_final_temperature"
+      },
+      "id": "chatcmpl-tool-a927aeec08b0bd7c",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 152,
+    "neurons": 16.18632698059082,
+    "prompt_tokens": 183,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 335
+  }
+}

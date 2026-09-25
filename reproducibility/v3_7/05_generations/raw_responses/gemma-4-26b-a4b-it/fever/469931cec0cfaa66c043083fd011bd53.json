@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "dataset_id": "fever",
+  "evidence_sha256": "daed31dbf4cffef2806b9b1be0038d981029ab4acb17e267bf35556940ed08a0",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "469931cec0cfaa66c043083fd011bd53",
+  "prompt_sha256": "57a2dcf347bb3aae38080853278ee20a05fbf0648bc8571a87ce0b102f46fe62",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "1571b46fc3024f0cd0f10aac3dd346ee7bb328f6d33be639d83c811827cea637",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "fever:469931cec0cfaa66c043083fd011bd53",
+  "text": "REFUTES",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 1.2636363506317139,
+    "prompt_tokens": 130,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 133
+  }
+}

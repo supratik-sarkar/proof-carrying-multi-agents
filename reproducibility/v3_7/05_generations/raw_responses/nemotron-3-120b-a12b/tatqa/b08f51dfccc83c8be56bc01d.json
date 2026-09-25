@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "d100c581c38b8432d2e2ea90a5256b08642e248eb9ef2f8d6508e5c432781efe",
+  "candidate_text": "\n\nDecreased",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "a03984bddfeb5249b898fa15bdce5bc18e5f1989bda82d6e826ec9c80abb3f30",
+  "example_id": "530a48e799250396beb8fccff5acb9ce",
+  "finish": "length",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "422a2a5aa917606694c7bf9a15067c4dfbafecde7ee6d853a4f3dc87bd546ec1",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "530a48e799250396beb8fccff5acb9ce",
+  "prompt_sha256": "ad3f61465674a26c993d1b115658745fe0cbaf00e4d5dfa254602a1cb363002b",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 1: As a result of the U.S. federal corporate income tax rate change, effective as of January 1, 2018, we remeasured our deferred tax assets and liabilities based on the rates at which they are expected to reverse in the future periods. During fiscal 2018, we recorded $108 million of tax expense related to all tax rate changes. Upon finalization of our provisional estimates during the third quarter of fiscal 2019, we recorded tax expense of $6 million related to deferred tax assets for equity-based compensation awards to our executives.\n\n[2] TAT-QA table: row 0:  | April 26, 2019 | April 27, 2018\nrow 1: Deferred tax assets: |  | \nrow 2: Reserves and accruals | $ 50 | $ 57\nrow 3: Net operating loss and credit carryforwards | 139 | 131\nrow 4: Stock-based compensation | 16 | 22\nrow 5: Deferred revenue | 205 | 156\nrow 6: Other | 16 | 29\nrow 7: Gross deferred tax assets | 426 | 395\nrow 8: Valuation allowance | (123 ) | (109 )\nrow 9: Deferred tax assets, net of valuation allowance | 303 | 286\nrow 10: Deferred tax liabilities: |  | \nrow 11: Prepaids and accruals | 31 | 21\nrow 12: Acquired intangibles | 32 | 29\nrow 13: Property and equipment | 31 | 25\nrow 14: Other | 10 | 14\nrow 15: Total deferred tax liabilities | 104 | 89\nrow 16: Deferred tax assets, net of valuation allowance and deferred tax liabilities | $199 | $197\n\n[3] TAT-QA 7: The components of our deferred tax assets and liabilities are as follows (in millions):\n\n[4] TAT-QA 2: The TCJA imposes a mandatory, one-time transition tax on accumulated foreign earnings and profits not previously subject to U.S. income tax at a rate of 15.5% on earnings to the extent of foreign cash and other liquid assets, and 8% on the remaining earnings. In fiscal 2018, we recorded a $732 million discrete tax expense for the estimated U.S. federal and state income tax impacts of the transition tax. In the third quarter of fiscal 2019, we finalized our computation of the transition tax and recorded a reduction of $5 million to our provisional estimate.\n\nQuestion: What was the change in Other deferred tax liabilities between 2018 and 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "17dd8b475fd2fa46137ba03babe46b929d3789f318cdeaef61fa34a0ce42d357",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:530a48e799250396beb8fccff5acb9ce",
+  "task_key": "06a6f76e2705ec6b8a8bed6d0f3f29f86a0426cb7eb9471226dbdee0cbd2d22e",
+  "text": "\n\nDecreased",
+  "timestamp": "2026-09-15T09:37:39.302834+00:00",
+  "tokens_in": 724,
+  "tokens_out": 256,
+  "usage": {
+    "completion_tokens": 256,
+    "neurons": 67.396,
+    "prompt_tokens": 724,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 980
+  }
+}

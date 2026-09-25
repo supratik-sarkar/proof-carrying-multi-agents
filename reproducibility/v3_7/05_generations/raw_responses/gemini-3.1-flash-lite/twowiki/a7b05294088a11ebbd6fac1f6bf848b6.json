@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "ed33067e55bea2a5e1aacc1d2ac9084d2a83765eaf01dd18ec5cfd411a49043f",
+  "candidate_text": "The Gentle Sex.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "c891cad1145b875b46889b5e8d48eeb02130838878c11a134df4ad72e836c4ab",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "a7b05294088a11ebbd6fac1f6bf848b6",
+  "prompt_sha256": "a1fff15f11fc852f0047c2ee38fb8e8260afcc22fe7be65101fb31d76e142a9e",
+  "provider": "gemini",
+  "provider_raw_sha256": "c8b153dc62db4d693df684da33ae20fc949e294e488ee29ecbc62386ae307a87",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:a7b05294088a11ebbd6fac1f6bf848b6",
+  "text": "The Gentle Sex.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 900,
+    "total_tokens": 904
+  }
+}

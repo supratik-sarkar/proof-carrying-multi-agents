@@ -1,0 +1,5 @@
+design,uncovered_mass,envelope,worst_stratum_coverage,ess,violation,false_cert
+Pooled,0.0,6.1,91.4,438,0.7,3.8
+Stratified weighted,0.0,6.4,97.1,421,0.4,2.1
+Importance weighted,0.0,7.2,95.8,376,0.6,2.6
+Fail-closed uncovered,2.1,7.8,98.6,408,0.2,1.2

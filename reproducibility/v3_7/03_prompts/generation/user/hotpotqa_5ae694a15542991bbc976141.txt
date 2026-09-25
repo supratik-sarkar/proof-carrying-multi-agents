@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Minster Pool: Minster Pool is a reservoir located between Bird Street and Dam Street in the heart of the city of Lichfield, Staffordshire in the United Kingdom.  The pool lies directly south of Lichfield Cathedral and historically has been important to the defence of the Cathedral Close.  The pool was originally formed in the 11th century when a boggy stream was dammed at its eastern end to drive a mill on Dam Street.  The pool was used as a mill pond and fishery until 1856 when the mill was demolished; it has since been retained for public amenity.
+
+[2] Dudley Zoo: Dudley Zoological Gardens is a 40 acre zoo located within the grounds of Dudley Castle in the town of Dudley, in the Black Country region of the West Midlands, England.  The Zoo opened to the public on 18 May 1937.  Dudley Zoo is owned and operated by Dudley and West Midlands Zoological Society, founded in 1935 and a registered charity.
+
+[3] Brierley Hill: Brierley Hill is a small town and electoral ward of the Dudley Metropolitan Borough, in the West Midlands of England, and is situated approximately 2.5 miles south of central Dudley and 2 miles north of Stourbridge.  Part of the Black Country, and in a heavily industrialised area of the Dudley Borough, it has a population of 13,935 at the 2011 census, and is best known for glass and steel manufacturing, although the industry has declined considerably since the 1970s.  One of the largest factories in the area was the Round Oak Steelworks, which was closed down and redeveloped in the 1980s to become the Merry Hill Shopping Centre.  Brierley Hill was originally in Staffordshire, but is now part of the West Midlands metropolitan county since its creation in 1974.
+
+[4] Black Country Living Museum: The Black Country Living Museum (formerly The Black Country Museum) is an open-air museum of rebuilt historic buildings in Dudley in the West Midlands of England.  It is located in the centre of the Black Country, 10 miles west of Birmingham.  The museum occupies 105000 m2 of former industrial land partly reclaimed from a former railway goods yard, disused lime kilns, canal arm and former coal pits.
+
+Question: Why is Minister Pool important to Black Country and the West Midlands in England?
+
+Answer:

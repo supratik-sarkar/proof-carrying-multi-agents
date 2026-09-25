@@ -1,0 +1,43 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b07dbfffa5aa3e2dea3be40739de6c6983019cfa88278036151bdd0eea18c8cf",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:multiple_function_123",
+  "prompt_sha256": "b07dbfffa5aa3e2dea3be40739de6c6983019cfa88278036151bdd0eea18c8cf",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "bc6165021775521d9371d29d69570fc6b633ba1a97aa925c8f043b3804f6e32e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"favorable_outcomes\": 4, \"total_outcomes\": 52}",
+        "name": "calculate_probability"
+      },
+      "id": "chatcmpl-tool-a20a7c76b99b1adf",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 149,
+    "neurons": 7.663636207580566,
+    "prompt_tokens": 396,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 545
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "HIDDEN_DEV_LAUNCH_COUNT_THIS_PASS": 0,
+  "VISIBLE_TERMINAL_LAUNCH_COUNT": 1,
+  "resumed_stage": "BFCL V1",
+  "schema": "PCG_MAS_V3_6_VISIBLE_TERMINAL_DEV_LAUNCH_RECEIPT_V2",
+  "skipped_stages": [
+    "RECOVERY",
+    "GEMINI-3.1 PRIMARY REPLACEMENT",
+    "MIND2WEB"
+  ],
+  "status": "PASS",
+  "terminal_launch_command": "cd <LOCAL_PATH:b0f2ecb535f6b59f> && /bin/zsh artifacts/v3_6/dataset_amendment_v2/integration/launch_amended_followon.sh <LOCAL_PATH:b0f2ecb535f6b59f>",
+  "terminal_window_id": "59011",
+  "timestamp": "2026-09-17T14:18:58.710693+00:00"
+}

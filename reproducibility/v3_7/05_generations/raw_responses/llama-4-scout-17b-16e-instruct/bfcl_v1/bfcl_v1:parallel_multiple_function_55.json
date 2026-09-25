@@ -1,0 +1,134 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [
+      "Could not find a matching function among index [0, 1, 2] of model output for index 0 of possible answers.",
+      {
+        "Model Result Index 0": {
+          "model_output_item": {
+            "recipe_search": {
+              "dietary_requirements": [
+                "gluten_free"
+              ],
+              "ingredient": "spaghetti",
+              "isHomemade": true
+            }
+          },
+          "possible_answer_item": {
+            "recipe_nutrition_info": {
+              "recipe": [
+                "homemade_spaghetti",
+                "homemade healthy spaghetti",
+                "spaghetti",
+                "Homemade healthy gluten free spaghetti"
+              ]
+            }
+          },
+          "sub_error": [
+            "Function name 'recipe_nutrition_info' not found in model output."
+          ],
+          "sub_error_type": "simple_function_checker:wrong_func_name"
+        }
+      },
+      {
+        "Model Result Index 1": {
+          "model_output_item": {
+            "recipe_prep_time": {
+              "recipe": "homemade gluten-free spaghetti"
+            }
+          },
+          "possible_answer_item": {
+            "recipe_nutrition_info": {
+              "recipe": [
+                "homemade_spaghetti",
+                "homemade healthy spaghetti",
+                "spaghetti",
+                "Homemade healthy gluten free spaghetti"
+              ]
+            }
+          },
+          "sub_error": [
+            "Function name 'recipe_nutrition_info' not found in model output."
+          ],
+          "sub_error_type": "simple_function_checker:wrong_func_name"
+        }
+      },
+      {
+        "Model Result Index 2": {
+          "model_output_item": {
+            "recipe_nutrition_info": {
+              "recipe": "homemade gluten-free spaghetti"
+            }
+          },
+          "possible_answer_item": {
+            "recipe_nutrition_info": {
+              "recipe": [
+                "homemade_spaghetti",
+                "homemade healthy spaghetti",
+                "spaghetti",
+                "Homemade healthy gluten free spaghetti"
+              ]
+            }
+          },
+          "sub_error": [
+            "Invalid value for parameter 'recipe': 'homemade gluten-free spaghetti'. Expected one of ['homemade_spaghetti', 'homemade healthy spaghetti', 'spaghetti', 'Homemade healthy gluten free spaghetti']. Case insensitive."
+          ],
+          "sub_error_type": "value_error:string"
+        }
+      }
+    ],
+    "error_type": "parallel_function_checker_no_order:cannot_find_match",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b4b85b239e43c5a8676b71aca0240d76d92e652663981f1db45890eb77664b5b",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:parallel_multiple_function_55",
+  "prompt_sha256": "b4b85b239e43c5a8676b71aca0240d76d92e652663981f1db45890eb77664b5b",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "9fc204c73a2e56074ed17cda8c135317eec42a475137bf96c37e03babb9080e2",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"dietary_requirements\":[\"gluten_free\"],\"ingredient\":\"spaghetti\",\"isHomemade\":true}",
+        "name": "recipe_search"
+      },
+      "id": "call_1789655686205",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"recipe\":\"homemade gluten-free spaghetti\"}",
+        "name": "recipe_prep_time"
+      },
+      "id": "call_1789655686205",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"recipe\":\"homemade gluten-free spaghetti\"}",
+        "name": "recipe_nutrition_info"
+      },
+      "id": "call_1789655686205",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 51,
+    "neurons": 28.388181686401367,
+    "prompt_tokens": 996,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1047
+  }
+}

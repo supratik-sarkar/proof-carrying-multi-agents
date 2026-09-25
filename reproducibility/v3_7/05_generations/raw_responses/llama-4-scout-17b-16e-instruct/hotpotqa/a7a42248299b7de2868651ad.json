@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "092c4c1c4bf8804c563122f023f7109df1bdfe5b6b8dfcd46f03a6131cc77660",
+  "candidate_text": "Peshwa.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "89c61a2a0c71dfe445a29ccff494c5a7dd43460cfec0ae35b1a84f8c8e28210c",
+  "example_id": "5a8b78775542997f31a41d3d",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "3ca333c1be9ed87e34a74b44a3824a04a69dc3ab150e54df08d552fc65c5fe10",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "5a8b78775542997f31a41d3d",
+  "prompt_sha256": "9a8f8a81a703254a5610b4a5a5ecdb2fda0da23b6bc0d1b7a89b92159d77f90e",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Baji Rao I: Baji Rao (18 August 1700 – 28 April 1740) was a general of the Maratha Empire in India.  He served as \"Peshwa\" (Prime Minister) to the fifth Maratha Chhatrapati (Emperor) Shahu from 1720 until his death.  He is also known by the name Bajirao Ballal.\n\n[2] Chimaji Appa: Shreemant Chimaji Ballal Peshwa (aka Chimaji Appa)(1707–1740) was the son of Balaji Vishwanath Bhat and the younger brother of Bajirao Peshwa of Maratha Empire.  He was an able military commander who liberated the western coast of India from Portuguese rule.  The high watermark of his career was the capture of Vasai fort from the Portuguese in a hard fought battle.\n\n[3] Balaji Vishwanath: Balaji Vishwanath (Bhatt) was born into a Konkanastha Brahmin (aka Chitpavan) family.  The family hailed from the coastal Konkan region of present-day Maharashtra and were the hereditary Deshmukh for Shrivardhan under the Siddi of Janjira.  He went out in search of employment to the upper regions of western ghats and worked as a mercenary trooper under various Maratha generals.  According to Kincaid & Parasnis, Balaji Vishwanath entered the Maratha administration during the reign of Chhatrapati Sambhaji or the regency of his brother, Rajaram. Later he served as an accountant for the Maratha general, Dhanaji Jadhav, at Janjira.  Between 1699 and 1702, he served as the \"Sar-subhedar\" or head-administrator at Pune and from 1704 to 1707 as Sarsubedar of Daulatabad.  By the time Dhanaji died, Balaji had proven himself as an honest and able officer.Balaji fell out with Dhanaji's son and successor , Chandrarao Jadhav and went over to the newly released Maratha ruler Chhatrapati Shahu who took note of his abilities and appointed Balaji as his assistant (\"c.\"1708).\n\n[4] Shahu I: Shahu Bhonsle (1682–1749 CE) was the fifth Chhatrapati of the Maratha Empire created by his grandfather, Shivaji.  Shahu, he was taken prisoner with his mother in 1689 by Mughal General,Nusrat Jang.  He came out of captivity by the Mughals and defeated his aunt Tarabai in an internecine conflict to gain the throne in 1708.  After the death of Aurangzeb, leading Mughal courtiers released Shahu with a force of fifty men, thinking that a friendly Maratha leader would be a useful ally.\n\nQuestion: Chimaja Appawas the younger brother of a general of the Maratha Empire in India, who served as what to the fifth Maratha Chhatrapati Shahu from 1720 until his death?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "89b9983d5fe3c2dcfca4643eabb93aa54298876dfd6b8363a5c9ae3610118559",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a8b78775542997f31a41d3d",
+  "task_key": "b7eb9aa3b2ff79f9500fd2d56f521f3c1ac936c96544f763e3b2f5bf12e30842",
+  "text": "Peshwa.",
+  "timestamp": "2026-09-15T09:33:41.307063+00:00",
+  "tokens_in": 711,
+  "tokens_out": 5,
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 17.83818244934082,
+    "prompt_tokens": 711,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 716
+  }
+}

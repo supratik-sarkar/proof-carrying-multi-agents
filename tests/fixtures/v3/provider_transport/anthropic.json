@@ -1,0 +1,33 @@
+{
+ "err": {
+  "body": {
+   "error": {
+    "message": "overloaded"
+   }
+  },
+  "status": 529
+ },
+ "ok": {
+  "content": [
+   {
+    "text": "recorded anthropic answer",
+    "type": "text"
+   },
+   {
+    "input": {
+     "q": "policy"
+    },
+    "name": "lookup",
+    "type": "tool_use"
+   }
+  ],
+  "id": "msg_REC1",
+  "model": "claude-x-2026-01",
+  "stop_reason": "tool_use",
+  "usage": {
+   "cache_read_input_tokens": 50,
+   "input_tokens": 121,
+   "output_tokens": 38
+  }
+ }
+}

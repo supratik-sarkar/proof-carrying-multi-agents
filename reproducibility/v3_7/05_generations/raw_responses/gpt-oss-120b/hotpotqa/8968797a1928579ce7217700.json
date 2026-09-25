@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "11e99f53803f02c314803acd92b3fd3539ea226d4782aff5b9d6caa3cec89a47",
+  "example_id": "5adfc50355429942ec259b43",
+  "finish": "stop",
+  "input_sha256": "c6e4abc95c6bc51f6126704a3b560b9f348102861910eb1e98383ce5720b408f",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5adfc50355429942ec259b43",
+  "prompt_sha256": "a76835660be08077dc5c2f2068f8484611e30f217b9197ff1255047eac6f6e66",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Will Brodie: Will Brodie (born 23 August 1998) is a professional Australian rules footballer playing for the Gold Coast Football Club in the Australian Football League (AFL).  He was drafted by Gold Coast with their third selection and ninth overall in the 2016 national draft.  He made his debut in the thirty-five point loss against Melbourne at TIO Traeger Park in round ten of the 2017 season.\n\n[2] Sarah Jolly: Sarah Jolly (born 1 February 1992) is an Australian rules footballer who played for the Melbourne Football Club in the AFL Women's competition.  She was drafted by Melbourne with their nineteenth selection and 145th overall in the 2016 AFL Women's draft.  She made her debut in the nineteen point win against Collingwood at Ikon Park in round two of the 2017 season.  She played the next week in the fourteen point win against the Western Bulldogs at VU Whitten Oval before being omitted for the round four match against Carlton at Casey Fields.  She returned for the five point loss to Greater Western Sydney at Blacktown International Sportspark Oval in round five, which was her last match for the year and she finished the season with three games.  She was not retained on Melbourne's list at the end of the season and was subsequently delisted in May 2017.\n\n[3] Hugh McCluggage: Hugh McCluggage (born 3 March 1998) is a professional Australian rules footballer playing for the Brisbane Lions in the Australian Football League (AFL).  He was drafted by Brisbane with their first selection and third overall in the 2016 national draft.  He made his debut in the thirty-one point loss against St Kilda at Etihad Stadium in round three of the 2017 season.  After the sixty point loss to Greater Western Sydney at the Gabba in round 14, in which he recorded nineteen disposals, eight marks and two tackles, he received the round nomination for the 2017 AFL Rising Star.\n\n[4] Abdul Wali Khan Sports Complex: Abdul Wali Khan Sports Complex also known as Charsadda Sports Complex is located in Charsadda, Khyber Pakhtunkhwa, in Pakistan.  It is the 2nd largest sports complex in Khyber Pakhtunkhwa after Qayyum Sports Complex Peshawar.  The sport complex has started functioning in 2016 and has been completed at the cost of Rs.490 million.\n\nQuestion: Where was the sports complex at which Will Brodie made his debut in the thirty-five point loss against Melbourne located?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "707265beb853fbde224589228f5cd33a762a38fb378d52888ddefe1f6b91fc81",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5adfc50355429942ec259b43",
+  "task_key": "ed0ced7df649ad48a1ccba6786c0046e0a445c026eb7c68ece2b208c9038d300",
+  "text": "I don't know.",
+  "timestamp": "2026-09-14T10:32:16.146602+00:00",
+  "tokens_in": 653,
+  "tokens_out": 125,
+  "usage": {
+    "completion_tokens": 125,
+    "neurons": 29.299877166748047,
+    "prompt_tokens": 653,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 778
+  }
+}

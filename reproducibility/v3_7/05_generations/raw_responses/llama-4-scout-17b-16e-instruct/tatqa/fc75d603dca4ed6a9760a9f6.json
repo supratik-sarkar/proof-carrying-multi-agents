@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "ab797b5d357225189425a9e1a7547057808705de4555867c60f682102f28c1d0",
+  "candidate_text": "$247,117.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "67bd911ce1c74f3906c4458744b08251ef4ee48ac4ba8cf4f1f482d22cd1f2c8",
+  "example_id": "09cd3c4b49a5ce383645509f15c12ded",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "6b4e2c5a33771bb5ab8ad67995c9a1f52bb3d225e905264587a0937b954d71a5",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "09cd3c4b49a5ce383645509f15c12ded",
+  "prompt_sha256": "48e05ad029f9101f2125c11e3fc519fc1d96bdeab2c94d8d5f182b89bf51bca8",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 2: The recent shift in our revenue mix toward cloud arrangements has resulted in slower total gross profit growth as our cloud business continues to grow and scale. Revenue from cloud arrangements is generally recognized over the service period, while revenue from term and perpetual license arrangements is generally recognized upfront when the license rights become effective.\n\n[2] TAT-QA 4: The increase in total gross profit in 2019 was primarily due to increases in cloud and maintenance revenue.\n\n[3] TAT-QA 6: The decrease in cloud gross profit percent in 2019 was driven by an increase in costs as we accelerated our investments in cloud infrastructure and service delivery to support future growth. The decrease in consulting gross profit percent in 2019 was driven by a decrease in billable hours as consulting resources were transitioning to new projects after completing a large project and an increase in consulting resource availability as we continue growing and leveraging our partner network.\n\n[4] TAT-QA table: row 0: (Dollars in thousands) | 2019 |  | 2018 |  | Change | \nrow 1: Software license | $275,792 | 99% | $282,950 | 98% | $(7,158) | (3)%\nrow 2: Maintenance | 254,924 | 91% | 239,310 | 91% | 15,614 | 7%\nrow 3: Cloud | 67,918 | 51% | 45,218 | 55% | 22,700 | 50%\nrow 4: Consulting | 2,727 | 1% | 22,338 | 9% | (19,611) | (88)%\nrow 5:  | $601,361 | 66% | $589,816 | 66% | $11,545 | 2%\n\nQuestion: What is the company's average revenue from maintenance between 2018 and 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "05c21ee6aec4a0435efa60476d3546a226d24de9405d8951264b9a3545b30918",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:09cd3c4b49a5ce383645509f15c12ded",
+  "task_key": "6553cf5cd9e977a878e8aacf5605054444fea84f671da33369c9800571bfa459",
+  "text": "$247,117.",
+  "timestamp": "2026-09-15T09:34:24.772719+00:00",
+  "tokens_in": 467,
+  "tokens_out": 6,
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 11.926363945007324,
+    "prompt_tokens": 467,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 473
+  }
+}

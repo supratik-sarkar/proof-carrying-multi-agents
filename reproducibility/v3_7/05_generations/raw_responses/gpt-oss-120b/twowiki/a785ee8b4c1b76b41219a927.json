@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "aeb228acfe133191f9f30a15950e478afa3731c6432b4b88f36af03b074346cb",
+  "candidate_text": "Behind Locked Doors.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "668963958084bbb5aa11eb11d11afebe2abae929fe35f5d336da36e0ded3bc7c",
+  "example_id": "828b1390093511ebbdaeac1f6bf848b6",
+  "finish": "stop",
+  "input_sha256": "33d16e2165c9df810bec3223ec0b694a499db8c334f360bc01d10c5af3e3e0d2",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "828b1390093511ebbdaeac1f6bf848b6",
+  "prompt_sha256": "a69ac7c9eed710c5f20145493b4c4313283017b978dac16cf36d8b5b42dbe15c",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Any Body...Any Way\": [\"Any Body\\u2026Any Way, (re-released under the name Behind Locked Doors) is a 1968 Sexploitation Roughie film directed by Charles Romine and starring Eve Reeves, Joyce Denner, and Daniel Garth.\"]\n\n[2] \"Crossing Delancey\": [\"Crossing Delancey is a 1988 American romantic comedy film starring Amy Irving and Peter Riegert.\",\"It is directed by Joan Micklin Silver and was based on a play by Susan Sandler, who also wrote the screenplay.\",\"Amy Irving was nominated for a Golden Globe for the movie, for Best Performance by an Actress in a Motion Picture- Comedy\\/ Musical.\"]\n\n[3] \"Behind Locked Doors (1991 film)\": [\"Behind Locked Doors is a feature film by Swiss\\/ German director Anka Schmid from 1991.\",\"The ensemble- film shows the everyday life of 17 inhabitants of an apartment building in Berlin Kreuzberg.\"]\n\n[4] \"Coney Island Baby (film)\": [\"Coney Island Baby is a 2003 comedy- drama in which film producer Amy Hobby made her directorial debut.\",\"Karl Geary wrote the film and Tanya Ryno was the film's producer.\",\"The music was composed by Ryan Shore.\",\"The film was shot in Sligo, Ireland, which is known locally as\\\" Coney Island\\\".\",\"The film was screened at the Newport International Film Festival.\",\"Hobby won the Jury Award for\\\" Best First Time Director\\\".\",\"The film made its premiere television broadcast on the Sundance Channel.\"]\n\nQuestion: Which film was released more recently, Behind Locked Doors or Crossing Delancey?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "ac8a0b9ab469df8ccec9c74ddfc9a7a848aa1707e585145152bc239dc500440f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:828b1390093511ebbdaeac1f6bf848b6",
+  "task_key": "1afa162fd822a70c69f63b3a1839165001621e6df97ff8304f9734ba4d05195d",
+  "text": "Behind Locked Doors.",
+  "timestamp": "2026-09-14T10:32:54.865699+00:00",
+  "tokens_in": 452,
+  "tokens_out": 53,
+  "usage": {
+    "completion_tokens": 53,
+    "neurons": 17.995370864868164,
+    "prompt_tokens": 452,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 505
+  }
+}

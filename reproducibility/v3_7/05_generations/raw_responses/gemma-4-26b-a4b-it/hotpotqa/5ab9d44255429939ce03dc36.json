@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "a614217b2a3d7a02f7d37399647510b44f5ec7d9d825dbeb63f2b4a5180402ff",
+  "candidate_text": "Miller Brewing",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "59ac74c2b6482723eb4c4704812b9133264b6b20eb878ef58be83b9243afcbe5",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5ab9d44255429939ce03dc36",
+  "prompt_sha256": "82a25dcb9a1380ba35246515217ca76c02fefa3540c7d502bd0570cf8bc20cc6",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "379320c467e95a75d12f3fb06b3263f891187b17cfb88c29271394caf266a074",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ab9d44255429939ce03dc36",
+  "text": "Miller Brewing",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 6.199999809265137,
+    "prompt_tokens": 673,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 676
+  }
+}

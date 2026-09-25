@@ -1,0 +1,43 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "85da16ecad37caa8e7f71ed305630e1ad442806ce62005b2f1d20f090b6ada8c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:multiple_function_50",
+  "prompt_sha256": "85da16ecad37caa8e7f71ed305630e1ad442806ce62005b2f1d20f090b6ada8c",
+  "provider": "gemini",
+  "provider_raw_sha256": "9380cfea0b083f20ef2707fb548c63a1e3d803acf59c6383075060f78c0b5027",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIP+1nphKkcqLTc2n4jqC4+sBE3qkDOmetphmYjPmNpQj49BqVhNv0Bh3x2OwBtHY07HS/vrP4wQ9DCP4/3G/B30u9CiJdDJSSakUwNR8tbehV/nO7EDFBUUst0eAxpvY3pQ6oOLCU5357gSA=="
+        }
+      },
+      "function": {
+        "arguments": "{\"months\":1,\"location\":\"New York\"}",
+        "name": "house_price_forecast"
+      },
+      "id": "call_1229641",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 23,
+    "prompt_tokens": 350,
+    "total_tokens": 373
+  }
+}

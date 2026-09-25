@@ -1,0 +1,11 @@
+{
+  "duration_seconds": 873.8310437202454,
+  "nli_cache_hits": 3809,
+  "nli_unique_calls": 2927,
+  "pcg_accepted_count": 235,
+  "pcg_accepted_rate": 0.16785714285714284,
+  "records_evaluated": 1400,
+  "schema": "PCG_MAS_V3_6_EXP0F_RECEIPT",
+  "status": "PASS",
+  "timestamp": "2026-09-19T17:48:22.508893+00:00"
+}

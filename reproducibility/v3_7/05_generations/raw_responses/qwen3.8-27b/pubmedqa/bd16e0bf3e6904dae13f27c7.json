@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "6f50263f31ef007f6b307f507b51bd23f801d08d311dba4a635c6892caf7f254",
+  "candidate_text": "\n\nYes, for some drivers",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "7ce226b94774bc257ca835b34070c5d7b210a80b7d6b637c96b4da5c85611c8a",
+  "example_id": "19593710",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "03dadf3bfd8893e0e5d9a484076dd4c3b9c1e90800275c4a231a2ebc9a2b1db2",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "19593710",
+  "prompt_sha256": "e9e014547c8e3e547199a131be82f6ec98d317755458e2d7209fcf6add20775a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: OBJECTIVE: ESC (Electronic Stability Control) is a crash avoidance technology that reduces the likelihood of collisions involving loss of control. Although past and emerging research indicates that ESC is effective in reducing collision rates and saving lives, and its inclusion in all vehicle platforms is encouraged, drivers may demonstrate behavioral adaptation or an overreliance on ESC that could offset or reduce its overall effectiveness. The main objective of the present study was to determine whether behavioral adaptation to ESC is likely to occur upon the widespread introduction of ESC into the Canadian vehicle fleet. Secondary objectives were to confirm the results of a previous ESC public survey and to generate a baseline measure for the future assessment of planned and ongoing ESC promotional activities in Canada. METHODS: Two separate telephone surveys evaluated drivers' perceptions and awareness of ESC. The first surveyed 500 randomly selected owners/drivers of passenger vehicles. The second surveyed 1017 owners/drivers of 2006-2008 ESC-equipped passenger vehicles from the provinces of Quebec and British Columbia, Canada. RESULTS: Though ESC drivers were much more likely than drivers of other vehicles to be aware of ESC (77% vs. 39%) and that their own vehicle was equipped with it (63% vs. 8%), 23 percent had never heard of it. Ninety percent of drivers who knew that their vehicle was equipped with ESC believed that ESC had made it safer to drive and reported being confident that ESC would work in an emergency. Twenty-three percent of ESC owners who knew their vehicle had ESC reported noticing long-lasting changes in their driving behavior since they began driving the vehicle.\n\nLong answer: Collectively, results suggest that behavioral adaptation to ESC is likely in certain drivers; however, its proven effectiveness in reducing the likelihood of being involved in a serious crash probably outweighs any potential increases in unsafe driving. To fully benefit from ESC, vehicle manufacturers are encouraged to market ESC-equipped vehicles in a realistic, safe manner. Driver training and safety organizations are also encouraged to provide balanced educational information about ESC to their members.\n\nQuestion: Could ESC (Electronic Stability Control) change the way we drive?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "4af9b61384f0f2a83ae9b1b09f606b3df3a994441aef225f5e2a3a9f673c8b92",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:19593710",
+  "task_key": "1d3cec9c9784fb10f712574cba4dc0024ab5493d871b2cdcb3536510ee6e6b23",
+  "text": "\n\nYes, for some drivers",
+  "timestamp": "2026-09-15T09:27:06.319904+00:00",
+  "tokens_in": 538,
+  "tokens_out": 88,
+  "usage": {
+    "completion_tokens": 88,
+    "neurons": 47.60908889770508,
+    "prompt_tokens": 538,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 626
+  }
+}

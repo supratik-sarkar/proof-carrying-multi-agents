@@ -1,0 +1,15 @@
+{
+  "schema": "PCG_MAS_V3_6_POST_G10_DEV_TERMINATION_RECEIPT",
+  "status": "SUPERSEDED_POSTCHECK_FAILURE",
+  "timestamp": "2026-09-17T13:25:00Z",
+  "old_g9_launch": "HISTORICALLY_OCCURRED",
+  "old_g10_liveness": "SUPERSEDED_POSTCHECK_FAILURE",
+  "old_final_status": "INVALIDATED_BY_SUBSEQUENT_PROCESS_DEATH",
+  "reason": "The previous background DEV process exited non-zero with CalledProcessError during the Mind2Web stage due to transient HTTP 503 ProviderError on gemini-3.1-flash-lite without bounded transport retry.",
+  "parent_traceback": [
+    "run_pipeline.py",
+    "run_task_batch.py",
+    "tasks/mind2web.json",
+    "CalledProcessError: non-zero subprocess exit 1 from execute_lane.py"
+  ]
+}

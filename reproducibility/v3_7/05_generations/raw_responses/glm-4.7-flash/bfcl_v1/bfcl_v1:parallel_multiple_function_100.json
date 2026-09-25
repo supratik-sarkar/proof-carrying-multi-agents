@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "dedcc772dbd7a8059647b01fbd74eb4f0ea84103031f76492e09b38b525d5676",
+  "candidate_text": "I'll help you get all those predictions and forecasts. Let me make the necessary calls to retrieve the stock price predictions, stock forecasts, and weather forecasts you requested.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "2e42fbbfa1c5139b327c2eb08bbd517d293b52ad550b3fd8720cf206d273f62f",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_multiple_function_100",
+  "prompt_sha256": "2e42fbbfa1c5139b327c2eb08bbd517d293b52ad550b3fd8720cf206d273f62f",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "71c6992de5fe91dee8c8653ea499b03df73c21eae677c6a63d6f3cdffe552108",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you get all those predictions and forecasts. Let me make the necessary calls to retrieve the stock price predictions, stock forecasts, and weather forecasts you requested.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"company\": \"Apple Inc.\", \"days\": 30, \"model\": \"ARIMA\"}",
+        "name": "stock_forecast"
+      },
+      "id": "chatcmpl-tool-9626e2b479976f62",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company\": \"Microsoft Corporation\", \"days\": 45, \"model\": \"LSTM\"}",
+        "name": "stock_forecast"
+      },
+      "id": "chatcmpl-tool-ac7baa21adce4980",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York City\", \"days\": 7}",
+        "name": "weather_forecast"
+      },
+      "id": "chatcmpl-tool-8db5acd352e1288c",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"Los Angeles\", \"days\": 14}",
+        "name": "weather_forecast"
+      },
+      "id": "chatcmpl-tool-b95c0030aa674cfc",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 308,
+    "neurons": 13.515699999999999,
+    "prompt_tokens": 419,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 727
+  }
+}

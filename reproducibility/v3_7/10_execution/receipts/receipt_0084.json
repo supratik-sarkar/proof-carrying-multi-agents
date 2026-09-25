@@ -1,0 +1,36 @@
+{
+  "FIT_strict_receipt_sha256": "19e526a4cc077215dfb9b35c56894447a1516972c4eae83506ddd7bd9072a3dc",
+  "READY": "YES",
+  "acceptance_receipt_sha256": "3cc7cf9f504afa105b360034d4b8384d02fb69547900c814d3de7651c47187d3",
+  "billing_guard_receipt_sha256": "9ad942b451bf15109386b043dd031a4ce6bcaa81f9533603bedf1cc2fc403956",
+  "canonical_complete_before_launch": 1425,
+  "canonical_remaining_at_launch": 815,
+  "clean_canary_authority_sha256": "709b85bbf6777b6a98492a2c0018004866ce51a06abc482ee9bec73769cb0545",
+  "clean_python": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "dataset_panel_sha256": "0785fd5ffe9343ff4d1b6fa170ed50db511b0fadc5e3cd6247ed0e44daff2568",
+  "expected_provider_split": {
+    "Cloudflare": 701,
+    "Gemini": 114
+  },
+  "expected_remaining": {
+    "AgentDojo": 270,
+    "BFCL": 273,
+    "Mind2Web": 272
+  },
+  "final_workplan_sha256": "d81f079654de579e9c465f1c11174fe792b3800ce065a2e96a4c21ad7b21f945",
+  "generation_policy_registry_sha256": "cfca0fb1a39117a1fa2ca56f11efef4f13ff61c1a25bda868cd4bf9eb306142c",
+  "immutable_core": 807,
+  "launch_script_sha256": "87782121950fd7b7c2e9bfc4ec0309fd90fd9b8a53873161a9f5a2b7819253f5",
+  "model_panel_sha256": "0785fd5ffe9343ff4d1b6fa170ed50db511b0fadc5e3cd6247ed0e44daff2568",
+  "preflight_receipt_sha256": "4a9c068ad33a45356fcf20d014579fbc6d697f43013732b7444330913afdc457",
+  "project_release": "v3.6",
+  "protected_followon": 618,
+  "resumability_authority_sha256": "b6c95c937d12f0289f423766b42912c6a727a25d94263818ca525595fc493132",
+  "runtime_reconciliation_authority_sha256": "f38f9d9bbab4d3bdd67ac108f555fae9912613d8b09071dc9d93984f3d7b1684",
+  "schema": "PCG_MAS_V3_6_G8_FINAL_DEV_LAUNCH_AUTHORITY_V2",
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "task_materialization_sha256": "8a5cafafbb49ecd64a8a9cafaedd768dc90f9d2f0be53a83f1e95cffff1eea45",
+  "timestamp": "2026-09-17T12:57:13.337633+00:00",
+  "transaction_id": "TX-20260917T124848Z-d0139466c44e"
+}

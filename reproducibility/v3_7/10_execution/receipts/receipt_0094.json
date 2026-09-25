@@ -1,0 +1,19 @@
+{
+  "schema": "PCG_MAS_V3_6_MIND2WEB_FAIL_CLOSED_REGRESSION_RECEIPT",
+  "status": "PASS",
+  "timestamp": "2026-09-17T13:26:00Z",
+  "test_script": "artifacts/v3_6/dataset_amendment_v2/scripts/test_mind2web_fail_closed.py",
+  "results": {
+    "valid_json_scores_normally": "PASS",
+    "wrong_valid_json_scores_false": "PASS",
+    "empty_provider_text_fail_closed": "PASS",
+    "arbitrary_non_json_fail_closed": "PASS",
+    "broken_json_fail_closed": "PASS",
+    "no_case_terminates_execute_lane": "PASS",
+    "existing_terminal_fail_closed_reused_without_provider_call": "PASS",
+    "task_loop_proceeds": "PASS"
+  },
+  "MIND2WEB_FAIL_CLOSED_REGRESSION": "PASS",
+  "PROVIDER_CALLS_DURING_OFFLINE_TEST": 0,
+  "benchmark_semantics_changed": false
+}

@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "b1d8607cffa1e670b34816506bf99b82b2daf512ed6fce92456d3b97fff6ecdf",
+  "example_id": "f1ff478c089011ebbd72ac1f6bf848b6",
+  "finish": "stop",
+  "input_sha256": "e564cb2021f32d0c5faf484cb71e988d65bed0f08e7a85d762f0b2045ea6820c",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "f1ff478c089011ebbd72ac1f6bf848b6",
+  "prompt_sha256": "ffd53623b62b05e12836b3b336403ea7ecd8ce92eb1a9425228556c340d9c072",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"I Never Sang for My Father\": [\"I Never Sang for My Father is a 1970 American drama film based on a 1968 play of the same name, which tells the story of a widowed college professor who wants to get out from under the thumb of his aging father yet still has regrets about his plan to leave him behind when he remarries and moves to California.\",\"It stars Melvyn Douglas, Gene Hackman, Dorothy Stickney, Estelle Parsons, and Elizabeth Hubbard.\",\"The film was directed and produced by Gilbert Cates, and adapted by Robert Anderson from his 1968 Broadway play.\",\"It was nominated for Academy Awards for Best Actor in a Leading Role( Melvyn Douglas), Best Actor in a Supporting Role( Gene Hackman), and Best Writing, Screenplay Based on Material from Another Medium( Robert Anderson).\"]\n\n[2] \"The Princess Bride (film)\": [\"The Princess Bride is a 1987 American fantasy adventure comedy film directed and co-produced by Rob Reiner, starring Cary Elwes, Robin Wright, Mandy Patinkin, Chris Sarandon, Wallace Shawn, Andr\\u00e9 the Giant, and Christopher Guest.\",\"Adapted by William Goldman from his 1973 novel\\\" The Princess Bride\\\", it tells the story of a farmhand named\",\"Westley, accompanied by companions befriended along the way, who must rescue his true love Princess Buttercup from the odious Prince Humperdinck.\",\"The film essentially preserves the novel's narrative style by presenting the story as a book being read by a grandfather( Peter Falk) to his sick grandson( Fred Savage).\",\"The film was first released in the United States on September 25, 1987, and was well- received by critics at the time, but was only a modest box office success.\",\"Over time, particularly with the introduction of the Internet, the film has become a cult classic.\",\"The film is number 50 on the Bravo's\\\" 100 Funniest Movies\\\", number 88 on The American Film Institute's( AFI)\\\" AFI's 100 Years ... 100 Passions\\\" list of the 100 greatest film love stories, and 46 in Channel 4's 50 Greatest Comedy Films list.\",\"In 2016, the film was inducted into the National Film Registry, being deemed as\\\" culturally, historically or aesthetically significant\\\".\"]\n\n[3] \"Robert Anderson (playwright)\": [\"Robert Woodruff Anderson( April 28, 1917 \\u2013 February 9, 2009) was an American playwright, screenwriter, and theatrical producer.\",\"He received two Academy Award nominations for Best Writing, Screenplay Based on Material from Another Medium, for the drama films\\\" The Nun's Story\\\"( 1959) and\\\" I Never Sang for My Father\\\"( 1970).\"]\n\n[4] \"Rob Reiner\": [\"Robert Reiner( born March 6, 1947) is an American actor and filmmaker.\",\"As an actor, Reiner first came to national prominence with the role of Michael Stivic on\\\" All in the Family\\\"( 1971 \\u2013 1979), a role that earned him two Emmy Awards during the 1970s.\",\"As a director, Reiner was recognized by the Directors Guild of America( DGA) with nominations for the coming of age drama film\\\" Stand by Me\\\"( 1986), the romantic comedy\\\" When Harry Met Sally ...\\\"( 1989), and the military courtroom drama\\\" A Few Good Men\\\"( 1992).\",\"He also directed the psychological horror- thriller\\\" Misery\\\"( 1990), the romantic comedy fantasy adventure\\\" The Princess Bride\\\"( 1987), and the heavy metal mockumentary\\\" This Is Spinal Tap\\\"( 1984).\"]\n\nQuestion: Are both directors of films The Princess Bride (Film) and I Never Sang For My Father from the same country?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "919d2f253796b1ab7efc285472e1098703a27dc5baa41e16e3f18bf95bdcc57f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:f1ff478c089011ebbd72ac1f6bf848b6",
+  "task_key": "dc6c2fde11a6d23b6ec7290c995413c7703badfd42b8160d58959e86c8f5ce7f",
+  "text": "I don't know.",
+  "timestamp": "2026-09-14T10:32:48.946704+00:00",
+  "tokens_in": 918,
+  "tokens_out": 140,
+  "usage": {
+    "completion_tokens": 140,
+    "neurons": 38.75437545776367,
+    "prompt_tokens": 918,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1058
+  }
+}

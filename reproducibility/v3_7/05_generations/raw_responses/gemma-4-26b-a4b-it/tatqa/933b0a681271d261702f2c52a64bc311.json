@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "700096aabff6b95a60b76d17c76e341e42f4e05f5dd93a8abf75f34d8eb83ece",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "933b0a681271d261702f2c52a64bc311",
+  "prompt_sha256": "158bbf401ae924f562ba514e71a32129de9bd4f0558a674db96e308c52384857",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "828822cfe8024c06875e5276cd479b535d3741cabc9384dcec76404c1eb2eb17",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:933b0a681271d261702f2c52a64bc311",
+  "text": "I don't know.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 9.590909957885742,
+    "prompt_tokens": 1034,
+    "prompt_tokens_details": {
+      "cached_tokens": 64
+    },
+    "total_tokens": 1041
+  }
+}

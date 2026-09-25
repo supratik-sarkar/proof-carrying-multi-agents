@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "2a4ca713d7fbf1f7d7e755edf248f7ba2671482beb4707e3df4b6c331c9f1a35",
+  "candidate_text": "$39,000",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "d737d70d54dcbd6950bc6305d863163a13fc1290d61b2ea548ce148c37146983",
+  "example_id": "48bf35fd064a0c9b963c0856bb2c3431",
+  "finish": "stop",
+  "input_sha256": "ad7cb906282e0b587aacc658f587e97b6bc30ee7732c6ecb997e5ce1458fd559",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "48bf35fd064a0c9b963c0856bb2c3431",
+  "prompt_sha256": "2bf7de7c4826b6b6748fdfd994e51b4ff08b580105786456d6828758a2c0ff59",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 2: In fiscal years 2019 and 2018, the Company continued to maintain a full valuation allowance on deferred tax assets. The valuation allowance increased by $1.7 million in fiscal year 2019. The Company recorded an income tax expense from continuing operations of $39,000 in fiscal year 2019. In fiscal year 2018, the Company recorded an income tax benefit from continuing operations of $597,000. The fiscal year 2018 income tax benefit was due primarily from the release of the tax valuation allowance associated with previously generated alternative minimum tax (AMT) credits due to the December 22, 2017 Tax Cuts and Jobs Act Tax Reform (the “Tax Act”).\n\n[2] TAT-QA 3: The Company has, on a tax-effected basis, approximately $0.8 million in tax credit carryforwards and $26.9 million of federal net operating loss carryforwards that are available to offset taxable income in the future. The tax credit carryforwards will begin to expire in fiscal year 2021. The federal net operating loss carryforwards begin to expire in fiscal year 2022. State tax credit carryforwards and net operating loss carryforwards, on a tax effected basis and net of federal tax benefits, are $0.1 million and $8.1 million, respectively. The remaining state tax credit carryforwards and state net operating loss carry forwards begin to expire in fiscal year 2020. In fiscal year 2019, $1.2 million of state net operating loss carryforwards expired.\n\n[3] TAT-QA table: row 0:  | March 31, | \nrow 1: (in thousands) | 2019 | 2018\nrow 2: Deferred income tax assets: |  | \nrow 3: Allowance for doubtful accounts | $26 | $24\nrow 4: Foreign tax credit carryforward | 810 | 812\nrow 5: Depreciation | 173 | 227\nrow 6: Deferred revenue | 425 | 675\nrow 7: Accrued compensation | 412 | 358\nrow 8: Inventory reserves | 757 | 948\nrow 9: Accrued warranty | 33 | 77\nrow 10: Net operating loss carryforward | 35,024 | 34,924\nrow 11: Accrued restructuring | — | 16\nrow 12: Intangibles and goodwill | 272 | —\nrow 13: Other | 839 | 660\nrow 14: Gross deferred tax assets | 38,771 | 38,721\nrow 15: Valuation allowance | (38,771) | (37,103)\nrow 16: Net deferred income tax assets | — | 1,618\nrow 17: Deferred income tax liabilities: |  | \nrow 18: Intangibles and goodwill | — | (1,618)\nrow 19: Net deferred income tax liabilities | $— | $—\n\n[4] TAT-QA 1: Components of the net deferred income tax assets are as follows:\n\nQuestion: How much was the income tax expense from continuing operations in 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "22b1c50fef3e7295dbf4d188fc971f7d9b820e48fc1b6dffff6d2fd59b0e4076",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:48bf35fd064a0c9b963c0856bb2c3431",
+  "task_key": "85fb3aa79cba15897ebf039ba6e0deab4a77444e0e89034c4ce50af2b0a284e2",
+  "text": "$39,000",
+  "timestamp": "2026-09-14T10:33:31.334977+00:00",
+  "tokens_in": 796,
+  "tokens_out": 81,
+  "usage": {
+    "completion_tokens": 81,
+    "neurons": 30.849853515625,
+    "prompt_tokens": 796,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 877
+  }
+}

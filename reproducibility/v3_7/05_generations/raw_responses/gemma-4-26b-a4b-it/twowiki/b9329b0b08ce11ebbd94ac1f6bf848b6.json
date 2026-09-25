@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "1ea387f1ecd1bf8dc7fff56b06870fe2fbe0fa6032acff2f204befab80dc5762",
+  "candidate_text": "Sunday's Illness",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "7236361adafba8943c7c4843aae4b32e8745ac70d38e05e7c5b2b855b36b7bd9",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "b9329b0b08ce11ebbd94ac1f6bf848b6",
+  "prompt_sha256": "1bf53a8d187dbb0df20b0eafa32075090cd7a0762d53c81c938e15bd320dea9a",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "e8490e05a5c8923596f6927ac4352764b7d17fc417071f7a15d3317786b4c6e9",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:b9329b0b08ce11ebbd94ac1f6bf848b6",
+  "text": "Sunday's Illness",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 3.981818199157715,
+    "prompt_tokens": 423,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 428
+  }
+}

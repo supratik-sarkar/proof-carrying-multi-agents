@@ -1,0 +1,37 @@
+{
+  "QAFACTEVAL_SCORES_1400.jsonl": {
+    "size_bytes": 443625,
+    "sha256": "bfce5d4e248a97cfebfa377e3d86f4e9463764fcffd2f7907e5d3df3f3f0b399",
+    "lines": 1400
+  },
+  "ALIGNSCORE_SCORES_1400.jsonl": {
+    "size_bytes": 482838,
+    "sha256": "61c1d944c08fc6167c433e71ecf4b695e6015791f8272289a4f4d54bf8e64844",
+    "lines": 1400
+  },
+  "MINICHECK_SCORES_1400.jsonl": {
+    "size_bytes": 473304,
+    "sha256": "7d6bbfa5edf98c2e1fa20e5dca89328898718b32e85188b4365da79f8c6caf4c",
+    "lines": 1400
+  },
+  "EXTERNAL_VERIFIER_SLOTS_4200.jsonl": {
+    "size_bytes": 1399878,
+    "sha256": "eab74770118dee0c15af5947108eca0349351d89584c19ffa1ae31c6c5cc417d",
+    "lines": 4200
+  },
+  "EXTERNAL_VERIFIER_SCORES_4200.jsonl": {
+    "size_bytes": 1399878,
+    "sha256": "eab74770118dee0c15af5947108eca0349351d89584c19ffa1ae31c6c5cc417d",
+    "lines": 4200
+  },
+  "COMMON_SUPPORT_EXTERNAL_VERIFIER_SCORES_4197.jsonl": {
+    "size_bytes": 1398354,
+    "sha256": "702daa193d3ba73937c57e72ab9c490e9d8dd9b43454783f666e920c5ee05b5e",
+    "lines": 4197
+  },
+  "FACTUAL_CANDIDATE_ELIGIBILITY_1400.jsonl": {
+    "size_bytes": 635775,
+    "sha256": "47c3b57a263c82d25c9fe49fa2bc22ecd276c3c00d1e1124cfe2d8718a8c6760",
+    "lines": 1400
+  }
+}

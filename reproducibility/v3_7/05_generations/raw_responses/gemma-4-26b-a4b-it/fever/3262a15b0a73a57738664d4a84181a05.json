@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "dataset_id": "fever",
+  "evidence_sha256": "828152f2d309ab3e982bbef75d8f0251a9f5b420f931aca415fb42861dc345b1",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "3262a15b0a73a57738664d4a84181a05",
+  "prompt_sha256": "deb2dbbb568a8b942e0818bfd03a6798735a16a3b48ecbb2ac12db4f90fafb36",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "cc3ebc6787ec2974a7999f1eb673039cc6e51de15e6aba185073c69bb97e38e0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "fever:3262a15b0a73a57738664d4a84181a05",
+  "text": "NOT ENOUGH INFO",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 1.4818180799484253,
+    "prompt_tokens": 148,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 153
+  }
+}

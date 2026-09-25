@@ -1,0 +1,71 @@
+{
+  "per_observation_value_status": "NOT_RETAINED",
+  "slot_accounting": {
+    "total_numeric_defined_scores": 4197,
+    "total_requested_slots": 4200,
+    "total_unscorable_slots": 3,
+    "unscorable_candidate_identity": {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "observation_id": "5abf04ae5542993fe9a41dbf",
+      "reason": "TERMINAL_EMPTY_GENERATION"
+    }
+  },
+  "value_authority": "v3_7",
+  "verifiers": [
+    {
+      "applicable_datasets": [
+        "fever",
+        "hotpotqa",
+        "pubmedqa",
+        "tatqa",
+        "twowiki"
+      ],
+      "method": "MiniCheck",
+      "model": "flan-t5-large",
+      "numeric_defined_scores": 1399,
+      "requested_observation_slots": 1400,
+      "unscorable_observation_ids": [
+        "5abf04ae5542993fe9a41dbf"
+      ],
+      "unscorable_slots": 1,
+      "verifier_id": "minicheck_ft5"
+    },
+    {
+      "applicable_datasets": [
+        "fever",
+        "hotpotqa",
+        "pubmedqa",
+        "tatqa",
+        "twowiki"
+      ],
+      "method": "AlignScore",
+      "model": "roberta-large",
+      "numeric_defined_scores": 1399,
+      "requested_observation_slots": 1400,
+      "unscorable_observation_ids": [
+        "5abf04ae5542993fe9a41dbf"
+      ],
+      "unscorable_slots": 1,
+      "verifier_id": "alignscore"
+    },
+    {
+      "applicable_datasets": [
+        "fever",
+        "hotpotqa",
+        "pubmedqa",
+        "tatqa",
+        "twowiki"
+      ],
+      "method": "QAFactEval",
+      "model": "electra-large",
+      "numeric_defined_scores": 1399,
+      "requested_observation_slots": 1400,
+      "unscorable_observation_ids": [
+        "5abf04ae5542993fe9a41dbf"
+      ],
+      "unscorable_slots": 1,
+      "verifier_id": "qafacteval"
+    }
+  ]
+}

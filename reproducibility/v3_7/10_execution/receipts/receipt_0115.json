@@ -1,0 +1,27 @@
+{
+  "schema": "PCG_MAS_V3_6_POST_FAILURE_FINAL_ACCEPTANCE_RECEIPT",
+  "status": "PASS",
+  "READY": "YES",
+  "timestamp": "2026-09-17T13:26:02.106727+00:00",
+  "project_release": "v3.6",
+  "environment": "DEV",
+  "predicates": {
+    "BASELINE_AUTHORITY": "PASS",
+    "ZERO_COST_BILLING_GUARD": "PASS",
+    "RESUMABLE_ZERO_COST_POLICY": "PASS",
+    "FIT_STRICT_700": "PASS",
+    "EXACT_RESUME_WORKPLAN": "PASS",
+    "PREFLIGHT_RECEIPTS": "PASS",
+    "TOOL_CANARY_GATE": "PASS",
+    "PINNED_SOURCE_INTEGRITY": "PASS",
+    "CLEAN_RUNTIME_BINDING": "PASS",
+    "IMMUTABLE_CORE": "PASS",
+    "PROTECTED_ARTIFACTS": "PASS",
+    "NO_ACTIVE_DEV_PROCESS": "PASS"
+  },
+  "canonical_complete_now": 1510,
+  "canonical_remaining_now": 730,
+  "protected_followon": 618,
+  "immutable_core": 807,
+  "fit_generations": 700
+}

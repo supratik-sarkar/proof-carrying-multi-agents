@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "4fe2f3dec12dff5caf381aaa0da2fcfbb5d0f30433d4879bbd56519941cc4260",
+  "candidate_text": "No significant effect.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "fad985095cd7d9834d56e1a046d8f476a207fce61545f6220f49e9db2cba18f0",
+  "example_id": "12607120",
+  "finish": "stop",
+  "input_sha256": "bf635463ecf68525d90eca82a658c534764a29a8add1e94d07e06b2e97ce690f",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "12607120",
+  "prompt_sha256": "76294e6a130189e77c8cd5275d2ebaa0b155287519bb2e0d337f31ea2910f241",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: BACKGROUND: Anastomotic leakage is the most threatening early complication in sphincter-preserving rectal cancer surgery. While the oncological consequences have been well examined, only few data exist about the functional outcome. PATIENTS AND METHODS: We investigated continence function in 150 patients after curative sphincter-preserving rectal cancer surgery. Functional results were compared in 22 patients with a clinically relevant anastomotic leakage, confirmed radiologically or endoscopically, and 128 patients with uneventful recovery. Evaluation of continence function was based on the Cleveland Clinic Continence Score and was examined in all patients with anastomotic leakage and in 111 patients without complications 107+/-46 weeks postoperatively. Additionally, 14 patients with anastomotic leakage and 58 patients with uneventful recovery underwent anorectal manometry 26+/-15 weeks postoperatively. RESULTS: The continence score in patients after anastomotic leakage did not differ significantly from that in patients without complications. Sphincter function was similar. Maximum tolerable volume and rectal compliance were slightly but not significantly worse after leakage.\n\nLong answer: Continence function remained undisturbed after anastomotic leakage due to rectal resection\n\nQuestion: Does anastomotic leakage affect functional outcome after rectal resection for cancer?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b419034c6afd1b2246d48208187c73e2c7ac99028350aaba75394def8b573755",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:12607120",
+  "task_key": "44d803ced4ef90d8bc05a1235020502959a43efb052cc0e1bffd8f47a3487733",
+  "text": "No significant effect.",
+  "timestamp": "2026-09-14T10:36:36.817562+00:00",
+  "tokens_in": 398,
+  "tokens_out": 100,
+  "usage": {
+    "completion_tokens": 100,
+    "neurons": 19.48174285888672,
+    "prompt_tokens": 398,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 498
+  }
+}

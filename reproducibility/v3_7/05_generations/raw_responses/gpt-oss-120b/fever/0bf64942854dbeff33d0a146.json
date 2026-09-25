@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "e46cc59cb0110f5777330c48f7bc6bffbe363422f9e7bfbeb9bd37ab3e377a34",
+  "example_id": "49ab6609565179c662b343da7f152dd5",
+  "finish": "stop",
+  "input_sha256": "296af9d18749cdde41e22884f3988d37d32c8d7fa60486459a0d4472d59e8eb9",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "49ab6609565179c662b343da7f152dd5",
+  "prompt_sha256": "c52ee1d7fc8b464454e50613a5c051bf5d6adf41a70547f1f53fc09a874b4386",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Gilberto Zaldívar: With the rise of the Hispanic population in New York City , Zaldívar recognized an opportunity to involve the `` hundreds of Spanish actors in New York working in restaurants and offices who are highly desirous of working again in the theater '' with the hope of providing acting positions for the many `` Spanish , Cuban and Puerto Rican actors who come here to find opportunities to perform '' .\n\nClaim: Home for the Holidays stars exclusively Spanish actors.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "f233658f07c340dd138f6e86310743fc9d7aa38d8e5d356fcd59ab0de479a676",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:49ab6609565179c662b343da7f152dd5",
+  "task_key": "8e40538e969a565820175ba0757a0bac234f0bdc0bf8276fcfc2d08ca645f6cb",
+  "text": "NOT ENOUGH INFO",
+  "timestamp": "2026-09-14T10:35:38.383949+00:00",
+  "tokens_in": 231,
+  "tokens_out": 113,
+  "usage": {
+    "completion_tokens": 113,
+    "neurons": 15.054500579833984,
+    "prompt_tokens": 231,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 344
+  }
+}

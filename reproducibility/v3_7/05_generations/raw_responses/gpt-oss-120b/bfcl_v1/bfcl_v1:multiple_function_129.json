@@ -1,0 +1,44 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Missing required parameter: 'annual_rate'."
+    ],
+    "error_type": "simple_function_checker:missing_required",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "904a15185581b752c6704017d7e3b92c3108459cc7ca2796e8327864d4fb773e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:multiple_function_129",
+  "prompt_sha256": "904a15185581b752c6704017d7e3b92c3108459cc7ca2796e8327864d4fb773e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "d3eba421536aaae954a8bd80aa4400867a2844a80148fbdee0c0154904b66c07",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"principal\": 10000, \"rate\": 0.05, \"times_per_year\": 12, \"years\": 5}",
+        "name": "compound_interest"
+      },
+      "id": "chatcmpl-tool-b82918c69322a27e",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 103,
+    "neurons": 12.431785583496094,
+    "prompt_tokens": 170,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 273
+  }
+}

@@ -132,7 +132,7 @@ parso==0.8.6
 pathspec==1.1.0
 patsy==1.0.2
 # Editable install with no version control (pcg-mas==0.1.0)
--e ${PCG_ROOT}
+-e .
 pexpect==4.9.0
 pillow==12.2.0
 platformdirs==4.9.6

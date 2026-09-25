@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "8c32c960fbca6a277efe35cbd5af24a37f82a4a54230f1886a3b6e9dccd52f0d",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:parallel_multiple_function_176",
+  "prompt_sha256": "8c32c960fbca6a277efe35cbd5af24a37f82a4a54230f1886a3b6e9dccd52f0d",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "5c106e9c15d9099280d46ad7b588d8b8fb810d9619a9a2bde7956770e118765f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"end_date\":\"2022-05-10\",\"hotel_name\":\"Hilton\",\"location\":\"Los Angeles, CA\",\"rooms\":2,\"start_date\":\"2022-05-01\"}",
+        "name": "hotel_booking"
+      },
+      "id": "call_1789655689252",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"place1\":\"New York, NY\",\"place2\":\"Los Angeles, CA\"}",
+        "name": "get_time_difference"
+      },
+      "id": "call_1789655689252",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"height\":180,\"system\":\"metric\",\"weight\":75}",
+        "name": "calculate_bmi"
+      },
+      "id": "call_1789655689252",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"language\":\"English\",\"text\":\"I had a wonderful day at the beach. The weather was perfect and I enjoyed a delicious ice cream.\"}",
+        "name": "sentiment_analysis"
+      },
+      "id": "call_1789655689252",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 105,
+    "neurons": 42.60000228881836,
+    "prompt_tokens": 1405,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1510
+  }
+}

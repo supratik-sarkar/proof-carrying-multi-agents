@@ -1,0 +1,27 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "correct": false
+  },
+  "candidate_sha256": "e155f5de52e04bca2e9547b12f78766c83f4d063083d3988b2156fa63fee7343",
+  "candidate_text": "{\"choice\":\"C8\",\"operation\":\"CLICK\",\"value\":\"6501 E 10th Ave, Anchorage, AK 99504\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "6f75ad714543b7c0a9738961333899c92a24fbd94357765ca3030e85f73796ac",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "mind2web:3f3a01ed-5477-490a-83c4-8163f5baf59d",
+  "prompt_sha256": "6f75ad714543b7c0a9738961333899c92a24fbd94357765ca3030e85f73796ac",
+  "provider": "gemini",
+  "provider_raw_sha256": "cf26758339637b35b575f9c8085137df013d2dd1b69f5e5450638ede1a6e6eaa",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C8\",\"operation\":\"CLICK\",\"value\":\"6501 E 10th Ave, Anchorage, AK 99504\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 33,
+    "prompt_tokens": 389,
+    "total_tokens": 422
+  }
+}

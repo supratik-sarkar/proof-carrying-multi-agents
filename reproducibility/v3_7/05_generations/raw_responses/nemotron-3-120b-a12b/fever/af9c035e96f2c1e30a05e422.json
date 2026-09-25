@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "85271d8b1fef137f33e4c57dc938e1dfe1e14b1f826f6c49859eb48dba4ba005",
+  "candidate_text": "\n\nREFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "cdd08be840185c59ffd9150ad4341dbe17cb5bae6a75168524c830a4687c7802",
+  "example_id": "8b3013b62cd77e6832d45bae47c4bd89",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "6650adb86adedd3df8586c814eed31f909b3b4bf082014dfb362790ad9495d98",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "8b3013b62cd77e6832d45bae47c4bd89",
+  "prompt_sha256": "1253722f46f5a438f7a37f676ebacfdf44b23b48aec2723262fda1bdcbe62aea",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Chrysler Building: At 318.9 m , the structure was the world 's tallest building for 11 months before it was surpassed by the Empire State Building in 1931 .\n\nClaim: The Chrysler Building has yet to be surpassed in height.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "834cb3abf2846023527878d37165b39d28de5d50927416b518c62705ead6db52",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:8b3013b62cd77e6832d45bae47c4bd89",
+  "task_key": "6ca9c57c7b89ddf2502ec97b516426cedbc8c80035393cc3d0df84ae9c01f870",
+  "text": "\n\nREFUTES",
+  "timestamp": "2026-09-15T09:39:52.646863+00:00",
+  "tokens_in": 154,
+  "tokens_out": 115,
+  "usage": {
+    "completion_tokens": 115,
+    "neurons": 22.57,
+    "prompt_tokens": 154,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 269
+  }
+}

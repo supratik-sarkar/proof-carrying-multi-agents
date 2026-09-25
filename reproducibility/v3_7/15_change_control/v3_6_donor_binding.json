@@ -1,0 +1,12 @@
+{
+  "schema": "pcg_mas_v3_7_donor_binding_v1",
+  "donor_release": "v3.6",
+  "donor_record_manifest_sha256": "20391ff9b76ebfd13ce1fa1c8db0fcbfdc5feb74172fe2350080bb0035eaa753",
+  "donor_record_seal_sha256": "9931bc0713a61282e5261f73ba4f30d25be16874c0d7c5b408809de40a607787",
+  "donor_checksum_list_sha256": "55efcd3443d9e5d7cdba40d71c850028e6f8c4e06328589fbfbe9a00597b07a8",
+  "donor_seal_status": "SEALED_IMMUTABLE_RECORD",
+  "admitted_artifacts": 3139,
+  "artifact_binding": "15_change_control/donor_artifact_binding.jsonl",
+  "scientific_result_authority": "v3_7",
+  "legacy_result_values_admitted_from_restricted_layers": 0
+}

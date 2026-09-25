@@ -1,0 +1,240 @@
+{
+  "classification": "Declared protocol scope; not measured performance",
+  "definition": "An external consumer can recompute the acceptance decision from committed evidence and a pinned checker/execution contract.",
+  "states": {
+    "FULL": "Declared full capability support",
+    "PARTIAL": "Explicitly declared partial capability support",
+    "N/A": "Outside declared capability scope"
+  },
+  "sources": [
+    "manuscript/data/figure_03_capability_contract.json"
+  ],
+  "methods": [
+    "CitationOnly",
+    "MiniCheck",
+    "AlignScore",
+    "QAFactEval",
+    "ShieldAgent",
+    "AgentRR",
+    "PCG-MAS"
+  ],
+  "channels": [
+    "Integrity",
+    "Replay",
+    "Policy",
+    "Support",
+    "Externally replayable decision contract"
+  ],
+  "entries": [
+    {
+      "method": "CitationOnly",
+      "channel": "Integrity",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "CitationOnly",
+      "channel": "Replay",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "CitationOnly",
+      "channel": "Policy",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "CitationOnly",
+      "channel": "Support",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "CitationOnly",
+      "channel": "Externally replayable decision contract",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "MiniCheck",
+      "channel": "Integrity",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "MiniCheck",
+      "channel": "Replay",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "MiniCheck",
+      "channel": "Policy",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "MiniCheck",
+      "channel": "Support",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "MiniCheck",
+      "channel": "Externally replayable decision contract",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "AlignScore",
+      "channel": "Integrity",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "AlignScore",
+      "channel": "Replay",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "AlignScore",
+      "channel": "Policy",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "AlignScore",
+      "channel": "Support",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "AlignScore",
+      "channel": "Externally replayable decision contract",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "QAFactEval",
+      "channel": "Integrity",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "QAFactEval",
+      "channel": "Replay",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "QAFactEval",
+      "channel": "Policy",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "QAFactEval",
+      "channel": "Support",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "QAFactEval",
+      "channel": "Externally replayable decision contract",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "ShieldAgent",
+      "channel": "Integrity",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "ShieldAgent",
+      "channel": "Replay",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "ShieldAgent",
+      "channel": "Policy",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "ShieldAgent",
+      "channel": "Support",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "ShieldAgent",
+      "channel": "Externally replayable decision contract",
+      "state": "PARTIAL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "AgentRR",
+      "channel": "Integrity",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "AgentRR",
+      "channel": "Replay",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "AgentRR",
+      "channel": "Policy",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "AgentRR",
+      "channel": "Support",
+      "state": "N/A",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "AgentRR",
+      "channel": "Externally replayable decision contract",
+      "state": "PARTIAL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "PCG-MAS",
+      "channel": "Integrity",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "PCG-MAS",
+      "channel": "Replay",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "PCG-MAS",
+      "channel": "Policy",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "PCG-MAS",
+      "channel": "Support",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    },
+    {
+      "method": "PCG-MAS",
+      "channel": "Externally replayable decision contract",
+      "state": "FULL",
+      "basis": "Explicit protocol-scope declaration; not an empirical score or fractional threshold conversion."
+    }
+  ]
+}

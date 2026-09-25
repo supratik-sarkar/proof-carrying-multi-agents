@@ -1,0 +1,34 @@
+{
+  "schema": "AGENTDOJO_CALL_ACCOUNTING_AUTHORITY_V2",
+  "timestamp": "2026-09-17T17:46:29.746737+00:00",
+  "authority_status": "SEALED",
+  "metrics": {
+    "logical_model_calls": {
+      "definition": "Total number of distinct model reasoning and action invocations made by AgentDojo throughout the lifetime of the case runner process, deduplicated against transport retries.",
+      "budget_impact": "Increments by exactly 1 per unique logical prompt/tool state sent to the LLM."
+    },
+    "phase_logical_calls": {
+      "definition": "Number of distinct model reasoning invocations made within the current active native query phase.",
+      "ceiling": 48,
+      "ceiling_scope": "PER_NATIVE_QUERY_PHASE",
+      "fuse_trigger": "phase_logical_calls > 48"
+    },
+    "upstream_physical_attempts": {
+      "definition": "Total number of actual physical HTTP requests dispatched by provider_client to upstream provider APIs (including all transient 5xx/503/timeout retries).",
+      "telemetry_only": true,
+      "budget_impact": "Does NOT consume logical safety ceiling budget."
+    },
+    "transport_retries": {
+      "definition": "Count of retry attempts handled inside provider_client due to transient errors (500, 502, 503, 504, URLError, timeout).",
+      "formula": "upstream_physical_attempts - unique_provider_invocations",
+      "budget_impact": "Does NOT consume logical safety ceiling budget."
+    }
+  },
+  "accounting_rules": [
+    "Rule 1: A single logical request whose upstream call requires multiple bounded HTTP attempts (e.g. 503 -> 200) consumes exactly 1 logical call, not N calls.",
+    "Rule 2: An incoming HTTP request with identical payload hash as the active logical request is treated as a client transport retry and consumes 0 logical call budget.",
+    "Rule 3: Safety ceiling of 48 applies strictly to phase_logical_calls within each native query phase.",
+    "Rule 4: When a native query phase boundary is detected (message count drops to <= 2 or resets), phase_logical_calls resets to 1 for the new phase.",
+    "Rule 5: Physical provider attempt counts are preserved independently in output artifacts and logs as telemetry."
+  ]
+}

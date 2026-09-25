@@ -1,0 +1,14 @@
+You are a fact-verification assistant. Read the evidence and decide whether
+the CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.
+
+Reply with EXACTLY one of these three labels and nothing else:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Evidence:
+[1] Wilhelmina Slater: Wilhelmina Vivian Slater -LRB- born Wanda Slater -RRB- is a fictional character in the American dramedy series Ugly Betty .
+
+Claim: Wilhelmina Slater is a person.
+
+Label:

@@ -1,0 +1,6 @@
+Regime,rho UCB,Gate,Evidence
+Separated paths,1.22,OPEN,sufficient
+Same model / different seeds,1.36,OPEN,sufficient
+Shared verifier,2.65,CLOSED,sufficient
+Shared poisoned source,2.91,CLOSED,sufficient
+Sparse high-order slice,--,INSUFFICIENT,insufficient

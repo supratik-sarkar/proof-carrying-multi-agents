@@ -1,0 +1,1 @@
+NOT_APPLICABLE: Factual evidence contexts are structured JSON key-value records (evidence_view_text) extracted from upstream benchmark datasets; no LLM retrieval extraction prompt template was executed.

@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "38178a20b470cfd18299fb1593dd4ba706f1a83321dac051d01086efd8b7a96f",
+  "candidate_text": "No.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "4ca9fc3b1d3d6449e593dc741922e3f3f6418ffb1acf4457d3ccaa50e14e875d",
+  "example_id": "88adf4ed089511ebbd75ac1f6bf848b6",
+  "finish": "stop",
+  "input_sha256": "93e5fe326ff059f6d8755bedcac9c4ffe5bce0a07887c133e7179949ccfacdf1",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "88adf4ed089511ebbd75ac1f6bf848b6",
+  "prompt_sha256": "813dfedd010aad2b743abd9e9fe2fe0535d6d6149705fdd35adc9d70a214adcd",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Passer l'hiver\": [\"Passer l'hiver is a 2013 French drama film directed by Aur\\u00e9lia Barbet and starring Gabrielle Lazure and Lolita Chammah.\",\"The film is loosely based on a short story by Olivier Adam.\"]\n\n[2] \"At the Movies\": [\"At the Movies may refer to:\"]\n\n[3] \"A Night at the Movies\": [\"A Night at the Movies can be:\"]\n\n[4] \"On My Skin\": [\"On My Skin( also known as\\\" Upon My Skin\\\") is a 2003 Italian crime- drama film written and directed by Valerio Jalongo.\",\"It was screened in competition at the 2003 Turin Film Festival.\"]\n\nQuestion: Did the movies Passer L'Hiver and In My Skin, originate from the same country?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "3537716846f673e2f6ab514baa614819fe426d85f50320d7d6fe8bc04717f96f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:88adf4ed089511ebbd75ac1f6bf848b6",
+  "task_key": "6e010baac81c2eafb411638126596bf41f746edccda0ccd0f5d95f1359ffea0e",
+  "text": "No.",
+  "timestamp": "2026-09-14T10:33:12.390106+00:00",
+  "tokens_in": 283,
+  "tokens_out": 96,
+  "usage": {
+    "completion_tokens": 96,
+    "neurons": 15.549945831298828,
+    "prompt_tokens": 283,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 379
+  }
+}

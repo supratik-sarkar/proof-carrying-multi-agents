@@ -1,0 +1,50 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "01c16092c6812836e408d0ee1d3cfe2eec8a9df57c2e9eb8e9d6e1dae61d9cb8",
+  "candidate_text": "I'll help you retrieve the lawsuit information for both entities. Let me search for lawsuits involving Google in Santa Clara County and Facebook in San Mateo County, both in California.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "0b860d5e9345fe75149b29392710bc68ebf23104b59a812b6b3905b34326864d",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_function_198",
+  "prompt_sha256": "0b860d5e9345fe75149b29392710bc68ebf23104b59a812b6b3905b34326864d",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "a672770926f1b99875caf960529325d7c117a0692274ef28d615a31eafa3a6f6",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you retrieve the lawsuit information for both entities. Let me search for lawsuits involving Google in Santa Clara County and Facebook in San Mateo County, both in California.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"entity\": \"Google\", \"county\": \"Santa Clara\", \"state\": \"California\"}",
+        "name": "lawsuit_search"
+      },
+      "id": "chatcmpl-tool-bf8d968e654a3ebc",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"entity\": \"Facebook\", \"county\": \"San Mateo\", \"state\": \"California\"}",
+        "name": "lawsuit_search"
+      },
+      "id": "chatcmpl-tool-964f34c1ac93f8ff",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 223,
+    "neurons": 9.607700000000001,
+    "prompt_tokens": 271,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 494
+  }
+}

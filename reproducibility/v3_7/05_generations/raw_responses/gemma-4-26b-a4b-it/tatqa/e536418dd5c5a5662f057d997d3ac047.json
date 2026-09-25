@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "8c037a8a686a9635fde5afb09c103df728da25144bc79abb0ae8127455249951",
+  "candidate_text": "Approximately 13% equity ownership.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "2215aa8366e8804b0d4a61c242c1fbed347e3f04e768b189d4640d11a7f6e168",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "e536418dd5c5a5662f057d997d3ac047",
+  "prompt_sha256": "3e1c02f7ac9842a09f80c2af8583898ade448a0094fa7700836bd587944e7938",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "f8ae9bd4c6d87d2fb8b99c0725f4f0351f49d6feafec1b9c7b1ba0cd03b808f5",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:e536418dd5c5a5662f057d997d3ac047",
+  "text": "Approximately 13% equity ownership.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 9,
+    "neurons": 3.090909004211426,
+    "prompt_tokens": 313,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 322
+  }
+}

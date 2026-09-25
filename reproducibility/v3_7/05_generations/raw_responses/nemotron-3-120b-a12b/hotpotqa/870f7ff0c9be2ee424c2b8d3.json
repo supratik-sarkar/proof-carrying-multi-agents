@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "e11f4ed42826aec1af5664f98e41419955eb44947ea2b0c189e82f28da29398b",
+  "candidate_text": "\n\nJune 6, 1959",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "0cece02f378afc8b7f105af70367e551cb1168a9072247e7eafa0eeaf6399832",
+  "example_id": "5ae491155542995ad6573da3",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "d8c7aa587dcddcdff14f188d3fb1e7dd9987a11a052ea4a94f371a438822f7fc",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5ae491155542995ad6573da3",
+  "prompt_sha256": "e8639754c5a9af8e6f55a02838d3736daa6bf1c0fe14ce676e6ed72a103d3d1f",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Dave Schultz (wrestling): David Leslie \"Dave\" Schultz (June 6, 1959 – January 26, 1996) was an American Olympic and world champion freestyle wrestler, a seven-time World and Olympic medalist.  He coached individuals and teams at the college level and also privately.  He was shot and killed by John Eleuthère du Pont, a millionaire philanthropist who sponsored the private Foxcatcher wrestling team at an amateur sports center, known as Foxcatcher Farm, he set up on his estate in Pennsylvania.\n\n[2] Foxcatcher: Foxcatcher is a 2014 American true crime sports drama film produced and directed by Bennett Miller.  Written by E. Max Frye and Dan Futterman, the film stars Steve Carell, Channing Tatum, and Mark Ruffalo.  The film's plot is loosely based on the events surrounding multimillionaire Du Pont family heir and wrestling enthusiast John du Pont's 1986 recruitment of 1984 U.S. Olympic gold medalist brothers Mark (Freestyle Wrestling - 82 kg) and Dave Schultz (Freestyle Wrestling - 74 kg) to help coach U.S. wrestlers for participation in national, world, and Olympic competition, and the subsequent murder of Dave by John du Pont in January 1996.  Although the film's action is largely set at Foxcatcher Farm, du Pont's now-broken-up 800-acre suburban Philadelphia estate, the majority of the movie was filmed in the Pittsburgh metropolitan area.\n\n[3] Esther Lofgren: Esther Ruth Lofgren (born February 28, 1985, in Long Beach, California) is an American rower and an Olympic gold medalist.  She won gold medal in the women’s eight at the 2012 Summer Games in London.  Lofgren is a graduate of Harvard College, where she rowed for Radcliffe Crew and was a two-time All-American.  She is an eight-time member of the U.S. National Rowing Team, a current World Record holder in the women’s eight, and a seven-time World Championship medalist.\n\n[4] Valentin Yordanov: Valentin Yordanov Dimitrov (Bulgarian: Валентин Йорданов Димитров ; born January 26, 1960), also transliterated Jordanov, is a retired Bulgarian freestyle wrestler who competed in the up to 52 kg weight class.  He is an Olympic gold medalist, seven-time world champion, seven-time European champion, and the only wrestler to hold 10 medals (seven gold, two silver and one bronze) from world championships.\n\nQuestion: When was the seven-time World and Olympic medalist on which \"Foxcatcher\" was based born?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "4b6cd5c075b4640023c9435c38cc1ee50486171966232b566950acd1861290ac",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ae491155542995ad6573da3",
+  "task_key": "6de4671c4ba5fefe452a4f4a15602178aee9df81c8b4992958d64ee882cdebf0",
+  "text": "\n\nJune 6, 1959",
+  "timestamp": "2026-09-15T09:35:52.347523+00:00",
+  "tokens_in": 661,
+  "tokens_out": 199,
+  "usage": {
+    "completion_tokens": 199,
+    "neurons": 56.809,
+    "prompt_tokens": 661,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 860
+  }
+}

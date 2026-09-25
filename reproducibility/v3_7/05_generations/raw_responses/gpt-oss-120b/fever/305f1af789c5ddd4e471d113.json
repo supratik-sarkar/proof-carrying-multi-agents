@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "23d6966d533a4efb8582225352597fdb48604a4b8787480d1303b71ae601508b",
+  "example_id": "93fd0f3775b7c6c069c3a2919906e5de",
+  "finish": "stop",
+  "input_sha256": "c4e247e09f38861a3fd89a885bb3672b2bb9e9640dd776ca2ba2740dfc56b2c8",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "93fd0f3775b7c6c069c3a2919906e5de",
+  "prompt_sha256": "b7c2a11d28d6ed1960d6833b72f5cfb5224ffb6f732d22b0eba6c49a0d86df45",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Edgar Wright: Wright and Cornish co-wrote the screenplay for the Marvel Studios film Ant-Man , which Wright was intended to direct before departing the project .\n\nClaim: Edgar Wright is a person.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "a3f3c48b8dfc9c790809ef4f753628cda7b199df42d204152b8ab2d3e772a619",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:93fd0f3775b7c6c069c3a2919906e5de",
+  "task_key": "f00367403608d0346e833b601caf431c19c664634444cea66196d25f62365e36",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:26.404868+00:00",
+  "tokens_in": 177,
+  "tokens_out": 71,
+  "usage": {
+    "completion_tokens": 71,
+    "neurons": 10.47269344329834,
+    "prompt_tokens": 177,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 248
+  }
+}

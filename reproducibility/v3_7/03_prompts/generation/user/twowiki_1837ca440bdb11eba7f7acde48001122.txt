@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Gently My Songs Entreat": ["Gently My Songs Entreat (German:) is a 1933 Austrian-German musical film directed by Willi Forst and starring Marta Eggerth, Luise Ullrich and Hans Jaray.","Art direction was by Julius von Borsody.","The film is a biopic of the composer Franz Schubert (1797\u20131828).","It was Forst's directorial debut.","A British version was made called \"Unfinished Symphony\".","The German title refers to the first line of the Lied \"St\u00e4ndchen\" (Serenade) from Schubert's collection \"Schwanengesangthe most famous serenade in the world\", which Eggerth performs in the film."]
+
+[2] "Hans Jaray": ["Hans Jaray( 1906\u20131990) was an Austrian actor and playwright.","He also wrote and directed several television films.","Jaray starred as a leading man in a number of 1930s films, such as the Schubert biopic\" Gently My Songs Entreat\"( 1933).","Jaray emigrated to the United States following the Anchluss of 1938, but returned to Vienna after the Second World War.","The 1934 Czech film\" Man in Demand on All Sides\" was based on one of his plays."]
+
+[3] "Unfinished Symphony (film)": ["Unfinished Symphony is a 1934 British- Austrian musical drama film directed by Anthony Asquith and starring M\u00e1rtha Eggerth, Helen Chandler, Hans Jaray, and Ronald Squire.","The film is based on the story of Franz Schubert who, in the 1820s left his symphony unfinished after losing the love of his life.","The film's alternate German- language version was called\" Gently My Songs Entreat\".","This title refers to the first line of the Lied\" St\u00e4ndchen\"( Serenade) from Schubert's collection\" Schwanengesangthe most famous serenade in the world\", performed by M\u00e1rtha Eggerth in the film."]
+
+[4] "Willi Forst": ["Willi Forst, born Wilhelm Anton Frohs (7 April 1903 \u2013 11 August 1980) was an Austrian actor, screenwriter, film director, film producer and singer.","As a debonair actor he was a darling of the German-speaking film audiences, as a director, one of the most significant makers of the Viennese period musical melodramas and comedies of the 1930s known as \"Wiener Filme\".","From the mid-1930s he also recorded many records, largely of sentimental Viennese songs, for the Odeon Records label owned by Carl Lindstr\u00f6m AG."]
+
+Question: Where was the director of film Gently My Songs Entreat born?
+
+Answer:

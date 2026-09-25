@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "8a295a8402718945b96d16e38822f9203ab74d77c557d583130a9f30d80a8933",
+  "candidate_text": "approximately 13%",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "2215aa8366e8804b0d4a61c242c1fbed347e3f04e768b189d4640d11a7f6e168",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "e536418dd5c5a5662f057d997d3ac047",
+  "prompt_sha256": "3e1c02f7ac9842a09f80c2af8583898ade448a0094fa7700836bd587944e7938",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "08e221e174791d876550ffbbc5f2c6773ad91a8c6e8636b50195783fdb1329ec",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:e536418dd5c5a5662f057d997d3ac047",
+  "text": "approximately 13%",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 1.6945,
+    "prompt_tokens": 275,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 280
+  }
+}

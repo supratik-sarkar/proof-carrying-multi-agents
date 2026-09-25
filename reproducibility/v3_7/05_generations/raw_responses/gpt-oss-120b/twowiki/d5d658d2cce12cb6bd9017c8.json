@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "c49fe2c472ef33d2ab5924e944d8e8eae46567b7d615913dd8d53c2301bb98be",
+  "example_id": "e4ccf7f1096411ebbdafac1f6bf848b6",
+  "finish": "stop",
+  "input_sha256": "59999ff4c205bc36ebb2f31620816c8d05bb5748c8193a8e06e1c90273479842",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "e4ccf7f1096411ebbdafac1f6bf848b6",
+  "prompt_sha256": "1cc449754a8565e5f43717d46176fdb96dc6ea04e09257a362fadde93809001a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"There Are But Four Small Faces\": [\"There Are But Four Small Faces is a studio album by British rock group Small Faces, released on 1 December 1967 through Columbia Records.\",\"It was the band's first album release in the United States, and acts as an alternative version for overseas release of the Immediate album\\\" Small Faces\\\", which came out earlier the same year.\",\"\\\" There Are\\\" was issued around the same time as the group's single\\\" Tin Soldier\\\".\"]\n\n[2] \"The Champion of Pontresina\": [\"The Champion of Pontresina is a 1934 German- Swiss comedy film directed by Herbert Selpin and starring Sepp Rist, Rudolf Klicks and Eric Helgar.\"]\n\n[3] \"Tom Cole (rower)\": [\"Tom Cole( born 1827) was the Professional Single Sculls World Champion from 1852 to 1854.\",\"He resided in Chelsea.\",\"At the time, he became the Champion of the Thames which was effectively the Champion of England.\",\"After the English title gained the world status in 1876, earlier winners were retrospectively given the World Champion Title.\"]\n\n[4] \"The Champion of Champions\": [\"The Champion Of Champions is a 1972 Hong Kong film.\"]\n\nQuestion: Which film came out earlier, The Champion Of Pontresina or The Bulleteers?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "49527293cbe2b4d868c7fcdce363d648423e6333753ea6e65a7f6fb425fbbced",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:e4ccf7f1096411ebbdafac1f6bf848b6",
+  "task_key": "94f3823b3d697d32dee13b912ff953d2e33b89129c6010afc8f392fc9b341a19",
+  "text": "I don't know.",
+  "timestamp": "2026-09-14T10:32:59.154378+00:00",
+  "tokens_in": 388,
+  "tokens_out": 94,
+  "usage": {
+    "completion_tokens": 94,
+    "neurons": 18.754472732543945,
+    "prompt_tokens": 388,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 482
+  }
+}

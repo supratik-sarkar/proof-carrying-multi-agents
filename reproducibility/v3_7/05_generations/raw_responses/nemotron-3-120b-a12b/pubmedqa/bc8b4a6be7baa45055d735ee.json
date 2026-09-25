@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "ded77da6041eb11113253462d59c0855f9793ec8da6b410ac885769a852a2ad6",
+  "candidate_text": "\n\nPartly mediated, not fully confounded.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "95ce73d21b19693e932b55035a80f491dc8636244c7d1ee99c99dd2e96a48c53",
+  "example_id": "16510651",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "10ba13c7cf1adb48d9e68cf20c2a8b84193ffa0631ff481a71749527a54fa859",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "16510651",
+  "prompt_sha256": "06497b430268ae830c788d83d065214a61ef7d9076d1fa0f41b32e2bfc879d09",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: OBJECTIVE: In this study we investigated whether the association between measures of fetal growth restriction and intellectual performance was mediated by socioeconomic or familial factors. METHODS: This was a population-based cohort study of 357,768 Swedish males born as singletons without congenital malformations between 1973 and 1981. The main outcome measure was intellectual performance at military conscription. RESULTS: Compared with men born with appropriate birth weight for gestational age, men born light for gestational age suffered an increased risk of low intellectual performance after adjustment for maternal and socioeconomic factors. The increase in risk of low intellectual performance related to a decrease in birth weight for gestational age was similar between families and within families. Men born short or with a small head circumference for gestational age were also at increased risk of low intellectual performance, both when adjusting for maternal and socioeconomic factors and within families.\n\nLong answer: We found that all of the studied dimensions of restricted fetal growth are independently associated with increased risks of low intellectual performance and that these associations are only partly mediated by socioeconomic or familial factors.\n\nQuestion: Birth characteristics and risk of low intellectual performance in early adulthood: are the associations confounded by socioeconomic factors in adolescence or familial effects?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "19d352ddd0b409626a3489b0bc59dbc7cce978d5b6d13b2ea1ead81d18a5bee5",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:16510651",
+  "task_key": "676ed680f066da2c56f7a75c443798a1ccdf1f024de8e091033d1ab286a3fc44",
+  "text": "\n\nPartly mediated, not fully confounded.",
+  "timestamp": "2026-09-15T09:40:41.486278+00:00",
+  "tokens_in": 315,
+  "tokens_out": 228,
+  "usage": {
+    "completion_tokens": 228,
+    "neurons": 45.183,
+    "prompt_tokens": 315,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 543
+  }
+}

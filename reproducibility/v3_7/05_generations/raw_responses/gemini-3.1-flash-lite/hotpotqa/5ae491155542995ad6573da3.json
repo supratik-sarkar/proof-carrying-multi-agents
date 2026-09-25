@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "d302be0e51281dad85da4a0b8e96fd707e0f44393379fe1575b276f7eeccfa80",
+  "candidate_text": "June 6, 1959",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "0cece02f378afc8b7f105af70367e551cb1168a9072247e7eafa0eeaf6399832",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5ae491155542995ad6573da3",
+  "prompt_sha256": "e8639754c5a9af8e6f55a02838d3736daa6bf1c0fe14ce676e6ed72a103d3d1f",
+  "provider": "gemini",
+  "provider_raw_sha256": "0329fd583f5426e124e4c71399aa521cd4620220dca68f1713d8b43498c41d6f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ae491155542995ad6573da3",
+  "text": "June 6, 1959",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 9,
+    "prompt_tokens": 650,
+    "total_tokens": 659
+  }
+}

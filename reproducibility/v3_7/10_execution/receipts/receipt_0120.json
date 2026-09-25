@@ -1,0 +1,19 @@
+{
+  "schema": "PCG_MAS_V3_6_POST_TERMINATION_TEST_ARTIFACT_CLEANUP",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:08:21.569937+00:00",
+  "audited_paths": [
+    "artifacts/v3_6/fit_generations",
+    "artifacts/v3_6/dataset_amendment_runtime_v2/generations",
+    "artifacts/v3_6/dataset_amendment_runtime_v2/receipts"
+  ],
+  "dummy_fit_generation_files_found": 0,
+  "test_m_test_ds_artifacts_found": 0,
+  "temporary_fit_generations_symlinks_found": 0,
+  "stale_launch_locks_found": 0,
+  "test_pid_files_found": 0,
+  "dummy_pass_markers_found": 0,
+  "removed_files": [],
+  "historical_forensic_receipts_preserved": true,
+  "cleanup_status": "CLEAN_NO_TEST_ARTIFACTS_REQUIRING_REMOVAL"
+}

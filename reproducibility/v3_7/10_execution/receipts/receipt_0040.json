@@ -1,0 +1,29 @@
+{
+  "<PUBLIC_TERM:b3cc0475bb78a502>_A100_CONFORMANCE": "PASS",
+  "build_id": "v3.6-a100-build-0919-cuda-preflight-v14",
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA A100-SXM4-40GB",
+  "gpu_tier": "A100",
+  "schema": "PCG_MAS_V3_6_COLAB_GPU_<PUBLIC_TERM:b3cc0475bb78a502>_CONFORMANCE_RECEIPT",
+  "timestamp": "2026-09-19T10:49:12.456657+00:00",
+  "verifiers": {
+    "alignscore_large": {
+      "direction": "PASS",
+      "oracle_rejection": "PASS",
+      "supported": 0.9978869557380676,
+      "unsupported": 0.000227713244385086
+    },
+    "minicheck_ft5": {
+      "direction": "PASS",
+      "oracle_rejection": "PASS",
+      "supported": 0.9661824107170105,
+      "unsupported": 0.008721156977117062
+    },
+    "qafacteval": {
+      "direction": "PASS",
+      "oracle_rejection": "PASS",
+      "supported": 5.110936641693115,
+      "unsupported": 0.5001459717750549
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "e3ebf18e05d71413149d60b0d81f63a4317069f3b566338a90b8f2e2df99b5ef",
+  "candidate_text": "Mouloud Feraoun.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "58fa785f4afc5b2bacaa106e9526ffb4a5417f324ce1ffd396f84701336d1d91",
+  "example_id": "87e34cd908ac11ebbd83ac1f6bf848b6",
+  "finish": "stop",
+  "input_sha256": "b07445e243bffd63e1f344c3254c510818b349cb72d699d05eaae5b6fa1edd78",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "87e34cd908ac11ebbd83ac1f6bf848b6",
+  "prompt_sha256": "89913bc3380d6b6499d468e6d237cf686d2df20f52384d4905ce870608435ca9",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Mouloud Feraoun\": [\"Mouloud Feraoun( 8 March 1913 \\u2013 15 March 1962) was an Algerian writer and martyr of the Algerian revolution born in Tizi Hibel, Kabylie.\",\"Some of his books, written in French, have been translated into several languages including English and German.\",\"He was assassinated by the French OAS on 15 March 1962.\"]\n\n[2] \"Anna Margarete Stegmann\": [\"Anna Margarete Stegmann( July 12, 1871 \\u2013 July 1, 1936) was a Swiss- German neurologist, psychoanalyst and politician.\",\"She was a Social Democratic Party member of the Reichstag of the Weimar Republic.\",\"The daughter of a farmer, she was born Anna Margarete Meyer in Z\\u00fcrich, Switzerland.\",\"Both her parents had died by the time that she was sixteen.\",\"She worked for the Swiss postal service, completed her secondary education and went on to study medicine.\",\"Stegmann earned her doctorate in 1910 in Zurich.\",\"She joined the Social Democratic Party in 1918.\",\"After completing her internship, she received her license to practise medicine in 1920 and set up practice in Dresden.\",\"During the 1920s, she was a member of the International Psychoanalytical Association, the Schopenhauer Society and the Women's International League for Peace and Freedom.\",\"When the Nazi Party gained power in Germany, she left for Switzerland.\",\"From 1920 to 1924, she was an unpaid member of the city council of Dresden.\",\"She served as a member of the Reichstag from May 1924 to September 1930.\",\"In 1924, she argued for the right of women to abortion; in the spirit of those times, eugenic reasons were used to justify abortion in certain cases.\",\"She married Arnold Stegmann in 1911 but he died in 1914.\",\"She died in Arlesheim at the age of 64.\"]\n\n[3] \"Gerrit Maritz\": [\"Gerhardus Marthinus( Gert or Gerrit) Maritz( 1 March 1797 \\u2013 23 September 1838), b 1c8d2, was a Voortrekker pioneer and leader, wagon builder.\",\"Gerrit Maritz was the son of Salamo Stefanus Maritz and Maria Elizabeth Oosthuizen.\",\"He married Agnita Maria Olivier and later Anna Carolina Agatha van Rooyen and from them he fathered six children.\"]\n\n[4] \"Princess Iniga of Thurn and Taxis\": [\"Princess Iniga Anna Margarete Wilhelmine Luise of Thurn and Taxis( German Iniga Anna Margarete Wilhelmine Luise, Prinzessin von Thurn und Taxis, 25 August 1925, Schloss Niederaichbach, Niederaichbach, Bavaria, Germany \\u2013 17 September 2008, Aufhausen, Germany) was a princess of the House of Thurn and Taxis by birth and a Princess of Urach through her marriage to Prince Eberhard von Urach, member of a morganatic branch of the former royal House of W\\u00fcrttemberg.\"]\n\nQuestion: Who was born later, Anna Margarete Stegmann or Mouloud Feraoun?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "96f5c954cf38c66f2ec9983459797677142bddc3e62e5465f80cd611a3f6d31e",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:87e34cd908ac11ebbd83ac1f6bf848b6",
+  "task_key": "08790c8ae5c199fd5e623bdd1fcafd265f545f15935117d7ca7af1d610fd2c01",
+  "text": "Mouloud Feraoun.",
+  "timestamp": "2026-09-14T10:33:10.715692+00:00",
+  "tokens_in": 819,
+  "tokens_out": 93,
+  "usage": {
+    "completion_tokens": 93,
+    "neurons": 32.39984893798828,
+    "prompt_tokens": 819,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 912
+  }
+}

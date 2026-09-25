@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Catuvellauni: The Catuvellauni were a Celtic tribe or state of southeastern Britain before the Roman conquest, attested by inscriptions into the 4th century.
+
+[2] Durotriges: The Durotriges were one of the Celtic tribes living in Britain prior to the Roman invasion.  The tribe lived in modern Dorset, south Wiltshire, south Somerset and Devon east of the River Axe and the discovery of an Iron Age hoard in 2009 at Shalfleet, Isle of Wight gives evidence that they lived in the western half of the island.  After the Roman conquest, their main "civitates", or settlement-centred administrative units, were Durnovaria (modern Dorchester, "the probable original capital") and Lindinis (modern Ilchester, "whose former, unknown status was thereby enhanced").  Their territory was bordered to the west by the Dumnonii; and to the east by the Belgae.
+
+[3] Corieltauvi: The Corieltauvi (formerly thought to be called the Coritani, and sometimes referred to as the Corieltavi) were a tribe of people living in Britain prior to the Roman conquest, and thereafter a "civitas" of Roman Britain.  Their territory was in what is now the English East Midlands.  They were bordered by the Brigantes to the north, the Cornovii to the west, the Dobunni and Catuvellauni to the south, and the Iceni to the east.  Their capital was called "Ratae Corieltauvorum", known today as Leicester.
+
+[4] Roman conquest of Britain: The Roman conquest of Britain was a gradual process, beginning effectively in AD 43 under Emperor Claudius, whose general Aulus Plautius served as first governor of Roman Britain (Latin: "Britannia" ).  Great Britain had already frequently been the target of invasions, planned and actual, by forces of the Roman Republic and Roman Empire.  In common with other regions on the edge of the empire, Britain had enjoyed diplomatic and trading links with the Romans in the century since Julius Caesar's expeditions in 55 and 54 BC, and Roman economic and cultural influence was a significant part of the British late pre-Roman Iron Age, especially in the south.
+
+Question: This Celtic ruler who was born in AD 43 ruled southeastern Britain prior to conquest by which empire?
+
+Answer:

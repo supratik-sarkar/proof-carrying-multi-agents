@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "e889079e4bc4ad05598596ba6df574a7048b24783a44c3deebf47fd9c998935f",
+  "candidate_text": "Yes, it causes otorrhea.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "e199a53e3c29a9eeb9aa6e348881145e2b1459ef83aa3c183e96af561f3e0211",
+  "example_id": "17483607",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "1a40e53d2f45491bafeabeabd120e045e104bf55515e8400995dc8510e14db77",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "17483607",
+  "prompt_sha256": "659300d99fcb303e9dc4323df36b9bb73b65bcfe6f5bf1cbef0d6472cefaddc3",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: OBJECTIVES: The effect of topical N-acetylcysteine (NAC) application was investigated on the healing of acute experimental tympanic membrane perforations. MATERIALS AND METHODS: Twenty guinea pigs were used in this study. Under intraperitoneal ketamine anesthesia, incisional myringotomies were performed in the posterosuperior quadrant of the tympanic membranes with a straight otologic hook. The diameter of the perforations was approximately 2 mm. Perforations in both ears were treated with freshly prepared sponges soaked in either 0.1 ml 0.9% NaCl solution (10 control animals) or 0.6 mg/0.1 ml NAC (10 animals) for three consecutive days. All the tympanic membranes were examined by otomicroscopy on the third, fifth, seventh, and ninth days. RESULTS: In the control group, all the perforations were completely closed at the end of nine days. During the same period, only 40% of the perforations were completely closed in the NAC group. The remaining ears exhibited otorrhea by the third day.\n\nLong answer: N-acetylcysteine may cause severe otorrhea in the healing process of tympanic membrane perforations. Further studies including histopathological examinations are required to elucidate this condition.\n\nQuestion: Does topical N-acetylcysteine application after myringotomy cause severe otorrhea?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "2f5b0ea75bef530930029435562d8d19a5b29edadd8e2028428263b22b7fb418",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:17483607",
+  "task_key": "350a34ecd248e887f47100aa8ce9a381c3725acfb72102eea7cee910efbfeeea",
+  "text": "Yes, it causes otorrhea.",
+  "timestamp": "2026-09-15T09:34:55.283623+00:00",
+  "tokens_in": 348,
+  "tokens_out": 9,
+  "usage": {
+    "completion_tokens": 9,
+    "neurons": 9.237273216247559,
+    "prompt_tokens": 348,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 357
+  }
+}

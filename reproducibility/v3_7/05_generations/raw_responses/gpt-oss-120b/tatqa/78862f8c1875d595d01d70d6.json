@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "997e7e1af475c6f2874d4bf0c9c60a7c3f552aac52b95b6925374827f4071456",
+  "candidate_text": "$198.5 million",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "72428ee6eb663e922db2bd49e8af758bdd744ea1c0ab7694c3917b59a646ca49",
+  "example_id": "65d75e652f5df32b1118930f7fdbb1ba",
+  "finish": "stop",
+  "input_sha256": "9f3d629b2de1c8b1668afbef25df928547685bed1ef63ab7baa1140dc8981d67",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "65d75e652f5df32b1118930f7fdbb1ba",
+  "prompt_sha256": "5811826f62a34dfb151f705e7839303c3216561eac2551ec5790e28fab642cc7",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA table: row 0: ($ in millions) |  | \nrow 1: At December 31: | 2019 | 2018\nrow 2: Recorded investment (1) | $22,446 | $31,182\nrow 3: Specific allowance for credit losses | 177 | 220\nrow 4: Unallocated allowance for credit losses | 45 | 72\nrow 5: Total allowance for credit losses | 221 | 292\nrow 6: Net financing receivables | $22,224 | $30,890\n\n[2] TAT-QA 2: The following table presents external Global Financing receivables excluding residual values, the allowance for credit losses and immaterial miscellaneous receivables:\n\n[3] TAT-QA 4: The percentage of Global Financing receivables reserved was 1.0 percent at December 31, 2019, compared to 0.9 percent at December 31, 2018. The decline in the allowance for credit losses was driven by write-offs of $64 million, primarily of receivables previously reserved, and net releases of $7 million as a result of lower average asset balances in client and commercial financing. See note K, “Financing Receivables,” for additional information.\n\n[4] TAT-QA 1: Global Financing Receivables and Allowances\n\nQuestion: What is the average Specific allowance for credit losses?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "336921d0865877eff6d9f0adf513c6bf878d4b08552bf87a0564c28bb5053b6f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:65d75e652f5df32b1118930f7fdbb1ba",
+  "task_key": "f397de049bb68f377c9c309b27b6fd8734c209e897564be70c64f64d164ec609",
+  "text": "$198.5 million",
+  "timestamp": "2026-09-14T10:33:40.853432+00:00",
+  "tokens_in": 419,
+  "tokens_out": 109,
+  "usage": {
+    "completion_tokens": 109,
+    "neurons": 20.76355743408203,
+    "prompt_tokens": 419,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 528
+  }
+}

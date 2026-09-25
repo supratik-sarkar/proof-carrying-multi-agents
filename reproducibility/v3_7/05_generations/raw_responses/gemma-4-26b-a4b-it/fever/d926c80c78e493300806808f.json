@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "583f4781c218a04d9797396128328fa4de816aa7410de102cb24f4393240b23f",
+  "example_id": "107bebbdd19dc7310cf0f6d89c316cb1",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "88a003ed13f85ab3be01332516d139b3d44f00af08fb4d78dc2b79460b817dd4",
+  "max_output_tokens": 256,
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "107bebbdd19dc7310cf0f6d89c316cb1",
+  "prompt_sha256": "f4a3bf6e247a9602e97f70467b57277040eace80b15211738dfef97771b08bbf",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Topman: Topman stores almost always share their premises with Topshop .\n\nClaim: Topman has stores throughout the US.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "f1ce2fa7abc664ecb92f59a7777c4dd75d2956c9352e52ee2c87e454f2b20d26",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:107bebbdd19dc7310cf0f6d89c316cb1",
+  "task_key": "ad2cfb6199d31428aaee58ae7d9c2fc10a377a90fedf7158b700972cf79e03c2",
+  "text": "NOT ENOUGH INFO",
+  "timestamp": "2026-09-15T10:23:42.786956+00:00",
+  "tokens_in": 117,
+  "tokens_out": 202,
+  "usage": {
+    "completion_tokens": 202,
+    "neurons": 6.572727203369141,
+    "prompt_tokens": 117,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 319
+  }
+}

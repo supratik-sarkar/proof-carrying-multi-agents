@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "50eab20d532813f1032dc98d75780da077915e0d1ea23287152cbdbb04e3123d",
+  "candidate_text": "Charmed",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "a119fa27c569296da4649f4c659992992655a17189906c630bc4d1c78b523dbc",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5a80840f554299485f59863b",
+  "prompt_sha256": "030e9c4975f3f5b0dccaa93f84b6a9340b4f1028ead9aeef6beca8ce3d1aca9f",
+  "provider": "gemini",
+  "provider_raw_sha256": "287f7547bea37a7f11ee60e85aaa678cf7bac7fba9fe3e393cf060524e397753",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a80840f554299485f59863b",
+  "text": "Charmed",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 576,
+    "total_tokens": 578
+  }
+}

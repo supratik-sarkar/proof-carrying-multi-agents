@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "85da16ecad37caa8e7f71ed305630e1ad442806ce62005b2f1d20f090b6ada8c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:multiple_function_50",
+  "prompt_sha256": "85da16ecad37caa8e7f71ed305630e1ad442806ce62005b2f1d20f090b6ada8c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "eef58a9f5e82cd62589c4c7838662310f3b6553ed8c044faaaa2c4be2423339a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York\", \"months\": 1}",
+        "name": "house_price_forecast"
+      },
+      "id": "call_e36bd43fc90a4bfc93e10baf",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 117,
+    "neurons": 6.454545497894287,
+    "prompt_tokens": 359,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 476
+  }
+}

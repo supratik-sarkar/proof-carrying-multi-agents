@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "9573ce625cf252515fefa26059f75c30cfcccf2aafbadf8b189572e118da83dc",
+  "example_id": "e3d6a422e086a8fea845ea355a9400a1",
+  "finish": "stop",
+  "input_sha256": "c9f510cb2d56e7dcd172f9397429575b0a064973045ee2a6951913a79acb1538",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "e3d6a422e086a8fea845ea355a9400a1",
+  "prompt_sha256": "751c178215bde4d59a9b7e7a603ba4bea61409be2ea8eaeac4f9003756f96bf5",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Epistemology: Epistemology studies the nature of knowledge , justification , and the rationality of belief .\n\nClaim: Epistemology has nothing to do with the study of the rationality of belief.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "d09caa17d7757a8951de70c78fcb39471f8f9e562bd35d0008c970e431f65c53",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:e3d6a422e086a8fea845ea355a9400a1",
+  "task_key": "111af855f1a1ec046f1d0989c6a14f790d0e35bbddb47b54fa8dc364179e2318",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:36:24.342970+00:00",
+  "tokens_in": 179,
+  "tokens_out": 89,
+  "usage": {
+    "completion_tokens": 89,
+    "neurons": 11.763601303100586,
+    "prompt_tokens": 179,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 268
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "268d9f7750a9b39ddfd8ca92a7e25ca3caa97b7bdc93adf1c2af8f44eaa9b009",
+  "candidate_text": "\n\n2019: $275,792K; 2018: $282,950K",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "9688be21dcac9518b1706020fc59ce486caeb3894be23fd29f4294936a226379",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "4ecfa9b911b094e57dc4cc9f197bd1da2e847d0cf657155bf9edddcd5b6aa0b3",
+  "lane": "recovery",
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "c65b3b88c5fe3795af2283d0c44451ac",
+  "prompt_sha256": "d4213da6d09d216d90b23245d55b1b0fed4f89c08bcf09cae808944aa3c03a50",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "f77101af26716b09de9b46af6b1d82e183768ceca9ca4a49a341743b03cc75fd",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:c65b3b88c5fe3795af2283d0c44451ac",
+  "text": "\n\n2019: $275,792K; 2018: $282,950K",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 364,
+    "neurons": 74.569,
+    "prompt_tokens": 557,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 921
+  }
+}

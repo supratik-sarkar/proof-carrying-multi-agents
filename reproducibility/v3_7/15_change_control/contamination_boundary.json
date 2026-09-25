@@ -1,0 +1,11 @@
+{
+  "current_result_authority": "14_artifacts/manuscript_stack/data",
+  "donor_use": "Historical execution evidence only after identity/hash reconciliation",
+  "excluded_donor_layers": [
+    "07_verification",
+    "08_certificates",
+    "09_outcomes",
+    "13_metrics",
+    "14_artifacts"
+  ]
+}

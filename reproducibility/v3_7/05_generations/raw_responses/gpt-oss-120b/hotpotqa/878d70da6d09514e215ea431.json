@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "850810f541697235a40c16cd9052575f84de26f7025dda8a07e1ed952a23f656",
+  "candidate_text": "Mossad",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "a00a76308882db3c2a56f8005baad39f127c07e6051c4bb43b59c4026a129aee",
+  "example_id": "5ac51a055542994611c8b390",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "reasoning": {
+      "effort": "low"
+    },
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "6af110d85f09fff1ea23966a44067519747af14b6658eedc6a0bfbbd789f62f6",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5ac51a055542994611c8b390",
+  "prompt_sha256": "c175ad30be5e30c33fa92ffd7b9a9bba45bf6928114610c4ff1cc5d962ba87b1",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Commanders for Israel's Security: \"Commanders for Israel's Security\" (CIS, Hebrew: מפקדים למען ביטחון ישראל‎ ‎ ) is an Israeli movement of ex-senior security officials (IDF, Mossad, Shin Bet and Israel Police), that was founded in October 2014, and aims to promote a regional political-security initiative to resolve the Israeli–Palestinian conflict, and to normalize relations with moderate Arab states.  The movement is non-partisan but promotes a political goal.\n\n[2] Mossad: Mossad (Hebrew: הַמוֹסָד‎ , ] ; Arabic: الموساد‎ ‎ , \"al-Mōsād \", ] ; literally meaning \"the Institute\"), short for \"HaMossad leModiʿin uleTafkidim Meyuḥadim \" (Hebrew: המוסד למודיעין ולתפקידים מיוחדים‎ , meaning \"Institute for Intelligence and Special Operations\"), is the national intelligence agency of Israel.  It is one of the main entities in the Israeli Intelligence Community, along with Aman (military intelligence) and Shin Bet (internal security).\n\n[3] National Institute of Technology (Norway): The National Institute of Technology (Norwegian: \"Teknologisk Institutt AS\" (TI), formerly \"Statens teknologiske institutt\" (STI)) is a Norwegian limited company and former government agency (1917–1988) active in innovation and technological research.  It was established by the Storting (Parliament) on 6 May 1916, aimed at helping smaller industry and enterprises.  Its former name, \"Statens teknologiske institutt\", literally means the \"State Institute of Technology\", but it continues to use the name National Institute of Technology in English.  It should not be confused with the Norwegian Institute of Technology.\n\n[4] Toryumon (Último Dragón): Toryumon (闘龍門 , Tōryūmon ) is a professional wrestling promotion that operated in Japan until 2004 and in Mexico, where it's called Toryumon Mexico.  The promotion is owned and operated by Yoshihiro Asai, who is best known under the name Último Dragón.  Tōryūmon is a coined word that means \"Fighting Dragon Gate\".  The word is coined after the homonym 登龍門 (Tōryūmon ) that literally means \"climbing up dragon gate\" and means \"gateway to success\".  The promotion was originally created to give graduates of the Último Dragón Gym a promotion to gain their initial in-ring experience in, it developed a major following and grew into becoming one of the hottest independent promotions in the country.  The promotion would run for five years.  On July 4, 2004, Último Dragón left the promotion and took the name and trademarks with him.  The wrestlers and officials decided to adopt the name Dragon Gate and continue in the traditions of Toryumon.  Since then Último Dragón has promoted Toryumon mainly in Mexico but also holds occasional shows in Japan.\n\nQuestion: What is the name of one the ex-security officials that means The Institute?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "11d829ef7c088074aa9de842326e793a969afff8be247453445cd2d8e20224c1",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ac51a055542994611c8b390",
+  "task_key": "1d2e81ba9d5dbb9f9d1ff1286935417223d047afba9d35eb30b371546b5a0b2d",
+  "text": "Mossad",
+  "timestamp": "2026-09-15T09:23:03.425366+00:00",
+  "tokens_in": 776,
+  "tokens_out": 145,
+  "usage": {
+    "completion_tokens": 145,
+    "neurons": 34.57712936401367,
+    "prompt_tokens": 776,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 921
+  }
+}

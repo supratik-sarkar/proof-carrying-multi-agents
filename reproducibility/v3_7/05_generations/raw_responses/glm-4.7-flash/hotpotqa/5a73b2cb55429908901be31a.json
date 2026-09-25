@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "b00045a3ffa0e208230226c42bf9a60ab1311bc2c629b9421f368759332cd2a7",
+  "candidate_text": "Maria von Trapp",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "f26f344ceb1272a083248ca9102d57fb0160da39cd2f404ecb7e69f8c9a7ad46",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "5a73b2cb55429908901be31a",
+  "prompt_sha256": "b6615976ad33cacaacf0894594abade268a1eb972e819a0ce53854a793280106",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "300686c4529ed4bf08feafa3cca1059de236cc5e68671250267248e14034854c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a73b2cb55429908901be31a",
+  "text": "Maria von Trapp",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 3.8669999999999995,
+    "prompt_tokens": 670,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 675
+  }
+}

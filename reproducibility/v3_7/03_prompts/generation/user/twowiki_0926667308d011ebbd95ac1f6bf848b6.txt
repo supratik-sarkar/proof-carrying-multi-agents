@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Eliza Ritchie": ["Dr, Eliza Ritchie( 20 May 1856 \u2013 5 September 1933) was a prominent suffragist in Nova Scotia, Canada."]
+
+[2] "Rusty Glover": ["Benjamin Nash\" Rusty\" Glover III( born April 17, 1966) was a Republican candidate for Alabama's Lieutenant Governor in the 2018 election cycle and member of the Alabama Senate, representing the 34th District from 2006 to 2018.","Previously, he was a member of the Alabama House of Representatives representing the 102nd District from 2002 through 2006."]
+
+[3] "Benjamin Nash": ["Benjamin Nash( 5 March 1829 \u2013 19 April 1890) was a tailor and politician in colonial South Australia.","He was born in Birmingham and emigrated to Melbourne in 1857 but in July, after only a few months in the gold diggings, moved to Adelaide and set up a tailoring business in Rundle Street.","He was prominent in the Voluntary Militia, and from 1858 to 1865 served with the West Adelaide Company under Colonel George Mayo.","In 1859 he successfully tendered for the supply of the first uniforms for the Volunteer Military Force.","In 1878 he was elected to the Walkerville District Council, and became its chairman.","He was elected to the seat of West Torrens and sat from April 1887 to April 1890.","He failed in his bid to be reelected, and died of kidney failure ten days later.","He was buried in West Terrace Cemetery's Catholic section.","He had converted to that faith around two years before his death.","He made a gift of an organ to St. Laurence's, his small local church."]
+
+[4] "Henry Moore (cricketer)": ["Henry Walter Moore( 1849 \u2013 20 August 1916) was an English- born first- class cricketer who spent most of his life in New Zealand."]
+
+Question: Who was born first out of Eliza Ritchie and Benjamin Nash?
+
+Answer:

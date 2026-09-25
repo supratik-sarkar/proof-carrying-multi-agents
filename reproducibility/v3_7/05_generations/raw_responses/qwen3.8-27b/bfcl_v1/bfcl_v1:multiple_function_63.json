@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "fe0797facfd5d7fe869fd26c2d9250fa270102c829aa09dd89bb9f21b760eeca",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:multiple_function_63",
+  "prompt_sha256": "fe0797facfd5d7fe869fd26c2d9250fa270102c829aa09dd89bb9f21b760eeca",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "193422f2fafd6a2f9959794d782f9c842646fba927db21584021c6552455b154",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York\", \"days\": 7}",
+        "name": "air_quality_forecast"
+      },
+      "id": "chatcmpl-tool-aae0ef5f25d09af6",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 86,
+    "neurons": 48.29545211791992,
+    "prompt_tokens": 569,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 655
+  }
+}

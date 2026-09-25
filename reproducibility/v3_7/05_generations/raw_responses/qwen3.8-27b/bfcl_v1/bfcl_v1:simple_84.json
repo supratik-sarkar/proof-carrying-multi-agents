@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "faafa4ce754d6b35e391510c4838564e2ab25db80bdb5147457323515d507897",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:simple_84",
+  "prompt_sha256": "faafa4ce754d6b35e391510c4838564e2ab25db80bdb5147457323515d507897",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "956b9487b57166f566d754b5da9bab2e726cd708935bd24000370ec833c1152f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"weight\": 85, \"height\": 180, \"unit\": \"metric\"}",
+        "name": "calculate_bmi"
+      },
+      "id": "chatcmpl-tool-840a22c93be5e672",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 134,
+    "neurons": 55.71363067626953,
+    "prompt_tokens": 409,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 543
+  }
+}

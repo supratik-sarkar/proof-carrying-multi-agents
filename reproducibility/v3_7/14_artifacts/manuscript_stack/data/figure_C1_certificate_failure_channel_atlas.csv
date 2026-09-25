@@ -1,0 +1,8 @@
+panel,channel,metric,value,dispersion,source_file
+online_certificate_channels,V_H,risk_increase_pp,2.8,0.81,table_07_channel_ablation.csv
+online_certificate_channels,V_Gamma,risk_increase_pp,2.6,0.82,table_07_channel_ablation.csv
+online_certificate_channels,V_Pi,risk_increase_pp,4.3,0.8,table_07_channel_ablation.csv
+online_certificate_channels,V_entail,risk_increase_pp,4.9,0.84,table_07_channel_ablation.csv
+audit_sidecar,ReplayFail,rate_pct,1.3,NA,table_10_replay_drift_covgap.csv
+audit_sidecar,DriftFail,rate_pct,2.1,NA,table_10_replay_drift_covgap.csv
+audit_sidecar,CovGap,rate_pct,1.7,NA,table_10_replay_drift_covgap.csv

@@ -1,0 +1,11 @@
+Quantity,Value
+Models / datasets / cells,7 / 8 / 56
+Generations per cell,40
+Canonical observations,"2,240"
+Frozen generator bindings,7
+Cross-host V_H agreement,100.00%
+Cross-host V_Pi agreement,99.96%
+Cross-host V_Gamma agreement,100.00%
+Cross-host V_entail agreement,99.92%
+Final-check agreement,99.92%
+Final-check disagreements,2

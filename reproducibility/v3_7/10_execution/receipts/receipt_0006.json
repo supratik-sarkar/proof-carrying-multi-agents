@@ -1,0 +1,46 @@
+{
+  "schema": "AGENTDOJO_CONTROL_PLANE_REGRESSION_V2",
+  "timestamp": "2026-09-17T17:48:17.771983+00:00",
+  "overall_status": "PASS",
+  "test_cases": {
+    "test_1": {
+      "status": "PASS",
+      "details": "logical=1, physical=1 verified"
+    },
+    "test_2": {
+      "status": "PASS",
+      "details": "logical=1, physical=2, logical ceiling consumption=1 verified"
+    },
+    "test_3": {
+      "status": "PASS",
+      "details": "controlled provider-transient checkpoint with zero SDK retries"
+    },
+    "test_4": {
+      "status": "PASS",
+      "details": "controlled quota checkpoint with zero retry storm"
+    },
+    "test_5": {
+      "status": "PASS",
+      "details": "all 48 logical calls admitted"
+    },
+    "test_6": {
+      "status": "PASS",
+      "details": "call 49 blocked with exactly 0 SDK retries and sidecar sealed"
+    },
+    "test_7": {
+      "status": "PASS",
+      "details": "48 logical calls admitted despite physical attempts=49"
+    },
+    "test_8": {
+      "status": "PASS",
+      "details": "failing case fixture successfully completes under native phase semantics"
+    }
+  },
+  "invariants": {
+    "OPENAI_SDK_RETRIES_PROJECT_LOCAL_FUSE": 0,
+    "NESTED_PROVIDER_RETRY_MULTIPLICATION": false,
+    "LOGICAL_VS_PHYSICAL_ACCOUNTING": "PASS",
+    "PER_NATIVE_QUERY_PHASE_SCOPING": "PASS",
+    "DURABLE_SIDECARS_WRITTEN": true
+  }
+}

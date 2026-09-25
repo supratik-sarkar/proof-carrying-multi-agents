@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "9a856d740355fe3129eb11025b727f7e96b8a631e5c6f830937d85b5858d64a9",
+  "candidate_text": "Fleetwood Sheppard",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "0f82965d5eeac42b01ecbb27a8ad54d3277940123e3d3cf2386b7cf7dbe8b0b8",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "ada1b358085211ebbd58ac1f6bf848b6",
+  "prompt_sha256": "24b92e821a68600f62de89adede1d6d64b603e691b9c4419d779d284f94ebb75",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "f4aac022c45beea56e2b3870d3b25a12132a32b86b1094fcd18e5aa97afe67d8",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:ada1b358085211ebbd58ac1f6bf848b6",
+  "text": "Fleetwood Sheppard",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 7.219899999999999,
+    "prompt_tokens": 1273,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1279
+  }
+}

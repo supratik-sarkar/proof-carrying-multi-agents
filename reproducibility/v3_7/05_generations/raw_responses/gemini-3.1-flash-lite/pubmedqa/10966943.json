@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "7436fa106d192bbe027765c428000f9374c3de60c242d1376301bf9707c3dcaa",
+  "candidate_text": "No, it can recover.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "b8349c0b3d5c06eeb9378e0d98f6914a1a192e067ad1b77551744574fa146ee2",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "10966943",
+  "prompt_sha256": "42334749cd6edb1ab3b36536c79268cfb2b821d6e8907ea49b892b24c943c049",
+  "provider": "gemini",
+  "provider_raw_sha256": "ef254fe70bd0f1af6f1944c46aa3831dcd1514851a47d96372c18588f349c33f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:10966943",
+  "text": "No, it can recover.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 343,
+    "total_tokens": 349
+  }
+}

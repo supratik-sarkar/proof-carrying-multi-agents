@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "b2cf97c43fd2d55f6bba471f6a87b123a32e5e80246e299647775d9aa7ee7f47",
+  "candidate_text": "\n\nPresbyterian Church (USA)",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "7d7afe057ddb2f852caa8b60466747d2b4c228552f18f4d8a1a620e84dab0a69",
+  "example_id": "5a807ea1554299485f598624",
+  "finish": "stop",
+  "input_sha256": "1d9239c441a5e6000648ecd63808aaff3f020fb57c593782945589ba3ad2307a",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "5a807ea1554299485f598624",
+  "prompt_sha256": "747515b605f3cca10be539aba777824a0051c085343af7f2c8ea0a9dc5ff1622",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Marjorie Hass: Dr. Marjorie Hass is the 20th president of Rhodes College in Memphis, TN.  Her tenure at Rhodes began in July 2017.  She previously served as president of Austin College in Sherman, TX from July 2009 to June 2017.\n\n[2] Debora Spar: Debora L. Spar is the former President of Barnard College, a liberal arts college for women affiliated with Columbia University.  As President of Barnard, she was also an academic dean within Columbia University.  Spar was appointed Barnard's 7th president in July 2008 and replaced Judith Shapiro, Barnard's 6th president, after a teaching career at Harvard Business School where she was Professor of Business Administration and Senior Associate Dean for Faculty Research and Development.  In November 2016, it was announced she would become the 10th president of Lincoln Center for the Performing Arts, beginning in March 2017.\n\n[3] Rhodes College: Rhodes College is a private, predominantly undergraduate, liberal arts college located in Memphis, Tennessee.  Formerly affiliated with the Presbyterian Church (USA), Rhodes is accredited by the Southern Association of Colleges and Schools and enrolls approximately 2,000 students.\n\n[4] Barasat Government College: Barasat Government College (BGC) is a state Government-owned college in Barasat of West Bengal state of India.  The College was established in 1950 and is affiliated with the West Bengal State University and run by the Government of West Bengal.  It was formerly affiliated with the University of Calcutta.  It is a NAAC accredited with \"A\" grade & DST-FST sponsored college.\n\nQuestion: What church was the college Marjorie Hass is the 20th president of formerly affiliated with?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "ff9abf54bcff0de94fa05ec705e3ac8b0eabf9c97d0d1f54be46aa8650f8a8e3",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a807ea1554299485f598624",
+  "task_key": "421e6279cc23f4614b23c27f15859e4912d2de746b5c31f6753383579e6729d7",
+  "text": "\n\nPresbyterian Church (USA)",
+  "timestamp": "2026-09-14T10:46:59.344282+00:00",
+  "tokens_in": 498,
+  "tokens_out": 91,
+  "usage": {
+    "completion_tokens": 91,
+    "neurons": 46.84545135498047,
+    "prompt_tokens": 498,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 589
+  }
+}

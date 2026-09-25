@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "c9e0380237f85d5b342045508c8075265e4d651abfcb62ee304a309ba01657e9",
+  "example_id": "a047bfee5ba3786439f0c9b39907d169",
+  "finish": "stop",
+  "input_sha256": "143e3edcd780dd9fc09606ae675e9320f5e49a79a38690cb219c48d1038cc454",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "a047bfee5ba3786439f0c9b39907d169",
+  "prompt_sha256": "92d28534293bfeecb71fba0284836c1fccc0c9196f81251efe0e9ca6b0897db7",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Invisible Woman: The Invisible Woman was portrayed by Rebecca Staab in the 1994 film The Fantastic Four , Jessica Alba in the 2005 film Fantastic Four , and its 2007 sequel Fantastic Four : Rise of the Silver Surfer , and Kate Mara in the 2015 film Fantastic Four .\n\nClaim: Fantastic Four (2005 film) was the highest grossing film in July.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "27701c700374238b42e1a370e8f570b337145b6f95a2582a304b44d791edcd08",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:a047bfee5ba3786439f0c9b39907d169",
+  "task_key": "826fb3d93f5177dc1b0be10c3e8058d1866f8fd98f040bbfb599d6c860a63d83",
+  "text": "NOT ENOUGH INFO",
+  "timestamp": "2026-09-14T10:35:53.646924+00:00",
+  "tokens_in": 217,
+  "tokens_out": 104,
+  "usage": {
+    "completion_tokens": 104,
+    "neurons": 13.995412826538086,
+    "prompt_tokens": 217,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 321
+  }
+}

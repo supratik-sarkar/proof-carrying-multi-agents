@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "2d678afeb001a12e6789daddd8e05d87d6cdabd00e0e42a55b8b302f9b4164c9",
+  "example_id": "c8d4f39c3199de5aa43cbffc0cbf9731",
+  "finish": "stop",
+  "input_sha256": "b1fc1a4dc8cdb81c77537f29711fb5d03deb72e9788a36933636bef27cded871",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "c8d4f39c3199de5aa43cbffc0cbf9731",
+  "prompt_sha256": "48ae4f7faf260519abd086aa6e605cb8386ba2903268db39613fbc53a3a8635f",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Bessie Smith: Bessie Smith -LRB- April 15 , 1894 -- September 26 , 1937 -RRB- was an American blues singer .\n\nClaim: Bessie Smith died on April 26, 1937.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "5f253985f2823e6d053903b4ccf57310c8d844c44dcebf570e3dc8b3ffb7e38c",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:c8d4f39c3199de5aa43cbffc0cbf9731",
+  "task_key": "c7686338e2ef382f7d522565cf480cf7eddf86b5bcb2b30054b7cdd060635a24",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:35:52.653666+00:00",
+  "tokens_in": 189,
+  "tokens_out": 96,
+  "usage": {
+    "completion_tokens": 96,
+    "neurons": 12.559054374694824,
+    "prompt_tokens": 189,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 285
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "BFCL_FAIL_CLOSED_REGRESSION_RECEIPT",
+  "timestamp": "2026-09-17T19:42:00Z",
+  "BFCL_FAIL_CLOSED_REGRESSION": "PASS",
+  "BFCL_CASES_STRUCTURALLY_RESOLVED": "40/40",
+  "PROVIDER_CALLS_DURING_BFCL_OFFLINE_TEST": 0,
+  "categories_tested": [
+    "simple_python",
+    "multiple",
+    "parallel",
+    "parallel_multiple"
+  ],
+  "representative_cases": {
+    "simple_python": "bfcl_v1:simple_124",
+    "multiple": "bfcl_v1:multiple_function_79",
+    "parallel": "bfcl_v1:parallel_function_178",
+    "parallel_multiple": "bfcl_v1:parallel_multiple_function_171"
+  },
+  "tests_per_category": 16,
+  "total_representative_tests": 64,
+  "status": "PASS"
+}

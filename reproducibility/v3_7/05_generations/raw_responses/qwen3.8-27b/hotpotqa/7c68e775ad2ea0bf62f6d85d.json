@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "4738cc6c7fed1ba416ac21365e95beb321ec585de162defddef256d2f0b70663",
+  "candidate_text": "\n\nYes",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "6f0fa4377110df660031585070f5a7f3034c58cda1eb5f1e9685506aff60f60d",
+  "example_id": "5adde3a45542997545bbbdc2",
+  "finish": "stop",
+  "input_sha256": "310b85a4c6bddb2286f8f7111e1280bf591689e300543314d27eb9bb061d0237",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "5adde3a45542997545bbbdc2",
+  "prompt_sha256": "478f525a33df9b0f0c65fa4f4b16112822f3dbd583e71277a954d79e61302bf1",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Jean-Pierre Jeunet: Jean-Pierre Jeunet (] ; born 3 September 1953) is a French film director and screenwriter known for the films \"Delicatessen\", \"The City of Lost Children\", \"\" and \"Amélie\".\n\n[2] Les Mistons: Les Mistons (\"The Mischief Makers\") is a short film directed by François Truffaut in 1957.  It was his second film after \"Une Visite\" in 1955 but it is considered his \"first short film of any real consequence\".  Truffaut simply called it \"my first real film\".  Moreover, it was Bernadette Lafont's film debut.  She was at that time Gérard Blain's wife.  The film demonstrates already some examples for Truffaut's \"trademark tracking shots\" and would \"help define his style\" as well as \"set Truffaut on a path for his career\".  Truffaut's narrative stresses the details of life, hereby establishing one of the traits of the French New Wave.  Thus he also became a predecessor of French film directors such as Jean-Pierre Jeunet (\"Amélie\").  It has been stated that the formation of the French New Wave could be \"tracked through two short films\": Jean-Luc Godard's \"All the Boys Are Called Patrick\" and Truffaut's \"Les Mistons\".  In 2013 the Museum of Modern Art in New York City screened this film together with Truffaut's \"The 400 Blows\".\n\n[3] Drum Beat: Drum Beat is a 1954 CinemaScope western film in \"WarnerColor\" written and directed by Delmer Daves and co-produced by Daves and Alan Ladd in his first film for his Jaguar Productions company.  Ladd stars along with Audrey Dalton, Charles Bronson as Captain Jack, and Hayden Rorke as President Ulysses S. Grant.\n\n[4] Shipmates Forever: Shipmates Forever is a 1935 American musical film directed by Frank Borzage and written by Delmer Daves.  Set at the United States Naval Academy, the film stars Dick Powell, Ruby Keeler, Lewis Stone, Ross Alexander, John Arledge, Eddie Acuff and Dick Foran.  The film was released by Warner Bros. on October 12, 1935.\n\nQuestion: Are both Delmer Daves and Jean-Pierre Jeunet film directors?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "a0166b1bc0d297a42b393ab0f97c5e641e80d8418a1da345bccfad787d1f31c5",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5adde3a45542997545bbbdc2",
+  "task_key": "8a104ba31abf4ad36083b127392847bc4c1575befea38fadcf9eaa69d34a7632",
+  "text": "\n\nYes",
+  "timestamp": "2026-09-14T10:45:52.762707+00:00",
+  "tokens_in": 635,
+  "tokens_out": 119,
+  "usage": {
+    "completion_tokens": 119,
+    "neurons": 60.59545135498047,
+    "prompt_tokens": 635,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 754
+  }
+}

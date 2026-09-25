@@ -1,0 +1,14 @@
+{
+  "ground_truth_sanity_check_injectable": false,
+  "manifest_sha256": "ac6b2e8a5dba1980d9c380f5b2da1e03669a28be307263824e095225d62ee28f",
+  "runtime_call_ceiling": 8,
+  "schema": "PCG_MAS_V3_6_AGENTDOJO_OFFICIAL_RUNNER_FINAL_RECEIPT",
+  "status": "PASS",
+  "suite_counts": {
+    "banking": 10,
+    "slack": 10,
+    "travel": 10,
+    "workspace": 10
+  },
+  "total": 40
+}

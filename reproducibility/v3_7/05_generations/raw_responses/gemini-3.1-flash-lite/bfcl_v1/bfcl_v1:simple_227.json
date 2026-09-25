@@ -1,0 +1,43 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "892aa8bfcb81a725128a51edfd370eaf6279445c05683e3f874510bdd899186c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:simple_227",
+  "prompt_sha256": "892aa8bfcb81a725128a51edfd370eaf6279445c05683e3f874510bdd899186c",
+  "provider": "gemini",
+  "provider_raw_sha256": "d2e9f09adc90238e696846a794f9565a18149e093f1afee5c510b4fca549aff1",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPAQc0Jog+pKW3tpoykrDVrHFgHU1bD39PjE2pwVEX8aBew9+v1kYP4HzT6Vt9btVs6GnCPXWHpza4cgirjDRw4z9AtVNN/BzVhzxnQFFZMiB0aUYLzNqBf4ZObXSd7ZQ9kim9ocugIRAzHg=="
+        }
+      },
+      "function": {
+        "arguments": "{\"type\":\"ENFJ\",\"traits\":[\"strengths\",\"weaknesses\"]}",
+        "name": "get_personality_traits"
+      },
+      "id": "call_1103573",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 31,
+    "prompt_tokens": 129,
+    "total_tokens": 160
+  }
+}

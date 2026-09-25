@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "aae5096d225d80103c955eacf701b9fdd23be91ca1dae53ac7e5bb194fa4b87c",
+  "candidate_text": "I'll predict the likelihood of type 2 diabetes for each of the four individuals using their provided characteristics.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ce1d409ab801ba8fb53b0f0cba94d3e3a316e7e19767db1da0f3315180f5c30d",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_function_113",
+  "prompt_sha256": "ce1d409ab801ba8fb53b0f0cba94d3e3a316e7e19767db1da0f3315180f5c30d",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "6271e41a3e8a75b5aef9cd38db51f1de5404ac83b78f185a81e509f3be5782f1",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll predict the likelihood of type 2 diabetes for each of the four individuals using their provided characteristics.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"weight\": 180, \"height\": 70, \"activity_level\": \"lightly active\"}",
+        "name": "diabetes_prediction"
+      },
+      "id": "chatcmpl-tool-b7547c54e5c2127b",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"weight\": 200, \"height\": 65, \"activity_level\": \"very active\"}",
+        "name": "diabetes_prediction"
+      },
+      "id": "chatcmpl-tool-9a2189d44c8f2bf6",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"weight\": 150, \"height\": 72, \"activity_level\": \"moderately active\"}",
+        "name": "diabetes_prediction"
+      },
+      "id": "chatcmpl-tool-ac3abef8606ceece",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"weight\": 220, \"height\": 68, \"activity_level\": \"extra active\"}",
+        "name": "diabetes_prediction"
+      },
+      "id": "chatcmpl-tool-96e9f4fcba1ac288",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 286,
+    "neurons": 12.384900000000002,
+    "prompt_tokens": 359,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 645
+  }
+}

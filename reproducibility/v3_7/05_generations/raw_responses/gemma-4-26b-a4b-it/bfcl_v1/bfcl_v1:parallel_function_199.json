@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [
+      "Malformed JSON arguments: Extra data: line 1 column 80 (char 79)."
+    ],
+    "error_type": "bfcl_adapter:malformed_arguments",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "dec818c606c6c62b7ada600647f2eb905c4be237f2b472b7e3e870ec09611b7c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_function_199",
+  "prompt_sha256": "dec818c606c6c62b7ada600647f2eb905c4be237f2b472b7e3e870ec09611b7c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "daac999d1dea9403b5d3f8a7e6f327ab79f375d0f1f9356a3499d618c61e7c57",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"include_humidity\": true, \"include_temperature\": true, \"location\": \"New York\"}{\"include_humidity\": true, \"include_temperature\": true, \"location\": \"Los Angeles\"}{\"include_humidity\": true, \"include_temperature\": true, \"location\": \"London\"}{\"include_humidity\": true, \"include_temperature\": true, \"location\": \"Tokyo\"}",
+        "name": "get_current_weather"
+      },
+      "id": "call_5bc574daab18443ea75d5d03",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 351,
+    "neurons": 11.109090805053711,
+    "prompt_tokens": 169,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 520
+  }
+}

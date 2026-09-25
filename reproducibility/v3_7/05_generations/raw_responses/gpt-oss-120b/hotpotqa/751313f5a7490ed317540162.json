@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "38178a20b470cfd18299fb1593dd4ba706f1a83321dac051d01086efd8b7a96f",
+  "candidate_text": "No.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "11a86f5cc7778313060aa92f7311f10bde1c2734eaf0d41176738a293f3bde99",
+  "example_id": "5adc0c2b55429947ff1738db",
+  "finish": "stop",
+  "input_sha256": "52a22a1d0c0e7a77246e8e2441b1802f290e4fa3884213a4be891dff268428bf",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5adc0c2b55429947ff1738db",
+  "prompt_sha256": "1e517f69282e3258932d98900b41f27d76b3ed6c8627c0245491b778849b1600",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] To Shoot an Elephant: To Shoot an Elephant is a 2009 documentary film about the 2008-2009 Gaza War directed by Alberto Arce and Mohammad Rujailahk.\n\n[2] Agee (film): Agee is a 1980 American documentary film directed by Ross Spears, about the writer James Agee.  It was nominated for an Academy Award for Best Documentary Feature.\n\n[3] Carlos Rendón Zipagauta: Carlos Rendón Zipagauta (Cali, 29 September 1955) is a Colombian-Belgian documentary filmmaker.  Rendón Zipagauta studied film and screenwriting in Belgium, where he lived for 16 years.  He began as assistant then co-director to Jean Christophe Lamy.  He returned to Colombia to shoot documentaries.  His 1993 film \"Nukak Makú\", about the indigenous Nukak peoples, won festival prizes in France and Belgium enabling also EU grants to make further documentaries.\n\n[4] Marcel Trillat: Marcel Trillat (born 4 April 1940) is a French journalist and documentary filmmaker.  A communist, he directed many documentaries about the living conditions of workers, women and immigrants in France.  He also did documentaries about French government's response to the Algerian War and the Gulf War and, more recently, religious cults and public hospitals.  He co-directed three documentaries with Maurice Failevic, one of which is about the history of communism in France.  He was a director of France Télévisions, France's public television broadcaster, for five years.\n\nQuestion: Are Agee and To Shoot an Elephant both documentaries about war?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "269a44898b4a6f4f6b89548fb9991e0da434f915a57fc454ab606baa7d62e090",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5adc0c2b55429947ff1738db",
+  "task_key": "03e0f77cc80a24b502f7d3cb8c0c663725479daef4e27f359969f3dbcde00e96",
+  "text": "No.",
+  "timestamp": "2026-09-14T10:32:41.381204+00:00",
+  "tokens_in": 453,
+  "tokens_out": 83,
+  "usage": {
+    "completion_tokens": 83,
+    "neurons": 20.072643280029297,
+    "prompt_tokens": 453,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 536
+  }
+}

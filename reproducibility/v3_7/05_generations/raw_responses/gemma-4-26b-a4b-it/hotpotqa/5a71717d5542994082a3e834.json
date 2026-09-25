@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "9d5881389fbe0e38c3384da9a9a05984f729ac426ec465f5cee5b0526fa0146f",
+  "candidate_text": "Larry Drake",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "5eb210aa43db280ddef3a367c2fbdb2abff117702d5b83c6ef60f390c9f894e9",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5a71717d5542994082a3e834",
+  "prompt_sha256": "16e312dcddbd109ea1b44fe37dcbb715a609d3ed4f8ca7435c231bfe1c77865a",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "08c162dca549bc916f697b0d21c67a6f6902a9697b0bd9a851ca84e5e76865be",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a71717d5542994082a3e834",
+  "text": "Larry Drake",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 4.345454216003418,
+    "prompt_tokens": 469,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 472
+  }
+}

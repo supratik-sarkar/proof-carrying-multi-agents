@@ -1,0 +1,27 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "correct": false
+  },
+  "candidate_sha256": "7222a525bc8b3e413fca641502372a8497ee1d85db2fe979c79e845ef1cefb5b",
+  "candidate_text": "{\"choice\":\"C9\",\"operation\":\"TYPE\",\"value\":\"Bentonville, AR\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "eedc4eb1fc2f539c96c74b6f97c3dfce5d1149993dac10d55b6a3afad0726c79",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "mind2web:ce59d078-a4cb-448b-b7df-7854efba0c25",
+  "prompt_sha256": "eedc4eb1fc2f539c96c74b6f97c3dfce5d1149993dac10d55b6a3afad0726c79",
+  "provider": "gemini",
+  "provider_raw_sha256": "2cc7a26f6901624a6f5a9a713af04114f08eebd577b456a5916ab50d92c1b6e1",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C9\",\"operation\":\"TYPE\",\"value\":\"Bentonville, AR\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 329,
+    "total_tokens": 347
+  }
+}

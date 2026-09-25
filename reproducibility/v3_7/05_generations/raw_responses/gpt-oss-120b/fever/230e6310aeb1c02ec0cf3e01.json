@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "43523816e8d22421e81011d62bf742d344b05805703e91938658339cedf1d87d",
+  "example_id": "6525ac9b01d826e066963adc9faead8e",
+  "finish": "stop",
+  "input_sha256": "96498df0a7210e637da456a07521f73a265f3bec5b54d5a23dd89991816aeba0",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "6525ac9b01d826e066963adc9faead8e",
+  "prompt_sha256": "0af513b622f006571133b393636b3a32236f786ea96da75072b149fd2577ff35",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Philip Glass: Glass 's compositions have been described as minimal music , similar to other `` minimalist '' composers including La Monte Young , Steve Reich and Terry Riley .\n\nClaim: There are no musical or creative works in existence that have been created by Phillip Glass.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "3bcf90a5c94ef985e84334cc5403a4440dd6ece1f6669007e04bc4cf17aa1c02",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:6525ac9b01d826e066963adc9faead8e",
+  "task_key": "64b107c467268852779c884f8a1ad6824c19ef72c18b03e9d4779e6b0d78cab9",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:36:04.528674+00:00",
+  "tokens_in": 189,
+  "tokens_out": 111,
+  "usage": {
+    "completion_tokens": 111,
+    "neurons": 13.581781387329102,
+    "prompt_tokens": 189,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 300
+  }
+}

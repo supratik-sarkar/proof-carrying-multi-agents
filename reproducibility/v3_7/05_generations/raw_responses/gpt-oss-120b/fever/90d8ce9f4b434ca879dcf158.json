@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "0a28a330236862e1abf633b00787690bba55b65b97f24ec5d99215f9a2c43954",
+  "example_id": "43bda800acd929d0a0f3774c00f5613f",
+  "finish": "stop",
+  "input_sha256": "f26c8d5f90290d84bbfd6f3b7b0bebf834f0dfd6763149499d30179a5352e556",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "43bda800acd929d0a0f3774c00f5613f",
+  "prompt_sha256": "28822842885c7c918d8c06b66b8ef217bb6214c7bcee2e7b2c3e7ee4efdcbe01",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Civilization IV: The game has received critical acclaim and was hailed as an exemplary product of one of the leading video game producers in the turn-based strategy genre .\n\nClaim: Civilization IV is a turn-based strategy game.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c88efa1f793cef58b54bd6fe1fbbb8006e2b8b66374b57a49b79694f68d333e3",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:43bda800acd929d0a0f3774c00f5613f",
+  "task_key": "49d813b10d4b2ec95ffc4c5fa679a4c84ff2d2c993591b5543edf6d0a54a1e9f",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:35:36.257318+00:00",
+  "tokens_in": 180,
+  "tokens_out": 86,
+  "usage": {
+    "completion_tokens": 86,
+    "neurons": 11.590873718261719,
+    "prompt_tokens": 180,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 266
+  }
+}

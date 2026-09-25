@@ -1,0 +1,10 @@
+{
+  "blocker": "FUSION_FIT_700_REAL_RECORDS_OR_GENERATIONS_MISSING",
+  "existing_fit_manifest_sha256": "becd66f4c0ac89b90c076a3179f3d1baba083128eed439a78b39073194c17d8c",
+  "fit_example_groups": 100,
+  "fit_models": 7,
+  "gold_answer_fallback_forbidden": true,
+  "required_real_generation_records": 700,
+  "rule": "Missing FIT model generations must be generated under capacity admission; never replace them with gold answers.",
+  "schema": "PCG_MAS_V3_6_FIT_STRICT_CONTRACT_V2"
+}

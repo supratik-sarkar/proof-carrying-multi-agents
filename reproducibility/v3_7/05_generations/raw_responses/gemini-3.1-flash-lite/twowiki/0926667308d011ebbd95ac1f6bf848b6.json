@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "bb7f7aca1a1b725c42ad64f5729963de474b1deaa9d982faa0534fc10bf5472b",
+  "candidate_text": "Benjamin Nash.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "0c180f21b68802b31c60f9a8e82060a09ef15f435a49f28f213257dcfc8be1bb",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "0926667308d011ebbd95ac1f6bf848b6",
+  "prompt_sha256": "a4d2ec1b58a703269e025271ab64ba14bba0504e49577e6323ce433121de2e06",
+  "provider": "gemini",
+  "provider_raw_sha256": "09f06b152fcb74676801fb9022f2b4779c3c3f9d6345903e6fa5d69221797e49",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:0926667308d011ebbd95ac1f6bf848b6",
+  "text": "Benjamin Nash.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "prompt_tokens": 550,
+    "total_tokens": 553
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "CLOUDFLARE_BILLING_GUARD": "PASS",
+  "GEMINI_BILLING_GUARD": "PASS",
+  "ZERO_COST_EXECUTION_ADMISSIBLE": "YES",
+  "cloudflare_evidence": {
+    "behavior_on_limit": "fails closed with HTTP 429 without monetary charge",
+    "daily_free_allowance": "10,000 neurons/day",
+    "tier": "free",
+    "token_id": "fef9107cc796d5005a94a96e9ee38e0a",
+    "token_status": "active"
+  },
+  "cost_usd_max": 0.0,
+  "gemini_evidence": {
+    "behavior_on_limit": "fails closed with HTTP 429 RESOURCE_EXHAUSTED without monetary charge",
+    "cloud_billing_attached": false,
+    "rate_limits": "15 RPM / 1500 RPD / 1M TPM",
+    "tier": "Google AI Studio Developer API Free Tier"
+  },
+  "schema": "PCG_MAS_V3_6_G1_ZERO_COST_BILLING_GUARD_V2",
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:39:19.264136+00:00",
+  "transaction_id": "TX-20260917T123847Z-9e64a9288e76"
+}

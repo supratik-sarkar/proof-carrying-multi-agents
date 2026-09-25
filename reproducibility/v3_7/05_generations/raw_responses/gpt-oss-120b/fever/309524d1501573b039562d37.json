@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "828152f2d309ab3e982bbef75d8f0251a9f5b420f931aca415fb42861dc345b1",
+  "example_id": "3262a15b0a73a57738664d4a84181a05",
+  "finish": "stop",
+  "input_sha256": "08507dd91bc22f98dd942aa12fb5e00fe413250e2fe3957aade538e01678b04a",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "3262a15b0a73a57738664d4a84181a05",
+  "prompt_sha256": "deb2dbbb568a8b942e0818bfd03a6798735a16a3b48ecbb2ac12db4f90fafb36",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Liam Neeson: He has been nominated for a number of awards , including an Academy Award for Best Actor , a BAFTA Award for Best Actor in a Leading Role and three Golden Globe Awards for Best Actor in a Motion Picture Drama .\n\nClaim: Liam Neeson was passed over for an Academy Award.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b7e101389247e5f71198aa42ef915adda9aa7f11f83aed982b8cc489a497ecc6",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:3262a15b0a73a57738664d4a84181a05",
+  "task_key": "14d47d1d3417cb2af4346c2bc44defd9cd671e7baab0a94a2ed1ef814f546cfa",
+  "text": "NOT ENOUGH INFO",
+  "timestamp": "2026-09-14T10:36:29.589961+00:00",
+  "tokens_in": 198,
+  "tokens_out": 222,
+  "usage": {
+    "completion_tokens": 222,
+    "neurons": 21.436323165893555,
+    "prompt_tokens": 198,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 420
+  }
+}

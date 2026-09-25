@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "d83239e291e560393e5d3d6787b7b6d182d45b3362ef08c73e07372ee62efa1c",
+  "example_id": "b60fd6a20bdc11eba7f7acde48001122",
+  "finish": "stop",
+  "input_sha256": "c76f7f7ad28668fd3b75330f10b8f79dc2ade5edf0431f9fbb5ace81f05a588d",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "b60fd6a20bdc11eba7f7acde48001122",
+  "prompt_sha256": "f39999107e8ebfd67f7bde7fcbb65d574f0af95f34793685cb2a93de1b83665d",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"David Flair\": [\"David Richard Fliehr (born March 6, 1979), better known by his ring name David Flair, is an American retired professional wrestler best known for his time in World Championship Wrestling (WCW), where he held the United States and World Tag Team championships.\",\"He is the son of former wrestling world champion Ric Flair and the older half brother of Charlotte Flair and Reid Flair.\"]\n\n[2] \"David Shute\": [\"David Shute is a British journalist, best known for his work at the BBC.\"]\n\n[3] \"Emanuel Glicen Romano\": [\"Emanuel Glicen Romano or Emanuel Glicenstein( 1897 \\u2013 1984) was a painter born in Italy.\",\"He emigrated to America and spent some time in Safed in Israel.\",\"where he organised a museum for his father's work.\"]\n\n[4] \"Reid Flair\": [\"Richard Reid Fliehr( February 26, 1988 March 29, 2013), better known by his ring name Reid Flair, was an American professional wrestler.\",\"He was the youngest son of retired professional wrestler Ric Flair, younger half- brother of wrestler David Flair, and younger brother of Charlotte Flair.\"]\n\nQuestion: Where does David Flair's father work at?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "a1038498742e89940e07e0983458ddef4ef9d7eb20ea12acfcb4b8360fa07962",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:b60fd6a20bdc11eba7f7acde48001122",
+  "task_key": "700a0edd5ff5424c81da1f1c4531ca351aadd285a919509c694818933317f507",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-14T10:50:38.511554+00:00",
+  "tokens_in": 396,
+  "tokens_out": 96,
+  "usage": {
+    "completion_tokens": 96,
+    "neurons": 44.12727355957031,
+    "prompt_tokens": 396,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 492
+  }
+}

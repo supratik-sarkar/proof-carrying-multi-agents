@@ -1,0 +1,138 @@
+{
+  "table_07_channel_ablation": {
+    "caption": "Table 07 Channel Ablation",
+    "label": "tab:table_07_channel_ablation"
+  },
+  "table_26_protocol_coverage": {
+    "caption": "Table 26 Protocol Coverage",
+    "label": "tab:table_26_protocol_coverage"
+  },
+  "table_16_appendix_remaining_50_summary_1": {
+    "caption": "Table 16 Appendix Remaining 50 Summary 1",
+    "label": "tab:table_16_appendix_remaining_50_summary_1"
+  },
+  "table_12_r4_privacy": {
+    "caption": "Table 12 R4 Privacy",
+    "label": "tab:table_12_r4_privacy"
+  },
+  "table_02_cost_overhead_main": {
+    "caption": "Direct generated-token overhead and aggregate accepted-risk profile.",
+    "label": "tab:cost_overhead_main"
+  },
+  "table_28_protocol_cost": {
+    "caption": "PCG-MAS resource-cost anatomy. Phase shares are normalized over the declared resource envelope; replay is conditional.",
+    "label": "tab:protocol_cost"
+  },
+  "table_33_notation": {
+    "caption": "Table 33 Notation",
+    "label": "tab:table_33_notation"
+  },
+  "table_01_main_six_summary": {
+    "caption": "Primary dataset-level accepted-risk and retained-coverage summary; negative $\\Delta_{\\rm primary}$ means lower PCG-MAS risk than the best applicable comparator.",
+    "label": "tab:main_six_summary"
+  },
+  "table_03_audit_calibration_summary": {
+    "caption": "Audit-checker calibration across the eight evaluation datasets.",
+    "label": "tab:audit_calibration_summary"
+  },
+  "table_23_protocol_gate": {
+    "caption": "Table 23 Protocol Gate",
+    "label": "tab:table_23_protocol_gate"
+  },
+  "table_29_protocol_manifest": {
+    "caption": "Table 29 Protocol Manifest",
+    "label": "tab:table_29_protocol_manifest"
+  },
+  "table_32_appendix_prompt_bank": {
+    "caption": "Table 32 Appendix Prompt Bank",
+    "label": "tab:table_32_appendix_prompt_bank"
+  },
+  "table_27_protocol_auditor_invariance": {
+    "caption": "Table 27 Protocol Auditor Invariance",
+    "label": "tab:table_27_protocol_auditor_invariance"
+  },
+  "table_34_verifiability_execution_ledger": {
+    "caption": "Verifiability and execution ledger for the registered evaluation and cross-host checker contract.",
+    "label": "tab:verifiability_execution_ledger"
+  },
+  "table_11_r3_open_mixed": {
+    "caption": "Table 11 R3 Open Mixed",
+    "label": "tab:table_11_r3_open_mixed"
+  },
+  "table_09_appendix_sota_pivot_full": {
+    "caption": "Complete 56-cell PCG-MAS versus best applicable comparator matrix.",
+    "label": "tab:appendix_sota_pivot_full"
+  },
+  "table_14_hyperparams_controls": {
+    "caption": "Frozen evaluation controls for the 56-cell design.",
+    "label": "tab:table_14_hyperparams_controls"
+  },
+  "table_25_protocol_sv": {
+    "caption": "Table 25 Protocol Sv",
+    "label": "tab:table_25_protocol_sv"
+  },
+  "table_30_validation_guarantee_roles": {
+    "caption": "Table 30 Validation Guarantee Roles",
+    "label": "tab:table_30_validation_guarantee_roles"
+  },
+  "table_31_validation_budget_frontier": {
+    "caption": "Table 31 Validation Budget Frontier",
+    "label": "tab:table_31_validation_budget_frontier"
+  },
+  "table_17_appendix_remaining_50_summary_2": {
+    "caption": "Table 17 Appendix Remaining 50 Summary 2",
+    "label": "tab:table_17_appendix_remaining_50_summary_2"
+  },
+  "table_10_replay_drift_covgap": {
+    "caption": "Table 10 Replay Drift Covgap",
+    "label": "tab:table_10_replay_drift_covgap"
+  },
+  "table_15_appendix_six_summary": {
+    "caption": "Table 15 Appendix Six Summary",
+    "label": "tab:table_15_appendix_six_summary"
+  },
+  "table_13_r5_scaling": {
+    "caption": "Table 13 R5 Scaling",
+    "label": "tab:table_13_r5_scaling"
+  },
+  "table_22_protocol_sampling": {
+    "caption": "Table 22 Protocol Sampling",
+    "label": "tab:table_22_protocol_sampling"
+  },
+  "table_08_baseline_scope_matrix": {
+    "caption": "Comparator scope and certificate capability. FULL denotes declared native coverage, PARTIAL a narrower replay/checking contract, and N/A an out-of-scope capability.",
+    "label": "tab:baseline_scope_matrix"
+  },
+  "table_04_protocol_theory_experiment_map": {
+    "caption": "Table 04 Protocol Theory Experiment Map",
+    "label": "tab:table_04_protocol_theory_experiment_map"
+  },
+  "table_19_r1_r4_combined": {
+    "caption": "Table 19 R1 R4 Combined",
+    "label": "tab:table_19_r1_r4_combined"
+  },
+  "table_06_ablations": {
+    "caption": "Table 06 Ablations",
+    "label": "tab:table_06_ablations"
+  },
+  "table_18_appendix_remaining_50_r1r4_reconciled": {
+    "caption": "Table 18 Appendix Remaining 50 R1R4 Reconciled",
+    "label": "tab:table_18_appendix_remaining_50_r1r4_reconciled"
+  },
+  "table_20_appendix_remaining_50_r1r4": {
+    "caption": "Table 20 Appendix Remaining 50 R1R4",
+    "label": "tab:table_20_appendix_remaining_50_r1r4"
+  },
+  "table_24_protocol_injection": {
+    "caption": "Table 24 Protocol Injection",
+    "label": "tab:table_24_protocol_injection"
+  },
+  "table_05_r1_r4_consolidated": {
+    "caption": "Table 05 R1 R4 Consolidated",
+    "label": "tab:table_05_r1_r4_consolidated"
+  },
+  "table_21_protocol_witnesses": {
+    "caption": "Table 21 Protocol Witnesses",
+    "label": "tab:table_21_protocol_witnesses"
+  }
+}

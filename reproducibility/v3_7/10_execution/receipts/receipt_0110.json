@@ -1,0 +1,27 @@
+{
+  "READY": "YES",
+  "canonical_complete_now": 1717,
+  "canonical_remaining_now": 523,
+  "clean_python": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "environment": "DEV",
+  "exact_resume_workplan_sha256": "a3593facf393547c43624b6cda97827fe52a77094745157831b1bebb8827d14c",
+  "expected_provider_split": {
+    "Cloudflare": 448,
+    "Gemini": 75
+  },
+  "expected_remaining": {
+    "AgentDojo": 270,
+    "BFCL": 253
+  },
+  "foreground_execution": true,
+  "immutable_core": 807,
+  "launch_mode": "VISIBLE_MACOS_TERMINAL",
+  "post_bfcl_failure_acceptance_sha256": "359318c66b1996434b7898662dbca2e30aefc78e58437519c7ec1e0edd64b708",
+  "post_bfcl_failure_preflight_sha256": "3b0de645aac51dbc2f7df1bf221585f859220f838317a6901b924dc83f860b8b",
+  "project_release": "v3.6",
+  "protected_followon": 618,
+  "runtime_reconciliation_authority_sha256": "8aec03603a454a3a5cfc04f96d9cd6524c3dfb7c1f3295ec707b648e0a6e42c9",
+  "schema": "PCG_MAS_V3_6_POST_BFCL_FAILURE_LAUNCH_AUTHORITY",
+  "status": "PASS",
+  "timestamp": "2026-09-17T14:18:06.813986+00:00"
+}

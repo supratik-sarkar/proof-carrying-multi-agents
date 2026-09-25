@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "3ba8af2eed094c122cd609427cfb62b73db222aa2a4e8674c61d784db865afa2",
+  "example_id": "e2a3bf2a0bdd11eba7f7acde48001122",
+  "finish": "stop",
+  "input_sha256": "aaa104e68227aef2394bd740e4fa05400d58b7131058ffd4f23398773b55a5d3",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "e2a3bf2a0bdd11eba7f7acde48001122",
+  "prompt_sha256": "149f0d9d79da70d4c9b5f0333491c5720f44dab091a71a96c09237af93471b57",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Karl I, Prince of Anhalt-Zerbst\": [\"Karl I of Anhalt- Zerbst( 17 November 1534 in Dessau \\u2013 4 May 1561 in Zerbst), was a German prince of the House of Ascania and ruler of the principality of Anhalt- Zerbst.\",\"He was the eldest son of John V, Prince of Anhalt- Zerbst, by his wife Margaret, daughter of Joachim I Nestor, Elector of Brandenburg.\"]\n\n[2] \"Bernhard VII, Prince of Anhalt-Zerbst\": [\"Bernhard VII of Anhalt- Zerbst( 17 March 1540 \\u2013 1 March 1570), was a German prince of the House of Ascania and ruler of the principality of Anhalt- Zerbst.\",\"He was born and died in Dessau, and was the third and youngest son of John V, Prince of Anhalt- Zerbst by his wife Margaret, daughter of Joachim I Nestor, Elector of Brandenburg.\"]\n\n[3] \"John V, Prince of Anhalt-Zerbst\": [\"John V of Anhalt-Zerbst (Dessau, 4 September 1504 \\u2013 Zerbst, 4 February 1551), was a German prince of the House of Ascania and ruler of the principality of Anhalt-Dessau.\",\"From 1544, he assumed rule of the re-created principality of Anhalt-Zerbst.\",\"John was the second (but eldest surviving) son of Ernest I, Prince of Anhalt-Dessau, by his wife Margarete, daughter of Henry I, Duke of M\\u00fcnsterberg-Oels, and granddaughter of George of Pod\\u011bbrady, King of Bohemia.\"]\n\n[4] \"Waldemar III, Prince of Anhalt-Zerbst\": [\"Waldemar III, Prince of Anhalt- Zerbst( died 1391) was a German prince of the House of Ascania and ruler of the principality of Anhalt- Zerbst.\",\"He was the youngest son of John II, Prince of Anhalt- Zerbst, by his wife Elisabeth, daughter of John I, Count of Henneberg- Schleusingen.\"]\n\nQuestion: When did John V, Prince Of Anhalt-Zerbst's father die?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "72f150d42534cab1a228e63b9e789989cf9710c9ded2e8ebb7961d3d952865e0",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:e2a3bf2a0bdd11eba7f7acde48001122",
+  "task_key": "79566b3860e0984c3a512cb49a3b866224a1f586088ad3580a8891927d3f2c94",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-14T10:50:38.998335+00:00",
+  "tokens_in": 625,
+  "tokens_out": 99,
+  "usage": {
+    "completion_tokens": 99,
+    "neurons": 54.36817932128906,
+    "prompt_tokens": 625,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 724
+  }
+}

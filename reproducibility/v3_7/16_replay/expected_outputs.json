@@ -1,0 +1,12 @@
+{
+  "scope": "Standalone deterministic replay from the embedded v3.7 manuscript stack",
+  "figures": 24,
+  "tables": 34,
+  "registry_cells": 56,
+  "aggregate_rows": 392,
+  "hash_reconciled_generation_records": 2240,
+  "raw_generation_responses": 2240,
+  "raw_agent_trajectories": 434,
+  "execution_receipts": 140,
+  "current_per_observation_scientific_values": "NOT_RETAINED"
+}

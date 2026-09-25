@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Prince Nikolaus Wilhelm of Nassau": ["Prince Nikolaus Wilhelm of Nassau (20 September 1832 \u2013 17 September 1905), was the only son of William, Duke of Nassau by his second wife Princess Pauline of W\u00fcrttemberg."]
+
+[2] "Frederick Augustus, Duke of Nassau": ["Friedrich August, Duke of Nassau, Prince of Nassau- Usingen( 23 April 1738 in Usingen \u2013 24 March 1816 in Wiesbaden) was the last Prince of Nassau- Usingen and, jointly with his cousin, Friedrich Wilhelm of Nassau- Weilburg, first Duke of Nassau.","He died without surviving male issue and was succeeded by his cousin's son, Wilhelm."]
+
+[3] "Sophie of Merenberg": ["Countess Sophie Nikolaievna of Merenberg, Countess de Torby( 1 June 1868 \u2013 14 September 1927), also known as\" Countess Torbay\", was the elder daughter of Prince Nikolaus Wilhelm of Nassau and his morganatic wife, Natalia Alexandrovna Pushkina( who had been granted the title of Countess of Merenberg)."]
+
+[4] "Frederick William, Prince of Nassau-Weilburg": ["Frederick William, Prince of Nassau- Weilburg( 25 October 1768, The Hague \u2013 9 January 1816, Weilburg) was a ruler of Nassau- Weilburg.","In 1806 he was given the title of Prince of Nassau, while his cousin, Prince Frederick Augustus of Nassau- Usingen, became the Duke of Nassau.","Frederick William died in January 1816, only two months before his cousin.","Both men were succeeded by Frederick William's son, William."]
+
+Question: Which country Prince Nikolaus Wilhelm Of Nassau's mother is from?
+
+Answer:

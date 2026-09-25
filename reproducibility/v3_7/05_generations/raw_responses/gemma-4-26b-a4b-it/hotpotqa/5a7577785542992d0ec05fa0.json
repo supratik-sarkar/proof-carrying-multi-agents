@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "62a2e22ce3b37d0d7431725b624ec40c32d58cedb1ab644e379d3830c6b0f421",
+  "candidate_text": "Tatton Park",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "798eb346a9d03d3417076c8c3d6f206835e88fa913f85a066e79d8a4ce77938a",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5a7577785542992d0ec05fa0",
+  "prompt_sha256": "e2a4f64ec31e7cdbe529e789d8fcd132e9092aa324cf813e02caa7471b5a3a48",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "1da0a540b121cda851b864995e11c4c672fe9f27fe1f12d6621e982aa8949fc7",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a7577785542992d0ec05fa0",
+  "text": "Tatton Park",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 4.981817722320557,
+    "prompt_tokens": 536,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 540
+  }
+}

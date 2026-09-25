@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "8ce0b880abcd26eee29407545864e292260b89b918ffdeb558b5c3bdb414d460",
+  "example_id": "4fbc80c5784202df6072e373818c581f",
+  "finish": "stop",
+  "input_sha256": "f3a8362ddfdba8eeb256d04a695cea969b55a62feb7357fb922d118ea36f7529",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "4fbc80c5784202df6072e373818c581f",
+  "prompt_sha256": "9ad0be072ef172233d844419810e0f4428c1709c9ec2adcad1c8e519954f589c",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Rob Sheridan: Rob Sheridan -LRB- born October 11 , 1979 -RRB- is an American graphic designer , director , and photographer best known for his extensive work with the band Nine Inch Nails .\n\nClaim: Rob Sheridan was born in the late 1970s.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "3b890bc3829a0249a4c45370a5ba0915b21f91984bd91505a3682cd06b36808f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:4fbc80c5784202df6072e373818c581f",
+  "task_key": "69ae99376aeb6da87bd3de5a467d14e33ee0b781543a1a07a8ed0e71b0bcab5b",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:35:50.557483+00:00",
+  "tokens_in": 196,
+  "tokens_out": 60,
+  "usage": {
+    "completion_tokens": 60,
+    "neurons": 10.32723617553711,
+    "prompt_tokens": 196,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 256
+  }
+}

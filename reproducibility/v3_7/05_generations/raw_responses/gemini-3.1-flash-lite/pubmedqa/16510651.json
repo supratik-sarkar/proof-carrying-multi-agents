@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "2ca871c6a43d0a3a6a0427fbd7ab6bb00806d7c5cee2e3f61a624ad2004f8ca2",
+  "candidate_text": "Only partly mediated.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "95ce73d21b19693e932b55035a80f491dc8636244c7d1ee99c99dd2e96a48c53",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "16510651",
+  "prompt_sha256": "06497b430268ae830c788d83d065214a61ef7d9076d1fa0f41b32e2bfc879d09",
+  "provider": "gemini",
+  "provider_raw_sha256": "5587c899cc34e46d037f988b2244ef9399e1a545ffc2e94d14955f0d8594ee7f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:16510651",
+  "text": "Only partly mediated.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 308,
+    "total_tokens": 312
+  }
+}

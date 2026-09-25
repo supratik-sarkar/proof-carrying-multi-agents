@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Cairo Declaration (film)": ["Cairo Declaration is a 2015 Chinese 2D historical film directed by Wen Deguang and Hu Minggang and written by Liu Xing.","The film stars Hu Jun, Cecilia Han, Ma Xiaowei, and Tang Guoqiang.","The film was scheduled to be released on September 3, 2015.","The film was promoted by the August First Film Studio to mark the 70th anniversary of the victory of the Second Sino- Japanese War."]
+
+[2] "Nat\u00fcrlich die Nelli": ["Nat\u00fcrlich die Nelli is an East German film.","It was released in 1959."]
+
+[3] "The Night of Nights": ["The Night of Nights is a 1939 black- and- white drama film written by Donald Ogden Stewart and directed by Lewis Milestone for Paramount Pictures that starred Pat O' Brien, Olympe Bradna, and Roland Young.","The film received positive contemporary reviews from publications such as\" The New York Times\".","Director Milestone went on to other successful productions after the film came out, including\" Ocean's 11\" and\" Pork Chop Hill\".","The movie has no relation to the use of the phrase\" Night of Nights\" for the night of the Academy Awards ceremony, the album by musical group","The Seekers, or the Touhou Project song."]
+
+[4] "Life Is What You Make It (film)": ["Life Is What You Make","It is a 2017 documentary film which explores the life of award- winning Filipino theatre producer Jhett Tolentino from his migration into the United States and his entry into theatre production in New York.","The film came with a soundtrack album entitled\" Life Is What You Make It: Original Motion Picture Soundtrack\"."]
+
+Question: Which film came out first, Natürlich Die Nelli or Cairo Declaration (Film)?
+
+Answer:

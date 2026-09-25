@@ -1,0 +1,28 @@
+{
+  "previous_ready_valid": false,
+  "previous_ready_yes": true,
+  "reasons": [
+    "pinned BFCL source worktree was dirty",
+    "pinned AgentDojo source worktree was dirty",
+    "execution environment had drifted",
+    "Gemini capacity receipt was assumption/<PUBLIC_TERM:b3cc0475bb78a502>",
+    "Cloudflare capacity receipt was assumption/<PUBLIC_TERM:b3cc0475bb78a502>",
+    "FIT strict generation count was 0/700"
+  ],
+  "references": {
+    "AMENDED_ACCEPTANCE_RECEIPT.json": {
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/AMENDED_ACCEPTANCE_RECEIPT.json",
+      "sha256": "fbefa9d25f615b46e73cfd29f60c9a80a380ed27decacdf22f4d48a3e5ba2d93"
+    },
+    "FIT_STRICT_GUARD_RECEIPT.json": {
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/receipts/FIT_STRICT_GUARD_RECEIPT.json",
+      "sha256": "67f37995f571fde589bf408b89b2bf3e42e3cb47fe54b70cbc872c8170831290"
+    },
+    "POST_CRASH_PRESERVATION_AUDIT.json": {
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/receipts/POST_CRASH_PRESERVATION_AUDIT.json",
+      "sha256": "72d52d56327930e712648fe4529e4e34c1981b045c10ee0f9ab35a2820919e61"
+    }
+  },
+  "schema": "PCG_MAS_V3_6_PREVIOUS_READY_INVALIDATION",
+  "timestamp": "2026-09-17T06:20:00Z"
+}

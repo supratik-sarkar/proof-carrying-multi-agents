@@ -1,0 +1,21 @@
+\begin{minipage}[t]{0.49\linewidth}
+\centering\footnotesize
+\captionsetup{type=table}
+\captionof{table}{Comparator scope and certificate capability. FULL denotes declared native coverage, PARTIAL a narrower replay/checking contract, and N/A an out-of-scope capability.}
+\label{tab:baseline_scope_matrix}
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabularx}{\linewidth}{@{}Xccccc@{}}
+\toprule
+Method & \rotatebox{60}{Integrity} & \rotatebox{60}{Replay} & \rotatebox{60}{Policy} & \rotatebox{60}{Support} & \rotatebox{60}{Recomputable} \\
+\midrule
+Citation\allowbreak{}Only & \scriptsize N/A & \scriptsize N/A & \scriptsize N/A & \scriptsize FULL & \scriptsize FULL \\
+Mini\allowbreak{}Check & \scriptsize N/A & \scriptsize N/A & \scriptsize N/A & \scriptsize FULL & \scriptsize FULL \\
+Align\allowbreak{}Score & \scriptsize N/A & \scriptsize N/A & \scriptsize N/A & \scriptsize FULL & \scriptsize FULL \\
+QAFact\allowbreak{}Eval & \scriptsize N/A & \scriptsize N/A & \scriptsize N/A & \scriptsize FULL & \scriptsize FULL \\
+Shield\allowbreak{}Agent & \scriptsize N/A & \scriptsize N/A & \scriptsize FULL & \scriptsize N/A & \scriptsize PARTIAL \\
+Agent\allowbreak{}RR & \scriptsize N/A & \scriptsize FULL & \scriptsize N/A & \scriptsize N/A & \scriptsize PARTIAL \\
+PCG-MAS & \scriptsize FULL & \scriptsize FULL & \scriptsize FULL & \scriptsize FULL & \scriptsize FULL \\
+\bottomrule
+\end{tabularx}
+\end{minipage}

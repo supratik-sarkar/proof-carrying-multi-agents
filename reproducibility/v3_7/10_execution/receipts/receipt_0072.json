@@ -1,0 +1,13 @@
+{
+  "schema": "PCG_MAS_V3_6_G1_ZERO_COST_BILLING_GUARD_V2_INVALIDATION",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:45:21.160074+00:00",
+  "target_receipt": "G1_ZERO_COST_BILLING_GUARD_V2.json",
+  "reason": "The prior G1 PASS was not supported by authoritative proof of non-billable provider status. Token/API access and HTTP 403 endpoints are not billing proof for Cloudflare. Model metadata and inference success are not billing proof for Gemini. Therefore prior ZERO_COST_EXECUTION_ADMISSIBLE=YES is invalid unless stronger evidence exists.",
+  "invalidation_scope": {
+    "OLD_G1": "INVALID",
+    "OLD_G2": "INVALID_BY_PREDECESSOR",
+    "OLD_G3_EXECUTION_ARTIFACTS": "PRESERVABLE_BUT_GATE_NOT_AUTHORIZED"
+  },
+  "scientific_artifact_validity": "This invalidation does NOT make valid FIT generations scientifically invalid. It only invalidates the transaction authority that permitted them."
+}

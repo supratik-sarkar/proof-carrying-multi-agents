@@ -1,0 +1,13 @@
+{
+  "schema": "PCG_MAS_V3_6_COLAB_RESUME_ROUNDTRIP_RECEIPT",
+  "build_id": "v3.6-a100-build-0919-cuda-preflight-v14",
+  "timestamp": "2026-09-19T10:49:12.878024+00:00",
+  "DRIVE_WRITE": "PASS",
+  "DRIVE_READBACK": "PASS",
+  "RESUME_SKIP": "PASS",
+  "acceptance_scores_saved": {
+    "qafacteval": 1400,
+    "alignscore": 111,
+    "minicheck": 111
+  }
+}

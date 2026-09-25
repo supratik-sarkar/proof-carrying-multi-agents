@@ -1,0 +1,31 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "correct": false
+  },
+  "candidate_sha256": "ccda4392bcab23ee9280bbf46c6512186e32ec377635bf1565e1068675c50f31",
+  "candidate_text": "{\"choice\":\"C#\",\"operation\":\"CLICK|TYPE|SELECT\",\"value\":\"Animal Sciences\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "498d82af9f4b2fc7c8299a58c9386550dbd8647e89eba0e6f21a526286e44adc",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "mind2web:9bfeee6d-26ee-46af-9a65-40531a72c59b",
+  "prompt_sha256": "498d82af9f4b2fc7c8299a58c9386550dbd8647e89eba0e6f21a526286e44adc",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "a3d37145d8afd4888c1b7226c4aea5f713aa6adda2da182804b04307683599d2",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C#\",\"operation\":\"CLICK|TYPE|SELECT\",\"value\":\"Animal Sciences\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 21,
+    "neurons": 13.821818351745605,
+    "prompt_tokens": 497,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 518
+  }
+}

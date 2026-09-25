@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "4738cc6c7fed1ba416ac21365e95beb321ec585de162defddef256d2f0b70663",
+  "candidate_text": "\n\nYes",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "bdb92dcd42d7c783ab583bab85922a2a3cb4897231ba20f251a72bfd2fe2ecb9",
+  "example_id": "19156007",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "be71645a640034bfba118b0e25e2ac77d926eeae100a2dc653d893135e7a74c0",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "19156007",
+  "prompt_sha256": "1c0f335575f430537180fa1be51c88edcfd4952c1b6b3030e905f3a1651206d3",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: PURPOSE: To investigate whether the Patient Health Questionnaire-9 (PHQ-9) possesses the essential psychometric characteristics to measure depressive symptoms in people with visual impairment. METHODS: The PHQ-9 scale was completed by 103 participants with low vision. These data were then assessed for fit to the Rasch model. RESULTS: The participants' mean +/- standard deviation (SD) age was 74.7 +/- 12.2 years. Almost one half of them (n = 46; 44.7%) were considered to have severe vision impairment (presenting visual acuity<6/60 in the better eye). Disordered thresholds were evident initially. Collapsing the two middle categories produced ordered thresholds and fit to the Rasch model (chi = 10.1; degrees of freedom = 9; p = 0.34). The mean (SD) items and persons Fit Residual values were -0.31 (1.12) and -0.25 (0.78), respectively, where optimal fit of data to the Rasch model would have a mean = 0 and SD = 1. Unidimensionality was demonstrated confirming the construct validity of the PHQ-9 and there was no evidence of differential item functioning on a number of factors including visual disability. The person separation reliability value was 0.80 indicating that the PHQ-9 has satisfactory precision. There was a degree of mistargeting as expected in this largely non-clinically depressed sample.\n\nLong answer: Our findings demonstrate that the PHQ-9, when scaled with Rasch analysis, forms a linear interval measurement of depressive symptoms suitable for use in a vision impaired population.\n\nQuestion: Can clinicians use the PHQ-9 to assess depression in people with vision loss?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "f2bd1ea070e5489283bb6d7d000927c9c9164269b011ef3b5913f74ef667e83d",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:19156007",
+  "task_key": "41235ff0e41629e2b7e0b87269d584b709fd8d032ee4a24785b7c2c19c6081d5",
+  "text": "\n\nYes",
+  "timestamp": "2026-09-15T09:27:05.264428+00:00",
+  "tokens_in": 489,
+  "tokens_out": 72,
+  "usage": {
+    "completion_tokens": 72,
+    "neurons": 40.94999694824219,
+    "prompt_tokens": 489,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 561
+  }
+}

@@ -1,0 +1,75 @@
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.21\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.12\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.31\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.15\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.21\dimexpr\linewidth-8\tabcolsep\relax}@{}}
+\caption{\textbf{Notation, part V: calibration, certified operating points, privacy/modelled extensions, and protocol-only quantities.} Continues Table~\ref{tab:notation-runtime-checker}.}\label{tab:notation-calibration-privacy}\\
+\toprule
+Symbol & Type / range & Meaning & First use & Principal use \\
+\midrule
+\endfirsthead
+\multicolumn{5}{l}{\footnotesize Notation (continued)} \\
+\toprule
+Symbol & Type / range & Meaning & First use & Principal use \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\footnotesize Continued on next page} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multicolumn{5}{l}{\emph{15. Certificate confidence and risk calibration}}\\
+$s(b,\mathcal Z)$ & feature vector & certificate-summary vector used for confidence / risk calibration & Eq.~\eqref{eq:appendix_calibration_features} & $g_p,g_r$ \\
+$m_\vdash$ & scalar & semantic entailment margin included in certificate calibration features & Eq.~\eqref{eq:appendix_calibration_features} & risk calibration \\
+$\mathrm{Overlap}_{\max}$ & $[0,1]$ & maximum support-overlap feature supplied to calibrator & Eq.~\eqref{eq:appendix_calibration_features} & risk calibration \\
+$\mathrm{ToolOverlap}_{\max}$ & nonnegative scalar & maximum shared-tool overlap feature supplied to calibrator & Eq.~\eqref{eq:appendix_calibration_features} & risk calibration \\
+$\mathrm{DriftScore}$ & scalar & deployment/replay drift summary supplied to calibrator & Eq.~\eqref{eq:appendix_calibration_features} & risk calibration \\
+$\mathrm{BudgetUse}$ & scalar & resource-budget usage feature supplied to calibrator & Eq.~\eqref{eq:appendix_calibration_features} & risk calibration \\
+$g_p,g_r$ & monotone maps & held-out calibrators for certificate-validity confidence and false-accept risk & Eq.~\eqref{eq:appendix_conf_risk_calibrators} & $\widehat p,\widehat r$ \\
+$\widehat p(b,\mathcal Z)$ & $[0,1]$ & calibrated certificate-validity confidence & Eq.~\eqref{eq:appendix_conf_risk_calibrators} & reporting / control \\
+$\widehat r(b,\mathcal Z)$ & $[0,1]$ & calibrated estimate of false-accept risk & Eq.~\eqref{eq:appendix_conf_risk_calibrators} & regret / controller \\
+$B_{\rm audit}$ & $[0,1]$ & finite-sample contract-audit envelope used in certified operating-point calculations & App.~\ref{appendix:extended_proofs:cor_alpha} & $B_{\rm total}$ \\
+$\bar\epsilon$ & $[0,1]$ & frozen upper bound on per-branch false-accept probability & App.~\ref{appendix:extended_proofs:cor_alpha} & $B_{\rm total}$ \\
+$B_{\rm total}(k)$ & $[0,1]$ & combined audit-plus-redundancy certified bad-accept budget & Eq.~\eqref{eq:appendix_cor_budget} & certified operating point \\
+$\alpha_\star$ & $[0,1]$ & target bad-accept budget & Eq.~\eqref{eq:appendix_cor_budget} & $k^\star$, feasibility \\
+$k^\dagger,q^\dagger$ & integers & cost-aware redundancy / quorum operating-point choices & App.~\ref{appendix:supp_results:quorum} & controller / deployment choice \\
+\midrule
+\multicolumn{5}{l}{\emph{16. Privacy--utility--risk extension (modelled appendix only)}}\\
+$B_{\rm info}$ & positive budget & communication / released-certificate-summary budget per claim & Eq.~\eqref{eq:r4b_privacy_frontier_model} & privacy frontier \\
+$Q_{B_{\rm info}}$ & encoder & budgeted compression map for certificate summaries & App.~\ref{appendix:supp_results:privacy_frontier} & privacy mechanism \\
+$\mathcal M_\eta$ & randomized map & privacy-noise mechanism with noise level $\eta$ & Eq.~\eqref{eq:r4b_privacy_frontier_model} & private summary \\
+$\widetilde s(Z)$ & vector & released compressed/noised certificate summary & App.~\ref{appendix:supp_results:privacy_frontier} & private estimation \\
+$\ell(\cdot)$ & code-length function & communication length charged against $B_{\rm info}$ & App.~\ref{appendix:supp_results:privacy_frontier} & budget constraint \\
+$\omega(B_{\rm info})$ & nonnegative function & worst-case compression distortion; decreases with larger budget & App.~\ref{appendix:supp_results:privacy_frontier} & private estimation error \\
+$T,\widehat T_{B,\eta}$ & statistic / estimate & non-private statistic and its private compressed/noised estimate & App.~\ref{appendix:supp_results:privacy_frontier} & generic error bound \\
+$L_T$ & nonnegative constant & Lipschitz constant of statistic $T$ in released summary & App.~\ref{appendix:supp_results:privacy_frontier} & $u_T$ \\
+$u_T(B_{\rm info},\eta,\delta)$ & nonnegative bound & high-probability private estimation inflation for statistic $T$ & App.~\ref{appendix:supp_results:privacy_frontier} & private UCBs \\
+$\widehat\rho_{B,\eta},\widehat\epsilon_{B,\eta}$ & estimates & private estimates of dependence and branch false-accept rate & Eq.~\eqref{eq:r4b_privacy_frontier_model} & private certified risk \\
+$\overline\rho_{B,\eta},\overline\epsilon_{B,\eta}$ & upper bounds & privacy-inflated upper bounds on dependence and branch risk & Eq.~\eqref{eq:r4b_privacy_frontier_model} & $R_k(B_{\rm info},\eta)$ \\
+$R_k(B_{\rm info},\eta)$ & $[0,1]$ bound & modelled private certified risk bound at redundancy $k$ & Eq.~\eqref{eq:r4b_privacy_frontier_model} & privacy frontier \\
+$u_r(B_{\rm info},\eta,\delta)$ & nonnegative bound & privacy-induced risk-estimation error inflation & App.~\ref{appendix:supp_results:privacy_frontier} & private controller regret \\
+$\varepsilon_{\rm DP}$ & positive scalar & differential-privacy parameter for the illustrative Laplace mechanism, $1/\eta$ & App.~\ref{appendix:supp_results:privacy_frontier} & privacy frontier \\
+$\mathfrak F$ & Pareto set & non-dominated privacy--utility--risk operating points & App.~\ref{appendix:supp_results:privacy_frontier} & modelled extension \\
+$B_0,\varepsilon_0$ & positive limits & communication and privacy feasibility limits & App.~\ref{appendix:supp_results:privacy_frontier} & feasible operating set \\
+\midrule
+\multicolumn{5}{l}{\emph{17. Modelled frontier and scaling parameters}}\\
+$U(B_{\rm info},\eta)$ & scalar utility & illustrative utility model paired with the privacy-risk frontier & Eq.~\eqref{eq:r4b_privacy_utility_model} & App.~\ref{appendix:experiments:r4_privacy} \\
+$U_0,u_B,B_U,u_\eta,u_R$ & fixed model parameters & baseline utility, budget gain, budget scale, privacy penalty, and risk penalty in the illustrative utility model & Eq.~\eqref{eq:r4b_privacy_utility_model} & privacy illustration \\
+$\alpha,\beta,\epsilon_0,\tau,\sigma$ (privacy-model context) & fixed model parameters & coefficients controlling budget- and noise-dependent dependence/risk in the illustrative privacy frontier; local to Eq.~\eqref{eq:r4b_privacy_frontier_model} & Eq.~\eqref{eq:r4b_privacy_frontier_model} & modelled appendix only \\
+$T_{\rm mult}(k,|S_0|,d)$ & multiplier & illustrative engineering overhead multiplier for redundancy/support/depth scaling & Eq.~\eqref{eq:r5b_scaling_model} & App.~\ref{appendix:experiments:scaling} \\
+$T_0,a,b,c,\theta,\zeta$ (scaling-model context) & fixed model parameters & coefficients in the illustrative overhead model; local to Eq.~\eqref{eq:r5b_scaling_model} & Eq.~\eqref{eq:r5b_scaling_model} & scaling illustration \\
+$G_{\rm cache}(k,d)$ & nonnegative gain & illustrative cache/reuse gain subtracted from the scaling model & Eq.~\eqref{eq:r5b_cache_gain} & scaling illustration \\
+\midrule
+\multicolumn{5}{l}{\emph{18. Protocol-only diagnostic quantities}}\\
+$\widehat\varepsilon_{\rm tax}^{\rm chal}$ & $[0,1]$ & challenge-set fraction of ContractBad events missed by every frozen audit channel & Sec.~\ref{appendix:validation:taxonomy} & open-set taxonomy stress \\
+$\tau^\star$ & $(0,\gamma)$ & stationary margin split minimizing the two-term responsibility-ranking bound & Eq.~\eqref{eq:protocol_tau_stationarity} & replay-budget design \\
+$\gamma$ & positive margin & shorthand responsibility gap used in the protocol approximation for $\tau^\star$ & Eq.~\eqref{eq:protocol_tau_stationarity} & Eq.~\eqref{eq:protocol_tau_star} \\
+$\Theta_{\rm cal}$ & parameter set & calibration-only controller perturbation family & Eq.~\eqref{eq:controller_cal_regret_max} & sensitivity analysis \\
+$Q_\theta$ & objective & controller objective under sensitivity setting $\theta$ & Sec.~\ref{appendix:validation:controller} & model-relative regret \\
+$R_\theta$ & nonnegative scalar & model-relative regret $Q_\theta(\pi_{\rm nominal})-Q_\theta(\pi_\theta^\star)$ & Sec.~\ref{appendix:validation:controller} & controller sensitivity \\
+$R_{\max}^{\rm cal}$ & nonnegative scalar & worst calibration-only model-relative regret over $\Theta_{\rm cal}$ & Eq.~\eqref{eq:controller_cal_regret_max} & analytic bound check \\
+$\pi_{\rm nominal},\pi_\theta^\star$ & policies & nominal controller policy and per-$\theta$ optimal candidate policy & Sec.~\ref{appendix:validation:controller} & $R_\theta$ \\
+
+\end{longtable}
+\endgroup

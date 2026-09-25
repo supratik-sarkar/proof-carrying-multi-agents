@@ -1,0 +1,65 @@
+{
+  "schema": "PCG_MAS_V3_6_EXACT_RESUME_WORKPLAN",
+  "timestamp": "2026-09-17T07:00:00Z",
+  "status": "PASS",
+  "counts": {
+    "RECOVERY_REMAINING": 0,
+    "GEMINI_PRIMARY_REMAINING": 0,
+    "MIND2WEB_REMAINING": 279,
+    "BFCL_REMAINING": 280,
+    "AGENTDOJO_REMAINING": 280,
+    "FIT_REMAINING": 700,
+    "EXTERNAL_VERIFIER_REMAINING": 4200,
+    "TOTAL_PROTECTED_REUSABLE_TASKS": 594,
+    "TOTAL_REMAINING_GENERATION_TASKS": 1539,
+    "TOTAL_CANONICAL_TASKS_ACCOUNTED_FOR": 2133
+  },
+  "protected_tasks_sample": [
+    {
+      "task_id": "recovery:gemma-4-26b-a4b-it:fever:3262a15b0a73a57738664d4a84181a05",
+      "lane": "recovery",
+      "model_id": "gemma-4-26b-a4b-it",
+      "dataset_id": "fever",
+      "observation_id": "3262a15b0a73a57738664d4a84181a05",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/recovery/gemma-4-26b-a4b-it/fever/3262a15b0a73a57738664d4a84181a05.json"
+    },
+    {
+      "task_id": "recovery:gemma-4-26b-a4b-it:fever:40dee27b7c7afcc479888394c1f32a25",
+      "lane": "recovery",
+      "model_id": "gemma-4-26b-a4b-it",
+      "dataset_id": "fever",
+      "observation_id": "40dee27b7c7afcc479888394c1f32a25",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/recovery/gemma-4-26b-a4b-it/fever/40dee27b7c7afcc479888394c1f32a25.json"
+    },
+    {
+      "task_id": "recovery:gemma-4-26b-a4b-it:fever:469931cec0cfaa66c043083fd011bd53",
+      "lane": "recovery",
+      "model_id": "gemma-4-26b-a4b-it",
+      "dataset_id": "fever",
+      "observation_id": "469931cec0cfaa66c043083fd011bd53",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/recovery/gemma-4-26b-a4b-it/fever/469931cec0cfaa66c043083fd011bd53.json"
+    },
+    {
+      "task_id": "recovery:gemma-4-26b-a4b-it:fever:49ab6609565179c662b343da7f152dd5",
+      "lane": "recovery",
+      "model_id": "gemma-4-26b-a4b-it",
+      "dataset_id": "fever",
+      "observation_id": "49ab6609565179c662b343da7f152dd5",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/recovery/gemma-4-26b-a4b-it/fever/49ab6609565179c662b343da7f152dd5.json"
+    },
+    {
+      "task_id": "recovery:gemma-4-26b-a4b-it:fever:573b49e4a1b35b8f111de78b30c2fd73",
+      "lane": "recovery",
+      "model_id": "gemma-4-26b-a4b-it",
+      "dataset_id": "fever",
+      "observation_id": "573b49e4a1b35b8f111de78b30c2fd73",
+      "artifact_path": "artifacts/v3_6/dataset_amendment_runtime_v2/generations/recovery/gemma-4-26b-a4b-it/fever/573b49e4a1b35b8f111de78b30c2fd73.json"
+    }
+  ],
+  "remaining_tasks_summary": {
+    "mind2web": 279,
+    "bfcl_v1": 280,
+    "agentdojo": 280,
+    "fit_missing": 700
+  }
+}

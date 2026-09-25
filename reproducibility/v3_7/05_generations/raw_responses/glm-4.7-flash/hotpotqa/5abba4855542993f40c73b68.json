@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "e7be7da8bb3ee9390eb7ab3c7749462b8b74fa50eea20d0f4176a024d897139d",
+  "candidate_text": "Mark Neveldine and Brian Taylor",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "dd36f53aefd795a45b03c986bcefc6fd21da1cb2bfc4430a9596c239cefefeca",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "5abba4855542993f40c73b68",
+  "prompt_sha256": "5143344b8acd2b116017d9e732e92858763b0073f644c2c1b05e54721efc67b9",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "1bbc3de77e4739bd4da9f7e49abd829cab0a7831811b894b87c32edc520b2f1a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5abba4855542993f40c73b68",
+  "text": "Mark Neveldine and Brian Taylor",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 3.9596999999999998,
+    "prompt_tokens": 667,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 675
+  }
+}

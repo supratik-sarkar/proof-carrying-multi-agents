@@ -1,0 +1,34 @@
+{
+  "agentdojo": {
+    "max_turns_per_task": 8,
+    "projection_uses_measured_canary_physical_calls": true
+  },
+  "cloudflare_dimensions": [
+    "remaining_free_neurons",
+    "physical_requests",
+    "input_tokens",
+    "output_tokens",
+    "provider_concurrency",
+    "reset_wall_clock_alignment"
+  ],
+  "cost_usd_max": 0,
+  "forbidden_providers": [
+    "nvidia_nim",
+    "openrouter",
+    "groq"
+  ],
+  "gemini_dimensions": [
+    "RPM",
+    "RPD",
+    "TPM",
+    "physical_agent_turn_calls",
+    "provider_concurrency",
+    "reset_wall_clock_alignment"
+  ],
+  "hard_daily_quota_behavior": "PARK_OR_FAIL_DEADLINE_NO_BUSY_LOOP",
+  "local_model_weight_downloads": 0,
+  "maximum_extension_hours": 6,
+  "primary_deadline": "2026-09-17T18:00:00+05:30",
+  "schema": "PCG_MAS_V3_6_CAPACITY_CONTRACT_V2",
+  "unknown_dimension": "FAIL_CLOSED"
+}

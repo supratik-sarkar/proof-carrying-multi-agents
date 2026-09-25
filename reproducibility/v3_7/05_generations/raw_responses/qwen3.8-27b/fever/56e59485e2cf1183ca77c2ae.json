@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "44af6cb96f1f351484eed8df38dbbb876b2baf8b81b9e4ad88738465c4817e59",
+  "candidate_text": "\n\nSUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "eed551ef1e3bfec4d761e518757f47d4c1561d824948cf8db4ce610909b78944",
+  "example_id": "bab914e1073698bdeb7d4f076cca9b49",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "a680f1d88185baa2eac371a4dd5e4736283dafdf3637b2d0cca2ba0a1bca2f18",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bab914e1073698bdeb7d4f076cca9b49",
+  "prompt_sha256": "b85171b5bb3eedbbb13097c1e692d3e0cb7b30fa44f52d146f57b4a0f7b9d107",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Roswell (TV series): Roswell is an American science fiction television series developed , produced , and co-written by Jason Katims .\n\nClaim: Roswell was developed by Jason Katims.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "9c5653f55f4799a05c07e4ef3573e907a92d408f6e23c7c41120dc16dd24a008",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:bab914e1073698bdeb7d4f076cca9b49",
+  "task_key": "2d7028015c79224865f219a5b3d395bb40efec3e9b23ad7a2eb81f1d063a282b",
+  "text": "\n\nSUPPORTS",
+  "timestamp": "2026-09-15T09:26:41.919363+00:00",
+  "tokens_in": 167,
+  "tokens_out": 55,
+  "usage": {
+    "completion_tokens": 55,
+    "neurons": 22.831817626953125,
+    "prompt_tokens": 167,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 222
+  }
+}

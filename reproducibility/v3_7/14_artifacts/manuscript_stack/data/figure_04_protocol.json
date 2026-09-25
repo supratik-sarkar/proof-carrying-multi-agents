@@ -1,0 +1,9 @@
+{
+  "decomposition_supported": true,
+  "validated_non_degenerate": true,
+  "component_data": "selectivity_verification.csv",
+  "tabular_crosscheck": "table_25_protocol_sv.csv",
+  "identity": "Delta = S + V",
+  "precision": "Identity checked at full source precision; Table 25 checked after two-decimal and whole-percent rounding.",
+  "scope": "Eight-dataset selectivity and verification decomposition supplied by the manuscript data contract."
+}

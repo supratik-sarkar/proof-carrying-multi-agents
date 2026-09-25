@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "1939cc9927e08d1e2a498128093480d92793f67c92a391c844fedbb77229cbf4",
+  "example_id": "475b89f80bb011ebab90acde48001122",
+  "finish": "stop",
+  "input_sha256": "8abeef713447ca72ec5e62064f57b996052feb0e76774d82cbbb470419068a61",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "475b89f80bb011ebab90acde48001122",
+  "prompt_sha256": "379268f350e889c500c5ab811f58b9b759e5e5e6e3df793287bc7213be11701d",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Gyrid of Sweden\": [\"Gyrid Olafsdottir of Sweden (also Gyrithe Olafsdottir or Gunnhild) was a 10th-century Swedish princess and a Danish queen consort as the spouse of King Harald Bluetooth of Denmark.\"]\n\n[2] \"Doria Ragland\": [\"Doria L. Ragland( born September 2, 1956) is the mother of Meghan, Duchess of Sussex, the mother- in- law of Prince Harry, and the maternal grandmother of Archie Mountbatten- Windsor, who is seventh in line to the British throne.\",\"She is a former makeup artist, business owner, yoga instructor, and former social worker who worked in the mental health sector from 2015 to 2018.\"]\n\n[3] \"Baroness G\\u00f6sta von dem Bussche-Haddenhausen\": [\"Baroness G\\u00f6sta von dem Bussche- Haddenhausen( 26 January 1902 \\u2013 13 June 1996) was the mother of Prince Claus of the Netherlands, who was the Prince Consort of Queen Beatrix of the Netherlands, thus making her the mother- in- law of the former Dutch Queen.\",\"She is also the paternal grandmother of King Willem- Alexander of the Netherlands, who is the current Dutch King.\"]\n\n[4] \"Donna Harun\": [\"Donna Harun( born February 21, 1968) is an Indonesian actress and model of Dutch- Indonesian descent.\",\"She is the mother of actor Ricky Harun and mother- in- law of the actress and model Herfiza Novianti.\"]\n\nQuestion: Who is the mother-in-law of Gyrid Of Sweden?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "69f59f6d467f332d943a4d1c3b0e22f5b1776eb1e2998c832863f734707445fc",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:475b89f80bb011ebab90acde48001122",
+  "task_key": "99b412dd1f4d4ccc3f9c2082b910a2074ba7c9b35365f0966f6d83f44ffcf1a0",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-14T10:51:44.434600+00:00",
+  "tokens_in": 483,
+  "tokens_out": 108,
+  "usage": {
+    "completion_tokens": 108,
+    "neurons": 51.177268981933594,
+    "prompt_tokens": 483,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 591
+  }
+}

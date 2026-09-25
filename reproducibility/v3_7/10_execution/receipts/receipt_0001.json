@@ -1,0 +1,44 @@
+{
+  "schema": "PCG_MAS_V3_6_ACTIVE_TRANSACTION_CORRECTION_CHECKPOINT",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:45:21.160074+00:00",
+  "engine_stopped": true,
+  "FINAL_DEV_TRANSACTION_V36_running": false,
+  "FIT_EXPECTED": 700,
+  "FIT_PRESENT": 634,
+  "FIT_MISSING": 66,
+  "by_model_distribution": {
+    "gemini-3.1-flash-lite": 34,
+    "gemma-4-26b-a4b-it": 100,
+    "glm-4.7-flash": 100,
+    "gpt-oss-120b": 100,
+    "llama-4-scout-17b-16e-instruct": 100,
+    "nemotron-3-120b-a12b": 100,
+    "qwen3.8-27b": 100
+  },
+  "NONSCIENTIFIC_INFRASTRUCTURE_PROBE_CALLS": 4,
+  "nonscientific_probe_details": [
+    {
+      "model_id": "gpt-oss-120b",
+      "dataset": "hotpotqa",
+      "observation_id": "5a840a9e5542992ef85e2397",
+      "purpose": "token_budget_probe",
+      "calls": 1
+    },
+    {
+      "model_id": "qwen3.8-27b",
+      "dataset": "hotpotqa",
+      "observation_id": "5ab3cc395542992ade7c6e9f",
+      "purpose": "reasoning_low_probe",
+      "calls": 2
+    },
+    {
+      "model_id": "gemini-3.1-flash-lite",
+      "dataset": "fever",
+      "observation_id": "test_canary",
+      "purpose": "api_connectivity_probe",
+      "calls": 1
+    }
+  ],
+  "note": "Probe calls made outside final transaction do not count toward FIT or canonical observations."
+}

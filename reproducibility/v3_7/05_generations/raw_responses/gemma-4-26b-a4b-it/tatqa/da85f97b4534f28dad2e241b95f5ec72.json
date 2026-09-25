@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "0a646c73debfa0879585476762fa000b142513276b0fbbee3f41263feb587abc",
+  "candidate_text": "Approximately 82%",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "bc7d409986db990f3492810d747ab3fc130ef0950a9eed441724bdd132a89044",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "da85f97b4534f28dad2e241b95f5ec72",
+  "prompt_sha256": "0c39fd46c48397cee0c25d6375a6d8c597116b2bcc9b096ff6e88ee140d18674",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "1acd9b27a91cb2f498f02b0d0b13089aac3b612cc8c1121ff5b1f7f490743bea",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:da85f97b4534f28dad2e241b95f5ec72",
+  "text": "Approximately 82%",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 3.090909004211426,
+    "prompt_tokens": 322,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 328
+  }
+}

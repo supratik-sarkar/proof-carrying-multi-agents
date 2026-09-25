@@ -1,0 +1,47 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [
+      "Nested type checking failed for parameter 'list'. Expected outer type array with inner type <class 'float'>. Parameter value: [5, 3, 4, 1, 2]."
+    ],
+    "error_type": "type_error:nested",
+    "is_variable": true,
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "38b9a6498173ca60641ba9e6442ec15e0f1f9b2f6d0c0469aa942e4d8d47be5f",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:simple_87",
+  "prompt_sha256": "38b9a6498173ca60641ba9e6442ec15e0f1f9b2f6d0c0469aa942e4d8d47be5f",
+  "provider": "gemini",
+  "provider_raw_sha256": "b522e631a4a8d080e7d0d4680e9b07ced52a988b897ee4a9f0f1f62853044634",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPaQ104THevDDt5j9kL2g7F9Jzqmhyxw6fqP/dUCWxgueGH6N+iMSlr8NCMZmR3igQPKhlAA0E5xulqYfo+0IkQVrHsbcBeyMSWyC80kxPygtqFYUMoC7LGe1G157AlPaDLkYCFo0XBjgckg=="
+        }
+      },
+      "function": {
+        "arguments": "{\"list\":[5,3,4,1,2],\"order\":\"ascending\"}",
+        "name": "array_sort"
+      },
+      "id": "call_1201078",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 28,
+    "prompt_tokens": 130,
+    "total_tokens": 158
+  }
+}

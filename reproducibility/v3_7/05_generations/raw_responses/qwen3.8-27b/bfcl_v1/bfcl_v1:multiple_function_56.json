@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ab04353eceb9fe4f15fdf5adac52aafe4855573f376ac4a59487ff0f0f9304ad",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:multiple_function_56",
+  "prompt_sha256": "ab04353eceb9fe4f15fdf5adac52aafe4855573f376ac4a59487ff0f0f9304ad",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "a509bf39f639e091fba82c65b112e905cb0939ff87397c5888a40748c6b3fadb",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"company\": \"Apple\", \"days\": 60}",
+        "name": "avg_closing_price"
+      },
+      "id": "chatcmpl-tool-887b147c668fe40c",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 95,
+    "neurons": 54.677268981933594,
+    "prompt_tokens": 661,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 756
+  }
+}

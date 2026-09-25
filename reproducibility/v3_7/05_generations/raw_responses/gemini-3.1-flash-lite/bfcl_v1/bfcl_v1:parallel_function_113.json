@@ -1,0 +1,67 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ce1d409ab801ba8fb53b0f0cba94d3e3a316e7e19767db1da0f3315180f5c30d",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_function_113",
+  "prompt_sha256": "ce1d409ab801ba8fb53b0f0cba94d3e3a316e7e19767db1da0f3315180f5c30d",
+  "provider": "gemini",
+  "provider_raw_sha256": "2bcca55c22c0b0a52d9f4dfc24c59ada22d999869908cbfd504b1504b1198dd6",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPmiH1GBL+7WtM7gqpD/c4765FSL30Sft0LDMQGSATNBa1XwN2zcAwJJZ6KuitfPO76y0Ir6vvQI88mc1BSVmtr2hNxM4mHOxwlIqFasRKsApjTMoDJpSoAba9/osNEMKYGrE74av/S0506A=="
+        }
+      },
+      "function": {
+        "arguments": "{\"weight\":180,\"height\":70,\"activity_level\":\"lightly active\"}",
+        "name": "diabetes_prediction"
+      },
+      "id": "call_1225390",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"height\":65,\"activity_level\":\"very active\",\"weight\":200}",
+        "name": "diabetes_prediction"
+      },
+      "id": "call_1225391",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"weight\":150,\"height\":72,\"activity_level\":\"moderately active\"}",
+        "name": "diabetes_prediction"
+      },
+      "id": "call_1225392",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"height\":68,\"weight\":220,\"activity_level\":\"extra active\"}",
+        "name": "diabetes_prediction"
+      },
+      "id": "call_1225393",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 122,
+    "prompt_tokens": 273,
+    "total_tokens": 395
+  }
+}

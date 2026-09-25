@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "ae7ae829091ba757fc665ca9c2bc03a3ccc0900cbfd9b497cbd0c203c2306ea6",
+  "candidate_text": "Presbyterian Church (USA)",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "7d7afe057ddb2f852caa8b60466747d2b4c228552f18f4d8a1a620e84dab0a69",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5a807ea1554299485f598624",
+  "prompt_sha256": "747515b605f3cca10be539aba777824a0051c085343af7f2c8ea0a9dc5ff1622",
+  "provider": "gemini",
+  "provider_raw_sha256": "a2c3c930e61d5829cebdc5d6fe0053f6f4d8b60c9fb8b949b6b23620d166d20f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a807ea1554299485f598624",
+  "text": "Presbyterian Church (USA)",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 437,
+    "total_tokens": 443
+  }
+}

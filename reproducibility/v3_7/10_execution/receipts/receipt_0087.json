@@ -1,0 +1,11 @@
+{
+  "schema": "PCG_MAS_V3_6_GEMINI_RESUME_B_CAPACITY_PROBE",
+  "timestamp": "2026-09-18T07:05:00.898195+00:00",
+  "status": "PASS",
+  "attempts": 1,
+  "usage": {
+    "completion_tokens": 0,
+    "prompt_tokens": 3,
+    "total_tokens": 3
+  }
+}

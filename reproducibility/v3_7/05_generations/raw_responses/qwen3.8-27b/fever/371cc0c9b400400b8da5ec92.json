@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "85271d8b1fef137f33e4c57dc938e1dfe1e14b1f826f6c49859eb48dba4ba005",
+  "candidate_text": "\n\nREFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "52aedeba2edbc37ee13a43010d29525335adcd9bcb8ef2b94e996587074772bd",
+  "example_id": "efa5ab22a935570def8602b99dc2dbc8",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "55c158eb48fcf9cad0ce868042ffc0f6afc9d5cb75c53ea9367ca3da31809143",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "efa5ab22a935570def8602b99dc2dbc8",
+  "prompt_sha256": "cb9c205b29b0930d47287a1b7d8837ae34c1dcd71108e546a00e6ce4aae4477d",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Jenna Jameson: She has since won more than 35 adult-video awards , and has been inducted into the X-Rated Critics Organization -LRB- XRCO -RRB- and Adult Video News -LRB- AVN -RRB- Halls of Fame .\n\nClaim: Jenna Jameson has only been in newspaper advertising.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "2d961773ea2ee9a1dc332f459ae822aab65067ab6b46b782202fd19118343ccd",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:efa5ab22a935570def8602b99dc2dbc8",
+  "task_key": "4e3eaae05787ab9580a95b33b39adb5021ed881a6f6a6baf8d27a9c041cd7430",
+  "text": "\n\nREFUTES",
+  "timestamp": "2026-09-15T09:27:49.882897+00:00",
+  "tokens_in": 200,
+  "tokens_out": 239,
+  "usage": {
+    "completion_tokens": 239,
+    "neurons": 77.7090835571289,
+    "prompt_tokens": 200,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 439
+  }
+}

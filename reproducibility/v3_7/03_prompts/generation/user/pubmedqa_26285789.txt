@@ -1,0 +1,12 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] PubMedQA abstract context: INTRODUCTION: Whether mutation status should be used to guide therapy is an important issue in many cancers. We correlated mutation profile in radioiodine-refractory (RAIR) metastatic thyroid cancers (TCs) with patient outcome and response to tyrosine kinase inhibitors (TKIs), and discussed the results with other published data. MATERIALS AND METHODS: Outcome in 82 consecutive patients with metastatic RAIR thyroid carcinoma prospectively tested for BRAF, RAS and PI3KCA mutations was retrospectively analyzed, including 55 patients treated with multikinase inhibitors. RESULTS: Papillary thyroid carcinomas (PTCs) were the most frequent histological subtype (54.9 %), followed by poorly differentiated thyroid carcinoma [PDTC] (30.5 %) and follicular thyroid carcinoma [FTC](14.6 %). A genetic mutation was identified in 23 patients (28 %) and BRAF was the most frequently mutated gene (23 %). Median progression-free survival (PFS) on first-line TKI treatment was 14.6 months (95% CI 9.9-18.4). BRAF mutation positively influenced median PFS, both in the entire TKI-treated cohort (median PFS 34.7 months versus 11.6 months; hazard ratio [HR] 0.29; 95% CI 0.09-0.98; p = 0.03) and in the TKI-treated PTC cohort (n = 22) [log-rank p = 0.086; HR 2.95; 95 % CI 0.81-10.70). However, in TKI-treated patients, PDTC histologic subtype was the only independent prognostic factor for PFS identified in the multivariate analysis (HR 2.36; 95% CI 1.01-5.54; p = 0.048).
+
+Long answer: Patients with BRAF-mutant PTC had a significantly longer PFS than BRAF wild-type when treated with TKIs. However, due to the small number of BRAF-mutant patients, further investigations are required, especially to understand the potential positive effect of BRAF mutations in RAIR TC patients while having a negative prognostic impact in RAI-sensitive PTC patients.
+
+Question: Does Molecular Genotype Provide Useful Information in the Management of Radioiodine Refractory Thyroid Cancers?
+
+Answer:

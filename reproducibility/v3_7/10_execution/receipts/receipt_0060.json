@@ -1,0 +1,36 @@
+{
+  "active<PUBLIC_TERM:af3ddbfd2cb564c2>_dependencies": 0,
+  "compile_commands": [
+    "tectonic pcg_mas_<PUBLIC_TERM:0811138fc65a7023>2027_v3-6.tex"
+  ],
+  "compile_exit_codes": [
+    0,
+    0
+  ],
+  "compiled_pdf_path": "pcg_mas_<PUBLIC_TERM:0811138fc65a7023>2027_v3-6.pdf",
+  "compiled_pdf_sha256": "0f76def372786f6aa458f3305e44ef706886153c39dc9646bb210a29e0db8808",
+  "compiled_pdf_size_bytes": 1088668,
+  "conditional_cuts": [
+    {
+      "item": "F4C (Figure 04 Panel C)",
+      "reason": "S/V non-degeneracy condition failed; reported degenerate per spec §4.1"
+    },
+    {
+      "item": "C7 (Figure C7)",
+      "reason": "Responsibility replay non-informative; documented as protocol baseline"
+    }
+  ],
+  "external_dependencies": 0,
+  "main_tex_path": "manuscript/<PUBLIC_TERM:0811138fc65a7023>2027/final_overleaf/pcg_mas_<PUBLIC_TERM:0811138fc65a7023>2027_v3-6.tex",
+  "main_tex_sha256": "6f38dc341c4889cea530adbbbf8de5849fd13e93c1a12a64de60628a45c39dbf",
+  "missing_assets": 0,
+  "number_of_final_figures": 20,
+  "number_of_rendered_table_identities": 37,
+  "ready_for_direct_upload_to_overleaf": true,
+  "schema": "PCG_MAS_V3_6_FINAL_OVERLEAF_PACKAGE_RECEIPT",
+  "status": "PASS",
+  "timestamp": "2026-09-19T18:00:00Z",
+  "unresolved_refs": 0,
+  "zip_path": "PCG_MAS_<PUBLIC_TERM:0811138fc65a7023>2027_V3_6_OVERLEAF_FINAL.zip",
+  "zip_sha256": "e2428a5222b5de8930ecedfe5cf4734731f2f73fb95a96b3929f4f3306793f59"
+}

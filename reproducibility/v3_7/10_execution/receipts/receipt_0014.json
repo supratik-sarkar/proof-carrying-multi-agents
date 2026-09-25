@@ -1,0 +1,30 @@
+{
+  "schema": "PCG_MAS_V3_6_AUTONOMOUS_RESUME_AB_INSTALL_RECEIPT",
+  "status": "PASS",
+  "READY": "YES",
+  "installed_at": 1789677399.322034,
+  "initial_state": {
+    "canonical": 2075,
+    "agentdojo": 115,
+    "mind2web": 280,
+    "bfcl": 280
+  },
+  "resume_A": {
+    "count": 156,
+    "provider": "cloudflare"
+  },
+  "resume_B": {
+    "count": 9,
+    "provider": "gemini"
+  },
+  "baseline_hashes_verified": 675,
+  "pinned_agentdojo_head": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "pinned_agentdojo_clean": true,
+  "previous_agentdojo_stage_status": {
+    "status": "RUNNING",
+    "progress": "",
+    "updated": 1789667449.6459992
+  },
+  "provider_calls": 0,
+  "benchmark_semantics_changed": false
+}

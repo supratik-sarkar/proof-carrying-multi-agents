@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "4d95883b25c4716c947b862768ffcd27fb0ae632a6c04bd2d4370a9a91bf58fa",
+  "candidate_text": "Behind Locked Doors (1991).",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "668963958084bbb5aa11eb11d11afebe2abae929fe35f5d336da36e0ded3bc7c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "828b1390093511ebbdaeac1f6bf848b6",
+  "prompt_sha256": "a69ac7c9eed710c5f20145493b4c4313283017b978dac16cf36d8b5b42dbe15c",
+  "provider": "gemini",
+  "provider_raw_sha256": "746bbae5b6610a626f41b5bb524627bbb2a5092b24a63ba2696696ca2ccf556a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:828b1390093511ebbdaeac1f6bf848b6",
+  "text": "Behind Locked Doors (1991).",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 9,
+    "prompt_tokens": 411,
+    "total_tokens": 420
+  }
+}

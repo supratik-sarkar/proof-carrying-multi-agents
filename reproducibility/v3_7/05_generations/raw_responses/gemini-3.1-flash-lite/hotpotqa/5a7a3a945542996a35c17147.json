@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "0ff35e3ab6dfeaba6aaa2a5f11676041cfe457b2dcf7228496cf925ae73d833d",
+  "candidate_text": "Hong Kong.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "705e13a570e5632a81a6d75a259caa379243511a9df00f24e55d79a9403cf58a",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5a7a3a945542996a35c17147",
+  "prompt_sha256": "ea396daf101759219527a87537d0b5f0958e0101c2589411718346c8d2202cab",
+  "provider": "gemini",
+  "provider_raw_sha256": "1f8f9712d5508a83fe849fb97df93328b913ef5520390f9fcf998df69b1841c0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a7a3a945542996a35c17147",
+  "text": "Hong Kong.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "prompt_tokens": 699,
+    "total_tokens": 702
+  }
+}

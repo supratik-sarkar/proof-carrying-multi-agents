@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "3d317410079c51e9334bff79a27b3f3b69380ba859180de1b0bedf82631b8e36",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_function_98",
+  "prompt_sha256": "3d317410079c51e9334bff79a27b3f3b69380ba859180de1b0bedf82631b8e36",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "d15e1b9d942bea25d9781bf4a466a4b30d1cded16d1d26fdc8d84eb9aee8fd32",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"charge\": 2, \"distance\": 0.5, \"medium\": \"vacuum\"}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "chatcmpl-tool-bb93bdd2594795a4",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"charge\": 2, \"distance\": 1, \"medium\": \"vacuum\"}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "chatcmpl-tool-812afebbe02de5b6",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"charge\": 2, \"distance\": 2, \"medium\": \"vacuum\"}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "chatcmpl-tool-88ff90762eb6c50b",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"charge\": 2, \"distance\": 1, \"medium\": \"air\"}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "chatcmpl-tool-8593f6e3cb6597e3",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 488,
+    "neurons": 161.19091796875,
+    "prompt_tokens": 470,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 958
+  }
+}

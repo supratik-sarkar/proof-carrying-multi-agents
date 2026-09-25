@@ -1,0 +1,58 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "a97f1e8b8208cc7a8aa50cc25202a416b522479fa43eff0dde82962b7a09ab15",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_164",
+  "prompt_sha256": "a97f1e8b8208cc7a8aa50cc25202a416b522479fa43eff0dde82962b7a09ab15",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "46f905c103e3d2c4f03e6743e60e1d1c9b655ac076d5776869b7d015d6bf7f29",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"docket\": \"12345\", \"court\": \"Supreme Court\", \"info_type\": \"accused\"}",
+        "name": "get_case_info"
+      },
+      "id": "chatcmpl-tool-add691c2d9af9857",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"base\": 10, \"height\": 5, \"unit\": \"square meters\"}",
+        "name": "calculate_triangle_area"
+      },
+      "id": "chatcmpl-tool-817adc65bb6db32d",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"docket\": \"67890\", \"court\": \"High Court\", \"info_type\": \"verdict\"}",
+        "name": "get_case_info"
+      },
+      "id": "chatcmpl-tool-86b290fab2175569",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 294,
+    "neurons": 112.44544982910156,
+    "prompt_tokens": 658,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 952
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ad4ae499114c1ce514b449b25f17437773c9038c82569e08f5bd27c015d82632",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:parallel_function_119",
+  "prompt_sha256": "ad4ae499114c1ce514b449b25f17437773c9038c82569e08f5bd27c015d82632",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "01e3f679a95c26b06e0cae31e0444b873b01f3b9b81bd18c06f7f2cdc3664900",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"color\":\"blue\",\"habitat\":\"forest\",\"size\":\"small\"}",
+        "name": "identify_bird"
+      },
+      "id": "call_1789655670788",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"color\":\"black\",\"habitat\":\"lake\",\"size\":\"large\"}",
+        "name": "identify_bird"
+      },
+      "id": "call_1789655670788",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"color\":\"brown\",\"habitat\":\"desert\",\"size\":\"medium\"}",
+        "name": "identify_bird"
+      },
+      "id": "call_1789655670788",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"color\":\"green\",\"habitat\":\"tropical rainforest\",\"size\":\"large\"}",
+        "name": "identify_bird"
+      },
+      "id": "call_1789655670788",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 66,
+    "neurons": 24.883636474609375,
+    "prompt_tokens": 806,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 872
+  }
+}

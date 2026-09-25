@@ -1,0 +1,43 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "fb93440b22652e20718c52139de95acb8913e173bad970f63395cf95835fc649",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "bfcl_v1:multiple_function_173",
+  "prompt_sha256": "fb93440b22652e20718c52139de95acb8913e173bad970f63395cf95835fc649",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "22072752b8dae884dab4892f25ec65e5815245a694d09676c60f33f36738bb1a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"season\": 2021, \"top\": 1}",
+        "name": "get_defense_ranking"
+      },
+      "id": "chatcmpl-tool-a750ae186a7c58d0",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 148,
+    "neurons": 50.007999999999996,
+    "prompt_tokens": 664,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 812
+  }
+}

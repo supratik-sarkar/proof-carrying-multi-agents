@@ -1,0 +1,12 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] PubMedQA abstract context: OBJECTIVE: To compare the probability of prenatal diagnosis (PND) and termination of pregnancy for fetal anomaly (TOPFA) between fetuses conceived by assisted reproductive techniques (ART) and spontaneously-conceived fetuses with congenital heart defects (CHD). DESIGN: Population-based observational study. SETTING: Paris and surrounding suburbs. POPULATION: Fetuses with CHD in the Paris registry of congenital malformations and cohort of children with CHD (Epicard). METHODS: Comparison of ART-conceived and spontaneously conceived fetuses taking into account potential confounders (maternal characteristics, multiplicity and year of birth or TOPFA). MAIN OUTCOME MEASURES: Probability and gestational age at PND and TOPFA for ART-conceived versus spontaneously conceived fetuses. RESULTS: The probability of PND (28.1% versus 34.6%, P = 0.077) and TOPFA (36.2% versus 39.2%, P = 0.677) were not statistically different between ART-conceived (n = 171) and spontaneously conceived (n = 4620) fetuses. Estimates were similar after adjustment for potential confounders. Gestational age at PND tended to be earlier for ART fetuses (23.1 versus 24.8 weeks, P = 0.05) but no statistical difference was found after adjustment for confounders. Gestational age at TOPFA was comparable between ART-conceived and spontaneously conceived fetuses.
+
+Long answer: In our population, ART conception was not significantly associated with the probability of PND or TOPFA for CHD. One implication of our results is that live births may be adequate for assessing the overall risk of CHD related to ART. However, total prevalence, in particular of severe CHD, would not be adequately assessed if TOPFA are not included.
+
+Question: Is the probability of prenatal diagnosis or termination of pregnancy different for fetuses with congenital anomalies conceived following assisted reproductive techniques?
+
+Answer:

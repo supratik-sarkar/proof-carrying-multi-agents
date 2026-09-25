@@ -1,0 +1,9 @@
+Entry,Role,Status
+gpt-oss-120b,Frozen generator,Bound
+qwen3.8-27b,Frozen generator,Bound
+gemini-3.1-flash-lite,Frozen generator,Bound
+llama-4-scout-17b-16e-instruct,Frozen generator,Bound
+nemotron-3-120b-a12b,Frozen generator,Bound
+gemma-4-26b-a4b-it,Frozen generator,Bound
+glm-4.7-flash,Frozen generator,Bound
+FEVER / HotpotQA / PubMedQA / TAT-QA / 2Wiki / Mind2Web / BFCL V1 / AgentDojo,56-cell endpoint,Evaluable

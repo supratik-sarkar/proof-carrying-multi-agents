@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "50b200f1280893ef7bc2db1c4d79445c7273837276b8aaae65c81b7a5fee6690",
+  "example_id": "5ae694a15542991bbc976141",
+  "finish": "stop",
+  "input_sha256": "633f220d2e34da028097d95d4c1f7bc783e2c5c3eed9b4a486ed46afce5bba2e",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "5ae694a15542991bbc976141",
+  "prompt_sha256": "7d57dfdda3f4355fd79994b01c99f400489670c0649d794d708cdfad319438b3",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Minster Pool: Minster Pool is a reservoir located between Bird Street and Dam Street in the heart of the city of Lichfield, Staffordshire in the United Kingdom.  The pool lies directly south of Lichfield Cathedral and historically has been important to the defence of the Cathedral Close.  The pool was originally formed in the 11th century when a boggy stream was dammed at its eastern end to drive a mill on Dam Street.  The pool was used as a mill pond and fishery until 1856 when the mill was demolished; it has since been retained for public amenity.\n\n[2] Dudley Zoo: Dudley Zoological Gardens is a 40 acre zoo located within the grounds of Dudley Castle in the town of Dudley, in the Black Country region of the West Midlands, England.  The Zoo opened to the public on 18 May 1937.  Dudley Zoo is owned and operated by Dudley and West Midlands Zoological Society, founded in 1935 and a registered charity.\n\n[3] Brierley Hill: Brierley Hill is a small town and electoral ward of the Dudley Metropolitan Borough, in the West Midlands of England, and is situated approximately 2.5 miles south of central Dudley and 2 miles north of Stourbridge.  Part of the Black Country, and in a heavily industrialised area of the Dudley Borough, it has a population of 13,935 at the 2011 census, and is best known for glass and steel manufacturing, although the industry has declined considerably since the 1970s.  One of the largest factories in the area was the Round Oak Steelworks, which was closed down and redeveloped in the 1980s to become the Merry Hill Shopping Centre.  Brierley Hill was originally in Staffordshire, but is now part of the West Midlands metropolitan county since its creation in 1974.\n\n[4] Black Country Living Museum: The Black Country Living Museum (formerly The Black Country Museum) is an open-air museum of rebuilt historic buildings in Dudley in the West Midlands of England.  It is located in the centre of the Black Country, 10 miles west of Birmingham.  The museum occupies 105000 m2 of former industrial land partly reclaimed from a former railway goods yard, disused lime kilns, canal arm and former coal pits.\n\nQuestion: Why is Minister Pool important to Black Country and the West Midlands in England?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c6514892dfc587390cb3c9b2a85d95f2544c52c45258f522faa40ea4b92083b0",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ae694a15542991bbc976141",
+  "task_key": "a21df54a1453569d66f58b2d3cdb5df695da9e39c2b1cf52d0fa112c1972840a",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-14T10:46:08.736651+00:00",
+  "tokens_in": 629,
+  "tokens_out": 175,
+  "usage": {
+    "completion_tokens": 175,
+    "neurons": 76.64090728759766,
+    "prompt_tokens": 629,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 804
+  }
+}

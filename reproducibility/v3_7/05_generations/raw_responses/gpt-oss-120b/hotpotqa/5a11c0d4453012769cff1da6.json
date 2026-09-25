@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "3acefcfa65fa8884ee4aaded028e16be7ddc620008cd4f1277d056f74d078d96",
+  "candidate_text": "Roman Empire",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "1a23f8562fbeb8f4c24738d45d1b6315c44a231d0f0ace0010ad6ab6519ca5c6",
+  "example_id": "5ae0a59a55429945ae9593e2",
+  "finish": "stop",
+  "input_sha256": "45901f3d89a2e6aa7f04e83ff72f91f5e291f30bf7129753413b61d085608052",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5ae0a59a55429945ae9593e2",
+  "prompt_sha256": "cb5b407e1eafb1fcff774f1a9e1cf018a5dd22c7861775abd9d3addf3417872f",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Catuvellauni: The Catuvellauni were a Celtic tribe or state of southeastern Britain before the Roman conquest, attested by inscriptions into the 4th century.\n\n[2] Durotriges: The Durotriges were one of the Celtic tribes living in Britain prior to the Roman invasion.  The tribe lived in modern Dorset, south Wiltshire, south Somerset and Devon east of the River Axe and the discovery of an Iron Age hoard in 2009 at Shalfleet, Isle of Wight gives evidence that they lived in the western half of the island.  After the Roman conquest, their main \"civitates\", or settlement-centred administrative units, were Durnovaria (modern Dorchester, \"the probable original capital\") and Lindinis (modern Ilchester, \"whose former, unknown status was thereby enhanced\").  Their territory was bordered to the west by the Dumnonii; and to the east by the Belgae.\n\n[3] Corieltauvi: The Corieltauvi (formerly thought to be called the Coritani, and sometimes referred to as the Corieltavi) were a tribe of people living in Britain prior to the Roman conquest, and thereafter a \"civitas\" of Roman Britain.  Their territory was in what is now the English East Midlands.  They were bordered by the Brigantes to the north, the Cornovii to the west, the Dobunni and Catuvellauni to the south, and the Iceni to the east.  Their capital was called \"Ratae Corieltauvorum\", known today as Leicester.\n\n[4] Roman conquest of Britain: The Roman conquest of Britain was a gradual process, beginning effectively in AD 43 under Emperor Claudius, whose general Aulus Plautius served as first governor of Roman Britain (Latin: \"Britannia\" ).  Great Britain had already frequently been the target of invasions, planned and actual, by forces of the Roman Republic and Roman Empire.  In common with other regions on the edge of the empire, Britain had enjoyed diplomatic and trading links with the Romans in the century since Julius Caesar's expeditions in 55 and 54 BC, and Roman economic and cultural influence was a significant part of the British late pre-Roman Iron Age, especially in the south.\n\nQuestion: This Celtic ruler who was born in AD 43 ruled southeastern Britain prior to conquest by which empire?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "7a0a56d01455236bbc9e1f22e26202326552d7767485457b0fda4a659ab1490a",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ae0a59a55429945ae9593e2",
+  "task_key": "74152f37162c857ae3a5f185fa4bcbbd6347afccee2e859e5a7b2eb5eb87e920",
+  "text": "Roman Empire",
+  "timestamp": "2026-09-14T10:32:35.872372+00:00",
+  "tokens_in": 613,
+  "tokens_out": 227,
+  "usage": {
+    "completion_tokens": 227,
+    "neurons": 34.9817008972168,
+    "prompt_tokens": 613,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 840
+  }
+}

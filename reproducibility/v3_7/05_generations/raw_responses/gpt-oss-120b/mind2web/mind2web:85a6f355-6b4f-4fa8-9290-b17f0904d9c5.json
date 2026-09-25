@@ -1,0 +1,31 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "correct": false
+  },
+  "candidate_sha256": "8f7ae212d25d12fd4196ed510df57ad32fe301880627488b3c631a70d984a97e",
+  "candidate_text": "{\"choice\":\"C3\",\"operation\":\"CLICK\",\"value\":\"Utah\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "59f20f3570cade3c1d4ada8107e1d802e2dcd9e3e2a339b7fa61aebb8673d3bd",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "mind2web:85a6f355-6b4f-4fa8-9290-b17f0904d9c5",
+  "prompt_sha256": "59f20f3570cade3c1d4ada8107e1d802e2dcd9e3e2a339b7fa61aebb8673d3bd",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "758e6d9ba1a408b852397b165cde167aa24081088039df8af112544b016a2078",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C3\",\"operation\":\"CLICK\",\"value\":\"Utah\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 253,
+    "neurons": 28.099931716918945,
+    "prompt_tokens": 341,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 594
+  }
+}

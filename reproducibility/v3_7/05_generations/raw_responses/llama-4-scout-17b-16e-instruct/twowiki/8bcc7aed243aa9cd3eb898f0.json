@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "589e65324844922c5163a4181273ca5c67fb0abb10fbc55cbf2476d69bbe3579",
+  "example_id": "59ecc1a908c811ebbd91ac1f6bf848b6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "6600b5383cc7ce2cadb56518023d1fd28a42027bc5caf5006006d9e7baebf6c4",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "59ecc1a908c811ebbd91ac1f6bf848b6",
+  "prompt_sha256": "0f903ca4cf9a5d4529672c43d099780165276f175bdf236ba868d0caadeec305",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"William Ruane\": [\"William Ruane( born 1985) is a Scottish actor.\",\"He is best known for his roles in the films\\\" Sweet Sixteen\\\"( 2002) and\\\" The Angels' Share\\\"( 2012), and in the soap opera\\\" River City\\\".\"]\n\n[2] \"William Ruane\": [\"William Ruane( born 1985) is a Scottish actor.\",\"He is best known for his roles in the films\\\" Sweet Sixteen\\\"( 2002) and\\\" The Angels' Share\\\"( 2012), and in the soap opera\\\" River City\\\".\"]\n\n[3] \"Mr. Right (2009 film)\": [\"Mr. Right is a 2009 British film directed by David Morris and Jacqui Morris.\",\"The jointly- made gay- themed film is the debut for both directors.\"]\n\n[4] \"Sweet Sixteen (2002 film)\": [\"Sweet Sixteen is a 2002 drama film directed by Ken Loach.\",\"Set in Scotland, the film tells the story of a teenage boy from a troubled background, Liam, who dreams of starting afresh with his mother as soon as she has completed her prison term.\",\"Liam's attempts to raise money for the two of them are set against the backdrop of the Inverclyde towns of Greenock, Port Glasgow and the coast at Gourock.\",\"The film is often shown with subtitles because, as with many of Loach's films, the dialogue is extensively in a local dialect, in this case the Inverclyde variant of Glaswegian( itself a mix of Scottish English and Scots with Irish and Highland influences).\"]\n\nQuestion: Do both directors of films Sometimes Good and Sweet Sixteen (2002 Film) share the same nationality?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "e4c85169ab7d744f99bb452bbb26e8de48c24158617f69c5dc911c9ef92dd977",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:59ecc1a908c811ebbd91ac1f6bf848b6",
+  "task_key": "4e9bb85dd1c5e0d559a4b0ef8a01740f525d32df7e896727e3e663302cbfb426",
+  "text": "I don't know.",
+  "timestamp": "2026-09-15T09:34:18.530054+00:00",
+  "tokens_in": 416,
+  "tokens_out": 5,
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 10.597273826599121,
+    "prompt_tokens": 416,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 421
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "replay_recorded_at_utc": "2026-09-25T12:40:02.047431+00:00",
+  "status": "PASS",
+  "reference": "Embedded v3.7 manuscript data authority.",
+  "scope": "Ten deterministic aggregate derivations; current per-observation values are explicitly not retained.",
+  "relative_tolerance": 1e-11,
+  "absolute_tolerance": 1e-11,
+  "checks": [
+    {
+      "file": "method_summary.csv",
+      "rows": 7,
+      "status": "PASS",
+      "different_columns": [],
+      "max_absolute_numeric_difference": 1.7763568394002505e-15,
+      "source_sha256": "0b7d4de0c9537a5f78688d9c546096e3545a0510e45a95dbfc51ffc80b8f48d8",
+      "recomputed_sha256": "1ce1d37358ff756638c49acabb1272af242614dc7117317476e4f96e29b7ff5c"
+    },
+    {
+      "file": "paired_cell_effects.csv",
+      "rows": 56,
+      "status": "PASS",
+      "different_columns": [],
+      "max_absolute_numeric_difference": 4.440892098500626e-16,
+      "source_sha256": "b58c3b8cc3d41f67d769a3710320b66b57df5ddcc4cefa8124989a63fdd1f09e",
+      "recomputed_sha256": "b58c3b8cc3d41f67d769a3710320b66b57df5ddcc4cefa8124989a63fdd1f09e"
+    },
+    {
+      "file": "method_dataset_summary.csv",
+      "rows": 56,
+      "status": "PASS",
+      "different_columns": [],
+      "max_absolute_numeric_difference": 1.4210854715202004e-14,
+      "source_sha256": "006c179714f79a786f71eadb2d30c8b3b4488804dd4025e940f4b0e9db187e8a",
+      "recomputed_sha256": "6e970167f0b2b2b801196703dd88cfffecd7d3232d3dd24d9961d049e8a9f492"
+    },
+    {
+      "file": "risk_coverage_summary.csv",
+      "rows": 150,
+      "status": "PASS",
+      "different_columns": [],
+      "max_absolute_numeric_difference": 1.4210854715202004e-14,
+      "source_sha256": "ac28524c2f012b76b8bdc7b7663c3fbcbd8816653b67bb876f59e149c3b059af",
+      "recomputed_sha256": "fd96ad4c73f4fe468864cac1e932c808b28239442261b3c49dbb9d23ffe4e252"
+    },
+    {
+      "file": "ablation_summary.csv",
+      "rows": 81,
+      "status": "PASS",
+      "different_columns": [],
+      "max_absolute_numeric_difference": 4.440892098500626e-16,
+      "source_sha256": "21d24005a0ec4f36db186282cfc173424bbd97aa3ade7ae1bd968d9e44160da7",
+      "recomputed_sha256": "21d24005a0ec4f36db186282cfc173424bbd97aa3ade7ae1bd968d9e44160da7"
+    },
+    {
+      "file": "capability_scope_matrix.csv",
+      "rows": 35,
+      "status": "PASS",
+      "different_columns": [],
+      "max_absolute_numeric_difference": 0.0,
+      "source_sha256": "a9f759b5cf15638db653e9db09bf16cd273fa7b72f588f8b7a2c9b40f1f5f2e7",
+      "recomputed_sha256": "a9f759b5cf15638db653e9db09bf16cd273fa7b72f588f8b7a2c9b40f1f5f2e7"
+    },
+    {
+      "file": "witness_matrix_scoped.csv",
+      "rows": 28,
+      "status": "PASS",
+      "different_columns": [],
+      "max_absolute_numeric_difference": 0.0,
+      "source_sha256": "c2ff8f1bc2cd5687de5e9902bdd33e12b79b8877b3033dc0fd522e6872a42046",
+      "recomputed_sha256": "c2ff8f1bc2cd5687de5e9902bdd33e12b79b8877b3033dc0fd522e6872a42046"
+    },
+    {
+      "file": "figure_C1_certificate_failure_channel_atlas.csv",
+      "rows": 7,
+      "status": "PASS",
+      "different_columns": [],
+      "max_absolute_numeric_difference": 0.0,
+      "source_sha256": "5c6fdbfa854efd51564d5d74fd3f9c268d70d72cbc1e376b9137a4ec1ac107ee",
+      "recomputed_sha256": "5c6fdbfa854efd51564d5d74fd3f9c268d70d72cbc1e376b9137a4ec1ac107ee"
+    },
+    {
+      "file": "timing_summary.csv",
+      "rows": 7,
+      "status": "PASS",
+      "different_columns": [],
+      "max_absolute_numeric_difference": 2.220446049250313e-16,
+      "source_sha256": "cea15e7cde8d6e6867168a6c3e19efc1778b8eb495287a8a35ca2d7b84b87fb6",
+      "recomputed_sha256": "cea15e7cde8d6e6867168a6c3e19efc1778b8eb495287a8a35ca2d7b84b87fb6"
+    },
+    {
+      "file": "figure_D2_cost_telemetry.csv",
+      "rows": 12,
+      "status": "PASS",
+      "different_columns": [],
+      "max_absolute_numeric_difference": 1.1102230246251565e-16,
+      "source_sha256": "9d5aeb14b8fced3d0004631d40c792d1d7509e32dbdd42e93754480feaecf207",
+      "recomputed_sha256": "9d5aeb14b8fced3d0004631d40c792d1d7509e32dbdd42e93754480feaecf207"
+    }
+  ],
+  "data_files_changed": 0
+}

@@ -5,9 +5,9 @@ build-backend = "hatchling.build"
 [project]
 name = "pcg-mas"
 version = "0.1.0"
-description = "Proof-Carrying Generation for Multi-Agent Systems (conference 2026 submission artifact)"
+description = "Proof-Carrying Generation for Multi-Agent Systems (research artifact)"
 readme = "README.md"
-requires-python = ">=3.10,<3.13"
+requires-python = ">=3.12.13"
 license = { text = "MIT" }
 authors = [{ name = "Anonymous" }]
 keywords = ["llm", "multi-agent", "verification", "proof-carrying", "grounding"]
@@ -113,14 +113,14 @@ packages = ["src/pcg"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py310"
+target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "N", "B", "UP", "S", "A", "C4", "PT", "RUF"]
 ignore = ["S101"]  # allow asserts in tests
 
 [tool.mypy]
-python_version = "3.10"
+python_version = "3.12"
 strict = true
 warn_unused_ignores = true
 ignore_missing_imports = true

@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "c9a81f89ab82a6985a1dc3cd4f388d23f9b533e38d28d395af698b9762a31ed6",
+  "candidate_text": "Tatton Park.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "798eb346a9d03d3417076c8c3d6f206835e88fa913f85a066e79d8a4ce77938a",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5a7577785542992d0ec05fa0",
+  "prompt_sha256": "e2a4f64ec31e7cdbe529e789d8fcd132e9092aa324cf813e02caa7471b5a3a48",
+  "provider": "gemini",
+  "provider_raw_sha256": "29cb4f033a90a3012dbf6fc655514a82cb0c2b7301a6ce0a17301df056368450",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a7577785542992d0ec05fa0",
+  "text": "Tatton Park.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 524,
+    "total_tokens": 528
+  }
+}

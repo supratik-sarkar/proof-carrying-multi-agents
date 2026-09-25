@@ -1,0 +1,8 @@
+stage_order,stage,entered_n,passed_n,failed_n,indeterminate_n,cumulative_pass_rate_pct,terminal_state,failure_reason_class
+1,Candidate generated,2240,2240,0,0,100.0000,PASS_TO_NEXT,NONE
+2,Committed evidence / certificate materialized,2240,2178,62,0,97.2321,PASS_TO_NEXT,MISSING_OR_INCOMPLETE_COMMITMENT
+3,Online acceptance checks evaluable,2178,2116,50,12,94.4643,PASS_TO_NEXT,UNEVALUABLE_OR_UNSCORABLE_CHECK
+4,Unified certificate Check = 1,2116,2006,110,0,89.5536,PASS_TO_NEXT,ONLINE_ACCEPTANCE_CONJUNCT_FAILED
+5,Support / separation / quorum satisfied,2006,1932,74,0,86.2500,PASS_TO_NEXT,INSUFFICIENT_OR_NONSEPARATED_SUPPORT
+6,Risk / control policy permits release,1932,1850,82,0,82.5893,PASS_TO_RELEASE,CONTROLLED_REFUSAL_OR_ESCALATION
+7,Released,1850,1850,0,0,82.5893,RELEASED,NONE

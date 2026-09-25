@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "d7dec8216d0997bd1998f0fce2e257ae946477002288530396db4fc1b1ee18a8",
+  "example_id": "a8e5225b6454a036918cc5fe89aed981",
+  "finish": "stop",
+  "input_sha256": "f6966f6d71b5e2f84011079541e54ac3dee18a894984e9c7bd22455e6a07be78",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "a8e5225b6454a036918cc5fe89aed981",
+  "prompt_sha256": "407df8028c6e5b7efc13feb71b4571f79b6da41b732457062ac3447e3354f80d",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Garden State: Garden State refers to the official nicknames of the state of New Jersey in the United States and the state of Victoria in Australia .\n\nClaim: Garden State was at a festival that takes place in Honolulu, Hawaii.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b035e1e1a957d4b855992edd55341a3230c093b59f8ec4f43ea7b019c818e589",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:a8e5225b6454a036918cc5fe89aed981",
+  "task_key": "b3ef544ebbc025f787e2a69e83f64345fbb13f388c11722896a131e8ab5dede3",
+  "text": "NOT ENOUGH INFO",
+  "timestamp": "2026-09-14T10:36:02.183317+00:00",
+  "tokens_in": 183,
+  "tokens_out": 89,
+  "usage": {
+    "completion_tokens": 89,
+    "neurons": 11.890873908996582,
+    "prompt_tokens": 183,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 272
+  }
+}

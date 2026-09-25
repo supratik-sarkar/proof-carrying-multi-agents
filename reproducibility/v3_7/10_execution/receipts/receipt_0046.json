@@ -1,0 +1,11 @@
+{
+  "schema": "PCG_MAS_V3_6_CROSS_PROJECT_RESOURCE_RECEIPT_V2",
+  "status": "PASS",
+  "pcg_uses_nvidia_nim": false,
+  "gemini_collision": false,
+  "cloudflare_collision": false,
+  "external_process_detected": "nim48h_bound_entrypoint.py",
+  "nvidia_nim_reserved_for_external_project": true,
+  "project_release": "v3.6",
+  "inspected_at": "2026-09-17T00:17:46Z"
+}

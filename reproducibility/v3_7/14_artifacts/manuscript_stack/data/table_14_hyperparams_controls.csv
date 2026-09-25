@@ -1,0 +1,7 @@
+Field,Frozen value
+Structural matrix,7 models x 8 datasets = 56 cells
+Examples,40 unique generations / cell
+External verifier family,"MiniCheck, AlignScore, QAFactEval"
+Internal comparators,"CMVO, SignalMatchedFusion"
+Multiple testing,Bonferroni over 3 external verifiers
+Primary seed,1729

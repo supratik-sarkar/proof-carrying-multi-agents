@@ -1,0 +1,12 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] PubMedQA abstract context: METHODS: The records of 465 patients with an established diagnosis of age related macular degeneration who had attended a specialist macular clinic between 1990 and 1998 were scrutinised. A full clinical examination and standardised refraction had been carried out in 189 of these cases on a minimum of two occasions. Cases were looked for where an improvement of one or more lines of either distance or near acuity was recorded in the eye unaffected by macular disease. In each one of these cases the improvement in visual acuity could not be attributed to treatment of other existing pathology. RESULTS: 12 such cases were detected. In nine of these the eye showing improvement of acuity had a history of amblyopia. The mean improvement in distance and near acuity in amblyopic eyes by 12 months was 3.3 and 1.9 lines logMAR respectively. The improvement in acuity generally occurred between 1 and 12 months from baseline and remained stable over the period of follow up.
+
+Long answer: Older people with a history of amblyopia who develop visual loss in the previously normal eye can experience recovery of visual function in the amblyopic eye over a period of time. This recovery in visual function occurs in the wake of visual loss in the fellow eye and the improvement appears to be sustained.
+
+Question: Amblyopia: is visual loss permanent?
+
+Answer:

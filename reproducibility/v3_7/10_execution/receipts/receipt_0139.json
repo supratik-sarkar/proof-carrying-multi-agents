@@ -1,0 +1,16 @@
+{
+  "schema": "PCG_MAS_V3_6_VISIBLE_TERMINAL_G10_LIVENESS_RECEIPT",
+  "status": "PASS",
+  "timestamp": "2026-09-17T13:26:53.629569+00:00",
+  "terminal_window_id": "58679",
+  "session_terminal": "s002",
+  "VISIBLE_TERMINAL_PROCESS_ALIVE": "YES",
+  "LOG_ADVANCING": "YES",
+  "DUPLICATE_DEV_PROCESS": "NO",
+  "IMMEDIATE_DETERMINISTIC_FAILURE": "NO",
+  "active_pipeline_pid": 83602,
+  "active_lane_runner_pid": 83611,
+  "active_stage": "MIND2WEB",
+  "previously_failed_observation_status": "NOW_TERMINAL_VALID",
+  "previously_failed_observation_id": "mind2web:c96f31bb-bc95-456e-b130-0761f184b1a2"
+}

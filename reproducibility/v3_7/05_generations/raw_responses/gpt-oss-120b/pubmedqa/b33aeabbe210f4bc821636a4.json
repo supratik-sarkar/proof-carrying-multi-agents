@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "6590da59cb5dca423febd95690af39dbd389881191755877d6e708d05660bb18",
+  "candidate_text": "Yes—causes profound ischemia.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "5ca45bf01486a6f004bdbd653f74abfaa89e2f1336af2635b81285b88391daf0",
+  "example_id": "10411439",
+  "finish": "stop",
+  "input_sha256": "bf9001f673d29b51d0dc2da330c91beccb8ca3562aec7cbb6d3bf241ae6de222",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "10411439",
+  "prompt_sha256": "17db1944595b4f8202eaba2fc757914b509a33030b5716f4cfaf1c880fd03126",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: PURPOSE: Lower limb compartment syndrome has been reported to occur after colorectal, urological, and gynecological procedures during which the patient's lower limbs are elevated for prolonged periods of time. METHOD: We investigated lower limb perfusion in a group of patients undergoing prolonged pelvic surgery both during and immediately after surgery, using intra-arterial blood pressure monitoring, laser doppler flowmetry, and pulse oximetry. RESULTS: Use of the modified lithotomy position was not associated with any demonstrable decrease in lower limb perfusion. The addition of 15 degrees head-down tilt, however, during pelvic dissection, led to an immediate and significant drop in lower limb perfusion (P<0.05; Mann-Whitney U test). The subgroup of patients analyzed postoperatively showed a ten-fold increase (P<0.01) in perfusion that was confined to the muscle compartment with no demonstrable increase in skin perfusion or intra-arterial pedal blood pressure.\n\nLong answer: The use of the modified lithotomy position during pelvic surgery is not associated with lower limb ischemia. Addition of Trendelenburg position, however, causes profound ischemia of the lower limbs, and this is followed during the recovery period by hyperperfusion that is confined to the muscle compartments, which may put patients at risk of developing lower limb compartment syndrome.\n\nQuestion: Lloyd-Davies position with Trendelenburg--a disaster waiting to happen?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b98127113d84123b65886e293d08f526393bd0b2eeefdfe34e941f130e1b87da",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:10411439",
+  "task_key": "a5149a47678fb52e93bd342e9c958617aa56dd95e5b1dbeed69eda50be291854",
+  "text": "Yes—causes profound ischemia.",
+  "timestamp": "2026-09-14T10:37:09.283637+00:00",
+  "tokens_in": 407,
+  "tokens_out": 120,
+  "usage": {
+    "completion_tokens": 120,
+    "neurons": 21.13174057006836,
+    "prompt_tokens": 407,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 527
+  }
+}

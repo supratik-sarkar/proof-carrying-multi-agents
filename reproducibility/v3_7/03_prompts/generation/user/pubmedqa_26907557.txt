@@ -1,0 +1,12 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] PubMedQA abstract context: PURPOSE: This clinical study investigated whether the vascular-guided multilayer preauricular approach (VMPA) to the temporomandibular joint (TMJ) could improve access and decrease complications. PATIENTS AND METHODS: This retrospective evaluation consisted of a consecutive series of patients who underwent TMJ surgeries through the VMPA from January through December 2013. Patients with a history of TMJ surgery were excluded. Clinical data, including operating times, subjective complaints of incision scars, functional conditions of the auriculotemporal nerve and facial nerve, and other complications, were recorded and analyzed. All patients in this study were followed for at least 6 months. RESULTS: All patients (606 joints) had successful TMJ surgeries through the VMPA. All incisions healed favorably with an uneventful recovery. No patient developed permanent weakness of the facial nerve or other severe complications.
+
+Long answer: The VMPA can provide direct access and favorable visibility to the TMJ region and yield good esthetic and functional results. The VMPA can be considered the approach of choice for common TMJ surgeries.
+
+Question: Can a Novel Surgical Approach to the Temporomandibular Joint Improve Access and Reduce Complications?
+
+Answer:

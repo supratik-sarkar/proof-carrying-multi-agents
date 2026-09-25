@@ -1,0 +1,32 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] TAT-QA 1: As a result of the U.S. federal corporate income tax rate change, effective as of January 1, 2018, we remeasured our deferred tax assets and liabilities based on the rates at which they are expected to reverse in the future periods. During fiscal 2018, we recorded $108 million of tax expense related to all tax rate changes. Upon finalization of our provisional estimates during the third quarter of fiscal 2019, we recorded tax expense of $6 million related to deferred tax assets for equity-based compensation awards to our executives.
+
+[2] TAT-QA table: row 0:  | April 26, 2019 | April 27, 2018
+row 1: Deferred tax assets: |  | 
+row 2: Reserves and accruals | $ 50 | $ 57
+row 3: Net operating loss and credit carryforwards | 139 | 131
+row 4: Stock-based compensation | 16 | 22
+row 5: Deferred revenue | 205 | 156
+row 6: Other | 16 | 29
+row 7: Gross deferred tax assets | 426 | 395
+row 8: Valuation allowance | (123 ) | (109 )
+row 9: Deferred tax assets, net of valuation allowance | 303 | 286
+row 10: Deferred tax liabilities: |  | 
+row 11: Prepaids and accruals | 31 | 21
+row 12: Acquired intangibles | 32 | 29
+row 13: Property and equipment | 31 | 25
+row 14: Other | 10 | 14
+row 15: Total deferred tax liabilities | 104 | 89
+row 16: Deferred tax assets, net of valuation allowance and deferred tax liabilities | $199 | $197
+
+[3] TAT-QA 7: The components of our deferred tax assets and liabilities are as follows (in millions):
+
+[4] TAT-QA 2: The TCJA imposes a mandatory, one-time transition tax on accumulated foreign earnings and profits not previously subject to U.S. income tax at a rate of 15.5% on earnings to the extent of foreign cash and other liquid assets, and 8% on the remaining earnings. In fiscal 2018, we recorded a $732 million discrete tax expense for the estimated U.S. federal and state income tax impacts of the transition tax. In the third quarter of fiscal 2019, we finalized our computation of the transition tax and recorded a reduction of $5 million to our provisional estimate.
+
+Question: What was the percentage change in Total deferred tax liabilities between 2018 and 2019?
+
+Answer:

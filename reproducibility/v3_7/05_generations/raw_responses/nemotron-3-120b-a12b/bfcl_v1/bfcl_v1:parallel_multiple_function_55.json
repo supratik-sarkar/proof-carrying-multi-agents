@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b4b85b239e43c5a8676b71aca0240d76d92e652663981f1db45890eb77664b5b",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_55",
+  "prompt_sha256": "b4b85b239e43c5a8676b71aca0240d76d92e652663981f1db45890eb77664b5b",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "0bf14ebf23e7aaa53f2e4dd387b643b60e56646091773572340bc0c05f936c87",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"ingredient\": \"spaghetti\", \"dietary_requirements\": [\"gluten_free\"], \"isHomemade\": true}",
+        "name": "recipe_search"
+      },
+      "id": "chatcmpl-tool-8955bedd0376a119",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 324,
+    "neurons": 71.739,
+    "prompt_tokens": 615,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 939
+  }
+}

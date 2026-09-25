@@ -1,0 +1,63 @@
+{
+  "imported_concepts": [
+    {
+      "concept_imported": "Paired scatter with Pareto frontier and comparator envelope visual grammar",
+      "numerical_data_imported": false,
+      "source_<PUBLIC_TERM:4d86ae7524ddf7a1>_element": "Fig. 1 / Fig. 6 (Headline / SOTA visual grammar)",
+      "status": "IMPORTED_GRAMMAR_ONLY",
+      "target_<PUBLIC_TERM:0811138fc65a7023>_artifact": "figure_01_executive_safety_performance_atlas.py / figure_A0_full_56_cell_sota_atlas.py / figure_C1_full_sota_benchmark_atlas.py"
+    },
+    {
+      "concept_imported": "Grouped delta-risk horizontal bar chart layout with error brackets",
+      "numerical_data_imported": false,
+      "source_<PUBLIC_TERM:4d86ae7524ddf7a1>_element": "Fig. 5 (Grouped sensitivity grammar)",
+      "status": "IMPORTED_GRAMMAR_ONLY",
+      "target_<PUBLIC_TERM:0811138fc65a7023>_artifact": "figure_04_mechanism_falsification_atlas.py / figure_C2_expanded_ablations.py"
+    },
+    {
+      "concept_imported": "Security vs utility trade-off scatter layout for prompt injection benchmarking",
+      "numerical_data_imported": false,
+      "source_<PUBLIC_TERM:4d86ae7524ddf7a1>_element": "Fig. 7 (Injection display grammar)",
+      "status": "IMPORTED_GRAMMAR_ONLY",
+      "target_<PUBLIC_TERM:0811138fc65a7023>_artifact": "figure_C5_injection_common_mode.py"
+    },
+    {
+      "concept_imported": "Theoretical epsilon vs empirical risk bound frontier curve styling",
+      "numerical_data_imported": false,
+      "source_<PUBLIC_TERM:4d86ae7524ddf7a1>_element": "Fig. 9 (Privacy frontier grammar)",
+      "status": "IMPORTED_GRAMMAR_ONLY",
+      "target_<PUBLIC_TERM:0811138fc65a7023>_artifact": "figure_C8_privacy_modelled.py"
+    },
+    {
+      "concept_imported": "Log-log scaling exponent fit lines with shaded confidence envelopes",
+      "numerical_data_imported": false,
+      "source_<PUBLIC_TERM:4d86ae7524ddf7a1>_element": "Fig. 10 (Scaling grammar)",
+      "status": "IMPORTED_GRAMMAR_ONLY",
+      "target_<PUBLIC_TERM:0811138fc65a7023>_artifact": "figure_C9_scaling_modelled.py"
+    },
+    {
+      "concept_imported": "Violin plot timing distribution and stacked horizontal bar cost phase breakdown",
+      "numerical_data_imported": false,
+      "source_<PUBLIC_TERM:4d86ae7524ddf7a1>_element": "Timing / cost layouts",
+      "status": "IMPORTED_GRAMMAR_ONLY",
+      "target_<PUBLIC_TERM:0811138fc65a7023>_artifact": "figure_D1_timing_distributions.py / figure_D2_cost_telemetry.py"
+    },
+    {
+      "concept_imported": "Explicit column demarcations for coverage vs risk with applicability projection notes",
+      "numerical_data_imported": false,
+      "source_<PUBLIC_TERM:4d86ae7524ddf7a1>_element": "Protocol notes / tabular column semantics",
+      "status": "IMPORTED_GRAMMAR_ONLY",
+      "target_<PUBLIC_TERM:0811138fc65a7023>_artifact": "tables/table_01_main_six_summary.tex / tables/table_02_cost_overhead_main.tex"
+    }
+  ],
+  "numerical_transplantation_detected": false,
+  "schema": "PCG_MAS_V3_6_<PUBLIC_TERM:4d86ae7524ddf7a1>_RECONCILIATION_RECEIPT",
+  "status": "PASS",
+  "timestamp": "2026-09-19T17:56:00Z",
+  "verification": {
+    "pure_v3_6_data_authority": true,
+    "zero_new_figure_ids": true,
+    "zero_new_table_ids": true,
+    "zero_numerical_transplantation": true
+  }
+}

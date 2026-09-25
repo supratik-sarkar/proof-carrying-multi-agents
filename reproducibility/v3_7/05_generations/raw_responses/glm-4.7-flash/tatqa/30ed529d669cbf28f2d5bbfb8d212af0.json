@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "023e33504ab909cf87a6f4e4e545090e40bdc0a2153e5b68b19f7fad2b737904",
+  "candidate_text": "2019",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "9cab75861e5df971e4d4a698016f9abd5ddac81ecbc10e040f2715bf4da3a4de",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "30ed529d669cbf28f2d5bbfb8d212af0",
+  "prompt_sha256": "9b313f452f370456dc91786ecd313f98e1b103843b67f7fcf0ad71b555c61b9a",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "6bdeb2df83a386ffaa2d931aca853c0664364d38b93762666bd375e759fa7dcc",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:30ed529d669cbf28f2d5bbfb8d212af0",
+  "text": "2019",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 3.8162,
+    "prompt_tokens": 674,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 677
+  }
+}

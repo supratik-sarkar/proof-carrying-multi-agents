@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "410144d978cff7f8c219c3b3b75ae8b3b327be77c3ebce440dcd6db24a6cd1d8",
+  "candidate_text": "TIO Traeger Park",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "11e99f53803f02c314803acd92b3fd3539ea226d4782aff5b9d6caa3cec89a47",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5adfc50355429942ec259b43",
+  "prompt_sha256": "a76835660be08077dc5c2f2068f8484611e30f217b9197ff1255047eac6f6e66",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "0071ed6de68e8eb655f1f7679c4a8b761d295cffa7b772ddfb4f5e566dd03191",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5adfc50355429942ec259b43",
+  "text": "TIO Traeger Park",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 5.909090518951416,
+    "prompt_tokens": 632,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 638
+  }
+}

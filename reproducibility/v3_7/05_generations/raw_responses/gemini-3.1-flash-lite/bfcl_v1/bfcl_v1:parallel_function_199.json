@@ -1,0 +1,67 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "dec818c606c6c62b7ada600647f2eb905c4be237f2b472b7e3e870ec09611b7c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_function_199",
+  "prompt_sha256": "dec818c606c6c62b7ada600647f2eb905c4be237f2b472b7e3e870ec09611b7c",
+  "provider": "gemini",
+  "provider_raw_sha256": "6a2ec7a88749743e7733df5c6a889cfe2d3e627ebb376152652b45e46bfe5f4a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPVW2r6/hBT0aJdGhYSeULWeR1D4u+F8qiIKrrsXTFm8PudM7nyv6/eLAe6IhbemB4wBqj/OJEZbOIzDjiIFr4vcOOJvWDIKnAqXFdfpPMpVLvvnX0i3pO8+SMdpYQxoXWRne6mdSFttkdkA=="
+        }
+      },
+      "function": {
+        "arguments": "{\"include_temperature\":true,\"location\":\"New York\",\"include_humidity\":true}",
+        "name": "get_current_weather"
+      },
+      "id": "call_1328952",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"include_temperature\":true,\"location\":\"Los Angeles\",\"include_humidity\":true}",
+        "name": "get_current_weather"
+      },
+      "id": "call_1328953",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"include_humidity\":true,\"location\":\"London\",\"include_temperature\":true}",
+        "name": "get_current_weather"
+      },
+      "id": "call_1328954",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"include_humidity\":true,\"include_temperature\":true,\"location\":\"Tokyo\"}",
+        "name": "get_current_weather"
+      },
+      "id": "call_1328955",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 122,
+    "prompt_tokens": 154,
+    "total_tokens": 276
+  }
+}

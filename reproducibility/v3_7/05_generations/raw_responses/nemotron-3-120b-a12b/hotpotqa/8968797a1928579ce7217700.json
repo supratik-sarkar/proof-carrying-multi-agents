@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "54ad801d4d9d833bb79e114c1e78e3f892711e4499fc3fc4ca20755734510346",
+  "candidate_text": "\nTIO Traeger Park",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "11e99f53803f02c314803acd92b3fd3539ea226d4782aff5b9d6caa3cec89a47",
+  "example_id": "5adfc50355429942ec259b43",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "c6e4abc95c6bc51f6126704a3b560b9f348102861910eb1e98383ce5720b408f",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5adfc50355429942ec259b43",
+  "prompt_sha256": "a76835660be08077dc5c2f2068f8484611e30f217b9197ff1255047eac6f6e66",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Will Brodie: Will Brodie (born 23 August 1998) is a professional Australian rules footballer playing for the Gold Coast Football Club in the Australian Football League (AFL).  He was drafted by Gold Coast with their third selection and ninth overall in the 2016 national draft.  He made his debut in the thirty-five point loss against Melbourne at TIO Traeger Park in round ten of the 2017 season.\n\n[2] Sarah Jolly: Sarah Jolly (born 1 February 1992) is an Australian rules footballer who played for the Melbourne Football Club in the AFL Women's competition.  She was drafted by Melbourne with their nineteenth selection and 145th overall in the 2016 AFL Women's draft.  She made her debut in the nineteen point win against Collingwood at Ikon Park in round two of the 2017 season.  She played the next week in the fourteen point win against the Western Bulldogs at VU Whitten Oval before being omitted for the round four match against Carlton at Casey Fields.  She returned for the five point loss to Greater Western Sydney at Blacktown International Sportspark Oval in round five, which was her last match for the year and she finished the season with three games.  She was not retained on Melbourne's list at the end of the season and was subsequently delisted in May 2017.\n\n[3] Hugh McCluggage: Hugh McCluggage (born 3 March 1998) is a professional Australian rules footballer playing for the Brisbane Lions in the Australian Football League (AFL).  He was drafted by Brisbane with their first selection and third overall in the 2016 national draft.  He made his debut in the thirty-one point loss against St Kilda at Etihad Stadium in round three of the 2017 season.  After the sixty point loss to Greater Western Sydney at the Gabba in round 14, in which he recorded nineteen disposals, eight marks and two tackles, he received the round nomination for the 2017 AFL Rising Star.\n\n[4] Abdul Wali Khan Sports Complex: Abdul Wali Khan Sports Complex also known as Charsadda Sports Complex is located in Charsadda, Khyber Pakhtunkhwa, in Pakistan.  It is the 2nd largest sports complex in Khyber Pakhtunkhwa after Qayyum Sports Complex Peshawar.  The sport complex has started functioning in 2016 and has been completed at the cost of Rs.490 million.\n\nQuestion: Where was the sports complex at which Will Brodie made his debut in the thirty-five point loss against Melbourne located?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "43d93cc34665e2976c7fa513119f6ebe2121a487bb8dacd2f0b2d1569fd55e9c",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5adfc50355429942ec259b43",
+  "task_key": "4380e1aead4fb4c6aa9714136cb1f5f8dd82033f92929de2778f953d60186190",
+  "text": "\nTIO Traeger Park",
+  "timestamp": "2026-09-15T09:35:29.363805+00:00",
+  "tokens_in": 641,
+  "tokens_out": 191,
+  "usage": {
+    "completion_tokens": 191,
+    "neurons": 54.821,
+    "prompt_tokens": 641,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 832
+  }
+}

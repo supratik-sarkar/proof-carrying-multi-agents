@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "a40737ad725eaaf1cc6d97b635e176a02b950f17dd2f5f5a27bd36e118d22d9d",
+  "candidate_text": "\n\nMarch and April",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "0dbd4def9164f3ca97db66633b1adf9aa31f8c0e887ccc361be8b1c7af0a07b5",
+  "example_id": "5ae2b770554299495565db0f",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "afe07efe88339ff182b5a183bbb4771080f7293f6e1b2421f3dcfb9ac382c3af",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5ae2b770554299495565db0f",
+  "prompt_sha256": "ef7ca0ab926b3f57646b386ad2fa6584cda3960339189747cbed09da8dc2cbbc",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] London Review of Books: The London Review of Books (LRB) is a British journal of literary essays.  It is published fortnightly.\n\n[2] New Haven Documentary Film Festival: New Haven Documentary Film Festival (also known as NHdocs) is an annual documentary film festival held in New Haven, Connecticut, over a weekend in the month of June.  Screenings take place at Yale University’s Whitney Humanities Center Auditorium and the New Haven Free Public Library.  NHdocs is a regional festival that showcases documentaries by filmmakers from the greater New Haven area and beyond.  NHdocs was launched in 2014 when the film festival’s co-founders Charles Musser, Gorman Bechard, Jacob Bricca, and Lisa Molomot came together at the Big Sky Documentary Film Festival and decided to create a documentary film festival in New Haven that would “build a sense of community among documentary filmmakers from the greater New Haven area.”  In 2014, the four filmmakers each showed one of their recently completed documentaries, three of which had just played at the Big Sky.\n\n[3] London International Documentary Festival: The London International Documentary Festival (or LIDF) is an annual documentary film festival that takes place in the months of March and April every year.  The event is presented in association with the London Review of Books.\n\n[4] Chagrin Documentary Film Festival: Chagrin Documentary Film Festival is an annual documentary film festival based in Chagrin Falls, Ohio.  The festival debuted in 2010, with 93 films showing in venues throughout the village.  That year, the festival had an attendance of 1,800.  By the 2015 festival, that number had grown to almost 7,000, while the number of films shrank to less than 70.\n\nQuestion: In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "ea8e08dfdd2c0420a908dbfeb0844f68626cbf53e698c1b69ac1916a1b391a52",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ae2b770554299495565db0f",
+  "task_key": "191db79a65e98c81914d0b0ed872d8cba0b766a32855c101c65f090b54d88f97",
+  "text": "\n\nMarch and April",
+  "timestamp": "2026-09-15T09:35:32.698175+00:00",
+  "tokens_in": 485,
+  "tokens_out": 209,
+  "usage": {
+    "completion_tokens": 209,
+    "neurons": 50.249,
+    "prompt_tokens": 485,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 694
+  }
+}
