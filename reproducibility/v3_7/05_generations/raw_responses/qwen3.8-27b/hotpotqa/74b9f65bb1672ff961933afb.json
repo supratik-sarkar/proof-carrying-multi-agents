@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "0a60a0fa8adb2afcf2695f282c3d0d28a163cdc2885a583a6c206115e7640098",
+  "candidate_text": "\n\nTatton Park",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "798eb346a9d03d3417076c8c3d6f206835e88fa913f85a066e79d8a4ce77938a",
+  "example_id": "5a7577785542992d0ec05fa0",
+  "finish": "stop",
+  "input_sha256": "4224edc5e4481f532f6a388aea15630b412bcb687c686a1d7f11acf580f95fb8",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "5a7577785542992d0ec05fa0",
+  "prompt_sha256": "e2a4f64ec31e7cdbe529e789d8fcd132e9092aa324cf813e02caa7471b5a3a48",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Tatton Park: Tatton Park is an historic estate in Cheshire, England, to the north of the town of Knutsford.  It contains a mansion, Tatton Hall, a manor house dating from medieval times, Tatton Old Hall, gardens, a farm and a deer park of 2000 acre .  It is a popular visitor attraction and hosts over 100 events annually.  The estate is owned by the National Trust, who administer it jointly with Cheshire East Council.  Since 1999 it hosts North West England's annual Royal Horticultural Flower show.\n\n[2] Northern Chamber Orchestra: The Northern Chamber Orchestra (or NCO) is a chamber orchestra based in Manchester, England.  Established in 1967, the orchestra gives concerts at Heritage Centre, Macclesfield, St Ann's Church, Manchester, as well as Blackburn, Skipton, Lancaster and Tatton Park, Knutsford.  They are also currently the resident orchestra for the Buxton Festival.\n\n[3] Staatsorchester Stuttgart: The Staatsorchester Stuttgart (Stuttgart State Orchestra; full name, \"Württembergisches Staatsorchester oder Orchester der Württembergischen Staatstheater\") is a German symphony orchestra, based in Stuttgart.  The resident orchestra of the \"Staatstheater Stuttgart\", the orchestra gives concerts in the \"Liederhalle\" (\"Beethovensaal\").  The orchestra also performs as the ensemble for productions by \"Oper Stuttgart\".\n\n[4] Munich Chamber Orchestra: The Munich Chamber Orchestra (German: Münchener Kammerorchester , or MKO) is a German chamber orchestra based in Munich.  Its primary concert venue is the Prinzregententheater, Munich.  The MKO also gives concerts in Munich at such venues as the Pinakothek der Moderne and the \"Schwere Reiter\", and at the \"Muffathalle\" during the Munich Biennalle.  The regular core of the MKO is the string section, currently numbering 26 players (15 violinists, four viola players, five cellists and two double bass players).  Woodwind, brass and percussion players are employed when needed.\n\nQuestion: The Northern Chamber Orchestra gives concerts at what estate owned by the National Trust?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c2238060d4c0fccd9d383a9e1aa6fd6d5fd900e9a7a3740c2a2c1977d0edabe2",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a7577785542992d0ec05fa0",
+  "task_key": "b501fd185c2419e4bfeafe413e535ac8a84720c61aa43847e88b992e5f8c798a",
+  "text": "\n\nTatton Park",
+  "timestamp": "2026-09-14T10:45:47.712582+00:00",
+  "tokens_in": 582,
+  "tokens_out": 87,
+  "usage": {
+    "completion_tokens": 87,
+    "neurons": 49.11817932128906,
+    "prompt_tokens": 582,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 669
+  }
+}

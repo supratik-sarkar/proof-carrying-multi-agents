@@ -1,0 +1,9 @@
+{
+  "fit_expected": 700,
+  "fit_missing": 0,
+  "fit_present": 700,
+  "last_item": "gemini-3.1-flash-lite:twowiki:fb9a9b0c089011ebbd72ac1f6bf848b6",
+  "provider_calls_made": 67,
+  "schema": "PCG_MAS_V3_6_G3_FIT_CHECKPOINT",
+  "timestamp": "2026-09-17T12:57:12.596403+00:00"
+}

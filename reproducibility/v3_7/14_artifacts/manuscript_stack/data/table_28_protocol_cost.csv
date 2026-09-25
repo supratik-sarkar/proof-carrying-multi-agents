@@ -1,0 +1,6 @@
+Phase,Share of PCG direct cost,Path
+Generation,0.62,Always on
+Retrieval/canonicalization,0.11,Always on
+Certificate assembly,0.10,Always on
+Semantic verifier,0.13,Always on
+Forensic replay,0.04,Audited/failed cases only

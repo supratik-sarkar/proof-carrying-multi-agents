@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "6f6a4e56098cfd9af29e3ae549503b370211a4e94421457fe4cfd39a38a1fa08",
+  "candidate_text": "2006",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "702748ca9d9a643a095834b1226f9ffaeda69b9dd30fcb51e5ee31c859b1302e",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5ac240ef55429951e9e684ef",
+  "prompt_sha256": "fe3cc2ca8be5f9a34136b0180e35a81cf4c10042d6fa3389f4fdc67908f592a5",
+  "provider": "gemini",
+  "provider_raw_sha256": "e978cc505d4ad5f7324aa7aab5f3b51f4bad08db9d9c5a8492f55505453dc17f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ac240ef55429951e9e684ef",
+  "text": "2006",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 548,
+    "total_tokens": 552
+  }
+}

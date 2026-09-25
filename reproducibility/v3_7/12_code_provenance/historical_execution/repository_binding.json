@@ -1,0 +1,14 @@
+{
+  "branch_or_tag": "main",
+  "dirty_or_clean_state": "clean",
+  "git_commit_sha": "NOT_HISTORICALLY_PROVEN",
+  "git_provenance_note": "Historical git commit hash is not directly proven in standalone workspace directory; workspace integrity is authenticated via historical SHA-256 source manifests.",
+  "git_tree_sha": "NOT_HISTORICALLY_PROVEN",
+  "missing_source_paths": [
+    "src/pcg/backends/<PUBLIC_TERM:b3cc0475bb78a502>.py"
+  ],
+  "number_currently_resolvable_in_repository": 274,
+  "number_of_referenced_source_files": 275,
+  "source_manifest_sha256": "581b35d80fbec1d28cdc1251f02a53892ada54916853a9cc8c91b0e0342a3449",
+  "source_sha256_file_sha256": "a76ea21344a149c22900e18b42445d9ccb41503645127a758a2c54b6df789fdd"
+}

@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "d8cc00e95457bd861c4736a051eee34adc9533c7162b2b55e0f848bb1f39724d",
+  "candidate_text": "Fun in the Barracks.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "a6eb208ee4030eb089f35b4ac5f47f73a440254ac095f75311cbe82c94c7c004",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "ef7aac32088511ebbd6dac1f6bf848b6",
+  "prompt_sha256": "cd0a226a2d8c2faa49fd0d53dacaaf2ded2368945862df1b2fa7ecb8c061f8bf",
+  "provider": "gemini",
+  "provider_raw_sha256": "bbe6e645abfbdededb2199aefbcbb05d4fd1878fed95afddc041d9b49a780e49",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:ef7aac32088511ebbd6dac1f6bf848b6",
+  "text": "Fun in the Barracks.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 432,
+    "total_tokens": 438
+  }
+}

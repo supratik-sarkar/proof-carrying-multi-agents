@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "7e63d16fb6e9fedb4bccfecc773d11c7c2b605b8bd381e0682c9aff78a84f550",
+  "candidate_text": "November 12, 2019",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "6dcc4c463721eb4df0a5b63ba0e2ba86eea9285af50248721cefb721ab7fa32c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "3806e089b0e480d002aa443961db08f7",
+  "prompt_sha256": "45b7d21485acf0b5e5189e6d42ee8fd5dc6e0454d3ae601d473f1456f0e47e26",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "ac5abfda3b5c5e2bcf5dd091a322fb2e6dab289fa99255a37c10b1bb39019f03",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:3806e089b0e480d002aa443961db08f7",
+  "text": "November 12, 2019",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 11,
+    "neurons": 8,
+    "prompt_tokens": 847,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 858
+  }
+}

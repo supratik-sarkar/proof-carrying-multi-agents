@@ -1,0 +1,33 @@
+{
+  "source": {
+    "source_path": "configs/v3_6/authority/VERIFIER_APPLICABILITY.json",
+    "sha256": "193c1957bc32e462d86c7efea809627d5efa1cfd1f2f22baf45f57a6dbc7b52d",
+    "bytes": 546
+  },
+  "scope": "Declaration only; executed run binding NOT_CAPTURED",
+  "declaration": {
+    "applicable_datasets": [
+      "fever",
+      "hotpotqa",
+      "pubmedqa",
+      "tatqa",
+      "twowiki"
+    ],
+    "applicable_groups": 105,
+    "bonferroni_denominator": 3,
+    "execution_lane": "ZERO_DOLLAR_LINUX_COLAB_ONLY",
+    "expected_observation_scores": 4200,
+    "methods": [
+      "MiniCheck-Flan-T5-Large",
+      "AlignScore-Large",
+      "QAFactEval"
+    ],
+    "native_scope_na_datasets": [
+      "mind2web",
+      "bfcl_v1",
+      "agentdojo"
+    ],
+    "pcg_internal_nli_is_external_verifier": false,
+    "schema": "PCG_MAS_V3_6_EXTERNAL_VERIFIER_APPLICABILITY_V2"
+  }
+}

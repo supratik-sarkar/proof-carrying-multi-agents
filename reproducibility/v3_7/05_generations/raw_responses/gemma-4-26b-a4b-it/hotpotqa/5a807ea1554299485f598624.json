@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "ae7ae829091ba757fc665ca9c2bc03a3ccc0900cbfd9b497cbd0c203c2306ea6",
+  "candidate_text": "Presbyterian Church (USA)",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "7d7afe057ddb2f852caa8b60466747d2b4c228552f18f4d8a1a620e84dab0a69",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5a807ea1554299485f598624",
+  "prompt_sha256": "747515b605f3cca10be539aba777824a0051c085343af7f2c8ea0a9dc5ff1622",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "00ef5e250a02f76472cddc7d029617777bcb1334dd4baec17c9defb85ebcad20",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a807ea1554299485f598624",
+  "text": "Presbyterian Church (USA)",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 4.272727012634277,
+    "prompt_tokens": 449,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 456
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "status": "NOT_CAPTURED",
+  "reason": "No authenticated per-run binding supplied. Existing declarations are indexed separately."
+}

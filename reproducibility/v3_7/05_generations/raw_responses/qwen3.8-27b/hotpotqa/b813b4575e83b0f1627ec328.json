@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "45461ac5f29cbc7eb09deb0f27173efe268443cd4b587a5bcb31040d9a2f60a0",
+  "example_id": "5a90bd7b55429916514e7547",
+  "finish": "stop",
+  "input_sha256": "0df1bc35cfa078fd9b57b628137426ca4bba49fbb52f1b4274bc7bce5ca58b35",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "5a90bd7b55429916514e7547",
+  "prompt_sha256": "b2aca6d7d3ac5af25860430a050a9180f2bad627bca12654ef9e873afefefda8",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Aichryson: Aichryson is a genus of about 15 species of succulent, subtropical plants, mostly native to the Canary Islands, with a few in the Azores, Madeira and Morocco, and one in Portugal.\n\n[2] Polypodium australe: Polypodium is derived from the Greek \"Polus\", many, and \"podion\", small foot, since the rhizome bears numerous roots.  \"Australe\" comes from the Latin \"auter\", wind of the south, for in Europe, this species grows more particularly in southern France.  The common polypody is medicinal plant known since the times of Dioscorides, and its rhizome is used against cough and liver diseases.\n\n[3] Polypodium rimbachii: Polypodium rimbachii is a species of fern in the Polypodiaceae family.  It is endemic to Ecuador.  Its natural habitat is subtropical or tropical moist montane forests.  It is threatened by habitat loss.\n\n[4] Polypodium cambricum: Polypodium cambricum, the southern polypody or Welsh polypody, is a species of fern in the family Polypodiaceae, native to southern and western Europe.  It is a spreading, terrestrial, deciduous fern growing to 60 cm tall, with pinnate fronds.  The sori are yellow in winter.\n\nQuestion: Which has more species, Aichryson or Polypodium?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "922bd0a3f9884d6e5c7557f47a3192210e70c6f0b83ba1a7f4d0ec189f4d3267",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a90bd7b55429916514e7547",
+  "task_key": "3f0d2eaeabde931b8520b61fd98971727749582de7a165d632507b4933218cab",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-14T10:46:38.568474+00:00",
+  "tokens_in": 423,
+  "tokens_out": 156,
+  "usage": {
+    "completion_tokens": 156,
+    "neurons": 62.686363220214844,
+    "prompt_tokens": 423,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 579
+  }
+}

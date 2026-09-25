@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "b607805a4e507699a4ecc580ac7c7dc65da04b6fb147bfc594f97884cf55469c",
+  "candidate_text": "Reykjavík",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "388672ba20160b125d1dd7fad211ee396f4f5072445f82b4d065105bb1b763b5",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "9494fa760bdb11eba7f7acde48001122",
+  "prompt_sha256": "b2d3d7e33422bc7b87f48ed0a6832a7a72da3c37a64302a5ef2aa8ceca4a3195",
+  "provider": "gemini",
+  "provider_raw_sha256": "c6dd91b220ee4a49e645dfe181ed2acfb0ef0b84a094ddbc3f783dab600ad09b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:9494fa760bdb11eba7f7acde48001122",
+  "text": "Reykjavík",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "prompt_tokens": 1189,
+    "total_tokens": 1192
+  }
+}

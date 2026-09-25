@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "8e845788e375092c5e294a111e4211f9e7f0502a40dede912b953d581c89ccc7",
+  "candidate_text": "No, it does not.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "4f3a221befa310445adce2f20a317b7cf8325814f82acd0230bef7202838071e",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "12040336",
+  "prompt_sha256": "c35b352b6fa404251524b1a19c51c3849a7f130c94d5a5ab10499e1789c5d8f9",
+  "provider": "gemini",
+  "provider_raw_sha256": "fb0d1b48cdecfb7802b41c04bdb5e2f9468c56efd7504cfab4c1257bb74bb7ec",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:12040336",
+  "text": "No, it does not.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 482,
+    "total_tokens": 488
+  }
+}

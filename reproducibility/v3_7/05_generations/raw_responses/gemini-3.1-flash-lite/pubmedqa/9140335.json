@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "068f5d5a16b2ebd15707bb80088c7aeaec9035b9e0180906bebd4518288ca8c3",
+  "candidate_text": "It is uncertain.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "117d6fee3028455fdc47fc049fdcae4c542615be6b64a86eb0e7547bf99b77c8",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "9140335",
+  "prompt_sha256": "76854e2e75ad7895dff8b37c96be9c8e2455d716251727d9c14f8160b1e65ccb",
+  "provider": "gemini",
+  "provider_raw_sha256": "7967b3ceac5de90bf643ee11534ac5f6e59bcb5669eb4f2f472d8995327c791f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:9140335",
+  "text": "It is uncertain.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 420,
+    "total_tokens": 424
+  }
+}

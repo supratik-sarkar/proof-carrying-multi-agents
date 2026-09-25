@@ -21,19 +21,39 @@ class LocalHFProvider:
     def _load(self):
         if self._model is not None:
             return
+        import torch  # type: ignore
         from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
+        load_kwargs = {}
+        if self.dtype in ("bfloat16", "torch.bfloat16"):
+            load_kwargs["dtype"] = torch.bfloat16
+        elif self.dtype in ("float16", "torch.float16"):
+            load_kwargs["dtype"] = torch.float16
+        elif self.dtype == "auto":
+            load_kwargs["dtype"] = "auto"
         self._tok = AutoTokenizer.from_pretrained(self.model_id, revision=self.revision)
         self._model = AutoModelForCausalLM.from_pretrained(
-            self.model_id, revision=self.revision).to(self.device)
+            self.model_id, revision=self.revision, **load_kwargs).to(self.device)
 
     def generate(self, prompt: str, max_tokens: int = 256, **kw) -> ProviderResponse:
         self._load()
+        import torch  # type: ignore
+        if self.seed is not None:
+            torch.manual_seed(self.seed)
+            if hasattr(torch, "mps") and torch.backends.mps.is_available():
+                torch.mps.manual_seed(self.seed)
         t0 = time.perf_counter()
         enc = self._tok(prompt, return_tensors="pt").to(self.device)
         out = self._model.generate(**enc, max_new_tokens=max_tokens, do_sample=False)
         text = self._tok.decode(out[0][enc["input_ids"].shape[1]:], skip_special_tokens=True)
         dt = (time.perf_counter() - t0) * 1000.0
-        dec = {"temperature": 0.0, "max_tokens": max_tokens, "do_sample": False}
+        if hasattr(torch, "mps") and torch.backends.mps.is_available():
+            torch.mps.empty_cache()
+        dec = {
+            "do_sample": False,
+            "max_tokens": max_tokens,
+            "temperature": "NOT_APPLICABLE",
+            "top_p": "NOT_APPLICABLE",
+        }
         return ProviderResponse(
             text=text, model_id=self.model_id, model_revision=self.revision,
             provider_route=self.route, backend_type="LOCAL_MODEL", dtype=self.dtype,

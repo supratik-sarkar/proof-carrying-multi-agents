@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "1ed597cb87454c5280f7b5b64c32839e97e4228de4ff859d5365c944ef4caaa9",
+  "candidate_text": "It is questionable.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "710562969ca2a58bb7de775da5b54cd24c92a45615d28032ef3c4710068dd79b",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "17279467",
+  "prompt_sha256": "ee8626e5c4a10760f75e4b603c12c6120d3c76f463e4520cde64eba9a5529b9f",
+  "provider": "gemini",
+  "provider_raw_sha256": "b330facd465de34cd44d6679072a4db5d49c9206903fae576276d7f3c03e5954",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:17279467",
+  "text": "It is questionable.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 439,
+    "total_tokens": 443
+  }
+}

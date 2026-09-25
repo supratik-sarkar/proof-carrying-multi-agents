@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "69ab864276516df6d60b694630a39a2361bdf78784c1fb8075334d7945b403ab",
+  "candidate_text": "Crossing Delancey",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "668963958084bbb5aa11eb11d11afebe2abae929fe35f5d336da36e0ded3bc7c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "828b1390093511ebbdaeac1f6bf848b6",
+  "prompt_sha256": "a69ac7c9eed710c5f20145493b4c4313283017b978dac16cf36d8b5b42dbe15c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "4eeb2b3e333c061346c1bd824b19eb2bd45f671024bf9cf9407c7d2749295636",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:828b1390093511ebbdaeac1f6bf848b6",
+  "text": "Crossing Delancey",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 3.981818199157715,
+    "prompt_tokens": 423,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 428
+  }
+}

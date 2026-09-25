@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "12d3fe7149504d376e86e27627b7c68790fb1bbf29545efe2b22bcb0bc8084c8",
+  "candidate_text": "\n\n$(8,736) million",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "0f75ed82843ec64a7e448685b9fef1fbc0003971633fa2a22623350909426a89",
+  "example_id": "974ea4685a3322b23ac80e3a89131498",
+  "finish": "stop",
+  "input_sha256": "4486dd2644523bed1e8b20a8b6d5871155435ba6d4969f53cc752edef151d364",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "974ea4685a3322b23ac80e3a89131498",
+  "prompt_sha256": "8fde2965b426d5f26babdd7f2e15df70cb3afd0ba10af815a0bf5c75a925ab94",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 4: The percentage of Global Financing receivables reserved was 1.0 percent at December 31, 2019, compared to 0.9 percent at December 31, 2018. The decline in the allowance for credit losses was driven by write-offs of $64 million, primarily of receivables previously reserved, and net releases of $7 million as a result of lower average asset balances in client and commercial financing. See note K, “Financing Receivables,” for additional information.\n\n[2] TAT-QA table: row 0: ($ in millions) |  | \nrow 1: At December 31: | 2019 | 2018\nrow 2: Recorded investment (1) | $22,446 | $31,182\nrow 3: Specific allowance for credit losses | 177 | 220\nrow 4: Unallocated allowance for credit losses | 45 | 72\nrow 5: Total allowance for credit losses | 221 | 292\nrow 6: Net financing receivables | $22,224 | $30,890\n\n[3] TAT-QA 2: The following table presents external Global Financing receivables excluding residual values, the allowance for credit losses and immaterial miscellaneous receivables:\n\n[4] TAT-QA 3: (1) Includes deferred initial direct costs which are eliminated in IBM’s consolidated results.\n\nQuestion: What is the increase / (decrease) in the recorded investment from 2018 to 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "d4bc7ae4bd3dbdbabc7a784c5a915c09083dd61d40efd5ca2b49badf8f75b169",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:974ea4685a3322b23ac80e3a89131498",
+  "task_key": "6edb1e2ffc8e5872fcadcdb16ff524f77e35437770ecdb8be6836f2a217701e1",
+  "text": "\n\n$(8,736) million",
+  "timestamp": "2026-09-14T10:56:46.767728+00:00",
+  "tokens_in": 472,
+  "tokens_out": 168,
+  "usage": {
+    "completion_tokens": 168,
+    "neurons": 68.18181610107422,
+    "prompt_tokens": 472,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 640
+  }
+}

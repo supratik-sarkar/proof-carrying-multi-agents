@@ -1,0 +1,23 @@
+{
+  "schema": "PCG_MAS_V3_6_AGENTDOJO_CAPACITY_RECEIPT",
+  "status": "PASS",
+  "max_turns": 8,
+  "runtime_call_ceiling": 8,
+  "cases_measured": 10,
+  "measured_calls": [
+    8,
+    6,
+    7,
+    5,
+    4,
+    4,
+    4,
+    6,
+    5,
+    6
+  ],
+  "average_physical_calls_per_case": 5.5,
+  "projected_total_physical_calls": 1540,
+  "gemini_projected_physical_calls": 220,
+  "cloudflare_projected_physical_calls": 1320
+}

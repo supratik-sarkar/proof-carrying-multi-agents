@@ -1,0 +1,17 @@
+{
+  "bfcl_note": "Pinned official BFCL checker is authoritative; no extra numeric-string coercion is invented.",
+  "changes_applied": [
+    "official BFCL AST checker direct",
+    "AgentDojo predicate self-check",
+    "separate tool token budgets and pre-admission canaries",
+    "per-dataset comparator masks",
+    "generation-policy SHA + Gemini purity + immutable-826 + tool-budget gates",
+    "neurons/TPM/concurrency/turn/reset capacity dimensions"
+  ],
+  "schema": "PCG_MAS_V3_6_REVIEW_CLOSURE_V1",
+  "verdict": {
+    "BLOCKER": 0,
+    "CHANGE": 6,
+    "PASS": 9
+  }
+}

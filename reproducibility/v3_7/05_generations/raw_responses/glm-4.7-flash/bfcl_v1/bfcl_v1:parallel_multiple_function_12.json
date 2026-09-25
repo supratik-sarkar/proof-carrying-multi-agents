@@ -1,0 +1,50 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "b857ec0cc142fa7caaeb749345dc5909960250d3134220f05c1ffe478e9f1b35",
+  "candidate_text": "I'll help you calculate both the magnetic field and voltage difference. Let me use the appropriate functions for each calculation.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b3e7dfd0932b194455b579aa3ea2e9a9d22a8b53e22bf8c9e0e38fb074c100dd",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_multiple_function_12",
+  "prompt_sha256": "b3e7dfd0932b194455b579aa3ea2e9a9d22a8b53e22bf8c9e0e38fb074c100dd",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "34c9f0f490dc819784369ae1ae6b72020fa80473a5cbf156699a593e87d37312",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you calculate both the magnetic field and voltage difference. Let me use the appropriate functions for each calculation.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"current\": 4, \"distance\": 2}",
+        "name": "calculate_magnetic_field"
+      },
+      "id": "chatcmpl-tool-8ca3ff4de23dae23",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"electric_field\": 5, \"distance\": 3}",
+        "name": "calculate_voltage_difference"
+      },
+      "id": "chatcmpl-tool-bc377196da5455d9",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 225,
+    "neurons": 10.632000000000001,
+    "prompt_tokens": 444,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 669
+  }
+}

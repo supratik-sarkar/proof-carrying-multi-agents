@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "d24453d28f523c05f08586c33295759dc9c5b13c3184a12ff7dcecce771c2839",
+  "candidate_text": "John Waters.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "2f39390276d19552d71cf89476f6a4068264a3c758410478dec22ba439d29f3d",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5ac3165c5542995ef918c10a",
+  "prompt_sha256": "05ea5fa90f2bd67fff74d9939c83f2ec5bc94795403cb79af97cba0540a9c765",
+  "provider": "gemini",
+  "provider_raw_sha256": "fe7b8c343bf843037c0161f4ea908ab8c12c0e8c09a75750cedcca509a9e9d4e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ac3165c5542995ef918c10a",
+  "text": "John Waters.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "prompt_tokens": 358,
+    "total_tokens": 361
+  }
+}

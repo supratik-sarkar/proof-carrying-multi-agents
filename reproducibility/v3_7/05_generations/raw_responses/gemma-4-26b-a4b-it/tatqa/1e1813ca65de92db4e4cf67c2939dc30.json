@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "cb3f83015fb5138415675c3a67b410decbd08aec293b66725acff5ba4a7e170a",
+  "candidate_text": "$8,500 increase",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "83d67be8b949c3576fad3b70f0c37e76fd1ec3675aace6c927ce5e8d5806eff1",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "1e1813ca65de92db4e4cf67c2939dc30",
+  "prompt_sha256": "07c003298b04021223df74c57129c8929f8b8a976286be17cd1522e5120882e8",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "a78bfa505a46bb6b41cb8ae039fc0a372cfc1a6ba78ad67eb5d1d8fd98556535",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:1e1813ca65de92db4e4cf67c2939dc30",
+  "text": "$8,500 increase",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 3.154545307159424,
+    "prompt_tokens": 323,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 331
+  }
+}

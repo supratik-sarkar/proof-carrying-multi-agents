@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "b51e0c2507ac7b170dba93d9ff7bb80e90e74222bfeb4a957677872b031bfb7d",
+  "candidate_text": "\n\nErnest William Goodpasture",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "5248cfc7f10097b24e741b9e557be763b815bf059f46c2e1fc1b8350592267c2",
+  "example_id": "16ee4aa308be11ebbd8aac1f6bf848b6",
+  "finish": "stop",
+  "input_sha256": "7173096f3f200fa28d9ff9b04c30986278387b46c509d1ff1b88500c5649ebed",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "16ee4aa308be11ebbd8aac1f6bf848b6",
+  "prompt_sha256": "cd0b13b8ec395fadf5ee05c4a166ebf98057dd014869ea30e6f746f3a718d84e",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"W. Augustus Barratt\": [\"W. Augustus Barratt( 1873- 1947) was a Scottish- born, later American, songwriter and musician.\"]\n\n[2] \"Ernest Beckett, 2nd Baron Grimthorpe\": [\"Ernest William Beckett, 2nd Baron Grimthorpe( 25 November 1856 \\u2013 9 May 1917), born Ernest William Beckett- Denison, was a British banker and Conservative politician who sat in the House of Commons from 1885 until 1905 when he inherited the Grimthorpe peerage.\"]\n\n[3] \"Ram\\u00f3n Corona\": [\"Ram\\u00f3n Corona( 18 October 1837, Tuxcueca, Jalisco, Mexico \\u2013 11 November 1889, Guadalajara, Jalisco) was a liberal Mexican general and diplomat.\"]\n\n[4] \"Ernest William Goodpasture\": [\"Ernest William Goodpasture (October 17, 1886 \\u2013 September 20, 1960) was an American pathologist and physician.\",\"Goodpasture advanced the scientific understanding of the pathogenesis of infectious diseases, parasitism, and a variety of rickettsial and viral infections.\",\"Together with colleagues at Vanderbilt University, he invented methods for growing viruses and rickettsiae in chicken embryos and fertilized chicken eggs.\",\"This enabled the development of vaccines against influenza, chicken pox, smallpox, yellow fever, typhus, Rocky mountain spotted fever, and other diseases.\",\"He also described Goodpasture syndrome.\"]\n\nQuestion: Who was born later, Ramón Corona or Ernest William Goodpasture?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "ce9c95f229f0d1d66de45bae665cbe667d991641e325b91dc83ada4a95a44727",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:16ee4aa308be11ebbd8aac1f6bf848b6",
+  "task_key": "41103f0a40beb3d35b3d824b2bcc004b44026404193ff74e00992780366ba9bb",
+  "text": "\n\nErnest William Goodpasture",
+  "timestamp": "2026-09-14T10:50:20.000897+00:00",
+  "tokens_in": 495,
+  "tokens_out": 78,
+  "usage": {
+    "completion_tokens": 78,
+    "neurons": 42.94091033935547,
+    "prompt_tokens": 495,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 573
+  }
+}

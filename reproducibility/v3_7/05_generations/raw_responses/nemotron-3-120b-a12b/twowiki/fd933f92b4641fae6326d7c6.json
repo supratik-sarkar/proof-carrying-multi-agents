@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "3b2a44a0ae5365c69d3bb234469675e5da771404ec0eff94846c373b8147d989",
+  "candidate_text": "\n\nLiverpool",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "c6fe2650dc486d14e3036e59863db724af04a0a26afb6c834925059e92131547",
+  "example_id": "29427eea0bdd11eba7f7acde48001122",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "7cf7c452ea607becb0f2fd85cb57f3ac26cddb3932e950ca3b92c5b225c6db73",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "29427eea0bdd11eba7f7acde48001122",
+  "prompt_sha256": "e840fa6e62788267129063c2e7fa657422438a5317009b516d9537c651f80943",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"God (John Lennon song)\": [\"\\\"God\\\" is a song from John Lennon's first post-Beatles solo album, \\\"John Lennon\\/Plastic Ono Band\\\".\",\"The album was released on 11 December 1970 in the United States and the United Kingdom.\"]\n\n[2] \"John Lennon\": [\"John Winston Ono Lennon (born John Winston Lennon, 9 October 19408 December 1980) was an English singer, songwriter and peace activist who gained worldwide fame as the founder, co-lead vocalist, and rhythm guitarist of the Beatles.\",\"His songwriting partnership with Paul McCartney remains the most successful in history.\",\"In 1969, he started the Plastic Ono Band with his second wife, Yoko Ono.\",\"After the Beatles disbanded in 1970, Lennon continued as a solo artist.\",\"Born in Liverpool, Lennon became involved in the skiffle craze as a teenager.\",\"In 1957, he formed his first band, the Quarrymen, which evolved into the Beatles in 1960.\",\"He was initially the group's de facto leader, a role gradually ceded to McCartney.\",\"Starting in 1967, Lennon's lyrics began to espouse a pacifist message, and some of his songs were soon adopted as anthems by the anti-war movement and the larger counterculture.\",\"From 1968 to 1972, he produced more than a dozen records with Ono, including a trilogy of avant-garde albums, his first solo LP \\\"John Lennon\\/Plastic Ono Band\\\", and the international top 10 singles \\\"Give Peace a ChanceInstant Karma!Imagine\\\" and \\\"Happy Xmas (War Is Over)\\\".\",\"Lennon was known for the rebellious nature and acerbic wit in his music, writing, drawings, on film and in interviews.\",\"He was controversial through his political and peace activism.\",\"After moving to New York City in 1971, his criticism of the Vietnam War resulted in a three-year attempt by the Nixon administration to deport him.\",\"In 1975, Lennon disengaged from the music business to raise his infant son Sean, and in 1980, returned with the Ono collaboration \\\"Double Fantasy\\\".\",\"He was shot and killed in the archway of his Manhattan apartment building three weeks after the album's release.\",\"By 2018, Lennon's solo equivalent album sales had exceeded 72 million units worldwide.\",\"In 2002, Lennon was voted eighth in a BBC poll of the 100 Greatest Britons, and in 2008, \\\"Rolling Stone\\\" ranked him the fifth-greatest singer of all time.\",\"In 1987, he was inducted into the Songwriters Hall of Fame.\",\"Lennon was inducted into the Rock and Roll Hall of Fame twice, as a member of the Beatles in 1988 and as a solo artist in 1994.\"]\n\n[3] \"Panda (Astro song)\": [\"\\\" Panda\\\" is a song of the Chilean band Astro and is the fifth song of the homonymous album of the year 2011.\",\"The song was composed and produced by the singer of the band Andr\\u00e9s Nusser and released like third single of the album on February 1, 2013.\"]\n\n[4] \"Margaret of the Mother of God\": [\"Margaret of the Mother of God, born Margriet van Noort( 1587 \\u2013 1646), was a Dutch Discalced Carmelite lay sister in the Brussels Carmel.\"]\n\nQuestion: Where was the performer of song God (John Lennon Song) born?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "fd8d4f3b9435b72924abf1ddbc64487c6b34f25001307c55a122d745a9549dbc",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:29427eea0bdd11eba7f7acde48001122",
+  "task_key": "fef909b9ed1e411f00a22d4712439011502811f7fe504973ab1cfb6877f3dd30",
+  "text": "\n\nLiverpool",
+  "timestamp": "2026-09-15T09:37:32.064661+00:00",
+  "tokens_in": 875,
+  "tokens_out": 76,
+  "usage": {
+    "completion_tokens": 76,
+    "neurons": 49.711,
+    "prompt_tokens": 875,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 951
+  }
+}

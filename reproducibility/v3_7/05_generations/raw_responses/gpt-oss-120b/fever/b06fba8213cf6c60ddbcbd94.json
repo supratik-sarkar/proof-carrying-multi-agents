@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "1eb3786016b5494a8eaba686fea6fb47cbe2877025621617a699886b9a04766c",
+  "example_id": "75b69c74cd08062aeebb23326d6d9879",
+  "finish": "stop",
+  "input_sha256": "f9a1f7b932b4088d5032e247d7716f588734238b317fe9338c89574caf1514d0",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "75b69c74cd08062aeebb23326d6d9879",
+  "prompt_sha256": "8eade79d58067bf07de7d1f2451384a151fe26f3e4ec4b02b38a9d93261d5845",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Lizzy Caplan: Caplan also starred in television shows The Class , True Blood , and Party Down .\n\nClaim: Lizzy Caplan starred in television show.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "89a43afb4e28a5f369f245cb98288ce1ad7b6849049797f3d86190ff5da81e52",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:75b69c74cd08062aeebb23326d6d9879",
+  "task_key": "aa22fa37efb8db6797358697aefa1ae909ade50a151f5668b8cec646f7c3929f",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:27.125856+00:00",
+  "tokens_in": 171,
+  "tokens_out": 65,
+  "usage": {
+    "completion_tokens": 65,
+    "neurons": 9.872694969177246,
+    "prompt_tokens": 171,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 236
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "capacity_gate_pass": false,
+  "cloudflare": {
+    "capacity_mechanism": "UNAVAILABLE",
+    "current_workers_ai_neuron_usage": null,
+    "daily_free_neuron_allowance": null,
+    "evidence_class": "UNAVAILABLE",
+    "neuron_delta": null,
+    "rationale": "Cloudflare account and worker settings endpoints return HTTP 403 Forbidden with existing credentials; no identifiable Workers-AI neuron usage telemetry endpoint is exposed.",
+    "remaining_free_neurons": null,
+    "reset_time": null,
+    "results": {
+      "account_info": {
+        "body_sha256": "bc484b5271bfb57d45898e53524ade34de83b5b97ebf37577b8c69f54eb16cbe",
+        "status": 403,
+        "success": false,
+        "url": "<ENDPOINT:0525c376f23cd21d>"
+      },
+      "ai_usage": {
+        "body_sha256": "bd2b3652be33a4407b6ee8c6e14cc48bd8aeb9acbda7a8b261d063ce288690b0",
+        "status": 400,
+        "success": false,
+        "url": "<ENDPOINT:dbdf89d8340d7574>"
+      },
+      "tokens_verify": {
+        "body_sha256": "7e857c8d184932d8101a5daeef43e5f13b017066d7bf680f8ee4ae88b15b10ea",
+        "status": 200,
+        "success": true,
+        "url": "<ENDPOINT:f59a1fffda4459e0>"
+      },
+      "workers_settings": {
+        "body_sha256": "08d87d5a5ac40fb6eb6e43eff39775f70766c07d06930e956e31afe9ed715f5c",
+        "status": 403,
+        "success": false,
+        "url": "<ENDPOINT:98147662f2da0347>"
+      }
+    }
+  },
+  "gemini": {
+    "capacity_mechanism": "UNAVAILABLE",
+    "current_rpd_usage": null,
+    "evidence_class": "UNAVAILABLE",
+    "quota_delta": null,
+    "rationale": "Google AI Studio Developer API does not expose programmatic quota consumption/remaining endpoints (/quota returned HTTP 404); model metadata endpoint does not contain dynamic quota/rate usage.",
+    "remaining_rpd": null,
+    "reset_authority": null,
+    "results": {
+      "model_metadata": {
+        "body_sha256": "cd14b006195ba3ed5d3b1fbe9eac027009f23ef5e4927c4a83c79072f4c542ca",
+        "status": 200,
+        "success": true,
+        "url": "<ENDPOINT:f3f4d437e030fa8a>"
+      },
+      "projects": {
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 404,
+        "success": false,
+        "url": "<ENDPOINT:09fd4d1ec6b20c52>"
+      },
+      "quota": {
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 404,
+        "success": false,
+        "url": "<ENDPOINT:f7a22fdeae6ae3c3>"
+      }
+    },
+    "rpd_limit": null,
+    "rpm_limit": null,
+    "tpm_limit": null,
+    "usage_tier": null
+  },
+  "schema": "PCG_MAS_V3_6_CLEAN_PROVIDER_CAPACITY_AUTHORITY_RECEIPT",
+  "status": "EVIDENCE_UNAVAILABLE",
+  "summary": {
+    "capacity_gate_pass": false,
+    "cloudflare_capacity_evidence_class": "UNAVAILABLE",
+    "cloudflare_capacity_mechanism": "UNAVAILABLE",
+    "gemini_capacity_evidence_class": "UNAVAILABLE",
+    "gemini_capacity_mechanism": "UNAVAILABLE"
+  },
+  "supersedes": {
+    "correction_reason": "Receipt with evidence_class=UNAVAILABLE must not have status=PASS. Corrected to status=EVIDENCE_UNAVAILABLE and capacity_gate_pass=false.",
+    "receipt_file": "CLEAN_PROVIDER_CAPACITY_RECEIPT.json",
+    "sha256": "82bfcb6e0e67f1cbddc2bffc56e06a85760d524b91b75439e10255cbcc5a180c"
+  },
+  "timestamp": "2026-09-17T10:39:11Z"
+}

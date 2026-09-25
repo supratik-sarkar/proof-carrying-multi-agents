@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "f204b912c11940de2eadbea34366608720366bf6e0fe15f25cb1c16e5b221e9c",
+  "candidate_text": "TIO Traeger Park.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "11e99f53803f02c314803acd92b3fd3539ea226d4782aff5b9d6caa3cec89a47",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5adfc50355429942ec259b43",
+  "prompt_sha256": "a76835660be08077dc5c2f2068f8484611e30f217b9197ff1255047eac6f6e66",
+  "provider": "gemini",
+  "provider_raw_sha256": "64d055fdc3988bd7cb9a08e2db3fc69e6c5ee0777eb3d75b22689ea3764ae1bd",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5adfc50355429942ec259b43",
+  "text": "TIO Traeger Park.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 620,
+    "total_tokens": 626
+  }
+}

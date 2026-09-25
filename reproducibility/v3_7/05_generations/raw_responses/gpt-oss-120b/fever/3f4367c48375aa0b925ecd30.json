@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "b1bc6f997a1e6b0a70c5ae5ecf81b07daa6d70e8ba168070c9dadaf9247b0b53",
+  "example_id": "f4bac48eb8a03568a190ee8790f873f0",
+  "finish": "stop",
+  "input_sha256": "7ec9a97a2137bb111a9176d7c4f44de48c65a943c5416f3ab620f456ae401cdf",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "f4bac48eb8a03568a190ee8790f873f0",
+  "prompt_sha256": "380d508a0492a5dcf1139b1d01e81ffe8fd1b80cb8fc6f1047633d059845852c",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Recovery (Eminem album): Recovery is the seventh studio album by American rapper Eminem .\n\nClaim: Recovery is an Eminem album.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "43df5163bd9015f35ec38d3b2869e0586dad6d0566704ea5d1414a4e564dfdb0",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:f4bac48eb8a03568a190ee8790f873f0",
+  "task_key": "072820612b0d9a8963b54c6e50ca5837e84687eb2fc7d26b6ece9d1278c5f19e",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:04.193067+00:00",
+  "tokens_in": 166,
+  "tokens_out": 65,
+  "usage": {
+    "completion_tokens": 65,
+    "neurons": 9.713604927062988,
+    "prompt_tokens": 166,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 231
+  }
+}

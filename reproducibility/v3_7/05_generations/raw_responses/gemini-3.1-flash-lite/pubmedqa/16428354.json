@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "aea0700c938cd2f87a1683c855cd40786a624a371175fde0cfb5e8d01a23fe24",
+  "candidate_text": "Yes, rural residence increases mortality.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "3aff8960310ad3e8f82ca111bd4912e5071501a9d5c9a4be35a585dcc7d870ff",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "16428354",
+  "prompt_sha256": "85236af431dd74086dd093f08673b210d7758205d20d7a305bfd6c9b1c8ba399",
+  "provider": "gemini",
+  "provider_raw_sha256": "1202825fd639d3daf571954e47ff35de495ea702f4561bbdcb980976bea35b9b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:16428354",
+  "text": "Yes, rural residence increases mortality.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "prompt_tokens": 459,
+    "total_tokens": 466
+  }
+}

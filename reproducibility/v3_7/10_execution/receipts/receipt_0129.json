@@ -1,0 +1,624 @@
+{
+  "models": {
+    "gemma-4-26b-a4b-it": {
+      "chosen_policy": null,
+      "decision": "BLOCKED_PANEL_DECISION",
+      "samples": [
+        {
+          "dataset_id": "fever",
+          "results": {
+            "baseline": {
+              "chars": 7,
+              "finish_reason": "stop",
+              "ok": true,
+              "usage": {
+                "completion_tokens": 231,
+                "neurons": 7.509090900421143,
+                "prompt_tokens": 133,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 364
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 8.190909385681152,
+                "prompt_tokens": 133,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 389
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "hotpotqa",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 13.354545593261719,
+                "prompt_tokens": 701,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 957
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 13.354545593261719,
+                "prompt_tokens": 701,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 957
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "pubmedqa",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 10.245454788208008,
+                "prompt_tokens": 359,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 615
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 10.245454788208008,
+                "prompt_tokens": 359,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 615
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "tatqa",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 16.40909194946289,
+                "prompt_tokens": 1037,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 1293
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 16.409090042114258,
+                "prompt_tokens": 1037,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1024
+                },
+                "total_tokens": 1293
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "twowiki",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 13.554545402526855,
+                "prompt_tokens": 723,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 979
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 13.554545402526855,
+                "prompt_tokens": 723,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 979
+              }
+            }
+          }
+        }
+      ]
+    },
+    "glm-4.7-flash": {
+      "chosen_policy": null,
+      "decision": "BLOCKED_PANEL_DECISION",
+      "samples": [
+        {
+          "dataset_id": "fever",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 10.0059,
+                "prompt_tokens": 125,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 381
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 10.0059,
+                "prompt_tokens": 125,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 381
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "hotpotqa",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 12.9869,
+                "prompt_tokens": 667,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 923
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 12.9869,
+                "prompt_tokens": 667,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 923
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "pubmedqa",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 11.243400000000001,
+                "prompt_tokens": 350,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 606
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 11.243400000000001,
+                "prompt_tokens": 350,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 606
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "tatqa",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 14.400400000000001,
+                "prompt_tokens": 924,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 1180
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 14.400400000000001,
+                "prompt_tokens": 924,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 1180
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "twowiki",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 13.1024,
+                "prompt_tokens": 688,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 944
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 13.1024,
+                "prompt_tokens": 688,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 944
+              }
+            }
+          }
+        }
+      ]
+    },
+    "nemotron-3-120b-a12b": {
+      "chosen_policy": null,
+      "decision": "BLOCKED_PANEL_DECISION",
+      "samples": [
+        {
+          "dataset_id": "fever",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 42.151,
+                "prompt_tokens": 163,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 419
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 42.151,
+                "prompt_tokens": 163,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 419
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "hotpotqa",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 55.426,
+                "prompt_tokens": 458,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 714
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 55.426,
+                "prompt_tokens": 458,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 714
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "tatqa",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 53.31100000000001,
+                "prompt_tokens": 411,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 667
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 53.31100000000001,
+                "prompt_tokens": 411,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 667
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "twowiki",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 61.096000000000004,
+                "prompt_tokens": 584,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 840
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 61.096000000000004,
+                "prompt_tokens": 584,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 840
+              }
+            }
+          }
+        }
+      ]
+    },
+    "qwen3.8-27b": {
+      "chosen_policy": null,
+      "decision": "BLOCKED_PANEL_DECISION",
+      "samples": [
+        {
+          "dataset_id": "hotpotqa",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 103.10908508300781,
+                "prompt_tokens": 700,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 956
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 103.10908508300781,
+                "prompt_tokens": 700,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 956
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "pubmedqa",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 91.12272644042969,
+                "prompt_tokens": 407,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 663
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 91.12272644042969,
+                "prompt_tokens": 407,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 663
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "tatqa",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 118.3272705078125,
+                "prompt_tokens": 1072,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 1328
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 118.3272705078125,
+                "prompt_tokens": 1072,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 1328
+              }
+            }
+          }
+        },
+        {
+          "dataset_id": "twowiki",
+          "results": {
+            "baseline": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 105.72726440429688,
+                "prompt_tokens": 764,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 1020
+              }
+            },
+            "reasoning_low": {
+              "chars": 0,
+              "finish_reason": "length",
+              "ok": false,
+              "usage": {
+                "completion_tokens": 256,
+                "neurons": 105.72726440429688,
+                "prompt_tokens": 764,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "total_tokens": 1020
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "provider_calls": 36,
+  "status": "FAIL"
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "25b8e051f15794a261ca899be72fc3877a36367e569f3647aa8d9ac08a42c1ac",
+  "candidate_text": "I'll fetch all records for students studying Science in 'Bluebird High School' from the StudentDB.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "067a65ef8a67fb2bfa0fd12e99b29d29acede746762cc0930fbb7f090b7b955e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:simple_89",
+  "prompt_sha256": "067a65ef8a67fb2bfa0fd12e99b29d29acede746762cc0930fbb7f090b7b955e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "f10fb29f61f2f49846ae25a388518c1911677e197589c2a42611f6c5eda319d6",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll fetch all records for students studying Science in 'Bluebird High School' from the StudentDB.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"database_name\": \"StudentDB\", \"table_name\": \"students\", \"conditions\": {\"school\": \"Bluebird High School\", \"department\": \"Science\"}}",
+        "name": "db_fetch_records"
+      },
+      "id": "chatcmpl-tool-8c0f1e422c25642a",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 174,
+    "neurons": 8.1651,
+    "prompt_tokens": 333,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 507
+  }
+}

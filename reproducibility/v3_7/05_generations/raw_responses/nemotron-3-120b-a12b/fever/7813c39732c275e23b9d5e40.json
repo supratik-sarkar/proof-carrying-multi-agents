@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "44af6cb96f1f351484eed8df38dbbb876b2baf8b81b9e4ad88738465c4817e59",
+  "candidate_text": "\n\nSUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "3d0b18d0e0d64b1e37f718a540c98bb92ec88c2eff299ff3ffc97a87aee94e47",
+  "example_id": "8465c2034de85a7aea79c9342cc9ec5d",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "20848cd57ea8479e86a37ea87eea0ad89b7bc7e7f14af7fd222ea5a494794e87",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "8465c2034de85a7aea79c9342cc9ec5d",
+  "prompt_sha256": "122608ba41a2251db7c5d69829d4c021d26d614db033a3aefdaf3af00823f09e",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Juventus F.C.: The club is the second oldest of its kind still active in the country after Genoa 's football section -LRB- 1893 -RRB- , has traditionally worn a black and white striped home kit since 1903 and has played its home matches in several grounds , being the latest the 41,507-capacity Juventus Stadium .\n\nClaim: Juventus F.C. adopted its characteristic black-and-white-striped home uniform in 1903.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "afbd325e38388b1fdda55e8309d03cf6af5d1eba351588a9c1affd1a945503b2",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:8465c2034de85a7aea79c9342cc9ec5d",
+  "task_key": "0e36da807daf850d55ed228809e9e68c897dfe4b6c457b49727b32dd9e732516",
+  "text": "\n\nSUPPORTS",
+  "timestamp": "2026-09-15T09:40:07.094321+00:00",
+  "tokens_in": 201,
+  "tokens_out": 73,
+  "usage": {
+    "completion_tokens": 73,
+    "neurons": 18.973,
+    "prompt_tokens": 201,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 274
+  }
+}

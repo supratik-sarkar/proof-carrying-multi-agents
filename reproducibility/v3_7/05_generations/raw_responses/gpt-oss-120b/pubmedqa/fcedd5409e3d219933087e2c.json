@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "9776a2d2f1aedc1faf1a99af3b36f08e15a4770b179f66486bbb366316b22705",
+  "candidate_text": "Yes, temporarily.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "bd4829462c760cecb2cde8986e8338e1a37b80d12a6f2999cb95bef85644fe01",
+  "example_id": "18603989",
+  "finish": "stop",
+  "input_sha256": "aab625aafb8a995023b8346e8c5c8582644f17e2a3c3d8a586ddc05abb3e861a",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "18603989",
+  "prompt_sha256": "b407e34edafe1964d6a417b4b6f5645792e1c95dbdd8b4adc15aa41bdf2a3e19",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: INTRODUCTION: Embalming is the through disinfection and art of preserving bodies after death using chemical substances. It keeps a body life like in appearance during the time it lies in a state prior to funeral. OBJECTIVE: This study was undertaken to investigate the effectiveness of Raksi in sacrificed rats in arresting postmortem changes and establishing scientific fact whether Raksi can be an alternative to standard embalming constituent if it is not available. MATERIAL AND METHODS: 50 albino rats were systematically randomized into control and experiment groups. Raksi and distilled water were injected for embalming purpose intraventricularly in experiment and control groups of rats respectively and kept for 48 to 96 hours for observation for postmortem changes. RESULT: Observations made at 48 and 72 hours of embalming revealed that Raksi can arrest postmortem changes in the rats up to 72 hours (3rd day) successfully in the experimental group whereas moderate to severe postmortem changes were seen in the control group. The experimental group showed mild degree of putrefactive changes, liberation of gases and liquefaction of tissues only at 96 hours (4th day) of embalming. DISCUSSION: The Raksi used in this experiment contained 34% of alcohol, which was determined by an alcohol hydrometer. Experiment clearly demonstrated from its result that raksi can be utilised temporarily for embalming since it contains alcohol and has preservative, bactericidal and disinfectant properties.\n\nLong answer: It is concluded from the study that this knowledge if applied to dead human subjects, may preserve dead bodies temporarily allowing delayed funeral.\n\nQuestion: Can homemade alcohol (Raksi) be useful for preserving dead bodies?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "251939067093e1cd821718ef52b12df3ff634052fbb7c825e9a71ecb6a996d28",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:18603989",
+  "task_key": "9f8be98f379d9f49ffbed2a44f0584230e7d0e3809aae7236dc43f3a2faf6286",
+  "text": "Yes, temporarily.",
+  "timestamp": "2026-09-14T10:36:40.714963+00:00",
+  "tokens_in": 463,
+  "tokens_out": 68,
+  "usage": {
+    "completion_tokens": 68,
+    "neurons": 19.36809539794922,
+    "prompt_tokens": 463,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 531
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "8e69709b3bd9dd601a98c7fb87f9a0e054f5a18e71218f2ffb988d215f093db9",
+  "candidate_text": "Sunday's Illness.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "7236361adafba8943c7c4843aae4b32e8745ac70d38e05e7c5b2b855b36b7bd9",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "b9329b0b08ce11ebbd94ac1f6bf848b6",
+  "prompt_sha256": "1bf53a8d187dbb0df20b0eafa32075090cd7a0762d53c81c938e15bd320dea9a",
+  "provider": "gemini",
+  "provider_raw_sha256": "311d4e8728626ce1cb40711fe6d70dd855faf4f05ad229d6bd99f35657faa502",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:b9329b0b08ce11ebbd94ac1f6bf848b6",
+  "text": "Sunday's Illness.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "prompt_tokens": 411,
+    "total_tokens": 416
+  }
+}

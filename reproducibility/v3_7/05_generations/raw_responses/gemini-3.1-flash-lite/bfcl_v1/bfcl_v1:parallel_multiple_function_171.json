@@ -1,0 +1,67 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "2e1eb73dea15e3e5bfdff15f8c7971efc6b793c73ed0b13eeb901869245b550e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_multiple_function_171",
+  "prompt_sha256": "2e1eb73dea15e3e5bfdff15f8c7971efc6b793c73ed0b13eeb901869245b550e",
+  "provider": "gemini",
+  "provider_raw_sha256": "c5b9665ad91a492939e6db8e851061689c3d1ef8327b89198d58c8b18b3db65f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPqa3RXSBSLP7JtQuRY6JA15W6grGhDsIJC/iaEDv4sL9HMEIDb7et7u7YCIbQy1ycTq0A4ntHWfcDT1KTEVNJbdPIMGj5Ta+wYP7muedSAzAQWZI1cR4ANbDaO5pLmIPzr6CvEQnivPsz8w=="
+        }
+      },
+      "function": {
+        "arguments": "{\"league\":\"Major League Baseball\",\"team\":\"New York Yankees\",\"season\":2019}",
+        "name": "sports_ranking"
+      },
+      "id": "call_1150937",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"team\":\"Los Angeles Lakers\",\"league\":\"National Basketball Association\",\"season\":2020}",
+        "name": "sports_ranking"
+      },
+      "id": "call_1150938",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"date\":\"2020-12-25\",\"location\":\"Los Angeles\"}",
+        "name": "air_quality"
+      },
+      "id": "call_1150939",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"date\":\"2021-01-01\",\"location\":\"New York\"}",
+        "name": "air_quality"
+      },
+      "id": "call_1150940",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 130,
+    "prompt_tokens": 297,
+    "total_tokens": 427
+  }
+}

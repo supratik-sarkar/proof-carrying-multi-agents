@@ -1,0 +1,49 @@
+{
+  "schema": "PCG_MAS_V3_6_POST_CRASH_PRESERVATION_AUDIT",
+  "timestamp": "2026-09-17T06:15:00Z",
+  "status": "AUDIT_COMPLETE",
+  "recovery_lane": {
+    "expected_task_count": 393,
+    "artifact_count": 393,
+    "unique_task_keys": 393,
+    "duplicate_task_keys": [],
+    "missing_task_keys": [],
+    "zero_byte_files": [],
+    "invalid_json_files": [],
+    "nonempty_generation_count": 392,
+    "empty_generation_count": 1,
+    "provider_model_identity_consistency": true,
+    "provider_model_mismatches": [],
+    "generation_policy_sha256_consistency": true,
+    "completion_metadata_availability": true,
+    "missing_metadata": [],
+    "immutable_core_overlap_count": 0
+  },
+  "gemini_primary_lane": {
+    "expected_task_count": 200,
+    "artifact_count": 200,
+    "unique_task_keys": 200,
+    "duplicate_task_keys": [],
+    "missing_task_keys": [],
+    "zero_byte_files": [],
+    "invalid_json_files": [],
+    "nonempty_generation_count": 200,
+    "empty_generation_count": 0,
+    "provider_model_identity_consistency": true,
+    "provider_model_mismatches": [],
+    "generation_policy_sha256_consistency": true,
+    "completion_metadata_availability": true,
+    "missing_metadata": [],
+    "immutable_core_overlap_count": 0
+  },
+  "immutable_core": {
+    "expected_sha256": "b2b48f97f8a9924a0c50a78faaf00fe898689ddb874cb32f3792677fb3fce44f",
+    "actual_sha256": "b2b48f97f8a9924a0c50a78faaf00fe898689ddb874cb32f3792677fb3fce44f",
+    "match": true,
+    "dev_core_complete_regenerated": 0
+  },
+  "conclusion": {
+    "recovery_393_safe_to_reuse": true,
+    "gemini_primary_200_safe_to_reuse": true
+  }
+}

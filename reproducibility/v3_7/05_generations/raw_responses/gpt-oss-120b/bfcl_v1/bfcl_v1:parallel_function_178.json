@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "4dee65a725322a0a3d82afe480add3b67f76fbbce9d6de43759513cd2cdcf050",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:parallel_function_178",
+  "prompt_sha256": "4dee65a725322a0a3d82afe480add3b67f76fbbce9d6de43759513cd2cdcf050",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "ee834120e8214508e67204f7db5b157fa0a22bdf198a0755c9f2639e785101ca",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"symbol\": \"MSFT\", \"date\": \"2022-01-01\"}",
+        "name": "get_stock_price"
+      },
+      "id": "chatcmpl-tool-82548bd88d5f9aea",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 142,
+    "neurons": 14.64542293548584,
+    "prompt_tokens": 156,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 298
+  },
+  "benchmark_score": {
+    "valid": false,
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count"
+  },
+  "scoring_status": "FINALIZED"
+}

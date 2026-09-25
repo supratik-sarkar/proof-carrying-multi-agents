@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "1e7fd8194490c4fb5bae0e75bd32df1182d83ff35592576b5bfa2c41ac59cddf",
+  "example_id": "cf0cdf9bed3d132b0b639c36571b9fad",
+  "finish": "stop",
+  "input_sha256": "0ba1271748e7346a64e2d7d915eae688b93794d500a5c9758bac70893f2a3450",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "cf0cdf9bed3d132b0b639c36571b9fad",
+  "prompt_sha256": "d739202f2b717e9cbe2ad245e64f7064a56ad29c4272e3d4fc6c2aa2304e0c8a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Bermuda Triangle: The Bermuda Triangle , also known as the Devil 's Triangle , is a loosely-defined region in the western part of the North Atlantic Ocean , where a number of aircraft and ships are said to have disappeared under mysterious circumstances .\n\nClaim: Bermuda Triangle is in the eastern part of the Atlantic Ocean.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "a4ed5d47ed8f8f11a51f3c24bea6ab6772e308f4257f93e66e2b5536a948e4d1",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:cf0cdf9bed3d132b0b639c36571b9fad",
+  "task_key": "3e5f1ec26978952df6acbbd70bf7e4f59547f65c169a2701409d023433804076",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:36:25.306304+00:00",
+  "tokens_in": 199,
+  "tokens_out": 73,
+  "usage": {
+    "completion_tokens": 73,
+    "neurons": 11.309053421020508,
+    "prompt_tokens": 199,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 272
+  }
+}

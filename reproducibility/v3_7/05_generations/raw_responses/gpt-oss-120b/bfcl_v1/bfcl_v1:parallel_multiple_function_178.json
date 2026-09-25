@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ee1d66062315600501e74a84f038529354ae3253a7f6f211da065fba45ef4a76",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_178",
+  "prompt_sha256": "ee1d66062315600501e74a84f038529354ae3253a7f6f211da065fba45ef4a76",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "0a6a790ef6c2f0a73869a12569db658d6a645ebbaa102c3ea570e956349e59a0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"Tokyo, Japan\", \"radius_km\": 200, \"count\": 5}",
+        "name": "locate_tallest_mountains"
+      },
+      "id": "chatcmpl-tool-bc59196a5882715e",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 254,
+    "neurons": 26.76812171936035,
+    "prompt_tokens": 297,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 551
+  }
+}

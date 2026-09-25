@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "b52b8ec8cef143e3b4578fea6f542a96b0801a1508fc85f976f6deca847bf7f7",
+  "candidate_text": "Paula Patton",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "f43100a5fc4d9d666282c8dcdeac628febb8dae532cd20c5ff2da26b4eb72910",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "5a7571095542992d0ec05f97",
+  "prompt_sha256": "d07678008600a3352d2113ef1aa547ed0b4f5bae35b78cef887b711707661018",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "2c30ba4c734513f635f639768dd57e5404cb8353499f9b78b607d66e95207b82",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a7571095542992d0ec05f97",
+  "text": "Paula Patton",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 3.0166,
+    "prompt_tokens": 522,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 526
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "factual_lane": {
+    "max_tokens": 256,
+    "temperature": 0.0,
+    "sampling_strategy": "greedy"
+  },
+  "agentic_lane": {
+    "max_tokens": 1024,
+    "temperature": 0.0,
+    "sampling_strategy": "greedy",
+    "max_turns": 30
+  }
+}

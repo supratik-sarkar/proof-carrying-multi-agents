@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "44af6cb96f1f351484eed8df38dbbb876b2baf8b81b9e4ad88738465c4817e59",
+  "candidate_text": "\n\nSUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "9b34a70c5097b689d8433b3da87d49499312ae61f46e5929b078ca4360498304",
+  "example_id": "57613958fd4917b3f1dd007e3ee2ca77",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "775eef1764434793314f9668d5ffe68f30d550a836dd82c6c880c5ede56d9ca9",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "57613958fd4917b3f1dd007e3ee2ca77",
+  "prompt_sha256": "6ea1f5e466692e62f650f2b50878dd034d6a3ccdc91f520ea23556516e0782fa",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Harold Macmillan: Macmillan was the last British prime minister born in the reign of Queen Victoria , the last to have served in the First World War , the last to wear a moustache when in office , and the last to receive an hereditary peerage .\n\nClaim: Harold Macmillan worked in politics.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "dd8ef8537537e2b23481a920e9016cb4593bad45184c5cd94a90af43b75461b6",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:57613958fd4917b3f1dd007e3ee2ca77",
+  "task_key": "0fee13446f49a15d03ecf909296737ef0664ae5ce4cca056919e3f87051f20af",
+  "text": "\n\nSUPPORTS",
+  "timestamp": "2026-09-15T09:26:07.538680+00:00",
+  "tokens_in": 195,
+  "tokens_out": 104,
+  "usage": {
+    "completion_tokens": 104,
+    "neurons": 38.23181915283203,
+    "prompt_tokens": 195,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 299
+  }
+}

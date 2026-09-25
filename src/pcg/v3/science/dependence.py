@@ -37,33 +37,14 @@ class GateState(str, Enum):
 
 
 @dataclass(frozen=True)
-class ImplementationEvidenceFloors:
-    """Implementation guards frozen before evaluation.
-
-    Separate from scientific sufficiency definition.
-    """
+class EvidenceFloor:
+    """Frozen BEFORE evaluation. Unset floors invite post-hoc selection."""
     n_min: int = 200          # trials required per branch
     k_min: int = 5            # observed failures required per branch
     q0: int = 2               # smallest subset size entering the lattice maximum
 
     def to_dict(self) -> dict:
         return {"n_min": self.n_min, "k_min": self.k_min, "q0": self.q0}
-
-
-# Backward-compatible alias
-EvidenceFloor = ImplementationEvidenceFloors
-
-
-@dataclass(frozen=True)
-class PrecisionRequirement:
-    """Scientific statistical precision condition on rho_hat / rho_UCB."""
-    max_ci_width: float = 0.50     # maximum allowed width (rho_ucb - rho_k)
-    max_rel_width: float = 0.40    # maximum allowed relative width (rho_ucb - rho_k) / rho_k
-    enforce_precision: bool = False # enabled for pre-registered Gate-0.1 validation
-
-    def to_dict(self) -> dict:
-        return {"max_ci_width": self.max_ci_width, "max_rel_width": self.max_rel_width,
-                "enforce_precision": self.enforce_precision}
 
 
 @dataclass
@@ -79,7 +60,6 @@ class DependenceResult:
     subsets_insufficient: int
     bar_rho: Optional[float] = None
     delta_tol: Optional[float] = None
-    precision_passed: Optional[bool] = None
     detail: Dict[str, float] = field(default_factory=dict)
 
     def to_dict(self) -> dict:
@@ -143,8 +123,7 @@ def u_joint(k_obs: int, n: int, delta: float = 0.05) -> Optional[float]:
 
 
 def rho_ucb(branch_failures: Sequence[Sequence[bool]], delta: float = 0.05,
-            floor: ImplementationEvidenceFloors = ImplementationEvidenceFloors(),
-            precision: PrecisionRequirement = PrecisionRequirement(),
+            floor: EvidenceFloor = EvidenceFloor(),
             bar_rho: Optional[float] = None,
             delta_tol: float = 0.0) -> DependenceResult:
     """Compute rho_UCB over the upper set of the subset lattice, with a three-state gate.
@@ -154,7 +133,7 @@ def rho_ucb(branch_failures: Sequence[Sequence[bool]], delta: float = 0.05,
     n = len(branch_failures)
     if n == 0:
         return DependenceResult(0, 0, None, None, None, GateState.INSUFFICIENT_EVIDENCE,
-                                None, 0, 0, bar_rho, delta_tol, None)
+                                None, 0, 0, bar_rho, delta_tol)
     k = len(branch_failures[0])
     if any(len(r) != k for r in branch_failures):
         raise ValueError("ragged branch_failures matrix")
@@ -169,7 +148,7 @@ def rho_ucb(branch_failures: Sequence[Sequence[bool]], delta: float = 0.05,
     for size in range(max(2, floor.q0), k + 1):
         for I in itertools.combinations(range(k), size):
             evaluated += 1
-            # implementation evidence floor: frozen before evaluation
+            # evidence floor: frozen before evaluation
             if n < floor.n_min or any(marg_counts[i] < floor.k_min for i in I):
                 insufficient += 1
                 continue
@@ -195,15 +174,7 @@ def rho_ucb(branch_failures: Sequence[Sequence[bool]], delta: float = 0.05,
     rho = rho_from_lambda(lam, k)
     uj = u_joint(joint_all, n, delta)
 
-    precision_passed: Optional[bool] = None
-    if best is not None and not math.isinf(best) and rho is not None:
-        ci_w = best - rho
-        rel_w = (best - rho) / rho if rho > 0 else math.inf
-        precision_passed = (ci_w <= precision.max_ci_width and rel_w <= precision.max_rel_width)
-
     if best is None:
-        state = GateState.INSUFFICIENT_EVIDENCE
-    elif precision.enforce_precision and precision_passed is False:
         state = GateState.INSUFFICIENT_EVIDENCE
     elif math.isinf(best):
         state = GateState.CLOSED
@@ -218,7 +189,6 @@ def rho_ucb(branch_failures: Sequence[Sequence[bool]], delta: float = 0.05,
         state=state, u_joint=uj,
         subsets_evaluated=evaluated, subsets_insufficient=insufficient,
         bar_rho=bar_rho, delta_tol=delta_tol,
-        precision_passed=precision_passed,
         detail={"joint_all_fail": joint_all, "marginal_counts": marg_counts,
                 "saw_zero_lower_bound": saw_zero_lower},
     )

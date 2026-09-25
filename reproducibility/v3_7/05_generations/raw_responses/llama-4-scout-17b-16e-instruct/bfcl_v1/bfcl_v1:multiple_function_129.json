@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "904a15185581b752c6704017d7e3b92c3108459cc7ca2796e8327864d4fb773e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:multiple_function_129",
+  "prompt_sha256": "904a15185581b752c6704017d7e3b92c3108459cc7ca2796e8327864d4fb773e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "ecdd40925aee89b5e357bc930f56dc42df7bf57228441ffc04a2e9db7b893adc",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"annual_rate\":5,\"compounding_freq\":\"monthly\",\"principal\":10000,\"time_in_years\":5}",
+        "name": "compound_interest"
+      },
+      "id": "call_1789655658209",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 27,
+    "neurons": 27,
+    "prompt_tokens": 1015,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1042
+  }
+}

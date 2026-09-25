@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "e69473bb8e8c809429b1a3183c8a0f083208b68fb1378fa9e46a491c941cf131",
+  "candidate_text": "The May Revolution.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "73b2facb22f0eab0e497b9a08a5e404e4fedca2dc9c53e7543a7db1efef41f98",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5ac19d4c55429963665198bb",
+  "prompt_sha256": "1fc58c46d09bb85de8eefad428096144e61427a94b521083acf3f6263d8e3b03",
+  "provider": "gemini",
+  "provider_raw_sha256": "cfa492753915571ec8b98ad940a6e47e72383b29a0df2862b12ed7b563b34ca0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ac19d4c55429963665198bb",
+  "text": "The May Revolution.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 822,
+    "total_tokens": 826
+  }
+}

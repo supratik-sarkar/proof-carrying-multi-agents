@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "0a28a330236862e1abf633b00787690bba55b65b97f24ec5d99215f9a2c43954",
+  "example_id": "43bda800acd929d0a0f3774c00f5613f",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "f26c8d5f90290d84bbfd6f3b7b0bebf834f0dfd6763149499d30179a5352e556",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "43bda800acd929d0a0f3774c00f5613f",
+  "prompt_sha256": "28822842885c7c918d8c06b66b8ef217bb6214c7bcee2e7b2c3e7ee4efdcbe01",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Civilization IV: The game has received critical acclaim and was hailed as an exemplary product of one of the leading video game producers in the turn-based strategy genre .\n\nClaim: Civilization IV is a turn-based strategy game.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "010bf5c4d121c6264630d4e73bb3c2e20a38d9b42caaf66c57e823ea404fdea1",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:43bda800acd929d0a0f3774c00f5613f",
+  "task_key": "76f45fbe0e34c2e1da735bf8cb4b613542389bb9bf2ea0f3aca6583dae1f2c1c",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-15T09:34:34.614477+00:00",
+  "tokens_in": 128,
+  "tokens_out": 4,
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 3.45090913772583,
+    "prompt_tokens": 128,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 132
+  }
+}

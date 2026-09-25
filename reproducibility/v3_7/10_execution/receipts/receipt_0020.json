@@ -1,0 +1,8 @@
+{
+  "bfcl_official_scorer_commit": "ea13468e4423454d0c213704fb87cf7cb3990433",
+  "bfcl_v1_data_commit": "9df5c346ee0556c8a7cb09fd7206a39aadd904c2",
+  "bfcl_v1_release_tag": "v1.0",
+  "local_model_weight_downloads": 0,
+  "schema": "PCG_MAS_V3_6_BFCL_V1_SOURCE_RECEIPT_V2_1",
+  "status": "PASS"
+}

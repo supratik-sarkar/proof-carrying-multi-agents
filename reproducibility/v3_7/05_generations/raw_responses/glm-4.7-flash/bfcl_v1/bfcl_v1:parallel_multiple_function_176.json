@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "c6eb3b3425ad3bc1a4ac4abca1259b0360f38bed4bd2b7181b4481dd833eeaf5",
+  "candidate_text": "I'll help you with all four tasks! Let me process each one for you.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "8c32c960fbca6a277efe35cbd5af24a37f82a4a54230f1886a3b6e9dccd52f0d",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_multiple_function_176",
+  "prompt_sha256": "8c32c960fbca6a277efe35cbd5af24a37f82a4a54230f1886a3b6e9dccd52f0d",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "5bdaf6d666346742ebfdb94317bce92bea1aabf228a17c7b2e3051540e5526c1",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you with all four tasks! Let me process each one for you.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"hotel_name\": \"Hilton\", \"location\": \"Los Angeles, CA\", \"start_date\": \"2022-05-01\", \"end_date\": \"2022-05-10\", \"rooms\": 2}",
+        "name": "hotel_booking"
+      },
+      "id": "chatcmpl-tool-88e30d89b364ba9c",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"place1\": \"New York, NY\", \"place2\": \"Los Angeles, CA\"}",
+        "name": "get_time_difference"
+      },
+      "id": "chatcmpl-tool-9cd51ad9d4206c9a",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"weight\": 75, \"height\": 180, \"system\": \"metric\"}",
+        "name": "calculate_bmi"
+      },
+      "id": "chatcmpl-tool-a37e33efa22b435e",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"text\": \"I had a wonderful day at the beach. The weather was perfect and I enjoyed a delicious ice cream.\", \"language\": \"English\"}",
+        "name": "sentiment_analysis"
+      },
+      "id": "chatcmpl-tool-82646ef84edb5c9b",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 481,
+    "neurons": 22.012900000000002,
+    "prompt_tokens": 819,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1300
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "HIDDEN_DEV_LAUNCH_COUNT_THIS_PASS": 0,
+  "VISIBLE_TERMINAL_LAUNCH_COUNT": 1,
+  "resumed_stage": "AGENTDOJO",
+  "schema": "PCG_MAS_V3_6_POST_AGENTDOJO_CONTROL_VISIBLE_TERMINAL_LAUNCH_RECEIPT",
+  "skipped_stages": [
+    "RECOVERY",
+    "GEMINI-3.1 PRIMARY REPLACEMENT",
+    "MIND2WEB",
+    "BFCL V1"
+  ],
+  "status": "PASS",
+  "terminal_launch_command": "cd <LOCAL_PATH:b0f2ecb535f6b59f> && /bin/zsh artifacts/v3_6/dataset_amendment_v2/integration/launch_amended_followon.sh <LOCAL_PATH:b0f2ecb535f6b59f>",
+  "terminal_window_id": "tab 1 of window id 59315",
+  "timestamp": "2026-09-17T17:50:49.530232+00:00"
+}

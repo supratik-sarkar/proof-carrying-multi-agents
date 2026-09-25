@@ -1,0 +1,20 @@
+{
+  "schema": "PCG_MAS_V3_6_FAILED_DEV_LAUNCH_ROOT_CAUSE_RECEIPT",
+  "status": "PASS",
+  "timestamp": "2026-09-17T13:25:30Z",
+  "root_cause_class": "TRANSIENT_TRANSPORT_HTTP_503_WITHOUT_BOUNDED_RETRY",
+  "root_cause": "provider_client.ProviderError: HTTP 503 (Service Unavailable) raised during call_write for gemini-3.1-flash-lite on mind2web observation mind2web:c96f31bb-bc95-456e-b130-0761f184b1a2 due to lack of bounded transient transport retry in provider_client._post/execute_lane.call_write",
+  "failed_stage": "MIND2WEB",
+  "failed_task_id": "mind2web",
+  "failed_model_id": "gemini-3.1-flash-lite",
+  "failed_dataset": "mind2web",
+  "failed_observation_id": "mind2web:c96f31bb-bc95-456e-b130-0761f184b1a2",
+  "inner_exception_type": "provider_client.ProviderError",
+  "inner_exception_message": "HTTP 503",
+  "inner_exception_source_file": "artifacts/v3_6/dataset_amendment_v2/integration/provider_client.py",
+  "inner_exception_source_line": 8,
+  "caller_source_file": "artifacts/v3_6/dataset_amendment_v2/integration/execute_lane.py",
+  "caller_source_line": 14,
+  "parent_exception_type": "subprocess.CalledProcessError",
+  "parent_exception_message": "Command execute_lane.py returned non-zero exit status 1"
+}

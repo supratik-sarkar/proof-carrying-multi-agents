@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "55a3cb87567136aa130dab267eb4f1becc34cd75abfdb5ae2b04da1fed4c36b6",
+  "candidate_text": "\n\nLarry Drake",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "5eb210aa43db280ddef3a367c2fbdb2abff117702d5b83c6ef60f390c9f894e9",
+  "example_id": "5a71717d5542994082a3e834",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "395d5aeb16c8bcea73decf9af89bbb8b9064f48ce46471f011fc94fe4b12eca8",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5a71717d5542994082a3e834",
+  "prompt_sha256": "16e312dcddbd109ea1b44fe37dcbb715a609d3ed4f8ca7435c231bfe1c77865a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Gryphon (film): Gryphon also known as \"Attack of the Gryphon\" is a 2007 television film directed by Andrew Prowse, starring Amber Benson, Jonathan LaPaglia, and Larry Drake.  It premiered on the Sci-Fi Channel on January 27, 2007.\n\n[2] Larry Drake: Larry Richard Drake (February 21, 1950 – March 17, 2016) was an American actor, voice artist, and comedian best known as Benny Stulwicz in \"L.A. Law\", Robert G. Durant in both \"Darkman\" and \"\" and the voice of Pops in \"Johnny Bravo\".\n\n[3] Steve Nallon: Steve Nallon (born 8 November 1960) is a British actor, writer, voice artist and impressionist.  Nallon began his career as a stand-up performer on the northern club circuit in the 1970s.  He is known for his work as a voice artist on the satirical puppet show \"Spitting Image\" and for impersonating Margaret Thatcher on television throughout her time as Prime Minister of the UK (1979–1990).  In his career Steve Nallon has performed a number of roles and characters as an actor and as a voice artist in theatre, film, television and radio.\n\n[4] List of Johnny Bravo episodes: \"Johnny Bravo\" is an American animated television series created by Van Partible for the Cartoon Network.  The series premiered July 14, 1997, and ended officially August 27, 2004.  The series is a spin-off of \"World Premiere Toons\", also known as the \"What a Cartoon!  Show\".\n\nQuestion: What star of \"Attack of the Gryphon\" was also a voice artist in Johnny Bravo?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "437d6e0ca67241657655d96f43d03c1e03968203d1ef93594f7836e45465d377",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a71717d5542994082a3e834",
+  "task_key": "9820a298886b70fc20b4c47ebde76b2e065318d9814c9b42a4acfc683bd57812",
+  "text": "\n\nLarry Drake",
+  "timestamp": "2026-09-15T09:35:55.132160+00:00",
+  "tokens_in": 465,
+  "tokens_out": 199,
+  "usage": {
+    "completion_tokens": 199,
+    "neurons": 47.989000000000004,
+    "prompt_tokens": 465,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 664
+  }
+}

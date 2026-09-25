@@ -1,0 +1,26 @@
+{
+  "schema": "PCG_MAS_V3_6_POST_FAILURE_PREFLIGHT_RECEIPT",
+  "status": "PASS",
+  "timestamp": "2026-09-17T13:26:02.106396+00:00",
+  "checks": {
+    "authority_chain": "PASS",
+    "matrix_cardinality": "PASS",
+    "clean_runtime": "PASS",
+    "source_pins": "PASS",
+    "model_bindings": "PASS",
+    "generation_policies": "PASS",
+    "canary_authority": "PASS",
+    "protection_invariants": "PASS",
+    "zero_cost_billing": "PASS",
+    "fit_strict_700": "PASS",
+    "exact_resume_workplan": "PASS",
+    "runtime_reconciliation_authority": "PASS",
+    "process_cleanliness": "PASS"
+  },
+  "fit_present": 700,
+  "fit_missing": 0,
+  "canonical_complete_now": 1510,
+  "canonical_remaining_now": 730,
+  "protected_observations": 618,
+  "immutable_core": 807
+}

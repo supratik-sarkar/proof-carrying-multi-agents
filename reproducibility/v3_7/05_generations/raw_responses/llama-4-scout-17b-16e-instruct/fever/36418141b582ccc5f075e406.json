@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "6e2049d64ab357abedc48a1c3a79061a8ffcaf7cf5f1e7f62a7f57b2f0f4c875",
+  "example_id": "3bf0343e3e9d0ddcf76e978fad3fbdc6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "719afa67cd088d48b3cca68375bab460416cba0cd067d53e6735387a7998ea34",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "3bf0343e3e9d0ddcf76e978fad3fbdc6",
+  "prompt_sha256": "6fad5b6bfa3a725615f8e1a10f1384a64f49053fdb8999ab8848320efb5607e3",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] House of Cards (season 1): The series also stars Robin Wright , Kate Mara , and Corey Stoll in lead roles .\n\nClaim: Billboard Dad stars Robin Wright.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "e401aa0f9dc91230587ee451b55028cc8df2897e0d7c86e2188ca69f08bb5047",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:3bf0343e3e9d0ddcf76e978fad3fbdc6",
+  "task_key": "243226479c601582f36580619b795df8e6fdaffbc02f8ee84fd63b4486307847",
+  "text": "NOT ENOUGH INFO",
+  "timestamp": "2026-09-15T09:34:41.264952+00:00",
+  "tokens_in": 116,
+  "tokens_out": 5,
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 3.2336363792419434,
+    "prompt_tokens": 116,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 121
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "6b0a3b6a1706c4939ddd3a401d2bc4b9e6c7dc67687c72c1c1dbf5a9743fb98a",
+  "example_id": "c07e0d3807241c8f77304361b5431734",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "98b208c44cbf147858bdc4b7d80f9ac6f5aac7ca73cb04653f396924aa0a73c8",
+  "max_output_tokens": 256,
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "c07e0d3807241c8f77304361b5431734",
+  "prompt_sha256": "04ba5ca8d85ac8624931003d6bae75b9fd7a6a25455d1473d642e9eda489e7a1",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Sayyeshaa: Sayyeshaa is an Indian film actress who appears in Hindi , Tamil and Telugu films .\n\nClaim: Sayyeshaa made her Hollywood debut in Shivaay.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "0cc2a546d2b49b7acc7717b59167eeb6164f3ccfc99f812c97d717c087ee8747",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:c07e0d3807241c8f77304361b5431734",
+  "task_key": "59b0954a036fdc189a97fd317bca4a2a141aaec51c11d86ad04f44189cccec32",
+  "text": "NOT ENOUGH INFO",
+  "timestamp": "2026-09-15T10:22:48.319747+00:00",
+  "tokens_in": 127,
+  "tokens_out": 228,
+  "usage": {
+    "completion_tokens": 228,
+    "neurons": 7.372726917266846,
+    "prompt_tokens": 127,
+    "prompt_tokens_details": {
+      "cached_tokens": 64
+    },
+    "total_tokens": 355
+  }
+}

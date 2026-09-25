@@ -1,0 +1,15 @@
+{
+  "authority": "14_artifacts/manuscript_stack/data/cell_registry_56.csv",
+  "count": 8,
+  "datasets": [
+    "2Wiki",
+    "AgentDojo",
+    "BFCL V1",
+    "FEVER",
+    "HotpotQA",
+    "Mind2Web",
+    "PubMedQA",
+    "TAT-QA"
+  ],
+  "raw_dataset_snapshot": "NOT_RETAINED"
+}

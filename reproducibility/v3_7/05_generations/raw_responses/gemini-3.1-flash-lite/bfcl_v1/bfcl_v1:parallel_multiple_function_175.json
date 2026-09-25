@@ -1,0 +1,67 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "89cb69956afce1c69345049f6def021c5b3366beb0b8e701cfad2e7b2bc906d6",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_multiple_function_175",
+  "prompt_sha256": "89cb69956afce1c69345049f6def021c5b3366beb0b8e701cfad2e7b2bc906d6",
+  "provider": "gemini",
+  "provider_raw_sha256": "fe7d9fe3c1e33b824a2cc73b79358a0d833fbf209d31b3376da857c85bdf27fd",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPIXMAXnad7gwEbqnS4Mzn5MQR71RDjpDY8WBjzG1wfrWTRkAELkDeoAZA+11bOJtbzED24f2VrT4qp+re+LJA2QJi698SsfmYdV+kB0kaM9MX0nu9bVkBBjTWQfb3dECuaSMRjjMyF8OjjQ=="
+        }
+      },
+      "function": {
+        "arguments": "{\"location\":\"Tokyo\",\"country\":\"Japan\",\"timezone\":\"Asia/Tokyo\"}",
+        "name": "get_current_time"
+      },
+      "id": "call_1235071",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"country\":\"United States\",\"timezone\":\"America/New_York\",\"location\":\"New York\"}",
+        "name": "get_current_time"
+      },
+      "id": "call_1235072",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"detail_level\":\"detailed\",\"market\":\"NASDAQ\",\"company_name\":\"Microsoft\"}",
+        "name": "get_stock_info"
+      },
+      "id": "call_1235073",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\":\"Apple\",\"market\":\"NASDAQ\",\"detail_level\":\"summary\"}",
+        "name": "get_stock_info"
+      },
+      "id": "call_1235074",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 136,
+    "prompt_tokens": 373,
+    "total_tokens": 509
+  }
+}

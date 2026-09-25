@@ -1,0 +1,16 @@
+You are a fact-verification assistant. Read the evidence and decide whether
+the CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.
+
+Reply with EXACTLY one of these three labels and nothing else:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Evidence:
+[1] Samwell Tarly: He subsequently appeared in Martin 's A Clash of Kings before being a POV character in the later novels .
+
+[2] A Clash of Kings: A Clash of Kings is the second novel in A Song of Ice and Fire , an epic fantasy series by American author George R. R. Martin expected to consist of seven volumes .
+
+Claim: Samwell Tarly appears in novels.
+
+Label:

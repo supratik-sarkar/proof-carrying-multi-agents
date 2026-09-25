@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "402ef0e40e40a23bf636c35f31dd8e2f694281cc047cabaa3849369b5145f74a",
+  "candidate_text": "Benjamin Nash",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "0c180f21b68802b31c60f9a8e82060a09ef15f435a49f28f213257dcfc8be1bb",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "0926667308d011ebbd95ac1f6bf848b6",
+  "prompt_sha256": "a4d2ec1b58a703269e025271ab64ba14bba0504e49577e6323ce433121de2e06",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "c50f8de885c96cea93f278426af27bc0a060c9dd818f2822d12ee2e96aa4d02e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:0926667308d011ebbd95ac1f6bf848b6",
+  "text": "Benjamin Nash",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 5.190908908843994,
+    "prompt_tokens": 562,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 565
+  }
+}

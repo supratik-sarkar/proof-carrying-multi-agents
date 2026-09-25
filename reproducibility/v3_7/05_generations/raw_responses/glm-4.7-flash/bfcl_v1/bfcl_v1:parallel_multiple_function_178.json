@@ -1,0 +1,58 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "72c9396b6c1665bcab6361c27b0127903a3cb16bb795ce895e4e05a610a97c6b",
+  "candidate_text": "I'll help you with all three requests! Let me gather that information for you.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ee1d66062315600501e74a84f038529354ae3253a7f6f211da065fba45ef4a76",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_multiple_function_178",
+  "prompt_sha256": "ee1d66062315600501e74a84f038529354ae3253a7f6f211da065fba45ef4a76",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "c40c5d796b2aaf1f90edba3e9e36e835e6b0e0bcdcdd3e70559d32979a254f31",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you with all three requests! Let me gather that information for you.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"Tokyo\", \"radius\": 200, \"amount\": 5}",
+        "name": "locate_tallest_mountains"
+      },
+      "id": "chatcmpl-tool-b93f46562f5214ab",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"initial_temp\": 300, \"final_temp\": 350, \"heat_capacity\": 1.5, \"isothermal\": true}",
+        "name": "calculate_entropy_change"
+      },
+      "id": "chatcmpl-tool-ad51d8ebf721c086",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"event\": \"Battle of Waterloo\", \"location\": \"Belgium\"}",
+        "name": "get_event_date"
+      },
+      "id": "chatcmpl-tool-ad3a178c87749539",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 358,
+    "neurons": 16.397199999999998,
+    "prompt_tokens": 612,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 970
+  }
+}

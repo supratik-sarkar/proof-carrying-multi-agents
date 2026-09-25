@@ -1,0 +1,33 @@
+{
+  "schema": "PCG_MAS_V3_6_EXTERNAL_VERIFIER_PREPARATION_RECEIPT",
+  "status": "PASS",
+  "timestamp": "2026-09-18T05:38:32.476532+00:00",
+  "inputs_count": 1400,
+  "expected_scores_count": 4200,
+  "bonferroni_denominator": 3,
+  "applicable_datasets": [
+    "fever",
+    "hotpotqa",
+    "pubmedqa",
+    "tatqa",
+    "twowiki"
+  ],
+  "applicable_models": [
+    "gpt-oss-120b",
+    "qwen3.8-27b",
+    "gemini-3.1-flash-lite",
+    "llama-4-scout-17b-16e-instruct",
+    "nemotron-3-120b-a12b",
+    "gemma-4-26b-a4b-it",
+    "glm-4.7-flash"
+  ],
+  "inputs_path": "artifacts/v3_6/dataset_amendment_runtime_v2/verifier_lane/EXTERNAL_VERIFIER_INPUTS_1400.jsonl",
+  "inputs_sha256": "d4ab92f7d3ca4c61fede978adfd6a3aa6108d759f128344c2fd974429a9922d5",
+  "colab_notebook": "artifacts/v3_6/dataset_amendment_runtime_v2/verifier_lane/PCG_MAS_v3_6_EXTERNAL_VERIFIER_RUNNER.ipynb",
+  "linux_runner": "artifacts/v3_6/dataset_amendment_runtime_v2/verifier_lane/run_external_verifiers_linux.py",
+  "native_scope_na_datasets": [
+    "mind2web",
+    "bfcl_v1",
+    "agentdojo"
+  ]
+}

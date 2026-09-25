@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "4dee65a725322a0a3d82afe480add3b67f76fbbce9d6de43759513cd2cdcf050",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_function_178",
+  "prompt_sha256": "4dee65a725322a0a3d82afe480add3b67f76fbbce9d6de43759513cd2cdcf050",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "ed64c010e7631c5a4c7719af6668b494d9a2f0ef92b3c78b512f378e387be731",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"company_name\": \"Microsoft\", \"date\": \"2022-01-01\", \"exchange\": \"NASDAQ\"}",
+        "name": "get_stock_price"
+      },
+      "id": "chatcmpl-tool-a9b58237d77bff49",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\": \"Microsoft\", \"date\": \"2022-02-01\", \"exchange\": \"NASDAQ\"}",
+        "name": "get_stock_price"
+      },
+      "id": "chatcmpl-tool-9f3e4476afae2d5b",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\": \"Apple\", \"date\": \"2022-01-01\", \"exchange\": \"NASDAQ\"}",
+        "name": "get_stock_price"
+      },
+      "id": "chatcmpl-tool-9bcb0025de579558",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\": \"Apple\", \"date\": \"2022-02-01\", \"exchange\": \"NASDAQ\"}",
+        "name": "get_stock_price"
+      },
+      "id": "chatcmpl-tool-ba416054c69ae127",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 319,
+    "neurons": 10.436363220214844,
+    "prompt_tokens": 191,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 510
+  }
+}

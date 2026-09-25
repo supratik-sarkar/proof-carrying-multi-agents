@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "90540db32a499b07153438ea1246bb9f4e1a886b7136bf9e0ac7c805daa8f737",
+  "candidate_text": "Yes, it has a positive effect.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "084abffe2c8b7f3f2189441015656162fa7690101dda193abf4bfcc0cab98c5e",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "26383908",
+  "prompt_sha256": "285473e2caa6a5b3c5ef60743aead66dbc94de55605000e0de03076b457aa8f7",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "3facf472814d15d9965a5cf4fa3d86a31e98c7f2ea59483976af8330e4250d92",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:26383908",
+  "text": "Yes, it has a positive effect.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 9,
+    "neurons": 2.799999952316284,
+    "prompt_tokens": 281,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 290
+  }
+}

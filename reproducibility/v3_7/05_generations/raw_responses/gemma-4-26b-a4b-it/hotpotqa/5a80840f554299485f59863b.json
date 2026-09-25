@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "50eab20d532813f1032dc98d75780da077915e0d1ea23287152cbdbb04e3123d",
+  "candidate_text": "Charmed",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "a119fa27c569296da4649f4c659992992655a17189906c630bc4d1c78b523dbc",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5a80840f554299485f59863b",
+  "prompt_sha256": "030e9c4975f3f5b0dccaa93f84b6a9340b4f1028ead9aeef6beca8ce3d1aca9f",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "b3305fb0feffff564358ff740898e12dfd03641695946cc859fa347185550983",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a80840f554299485f59863b",
+  "text": "Charmed",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 5.427272319793701,
+    "prompt_tokens": 588,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 591
+  }
+}

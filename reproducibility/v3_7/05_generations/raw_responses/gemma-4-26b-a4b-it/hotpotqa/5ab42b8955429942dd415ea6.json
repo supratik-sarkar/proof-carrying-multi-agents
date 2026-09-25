@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "ca41f27b9f23afe6c8c4b7948a175244ac13ff437a6de85ff571ff16125246f0",
+  "candidate_text": "Bourbon County",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "4548a1e92bae24625713c6ca05f99b18ca2322d8b215401b41bbe8cc08bbf154",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5ab42b8955429942dd415ea6",
+  "prompt_sha256": "1217ea1b61582343ba30f54ba662c8007630554b64e15680b957a5601ac0ad3f",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "889d7cd07984e8f1322b8640130be2f1e28818b6f794835f01ecbaf25a891ed0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ab42b8955429942dd415ea6",
+  "text": "Bourbon County",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 6.772727012634277,
+    "prompt_tokens": 733,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 737
+  }
+}

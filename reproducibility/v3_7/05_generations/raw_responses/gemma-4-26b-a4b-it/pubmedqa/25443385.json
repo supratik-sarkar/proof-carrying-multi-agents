@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "c2eda54ffe03bee3ad76389a69b4175864a1af4168570ce19cec61e364950085",
+  "candidate_text": "Yes, they are financially viable.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "ce18b42f8c219d64e90ee8924fd9a8fc3267db87703791e7726f51c3cab2a85f",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "25443385",
+  "prompt_sha256": "c32c336bc1dcde75b8877d7770c90bb0ff42bf65dc1c120bebed4decd95cf06b",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "6e9757b5fb237a92c950d113cac9474c602ee804fc35620716b4d6bec21cd3dc",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:25443385",
+  "text": "Yes, they are financially viable.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 3.981818199157715,
+    "prompt_tokens": 414,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 422
+  }
+}

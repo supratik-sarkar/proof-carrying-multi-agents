@@ -1,0 +1,25 @@
+{
+  "duration_seconds": 0.047057151794433594,
+  "records_evaluated": 840,
+  "schema": "PCG_MAS_V3_6_EXP0A_RECEIPT",
+  "stats": {
+    "accepted": 574,
+    "by_dataset": {
+      "agentdojo": {
+        "accepted": 280,
+        "rejected": 0
+      },
+      "bfcl_v1": {
+        "accepted": 234,
+        "rejected": 46
+      },
+      "mind2web": {
+        "accepted": 60,
+        "rejected": 220
+      }
+    },
+    "rejected": 266
+  },
+  "status": "PASS",
+  "timestamp": "2026-09-19T17:48:57.266602+00:00"
+}

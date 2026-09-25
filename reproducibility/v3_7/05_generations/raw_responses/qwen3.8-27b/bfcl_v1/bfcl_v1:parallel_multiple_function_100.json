@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "1a31101f1735149bb3fe68daaee156bdd1cd340c6fb7d99fa1dc4df482a09b71",
+  "candidate_text": "I'll gather all four forecasts for you. Let me make these requests now.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "2e42fbbfa1c5139b327c2eb08bbd517d293b52ad550b3fd8720cf206d273f62f",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_100",
+  "prompt_sha256": "2e42fbbfa1c5139b327c2eb08bbd517d293b52ad550b3fd8720cf206d273f62f",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "888615ce582f9f842be3141c9372d394e9855f46341804b12e4f641932974a18",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll gather all four forecasts for you. Let me make these requests now.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"company\": \"Apple Inc.\", \"days\": 30, \"model\": \"ARIMA\"}",
+        "name": "stock_forecast"
+      },
+      "id": "chatcmpl-tool-a3c95f03e1a7f637",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company\": \"Microsoft Corporation\", \"days\": 45, \"model\": \"LSTM\"}",
+        "name": "stock_forecast"
+      },
+      "id": "chatcmpl-tool-b891a77f0b0820b4",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York City\", \"days\": 7}",
+        "name": "weather_forecast"
+      },
+      "id": "chatcmpl-tool-84df1c3ac3094544",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"Los Angeles\", \"days\": 14}",
+        "name": "weather_forecast"
+      },
+      "id": "chatcmpl-tool-bc3594610ddb2800",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 390,
+    "neurons": 136.8545379638672,
+    "prompt_tokens": 572,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 962
+  }
+}

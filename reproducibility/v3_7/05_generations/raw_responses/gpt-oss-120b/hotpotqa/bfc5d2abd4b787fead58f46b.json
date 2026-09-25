@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "8bb8ad22e0c9be567c774f43ebda25cb1c9f8404b9c4c57705b8cb964d97fb1d",
+  "candidate_text": "Personal History",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "03d45651094496ca6eac18df7a6efc847aabbe1380da8667f5b25e261c7d5fc6",
+  "example_id": "5adbd70c55429947ff173843",
+  "finish": "stop",
+  "input_sha256": "74732783273ab8508be9db69e097ae4b69e5fb5c91a35aabce0cda2a76a79a5b",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5adbd70c55429947ff173843",
+  "prompt_sha256": "fa4187e889c714e168aad73339c69d35a759573b4ad00bcab864afb58a0cfacb",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Common iora: The common iora (\"Aegithina tiphia\") is a small passerine bird found across the tropical Indian subcontinent with populations showing plumage variations, some of which are designated as subspecies.  A species found in scrub and forest, it is easily detected from its loud whistles and the bright colours.  During the breeding season, males display by fluffing up their feathers and spiral in the air appearing like a green, black, yellow and white ball.\n\n[2] Golf (1984 video game): Golf (ゴルフ , Gorufu ) is a sports-simulation video game developed and released by Nintendo in 1984 for the NES.  The player one character wears a white shirt and shoes with blue pants and uses a white ball, while the player two character wears a red shirt and shoes with black pants and uses a red ball.\n\n[3] Black and White Ball: The Black and White Ball was a masquerade ball held on November 28, 1966 at the Plaza Hotel in New York City.  Hosted by author Truman Capote, the ball was in honor of \"The Washington Post\" publisher Katharine Graham.\n\n[4] Sight screen: The function of the sight screen, which is usually completely black or white in color, is to offer the batsman a clean view of the bowler and his or her delivery, such that distractions including spectators do not disturb the batsman.  In limited overs matches such as One Day Internationals or Twenty20 Internationals, which are usually played with a white ball, the sight screen is usually black, or otherwise dark.  In Test matches, in which a cherry-red ball is used for play, the sight screen is usually white.\n\nQuestion: What is the title of the memoir written by the honoree of the Black and White Ball?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "d3505d9327bafa1c44307bcc38b42d2678e39647815906cfd1419c9b9dc3ae59",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5adbd70c55429947ff173843",
+  "task_key": "ca93e3652ec4bc814c5156ed9e746fae131d0bb10893937aa6b6006daed3e844",
+  "text": "Personal History",
+  "timestamp": "2026-09-14T10:32:33.396323+00:00",
+  "tokens_in": 488,
+  "tokens_out": 71,
+  "usage": {
+    "completion_tokens": 71,
+    "neurons": 20.368091583251953,
+    "prompt_tokens": 488,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 559
+  }
+}

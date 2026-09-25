@@ -1,0 +1,20 @@
+{
+  "schema": "PCG_MAS_V3_6_RESUME_B_COMPLETION_RECEIPT",
+  "timestamp": "2026-09-18T07:23:50.403965+00:00",
+  "status": "PASS",
+  "before": {
+    "old_five": 1400,
+    "mind2web": 280,
+    "bfcl": 280,
+    "agentdojo": 271,
+    "canonical": 2231
+  },
+  "after": {
+    "old_five": 1400,
+    "mind2web": 280,
+    "bfcl": 280,
+    "agentdojo": 280,
+    "canonical": 2240
+  },
+  "manifest_task_count": 9
+}

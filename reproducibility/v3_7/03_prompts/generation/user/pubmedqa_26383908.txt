@@ -1,0 +1,12 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] PubMedQA abstract context: METHOD: This quasi-experimental study was conducted using a crossover design among two groups of total 64 nursing students. Participants were asked to create concept maps (group A) or were evaluated with the traditional method of quiz (group B) for eight weeks and then take a cumulative test (no. 1). Consequently, subjects used the alternate method for another eight weeks and then take the second cumulative test (no. 2). RESULTS: The results of this study showed that the mean scores for cumulative tests (both no. 1 and no. 2) was higher in the group that engaged in map construction compared to the group that only take the quizzes. In addition, there was a gradual increase in the mean scores of developed map during the eight sessions of intervention.
+
+Long answer: In conclusion, concept mapping has a positive effect on students' academic achievement. These findings could provide valuable evidence for establishing concept mapping as a continuous teaching strategy for nursing students.
+
+Question: Does concept mapping enhance learning outcome of nursing students?
+
+Answer:

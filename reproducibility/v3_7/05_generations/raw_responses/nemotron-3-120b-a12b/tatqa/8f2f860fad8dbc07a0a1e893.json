@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "f1934ca658b41b6b0e17950eb609c6587ccc0890ae305522ed2d8d48734ab09a",
+  "candidate_text": "\n\n0.13% increase",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "30a2f61b31eae16b14a04aeb26da08f7ec778fb4629b9783fcfad738d5279592",
+  "example_id": "6412ed66162de263009d4a74a1781e82",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "0a08ed8527c4db2ac897fdccbd98398031202301bb5aedc33323dfc2febd6f53",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "6412ed66162de263009d4a74a1781e82",
+  "prompt_sha256": "3692aa696ae50ef62447e852a29853d7c41e194528f403a2914a3d35f0de8533",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 2: In fiscal years 2019 and 2018, the Company continued to maintain a full valuation allowance on deferred tax assets. The valuation allowance increased by $1.7 million in fiscal year 2019. The Company recorded an income tax expense from continuing operations of $39,000 in fiscal year 2019. In fiscal year 2018, the Company recorded an income tax benefit from continuing operations of $597,000. The fiscal year 2018 income tax benefit was due primarily from the release of the tax valuation allowance associated with previously generated alternative minimum tax (AMT) credits due to the December 22, 2017 Tax Cuts and Jobs Act Tax Reform (the “Tax Act”).\n\n[2] TAT-QA table: row 0:  | March 31, | \nrow 1: (in thousands) | 2019 | 2018\nrow 2: Deferred income tax assets: |  | \nrow 3: Allowance for doubtful accounts | $26 | $24\nrow 4: Foreign tax credit carryforward | 810 | 812\nrow 5: Depreciation | 173 | 227\nrow 6: Deferred revenue | 425 | 675\nrow 7: Accrued compensation | 412 | 358\nrow 8: Inventory reserves | 757 | 948\nrow 9: Accrued warranty | 33 | 77\nrow 10: Net operating loss carryforward | 35,024 | 34,924\nrow 11: Accrued restructuring | — | 16\nrow 12: Intangibles and goodwill | 272 | —\nrow 13: Other | 839 | 660\nrow 14: Gross deferred tax assets | 38,771 | 38,721\nrow 15: Valuation allowance | (38,771) | (37,103)\nrow 16: Net deferred income tax assets | — | 1,618\nrow 17: Deferred income tax liabilities: |  | \nrow 18: Intangibles and goodwill | — | (1,618)\nrow 19: Net deferred income tax liabilities | $— | $—\n\n[3] TAT-QA 3: The Company has, on a tax-effected basis, approximately $0.8 million in tax credit carryforwards and $26.9 million of federal net operating loss carryforwards that are available to offset taxable income in the future. The tax credit carryforwards will begin to expire in fiscal year 2021. The federal net operating loss carryforwards begin to expire in fiscal year 2022. State tax credit carryforwards and net operating loss carryforwards, on a tax effected basis and net of federal tax benefits, are $0.1 million and $8.1 million, respectively. The remaining state tax credit carryforwards and state net operating loss carry forwards begin to expire in fiscal year 2020. In fiscal year 2019, $1.2 million of state net operating loss carryforwards expired.\n\n[4] TAT-QA 1: Components of the net deferred income tax assets are as follows:\n\nQuestion: What is the percentage change in gross deferred tax assets in 2019 compared to 2018?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c982b882c273f8241054ff90eed68aa769333286d369b16058d43757dc2fe334",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:6412ed66162de263009d4a74a1781e82",
+  "task_key": "99f30a65b1d04c4fb5bd1e9df4343eb019272a0d0d1b5dd47184589a81c66bf8",
+  "text": "\n\n0.13% increase",
+  "timestamp": "2026-09-15T09:38:39.125859+00:00",
+  "tokens_in": 870,
+  "tokens_out": 182,
+  "usage": {
+    "completion_tokens": 182,
+    "neurons": 63.902,
+    "prompt_tokens": 870,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1052
+  }
+}

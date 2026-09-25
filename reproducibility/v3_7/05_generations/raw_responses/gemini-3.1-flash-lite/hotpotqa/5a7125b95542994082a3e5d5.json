@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "c034433197828a535e70f4736a2ac5a2a410241ed00f7c435c0df04d564824cb",
+  "candidate_text": "Gardnerville, Nevada.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "262d16b447c785b9d925d6ac7dbf744a9576a9f9c3de0974464e6871386cc080",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5a7125b95542994082a3e5d5",
+  "prompt_sha256": "f76d497498e11a47feea03406437c4d91a13edd853663f810773dc01a5b0621b",
+  "provider": "gemini",
+  "provider_raw_sha256": "20fb0c91b3ede627a0f8edbf824e329abd0cabfd851dbf890295a4b2eddb86de",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a7125b95542994082a3e5d5",
+  "text": "Gardnerville, Nevada.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 456,
+    "total_tokens": 462
+  }
+}

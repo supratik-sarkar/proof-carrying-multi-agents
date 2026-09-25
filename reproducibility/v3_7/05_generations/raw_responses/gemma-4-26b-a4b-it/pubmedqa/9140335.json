@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "a76927ab5c5a9161392cdd4c2d14522364a49864cd92884039eb965d4e9f5de0",
+  "candidate_text": "May or may not.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "117d6fee3028455fdc47fc049fdcae4c542615be6b64a86eb0e7547bf99b77c8",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "9140335",
+  "prompt_sha256": "76854e2e75ad7895dff8b37c96be9c8e2455d716251727d9c14f8160b1e65ccb",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "e6645bb1ff096f09f7d1663c826e485722aaae41aa568aa17248b11e7ed318c0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:9140335",
+  "text": "May or may not.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 4.090909004211426,
+    "prompt_tokens": 432,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 438
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "quarantined_scratch_artifacts": [
+    {
+      "classification": "NONAUTHORITATIVE_SCRATCH_OPERATOR",
+      "file": "master_operator.py",
+      "notes": "Quarantined after internal <PUBLIC_TERM:ac0a3dfd6dddb209> executor crash. Must not be executed or treated as scientific authority.",
+      "path": "<LOCAL_PATH:3dd848ba8d23454f>",
+      "sha256": "504906f4ca81c55991eaf9dfb217002953fd129e7c6955635b0d53cbbfba0edc",
+      "size": 49803
+    },
+    {
+      "classification": "NONAUTHORITATIVE_PRECOMPUTATION",
+      "file": "fit_prepared_examples.json",
+      "notes": "Quarantined after internal <PUBLIC_TERM:ac0a3dfd6dddb209> executor crash. Must not be executed or treated as scientific authority.",
+      "path": "<LOCAL_PATH:b49bce2f0e188506>",
+      "sha256": "2354c9298fc353f5ca4aaa3ade84a7694502f63a54d87b65f64b56051707e895",
+      "size": 218906
+    }
+  ],
+  "schema": "PCG_MAS_V3_6_POST_TERMINATION_SCRATCH_AUDIT",
+  "status": "QUARANTINED",
+  "timestamp": "2026-09-17T12:07:11.723975+00:00"
+}

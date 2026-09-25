@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "f74b0535289ac050900e49afd7c593b8f38e71508e065cb8fcbeca2a25d70d09",
+  "example_id": "eebf922f4a5086d0b853f3f725ba7fc0",
+  "finish": "stop",
+  "input_sha256": "aab8198f196c7990f21dee8c85e4c530145087b67d91e46d8ec759a4ec987899",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "eebf922f4a5086d0b853f3f725ba7fc0",
+  "prompt_sha256": "ad59d12fa66833192f42c86e56d3b24fd375a54dda79522db6674a131cd22aab",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] John Deighton: By 1864 , Deighton was forced to pursue other lines of work as he developed health problems -LRB- swelling of the legs and feet -RRB- .\n\nClaim: John Deighton developed swelling of the legs.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "6c179482f23ef433d10372e23770b75c63d73dc443b6cf8deb6b035431dcb9a6",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:eebf922f4a5086d0b853f3f725ba7fc0",
+  "task_key": "1326b0632db121d280f1ce08c01455451a6de9686aadbdde5486e9c4b4786901",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:23.845759+00:00",
+  "tokens_in": 188,
+  "tokens_out": 92,
+  "usage": {
+    "completion_tokens": 92,
+    "neurons": 12.254508972167969,
+    "prompt_tokens": 188,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 280
+  }
+}

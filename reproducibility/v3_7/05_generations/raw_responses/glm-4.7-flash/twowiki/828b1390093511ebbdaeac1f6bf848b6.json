@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "7cc0a74fc94c4a129a14559d13473b8b3eccc61a08afb0ce9a173b6a874d1925",
+  "candidate_text": "Behind Locked Doors (1991 film)",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "668963958084bbb5aa11eb11d11afebe2abae929fe35f5d336da36e0ded3bc7c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "828b1390093511ebbdaeac1f6bf848b6",
+  "prompt_sha256": "a69ac7c9eed710c5f20145493b4c4313283017b978dac16cf36d8b5b42dbe15c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "cd4a18a7c669aa7b677be3cc52821a1a02f5d285ae08b6bf1081e52e3d518fb8",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:828b1390093511ebbdaeac1f6bf848b6",
+  "text": "Behind Locked Doors (1991 film)",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 9,
+    "neurons": 2.5056,
+    "prompt_tokens": 396,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 405
+  }
+}

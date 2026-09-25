@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "2e1eb73dea15e3e5bfdff15f8c7971efc6b793c73ed0b13eeb901869245b550e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_171",
+  "prompt_sha256": "2e1eb73dea15e3e5bfdff15f8c7971efc6b793c73ed0b13eeb901869245b550e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "1f32e0345379cdef406e9e5da45e5908a521b90db7d932f42374e5c4227f258b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"team\": \"New York Yankees\", \"league\": \"Major League Baseball\", \"season\": 2019}",
+        "name": "sports_ranking"
+      },
+      "id": "chatcmpl-tool-af4c56c4e07f0955",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"team\": \"Los Angeles Lakers\", \"league\": \"National Basketball Association\", \"season\": 2020}",
+        "name": "sports_ranking"
+      },
+      "id": "chatcmpl-tool-91cebd32f89ab9a5",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"Los Angeles\", \"date\": \"2020-12-25\"}",
+        "name": "air_quality"
+      },
+      "id": "chatcmpl-tool-94e3764613f83d87",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York\", \"date\": \"2021-01-01\"}",
+        "name": "air_quality"
+      },
+      "id": "chatcmpl-tool-b2d0f71000c71030",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 383,
+    "neurons": 134.69544982910156,
+    "prompt_tokens": 569,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 952
+  }
+}

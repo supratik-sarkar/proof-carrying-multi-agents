@@ -1,0 +1,36 @@
+method,phase,share,token_multiplier
+NoCert,Generation,0.78,1.0
+NoCert,Retrieval,0.08,1.0
+NoCert,Certificate,0.04,1.0
+NoCert,Semantic verifier,0.08,1.0
+NoCert,Forensic replay,0.02,1.0
+MiniCheck,Generation,0.78,1.12
+MiniCheck,Retrieval,0.08,1.12
+MiniCheck,Certificate,0.04,1.12
+MiniCheck,Semantic verifier,0.08,1.12
+MiniCheck,Forensic replay,0.02,1.12
+AlignScore,Generation,0.78,1.16
+AlignScore,Retrieval,0.08,1.16
+AlignScore,Certificate,0.04,1.16
+AlignScore,Semantic verifier,0.08,1.16
+AlignScore,Forensic replay,0.02,1.16
+QAFactEval,Generation,0.78,1.21
+QAFactEval,Retrieval,0.08,1.21
+QAFactEval,Certificate,0.04,1.21
+QAFactEval,Semantic verifier,0.08,1.21
+QAFactEval,Forensic replay,0.02,1.21
+CMVO,Generation,0.78,1.3
+CMVO,Retrieval,0.08,1.3
+CMVO,Certificate,0.04,1.3
+CMVO,Semantic verifier,0.08,1.3
+CMVO,Forensic replay,0.02,1.3
+SignalMatchedFusion,Generation,0.78,1.39
+SignalMatchedFusion,Retrieval,0.08,1.39
+SignalMatchedFusion,Certificate,0.04,1.39
+SignalMatchedFusion,Semantic verifier,0.08,1.39
+SignalMatchedFusion,Forensic replay,0.02,1.39
+PCG-MAS,Generation,0.62,1.56
+PCG-MAS,Retrieval,0.11,1.56
+PCG-MAS,Certificate,0.1,1.56
+PCG-MAS,Semantic verifier,0.13,1.56
+PCG-MAS,Forensic replay,0.04,1.56

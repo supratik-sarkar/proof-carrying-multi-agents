@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "6a5ed83658ef85afc77709cc16ede854ad98e3c2ad8b076e10dcbcd6e5096271",
+  "candidate_text": "Liverpool",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "c6fe2650dc486d14e3036e59863db724af04a0a26afb6c834925059e92131547",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "29427eea0bdd11eba7f7acde48001122",
+  "prompt_sha256": "e840fa6e62788267129063c2e7fa657422438a5317009b516d9537c651f80943",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "5693e7e101dd59b50a55a3b4c707cc58fa1858195510157f91b17db1e7270fc5",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:29427eea0bdd11eba7f7acde48001122",
+  "text": "Liverpool",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 2,
+    "neurons": 4.472799999999999,
+    "prompt_tokens": 800,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 802
+  }
+}

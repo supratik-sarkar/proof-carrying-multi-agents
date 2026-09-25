@@ -1,0 +1,6 @@
+Object,Role,Meaning
+V_H,Online predicate,Evidence commitment/integrity
+V_Pi,Online predicate,Pinned replay
+V_Gamma,Online predicate,Execution-policy compliance
+V_entail,Online predicate,Checker-relative semantic support
+Audit sidecar,Meta-level audit,IntFail / ReplayFail / DriftFail / CheckFail / CovGap

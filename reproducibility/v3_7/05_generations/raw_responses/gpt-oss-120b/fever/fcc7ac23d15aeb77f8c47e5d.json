@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "695846badfadcb7f0373a711708f690485c95e84f0bbe2a881cca766e2d1e706",
+  "example_id": "36dce145d3b4c0f27a47184ef5dc4c68",
+  "finish": "stop",
+  "input_sha256": "4a60bd964f0493dec4e3674f7ba7ced12e1835b7f7fb6152ef294ecb4f68a2dd",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "36dce145d3b4c0f27a47184ef5dc4c68",
+  "prompt_sha256": "1dfcc5c24ee164975e1dd59bf0143bfa4636004e95ebe7c8a2878b0fc518db14",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Franchising: Thirty-three countries -- including the United States and Australia -- have laws that explicitly regulate franchising , with the majority of all other countries having laws which have a direct or indirect effect on franchising .\n\nClaim: Franchising is unregulated in Australia.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "6312d069d5218a744b4789f7a4c30708bf1605c73c27483b52dbf23c5a5041b4",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:36dce145d3b4c0f27a47184ef5dc4c68",
+  "task_key": "7d71eefd0f137663486f0aa6c866ed49537f14e6ca9b02b43356b6309ddcfc0c",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:35:50.536924+00:00",
+  "tokens_in": 192,
+  "tokens_out": 116,
+  "usage": {
+    "completion_tokens": 116,
+    "neurons": 14.018144607543945,
+    "prompt_tokens": 192,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 308
+  }
+}

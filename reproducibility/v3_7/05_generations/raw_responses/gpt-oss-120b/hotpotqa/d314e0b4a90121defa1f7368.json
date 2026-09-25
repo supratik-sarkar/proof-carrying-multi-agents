@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "2abcbcf4fd48a7fc798bda99271f556df53a8b2a5a7af2a62335fad9ab5da9fc",
+  "example_id": "5a733c925542991f9a20c6b7",
+  "finish": "stop",
+  "input_sha256": "d79753bf8bac7b453668896b4a30b5ac13e32adff73bd7ac50232d2e3c671475",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5a733c925542991f9a20c6b7",
+  "prompt_sha256": "80037e1f1f65e4514909aceb7c959351a170c934f99e2a9598a52a20b1790f86",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Bill Martin Jr.: William Ivan \"Bill\" Martin Jr. (March 20, 1916 – August 11, 2004) was an American educator, publishing executive, and author of more than 300 children's books including \"The Sounds of Mystery,\" \"Chicka Chicka Boom Boom\", (co-authored with John Archambault) \"Brown Bear, Brown Bear, What Do You See? \", \"Baby Bear, Baby Bear, What Do You See?\" , \"Panda Bear, Panda Bear, What Do You See? \", and \"Polar Bear, Polar Bear, What Do You Hear?\"  The Bill Martin Jr.  Award, which is the Kansas state award for best children's picture book, was established in his honor in 1996.\n\n[2] Daiquiri: Daiquiri ( ; Spanish: \"daiquirí\" ] ) is a family of cocktails whose main ingredients are rum, citrus juice (typically lime juice), and sugar or other sweetener.\n\n[3] Polar bear plunge: A polar bear plunge is an event held during the winter where participants enter a body of water despite the low temperature.  In the United States, polar bear plunges are usually held to raise money for a charitable organization.  In Canada, polar bear swims are usually held on New Year's Day to celebrate the new year.\n\n[4] Polar bear: The polar bear (\"Ursus maritimus\") is a carnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses.  It is a large bear, approximately the same size as the omnivorous Kodiak bear (\"Ursus arctos middendorffi\").  A boar (adult male) weighs around 350 – , while a sow (adult female) is about half that size.  Although it is the sister species of the brown bear, it has evolved to occupy a narrower ecological niche, with many body characteristics adapted for cold temperatures, for moving across snow, ice and open water, and for hunting seals, which make up most of its diet.  Although most polar bears are born on land, they spend most of their time on the sea ice.  Their scientific name means \"maritime bear\" and derives from this fact.  Polar bears hunt their preferred food of seals from the edge of sea ice, often living off fat reserves when no sea ice is present.  Because of their dependence on the sea ice, polar bears are classified as marine mammals.\n\nQuestion: The Polar Bear and Daiquiri are both examples of what?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "838a17988372200ccf35ce1fa46608339e4762b329b3691cf65add75ffc6c96f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a733c925542991f9a20c6b7",
+  "task_key": "fa3a881cf0b6e9e7e2bad144e832159e6ca7e74e34d87e0b7d2f4f3d7ccf1dee",
+  "text": "I don't know.",
+  "timestamp": "2026-09-14T10:35:06.121890+00:00",
+  "tokens_in": 642,
+  "tokens_out": 247,
+  "usage": {
+    "completion_tokens": 247,
+    "neurons": 37.26805877685547,
+    "prompt_tokens": 642,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 889
+  }
+}

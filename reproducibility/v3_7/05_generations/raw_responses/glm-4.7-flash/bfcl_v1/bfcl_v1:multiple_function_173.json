@@ -1,0 +1,43 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "b8c828cea75315c66b4d442c34a1b22a5bd0924957c241de27434f18ab013ea0",
+  "candidate_text": "I'll get the NBA team with the best defense in the 2021 season for you.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "fb93440b22652e20718c52139de95acb8913e173bad970f63395cf95835fc649",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:multiple_function_173",
+  "prompt_sha256": "fb93440b22652e20718c52139de95acb8913e173bad970f63395cf95835fc649",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "a9413e7e05424bf838019b16655ecfe75e2a10e177540e4f402eb7eb96f022d1",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll get the NBA team with the best defense in the 2021 season for you.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"season\": 2021, \"top\": 1}",
+        "name": "get_defense_ranking"
+      },
+      "id": "chatcmpl-tool-abc8fe20cfbbec1e",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 116,
+    "neurons": 6.8789,
+    "prompt_tokens": 483,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 599
+  }
+}

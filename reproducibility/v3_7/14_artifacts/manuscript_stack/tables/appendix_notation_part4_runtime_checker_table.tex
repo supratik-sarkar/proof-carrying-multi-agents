@@ -1,0 +1,88 @@
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.21\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.12\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.31\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.15\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.21\dimexpr\linewidth-8\tabcolsep\relax}@{}}
+\caption{\textbf{Notation, part IV: runtime construction, replay, minimal evidence, support overlap, and trusted checker base.} Continues Table~\ref{tab:notation-theory-audit}.}\label{tab:notation-runtime-checker}\\
+\toprule
+Symbol & Type / range & Meaning & First use & Principal use \\
+\midrule
+\endfirsthead
+\multicolumn{5}{l}{\footnotesize Notation (continued)} \\
+\toprule
+Symbol & Type / range & Meaning & First use & Principal use \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\footnotesize Continued on next page} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multicolumn{5}{l}{\emph{11. Runtime construction and replay}}\\
+$\mathfrak L_t$ & event sequence & ordered runtime log $(o_1,\ldots,o_N)$ up to time $t$ & Eq.~\eqref{eq:appendix_event_stream} & $\mathsf{BuildGraph}$ \\
+$o_i$ & event & one logged runtime event & Eq.~\eqref{eq:appendix_event_stream} & graph construction \\
+$\mathsf{BuildGraph}$ & de\-ter\-min\-is\-tic map & graph builder from event stream, canonicalization, and hash function & Eq.~\eqref{eq:appendix_graph_builder} & App.~\ref{appendix:notes:runtime_graph} \\
+$\mathsf{canon},\mathsf{Canon}$ & map & de\-ter\-min\-is\-tic canonicalization applied before hashing / comparison & Eq.~\eqref{eq:appendix_graph_builder} & integrity, replay \\
+$\mathcal V_t^{\rm tool},\mathcal V_t^{\rm schema}$ & node subsets & tool and schema nodes & Eq.~\eqref{eq:appendix_node_partition} & typed graph \\
+$\mathcal V_t^{\rm memory},\mathcal V_t^{\rm policy}$ & node subsets & memory and policy nodes & Eq.~\eqref{eq:appendix_node_partition} & typed graph \\
+$\mathcal V_t^{\rm deleg},\mathcal V_t^{\rm claim}$ & node subsets & delegation and claim nodes & Eq.~\eqref{eq:appendix_node_partition} & typed graph \\
+$\mathcal V_t^{\rm action}$ & node subset & final action / decision nodes & Eq.~\eqref{eq:appendix_node_partition} & typed graph \\
+$\mathrm{attr}_t(e)$ & tuple & edge attributes: timestamps, run/step IDs, operation/version, latency, tokens, score, cost, seed, hash & Eq.~\eqref{eq:appendix_edge_attr} & audit / diagnostics \\
+$w_t(e)$ & scalar & de\-ter\-min\-is\-tic optional edge weight for cost-aware pruning / path selection & Eq.~\eqref{eq:appendix_edge_weight} & diagnostics only \\
+$\alpha_{\rm lat},\alpha_{\rm tok}$ & fixed coefficients & latency and token weights in $w_t(e)$ & Eq.~\eqref{eq:appendix_edge_weight} & cost-aware diagnostics \\
+$\alpha_{\rm cost},\alpha_{\rm rel}$ & fixed coefficients & cost and relevance-score weights in $w_t(e)$ & Eq.~\eqref{eq:appendix_edge_weight} & cost-aware diagnostics \\
+$\mathrm{Replay}(Z,G_t)$ & operation & reconstruct committed execution from certificate and graph & Eq.~\eqref{eq:appendix_graph_operations} & $V_\Pi$ \\
+$\mathrm{Mask}(G_t,e)$ & operation & produce component-masked graph for intervention & Eq.~\eqref{eq:appendix_graph_operations} & responsibility \\
+$\mathrm{Sep}_{\delta,\kappa}(\pi_i,\pi_j)$ & predicate & operational support-path separation test & Eq.~\eqref{eq:appendix_graph_operations} & redundancy admission \\
+$\phi_1,\ldots,\phi_m$ & trans\-for\-ma\-tions & logged stages composing replay pipeline $\Pi$ & Eq.~\eqref{eq:appendix_pipeline_seq} & snapshot replay \\
+$\Pi_{\rm retrieve},\Pi_{\rm parse}$ & maps & retrieval and parsing stages of the replay pipeline & Eq.~\eqref{eq:app_replay} & replay contract \\
+$\Pi_{\rm align},\Pi_{\rm checkprep}$ & maps & alignment and checker-preparation stages of the replay pipeline & Eq.~\eqref{eq:app_replay} & replay contract \\
+$D(Z)$ & $\{0,1\}$ & fresh-vs-snapshot environment-drift indicator & Eq.~\eqref{eq:drift_fail} & DriftFail \\
+$\widehat\beta_{\rm drift}$ & $[0,1]$ & empirical environment-drift rate & Eq.~\eqref{eq:drift_rate} & robustness reporting \\
+$n_{\rm drift}$ & count & number of drift probes / certificates & Eq.~\eqref{eq:drift_rate} & $\widehat\beta_{\rm drift}$ \\
+\midrule
+\multicolumn{5}{l}{\emph{12. Claim/execution certificates and minimal evidence}}\\
+$\mathrm{Check}_{\rm exec}(\Gamma;\mathrm{meta})$ & $\{0,1\}$ & execution-contract compliance checker & Eq.~\eqref{eq:appendix_constraint_eval_repeat} & $\mathrm{Check}_{\rm exe}$ \\
+$Z^{\rm clm}$ & tuple & claim-side certificate $(c,S,\Pi,p,\mathrm{meta})$ & Eq.~\eqref{eq:appendix_claim_cert} & claim checking \\
+$Z^{\rm exe}$ & tuple & execution-side certificate $(\Pi,\Gamma,\mathrm{meta})$ & Eq.~\eqref{eq:appendix_exec_cert} & execution checking \\
+$p$ & confidence field & certificate confidence field in the claim-side representation & Eq.~\eqref{eq:appendix_claim_cert} & calibration \\
+$\mathrm{Check}_{\rm clm}$ & $\{0,1\}$ & claim-side integrity/replay/semantic checker & Eq.~\eqref{eq:min_local} & evidence minimization \\
+$\mathrm{Check}_{\rm exe}$ & $\{0,1\}$ & execution-side certificate check derived from $\mathrm{Check}_{\rm exec}$ & Eq.~\eqref{eq:claim_exec_check} & execution validity \\
+$\sigma(S)$ & ordering & de\-ter\-min\-is\-tic support-elimination order & Eq.~\eqref{eq:min_order} & greedy pruning \\
+$\mathrm{Cost}(v)$ & nonnegative scalar & support-item cost used in the canonical pruning order & Eq.~\eqref{eq:min_order} & minimal evidence \\
+$w(v)$ & nonnegative weight & optional explicit support cost in the ideal subset objective & Eq.~\eqref{eq:min_objective} & cost-aware minimization \\
+$T_H,T_\Pi,T_\vdash$ & costs & hashing, replay, and semantic-checker costs for one claim-side check & Eq.~\eqref{eq:tcheck} & complexity analysis \\
+$T_{\rm check}$ & cost & cost of one claim-side checker call & Eq.~\eqref{eq:tcheck} & pruning complexity \\
+$d$ & integer & logged runtime / chain depth & Eq.~\eqref{eq:verification_scaling} & scaling \\
+$T_{\rm step},T_{\rm replay},T_{\rm ctrl}$ & costs & per-step validation, masked replay, and controller costs & Eq.~\eqref{eq:verification_scaling} & $T_{\rm PCG}$ \\
+$T_{\rm PCG}$ & cost & end-to-end verification-cost decomposition & Eq.~\eqref{eq:verification_scaling} & scaling analysis \\
+\midrule
+\multicolumn{5}{l}{\emph{13. Provenance, overlap, and delegated responsibility}}\\
+$\mathrm{Prov}(v),\mathrm{Prov}(\pi)$ & labels & provenance class of a source node / inherited support path & Eqs.~\eqref{eq:prov_class}--\eqref{eq:prov_path} & path separation \\
+$\mathrm{AuthorityID}$ & identifier & authority / standards / dataset-specific provenance identifier & Eq.~\eqref{eq:prov_class} & source independence \\
+$\mathrm{PublisherID}$ & identifier & normalized publisher provenance identifier & Eq.~\eqref{eq:prov_class} & source independence \\
+$\mathrm{Domain}$ & identifier & normalized source-domain identifier used in provenance class & Eq.~\eqref{eq:prov_class} & source independence \\
+$\mathrm{Tools}(\pi)$ & multiset & tools / trans\-for\-ma\-tions used along support path $\pi$ & Eq.~\eqref{eq:tool_overlap} & shared-step test \\
+$\mathrm{ToolOverlap}(\pi_i,\pi_j)$ & integer & number of shared tool/trans\-for\-ma\-tion identifiers between paths & Eq.~\eqref{eq:tool_overlap} & $\kappa$ gate \\
+$\mathrm{Span}(v,c)$ & text span & canonical cited span from source node $v$ aligned to claim $c$ & Eq.~\eqref{eq:span_shingles} & lexical / semantic overlap \\
+$\mathcal S(v,c)$ & shingle set & canonical token-shingle representation of $\mathrm{Span}(v,c)$ & Eq.~\eqref{eq:span_shingles} & Jaccard overlap \\
+$\mathrm{Shingle}_m$ & map & de\-ter\-min\-is\-tic $m$-gram token-shingle extractor & Eq.~\eqref{eq:span_shingles} & overlap calculation \\
+$\phi(\cdot)$ & embedding map & frozen semantic embedding used for optional semantic overlap & Eq.~\eqref{eq:overlap_semantic} & $\mathrm{Overlap}_{\rm sem}$ \\
+$\mathrm{Overlap}$ & $[0,1]$ & lexical Jaccard overlap between support paths & Eq.~\eqref{eq:overlap_jaccard} & path separation \\
+$\mathrm{Overlap}_{\rm sem}$ & $[0,1]$ & clipped cosine semantic overlap & Eq.~\eqref{eq:overlap_semantic} & path separation \\
+$\alpha$ (overlap context) & $[0,1]$ & lexical/semantic mixture coefficient in $\mathrm{Overlap}_\alpha$; distinct from coverage fraction $\alpha$ & Eq.~\eqref{eq:overlap_combined} & combined overlap \\
+$e_{\rm del}$ & component & delegation edge or delegated sub-agent node & Eq.~\eqref{eq:appendix_deleg_resp} & delegated responsibility \\
+$\mathsf{Resp}_{\rm del}$ & $[-1,1]$ & responsibility specialized to delegation component $e_{\rm del}$ & Eq.~\eqref{eq:appendix_deleg_resp} & delegation diagnosis \\
+\midrule
+\multicolumn{5}{l}{\emph{14. Semantic checker and trusted base}}\\
+$y$ & verifier input & replayed verifier-consumable artifact & Eq.~\eqref{eq:pipeline_contract} & $\mathrm{Check}_\vdash$ \\
+$\mathcal R$ & rule system & task/checker rule system supplied to semantic checker & Eq.~\eqref{eq:entailment1} & entailment TCB \\
+$\theta_\vdash$ & checker parameters & pinned semantic-checker parameters / model snapshot & Eq.~\eqref{eq:entailment1} & $\mathsf{EntailTCB}$ \\
+$\tau_\vdash$ & threshold & calibrated semantic-support threshold & Eq.~\eqref{eq:entailment1} & $\mathrm{Check}_\vdash$ \\
+$\mathsf{EntailTCB}$ & tuple & complete pinned semantic-checker trusted-base record & Eq.~\eqref{eq:entailment2} & reproducibility \\
+$\mathsf{ExecTCB}$ & trusted-base object & pinned execution-checker trusted-base component & Eq.~\eqref{eq:trusted1} & $\mathsf{TCB}$ \\
+$\mathsf{TCB}$ & set / tuple & full trusted computing base: hash, canonicalization, log schema, clock, version pins, replay runner, entailment and execution TCBs & Eq.~\eqref{eq:trusted1} & auditor invariance \\
+
+\end{longtable}
+\endgroup

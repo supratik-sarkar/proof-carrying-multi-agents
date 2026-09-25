@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Mrs. Bixby and the Colonel's Coat: "Mrs. Bixby and the Colonel's Coat" is a short story by Roald Dahl that first appeared in the 1959 issue of "Nugget".  The story is Dahl's variation on a popular anecdote dating back at least to 1939: a married woman receives a glamorous mink coat from a man with whom she had an affair.  She hopes to sneak the coat into her home without arousing her husband's suspicions, but soon discovers that her husband has plans of his own.
+
+[2] Roald Dahl: Roald Dahl ( , ] ; 13 September 1916 – 23 November 1990) was a British novelist, short story writer, poet, screenwriter, and fighter pilot.  His books have sold more than 250 million copies worldwide.
+
+[3] Roald Dahl Children's Gallery: The Roald Dahl Children's Gallery is in Church Street, Aylesbury, Buckinghamshire, England.  A children's museum in honour of Roald Dahl, it was opened on 23 November 1996 by Terence Hardiman, an actor popular with children due to his role as the titular role in "The Demon Headmaster".  The building was previously a coach-house.
+
+[4] The Collected Short Stories of Roald Dahl: The Collected Short Stories of Roald Dahl is a 1991 short story collection for adults by Roald Dahl.  The collection, containing tales of macabre malevolence, comprises many of Dahl's stories seen in the television series "Tales of the Unexpected" and previously collected in "Someone Like You" (1953), "Kiss, Kiss" (1960), "Twenty-Nine Kisses from Roald Dahl" (1969), "Ppo poo face" (1974), and "" (1989).
+
+Question: How many copies of Roald Dahl's variation on a popular anecdote sold?
+
+Answer:

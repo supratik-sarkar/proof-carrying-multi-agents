@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "f9094e7096adb647558da011eaa995c1652681c3e2b2ee77c74ec6e058f81365",
+  "candidate_text": "Yes, concept mapping enhances learning outcomes.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "084abffe2c8b7f3f2189441015656162fa7690101dda193abf4bfcc0cab98c5e",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "26383908",
+  "prompt_sha256": "285473e2caa6a5b3c5ef60743aead66dbc94de55605000e0de03076b457aa8f7",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "17d9756eda7a8c945125050bd6ff492e64682be7e2465dbd1f5ec2cb37fe25d4",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:26383908",
+  "text": "Yes, concept mapping enhances learning outcomes.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 9,
+    "neurons": 1.7740999999999998,
+    "prompt_tokens": 263,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 272
+  }
+}

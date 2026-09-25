@@ -1,0 +1,10 @@
+{
+  "schema": "PCG_MAS_V3_6_FINAL_PAPER_RESULTS_FREEZE",
+  "timestamp": "2026-09-19T10:53:06.655524+00:00",
+  "status": "PASS",
+  "PAPER_RESULTS_READY": "YES",
+  "canonical_cardinality": 2240,
+  "external_verifier_scores": 4200,
+  "manuscript_pdf_sha256": "55de842251a47cfd29a95230c11ff0fcc6653f13bf40e05fd66bd7754223b74d",
+  "manuscript_pdf_size_bytes": 696115
+}

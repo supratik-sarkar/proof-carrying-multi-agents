@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "f8a5efd5715c33ecea61f156ebfea339c06e6d7f35aab48ec71f34aee9d35532",
+  "candidate_text": "\nSacred Planet",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "c809bf31573de1c8491f984254246e247a5ce827a09ab4feff2198667db652c6",
+  "example_id": "5ab8f7535542991b5579f0a7",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "31a1c52939c020d74b9adddab835877cbde50671d26b8843e54b36301f58cd44",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5ab8f7535542991b5579f0a7",
+  "prompt_sha256": "ebb7645a7ea4fd7a3bced92180019ae095623e0607dcd864c89fe1155c4485df",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Oz the Great and Powerful: Oz the Great and Powerful is a 2013 American fantasy adventure film directed by Sam Raimi and produced by Joe Roth, from a screenplay written by David Lindsay-Abaire and Mitchell Kapner.  The film stars James Franco, Michelle Williams, Rachel Weisz and Mila Kunis, with Zach Braff, Bill Cobbs, Joey King, and Tony Cox in supporting roles.  Based on L. Frank Baum's \"Oz\" novels and set 20 years before the events of the original novel, \"Oz the Great and Powerful\" is a spiritual prequel to the 1939 Metro-Goldwyn-Mayer film, \"The Wizard of Oz\".  The film tells the story of Oscar Diggs, a deceptive magician who arrives in the Land of Oz and encounters three witches: Theodora, Evanora, and Glinda.  Oscar is then enlisted to restore order in Oz, while struggling to resolve conflicts with the witches and himself.\n\n[2] Sacred Planet: Sacred Planet is a 2004 documentary directed by Jon Long and Hairul Salleh Askor.  Robert Redford provided narration for the film.  The film was released by Walt Disney Pictures on April 22, 2004, and grossed $1,108,356.\n\n[3] James Franco: James Edward Franco (born April 19, 1978) is an American actor, director, screenwriter, and producer.  For his role in \"127 Hours\" (2010), Franco was nominated for an Academy Award for Best Actor.  He is known for his roles in live-action films such as \"Milk\" (2008), \"Pineapple Express\" (2008), \"Rise of the Planet of the Apes\" (2011), \"Spring Breakers\" (2012), \"Oz the Great and Powerful\" (2013), \"This Is the End\" (2013), \" The Disaster Artist\" (2017), and Sam Raimi's \"Spider-Man\" trilogy, while also voicing characters in the animated films \"The Little Prince\" (2015) and \"Sausage Party\" (2016).\n\n[4] Toys in the Attic (2009 film): Toys in the Attic (Czech: Na půdě aneb Kdo má dneska narozeniny?  ; festival title: In the Attic: Who Has a Birthday Today?)  is a 2009 Czech-French-Japanese-Slovak primarily stop-motion animated fantasy comedy thriller family film directed by Jiří Barta and written by Edgar Dutka and Barta which depicts a community of toys and other objects in an attic who come to life when no human is around.  It is an international co-production of Czech, Japanese and Slovak companies.  The film was released first in the Czech Republic on 5 March 2009 and has been shown subtitled at film festivals internationally.  An American dub – adapted, produced and directed by Vivian Schilling and performed by actors including Forest Whitaker, Joan Cusack, Cary Elwes and Schilling herself – has been recorded, which the film was first shown with on 3 March 2012 at the New York International Children's Film Festival and was released nationally on 24 August 2012 by Hannover House.\n\nQuestion: Which film was released first: Sacred Planet or Oz the Great and Powerful?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "e8ded0d19e4175a110b605695f034757aad1e12b07fa72cdeba01c6ff5a94670",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ab8f7535542991b5579f0a7",
+  "task_key": "865e97db4a2205f1ae2cbfd379c948b43ac6084207eb3f61daa20c3952a01bb0",
+  "text": "\nSacred Planet",
+  "timestamp": "2026-09-15T09:35:30.253183+00:00",
+  "tokens_in": 823,
+  "tokens_out": 59,
+  "usage": {
+    "completion_tokens": 59,
+    "neurons": 45.059,
+    "prompt_tokens": 823,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 882
+  }
+}

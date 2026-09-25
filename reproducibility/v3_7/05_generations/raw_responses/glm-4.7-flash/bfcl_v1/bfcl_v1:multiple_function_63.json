@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "3d25c8dad3543bf775156ebb0763cc0ab963bb25146c6650bbdb45b31a82ca12",
+  "candidate_text": "I'll get the air quality forecast for New York for the next week.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "fe0797facfd5d7fe869fd26c2d9250fa270102c829aa09dd89bb9f21b760eeca",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:multiple_function_63",
+  "prompt_sha256": "fe0797facfd5d7fe869fd26c2d9250fa270102c829aa09dd89bb9f21b760eeca",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "075ede94d9314f79985ce2fed512a6c63a9ef275e4e545a216f8203f60c0f5ab",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll get the air quality forecast for New York for the next week.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York\", \"days\": 7}",
+        "name": "air_quality_forecast"
+      },
+      "id": "chatcmpl-tool-a22fad706db711ff",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 115,
+    "neurons": 6.484999999999999,
+    "prompt_tokens": 418,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 533
+  }
+}

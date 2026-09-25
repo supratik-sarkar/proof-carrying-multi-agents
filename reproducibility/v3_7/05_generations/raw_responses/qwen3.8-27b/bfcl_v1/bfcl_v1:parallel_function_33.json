@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "377fc830167add3f460c8f0a65e05eb20d92922d903c2d6004d6eda6d16b9beb",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_function_33",
+  "prompt_sha256": "377fc830167add3f460c8f0a65e05eb20d92922d903c2d6004d6eda6d16b9beb",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "c0ec4e4c140ee64696a1e5bbbd4b6649ef59fee694642a80a0ecbe5a2b479907",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"position\": \"president\", \"year\": 1980}",
+        "name": "get_president_and_vp"
+      },
+      "id": "chatcmpl-tool-98f9721642fa601d",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"position\": \"president\", \"year\": 2016}",
+        "name": "get_president_and_vp"
+      },
+      "id": "chatcmpl-tool-8987d267f3ebc278",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"position\": \"vice president\", \"year\": 1975}",
+        "name": "get_president_and_vp"
+      },
+      "id": "chatcmpl-tool-8e89ba106c5ed585",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"position\": \"vice president\", \"year\": 2011}",
+        "name": "get_president_and_vp"
+      },
+      "id": "chatcmpl-tool-aff689f41c351610",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 341,
+    "neurons": 115.60453796386719,
+    "prompt_tokens": 401,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 742
+  }
+}

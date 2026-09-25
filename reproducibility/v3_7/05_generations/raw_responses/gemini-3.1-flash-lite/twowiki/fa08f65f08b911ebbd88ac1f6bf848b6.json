@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "e820145c24ae9eb915fea64780346c9ed76a03108381d2ada362984912378228",
+  "candidate_text": "Maalgudi Days.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "cee830a6bd22baf83ee1e2f1749dd184e60bb82e1153b841ae6d8e4014ce28f7",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "fa08f65f08b911ebbd88ac1f6bf848b6",
+  "prompt_sha256": "8f2e6f3ad972a52257177377b2397d33fcaff4b11d0b2486c58735d7a3801451",
+  "provider": "gemini",
+  "provider_raw_sha256": "fdfb320607f6b1f3946ab130e481ef02469a0a2f97e0d1c5199debba7a0f1404",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:fa08f65f08b911ebbd88ac1f6bf848b6",
+  "text": "Maalgudi Days.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "prompt_tokens": 564,
+    "total_tokens": 569
+  }
+}

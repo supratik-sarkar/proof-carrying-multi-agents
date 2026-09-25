@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "1570b41aff40fbfee4fab546d446f29f20d69cf6c4477f832fd1648ce1e6fccc",
+  "candidate_text": "I'll calculate the compound interest for your investment using the given parameters.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "904a15185581b752c6704017d7e3b92c3108459cc7ca2796e8327864d4fb773e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:multiple_function_129",
+  "prompt_sha256": "904a15185581b752c6704017d7e3b92c3108459cc7ca2796e8327864d4fb773e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "1a91e81841ecbcb6ab3f4d3eb1705ca1c36ee37f87490b3ace02500182907172",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll calculate the compound interest for your investment using the given parameters.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"principal\": 10000, \"annual_rate\": 5, \"compounding_freq\": \"monthly\", \"time_in_years\": 5}",
+        "name": "compound_interest"
+      },
+      "id": "chatcmpl-tool-8f462b211bcd5731",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 160,
+    "neurons": 8.4695,
+    "prompt_tokens": 481,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 641
+  }
+}

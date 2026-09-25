@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Robert M. Young (director)": ["Robert Milton","Young, usually known as Robert M. Young( born November 22, 1924 in New York City, New York), is an American multi-award- winning director, cinematographer, screenwriter, and producer.","In 1985 he was a member of the jury at the 14th Moscow International Film Festival.","He has frequently cast Edward James Olmos in his movies, directing him in\" Alambrista!\"( 1977),\" The Ballad of Gregorio Cortez\"( 1982),\" Saving Grace\"( 1986),\" Triumph of the Spirit\"( 1989),\" Talent for the Game\"( 1991),\" Roosters\"( 1993),\" Slave of Dreams\"( 1995) and\" Caught\"( 1996).","He produced Olmos's directorial debut,\" American Me\"( 1992)."]
+
+[2] "Henry Moore (cricketer)": ["Henry Walter Moore( 1849 \u2013 20 August 1916) was an English- born first- class cricketer who spent most of his life in New Zealand."]
+
+[3] "The Ballad of Gregorio Cortez": ["The Ballad of Gregorio Cortez is a 1982 American biographical Western film directed by Robert M. Young and starring Edward James Olmos as Gregorio Cortez.","It is based on the book\" With His Pistol in His Hand\" by Americo Paredes."]
+
+[4] "Bodie Olmos": ["Bodie James Olmos( born August 27, 1975) is an American actor.","He is the son of Edward James Olmos and Kaija Keel, and grandson of Howard Keel.","His older brother is actor Mico Olmos, and his younger sister is Daniela Olmos.","His first on screen appearance was on\" The Ballad of Gregorio Cortez\" in 1982 when he was 7 years old.","His most recent appearance on television is alongside his father in\" Battlestar Galactica\" as Lieutenant Junior Grade Brendan\" Hotdog\" Costanza.","He also acted in a film directed by his father named\" Walkout\"."]
+
+Question: Which film has the director who was born first, The Ballad Of Gregorio Cortez or Naiyya?
+
+Answer:

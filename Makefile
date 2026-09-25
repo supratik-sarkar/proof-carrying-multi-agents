@@ -1,8 +1,10 @@
-.PHONY: install preflight preflight40 full merge-frontier figures tables paper-artifacts audit clean
+.PHONY: install test preflight preflight40 full merge-frontier figures tables audit clean verify-hashes rebuild-metrics rebuild-artifacts
 
 install:
 	pip install -e .
-	pip install -r requirements.txt
+
+test:
+	python -m pytest -q
 
 merge-frontier:
 	python scripts/notebooks/merge_frontier_runs.py --allow-fallback
@@ -11,6 +13,7 @@ clean:
 	find . -name "__pycache__" -type d -prune -exec rm -rf {} +
 	find . -name ".DS_Store" -type f -delete
 	find . -name "*.pyc" -type f -delete
+	rm -rf .pytest_cache .mypy_cache .ruff_cache
 
 check-datasets:
 	python scripts/runs/check_datasets.py --n 5 --seed 0 --allow-fallback
@@ -33,14 +36,17 @@ figures:
 tables:
 	python scripts/tables/build_all_tables.py
 
-paper-artifacts:
-	python scripts/build_paper_artifacts.py --metrics results/tables/csv/paper_metrics.jsonl
+verify-hashes:
+	sh reproducibility/v3_7/16_replay/verify_hashes.sh
 
-readme:
-	python scripts/maintain/build_readme.py
+rebuild-metrics:
+	sh reproducibility/v3_7/16_replay/rebuild_metrics.sh
+
+rebuild-artifacts:
+	sh reproducibility/v3_7/16_replay/rebuild_artifacts.sh
 
 audit:
 	python scripts/maintain/audit_forbidden_terms.py
 	python scripts/maintain/audit_repo_layout.py
 	python scripts/maintain/audit_secrets.py
-	python -m pytest tests
+	python -m pytest -q

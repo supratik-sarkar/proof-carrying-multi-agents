@@ -1,0 +1,32 @@
+{
+  "<PUBLIC_TERM:ac0a3dfd6dddb209>_monitoring_stopped": "YES",
+  "canonical_generation_reused": 2240,
+  "drive_handoff_validated": "YES",
+  "final_mac_process_alive_after_10s": "YES",
+  "final_mac_terminal_launched": "YES",
+  "final_manuscript_compile": "PASS",
+  "final_paper_results_freeze": "PASS",
+  "final_pdf_path": "<LOCAL_PATH:1f2e3971cc8c9a35>",
+  "final_pdf_sha256": "55de842251a47cfd29a95230c11ff0fcc6653f13bf40e05fd66bd7754223b74d",
+  "final_process_left_running": "YES",
+  "input_sha256": "d4ab92f7d3ca4c61fede978adfd6a3aa6108d759f128344c2fd974429a9922d5",
+  "mac_verifier_import": "PASS",
+  "notebook_build_id": "v3.6-a100-build-0919-cuda-preflight-v14",
+  "notebook_sha256": "516dd17588d0ff7e4986d173974d9506b60ffe6fe8f7576f67a155136eb9c5eb",
+  "paper_results_ready": "YES",
+  "post_import_master_pipeline": "PASS",
+  "schema": "PCG_MAS_V3_6_FINAL_AUTONOMOUS_EXECUTION_REPORT",
+  "scores_counts": {
+    "alignscore_defined": 1399,
+    "common_scorable_identities": 1399,
+    "defined_numeric_scores": 4197,
+    "minicheck_defined": 1399,
+    "qafacteval_common_support_defined": 1399,
+    "qafacteval_raw": 1400,
+    "requested_slots": 4200,
+    "unscorable_slots": 3
+  },
+  "status": "SUCCESS",
+  "terminal_left_open": "YES",
+  "timestamp": "2026-09-19T10:53:17.204913+00:00"
+}

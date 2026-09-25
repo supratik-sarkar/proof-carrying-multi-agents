@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "bfb606fd3600338643c058cb1d7d80f227be7ab2a44b51f7a8b1119c2501b8c1",
+  "candidate_text": "Yes, behavioral adaptation occurs.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "7ce226b94774bc257ca835b34070c5d7b210a80b7d6b637c96b4da5c85611c8a",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "19593710",
+  "prompt_sha256": "e9e014547c8e3e547199a131be82f6ec98d317755458e2d7209fcf6add20775a",
+  "provider": "gemini",
+  "provider_raw_sha256": "5b1653889d0ebb2ccc6c6e39807bdaf159d0abfa654ae6cf35c2ee1719c3bb61",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:19593710",
+  "text": "Yes, behavioral adaptation occurs.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 491,
+    "total_tokens": 497
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "ee44ef0126221c919d939336160f1b015f87e959e56246c6da71cad5c14ee032",
+  "candidate_text": "Yes, they may lessen PD.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "7bd5ab836d6a7c9801df0f8ba3af31d743f05d3159764e96a0ceb66747b00bce",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "11555508",
+  "prompt_sha256": "6462a6fb68b3367d3df0730c62a65eb1b872a8c6f3b36aa24bca1fab0a349180",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "27511d45867ffce18389c0375d9a6ba23f2d4e3ad9f8927a1b5f9b94405be3a8",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:11555508",
+  "text": "Yes, they may lessen PD.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 6.181817531585693,
+    "prompt_tokens": 656,
+    "prompt_tokens_details": {
+      "cached_tokens": 64
+    },
+    "total_tokens": 664
+  }
+}

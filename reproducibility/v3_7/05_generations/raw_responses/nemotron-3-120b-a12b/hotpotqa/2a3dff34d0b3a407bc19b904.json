@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "852fcabdb1b24b16cea7f094795fe5bb984d8b0a02f9c1ac7e74b14ab57c8147",
+  "candidate_text": "\n\n2006",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "702748ca9d9a643a095834b1226f9ffaeda69b9dd30fcb51e5ee31c859b1302e",
+  "example_id": "5ac240ef55429951e9e684ef",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "f8ec924b3e30b9e0c989029a6cbc8cb6be1a71973d743080c48e38b6f880a5a3",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5ac240ef55429951e9e684ef",
+  "prompt_sha256": "fe3cc2ca8be5f9a34136b0180e35a81cf4c10042d6fa3389f4fdc67908f592a5",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Our Stories Films: Our Stories Films is an American film studio founded on July 13, 2006 by Robert L. Johnson producing \"comedic, family-friendly feature films for African American and urban audiences\".  It began as a joint venture between RLJ Companies and The Weinstein Company.  On August 31, 2006, it was announced that Tracey Edmonds was named president and chief operating officer of Our Stories Films, making her the first African American to head a film studio.\n\n[2] The Weinstein Company: The Weinstein Company (usually credited or abbreviated as TWC) is a mini-major film studio, founded in New York City by Bob and Harvey Weinstein in 2005.  The studio originated after the Weinsteins left Miramax Films, which they co-founded in 1979.  They retained ownership of Dimension Films.  TWC is one of the largest mini-major film studios in North America.\n\n[3] Jim Henson Pictures: Jim Henson Pictures is an American film studio, owned by The Jim Henson Company and operated by Brian and Lisa Henson.  It was founded on July 21, 1995, as a joint venture between Jim Henson Productions and Sony Pictures Entertainment.  However, the company's films suffered from poor box office performances, which led to Sony breaking from the joint venture after the release of \"The Adventures of Elmo in Grouchland\"; further films were released under the name of The Jim Henson Company, although they were credited under their former name on \"Good Boy! \" in 2003.\n\n[4] Robert L. Johnson: Robert Louis \"Bob\" Johnson (born April 8, 1946) is an African American entrepreneur, media magnate, executive, philanthropist and investor.  He is the co-founder of BET, which was sold to Viacom in 2001.  He also founded RLJ Companies, a holding company that invests in various business sectors.  Johnson is the former majority owner of the Charlotte Bobcats.  He became the first black American billionaire.  Johnson's companies have counted among the most prominent African-American businesses in the late twentieth and early twenty-first centuries.\n\nQuestion: What year was a joint venture between RLJ Companies and this film studio founded in 2005, founded?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b6c396f7be24f0fc56490a9858ff3a8d6f4b55d69d7125e268ae7a3afe394176",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ac240ef55429951e9e684ef",
+  "task_key": "caadb2f1dafd1ea28895be67db80fff5bb55ff1b79beaa56b3571951a3420d50",
+  "text": "\n\n2006",
+  "timestamp": "2026-09-15T09:35:32.710704+00:00",
+  "tokens_in": 564,
+  "tokens_out": 159,
+  "usage": {
+    "completion_tokens": 159,
+    "neurons": 47.004000000000005,
+    "prompt_tokens": 564,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 723
+  }
+}

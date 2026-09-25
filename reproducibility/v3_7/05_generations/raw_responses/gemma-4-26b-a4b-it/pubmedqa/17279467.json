@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "07b5263917c0ea2bfc77f1bab0319f3f22d7278db5c5cc6ae4ad5e7145ee4dc8",
+  "candidate_text": "Question arises.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "710562969ca2a58bb7de775da5b54cd24c92a45615d28032ef3c4710068dd79b",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "17279467",
+  "prompt_sha256": "ee8626e5c4a10760f75e4b603c12c6120d3c76f463e4520cde64eba9a5529b9f",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "340509ccdf16d2782a72a5160d11b1c3bcbfe818ef01c125c9353b7043109b0b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:17279467",
+  "text": "Question arises.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 4.209090709686279,
+    "prompt_tokens": 451,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 455
+  }
+}

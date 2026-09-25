@@ -1,0 +1,27 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "correct": true
+  },
+  "candidate_sha256": "2575acd68f01b98d7e09edde56bb8a49474366ed27dfc362ebd067c6fa00df6b",
+  "candidate_text": "{\"choice\":\"C6\",\"operation\":\"TYPE\",\"value\":\"Birmingham, Alabama\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "e5f1f2a8f68b51f58518439bd452e25955fdfca536f43167d8400ed5e554684d",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "mind2web:4803233d-3903-457b-a342-0a130a603926",
+  "prompt_sha256": "e5f1f2a8f68b51f58518439bd452e25955fdfca536f43167d8400ed5e554684d",
+  "provider": "gemini",
+  "provider_raw_sha256": "32dde6d6246d4adfc592c9c775469083030ce1469fb3ab8046251e8a968442f2",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C6\",\"operation\":\"TYPE\",\"value\":\"Birmingham, Alabama\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 568,
+    "total_tokens": 584
+  }
+}

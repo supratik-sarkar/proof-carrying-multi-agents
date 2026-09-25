@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "8c32c960fbca6a277efe35cbd5af24a37f82a4a54230f1886a3b6e9dccd52f0d",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_176",
+  "prompt_sha256": "8c32c960fbca6a277efe35cbd5af24a37f82a4a54230f1886a3b6e9dccd52f0d",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "168f1461f693fdd0d82bebeb5fd0fdf15f1e267fa62b82f263db9c17dd809ee4",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"hotel_name\": \"Hilton\", \"location\": \"Los Angeles, CA\", \"check_in\": \"2022-05-01\", \"check_out\": \"2022-05-10\", \"rooms\": 2}",
+        "name": "hotel_booking"
+      },
+      "id": "chatcmpl-tool-ba4a868c8cf49f67",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 157,
+    "neurons": 22.572654724121094,
+    "prompt_tokens": 373,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 530
+  }
+}

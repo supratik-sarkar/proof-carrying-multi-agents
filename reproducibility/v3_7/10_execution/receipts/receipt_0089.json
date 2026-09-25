@@ -1,0 +1,4865 @@
+{
+  "aggregate_identities_sha256": "3b0f1611be21f455de4b69f0bc61d787a2e5af0e4acf438a659ffa89cac89516",
+  "deprecated_gemini_38_records_excluded": 19,
+  "disjoint_union": {
+    "agentdojo_canaries": 10,
+    "duplicate_canonical_identities": 0,
+    "gemini_31_primary_replacement": 200,
+    "immutable_old_five": 807,
+    "mind2web_bfcl_canaries": 14,
+    "missing_claimed_identities": 0,
+    "overlapping_reuse_lanes": 0,
+    "prior_fail_closed_mind2web": 1,
+    "recovery": 393,
+    "total_canonical_complete": 1425
+  },
+  "historical_complete_records": 826,
+  "immutable_final_panel_core_count": 807,
+  "records": [
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-0592b32a18b7f34ae098"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-0bf7e44afdb59c969fc4"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-12e394f5550a5289e97d"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-26deccd7fc862b47207e"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-39541768abc0ab4129fb"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-45eb8f85851e69eb0907"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-47520b1d824dd962e8fd"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-4ef81b930942af33b9b5"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-55381cff9609cacb0cc4"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-59b0954a036fdc189a97"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-65d859964a908ad89549"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-7a45b62a791b026cc2f8"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-7a97d6e869a0d12db07d"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-8342a1e5847c14b58241"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-86f33854138195e1e875"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-8e4650b22df8a39595df"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-99aeb3f16332a014f347"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-a0783de94b523fbb216f"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-a7aa9d6b86bfa4b9a05b"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-ad2cfb6199d31428aaee"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-b13c21a062adf2997747"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-b21bcc79718a8d78d213"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-b62bc7c330fe204b5e1b"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-b648e2584bea83dfbcab"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-bf4ab295f954fbb44a0d"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-c29c441b3afc02dc7da7"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-caefcb0fd2fb9cf41d8f"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-cb0d77dac74400e7fac4"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-dd3d89fef5e41cc27995"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-dfa4a5b507318facc564"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-e98ccc9ebc5e3244cf0a"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-f8e0156d7ff690a54e35"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-f97e7f76fc4e34ee5a5a"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-2281c546cc9565dd3d46"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-6ad4beab9c72de7e72bd"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-2b5101c80256130da0bd"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-76eafeed2d41fc55b705"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-bb781a58a1a0dce17ff8"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gemma-4-26b-a4b-it",
+      "state": "COMPLETE",
+      "task_id": "GEN-f53f208660f719db0b3d"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "glm-4.7-flash",
+      "state": "COMPLETE",
+      "task_id": "GEN-727431d43b30702e88f0"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "glm-4.7-flash",
+      "state": "COMPLETE",
+      "task_id": "GEN-867e4dad0885416da7f0"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "glm-4.7-flash",
+      "state": "COMPLETE",
+      "task_id": "GEN-f0ec1bb49d4f3904872a"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-072820612b0d9a8963b5"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-078448925690e058e4dd"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-111af855f1a1ec046f1d"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1326b0632db121d280f1"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-14d47d1d3417cb2af434"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-18f7b734a8ee9996d4ea"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-36d17adc05b39d4a04cf"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3e5f1ec26978952df6ac"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-49d813b10d4b2ec95ffc"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4c882c297c3bbaaefb47"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-576102616ab86b0a724a"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-64034b214ea571d6005e"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-64b107c467268852779c"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-69ae99376aeb6da87bd3"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6cf836eef057288f65c1"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-71de95589a2acc5c8a6b"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7a44cc98dbeeb4451e75"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7c4deb0b9b616f407729"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7d71eefd0f137663486f"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-81c086bbfd7574eb920f"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-826fb3d93f5177dc1b0b"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-87201b531b0f3abc2047"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8e40538e969a56582017"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8e4289dfaae7860c09f6"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8eeb260f2736f88a306b"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-aa22fa37efb8db679735"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ab6e0560613333da8c13"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b34e81fa5aa4aeac42c0"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b3ef544ebbc025f787e2"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b6cadcb55ec0b160eae0"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b8f181d049d0cef22614"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c49c59c7b04fd2dcf870"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c7686338e2ef382f7d52"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d8ca63921bfbd27a3b0d"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e22d1e209fe9e26c3a84"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ec303f8cb50f4f43ab05"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f00367403608d0346e83"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f43c85022251a0bf15c7"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-fa8123e32f1d84753ce6"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-fdf30df765070db9cc5a"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-03e0f77cc80a24b502f7"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-03f7027b1ee826d0a18c"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0777b5a2e971a689e922"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1690b8522b1a2e6f6ed3"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1d2e81ba9d5dbb9f9d1f"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2514e6627818732bfb4c"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-262214bf25f5ea424c1c"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2bde539b303a282c5cf5"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2ca47c4fceb29fc2bcc5"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-376cce58b450cf0462b1"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-37b897a588b228f9a81f"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-387fbdee9eef87537d55"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3e2d738aeb62102656ac"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-40141c86a4c29444ab46"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4d9e0a58b6b37fe701ed"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4ddcb894473a4b9ce3cd"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4eadf96c46e2a8cea9fd"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-500325eaed5cd78ef2c8"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5241d06b26dc0fc99055"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5e1a5b16da3ea21f7137"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-61874d5a30330d719e27"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-653b773cb7fffa7c5ee8"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6817d1f8c9e47c480d36"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-72820e95ff02c827baef"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-74152f37162c857ae3a5"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-aa5c47f2bc7278501896"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b5fd7e8e68858c37ce95"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b9334c2209665772a1a6"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-be960a7d3bfc40699e9a"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c60bf6c3b6f3743e2c7e"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c84f6bc0b0488e2971ad"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ca93e3652ec4bc814c51"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-cc145f99f8358251a8d3"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-cd99c29d69b276e67fd4"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ed0ced7df649ad48a1cc"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f3c48045dc99a95a4afb"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f89927550d85d0cd7e9f"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-fa3a881cf0b6e9e7e2ba"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-fda4e181b715e3c4dcd6"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-fdcc9b30c92637d752e4"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-00cf4671a1ef2ce36604"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-01e61ddc75f1a22eb956"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0a59380dd62f728f90a7"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0a895a737838838e22e5"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-15439c6484e6cb776231"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-17b9dff952b70227c661"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1e49045fb8f55a3a01bf"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2fe2ae8b912baac5ddff"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-31f42730246493ca0598"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-39f14843e4b6d42a7fe9"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-44d803ced4ef90d8bc05"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4bc095448c11d528f002"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-55349a0e0c80fa05c1bc"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-595a355ab9fe3f77a504"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7c6af76e7d009fc8ddb6"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-802fcc0c663d627b505e"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-86675d58dcab4a744921"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8868825e9bcc31702b7c"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8c7af17e29f4b5f98472"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-91966d1b40ec0e1b81ed"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9420616d5f878747431d"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9dce5d8ee84fba244c83"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9f8be98f379d9f49ffbe"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a3735bf17eb0580b3580"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a5149a47678fb52e93bd"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a6ecca7ed5ecf6b6c5a3"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-acb080f464d35be85639"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ace807e016b70b0b8448"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-afb9e621e06f662017e0"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b338c083af992d229d1d"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b51be9b9000678244197"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b5e5e86b97a1c840a38c"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b6b7da91c813fabdb51f"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b934a400f694aafa3380"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c29d53a31c0e48dd8aef"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c2d15f39251b0f33e99c"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-cd555a17a413050cfdcd"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-cece31789b7c4cc92a59"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e10702a6065192bd436f"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f07b7e679c82bff42a28"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-02828d387766ff552019"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-05b80e4790da4ba285d5"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-07b2919747a907b33ebd"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0883aebaf06baf45a4a3"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-129c918745764a697d2b"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-148b4eade4bcd113a15c"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-15b2f951d11b11e6a152"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1c7fc742b8b888a1f340"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2b2846e3856765192c64"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2f004c6cc1c74a0aad9b"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-33e5122162c2a41b6d67"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3aaa8b1c9a9f9ddf6702"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3b397e6da086c278640e"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3c8e6ef95251378f413a"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-45b26e7f117b9ec97c81"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4766ae93fabcf3916ed1"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4c3820c1811b1111976b"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4d9f2d835db51bffaa1e"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-54e784df2fb3cd47e6cb"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-615da46acafdd42dae69"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6e5ea1d5a9d81ae775a0"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7206dc2cbda8ce2f140b"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7d2b3feeeb2334f5e5e4"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8318f1f00b583f3779b3"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-84e46a4d535054948240"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-85fb3aa79cba15897ebf"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8a71a019002b16c0d326"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-91935815890eef2cc47e"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9855f29c0bff8ec33719"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-98ea4982023f36607950"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9b994a468aa486e1e05e"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9e08b6403e8e9936c789"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9f0669d711afff314f81"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a6f52ad772192d1775f6"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ab0096a2dec2c8ebfdd5"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b5f18588a41e4ea7dc14"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ed0be368fd165efaa1b8"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ef956cd5cba01d6d1dfe"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f167f2bb1742e9f59e57"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f397de049bb68f377c9c"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-051c6ef74fd3218f519b"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-054ffe1d40753dd96a23"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-065600a7a0f1c3585ab3"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-08790c8ae5c199fd5e62"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0c2bd1fe11ccd967e35c"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-192be45421b46225d92f"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1a5a1cd1544c2d8870c3"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1afa162fd822a70c69f6"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-241048fef4689ca6a13f"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2f0bbaf57c8c461925c4"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2f6a36bc231bccf2f494"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3538e36563d8d5cdc66a"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3693d6204c73101c3b26"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-46e503d7486d1bb6334a"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4aca4d4b9a7f15ee3e63"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-50e2fc5322cda5621f3a"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6e010baac81c2eafb411"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-78602d6d98483cc78f19"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7e7c2724fdc0521d7d4f"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8717b526c337f6055c26"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8db97be23a60e01ea869"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-94f3823b3d697d32dee1"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-99a72ca237dfa6bad99e"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9e8968cf96a7247bb52b"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9e92d7192a92c4472d0e"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a2a53ab3e162e7e098d9"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b928da845918b56d0b7d"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-be1e38c9ae08fe1e579f"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c555c850771efeba2d17"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-dc6c2fde11a6d23b6ec7"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-eb8a5c6090b4f7cd9fda"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ecd501ed74b8402d5db8"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f27597320e64e67bb05b"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f350fe192e9ddfb5ca17"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f39d4a29dd102ad14cdc"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f4cac1449a62c0c5ffe4"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f5ce19cbae6b29050465"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f80fdff92c54d8910e2d"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ff82176370a58b8e800d"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "gpt-oss-120b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ffeded4146d5c4a9c901"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-019bf720169e71fb1df7"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-04ea2f89229f5c8694b3"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0dae33110a40fb2352f7"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-11f2fff78812572d04fe"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-14802e5cd9ea6f26f286"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-193683916b4b59fe9603"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-243226479c601582f365"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-31d95430121430b51a09"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-3d6add42a1886681c5a3"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-3ebe7dbd30d8c4a17617"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-480b0c1653d8ace526d5"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-528647da6e0b65ea5f83"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-58f98f3021f72bdc614e"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-614db8afc4d06bdf9f5d"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-62d16194cf848b3edb8f"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-670967248ebb9106b972"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-6788c0f63f368e38af79"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-6ead59d70c07176bd6d7"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-76f45fbe0e34c2e1da73"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-793467f505be9cd56cad"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-7a87c827d5c25d235e03"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-7e5ecc73cc7758829b66"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-82534db80c5b990abadf"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-83c8bc9ccc1e8947c72d"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-85fff1680306321d1207"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-86d15b913e02a0e52e24"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-947f64d4fb443970e7ba"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-95f03bfd9e57dcb24f8c"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-96d25a88cc85b6b8473e"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-96f06af39f118e9be761"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-a0d242a3eb5975565c67"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-a141cfd1f3625b794db6"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-a57d795ff8215ab9f0eb"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-a71094e9bdaf5a26ce54"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-b0d11f8def09a3784786"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-b7e86546e1dd45a390fd"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-c7ad1ad8b160f2fb9640"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-d95c9e65d87a134e7711"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-e27b4e6fe36eda72fa40"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-eb5bfeef92261d549b05"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-062c0008c47be87dde3e"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-085da7e3119fe85dea03"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0c202036b2069e827356"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0e90b9660c9a48c95588"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-15945e0837b773c03675"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-1dd4e7ed540dd3b31e2a"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-25f135d344efed1e6797"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-26909b7c3f1f9525546b"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-2dab038a090a2dc2d326"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-3a51118d8de11f8f885d"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-42641280d9c2c01755d9"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-49a3569e839d81c7fc46"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-6b7d0721de94ff893c51"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-6d655a7235b63b975a3c"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-72e864f2219c7ec652b5"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-73c7cdfb11e06c62460b"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-74692b102ff68173c155"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-7aca80fa5d4f5f198053"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-83e79fe331679ebd9341"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-893b1010d166f2afd8fc"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-8a57a319f0019bb706ee"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-8abf56dfff21ff41e280"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-8d5a2cfcdc3e7676befc"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-8e4a3b6da0c94d7582c7"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-9b4c1accbd3407efc129"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-9c6145f027548e945146"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-a27433c238d799a4f7b4"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-a7fa5009a8b29a753bc3"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-b7eb9aa3b2ff79f9500f"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-b99c7b7ea25f16876c74"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-b9c1a6a2e3d411da5417"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-c026caea45db19b66038"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-c29aa97922457a513cf6"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-cdbdbf9e5f8c09b2463a"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-d5e45e0c62ebcc147b0a"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-e68949cebc7192afcdaf"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-e71a30dca733c2ac3865"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-e97b6564a5b9123d806d"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-ef8da6ee41412ba2a075"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-f8897917d6e52110a189"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-017787a498c7e2893375"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0237d357d9f24b9ec6d3"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-053157f2c8b923691561"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-09de0bc81e028e0daedc"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-1197cc1edb7f5dd81c33"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-12bf45b20f2eb0866350"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-12f4e4305c078877c73a"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-13125ffeb21bcf4a0e36"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-1345a3e6c8f2eb548b89"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-1387575f8d578d8932f9"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-19e0ca7be737ea960686"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-1d0743bb7683b2f318b2"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-223383496870f76af6c5"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-2ac7a851d55129f19703"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-3168844ee96ce37de3e5"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-350a34ecd248e887f471"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-37f413c99abdfe21aca6"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-384eb49b464c99926f57"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-3f0d1713868d715b6304"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-514c92b3d9d8b4a9ffb5"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-5743bd8348d533109738"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-5a31ea73575ee7cbb934"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-6a4914fa155ca111aad5"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-6d5fc1df122a2e4f58ef"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-81bfdbeaed68d572d676"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-92b84c809c33d0efdb0b"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-95530e537cf61441e8ca"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-9fcbaadfa81cdb9be5c8"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-ac6a73c724543f8bbfc5"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-ada7d3f951869900fbf3"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-b56225d61398d5d76558"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-c1bc6b5ed9f0e6b2c38c"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-c35eb90b4af9152bc39f"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-c4a75dfe7a52fa9bdc21"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-d0d4e9c3e1366b8b97e6"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-d274359df771ff3b8361"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-df5141d244e78c302eb9"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-eb0579bfe5be96c979e5"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-f253a10d939dba488d6c"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-f8c43a683aed28cd717d"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-00fc1c5184e28b441386"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0917be5083d5d5c1ab38"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0b89a7d8d05df7ae406d"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0e52bed43594676b8399"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0eaa5e5f0977a9ae8e0a"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-28bb40d1b12851db8b41"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-2fe54f649268ac799aaa"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-338efcc50afa423bdff9"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-38676aae33fb2814839b"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-3ea172c88518aa31b9cb"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-40e48ab00f3d78fced9e"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-42b773df1e7777370afb"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-43f8f471316d64060437"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-4aec4859ea49ef296a42"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-4d16f08b853e3995f477"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-5270e778e1ba589b25e5"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-5305d0cf8f7141850404"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-585d0cc975672dcab9a4"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-6553cf5cd9e977a878e8"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-656b878ccbf940b00a9e"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-69bdb82a05632fd26367"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-6af3445ec5ac6939915a"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-816a42b58393e20f052f"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-83384d6f1058ba2c6ef4"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-8937cc50ab8ae52911e0"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-93764956fbf54a67f310"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-998c298a611d9f6339a8"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-a8b63f404a95c6c6b975"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-aa517e53512828173779"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-ae648460be6832e0d498"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-b73f3e82079ff754402d"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-c58c2f27461af3541338"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-c919cc9371a533a3c355"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-cba820b1b78d1aecb3b3"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-d3f35768f85b25e1f238"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-df44dffdce326df522ec"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-ed5dacf301dfcbc24301"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-ee000cc8bebca1070af8"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-f1229f4a45b00501ec91"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-f375ca1450f10f5167bb"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0495aaac1cc69398d577"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0bf7d250f3e83857e7d9"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0d51c9c520c304b88445"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-0fef9c6c68ad6ab7571b"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-171a44a09f8c720ecf92"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-19448a4e49cefead4a4e"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-1c5442bce2da2b5b0d3a"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-1cb1ec14761a5be8f2a3"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-469da6c163078d06c203"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-49f5dd58d73fc6ee11ba"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-4b7ed41dfae55b2c8d85"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-4bfe4fe4f17e72f06a1d"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-4c43093af68a8b03b797"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-4d33a99d3209b40da163"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-4e9bb85dd1c5e0d559a4"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-4f4cb37e2b45f9eb2657"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-588e4c308d1ad2ae0282"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-6172f0d99aa887df5c7c"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-66bf7a17bc73f09a1214"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-68293a9d85b8635a22e9"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-6a3deb104deda956e16c"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-80648aaf57c1c07437d1"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-81f27316b9dc27600648"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-843256418c299309bf27"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-98f4edda200306358608"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-9a838632f1367012845f"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-9ec76e816bbe06e3102b"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-a931ff2e9cb8ca53e3de"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-ac48da671cc0c3bf0675"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-b741c68f2ff5a354cf0e"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-b7a232c67641bbb8939d"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-be0679a8c62d045ea279"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-c7ab2e9864c56ed9569c"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-c7afd4788b9db800c0b8"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-cd6bf7b0e158c5dabe3c"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-d8b151d012c5f392abf8"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-dc5150b195061e51be6a"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-de3e9a2042783b8927d7"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-fb026fbad5fe52930f20"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "llama-4-scout-17b-16e-instruct",
+      "state": "COMPLETE",
+      "task_id": "GEN-fea7da9ee4a69562a676"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-07e49fa77aa25638d106"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-087af7d6a32c27db2e54"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-091db781a39241f4c394"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-093e5e0c025f5374a4c5"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0c99720098892e49bb63"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0e36da807daf850d55ed"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0f3071a6c894735eeeb0"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0f50bb6d9d0f1211c480"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1a12069195fb1df625b7"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1c223d3127ca877965b8"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3a4c8cc3757877e7c941"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-400108d3d8dc204e30f2"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-537fac441d2c2e085e14"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5889b142d3af12f9ab47"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-63edd8e76c1994728eda"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6ca9c57c7b89ddf2502e"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-72a2150953fbd09c18eb"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-75ae49e7dda77d5d2751"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-764c512447254c3cfca9"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7b4cde578fe07c62de26"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8ef88ca2c70789ed9b83"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-91c2b743b426184a4eb9"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a1fd4d52bfc1357fa1ff"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a37165e6dd1c463d3834"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a45378150fd7a51a28d8"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ac7aab202f4f17d51d38"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-aee023f6c1d055eb277c"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b02051688487f4fc066f"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b065611330a083b36404"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b2e0a292235bb61db96a"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b748c52b2f783468d2b7"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-bb3d6f02f4f9c35ba823"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c8d1b2913b8b59f5fc69"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d1fd759231b64f558541"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-dcf921418cffb27d66b3"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e02da48b52a4f823b8bb"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e112ed1b07c0ca052790"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f908f4b8ad6f25fe0652"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-fd4307d19bdd2630bd9c"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0ce9b303fcde7b83f2b7"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-13d63688a0d91063a2c6"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1424c7d6afb8d36f4ebc"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-191db79a65e98c81914d"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1e3ed1d241fb95075e15"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-216cf07f8fdcf97742f6"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2840ddf2f1fbe67e8c99"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2a94977645653b8874c4"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2c349cc14c1924ca5678"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2ed3078c97255d950c86"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-352be95381c47978705c"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-412a2573f4334e008e56"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4380e1aead4fb4c6aa97"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-59a2a455009edc78bea6"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5c2620200b8ef8547325"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-65842a98694f7f64868a"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-65ea16255c42659d1c20"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6de4671c4ba5fefe452a"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-74191884d3b3f78ea777"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7e3d7403b585bfdf1d4f"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-865e97db4a2205f1ae2c"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8ea46034b62d3853d966"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-91f17ef33b7bb612d489"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9820a298886b70fc20b4"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9c9581da2f4e3496cd6a"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a735ea5071b0e6061883"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c80d8e4a051bbaab4bb8"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-caadb2f1dafd1ea28895"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-cb5cac246dfa0ceb1863"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-cca3fa52d6d36d528f0e"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d4ce9f731541879931d3"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d4f5627f084bda52517a"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d56ebdc7da67c734cfbc"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-da67f8c027d265194f5e"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-dd7f97e345c0fb9caa15"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e7a3caff1df75fc09dd9"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f0a19d7b5c4c2eb6e947"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f0ae75347a1390bb7a52"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f8817231f28e29a05d32"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0b2f9fb6673aa89e09bf"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0d776b9dcb680beb0d3d"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0fa7a8ae0c8332031588"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-103714d7c58f4923ab3c"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-12591ae0235c4663a634"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1943342ff27975d7e5b4"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1fb6e008d33e7f6ec531"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3c4415068738708665a0"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-435cc01ac7440ed19f08"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5790d7271b885d608000"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5e93cfe6e5d36a074c7f"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-64161ddd99ba5929e0d2"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-64ff53c310c8e6caa138"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-65b287dfe5f004b7b948"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-676ed680f066da2c56f7"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7a3d55ed10403ac1d1bb"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7b73a7188911cdebde6a"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7f8f6f09b752ec194043"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8ffbb4f3f89ac64cfa31"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-986d90f9b219249a6b3a"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9c1fd66168aafc1147fe"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a69423d795e101152f2b"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a6aa9c178b0c6aa934d8"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-aacbd551375d4dc2d735"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-be26d98e8fe644f92647"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-beaba260871f22cf677a"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c58c4d80c9de4c58d46f"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d02fc25f43fd4d72d372"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d1600004f1b7e09548d8"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d17e5a8b9ba8ac9d666e"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d182d536613d6257430e"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d2da472892368d84045f"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-db4fc8e4e8d5c0df7244"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ddd5607d75093e2f5e28"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e2b6fff9e097a5eeb5ef"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-eb6a4677df981916dd07"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ecb62e9e68403f050edd"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f799e24b8a70cd0916ec"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-fca75c8fe07a3acf877a"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-fe374d77cf904aea1c3e"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-019f9d1f8e6eea16232c"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-06a6f76e2705ec6b8a8b"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-114fb5257f50b7d6260a"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-17f5f1ae04c0f6d0ce4d"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-18a1ca8f91757bc14769"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-19dd19defc635822e2d2"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1e065ced694671a425aa"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-20530b6cbb7babcdf8fa"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-39ab543f2788dd15daf4"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3b008b3fbae7e1b063bb"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3f31a393dfbdaa16d2f9"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3f9a1b3759355a8fd79e"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-44f26c34acd342ee3c20"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5292191b84f9d8102bbc"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6018637454b248d230fb"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7cacfc01dd7b85535336"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-802b154f3360c45d5ce7"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-84d94c1016cbd639f55a"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8f1df5b11c9034145367"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-99f30a65b1d04c4fb5bd"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9befd68360eef5d6d872"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a4f0525a703a29d8639d"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b5079af97e1bad6000a4"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c0dee5393d57d22becca"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c347fbcb4d12c41c8340"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d4980cd992013d52486b"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-de19381d7eccbb626ce4"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e85b36002cde2d9832e0"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ef75244d49e62fcc3dc0"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f27eacc00aec76a6afb8"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-faa2f6fa9ae0258e29c4"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0220b4a3c77f6c17c308"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-04a29a052cf9c4472a6a"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0eee694e09a5db90dc3d"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1513f4c3757bb661b782"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1c41d57c22bdff3dc53b"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1e5546f5bb950ebe4c4b"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-25e90e8037d835a41549"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2bb2b82523b6c894c420"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2c9fd67f91c821f7885e"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-355e9a7a14726a8ba038"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4941f4862a0c2bc720b7"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5e3ff5297f387da8847d"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-63c30a813fe3e688cf1d"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-64851a44a5375b6aee41"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-659c78222f3dc59ce6fa"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7f933938c68fef90be10"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8784b773dae397c1382b"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8b7fa072a8d204c9631a"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-961efad7128b14b14fd1"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-97a642869a5399d5d3a4"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a1be10dbd7e222f5816b"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a77ad58ce9c98518f7d7"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a900ffe31478b810199f"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a9ef4fb0e776d3b3dcc8"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ab92dee1cc5f05e02dcc"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-afdc36b55f023f379459"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b8679c456da2d994679a"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-bf587c16ab3ffeae76a6"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c529704008094ac8e99a"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d57800baaa16f19819bb"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e69edc8d43c410a3e598"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ed681395b590f455f603"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f12842df5cca41c112c3"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f494d05b83ca87ba7a8c"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f6b7ded22bee4a5a6e82"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-fe91f1bfa9b66909dce0"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "nemotron-3-120b-a12b",
+      "state": "COMPLETE",
+      "task_id": "GEN-fef909b9ed1e411f00a2"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0fee13446f49a15d03ec"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1ff0a5c5daf6cdc68183"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-268a08caec944910b96b"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2d3c4d99a029255edde5"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2d7028015c79224865f2"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-35e9ad4e42783515d808"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3608c8ec6d7bb57f1efe"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-39f2b9ae295b86b4a26b"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3e649f3db7e043252cf4"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-491b9ada3f95209a2de9"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4e3eaae05787ab9580a9"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-54e272a79b31fbbfc94d"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-576e141ba0936188a55a"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5e920a0172e760d1ab66"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6968bb6405fdc38ce216"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6dd0a9672e711542acb0"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6f93dfd9edecab3d12fe"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-74061922ae9146a47db0"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7cd0f242f14c7f1bb23a"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7d9ab2f391c0f26df927"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8528c7c2869a90d5c798"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-89d5ec1563a092d53727"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8f09abbc547917c96fc6"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-91de418381dd441752e9"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9466f82b5fc3012ae810"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9534f9dc113d1cafff80"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-989a6b94e78d725c52d2"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9c1be5271889d6eff32c"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ae42376a01f52cae772a"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b05b2823bd14c96cdbf6"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ba8c22cb24780c5b61ed"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-bf9feac216bfc2c9f00b"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c018d76791f199a0e3dc"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c5b85ab70c9ec88a3b87"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c6bd1b6bcb2d06130424"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c8bfc9ba8c97c3198180"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d7ddaaafc314fadb7a89"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-dbb5d6c8a1a342a091ab"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e0c2f0e8266ddca057b9"
+    },
+    {
+      "dataset_id": "fever",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ffeb80770099fd492d0d"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-100cbcbbdf0b51de8d74"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-19329a94eb5dedb04b27"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1bfacf6b5793a998e939"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2d125bf0404223e7d670"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-32c498c9ded3793fe356"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-33e53e4057232e09db17"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-37ca1c78bc79a8eb8f1e"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3f0d2eaeabde931b8520"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3f5c8895b69a1fd583e8"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-400d5989f8e2ab421ca8"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-421e6279cc23f4614b23"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4db7bd92613ced68daeb"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-52436331dd8b86efa825"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-53846004a228fac7717d"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-568038767cf8603f5723"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6f1e253ec5948e5d0ddb"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-71cd01d4d1c58b9005db"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-724c468b6785395bda07"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-74041b2b56324eb004b6"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-79977348a7f2e77ccbf3"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7c351baf6c30f2d9f916"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8a104ba31abf4ad36083"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8a1a140040f5d3336c05"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a21df54a1453569d66f5"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a44d0a4d819dce64031b"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b501fd185c2419e4bfea"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c9af20b9e3db24b2f7ae"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-cf2de4e79061d10d8559"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-dc68072bfb3e25f8443b"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e0079f258aff65865ede"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e545ef82f43b2edac5ba"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ea540b677f08be18d8df"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-eb897f4164ebef16a500"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f2dd600a337e80f532b6"
+    },
+    {
+      "dataset_id": "hotpotqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f37f64d3f4912e7d7811"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0225824fcc37d17516fb"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0fa9dc578a731c9c307d"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1d3cec9c9784fb10f712"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1d86d2f838725dccc97f"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-20fff83ec64f55495835"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-233bbea59ab28833e6d1"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2931dcab9c4d1b3f864f"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2cbeb6fb17cfadd0bed2"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3ba6d52db8f0e60a4708"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3dab1edc705a775dea72"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3e45185f28454f24bb93"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-41235ff0e41629e2b7e0"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-463786872acc188e5c89"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4b4106b9e6ec505c7130"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-541759e76bc61e7ddd98"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-67dbb964ca1ee554de89"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-71c436be1d903343a914"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-745791e23ddd7c4ded44"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-74bdf1fa10fb2fe9ccfe"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7b0daa122b7443c7834e"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-80b9042a69b08a08ece9"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8b894fceb24bd85bfe95"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a7adb3a13e454f3eed82"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-a84c2c90ebe70691270e"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b124a1aa1fed9227c725"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c0de5b73bb0f0e9f939a"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c80dac6557b2c373a8b0"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-d8770eea4b00a0c39c00"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-de60cf8a6bca4512472e"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-df922d7fca2910d964c1"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-edb4536dfec86aef4c05"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-efd7faee395e33845a99"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f05238c015504eead09a"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f13c2249412739bb0e39"
+    },
+    {
+      "dataset_id": "pubmedqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f8ba459101374b3e7bca"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-053d8b41694546131412"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0549f386e5fcc85d1cf0"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0862836baba586758b00"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0be94134d945befd27b0"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1efcb6888d056ab12619"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2085b03623b79d322f79"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-220fdedcce45f5b5c56e"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2a3161bbfe643544a8f1"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2b4191c36046372af5db"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-3db6e4d2b315d4a9ca3f"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-4245460751b8317a9312"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-487135d85ae40bdcc036"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-502f98a06998be5c3b31"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5057bb9e095d1455feb3"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5265024884e527113d57"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-54e634ab8e5dbfbcdf32"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-62215c8ba88fd32c2da3"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6edb1e2ffc8e5872fcad"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-79b18b91f7094344ea9a"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-8c6e41b5bb463b77a4f8"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-939f4a7e962526563bd7"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-9c586e7daf43f8eea87d"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ac5a9e4c980b2402c95c"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-ade295ed486e807f5484"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b769593fc7ed51648758"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c7768900267c165510ac"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-c86468d81283a6df205e"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e9d23365b1ab5d03a426"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f15f0920b8499d319b45"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f2f46b34e3e7bf933bf5"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f49bb62dd574e95d0384"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f8b4ec01ea5ee541ac85"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-fa0c3a6b34437b24e68b"
+    },
+    {
+      "dataset_id": "tatqa",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-feb4013fd1fd1574e141"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-0bb8362610b3d6ac719c"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-186f9417b7f1b0f779f2"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-1cb67dfbaf3044db657b"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2188bfe59d9b3795f1a1"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2202735ad586f11d5026"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2491d472943041c7c263"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2535a15f791177fe55fb"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-26e6e2fd740c23ef31a2"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-2992c55f574a7fed1547"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-35e52594a7c5e96ff9ff"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-37214d584acac19b4108"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-41103f0a40beb3d35b3d"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-433ac8b10aa0091e1760"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-5eb0ec2fa704425218a3"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6d3e8df0ce1e0ed37538"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-6e5e725c4723870abec1"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-700a0edd5ff5424c81da"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-78a68a37e27c8037ea11"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-79566b3860e0984c3a51"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7bdcccd180cfe063e440"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-7eef25586b2db5da5beb"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-99b412dd1f4d4ccc3f9c"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b227e2f9f37802b30692"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b56900be836ce9517c97"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b67a686cfb2bb543cce5"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-b8877363e73865e1d2c0"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-bd16837de92e32466873"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-bffcc53faaa79d8d51fb"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-caddfc42ca2dfd7939a5"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-cd76e4b1472f21e1f93d"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-cf09eaf6db49ccbefd76"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-e8bfcbde74826477b7d1"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f093d7da095356f3266c"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f54f412e16a89d64996f"
+    },
+    {
+      "dataset_id": "twowiki",
+      "model_id": "qwen3.8-27b",
+      "state": "COMPLETE",
+      "task_id": "GEN-f697e44b9508b9544317"
+    }
+  ],
+  "schema": "PCG_MAS_V3_6_IMMUTABLE_FINAL_PANEL_CORE_807",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:49:20.031935+00:00"
+}

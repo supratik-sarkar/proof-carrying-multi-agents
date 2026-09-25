@@ -1,0 +1,43 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "904a15185581b752c6704017d7e3b92c3108459cc7ca2796e8327864d4fb773e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:multiple_function_129",
+  "prompt_sha256": "904a15185581b752c6704017d7e3b92c3108459cc7ca2796e8327864d4fb773e",
+  "provider": "gemini",
+  "provider_raw_sha256": "71604d36c71b5f65d92a8933e3ac3153950b41e7bfa8e2ad64d190b2d5890cb0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPZ8TVz9ye4L9UbQID0V8xaeAy5O8PNiAJxiR0Ft9blqFrIyWz29COwMScl/HvVApvl5ms90TqvedKQ73yfWpxeH2rQQULTKiC2PcM9F1NpBC9uGJKwB31QhovnpW3/EuzcuiFW3cFjnxjNg=="
+        }
+      },
+      "function": {
+        "arguments": "{\"time_in_years\":5,\"principal\":10000,\"compounding_freq\":\"monthly\",\"annual_rate\":5}",
+        "name": "compound_interest"
+      },
+      "id": "call_1218796",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 41,
+    "prompt_tokens": 385,
+    "total_tokens": 426
+  }
+}

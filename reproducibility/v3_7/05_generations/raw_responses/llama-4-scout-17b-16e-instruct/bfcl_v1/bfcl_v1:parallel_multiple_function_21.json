@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "508f6ab4ca9dce0b0269c1109b63bac4acc02f0882e41b46448d954763044596",
+  "candidate_text": "[data_loading(file_path='dataset.csv'), linear_regression_fit(x=data['sales'], y=data['future_sales'], return_residuals=True)]",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "036cc58d929d228f580be294c3b388cddd31be455c41284da0aee99dd7e280cc",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:parallel_multiple_function_21",
+  "prompt_sha256": "036cc58d929d228f580be294c3b388cddd31be455c41284da0aee99dd7e280cc",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "be058b04f482b286c036d02f44c2c156fd3c2cbe51637ed582688f3d2f8c91d3",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "[data_loading(file_path='dataset.csv'), linear_regression_fit(x=data['sales'], y=data['future_sales'], return_residuals=True)]",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 30,
+    "neurons": 24.60545539855957,
+    "prompt_tokens": 908,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 938
+  }
+}

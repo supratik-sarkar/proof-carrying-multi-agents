@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Any Body...Any Way": ["Any Body\u2026Any Way, (re-released under the name Behind Locked Doors) is a 1968 Sexploitation Roughie film directed by Charles Romine and starring Eve Reeves, Joyce Denner, and Daniel Garth."]
+
+[2] "Crossing Delancey": ["Crossing Delancey is a 1988 American romantic comedy film starring Amy Irving and Peter Riegert.","It is directed by Joan Micklin Silver and was based on a play by Susan Sandler, who also wrote the screenplay.","Amy Irving was nominated for a Golden Globe for the movie, for Best Performance by an Actress in a Motion Picture- Comedy\/ Musical."]
+
+[3] "Behind Locked Doors (1991 film)": ["Behind Locked Doors is a feature film by Swiss\/ German director Anka Schmid from 1991.","The ensemble- film shows the everyday life of 17 inhabitants of an apartment building in Berlin Kreuzberg."]
+
+[4] "Coney Island Baby (film)": ["Coney Island Baby is a 2003 comedy- drama in which film producer Amy Hobby made her directorial debut.","Karl Geary wrote the film and Tanya Ryno was the film's producer.","The music was composed by Ryan Shore.","The film was shot in Sligo, Ireland, which is known locally as\" Coney Island\".","The film was screened at the Newport International Film Festival.","Hobby won the Jury Award for\" Best First Time Director\".","The film made its premiere television broadcast on the Sundance Channel."]
+
+Question: Which film was released more recently, Behind Locked Doors or Crossing Delancey?
+
+Answer:

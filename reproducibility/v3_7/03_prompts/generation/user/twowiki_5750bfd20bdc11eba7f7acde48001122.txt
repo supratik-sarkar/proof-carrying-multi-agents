@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Worldly Goods": ["Worldly Goods is a 1924 American comedy silent film directed by Paul Bern and written by Sophie Kerr and A. P. Younger.","The film stars Agnes Ayres, Patrick H. O'Malley, Jr., Victor Varconi, Edythe Chapman,","Bert Woodruff, Maude George and Cecille Evans.","The film was released on November 24, 1924, by Paramount Pictures."]
+
+[2] "Heather D. Gibson": ["Heather Denise Gibson is a Scottish economist currently serving as Director- Advisor to the Bank of Greece( since 2011).","She is the spouse of Euclid Tsakalotos, former Greek Minister of Finance."]
+
+[3] "Paul Bern": ["Paul Bern (born Paul Levy; December 3, 1889September 5, 1932) was a German-born American film director, screenwriter, and producer for Metro-Goldwyn-Mayer, where he became the assistant to Irving Thalberg.","He helped launch the career of Jean Harlow, whom he married in July 1932; two months later, he was found dead of a gunshot wound, leaving what appeared to be a suicide note.","Various alternative theories of his death have been proposed.","Film producer Samuel Marx believed that he was killed by his ex-common-law wife Dorothy Millette, who jumped to her death from a ferry days afterward."]
+
+[4] "Mehdi Abrishamchi": ["Mehdi Abrishamchi is an Iranian People's Mujahedin of Iran( MEK) politician who has been described as\" the right hand man of Massoud Rajavi\".","He is the former spouse of the group's current leader, Maryam Rajavi, whom he divorced so that she could become the spouse of Massoud Rajavi."]
+
+Question: Who is the spouse of the director of film Worldly Goods?
+
+Answer:

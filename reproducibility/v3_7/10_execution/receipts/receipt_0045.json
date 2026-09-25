@@ -1,0 +1,58 @@
+{
+  "schema": "PCG_MAS_V3_6_COLAB_VM_DISK_CLEANUP",
+  "timestamp": "2026-09-19T10:43:25.743770+00:00",
+  "notebook_build_id": "v3.6-a100-build-0919-cuda-preflight-v14",
+  "disk_total_before_gb": 112.64,
+  "disk_used_before_gb": 88.34,
+  "disk_free_before_gb": 24.29,
+  "disk_total_after_gb": 112.64,
+  "disk_used_after_gb": 88.19,
+  "disk_free_after_gb": 24.44,
+  "bytes_reclaimed": 161394688,
+  "reclaimed_gb": 0.15,
+  "reclaimed_categories_gb": {
+    "uv_cache_gb": 0.0,
+    "pip_cache_gb": 0.001,
+    "hf_cache_gb": 0.0,
+    "temp_gb": 0.0,
+    "failed_build_debris_gb": 0.0,
+    "pycache_gb": 0.123,
+    "apt_cache_gb": 0.0
+  },
+  "deleted_path_categories": [
+    "/root/.cache/uv",
+    "/root/.cache/pip",
+    "/root/.cache/huggingface/hub (non-whitelisted)",
+    "/content/pcg_lane (*.bak, *.tmp, *.whl, *.tar.gz)",
+    "/tmp (stale temporary builds)",
+    "/var/cache/apt/archives"
+  ],
+  "exact_protected_asset_paths": [
+    "/content/pcg_lane/envs/minicheck",
+    "/content/pcg_lane/envs/alignscore",
+    "/content/pcg_lane/envs/qafacteval",
+    "/content/pcg_lane/assets",
+    "/content/pcg_lane/repos",
+    "/content/pcg_lane/scripts"
+  ],
+  "hf_snapshots_retained": [
+    "/root/.cache/huggingface/hub/models--facebook--bart-large/snapshots/cb48c1365bd826bd521f650dc2e0940aee54720c",
+    "/root/.cache/huggingface/hub/models--FacebookAI--roberta-large/snapshots/722cf37b1afa9454edce342e7895e588b6ff1d59",
+    "/root/.cache/huggingface/hub/models--roberta-large/snapshots/722cf37b1afa9454edce342e7895e588b6ff1d59"
+  ],
+  "verifier_environments_retained": [
+    "minicheck",
+    "alignscore",
+    "qafacteval"
+  ],
+  "cuda_health_checks": {
+    "minicheck": "PASS",
+    "alignscore": "PASS",
+    "qafacteval": "PASS"
+  },
+  "required_environments_present": true,
+  "required_assets_present": true,
+  "cuda_preflight_after_cleanup": "PASS",
+  "offline_asset_closure": "PASS",
+  "status": "PASS"
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "d24453d28f523c05f08586c33295759dc9c5b13c3184a12ff7dcecce771c2839",
+  "candidate_text": "John Waters.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "2f39390276d19552d71cf89476f6a4068264a3c758410478dec22ba439d29f3d",
+  "example_id": "5ac3165c5542995ef918c10a",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "e3c0d29e36b8ffe8040553274978af171ebc3a9a5f598d09b94bb40184580aaa",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "5ac3165c5542995ef918c10a",
+  "prompt_sha256": "05ea5fa90f2bd67fff74d9939c83f2ec5bc94795403cb79af97cba0540a9c765",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] 18th Independent Spirit Awards: The 2002 Independent Spirit Awards, honoring the best in independent filmmaking for 2002, were announced on March 22, 2003.  It was hosted by John Waters.\n\n[2] John Waters: John Samuel Waters Jr. (born April 22, 1946) is an American film director, screenwriter, author, actor, stand-up comedian, journalist, visual artist, and art collector, who rose to fame in the early 1970s for his transgressive cult films.\n\n[3] Independent Spirit Award for Best First Feature: The Independent Spirit Award for Best First Feature is one of the annual Independent Spirit Awards.  It is usually given to the director (or directors) and producer (or producers).  The \"first feature\" designation is applied to the director not the producer(s).  Therefore, producers have been nominated multiple times.\n\n[4] 28th Independent Spirit Awards: The 2012 Independent Spirit Awards was the 28th annual occasion of the Film Independent Spirit Awards.  It announced its nominees on November 27, 2012.  The winners were announced on February 23, 2013 during an awards ceremony hosted by Andy Samberg.\n\nQuestion: Which American film director hosted the 18th Independent Spirit Awards in 2002?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "a115feee4121af84832df13e1e8e9c8fb99d92de03b7c83f9b1c70bbc262afe8",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ac3165c5542995ef918c10a",
+  "task_key": "a7fa5009a8b29a753bc3945b2ac9adea9fcd3433ed70133fe2cdc872f96c0e32",
+  "text": "John Waters.",
+  "timestamp": "2026-09-15T09:33:14.369546+00:00",
+  "tokens_in": 330,
+  "tokens_out": 4,
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 8.409090995788574,
+    "prompt_tokens": 330,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 334
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "8fe5b2615cf862f0a88f3add30d24c7ee49790b5d7ec9238ab05d75aa4b7dd5f",
+  "candidate_text": "I'll calculate the BMI for a person with a weight of 85 kg and height of 180 cm.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "faafa4ce754d6b35e391510c4838564e2ab25db80bdb5147457323515d507897",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:simple_84",
+  "prompt_sha256": "faafa4ce754d6b35e391510c4838564e2ab25db80bdb5147457323515d507897",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "588cfd20d334ccc37e9947be652541644ec343f09107dcbf61fca516937b6cf9",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll calculate the BMI for a person with a weight of 85 kg and height of 180 cm.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"weight\": 85, \"height\": 180}",
+        "name": "calculate_bmi"
+      },
+      "id": "chatcmpl-tool-816ac305c7870264",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 160,
+    "neurons": 7.2375,
+    "prompt_tokens": 257,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 417
+  }
+}

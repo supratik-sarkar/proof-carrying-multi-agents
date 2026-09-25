@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "24f9fae78fdf2b47ac873c7ae8dc89e3907a9e0672668f1a0096dbc6e1f32683",
+  "example_id": "bd53bbd31a083a9da8902139f5ea74c2",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "4d1360bcca62302ddfd6f7360ecf752cf11b49632fac96538faa9ca9a8d1411b",
+  "max_output_tokens": 256,
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bd53bbd31a083a9da8902139f5ea74c2",
+  "prompt_sha256": "90e0680c8d003b14785c3ba23d5f69085021697720b4fbe607624cdec8bea38c",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] South African Communist Party: It is a partner of the Tripartite Alliance with the African National Congress and the Congress of South African Trade Unions -LRB- COSATU -RRB- and through this it influences the South African government .\n\nClaim: South African Communist Party is incapable of influencing the South African government.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "cc2c20039e2f08ebbf0d2bc7352558e996480b9196559ac79ea4c7b7141d8e5a",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:bd53bbd31a083a9da8902139f5ea74c2",
+  "task_key": "b21bcc79718a8d78d2130bf5a74a39041a6d214cb93a12e181dd2a1faf03b0df",
+  "text": "REFUTES",
+  "timestamp": "2026-09-15T10:20:28.005551+00:00",
+  "tokens_in": 155,
+  "tokens_out": 192,
+  "usage": {
+    "completion_tokens": 192,
+    "neurons": 6.645454406738281,
+    "prompt_tokens": 155,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 347
+  }
+}

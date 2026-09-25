@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "2661a30b4a7e97bde618a4a006a517f06a860d6fe72634fdc2662cfc29cc13f4",
+  "candidate_text": "\n\nGlobal Financing receivables excluding residuals",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "c46c39c3daa294606477b80ebb8fd2f6c6358911d4d2f02ee73376e3d42b0a6d",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "4ecfa9b911b094e57dc4cc9f197bd1da2e847d0cf657155bf9edddcd5b6aa0b3",
+  "lane": "recovery",
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "157e2423493fbab010a67768325134ac",
+  "prompt_sha256": "460ae0e65bba382bafe1509094a0615a3bb607283e55eba7307b8fd6d76fbadc",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "14a9efdb5ea896d7a3225fb2b628de771bd0331d654069a43b6ba41fa262ce8c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:157e2423493fbab010a67768325134ac",
+  "text": "\n\nGlobal Financing receivables excluding residuals",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 677,
+    "neurons": 110.56700000000001,
+    "prompt_tokens": 411,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1088
+  }
+}

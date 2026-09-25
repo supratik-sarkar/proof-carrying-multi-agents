@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "d9626a24ffa7e947dcbfb1db6b39af904cc3ee0f75a53301f249917f130f45d2",
+  "candidate_text": "Jean Harlow.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "d0fa7f780d73928a4c484fb4f4ca64e2c0085be98ca76c96def21c8756051ea9",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5750bfd20bdc11eba7f7acde48001122",
+  "prompt_sha256": "747bf676bbfc7d0deefabb386c405e51301eec133c460279d07e64a6bb6b6179",
+  "provider": "gemini",
+  "provider_raw_sha256": "542cbfe766f5c24afa08ffa3fc0556352d501df5835989f5ccaa0ec450b02888",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:5750bfd20bdc11eba7f7acde48001122",
+  "text": "Jean Harlow.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "prompt_tokens": 460,
+    "total_tokens": 463
+  }
+}

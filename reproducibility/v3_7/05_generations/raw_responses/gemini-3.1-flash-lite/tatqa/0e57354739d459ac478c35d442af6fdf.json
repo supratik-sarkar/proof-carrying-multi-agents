@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "b507338ffd02ffcd065d30df52b84108da36c2252502d44c614fb8bb8d85360b",
+  "candidate_text": "(28.05) percent decrease.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "78a4643fdd92efb654c31abaed1b360fff83bfde04dc6d95008202d1afc4bf34",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "0e57354739d459ac478c35d442af6fdf",
+  "prompt_sha256": "302037c31d7fca240f72daa85517351b4fe659f547334bc6f8f8d146e91a842f",
+  "provider": "gemini",
+  "provider_raw_sha256": "c414e7afb01c9987e4624f9b9b591bd0b20d3226262f01331f3d941a27f06654",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:0e57354739d459ac478c35d442af6fdf",
+  "text": "(28.05) percent decrease.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 10,
+    "prompt_tokens": 400,
+    "total_tokens": 410
+  }
+}

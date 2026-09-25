@@ -1,0 +1,20 @@
+{
+  "aggregate_rows": 392,
+  "classification": "V3_7_AUTHORITATIVE_AGGREGATES",
+  "fields": [
+    "model",
+    "dataset",
+    "method",
+    "applicable",
+    "risk",
+    "coverage",
+    "utility",
+    "native_utility",
+    "token_multiplier"
+  ],
+  "per_observation_values": "NOT_RETAINED",
+  "source": {
+    "path": "14_artifacts/manuscript_stack/data/cell_metrics.csv",
+    "sha256": "3e4d2f5c1fe3038df0c2a58bbeff824411bfb1bd5e7ef3e5ece1a0912045af8b"
+  }
+}

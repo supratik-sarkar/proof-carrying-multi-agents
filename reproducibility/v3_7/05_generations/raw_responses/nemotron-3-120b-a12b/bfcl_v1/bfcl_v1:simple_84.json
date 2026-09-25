@@ -1,0 +1,43 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "faafa4ce754d6b35e391510c4838564e2ab25db80bdb5147457323515d507897",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "bfcl_v1:simple_84",
+  "prompt_sha256": "faafa4ce754d6b35e391510c4838564e2ab25db80bdb5147457323515d507897",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "aff3b2e8f3aba2fac812fd1dc3c3abb9add74b39194d87c9d00019014be26f2a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"weight\": 85, \"height\": 180}",
+        "name": "calculate_bmi"
+      },
+      "id": "chatcmpl-tool-a1e50758ffa01f34",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 130,
+    "neurons": 35.545,
+    "prompt_tokens": 397,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 527
+  }
+}

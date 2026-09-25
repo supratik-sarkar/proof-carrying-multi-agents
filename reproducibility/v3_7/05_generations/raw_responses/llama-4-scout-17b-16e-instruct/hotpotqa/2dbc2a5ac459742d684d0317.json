@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "28413986e04ac9bb87cdc3fa8643d07b26e51935c0aae16b208e194b90ee68e3",
+  "candidate_text": "May Revolution.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "73b2facb22f0eab0e497b9a08a5e404e4fedca2dc9c53e7543a7db1efef41f98",
+  "example_id": "5ac19d4c55429963665198bb",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "8ec23a189c90fa9b14357901986e8b9a68034801e6d64ba7aaf2788042033ba2",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "5ac19d4c55429963665198bb",
+  "prompt_sha256": "1fc58c46d09bb85de8eefad428096144e61427a94b521083acf3f6263d8e3b03",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Argentine National Anthem: The original Argentine National Anthem (Spanish: \"Himno Nacional Argentino\" ) was named \"Marcha Patriótica \" (Patriotic March), later renamed \"Canción Patriótica Nacional \" (National Patriotic Song), and then \"Canción Patriótica \" (Patriotic Song).  It has been called \"Himno Nacional Argentino\" since it was published with that name in 1847.  Its lyrics were written by the Buenos Aires-born politician Vicente López y Planes and the music was composed by the Spanish musician Blas Parera.  The work was adopted as the sole official song on May 11, 1813, three years after the May Revolution; May 11 is therefore Anthem Day in Argentina.\n\n[2] List of historical national anthems: The oldest national anthem, defined as \"a song, as of praise, devotion, or patriotism\", is the Dutch national anthem \"Het Wilhelmus\", which was written between 1568 and 1572, but not then given any official status.  The first anthem to be officially proclaimed as such was \"God Save The Queen\", adopted by Great Britain in 1745.  \"Het Wilhelmus\" was declared the national anthem of the Netherlands in 1932; both of these anthems remain in use today.  A royal or imperial anthem is a song that is similar in patriotic character to a national anthem, but which specifically praises a monarch, or royal dynasty.  Some states have doubled their royal or imperial anthem as their national anthem.\n\n[3] ¡El pueblo quiere saber de qué se trata!: ¡El pueblo quiere saber de qué se trata!  (Spanish: \"The people want to know what is going on!\" )  is an anonymous Spanish-language phrase from Argentina.  It was first used during the May Revolution, the event that began the Argentine War of Independence.  An open cabildo deposed the viceroy Baltasar Hidalgo de Cisneros and ordered the establishment of a government junta, but the cabildo appointed the viceroy as the president of said junta.  A huge demonstration forced the cabildo to undo the appointment, and establish instead a junta with members selected by the people.\n\n[4] Santiago de Liniers, 1st Count of Buenos Aires: Jacques de Liniers (July 25, 1753 – August 26, 1810) was a French officer in the Spanish military service, and a viceroy of the Spanish colonies of the Viceroyalty of the Río de la Plata.  He is more widely known by the Spanish form of his name, Santiago de Liniers.  He was popularly regarded as the hero of the reconquest of Buenos Aires after the first British invasion of the Río de la Plata, which led to his designation as viceroy, replacing Rafael de Sobremonte.  Such a thing, the replacement of a viceroy without the King's direct intervention, was completely unprecedented.  He was confirmed in office by Charles IV of Spain, and endured a second ill-fated British Invasion attempt and a mutiny that sought to replace him.  He was replaced in 1809 by Baltasar Hidalgo de Cisneros, appointed as viceroy by the Junta of Seville, and retired from public activity.  However, when the May Revolution took place, Liniers decided to come out of his retirement and organized a monarchist uprising in Córdoba.  However, Liniers was defeated, captured, and executed without trial.\n\nQuestion: The Argentine National Anthem was adopted 3 years after which event that led to the removal of Viceroy Baltasar Hildalgo de Cisneros?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "e99b7362e85ced3bdaa52ce3e3890ebaecd91a4a71bef45d1df7aceee7451d34",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ac19d4c55429963665198bb",
+  "task_key": "b9c1a6a2e3d411da541712452405955c75743d116c8312c0c31a30f2a4c4a9bb",
+  "text": "May Revolution.",
+  "timestamp": "2026-09-15T09:33:42.742351+00:00",
+  "tokens_in": 831,
+  "tokens_out": 4,
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 20.70636558532715,
+    "prompt_tokens": 831,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 835
+  }
+}

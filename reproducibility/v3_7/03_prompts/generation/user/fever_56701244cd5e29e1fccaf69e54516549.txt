@@ -1,0 +1,14 @@
+You are a fact-verification assistant. Read the evidence and decide whether
+the CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.
+
+Reply with EXACTLY one of these three labels and nothing else:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Evidence:
+[1] Hush (2016 film): The film was produced by Trevor Macy , through Intrepid Pictures , and Jason Blum through his Blumhouse Productions banner .
+
+Claim: Hush (2016 film) was produced.
+
+Label:

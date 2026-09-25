@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "997c6e697278b569c3e43786fde11a83ae6ca938d9357ff371cb1d6b82bbe9ca",
+  "candidate_text": "\n\nNot safe",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "70929b90369e1672464775cdf062396f73201e2e57331a67877f59c7f91337f2",
+  "example_id": "12095973",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "9b7512719ff40884079e1c694ce6adef14d639fb04a7111a6f34008c3291904f",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "12095973",
+  "prompt_sha256": "0c211cf145b003459274c57aae3db22be1c740659dbe7507cebfb8b9b9f6bd1b",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: BACKGROUND: The main treatment for rectal carcinoma is surgery. Preoperative chemoradiation (CRT) is advocated to reduce local recurrence and improve resection of mid and low tethered rectal tumors. METHODS: Fifty-two patients with mid or low rectal tumors underwent CRT (external beam radiation plus 5-fluorouracil plus folinic acid). Patients who had low rectal tumors with complete response (CR) were not submitted to surgical treatment. All other patients were submitted to surgery, independently of the response. Mean follow-up was 32.1 months. RESULTS: Five-year overall survival was 60.5%. Clinical evaluation after CRT showed CR in 10 cases (19.2%), all low tumors; incomplete response (>50%) in 21 (40.4%); and no response (<50%) in 19 (36.6%). Among the 10 cases with CR, 8 presented with local recurrence within 3.7 to 8.8 months. Two patients were not submitted to surgery and are still alive without cancer after 37 and 58 months. Thirty-nine patients had radical surgery. Seven had local recurrences after CRT plus surgery (17.9%). Overall survival was negatively affected by lymph node metastases (P =.017) and perineural invasion (P =.026).\n\nLong answer: Exclusive CRT approach is not safe to treat patients with low infiltrative rectal carcinoma.\n\nQuestion: Chemoradiation instead of surgery to treat mid and low rectal tumors: is it safe?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "0bc245d0c1501cb1153737f9e263700a6b700a4cd9c4c3e46ca52cdd2d51350a",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:12095973",
+  "task_key": "eb6a4677df981916dd073a76d1379af9d44960193291e17ea9aa3afdd96120ed",
+  "text": "\n\nNot safe",
+  "timestamp": "2026-09-15T09:40:55.293204+00:00",
+  "tokens_in": 394,
+  "tokens_out": 163,
+  "usage": {
+    "completion_tokens": 163,
+    "neurons": 39.898,
+    "prompt_tokens": 394,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 557
+  }
+}

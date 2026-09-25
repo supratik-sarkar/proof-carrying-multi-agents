@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "71ae211863263a5f6689d1c11778dcf4aeb8b76a3dcbf6397d7401b73ddc61ad",
+  "candidate_text": "\n\nGross profit plus amortization of acquired intangibles and stock-based compensation.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "bac49557cd2f59bf788cac91b5f77b2d51b8752b42c8c711445b7da74a06a93d",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "d305a218c053735a47380aa0b4733b3855084cd9be1df2d9b8144a998a4e0abe",
+  "lane": "recovery",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "b315f902f15027dad55dad1424a973d5",
+  "prompt_sha256": "4396b5125d2c5db3a5748d4d5d12a18e1c9ecf238cba1f83967b63319efc1fa9",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "a8b30bbb97bd26b6677644a83802e261dd90172ef1e7b65f9214f82ac3f27f48",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:b315f902f15027dad55dad1424a973d5",
+  "text": "\n\nGross profit plus amortization of acquired intangibles and stock-based compensation.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 59,
+    "neurons": 39.86817932128906,
+    "prompt_tokens": 555,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 614
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "7eb4c25386f84fd84a235d9e0b771937394f71408f2b5854a2ee241afc203804",
+  "candidate_text": "$3,169.5 \n\n Calculation: \n(2,316 + 4,023) / 2 = 3,169.5",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "ff4ca3577b2b3384345b44bdef14f25831aa5bbc54e54775519a05d3b90cef9d",
+  "example_id": "a7f996fd5ea94165285f62014634915e",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "185f4b6ca830d5a5aee14ba29d20653609a25ad5137a9d140fbbb2ab79245720",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "a7f996fd5ea94165285f62014634915e",
+  "prompt_sha256": "a3deb971698cf885d9252a87888036b7fc9413f7d3db67b6c916f38e91bcaf4f",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 2: The Company considered both positive and negative evidence, including future reversals of existing taxable temporary differences, projected future taxable income, tax planning strategies, historic book profit/loss, prior taxable income/loss, and results of future operations, and determined that a valuation allowance was not required for a significant portion of its deferred tax assets. A valuation allowance of $31.4 million and $28.5 million remained as of July 31, 2019 and 2018, respectively.\n\n[2] TAT-QA table: row 0:  | As of July 31, | \nrow 1:  | 2019 | 2018\nrow 2: Accruals and reserves | $7,870 | $12,129\nrow 3: Stock-based compensation | 6,353 | 7,658\nrow 4: Deferred revenue | 2,316 | 4,023\nrow 5: Property and equipment | — | 1,268\nrow 6: Net operating loss carryforwards | 55,881 | 56,668\nrow 7: Tax credits | 74,819 | 60,450\nrow 8: Total deferred tax assets | 147,239 | 142,196\nrow 9: Less valuation allowance | 31,421 | 28,541\nrow 10: Net deferred tax assets | 115,818 | 113,655\nrow 11: Less deferred tax liabilities: |  | \nrow 12: Intangible assets | 7,413 | 11,461\nrow 13: Convertible debt | 10,274 | 11,567\nrow 14: Property and equipment | 1,435 | —\nrow 15: Unremitted foreign earnings | 302 | 258\nrow 16: Capitalized commissions | 6,086 | —\nrow 17: Total deferred tax liabilities | 25,510 | 23,286\nrow 18: Deferred tax assets, net | 90,308 | 90,369\nrow 19: Less foreign deferred revenue | — | 69\nrow 20: Less foreign capitalized commissions | 906 | —\nrow 21: Total net deferred tax assets | 89,402 | 90,300\n\n[3] TAT-QA 3: The increase of $2.9 million in the valuation allowance in the current fiscal year relates primarily to net operating losses and income tax credits incurred in certain tax jurisdictions for which no tax benefit was recognized.\n\n[4] TAT-QA 1: The tax effects of temporary differences that gave rise to significant portions of deferred tax assets and liabilities are as follows (in thousands):\n\nQuestion: What was the average Deferred revenue for 2018 and 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "f3242b48b0b85ac181765472615876bb6ec3bb855d8f5cf9bc3c9ccb45493a3f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:a7f996fd5ea94165285f62014634915e",
+  "task_key": "43f8f471316d64060437992b6202f05c9cc5c5565a32270eb5252d35368ba4bf",
+  "text": "$3,169.5 \n\n Calculation: \n(2,316 + 4,023) / 2 = 3,169.5",
+  "timestamp": "2026-09-15T09:34:25.996959+00:00",
+  "tokens_in": 642,
+  "tokens_out": 31,
+  "usage": {
+    "completion_tokens": 31,
+    "neurons": 18.153636932373047,
+    "prompt_tokens": 642,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 673
+  }
+}

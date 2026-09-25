@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "670b3f182f11e5c33ab11cab1a084ee0050662bfd42f770b2576928c63d1676c",
+  "candidate_text": "No—prophylaxis isn’t needed.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "fb557eabbf289b43569f1da7e257687ef80c94cf6ce862376936e5b84a126847",
+  "example_id": "22365295",
+  "finish": "stop",
+  "input_sha256": "e6b1e81057b446315461779fe8035ad5adb258e58868a68f5d2011863c19ed8b",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "22365295",
+  "prompt_sha256": "7bd0580c7c23ab67e882828a9bb4cf223c3a3de64b080a37a86db500c21aceb3",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: PURPOSE: To determine the rate of early infection for totally implantable venous access devices (TIVADs) placed without antibiotic prophylaxis. MATERIAL AND METHODS: A list of patients who underwent TIVAD placement in 2009 was obtained from the patient archiving and communication system (PACS). This list was cross-referenced to all patients who underwent TIVAD removal from January 1, 2009, through January 30, 2010, to identify TIVADs that were removed within 30 days of placement. Retrospective chart review was performed to record patient demographics, including age, sex, cancer diagnosis, and indication for removal. Concurrent antibiotic therapy, chemotherapy, and laboratory data before and within 30 days of placement were recorded. Central line-associated bloodstream infections (CLABSIs) were identified using U.S. Centers for Disease Control and Prevention (CDC) criteria. RESULTS: There were 1,183 ports placed and 13 removed. CLABSIs occurred in seven (0.6%) patients within 30 days of placement. At the time of TIVAD placement, 81 (7%) patients were receiving antibiotics incidental to the procedure. One patient who received an antibiotic the day of implantation developed a CLABSI. Chemotherapy was administered to 148 (13%) patients on the day of placement.\n\nLong answer: The rate of early infection without antibiotic prophylaxis before TIVAD placement in the interventional radiology suite is<1%. Based on these data, use of prophylactic antibiotics for TIVAD placement is not recommended.\n\nQuestion: Totally implantable venous access device placement by interventional radiologists: are prophylactic antibiotics necessary?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c93a66a7a88c7e5988e132e43afcfcac364c8f124385965a5ac474f3a40f43c8",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:22365295",
+  "task_key": "c29d53a31c0e48dd8aef284c01ea99ec18936ffc6ebc2704cd5ef6b68348291f",
+  "text": "No—prophylaxis isn’t needed.",
+  "timestamp": "2026-09-14T10:36:48.921303+00:00",
+  "tokens_in": 461,
+  "tokens_out": 97,
+  "usage": {
+    "completion_tokens": 97,
+    "neurons": 21.2817325592041,
+    "prompt_tokens": 461,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 558
+  }
+}

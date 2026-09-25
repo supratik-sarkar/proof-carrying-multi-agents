@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "692692c92b3577b197c15d9625559e4ca6a66ad07c05cedf094967e6229e92a2",
+  "candidate_text": "\n\nYes, it changes attitudes.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "1e139d31d2be7e07d47d17dc2da1a74fe76ccb82fa0c3254570a44155b901c42",
+  "example_id": "21228436",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "96655cd3f48279dd7e84af3cf61a51cae5cb1f8a7396f3d7ebb5978692086e74",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "21228436",
+  "prompt_sha256": "6853acaf2ae92e4b8b19c80a987a7a84f0f63bd1df958b011f36123ced86d332",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: BACKGROUND: The purpose of this study was to evaluate the impact of a patient-safety curriculum administered during a paediatric clerkship on medical students' attitudes towards patient safety. METHODS: Medical students viewed an online video introducing them to systems-based analyses of medical errors. Faculty presented an example of a medication administration error and demonstrated use of the Learning From Defects tool to investigate the defect. Student groups identified and then analysed medication errors during their clinical rotation using the Learning From Defects framework to organise and present their findings. Outcomes included patient safety attitudinal changes, as measured by questions derived from the Safety Attitudes Questionnaire. RESULTS: 108 students completed the curriculum between July 2008 and July 2009. All student groups (25 total) identified, analysed and presented patient safety concerns. Curriculum effectiveness was demonstrated by significant changes on questionnaire items related to patient safety attitudes. The majority of students felt that the curriculum was relevant to their clinical rotation and should remain part of the clerkship.\n\nLong answer: An active learning curriculum integrated into a clinical clerkship can change learners' attitudes towards patient safety. Students found the curriculum relevant and recommended its continuation.\n\nQuestion: Can teaching medical students to investigate medication errors change their attitudes towards patient safety?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "ce3616c13ae076953d933e99b9cbcb79bf5567bf973430b8a7a62b61b6f83684",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:21228436",
+  "task_key": "986d90f9b219249a6b3a055fbf34f068ab11273a563983f5bfbde756b4d6324b",
+  "text": "\n\nYes, it changes attitudes.",
+  "timestamp": "2026-09-15T09:40:53.205352+00:00",
+  "tokens_in": 327,
+  "tokens_out": 115,
+  "usage": {
+    "completion_tokens": 115,
+    "neurons": 30.355,
+    "prompt_tokens": 327,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 442
+  }
+}

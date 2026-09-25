@@ -1,0 +1,8 @@
+Method,Native scope,Integrity,Replay,Exec policy,Entailment
+NoCert,Integrated control,Yes,Yes,Yes,Yes
+MiniCheck,Grounding verifier,No,No,No,Yes
+AlignScore,Grounding verifier,No,No,No,Yes
+QAFactEval,Grounding verifier,No,No,No,Yes
+CMVO,Integrated control,Yes,Yes,Yes,Yes
+SignalMatchedFusion,Integrated control,Yes,Yes,Yes,Yes
+PCG-MAS,Integrated certificate,Yes,Yes,Yes,Yes

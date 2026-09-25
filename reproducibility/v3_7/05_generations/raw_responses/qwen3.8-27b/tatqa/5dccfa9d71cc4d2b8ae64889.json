@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "3ee49474a08335a5c4f1f2049b9d4611273139ddb9f63a55d63aa9d26733cd6d",
+  "candidate_text": "\n\n$50",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "23dc39ffe8c6ae83887a8530550f1d718f24a13daa5721aa92344ccd76729370",
+  "example_id": "988338dd50d4c45538487f6c8472c9cf",
+  "finish": "stop",
+  "input_sha256": "18592a96c64a5348c09a6e6313dbbb8b693bc72abba9c4a5f9e3f3991c55a421",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "988338dd50d4c45538487f6c8472c9cf",
+  "prompt_sha256": "086518186b7e5ba0857f95e32ad20b3a02edf77180b3e784fd5f74bb2bdac58a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA table: row 0:  | April 26, 2019 | April 27, 2018\nrow 1: Deferred tax assets: |  | \nrow 2: Reserves and accruals | $ 50 | $ 57\nrow 3: Net operating loss and credit carryforwards | 139 | 131\nrow 4: Stock-based compensation | 16 | 22\nrow 5: Deferred revenue | 205 | 156\nrow 6: Other | 16 | 29\nrow 7: Gross deferred tax assets | 426 | 395\nrow 8: Valuation allowance | (123 ) | (109 )\nrow 9: Deferred tax assets, net of valuation allowance | 303 | 286\nrow 10: Deferred tax liabilities: |  | \nrow 11: Prepaids and accruals | 31 | 21\nrow 12: Acquired intangibles | 32 | 29\nrow 13: Property and equipment | 31 | 25\nrow 14: Other | 10 | 14\nrow 15: Total deferred tax liabilities | 104 | 89\nrow 16: Deferred tax assets, net of valuation allowance and deferred tax liabilities | $199 | $197\n\n[2] TAT-QA 8: The valuation allowance increased by $14 million in fiscal 2019. The increase is mainly attributable to corresponding changes in deferred tax assets, primarily foreign tax credit carryforwards and certain state tax credit carryforwards.\n\n[3] TAT-QA 3: As of April 26, 2019, we have completed the accounting for the tax impacts of the TCJA, however, we will continue to assess the impact of further guidance from federal and state tax authorities on our business and consolidated financial statements, and recognize any adjustments in the period in which they are determined.\n\n[4] TAT-QA 2: The TCJA imposes a mandatory, one-time transition tax on accumulated foreign earnings and profits not previously subject to U.S. income tax at a rate of 15.5% on earnings to the extent of foreign cash and other liquid assets, and 8% on the remaining earnings. In fiscal 2018, we recorded a $732 million discrete tax expense for the estimated U.S. federal and state income tax impacts of the transition tax. In the third quarter of fiscal 2019, we finalized our computation of the transition tax and recorded a reduction of $5 million to our provisional estimate.\n\nQuestion: What were the reserves and accruals in 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "ed23de2e8e567daa3a09e70599798129172b9ba29ece6987b543b664de7f9b67",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:988338dd50d4c45538487f6c8472c9cf",
+  "task_key": "487135d85ae40bdcc0367fa130bd6b3a55c85f140cf2458b85fac46297ebd888",
+  "text": "\n\n$50",
+  "timestamp": "2026-09-14T10:51:58.358368+00:00",
+  "tokens_in": 726,
+  "tokens_out": 129,
+  "usage": {
+    "completion_tokens": 129,
+    "neurons": 67.2272720336914,
+    "prompt_tokens": 726,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 855
+  }
+}

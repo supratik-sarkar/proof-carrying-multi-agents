@@ -1,0 +1,25 @@
+{
+  "applicable_datasets": [
+    "fever",
+    "hotpotqa",
+    "pubmedqa",
+    "tatqa",
+    "twowiki"
+  ],
+  "applicable_groups": 105,
+  "bonferroni_denominator": 3,
+  "execution_lane": "ZERO_DOLLAR_LINUX_COLAB_ONLY",
+  "expected_observation_scores": 4200,
+  "methods": [
+    "MiniCheck-Flan-T5-Large",
+    "AlignScore-Large",
+    "QAFactEval"
+  ],
+  "native_scope_na_datasets": [
+    "mind2web",
+    "bfcl_v1",
+    "agentdojo"
+  ],
+  "pcg_internal_nli_is_external_verifier": false,
+  "schema": "PCG_MAS_V3_6_EXTERNAL_VERIFIER_APPLICABILITY_V2"
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "PCG_MAS_V3_6_ENVIRONMENT_PROVENANCE_V2",
+  "historical_execution_environment": {
+    "remote_generator_execution": "Cloudflare Workers AI (6 models) & Gemini API (1 model)",
+    "verifier_execution_environment": "Google Colab A100 GPU (build v3.6-a100-build-0919-cuda-preflight-v14)",
+    "python_version": "Python 3.12.13",
+    "clean_pip_freeze_sha256": "aefa17803bc48822993f4808acf4e65c8f31c484c32690f36748e6bd12dfde37",
+    "postchange_pip_freeze_sha256": "599e532ded4cd22310eec511d1c32a95d478267c2770f411f8b140e363f4697a"
+  },
+  "local_replay_environment": {
+    "role": "DETERMINISTIC_REPLAY_WORKSTATION_ONLY",
+    "note": "Local OS and architecture reflect the replay/audit machine, not the original historical GPU/cloud execution environment.",
+    "python_version": "3.12.13",
+    "os": "Darwin",
+    "architecture": "arm64"
+  }
+}

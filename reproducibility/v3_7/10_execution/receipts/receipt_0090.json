@@ -1,0 +1,31 @@
+{
+  "schema": "PCG_MAS_V3_6_MAC_VERIFIER_INGESTION_RECEIPT",
+  "timestamp": "2026-09-19T10:53:01.546164+00:00",
+  "status": "PASS",
+  "build_id": "v3.6-a100-build-0919-cuda-preflight-v14",
+  "input_sha256": "d4ab92f7d3ca4c61fede978adfd6a3aa6108d759f128344c2fd974429a9922d5",
+  "total_requested_slots": 4200,
+  "defined_numeric_scores": 4197,
+  "unscorable_slots": 3,
+  "common_scorable_identities": 1399,
+  "unscorable_identity": {
+    "model_id": "qwen3.8-27b",
+    "dataset_id": "hotpotqa",
+    "observation_id": "5abf04ae5542993fe9a41dbf",
+    "reason": "TERMINAL_EMPTY_GENERATION"
+  },
+  "verifier_slot_tally": {
+    "minicheck_ft5": 1400,
+    "alignscore_large": 1400,
+    "qafacteval": 1400
+  },
+  "verifier_common_support_tally": {
+    "minicheck_ft5": 1399,
+    "alignscore_large": 1399,
+    "qafacteval": 1399
+  },
+  "duplicate_identities": 0,
+  "nonfinite_defined_scores": 0,
+  "dest_scores_path": "artifacts/v3_6/dataset_amendment_runtime_v2/verifier_lane/EXTERNAL_VERIFIER_SCORES_4200.jsonl",
+  "dest_common_path": "artifacts/v3_6/dataset_amendment_runtime_v2/verifier_lane/COMMON_SUPPORT_EXTERNAL_VERIFIER_SCORES_4197.jsonl"
+}

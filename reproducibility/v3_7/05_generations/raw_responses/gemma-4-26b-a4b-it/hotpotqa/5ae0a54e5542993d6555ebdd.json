@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "d4999ba6912ad9f408d24cc516bf1c397deaa562ecc62ff3a067ea4ab34c12e3",
+  "candidate_text": "Urijah Faber",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "d32f5b752f91fe92691e22b79b7ab9721fab76112e3a33c4e52a8dd440427409",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5ae0a54e5542993d6555ebdd",
+  "prompt_sha256": "7ddeee6c41eb9f9e890ea76fd7c0f7cbdf9a38f2c467193fca85091daadaa1e3",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "2637fa4a4631ee164f6b5c7c76155b7b55725bf678ba6126d325fc2f2fc438a4",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ae0a54e5542993d6555ebdd",
+  "text": "Urijah Faber",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 7.581817626953125,
+    "prompt_tokens": 819,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 824
+  }
+}

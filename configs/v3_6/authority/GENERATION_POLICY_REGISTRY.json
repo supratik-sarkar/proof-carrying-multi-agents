@@ -1,0 +1,38 @@
+{
+  "policies": {
+    "AGENTDOJO_TOOL_V1": {
+      "generation_policy_sha256": "878da65e0d731e6ceaff49451afcea5400e5f9da3abeca958410ba0a9f8dcf8e",
+      "max_output_tokens_per_turn": 1024,
+      "max_tool_calls": 8,
+      "max_turns": 8,
+      "temperature": 0.0,
+      "tool_choice": "auto"
+    },
+    "BFCL_TOOL_V1": {
+      "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+      "max_output_tokens": 512,
+      "temperature": 0.0,
+      "tool_choice": "auto"
+    },
+    "FACTUAL_BASE_V1": {
+      "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+      "max_output_tokens": 256,
+      "temperature": 0.0
+    },
+    "MIND2WEB_JSON_V1": {
+      "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+      "max_output_tokens": 256,
+      "response_contract": "STRICT_JSON",
+      "temperature": 0.0
+    }
+  },
+  "reasoning": {
+    "gemini-3.1-flash-lite": "minimal",
+    "gemma-4-26b-a4b-it": "probe_then_freeze",
+    "glm-4.7-flash": "probe_then_freeze",
+    "nemotron-3-120b-a12b": "probe_then_freeze",
+    "qwen3.8-27b": "probe_then_freeze"
+  },
+  "rule": "Every generated artifact carries generation_policy_sha256; distinct policy SHAs remain provenance-distinct.",
+  "schema": "PCG_MAS_V3_6_GENERATION_POLICY_REGISTRY_V2"
+}

@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "8aeb3f40eb8bec47689632d355ea5d86c6ca8900839f59234cc16ccad1fd633a",
+  "example_id": "044e00c0c3890c174d407185be48c8b2",
+  "finish": "stop",
+  "input_sha256": "5fcf514ae36cc64da4e9e4ac12d2081e6f1e480505e31e92cc43c5541442521d",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "044e00c0c3890c174d407185be48c8b2",
+  "prompt_sha256": "dda6f80476613a7a57df7142692a57be8409d1b4e4c785534d768803acbf5c24",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Ann Richards: Richards was the second female governor of Texas , and was frequently noted in the media for her outspoken feminism and her one-liners .\n\nClaim: Ann Richards wasn't a politician.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "8fd06239ded8e074f90736212376dd8f9825de080b818813c4ed9b2d8ffd51f7",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:044e00c0c3890c174d407185be48c8b2",
+  "task_key": "71de95589a2acc5c8a6b24fc189219737d88c4345febecf2ef4dae192aa668bb",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:36:11.772085+00:00",
+  "tokens_in": 175,
+  "tokens_out": 99,
+  "usage": {
+    "completion_tokens": 99,
+    "neurons": 12.318147659301758,
+    "prompt_tokens": 175,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 274
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [
+      "Invalid value for parameter 'table': [10, 20, 30, 40]. Expected one of [[[10, 20], [30, 40]]]."
+    ],
+    "error_type": "value_error:list/tuple",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b59fcde8595fa206f150602380eed7faea57ab0136877b3cc21b7d2ada851ed8",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:simple_122",
+  "prompt_sha256": "b59fcde8595fa206f150602380eed7faea57ab0136877b3cc21b7d2ada851ed8",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "f8363b10d8e7de24c34dcf59342258219c36f1d8b126022b60067ab76093ce1c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"table\": [10, 20, 30, 40]}",
+        "name": "chi_squared_test"
+      },
+      "id": "call_63268ca209594ccb96c17b91",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 343,
+    "neurons": 10.836363792419434,
+    "prompt_tokens": 163,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 506
+  }
+}

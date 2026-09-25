@@ -1,0 +1,97 @@
+% Numbering and hyperlinks resolve against the parent manuscript.
+\begingroup
+\hypersetup{hidelinks}
+\definecolor{dagInk}{HTML}{183044}
+\definecolor{dagBlue}{HTML}{2374AB}
+\definecolor{dagTeal}{HTML}{008978}
+\newcommand{\dagref}[2]{\hyperref[#1]{\textbf{#2~\ref*{#1}}}}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth,
+ tile/.style={draw=dagBlue!45,fill=dagBlue!3,rounded corners=2mm,anchor=north west,text width=4.9cm,inner sep=2.5mm,align=left,font=\sffamily\fontsize{9}{11}\selectfont,text=dagInk,minimum height=7cm},
+ result/.style={tile,draw=dagInk!50,fill=dagInk!3,minimum height=7.3cm},
+ stress/.style={tile,draw=dagTeal!50,fill=dagTeal!3,minimum height=6.3cm},
+ derive/.style={->,draw=dagInk!75,line width=.7pt},
+ feedback/.style={->,dashed,draw=dagBlue!65,line width=.6pt}]
+\node[tile] (objects) at (0,0) {
+\textbf{Committed acceptance objects}\par\medskip
+\dagref{def:eg}{}: runtime graph\par
+$G_t=(\mathcal V_t,E_t,\tau_{\mathcal V},\tau_E,\mathrm{attr}_t)$\par\medskip
+\dagref{def:cert}{}: replayable certificate\par
+$Z=(c,S,\Pi,\Gamma,\mathcal A,\chi,\mathrm{meta})$\par\medskip
+\dagref{def:grounded}{}: grounded acceptance\par
+$\mathrm{Check}(Z;G_t)=V_HV_\Pi V_\Gamma V_\vdash$\par\medskip
+Checker-relative acceptance is not a world-truth proof.
+};
+\node[tile] (structure) at (5.9,0) {
+\textbf{Structure and executable contract}\par\medskip
+\dagref{def:indep}{}: $(\delta,\kappa,\zeta)$-separated support paths.\par\medskip
+Replay intervention $G_t^{\setminus e}$; \hyperref[eq:resp]{responsibility $\mathsf{Resp}(e;Z,G_t)$}.\par\medskip
+\dagref{alg:exp_short}{Algorithm}: proof-carrying agentic verification.\par
+Branches $\to$ individual checks $\to$ separated certificates $\to$ risk-aware action.\par\medskip
+Operational separation is not causal independence; the algorithm is not a proof node.
+};
+\node[tile,draw=orange!65,fill=orange!4] (assumptions) at (11.8,0) {
+\textbf{Declared assumptions}\par\medskip
+\dagref{ass:integrity_replay}{}: audit channels recomputable; uncovered in-scope taxonomy mass is zero or explicitly charged as $\varepsilon_{\rm tax}$.\par\medskip
+\dagref{ass:dep_control}{}: bounded, conditionally i.i.d. replay effects; bounded calibration error; Lipschitz secondary controller.\par\medskip
+Outside guarantee: source-to-world residual $\varepsilon_{\rm src}$.
+};
+\node[result] (audit) at (0,-8.1) {
+\textbf{Minimal acceptance and finite audit}\par\medskip
+\dagref{thm:irredundancy}{Theorem}: each conjunct has a separating witness.\par\medskip
+\dagref{lem:trace_separation}{Lemma}: represented failures plus $\varepsilon_{\rm tax}$.\par\medskip
+\dagref{thm:audit_decomp}{Proposition}: finite-sample envelope\par
+$\Pr(\mathsf{ContractBad})$\par
+$\le B_{\rm cov}+\pi_{\rm unc}+\varepsilon_{\rm tax}^{\rm cov}$.\par\medskip
+\dagref{thm:audit_converse}{Theorem}: width $\Omega(\sqrt{\log(1/\delta)/n})$ and unavoidable uncovered-mass charge.
+};
+\node[result] (dependence) at (5.9,-8.1) {
+\textbf{Dependence and redundancy}\par\medskip
+\dagref{thm:rho_renyi}{Theorem}: all-fail likelihood-ratio / R\'enyi envelope\par
+$\Pr(\bigcap_{i\in I}E_i)\le\rho_I^{|I|-1}\prod_{i\in I}p_i$.\par\medskip
+\dagref{thm:commonmode}{Theorem}:\par
+$q_{\rm cm}\le\Pr(\bigcap_iE_i)$.\par
+Redundancy cannot certify below the common-mode floor.\par\medskip
+$\rho$-gate: \textsc{Open / Closed / Insufficient-Evidence}.\par\medskip
+\hyperref[appendix:extended_proofs:cor_alpha]{\textbf{Certified operating-point consequence}}:\par
+$B_{\rm audit}+\bar\rho^{k-1}\bar\epsilon^k\le\alpha_\star$.\par
+Acceptance event $A_t^{(k,q)}(c)$.
+};
+\node[result] (transfer) at (11.8,-8.1) {
+\textbf{Shift, diagnosis and selection}\par\medskip
+\dagref{thm:restricted_tv}{Theorem}: restricted-TV transfer for $E\in\mathfrak F_Z$; the domain alarm is not an upper risk certificate.\par\medskip
+\dagref{thm:threshold_refusal}{Proposition}: responsibility concentration; controller regret $2L_{\rm ctrl}\epsilon_{\rm cal}$ under its declared model.\par\medskip
+\dagref{lem:sv_identity}{Lemma}: exact $\Delta=S+V$ identity.\par\medskip
+An identity does not identify an empirical mechanism. Logged replay is not real-world causal attribution.
+};
+\node[stress] (witnessTests) at (0,-16.5) {
+\textbf{Witness and audit stress}\par\medskip
+\dagref{fig:app-witnesses}{Figure}: force one conjunct to fail while others pass.\par\medskip
+\dagref{fig:app-audit-sampling}{Figure}: probe count, uncovered mass, coverage and audit envelope.\par\medskip
+\dagref{fig:app-theory-geometry}{Figure}: declared theory geometry.
+};
+\node[stress] (replayTests) at (5.9,-16.5) {
+\textbf{Dependence and replay stress}\par\medskip
+\dagref{fig:app_support_paths}{Figure}: provenance, tools, evidence and semantic overlap.\par\medskip
+\dagref{fig:app-injection}{Figure}: co-failure and common-mode stress.\par\medskip
+\dagref{fig:app_replay_modes}{Figure}: fresh drift tests brittleness; it does not retroactively invalidate a committed snapshot.
+};
+\node[stress] (transferTests) at (11.8,-16.5) {
+\textbf{Transfer, diagnosis and selection stress}\par\medskip
+\dagref{fig:robustness_atlas}{Figure}: certificate-measurable shift.\par\medskip
+\dagref{fig:app-responsibility}{Figure}: ranked responsibility and unresolved cases.\par\medskip
+\dagref{fig:r1_to_r4_combined}{Figure}: coverage and risk changes, without unsupported $S/V$ attribution.\par\medskip
+\hyperref[appendix:validation:controller]{Controller sensitivity}: calibration error is separate from broader cost/harm sensitivity.
+};
+\draw[derive] (objects.south)--(audit.north);
+\draw[derive] (structure.south)--(dependence.north);
+\draw[derive] (assumptions.south)--(transfer.north);
+\draw[derive] (assumptions.south)--++(0,-.42)-|(audit.north);
+\draw[derive] (audit.south)--(witnessTests.north);
+\draw[derive] (dependence.south)--(replayTests.north);
+\draw[derive] (transfer.south)--(transferTests.north);
+\draw[feedback] (witnessTests.west)--++(-.3,0)|-(audit.west);
+\draw[feedback] (replayTests.west)--++(-.3,0)|-(structure.west);
+\draw[feedback] (transferTests.east)--++(.3,0)|-(assumptions.east);
+\node[font=\sffamily\small,text=dagInk,align=center] at (8.6,-23.55) {Solid: formal dependency and test design. Dashed: empirical stress.\\Stress tests challenge applicability; they do not prove assumptions.};
+\end{tikzpicture}
+\endgroup

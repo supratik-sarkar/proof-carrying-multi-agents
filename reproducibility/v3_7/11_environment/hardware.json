@@ -1,0 +1,6 @@
+{
+  "scope": "Recovery host architecture only",
+  "architecture": "arm64",
+  "historical_device": "NOT_CAPTURED",
+  "accelerator_state": "NOT_PROBED"
+}

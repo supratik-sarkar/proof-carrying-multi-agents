@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da",
+  "candidate_text": "Yes.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "b1d8607cffa1e670b34816506bf99b82b2daf512ed6fce92456d3b97fff6ecdf",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "f1ff478c089011ebbd72ac1f6bf848b6",
+  "prompt_sha256": "ffd53623b62b05e12836b3b336403ea7ecd8ce92eb1a9425228556c340d9c072",
+  "provider": "gemini",
+  "provider_raw_sha256": "81de5b19644f666d524c694270faadeda168141855b7fdc26db8b49e108ba2b4",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:f1ff478c089011ebbd72ac1f6bf848b6",
+  "text": "Yes.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 939,
+    "total_tokens": 941
+  }
+}

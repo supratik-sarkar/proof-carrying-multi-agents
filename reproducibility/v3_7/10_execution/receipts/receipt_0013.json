@@ -1,0 +1,14 @@
+{
+  "schema": "PCG_MAS_V3_6_AUTONOMOUS_RESUME_AB_ACCEPTANCE",
+  "status": "PASS",
+  "READY": "YES",
+  "canonical_complete": 2075,
+  "canonical_remaining": 165,
+  "resume_A_count": 156,
+  "resume_B_count": 9,
+  "no_active_dev_process": true,
+  "provider_calls_during_install": 0,
+  "launch_mode": "ONE_VISIBLE_FOREGROUND_TERMINAL",
+  "autonomous_A_to_B": true,
+  "results_collection_autostart": false
+}

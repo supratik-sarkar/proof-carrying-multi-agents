@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "89b08bb271a4eeb97e2ade11d46aae2fb3921eb682f244be8550e05167c77a86",
+  "candidate_text": "Indianapolis, Indiana.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "84e32bf962064a4e3d15a5cf168a5ee386ad21d3ad9a095619a874011c0f0aa7",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5a8f0a01554299458435d539",
+  "prompt_sha256": "249be61c88639c0182e559032389d911fd27353a854f19ddad062bcb81fb2d15",
+  "provider": "gemini",
+  "provider_raw_sha256": "a54899a2ac3b8f699fc7b047e69eeaed853f3bc4d897def39f06162f62062a9a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a8f0a01554299458435d539",
+  "text": "Indianapolis, Indiana.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 946,
+    "total_tokens": 950
+  }
+}

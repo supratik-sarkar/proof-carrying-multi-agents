@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "44af6cb96f1f351484eed8df38dbbb876b2baf8b81b9e4ad88738465c4817e59",
+  "candidate_text": "\n\nSUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "8ce0b880abcd26eee29407545864e292260b89b918ffdeb558b5c3bdb414d460",
+  "example_id": "4fbc80c5784202df6072e373818c581f",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "f3a8362ddfdba8eeb256d04a695cea969b55a62feb7357fb922d118ea36f7529",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "4fbc80c5784202df6072e373818c581f",
+  "prompt_sha256": "9ad0be072ef172233d844419810e0f4428c1709c9ec2adcad1c8e519954f589c",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Rob Sheridan: Rob Sheridan -LRB- born October 11 , 1979 -RRB- is an American graphic designer , director , and photographer best known for his extensive work with the band Nine Inch Nails .\n\nClaim: Rob Sheridan was born in the late 1970s.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "73962211fabae02567787ecb94b8e7b5d3b20cdd2fc756ba8cbdc305d799bb84",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:4fbc80c5784202df6072e373818c581f",
+  "task_key": "091db781a39241f4c3942fa26a85c1847e36fe18957565fe9d66b17c69ee8240",
+  "text": "\n\nSUPPORTS",
+  "timestamp": "2026-09-15T09:39:47.322305+00:00",
+  "tokens_in": 163,
+  "tokens_out": 135,
+  "usage": {
+    "completion_tokens": 135,
+    "neurons": 25.695000000000004,
+    "prompt_tokens": 163,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 298
+  }
+}

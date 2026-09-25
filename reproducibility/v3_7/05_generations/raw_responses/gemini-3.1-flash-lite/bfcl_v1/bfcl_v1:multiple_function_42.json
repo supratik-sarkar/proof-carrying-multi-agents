@@ -1,0 +1,44 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ff658fd9d85870a408a48d6c509b4c4aab95ffac9433e48d8fba6552a88135dd",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:multiple_function_42",
+  "prompt_sha256": "ff658fd9d85870a408a48d6c509b4c4aab95ffac9433e48d8fba6552a88135dd",
+  "provider": "gemini",
+  "provider_raw_sha256": "9bcde737eb4606a166ddcae02813557a64e522b680bc9bc0ad91a4f86ae28557",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPImuqtaxrH6A5VdO9TVtjEjtXJS5oVlzE1iTGBAO7Um5NG4+6uIO7E1WDzZe3CNLhRMdHd2qfQshrBoSVdaE8PS7tW+u/c0VMjvJsAPmtwDfvipJe2D1qEcgIMz914Y3qIDA/3E+n4pWraA=="
+        }
+      },
+      "function": {
+        "arguments": "{\"quantity1\":2,\"temperature1\":300,\"quantity2\":3,\"temperature2\":400}",
+        "name": "calculate_final_temperature"
+      },
+      "id": "call_898203",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 36,
+    "prompt_tokens": 281,
+    "total_tokens": 317
+  }
+}

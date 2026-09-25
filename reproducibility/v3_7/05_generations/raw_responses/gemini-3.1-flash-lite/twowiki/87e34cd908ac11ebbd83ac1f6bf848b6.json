@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "cc63f1ddcce411ab32a85d413e05cd755f6e5926a6df151f24387ce0cd9e19a9",
+  "candidate_text": "Mouloud Feraoun.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "58fa785f4afc5b2bacaa106e9526ffb4a5417f324ce1ffd396f84701336d1d91",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "87e34cd908ac11ebbd83ac1f6bf848b6",
+  "prompt_sha256": "89913bc3380d6b6499d468e6d237cf686d2df20f52384d4905ce870608435ca9",
+  "provider": "gemini",
+  "provider_raw_sha256": "22f910830830056be8fc616f43d25f28e51f3af33ffce7ae03e867721cdc20d0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:87e34cd908ac11ebbd83ac1f6bf848b6",
+  "text": "Mouloud Feraoun.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "prompt_tokens": 817,
+    "total_tokens": 824
+  }
+}

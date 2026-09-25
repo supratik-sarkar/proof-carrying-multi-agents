@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "16e6d4039d374a5f1b3ab1ddfa56b1d02ce725f3cc10b7eb96be2454ca09e776",
+  "candidate_text": "Yes, it improves outcomes.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "084abffe2c8b7f3f2189441015656162fa7690101dda193abf4bfcc0cab98c5e",
+  "example_id": "26383908",
+  "finish": "stop",
+  "input_sha256": "033c2633911441628132614522e8d8be17e181d4e4179594069605b4da847972",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "26383908",
+  "prompt_sha256": "285473e2caa6a5b3c5ef60743aead66dbc94de55605000e0de03076b457aa8f7",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: METHOD: This quasi-experimental study was conducted using a crossover design among two groups of total 64 nursing students. Participants were asked to create concept maps (group A) or were evaluated with the traditional method of quiz (group B) for eight weeks and then take a cumulative test (no. 1). Consequently, subjects used the alternate method for another eight weeks and then take the second cumulative test (no. 2). RESULTS: The results of this study showed that the mean scores for cumulative tests (both no. 1 and no. 2) was higher in the group that engaged in map construction compared to the group that only take the quizzes. In addition, there was a gradual increase in the mean scores of developed map during the eight sessions of intervention.\n\nLong answer: In conclusion, concept mapping has a positive effect on students' academic achievement. These findings could provide valuable evidence for establishing concept mapping as a continuous teaching strategy for nursing students.\n\nQuestion: Does concept mapping enhance learning outcome of nursing students?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "9d8409aa273ad085c7fbed841033449f03fe8a8a6990334adb4a3be7cecc420c",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:26383908",
+  "task_key": "8868825e9bcc31702b7cfa0f4943da4b1ecf3ffd75f0ba2933b146e5ec1905f1",
+  "text": "Yes, it improves outcomes.",
+  "timestamp": "2026-09-14T10:37:07.374103+00:00",
+  "tokens_in": 324,
+  "tokens_out": 96,
+  "usage": {
+    "completion_tokens": 96,
+    "neurons": 16.85448455810547,
+    "prompt_tokens": 324,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 420
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "c90222feeab8a2461e19b646d33d234df2a5515b2671f5a73fabf0be5b3d4a08",
+  "candidate_text": "\n\nGerman and American",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "72a629f158f047132173ec53e83f1c4c42c1f6a8fe325303cf3fd14b9edc5cd4",
+  "example_id": "36f7185c0bdd11eba7f7acde48001122",
+  "finish": "stop",
+  "input_sha256": "308ecb0756e0d982b6d1ea59eb9a4e50d3c7d706722248d4ec789beb8e103cf4",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "36f7185c0bdd11eba7f7acde48001122",
+  "prompt_sha256": "ded897a33706d3286e4ab42add9daeb21502a7d4fc1e79a70d983ea69f1efcb2",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Count Your Blessings (1987 film)\": [\"Count Your Blessings is a 1987 Dutch comedy film directed by Pieter Verhoeff.\",\"The film was selected as the Dutch entry for the Best Foreign Language Film at the 60th Academy Awards, but was not accepted as a nominee.\"]\n\n[2] \"Count Your Blessings (1959 film)\": [\"Count Your Blessings is a 1959 drama film made by Metro-Goldwyn-Mayer.\",\"It was directed by Jean Negulesco, written and produced by Karl Tunberg, based on the 1951 novel \\\"The Blessing\\\" by Nancy Mitford.\",\"The music score was by Franz Waxman and the cinematography by George J. Folsey and Milton R. Krasner.\",\"The costume design was by Helen Rose.\",\"The film stars Deborah Kerr, Rossano Brazzi and Maurice Chevalier with Martin Stephens, Ronald Squire, Patricia Medina and Mona Washbourne.\",\"The film was shot in London and Paris.\"]\n\n[3] \"Franz Waxman\": [\"Franz Waxman (n\\u00e9 Wachsmann; 24 December 190624 February 1967) was a German and American composer of Jewish descent, known primarily for his work in the film music genre.\",\"His film scores include \\\"Bride of FrankensteinRebeccaSunset BoulevardA Place in the SunStalag 17Rear WindowPeyton\",\"PlaceThe Nun's Story\\\", and \\\"Taras Bulba\\\".\",\"He received twelve Academy Award nominations, and won two Oscars in consecutive years (for \\\"Sunset Boulevard\\\" and \\\"A Place in the Sun\\\").\",\"He also received a Golden Globe Award for the former film.\",\"Bernard Herrmann said that the score for \\\"Taras Bulba\\\" was \\\"the score of a lifetime.\\\"\",\"He also composed concert works, including the oratorio \\\"Joshua\\\" (1959), and \\\"The Song of Terezin\\\" (1965), a work for orchestra, chorus, and children's chorus based upon poetry written by children in the Theresienstadt concentration camp during World War II.\",\"Waxman also founded the Los Angeles Music Festival in 1947 with which he conducted a number of West Coast premieres by fellow film composers, and concert composers alike.\"]\n\n[4] \"Thomas Morse\": [\"Thomas Morse( born June 30, 1968) is an American composer of film and concert music.\"]\n\nQuestion: What nationality is the composer of film Count Your Blessings (1959 Film)?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "3f26e9718a704a95f3587b94b7ad1bc8685c1a9550fb920209277e5d28ef5996",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:36f7185c0bdd11eba7f7acde48001122",
+  "task_key": "35e52594a7c5e96ff9ff83b011ed39718aaf1972f4d1cde95168393ee40d8864",
+  "text": "\n\nGerman and American",
+  "timestamp": "2026-09-14T10:51:29.158005+00:00",
+  "tokens_in": 656,
+  "tokens_out": 95,
+  "usage": {
+    "completion_tokens": 95,
+    "neurons": 54.47272491455078,
+    "prompt_tokens": 656,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 751
+  }
+}

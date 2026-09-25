@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [
+      "Invalid value for parameter 'round_to': 4. Expected one of ['', 2]."
+    ],
+    "error_type": "value_error:others",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b07dbfffa5aa3e2dea3be40739de6c6983019cfa88278036151bdd0eea18c8cf",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:multiple_function_123",
+  "prompt_sha256": "b07dbfffa5aa3e2dea3be40739de6c6983019cfa88278036151bdd0eea18c8cf",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "5b8b81625d38e2e7af479273c2aa187d7d98df2ab51a8e98d4008722d9498abf",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"favorable_outcomes\":4,\"round_to\":4,\"total_outcomes\":52}",
+        "name": "calculate_probability"
+      },
+      "id": "call_1789655655884",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 23,
+    "neurons": 28.090002059936523,
+    "prompt_tokens": 1072,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1095
+  }
+}

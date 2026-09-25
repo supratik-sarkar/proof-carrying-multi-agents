@@ -1,0 +1,50 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b3e7dfd0932b194455b579aa3ea2e9a9d22a8b53e22bf8c9e0e38fb074c100dd",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_multiple_function_12",
+  "prompt_sha256": "b3e7dfd0932b194455b579aa3ea2e9a9d22a8b53e22bf8c9e0e38fb074c100dd",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "1ced1a282a544554d51a2e45068e7778e1daebb6ea7c83d582165796d20490ff",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"distance\": 3, \"electric_field\": 5}",
+        "name": "calculate_voltage_difference"
+      },
+      "id": "call_1f5a0b1c71a6494fbccd306d",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"current\": 4, \"distance\": 2}",
+        "name": "calculate_magnetic_field"
+      },
+      "id": "call_e2912ace1ebf49eb9d3a0f69",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 172,
+    "neurons": 7.672727108001709,
+    "prompt_tokens": 328,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 500
+  }
+}

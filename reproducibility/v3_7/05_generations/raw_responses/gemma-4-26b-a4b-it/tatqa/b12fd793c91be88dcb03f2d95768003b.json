@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "4d1293e6061090f3dc4092a39b64cba3024f02f2e04f08aff39ed0950db04424",
+  "candidate_text": "Release of tax valuation allowance.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "ee9d5ea23e6d9e8a9102e8126d8f3fb4c89e8ff44d20514dbb5716a04bfbe7bc",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "b12fd793c91be88dcb03f2d95768003b",
+  "prompt_sha256": "6b440d6987cbcfce1b66a7e313d7d6ce176475071a024ccd3e9243f6949f42bd",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "d54be9ded88c2f652b1ccee221754d8f455ec0022476a87c79cb23fe4666612f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:b12fd793c91be88dcb03f2d95768003b",
+  "text": "Release of tax valuation allowance.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 7.927272319793701,
+    "prompt_tokens": 851,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 858
+  }
+}

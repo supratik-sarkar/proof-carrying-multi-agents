@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "de3e424f819c37fecbae95f0ce858555671fe83f5a2a3a22eb127cd54198e901",
+  "candidate_text": "Württemberg.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "1210f24f1652d6bf746344fc21e661928bced985bb31b17d9f3779179d74ca26",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "b3110a5e0bda11eba7f7acde48001122",
+  "prompt_sha256": "021973031a4a772ea0fddbd52a8d5bda073e93da4cb28bf6a31b0fcdbe56ca16",
+  "provider": "gemini",
+  "provider_raw_sha256": "7e2dca45cf547c35615a7daba5b0a2dd15d04ad56e3f8ec08a62a4b88dc78a10",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:b3110a5e0bda11eba7f7acde48001122",
+  "text": "Württemberg.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 475,
+    "total_tokens": 477
+  }
+}

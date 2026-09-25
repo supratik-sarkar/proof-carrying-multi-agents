@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "The Machine to Kill Bad People": ["The Machine to Kill Bad People( Italian: La Macchina ammazzacattivi) is a 1952 Italian fantasy comedy film directed by Roberto Rossellini and featuring Marilyn Buferd, William Tubbs and Clara Bindi.","It is part of the tradition of neorealism of the post-war years.","Having helped neorealism gain international recognition with his 1945 work\" Rome, Open City\", Rossellini was trying to branch out into different styles."]
+
+[2] "Luigi Torchi": ["Luigi Torchi invented the first direct multiplication machine in 1834.","This was also the second key- driven machine in the world, following that of James White( 1822).","Very little is known about the inventor and the machine.","We only know that he was a carpenter; his machine was awarded of a gold metal from the Imperial- regio istituto lombardo di scienze, lettere e arti in Milan in 1834.","A document of such occasion provides the known details of the machine, where a second document shows a drawing of the machine itself.","However, no detailed documents about how it worked are known to exist.","The machine was exhibited in Brera between 1834 and 1837; it was later found by Giovanni Schiaparelli in bad conditions.","After that, are not known further information about the machine."]
+
+[3] "Poker in Bed": ["La signora gioca bene a scopa?, internationally released as Poker in Bed, is a 1974 commedia sexy all'italiana directed by Giuliano Carnimeo."]
+
+[4] "Charles Redheffer": ["Charles Redheffer was an American inventor who claimed to have invented a perpetual motion machine.","First appearing in Philadelphia, Redheffer exhibited his machine to the public, charging high prices for viewing.","When he applied to the government for more money, a group of inspectors were sent to examine the machine.","It was discovered the machine was actually powered by a device Redheffer claimed was powered by the machine.","Redheffer moved to New York City and set up a similar scam after rebuilding his machine.","However, an engineer detected that it was a fake by listening to its unsteady motions at an exhibition.","He discovered that the machine was operated by a man using a crank in a room on the floor above.","Redheffer returned to Philadelphia.","He later claimed to have created another machine, but refused to demonstrate it to anyone.","He managed to get a patent for his machine in 1820, but after this his fate is unknown."]
+
+Question: Which film has the director died earlier, Poker In Bed or The Machine To Kill Bad People?
+
+Answer:

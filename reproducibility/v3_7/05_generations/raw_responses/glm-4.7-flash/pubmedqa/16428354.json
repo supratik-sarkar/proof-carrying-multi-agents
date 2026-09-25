@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "e3910dd0d5da49cc0e546e143b8723175a60b16313dec8ffa785673fcbe4c896",
+  "candidate_text": "Rural residence has a higher risk of mortality.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "3aff8960310ad3e8f82ca111bd4912e5071501a9d5c9a4be35a585dcc7d870ff",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "16428354",
+  "prompt_sha256": "85236af431dd74086dd093f08673b210d7758205d20d7a305bfd6c9b1c8ba399",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "7f2ae0bd542827db9cbb1ef697732a737e99a62270b2beb3854ef54a3438c9b0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:16428354",
+  "text": "Rural residence has a higher risk of mortality.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 11,
+    "neurons": 2.8644,
+    "prompt_tokens": 448,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 459
+  }
+}

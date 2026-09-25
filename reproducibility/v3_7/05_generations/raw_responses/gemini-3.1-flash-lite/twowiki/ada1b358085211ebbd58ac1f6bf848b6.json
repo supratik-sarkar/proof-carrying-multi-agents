@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "abdff2cfbd0b880778ae65cc196d3d8179b4df59110cbc1cf0d120be665596fe",
+  "candidate_text": "Fleetwood Sheppard.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "0f82965d5eeac42b01ecbb27a8ad54d3277940123e3d3cf2386b7cf7dbe8b0b8",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "ada1b358085211ebbd58ac1f6bf848b6",
+  "prompt_sha256": "24b92e821a68600f62de89adede1d6d64b603e691b9c4419d779d284f94ebb75",
+  "provider": "gemini",
+  "provider_raw_sha256": "57d5bfe3cfe3ba22702fd87b79d8bbe30f7ee529a71430c4326a29f76068d3ee",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:ada1b358085211ebbd58ac1f6bf848b6",
+  "text": "Fleetwood Sheppard.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 1305,
+    "total_tokens": 1309
+  }
+}

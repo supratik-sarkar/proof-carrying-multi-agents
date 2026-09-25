@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "8e34fa7f5ba9a081018fe1d9f8611632f1254e00d3d32f78d8d26e80a484086b",
+  "example_id": "07608521542737c3c42a0604b590c1fd",
+  "finish": "stop",
+  "input_sha256": "800b757400a4006f10f8063428eddb245bf9ffc8f8dfe31c100711c7090892a7",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "07608521542737c3c42a0604b590c1fd",
+  "prompt_sha256": "c83c61bdeb54224a0810cfce457a44edc3397799fbcc5d482d564e45a99c8ba0",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] John Dolmayan: Dolmayan is also the drummer for the band Indicator and former drummer for Scars on Broadway .\n\nClaim: John Dolmayan is a musician.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "91f67dcd85649f5345e868666659e344c8e748da5246a543f0f2fc38ccdad3d4",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:07608521542737c3c42a0604b590c1fd",
+  "task_key": "078448925690e058e4dd37f361d8642e0ec89bf686bcacee5a25dd6df850d343",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:30.655367+00:00",
+  "tokens_in": 173,
+  "tokens_out": 67,
+  "usage": {
+    "completion_tokens": 67,
+    "neurons": 10.072694778442383,
+    "prompt_tokens": 173,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 240
+  }
+}

@@ -1,0 +1,72 @@
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.21\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.12\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.31\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.15\dimexpr\linewidth-8\tabcolsep\relax}>{\raggedright\arraybackslash}p{0.21\dimexpr\linewidth-8\tabcolsep\relax}@{}}
+\caption{\textbf{Notation, part II: certifying search, redundancy, empirical endpoints, and controller quantities.} Continues Table~\ref{tab:notation-core}.}\label{tab:notation-search-metrics}\\
+\toprule
+Symbol & Type / range & Meaning & First use & Principal use \\
+\midrule
+\endfirsthead
+\multicolumn{5}{l}{\footnotesize Notation (continued)} \\
+\toprule
+Symbol & Type / range & Meaning & First use & Principal use \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\footnotesize Continued on next page} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multicolumn{5}{l}{\emph{4. Certifying evidence search}}\\
+$g$ & task-family index & grounding dataset / task family & Sec.~\ref{sec:method} & checker calibration \\
+$h_g(c)$ & hypothesis map & frozen task adapter mapping claim/output $c$ to checker hypothesis & Sec.~\ref{sec:method} & Eq.~\eqref{eq:certifying_search} \\
+$K$ & integer budget & predeclared candidate-window search budget & Sec.~\ref{sec:method} & $\mathcal W_K(S_0)$ \\
+$\mathcal W_K(S_0)$ & finite set & candidate evidence windows enumerated from $S_0$ under budget $K$ & Eq.~\eqref{eq:certifying_search} & certifying search \\
+$w$ & evidence window & one candidate evidence window & Eq.~\eqref{eq:certifying_search} & NLI scoring \\
+$p_E,p_C,p_N$ & $[0,1]$ & entailment, contradiction, and neutral probabilities from the pinned NLI checker & Eq.~\eqref{eq:certifying_search} & semantic rule \\
+$m(w,h)$ & $[-1,1]$ & entailment margin $p_E-\max\{p_C,p_N\}$ & Eq.~\eqref{eq:certifying_search} & search aggregation \\
+$s_g(c,S_0)$ & $[-1,1]$ & maximum certifying-support margin over candidate windows & Eq.~\eqref{eq:certifying_search} & semantic pass criterion \\
+$c_g(c,S_0)$ & $[0,1]$ & maximum contradiction probability over candidate windows & Eq.~\eqref{eq:certifying_search} & contradiction criterion \\
+$\tau_g$ & threshold & frozen semantic-support threshold for task family $g$ & Sec.~\ref{sec:method} & $T_\vdash$ \\
+$\kappa_g$ & threshold & frozen contradiction ceiling for task family $g$ & Sec.~\ref{sec:method} & $T_\vdash$ \\
+$T_\vdash(c,S')$ & ternary state & semantic-support decision on evidence subset $S'$ & Eq.~\eqref{eq:min_certifying_subset} & minimal certifying subset \\
+\midrule
+\multicolumn{5}{l}{\emph{5. Redundancy and quorum acceptance}}\\
+$k$ & positive integer & number of redundant certificate branches & Eq.~\eqref{eq:redundant_rule} & redundancy theory / cost \\
+$q$ & integer, $1\!:\!k$ & quorum threshold: minimum passing branches required & Eq.~\eqref{eq:redundant_rule} & quorum rules \\
+$Z_i$ & certificate & certificate produced by redundant branch $i$ & Eq.~\eqref{eq:redundant_rule} & $A_t^{(k,q)}$ \\
+$A_t^{(k,q)}(c)$ & $\{0,1\}$ & $q$-of-$k$ redundant acceptance indicator for claim $c$ & Eq.~\eqref{eq:redundant_rule} & redundancy envelope \\
+$U_{\rm joint}(k,\delta)$ & probability bound & direct upper confidence bound for the observed joint-failure configuration & Sec.~\ref{sec:main_results:redundancy} & fail-closed dependence gate \\
+\midrule
+\multicolumn{5}{l}{\emph{6. Evaluation endpoints and selectivity--verification decomposition}}\\
+$s$ & system index & evaluated system / comparator & Sec.~\ref{sec:method} & $C_s,R_s,Q_s$ \\
+$N$ & count & candidate-population size in the evaluation unit & Sec.~\ref{sec:method} & coverage / risk \\
+$N_{\rm acc}$ & count & number of accepted examples & Sec.~\ref{sec:method} & $C_s,R_s$ \\
+$N_{\rm harmful,acc}$ & count & harmful examples among accepted outputs & Sec.~\ref{sec:method} & $R_s,Q_s$ \\
+$C_s$ & $[0,1]$ & retained coverage $N_{\rm acc}/N$ & Sec.~\ref{sec:method} & headline endpoint \\
+$R_s$ & $[0,1]$ or undefined & conditional accepted risk $N_{\rm harmful,acc}/N_{\rm acc}$ & Sec.~\ref{sec:method} & headline endpoint \\
+$Q_s$ & $[0,1]$ & candidate-population harmful acceptance $N_{\rm harmful,acc}/N$ & Sec.~\ref{sec:method} & headline endpoint \\
+$A$ & index set & PCG answered / accepted set used in the S/V decomposition & Eq.~\eqref{eq:sv_main} & Lem.~\ref{lem:sv_identity} \\
+$\ell_{nc},\ell_{pcg}$ & loss / harm labels & per-example loss under NoCert and PCG-MAS & Eq.~\eqref{eq:sv_main} & selectivity / verification \\
+$\bar\ell_{nc}^{N}$ & scalar & NoCert mean loss over the full candidate population & Eq.~\eqref{eq:sv_main} & selection term \\
+$\bar\ell_{nc}^{A},\bar\ell_{pcg}^{A}$ & scalars & NoCert / PCG mean loss restricted to PCG's answered set & Eq.~\eqref{eq:sv_main} & S/V decomposition \\
+$\Delta$ & scalar effect & total NoCert-to-PCG change in loss / accepted-risk target & Eq.~\eqref{eq:sv_main} & $\Delta=S+V$ \\
+$S$ or $\mathsf S$ (metric context) & scalar & selection component of the total effect; distinct from certificate evidence set $S$ & Eq.~\eqref{eq:sv_main} & Eq.~\eqref{eq:sv_exact} \\
+$V$ or $\mathsf V$ & scalar & verification component of the total effect & Eq.~\eqref{eq:sv_main} & Eq.~\eqref{eq:sv_exact} \\
+$\alpha=|A|/N$ (coverage context) & $[0,1]$ & answered-set fraction used in the S/V bound & Eq.~\eqref{eq:sv_identity} & Lem.~\ref{lem:sv_identity} \\
+\midrule
+\multicolumn{5}{l}{\emph{7. Secondary controller quantities}}\\
+$Q(a;b,\mathcal Z)$ & scalar score & declared controller score for action $a$ given state $b$ and certificate set $\mathcal Z$ & Eq.~\eqref{eq:cost} & controller sensitivity \\
+$a$ & action & candidate controller action (e.g., answer / refuse / route) & Eq.~\eqref{eq:cost} & risk control \\
+$b$ & state / budget context & controller-side state or budget context entering $r(b,\mathcal Z)$ & Eq.~\eqref{eq:cost} & calibrated control \\
+$\mathcal Z$ & set & certificate collection supplied to the controller & Eq.~\eqref{eq:cost} & calibration / control \\
+$\bar C(a)$ & nonnegative cost & declared non-harm operating cost of action $a$ & Eq.~\eqref{eq:cost} & action choice \\
+$\lambda$ & nonnegative weight & relative weight on harm risk in the controller objective & Eq.~\eqref{eq:cost} & sensitivity analysis \\
+$L_{\max}$ & nonnegative scale & maximum harm-loss scale in the controller objective & Eq.~\eqref{eq:cost} & regret bound \\
+$\eta_a$ & $[0,1]$ & action-specific residual-risk multiplier & Eq.~\eqref{eq:cost} & action score \\
+$r(b,\mathcal Z)$ & $[0,1]$ & declared posterior false-accept risk used by the controller & Eq.~\eqref{eq:cost} & calibration / regret \\
+
+\end{longtable}
+\endgroup

@@ -1,0 +1,13 @@
+{
+  "authority": "14_artifacts/manuscript_stack/data/cell_metrics.csv",
+  "count": 7,
+  "methods": [
+    "AlignScore",
+    "CMVO",
+    "MiniCheck",
+    "NoCert",
+    "PCG-MAS",
+    "QAFactEval",
+    "SignalMatchedFusion"
+  ]
+}

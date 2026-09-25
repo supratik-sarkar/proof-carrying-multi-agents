@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "7d0049c9843f44e49f11cf970905ce8893ec91fc32cba8ce83b37190731b30b9",
+  "candidate_text": "$466 k decrease.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "3dc0c2335bf3a789d899a0b6b94d4006cb5da6af50d8c9f94e09a3b9ceaa640c",
+  "example_id": "5d6a71d31093d7854e91f6525e49a1f4",
+  "finish": "stop",
+  "input_sha256": "43bc5e8e3b2aab0e625f183fdf3c71bcc653b648ef123daa8411e068acb9ffbd",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5d6a71d31093d7854e91f6525e49a1f4",
+  "prompt_sha256": "a63261d5606189a9b2dd2310376014ef56ec903b9b19eba231eec5d9a2d55819",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 3: The Company accounts for deferred taxes under ASC Topic 740, “Income Taxes” (“ASC 740”) which involves weighing positive and negative evidence concerning the realizability of the Company’s deferred tax assets in each jurisdiction. The Company evaluated its ability to realize the benefit of its net deferred tax assets and weighed all available positive and negative evidence both objective and subjective in nature. In determining the need for a valuation allowance, the weight given to positive and negative evidence is commensurate with the extent to which the evidence may be objectively verified. Consideration was given to negative evidence such as: the duration and severity of losses in prior years, high seasonal revenue concentrations, increasing competitive pressures, and a challenging retail environment. Realization of the Company’s net deferred tax assets is dependent upon its generation of sufficient taxable income in future years in appropriate tax jurisdictions to obtain benefit from the reversal of temporary differences, net operating loss carryforwards and tax credit carryforwards. The amount of net deferred tax assets considered realizable is subject to adjustment in future periods if estimates of future taxable income change.\n\n[2] TAT-QA 4: The Company recorded a valuation allowance to reduce its deferred tax assets to the net amount that the Company believes is more likely than not to be realized. As of December 31, 2019, the Company has a valuation allowance of $191.7 million against its U.S. deferred tax assets and a valuation allowance of $52.9 million against certain of its foreign deferred tax assets that the Company is not expected to realize. The Company will continue to assess the realizability of its deferred tax assets in each of the applicable jurisdictions going forward.\n\n[3] TAT-QA table: row 0:  | December 31, | \nrow 1:  | 2019 | 2018\nrow 2: Deferred tax assets: |  | \nrow 3: Net operating losses and credits | $113,475 | $61,494\nrow 4: Fixed assets and intangible assets | 61,932 | 55,476\nrow 5: Accruals and reserves | 75,133 | 53,818\nrow 6: Stock-based compensation | 8,615 | 9,494\nrow 7: Inventory | 429 | 911\nrow 8: Other | 5,287 | 4,806\nrow 9: Total deferred tax assets | 264,871 | 185,999\nrow 10: Less: valuation allowance | (244,581) | (181,122)\nrow 11: Deferred tax assets, net of valuation allowance | 20,290 | 4,877\nrow 12: Deferred tax liabilities: |  | \nrow 13: Accruals and reserves | (15,525) | —\nrow 14: Other | (914) | (560)\nrow 15: Total deferred tax liabilities | (16,439) | (560)\nrow 16: Net deferred tax assets | $3,851 | $4,317\n\n[4] TAT-QA 2: The tax effects of temporary differences that give rise to significant portions of the deferred tax assets were as follows (in thousands):\n\nQuestion: What is the difference in net deferred tax assets between 2018 and 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "759ecd2e90afc1fd827a9a85c0f8a683015c784eba16567f585c78be434f0679",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:5d6a71d31093d7854e91f6525e49a1f4",
+  "task_key": "9855f29c0bff8ec337194bca2a70ac363711ffe8253e3a6394c767db0077c949",
+  "text": "$466 k decrease.",
+  "timestamp": "2026-09-14T10:33:49.741165+00:00",
+  "tokens_in": 805,
+  "tokens_out": 154,
+  "usage": {
+    "completion_tokens": 154,
+    "neurons": 36.113487243652344,
+    "prompt_tokens": 805,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 959
+  }
+}

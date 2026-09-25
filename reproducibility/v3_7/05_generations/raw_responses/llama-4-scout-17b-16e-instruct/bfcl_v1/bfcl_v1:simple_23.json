@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "6cb1243b03ee2615b70ac4a0f37d0a2c1e964c7c30377151d9186e7b1c222ff2",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:simple_23",
+  "prompt_sha256": "6cb1243b03ee2615b70ac4a0f37d0a2c1e964c7c30377151d9186e7b1c222ff2",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "30354816635db5deda5d9cb523ba7878017ba27eeae7b2ceb91e4a1d178ca7ce",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"number\":60,\"return_type\":\"dictionary\"}",
+        "name": "prime_factorize"
+      },
+      "id": "call_1789655649854",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 14,
+    "neurons": 18.41090965270996,
+    "prompt_tokens": 706,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 720
+  }
+}

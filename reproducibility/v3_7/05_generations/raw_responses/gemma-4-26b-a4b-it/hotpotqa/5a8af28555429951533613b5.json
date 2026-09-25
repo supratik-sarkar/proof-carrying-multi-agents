@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "61bd90052f40b2a01be966fce13f3538d0dacb2b85f26ed73fe25ddc776a5461",
+  "candidate_text": "Albert Park",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "102965208a15bcd1e6d582b092cfa4d258fc4e8be13c5e253da6cd2afb28b81b",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5a8af28555429951533613b5",
+  "prompt_sha256": "e2c586661401f4e923af8f06852b2fa7e56784d34377a3de9bd828a98f4aa7da",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "db8dac2184e905360275149d24f8be628dad3dabbadd414f62e29019e9e287de",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a8af28555429951533613b5",
+  "text": "Albert Park",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 6.581818103790283,
+    "prompt_tokens": 715,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 718
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da",
+  "candidate_text": "Yes.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "672fb94f4ab2d779266cb1698145dbff408f6055b2e1b9fad0eae2bf96669374",
+  "example_id": "5adeb95d5542992fa25da827",
+  "finish": "stop",
+  "input_sha256": "4149d102064816eb4b7378b61da93d86a4df4871b92bb221858a71949593b5d5",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5adeb95d5542992fa25da827",
+  "prompt_sha256": "8fccbd8f836f22529fad21e2b0d25bd8357dd56179b15ca04db303dda52676d5",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Maianthemum: Maianthemum (Latin \"Māia \" \"May\" and Greek \"ánthemon \" \"flower\"; including former \"Smilacina\") is a genus of rhizomatous, herbaceous, perennial flowering plants, native to the understory of woodlands.  It is widespread across much of North America, Europe and Asia.\n\n[2] Chlidanthus: Chlidanthus is a genus that consists of 10 species of tender bulbs from tropical South America, mostly natives to the Andes.  The botanical name comes from the Greek, meaning \"delicate flower\".  The plants have large spherical bulbs with gray-green, strap-shaped leaves 30cm long arising from the base.  In late spring to early summer, clusters of 3-4 large, strong citrus-scented fragrant, funnel-shaped flowers 10-13cm long held terminally on stalks 25cm high, colored in yellow, pink or red.\n\nQuestion: Are Chlidanthus and Maianthemum both flowering plants?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "f34e2da92f9c7eac0952e50fa82ebbaefe610d287d26b6bb2f1c402732056cb3",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5adeb95d5542992fa25da827",
+  "task_key": "5241d06b26dc0fc9905516bc7cbb38a9064ffac7c3bcef28778a29db68afa506",
+  "text": "Yes.",
+  "timestamp": "2026-09-14T10:32:11.026909+00:00",
+  "tokens_in": 327,
+  "tokens_out": 70,
+  "usage": {
+    "completion_tokens": 70,
+    "neurons": 15.17721176147461,
+    "prompt_tokens": 327,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 397
+  }
+}

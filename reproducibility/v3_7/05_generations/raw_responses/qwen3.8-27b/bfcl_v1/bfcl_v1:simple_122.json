@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [
+      "Invalid value for parameter 'table': [10, 20, 30, 40]. Expected one of [[[10, 20], [30, 40]]]."
+    ],
+    "error_type": "value_error:list/tuple",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b59fcde8595fa206f150602380eed7faea57ab0136877b3cc21b7d2ada851ed8",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:simple_122",
+  "prompt_sha256": "b59fcde8595fa206f150602380eed7faea57ab0136877b3cc21b7d2ada851ed8",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "ae75f1804eb2d06d95a16847c86a3bcf7f7dbab136404b1043b19a495e4cb7a4",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"table\": [10, 20, 30, 40], \"alpha\": 0.05}",
+        "name": "chi_squared_test"
+      },
+      "id": "chatcmpl-tool-9a3930e4b26076a5",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 494,
+    "neurons": 160.39999389648438,
+    "prompt_tokens": 408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 902
+  }
+}

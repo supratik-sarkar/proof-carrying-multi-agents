@@ -1,0 +1,8 @@
+Method,Token multiplier,Mean risk
+NoCert,1.00x,17.2%
+MiniCheck,1.12x,12.4%
+AlignScore,1.16x,11.8%
+QAFactEval,1.21x,12.6%
+CMVO,1.30x,12.0%
+SignalMatchedFusion,1.39x,11.1%
+PCG-MAS,1.56x,9.1%

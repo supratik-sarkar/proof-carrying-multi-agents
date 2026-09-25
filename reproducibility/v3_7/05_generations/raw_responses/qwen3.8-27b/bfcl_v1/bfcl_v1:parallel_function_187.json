@@ -1,0 +1,58 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "9461614814a8743c0973deb4bf5aa05dbe27a6f8d096affc6f20ec0809d97bbb",
+  "candidate_text": "I'll retrieve the detailed air quality data for New York City for all three days. Let me make these requests now.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "47b97783ec5233da0aea729aa887499a6b64eb875d4037f6043d19521f491006",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_function_187",
+  "prompt_sha256": "47b97783ec5233da0aea729aa887499a6b64eb875d4037f6043d19521f491006",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "93473cf812cf5388092e457eb8c5531139b5a49ea3def1fa8642ebb36991bf52",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll retrieve the detailed air quality data for New York City for all three days. Let me make these requests now.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York City\", \"historical\": \"2023-05-05\", \"detail\": true}",
+        "name": "get_air_quality"
+      },
+      "id": "chatcmpl-tool-9b5581f250e7fda1",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York City\", \"historical\": \"2023-05-04\", \"detail\": true}",
+        "name": "get_air_quality"
+      },
+      "id": "chatcmpl-tool-a9c8a9f855914c4e",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York City\", \"historical\": \"2023-05-03\", \"detail\": true}",
+        "name": "get_air_quality"
+      },
+      "id": "chatcmpl-tool-b69c1271cff27307",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 323,
+    "neurons": 113.02726745605469,
+    "prompt_tokens": 466,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 789
+  }
+}

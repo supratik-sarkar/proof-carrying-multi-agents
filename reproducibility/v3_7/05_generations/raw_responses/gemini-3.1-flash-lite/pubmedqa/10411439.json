@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "be39218c9a5e37a2e4f2aec409c867dda093fc1952ec0638e361767168c65f1a",
+  "candidate_text": "Yes, it causes ischemia.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "5ca45bf01486a6f004bdbd653f74abfaa89e2f1336af2635b81285b88391daf0",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "10411439",
+  "prompt_sha256": "17db1944595b4f8202eaba2fc757914b509a33030b5716f4cfaf1c880fd03126",
+  "provider": "gemini",
+  "provider_raw_sha256": "ce4cccb3c7eb3efa5064901a50da5f6cca6455d62073832379f5a70f0ea6f1eb",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:10411439",
+  "text": "Yes, it causes ischemia.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 344,
+    "total_tokens": 350
+  }
+}

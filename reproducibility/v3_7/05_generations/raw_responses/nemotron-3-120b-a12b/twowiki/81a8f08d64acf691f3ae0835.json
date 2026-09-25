@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "ddeed0b00735782d53d850703bf6bdb0af3bdaa1d3334e24a54db35ad0d9a241",
+  "candidate_text": "\nBenjamin Nash",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "0c180f21b68802b31c60f9a8e82060a09ef15f435a49f28f213257dcfc8be1bb",
+  "example_id": "0926667308d011ebbd95ac1f6bf848b6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "c75d5b265ce1342d32f210c44552b63b246bf4a4c6c23a8689fdf1fc4cc6dbed",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "0926667308d011ebbd95ac1f6bf848b6",
+  "prompt_sha256": "a4d2ec1b58a703269e025271ab64ba14bba0504e49577e6323ce433121de2e06",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Eliza Ritchie\": [\"Dr, Eliza Ritchie( 20 May 1856 \\u2013 5 September 1933) was a prominent suffragist in Nova Scotia, Canada.\"]\n\n[2] \"Rusty Glover\": [\"Benjamin Nash\\\" Rusty\\\" Glover III( born April 17, 1966) was a Republican candidate for Alabama's Lieutenant Governor in the 2018 election cycle and member of the Alabama Senate, representing the 34th District from 2006 to 2018.\",\"Previously, he was a member of the Alabama House of Representatives representing the 102nd District from 2002 through 2006.\"]\n\n[3] \"Benjamin Nash\": [\"Benjamin Nash( 5 March 1829 \\u2013 19 April 1890) was a tailor and politician in colonial South Australia.\",\"He was born in Birmingham and emigrated to Melbourne in 1857 but in July, after only a few months in the gold diggings, moved to Adelaide and set up a tailoring business in Rundle Street.\",\"He was prominent in the Voluntary Militia, and from 1858 to 1865 served with the West Adelaide Company under Colonel George Mayo.\",\"In 1859 he successfully tendered for the supply of the first uniforms for the Volunteer Military Force.\",\"In 1878 he was elected to the Walkerville District Council, and became its chairman.\",\"He was elected to the seat of West Torrens and sat from April 1887 to April 1890.\",\"He failed in his bid to be reelected, and died of kidney failure ten days later.\",\"He was buried in West Terrace Cemetery's Catholic section.\",\"He had converted to that faith around two years before his death.\",\"He made a gift of an organ to St. Laurence's, his small local church.\"]\n\n[4] \"Henry Moore (cricketer)\": [\"Henry Walter Moore( 1849 \\u2013 20 August 1916) was an English- born first- class cricketer who spent most of his life in New Zealand.\"]\n\nQuestion: Who was born first out of Eliza Ritchie and Benjamin Nash?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b893e91c699661013fd5af1220c1e63bdfa1a75923f582181078099b3763a5d4",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:0926667308d011ebbd95ac1f6bf848b6",
+  "task_key": "64851a44a5375b6aee41eb97f8860931d54a12226c8377d44dcff0448f68b6d0",
+  "text": "\nBenjamin Nash",
+  "timestamp": "2026-09-15T09:36:45.686641+00:00",
+  "tokens_in": 568,
+  "tokens_out": 87,
+  "usage": {
+    "completion_tokens": 87,
+    "neurons": 37.391999999999996,
+    "prompt_tokens": 568,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 655
+  }
+}

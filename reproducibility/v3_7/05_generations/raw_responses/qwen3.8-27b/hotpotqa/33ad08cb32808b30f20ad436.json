@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "6766c44a3a2158392437025e5dc3ed38f17fe3029e55d1df6cdcc94577441f84",
+  "candidate_text": "\n\nGardnerville, Nevada",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "262d16b447c785b9d925d6ac7dbf744a9576a9f9c3de0974464e6871386cc080",
+  "example_id": "5a7125b95542994082a3e5d5",
+  "finish": "stop",
+  "input_sha256": "da3165f360d6dcb657a47e3f58f6fb0c087186e9425e1bdf6ce61459e80db7a8",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "5a7125b95542994082a3e5d5",
+  "prompt_sha256": "f76d497498e11a47feea03406437c4d91a13edd853663f810773dc01a5b0621b",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Gardnerville Ranchos, Nevada: Gardnerville Ranchos is a census-designated place (CDP) in Douglas County, Nevada, United States.  As of the 2010 census, the CDP population was 11,312.  The area is the namesake for the Gardnerville Ranchos Micropolitan Statistical area which includes other areas of Douglas County.\n\n[2] Minden, Nevada: Minden is an unincorporated town in Douglas County, Nevada, United States.  The population was 3,001 at the 2010 census.  It is the county seat of Douglas County and is adjacent to the town of Gardnerville.  It was founded in 1906 by Heinrich Friedrich Dangberg Jr., who named it after the town of Minden, in the German state of North Rhine-Westphalia, which was near his father's birthplace.  Minden was founded on company land of the Dangberg Home Ranch and Dangberg commissioned most of the town's early buildings.  Minden has had a post office since 1906.\n\n[3] Minden, New York: Minden is a town in Montgomery County, New York, United States.  The population was 4,297 at the 2010 census.  The town is located at the western edge of the county and south of the Mohawk River, which forms its northern border.  It has possessed a post office from 1802 to 1903.\n\n[4] Gardnerville, Nevada: Gardnerville is an unincorporated town in Douglas County, Nevada, United States, adjacent to the county seat of Minden.  The population was 5,656 at the 2010 census.\n\nQuestion: Which town has a greater population as of the 2010 census, Minden, Nevada or Gardnerville, Nevada?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "94bab224f70146747ef03211901fe4a433b26b8511e19b287d4c754a5c43c1e1",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a7125b95542994082a3e5d5",
+  "task_key": "53846004a228fac7717dbfdf82d36b01b4421e9acb6f7a6f0ce0c0ef3a84be3a",
+  "text": "\n\nGardnerville, Nevada",
+  "timestamp": "2026-09-14T10:45:49.789833+00:00",
+  "tokens_in": 511,
+  "tokens_out": 90,
+  "usage": {
+    "completion_tokens": 90,
+    "neurons": 47.08636474609375,
+    "prompt_tokens": 511,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 601
+  }
+}

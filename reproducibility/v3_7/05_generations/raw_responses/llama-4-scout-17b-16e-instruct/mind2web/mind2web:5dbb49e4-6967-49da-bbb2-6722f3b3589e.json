@@ -1,0 +1,31 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "correct": false
+  },
+  "candidate_sha256": "6184687dc9a8de933ef042afb4277fb92bbc15674c71cd4a8e329779a8c63958",
+  "candidate_text": "{\"choice\":\"C2\",\"operation\":\"CLICK|TYPE|SELECT\",\"value\":\"Dallas\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "0b9e511a9241f23ab4181e823541648356c749ca9eee2e5300202bf769fc6d26",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "mind2web:5dbb49e4-6967-49da-bbb2-6722f3b3589e",
+  "prompt_sha256": "0b9e511a9241f23ab4181e823541648356c749ca9eee2e5300202bf769fc6d26",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "6db5f80309656b4b75868bdb9dd0594ef356898f9c1d848bfc0bd35b2b31365b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C2\",\"operation\":\"CLICK|TYPE|SELECT\",\"value\":\"Dallas\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 21,
+    "neurons": 9.968182563781738,
+    "prompt_tokens": 340,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 361
+  }
+}

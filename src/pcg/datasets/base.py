@@ -89,8 +89,23 @@ def normalize_dataset_name(name: str) -> str:
         "tat-qa": "tatqa",
         "weblinx": "weblinx",
         "web-linx": "weblinx",
+        "adversarial-integrity": "adversarial_integrity",
+        "adversarial_integrity": "adversarial_integrity",
+        "advint": "adversarial_integrity",
     }
     return aliases.get(key, key)
+
+
+SCIENTIFIC_DATASET_REGISTRY: tuple[str, ...] = (
+    "hotpotqa",
+    "twowiki",
+    "tatqa",
+    "toolbench",
+    "fever",
+    "pubmedqa",
+    "weblinx",
+    "adversarial_integrity",
+)
 
 
 def load_dataset_by_name(
@@ -105,40 +120,42 @@ def load_dataset_by_name(
 
     Args:
         name: one of {"synthetic", "hotpotqa", "twowiki", "toolbench",
-              "fever", "pubmedqa", "tatqa", "weblinx"}.
-        split: dataset split. Synthetic ignores this.
+              "fever", "pubmedqa", "tatqa", "weblinx", "adversarial_integrity"}.
+        split: dataset split. Synthetic and adversarial_integrity candidate ignore this.
         n_examples: cap on number of examples. None = stream the whole split.
         seed: shuffle seed (when implemented; HF streaming shuffles via buffer).
-        streaming: forwarded to `datasets.load_dataset`. Synthetic always
-                   in-memory; the flag is just for API uniformity.
+        streaming: forwarded to `datasets.load_dataset`.
     """
-    name = normalize_dataset_name(name)
-    if name == "synthetic":
+    norm_name = normalize_dataset_name(name)
+    if norm_name == "synthetic":
         from pcg.datasets.synthetic import iter_synthetic
         yield from iter_synthetic(n=n_examples, seed=seed)
-    elif name == "hotpotqa":
+    elif norm_name == "hotpotqa":
         from pcg.datasets.hotpotqa import iter_hotpotqa
         yield from iter_hotpotqa(split=split, n=n_examples, seed=seed, streaming=streaming)
-    elif name == "twowiki":
+    elif norm_name == "twowiki":
         from pcg.datasets.twowiki import iter_twowiki
         yield from iter_twowiki(split=split, n=n_examples, seed=seed, streaming=streaming)
-    elif name == "toolbench":
+    elif norm_name == "toolbench":
         from pcg.datasets.toolbench import iter_toolbench
         yield from iter_toolbench(split=split, n=n_examples, seed=seed, streaming=streaming)
-    elif name == "fever":
+    elif norm_name == "fever":
         from pcg.datasets.fever import iter_fever
         yield from iter_fever(split=split, n=n_examples, seed=seed, streaming=streaming)
-    elif name == "pubmedqa":
+    elif norm_name == "pubmedqa":
         from pcg.datasets.pubmedqa import iter_pubmedqa
         yield from iter_pubmedqa(split=split, n=n_examples, seed=seed, streaming=streaming)
-    elif name == "tatqa":
+    elif norm_name == "tatqa":
         from pcg.datasets.tatqa import iter_tatqa
         yield from iter_tatqa(split=split, n=n_examples, seed=seed, streaming=streaming)
-    elif name == "weblinx":
+    elif norm_name == "weblinx":
         from pcg.datasets.weblinx import iter_weblinx
         yield from iter_weblinx(split=split, n=n_examples, seed=seed, streaming=streaming)
+    elif norm_name == "adversarial_integrity":
+        from pcg.datasets.adversarial_integrity import iter_adversarial_integrity
+        yield from iter_adversarial_integrity(n=n_examples, seed=seed)
     else:
         raise ValueError(
             f"Unknown dataset {name!r}. Known: synthetic, hotpotqa, twowiki, "
-            "toolbench, fever, pubmedqa, tatqa, weblinx"
+            "toolbench, fever, pubmedqa, tatqa, weblinx, adversarial_integrity"
         )

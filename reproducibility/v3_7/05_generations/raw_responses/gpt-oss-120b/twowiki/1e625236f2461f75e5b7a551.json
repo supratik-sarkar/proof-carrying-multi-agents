@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "41f3747c52462faf0faf9c3c5e4916af63b4ea33f5a09988d2e04183208bf4f9",
+  "candidate_text": "Jean Harlow",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "d0fa7f780d73928a4c484fb4f4ca64e2c0085be98ca76c96def21c8756051ea9",
+  "example_id": "5750bfd20bdc11eba7f7acde48001122",
+  "finish": "stop",
+  "input_sha256": "c8b21b69495e98d734c2731f56e1fa20ad5f3745b50c6ddaf3ddff3cc284276a",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5750bfd20bdc11eba7f7acde48001122",
+  "prompt_sha256": "747bf676bbfc7d0deefabb386c405e51301eec133c460279d07e64a6bb6b6179",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Worldly Goods\": [\"Worldly Goods is a 1924 American comedy silent film directed by Paul Bern and written by Sophie Kerr and A. P. Younger.\",\"The film stars Agnes Ayres, Patrick H. O'Malley, Jr., Victor Varconi, Edythe Chapman,\",\"Bert Woodruff, Maude George and Cecille Evans.\",\"The film was released on November 24, 1924, by Paramount Pictures.\"]\n\n[2] \"Heather D. Gibson\": [\"Heather Denise Gibson is a Scottish economist currently serving as Director- Advisor to the Bank of Greece( since 2011).\",\"She is the spouse of Euclid Tsakalotos, former Greek Minister of Finance.\"]\n\n[3] \"Paul Bern\": [\"Paul Bern (born Paul Levy; December 3, 1889September 5, 1932) was a German-born American film director, screenwriter, and producer for Metro-Goldwyn-Mayer, where he became the assistant to Irving Thalberg.\",\"He helped launch the career of Jean Harlow, whom he married in July 1932; two months later, he was found dead of a gunshot wound, leaving what appeared to be a suicide note.\",\"Various alternative theories of his death have been proposed.\",\"Film producer Samuel Marx believed that he was killed by his ex-common-law wife Dorothy Millette, who jumped to her death from a ferry days afterward.\"]\n\n[4] \"Mehdi Abrishamchi\": [\"Mehdi Abrishamchi is an Iranian People's Mujahedin of Iran( MEK) politician who has been described as\\\" the right hand man of Massoud Rajavi\\\".\",\"He is the former spouse of the group's current leader, Maryam Rajavi, whom he divorced so that she could become the spouse of Massoud Rajavi.\"]\n\nQuestion: Who is the spouse of the director of film Worldly Goods?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "014bf58f9cca09b23b497c8b656fed8a808b92345b55ba8c494afb1fcd415ee2",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:5750bfd20bdc11eba7f7acde48001122",
+  "task_key": "ecd501ed74b8402d5db82b1b529d53ee090ae93c9795a97b3d5a0864878c91ab",
+  "text": "Jean Harlow",
+  "timestamp": "2026-09-14T10:32:50.168819+00:00",
+  "tokens_in": 504,
+  "tokens_out": 68,
+  "usage": {
+    "completion_tokens": 68,
+    "neurons": 20.67263412475586,
+    "prompt_tokens": 504,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 572
+  }
+}

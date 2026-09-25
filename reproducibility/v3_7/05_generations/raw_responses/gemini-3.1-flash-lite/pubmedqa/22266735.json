@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "bc805f4eebd383dbe5f5ea309fed3bb81053ef2002c024b45fb446d8a54d357e",
+  "candidate_text": "Yes, if postdelivery care succeeds.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "8c4805cbca2e396ca38e1fbb376e97f9a714958adc98108b2ffd159a1131760e",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "22266735",
+  "prompt_sha256": "1b0e3d774d6fd93825ccd297b976e6fad86259ed3cfaa5bd0988d9234fd8da23",
+  "provider": "gemini",
+  "provider_raw_sha256": "52aabeed6219e70d7bff615ed5a0dedabecb495e961765ad1b88e0badf8dfd80",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:22266735",
+  "text": "Yes, if postdelivery care succeeds.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 478,
+    "total_tokens": 486
+  }
+}

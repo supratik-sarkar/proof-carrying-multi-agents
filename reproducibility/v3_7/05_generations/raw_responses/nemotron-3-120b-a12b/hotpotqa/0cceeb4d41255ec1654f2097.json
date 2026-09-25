@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "f7fe2926db003e598e000178b2d7af50d55a2643efe7ed8e176c56bde3589b27",
+  "candidate_text": "\n\nBourbon County",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "4548a1e92bae24625713c6ca05f99b18ca2322d8b215401b41bbe8cc08bbf154",
+  "example_id": "5ab42b8955429942dd415ea6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "ac29842a2242cf6521c5c344056620e0ce6ca31d66c36b8a5dac5fa9b2f46de2",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5ab42b8955429942dd415ea6",
+  "prompt_sha256": "1217ea1b61582343ba30f54ba662c8007630554b64e15680b957a5601ac0ad3f",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Southeast Kansas: Southeast Kansas is a region of the U.S. state of Kansas.  It can be roughly defined by Woodson County in the northwest, Bourbon County in the northeast, Cherokee County in the southeast, and Montgomery County in the southwest.  Geographically it is dominated by a broad rolling landscape located between the Flint Hills to the west and includes the Ozarks to the southeast.  Some notable towns there include Pittsburg, Parsons, Coffeyville, Independence, Chanute, Fort Scott, and Iola.  The region has a land area of 13,624.13 km² (5,260.30 sq mi) and a 2000 census population of 180,815 inhabitants.  It has 6.43% of the state's land area and 6.726% of its population.  It is dominated by a broad rolling landscape that includes the Ozarks.  It receives more precipitation than any other part of Kansas.  Southeast Kansas is located in the tallgrass prairie ecosystem of North America.  Originally inhabited by several Native American tribes, frontier towns largely dependent on cattle ranching, and mining, were wracked by violence over the issue of slavery both before and during the American Civil War.  Southeast Kansas offers one of the premier reconstructions of early life in the United States Army at Fort Scott National Historic Site.\n\n[2] Octagon City: Octagon City is a ghost town in Allen County, Kansas, United States.  It was a failed intentional community that was founded in 1856 about six miles (10 km) south of Humboldt, Kansas near the Neosho River.  It was created by the Vegetarian Kansas Emigration Company, headed by prominent vegetarian Henry Clubb and entrepreneurs Charles DeWolfe and John McLaurin.  The original intent was to build a vegetarian commune on the south side of the Neosho River for vegetarians only, but investor interest in a non-vegetarian moral community was much higher and so the decision was made to build Octagon City on the north side of the Neosho River to make the entire project sustainable.  Members of Octagon City were under oath to educate their children and uphold a moral lifestyle.\n\n[3] Iola, Kansas: Iola (pronounced ) is a city situated along the Neosho River in the northwestern part of Allen County, located in Southeast Kansas, in the Central United States.  As of the 2010 census, the city population was 5,704.  Iola is the county seat of Allen County.  It is named in honor of Iola Colborn.\n\n[4] Erie, Kansas: Erie is a city in and the county seat of Neosho County, Kansas, United States, and situated in the valley of the Neosho River, about a mile Northeast of the river.  As of the 2010 census, the city population was 1,150.\n\nQuestion: Iola is a city along the Neosho River in a region of Kansas that can be defined by Woddson County in the northwest, and what county in the northeast?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "5812a449dd4e32a16bac61a8ed62a292106aa95f43bb3b6baed3d7b31cb2cbdf",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ab42b8955429942dd415ea6",
+  "task_key": "0ce9b303fcde7b83f2b7054713902eb77b514392086988646ba8a0f458753710",
+  "text": "\n\nBourbon County",
+  "timestamp": "2026-09-15T09:35:26.099500+00:00",
+  "tokens_in": 734,
+  "tokens_out": 133,
+  "usage": {
+    "completion_tokens": 133,
+    "neurons": 51.118,
+    "prompt_tokens": 734,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 867
+  }
+}

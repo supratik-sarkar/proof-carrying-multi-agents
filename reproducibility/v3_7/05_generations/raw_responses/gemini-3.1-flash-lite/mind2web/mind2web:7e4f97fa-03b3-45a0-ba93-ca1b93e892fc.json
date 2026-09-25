@@ -1,0 +1,27 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "correct": false
+  },
+  "candidate_sha256": "e2cf04303064ab9cd7c74a2aa02e06d4427f6e327ce60d3fc6cb23a9922ed9c4",
+  "candidate_text": "{\"choice\":\"C9\",\"operation\":\"CLICK\",\"value\":\"Angel Food Cake\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "68786b43eacf44a39dabcd42883f3542068b5ba1e2cc4da2353b32f5af9e3c7c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "mind2web:7e4f97fa-03b3-45a0-ba93-ca1b93e892fc",
+  "prompt_sha256": "68786b43eacf44a39dabcd42883f3542068b5ba1e2cc4da2353b32f5af9e3c7c",
+  "provider": "gemini",
+  "provider_raw_sha256": "ea734cdd963e8de47efdf28bb3d7a779b5632c5187b84baf6ee992f3af1eb49a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C9\",\"operation\":\"CLICK\",\"value\":\"Angel Food Cake\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 303,
+    "total_tokens": 319
+  }
+}

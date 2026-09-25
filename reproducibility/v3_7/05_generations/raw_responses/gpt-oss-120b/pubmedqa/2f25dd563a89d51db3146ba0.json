@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "40c18c7180d0c6c3e7c525a9907043ecb12a1e85c9e469a05e3fbf79b24927e1",
+  "candidate_text": "Yes, improves access, fewer complications.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "703a5d37093372123ff0196b7b7c0fb1ac6f8e6bed8ce93e3a2b573359874f45",
+  "example_id": "26907557",
+  "finish": "stop",
+  "input_sha256": "96915ee1f5efd8df5d3d4815238f868bcf076054932e86444b5ba3910c684323",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "26907557",
+  "prompt_sha256": "2073631c3fcf1be8ca1daa28aed2a9a0551bb558776a107e6c9f66d06c9958de",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: PURPOSE: This clinical study investigated whether the vascular-guided multilayer preauricular approach (VMPA) to the temporomandibular joint (TMJ) could improve access and decrease complications. PATIENTS AND METHODS: This retrospective evaluation consisted of a consecutive series of patients who underwent TMJ surgeries through the VMPA from January through December 2013. Patients with a history of TMJ surgery were excluded. Clinical data, including operating times, subjective complaints of incision scars, functional conditions of the auriculotemporal nerve and facial nerve, and other complications, were recorded and analyzed. All patients in this study were followed for at least 6 months. RESULTS: All patients (606 joints) had successful TMJ surgeries through the VMPA. All incisions healed favorably with an uneventful recovery. No patient developed permanent weakness of the facial nerve or other severe complications.\n\nLong answer: The VMPA can provide direct access and favorable visibility to the TMJ region and yield good esthetic and functional results. The VMPA can be considered the approach of choice for common TMJ surgeries.\n\nQuestion: Can a Novel Surgical Approach to the Temporomandibular Joint Improve Access and Reduce Complications?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "42b3dc6039fce321adcffd9671de4801fb32fc320d3aba9b64309836327a7f4c",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:26907557",
+  "task_key": "1e49045fb8f55a3a01bf0699e50a828f3cdc14bab3a61ab9ea9aa67ebaf0564b",
+  "text": "Yes, improves access, fewer complications.",
+  "timestamp": "2026-09-14T10:36:46.894627+00:00",
+  "tokens_in": 369,
+  "tokens_out": 156,
+  "usage": {
+    "completion_tokens": 156,
+    "neurons": 22.377201080322266,
+    "prompt_tokens": 369,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 525
+  }
+}

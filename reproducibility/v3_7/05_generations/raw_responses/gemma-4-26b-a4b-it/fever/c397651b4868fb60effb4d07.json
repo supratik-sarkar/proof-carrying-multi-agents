@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "1e7fd8194490c4fb5bae0e75bd32df1182d83ff35592576b5bfa2c41ac59cddf",
+  "example_id": "cf0cdf9bed3d132b0b639c36571b9fad",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "0ba1271748e7346a64e2d7d915eae688b93794d500a5c9758bac70893f2a3450",
+  "max_output_tokens": 256,
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "cf0cdf9bed3d132b0b639c36571b9fad",
+  "prompt_sha256": "d739202f2b717e9cbe2ad245e64f7064a56ad29c4272e3d4fc6c2aa2304e0c8a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Bermuda Triangle: The Bermuda Triangle , also known as the Devil 's Triangle , is a loosely-defined region in the western part of the North Atlantic Ocean , where a number of aircraft and ships are said to have disappeared under mysterious circumstances .\n\nClaim: Bermuda Triangle is in the eastern part of the Atlantic Ocean.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "f8dbc691c184e51008a095cffa768b96d3048781d51976679315802765141172",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:cf0cdf9bed3d132b0b639c36571b9fad",
+  "task_key": "caefcb0fd2fb9cf41d8f950a134bbc0059b0b79d699357cae6031012ee2a9066",
+  "text": "REFUTES",
+  "timestamp": "2026-09-15T10:23:47.053627+00:00",
+  "tokens_in": 154,
+  "tokens_out": 202,
+  "usage": {
+    "completion_tokens": 202,
+    "neurons": 6.909090995788574,
+    "prompt_tokens": 154,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 356
+  }
+}

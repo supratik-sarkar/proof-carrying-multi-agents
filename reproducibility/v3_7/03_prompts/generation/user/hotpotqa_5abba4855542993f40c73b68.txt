@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Gamer (film): Gamer is a 2009 American science fiction action film written and directed by Mark Neveldine and Brian Taylor.  The film stars Gerard Butler as a participant in an online game in which participants can control human beings as players, and Logan Lerman as the player who controls him.  Alongside Butler and Lerman, it also stars Michael C. Hall, Ludacris, Amber Valletta, Terry Crews, Alison Lohman, John Leguizamo, and Zoë Bell.
+
+[2] Michael C. Hall: Michael Carlyle Hall (born February 1, 1971) is an American actor, known for his roles as Dexter Morgan, a serial killer and blood spatter analyst, in the Showtime TV Network series "Dexter", and as David Fisher in the HBO drama series "Six Feet Under".  In 2010, Hall won a Golden Globe Award and a Screen Actors Guild Award for his role in "Dexter".
+
+[3] Dexter (TV series): Dexter is an American television crime drama mystery series that aired on Showtime from October 1, 2006, to September 22, 2013.  Set in Miami, the series centers on Dexter Morgan (Michael C. Hall), a forensic technician specializing in blood spatter pattern analysis for the fictional Miami Metro Police Department, who leads a secret parallel life as a vigilante serial killer, hunting down murderers who have slipped through the cracks of the justice system.  The show's first season was derived from the novel "Darkly Dreaming Dexter" (2004), the first of the Dexter series novels by Jeff Lindsay.  It was adapted for television by screenwriter James Manos, Jr., who wrote the first episode.  Subsequent seasons evolved independently of Lindsay's works.
+
+[4] List of Dexter episodes: "Dexter" is an American television drama that was broadcast on the premium cable channel Showtime from October 1, 2006 to September 22, 2013.  A total of 96 episodes of "Dexter" were broadcast over eight seasons.  The series is based on characters created by Jeff Lindsay for his "Dexter" series of novels.  The series follows the life of Dexter Morgan (Michael C. Hall), a Miami Metro Police Department blood pattern analyst with a double life.  While investigating murders in the homicide division, Dexter hunts and kills murderers and criminals who have escaped the justice system.  Although the first season is based on the events of "Darkly Dreaming Dexter", the series' subsequent seasons do not follow the novels in the series.  Departing from the narrative of Lindsay's second Dexter novel "Dearly Devoted Dexter", the show's writer Daniel Cerone said that the writers "didn't see the opportunity in the second book" to adapt it.
+
+Question: Who were the directors of the 2009 American science fiction film starring the actor who played Dexter Morgan in the Showtime TV Network series "Dexter"?
+
+Answer:

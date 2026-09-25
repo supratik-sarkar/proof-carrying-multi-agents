@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [
+      "Malformed JSON arguments: Extra data: line 1 column 64 (char 63)."
+    ],
+    "error_type": "bfcl_adapter:malformed_arguments",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ad4ae499114c1ce514b449b25f17437773c9038c82569e08f5bd27c015d82632",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_function_119",
+  "prompt_sha256": "ad4ae499114c1ce514b449b25f17437773c9038c82569e08f5bd27c015d82632",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "5a6023ce003bcedf95309c55be840c675a6b5ddfe6b01f1f09203d8dfb4c569a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"color\": \"vibrant blue\", \"habitat\": \"forest\", \"size\": \"small\"}{\"color\": \"mix of black colors\", \"habitat\": \"lake\", \"size\": \"large\"}{\"color\": \"brown\", \"habitat\": \"desert\", \"size\": \"medium\"}{\"color\": \"green\", \"habitat\": \"tropical rainforest\", \"size\": \"large\"}",
+        "name": "identify_bird"
+      },
+      "id": "call_0370c1020b474ca499d9ae84",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 296,
+    "neurons": 10.145454406738281,
+    "prompt_tokens": 228,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 524
+  }
+}

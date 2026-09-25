@@ -1,0 +1,53 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [
+      "Malformed JSON arguments: Extra data: line 1 column 70 (char 69)."
+    ],
+    "error_type": "bfcl_adapter:malformed_arguments",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "a97f1e8b8208cc7a8aa50cc25202a416b522479fa43eff0dde82962b7a09ab15",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_multiple_function_164",
+  "prompt_sha256": "a97f1e8b8208cc7a8aa50cc25202a416b522479fa43eff0dde82962b7a09ab15",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "0a0f172ea0345f906cf5ac081bb18728fdba6aff3952f204f094642517b21f11",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"base\": 10, \"height\": 5, \"unit\": \"square meters\"}",
+        "name": "calculate_triangle_area"
+      },
+      "id": "call_f5bddb5676fb4b749fa6329f",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"court\": \"Supreme Court\", \"docket\": \"12345\", \"info_type\": \"accused\"}{\"court\": \"High Court\", \"docket\": \"67890\", \"info_type\": \"verdict\"}",
+        "name": "get_case_info"
+      },
+      "id": "call_4026c12765c04a6d937d6da1",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 340,
+    "neurons": 12.945453643798828,
+    "prompt_tokens": 404,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 744
+  }
+}

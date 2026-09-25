@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "4ccb0a9feb1d8c7d80a30a2af424ff09f02e42f5629370540f4ce6cba72c0e87",
+  "candidate_text": "Natürlich die Nelli.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "e755e53b3319ea372312a688247d21d611fcb50be44812f9ab0ce60199ae87b3",
+  "example_id": "c789bc3b087211ebbd66ac1f6bf848b6",
+  "finish": "stop",
+  "input_sha256": "a617d61f374effa2069e9b20996f7e6e5d61613052ae0258d735a6f6584267c9",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "c789bc3b087211ebbd66ac1f6bf848b6",
+  "prompt_sha256": "a3c8a62977a64644461d0aab8912025ab36c951c364c2573b20b4169fb9eb6c6",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Cairo Declaration (film)\": [\"Cairo Declaration is a 2015 Chinese 2D historical film directed by Wen Deguang and Hu Minggang and written by Liu Xing.\",\"The film stars Hu Jun, Cecilia Han, Ma Xiaowei, and Tang Guoqiang.\",\"The film was scheduled to be released on September 3, 2015.\",\"The film was promoted by the August First Film Studio to mark the 70th anniversary of the victory of the Second Sino- Japanese War.\"]\n\n[2] \"Nat\\u00fcrlich die Nelli\": [\"Nat\\u00fcrlich die Nelli is an East German film.\",\"It was released in 1959.\"]\n\n[3] \"The Night of Nights\": [\"The Night of Nights is a 1939 black- and- white drama film written by Donald Ogden Stewart and directed by Lewis Milestone for Paramount Pictures that starred Pat O' Brien, Olympe Bradna, and Roland Young.\",\"The film received positive contemporary reviews from publications such as\\\" The New York Times\\\".\",\"Director Milestone went on to other successful productions after the film came out, including\\\" Ocean's 11\\\" and\\\" Pork Chop Hill\\\".\",\"The movie has no relation to the use of the phrase\\\" Night of Nights\\\" for the night of the Academy Awards ceremony, the album by musical group\",\"The Seekers, or the Touhou Project song.\"]\n\n[4] \"Life Is What You Make It (film)\": [\"Life Is What You Make\",\"It is a 2017 documentary film which explores the life of award- winning Filipino theatre producer Jhett Tolentino from his migration into the United States and his entry into theatre production in New York.\",\"The film came with a soundtrack album entitled\\\" Life Is What You Make It: Original Motion Picture Soundtrack\\\".\"]\n\nQuestion: Which film came out first, Natürlich Die Nelli or Cairo Declaration (Film)?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "d4854ee389f1c641b935f78d01ea26a06b2db17909067e933846f7c978012b0b",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:c789bc3b087211ebbd66ac1f6bf848b6",
+  "task_key": "3693d6204c73101c3b262a597e73bc49ea4695bcff0302aa4f995ac528ca1e5d",
+  "text": "Natürlich die Nelli.",
+  "timestamp": "2026-09-14T10:33:02.632952+00:00",
+  "tokens_in": 508,
+  "tokens_out": 90,
+  "usage": {
+    "completion_tokens": 90,
+    "neurons": 22.29990577697754,
+    "prompt_tokens": 508,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 598
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "3bf704891ad8979a0e7c2c85cd0793ef182fded0bd8a0977e5b5d849ca93708e",
+  "candidate_text": "I'll get the current ranking of Manchester United in the Premier League for you.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ba036016272b455b4a5206fbdbdf65f3d44c9eeda124b9ecf53641f9aa812b58",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:simple_319",
+  "prompt_sha256": "ba036016272b455b4a5206fbdbdf65f3d44c9eeda124b9ecf53641f9aa812b58",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "364f208691ceb710e2e370ce01d44f96b149a3829ce0e159da315740853a67d5",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll get the current ranking of Manchester United in the Premier League for you.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"team\": \"Manchester United\", \"league\": \"Premier League\"}",
+        "name": "sports_ranking"
+      },
+      "id": "chatcmpl-tool-b561c8b042451cf9",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 100,
+    "neurons": 4.938,
+    "prompt_tokens": 236,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 336
+  }
+}

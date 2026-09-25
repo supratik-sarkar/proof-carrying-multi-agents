@@ -1,0 +1,35 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "multiple_function_checker:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "2f8a1ac0d8918a40d2b2cde6c92491bdc23e452b8194b03f57153aa7ce563ddf",
+  "candidate_text": "The standard deck has 52 cards, of which 4 are kings.\n\n\\[\n\\text{Probability} = \\frac{\\text{Number of favorable outcomes}}{\\text{Total outcomes}} = \\frac{4}{52} = \\frac{1}{13} \\approx 0.0769\n\\]\n\nSo the probability of drawing a king from a full, well‑shuffled deck is **1 / 13**, or about **7.7 %**.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b07dbfffa5aa3e2dea3be40739de6c6983019cfa88278036151bdd0eea18c8cf",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:multiple_function_123",
+  "prompt_sha256": "b07dbfffa5aa3e2dea3be40739de6c6983019cfa88278036151bdd0eea18c8cf",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "c69bf486a4d0771f343250a65532a4a5f0fe259751ff2d971ff392764b913586",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "The standard deck has 52 cards, of which 4 are kings.\n\n\\[\n\\text{Probability} = \\frac{\\text{Number of favorable outcomes}}{\\text{Total outcomes}} = \\frac{4}{52} = \\frac{1}{13} \\approx 0.0769\n\\]\n\nSo the probability of drawing a king from a full, well‑shuffled deck is **1 / 13**, or about **7.7 %**.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 163,
+    "neurons": 16.777236938476562,
+    "prompt_tokens": 178,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 341
+  }
+}

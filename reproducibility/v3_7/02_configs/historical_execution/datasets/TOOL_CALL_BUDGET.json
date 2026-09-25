@@ -1,0 +1,23 @@
+{
+  "agentdojo": {
+    "max_output_tokens_per_turn": 1024,
+    "max_tool_calls": 8,
+    "max_turns": 8
+  },
+  "bfcl_v1": {
+    "max_output_tokens": 512,
+    "max_tool_calls": 8,
+    "max_turns": 1
+  },
+  "mind2web": {
+    "max_output_tokens": 256,
+    "max_tool_calls": 0,
+    "max_turns": 1
+  },
+  "pre_admission_models": [
+    "gemma-4-26b-a4b-it",
+    "glm-4.7-flash"
+  ],
+  "schema": "PCG_MAS_V3_6_TOOL_CALL_BUDGET_V1",
+  "tool_budget_sha256": "a2f9dd7190e1603bfc8372a8945ac3fd6022939572c58e0e7d5f857b4ff40903"
+}

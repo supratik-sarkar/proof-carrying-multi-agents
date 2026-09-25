@@ -1,0 +1,58 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "3197cdb0502e387fd310ef724fa61d1b3b119e8b61fb253ea4fa8374085e7765",
+  "candidate_text": "I'll calculate the speed for all three vehicles for you. Let me make the calculations:",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "aba9743ca33a5691187b2bec45ab0087bc465b66fb3e2803b068c16f9a926695",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_function_148",
+  "prompt_sha256": "aba9743ca33a5691187b2bec45ab0087bc465b66fb3e2803b068c16f9a926695",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "a8e675624d98b6a51db52ef18adb44a745d63bce7358d8678d5e6879e199a2c1",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll calculate the speed for all three vehicles for you. Let me make the calculations:",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"distance\": 500, \"time\": 25, \"to_unit\": \"km/h\"}",
+        "name": "calculate_speed"
+      },
+      "id": "chatcmpl-tool-92dc3f01847bcc8a",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"distance\": 1000, \"time\": 200, \"to_unit\": \"m/s\"}",
+        "name": "calculate_speed"
+      },
+      "id": "chatcmpl-tool-8535a6bc785c12eb",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"distance\": 10000, \"time\": 600, \"to_unit\": \"km/h\"}",
+        "name": "calculate_speed"
+      },
+      "id": "chatcmpl-tool-a8d77fb3992930a8",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 310,
+    "neurons": 13.077,
+    "prompt_tokens": 326,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 636
+  }
+}

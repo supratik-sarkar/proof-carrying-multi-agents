@@ -1,9 +1,0 @@
-TCB component,runs,acceptance flips,flip rate
-canon,40,5,0.125
-clock,40,7,0.175
-entail_tcb,40,5,0.125
-exec_tcb,40,6,0.15
-hash,40,4,0.1
-log_schema,40,6,0.15
-replay_runner,40,4,0.1
-version_pin,40,8,0.2

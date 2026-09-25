@@ -24,7 +24,7 @@ def write_csv(stem: str, header: Sequence[str], rows: Sequence[Sequence[Any]]) -
     os.makedirs(CSV_DIR, exist_ok=True)
     p = os.path.join(CSV_DIR, f"{stem}.csv")
     with open(p, "w", newline="") as fh:
-        w = csv.writer(fh, lineterminator="\n")
+        w = csv.writer(fh)
         w.writerow(header)
         for r in rows:
             w.writerow(["" if c is None else c for c in r])

@@ -96,7 +96,7 @@ def g_absolute_paths():
     }
 
     absolute_user_path = _re.compile(
-        r"/Users/[A-Za-z0-9._-]+/|[A-Za-z]:\\Users\\[^\\]+\\"
+        r"/[Uu]sers/[A-Za-z0-9._-]+/|[A-Za-z]:\\[Uu]sers\\[^\\]+\\"
     )
 
     hits = []

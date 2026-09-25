@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "daed31dbf4cffef2806b9b1be0038d981029ab4acb17e267bf35556940ed08a0",
+  "example_id": "469931cec0cfaa66c043083fd011bd53",
+  "finish": "stop",
+  "input_sha256": "d15318b1ee45f06a6f68b6a37c930370f855dca03608fd6cc60d067b7f914add",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "469931cec0cfaa66c043083fd011bd53",
+  "prompt_sha256": "57a2dcf347bb3aae38080853278ee20a05fbf0648bc8571a87ce0b102f46fe62",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Wilhelmina Slater: Wilhelmina Vivian Slater -LRB- born Wanda Slater -RRB- is a fictional character in the American dramedy series Ugly Betty .\n\nClaim: Wilhelmina Slater is a person.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "408451f7a6590489626c8cde24b326b7e95696ef21c3fe1a9cd828ae40c2e7c8",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:469931cec0cfaa66c043083fd011bd53",
+  "task_key": "e22d1e209fe9e26c3a844cff38dacc7b7bfd3bc72b82c2aa12024e893fbae9f1",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:36:32.047079+00:00",
+  "tokens_in": 187,
+  "tokens_out": 124,
+  "usage": {
+    "completion_tokens": 124,
+    "neurons": 14.404508590698242,
+    "prompt_tokens": 187,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 311
+  }
+}

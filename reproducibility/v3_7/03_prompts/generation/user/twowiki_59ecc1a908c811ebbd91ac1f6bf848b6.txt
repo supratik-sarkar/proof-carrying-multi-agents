@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "William Ruane": ["William Ruane( born 1985) is a Scottish actor.","He is best known for his roles in the films\" Sweet Sixteen\"( 2002) and\" The Angels' Share\"( 2012), and in the soap opera\" River City\"."]
+
+[2] "William Ruane": ["William Ruane( born 1985) is a Scottish actor.","He is best known for his roles in the films\" Sweet Sixteen\"( 2002) and\" The Angels' Share\"( 2012), and in the soap opera\" River City\"."]
+
+[3] "Mr. Right (2009 film)": ["Mr. Right is a 2009 British film directed by David Morris and Jacqui Morris.","The jointly- made gay- themed film is the debut for both directors."]
+
+[4] "Sweet Sixteen (2002 film)": ["Sweet Sixteen is a 2002 drama film directed by Ken Loach.","Set in Scotland, the film tells the story of a teenage boy from a troubled background, Liam, who dreams of starting afresh with his mother as soon as she has completed her prison term.","Liam's attempts to raise money for the two of them are set against the backdrop of the Inverclyde towns of Greenock, Port Glasgow and the coast at Gourock.","The film is often shown with subtitles because, as with many of Loach's films, the dialogue is extensively in a local dialect, in this case the Inverclyde variant of Glaswegian( itself a mix of Scottish English and Scots with Irish and Highland influences)."]
+
+Question: Do both directors of films Sometimes Good and Sweet Sixteen (2002 Film) share the same nationality?
+
+Answer:

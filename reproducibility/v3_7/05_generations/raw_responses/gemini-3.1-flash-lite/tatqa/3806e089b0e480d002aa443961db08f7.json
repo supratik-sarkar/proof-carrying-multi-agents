@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "78ec8c006c03763928d85749fe8bcebb636d5fb15154125965bf6c8c6e0e5b2f",
+  "candidate_text": "November 12, 2019.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "6dcc4c463721eb4df0a5b63ba0e2ba86eea9285af50248721cefb721ab7fa32c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "3806e089b0e480d002aa443961db08f7",
+  "prompt_sha256": "45b7d21485acf0b5e5189e6d42ee8fd5dc6e0454d3ae601d473f1456f0e47e26",
+  "provider": "gemini",
+  "provider_raw_sha256": "49673c530ba9bc205b4a9a6a0f2794c5210a3efa09cf3e78dbd3478eecb5382d",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:3806e089b0e480d002aa443961db08f7",
+  "text": "November 12, 2019.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 11,
+    "prompt_tokens": 835,
+    "total_tokens": 846
+  }
+}

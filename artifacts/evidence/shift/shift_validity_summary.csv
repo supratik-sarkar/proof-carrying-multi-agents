@@ -1,7 +1,0 @@
-family_name,tpr,tnr,balanced_accuracy,tv_lower_bound,hat_rho,rho_ucb,validity_gate_passed,fallback_action
-dataset_shift,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW
-backend_shift,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW
-corruption,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW
-tool_drift,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW
-branch_dependence,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW
-checker_degradation,0.9500,0.9200,0.9350,0.8700,0.0800,0.1200,True,ALLOW

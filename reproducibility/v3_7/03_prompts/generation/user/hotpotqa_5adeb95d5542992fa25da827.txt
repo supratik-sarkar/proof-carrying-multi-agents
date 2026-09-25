@@ -1,0 +1,12 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Maianthemum: Maianthemum (Latin "Māia " "May" and Greek "ánthemon " "flower"; including former "Smilacina") is a genus of rhizomatous, herbaceous, perennial flowering plants, native to the understory of woodlands.  It is widespread across much of North America, Europe and Asia.
+
+[2] Chlidanthus: Chlidanthus is a genus that consists of 10 species of tender bulbs from tropical South America, mostly natives to the Andes.  The botanical name comes from the Greek, meaning "delicate flower".  The plants have large spherical bulbs with gray-green, strap-shaped leaves 30cm long arising from the base.  In late spring to early summer, clusters of 3-4 large, strong citrus-scented fragrant, funnel-shaped flowers 10-13cm long held terminally on stalks 25cm high, colored in yellow, pink or red.
+
+Question: Are Chlidanthus and Maianthemum both flowering plants?
+
+Answer:

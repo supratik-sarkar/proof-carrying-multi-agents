@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ce1d409ab801ba8fb53b0f0cba94d3e3a316e7e19767db1da0f3315180f5c30d",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_function_113",
+  "prompt_sha256": "ce1d409ab801ba8fb53b0f0cba94d3e3a316e7e19767db1da0f3315180f5c30d",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "b9d0372e035e27c9956f045fe5734be97441cbc4937f3f74b6a4e9c36377b1fd",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"activity_level\": \"lightly active\", \"height\": 70, \"weight\": 180}",
+        "name": "diabetes_prediction"
+      },
+      "id": "chatcmpl-tool-be64d78fe879e1e8",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"activity_level\": \"very active\", \"height\": 65, \"weight\": 200}",
+        "name": "diabetes_prediction"
+      },
+      "id": "chatcmpl-tool-a7b9578ff4f5353b",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"activity_level\": \"moderately active\", \"height\": 72, \"weight\": 150}",
+        "name": "diabetes_prediction"
+      },
+      "id": "chatcmpl-tool-9bf39036ad885298",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"activity_level\": \"extra active\", \"height\": 68, \"weight\": 220}",
+        "name": "diabetes_prediction"
+      },
+      "id": "chatcmpl-tool-ae7571bd7f7b1b89",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 313,
+    "neurons": 11.100000381469727,
+    "prompt_tokens": 282,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 595
+  }
+}

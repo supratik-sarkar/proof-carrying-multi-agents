@@ -1,0 +1,44 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Missing required parameter: 'months'."
+    ],
+    "error_type": "simple_function_checker:missing_required",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "85da16ecad37caa8e7f71ed305630e1ad442806ce62005b2f1d20f090b6ada8c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:multiple_function_50",
+  "prompt_sha256": "85da16ecad37caa8e7f71ed305630e1ad442806ce62005b2f1d20f090b6ada8c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "1b230830d42d2e8d329e067a3b2fa9de60013df468e4fe37bdd73dffd9b1d6df",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York\", \"time_frame\": \"next month\"}",
+        "name": "house_price_forecast"
+      },
+      "id": "chatcmpl-tool-9c250529da365e87",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 72,
+    "neurons": 10.763601303100586,
+    "prompt_tokens": 184,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 256
+  }
+}

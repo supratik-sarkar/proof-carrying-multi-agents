@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "3d317410079c51e9334bff79a27b3f3b69380ba859180de1b0bedf82631b8e36",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:parallel_function_98",
+  "prompt_sha256": "3d317410079c51e9334bff79a27b3f3b69380ba859180de1b0bedf82631b8e36",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "626d47d62a4730d5636c1a3108feb137faf34c162a4a8dd7f0bf80975e495f29",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"charge\":2,\"distance\":0.5,\"medium\":\"vacuum\"}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "call_1789655676254",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"charge\":2,\"distance\":1,\"medium\":\"vacuum\"}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "call_1789655676254",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"charge\":2,\"distance\":2,\"medium\":\"vacuum\"}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "call_1789655676254",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"charge\":2,\"distance\":1,\"medium\":\"air\"}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "call_1789655676254",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 82,
+    "neurons": 25.678184509277344,
+    "prompt_tokens": 788,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 870
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "892aa8bfcb81a725128a51edfd370eaf6279445c05683e3f874510bdd899186c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:simple_227",
+  "prompt_sha256": "892aa8bfcb81a725128a51edfd370eaf6279445c05683e3f874510bdd899186c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "9ce2cbeaa5713ae38bd465fd88223676317952c1e425d1592f1eb629bf13a651",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"traits\":[\"strengths\",\"weaknesses\"],\"type\":\"ENFJ\"}",
+        "name": "get_personality_traits"
+      },
+      "id": "call_1789655642441",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 21,
+    "neurons": 18.976364135742188,
+    "prompt_tokens": 707,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 728
+  }
+}

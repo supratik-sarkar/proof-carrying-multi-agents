@@ -1,0 +1,9 @@
+{
+  "classification": "Declared protocol geometry with a residual-rate confidence calculation in Panel C",
+  "capability_methods": ["CitationOnly", "MiniCheck", "AlignScore", "QAFactEval", "ShieldAgent", "AgentRR", "PCG-MAS"],
+  "capability_channels": ["Integrity", "Replay", "Policy", "Support", "Recomputable"],
+  "capability_matrix": [[0,0,0,1,1],[0,0,0,1,1],[0,0,0,1,1],[0,0,0,1,1],[0,0,1,0,0.6],[0,1,0,0,0.7],[1,1,1,1,1]],
+  "dependence": {"epsilon": 0.18, "k_min": 1, "k_max": 8, "rho_min": 1, "rho_max": 4.2, "operating_k": 4, "operating_rho": 1.35, "closed_rho": 2.7, "contours": [0.01,0.03,0.05], "rho_curves": [1.15,1.45,2.0,2.75]},
+  "audit_theory": {"probes_min": 100, "probes_max": 2200, "residual": 0.008, "inverse_delta": 100, "uncovered_percent": [0,1,2,4], "confidence_level": 0.95, "confidence_method": "Wilson score interval for the supplied residual rate at each probe count"},
+  "shift_band": {"classification": "Illustrative relative band; not an estimated confidence interval", "relative_width": 0.1}
+}

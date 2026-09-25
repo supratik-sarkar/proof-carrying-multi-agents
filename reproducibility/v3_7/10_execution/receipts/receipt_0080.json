@@ -1,0 +1,16 @@
+{
+  "<PUBLIC_TERM:b3cc0475bb78a502>_generation_used": false,
+  "equivalence_receipt_sha256": "9cb461ccc8318d779fd27cb2f24af21a494f3c8553a634f9ecadca1f0ab5d771",
+  "fit_expected": 700,
+  "fit_missing": 0,
+  "fit_present": 700,
+  "fit_strict_status": "PASS",
+  "gold_answer_fallback_used": false,
+  "guard_receipt_sha256": "712390664fe1199979f655692bfe51b1f2bc0f563c4d98a45aa8b33df155c91c",
+  "schema": "PCG_MAS_V3_6_G4_FIT_STRICT_VALIDATION_V3",
+  "semantic_equivalence_proven": true,
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:57:12.867527+00:00",
+  "transaction_id": "TX-20260917T124848Z-d0139466c44e"
+}

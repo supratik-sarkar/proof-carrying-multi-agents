@@ -12,9 +12,9 @@ from __future__ import annotations
 from typing import Iterator
 from pcg.datasets.base import EvidenceItem, QAExample
 
-_DATASET_NAME = "hotpot_qa"
+_DATASET_NAME = "hotpotqa/hotpot_qa"
 _DATASET_CONFIG = "distractor"
-_DEFAULT_REVISION = "4ad1ec41d8eb69720ad7616bdab3b4df9d3ff074"
+_DEFAULT_REVISION = "1908d6afbbead072334abe2965f91bd2709910ab"
 
 
 def _row_to_example(row: dict, index: int) -> QAExample:

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "c73aee23dcd93e8a7b50029849866f76589e2621b9ed945d5160b7ce05be7006",
+  "candidate_text": "Peshwa (Prime Minister)",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "89c61a2a0c71dfe445a29ccff494c5a7dd43460cfec0ae35b1a84f8c8e28210c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5a8b78775542997f31a41d3d",
+  "prompt_sha256": "9a8f8a81a703254a5610b4a5a5ecdb2fda0da23b6bc0d1b7a89b92159d77f90e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "2a35a8c906396854da81d3c11c11fe540246be48cd98fa91f350ba7ec160521d",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a8b78775542997f31a41d3d",
+  "text": "Peshwa (Prime Minister)",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 6.81818151473999,
+    "prompt_tokens": 726,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 734
+  }
+}

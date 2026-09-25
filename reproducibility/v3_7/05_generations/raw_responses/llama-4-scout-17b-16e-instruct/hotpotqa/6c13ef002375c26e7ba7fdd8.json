@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "d864da0bbf31c9cb395ce57ac03892d839b6c09693ff1bbeb1b9a329160ba9c9",
+  "candidate_text": "No, Hot Rod isn't.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "9643e65368edbd11ac9cc9b279345fa5f9d8e4531b86b349241f4b599e7840f5",
+  "example_id": "5ab8ee035542991b5579f04b",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "d4052bf3d2e9dd6eb7ba6d73754f725e81b419b775b305fc8771b13454c07761",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "5ab8ee035542991b5579f04b",
+  "prompt_sha256": "54da233cc98f9f1cddc249ef823ca40f84a1d01d8a2568af373df2af445a5d4e",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] The Memory of Our People: The Memory of Our People is a magazine published in the Argentine city of Rosario, a province of Santa Fe.  The magazine was founded in 2004.  Its original title in Spanish is \"La Memoria de Nuestro Pueblo\".\n\n[2] Hot Rod Lincoln: \"Hot Rod Lincoln\" is a song by American singer-songwriter Charlie Ryan, first released in 1955.  It was written as an answer song to Arkie Shibley's 1951 hit \"Hot Rod Race\" which describes a race in San Pedro, Los Angeles between two hot rod cars, a Ford and a Mercury, which stay neck-and-neck until both are overtaken by \"a kid in a hopped-up Model A\".  \"Hot Rod Lincoln\" is sung from the perspective of this third driver, whose own hot rod is a Ford Model A body with a Lincoln-Zephyr V12 engine, overdrive, a four-barrel carburetor, 4:11 gear ratio, and safety tubes.\n\n[3] California Hot Rod Reunion: California Hot Rod Reunion is a gathering of drag racers, hot rod enthusiasts and street rodders held in Bakersfield, California.  The event was created by Steve Gibbs, vice-president of the National Hot Rod Association, in October 1992, as a one-time event to gather some of the old drag racers together.  It has since become an annual event in early October at Auto Club Famoso Raceway outside Bakersfield.  It has also spawned the National Hot Rod Reunion, held each year in Bowling Green KY.  Honorees are named at each year's reunion.  The Honorees are pioneers in the sport of drag racing and hot rodding.  The 25th annual event, presented by AAA and associate sponsor Good Vibrations Motorsports, will be held Oct 21-23, 2016.\n\n[4] Fender Hot Rod DeVille: The Fender Hot Rod DeVille is a combo tube guitar amplifier manufactured and sold by Fender.  It was introduced in 1996 as part of Fender's Hot Rod line of amplifiers, and since then has been in continuous production.  The Hot Rod DeVille is a modified version of the earlier Fender Blues DeVille from the Blues amplifier line, and has a higher level of gain in its preamplification signal.  The DeVille incorporates a 60 watt amplifier, and is available in two different models: a 212, which includes a pair of 12\" speakers, and the 410, which includes four 10\" speakers.  The DeVille is the sister amplifier of the Fender Hot Rod Deluxe.\n\nQuestion: Are Hot Rod and The Memory of Our People both magazines?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "4361e250a9284a63e96956debd04c296c5498371a0c9e721535a15644fba62dd",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ab8ee035542991b5579f04b",
+  "task_key": "a27433c238d799a4f7b489113942a1ae9bdc759227a3f03b26ec06b242228585",
+  "text": "No, Hot Rod isn't.",
+  "timestamp": "2026-09-15T09:33:41.366802+00:00",
+  "tokens_in": 630,
+  "tokens_out": 7,
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 16.004545211791992,
+    "prompt_tokens": 630,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 637
+  }
+}

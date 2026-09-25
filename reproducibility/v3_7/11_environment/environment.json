@@ -1,0 +1,9 @@
+{
+  "scope": "Standalone public replay environment",
+  "python_version": "3.12.13",
+  "os": "Darwin",
+  "os_release": "25.6.0",
+  "historical_execution_environment": "11_environment/historical_execution/environment.json",
+  "environment_variables": "NOT_COLLECTED",
+  "dependency_lock": "16_replay/requirements.txt"
+}

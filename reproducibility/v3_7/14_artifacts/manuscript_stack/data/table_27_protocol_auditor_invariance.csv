@@ -1,0 +1,6 @@
+Host A,Host B,Channel,Agreement,Disagreements
+macOS arm64,Linux x86_64,V_H,100.00%,0
+macOS arm64,Linux x86_64,V_Pi,99.96%,1
+macOS arm64,Linux x86_64,V_Gamma,100.00%,0
+macOS arm64,Linux x86_64,V_entail,99.92%,2
+macOS arm64,Linux x86_64,Final Check,99.92%,2

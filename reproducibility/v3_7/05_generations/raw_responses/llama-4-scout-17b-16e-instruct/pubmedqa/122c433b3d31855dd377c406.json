@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "f603e7d8170255e3e2b5b4ce26732e5c3f6bf0374a7828b7ac793d7b3d970dfb",
+  "candidate_text": "It depends on ICH type.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "9029d74b7d5c59e3ee555728b01a3d0e86529933ec23b2f8b5ad8c86b226a16a",
+  "example_id": "12805495",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "2c2ac6241e915fc769016064af2501ffa6c62211d9d041ad0757090468a67fd2",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "12805495",
+  "prompt_sha256": "2776db320c443f20c211617f7aad3bfb68bf7ffa98b8b6b89fa7ff96eb72e850",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: BACKGROUND AND PURPOSE: Warfarin increases both the likelihood and the mortality of intracerebral hemorrhage (ICH), particularly in patients with a history of prior ICH. In light of this consideration, should a patient with both a history of ICH and a clear indication for anticoagulation such as nonvalvular atrial fibrillation be anticoagulated? In the absence of data from a clinical trial, we used a decision-analysis model to compare the expected values of 2 treatment strategies-warfarin and no anticoagulation-for such patients. METHODS: We used a Markov state transition decision model stratified by location of hemorrhage (lobar or deep hemispheric). Effectiveness was measured in quality-adjusted life years (QALYs). Data sources included English language literature identified through MEDLINE searches and bibliographies from selected articles, along with empirical data from our own institution. The base case focused on a 69-year-old man with a history of ICH and newly diagnosed nonvalvular atrial fibrillation. RESULTS: For patients with prior lobar ICH, withholding anticoagulation therapy was strongly preferred, improving quality-adjusted life expectancy by 1.9 QALYs. For patients with prior deep hemispheric ICH, withholding anticoagulation resulted in a smaller gain of 0.3 QALYs. In sensitivity analyses for patients with deep ICH, anticoagulation could be preferred if the risk of thromboembolic stroke is particularly high.\n\nLong answer: Survivors of lobar ICH with atrial fibrillation should not be offered long-term anticoagulation. Similarly, most patients with deep hemispheric ICH and atrial fibrillation should not receive anticoagulant therapy. However, patients with deep hemispheric ICH at particularly high risk for thromboembolic stroke or low risk of ICH recurrence might benefit from long-term anticoagulation.\n\nQuestion: Can patients be anticoagulated after intracerebral hemorrhage?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "14a2b91b33acd820da3096ef73b969fd9ca952d9beacc476341ec6d713ade938",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:12805495",
+  "task_key": "92b84c809c33d0efdb0b5dd71023f68a52b30eac5db9adedbb750dcaf952bfb3",
+  "text": "It depends on ICH type.",
+  "timestamp": "2026-09-15T09:34:47.769847+00:00",
+  "tokens_in": 442,
+  "tokens_out": 8,
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 11.467273712158203,
+    "prompt_tokens": 442,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 450
+  }
+}

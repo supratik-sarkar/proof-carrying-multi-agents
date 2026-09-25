@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Maloya: Maloya is one of the two major music genres of Réunion, usually sung in Réunion Creole, and traditionally accompanied by percussion and a musical bow.  Maloya is a new form that has origins in the music of African and Malagasy slaves and Indian indentured workers on the island, as has the other folk music of Réunion, séga.  World music journalists and non-specialist scholars sometimes compare maloya to the American music, the blues, though they have little in common.  Unlike the blues, maloya was considered such a threat to the French state that in the 1970s it was banned.
+
+[2] Ndebele music: The traditional music of the Ndebele is characterised mainly by the widespread use of choral song accompanied by leg rattles ("amahlwayi"), clappers ("izikeyi") and clapping of hands.  Compared with choral song, solo singing and purely instrumental music are of minor importance.  Like the Shona, the Ndebele also use mouthbows ("umqangala") and gourd-bows ("icaco"), played mostly for self-amusement.
+
+[3] Belembaotuyan: The belembaotuyan is a musical bow played in Guam, also spelled "belumbaotuyan", "belenbaotuchan", and "belimbau-tuyan".  This gourd-resonating musical bow likely has common roots with the Brazilian berimbau, due to constant trade between Asia and South America in the nineteenth century, during which the instrument may have been introduced to the Chamorro people.
+
+[4] Latvian musical bows: Two types of musical bow are common in Latvia: the "spēles" and the "pūšļa vijole".
+
+Question: What musical action does Ndebele music and Musical bow have in common?
+
+Answer:

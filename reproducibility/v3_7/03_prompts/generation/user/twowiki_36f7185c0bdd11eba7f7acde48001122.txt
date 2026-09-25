@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Count Your Blessings (1987 film)": ["Count Your Blessings is a 1987 Dutch comedy film directed by Pieter Verhoeff.","The film was selected as the Dutch entry for the Best Foreign Language Film at the 60th Academy Awards, but was not accepted as a nominee."]
+
+[2] "Count Your Blessings (1959 film)": ["Count Your Blessings is a 1959 drama film made by Metro-Goldwyn-Mayer.","It was directed by Jean Negulesco, written and produced by Karl Tunberg, based on the 1951 novel \"The Blessing\" by Nancy Mitford.","The music score was by Franz Waxman and the cinematography by George J. Folsey and Milton R. Krasner.","The costume design was by Helen Rose.","The film stars Deborah Kerr, Rossano Brazzi and Maurice Chevalier with Martin Stephens, Ronald Squire, Patricia Medina and Mona Washbourne.","The film was shot in London and Paris."]
+
+[3] "Franz Waxman": ["Franz Waxman (n\u00e9 Wachsmann; 24 December 190624 February 1967) was a German and American composer of Jewish descent, known primarily for his work in the film music genre.","His film scores include \"Bride of FrankensteinRebeccaSunset BoulevardA Place in the SunStalag 17Rear WindowPeyton","PlaceThe Nun's Story\", and \"Taras Bulba\".","He received twelve Academy Award nominations, and won two Oscars in consecutive years (for \"Sunset Boulevard\" and \"A Place in the Sun\").","He also received a Golden Globe Award for the former film.","Bernard Herrmann said that the score for \"Taras Bulba\" was \"the score of a lifetime.\"","He also composed concert works, including the oratorio \"Joshua\" (1959), and \"The Song of Terezin\" (1965), a work for orchestra, chorus, and children's chorus based upon poetry written by children in the Theresienstadt concentration camp during World War II.","Waxman also founded the Los Angeles Music Festival in 1947 with which he conducted a number of West Coast premieres by fellow film composers, and concert composers alike."]
+
+[4] "Thomas Morse": ["Thomas Morse( born June 30, 1968) is an American composer of film and concert music."]
+
+Question: What nationality is the composer of film Count Your Blessings (1959 Film)?
+
+Answer:

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "e9c0e10097f03d9f9a2d165ead6d025f9f2302e654f72019c23e02a4ac5f77d7",
+  "candidate_text": "Devil On Deck.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "1356dc3495287214023e5d40bc5458cbfb49377638499fdbd5fc708fafde62af",
+  "example_id": "38338e8f08e111ebbda2ac1f6bf848b6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "c2c98103b3370d8d8b8ab181a07a01a93e85ff4bbd3ef12a3011523569d53836",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "38338e8f08e111ebbda2ac1f6bf848b6",
+  "prompt_sha256": "3ea7d7e5366e32b4237133a49da4ab9180bcf78046a2eee23ee40b29a5cb1da9",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Paolo Cavara\": [\"Paolo Cavara (4 July 1926 \\u2013 7 August 1982) was an Italian screenwriter and film director.\",\"He is best known for collaborating with Gualtiero Jacopetti and Franco E. Prosperi on the 1962 mondo film \\\"Mondo Cane\\\", and for directing the fiction film \\\"The Wild Eye\\\" (1967) and two giallo films, \\\"Black Belly of the Tarantula\\\" (1971) and \\\"Plot of Fear\\\" (1976).\"]\n\n[2] \"Black Belly of the Tarantula\": [\"The Black Belly of the Tarantula is a 1971 Italian giallo film directed by Paolo Cavara.\",\"It is one of many Italian giallo films to be inspired by Dario Argento's successful debut thriller\\\" The Bird with the Crystal Plumage\\\".\",\"The film was shot on location in Rome, Italy, in 1970.\",\"It starred Giancarlo Giannini, Barbara Bouchet, and Barbara Bach.\",\"Ennio Morricone did the music score for the film.\",\"Though fairly obscure for many years the film has recently made a comeback thanks to the rising fan base for the giallo genre.\",\"The film has gained much praise from the horror community, one writer at Horrorview.com cited it as the best giallo ever made.\",\"Blue Underground Entertainment released the film on DVD in 2006.\"]\n\n[3] \"Devil on Deck\": [\"Devil on Deck is a 1932 Pre-code talking film directed by Wallace Fox and starring Reed Howes and Molly O' Day.\",\"It was produced and distributed by Sono Art- World Wide Pictures, a B-movie studio that turned out occasionally some good pictures like\\\" The Great Gabbo\\\".\"]\n\n[4] \"Mohsen Eslamzadeh\": [\"Mohsen Eslamzadeh is an Iranian documentary filmmaker.\",\"He is the director of\\\" Alone Among The Taliban\\\".\",\"This film has won the best documentary award at the 44th Athens International Film and Video Festival in the United States.\",\"This film has won the best documentary award at the 12th Marbella International Film Festival in Spain.\",\"This film has won the Shahid Avini Award offers.\"]\n\nQuestion: Which film has the director died earlier, Black Belly Of The Tarantula or Devil On Deck?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "e8f7d477d37341871c2bbcb437abbfe68063cc9a0f5097dab948ffc6f08b826b",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:38338e8f08e111ebbda2ac1f6bf848b6",
+  "task_key": "c7ab2e9864c56ed9569ca4afa92a482133ab5ba265f5d708421dca7e0568de8f",
+  "text": "Devil On Deck.",
+  "timestamp": "2026-09-15T09:34:16.852263+00:00",
+  "tokens_in": 542,
+  "tokens_out": 6,
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 13.76727294921875,
+    "prompt_tokens": 542,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 548
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "e29a90bf4523d05834807f1bce489a4174b4f2fbb973ac90a9e5a3eae75dc8b7",
+  "example_id": "5a7332935542991f9a20c67d",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "ca15e1cff8179a502500dc1aa25c1b5b55ff768a5d2d064fa55be7a7d58a3991",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "5a7332935542991f9a20c67d",
+  "prompt_sha256": "33a1614cd96b94e16c94f0d036a3abba2f7d401a5921bd7d76c2ed4aefcd77e8",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Pirate's Cove: Pirate's Cove (in German, Piratenbucht) is a board game designed by Paul Randles and Daniel Stahl, originally published in Germany in 2002 by Amigo Spiele, illustrated by Markus Wagner and Swen Papenbrock.  In 2003, Days of Wonder republished the game with a new graphic design from Julien Delval and Cyrille Daujean.  In the game, players play pirate ship captains seeking treasure from islands and bragging rights from defeating other pirates in naval combat.\n\n[2] Catan: Seafarers: Catan: Seafarers, or Seafarers of Catan in older editions, (German: \"Die Seefahrer von Catan\" ) is an expansion of the board game \"The Settlers of Catan\" for three to four players (five-to-six-player play is also possible with both of the respective five-to-six-player extensions).  The main feature of this expansion is the addition of ships, gold rivers, and the pirate to the game, allowing play between multiple islands.  The expansion also provides numerous scenarios, some of which have custom rules.  The \"Seafarers\" rules and scenarios are also, for the most part, compatible with \"\" and \"\".\n\n[3] Catan: Cities &amp; Knights: Catan: Cities & Knights (German: \"Städte und Ritter\" ), formerly \"The Cities and Knights of Catan\" is an expansion to the board game \"The Settlers of Catan\" for three to four players (five to six player play is also possible with the \"Settlers\" and \"Cities & Knights\" five to six player extensions; two-player play is possible with the \"\" expansion).  It contains features taken from \"The Settlers of Catan\", with emphasis on city development and the use of knights, which are used as a method of attacking other players as well as helping opponents defend Catan against a common foe.  \"Cities & Knights\" can also be combined with the \"\" expansion or with scenarios (again, five to six player play only possible with the applicable five to six player extension(s)).\n\n[4] Catan Dice Game: Catan Dice Game is a German-style board game, developed by Klaus Teuber and published in 2007 by Catan GmbH and its licensors, Kosmos in Germany and Mayfair Games in English-speaking countries.  It is a dice game re-imagining of Teuber's most notable title, \"Settlers of Catan\".  \"Catan Dice Game\" can be played by any number of players, but is ideally suited for up to four.  A variation, known as \"Catan Dice Game Plus\", is freely available from the \"Catan\" website, whose gameplay is closer to its \"Settlers\" origins.\n\nQuestion: Which board game was published most recently, Pirate's Cove or Catan?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "59c39f36c5fb35fb85487319bf8a7d8915f00e772a48bbfccecf7da484240537",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a7332935542991f9a20c67d",
+  "task_key": "5c2620200b8ef8547325116369d2b8fcbbd6652a8f3a12adabf65833b1219b4a",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-15T09:38:04.400199+00:00",
+  "tokens_in": 676,
+  "tokens_out": 183,
+  "usage": {
+    "completion_tokens": 183,
+    "neurons": 55.308,
+    "prompt_tokens": 676,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 859
+  }
+}

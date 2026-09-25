@@ -1,0 +1,30 @@
+{
+ "err": {
+  "body": {
+   "error": {
+    "message": "timeout"
+   }
+  },
+  "status": 408
+ },
+ "ok": {
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "message": {
+     "content": "recorded xai answer"
+    }
+   }
+  ],
+  "id": "xai-REC1",
+  "model": "grok-x-2026",
+  "system_fingerprint": "fp_xai",
+  "usage": {
+   "completion_tokens": 27,
+   "completion_tokens_details": {
+    "reasoning_tokens": 5
+   },
+   "prompt_tokens": 99
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "HIDDEN_DEV_LAUNCH_COUNT_THIS_PASS": 0,
+  "VISIBLE_TERMINAL_LAUNCH_COUNT": 1,
+  "canonical_complete_before_launch": 2185,
+  "canonical_remaining": 55,
+  "resume_A_remaining": 46,
+  "resume_B_remaining": 9,
+  "schema": "PCG_MAS_V3_6_MASTER_PAPER_COMPLETE_VISIBLE_TERMINAL_LAUNCH_RECEIPT",
+  "stage_target": "RESUME_A_RUNNING",
+  "status": "PASS",
+  "terminal_launch_command": "cd <LOCAL_PATH:b0f2ecb535f6b59f> && /bin/zsh artifacts/v3_6/dataset_amendment_v2/integration/launch_autonomous_resume_ab.sh <LOCAL_PATH:b0f2ecb535f6b59f>",
+  "terminal_window_id": "tab 1 of window id 59681",
+  "timestamp": "2026-09-18T05:50:18.374880+00:00"
+}

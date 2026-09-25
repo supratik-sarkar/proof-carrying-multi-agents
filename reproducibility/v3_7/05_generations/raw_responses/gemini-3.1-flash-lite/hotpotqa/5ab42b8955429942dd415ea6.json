@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "4c66faccb7339fa33ffb80d479eb550acfde7987e1570ded76c9091b1f13245d",
+  "candidate_text": "Bourbon County.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "4548a1e92bae24625713c6ca05f99b18ca2322d8b215401b41bbe8cc08bbf154",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5ab42b8955429942dd415ea6",
+  "prompt_sha256": "1217ea1b61582343ba30f54ba662c8007630554b64e15680b957a5601ac0ad3f",
+  "provider": "gemini",
+  "provider_raw_sha256": "a003185a3ac7b7c3525f2d642a087b9e0166bcbb4d0e751030f45100e4a5268f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ab42b8955429942dd415ea6",
+  "text": "Bourbon County.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 721,
+    "total_tokens": 725
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "aba9743ca33a5691187b2bec45ab0087bc465b66fb3e2803b068c16f9a926695",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_function_148",
+  "prompt_sha256": "aba9743ca33a5691187b2bec45ab0087bc465b66fb3e2803b068c16f9a926695",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "09f523e6f69735618cecc0b69895c875bd387d1adbff541aa41644fa74a22d19",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"distance\": 500, \"time\": 25, \"to_unit\": \"km/h\"}",
+        "name": "calculate_speed"
+      },
+      "id": "chatcmpl-tool-9eba95a414745f1e",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"distance\": 1000, \"time\": 200, \"to_unit\": \"m/s\"}",
+        "name": "calculate_speed"
+      },
+      "id": "chatcmpl-tool-a608144e60c170d2",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"distance\": 10000, \"time\": 600, \"to_unit\": \"km/h\"}",
+        "name": "calculate_speed"
+      },
+      "id": "chatcmpl-tool-a78aa254418a99b9",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 294,
+    "neurons": 105.44999694824219,
+    "prompt_tokens": 487,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 781
+  }
+}

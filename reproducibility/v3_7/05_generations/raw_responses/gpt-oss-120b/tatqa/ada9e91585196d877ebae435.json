@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "2c0c6e246ae0de8b3def4f1fdb81836cfa0428fab9f0f1e3971756b7f57ec9d8",
+  "candidate_text": "≈ 84.6% increase.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "700096aabff6b95a60b76d17c76e341e42f4e05f5dd93a8abf75f34d8eb83ece",
+  "example_id": "933b0a681271d261702f2c52a64bc311",
+  "finish": "stop",
+  "input_sha256": "6c097d39d465553a47de2d2bf86af19babeb0cab8051b7679afa3460fe5d3d20",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "933b0a681271d261702f2c52a64bc311",
+  "prompt_sha256": "158bbf401ae924f562ba514e71a32129de9bd4f0558a674db96e308c52384857",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 3: The Company accounts for deferred taxes under ASC Topic 740, “Income Taxes” (“ASC 740”) which involves weighing positive and negative evidence concerning the realizability of the Company’s deferred tax assets in each jurisdiction. The Company evaluated its ability to realize the benefit of its net deferred tax assets and weighed all available positive and negative evidence both objective and subjective in nature. In determining the need for a valuation allowance, the weight given to positive and negative evidence is commensurate with the extent to which the evidence may be objectively verified. Consideration was given to negative evidence such as: the duration and severity of losses in prior years, high seasonal revenue concentrations, increasing competitive pressures, and a challenging retail environment. Realization of the Company’s net deferred tax assets is dependent upon its generation of sufficient taxable income in future years in appropriate tax jurisdictions to obtain benefit from the reversal of temporary differences, net operating loss carryforwards and tax credit carryforwards. The amount of net deferred tax assets considered realizable is subject to adjustment in future periods if estimates of future taxable income change.\n\n[2] TAT-QA table: row 0:  | December 31, | \nrow 1:  | 2019 | 2018\nrow 2: Deferred tax assets: |  | \nrow 3: Net operating losses and credits | $113,475 | $61,494\nrow 4: Fixed assets and intangible assets | 61,932 | 55,476\nrow 5: Accruals and reserves | 75,133 | 53,818\nrow 6: Stock-based compensation | 8,615 | 9,494\nrow 7: Inventory | 429 | 911\nrow 8: Other | 5,287 | 4,806\nrow 9: Total deferred tax assets | 264,871 | 185,999\nrow 10: Less: valuation allowance | (244,581) | (181,122)\nrow 11: Deferred tax assets, net of valuation allowance | 20,290 | 4,877\nrow 12: Deferred tax liabilities: |  | \nrow 13: Accruals and reserves | (15,525) | —\nrow 14: Other | (914) | (560)\nrow 15: Total deferred tax liabilities | (16,439) | (560)\nrow 16: Net deferred tax assets | $3,851 | $4,317\n\n[3] TAT-QA 4: The Company recorded a valuation allowance to reduce its deferred tax assets to the net amount that the Company believes is more likely than not to be realized. As of December 31, 2019, the Company has a valuation allowance of $191.7 million against its U.S. deferred tax assets and a valuation allowance of $52.9 million against certain of its foreign deferred tax assets that the Company is not expected to realize. The Company will continue to assess the realizability of its deferred tax assets in each of the applicable jurisdictions going forward.\n\n[4] TAT-QA 5: As of December 31, 2019, the Company has U.S. federal net operating loss carryforwards of $316.2 million which expire beginning after 2032, California net operating loss carryforwards of $57.3 million which expire beginning after 2032, and other states net operating loss carryforwards of $52.1 million which expire beginning after 2023. As of December 31, 2019, the Company has U.S. federal research tax credit carryforwards of approximately $22.6 million, which if not utilized, begin to expire after 2031, California research tax credit carryforwards of approximately $45.0 million, which do not expire, Massachusetts research tax credit carryforwards of approximately $2.9 million, which if not utilized, begin to expire after 2028,\n\nQuestion: What is the percentage change of net operating losses and credits from 2018 to 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "2c0885362bf7bb3adab7686bef60424658911e0368964e341aae12d231b93c3c",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:933b0a681271d261702f2c52a64bc311",
+  "task_key": "9e08b6403e8e9936c78987ef1e0657293ba38751c0675846d9ed6cbb6a76b9de",
+  "text": "≈ 84.6% increase.",
+  "timestamp": "2026-09-14T10:33:46.117474+00:00",
+  "tokens_in": 956,
+  "tokens_out": 123,
+  "usage": {
+    "completion_tokens": 123,
+    "neurons": 38.80436706542969,
+    "prompt_tokens": 956,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1079
+  }
+}

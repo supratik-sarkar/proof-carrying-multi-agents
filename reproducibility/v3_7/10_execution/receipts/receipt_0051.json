@@ -1,0 +1,59 @@
+{
+  "overall_coverage": 0.3611607142857143,
+  "per_dataset_summary": {
+    "agentdojo": {
+      "accepted": 280,
+      "harm_sum": 157,
+      "harm_sum_accepted": 157,
+      "total": 280
+    },
+    "bfcl_v1": {
+      "accepted": 234,
+      "harm_sum": 99,
+      "harm_sum_accepted": 53,
+      "total": 280
+    },
+    "fever": {
+      "accepted": 0,
+      "harm_sum": 25,
+      "harm_sum_accepted": 0,
+      "total": 280
+    },
+    "hotpotqa": {
+      "accepted": 76,
+      "harm_sum": 135,
+      "harm_sum_accepted": 29,
+      "total": 280
+    },
+    "mind2web": {
+      "accepted": 60,
+      "harm_sum": 262,
+      "harm_sum_accepted": 42,
+      "total": 280
+    },
+    "pubmedqa": {
+      "accepted": 44,
+      "harm_sum": 207,
+      "harm_sum_accepted": 36,
+      "total": 280
+    },
+    "tatqa": {
+      "accepted": 84,
+      "harm_sum": 199,
+      "harm_sum_accepted": 49,
+      "total": 280
+    },
+    "twowiki": {
+      "accepted": 31,
+      "harm_sum": 194,
+      "harm_sum_accepted": 27,
+      "total": 280
+    }
+  },
+  "schema": "PCG_MAS_V3_6_EXP0M_HARD_AUDIT",
+  "status": "PASS",
+  "timestamp": "2026-09-19T17:48:57.286208+00:00",
+  "total_accepted": 809,
+  "total_records": 2240,
+  "unique_identities": 2240
+}

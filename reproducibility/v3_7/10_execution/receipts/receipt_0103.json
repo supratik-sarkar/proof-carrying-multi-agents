@@ -1,0 +1,29 @@
+{
+  "READY": "YES",
+  "canonical_complete_now": 2057,
+  "canonical_remaining_now": 183,
+  "clean_python": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "environment": "DEV",
+  "expected_provider_split": {
+    "Cloudflare": 156,
+    "Gemini": 27
+  },
+  "expected_remaining": {
+    "AgentDojo": 183,
+    "BFCL": 0,
+    "Mind2Web": 0,
+    "Old_Five": 0
+  },
+  "foreground_execution": true,
+  "immutable_core": 807,
+  "launch_mode": "VISIBLE_MACOS_TERMINAL",
+  "post_agentdojo_control_acceptance_sha256": "66e239d64a95b93764b319549892485f312f3d379e6ff71162c5508c1d663fa8",
+  "post_agentdojo_control_preflight_sha256": "88933f9cab45f760e51f8426c78fcd3fb9b8fda87b2d029c2e66d05a03b6e657",
+  "post_agentdojo_fuse_failure_exact_resume_workplan_sha256": "11f1a7c7ff6a5011b03379122ac63975bfa2b7707f809f1da6296b368a2f5862",
+  "project_release": "v3.6",
+  "protected_followon": 618,
+  "runtime_reconciliation_authority_sha256": "53f9700c8b189b416d4cd3b8a8f7b5b5d2c82025c3d7732261e7645c8b365e90",
+  "schema": "PCG_MAS_V3_6_POST_AGENTDOJO_CONTROL_LAUNCH_AUTHORITY",
+  "status": "PASS",
+  "timestamp": "2026-09-17T17:49:49.692382+00:00"
+}

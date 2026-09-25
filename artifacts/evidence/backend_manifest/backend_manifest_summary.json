@@ -1,9 +1,0 @@
-{
-  "empirical_status": "NOT_ESTABLISHED",
-  "status": "PASS",
-  "total_records": 13440,
-  "verified_records": 13440,
-  "required_fields_count": 10,
-  "errors": [],
-  "_provenance_correction": "Corrected during clean-room repair. The prior value asserted native execution that no evidence in this repository supports. See reports/ARTIFACT_56_CELL_LINEAGE.md."
-}

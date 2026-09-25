@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "1cabe88fc3d611519f6ff71774b8977a2ffb261ebd64d600d4a2c89696acb110",
+  "candidate_text": "($8,736)",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "0f75ed82843ec64a7e448685b9fef1fbc0003971633fa2a22623350909426a89",
+  "example_id": "974ea4685a3322b23ac80e3a89131498",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "4486dd2644523bed1e8b20a8b6d5871155435ba6d4969f53cc752edef151d364",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "974ea4685a3322b23ac80e3a89131498",
+  "prompt_sha256": "8fde2965b426d5f26babdd7f2e15df70cb3afd0ba10af815a0bf5c75a925ab94",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 4: The percentage of Global Financing receivables reserved was 1.0 percent at December 31, 2019, compared to 0.9 percent at December 31, 2018. The decline in the allowance for credit losses was driven by write-offs of $64 million, primarily of receivables previously reserved, and net releases of $7 million as a result of lower average asset balances in client and commercial financing. See note K, “Financing Receivables,” for additional information.\n\n[2] TAT-QA table: row 0: ($ in millions) |  | \nrow 1: At December 31: | 2019 | 2018\nrow 2: Recorded investment (1) | $22,446 | $31,182\nrow 3: Specific allowance for credit losses | 177 | 220\nrow 4: Unallocated allowance for credit losses | 45 | 72\nrow 5: Total allowance for credit losses | 221 | 292\nrow 6: Net financing receivables | $22,224 | $30,890\n\n[3] TAT-QA 2: The following table presents external Global Financing receivables excluding residual values, the allowance for credit losses and immaterial miscellaneous receivables:\n\n[4] TAT-QA 3: (1) Includes deferred initial direct costs which are eliminated in IBM’s consolidated results.\n\nQuestion: What is the increase / (decrease) in the recorded investment from 2018 to 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "feed532b9d4e86dc9177f06a6a64650ba1c090a8e31a9f6533be60484db05432",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:974ea4685a3322b23ac80e3a89131498",
+  "task_key": "f1229f4a45b00501ec91a4a937a4a8b6f1a4f89373352dbba9ba993be8b157bd",
+  "text": "($8,736)",
+  "timestamp": "2026-09-15T09:34:31.946645+00:00",
+  "tokens_in": 371,
+  "tokens_out": 6,
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 9.570000648498535,
+    "prompt_tokens": 371,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 377
+  }
+}

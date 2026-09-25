@@ -16,7 +16,7 @@ from typing import Any, Dict, List, Optional
 from .release import METRIC_VERSION, RECORD_SCHEMA_VERSION
 
 PROVENANCE_CLASSES = ("DIRECT", "DERIVED", "MODELLED", "PROTOCOL",
-                      "REPLAY", "TEST_FIXTURE", "MOCK", "UNKNOWN")
+                      "REPLAY", "TEST_FIXTURE", "MOCK", "UNKNOWN", "ENGINEERING_SMOKE")
 SYSTEMS = ("nocert", "citation_only", "shieldagent", "agentrr", "pcg_mas")
 CONTROLLER_ACTIONS = ("Answer", "Verify", "Escalate", "Refuse")
 
@@ -119,6 +119,17 @@ class PerExampleRecord:
     corruption: Optional[str] = None
     shift_regime: Optional[str] = None
     injection_regime: Optional[str] = None
+    # -- v3.2 execution substrate (additive; RECORD_SCHEMA_VERSION -> 3.2.0)
+    execution_mode: Optional[str] = None          # FRESH|RESUME|REPLICATE|REPLAY
+    certificate_root: Optional[str] = None        # PCG-CAS-v1 address
+    lineage_root: Optional[str] = None
+    policy_eval_status: Optional[str] = None      # AVAILABLE|INDETERMINATE
+    policy_input_hash: Optional[str] = None
+    retry_attempts: Optional[int] = None          # observed, transport-only
+    retry_trigger_class: Optional[str] = None     # TRANSPORT|RATE_LIMIT|TIMEOUT
+    instrumentation_version: Optional[str] = None
+    instrumentation_overhead_ratio: Optional[float] = None
+    guardrail_intervention_count: Optional[int] = None
     # -- environment
     host_fingerprint: Optional[str] = None
     device: Optional[str] = None

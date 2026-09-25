@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "1da32c4c83ee8abdfeb3dc425b4a70f6ea65e677bc827e54a2451cec92804903",
+  "candidate_text": "German and American.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "72a629f158f047132173ec53e83f1c4c42c1f6a8fe325303cf3fd14b9edc5cd4",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "36f7185c0bdd11eba7f7acde48001122",
+  "prompt_sha256": "ded897a33706d3286e4ab42add9daeb21502a7d4fc1e79a70d983ea69f1efcb2",
+  "provider": "gemini",
+  "provider_raw_sha256": "dd3dd2b3b3580b3549a933e3cb5d9277beb1669ddde655a0ad7d64fd0ca95e53",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:36f7185c0bdd11eba7f7acde48001122",
+  "text": "German and American.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 599,
+    "total_tokens": 603
+  }
+}

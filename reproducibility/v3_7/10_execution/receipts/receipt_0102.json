@@ -1,0 +1,20 @@
+{
+  "active_process_table": [
+    "<LOCAL_USER>   80635   0.0  0.0 435301792   1328 s004  S+    4:19PM   0:00.00 caffeinate -dimsu <LOCAL_PATH:524ae6cd7dc69b9e> <LOCAL_PATH:e1b5d82f8e2ccf69> --manifest <LOCAL_PATH:6823bcd1a22182b9> --state <LOCAL_PATH:4cfd7b671af557ed>",
+    "<LOCAL_USER>   98564   0.0  0.1 435317488  31680 s003  S+   11:20PM   0:00.07 /opt/homebrew/Cellar/python@3.12/3.12.13_4/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python <LOCAL_PATH:24dd4c9c147cd960> --repo-root <LOCAL_PATH:b0f2ecb535f6b59f> --runtime-root <LOCAL_PATH:62ffa5c4fc729f1a> --agentdojo-python <LOCAL_PATH:1c60a8aa0a32b97e> --model-id gemini-3.1-flash-lite --provider gemini --api-model-id gemini-3.1-flash-lite --suite travel --user-task-id user_task_7 --injection-task-id injection_task_1 --observation-id agentdojo:travel:user_task_7:injection_task_1 --generation-policy-sha256 878da65e0d731e6ceaff49451afcea5400e5f9da3abeca958410ba0a9f8dcf8e",
+    "<LOCAL_USER>   98563   0.0  0.1 435277744  24800 s003  S+   11:20PM   0:00.05 /opt/homebrew/Cellar/python@3.12/3.12.13_4/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python <LOCAL_PATH:347e06717cc28a02> --repo-root <LOCAL_PATH:b0f2ecb535f6b59f> --runtime-root <LOCAL_PATH:62ffa5c4fc729f1a> --lane agentdojo",
+    "<LOCAL_USER>   98562   0.0  0.1 435269584  16864 s003  S+   11:20PM   0:00.03 /opt/homebrew/Cellar/python@3.12/3.12.13_4/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python <LOCAL_PATH:ea67d85653ecd36b> --repo-root <LOCAL_PATH:b0f2ecb535f6b59f> --runtime-root <LOCAL_PATH:62ffa5c4fc729f1a> --batch <LOCAL_PATH:3fb304752b8e0731>",
+    "<LOCAL_USER>   98559   0.0  0.1 435269200  17024 s003  S+   11:20PM   0:00.03 /opt/homebrew/Cellar/python@3.12/3.12.13_4/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python <LOCAL_PATH:78d9a32f7720cffb> --repo-root <LOCAL_PATH:b0f2ecb535f6b59f> --runtime-root <LOCAL_PATH:62ffa5c4fc729f1a>",
+    "<LOCAL_USER>   98561   0.0  0.0 435301792   3664 s003  S+   11:20PM   0:00.00 /usr/bin/caffeinate -dimsu <LOCAL_PATH:1c60a8aa0a32b97e> <LOCAL_PATH:78d9a32f7720cffb> --repo-root <LOCAL_PATH:b0f2ecb535f6b59f> --runtime-root <LOCAL_PATH:62ffa5c4fc729f1a>",
+    "<LOCAL_USER>   98557   0.0  0.0 435308736   2448 s003  S+   11:20PM   0:00.00 /bin/zsh artifacts/v3_6/dataset_amendment_v2/integration/launch_amended_followon.sh <LOCAL_PATH:b0f2ecb535f6b59f>"
+  ],
+  "monitored_duration_seconds": 10,
+  "pipeline_active": true,
+  "process_alive": true,
+  "schema": "PCG_MAS_V3_6_POST_AGENTDOJO_CONTROL_G10_LIVENESS_RECEIPT",
+  "stage_agentdojo_running": true,
+  "status": "PASS",
+  "terminal_window_id": "tab 1 of window id 59315",
+  "timestamp": "2026-09-17T17:50:59.940830+00:00",
+  "traceback_detected": false
+}

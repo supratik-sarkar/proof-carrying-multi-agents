@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "7a725c02d3d041d10095b076ecffcf46db790f03fe26e75df8b987169d36d5a0",
+  "candidate_text": "No, it's not early cancer.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "ebed0f7cb8cd55ff6ebe5b29a6845443f9c3ab6864273da0298dc227218c04c9",
+  "example_id": "8847047",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "c10cdb570386d056d889983648138f94119516301133069ed22e01226b2a9ebe",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "8847047",
+  "prompt_sha256": "a699b958c943be797fed84cceb35fb0aab8d98ac5d10b1a2adb8647027d9b681",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: AIMS: The purpose of this study is to examine whether or not well differentiated (w-d) hepatocellular carcinoma (HCC) is indeed clinically early cancer. MATERIALS AND METHODS: Seventy six patients with solitary small HCCs up to 3 cm in diameter, who underwent hepatectomy, were observed for at least 2 years for possible recurrence. These patients were divided into two groups: 10 patients with w-d HCCs (Edmondson and Steiner's grade I) and 66 patients with less differentiated (l-d) HCCs (Edmondson and Steiner's grade I-II, II-III, and III). RESULTS: The histological analysis revealed that w-d HCCs had lower incidences of fibrous capsule formation (P<0.01), when compared to l-d HCCs. There were no significant differences in the incidence of intrahepatic metastasis, or portal vein invasion. In a resected specimen of w-d HCC, barium sulfate and gelatin were injected into portal vein and a transparent specimen was made. The transparent specimen showed that the portal vein in the tumor seemed to be intact. Microscopically, cancer cell infiltration into the fibrous frame of the portal tract was present. There were no significant differences in the disease free survival between the two groups. An analysis of tumor volume doubling time in recurrent foci suggested that minute cancerous foci had been present at the time of operation.\n\nLong answer: W-d HCCs were clinically demonstrated not to be early cancer, because there was no significant difference in disease free survival between the patients with w-d and l-d HCCs.\n\nQuestion: Prognosis of well differentiated small hepatocellular carcinoma--is well differentiated hepatocellular carcinoma clinically early cancer?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "e2a101fd8237909339eb0bee848a8cc2bca3289e8a4306245f24b18d02685f66",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:8847047",
+  "task_key": "223383496870f76af6c57a3e7d3a82526696ded746a45bc44075fb7949690f77",
+  "text": "No, it's not early cancer.",
+  "timestamp": "2026-09-15T09:34:53.607432+00:00",
+  "tokens_in": 410,
+  "tokens_out": 8,
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 10.681818962097168,
+    "prompt_tokens": 410,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 418
+  }
+}

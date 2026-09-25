@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "b6552031bcd0c457ed8af3bcddc5b97923fc412aba1e171e9c4e8db1421b9cc2",
+  "candidate_text": "I'll help you get all that information! Let me fetch the rankings for both teams and the air quality data for those specific dates.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "2e1eb73dea15e3e5bfdff15f8c7971efc6b793c73ed0b13eeb901869245b550e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_multiple_function_171",
+  "prompt_sha256": "2e1eb73dea15e3e5bfdff15f8c7971efc6b793c73ed0b13eeb901869245b550e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "94671371660d150fc4a736617db22deb826c41598461dff76431ee9b1a30524c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you get all that information! Let me fetch the rankings for both teams and the air quality data for those specific dates.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"team\": \"New York Yankees\", \"league\": \"Major League Baseball\", \"season\": 2019}",
+        "name": "sports_ranking"
+      },
+      "id": "chatcmpl-tool-a7f9fba1dd178d66",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"team\": \"Los Angeles Lakers\", \"league\": \"National Basketball Association\", \"season\": 2020}",
+        "name": "sports_ranking"
+      },
+      "id": "chatcmpl-tool-b2b2ec9530d740fd",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"Los Angeles\", \"date\": \"December 25, 2020\"}",
+        "name": "air_quality"
+      },
+      "id": "chatcmpl-tool-855f959944e0ab88",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York\", \"date\": \"January 1, 2021\"}",
+        "name": "air_quality"
+      },
+      "id": "chatcmpl-tool-bf516f9759709f72",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 439,
+    "neurons": 18.2346,
+    "prompt_tokens": 410,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 849
+  }
+}

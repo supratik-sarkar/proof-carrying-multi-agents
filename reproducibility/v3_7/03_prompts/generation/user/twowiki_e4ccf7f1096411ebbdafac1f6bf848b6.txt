@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "There Are But Four Small Faces": ["There Are But Four Small Faces is a studio album by British rock group Small Faces, released on 1 December 1967 through Columbia Records.","It was the band's first album release in the United States, and acts as an alternative version for overseas release of the Immediate album\" Small Faces\", which came out earlier the same year.","\" There Are\" was issued around the same time as the group's single\" Tin Soldier\"."]
+
+[2] "The Champion of Pontresina": ["The Champion of Pontresina is a 1934 German- Swiss comedy film directed by Herbert Selpin and starring Sepp Rist, Rudolf Klicks and Eric Helgar."]
+
+[3] "Tom Cole (rower)": ["Tom Cole( born 1827) was the Professional Single Sculls World Champion from 1852 to 1854.","He resided in Chelsea.","At the time, he became the Champion of the Thames which was effectively the Champion of England.","After the English title gained the world status in 1876, earlier winners were retrospectively given the World Champion Title."]
+
+[4] "The Champion of Champions": ["The Champion Of Champions is a 1972 Hong Kong film."]
+
+Question: Which film came out earlier, The Champion Of Pontresina or The Bulleteers?
+
+Answer:

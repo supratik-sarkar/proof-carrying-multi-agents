@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "a062f0cb9a53d8ec294831f1c97fa4db34a43bd40866908b64b71711f81c7f17",
+  "candidate_text": "$227 and $173 (thousands)",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "ba0e5f6fb3b8fc11db9537a29b8ed4453e1852228759a28c1a584fc533fa0026",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "46f35aee845bc1419a183c18c5f03008",
+  "prompt_sha256": "3babd12dcba2fd28aa1e0034500e050c590f60bce1feb31a6034d02cb76de37e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "e093b0e2c7e7d0a9339b423b6c10ffca34eb4187cdacb4a5a3e43ce0d224aad8",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:46f35aee845bc1419a183c18c5f03008",
+  "text": "$227 and $173 (thousands)",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 13,
+    "neurons": 8.190908432006836,
+    "prompt_tokens": 862,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 875
+  }
+}

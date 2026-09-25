@@ -1,0 +1,8 @@
+{
+  "schema": "PCG_MAS_V3_6_FIT_GENERATION_CAPACITY_RECEIPT",
+  "status": "PASS",
+  "missing_real_fit_generations": 700,
+  "required": 700,
+  "projected_cost_usd": 0.0,
+  "notes": "Exact 700 missing real FIT generations admitted for generation in amended follow-on lane fit_missing."
+}

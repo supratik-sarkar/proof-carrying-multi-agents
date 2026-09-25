@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "241fbbc99e23d816f6eddd776af62438f46f7ce4d91b70a52771dbe82305b145",
+  "candidate_text": "\n\nYes, BRAF predicts better outcome.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "6ddcf9e94aa4c30b6cd2f2946f8d705cef4c046441baa6d04c0e1fa65ddeced6",
+  "example_id": "26285789",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "062d1925612923c7d7ae3a47ee8ec09b8b86cc01c49e6b74250568b6513e94bf",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "26285789",
+  "prompt_sha256": "b9fdfe31038323198013d3c778b4bc654c50b98e2aca6b25696541acc6a0294a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: INTRODUCTION: Whether mutation status should be used to guide therapy is an important issue in many cancers. We correlated mutation profile in radioiodine-refractory (RAIR) metastatic thyroid cancers (TCs) with patient outcome and response to tyrosine kinase inhibitors (TKIs), and discussed the results with other published data. MATERIALS AND METHODS: Outcome in 82 consecutive patients with metastatic RAIR thyroid carcinoma prospectively tested for BRAF, RAS and PI3KCA mutations was retrospectively analyzed, including 55 patients treated with multikinase inhibitors. RESULTS: Papillary thyroid carcinomas (PTCs) were the most frequent histological subtype (54.9 %), followed by poorly differentiated thyroid carcinoma [PDTC] (30.5 %) and follicular thyroid carcinoma [FTC](14.6 %). A genetic mutation was identified in 23 patients (28 %) and BRAF was the most frequently mutated gene (23 %). Median progression-free survival (PFS) on first-line TKI treatment was 14.6 months (95% CI 9.9-18.4). BRAF mutation positively influenced median PFS, both in the entire TKI-treated cohort (median PFS 34.7 months versus 11.6 months; hazard ratio [HR] 0.29; 95% CI 0.09-0.98; p = 0.03) and in the TKI-treated PTC cohort (n = 22) [log-rank p = 0.086; HR 2.95; 95 % CI 0.81-10.70). However, in TKI-treated patients, PDTC histologic subtype was the only independent prognostic factor for PFS identified in the multivariate analysis (HR 2.36; 95% CI 1.01-5.54; p = 0.048).\n\nLong answer: Patients with BRAF-mutant PTC had a significantly longer PFS than BRAF wild-type when treated with TKIs. However, due to the small number of BRAF-mutant patients, further investigations are required, especially to understand the potential positive effect of BRAF mutations in RAIR TC patients while having a negative prognostic impact in RAI-sensitive PTC patients.\n\nQuestion: Does Molecular Genotype Provide Useful Information in the Management of Radioiodine Refractory Thyroid Cancers?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c28db024f2d17cf7175fbe0ab504bea25003ec7624423176e162cf0ad1c01c8e",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:26285789",
+  "task_key": "0fa7a8ae0c8332031588e0c8a3b8fa2c4b397d7b0271d6580d58bbf21e0e5752",
+  "text": "\n\nYes, BRAF predicts better outcome.",
+  "timestamp": "2026-09-15T09:41:01.044397+00:00",
+  "tokens_in": 581,
+  "tokens_out": 223,
+  "usage": {
+    "completion_tokens": 223,
+    "neurons": 56.473,
+    "prompt_tokens": 581,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 804
+  }
+}

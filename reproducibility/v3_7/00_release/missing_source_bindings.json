@@ -1,0 +1,10 @@
+{
+  "records": [
+    {
+      "consequence": "Raw-to-aggregate scientific replay cannot be claimed.",
+      "layer": "current per-observation verification, certificate, decision, and outcome values",
+      "status": "NOT_RETAINED"
+    }
+  ],
+  "status": "EXPLICIT"
+}

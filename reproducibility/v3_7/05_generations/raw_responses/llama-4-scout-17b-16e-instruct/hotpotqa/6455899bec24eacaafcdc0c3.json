@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "8111964b42d23ce6fb94785ab8f8056839985de91174a8670dca37247f9c446c",
+  "candidate_text": "Paula Patton.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "f43100a5fc4d9d666282c8dcdeac628febb8dae532cd20c5ff2da26b4eb72910",
+  "example_id": "5a7571095542992d0ec05f97",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "fa9c7c51e2fad3585935840985a39d679c39368bc1378dd928b0a8188ceca4f1",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "5a7571095542992d0ec05f97",
+  "prompt_sha256": "d07678008600a3352d2113ef1aa547ed0b4f5bae35b78cef887b711707661018",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Paula Patton: Paula Maxine Patton (born December 5, 1975) is an American actress.  Patton made her film debut in the 2005 comedy film \"Hitch\" and starred in the epic fantasy film \"Warcraft\" (2016), based on the game series of the same name.  Patton has also been the female lead in \"Déjà Vu\" (2006), \"\" (2011) and \"2 Guns\" (2013), and appeared in the critically acclaimed \"Precious\" (2009).\n\n[2] Hitch (film): Hitch is a 2005 American romantic comedy film directed by Andy Tennant and starring Will Smith.  The film, which was written by Kevin Bisch, co-stars Eva Mendes, Kevin James, and Amber Valletta.  Smith plays the main fictional character of the film, Alex \"Hitch\" Hitchens, who is a professional dating consultant who makes a living teaching men how to woo women.  The film was released on February 11, 2005 by Columbia Pictures.\n\n[3] Rimpi Das: Rimpi Das is an Indian actress and model, who works in Assamese cinema and Hindi television industry.  Rimpi Das made her acting debut in the Assamese film \"Monot Birinar Jui\" directed by Ashok Kumar Bishaya.  She has appeared in many Assamese movies which includes national award winning films like \"Ajeyo\" and \"Mon Jaai\".  She has also done Assamese VCD films like \"Uroniya Mon\", \"Phaguni\", \"Jonaki Mon\" etc.  This beautiful actress made her Kollywood debut through Pali directed by A.Jesudoss.\n\n[4] Mirrors (film): Mirrors is a 2008 supernatural horror film directed by Alexandre Aja, starring Kiefer Sutherland, Paula Patton, and Amy Smart.  The film was first titled \"Into the Mirror\", but the name was later changed to \"Mirrors\".  Filming began on May 1, 2007, and it was released in American theaters on August 15, 2008.\n\nQuestion: Which \"Mirrors\" actress made her film debut in the 2005 comedy film \"Hitch\"?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "db89243fcf87f6012ba264a02c8ed0590c4407f4a10eac678bdc7ec38a97d670",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a7571095542992d0ec05f97",
+  "task_key": "6d655a7235b63b975a3c3b406200799643c5b64017863521947c388b2e185870",
+  "text": "Paula Patton.",
+  "timestamp": "2026-09-15T09:33:49.257173+00:00",
+  "tokens_in": 520,
+  "tokens_out": 6,
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 13.227272987365723,
+    "prompt_tokens": 520,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 526
+  }
+}

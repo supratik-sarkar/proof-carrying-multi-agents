@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [
+      "Malformed JSON arguments: Extra data: line 1 column 69 (char 68)."
+    ],
+    "error_type": "bfcl_adapter:malformed_arguments",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "0b860d5e9345fe75149b29392710bc68ebf23104b59a812b6b3905b34326864d",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_function_198",
+  "prompt_sha256": "0b860d5e9345fe75149b29392710bc68ebf23104b59a812b6b3905b34326864d",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "a00edc5a91c82ca8c7c65b07f49a0cc3d3bebc32fc73ffacc082cd7b4ec0e1bd",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"county\": \"Santa Clara\", \"entity\": \"Google\", \"state\": \"California\"}{\"county\": \"San Mateo\", \"entity\": \"Facebook\", \"state\": \"California\"}",
+        "name": "lawsuit_search"
+      },
+      "id": "call_fb8180e5251e46c6bd22bb8d",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 151,
+    "neurons": 5.718181610107422,
+    "prompt_tokens": 176,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 327
+  }
+}

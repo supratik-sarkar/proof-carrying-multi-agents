@@ -1,0 +1,43 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "067a65ef8a67fb2bfa0fd12e99b29d29acede746762cc0930fbb7f090b7b955e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:simple_89",
+  "prompt_sha256": "067a65ef8a67fb2bfa0fd12e99b29d29acede746762cc0930fbb7f090b7b955e",
+  "provider": "gemini",
+  "provider_raw_sha256": "55a651ff0df88a0f8636639667f7c9d6610c71952196f991e316caacab608766",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPu+RmhC8SVj9sMKBzOZFGLmNntyq/OqrPFHZPV9O9wLkbsdIksueIxfawR0mz/DdkiPqMQjo+poSwFUi+gTw26HLRDU1aNJhmjRuvGQ4HCFXiXFDpvBnwKjgJz1xdbqXETT9IeQLWHODdNQ=="
+        }
+      },
+      "function": {
+        "arguments": "{\"database_name\":\"StudentDB\",\"table_name\":\"students\",\"conditions\":{\"school\":\"Bluebird High School\",\"department\":\"Science\"}}",
+        "name": "db_fetch_records"
+      },
+      "id": "call_970981",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 46,
+    "prompt_tokens": 228,
+    "total_tokens": 274
+  }
+}

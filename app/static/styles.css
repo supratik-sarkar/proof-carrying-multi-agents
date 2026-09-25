@@ -4,9 +4,9 @@
    ================================================================= */
 
 :root {
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display',
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Display',
                'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
   --accent:        #5b6fc4;
   --accent-strong: #4554a8;

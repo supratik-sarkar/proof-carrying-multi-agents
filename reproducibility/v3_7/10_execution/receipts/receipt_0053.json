@@ -1,0 +1,15 @@
+{
+  "bonferroni_denominator": 3,
+  "factual_generations_covered": 1400,
+  "schema": "PCG_MAS_V3_6_EXTERNAL_VERIFIERS_INGESTION_RECEIPT",
+  "score_count": 4200,
+  "source_path": "artifacts/v3_6/dataset_amendment_runtime_v2/verifier_lane/EXTERNAL_VERIFIER_SCORES_4200.jsonl",
+  "source_sha256": "eab74770118dee0c15af5947108eca0349351d89584c19ffa1ae31c6c5cc417d",
+  "status": "PASS",
+  "timestamp": "2026-09-19T10:53:04.911206+00:00",
+  "verifier_list": [
+    "minicheck_flan_t5_large",
+    "alignscore_large",
+    "qafacteval"
+  ]
+}

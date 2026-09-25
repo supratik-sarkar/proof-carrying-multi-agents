@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "db9b02ff4d9f00c0b8284ed77dd7c7f87866dd352bfed71331082e597f4e7e00",
+  "candidate_text": "Portraits.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "d48dbe188a1e81579b95a043e0a6714e729ec696cba4ab63fac96cac7f3fdf4c",
+  "example_id": "5a872e8e5542991e7718170c",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "b8b6179dfd369ded2727362cdc7a442623c579d18e6def615bb302c4dfa7f1d2",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "5a872e8e5542991e7718170c",
+  "prompt_sha256": "11b3c70ec0def364a492c846136296041cec584fb6ecb12db4bc783e6ba1eafe",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Daniel Greene (artist): Daniel E. Greene PSA, NA, AWS (born 1934) is an American artist who works in the media of pastels and oil painting.  The Encyclopædia Britannica considers Mr. Greene the foremost pastelist in the United States.  His paintings and pastels are in over 700 public and private collections in the United States and abroad.  Highly regarded as a portrait artist, his subjects have included leaders of Government, Banking, Education and Industry.  Some of his sitters include First Lady Eleanor Roosevelt, Ayn Rand, Astronaut Walter Schirra, William Randolph Hearst, “Wendy’s” founder Dave Thomas, Commentator Rush Limbaugh, Composer Alan Menken, Bryant Gumbel and Bob Schieffer of CBS TV.  Governmental Portraits include Secretary of Agriculture Ann Veneman, Governor Paul Laxalt of Nevada, Governor Gerald Baliles of Virginia, Governor Benjamin Cayetano of Hawaii, and Governor Fob James of Alabama.  Business sitters include the chairmen of the boards of Honeywell, Coca-Cola Company, Dupont Corporation, Endo Pharmaceuticals, American Express, The New York Stock Exchange and IBM.  Mr. Greene has also painted the Deans, Presidents and Benefactors of Tufts, Duke, Columbia, North Carolina, West Point, Delaware, Penn State, New York, Princeton, Rutgers, Yale and Harvard Universities.\n\n[2] Bryant Gumbel: Bryant Charles Gumbel (born September 29, 1948) is an American television journalist and sportscaster, best known for his 15 years as co-host of NBC's \"Today\".  He is the younger brother of sportscaster Greg Gumbel.  Since 1995, he has hosted HBO's acclaimed investigative series \"Real Sports with Bryant Gumbel\", which has been rated as \"flat out TV's best sports program\" by the \"Los Angeles Times\".  It won a Peabody Award in 2012.\n\n[3] Greg Gumbel: Greg Gumbel (born May 3, 1946) is an American television sportscaster.  He is best known for his various assignments on the CBS network (most notably, the National Football League and NCAA basketball).  The older brother of news and sportscaster Bryant Gumbel, he became the first African-American (and Creole) announcer to call play-by-play of a major sports championship in the United States when he announced Super Bowl XXXV for the CBS network in 2001.  He is of Creole ancestry.  Gumbel is currently a play-by-play broadcaster for the \"NFL on CBS\" alongside Trent Green as well as the studio host for CBS' men's college basketball coverage.\n\n[4] Amanda Hearst: Amanda Randolph Hearst (born January 5, 1984) is an American socialite, activist, fashion model, and heiress to the Hearst Corporation, William Randolph Hearst's media conglomerate.  She is an associate market editor at \"Marie Claire\" and the founder of Friends of Finn, an organization dedicated to stopping the inhumane treatment of dogs in puppy mills.  She also served as a co-chair of Riverkeeper's Junior Council.\n\nQuestion: Daniel Greene has created what for clients including sportscaster Bryant Gumbel, Eleanor Roosevelt, William Randolph Hearst and Dave Thomas, the founder of Wendy's?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "71d78b14757d8aa90856f572a0403bf355d7b6db18898d43534f66c0a3ee2df0",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a872e8e5542991e7718170c",
+  "task_key": "085da7e3119fe85dea03a5db4809c85268208424d3ede4baf25dab25fae03e39",
+  "text": "Portraits.",
+  "timestamp": "2026-09-15T09:33:30.932037+00:00",
+  "tokens_in": 762,
+  "tokens_out": 4,
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 19.012727737426758,
+    "prompt_tokens": 762,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 766
+  }
+}

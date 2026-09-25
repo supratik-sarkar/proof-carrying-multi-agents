@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Spring Storms": ["Spring Storms or Spring Storms in the Autumn of Life( German: Fr\u00fchlingsst\u00fcrme im Herbste des Lebens) is a 1918 German silent drama film directed by and starring Fern Andra.","It also features Josef Peterhans and Reinhold Sch\u00fcnzel."]
+
+[2] "Fun in the Barracks": ["Fun in the Barracks( French: Les Ga\u00eet\u00e9s de l'escadron or Les Gaiet\u00e9s de l'escadron) is a 1932 French comedy film directed by Maurice Tourneur and starring Raimu, Jean Gabin and Fernandel.","It was based on a play by Georges Courteline and Edouard Nores.","Tourneur was remaking the story, having previously filmed a silent version in 1913.","The film was one of the most expensive made by Tourneur and was a popular commercial hit."]
+
+[3] "Fern Andra": ["Fern Andra, Dowager Baroness von Weichs( born Vernal Edna Andrews, November 24, 1893 \u2013 February 8, 1974) was an American actress, film director, script writer, and producer.","Next to Henny Porten and Asta Nielsen, she was one of the most popular and well known actresses in German silent film."]
+
+[4] "Sepideh Farsi": ["Sepideh Farsi is an Iranian film director, born in Tehran in 1965."]
+
+Question: Which film has the director born earlier, Spring Storms or Fun In The Barracks?
+
+Answer:

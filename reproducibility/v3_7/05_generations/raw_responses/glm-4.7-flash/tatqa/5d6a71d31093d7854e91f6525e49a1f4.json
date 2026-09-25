@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "0e2eb2f4bea0e62fe31747f1dbe7e7a50934a8b1c2fd6bc85c0d2fbeb7a0132b",
+  "candidate_text": "$466 (decrease)",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "3dc0c2335bf3a789d899a0b6b94d4006cb5da6af50d8c9f94e09a3b9ceaa640c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "5d6a71d31093d7854e91f6525e49a1f4",
+  "prompt_sha256": "a63261d5606189a9b2dd2310376014ef56ec903b9b19eba231eec5d9a2d55819",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "e59f8eb147cd4a333c6a59b2fa450a6416a7578473b3984bd9ea9c81f97ba8d1",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:5d6a71d31093d7854e91f6525e49a1f4",
+  "text": "$466 (decrease)",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 4.5371999999999995,
+    "prompt_tokens": 772,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 780
+  }
+}

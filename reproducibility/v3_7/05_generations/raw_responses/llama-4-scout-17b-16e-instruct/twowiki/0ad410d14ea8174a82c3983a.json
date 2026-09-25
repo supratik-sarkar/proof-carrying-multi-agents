@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "ea1a06031374db7951fd9bffd84c5180d50ee08fd711125da1d37b7c1637bc71",
+  "example_id": "42228c2008cc11ebbd93ac1f6bf848b6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "8e4d0634da7bfd42377ef59c884ed71fbfe57b7d0b9f6a93b5c4e3156d9a2ceb",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "42228c2008cc11ebbd93ac1f6bf848b6",
+  "prompt_sha256": "86effe82e458fe1330a3c2f9725c7c13d8f97e4bb0673dd58d214ebb071fe2af",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"I Want Your Love (film)\": [\"I Want Your\",\"Love is the title of both a 2010 short film and a 2012 feature- length film.\",\"Both films were directed and written by Travis Mathews.\",\"The drama films both revolve around the friends and ex-lovers of Jesse Metzger, a gay man in his mid-thirties who is forced to move back to his hometown from San Francisco due to financial reasons.\",\"The actors' own names, along with much of their real- life stories, were used for their characters in both films, which features graphic sexual scenes.\",\"The production of both films was aided by the gay pornographic studio NakedSword.\",\"This led to the full- length film being refused exemption from classification, which would have allowed it to screen at the Melbourne Queer Film Festival, a decision to which actor James Franco( who invited Mathews to collaborate on Franco's film\\\" Interior. Leather Bar.\\\") reacted negatively.\"]\n\n[2] \"Hotel Desire\": [\"This film is a German erotic drama film written and directed by Sergej Moya which came out in 2011.\",\"It follows a morning and the life of a single mother in Berlin who has trying to manage her life with balancing with care for her young son, but facing difficulties and almost forgot her personal needs during managing the consequences of her own life.\",\"Her job in a hotel, she is spending her life with no expectations for herself and almost spent 7 years no man in her life after get separated from her child's father.\",\"Suddenly a VIP person who is staying the same hotel she is doing her work and he appears in front of her in unusual way.\",\"She is unable to resist her feelings which is already locked in for seven years.\",\"The film features scenes of Volm and Schick engaging in unsimulated sex.\"]\n\n[3] \"Matt Beckett\": [\"Matt Beckett( born 13 July 1973) is a Welsh former- professional cyclist who was born in Lancaster.\",\"He represented Wales in the 1998 Commonwealth Games in Kuala Lumpur.\",\"He was briefly one of the directors of Welsh Cycling in 2006.\"]\n\n[4] \"Michael Hofmann (director)\": [\"Michael Hofmann( born 1961) is a German film director.\",\"He has written and directed the films\\\" Der Strand von Trouville\\\"( 1998),\\\" Sophiiiie!\\\"( 2002) and most recently\\\" Eden\\\" in 2006.\"]\n\nQuestion: Are the directors of both films Der Blindgänger and Hotel Desire from the same country?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "20c8aec88fca201b443cbda273e19ee416fba7d27cf28b3c31113ce86d48dba1",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:42228c2008cc11ebbd93ac1f6bf848b6",
+  "task_key": "80648aaf57c1c07437d1053669a5591820e338fc60cd1c9b6060c9bf9051d273",
+  "text": "I don't know.",
+  "timestamp": "2026-09-15T09:34:21.051146+00:00",
+  "tokens_in": 584,
+  "tokens_out": 5,
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 14.72091007232666,
+    "prompt_tokens": 584,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 589
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "54759ea0df2da2bf7354fa909f52f9e16e3acdc12a302225c4f8f044304c82c0",
+  "candidate_text": "Yes, possibly.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "e9ab241e007107ccd6814b533a6e7b53a1d2ed544775e83934d486b5a74fe5f6",
+  "example_id": "24315783",
+  "finish": "stop",
+  "input_sha256": "10b2609cad23568151d7a82a02b042a97e2196bb0731696cc9352463c244d56f",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "24315783",
+  "prompt_sha256": "9b80b9866ff552198b27a4309d9e6d2060d6afd3b7bedbd4d0b2b526e64e1a18",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: OBJECTIVE: It is commonly accepted that pathological gambling results from the interaction of multiple risk factors. Among these, dopamine replacement therapy (DRT) prescribed for Parkinson disease can be cited. Another dopamine agonist, aripiprazole, could be a new risk factor. We decided to explore this potential adverse drug reaction (ADR). METHOD: Based on a cohort of 166 pathological gamblers starting treatment in our department, data of each of the 8 patients treated by aripiprazole at inclusion were analyzed. RESULTS: The patients involved were schizophrenic or bipolar, mostly young men with a history of addictive disorders and regular gambling prior to the prescription of aripiprazole. For each one of them, the causality of aripiprazole was considered, using an algorithm. The probability that pathological gambling is actually due to aripiprazole is \"possible\" in 7 cases out of 8, and \"doubtful\" in one.\n\nLong answer: Adverse drug reactions were confronted with other already published case reports. Dopamine partial agonist mechanism of aripiprazole could explain the occurrence of pathological gambling.\n\nQuestion: Aripiprazole: a new risk factor for pathological gambling?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "3718cf8399ae10df150717f3489ade057a5b8c62a2da4e166d45a05d59bd258f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:24315783",
+  "task_key": "15439c6484e6cb77623139e76353d0715cf7ab561bb6c9d87687d21022a5c601",
+  "text": "Yes, possibly.",
+  "timestamp": "2026-09-14T10:36:47.130532+00:00",
+  "tokens_in": 369,
+  "tokens_out": 99,
+  "usage": {
+    "completion_tokens": 99,
+    "neurons": 18.490840911865234,
+    "prompt_tokens": 369,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 468
+  }
+}

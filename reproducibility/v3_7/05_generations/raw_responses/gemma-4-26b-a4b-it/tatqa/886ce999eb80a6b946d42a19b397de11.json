@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "03038acbacc31a35d23bc4519bcc73c683e8acd06a21b498dfba3305294982ff",
+  "candidate_text": "$7,005.5 thousand",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "f0d8c0839f17ecce7e0c39fce0a7d397d644b49cabe3a1916bbb9bfd5b2b419c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "886ce999eb80a6b946d42a19b397de11",
+  "prompt_sha256": "6274d77572d5db7c8cbe182db1cfcbaf3e3bff18c69ba100dd03f178f28e2e23",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "3f4006ac8d71e23396f74fcf6f178b48e2946fbb9b9e97c25320d6a4e2c4f383",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:886ce999eb80a6b946d42a19b397de11",
+  "text": "$7,005.5 thousand",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 10,
+    "neurons": 7.345454692840576,
+    "prompt_tokens": 778,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 788
+  }
+}

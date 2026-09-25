@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "406346b97d2c6867664849ac5267bffbbb93a54e6d249fc81cdf7359213736f8",
+  "candidate_text": "$191.7 million.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "0459a5519dc20359f3b43825df408e918ef6d75df41432a9a77b686e589ea247",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "667195bcec5c12d0ebbfceb6cf4d08d7",
+  "prompt_sha256": "745d6417e9d42197f9e9ddf0c127ec1a48dd0a4108a58fee9c6ff481ec12fec9",
+  "provider": "gemini",
+  "provider_raw_sha256": "8b479ea298c0aef9ae99e04c615a0c1b254c314bf8ba4d20643ebe06f0117778",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:667195bcec5c12d0ebbfceb6cf4d08d7",
+  "text": "$191.7 million.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 1027,
+    "total_tokens": 1035
+  }
+}

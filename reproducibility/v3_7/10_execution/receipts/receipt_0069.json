@@ -1,0 +1,18 @@
+{
+  "alive_sample_1": true,
+  "alive_sample_2": true,
+  "log_advancing": true,
+  "log_size_sample_1": 40088,
+  "log_size_sample_2": 40088,
+  "pipeline_pids": [
+    "83037",
+    "83039"
+  ],
+  "process_pid": 83035,
+  "schema": "PCG_MAS_V3_6_G10_DEV_LIVENESS_RECEIPT",
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "tail_snippet": "] gemini_primary 189/200\n[PROGRESS] gemini_primary 190/200\n[PROGRESS] gemini_primary 191/200\n[PROGRESS] gemini_primary 192/200\n[PROGRESS] gemini_primary 193/200\n[PROGRESS] gemini_primary 194/200\n[PROGRESS] gemini_primary 195/200\n[PROGRESS] gemini_primary 196/200\n[PROGRESS] gemini_primary 197/200\n[PROGRESS] gemini_primary 198/200\n[PROGRESS] gemini_primary 199/200\n[PROGRESS] gemini_primary 200/200\n[STAGE] GEMINI-3.1 PRIMARY REPLACEMENT: COMPLETE \n[STAGE] MIND2WEB: RUNNING \n[PROGRESS] 1/1 mind2web\n",
+  "timestamp": "2026-09-17T12:57:33.673141+00:00",
+  "transaction_id": "TX-20260917T124848Z-d0139466c44e"
+}

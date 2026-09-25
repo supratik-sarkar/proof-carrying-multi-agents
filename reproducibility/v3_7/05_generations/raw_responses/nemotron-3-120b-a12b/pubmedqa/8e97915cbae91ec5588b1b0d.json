@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "f5e7eb2210c1d485ec8ea3231435d9430f9e473150f79abe209896ff76ebaf97",
+  "candidate_text": "\n\nYes, financially viable.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "ce18b42f8c219d64e90ee8924fd9a8fc3267db87703791e7726f51c3cab2a85f",
+  "example_id": "25443385",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "fc71cb4dc5e55b5570b34f6a18fa1b67b9b6b2f5ed711db0f18ed4f2dcbcde40",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "25443385",
+  "prompt_sha256": "c32c336bc1dcde75b8877d7770c90bb0ff42bf65dc1c120bebed4decd95cf06b",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: PURPOSE: Virtual planning and guided surgery with or without prebent or milled plates are becoming more and more common for mandibular reconstruction with fibular free flaps (FFFs). Although this excellent surgical option is being used more widely, the question of the additional cost of planning and cutting-guide production has to be discussed. In capped payment systems such additional costs have to be offset by other savings if there are no special provisions for extra funding. Our study was designed to determine whether using virtual planning and guided surgery resulted in time saved during surgery and whether this time gain resulted in self-funding of such planning through the time saved. MATERIALS AND METHODS: All consecutive cases of FFF surgery were evaluated during a 2-year period. Institutional data were used to determine the price of 1 minute of operative time. The time for fibula molding, plate adaptation, and insetting was recorded. RESULTS: During the defined period, we performed 20 mandibular reconstructions using FFFs, 9 with virtual planning and guided surgery and 11 freehand cases. One minute of operative time was calculated to cost US $47.50. Multiplying this number by the time saved, we found that the additional cost of virtual planning was reduced from US $5,098 to US $1,231.50 with a prebent plate and from US $6,980 to US $3,113.50 for a milled plate.\n\nLong answer: Even in capped health care systems, virtual planning and guided surgery including prebent or milled plates are financially viable.\n\nQuestion: Are virtual planning and guided surgery for head and neck reconstruction economically viable?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "91a8335ebd877f98122638749104073de6a1914dc4bc1c6256b8fe4eb9d0a825",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:25443385",
+  "task_key": "1943342ff27975d7e5b4b5501be044b083808a5cbe33c485fb98afd87fa42588",
+  "text": "\n\nYes, financially viable.",
+  "timestamp": "2026-09-15T09:41:04.967843+00:00",
+  "tokens_in": 413,
+  "tokens_out": 114,
+  "usage": {
+    "completion_tokens": 114,
+    "neurons": 34.089,
+    "prompt_tokens": 413,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 527
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "fe0797facfd5d7fe869fd26c2d9250fa270102c829aa09dd89bb9f21b760eeca",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:multiple_function_63",
+  "prompt_sha256": "fe0797facfd5d7fe869fd26c2d9250fa270102c829aa09dd89bb9f21b760eeca",
+  "provider": "gemini",
+  "provider_raw_sha256": "1660987e8f74db84fc2ddb4121e97ee8b91779450d08810ebddf5c3bba07e809",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIP0D1ip33jsx4TU4gLwN91ria15sha+9Sr49azoUH+mM1Cwi+q79Qb6oPvds7Hkqse1RJMxMephFyKgDTWx6WRzpF9Qmacnb/zkLPjbbRyhfbTcaptsGG9sLlnfz0sgCR6akcUzZA48Xuq7g=="
+        }
+      },
+      "function": {
+        "arguments": "{\"days\":7,\"location\":\"New York\"}",
+        "name": "air_quality_forecast"
+      },
+      "id": "call_1231744",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 23,
+    "prompt_tokens": 286,
+    "total_tokens": 309
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "1181d11a596f472ede027f382c601f3da124b9982d688130e10049c73f852db0",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:multiple_function_79",
+  "prompt_sha256": "1181d11a596f472ede027f382c601f3da124b9982d688130e10049c73f852db0",
+  "provider": "gemini",
+  "provider_raw_sha256": "ab1b2cc770c7a936294f2d8a6a9dd63ccfc34bd8e59a9043b1258678374e3082",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPFmjuC9zjuyw9vaCKX7pCfTd4fkeaXvhEfe1LVoomChLW+QoMLmbDabbddErhL/0E4uAnfA1u6OBradgfGRx3Ebs9OZ8rl25Q8CCx4FtHFRHzjH4mrN1FznAlekuNj/8+JCdJmIRPQ3TGoA=="
+        }
+      },
+      "function": {
+        "arguments": "{\"museum_name\":\"Museum of Modern Art, New York\",\"month\":1}",
+        "name": "exhibition_info"
+      },
+      "id": "call_1201991",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 29,
+    "prompt_tokens": 219,
+    "total_tokens": 248
+  }
+}

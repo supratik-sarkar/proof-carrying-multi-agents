@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "e08a46d764b0f9b1d262de212d03f54a68e5de25303f01682903c8ed74c963b9",
+  "example_id": "b03d551f9498b6b06cacda2c2fe22d9e",
+  "finish": "stop",
+  "input_sha256": "90e9f174287168ccd46a54b2053524d124d445ea6f86ae9f5233d57b88a4ca4b",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "b03d551f9498b6b06cacda2c2fe22d9e",
+  "prompt_sha256": "26582c59a46fb04b3237bc3edc753fcceb1495fb3ee1f8313d860e5d37487f73",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Sheryl Lee: In 2016 , she appeared in Café Society , and also completed the Showtime revival of Twin Peaks -LRB- 2017 -RRB- , reprising her role of Laura Palmer .\n\nClaim: Sheryl Lee reprised her role of Laura Palmer.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b960e972bbe5b26effbbd86b26ea83a8d3f305b14cc603789604fe5d4c51aaa1",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:b03d551f9498b6b06cacda2c2fe22d9e",
+  "task_key": "ec303f8cb50f4f43ab058c58648acc939c78b8d3ba5d52511f63bbd489d57771",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:35:37.710955+00:00",
+  "tokens_in": 195,
+  "tokens_out": 83,
+  "usage": {
+    "completion_tokens": 83,
+    "neurons": 11.863598823547363,
+    "prompt_tokens": 195,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 278
+  }
+}

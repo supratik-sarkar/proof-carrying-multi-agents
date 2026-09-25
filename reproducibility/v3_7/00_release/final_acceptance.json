@@ -1,0 +1,22 @@
+{
+  "status": "PASS_WITH_EXPLICIT_NOT_RETAINED_LAYER",
+  "architecture_00_16": "PASS",
+  "sealed_donor_read_only": "PASS",
+  "donor_manifest_and_seal_binding": "PASS",
+  "raw_generation_response_reconciliation": "PASS_2240_OF_2240",
+  "raw_agent_trajectory_reconciliation": "PASS_434_OF_434",
+  "execution_receipt_reconciliation": "PASS_140_OF_140",
+  "unexplained_hash_mismatches": 0,
+  "legacy_scientific_result_values_admitted": 0,
+  "v3_7_scientific_result_authority": "14_artifacts/manuscript_stack/data",
+  "v3_7_data_preservation": "PASS_64_BYTE_IDENTICAL_DATA_FILES_PLUS_1_SANITIZED_METADATA_PROJECTION",
+  "deterministic_aggregate_replay": "PASS_10_OF_10",
+  "deterministic_artifact_replay": "PASS_24_FIGURE_PAIRS_AND_34_GENERATED_TABLES",
+  "reported_number_lineage": "PASS_TO_EMBEDDED_V3_7_DATA_AND_ARTIFACTS",
+  "public_anonymity_and_secret_scan": "PASS",
+  "standalone_copy_replay": "PASS_WITHOUT_PROJECT_TREE_DEPENDENCY",
+  "standalone_replay_mutated_record": false,
+  "current_per_observation_verifier_certificate_decision_outcome_values": "NOT_RETAINED",
+  "raw_to_aggregate_scientific_replay": "NOT_AVAILABLE",
+  "raw_to_aggregate_reason": "Current per-observation scientific values were not retained and were not reconstructed from aggregates."
+}

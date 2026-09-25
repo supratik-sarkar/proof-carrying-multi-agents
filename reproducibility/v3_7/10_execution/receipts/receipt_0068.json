@@ -1,0 +1,32 @@
+{
+  "agentdojo": {
+    "complete": 10,
+    "outer_safety_fuse": 48,
+    "remaining": 270
+  },
+  "bfcl": {
+    "complete": 7,
+    "remaining": 273
+  },
+  "canonical_complete": 1425,
+  "canonical_remaining": 815,
+  "clean_interpreter": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "clean_tool_canary_authority": "PASS",
+  "dev_core_complete_regenerated": 0,
+  "immutable_dev_core": 807,
+  "mind2web": {
+    "complete": 8,
+    "remaining": 272
+  },
+  "pinned_heads": {
+    "agentdojo": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+    "bfcl": "ea13468e4423454d0c213704fb87cf7cb3990433"
+  },
+  "protected_followon": 618,
+  "protected_provider_recalls": 0,
+  "schema": "PCG_MAS_V3_6_G0_BASELINE_AUTHORITY_V2",
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:49:20.260939+00:00",
+  "transaction_id": "TX-20260917T124848Z-d0139466c44e"
+}

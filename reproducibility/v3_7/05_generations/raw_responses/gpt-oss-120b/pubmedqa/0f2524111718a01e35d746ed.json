@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "23f94e355dbf9d86c3207bf008e25d9a162b28c022966fd545ccbb6e39a85465",
+  "candidate_text": "No; it should not be stopped.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "710562969ca2a58bb7de775da5b54cd24c92a45615d28032ef3c4710068dd79b",
+  "example_id": "17279467",
+  "finish": "stop",
+  "input_sha256": "d4c52d3b1525d075e5b990b155bc01f64eb58c207642848e7508fb3ba5b7284f",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "17279467",
+  "prompt_sha256": "ee8626e5c4a10760f75e4b603c12c6120d3c76f463e4520cde64eba9a5529b9f",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: UNLABELLED: Cyclical pamidronate therapy in a 2-year-old child with skeletal fragility resulted in remodelling of vertebral fractures and improvement in bone mineral density (BMD) at distal radial and spinal sites. The BMD at both sites decreased precipitously within 24 months of stopping treatment, raising the question as to whether bisphosphonates can be stopped in a growing child with skeletal fragility. INTRODUCTION: At age 23 months, a male toddler sustained a low trauma fracture of his right femur. Skeletal radiographs revealed generalised osteopenia with multiple vertebral body fractures. He was diagnosed with type IV osteogenesis imperfecta; however, no mutations were found in COL1A1 or COL1A2 genes. METHODS: This case report presents bone densitometry data before, during and after bisphosphonate treatment. Axial QCT was main outcome from 2 years of age; DXA and pQCT were taken after age 5. RESULTS: QCT confirmed that he had low spinal trabecular volumetric BMD (Z-score -2.4). After 4 years of treatment his vertebral fractures had been remodelled and all bone densitometry values (QCT, DXA and pQCT) were within normal range and therefore treatment was discontinued. Shortly after this he suffered stress fractures of his left mid tibia and at the sclerotic metaphyseal line corresponding to his first APD treatment. He had marked reduction in spinal trabecular and distal radial vBMD; change in BMAD was less marked.\n\nLong answer: The patient has been restarted on IV APD therapy. This case has led us to consider whether bisphosphonate therapy can be discontinued in a child with fragility fractures before his/her linear growth has ceased?\n\nQuestion: Can bisphosphonate treatment be stopped in a growing child with skeletal fragility?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "bd29291ab0bebeb1009de4ffdec472b92a72226061134f9cd7efa537718d2c8f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:17279467",
+  "task_key": "00cf4671a1ef2ce36604fa8624ba30fa150037d2c4e1c8d14999f4157534b670",
+  "text": "No; it should not be stopped.",
+  "timestamp": "2026-09-14T10:37:00.216242+00:00",
+  "tokens_in": 513,
+  "tokens_out": 91,
+  "usage": {
+    "completion_tokens": 91,
+    "neurons": 22.527177810668945,
+    "prompt_tokens": 513,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 604
+  }
+}

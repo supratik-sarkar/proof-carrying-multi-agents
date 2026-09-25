@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "2e1eb73dea15e3e5bfdff15f8c7971efc6b793c73ed0b13eeb901869245b550e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_171",
+  "prompt_sha256": "2e1eb73dea15e3e5bfdff15f8c7971efc6b793c73ed0b13eeb901869245b550e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "11c82eadd98c8bf324fba21fb16ec551020b8f54f5ad96efc5a20369606be5f0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"team\": \"New York Yankees\", \"league\": \"MLB\", \"season\": 2019}",
+        "name": "sports_ranking"
+      },
+      "id": "chatcmpl-tool-be2e6decad2b9d1c",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 183,
+    "neurons": 19.60449981689453,
+    "prompt_tokens": 224,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 407
+  }
+}

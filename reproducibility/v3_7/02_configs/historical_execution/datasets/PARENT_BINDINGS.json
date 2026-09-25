@@ -1,0 +1,34 @@
+{
+  "amendment_v1_status": "SUPERSEDED_REFERENCE_ONLY_DO_NOT_INSTALL",
+  "dev_core": {
+    "complete": 826,
+    "final_dev_log_sha256": "23e39a98e9ea5f8b53f8becc07f1c940de253390fd79273797b7bcb60d534dc3",
+    "final_state_ledger_sha256": "891b70c4ea9f24db40bdca14997fa4b653dcb985a37c597019f147bcf6fc2caa",
+    "task_graph_sha256": "ddf159ed3e08b888f13e6bc54ea0ba2fe8433e1677e1041b9613a9240a739cbd",
+    "total": 1400,
+    "unresolved_empty_generation": 393,
+    "waiting_quota": 181
+  },
+  "environment": "DEV",
+  "project_release": "v3.6",
+  "required_repo_files_sha256": {
+    "PCG_MAS_V3_6_EXECUTION_OVERLAY_V2_3_1/pcg_v231/provider_clients.py": "2986a1eda6d36ee70c18fee3b7e9d31480859fcd6e72059c2e72ca27f8132da0",
+    "artifacts/v3_6/additive_scaffold_v1/integration/followon_adapter.py": "5fe497a1471239b4ee92b5cbbbb31c17cc9a926599847bf6a76d35baf769a8c2",
+    "artifacts/v3_6/additive_scaffold_v1/integration/test_followon_adapter.py": "beae15837b77506e010cd688351de11bb331ccb9797eab1ce01889d877909d6f",
+    "artifacts/v3_6/author_bundle_v4/acceptance_test_production_path.py": "9c1a91e23fb5589e73f478311373f83e274f047b967b0e833e57d278e40b478a",
+    "artifacts/v3_6/author_bundle_v4/launch_dev_v232.sh": "77e1e0495258d7d8ef502b6c78926a0efc709f9e5e9d52e621fc84bd9624ecf0",
+    "artifacts/v3_6/author_bundle_v4/production_task_dispatcher.py": "ae0e3320ba80b724e47f3a39676884c2060593c4b0193d8479b7bb2d1a19dd66",
+    "artifacts/v3_6/postrun_authority_v1/authority/FINAL_DEV_CORE_FREEZE.json": "5ae1d2313115f25b69b7e3f6ab7e9fd91dd15d32af49ceca5a1831ec191dd7e6",
+    "artifacts/v3_6/postrun_runtime_v1/derived/IMMUTABLE_CORE_COMPLETE_826.json": "b2b48f97f8a9924a0c50a78faaf00fe898689ddb874cb32f3792677fb3fce44f",
+    "artifacts/v3_6/postrun_runtime_v1/derived/PARTITION_SUMMARY.json": "da20a20760489d9e8c7d63b6e0f5a42dd35e530a62ffd60e02c858b4aae25dd1",
+    "artifacts/v3_6/postrun_runtime_v1/derived/REASONING_RECOVERY_CANDIDATES_393.json": "41d6d8d04e595b60a2630922a0dfb10e08cb8f874ab11975d7c6dd6fbd80d7f2",
+    "artifacts/v3_6/postrun_runtime_v1/derived/SUPERSEDED_GEMINI_3_8_SLOT_200.json": "2f32baa77dc6733d9b33f6cd03f7c23f636b6a98ee55351938301c19bc0652d7",
+    "artifacts/v3_6/postrun_runtime_v1/receipts/CROSS_PROJECT_RESOURCE_RECEIPT.json": "a5a5be5b72496965d20e154b26051793c21288a78dfd250a14d1e5625e0aea61",
+    "scripts/v3_6/core_comparator_adapter.py": "447c305feefa7313d73b32cf071d8d82d99679be54866e8c94e57169fd8dce07",
+    "scripts/v3_6/route_b_v2_2_2/build_task_plan.py": "6ea0ac838c03ca488e9b36a398abf00669732fa97997449d466d4e1a749b3aab",
+    "scripts/v3_6/route_b_v2_2_2/import_linux_verifier_receipts.py": "0ef601ef4ba0c4c02cd2ed36682e40037dbb6c6a8ff066903ff0ba8a07dc6cb1",
+    "scripts/v3_6/v2_3/run_fit_phase_v3_6.py": "ca2d5fe6d14369dd960cbf59476367e8fd1c5cd1d9d7e4eb5bf4640612d9825b"
+  },
+  "schema": "PCG_MAS_V3_6_DATASET_AMENDMENT_V2_PARENT_BINDING_V1",
+  "sealed_repo_policy": "V2 is additive. Do not edit frozen DEV-Core or the original sealed dispatcher/acceptance/launcher."
+}

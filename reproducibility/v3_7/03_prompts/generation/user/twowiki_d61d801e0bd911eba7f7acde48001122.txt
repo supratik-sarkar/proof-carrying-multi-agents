@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Little Joe (film)": ["Little Joe is a 2019 internationally co-produced drama film directed by Jessica Hausner.","It was selected to compete for the Palme d'Or at the 2019 Cannes Film Festival.","At Cannes, Emily Beecham won the award for Best Actress.","Beecham stars as Alice Woodard, a plant breeder and single mother who creates \"Little Joe\" a plant that gives its caretakers joy."]
+
+[2] "Peter Hamel": ["Peter Hamel( 1911\u20131979) was a German screenwriter and a director of film and television.","He appeared as himself in the 1948 comedy\" Film Without a Title\".","He is the father of the composer Peter Michael Hamel."]
+
+[3] "Emily Beecham": ["Emily Beecham( born 12 May 1984) is an English actress.","She is best known for her role in the Coen Brothers film\" Hail, Caesar!\", for the AMC television series\" Into the Badlands\", and for the title role in the 2017 film\" Daphne\".","In 2019, she starred in Austrian director Jessica Hausner's film\" Little Joe\", for which she received the Best Actress award at the Cannes Film Festival."]
+
+[4] "Jessica Hausner": ["Jessica Hausner (born 6 October 1972) is an Austrian film director and screenwriter.","She received international attention in 2001 when her film \"Lovely Rita\", a portrait of a young girl who feels confined by family constraints, was screened in the Un Certain Regard section at the 2001 Cannes Film Festival.","Three years later she returned to Cannes with her film \"Hotel\".","Her 2014 film \"Amour Fou\" was selected to compete in the Un Certain Regard section at the 2014 Cannes Film Festival.","Jessica Hausner is the daughter of Viennese painter Rudolf Hausner, sister of costume designer Tanja Hausner and half sister of set designer and painter Xenia Hausner.","She studied at Filmacademy Vienna.","With fellow directors Barbara Albert and Antonin Svoboda and director of photography","Martin Gschlacht, she founded the Viennese film production company coop99 in 1999.","2017","she was appointed a member of the Academy of Motion Picture Arts and Sciences.","In 2002 she was a member of the jury at the 24th Moscow International Film Festival.","In 2016, she was a member of the jury for the Un Certain Regard section of the 2016 Cannes Film Festival."]
+
+Question: Who is the father of the director of film Little Joe (Film)?
+
+Answer:

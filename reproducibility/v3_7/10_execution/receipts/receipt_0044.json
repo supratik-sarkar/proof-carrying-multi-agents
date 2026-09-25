@@ -1,0 +1,18 @@
+{
+  "<PUBLIC_TERM:b3cc0475bb78a502>_A100_CONFORMANCE": "PASS",
+  "ASSET_CLOSURE": "PASS",
+  "DRIVE_READBACK": "PASS",
+  "DRIVE_WRITE": "PASS",
+  "EXTREME_INPUT_PROBES": "PASS",
+  "INPUT_AUDIT": "PASS",
+  "REAL_MODEL_DATASET_CELL_COVERAGE": "35/35",
+  "REAL_VERIFIER_COVERAGE": "3/3",
+  "RESUME_SKIP": "PASS",
+  "build_id": "v3.6-a100-build-0919-cuda-preflight-v14",
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA A100-SXM4-40GB",
+  "gpu_tier": "A100",
+  "schema": "PCG_MAS_V3_6_COLAB_RUNTIME_ACCEPTANCE_RECEIPT",
+  "status": "PASS",
+  "timestamp": "2026-09-19T10:49:12.880996+00:00"
+}

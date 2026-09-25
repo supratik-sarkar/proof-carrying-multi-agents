@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "4b96509e8b3318c7f1577f47c355359fef3a1ed29307460737e28ef39fc9f890",
+  "candidate_text": "Charmed.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "a119fa27c569296da4649f4c659992992655a17189906c630bc4d1c78b523dbc",
+  "example_id": "5a80840f554299485f59863b",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "caa92b9e839f934da054a9d8f56c9b22ed4b8cb9a92d883ae4511086b2294668",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "5a80840f554299485f59863b",
+  "prompt_sha256": "030e9c4975f3f5b0dccaa93f84b6a9340b4f1028ead9aeef6beca8ce3d1aca9f",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Kay Tagal Kang Hinintay: Kay Tagal Kang Hinintay (Tagalog: \"So Long Have I Waited For You\") is a Filipino soap opera, produced by ABS-CBN and Star Cinema.  It started July 8, 2002 and ended November 14, 2003.  The critically acclaimed and top-rating teleserye won the CMMA Best Drama Series and the PMPC Star Awards Best Primetime Drama Series.  It is the first local soap opera that became a finalist to the Best Drama Series category of the International Emmy Awards.  It was also part of the top five drama series of the Asian TV Awards.\n\n[2] Safe Harbor (TV series): Safe Harbor is an American television drama series that aired on The WB Television Network from September 20, 1999 to November 28, 1999.  The series was created and executive produced by Brenda Hampton, who at the time was best known for work on the fellow WB series \"7th Heaven\", the series was paired with \"7th Heaven\" on the network's Monday night lineup.  Despite \"7th Heaven\" being the No. 1 show on The WB during the 1999-2000 season, \"Safe Harbor\" was unable to hold a solid audience after \"7th Heaven\" and was canceled after ten episodes and one season with the show moving to Sunday nights where the last two episodes aired.\n\n[3] Rose McGowan: Rose Arianna McGowan (born September 5, 1973) is an Italian-born American actress, film producer, director and singer.  She is best known to television audiences for having played Paige Matthews in The WB supernatural drama series \"Charmed\" from 2001 to 2006.\n\n[4] Jawbreaker (film): Jawbreaker is a 1999 American black comedy film written and directed by Darren Stein.  The film stars Rose McGowan, Rebecca Gayheart, and Julie Benz as girls in an exclusive clique in their high school.  Charlotte Ayanna has a non-speaking cameo role as the murdered leader of the group.  The film was inspired by the film \"Heathers\", and is often compared to it, particularly the plot involving a popular female clique, and the ostensibly accidental killing of one of its members.\n\nQuestion: What WB supernatrual drama series was Jawbreaker star Rose Mcgowan best known for being in?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "08b3b8a5424a7293050929781cd67e5a177fddac838610b3a16b1573fa082c9e",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a80840f554299485f59863b",
+  "task_key": "8abf56dfff21ff41e280c36862e7c9e2f8870d1765a0e6d3e27f937d2cb4a580",
+  "text": "Charmed.",
+  "timestamp": "2026-09-15T09:33:30.263968+00:00",
+  "tokens_in": 556,
+  "tokens_out": 4,
+  "usage": {
+    "completion_tokens": 4,
+    "neurons": 13.956363677978516,
+    "prompt_tokens": 556,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 560
+  }
+}

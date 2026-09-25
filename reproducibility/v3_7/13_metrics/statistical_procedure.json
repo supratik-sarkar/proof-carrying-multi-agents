@@ -1,0 +1,7 @@
+{
+  "aggregation": "MEDIAN_OF_DATASET_MEDIANS",
+  "authority": "14_artifacts/manuscript_stack/data/FIGURE_DATA_DERIVATION_MANIFEST.json",
+  "paired_gap_interval": "PAIRED_NORMAL_APPROX_CI95",
+  "pairing": "COMMON_APPLICABLE_CELL_PAIRED",
+  "raw_observation_independence": "NOT_RETAINED"
+}

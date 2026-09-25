@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "47b97783ec5233da0aea729aa887499a6b64eb875d4037f6043d19521f491006",
+  "finish_reason": "length",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_function_187",
+  "prompt_sha256": "47b97783ec5233da0aea729aa887499a6b64eb875d4037f6043d19521f491006",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "4b5d351fc33693e7619e9603ca38aac10a1c3d39be111c658a00f41e95950c61",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 512,
+    "neurons": 15.954545021057129,
+    "prompt_tokens": 219,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 731
+  }
+}

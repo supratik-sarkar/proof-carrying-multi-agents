@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "ea1a06031374db7951fd9bffd84c5180d50ee08fd711125da1d37b7c1637bc71",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "42228c2008cc11ebbd93ac1f6bf848b6",
+  "prompt_sha256": "86effe82e458fe1330a3c2f9725c7c13d8f97e4bb0673dd58d214ebb071fe2af",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "b5910c43d81fdda9845c7f4538b9c0b7746aac319ded9485c76d2c585e591bd1",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:42228c2008cc11ebbd93ac1f6bf848b6",
+  "text": "I don't know.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 5.836363315582275,
+    "prompt_tokens": 621,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 628
+  }
+}

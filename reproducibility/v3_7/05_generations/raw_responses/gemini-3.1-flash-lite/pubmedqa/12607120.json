@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "8e845788e375092c5e294a111e4211f9e7f0502a40dede912b953d581c89ccc7",
+  "candidate_text": "No, it does not.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "fad985095cd7d9834d56e1a046d8f476a207fce61545f6220f49e9db2cba18f0",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "12607120",
+  "prompt_sha256": "76294e6a130189e77c8cd5275d2ebaa0b155287519bb2e0d337f31ea2910f241",
+  "provider": "gemini",
+  "provider_raw_sha256": "29387105bf522b49e61f3801d1165851e1ac33275a357e9c2a4841012ca24b3a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:12607120",
+  "text": "No, it does not.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 320,
+    "total_tokens": 326
+  }
+}

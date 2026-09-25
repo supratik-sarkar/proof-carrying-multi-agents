@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "0304a1ef81a0f4ee1bf461893703cc6e1e1f9e38237b461e92f0b70a22d56fbe",
+  "candidate_text": "Urijah Faber.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "d32f5b752f91fe92691e22b79b7ab9721fab76112e3a33c4e52a8dd440427409",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5ae0a54e5542993d6555ebdd",
+  "prompt_sha256": "7ddeee6c41eb9f9e890ea76fd7c0f7cbdf9a38f2c467193fca85091daadaa1e3",
+  "provider": "gemini",
+  "provider_raw_sha256": "d089244277577d95e31eb01de794d9b24510331a000c53307d772b10d71562fe",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ae0a54e5542993d6555ebdd",
+  "text": "Urijah Faber.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "prompt_tokens": 807,
+    "total_tokens": 812
+  }
+}

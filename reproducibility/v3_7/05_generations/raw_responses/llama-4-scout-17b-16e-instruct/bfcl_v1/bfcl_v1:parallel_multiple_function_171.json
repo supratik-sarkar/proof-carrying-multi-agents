@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "2e1eb73dea15e3e5bfdff15f8c7971efc6b793c73ed0b13eeb901869245b550e",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:parallel_multiple_function_171",
+  "prompt_sha256": "2e1eb73dea15e3e5bfdff15f8c7971efc6b793c73ed0b13eeb901869245b550e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "965a51856e4101d002e19e8f717e484da2706d6179cfd7aba51ec45035b5510f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"league\":\"Major League Baseball\",\"season\":2019,\"team\":\"New York Yankees\"}",
+        "name": "sports_ranking"
+      },
+      "id": "call_1789655681724",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"league\":\"National Basketball Association\",\"season\":2020,\"team\":\"Los Angeles Lakers\"}",
+        "name": "sports_ranking"
+      },
+      "id": "call_1789655681724",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"date\":\"2020-12-25\",\"location\":\"Los Angeles\"}",
+        "name": "air_quality"
+      },
+      "id": "call_1789655681724",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"date\":\"2021-01-01\",\"location\":\"New York\"}",
+        "name": "air_quality"
+      },
+      "id": "call_1789655681724",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 74,
+    "neurons": 28.12818145751953,
+    "prompt_tokens": 913,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 987
+  }
+}

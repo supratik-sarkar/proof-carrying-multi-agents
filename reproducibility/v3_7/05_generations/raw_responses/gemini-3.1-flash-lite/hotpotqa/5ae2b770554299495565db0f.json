@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "015f656358c2dc33b7929b28ba0c455bc997dde6ef79728a23c7dc153bf95004",
+  "candidate_text": "March and April.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "0dbd4def9164f3ca97db66633b1adf9aa31f8c0e887ccc361be8b1c7af0a07b5",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5ae2b770554299495565db0f",
+  "prompt_sha256": "ef7ca0ab926b3f57646b386ad2fa6584cda3960339189747cbed09da8dc2cbbc",
+  "provider": "gemini",
+  "provider_raw_sha256": "102df22fb79877049eec45e24b0a1d3a68fedaee53d79ed453907969efe3dccc",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ae2b770554299495565db0f",
+  "text": "March and April.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 465,
+    "total_tokens": 469
+  }
+}

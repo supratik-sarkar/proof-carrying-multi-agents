@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "a99a0c7f0d223b577eadc8d9861917909b84745aa451699e86bf1ee6b6e7e0fe",
+  "candidate_text": "I'll help you find art exhibitions at the Museum of Modern Art in New York for the upcoming month.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "1181d11a596f472ede027f382c601f3da124b9982d688130e10049c73f852db0",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:multiple_function_79",
+  "prompt_sha256": "1181d11a596f472ede027f382c601f3da124b9982d688130e10049c73f852db0",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "0b59d7cd2c7a70c40a6d51fb7edf9873b28ddd97ab20af4d8e9fbea3ca2f0f1b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you find art exhibitions at the Museum of Modern Art in New York for the upcoming month.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"museum_name\": \"Museum of Modern Art\"}",
+        "name": "exhibition_info"
+      },
+      "id": "chatcmpl-tool-878f0dc116332ed4",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 147,
+    "neurons": 7.182300000000001,
+    "prompt_tokens": 333,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 480
+  }
+}

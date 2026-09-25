@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "85271d8b1fef137f33e4c57dc938e1dfe1e14b1f826f6c49859eb48dba4ba005",
+  "candidate_text": "\n\nREFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "682454604bc322a8f75cd5754cada11654f3171806b9b25348f0b843fcf8f681",
+  "example_id": "40dee27b7c7afcc479888394c1f32a25",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "653da17677a5492e6ae91b29438b119c7f2092d623c94d9feb7aa0da4bfe0871",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "40dee27b7c7afcc479888394c1f32a25",
+  "prompt_sha256": "b754dcfec038e3f47a3523f1b97f5abef0d5fa995fe074837c4c67d064cb4b1e",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Mirny (sloop-of-war): Mirny was a 20-gun sloop-of-war of the Imperial Russian Navy , the second ship of the First Russian Antarctic Expedition in 1819 -- 1821 , during which Faddey Bellingshausen -LRB- commander of the lead ship Vostok -RRB- and Mikhail Lazarev -LRB- commanding Mirny -RRB- circumnavigated the globe , discovered the continent of Antarctica and twice circumnavigated it , and discovered a number of islands and archipelagos in the Southern Ocean and the Pacific .\n\n[2] Mikhail Lazarev: Admiral Mikhail Petrovich Lazarev -LRB- Михаил Петрович Лазарев , 3 November 1788 -- 11 April 1851 -RRB- was a Russian fleet commander and an explorer .\n\nClaim: The Mirny (sloop-of-war) was commanded by artificial intelligence.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "65440065a9a47e4aff996926c464ff1ddca4a99913eca45d1ed27d16225356be",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:40dee27b7c7afcc479888394c1f32a25",
+  "task_key": "0c99720098892e49bb6320292d7752ff75e73f51e45f05e7ad9ee9bb18522de4",
+  "text": "\n\nREFUTES",
+  "timestamp": "2026-09-15T09:39:50.122338+00:00",
+  "tokens_in": 302,
+  "tokens_out": 158,
+  "usage": {
+    "completion_tokens": 158,
+    "neurons": 35.078,
+    "prompt_tokens": 302,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 460
+  }
+}

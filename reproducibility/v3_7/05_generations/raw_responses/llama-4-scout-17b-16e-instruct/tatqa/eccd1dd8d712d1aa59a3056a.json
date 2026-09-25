@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "562859f4b1fce47f1cb0783e7db3462f7ba5870f23c557dd4b8cbc22f4751b41",
+  "candidate_text": "$31.4 million and $28.5 million.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "925482ca645756249f8a73febad435234ec080c04ec07f65188d0a00048e9ca6",
+  "example_id": "8976798a3fe4092dbed20b91d02bbfe1",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "369930149618ecab5079180f8d942e69cf3f7ce0180f5c52bafa0e85e13ae625",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "8976798a3fe4092dbed20b91d02bbfe1",
+  "prompt_sha256": "2baeb6fbc98874fe627a3b84a9d85778d739ced2ed5b5c76c093d7855e540790",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 2: The Company considered both positive and negative evidence, including future reversals of existing taxable temporary differences, projected future taxable income, tax planning strategies, historic book profit/loss, prior taxable income/loss, and results of future operations, and determined that a valuation allowance was not required for a significant portion of its deferred tax assets. A valuation allowance of $31.4 million and $28.5 million remained as of July 31, 2019 and 2018, respectively.\n\n[2] TAT-QA 3: The increase of $2.9 million in the valuation allowance in the current fiscal year relates primarily to net operating losses and income tax credits incurred in certain tax jurisdictions for which no tax benefit was recognized.\n\n[3] TAT-QA 1: The tax effects of temporary differences that gave rise to significant portions of deferred tax assets and liabilities are as follows (in thousands):\n\n[4] TAT-QA table: row 0:  | As of July 31, | \nrow 1:  | 2019 | 2018\nrow 2: Accruals and reserves | $7,870 | $12,129\nrow 3: Stock-based compensation | 6,353 | 7,658\nrow 4: Deferred revenue | 2,316 | 4,023\nrow 5: Property and equipment | — | 1,268\nrow 6: Net operating loss carryforwards | 55,881 | 56,668\nrow 7: Tax credits | 74,819 | 60,450\nrow 8: Total deferred tax assets | 147,239 | 142,196\nrow 9: Less valuation allowance | 31,421 | 28,541\nrow 10: Net deferred tax assets | 115,818 | 113,655\nrow 11: Less deferred tax liabilities: |  | \nrow 12: Intangible assets | 7,413 | 11,461\nrow 13: Convertible debt | 10,274 | 11,567\nrow 14: Property and equipment | 1,435 | —\nrow 15: Unremitted foreign earnings | 302 | 258\nrow 16: Capitalized commissions | 6,086 | —\nrow 17: Total deferred tax liabilities | 25,510 | 23,286\nrow 18: Deferred tax assets, net | 90,308 | 90,369\nrow 19: Less foreign deferred revenue | — | 69\nrow 20: Less foreign capitalized commissions | 906 | —\nrow 21: Total net deferred tax assets | 89,402 | 90,300\n\nQuestion: What was the valuation allowance in 2019 and 2018 respectively?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "ff0118f2430b57009c5ee4e2783f88ba9c6bdd0703285f5d01cae903b8d8e8a7",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:8976798a3fe4092dbed20b91d02bbfe1",
+  "task_key": "93764956fbf54a67f310286b301aea8ab761935ff1c25b1f95d73af864cfc7e0",
+  "text": "$31.4 million and $28.5 million.",
+  "timestamp": "2026-09-15T09:34:24.915638+00:00",
+  "tokens_in": 642,
+  "tokens_out": 13,
+  "usage": {
+    "completion_tokens": 13,
+    "neurons": 16.762727737426758,
+    "prompt_tokens": 642,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 655
+  }
+}

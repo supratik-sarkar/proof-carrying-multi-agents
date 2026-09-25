@@ -1,0 +1,43 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "7d951f505acecff2301f6c1e314b3b4d42fe820bc324cfeff5b5f23358dba49a",
+  "candidate_text": "I'll calculate the area of the triangle using the formula: area = 0.5 × base × height.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "1d2c78f11a80c03a991938fa6cf56fef96a23e19cf0bcc2f1ad51074b3bc7d2d",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:simple_95",
+  "prompt_sha256": "1d2c78f11a80c03a991938fa6cf56fef96a23e19cf0bcc2f1ad51074b3bc7d2d",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "ad39810a88376fb24c3d812f48e0be68040e75b9459823f8bafd062107a7a9bd",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll calculate the area of the triangle using the formula: area = 0.5 × base × height.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"base\": 5, \"height\": 3}",
+        "name": "calc_area_triangle"
+      },
+      "id": "chatcmpl-tool-9341b913a8a459c9",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 129,
+    "neurons": 5.988100000000001,
+    "prompt_tokens": 235,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 364
+  }
+}

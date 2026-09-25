@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "197c39f09d07629488b89f81c0b9c3f75cbe43ee9c1bee0cd48eb6e00b3911a6",
+  "candidate_text": "**1. Magnetic field around a long straight wire**\n\nFor a long, straight conductor the magnetic field at a distance \\(r\\) from the wire is given by Ampère’s law (or the Biot‑Savart law):\n\n\\[\nB = \\frac{\\mu_0 I}{2\\pi r}\n\\]\n\nwhere  \n\n* \\(\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T·m/A}\\) (the permeability of free space)  \n* \\(I\\) = current in the wire  \n* \\(r\\) = radial distance from the wire.\n\nPlugging in the numbers:\n\n\\[\n\\begin{aligned}\nB &= \\frac{(4\\pi \\times 10^{-7}\\ \\text{T·m/A})\\,(4\\ \\text{A})}{2\\pi (2\\ \\text{m})} \\\\\n  &= \\frac{4\\pi \\times 10^{-7} \\times 4}{2\\pi \\times 2} \\\\\n  &= \\frac{16\\pi \\times 10^{-7}}{4\\pi} \\\\\n  &= 4 \\times 10^{-7}\\ \\text{T}\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{B = 4 \\times 10^{-7}\\ \\text{tesla (T)}}\n\\]\n\n---\n\n**2. Voltage difference across a region in a uniform electric field**\n\nWhen the electric field \\(\\mathbf{E}\\) is uniform, the potential (voltage) difference \\(\\Delta V\\) between two points separated by a distance \\(d\\) along the field direction is simply\n\n\\[\n\\Delta V = E \\, d\n",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b3e7dfd0932b194455b579aa3ea2e9a9d22a8b53e22bf8c9e0e38fb074c100dd",
+  "finish_reason": "length",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_12",
+  "prompt_sha256": "b3e7dfd0932b194455b579aa3ea2e9a9d22a8b53e22bf8c9e0e38fb074c100dd",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "0e4e2307aa3eea06c566960d98dd122393b430f699dc8b473db2e8c0b122e466",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "**1. Magnetic field around a long straight wire**\n\nFor a long, straight conductor the magnetic field at a distance \\(r\\) from the wire is given by Ampère’s law (or the Biot‑Savart law):\n\n\\[\nB = \\frac{\\mu_0 I}{2\\pi r}\n\\]\n\nwhere  \n\n* \\(\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T·m/A}\\) (the permeability of free space)  \n* \\(I\\) = current in the wire  \n* \\(r\\) = radial distance from the wire.\n\nPlugging in the numbers:\n\n\\[\n\\begin{aligned}\nB &= \\frac{(4\\pi \\times 10^{-7}\\ \\text{T·m/A})\\,(4\\ \\text{A})}{2\\pi (2\\ \\text{m})} \\\\\n  &= \\frac{4\\pi \\times 10^{-7} \\times 4}{2\\pi \\times 2} \\\\\n  &= \\frac{16\\pi \\times 10^{-7}}{4\\pi} \\\\\n  &= 4 \\times 10^{-7}\\ \\text{T}\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{B = 4 \\times 10^{-7}\\ \\text{tesla (T)}}\n\\]\n\n---\n\n**2. Voltage difference across a region in a uniform electric field**\n\nWhen the electric field \\(\\mathbf{E}\\) is uniform, the potential (voltage) difference \\(\\Delta V\\) between two points separated by a distance \\(d\\) along the field direction is simply\n\n\\[\n\\Delta V = E \\, d\n",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 512,
+    "neurons": 41.46358871459961,
+    "prompt_tokens": 206,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 718
+  }
+}

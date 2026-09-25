@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "61f6a525b4912d86c3f42bc85ee03f8c76184b391da7dea380793f49ea644ae2",
+  "candidate_text": "\n\nRural residence worsens neonatal outcomes.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "3aff8960310ad3e8f82ca111bd4912e5071501a9d5c9a4be35a585dcc7d870ff",
+  "example_id": "16428354",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "b18914186f81a0e8e48cb7e948a18725f08ca98f3e9c3fc93ff88f90469308a6",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "16428354",
+  "prompt_sha256": "85236af431dd74086dd093f08673b210d7758205d20d7a305bfd6c9b1c8ba399",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: BACKGROUND: Patients living in rural areas may be at a disadvantage in accessing tertiary health care.AIM: To test the hypothesis that very premature infants born to mothers residing in rural areas have poorer outcomes than those residing in urban areas in the state of New South Wales (NSW) and the Australian Capital Territory (ACT) despite a coordinated referral and transport system. METHODS: \"Rural\" or \"urban\" status was based on the location of maternal residence. Perinatal characteristics, major morbidity and case mix adjusted mortality were compared between 1879 rural and 6775 urban infants<32 weeks gestational age, born in 1992-2002 and admitted to all 10 neonatal intensive care units in NSW and ACT. RESULTS: Rural mothers were more likely to be teenaged, indigenous, and to have had a previous premature birth, prolonged ruptured membrane, and antenatal corticosteroid. Urban mothers were more likely to have had assisted conception and a caesarean section. More urban (93% v 83%) infants were born in a tertiary obstetric hospital. Infants of rural residence had a higher mortality (adjusted odds ratio (OR) 1.26, 95% confidence interval (CI) 1.07 to 1.48, p = 0.005). This trend was consistently seen in all subgroups and significantly for the tertiary hospital born population and the 30-31 weeks gestation subgroup. Regional birth data in this gestational age range also showed a higher stillbirth rate among rural infants (OR 1.20, 95% CI 1.09 to 1.32, p<0.001).\n\nLong answer: Premature births from rural mothers have a higher risk of stillbirth and mortality in neonatal intensive care than urban infants.\n\nQuestion: Does rural or urban residence make a difference to neonatal outcome in premature birth?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "d5afe2277ff640bee3a7455e7038cf4ad29b149149ef30d109e36b01d8c54f38",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:16428354",
+  "task_key": "1fb6e008d33e7f6ec5318389b3cff9dd993663dc01c8f461744272a3bdb9edfd",
+  "text": "\n\nRural residence worsens neonatal outcomes.",
+  "timestamp": "2026-09-15T09:41:02.739703+00:00",
+  "tokens_in": 473,
+  "tokens_out": 110,
+  "usage": {
+    "completion_tokens": 110,
+    "neurons": 36.245000000000005,
+    "prompt_tokens": 473,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 583
+  }
+}

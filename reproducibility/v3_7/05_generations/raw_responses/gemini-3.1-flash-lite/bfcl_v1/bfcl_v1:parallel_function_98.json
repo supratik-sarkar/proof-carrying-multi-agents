@@ -1,0 +1,67 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "3d317410079c51e9334bff79a27b3f3b69380ba859180de1b0bedf82631b8e36",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_function_98",
+  "prompt_sha256": "3d317410079c51e9334bff79a27b3f3b69380ba859180de1b0bedf82631b8e36",
+  "provider": "gemini",
+  "provider_raw_sha256": "3f1746357487aad7aea62634b663adfd6572d2bb158f39fbe49a5d04b164463c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPVhVnqX4v/kxRtlNj/+oIpgDh9kKN90Nm4qYNBtOmbTJx4czyQa2qSh1+1GgXdVvD9AijSHu0vvhjTjhWRrYGWfvMb0UmJpxe1SNv9yzkMA3+Gw/vSNhXkutyOQgghJ1yivaNuiqf8Cx62Q=="
+        }
+      },
+      "function": {
+        "arguments": "{\"charge\":2,\"medium\":\"vacuum\",\"distance\":0.5}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "call_927928",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"distance\":1,\"charge\":2,\"medium\":\"vacuum\"}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "call_927929",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"medium\":\"vacuum\",\"charge\":2,\"distance\":2}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "call_927930",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"medium\":\"air\",\"charge\":2,\"distance\":1}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "call_927931",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 114,
+    "prompt_tokens": 212,
+    "total_tokens": 326
+  }
+}

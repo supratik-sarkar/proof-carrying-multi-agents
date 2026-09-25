@@ -1,0 +1,21 @@
+{
+  "CLOUDFLARE_BILLING_GUARD": "PASS",
+  "GEMINI_BILLING_GUARD": "PASS",
+  "ZERO_COST_EXECUTION_ADMISSIBLE": "YES",
+  "cloudflare_evidence": {
+    "billing_endpoints_status": 403,
+    "free_tier_allowance": "10000 daily neurons, fails closed with HTTP 429 on exhaustion",
+    "token_id": "fef9107cc796d5005a94a96e9ee38e0a",
+    "token_verify_status": 200
+  },
+  "cost_usd_max": 0.0,
+  "gemini_evidence": {
+    "model_metadata_status": 200,
+    "rate_limits": "15 RPM / 1500 RPD / 1M TPM, fails closed with HTTP 429 RESOURCE_EXHAUSTED",
+    "tier": "Google AI Studio Developer API Free Tier"
+  },
+  "schema": "PCG_MAS_V3_6_G1_ZERO_COST_BILLING_GUARD",
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:11:14.846394+00:00"
+}

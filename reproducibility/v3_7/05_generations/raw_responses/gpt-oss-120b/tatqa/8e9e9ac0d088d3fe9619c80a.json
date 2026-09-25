@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "6bcedd0e1e34dfb98a5df2d2541dcff46f7c4c11d826e5f5b4c6369c2f7ef3bf",
+  "candidate_text": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "b043a234eb4fa9bd020256017d9ce4a7bdebb5cf207229170f7f26fd41b8bcf3",
+  "example_id": "558ffbf02f114c9e22c5d6ba5199653a",
+  "finish": "length",
+  "input_sha256": "dd2981fba9892ee656301e26266b54c5557e56f40d2e0d22538b0f24d82bedc5",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "558ffbf02f114c9e22c5d6ba5199653a",
+  "prompt_sha256": "63b9dbea88294c6a4f5bded1237a2031966b1d1ae81e9b585e0e0e9c00a09b79",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA table: row 0:  | December 31, | \nrow 1:  | 2019 | 2018\nrow 2: Accounted for at cost, adjusted for observable price changes | $1,750 | $1,250\nrow 3: Accounted for using the equity method | 8,000 | —\nrow 4: Total non-marketable investments | $9,750 | $1,250\n\n[2] TAT-QA 2: In December 2019, the Company made a minority investment in a privately-held company, Talespin, Inc., for $8.0 million, representing approximately 13% equity ownership. The investment is accounted for using the equity method of accounting due to the Company’s ability to exercise significant influence.\n\n[3] TAT-QA 3: The Company’s non-marketable investments are composed of the following (in thousands):\n\n[4] TAT-QA 1: Strategic Investments\n\nQuestion: What is the percentage change of the investments accounted for at cost, adjusted for observable price changes between 2018 and 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b019d416cbb344aeaca8f9c9e6dfc321ded69718775256d1dd69ce1198b7284b",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:558ffbf02f114c9e22c5d6ba5199653a",
+  "task_key": "1c7fc742b8b888a1f34061c09ea53e82b9a0b92c4afa1bd10988520e9359ac8e",
+  "text": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+  "timestamp": "2026-09-14T10:33:38.256326+00:00",
+  "tokens_in": 348,
+  "tokens_out": 256,
+  "usage": {
+    "completion_tokens": 256,
+    "neurons": 28.527202606201172,
+    "prompt_tokens": 348,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 604
+  }
+}

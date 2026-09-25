@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "34291235698d53089f259d09d44850c3e6b9ff5fc34f4ad4932764ce3882aea9",
+  "candidate_text": "\n\nRelease of tax valuation allowance on AMT credits due to the Tax Act.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "ee9d5ea23e6d9e8a9102e8126d8f3fb4c89e8ff44d20514dbb5716a04bfbe7bc",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "d305a218c053735a47380aa0b4733b3855084cd9be1df2d9b8144a998a4e0abe",
+  "lane": "recovery",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "b12fd793c91be88dcb03f2d95768003b",
+  "prompt_sha256": "6b440d6987cbcfce1b66a7e313d7d6ce176475071a024ccd3e9243f6949f42bd",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "1e2a1e6f539154d39d1a3e164169b9295a8eacfce3fe3e3c4a2592410b9b9d3c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:b12fd793c91be88dcb03f2d95768003b",
+  "text": "\n\nRelease of tax valuation allowance on AMT credits due to the Tax Act.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 130,
+    "neurons": 73.89999389648438,
+    "prompt_tokens": 882,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1012
+  }
+}

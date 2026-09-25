@@ -1,0 +1,17 @@
+{
+  "active_process_table": [
+    "9536 caffeinate -dimsu <LOCAL_PATH:524ae6cd7dc69b9e> <LOCAL_PATH:e1b5d82f8e2ccf69> --manifest <LOCAL_PATH:6823bcd1a22182b9> --state <LOCAL_PATH:4cfd7b671af557ed>",
+    "10428 /opt/homebrew/Cellar/python@3.12/3.12.13_4/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python <LOCAL_PATH:02a37660a67227d2> --repo-root <LOCAL_PATH:b0f2ecb535f6b59f>",
+    "10430 /usr/bin/caffeinate -dimsu <LOCAL_PATH:1c60a8aa0a32b97e> <LOCAL_PATH:02a37660a67227d2> --repo-root <LOCAL_PATH:b0f2ecb535f6b59f>",
+    "10433 /opt/homebrew/Cellar/python@3.12/3.12.13_4/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python <LOCAL_PATH:24dd4c9c147cd960> --repo-root <LOCAL_PATH:b0f2ecb535f6b59f> --runtime-root <LOCAL_PATH:62ffa5c4fc729f1a> --agentdojo-python <LOCAL_PATH:1c60a8aa0a32b97e> --model-id gemma-4-26b-a4b-it --provider cloudflare --api-model-id @cf/google/gemma-4-26b-a4b-it --suite slack --user-task-id user_task_8 --injection-task-id injection_task_2 --observation-id agentdojo:slack:user_task_8:injection_task_2 --generation-policy-sha256 878da65e0d731e6ceaff49451afcea5400e5f9da3abeca958410ba0a9f8dcf8e --reasoning-low"
+  ],
+  "monitored_duration_seconds": 10,
+  "process_alive": true,
+  "schema": "PCG_MAS_V3_6_MASTER_PAPER_COMPLETE_LIVENESS_RECEIPT",
+  "stage_resume_a_running": true,
+  "status": "PASS",
+  "supervisor_active": true,
+  "terminal_window_id": "tab 1 of window id 59681",
+  "timestamp": "2026-09-18T05:50:28.593022+00:00",
+  "traceback_detected": false
+}

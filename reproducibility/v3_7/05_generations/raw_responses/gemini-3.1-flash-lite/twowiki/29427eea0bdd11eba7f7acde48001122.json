@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "b4e8eb0d86380ceae0805fa3cbd5d6b4dcf213e510c2205fd7e6de4f5c56ab6b",
+  "candidate_text": "Liverpool.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "c6fe2650dc486d14e3036e59863db724af04a0a26afb6c834925059e92131547",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "29427eea0bdd11eba7f7acde48001122",
+  "prompt_sha256": "e840fa6e62788267129063c2e7fa657422438a5317009b516d9537c651f80943",
+  "provider": "gemini",
+  "provider_raw_sha256": "67c364302407f12360d8df3b6443f9087a8470ad31c9c78cc27e120605850f83",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:29427eea0bdd11eba7f7acde48001122",
+  "text": "Liverpool.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 854,
+    "total_tokens": 856
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [
+      "Could not find a matching function among index [0, 1] of model output for index 0 of possible answers.",
+      {
+        "Model Result Index 0": {
+          "model_output_item": {
+            "compound_interest": {
+              "annual_rate": 5,
+              "compounding_freq": "quarterly",
+              "principal": 5000,
+              "time_in_years": 7
+            }
+          },
+          "possible_answer_item": {
+            "compound_interest": {
+              "annual_rate": [
+                0.05
+              ],
+              "compounding_freq": [
+                "quarterly"
+              ],
+              "principal": [
+                5000
+              ],
+              "time_in_years": [
+                7
+              ]
+            }
+          },
+          "sub_error": [
+            "Invalid value for parameter 'annual_rate': 5.0. Expected one of [0.05]."
+          ],
+          "sub_error_type": "value_error:others"
+        }
+      },
+      {
+        "Model Result Index 1": {
+          "model_output_item": {
+            "lawsuits_search": {
+              "company_name": "Tech Corp",
+              "location": "San Francisco",
+              "year": 2018
+            }
+          },
+          "possible_answer_item": {
+            "compound_interest": {
+              "annual_rate": [
+                0.05
+              ],
+              "compounding_freq": [
+                "quarterly"
+              ],
+              "principal": [
+                5000
+              ],
+              "time_in_years": [
+                7
+              ]
+            }
+          },
+          "sub_error": [
+            "Function name 'compound_interest' not found in model output."
+          ],
+          "sub_error_type": "simple_function_checker:wrong_func_name"
+        }
+      }
+    ],
+    "error_type": "parallel_function_checker_no_order:cannot_find_match",
+    "valid": false
+  },
+  "candidate_sha256": "919a98f27229f8ff9028ed1b8329cfe0d8db4299e2b0f2040d2c4a127229bd48",
+  "candidate_text": "I'll help you with both tasks. Let me calculate the compound interest and search for the lawsuits simultaneously.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b7cc95dc81dc65a05124b935d79c16bad1b735e5429f28670b945a6bd81a536b",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_160",
+  "prompt_sha256": "b7cc95dc81dc65a05124b935d79c16bad1b735e5429f28670b945a6bd81a536b",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "a6c57a0b6c15f189f2c8cd31d1f12e2a04416ed84265d344f50aff8589be13c1",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you with both tasks. Let me calculate the compound interest and search for the lawsuits simultaneously.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"principal\": 5000, \"annual_rate\": 5, \"compounding_freq\": \"quarterly\", \"time_in_years\": 7}",
+        "name": "compound_interest"
+      },
+      "id": "chatcmpl-tool-a583716c4ceaa63c",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"company_name\": \"Tech Corp\", \"location\": \"San Francisco\", \"year\": 2018}",
+        "name": "lawsuits_search"
+      },
+      "id": "chatcmpl-tool-a2ebc7af6e039cda",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 322,
+    "neurons": 122.6363525390625,
+    "prompt_tokens": 708,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1030
+  }
+}

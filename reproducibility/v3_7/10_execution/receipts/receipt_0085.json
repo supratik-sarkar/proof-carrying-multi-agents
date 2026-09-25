@@ -1,0 +1,13 @@
+{
+  "command_sha256": "87782121950fd7b7c2e9bfc4ec0309fd90fd9b8a53873161a9f5a2b7819253f5",
+  "initial_log_path": "artifacts/v3_6/dataset_amendment_runtime_v2/amended_followon.log",
+  "launch_authority_sha256": "c8ed6b9b4dde94a616cdf9019cbe9ab7468cd0bae785f83ec625254faf30e93a",
+  "launch_command": "/bin/zsh <LOCAL_PATH:e74a8fc594da1ea2> <LOCAL_PATH:b0f2ecb535f6b59f>",
+  "launch_count": 1,
+  "process_pid": 83035,
+  "schema": "PCG_MAS_V3_6_G9_DEV_LAUNCH_RECEIPT_V2",
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:57:13.470358+00:00",
+  "transaction_id": "TX-20260917T124848Z-d0139466c44e"
+}

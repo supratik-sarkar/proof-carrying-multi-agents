@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "4511009f69a3e4a2aee61b8dd093f884e066630eb250b9dfc6912e7582410003",
+  "candidate_text": "$103,493.33 \n\n Calculation: \n($72,849 + $100,284 + $137,347) / 3 = $103,493.33 \n\nAlternatively, a more brief answer is not possible here.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "4764ed4b26071d4905fe6604614be47d3acd99d6c1c9ea99ae654865050e6772",
+  "example_id": "96396e7da3cd5b1668377ada2008af5d",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "aff9ea023251390d0b20ed3d551b0cebcbdd17347fe81ca562d7cd323497b3be",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "96396e7da3cd5b1668377ada2008af5d",
+  "prompt_sha256": "1895fd66846ee3da39dcc1f80b9ebdf570e1cae9574f8e5f0faa21eb05670478",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA table: row 0:  |  | Year Ended December 31, | \nrow 1:  | 2019 | 2018 | 2017\nrow 2: Gross profit | $137,347 | $100,284 | $72,849\nrow 3: Amortization of acquired intangibles | 2,114 | 1,268 | 1,614\nrow 4: Stock-based compensation | 1,966 | 2,306 | 578\nrow 5: Adjusted gross margin | $141,427 | $103,858 | $75,041\n\n[2] TAT-QA 3: Nevertheless, our use of adjusted gross margin has limitations as an analytical tool, and you should not consider it in isolation or as a substitute for analysis of our financial results as reported under GAAP. You should consider adjusted gross margin alongside our other GAAP-based financial performance measures, gross profit and our other GAAP financial results. The following table presents a reconciliation of adjusted gross margin to gross profit, the most directly comparable GAAP measure, for each of the periods indicated (in thousands):\n\n[3] TAT-QA 2: In the near term, we expect these expenses to continue to negatively impact our gross profit. Adjusted gross margin is not a measure calculated in accordance with GAAP. We believe that adjusted gross margin provides useful information to investors and others in understanding and evaluating our operating results in the same manner as our management and board of directors.\n\n[4] TAT-QA 1: Adjusted Gross Margin. Adjusted gross margin represents gross profit plus amortization of acquired intangibles and stock-based compensation. Adjusted gross margin is a measure used by management to understand and evaluate our core operating performance and trends and to generate future operating plans. The exclusion of stock-based compensation expense and amortization of acquired intangibles facilitates comparisons of our operating performance on a period-to-period basis.\n\nQuestion: What is the average Gross Profit for 2017-2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "fa3b1c4b02142464e32470cab77c8b70312f23fe08f7b35a841a0e961a02ca8e",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:96396e7da3cd5b1668377ada2008af5d",
+  "task_key": "83384d6f1058ba2c6ef4c2a4e6fa3aa3b6536c7a066fa426c321be2355872476",
+  "text": "$103,493.33 \n\n Calculation: \n($72,849 + $100,284 + $137,347) / 3 = $103,493.33 \n\nAlternatively, a more brief answer is not possible here.",
+  "timestamp": "2026-09-15T09:34:27.258160+00:00",
+  "tokens_in": 467,
+  "tokens_out": 48,
+  "usage": {
+    "completion_tokens": 48,
+    "neurons": 15.171818733215332,
+    "prompt_tokens": 467,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 515
+  }
+}

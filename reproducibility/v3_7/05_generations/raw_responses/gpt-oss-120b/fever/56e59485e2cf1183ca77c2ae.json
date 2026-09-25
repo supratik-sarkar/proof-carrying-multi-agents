@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "f60f612dfe1fca1ddfb33a33edaf22b227aba2ca285e753bf361000253d21997",
+  "candidate_text": "SUPPORTS",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "eed551ef1e3bfec4d761e518757f47d4c1561d824948cf8db4ce610909b78944",
+  "example_id": "bab914e1073698bdeb7d4f076cca9b49",
+  "finish": "stop",
+  "input_sha256": "a680f1d88185baa2eac371a4dd5e4736283dafdf3637b2d0cca2ba0a1bca2f18",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bab914e1073698bdeb7d4f076cca9b49",
+  "prompt_sha256": "b85171b5bb3eedbbb13097c1e692d3e0cb7b30fa44f52d146f57b4a0f7b9d107",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Roswell (TV series): Roswell is an American science fiction television series developed , produced , and co-written by Jason Katims .\n\nClaim: Roswell was developed by Jason Katims.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "7043d263846daa36d4c45a5a1ac8e73d8848675fae3a96702a6718fa1a0dcea7",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:bab914e1073698bdeb7d4f076cca9b49",
+  "task_key": "f43c85022251a0bf15c72e23bece65f23d64b52679f8af03eea1fadad9f03b84",
+  "text": "SUPPORTS",
+  "timestamp": "2026-09-14T10:36:25.609197+00:00",
+  "tokens_in": 176,
+  "tokens_out": 71,
+  "usage": {
+    "completion_tokens": 71,
+    "neurons": 10.440876007080078,
+    "prompt_tokens": 176,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 247
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "5241e7138c88f54b298c78fdae403d6d86d32ea2730775b3e6d913b382a2a4de",
+  "candidate_text": "Ernest William Goodpasture",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "5248cfc7f10097b24e741b9e557be763b815bf059f46c2e1fc1b8350592267c2",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "16ee4aa308be11ebbd8aac1f6bf848b6",
+  "prompt_sha256": "cd0b13b8ec395fadf5ee05c4a166ebf98057dd014869ea30e6f746f3a718d84e",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "7246513019a6b7bbe808fe683a35e223cba3abe6bfbc518b182b8731899b2b12",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:16ee4aa308be11ebbd8aac1f6bf848b6",
+  "text": "Ernest William Goodpasture",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 2.5427999999999997,
+    "prompt_tokens": 416,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 423
+  }
+}

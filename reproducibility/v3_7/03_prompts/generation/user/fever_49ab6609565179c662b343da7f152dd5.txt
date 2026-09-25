@@ -1,0 +1,14 @@
+You are a fact-verification assistant. Read the evidence and decide whether
+the CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.
+
+Reply with EXACTLY one of these three labels and nothing else:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Evidence:
+[1] Gilberto Zaldívar: With the rise of the Hispanic population in New York City , Zaldívar recognized an opportunity to involve the `` hundreds of Spanish actors in New York working in restaurants and offices who are highly desirous of working again in the theater '' with the hope of providing acting positions for the many `` Spanish , Cuban and Puerto Rican actors who come here to find opportunities to perform '' .
+
+Claim: Home for the Holidays stars exclusively Spanish actors.
+
+Label:

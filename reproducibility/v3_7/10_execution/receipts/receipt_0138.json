@@ -1,0 +1,10 @@
+{
+  "HIDDEN_DEV_LAUNCH_COUNT_THIS_PASS": 0,
+  "VISIBLE_TERMINAL_LAUNCH_COUNT": 1,
+  "launch_authority_sha256": "7f0bf4e1e8056676e62b4e0296e57d49df93a55c35c1483e87d833b15e1ebb2b",
+  "schema": "PCG_MAS_V3_6_VISIBLE_TERMINAL_DEV_LAUNCH_RECEIPT",
+  "status": "PASS",
+  "terminal_launch_command": "cd <LOCAL_PATH:b0f2ecb535f6b59f> && /bin/zsh artifacts/v3_6/dataset_amendment_v2/integration/launch_amended_followon.sh <LOCAL_PATH:b0f2ecb535f6b59f>",
+  "terminal_window_id": "58679",
+  "timestamp": "2026-09-17T13:26:19.124757+00:00"
+}

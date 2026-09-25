@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "85271d8b1fef137f33e4c57dc938e1dfe1e14b1f826f6c49859eb48dba4ba005",
+  "candidate_text": "\n\nREFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "a33d5cec1627ab1629bcbdd9e83e5ca6d299038d22e9b80ac861451379e3b1c8",
+  "example_id": "18f2e7f282b727da282aef718bb5aeb3",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "58a2c25ead30c2753bc061b3358f0824555d8f052591ca8cedaee55ac71568b6",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "18f2e7f282b727da282aef718bb5aeb3",
+  "prompt_sha256": "aded5607430c84f85dbfa3191017a7a0fd9e83172887b841fe90b79fb4884f68",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Taran Killam: Taran Hourie Killam -LRB- born April 1 , 1982 -RRB- is an American actor , comedian , and writer .\n\nClaim: Taran Killam wasn't born in April.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "119ea82526917cb8fd6076c50fd7c83a990dc7b4d5c4f05f92f2bc5d7b580e0f",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:18f2e7f282b727da282aef718bb5aeb3",
+  "task_key": "f908f4b8ad6f25fe0652bddaa1cb24da70aa6b80d599c91d0f1031f4af2711d3",
+  "text": "\n\nREFUTES",
+  "timestamp": "2026-09-15T09:39:59.991575+00:00",
+  "tokens_in": 149,
+  "tokens_out": 117,
+  "usage": {
+    "completion_tokens": 117,
+    "neurons": 22.617,
+    "prompt_tokens": 149,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 266
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "85271d8b1fef137f33e4c57dc938e1dfe1e14b1f826f6c49859eb48dba4ba005",
+  "candidate_text": "\n\nREFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "8aeb3f40eb8bec47689632d355ea5d86c6ca8900839f59234cc16ccad1fd633a",
+  "example_id": "044e00c0c3890c174d407185be48c8b2",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "5fcf514ae36cc64da4e9e4ac12d2081e6f1e480505e31e92cc43c5541442521d",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "044e00c0c3890c174d407185be48c8b2",
+  "prompt_sha256": "dda6f80476613a7a57df7142692a57be8409d1b4e4c785534d768803acbf5c24",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Ann Richards: Richards was the second female governor of Texas , and was frequently noted in the media for her outspoken feminism and her one-liners .\n\nClaim: Ann Richards wasn't a politician.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "a2c7aec41e8153904aa9f37e35460e229c744ad9cf77b6fe04515a73a99c46f7",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:044e00c0c3890c174d407185be48c8b2",
+  "task_key": "bf9feac216bfc2c9f00b13cf5c04d1eed7ef602e7ba7192eab57f4decbfa719c",
+  "text": "\n\nREFUTES",
+  "timestamp": "2026-09-15T09:25:43.168637+00:00",
+  "tokens_in": 167,
+  "tokens_out": 68,
+  "usage": {
+    "completion_tokens": 68,
+    "neurons": 26.613636016845703,
+    "prompt_tokens": 167,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 235
+  }
+}

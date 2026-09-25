@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "2ca871c6a43d0a3a6a0427fbd7ab6bb00806d7c5cee2e3f61a624ad2004f8ca2",
+  "candidate_text": "Only partly mediated.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "95ce73d21b19693e932b55035a80f491dc8636244c7d1ee99c99dd2e96a48c53",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "16510651",
+  "prompt_sha256": "06497b430268ae830c788d83d065214a61ef7d9076d1fa0f41b32e2bfc879d09",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "6efffe65660b044fb68de4e441517b086b7934d0a01796afe858f6a626e0421c",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:16510651",
+  "text": "Only partly mediated.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 3.045454502105713,
+    "prompt_tokens": 320,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 325
+  }
+}

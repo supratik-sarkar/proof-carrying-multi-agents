@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da",
+  "candidate_text": "Yes.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "d21833f7d80608ea47c37eedc691a175b7b23bab2d02ce9fdf1e7502234b97f0",
+  "example_id": "17445978",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "08bc1da68c6938f70301e3f22456fb7eb3dba60b4609705b20678950873bce63",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "17445978",
+  "prompt_sha256": "4a81cd40ad24e58b093f541e60ba45034593d667f44460a90c757a750a59a295",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: OBJECTIVE: To evaluate renal damage and impairment of renal function 1 yr after laparoscopic partial nephrectomy (LPN) with warm ischemia>30 min. METHODS: From July 2004 to June 2005, 18 patients underwent LPN with warm ischemia time>30 min. Kidney damage markers (daily proteinuria and tubular enzymes) and renal function (serum creatinine, cystatin C, and creatinine clearances) were assessed on postoperative days 1 and 5 and at 12 mo. Glomerular filtration rate (GFR) was evaluated before surgery and at 3 mo. Renal scintigraphy was performed before the procedure, at 5 d and at 3 and 12 mo postoperatively. Statistical analysis was performed using the Student t test and logistic regression analysis. RESULTS: In terms of kidney damage and renal function markers, the statistical analysis demonstrated that at 1 yr there was complete return to the normal range and no statistical difference between the values at the various time points. The GFR was not significantly different before and 3 mo after surgery. In terms of scintigraphy of the operated kidney, the values were 48.35+/-3.82% (40-50%) before the procedure, 36.88+/-8.42 (16-50%) on postoperative day 5 (p=0.0001), 40.56+/-8.96 (20-50%) at 3 mo (p=0.003), and 42.8+/-7.2% (20-50%) 1 yr after surgery (p=0.001).\n\nLong answer: Our results demonstrate that kidney damage occurs during LPN when warm ischemia is>30 min. This damage is only partially reversible and efforts should be made to keep warm ischemia within 30 min.\n\nQuestion: Is renal warm ischemia over 30 minutes during laparoscopic partial nephrectomy possible?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "624787024f6765cdaf1a189096eb4baf00bddb231ee7555bda9a4a6365fd0568",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:17445978",
+  "task_key": "81bfdbeaed68d572d676e80e67f627546437d21a21c89a71cde05f91d95e7fae",
+  "text": "Yes.",
+  "timestamp": "2026-09-15T09:34:50.803532+00:00",
+  "tokens_in": 451,
+  "tokens_out": 3,
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 11.30181884765625,
+    "prompt_tokens": 451,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 454
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "88e7f81245e2383644c44c0c0c0d0667253fd82ad8124e977d9f8ebd7161bfe8",
+  "candidate_text": "John Waters",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "2f39390276d19552d71cf89476f6a4068264a3c758410478dec22ba439d29f3d",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "5ac3165c5542995ef918c10a",
+  "prompt_sha256": "05ea5fa90f2bd67fff74d9939c83f2ec5bc94795403cb79af97cba0540a9c765",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "96896071f198e9bc2607152000ee25712718b9dabcfaaa8622a951773033ad39",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ac3165c5542995ef918c10a",
+  "text": "John Waters",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 1.9077,
+    "prompt_tokens": 327,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 330
+  }
+}

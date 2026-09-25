@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "826d8e1e90bfa85ae0333e9059fed54d2dfb56e077c0e1c740a02ed0e8627a65",
+  "candidate_text": "No survival benefit.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "4f3a221befa310445adce2f20a317b7cf8325814f82acd0230bef7202838071e",
+  "example_id": "12040336",
+  "finish": "stop",
+  "input_sha256": "3e6e39f61a80f9b725584d16028dbb2a223ebb7b6fb48202bcc2d97facc09a62",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "12040336",
+  "prompt_sha256": "c35b352b6fa404251524b1a19c51c3849a7f130c94d5a5ab10499e1789c5d8f9",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: BACKGROUND: The role of early revascularization among patients with acute myocardial infarction complicated by cardiogenic shock remains controversial. Angioplasty registries, while suggesting a benefit, are subject to selection bias, and clinical trials have been underpowered to detect early benefits. If an invasive strategy is beneficial in this population, patients admitted to hospitals with onsite coronary revascularization might be expected to have a better prognosis. We sought to determine whether access to cardiovascular resources at the admitting hospital influenced the prognosis of patients with acute myocardial infarction complicated by cardiogenic shock. METHODS: By use of the Cooperative Cardiovascular Project database (a retrospective medical record review of Medicare patients discharged with acute myocardial infarction), we identified patients aged>or =65 years whose myocardial infarction was complicated by cardiogenic shock. RESULTS: Of the 601 patients with cardiogenic shock, 287 (47.8%) were admitted to hospitals without revascularization services and 314 (52.2%) were admitted to hospitals with coronary angioplasty and coronary artery bypass surgery facilities. Clinical characteristics were similar across the subgroups. Patients admitted to hospitals with revascularization services were more likely to undergo coronary revascularization during the index hospitalization and during the first month after acute myocardial infarction. After adjustment for demographic, clinical, hospital, and treatment strategies, the presence of onsite revascularization services was not associated with a significantly lower 30-day (odds ratio 0.83, 95% CI 0.47, 1.45) or 1-year mortality (odds ratio 0.91, 95% CI 0.49, 1.72).\n\nLong answer: In a community-based cohort, patients with acute myocardial infarction complicated by cardiogenic shock did not have significantly different adjusted 30-day and 1-year mortality, irrespective of the revascularization capabilities of the admitting hospital.\n\nQuestion: Cardiogenic shock complicating acute myocardial infarction in elderly patients: does admission to a tertiary center improve survival?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "03cdf95f5c13e69712ec686deabddb4456e397032f840dbf5570646b6e11eb4e",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:12040336",
+  "task_key": "39f14843e4b6d42a7fe91edd00b2850e09582b2f9a42908c8b30851dc522a61f",
+  "text": "No survival benefit.",
+  "timestamp": "2026-09-14T10:36:31.401392+00:00",
+  "tokens_in": 525,
+  "tokens_out": 101,
+  "usage": {
+    "completion_tokens": 101,
+    "neurons": 23.590810775756836,
+    "prompt_tokens": 525,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 626
+  }
+}

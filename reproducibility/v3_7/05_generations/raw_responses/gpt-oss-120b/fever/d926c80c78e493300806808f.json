@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "583f4781c218a04d9797396128328fa4de816aa7410de102cb24f4393240b23f",
+  "example_id": "107bebbdd19dc7310cf0f6d89c316cb1",
+  "finish": "stop",
+  "input_sha256": "88a003ed13f85ab3be01332516d139b3d44f00af08fb4d78dc2b79460b817dd4",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "107bebbdd19dc7310cf0f6d89c316cb1",
+  "prompt_sha256": "f4a3bf6e247a9602e97f70467b57277040eace80b15211738dfef97771b08bbf",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Topman: Topman stores almost always share their premises with Topshop .\n\nClaim: Topman has stores throughout the US.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "06a79699aa50c10f9599b6e8a4fa3a7231adf2fa0832f585a0521f404568f4cb",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:107bebbdd19dc7310cf0f6d89c316cb1",
+  "task_key": "64034b214ea571d6005e90f6a1430a700147c6b8a9f6f4b3774269e79440ecc0",
+  "text": "NOT ENOUGH INFO",
+  "timestamp": "2026-09-14T10:36:24.222894+00:00",
+  "tokens_in": 163,
+  "tokens_out": 60,
+  "usage": {
+    "completion_tokens": 60,
+    "neurons": 9.277241706848145,
+    "prompt_tokens": 163,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 223
+  }
+}

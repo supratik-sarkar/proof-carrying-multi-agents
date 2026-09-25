@@ -1,0 +1,35 @@
+{
+  "schema": "POST_AGENTDOJO_48_FUSE_TERMINATION_RECEIPT",
+  "timestamp": "2026-09-17T17:45:10.958346+00:00",
+  "active_dev_process": false,
+  "failing_observation": {
+    "model_id": "gemini-3.1-flash-lite",
+    "suite": "travel",
+    "user_task_id": "user_task_7",
+    "injection_task_id": "injection_task_1",
+    "observation_id": "agentdojo:travel:user_task_7:injection_task_1",
+    "lane": "agentdojo"
+  },
+  "sequence_of_events": [
+    "1. upstream Gemini HTTP 503 occurred;",
+    "2. proxy surfaced retryable failure as HTTP 502;",
+    "3. AgentDojo/OpenAI client retried it;",
+    "4. subsequent requests recovered with 200;",
+    "5. local project 48-call safety fuse later fired;",
+    "6. proxy encoded the LOCAL fuse as HTTP 429;",
+    "7. OpenAI client/tenacity interpreted project-local fuse as provider rate limiting;",
+    "8. multiple retries of the local fuse occurred;",
+    "9. openai.RateLimitError escaped;",
+    "10. subprocess chain terminated the entire DEV pipeline."
+  ],
+  "root_cause": {
+    "classification": "AGENTDOJO_LOGICAL_CALL_FUSE_MISREPRESENTED_AS_RETRYABLE_TRANSPORT_ERROR",
+    "details": "The local project safety fuse of 48 calls was hit prematurely due to counting physical transport retries (503 backoff) and scoping across multiple native benchmark phases. When the 48-call fuse fired, the local proxy surfaced it as HTTP 429 Too Many Requests. AgentDojo tenacity retry decorator in openai_llm.py intercepted HTTP 429 as provider rate-limiting and repeatedly retried the local fuse, multiplying failures until openai.RateLimitError escaped, aborting the DEV run."
+  },
+  "explicit_exclusions": {
+    "gemini_quota_exhaustion": false,
+    "provider_substitution_failure": false,
+    "benchmark_scorer_failure": false
+  },
+  "status": "SEALED"
+}

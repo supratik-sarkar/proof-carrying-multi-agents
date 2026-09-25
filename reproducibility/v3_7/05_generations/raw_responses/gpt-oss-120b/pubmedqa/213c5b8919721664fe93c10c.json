@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "e4e47525aea3fd6104410a899cf258a4c99017cc06a4e317e26f35c6b8e0d3b6",
+  "candidate_text": "Yes, it is cost‑effective.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "8c4805cbca2e396ca38e1fbb376e97f9a714958adc98108b2ffd159a1131760e",
+  "example_id": "22266735",
+  "finish": "stop",
+  "input_sha256": "b2be55d26ed128bf39ac8cc76a515742867bef31178dcb642610edbe5853406b",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "22266735",
+  "prompt_sha256": "1b0e3d774d6fd93825ccd297b976e6fad86259ed3cfaa5bd0988d9234fd8da23",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: OBJECTIVE: The International Association of the Diabetes and Pregnancy Study Groups (IADPSG) recently recommended new criteria for diagnosing gestational diabetes mellitus (GDM). This study was undertaken to determine whether adopting the IADPSG criteria would be cost-effective, compared with the current standard of care. RESEARCH DESIGN AND METHODS: We developed a decision analysis model comparing the cost-utility of three strategies to identify GDM: 1) no screening, 2) current screening practice (1-h 50-g glucose challenge test between 24 and 28 weeks followed by 3-h 100-g glucose tolerance test when indicated), or 3) screening practice proposed by the IADPSG. Assumptions included that 1) women diagnosed with GDM received additional prenatal monitoring, mitigating the risks of preeclampsia, shoulder dystocia, and birth injury; and 2) GDM women had opportunity for intensive postdelivery counseling and behavior modification to reduce future diabetes risks. The primary outcome measure was the incremental cost-effectiveness ratio (ICER). RESULTS: Our model demonstrates that the IADPSG recommendations are cost-effective only when postdelivery care reduces diabetes incidence. For every 100,000 women screened, 6,178 quality-adjusted life-years (QALYs) are gained, at a cost of $125,633,826. The ICER for the IADPSG strategy compared with the current standard was $20,336 per QALY gained. When postdelivery care was not accomplished, the IADPSG strategy was no longer cost-effective. These results were robust in sensitivity analyses.\n\nLong answer: The IADPSG recommendation for glucose screening in pregnancy is cost-effective. The model is most sensitive to the likelihood of preventing future diabetes in patients identified with GDM using postdelivery counseling and intervention.\n\nQuestion: Screening for gestational diabetes mellitus: are the criteria proposed by the international association of the Diabetes and Pregnancy Study Groups cost-effective?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "5a3d149f703ebdce115de23f99f546af6e647aaf8a64235fef045a125d49b102",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:22266735",
+  "task_key": "9dce5d8ee84fba244c8397d65858e644dcfe4ab44940a8db9432a08004722b4a",
+  "text": "Yes, it is cost‑effective.",
+  "timestamp": "2026-09-14T10:36:58.440654+00:00",
+  "tokens_in": 520,
+  "tokens_out": 97,
+  "usage": {
+    "completion_tokens": 97,
+    "neurons": 23.158992767333984,
+    "prompt_tokens": 520,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 617
+  }
+}

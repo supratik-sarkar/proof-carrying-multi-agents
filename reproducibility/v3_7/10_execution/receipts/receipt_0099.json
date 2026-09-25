@@ -1,0 +1,9 @@
+{
+  "canonical_complete": 2240,
+  "manuscript_artifacts_synced": true,
+  "schema": "PCG_MAS_V3_6_PAPER_RESULTS_FREEZE_RECEIPT",
+  "status": "PASS",
+  "terminal_state": "PAPER_RESULTS_READY",
+  "timestamp": "2026-09-19T10:53:04.915787+00:00",
+  "verifier_scores_complete": 4200
+}

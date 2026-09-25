@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "8fcc5d856e2c0b2e77ee6e749cd932757169304c7856e094ca373d4e01456691",
+  "candidate_text": "portraits",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "d48dbe188a1e81579b95a043e0a6714e729ec696cba4ab63fac96cac7f3fdf4c",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "5a872e8e5542991e7718170c",
+  "prompt_sha256": "11b3c70ec0def364a492c846136296041cec584fb6ecb12db4bc783e6ba1eafe",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "27c0d335f9ad300587b388a624f5be463670abab2b2da91f5d574c2ca2d2576e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a872e8e5542991e7718170c",
+  "text": "portraits",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "neurons": 4.3112,
+    "prompt_tokens": 764,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 767
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "d78841d94b7094db1015d4c28e9cf89b7961936dce93bf7edd0c1d9cab4f8de8",
+  "candidate_text": "NOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "30fbb0c4a9301c84da177d690b3ab176353942d20e2e6e3fcda4a5d844ee23bb",
+  "example_id": "5d02be355f1cde26485349d7a51cb136",
+  "finish": "stop",
+  "input_sha256": "62ed981dce773d67541832f2883c2831eefff19f6ff8d899e8a121135730d495",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5d02be355f1cde26485349d7a51cb136",
+  "prompt_sha256": "e1bf2867203c7c133754225fa5f8e08eff31c9323816fc40301b916bec408795",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] José Ferrer (disambiguation): José Ferrer may also refer to :\n\nClaim: José Ferrer won a marathon in 1947.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "96ebe009e828ae019bf77d787b1b7973cc1d930176de471f18f4f8caaec58a72",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:5d02be355f1cde26485349d7a51cb136",
+  "task_key": "18f7b734a8ee9996d4ea1c84fd721c87400d8f007d5b76ec87659c2677df900b",
+  "text": "NOT ENOUGH INFO",
+  "timestamp": "2026-09-14T10:36:14.593296+00:00",
+  "tokens_in": 167,
+  "tokens_out": 99,
+  "usage": {
+    "completion_tokens": 99,
+    "neurons": 12.063604354858398,
+    "prompt_tokens": 167,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 266
+  }
+}

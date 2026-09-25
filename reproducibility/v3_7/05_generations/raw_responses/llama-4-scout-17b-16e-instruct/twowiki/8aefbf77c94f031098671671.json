@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "c09babf8517aca547d41d4de96f202ebd227cb91c233a3f7e3016d160748f2f1",
+  "example_id": "5d46fb540baf11ebab90acde48001122",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "2d4dfdb3420b78d8c5e0dbb313b26aa2a81e9c06946b663bd59ed9dcdbecfb4b",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "5d46fb540baf11ebab90acde48001122",
+  "prompt_sha256": "27ac2a336fec5f8c20514a80ba69b19d23b0b166ff530c41fce0293a130baef7",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Prince Pedro, Duke of Calabria\": [\"Prince Pedro of Bourbon- Two Sicilies, Duke of Calabria\",\"( Spanish:\\\" Pedro Juan Mar\\u00eda Alejo Saturnino y Todos los Santos\\\"; born 16 October 1968), is the only son of Infante Carlos, Duke of Calabria( 1938 \\u2013 2015) and his wife, Princess Anne of Orl\\u00e9ans.\"]\n\n[2] \"Philip of Spain (1712\\u20131719)\": [\"Infante Philip Peter Gabriel of Spain( 7 June 171229 December 1719) was a Spanish infante as the third child and third of four sons born to King Philip V of Spain and his first queen consort, Maria Luisa of Savoy.\",\"Infante Philip Peter Gabriel was born early in the morning of 7 June 1712, at El Escorial in Madrid, the King's official residence, almost three years after the death of his elder brother and namesake, Infante Philip Peter, who had died aged sixteen days.\",\"By Christmas Day 1719, Philip was already very sick.\",\"His father arranged for his burial a few days before his death on 29 December 1719.\",\"Philip was buried in El Escorial complex.\"]\n\n[3] \"Princess Anne, Duchess of Calabria\": [\"Princess Anne of Bourbon- Two Sicilies, Dowager Duchess of Calabria(\\\" n\\u00e9e\\\" Princess Anne d' Orl\\u00e9ans; born 4 December 1938) is the widow of Infante Carlos, Duke of Calabria.\",\"She is the third daughter and fifth child of Prince Henri, Count of Paris( 1908 \\u2013 1999), Orl\\u00e9anist claimant to the defunct French throne, and his wife Princess Isabelle of Orl\\u00e9ans- Braganza( 1911\\u20132003).\"]\n\n[4] \"Infante Philip, Duke of Calabria\": [\"Philip of Naples and Sicily, \\\"Duke of Calabria\\\", Infante of Spain (13 June 1747 \\u2013 19 September 1777) was the eldest son and heir of Charles III of Spain, but was excluded from the succession to the thrones of Spain and Naples due to his imbecility.\",\"His younger brothers, Charles IV of Spain and Ferdinand I of the Two Sicilies replaced him in the succession.\",\"When his father became King of Spain in 1759, Philip remained in Naples where he lived until his death from smallpox at the age of thirty.\"]\n\nQuestion: Who is Infante Philip, Duke Of Calabria's paternal grandmother?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "6d5e6413f8e7ab057343780f593c10f32df14a327e5a537255c7d157c826247a",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:5d46fb540baf11ebab90acde48001122",
+  "task_key": "49f5dd58d73fc6ee11baf38d2d092377b000cf5d80b381e813395059514aaf74",
+  "text": "I don't know.",
+  "timestamp": "2026-09-15T09:33:54.093742+00:00",
+  "tokens_in": 608,
+  "tokens_out": 5,
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 15.3100004196167,
+    "prompt_tokens": 608,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 613
+  }
+}

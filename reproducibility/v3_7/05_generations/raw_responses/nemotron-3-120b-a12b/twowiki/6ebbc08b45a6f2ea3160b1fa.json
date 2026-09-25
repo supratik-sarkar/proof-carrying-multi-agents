@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "6f079fabadb26a5743705ad3a93601f94cdf91d23eca70a925a943317899150d",
+  "candidate_text": "\n\nKingsbury, London",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "c6e0e2cb02a0856f707bb67d26bc9f85469126c97e820961f51dd7a35e67a387",
+  "example_id": "dffa1f8a0bdd11eba7f7acde48001122",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "f86ab1ef01380a6a13fb0f3730e2ef93f1ca023dde93f49abe9fede3224b025d",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "dffa1f8a0bdd11eba7f7acde48001122",
+  "prompt_sha256": "884ebb603d8c6ce4706a9b4713329fe450f7d074b494a4de1ec080b74a422a15",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Chris Squire\": [\"Christopher Russell Edward Squire (4March 1948 \\u2013 27June 2015) was an English musician, singer and songwriter best known as the bassist and a founding member of the progressive rock band\",\"Yes.\",\"He was the longest-serving original member, having remained in the band until his death and appearing on every studio album released from 1969 to 2014.\",\"Born in Kingsbury, London, Squire took an early interest in church music and sang in the local church and school choirs.\",\"After he took up the bass guitar at age sixteen, his earliest gigs were in 1964 for the Selfs, which later evolved into the Syn.\",\"In 1968, Squire formed Yes with singer Jon Anderson; he would remain the band's sole bassist for the next 47 years.\",\"Squire was widely regarded as the dominant bassist among the English progressive rock bands, influencing peers and later generations of bassists with his incisive sound and elaborately contoured, melodic bass lines.\",\"His name was associated with his trademark instrument, the Rickenbacker 4001.\",\"In May 2015, Squire announced a hiatus from\",\"Yes after he was diagnosed with acute erythroid leukemia, and subsequently died on 27 June at his home in Phoenix, Arizona.\",\"The band's first show of their tour with Toto on 7 August 2015 marked the first Yes concert ever performed without Squire, with longtime friend and frequent collaborator Billy Sherwood performing in his place.\",\"From 1991 to 2000, Rickenbacker produced a limited edition signature model bass in his name, the 4001CS.\",\"Squire released two solo albums, \\\"Fish Out of Water\\\" (1975) and \\\"Chris Squire's Swiss Choir\\\" (2007), a Christmas album.\",\"He was posthumously inducted into the Rock and Roll Hall of Fame as a member of Yes in 2017.\"]\n\n[2] \"XYZ (English band)\": [\"XYZ were a short-lived rock supergroup.\",\"The name XYZ is taken from eX-Yes-&-Zeppelin as the group consisted of ex-Led Zeppelin guitarist Jimmy Page, along with ex-\",\"Yes members Chris Squire (bass guitar, vocals, keyboards) and Alan White (drums).\"]\n\n[3] \"Andrew Dismore\": [\"Andrew Hartley Dismore( born 2 September 1954) is a British Labour politician who has been the Member of the London Assembly for Barnet and Camden since 2012, and was the Member of Parliament( MP) for Hendon from 1997 until 2010.\"]\n\n[4] \"Mamta Meena\": [\"Mamta Raghuveer Singh Meena( born 4 April 1976) is an Indian politician and the member of Bharatiya Janata Party( BJP).\",\"She previously served as the Member of Madhya Pradesh Vidhan Sabha from 2013 to 2019.\"]\n\nQuestion: Where was the keyboardist of Xyz (English Band) born?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "a43e4e4b0453a1aa1cc1ec1d34a03b32333bbf9093754dbd046d0e528dd9f1ae",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:dffa1f8a0bdd11eba7f7acde48001122",
+  "task_key": "7f933938c68fef90be101d335b73006d7d37ed6a32e6d1c0a004ab5a8544db9f",
+  "text": "\n\nKingsbury, London",
+  "timestamp": "2026-09-15T09:36:34.840421+00:00",
+  "tokens_in": 761,
+  "tokens_out": 251,
+  "usage": {
+    "completion_tokens": 251,
+    "neurons": 68.381,
+    "prompt_tokens": 761,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1012
+  }
+}

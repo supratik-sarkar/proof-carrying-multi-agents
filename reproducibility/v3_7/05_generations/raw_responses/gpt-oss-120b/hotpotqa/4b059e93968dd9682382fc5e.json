@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "c1c9955ef1514d8d094c79be97d1e29788135a428a8c54282f4b327db86deaac",
+  "candidate_text": "Playing a musical bow.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "d69e0de50fd1a43c0a692260587345368453df3c65bad0fa930560d531645dd4",
+  "example_id": "5abf04ae5542993fe9a41dbf",
+  "finish": "stop",
+  "input_sha256": "0f0e871a50177ca53346aa631621e3e568d854ac157cdb8fdd75ee6ad00a1d81",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5abf04ae5542993fe9a41dbf",
+  "prompt_sha256": "8b3bf9c3d25606619838c4403e69401a21b8f4afdfce39f5ecd02f16447f8e16",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Maloya: Maloya is one of the two major music genres of Réunion, usually sung in Réunion Creole, and traditionally accompanied by percussion and a musical bow.  Maloya is a new form that has origins in the music of African and Malagasy slaves and Indian indentured workers on the island, as has the other folk music of Réunion, séga.  World music journalists and non-specialist scholars sometimes compare maloya to the American music, the blues, though they have little in common.  Unlike the blues, maloya was considered such a threat to the French state that in the 1970s it was banned.\n\n[2] Ndebele music: The traditional music of the Ndebele is characterised mainly by the widespread use of choral song accompanied by leg rattles (\"amahlwayi\"), clappers (\"izikeyi\") and clapping of hands.  Compared with choral song, solo singing and purely instrumental music are of minor importance.  Like the Shona, the Ndebele also use mouthbows (\"umqangala\") and gourd-bows (\"icaco\"), played mostly for self-amusement.\n\n[3] Belembaotuyan: The belembaotuyan is a musical bow played in Guam, also spelled \"belumbaotuyan\", \"belenbaotuchan\", and \"belimbau-tuyan\".  This gourd-resonating musical bow likely has common roots with the Brazilian berimbau, due to constant trade between Asia and South America in the nineteenth century, during which the instrument may have been introduced to the Chamorro people.\n\n[4] Latvian musical bows: Two types of musical bow are common in Latvia: the \"spēles\" and the \"pūšļa vijole\".\n\nQuestion: What musical action does Ndebele music and Musical bow have in common?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "4ed942e782dc9d16bf128743d8224fffc916ee48d01e433f208c689531f142c9",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5abf04ae5542993fe9a41dbf",
+  "task_key": "3e2d738aeb62102656aca82ee512a8105803a1c8d5b173dde66b4c873c60bf8a",
+  "text": "Playing a musical bow.",
+  "timestamp": "2026-09-14T10:32:17.212555+00:00",
+  "tokens_in": 493,
+  "tokens_out": 230,
+  "usage": {
+    "completion_tokens": 230,
+    "neurons": 31.368087768554688,
+    "prompt_tokens": 493,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 723
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "9645731d9c71c3dd4ac0b116c14b38b7eece3769469825f26785c7a7f22e92fb",
+  "candidate_text": "\n\nLess is more.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "324a15e001dd5b059ab762b35b8726f62ad4bedc770161b8df1122c9725c0e51",
+  "example_id": "26708803",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "25bf6a395491f78dd63965ddd26f1d82adaac607e150ab33db61a14e8ccc9644",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "26708803",
+  "prompt_sha256": "d6b3f310df4332ccee1df9c569b0fa581da4c38e11926d35297fc27ff8dce108",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: OBJECTIVE: Treatment of neonatal testicular torsion has two objectives: salvage of the involved testicle (which is rarely achieved) and preservation of the contralateral gonad. The second goal universally involves contralateral testicular scrotal fixation to prevent the future occurrence of contralateral torsion. However, there is controversy with regards to management of a synchronous contralateral hydrocele. It has been our policy not to address the contralateral hydrocele through an inguinal incision to minimize potential injury to the spermatic cord. Our objective in this study was to determine whether the decision to manage a contralateral hydrocele in cases of neonatal testicular torsion solely through a scrotal approach is safe and effective. PATIENTS AND METHOD: We reviewed all cases of neonatal testicular torsion occurring at our institution between the years 1999 and 2006. Age at presentation, physical examination, ultrasonographic and intraoperative findings were recorded. Patients were followed after initial surgical intervention to determine the likelihood of developing a subsequent hydrocele or hernia. RESULTS: Thirty-seven patients were identified as presenting with neonatal torsion. Age of presentation averaged 3.5 days (range 1-14 days). Left-sided pathology was seen more commonly than the right, with a 25:12 distribution. All torsed testicles were nonviable. Twenty-two patients were noted to have a contralateral hydrocele at presentation. All hydroceles were opened through a scrotal approach at the time of contralateral scrotal fixation. No patient underwent an inguinal exploration to examine for a patent process vaginalis. None of the patients who presented with a hydrocele have developed a clinical hydrocele or hernia after an average 7.5 years (range 4.3-11.2) follow-up.\n\nLong answer: We have demonstrated that approaching a contralateral hydrocele in cases of neonatal testicular torsion solely through a scrotal incision is safe and effective. Inguinal exploration was not performed in our study and our long-term results demonstrate that such an approach would have brought no additional benefit. In avoiding an inguinal approach we did not subject our patients to unnecessary risk of testicular or vasal injury. Contralateral hydrocele is commonly seen in cases of neonatal testicular torsion. In our experience this is a condition of minimal clinical significance and does not warrant formal inguinal exploration for treatment. This conservative management strategy minimizes the potential of contralateral spermatic cord injury in the neonate. The aims of the study were met.\n\nQuestion: Treatment of contralateral hydrocele in neonatal testicular torsion: Is less more?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "51258cb93848d2d8323fb161112583c523c6652adf971d043d691bb60c2bf72a",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:26708803",
+  "task_key": "d182d536613d6257430e7953b306248f30ee426ff01374d8f94e4b0ee763ae4c",
+  "text": "\n\nLess is more.",
+  "timestamp": "2026-09-15T09:41:07.137856+00:00",
+  "tokens_in": 595,
+  "tokens_out": 107,
+  "usage": {
+    "completion_tokens": 107,
+    "neurons": 41.327,
+    "prompt_tokens": 595,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 702
+  }
+}

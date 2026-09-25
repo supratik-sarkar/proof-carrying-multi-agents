@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "b1b65b9711fc1e0220477277fc615ce640c4c87dd3ca04c2f883e08ca8e0df16",
+  "candidate_text": "$8,736 million decrease",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "0f75ed82843ec64a7e448685b9fef1fbc0003971633fa2a22623350909426a89",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "974ea4685a3322b23ac80e3a89131498",
+  "prompt_sha256": "8fde2965b426d5f26babdd7f2e15df70cb3afd0ba10af815a0bf5c75a925ab94",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "e09d021a5f54f8d072fc02d97ffb5595f7a1cf9b3fcfd63aef3f35db3192ca2a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:974ea4685a3322b23ac80e3a89131498",
+  "text": "$8,736 million decrease",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 9,
+    "neurons": 4.072727203369141,
+    "prompt_tokens": 421,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 430
+  }
+}

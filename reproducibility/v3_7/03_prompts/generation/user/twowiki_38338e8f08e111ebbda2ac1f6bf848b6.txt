@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Paolo Cavara": ["Paolo Cavara (4 July 1926 \u2013 7 August 1982) was an Italian screenwriter and film director.","He is best known for collaborating with Gualtiero Jacopetti and Franco E. Prosperi on the 1962 mondo film \"Mondo Cane\", and for directing the fiction film \"The Wild Eye\" (1967) and two giallo films, \"Black Belly of the Tarantula\" (1971) and \"Plot of Fear\" (1976)."]
+
+[2] "Black Belly of the Tarantula": ["The Black Belly of the Tarantula is a 1971 Italian giallo film directed by Paolo Cavara.","It is one of many Italian giallo films to be inspired by Dario Argento's successful debut thriller\" The Bird with the Crystal Plumage\".","The film was shot on location in Rome, Italy, in 1970.","It starred Giancarlo Giannini, Barbara Bouchet, and Barbara Bach.","Ennio Morricone did the music score for the film.","Though fairly obscure for many years the film has recently made a comeback thanks to the rising fan base for the giallo genre.","The film has gained much praise from the horror community, one writer at Horrorview.com cited it as the best giallo ever made.","Blue Underground Entertainment released the film on DVD in 2006."]
+
+[3] "Devil on Deck": ["Devil on Deck is a 1932 Pre-code talking film directed by Wallace Fox and starring Reed Howes and Molly O' Day.","It was produced and distributed by Sono Art- World Wide Pictures, a B-movie studio that turned out occasionally some good pictures like\" The Great Gabbo\"."]
+
+[4] "Mohsen Eslamzadeh": ["Mohsen Eslamzadeh is an Iranian documentary filmmaker.","He is the director of\" Alone Among The Taliban\".","This film has won the best documentary award at the 44th Athens International Film and Video Festival in the United States.","This film has won the best documentary award at the 12th Marbella International Film Festival in Spain.","This film has won the Shahid Avini Award offers."]
+
+Question: Which film has the director died earlier, Black Belly Of The Tarantula or Devil On Deck?
+
+Answer:

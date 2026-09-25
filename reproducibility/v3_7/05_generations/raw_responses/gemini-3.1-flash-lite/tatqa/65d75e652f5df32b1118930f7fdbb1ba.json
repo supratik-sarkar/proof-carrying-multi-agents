@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "72428ee6eb663e922db2bd49e8af758bdd744ea1c0ab7694c3917b59a646ca49",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "65d75e652f5df32b1118930f7fdbb1ba",
+  "prompt_sha256": "5811826f62a34dfb151f705e7839303c3216561eac2551ec5790e28fab642cc7",
+  "provider": "gemini",
+  "provider_raw_sha256": "a89849a021f208c09dc5594b2f169116c5461a60ea581769d5b5827f15e9093b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "tatqa:65d75e652f5df32b1118930f7fdbb1ba",
+  "text": "I don't know.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 383,
+    "total_tokens": 389
+  }
+}

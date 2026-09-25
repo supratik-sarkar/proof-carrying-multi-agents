@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "d042dccbe6700fc342a80a832513870d93ce22b50127dbf65e1547ffbaae3ec7",
+  "candidate_text": "The remaining ears exhibited otorrhea.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "e199a53e3c29a9eeb9aa6e348881145e2b1459ef83aa3c183e96af561f3e0211",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "17483607",
+  "prompt_sha256": "659300d99fcb303e9dc4323df36b9bb73b65bcfe6f5bf1cbef0d6472cefaddc3",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "6391b014a69ed7c399205c66643b508b7d9cd67ced29f50ed6258672240fdc15",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:17483607",
+  "text": "The remaining ears exhibited otorrhea.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 3.436363458633423,
+    "prompt_tokens": 354,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 362
+  }
+}

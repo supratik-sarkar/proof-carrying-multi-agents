@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "4ccb0a9feb1d8c7d80a30a2af424ff09f02e42f5629370540f4ce6cba72c0e87",
+  "candidate_text": "Natürlich die Nelli.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "e755e53b3319ea372312a688247d21d611fcb50be44812f9ab0ce60199ae87b3",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "c789bc3b087211ebbd66ac1f6bf848b6",
+  "prompt_sha256": "a3c8a62977a64644461d0aab8912025ab36c951c364c2573b20b4169fb9eb6c6",
+  "provider": "gemini",
+  "provider_raw_sha256": "12b80453eb7c8d6ce56edb88e6b3b5bebf83b1d7b07ab494b0bab8f3d1e76a6e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:c789bc3b087211ebbd66ac1f6bf848b6",
+  "text": "Natürlich die Nelli.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 469,
+    "total_tokens": 475
+  }
+}

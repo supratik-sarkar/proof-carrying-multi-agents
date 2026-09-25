@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "f4911c5349233fce6a786953594461266d4c0d5d33db988e016baad5534bd925",
+  "candidate_text": "\n\n2019",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "9cab75861e5df971e4d4a698016f9abd5ddac81ecbc10e040f2715bf4da3a4de",
+  "example_id": "30ed529d669cbf28f2d5bbfb8d212af0",
+  "finish": "stop",
+  "input_sha256": "66f39d5e637abae31ea51cb6e3c5fa09a9754b4dcfa93371ab79d92215771359",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "30ed529d669cbf28f2d5bbfb8d212af0",
+  "prompt_sha256": "9b313f452f370456dc91786ecd313f98e1b103843b67f7fcf0ad71b555c61b9a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 3: The increase of $2.9 million in the valuation allowance in the current fiscal year relates primarily to net operating losses and income tax credits incurred in certain tax jurisdictions for which no tax benefit was recognized.\n\n[2] TAT-QA table: row 0:  | As of July 31, | \nrow 1:  | 2019 | 2018\nrow 2: Accruals and reserves | $7,870 | $12,129\nrow 3: Stock-based compensation | 6,353 | 7,658\nrow 4: Deferred revenue | 2,316 | 4,023\nrow 5: Property and equipment | — | 1,268\nrow 6: Net operating loss carryforwards | 55,881 | 56,668\nrow 7: Tax credits | 74,819 | 60,450\nrow 8: Total deferred tax assets | 147,239 | 142,196\nrow 9: Less valuation allowance | 31,421 | 28,541\nrow 10: Net deferred tax assets | 115,818 | 113,655\nrow 11: Less deferred tax liabilities: |  | \nrow 12: Intangible assets | 7,413 | 11,461\nrow 13: Convertible debt | 10,274 | 11,567\nrow 14: Property and equipment | 1,435 | —\nrow 15: Unremitted foreign earnings | 302 | 258\nrow 16: Capitalized commissions | 6,086 | —\nrow 17: Total deferred tax liabilities | 25,510 | 23,286\nrow 18: Deferred tax assets, net | 90,308 | 90,369\nrow 19: Less foreign deferred revenue | — | 69\nrow 20: Less foreign capitalized commissions | 906 | —\nrow 21: Total net deferred tax assets | 89,402 | 90,300\n\n[3] TAT-QA 1: The tax effects of temporary differences that gave rise to significant portions of deferred tax assets and liabilities are as follows (in thousands):\n\n[4] TAT-QA 2: The Company considered both positive and negative evidence, including future reversals of existing taxable temporary differences, projected future taxable income, tax planning strategies, historic book profit/loss, prior taxable income/loss, and results of future operations, and determined that a valuation allowance was not required for a significant portion of its deferred tax assets. A valuation allowance of $31.4 million and $28.5 million remained as of July 31, 2019 and 2018, respectively.\n\nQuestion: In which year was Accruals and reserves less than 10,000 thousand?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "0f32b412054b060325a28720b72e592b859c37f35293de453567f377f9f7f5b3",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:30ed529d669cbf28f2d5bbfb8d212af0",
+  "task_key": "fa0c3a6b34437b24e68b83a54cf4cd3303cc991741981c027748183024e713dc",
+  "text": "\n\n2019",
+  "timestamp": "2026-09-14T10:53:43.339859+00:00",
+  "tokens_in": 818,
+  "tokens_out": 111,
+  "usage": {
+    "completion_tokens": 111,
+    "neurons": 65.75454711914062,
+    "prompt_tokens": 818,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 929
+  }
+}

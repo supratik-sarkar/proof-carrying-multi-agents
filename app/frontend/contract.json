@@ -1,6 +1,6 @@
 {
-  "PCG_MAS_RELEASE": "v3.0",
-  "artifact_schema_version": "3.0.0",
+  "PCG_MAS_RELEASE": "v3.2",
+  "artifact_schema_version": "3.2.0",
   "audit_channels": [
     "IntFail",
     "ReplayFail",
@@ -73,7 +73,8 @@
     "REPLAY",
     "TEST_FIXTURE",
     "MOCK",
-    "UNKNOWN"
+    "UNKNOWN",
+    "ENGINEERING_SMOKE"
   ],
   "record_schema": {
     "$id": "https://pcg-mas/schemas/per_example_record.v3.schema.json",
@@ -143,6 +144,12 @@
         ]
       },
       "certificate_hash": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "certificate_root": {
         "type": [
           "string",
           "null"
@@ -288,6 +295,12 @@
           "null"
         ]
       },
+      "execution_mode": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
       "experiment_id": {
         "type": [
           "string",
@@ -297,6 +310,12 @@
       "failure_origin_known": {
         "type": [
           "boolean",
+          "null"
+        ]
+      },
+      "guardrail_intervention_count": {
+        "type": [
+          "integer",
           "null"
         ]
       },
@@ -330,6 +349,18 @@
           "null"
         ]
       },
+      "instrumentation_overhead_ratio": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "instrumentation_version": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
       "int_fail": {
         "type": [
           "boolean",
@@ -345,6 +376,12 @@
       "latency_ms": {
         "type": [
           "number",
+          "null"
+        ]
+      },
+      "lineage_root": {
+        "type": [
+          "string",
           "null"
         ]
       },
@@ -408,6 +445,18 @@
           "null"
         ]
       },
+      "policy_eval_status": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "policy_input_hash": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
       "prompt_hash": {
         "type": [
           "string",
@@ -423,7 +472,8 @@
           "REPLAY",
           "TEST_FIXTURE",
           "MOCK",
-          "UNKNOWN"
+          "UNKNOWN",
+          "ENGINEERING_SMOKE"
         ],
         "type": "string"
       },
@@ -491,6 +541,18 @@
       "retrieval_calls": {
         "type": [
           "integer",
+          "null"
+        ]
+      },
+      "retry_attempts": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "retry_trigger_class": {
+        "type": [
+          "string",
           "null"
         ]
       },
@@ -631,7 +693,7 @@
     "title": "PCG-MAS canonical per-example record (v3.0)",
     "type": "object"
   },
-  "record_schema_version": "3.0.0",
+  "record_schema_version": "3.2.1",
   "residuals_outside_channels": [
     "eps_tax",
     "eps_src"

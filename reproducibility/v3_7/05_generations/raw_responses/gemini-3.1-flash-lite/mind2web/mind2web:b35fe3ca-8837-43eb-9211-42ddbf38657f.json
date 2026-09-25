@@ -1,0 +1,27 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "correct": false
+  },
+  "candidate_sha256": "e6a68ef91d6b836e30e8a63f17109ad1bdd6862f7ae4a39bd7a4e01cffebc296",
+  "candidate_text": "{\"choice\":\"C0\",\"operation\":\"SELECT\",\"value\":\"Agility\"}",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "6418cf4598d204e7dbaa52eb3394ad33ed76925e31fc9c13e185990b6dba3d8f",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "mind2web:b35fe3ca-8837-43eb-9211-42ddbf38657f",
+  "prompt_sha256": "6418cf4598d204e7dbaa52eb3394ad33ed76925e31fc9c13e185990b6dba3d8f",
+  "provider": "gemini",
+  "provider_raw_sha256": "4525aaab9c8d8db67840f7efdc378f35f00ead12627b127366481f6fc6aea0d0",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "{\"choice\":\"C0\",\"operation\":\"SELECT\",\"value\":\"Agility\"}",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 15,
+    "prompt_tokens": 430,
+    "total_tokens": 445
+  }
+}

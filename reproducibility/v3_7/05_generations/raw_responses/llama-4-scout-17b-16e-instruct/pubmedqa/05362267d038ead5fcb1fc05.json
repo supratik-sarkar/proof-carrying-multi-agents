@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "2f13869524e77dbffb41ec9380571bd1cd05ea6f0f8616f5d45ee5953800a8b3",
+  "candidate_text": "No, symptom reporting similar.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "aa2fdabbbaaf7fe8a7934f34bd6db2ac5dde1f4e804d6f2755a5066eb8eced0c",
+  "example_id": "15052394",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "fee5860578930340f323bda9b27ccb7e8877f9eaf8b6c34c49e104539868c170",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "15052394",
+  "prompt_sha256": "9085e375c3173bcb8cf10381777c5a3b367046a4d0ea57a6104f749894025093",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: BACKGROUND: The gender difference in prevalence and incidence rates of depression is one of the most consistent findings in psychiatric epidemiology. We sought to examine whether any gender differences in symptom profile might account for this difference in rates. METHOD: This study was a population-based 13-year follow-up survey of community-dwelling adults living in East Baltimore in 1981. Subjects were the continuing participants of the Baltimore Epidemiologic Catchment Area Program. Participants interviewed between 1993 and 1996 with complete data on depressive symptoms and covariates were included (n = 1727). We applied structural equations with a measurement model for dichotomous data (the MIMIC-multiple indicators, multiple causes-model) to compare symptoms between women and men, in relation to the nine symptom groups comprising the diagnostic criteria for major depression, adjusting for several potentially influential characteristics (namely, age, self-reported ethnicity, educational attainment, marital status, and employment). RESULTS: There were no significant gender differences in the self-report of depression symptoms even taking into account the higher level of depressive symptoms of women and the influence of other covariates. For example, women were no more likely to endorse sadness than were men, as evidenced by a direct effect coefficient that was not significantly different from the null [adjusted estimated direct effect of gender on report of sadness = 0.105, 95% confidence interval (-0.113, 0.323)].\n\nLong answer: Men and women in this community sample reported similar patterns of depressive symptoms. No evidence that the presentation of depressive symptoms differs by gender was found.\n\nQuestion: Are higher rates of depression in women accounted for by differential symptom reporting?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "d9ad58052c4f05d8a484bdad2d43e1bc8bbc63f28a3d53580782dcb6989d2fc3",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:15052394",
+  "task_key": "c4a75dfe7a52fa9bdc2162ab727edd5acbcd43be61e3f1bb7ef43ca5d4f81cbd",
+  "text": "No, symptom reporting similar.",
+  "timestamp": "2026-09-15T09:34:53.538950+00:00",
+  "tokens_in": 392,
+  "tokens_out": 7,
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 10.162727355957031,
+    "prompt_tokens": 392,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 399
+  }
+}

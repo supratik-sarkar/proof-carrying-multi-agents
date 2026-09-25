@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "2650f27819a921948b6ccf8ef7c4f21cad38a95bad9b198c3ef14b9f3d8a1963",
+  "candidate_text": "Natürlich die Nelli",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "e755e53b3319ea372312a688247d21d611fcb50be44812f9ab0ce60199ae87b3",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "c789bc3b087211ebbd66ac1f6bf848b6",
+  "prompt_sha256": "a3c8a62977a64644461d0aab8912025ab36c951c364c2573b20b4169fb9eb6c6",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "bcb53fe7ef6cecd41f27d3406cabb11e74d482f6b96d2077a3ecd0f26e7b50da",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:c789bc3b087211ebbd66ac1f6bf848b6",
+  "text": "Natürlich die Nelli",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "neurons": 4.536363124847412,
+    "prompt_tokens": 481,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 487
+  }
+}

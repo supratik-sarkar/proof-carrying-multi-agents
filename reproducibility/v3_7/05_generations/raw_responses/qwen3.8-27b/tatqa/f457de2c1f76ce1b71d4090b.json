@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "59b25e5d32f761eb98281253b0a9e31fd690f4f6b9c2e0684aa17db02cd86e5e",
+  "candidate_text": "\n\nApproximately 13%",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "2215aa8366e8804b0d4a61c242c1fbed347e3f04e768b189d4640d11a7f6e168",
+  "example_id": "e536418dd5c5a5662f057d997d3ac047",
+  "finish": "stop",
+  "input_sha256": "73fd4c9fdcb07b01d96fef86f69a8595a0a45de6751b8ec013a99ebb4a7b978b",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "e536418dd5c5a5662f057d997d3ac047",
+  "prompt_sha256": "3e1c02f7ac9842a09f80c2af8583898ade448a0094fa7700836bd587944e7938",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA 2: In December 2019, the Company made a minority investment in a privately-held company, Talespin, Inc., for $8.0 million, representing approximately 13% equity ownership. The investment is accounted for using the equity method of accounting due to the Company’s ability to exercise significant influence.\n\n[2] TAT-QA 3: The Company’s non-marketable investments are composed of the following (in thousands):\n\n[3] TAT-QA table: row 0:  | December 31, | \nrow 1:  | 2019 | 2018\nrow 2: Accounted for at cost, adjusted for observable price changes | $1,750 | $1,250\nrow 3: Accounted for using the equity method | 8,000 | —\nrow 4: Total non-marketable investments | $9,750 | $1,250\n\n[4] TAT-QA 1: Strategic Investments\n\nQuestion: What was the company's equity ownership in Talespin, Inc?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "0a56791a1842396b998dae625fa060adda5fdf113df743430028d43f1d03376c",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:e536418dd5c5a5662f057d997d3ac047",
+  "task_key": "2085b03623b79d322f793ec69a87d07b5e76f43c539563c817d0580d8d830f3c",
+  "text": "\n\nApproximately 13%",
+  "timestamp": "2026-09-14T10:55:44.973885+00:00",
+  "tokens_in": 347,
+  "tokens_out": 53,
+  "usage": {
+    "completion_tokens": 53,
+    "neurons": 29.613636016845703,
+    "prompt_tokens": 347,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 400
+  }
+}

@@ -1,0 +1,14 @@
+You are a fact-verification assistant. Read the evidence and decide whether
+the CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.
+
+Reply with EXACTLY one of these three labels and nothing else:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Evidence:
+[1] Philip Glass: Glass 's compositions have been described as minimal music , similar to other `` minimalist '' composers including La Monte Young , Steve Reich and Terry Riley .
+
+Claim: There are no musical or creative works in existence that have been created by Phillip Glass.
+
+Label:

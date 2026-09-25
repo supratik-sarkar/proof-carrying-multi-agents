@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "a3c5ebe3ecaf6d3c7ddec0ab4f5cff96d809bb5d513cb4f46c5575d03b470839",
+  "candidate_text": "Mark Neveldine and Brian Taylor.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "dd36f53aefd795a45b03c986bcefc6fd21da1cb2bfc4430a9596c239cefefeca",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5abba4855542993f40c73b68",
+  "prompt_sha256": "5143344b8acd2b116017d9e732e92858763b0073f644c2c1b05e54721efc67b9",
+  "provider": "gemini",
+  "provider_raw_sha256": "bbc4ee18c23c13555b6be0e157a1d52cd45e2a29ada25135f70bb2c8f86b290b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5abba4855542993f40c73b68",
+  "text": "Mark Neveldine and Brian Taylor.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 686,
+    "total_tokens": 694
+  }
+}

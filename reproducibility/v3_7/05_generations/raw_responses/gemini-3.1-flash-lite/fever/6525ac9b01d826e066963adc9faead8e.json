@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "dataset_id": "fever",
+  "evidence_sha256": "43523816e8d22421e81011d62bf742d344b05805703e91938658339cedf1d87d",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "6525ac9b01d826e066963adc9faead8e",
+  "prompt_sha256": "0af513b622f006571133b393636b3a32236f786ea96da75072b149fd2577ff35",
+  "provider": "gemini",
+  "provider_raw_sha256": "32cb70932642589d8d488a86af527b04f8931a0a5b66a4336df94ee86933bb86",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "fever:6525ac9b01d826e066963adc9faead8e",
+  "text": "REFUTES",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 128,
+    "total_tokens": 130
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da",
+  "candidate_text": "Yes.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "3cd34ae003db7ec03fd1d3eac790ad32aaa46cebba688e74ce44748066c132c9",
+  "example_id": "22108230",
+  "finish": "stop",
+  "input_sha256": "5f9801ed3d7879cbc345d2478e4649d9dfccf3fd1e57edfc22fdf85ea9b54808",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "22108230",
+  "prompt_sha256": "b87f1ae8f5a216f0ef1f72ba1824fb45ba552fe72b83de99f3fdea4f329bc8cb",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: OBJECTIVE: To investigate the presence of inflammatory cytokines and the fibronectin-aggrecan complex (FAC) in persons undergoing surgical treatment for cervical radiculopathy caused by disk herniation. DESIGN: Single-center, prospective, consecutive case series. SETTING: A single large academic institution. PATIENTS: A total of 11 patients with radiculopathic pain and magnetic resonance imaging findings positive for disk herniation elected to undergo single-level cervical diskectomy. METHODS OR INTERVENTIONS: Lavage was performed by needle injection and aspiration upon entering the disk space for fluoroscopic localization before diskectomy. MAIN OUTCOME MEASUREMENTS: The lavage fluid was assayed for pH and the FAC, as well as for the cytokines interleukin-6 (IL-6), interferon-γ, monocyte chemotactic protein (MCP), and macrophage inhibitory protein-1β. RESULTS: The subjects were 7 women and 4 men with a mean age of 50.6 years (SE 9.7; range, 36-70 years). The mean concentrations (SE; range) in picograms per milliliter were 7.9 (4.4; 0-44) for IL-6, 25.3 (15.5; 0-159) for interferon-γ, 16.1 (11.9; 0-121) for MCP, and 6.1 (2.8; 0-29) for macrophage inhibitory protein-1β. The optical density of the FAC at 450 nm was 0.151 (0.036; 0.1-0.32), and the pH was 6.68 (0.1; 6.10-7.15). Statistically significant correlations were found between MCP and FAC (P = .036) and between FAC and pH (P = .008).\n\nLong answer: Biochemical analysis of injured cervical intervertebral disks reveals the presence of inflammatory markers such as MCP, fragments of structural matrix proteins such as FAC, and a correlation with pH. Further evaluation of the FAC as a potential diagnostic biomarker or therapeutic target is warranted in the cervical spine.\n\nQuestion: Is the fibronectin-aggrecan complex present in cervical disk disease?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "27cee2781335f64db8e2f39ecf5ab2de8cb9a4cb6a231ac947cc4aeeffc21dd0",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:22108230",
+  "task_key": "c2d15f39251b0f33e99c8ed4e6dfff315c7b1c1775036acbf7538927a873ef5a",
+  "text": "Yes.",
+  "timestamp": "2026-09-14T10:36:40.325752+00:00",
+  "tokens_in": 594,
+  "tokens_out": 79,
+  "usage": {
+    "completion_tokens": 79,
+    "neurons": 24.286252975463867,
+    "prompt_tokens": 594,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 673
+  }
+}

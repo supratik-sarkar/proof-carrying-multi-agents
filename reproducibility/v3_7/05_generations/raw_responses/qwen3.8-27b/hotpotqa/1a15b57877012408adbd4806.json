@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "74db4f27d50b8b85a11403ee4ce6a39d6eb23962c025a2e42d641a065b2397c7",
+  "candidate_text": "\n\nIndianapolis",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "84e32bf962064a4e3d15a5cf168a5ee386ad21d3ad9a095619a874011c0f0aa7",
+  "example_id": "5a8f0a01554299458435d539",
+  "finish": "stop",
+  "input_sha256": "17f19745a2877e45d1ee23f603cd656375b8ded8e86f00e39ec3cbc848ddbca4",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "5a8f0a01554299458435d539",
+  "prompt_sha256": "249be61c88639c0182e559032389d911fd27353a854f19ddad062bcb81fb2d15",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Casino (band): Casino is a rock/alternative band consisting of Adam Zindani (vocals/guitar), Sam Yapp (drums), Jo Crofts (guitar) and Jimi Crutchley (bass guitar).  The band was originally formed as Casino in 2003 and changed its name to SpiderSimpson after signing to Polydor in 2006, before reverting to the original name in late 2008 to release its first album \"The Spider Simpson Incident\".  The band has a strong and loyal cult following in its home city of Birmingham, England.  The band was inactive after the departure of Deavall, who has formed a new band (The High Hurts), and with Zindani being more involved with the Stereophonics with little time left to work with Casino.  Currently the band are back in business, they've signed a record deal and recently released an album on Spotify.\n\n[2] Forevermore (band): Forevermore is an American Christian metal band from Indianapolis, Indiana, formed in 2009.  They are signed to Solid State Records and \"Telos\" is their first work on the label.\n\n[3] Sasha, Benny y Erik: Sasha, Benny y Erik are a pop band from Mexico.  The group was formed by 3 former members of the Mexican pop group Timbiriche, consisting of Sasha Sokol, Benny Ibarra and Erik Rubin who are close friends in real life.  With much anticipation by their fans, Sasha, Benny and Erik released the live album \"\".  The project has enjoyed much success with a national tour that started in late 2012 and has continued through much of 2014.  The album has been certified triple platinum + gold in Mexico for sales exceeding 210,000 copies.  Originally, the band performed 2 concerts at the National Auditorium in Mexico City in April 2013, but due to demand, they did two more concerts at the venue in September of that same year.  In 2013, they released En Vivo desde el Auditorio Nacional, which went gold a few days after its release.  At the end of 2013, the album was officially recognized by AMPROFON as the second best-selling album in Mexico that year (after the album \"Confidencias\" by Alejandro Fernandez).  In late 2014, Sasha, Benny y Erik will release their first studio album \"Vuelta al Sol\" and release \"Esta Noche\" as their first single.  Next singles were \"Todo tiene su lugar\" ,\"Japi\" and \"Punto de partida\".  In 2015, they performed at National Auditorium twice ( two concerts in May and other two in November).  In early 2016, they will release a new live album with new songs and hits, performed with several guests.  First single \"Lo Siento\" featuring Pepe Aguilar, was released on February 19 in iTunes.  In May, \"Entre Amigos\" was released and the band announced the end of the project in December.  The album was certified as Gold some weeks later and they startred a farewell tour, which final performance will be on December 31.\n\n[4] Vampire Weekend: Vampire Weekend is an American rock band from New York City, formed in 2006.  They are currently signed to XL Recordings.  The band consists of lead vocalist and guitarist Ezra Koenig, drummer and percussionist Chris Tomson and bassist and backing vocalist Chris Baio.  The band's first album \"Vampire Weekend\" (2008) – which included the singles \"Mansard Roof\", \"A-Punk\", \"Oxford Comma\", \"Cape Cod Kwassa Kwassa\" and \"The Kids Don't Stand a Chance\" – was acclaimed by critics for its world music influences.  Their following album, \"Contra\" (2010), was similarly acclaimed and garnered strong commercial success.  Their third studio album, \"Modern Vampires of the City\" (2013), won the group a Grammy Award for Best Alternative Music Album in 2014.\n\nQuestion: Telos was an album by a band who formed in what city?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "bc7ede717583dea16b1fa36688c6bcd8ee530401bbc43625b0bea08d0741a954",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a8f0a01554299458435d539",
+  "task_key": "71cd01d4d1c58b9005db0589067f5688dc04e6f8a54b1e9664ecc65fe65df710",
+  "text": "\n\nIndianapolis",
+  "timestamp": "2026-09-14T10:45:47.561406+00:00",
+  "tokens_in": 1013,
+  "tokens_out": 102,
+  "usage": {
+    "completion_tokens": 102,
+    "neurons": 71.11363220214844,
+    "prompt_tokens": 1013,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1115
+  }
+}

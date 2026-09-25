@@ -1,0 +1,13 @@
+row_type,method,phase,share,token_multiplier,absolute_normalized_cost,path
+METHOD_TOTAL,NoCert,NA,NA,1.0,1.0,NA
+METHOD_TOTAL,MiniCheck,NA,NA,1.12,1.12,NA
+METHOD_TOTAL,AlignScore,NA,NA,1.16,1.16,NA
+METHOD_TOTAL,QAFactEval,NA,NA,1.21,1.21,NA
+METHOD_TOTAL,CMVO,NA,NA,1.3,1.3,NA
+METHOD_TOTAL,SignalMatchedFusion,NA,NA,1.39,1.39,NA
+METHOD_TOTAL,PCG-MAS,NA,NA,1.56,1.56,NA
+PCG_PHASE,PCG-MAS,Generation,0.62,1.56,0.9672000000000001,Always on
+PCG_PHASE,PCG-MAS,Retrieval/canonicalization,0.11,1.56,0.1716,Always on
+PCG_PHASE,PCG-MAS,Certificate assembly,0.1,1.56,0.15600000000000003,Always on
+PCG_PHASE,PCG-MAS,Semantic verifier,0.13,1.56,0.2028,Always on
+PCG_PHASE,PCG-MAS,Forensic replay,0.04,1.56,0.062400000000000004,Audited/failed cases only

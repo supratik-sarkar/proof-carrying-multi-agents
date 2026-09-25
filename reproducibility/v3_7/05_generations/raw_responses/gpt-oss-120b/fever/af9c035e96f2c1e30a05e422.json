@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "cdd08be840185c59ffd9150ad4341dbe17cb5bae6a75168524c830a4687c7802",
+  "example_id": "8b3013b62cd77e6832d45bae47c4bd89",
+  "finish": "stop",
+  "input_sha256": "6650adb86adedd3df8586c814eed31f909b3b4bf082014dfb362790ad9495d98",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "8b3013b62cd77e6832d45bae47c4bd89",
+  "prompt_sha256": "1253722f46f5a438f7a37f676ebacfdf44b23b48aec2723262fda1bdcbe62aea",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Chrysler Building: At 318.9 m , the structure was the world 's tallest building for 11 months before it was surpassed by the Empire State Building in 1931 .\n\nClaim: The Chrysler Building has yet to be surpassed in height.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "740fe789e671a3862f2a0363754860bf4048df74949be4930b318382af982078",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:8b3013b62cd77e6832d45bae47c4bd89",
+  "task_key": "b34e81fa5aa4aeac42c03e5de055ca683c63039378a6708149ef8a05d04ad071",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:36:05.046220+00:00",
+  "tokens_in": 188,
+  "tokens_out": 86,
+  "usage": {
+    "completion_tokens": 86,
+    "neurons": 11.845418930053711,
+    "prompt_tokens": 188,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 274
+  }
+}

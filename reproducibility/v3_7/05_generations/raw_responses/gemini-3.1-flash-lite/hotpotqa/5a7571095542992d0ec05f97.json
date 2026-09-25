@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "b52b8ec8cef143e3b4578fea6f542a96b0801a1508fc85f976f6deca847bf7f7",
+  "candidate_text": "Paula Patton",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "f43100a5fc4d9d666282c8dcdeac628febb8dae532cd20c5ff2da26b4eb72910",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5a7571095542992d0ec05f97",
+  "prompt_sha256": "d07678008600a3352d2113ef1aa547ed0b4f5bae35b78cef887b711707661018",
+  "provider": "gemini",
+  "provider_raw_sha256": "29ec56d263ed4272908cb557cb58b62b1121e37fdfbfafa23f11e4e7a0d8c81f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a7571095542992d0ec05f97",
+  "text": "Paula Patton",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 544,
+    "total_tokens": 546
+  }
+}

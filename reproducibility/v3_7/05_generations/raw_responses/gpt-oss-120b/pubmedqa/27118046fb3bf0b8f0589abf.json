@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "49d7f8db546f6b923f202f47ebb893d803491591f24e8d9f606cbc58d2cd6a8a",
+  "candidate_text": "No, they are different procedures.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "9002ffe5e2c1c4467434047916a1d52e9a2e5321da3c1ca89a6b7376d77e7c6c",
+  "example_id": "11838307",
+  "finish": "stop",
+  "input_sha256": "316284182a3307b2bfb2b5513c319533e8f23340ab9a3802d77a2aad57169d2d",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "11838307",
+  "prompt_sha256": "421274b120d0dd38716b8621241e7a713e3fcfc584a0c4fec899aa88db20b4e4",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: OBJECTIVE: To prospectively evaluate the amount of tissue removed at loop electrosurgical excision procedure (LEEP) vs. cold knife conization. STUDY DESIGN: Forty consecutive LEEP or cold knife conization specimens were prospectively measured and weighed by a single pathology technician. Diameter, length and weight of the specimens were compared using Student's t test. RESULTS: Mean diameter of cold knife cone specimens was 2.6 vs. 2.2 cm for LEEP (P = .07). Mean length of cold knife cone specimens was 1.5 vs. 1.0 cm for LEEP (P = .001). Mean weight for cold knife cone specimens was 4.4 vs. 2.0 g for LEEP (P = .001).\n\nLong answer: In a prospective evaluation, cold knife cone specimens were 50% longer and 100% heavier than LEEP specimens.\n\nQuestion: Cold knife conization vs. LEEP. Are they the same procedure?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b5e312a5149ef37bf8b4b878cd7f62d456bd7be361bbb9dff38e2726ed69aa51",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:11838307",
+  "task_key": "f07b7e679c82bff42a28e88c383dbec0dd3c89995e5147c4c67340fa03dc8493",
+  "text": "No, they are different procedures.",
+  "timestamp": "2026-09-14T10:36:39.435111+00:00",
+  "tokens_in": 322,
+  "tokens_out": 74,
+  "usage": {
+    "completion_tokens": 74,
+    "neurons": 15.290848731994629,
+    "prompt_tokens": 322,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 396
+  }
+}

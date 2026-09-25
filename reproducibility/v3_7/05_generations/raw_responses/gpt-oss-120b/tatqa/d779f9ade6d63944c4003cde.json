@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "d6e027ce882701fd11a789c198b0bfe7709e0cc527ad739b888c1373f1539cc7",
+  "candidate_text": "≈ 82%",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "bc7d409986db990f3492810d747ab3fc130ef0950a9eed441724bdd132a89044",
+  "example_id": "da85f97b4534f28dad2e241b95f5ec72",
+  "finish": "stop",
+  "input_sha256": "56c010d1401f908a888e0a6d568ce0eb074fd7d86dbf394380335992dab8adca",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "da85f97b4534f28dad2e241b95f5ec72",
+  "prompt_sha256": "0c39fd46c48397cee0c25d6375a6d8c597116b2bcc9b096ff6e88ee140d18674",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA table: row 0:  | December 31, | \nrow 1:  | 2019 | 2018\nrow 2: Accounted for at cost, adjusted for observable price changes | $1,750 | $1,250\nrow 3: Accounted for using the equity method | 8,000 | —\nrow 4: Total non-marketable investments | $9,750 | $1,250\n\n[2] TAT-QA 2: In December 2019, the Company made a minority investment in a privately-held company, Talespin, Inc., for $8.0 million, representing approximately 13% equity ownership. The investment is accounted for using the equity method of accounting due to the Company’s ability to exercise significant influence.\n\n[3] TAT-QA 3: The Company’s non-marketable investments are composed of the following (in thousands):\n\n[4] TAT-QA 1: Strategic Investments\n\nQuestion: What percentage of total non-marketable investments were accounted for using the equity method in 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "8ed4f1c3f129da4ca07d4c10c9574a95f0de0e98a722dd505d67cb59212a592e",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:da85f97b4534f28dad2e241b95f5ec72",
+  "task_key": "0883aebaf06baf45a4a3d95d97104fe41cb2aa004c5ab94c222ac3a59a234d75",
+  "text": "≈ 82%",
+  "timestamp": "2026-09-14T10:33:37.586396+00:00",
+  "tokens_in": 341,
+  "tokens_out": 109,
+  "usage": {
+    "completion_tokens": 109,
+    "neurons": 18.281753540039062,
+    "prompt_tokens": 341,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 450
+  }
+}

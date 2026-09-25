@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "2609b9b647ebc77cd4e530240d282f3e443fd2c9ec21f70ebf3636f28b3a1853",
+  "candidate_text": "\n\nUrijah Faber",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "d32f5b752f91fe92691e22b79b7ab9721fab76112e3a33c4e52a8dd440427409",
+  "example_id": "5ae0a54e5542993d6555ebdd",
+  "finish": "stop",
+  "input_sha256": "ce7f10789e07aa170e78ed0a0b1a2caedc0d30c812623120cf54c548d6b34ecb",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "5ae0a54e5542993d6555ebdd",
+  "prompt_sha256": "7ddeee6c41eb9f9e890ea76fd7c0f7cbdf9a38f2c467193fca85091daadaa1e3",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Joseph Benavidez: Joseph Rolando Benavidez (born July 31, 1984) is an American mixed martial artist.  After fighting in smaller shows while working as a screen printer in Las Cruces, New Mexico, he joined up with Urijah Faber's Team Alpha Male in 2007.  He has since fought in Dream and more recently the World Extreme Cagefighting promotion.  He currently fights as a flyweight in the Ultimate Fighting Championship.  His fighting style has drawn comparisons to training partner and former WEC Featherweight Champion Urijah Faber.  As of February 6, 2017, he is #1 in the official UFC flyweight rankings and ranked the #2 flyweight in the world by Sherdog.  On April 27, 2010, the Mayor and City Council of the City of Las Cruces proclaimed April 27 as Joseph Benavidez Day in Las Cruces.\n\n[2] Game On Dude: Game On Dude (foaled April 26, 2007 in Kentucky) is a retired American Thoroughbred racehorse gelding.  He won fourteen graded stakes races, including eight Grade I stakes: the Santa Anita Handicap in 2011, 2013, and 2014 the only horse to have won that race three times; he also won the Goodwood Stakes twice (2011, 2012), the 2013 Pacific Classic Stakes, and the Hollywood Gold Cup twice (2012, 2013).  He has beaten many of the leading North American racehorses including Awesome Gem, Tizway, Ruler on Ice, Uncle Mo, Stay Thirsty, Mucho Macho Man and Will Take Charge and has been rated among the best thirty racehorses in the world in the annual World Thoroughbred Rankings.  Upon his retirement, he was compared favorably as one of the greatest racing geldings of all time, along with Kelso, John Henry and Forego.\n\n[3] Championship Fighting Alliance: Championship Fighting Alliance (CFA) is a mixed martial arts (MMA) based promotion company located in Miami Lakes, Florida.  It was founded by former MMA fighter and promoter Jorge De La Noval in 2011.  It has currently produced 10 live events.  Fallon Fox, who currently is signed to fight for CFA, is the first openly transgender MMA fighter in history.  On May 24, 2013, CFA will be hosting CFA 11, their 11th event at the Bankunited Center located on the University of Miami campus.  Fighter 411 reported that CFA had held the most events in Florida during the 2012-2013 season.\n\n[4] Urijah Faber: Urijah Christopher Faber (born May 14, 1979) is an American retired mixed martial artist who fought as a bantamweight and featherweight in the Ultimate Fighting Championship.  Faber won the WEC Featherweight Championship at \"WEC 19\" on March 17, 2006, and held the title for over two years until losing it to Mike Brown at \"WEC 36\" on November 5, 2008.  Faber is widely regarded as one of the sport's pioneers for establishing legitimacy to lighter weight classes in MMA.\n\nQuestion: Joseph Benavidez has been compared favorably to which retired bantamweight and featherweight MMA fighter?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "9842690977ae56cb8e0eca657f59556ae6aa83406e7da807a019069ff08d1f24",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5ae0a54e5542993d6555ebdd",
+  "task_key": "eb897f4164ebef16a500c747279d98d8535e285265fb2ffff0750c4aa684d231",
+  "text": "\n\nUrijah Faber",
+  "timestamp": "2026-09-14T10:46:27.190934+00:00",
+  "tokens_in": 875,
+  "tokens_out": 115,
+  "usage": {
+    "completion_tokens": 115,
+    "neurons": 69.25,
+    "prompt_tokens": 875,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 990
+  }
+}

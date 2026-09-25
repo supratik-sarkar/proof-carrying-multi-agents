@@ -46,7 +46,10 @@ class TestValidationFullSuite(unittest.TestCase):
 
     # 5. Paired bootstrap determinism test
     def test_05_paired_bootstrap_determinism(self):
-        sys.path.insert(0, str(REPO_ROOT / "artifacts" / "evidence" / "sv_decomposition"))
+        evidence_dir = REPO_ROOT / "artifacts" / "evidence" / "sv_decomposition"
+        if not evidence_dir.exists():
+            self.skipTest("artifacts/evidence/sv_decomposition not present in public release")
+        sys.path.insert(0, str(evidence_dir))
         from run_sv_decomposition import paired_bootstrap_intervals
         sample = [{"example_id": "1", "pcg_answered": True, "l_nc": 1.0, "l_pcg": 0.0}]
         res1 = paired_bootstrap_intervals(sample, seed=42)
@@ -55,7 +58,10 @@ class TestValidationFullSuite(unittest.TestCase):
 
     # 6. Witness one-channel-only tests
     def test_06_witness_one_channel_only(self):
-        sys.path.insert(0, str(REPO_ROOT / "artifacts" / "evidence" / "separating_witnesses"))
+        evidence_dir = REPO_ROOT / "artifacts" / "evidence" / "separating_witnesses"
+        if not evidence_dir.exists():
+            self.skipTest("artifacts/evidence/separating_witnesses not present in public release")
+        sys.path.insert(0, str(evidence_dir))
         from witness_generators import WitnessGenerator, evaluate_channels
         w = WitnessGenerator.generate_W_H()
         res = evaluate_channels(w)
@@ -76,7 +82,10 @@ class TestValidationFullSuite(unittest.TestCase):
 
     # 8. Citation-Only feature-exclusion test
     def test_08_citation_only_exclusion(self):
-        sys.path.insert(0, str(REPO_ROOT / "artifacts" / "evidence" / "citation_only"))
+        evidence_dir = REPO_ROOT / "artifacts" / "evidence" / "citation_only"
+        if not evidence_dir.exists():
+            self.skipTest("artifacts/evidence/citation_only not present in public release")
+        sys.path.insert(0, str(evidence_dir))
         from citation_only_baseline import evaluate_citation_only
         res = evaluate_citation_only({"has_citation": True, "entails": True})
         self.assertTrue(res)
@@ -194,7 +203,10 @@ class TestValidationFullSuite(unittest.TestCase):
 
     # 26. Figure vector-text extraction test
     def test_26_figure_vector_text_extraction(self):
-        sys.path.insert(0, str(REPO_ROOT / "artifacts" / "evidence" / "figures"))
+        evidence_dir = REPO_ROOT / "artifacts" / "evidence" / "figures"
+        if not evidence_dir.exists():
+            self.skipTest("artifacts/evidence/figures not present in public release")
+        sys.path.insert(0, str(evidence_dir))
         import verify_figure_extraction
         self.assertEqual(verify_figure_extraction.main(), 0)
 

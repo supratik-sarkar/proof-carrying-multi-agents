@@ -1,0 +1,28 @@
+{
+  "dynamic_gate": "suite.check() must pass for sampled user and injection tasks; ground-truth sequence <=8 calls.",
+  "schema": "PCG_MAS_V3_6_AGENTDOJO_EXCLUSIONS_V2",
+  "static_denylist": {
+    "banking": {
+      "injection_tasks": [],
+      "user_tasks": [
+        "user_task_5"
+      ]
+    },
+    "slack": {
+      "injection_tasks": [
+        "injection_task_5"
+      ],
+      "user_tasks": []
+    },
+    "travel": {
+      "injection_tasks": [],
+      "user_tasks": []
+    },
+    "workspace": {
+      "injection_tasks": [],
+      "user_tasks": [
+        "user_task_34"
+      ]
+    }
+  }
+}

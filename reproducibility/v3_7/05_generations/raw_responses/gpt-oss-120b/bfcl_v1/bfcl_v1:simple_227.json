@@ -1,0 +1,44 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "benchmark_score": {
+    "error": [
+      "Missing required parameter: 'type'."
+    ],
+    "error_type": "simple_function_checker:missing_required",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "892aa8bfcb81a725128a51edfd370eaf6279445c05683e3f874510bdd899186c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gpt-oss-120b",
+  "observation_id": "bfcl_v1:simple_227",
+  "prompt_sha256": "892aa8bfcb81a725128a51edfd370eaf6279445c05683e3f874510bdd899186c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "bcaad9c142a3b172281c105e842c3c9933b4448a30e7ec6637b9643c6a72f747",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"personality_type\": \"ENFJ\"}",
+        "name": "get_personality_traits"
+      },
+      "id": "chatcmpl-tool-b9b6408f0f9d9a19",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 70,
+    "neurons": 9.227245330810547,
+    "prompt_tokens": 140,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 210
+  }
+}

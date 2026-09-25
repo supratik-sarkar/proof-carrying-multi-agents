@@ -1,0 +1,35 @@
+{
+ "err": {
+  "body": {
+   "message": "gateway timeout"
+  },
+  "status": 504
+ },
+ "ok": {
+  "finish_reason": "COMPLETE",
+  "id": "coh-REC1",
+  "message": {
+   "content": [
+    {
+     "text": "recorded cohere answer",
+     "type": "text"
+    }
+   ],
+   "tool_calls": [
+    {
+     "function": {
+      "arguments": "{\"q\":\"policy\"}",
+      "name": "lookup"
+     }
+    }
+   ]
+  },
+  "model": "command-x-2026",
+  "usage": {
+   "tokens": {
+    "input_tokens": 108,
+    "output_tokens": 29
+   }
+  }
+ }
+}

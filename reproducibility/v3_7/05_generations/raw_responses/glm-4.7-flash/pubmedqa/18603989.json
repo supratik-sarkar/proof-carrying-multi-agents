@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "bc3523a5f17e5932ba0d2ebf8c8640e88f209fe42799195c35f8690b638400b3",
+  "candidate_text": "Yes, it can temporarily preserve bodies.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "bd4829462c760cecb2cde8986e8338e1a37b80d12a6f2999cb95bef85644fe01",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "18603989",
+  "prompt_sha256": "b407e34edafe1964d6a417b4b6f5645792e1c95dbdd8b4adc15aa41bdf2a3e19",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "dfe43180e4fe0b6047255e047e90d121696180e31484e0e1817bb9759833837f",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:18603989",
+  "text": "Yes, it can temporarily preserve bodies.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 9,
+    "neurons": 2.5770999999999997,
+    "prompt_tokens": 409,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 418
+  }
+}

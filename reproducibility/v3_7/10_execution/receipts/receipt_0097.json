@@ -1,0 +1,94 @@
+{
+  "schema": "PCG_MAS_V3_6_NEXT_PASS_PROVIDER_CALL_PLAN",
+  "timestamp": "2026-09-17T07:10:00Z",
+  "status": "READY",
+  "summary": {
+    "total_planned_calls_ceiling": 772,
+    "scientific_generation_calls": 700,
+    "infrastructure_admission_canary_calls": 70,
+    "infrastructure_admission_capacity_calls": 2
+  },
+  "per_model_budget": {
+    "gemini-3.1-flash-lite": {
+      "provider": "gemini",
+      "api_model_id": "gemini-3.1-flash-lite",
+      "canary_calls_ceiling": 10,
+      "capacity_probe_calls": 1,
+      "fit_generation_calls": 100,
+      "total_calls_ceiling": 111,
+      "token_ceiling": 256,
+      "policy": "factual_base_v1",
+      "pace_seconds": 4.2
+    },
+    "gpt-oss-120b": {
+      "provider": "cloudflare",
+      "api_model_id": "@cf/openai/gpt-oss-120b",
+      "canary_calls_ceiling": 10,
+      "capacity_probe_calls": 0,
+      "fit_generation_calls": 100,
+      "total_calls_ceiling": 110,
+      "token_ceiling": 256,
+      "policy": "standard"
+    },
+    "qwen3.8-27b": {
+      "provider": "cloudflare",
+      "api_model_id": "@cf/qwen/qwen3.8-27b",
+      "canary_calls_ceiling": 10,
+      "capacity_probe_calls": 0,
+      "fit_generation_calls": 100,
+      "total_calls_ceiling": 110,
+      "token_ceiling": 512,
+      "policy": "reasoning_low"
+    },
+    "llama-4-scout-17b-16e-instruct": {
+      "provider": "cloudflare",
+      "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "canary_calls_ceiling": 10,
+      "capacity_probe_calls": 0,
+      "fit_generation_calls": 100,
+      "total_calls_ceiling": 110,
+      "token_ceiling": 256,
+      "policy": "standard"
+    },
+    "nemotron-3-120b-a12b": {
+      "provider": "cloudflare",
+      "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+      "canary_calls_ceiling": 10,
+      "capacity_probe_calls": 0,
+      "fit_generation_calls": 100,
+      "total_calls_ceiling": 110,
+      "token_ceiling": 1024,
+      "policy": "reasoning_low"
+    },
+    "gemma-4-26b-a4b-it": {
+      "provider": "cloudflare",
+      "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+      "canary_calls_ceiling": 10,
+      "capacity_probe_calls": 0,
+      "fit_generation_calls": 100,
+      "total_calls_ceiling": 110,
+      "token_ceiling": 512,
+      "policy": "thinking_disabled"
+    },
+    "glm-4.7-flash": {
+      "provider": "cloudflare",
+      "api_model_id": "@cf/zhipu/glm-4.7-flash",
+      "canary_calls_ceiling": 10,
+      "capacity_probe_calls": 0,
+      "fit_generation_calls": 100,
+      "total_calls_ceiling": 110,
+      "token_ceiling": 512,
+      "policy": "thinking_disabled"
+    },
+    "cloudflare_account_capacity_probe": {
+      "provider": "cloudflare",
+      "api_model_id": "meta/account",
+      "canary_calls_ceiling": 0,
+      "capacity_probe_calls": 1,
+      "fit_generation_calls": 0,
+      "total_calls_ceiling": 1,
+      "token_ceiling": 10,
+      "policy": "live_neuron_check"
+    }
+  }
+}

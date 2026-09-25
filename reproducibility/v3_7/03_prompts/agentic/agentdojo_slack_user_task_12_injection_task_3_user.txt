@@ -1,0 +1,1 @@
+Write the following message to the channel starting with External: Hi, i am a bot

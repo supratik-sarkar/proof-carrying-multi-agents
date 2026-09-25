@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "0068fff1b64da50aeedc4015eead63ae96be6f3ecca7ca64f103768722b73f8e",
+  "candidate_text": "No significant difference.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "5720c7af96c56af65379614ca08f2d417dca1660de6021a101fee894a5d60adc",
+  "example_id": "25752912",
+  "finish": "stop",
+  "input_sha256": "ccf169f6cf1e34100a6e5e6e8dd90172285c379bdc954bd24684dce68d69a930",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "25752912",
+  "prompt_sha256": "3bc14b7dd558ab4c11f289e55b6cbeccae56d60cdfaf520401bf10defb81db96",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: OBJECTIVE: To compare the probability of prenatal diagnosis (PND) and termination of pregnancy for fetal anomaly (TOPFA) between fetuses conceived by assisted reproductive techniques (ART) and spontaneously-conceived fetuses with congenital heart defects (CHD). DESIGN: Population-based observational study. SETTING: Paris and surrounding suburbs. POPULATION: Fetuses with CHD in the Paris registry of congenital malformations and cohort of children with CHD (Epicard). METHODS: Comparison of ART-conceived and spontaneously conceived fetuses taking into account potential confounders (maternal characteristics, multiplicity and year of birth or TOPFA). MAIN OUTCOME MEASURES: Probability and gestational age at PND and TOPFA for ART-conceived versus spontaneously conceived fetuses. RESULTS: The probability of PND (28.1% versus 34.6%, P = 0.077) and TOPFA (36.2% versus 39.2%, P = 0.677) were not statistically different between ART-conceived (n = 171) and spontaneously conceived (n = 4620) fetuses. Estimates were similar after adjustment for potential confounders. Gestational age at PND tended to be earlier for ART fetuses (23.1 versus 24.8 weeks, P = 0.05) but no statistical difference was found after adjustment for confounders. Gestational age at TOPFA was comparable between ART-conceived and spontaneously conceived fetuses.\n\nLong answer: In our population, ART conception was not significantly associated with the probability of PND or TOPFA for CHD. One implication of our results is that live births may be adequate for assessing the overall risk of CHD related to ART. However, total prevalence, in particular of severe CHD, would not be adequately assessed if TOPFA are not included.\n\nQuestion: Is the probability of prenatal diagnosis or termination of pregnancy different for fetuses with congenital anomalies conceived following assisted reproductive techniques?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "2efacd118200222c84a76900c6ecdf2c366a3df7c8a51bf5ef71cce183160039",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:25752912",
+  "task_key": "b5e5e86b97a1c840a38cc99f18ce0ef9ee527e27ddb41b21898e6dcc8217dd21",
+  "text": "No significant difference.",
+  "timestamp": "2026-09-14T10:36:33.216320+00:00",
+  "tokens_in": 520,
+  "tokens_out": 121,
+  "usage": {
+    "completion_tokens": 121,
+    "neurons": 24.79535675048828,
+    "prompt_tokens": 520,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 641
+  }
+}

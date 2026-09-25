@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "e62cbdedca757575d421faf5252445d63063d091b2754f6c8a365be41a2587b0",
+  "candidate_text": "Yes, MRI can help avoid diagnostic arthroscopy.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "d18b2d8d8d3f0e43efbc148792370abe18939c01671922b0a3574b0ba8cb813d",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "9465206",
+  "prompt_sha256": "7046f76bd54554b39b2b7f24bed3711be5226bdd004d56b34b0709622e5bcb98",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "45176ddfbcecef5cd2845b9b8ef063b144a62ba7c87a1cf680e822df31b96858",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:9465206",
+  "text": "Yes, MRI can help avoid diagnostic arthroscopy.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 12,
+    "neurons": 4.4298,
+    "prompt_tokens": 726,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 738
+  }
+}

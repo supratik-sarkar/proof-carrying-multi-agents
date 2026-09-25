@@ -1,0 +1,4 @@
+Template,Output contract
+Grounding,claim + evidence + replay metadata
+Tool use,native tool call + arguments
+Adversarial trajectory,tool trajectory + utility/security predicates

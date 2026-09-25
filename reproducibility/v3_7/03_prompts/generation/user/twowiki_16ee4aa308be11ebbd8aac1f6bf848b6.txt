@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "W. Augustus Barratt": ["W. Augustus Barratt( 1873- 1947) was a Scottish- born, later American, songwriter and musician."]
+
+[2] "Ernest Beckett, 2nd Baron Grimthorpe": ["Ernest William Beckett, 2nd Baron Grimthorpe( 25 November 1856 \u2013 9 May 1917), born Ernest William Beckett- Denison, was a British banker and Conservative politician who sat in the House of Commons from 1885 until 1905 when he inherited the Grimthorpe peerage."]
+
+[3] "Ram\u00f3n Corona": ["Ram\u00f3n Corona( 18 October 1837, Tuxcueca, Jalisco, Mexico \u2013 11 November 1889, Guadalajara, Jalisco) was a liberal Mexican general and diplomat."]
+
+[4] "Ernest William Goodpasture": ["Ernest William Goodpasture (October 17, 1886 \u2013 September 20, 1960) was an American pathologist and physician.","Goodpasture advanced the scientific understanding of the pathogenesis of infectious diseases, parasitism, and a variety of rickettsial and viral infections.","Together with colleagues at Vanderbilt University, he invented methods for growing viruses and rickettsiae in chicken embryos and fertilized chicken eggs.","This enabled the development of vaccines against influenza, chicken pox, smallpox, yellow fever, typhus, Rocky mountain spotted fever, and other diseases.","He also described Goodpasture syndrome."]
+
+Question: Who was born later, Ramón Corona or Ernest William Goodpasture?
+
+Answer:

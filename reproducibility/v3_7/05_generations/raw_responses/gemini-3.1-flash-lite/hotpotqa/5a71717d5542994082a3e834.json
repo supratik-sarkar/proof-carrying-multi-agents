@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "0a7b1e8f5dbd065d2b5831e46fc8e546c93a30546a6b0492bc70af26f0d7b643",
+  "candidate_text": "Larry Drake.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "5eb210aa43db280ddef3a367c2fbdb2abff117702d5b83c6ef60f390c9f894e9",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5a71717d5542994082a3e834",
+  "prompt_sha256": "16e312dcddbd109ea1b44fe37dcbb715a609d3ed4f8ca7435c231bfe1c77865a",
+  "provider": "gemini",
+  "provider_raw_sha256": "e5f19ca5961edbea5bee284c139c2a308b0f3a9a502364ce0aea411f4614b8b6",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a71717d5542994082a3e834",
+  "text": "Larry Drake.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 3,
+    "prompt_tokens": 457,
+    "total_tokens": 460
+  }
+}

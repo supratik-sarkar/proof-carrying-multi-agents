@@ -1,0 +1,5 @@
+witness,AgentRR,AlignScore,CitationOnly,MiniCheck,PCG-MAS,QAFactEval,ShieldAgent
+W_Gamma,9.0,96.0,93.0,95.0,2.2,94.0,91.0
+W_H,90.0,93.0,91.0,94.0,3.1,92.0,11.0
+W_Pi,92.0,95.0,94.0,96.0,2.5,94.0,93.0
+W_entail,91.0,5.0,8.0,6.0,2.0,7.0,90.0

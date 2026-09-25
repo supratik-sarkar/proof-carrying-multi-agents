@@ -1,0 +1,28 @@
+{
+  "schema": "PCG_MAS_V3_6_COLAB_ASSET_CLOSURE_RECEIPT",
+  "build_id": "v3.6-a100-build-0919-cuda-preflight-v14",
+  "timestamp": "2026-09-19T10:46:38.767090+00:00",
+  "MINICHECK_ASSET_CLOSURE": "PASS",
+  "ALIGNSCORE_ASSET_CLOSURE": "PASS",
+  "QAFACTEVAL_ASSET_CLOSURE": "PASS",
+  "assets": {
+    "minicheck": {
+      "repo": "lytang/MiniCheck-Flan-T5-Large",
+      "revision": "96eafd01cee2d16cf81aaa2fb226b14f422a37b3",
+      "path": "/content/pcg_lane/assets/minicheck"
+    },
+    "alignscore": {
+      "repo": "yzha/AlignScore",
+      "revision": "8509e78d25bb914939fc585c626500c9b2944249",
+      "checkpoint_sha256": "ff4336312b377edcbcdad5694a2d09d73dc4225422c0422d810aa7e78485e32d",
+      "base_encoder": "FacebookAI/roberta-large",
+      "base_revision": "722cf37b1afa9454edce342e7895e588b6ff1d59"
+    },
+    "qafacteval": {
+      "repo_commit": "01177f11cc05f8b3e75511a0cfa54bac19324d09",
+      "path": "/content/pcg_lane/assets/qafacteval/models",
+      "bart_repo": "facebook/bart-large",
+      "bart_revision": "cb48c1365bd826bd521f650dc2e0940aee54720c"
+    }
+  }
+}

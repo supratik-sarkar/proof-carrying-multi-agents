@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "5a072e90dbeec6caf5fa97ff6a576cd019ceb3050588c5267896d12c5d8d2e4d",
+  "example_id": "5adf39ce5542995534e8c76d",
+  "finish": "stop",
+  "input_sha256": "ce26e82c3febe8f9b41c765030d9e6decb6ddb0860c1e5f54e982be4b946dfd7",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5adf39ce5542995534e8c76d",
+  "prompt_sha256": "459fd95aad5656f31b984ba4175ec7634bbe8619b40cd80a92f535686ec03824",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Loha (1987 film): Loha is a 1987 Hindi film directed by Raj N. Sippy.  It was released in India on 23 January 1987.  It stars Dharmendra, Shatrughan Sinha, Karan Kapoor, Madhavi, Mandakini and Amrish Puri.  The film was one of that year's highest grossing films.  The film became Dharmendra's first hit of the year 1987, where he went on to deliver 7 more outright hits and hence, represented one of his best career years as well as an all-time record year for any Hindi film star.  The film's music became popular also, most notably, \"\"Isa Pir na musa pir, sabse bada hain paisa pir\"\" picturised beautifully on the male leads of the film.\n\n[2] Karan Kapoor: Karan Kapoor (born 18 January 1962) is a former Indian film actor and model of British and Indian descent.  He is the son of Indian Bollywood International Actor Shashi Kapoor and his India settled (late) British Actress Jennifer Kendal.  His paternal grandfather was Prithviraj Kapoor and his paternal uncles are Raj Kapoor and Shammi Kapoor.  His elder brother Kunal Kapoor and sister Sanjana Kapoor have also acted in some films but like him they were not very successful.  His maternal grandparents, Geoffrey Kendal and Laura Kendal, were actors who toured India and Asia with their theatre group, Shakespeareana, performing Shakespeare and Shaw.  The Merchant Ivory film, \"Shakespeare Wallah\", was loosely based on the family, which starred his father and his aunt, actress Felicity Kendal.  Karan later moved towards photography and decided to be a part of this profession though he worked as an actor too.\n\n[3] Sultanat: Sultanat is a 1986 Bollywood film written and directed by Mukul S. Anand.  The film stars Dharmendra, Sunny Deol, Sridevi, Amrish Puri, Shakti Kapoor, Tom Alter and marked the debut of Karan Kapoor (son of Shashi Kapoor) and Juhi Chawla.  It was not a success at the box-office.  It was the first film in which Dharmendra appeared alongside his son Sunny Deol.\n\n[4] Hrithik Roshan filmography: Hrithik Roshan is an Indian actor known for his work in Bollywood films.  As a child, he made uncredited appearances in three films directed by his maternal grandfather, J. Om Prakash, the first of which was in \"Aasha\" (1980).  In 1986, Roshan played the adopted son of Rajinikanth's character in Prakash's crime drama \"Bhagwaan Dada\".  Roshan subsequently worked as an assistant director on four films, including \"Khudgarz\" (1987) and \"Karan Arjun\" (1995), all of which were directed by his father, Rakesh.\n\nQuestion: What did Karan Kapoor's maternal grandfather deliver?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "adcbcd2f64b471cbd5cf5c576b2697ebfc2a35efedfb725395ec9bd622653672",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5adf39ce5542995534e8c76d",
+  "task_key": "2bde539b303a282c5cf5c1481b8363e213c996d0d161f52dfc5855702e40a98d",
+  "text": "I don't know.",
+  "timestamp": "2026-09-14T10:32:36.935960+00:00",
+  "tokens_in": 750,
+  "tokens_out": 143,
+  "usage": {
+    "completion_tokens": 143,
+    "neurons": 33.613494873046875,
+    "prompt_tokens": 750,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 893
+  }
+}

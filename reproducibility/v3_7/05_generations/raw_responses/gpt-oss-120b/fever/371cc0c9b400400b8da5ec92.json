@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "159d040fa942a219f35582ce3aeed2981176142f722978306cef09d5ed1ba0b3",
+  "candidate_text": "REFUTES",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "52aedeba2edbc37ee13a43010d29525335adcd9bcb8ef2b94e996587074772bd",
+  "example_id": "efa5ab22a935570def8602b99dc2dbc8",
+  "finish": "stop",
+  "input_sha256": "55c158eb48fcf9cad0ce868042ffc0f6afc9d5cb75c53ea9367ca3da31809143",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "efa5ab22a935570def8602b99dc2dbc8",
+  "prompt_sha256": "cb9c205b29b0930d47287a1b7d8837ae34c1dcd71108e546a00e6ce4aae4477d",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Jenna Jameson: She has since won more than 35 adult-video awards , and has been inducted into the X-Rated Critics Organization -LRB- XRCO -RRB- and Adult Video News -LRB- AVN -RRB- Halls of Fame .\n\nClaim: Jenna Jameson has only been in newspaper advertising.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "aef095040aaa2c68bc2700d8f729c6f9a7e436586c98ce9cc9c7064970eefc51",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:efa5ab22a935570def8602b99dc2dbc8",
+  "task_key": "87201b531b0f3abc2047c5b51da25cf4f30789d24ff175478db1ec9336badfcd",
+  "text": "REFUTES",
+  "timestamp": "2026-09-14T10:36:08.327254+00:00",
+  "tokens_in": 206,
+  "tokens_out": 157,
+  "usage": {
+    "completion_tokens": 157,
+    "neurons": 17.259050369262695,
+    "prompt_tokens": 206,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 363
+  }
+}

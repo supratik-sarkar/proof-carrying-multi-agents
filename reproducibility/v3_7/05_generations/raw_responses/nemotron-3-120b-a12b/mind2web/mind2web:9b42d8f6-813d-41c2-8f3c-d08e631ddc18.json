@@ -1,0 +1,32 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "benchmark_score": {
+    "correct": false,
+    "parse_status": "NO_JSON"
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "86028560111246f8adfb1a0c1e19119d7051f56f8cba2f65c2782ee7d8c0baa8",
+  "finish_reason": "length",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "mind2web:9b42d8f6-813d-41c2-8f3c-d08e631ddc18",
+  "prompt_sha256": "86028560111246f8adfb1a0c1e19119d7051f56f8cba2f65c2782ee7d8c0baa8",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "963e0677d2abb7eb04d8c1248bc2f9b863578431acc4d8d5845a45ca2add3153",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 256,
+    "neurons": 48.991,
+    "prompt_tokens": 315,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 571
+  }
+}

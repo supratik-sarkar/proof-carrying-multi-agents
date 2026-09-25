@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "b8711e53687ced8035ebddf227845eb4cd8c4904f2d47a5648af11768448cb0e",
+  "candidate_text": "Yes, 23% reported changes.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "7ce226b94774bc257ca835b34070c5d7b210a80b7d6b637c96b4da5c85611c8a",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "19593710",
+  "prompt_sha256": "e9e014547c8e3e547199a131be82f6ec98d317755458e2d7209fcf6add20775a",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "b2df44777fe8a47902d0aecfa5a2156a3dea764f1b45b76a4d00b2ab4eeb954b",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:19593710",
+  "text": "Yes, 23% reported changes.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 9,
+    "neurons": 2.9290999999999996,
+    "prompt_tokens": 473,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 482
+  }
+}

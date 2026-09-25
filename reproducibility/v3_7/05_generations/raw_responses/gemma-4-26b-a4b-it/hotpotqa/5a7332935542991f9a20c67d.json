@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "e29a90bf4523d05834807f1bce489a4174b4f2fbb973ac90a9e5a3eae75dc8b7",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5a7332935542991f9a20c67d",
+  "prompt_sha256": "33a1614cd96b94e16c94f0d036a3abba2f7d401a5921bd7d76c2ed4aefcd77e8",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "fd2d18e03af05b2c74782fcb0103ff0ec1c14e801458e666f48bcc26629adffc",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a7332935542991f9a20c67d",
+  "text": "I don't know.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 7,
+    "neurons": 6.390908718109131,
+    "prompt_tokens": 682,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 689
+  }
+}

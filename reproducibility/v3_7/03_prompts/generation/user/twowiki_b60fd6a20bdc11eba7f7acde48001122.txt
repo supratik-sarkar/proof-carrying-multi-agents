@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "David Flair": ["David Richard Fliehr (born March 6, 1979), better known by his ring name David Flair, is an American retired professional wrestler best known for his time in World Championship Wrestling (WCW), where he held the United States and World Tag Team championships.","He is the son of former wrestling world champion Ric Flair and the older half brother of Charlotte Flair and Reid Flair."]
+
+[2] "David Shute": ["David Shute is a British journalist, best known for his work at the BBC."]
+
+[3] "Emanuel Glicen Romano": ["Emanuel Glicen Romano or Emanuel Glicenstein( 1897 \u2013 1984) was a painter born in Italy.","He emigrated to America and spent some time in Safed in Israel.","where he organised a museum for his father's work."]
+
+[4] "Reid Flair": ["Richard Reid Fliehr( February 26, 1988 March 29, 2013), better known by his ring name Reid Flair, was an American professional wrestler.","He was the youngest son of retired professional wrestler Ric Flair, younger half- brother of wrestler David Flair, and younger brother of Charlotte Flair."]
+
+Question: Where does David Flair's father work at?
+
+Answer:

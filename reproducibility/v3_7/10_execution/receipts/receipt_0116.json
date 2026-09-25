@@ -1,0 +1,28 @@
+{
+  "READY": "YES",
+  "canonical_complete_now": 1510,
+  "canonical_remaining_now": 730,
+  "clean_python": "<LOCAL_PATH:1c60a8aa0a32b97e>",
+  "environment": "DEV",
+  "exact_resume_workplan_sha256": "0c6625b2a1a2264ac969e049acacb25e04a89dfadc4d53f4156070718922a6e0",
+  "expected_provider_split": {
+    "Cloudflare": 624,
+    "Gemini": 106
+  },
+  "expected_remaining": {
+    "AgentDojo": 270,
+    "BFCL": 273,
+    "Mind2Web": 187
+  },
+  "foreground_execution": true,
+  "immutable_core": 807,
+  "launch_mode": "VISIBLE_MACOS_TERMINAL",
+  "post_failure_acceptance_sha256": "6eef1d6150660e676fae9a828b0a2f2afa97a8fc85815632a2f8423137ed1081",
+  "post_failure_preflight_sha256": "acf24b1de027d4d3aed60352f7f86ecad716c94a9a17f1d86cce210bde8dc94e",
+  "project_release": "v3.6",
+  "protected_followon": 618,
+  "runtime_reconciliation_authority_sha256": "c67e7b24d4c2ed60f6380ee857d06e554737aaefd75d9533c976ba7bb4b0930e",
+  "schema": "PCG_MAS_V3_6_POST_FAILURE_LAUNCH_AUTHORITY",
+  "status": "PASS",
+  "timestamp": "2026-09-17T13:26:02.107632+00:00"
+}

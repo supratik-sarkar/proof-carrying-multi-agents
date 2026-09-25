@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "A_authority_chain": "PASS",
+    "B_matrix_cardinality": "PASS",
+    "C_clean_runtime": "PASS",
+    "D_source_pins": "PASS",
+    "E_model_bindings": "PASS",
+    "F_generation_policies": "PASS",
+    "G_canary_authority": "PASS",
+    "H_protection_invariants": "PASS",
+    "I_zero_cost_billing": "PASS",
+    "J_fit_strict_700": "PASS",
+    "K_final_workplan_815": "PASS",
+    "L_external_verifier_plan": "PASS",
+    "M_stale_authority_superseded": "PASS",
+    "N_process_cleanliness": "PASS"
+  },
+  "schema": "PCG_MAS_V3_6_G6_FINAL_PREFLIGHT_V2",
+  "state_manifest_sha256": "3a8e8679a0c4ef2bbd947a829bf49bb6e26cd5141998bc8b8c4cc9c0852dc091",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:57:13.126233+00:00",
+  "transaction_id": "TX-20260917T124848Z-d0139466c44e"
+}

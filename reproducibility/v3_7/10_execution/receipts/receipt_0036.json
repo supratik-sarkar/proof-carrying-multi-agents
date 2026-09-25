@@ -1,0 +1,27 @@
+{
+  "dev_core_complete_regenerated": 0,
+  "dev_core_modified": false,
+  "errors": [],
+  "files": [
+    {
+      "action": "PATCHED",
+      "after_sha256": "0aa7793a44a7fe6db0a9635414b4fec6782aa179b9691b1412e947290395caf0",
+      "before_sha256": "2e63828ac331117b4ac3033eeb35f293cb17930a0c67d98d22c5a854dfe7675b",
+      "file": "integration/execute_lane.py"
+    },
+    {
+      "action": "PATCHED",
+      "after_sha256": "81fcddc17f6ac4cf93552bd6a5b25cbd295473a9c3c03bfc4b66ccefd3b5fb9b",
+      "before_sha256": "f583c590f41437a58fc1fab31217cf7a02807b5a0865f4c92808fd5d6cda76ed",
+      "file": "integration/fit_v2.py"
+    },
+    {
+      "action": "PATCHED",
+      "after_sha256": "1eba39bf65adcc35c7dba2683af8f0ab895f46c5a96895fae3fc856115c4c659",
+      "before_sha256": "29c13e0b3c8ff3dab0032c94da04e01d9845260b631bc08c7532ebdce4e3aab5",
+      "file": "integration/provider_client.py"
+    }
+  ],
+  "schema": "PCG_MAS_V3_6_CF_RECOVERY_POLICY_OVERRIDE_APPLY_RECEIPT_V1",
+  "status": "PASS"
+}

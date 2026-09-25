@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "a6eb208ee4030eb089f35b4ac5f47f73a440254ac095f75311cbe82c94c7c004",
+  "example_id": "ef7aac32088511ebbd6dac1f6bf848b6",
+  "finish": "stop",
+  "input_sha256": "023eef2b0fb8db1b0f81103d98cf683da0ebc6afb50a85a04f05ce5924a3b95e",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "ef7aac32088511ebbd6dac1f6bf848b6",
+  "prompt_sha256": "cd0a226a2d8c2faa49fd0d53dacaaf2ded2368945862df1b2fa7ecb8c061f8bf",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Spring Storms\": [\"Spring Storms or Spring Storms in the Autumn of Life( German: Fr\\u00fchlingsst\\u00fcrme im Herbste des Lebens) is a 1918 German silent drama film directed by and starring Fern Andra.\",\"It also features Josef Peterhans and Reinhold Sch\\u00fcnzel.\"]\n\n[2] \"Fun in the Barracks\": [\"Fun in the Barracks( French: Les Ga\\u00eet\\u00e9s de l'escadron or Les Gaiet\\u00e9s de l'escadron) is a 1932 French comedy film directed by Maurice Tourneur and starring Raimu, Jean Gabin and Fernandel.\",\"It was based on a play by Georges Courteline and Edouard Nores.\",\"Tourneur was remaking the story, having previously filmed a silent version in 1913.\",\"The film was one of the most expensive made by Tourneur and was a popular commercial hit.\"]\n\n[3] \"Fern Andra\": [\"Fern Andra, Dowager Baroness von Weichs( born Vernal Edna Andrews, November 24, 1893 \\u2013 February 8, 1974) was an American actress, film director, script writer, and producer.\",\"Next to Henny Porten and Asta Nielsen, she was one of the most popular and well known actresses in German silent film.\"]\n\n[4] \"Sepideh Farsi\": [\"Sepideh Farsi is an Iranian film director, born in Tehran in 1965.\"]\n\nQuestion: Which film has the director born earlier, Spring Storms or Fun In The Barracks?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c729a165fa6f8136aace4bbee62540a191aee863538b205bf11fa02a215bd4d9",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:ef7aac32088511ebbd6dac1f6bf848b6",
+  "task_key": "bd16837de92e32466873d2fc4513f3c661f1d71c3c92b08ba615cd698cb2b00e",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-14T10:47:57.105542+00:00",
+  "tokens_in": 475,
+  "tokens_out": 211,
+  "usage": {
+    "completion_tokens": 211,
+    "neurons": 80.81363677978516,
+    "prompt_tokens": 475,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 686
+  }
+}

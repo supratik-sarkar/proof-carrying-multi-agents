@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "7c23285368da2256d6d97127d0fa42a5c280e4541b8dd7b22b2369f50b2642c4",
+  "candidate_text": "\n\nNo",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "fad985095cd7d9834d56e1a046d8f476a207fce61545f6220f49e9db2cba18f0",
+  "example_id": "12607120",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "bf635463ecf68525d90eca82a658c534764a29a8add1e94d07e06b2e97ce690f",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "12607120",
+  "prompt_sha256": "76294e6a130189e77c8cd5275d2ebaa0b155287519bb2e0d337f31ea2910f241",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] PubMedQA abstract context: BACKGROUND: Anastomotic leakage is the most threatening early complication in sphincter-preserving rectal cancer surgery. While the oncological consequences have been well examined, only few data exist about the functional outcome. PATIENTS AND METHODS: We investigated continence function in 150 patients after curative sphincter-preserving rectal cancer surgery. Functional results were compared in 22 patients with a clinically relevant anastomotic leakage, confirmed radiologically or endoscopically, and 128 patients with uneventful recovery. Evaluation of continence function was based on the Cleveland Clinic Continence Score and was examined in all patients with anastomotic leakage and in 111 patients without complications 107+/-46 weeks postoperatively. Additionally, 14 patients with anastomotic leakage and 58 patients with uneventful recovery underwent anorectal manometry 26+/-15 weeks postoperatively. RESULTS: The continence score in patients after anastomotic leakage did not differ significantly from that in patients without complications. Sphincter function was similar. Maximum tolerable volume and rectal compliance were slightly but not significantly worse after leakage.\n\nLong answer: Continence function remained undisturbed after anastomotic leakage due to rectal resection\n\nQuestion: Does anastomotic leakage affect functional outcome after rectal resection for cancer?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "e76ee72a58f031fc5e87c0969daa5104b6618d24096f5cdafb46c9ae4d9285f4",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "pubmedqa:12607120",
+  "task_key": "745791e23ddd7c4ded440a8d805689a58ac0745adce2ff4e08d1fc3ee5f839ef",
+  "text": "\n\nNo",
+  "timestamp": "2026-09-15T09:27:08.979158+00:00",
+  "tokens_in": 403,
+  "tokens_out": 110,
+  "usage": {
+    "completion_tokens": 110,
+    "neurons": 48.486358642578125,
+    "prompt_tokens": 403,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 513
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "benchmark_semantics_changed": false,
+  "derivation": "16*3",
+  "initial_llm_calls_per_query": 1,
+  "new_outer_safety_ceiling": 48,
+  "old_ceiling": 8,
+  "old_ceiling_status": "SUPERSEDED",
+  "pinned_upstream_references": {
+    "agentdojo_pinned_head": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+    "task_suite_file": {
+      "construct": "run_task_with_pipeline",
+      "max_query_attempts": 3,
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/sources/agentdojo/src/agentdojo/task_suite/task_suite.py",
+      "sha256": "2e69da06f7e150dd6d238c53a74845b56eebeb224e07f694e1051a6e0c6a2bc1"
+    },
+    "tool_execution_file": {
+      "construct": "ToolsExecutionLoop",
+      "max_iters": 15,
+      "path": "artifacts/v3_6/dataset_amendment_runtime_v2/sources/agentdojo/src/agentdojo/agent_pipeline/tool_execution.py",
+      "sha256": "96842ef579714cdc7f854bc13d4bca2be0c27897abc29dad2e1ba33ce3b11bdc"
+    }
+  },
+  "reason": "REMOVE_PCGAUTHORED_PREMATURE_TRUNCATION",
+  "schema": "PCG_MAS_V3_6_AGENTDOJO_CALL_CEILING_AMENDMENT",
+  "timestamp": "2026-09-17T10:53:52Z",
+  "upstream_max_calls_per_query": 16,
+  "upstream_task_query_attempts": 3,
+  "upstream_tools_execution_loop_max_iters": 15
+}

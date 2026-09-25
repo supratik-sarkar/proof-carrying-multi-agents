@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [
+      "Wrong number of functions."
+    ],
+    "error_type": "parallel_function_checker_no_order:wrong_count",
+    "valid": false
+  },
+  "candidate_sha256": "ba5b288030c00f1ad1379c870184981cafe8f0f8103ff3e319007babce58027c",
+  "candidate_text": "I'll help you find a homemade gluten-free spaghetti recipe and provide you with the preparation time and nutritional information. Let me search for a suitable recipe first.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "b4b85b239e43c5a8676b71aca0240d76d92e652663981f1db45890eb77664b5b",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_multiple_function_55",
+  "prompt_sha256": "b4b85b239e43c5a8676b71aca0240d76d92e652663981f1db45890eb77664b5b",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "d02ca65ad285792b61b13b3df147fb2738a6a889ae8db5e59184dacb56c85cca",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you find a homemade gluten-free spaghetti recipe and provide you with the preparation time and nutritional information. Let me search for a suitable recipe first.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"ingredient\": \"spaghetti\", \"dietary_requirements\": [\"gluten_free\"], \"isHomemade\": true}",
+        "name": "recipe_search"
+      },
+      "id": "chatcmpl-tool-80f8e8df249f921e",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 165,
+    "neurons": 8.4865,
+    "prompt_tokens": 451,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 616
+  }
+}

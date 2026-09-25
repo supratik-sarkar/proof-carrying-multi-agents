@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/nvidia/nemotron-3-120b-a12b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "77f0429ded256529b85f56b60cdd75a472019a98bb5a4660fb157631dcc76118",
+  "example_id": "146c16520bdd11eba7f7acde48001122",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "f188e2564ae0c6de2179cd61154c10b06e05f9f96003022fdd05aa6df1e2ffdb",
+  "max_output_tokens": 256,
+  "model_id": "nemotron-3-120b-a12b",
+  "observation_id": "146c16520bdd11eba7f7acde48001122",
+  "prompt_sha256": "d158d614d6d371e369b0b01e86642755c53ee4ad5d9d435d805c6af1d217ef0a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Now Where Did the 7th Company Get to?\": [\"Now Where Did the 7th Company Get To? is a 1973 French- Italian comedy war film directed by Robert Lamoureux.\",\"The film portrays the adventures of a French Army squad lost somewhere on the front in May 1940 during the Battle of France.\"]\n\n[2] \"The Seventh Company Outdoors\": [\"The Seventh Company Outdoors is a 1977 French comedy film directed by Robert Lamoureux.\",\"It is a sequel to Now Where Did the 7th Company Get to ?.\"]\n\n[3] \"Barracuda (1978 film)\": [\"Barracuda is a 1977 American horror\\/thriller film about a small Florida coastal town that is menaced by chemically induced and highly aggressive barracuda fish.\",\"The cast included Wayne Crawford, Jason Evers, Roberta Leighton, Cliff Emmich, William Kerwin and Bert Freed.\",\"It was directed by Harry Kerwin, with the underwater sequences handled by Wayne Crawford.\"]\n\n[4] \"Dana Blankstein\": [\"Dana Blankstein- Cohen( born March 3, 1981) is the director of the Israeli Academy of Film and Television.\",\"She is a film director, and an Israeli culture entrepreneur.\"]\n\nQuestion: Where did the director of film Barracuda (1978 Film) study?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "a1b49eb47adb23d4722336e11e4624ea6458f59993564ded695fa05573c51033",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:146c16520bdd11eba7f7acde48001122",
+  "task_key": "0eee694e09a5db90dc3d7bf1ba737fb5fd149bd5f7606582267f76abe0526a32",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-15T09:36:26.377420+00:00",
+  "tokens_in": 366,
+  "tokens_out": 146,
+  "usage": {
+    "completion_tokens": 146,
+    "neurons": 36.326,
+    "prompt_tokens": 366,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 512
+  }
+}

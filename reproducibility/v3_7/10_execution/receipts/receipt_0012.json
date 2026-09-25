@@ -1,0 +1,14 @@
+{
+  "AGENTDOJO_OUTER_SAFETY_CALL_CEILING": 48,
+  "AGENTDOJO_PINNED_HEAD": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "AGENTDOJO_WORKTREE_CLEAN": "YES",
+  "CALL_49_BLOCKED": "YES",
+  "CALL_9_ALLOWED": "YES",
+  "adapter_file": {
+    "path": "artifacts/v3_6/dataset_amendment_v2/integration/agentdojo_case_runner.py",
+    "sha256": "135cf68fd469d657d358144bcf6c821c7e614cdc1920d0a1ecb61488dd03a6d3"
+  },
+  "schema": "PCG_MAS_V3_6_AGENTDOJO_OFFLINE_REGRESSION_RECEIPT",
+  "status": "PASS",
+  "timestamp": "2026-09-17T10:54:40Z"
+}

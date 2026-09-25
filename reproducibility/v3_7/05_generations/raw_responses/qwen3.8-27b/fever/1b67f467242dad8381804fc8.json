@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "733eb106e4b35d5d1df7e0d680e56bf7b283267f342b0b03ea2955c46f1684ae",
+  "candidate_text": "\n\nNOT ENOUGH INFO",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "fever",
+  "evidence_sha256": "0a108462eac102c5f8923287d38db2ac1c293a3ed3ba41374146fce5795578e3",
+  "example_id": "c8ca51d642f10ee0222353e07aaa7f72",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "5ccd864d94cecc3f6a4aa2eb04f822e3d238f5abe2752152cc988ecf9a316653",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "c8ca51d642f10ee0222353e07aaa7f72",
+  "prompt_sha256": "1deeff5a491d7741dfd9ad87f471cf846c1b3da83f74537462982e372f6bdc03",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a fact-verification assistant. Read the evidence and decide whether\nthe CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.\n\nReply with EXACTLY one of these three labels and nothing else:\n  SUPPORTS\n  REFUTES\n  NOT ENOUGH INFO\n\nEvidence:\n[1] Hart Hanson: Hart Hanson -LRB- born July 26 , 1957 -RRB- is an American-born television writer and producer .\n\nClaim: Bones was cancelled by Hart Hanson.\n\nLabel:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "c35a86c19cb7833a6ccf182ad1292226faa577f50ce81a1ad64f63861b5dd1ac",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "fever:c8ca51d642f10ee0222353e07aaa7f72",
+  "task_key": "91de418381dd441752e97bf6f318158a3403d8524c9f9e489b4a4167a502b40a",
+  "text": "\n\nNOT ENOUGH INFO",
+  "timestamp": "2026-09-15T09:25:36.204775+00:00",
+  "tokens_in": 171,
+  "tokens_out": 89,
+  "usage": {
+    "completion_tokens": 89,
+    "neurons": 32.8863639831543,
+    "prompt_tokens": 171,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 260
+  }
+}

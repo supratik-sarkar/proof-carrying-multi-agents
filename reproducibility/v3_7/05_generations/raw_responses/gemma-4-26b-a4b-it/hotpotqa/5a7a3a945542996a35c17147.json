@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "9b615b9cdd27187a3dcf2b339b2aa5704bbe31b867376fa919ee7157639c3911",
+  "candidate_text": "Bank of China Tower",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "705e13a570e5632a81a6d75a259caa379243511a9df00f24e55d79a9403cf58a",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5a7a3a945542996a35c17147",
+  "prompt_sha256": "ea396daf101759219527a87537d0b5f0958e0101c2589411718346c8d2202cab",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "3fc2a91f0d6ba013856e93b7b7996be9272014bdf822d083850ec657bf4431ce",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5a7a3a945542996a35c17147",
+  "text": "Bank of China Tower",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 6.59999942779541,
+    "prompt_tokens": 711,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 716
+  }
+}

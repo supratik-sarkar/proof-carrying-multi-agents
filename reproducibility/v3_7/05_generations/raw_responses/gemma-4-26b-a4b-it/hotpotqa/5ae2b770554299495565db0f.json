@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "015f656358c2dc33b7929b28ba0c455bc997dde6ef79728a23c7dc153bf95004",
+  "candidate_text": "March and April.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "0dbd4def9164f3ca97db66633b1adf9aa31f8c0e887ccc361be8b1c7af0a07b5",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5ae2b770554299495565db0f",
+  "prompt_sha256": "ef7ca0ab926b3f57646b386ad2fa6584cda3960339189747cbed09da8dc2cbbc",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "e9fd4af8b8e0b804cbe7e175a8aae1a3e4af394712aa87b851c8fe27add9a1fc",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ae2b770554299495565db0f",
+  "text": "March and April.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 4.472726821899414,
+    "prompt_tokens": 477,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 482
+  }
+}

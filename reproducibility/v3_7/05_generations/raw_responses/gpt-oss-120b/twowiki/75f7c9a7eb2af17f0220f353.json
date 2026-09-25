@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "5db8277baa6852706c25a96b0a9fb75e9c5925b5071d5c925fd7210de73a8f9b",
+  "example_id": "ded710180bdd11eba7f7acde48001122",
+  "finish": "stop",
+  "input_sha256": "4be8e6b9a162dc8daea44c5db6dc7239d9ff3bb43207e33d2e38cc588202ae5e",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "ded710180bdd11eba7f7acde48001122",
+  "prompt_sha256": "c8c0319b2d87fb70cc68098945b4afd6dc6213310edd3f2e113ba090216528c2",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Agnes of P\\u00e9rigord\": [\"Agnes of P\\u00e9rigord( died 1345) was Duchess consort of Durazzo, through her marriage to John of Gravina, Duke of Durazzo, who was also the ruler of the Kingdom of Albania.\",\"Although Agnes was never styled as Queen consort, she became politically influential.\",\"Following the death of Robert, King of Naples in 1343, she organised a marriage for her eldest son to Robert's granddaughter, who was second- in- line to the Neapolitan throne.\",\"Agnes's ambition was to bring her family closer to the line of succession.\"]\n\n[2] \"Louis, Duke of Durazzo\": [\"Louis of \\u00c9vreux( also called\\\" of Navarre\\\"; 1341 \\u2013 1376) was the youngest son of Philip III of Navarre and Joan II of Navarre.\",\"He inherited the county of Beaumont- le- Roger from his father( 1343) and became Duke of Durazzo in right of his second wife, Joanna, in 1366.\",\"Louis's first marriage was to Maria de Lizarazu in 1358.\",\"He took part on behalf of his brother Charles II of Navarre in the war against the Dauphin Charles.\",\"His second marriage to Joanna, Duchess of Durazzo, brought him the rights to Durazzo and the Kingdom of Albania, which he strove to recover.\",\"He received assistance from both his brother and the king of France in this undertaking, for Durazzo( the remnant of the kingdom) was in the hands of Charles Thopia.\",\"In 1372, he brought over the Navarrese Company of mercenaries, who had fought with him during the war in France, to assist him in taking Durazzo.\",\"Their ranks swelled considerably in 1375 with new recruits directly from Navarre.\",\"Many documents survive telling us of the complex nature of the military planning and engineering which was undertaken to ensure success.\",\"This they attained, taking the city in midsummer 1376.\",\"Louis died shortly after.\"]\n\n[3] \"Joanna, Duchess of Durazzo\": [\"Joanna of Durazzo (1344 \\u2013 20 July 1387) was the eldest daughter and eldest surviving child of Charles, Duke of Durazzo, and his wife, Maria of Calabria.\",\"She succeeded as duchess on the death of her father in 1348 when she was only a child of four years old.\",\"Joanna was a member of the House of Anjou-Durazzo.\",\"She reigned as Duchess of Durazzo from 1348-1368.\",\"She married twice; firstly to Louis of Navarre and then to Robert IV of Artois, Count of Eu.\"]\n\n[4] \"Louis, Count of Gravina\": [\"Louis of Durazzo (1324 \\u2013 22 July 1362) was Count of Gravina and Morrone.\",\"He was the son of John of Gravina and Agnes of P\\u00e9rigord.\",\"In 1337, he was named Vicar- and Captain-General of the Kingdom of Albania.\",\"During the ascension of the Durazzeschi at the court of Naples during the reign of Joanna I, he was one of the royal ambassadors to the Roman Curia.\",\"Upon the invasion of Louis I of Hungary and the execution of his elder brother, Charles, Duke of Durazzo, in 1348, he was imprisoned, with his younger brother Robert of Durazzo, until 1352.\",\"The rest of his life was spent stirring up revolts against Joanna in Apulia with the aid of some Free Companions.\",\"These were ultimately quashed in 1360 by Louis of Taranto, and Louis of Durazzo was imprisoned in the Castel dell'Ovo in Naples and murdered by poison.\"]\n\nQuestion: Where did Joanna, Duchess Of Durazzo's mother die?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "ddf4e408fa2138ab17e7275b789a77fdae91407e7c7a39e57f0a85b7944bd573",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:ded710180bdd11eba7f7acde48001122",
+  "task_key": "f350fe192e9ddfb5ca17195ac2f19fc0f9acc9b167b9ded61f7941f4b80a82ee",
+  "text": "I don't know.",
+  "timestamp": "2026-09-14T10:32:43.999784+00:00",
+  "tokens_in": 921,
+  "tokens_out": 80,
+  "usage": {
+    "completion_tokens": 80,
+    "neurons": 34.75891876220703,
+    "prompt_tokens": 921,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1001
+  }
+}

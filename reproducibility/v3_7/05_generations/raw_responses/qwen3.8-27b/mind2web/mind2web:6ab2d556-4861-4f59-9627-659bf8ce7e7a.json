@@ -1,0 +1,32 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "correct": false,
+    "parse_status": "NO_JSON"
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "mind2web",
+  "evidence_sha256": "f72e6eb9fb1a0787d8d9f6c3048c2c8dec8be638d4092786c3bec69a4d57c178",
+  "finish_reason": "length",
+  "generation_policy_sha256": "8b903b1a8c2056c78bb11d56891e20eb75e793c7f3956bdf423d378a3029e87d",
+  "lane": "mind2web",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "mind2web:6ab2d556-4861-4f59-9627-659bf8ce7e7a",
+  "prompt_sha256": "f72e6eb9fb1a0787d8d9f6c3048c2c8dec8be638d4092786c3bec69a4d57c178",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "dd0de392129130681dff02117e98fd72e595d653b9e20bb6e108273c4347645a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 256,
+    "neurons": 99.14090728759766,
+    "prompt_tokens": 603,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 859
+  }
+}

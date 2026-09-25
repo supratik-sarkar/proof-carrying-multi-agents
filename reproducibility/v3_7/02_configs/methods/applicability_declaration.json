@@ -1,0 +1,85 @@
+{
+  "scope": "Historical configuration declaration, not merged into aggregate applicability.",
+  "source": {
+    "source_path": "configs/v3_6/authority/COMPARATOR_APPLICABILITY.json",
+    "sha256": "9dddc54eca5b41b86a7d63beef6f1bbe81321789e9787156c9a3781f909ea8ee",
+    "bytes": 1432
+  },
+  "declaration": {
+    "masks": {
+      "AgentRR": {
+        "applicable": [
+          "mind2web",
+          "bfcl_v1",
+          "agentdojo"
+        ],
+        "native_scope_na": [
+          "fever",
+          "hotpotqa",
+          "pubmedqa",
+          "tatqa",
+          "twowiki"
+        ]
+      },
+      "CitationOnly": {
+        "applicable": [
+          "fever",
+          "hotpotqa",
+          "pubmedqa",
+          "tatqa",
+          "twowiki"
+        ],
+        "native_scope_na": [
+          "mind2web",
+          "bfcl_v1",
+          "agentdojo"
+        ]
+      },
+      "CoverageMatchedVerifierOnly": {
+        "applicable": [
+          "fever",
+          "hotpotqa",
+          "pubmedqa",
+          "tatqa",
+          "twowiki"
+        ]
+      },
+      "NoCert": {
+        "applicable": [
+          "*"
+        ]
+      },
+      "PCG-MAS": {
+        "applicable": [
+          "*"
+        ]
+      },
+      "ShieldAgent": {
+        "applicable": [
+          "mind2web",
+          "bfcl_v1",
+          "agentdojo"
+        ],
+        "native_scope_na": [
+          "fever",
+          "hotpotqa",
+          "pubmedqa",
+          "tatqa",
+          "twowiki"
+        ]
+      },
+      "SignalMatchedFusion": {
+        "applicable": [
+          "fever",
+          "hotpotqa",
+          "pubmedqa",
+          "tatqa",
+          "twowiki"
+        ]
+      }
+    },
+    "non_applicable_value": "NATIVE_SCOPE_NA",
+    "rule": "Numerical results require method-faithful implementation authority; never promote placeholders or N/A to zero.",
+    "schema": "PCG_MAS_V3_6_COMPARATOR_APPLICABILITY_V2"
+  }
+}

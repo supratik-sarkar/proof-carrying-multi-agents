@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "benchmark_score": {
+    "error": [
+      "Malformed JSON arguments: Extra data: line 1 column 51 (char 50)."
+    ],
+    "error_type": "bfcl_adapter:malformed_arguments",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "3d317410079c51e9334bff79a27b3f3b69380ba859180de1b0bedf82631b8e36",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "bfcl_v1:parallel_function_98",
+  "prompt_sha256": "3d317410079c51e9334bff79a27b3f3b69380ba859180de1b0bedf82631b8e36",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "f22b2cad46b4149662ff630f4cecfdd4e96b37e4a2ece57a99b21226307024bf",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"charge\": 2, \"distance\": 0.5, \"medium\": \"vacuum\"}{\"charge\": 2, \"distance\": 1, \"medium\": \"vacuum\"}{\"charge\": 2, \"distance\": 2, \"medium\": \"vacuum\"}{\"charge\": 2, \"distance\": 1, \"medium\": \"air\"}",
+        "name": "calculate_electric_field_strength"
+      },
+      "id": "call_572aca3c6f9d46c5816eb65e",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 366,
+    "neurons": 12.045454025268555,
+    "prompt_tokens": 227,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 593
+  }
+}

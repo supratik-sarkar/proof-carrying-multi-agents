@@ -1,0 +1,45 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "9f7e41b7cb6e02897393dbf164dd5d69da28249ff3bf22b5696f5621937516db",
+  "candidate_text": "Albert Park.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "102965208a15bcd1e6d582b092cfa4d258fc4e8be13c5e253da6cd2afb28b81b",
+  "example_id": "5a8af28555429951533613b5",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "reasoning": {
+      "effort": "low"
+    },
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "1529a5445be3d53a96b9c6ca7a356c7c04522bce4012c55e8972badea33b1423",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "5a8af28555429951533613b5",
+  "prompt_sha256": "e2c586661401f4e923af8f06852b2fa7e56784d34377a3de9bd828a98f4aa7da",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] Albert Park, Victoria: Albert Park is an inner suburb of Melbourne, Australia, 3 km south of Melbourne's central business district.  Its local government area is the City of Port Phillip.  At the 2011 census , Albert Park had a population of 5,955.\n\n[2] 1956 Night Series Cup: The 1956 VFL Night Premiership Cup was the Victorian Football League end of season cup competition played in August and September of the Victorian Football League's 1956 Premiership Season.  The competition was the first season of the VFL Night Series.  Run as a three-round knock-out tournament, it was contested by the eight VFL teams who did not make the final four.  Games were played at the Lake Oval, Albert Park, then the home ground of South Melbourne, as it was the only ground equipped to host night games.  Despite the fact that not all VFL teams participated, the first season's average crowd was 20,000 for the seven matches played, while a crowd of 32,450 watched the first night Grand Final.\n\n[3] 1958 Night Series Cup: The 1958 VFL Night Premiership Cup was the Victorian Football League end of season cup competition played in August and September of the 1958 VFL Premiership Season.  This was the third year the VFL Night Series had existed.  In last years competition, each of the day finalists were duly defeated upon entry and their addition to the competition resulted in a drawn-out and complicated fixture of matches.  The VFL thus elected to return to the original format for this year's competition as previously used in the 1956 Night Series Cup.  Run as a knock-out tournament, it was contested by the eight VFL teams that failed to make the 1958 VFL finals series.  Games were played at the Lake Oval, Albert Park, then the home ground of South Melbourne, as it was the only ground equipped to host night games.  St Kilda went on to win the night series cup, defeating Carlton in the final by 8 points.\n\n[4] 1961 Night Series Cup: The 1961 VFL Night Premiership Cup was the Victorian Football League end of season cup competition played in August and September of the 1961 VFL Premiership Season.  This was the sixth season of the VFL Night Series.  Run as a knock-out tournament, it was contested by the eight VFL teams that failed to make the 1961 VFL finals series.  Games were played at the Lake Oval, Albert Park, then the home ground of South Melbourne, as it was the only ground equipped to host night games.  Geelong won its first night series cup defeating North Melbourne in the final by 12 points.\n\nQuestion: 1956 Night Series Cup games were played at what inner suburb of Melbourne that is 3km south of Melbourne's central business district?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "cec1e802f7455add00774d5ca97c0a00924df743594784e0053036ac3cae4f6e",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "hotpotqa:5a8af28555429951533613b5",
+  "task_key": "b9334c2209665772a1a6d69a1ef8382fcead4c58657209ac18e4695ff5607336",
+  "text": "Albert Park.",
+  "timestamp": "2026-09-15T09:23:01.770778+00:00",
+  "tokens_in": 714,
+  "tokens_out": 28,
+  "usage": {
+    "completion_tokens": 28,
+    "neurons": 24.62714195251465,
+    "prompt_tokens": 714,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 742
+  }
+}

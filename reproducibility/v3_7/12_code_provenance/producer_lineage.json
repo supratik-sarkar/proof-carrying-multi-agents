@@ -1,0 +1,11 @@
+{
+  "data_root": "14_artifacts/manuscript_stack/data",
+  "figure_entrypoints": [
+    "14_artifacts/manuscript_stack/source/render_result_figures.py",
+    "14_artifacts/manuscript_stack/source/render_static_schematics.py",
+    "14_artifacts/manuscript_stack/source/figure_06_backend_invariance_atlas.py"
+  ],
+  "metric_entrypoint": "16_replay/rebuild_metric_summaries.py",
+  "source_root": "14_artifacts/manuscript_stack/source",
+  "table_entrypoint": "14_artifacts/manuscript_stack/source/generate_tables.py"
+}

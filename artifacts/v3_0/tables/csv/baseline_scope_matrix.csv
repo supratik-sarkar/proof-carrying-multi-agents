@@ -1,6 +1,0 @@
-System,Native scope,Matched coverage,Primary metric
-nocert,matched-stack control,yes,n/a
-citation_only,grounding scope,yes,H_support
-shieldagent,execution-policy scope,yes,H_exec
-agentrr,replay scope,yes,replay
-pcg_mas,full certificate,yes,H_support + H_exec

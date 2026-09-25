@@ -1,0 +1,66 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "fbebdd1d3f1d357c61755e3180daf66194d9d66f24055054cb50f7afbaa5c8a4",
+  "candidate_text": "I'll get the current temperature and humidity for all four locations you mentioned.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "dec818c606c6c62b7ada600647f2eb905c4be237f2b472b7e3e870ec09611b7c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:parallel_function_199",
+  "prompt_sha256": "dec818c606c6c62b7ada600647f2eb905c4be237f2b472b7e3e870ec09611b7c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "f09ace55313682b69e4a8885ffa596fe5293ac28c8caa1467e17ae4056a21d0e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll get the current temperature and humidity for all four locations you mentioned.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"New York\"}",
+        "name": "get_current_weather"
+      },
+      "id": "chatcmpl-tool-9b872b0006851a2b",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"Los Angeles\"}",
+        "name": "get_current_weather"
+      },
+      "id": "chatcmpl-tool-83f721d9415f1ea1",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"London\"}",
+        "name": "get_current_weather"
+      },
+      "id": "chatcmpl-tool-a8cf5bd44b8d5ef6",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"location\": \"Tokyo\"}",
+        "name": "get_current_weather"
+      },
+      "id": "chatcmpl-tool-8844841a8f531a67",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 187,
+    "neurons": 8.2478,
+    "prompt_tokens": 262,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 449
+  }
+}

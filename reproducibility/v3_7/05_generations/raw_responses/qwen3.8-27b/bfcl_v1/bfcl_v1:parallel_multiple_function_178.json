@@ -1,0 +1,58 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "9d23b1b2096a4a82337ca3cab9185cb740ff3f0581a075c558456fe5286a7355",
+  "candidate_text": "I'll help you with all three tasks. Let me make the necessary calls:",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ee1d66062315600501e74a84f038529354ae3253a7f6f211da065fba45ef4a76",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_multiple_function_178",
+  "prompt_sha256": "ee1d66062315600501e74a84f038529354ae3253a7f6f211da065fba45ef4a76",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "0433aed675fca86a53b6dd4cd8b465447ab743d969b7148ce35d67012083fa6e",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll help you with all three tasks. Let me make the necessary calls:",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"location\": \"Tokyo\", \"radius\": 200, \"amount\": 5}",
+        "name": "locate_tallest_mountains"
+      },
+      "id": "chatcmpl-tool-813bde1b065f9313",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"initial_temp\": 300, \"final_temp\": 350, \"heat_capacity\": 1.5, \"isothermal\": true}",
+        "name": "calculate_entropy_change"
+      },
+      "id": "chatcmpl-tool-8a82921a165da27f",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"event\": \"Battle of Waterloo\", \"location\": \"Belgium\"}",
+        "name": "get_event_date"
+      },
+      "id": "chatcmpl-tool-872f610ed4f5300a",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 398,
+    "neurons": 147.1999969482422,
+    "prompt_tokens": 768,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1166
+  }
+}

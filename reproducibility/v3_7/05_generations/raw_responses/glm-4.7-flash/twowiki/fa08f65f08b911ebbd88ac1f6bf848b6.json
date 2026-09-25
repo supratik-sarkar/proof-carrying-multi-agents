@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "candidate_sha256": "51464cc48c6080c667c751c07ca74c54b65c21e89739fe9d6712dd047f340e13",
+  "candidate_text": "Maalgudi Days",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "cee830a6bd22baf83ee1e2f1749dd184e60bb82e1153b841ae6d8e4014ce28f7",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "1053029cc8b262ae0b0f92be7fb6a550f2b3b69ce001206b87e1037c24e8198d",
+  "lane": "recovery",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "fa08f65f08b911ebbd88ac1f6bf848b6",
+  "prompt_sha256": "8f2e6f3ad972a52257177377b2397d33fcaff4b11d0b2486c58735d7a3801451",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "ad5145c390d54d562a609b0ac3ce56225b4e338e9ac044ec144655e307314a81",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:fa08f65f08b911ebbd88ac1f6bf848b6",
+  "text": "Maalgudi Days",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 3.207,
+    "prompt_tokens": 550,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 555
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "09f347a557514a9529d78154cc7de67404c55c5307d688ff296b7499cc5037bf",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "bfcl_v1:simple_212",
+  "prompt_sha256": "09f347a557514a9529d78154cc7de67404c55c5307d688ff296b7499cc5037bf",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "f839a2fb750a1052012222592183a032f6b1b2d254852ae33bb7ce4d651a5df4",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"company_name\":\"Apple Inc.\",\"detail_level\":\"detailed\",\"market\":\"NASDAQ\"}",
+        "name": "get_stock_info"
+      },
+      "id": "call_1789655645712",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 20,
+    "neurons": 19.021818161010742,
+    "prompt_tokens": 712,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 732
+  }
+}

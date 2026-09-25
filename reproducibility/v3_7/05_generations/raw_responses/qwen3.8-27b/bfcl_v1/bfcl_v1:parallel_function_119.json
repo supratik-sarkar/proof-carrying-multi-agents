@@ -1,0 +1,185 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "benchmark_score": {
+    "error": [
+      "Could not find a matching function among index [0, 1, 2, 3] of model output for index 0 of possible answers.",
+      {
+        "Model Result Index 0": {
+          "model_output_item": {
+            "identify_bird": {
+              "color": "vibrant blue",
+              "habitat": "forest",
+              "size": "small"
+            }
+          },
+          "possible_answer_item": {
+            "identify_bird": {
+              "color": [
+                "blue"
+              ],
+              "habitat": [
+                "forest"
+              ],
+              "size": [
+                "small",
+                ""
+              ]
+            }
+          },
+          "sub_error": [
+            "Invalid value for parameter 'color': 'vibrant blue'. Expected one of ['blue']. Case insensitive."
+          ],
+          "sub_error_type": "value_error:string"
+        }
+      },
+      {
+        "Model Result Index 1": {
+          "model_output_item": {
+            "identify_bird": {
+              "color": "black",
+              "habitat": "lake",
+              "size": "large"
+            }
+          },
+          "possible_answer_item": {
+            "identify_bird": {
+              "color": [
+                "blue"
+              ],
+              "habitat": [
+                "forest"
+              ],
+              "size": [
+                "small",
+                ""
+              ]
+            }
+          },
+          "sub_error": [
+            "Invalid value for parameter 'color': 'black'. Expected one of ['blue']. Case insensitive."
+          ],
+          "sub_error_type": "value_error:string"
+        }
+      },
+      {
+        "Model Result Index 2": {
+          "model_output_item": {
+            "identify_bird": {
+              "color": "brown",
+              "habitat": "desert",
+              "size": "medium"
+            }
+          },
+          "possible_answer_item": {
+            "identify_bird": {
+              "color": [
+                "blue"
+              ],
+              "habitat": [
+                "forest"
+              ],
+              "size": [
+                "small",
+                ""
+              ]
+            }
+          },
+          "sub_error": [
+            "Invalid value for parameter 'color': 'brown'. Expected one of ['blue']. Case insensitive."
+          ],
+          "sub_error_type": "value_error:string"
+        }
+      },
+      {
+        "Model Result Index 3": {
+          "model_output_item": {
+            "identify_bird": {
+              "color": "green",
+              "habitat": "tropical rainforest",
+              "size": "large"
+            }
+          },
+          "possible_answer_item": {
+            "identify_bird": {
+              "color": [
+                "blue"
+              ],
+              "habitat": [
+                "forest"
+              ],
+              "size": [
+                "small",
+                ""
+              ]
+            }
+          },
+          "sub_error": [
+            "Invalid value for parameter 'color': 'green'. Expected one of ['blue']. Case insensitive."
+          ],
+          "sub_error_type": "value_error:string"
+        }
+      }
+    ],
+    "error_type": "parallel_function_checker_no_order:cannot_find_match",
+    "valid": false
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "ad4ae499114c1ce514b449b25f17437773c9038c82569e08f5bd27c015d82632",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "qwen3.8-27b",
+  "observation_id": "bfcl_v1:parallel_function_119",
+  "prompt_sha256": "ad4ae499114c1ce514b449b25f17437773c9038c82569e08f5bd27c015d82632",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "f4af710c1b827b7155ce71468851b88d03e1c780bbabd23ad81d2e47b39ff269",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"color\": \"vibrant blue\", \"habitat\": \"forest\", \"size\": \"small\"}",
+        "name": "identify_bird"
+      },
+      "id": "chatcmpl-tool-8f39b352dc639a7d",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"color\": \"black\", \"habitat\": \"lake\", \"size\": \"large\"}",
+        "name": "identify_bird"
+      },
+      "id": "chatcmpl-tool-90b6f5fb06f0f35d",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"color\": \"brown\", \"habitat\": \"desert\", \"size\": \"medium\"}",
+        "name": "identify_bird"
+      },
+      "id": "chatcmpl-tool-9cc392a80fee1610",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"color\": \"green\", \"habitat\": \"tropical rainforest\", \"size\": \"large\"}",
+        "name": "identify_bird"
+      },
+      "id": "chatcmpl-tool-a9f427d8f91d418e",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 383,
+    "neurons": 131.1363525390625,
+    "prompt_tokens": 482,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 865
+  }
+}

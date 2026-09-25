@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Emperor Daigo": ["Daigo's reign spanned the years from 897 through 930.","He is named after his place of burial."]
+
+[2] "Lorenzo Cybo": ["Lorenzo Cybo Malaspina (20 July 1500 \u2013 14 March 1549) was an Italian general, who was duke of Ferentillo.","Born at Sampierdarena (in what is modern Genoa), he was the son of Franceschetto Cybo and Maddalena de' Medici, daughter of \"Lorenzo de' Medici\" and his uncle was Pope Leo X.","His paternal grandfather was Pope Innocent VIII.","The latter pushed him to marry Ricciarda Malaspina, heir of the Malaspina family, by which he founded the Cybo-Malaspina family, including later the marquisses and princes of Massa-Carrara.","A skilled soldier, he held the position of commander-in-chief of the Papal Army.","His sons Giulio and Alberico held in succession the lordship of Massa and Carrara after Lorenzo's death, under the tutorage of their mother Ricciarda."]
+
+[3] "Clarice Orsini": ["Clarice Orsini( 1450\u2013 1488) was the daughter of Jacopo Orsini, and his wife and cousin Maddalena Orsini.","She was the wife of Lorenzo de' Medici and mother of Pope Leo X."]
+
+[4] "William Rockhill Nelson": ["William Rockhill Nelson( March 7, 1841 \u2013 April 13, 1915) was a real estate developer and co-founder of The Kansas City Star in Kansas City, Missouri.","He donated his estate( and home) for the establishment of the Nelson- Atkins Museum of Art.","Place of burial: Mount Washington Cemetery, Independence Missouri."]
+
+Question: Where was the place of burial of Lorenzo Cybo's mother?
+
+Answer:

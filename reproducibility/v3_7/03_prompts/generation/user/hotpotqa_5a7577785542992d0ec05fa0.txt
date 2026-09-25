@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Tatton Park: Tatton Park is an historic estate in Cheshire, England, to the north of the town of Knutsford.  It contains a mansion, Tatton Hall, a manor house dating from medieval times, Tatton Old Hall, gardens, a farm and a deer park of 2000 acre .  It is a popular visitor attraction and hosts over 100 events annually.  The estate is owned by the National Trust, who administer it jointly with Cheshire East Council.  Since 1999 it hosts North West England's annual Royal Horticultural Flower show.
+
+[2] Northern Chamber Orchestra: The Northern Chamber Orchestra (or NCO) is a chamber orchestra based in Manchester, England.  Established in 1967, the orchestra gives concerts at Heritage Centre, Macclesfield, St Ann's Church, Manchester, as well as Blackburn, Skipton, Lancaster and Tatton Park, Knutsford.  They are also currently the resident orchestra for the Buxton Festival.
+
+[3] Staatsorchester Stuttgart: The Staatsorchester Stuttgart (Stuttgart State Orchestra; full name, "Württembergisches Staatsorchester oder Orchester der Württembergischen Staatstheater") is a German symphony orchestra, based in Stuttgart.  The resident orchestra of the "Staatstheater Stuttgart", the orchestra gives concerts in the "Liederhalle" ("Beethovensaal").  The orchestra also performs as the ensemble for productions by "Oper Stuttgart".
+
+[4] Munich Chamber Orchestra: The Munich Chamber Orchestra (German: Münchener Kammerorchester , or MKO) is a German chamber orchestra based in Munich.  Its primary concert venue is the Prinzregententheater, Munich.  The MKO also gives concerts in Munich at such venues as the Pinakothek der Moderne and the "Schwere Reiter", and at the "Muffathalle" during the Munich Biennalle.  The regular core of the MKO is the string section, currently numbering 26 players (15 violinists, four viola players, five cellists and two double bass players).  Woodwind, brass and percussion players are employed when needed.
+
+Question: The Northern Chamber Orchestra gives concerts at what estate owned by the National Trust?
+
+Answer:

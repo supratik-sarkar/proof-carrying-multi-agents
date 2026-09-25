@@ -1,0 +1,44 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "error_type": "simple_function_checker:unclear",
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "faafa4ce754d6b35e391510c4838564e2ab25db80bdb5147457323515d507897",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:simple_84",
+  "prompt_sha256": "faafa4ce754d6b35e391510c4838564e2ab25db80bdb5147457323515d507897",
+  "provider": "gemini",
+  "provider_raw_sha256": "b31add8ab1bcafbb96ddad8217759e998dda01b2a28630dde1496c0591337388",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIP5GcB6Wualzi6DTjVpmAlJSAU8XVthDeexBdVkTyRkGXkdpZYDz8yIp3Rfebn/XmWb/wP/sxvo9qPXENmNZ6uskW3YwYy6DA6PAf1LyhtSqTiXs53ZohOqG4hq4gP+v0ZK6k17A/Rcdfsgg=="
+        }
+      },
+      "function": {
+        "arguments": "{\"weight\":85,\"height\":180}",
+        "name": "calculate_bmi"
+      },
+      "id": "call_964135",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 146,
+    "total_tokens": 167
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidate_text": "",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "8c32c960fbca6a277efe35cbd5af24a37f82a4a54230f1886a3b6e9dccd52f0d",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "bfcl_v1:parallel_multiple_function_176",
+  "prompt_sha256": "8c32c960fbca6a277efe35cbd5af24a37f82a4a54230f1886a3b6e9dccd52f0d",
+  "provider": "gemini",
+  "provider_raw_sha256": "38169f2e31343beed93767fb91032117fb3f008af62e57c5b6125c2eea38b007",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "",
+  "tool_calls": [
+    {
+      "extra_content": {
+        "google": {
+          "thought_signature": "EnEKbwERTTIPoHkZm5BEG/iEF1AeTuSAsxLAarec8chkiEEBn7PCL5e4ei5BXMkcUye6Tfd4Sb+w9D/i2A3FrAJHBUfO7aI/T5Hf1H5ORoAUFblxdUGI3Ms3v0e+GgpWBv9O4bhNwulNRs1dRpk7ilnU4g=="
+        }
+      },
+      "function": {
+        "arguments": "{\"location\":\"Los Angeles, CA\",\"rooms\":2,\"end_date\":\"2022-05-10\",\"start_date\":\"2022-05-01\",\"hotel_name\":\"Hilton\"}",
+        "name": "hotel_booking"
+      },
+      "id": "call_1177928",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"place2\":\"Los Angeles, CA\",\"place1\":\"New York, NY\"}",
+        "name": "get_time_difference"
+      },
+      "id": "call_1177929",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"weight\":75,\"system\":\"metric\",\"height\":180}",
+        "name": "calculate_bmi"
+      },
+      "id": "call_1177930",
+      "type": "function"
+    },
+    {
+      "function": {
+        "arguments": "{\"language\":\"English\",\"text\":\"I had a wonderful day at the beach. The weather was perfect and I enjoyed a delicious ice cream.\"}",
+        "name": "sentiment_analysis"
+      },
+      "id": "call_1177931",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 167,
+    "prompt_tokens": 702,
+    "total_tokens": 869
+  }
+}

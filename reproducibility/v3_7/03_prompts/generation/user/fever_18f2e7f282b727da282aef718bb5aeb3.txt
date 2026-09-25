@@ -1,0 +1,14 @@
+You are a fact-verification assistant. Read the evidence and decide whether
+the CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.
+
+Reply with EXACTLY one of these three labels and nothing else:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Evidence:
+[1] Taran Killam: Taran Hourie Killam -LRB- born April 1 , 1982 -RRB- is an American actor , comedian , and writer .
+
+Claim: Taran Killam wasn't born in April.
+
+Label:

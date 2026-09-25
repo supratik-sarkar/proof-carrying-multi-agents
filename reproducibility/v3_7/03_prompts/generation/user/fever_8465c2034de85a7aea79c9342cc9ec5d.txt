@@ -1,0 +1,14 @@
+You are a fact-verification assistant. Read the evidence and decide whether
+the CLAIM is SUPPORTED by it, REFUTED by it, or there is NOT ENOUGH INFO.
+
+Reply with EXACTLY one of these three labels and nothing else:
+  SUPPORTS
+  REFUTES
+  NOT ENOUGH INFO
+
+Evidence:
+[1] Juventus F.C.: The club is the second oldest of its kind still active in the country after Genoa 's football section -LRB- 1893 -RRB- , has traditionally worn a black and white striped home kit since 1903 and has played its home matches in several grounds , being the latest the 41,507-capacity Juventus Stadium .
+
+Claim: Juventus F.C. adopted its characteristic black-and-white-striped home uniform in 1903.
+
+Label:

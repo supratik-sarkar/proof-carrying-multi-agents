@@ -1,0 +1,12 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] PubMedQA abstract context: OBJECTIVE: To prospectively evaluate the amount of tissue removed at loop electrosurgical excision procedure (LEEP) vs. cold knife conization. STUDY DESIGN: Forty consecutive LEEP or cold knife conization specimens were prospectively measured and weighed by a single pathology technician. Diameter, length and weight of the specimens were compared using Student's t test. RESULTS: Mean diameter of cold knife cone specimens was 2.6 vs. 2.2 cm for LEEP (P = .07). Mean length of cold knife cone specimens was 1.5 vs. 1.0 cm for LEEP (P = .001). Mean weight for cold knife cone specimens was 4.4 vs. 2.0 g for LEEP (P = .001).
+
+Long answer: In a prospective evaluation, cold knife cone specimens were 50% longer and 100% heavier than LEEP specimens.
+
+Question: Cold knife conization vs. LEEP. Are they the same procedure?
+
+Answer:

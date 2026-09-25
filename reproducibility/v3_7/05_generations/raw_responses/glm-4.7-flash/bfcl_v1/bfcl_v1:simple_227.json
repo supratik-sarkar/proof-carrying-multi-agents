@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/zai-org/glm-4.7-flash",
+  "benchmark_score": {
+    "error": [],
+    "valid": true
+  },
+  "candidate_sha256": "2504f186a00ad1345d01112aa57385debc6ce5420ed52a6e4ea495aeb212b2e5",
+  "candidate_text": "I'll get both the strengths and weaknesses for the ENFJ personality type for you.",
+  "dataset_id": "bfcl_v1",
+  "evidence_sha256": "892aa8bfcb81a725128a51edfd370eaf6279445c05683e3f874510bdd899186c",
+  "finish_reason": "tool_calls",
+  "generation_policy_sha256": "e5fb971cc5af1964add4e19eca4ef73302c75629eb730f64fe91aec784907e24",
+  "lane": "bfcl_v1",
+  "model_id": "glm-4.7-flash",
+  "observation_id": "bfcl_v1:simple_227",
+  "prompt_sha256": "892aa8bfcb81a725128a51edfd370eaf6279445c05683e3f874510bdd899186c",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "fdfe2008d55822c332fbae6f8d976ad5bc5792d6fe8c471e155d70f1f5df4d79",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "scoring_status": "FINALIZED",
+  "source_lineage_id": null,
+  "text": "I'll get both the strengths and weaknesses for the ENFJ personality type for you.",
+  "tool_calls": [
+    {
+      "function": {
+        "arguments": "{\"type\": \"ENFJ\", \"traits\": [\"strengths\", \"weaknesses\"]}",
+        "name": "get_personality_traits"
+      },
+      "id": "chatcmpl-tool-9f0179e245564a96",
+      "type": "function"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 112,
+    "neurons": 5.3803,
+    "prompt_tokens": 237,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 349
+  }
+}

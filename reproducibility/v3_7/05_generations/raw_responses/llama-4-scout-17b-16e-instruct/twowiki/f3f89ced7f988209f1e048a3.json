@@ -1,0 +1,42 @@
+{
+  "api_model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "candidate_sha256": "7c4a8492f321c67ec367f7e8fa342ee1d2dcd06e2a0f18849494f325855d1a0a",
+  "candidate_text": "The Night The Prowler.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "38cc263be2160b01ed811220834198ed5bf9b87eeb35a00712c36f863b54989c",
+  "example_id": "73c3ac30089211ebbd73ac1f6bf848b6",
+  "finish": "stop",
+  "generation_policy": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "generation_policy_sha256": "c25d56bd14de6cf0db6d8378c3fc566933e07b2107533363b43d9196569d815c",
+  "generation_policy_version": "PCG_MAS_V3_6_GENERATION_POLICY_V1",
+  "input_sha256": "fa3154cefcf45114eb8ff5ff24d25774bd77e8aa76f9468d86d387b4fe51f829",
+  "max_output_tokens": 256,
+  "model_id": "llama-4-scout-17b-16e-instruct",
+  "observation_id": "73c3ac30089211ebbd73ac1f6bf848b6",
+  "prompt_sha256": "9f40fcac2a375483d0b5f1ec6086b9b03ae71ce365905c9bc384d023b43d676a",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Carl-Johan Forss\\u00e9n Ehrlin\": [\"Carl- Johan Forss\\u00e9n Ehrlin is a Swedish author of the bestselling children's book\\\" The Rabbit Who Wants to Fall Asleep\\\", written to help parents get their children to fall asleep.\",\"Forss\\u00e9n Ehrlin has a background in psychology which helped him while writing the book.\",\"\\\" The rabbit Who Wants to Fall Asleep\\\" has topped Amazon's best seller list.\"]\n\n[2] \"When the Gods Fall Asleep\": [\"When the Gods Fall Asleep is a 1972 Brazilian film directed by Jos\\u00e9 Mojica Marins.\",\"Marins is best known for the\\\" Z\\u00e9 do Caix\\u00e3o\\\"( Coffin Joe) film series.\",\"The film is a sequel to Marins' 1971 film\\\" The End of ManFinis Hominis\\\"), in which the character of Finis Hominis, an influential, messianic culture figure turns out to be an escaped mental patient.\",\"Rather than the horror themes which Marins was noted for, the film, like its predecessor, is low budget black humored social satire.\",\"In this film, Finis Hominis( after returning to the asylum) again feels the need to escape the asylum in order to put right the world's increasing social unrest that he sees in the news.\"]\n\n[3] \"The Night the Prowler\": [\"The Night the Prowler( also known as\\\" Patrick White's The Night the Prowler\\\") is a 1978 Australian film written by Patrick White, produced by Anthony Buckley and directed by Jim Sharman.\",\"Ruth Cracknell was nominated in 1979 for an AFI Award for Best Actress in a Lead Role for her part.\"]\n\n[4] \"The Prowler (1981 film)\": [\"The Prowler is a 1981 American slasher film directed by Joseph Zito, written by Neal Barbera and Glenn Leopold, and starring Vicky Dawson, Farley Granger, Lawrence Tierney, and Christopher Goutman.\",\"The plot follows a group of college students holding a graduation dance, 35 years after a double- homicide occurred, where a masked assailant dressed in World War II G.I. fatigues begins a murder spree.\",\"Internationally, the film was released under the title Rosemary's Killer.\",\"Filmed in late 1980 in Cape May, New Jersey,\\\" The Prowler\\\" premiered the following fall, and was independently distributed by Sandhurst Films.\",\"It was not a major commercial success, ranking 135th overall that year at the U.S. box office, and grossing less than$ 1 million.\",\"Though it has received mixed reviews from critics,\\\" The Prowler\\\" developed a cult following in the years after its release, and has been noted for its hard- edged violence \\u2014 showcasing special effects by Tom Savini\\u2014as well as its dreamlike atmosphere.\",\"It has been named one of the greatest slasher films of all time by several publications, including\\\" Complex\\\" and\\\" Paste\\\" magazine.\"]\n\nQuestion: Which film has the director who was born later, The Night The Prowler or When The Gods Fall Asleep?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "3e01f2075160d3cc9ff7f5052747d2e05bb504b2031c8cc3655abdad03fc9821",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:73c3ac30089211ebbd73ac1f6bf848b6",
+  "task_key": "6a3deb104deda956e16c142e7df4324952febf7a22e50685f5aa1b37e4ab09c1",
+  "text": "The Night The Prowler.",
+  "timestamp": "2026-09-15T09:34:17.673663+00:00",
+  "tokens_in": 739,
+  "tokens_out": 8,
+  "usage": {
+    "completion_tokens": 8,
+    "neurons": 18.757272720336914,
+    "prompt_tokens": 739,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 747
+  }
+}

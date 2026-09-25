@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "810d7c3ca6aa6411102588f8636833035138a35f32f5e7b2df96d2ab2dc4d660",
+  "candidate_text": "I don't know.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "50b200f1280893ef7bc2db1c4d79445c7273837276b8aaae65c81b7a5fee6690",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "5ae694a15542991bbc976141",
+  "prompt_sha256": "7d57dfdda3f4355fd79994b01c99f400489670c0649d794d708cdfad319438b3",
+  "provider": "gemini",
+  "provider_raw_sha256": "8af61f0b0087605d20fb0ba97bcc61d7ccd9e21379a77e300114a36914be4daa",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ae694a15542991bbc976141",
+  "text": "I don't know.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 574,
+    "total_tokens": 580
+  }
+}

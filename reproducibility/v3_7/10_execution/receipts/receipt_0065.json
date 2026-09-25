@@ -1,0 +1,10 @@
+{
+  "gold_answer_fallback_used": false,
+  "missing": [],
+  "missing_count": 0,
+  "optimized_enumerator": true,
+  "real_fit_generations": 700,
+  "required": 700,
+  "semantic_equivalence": true,
+  "status": "PASS"
+}

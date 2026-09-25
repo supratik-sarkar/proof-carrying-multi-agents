@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "45241593916b280d1489b449c21f48232152ee311e4362d9855aef924ea61623",
+  "candidate_text": "$8.5 million increase.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "tatqa",
+  "evidence_sha256": "83d67be8b949c3576fad3b70f0c37e76fd1ec3675aace6c927ce5e8d5806eff1",
+  "example_id": "1e1813ca65de92db4e4cf67c2939dc30",
+  "finish": "stop",
+  "input_sha256": "68022bf032cdc384107a3b21d3b8ae3363ee944775bafdb9c22772e319e7ca6b",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "1e1813ca65de92db4e4cf67c2939dc30",
+  "prompt_sha256": "07c003298b04021223df74c57129c8929f8b8a976286be17cd1522e5120882e8",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] TAT-QA table: row 0:  | December 31, | \nrow 1:  | 2019 | 2018\nrow 2: Accounted for at cost, adjusted for observable price changes | $1,750 | $1,250\nrow 3: Accounted for using the equity method | 8,000 | —\nrow 4: Total non-marketable investments | $9,750 | $1,250\n\n[2] TAT-QA 3: The Company’s non-marketable investments are composed of the following (in thousands):\n\n[3] TAT-QA 2: In December 2019, the Company made a minority investment in a privately-held company, Talespin, Inc., for $8.0 million, representing approximately 13% equity ownership. The investment is accounted for using the equity method of accounting due to the Company’s ability to exercise significant influence.\n\n[4] TAT-QA 1: Strategic Investments\n\nQuestion: What is the change in total non-marketable investments between 2018 and 2019?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "86f2247e83b3661da3a1754f8ff3406f7fc2e3d33a1c91e17d3f2d6a240d6f7a",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "tatqa:1e1813ca65de92db4e4cf67c2939dc30",
+  "task_key": "8a71a019002b16c0d32630b5473396b3d858805d8a47681c581c46c5d1c53b6b",
+  "text": "$8.5 million increase.",
+  "timestamp": "2026-09-14T10:33:36.339194+00:00",
+  "tokens_in": 340,
+  "tokens_out": 112,
+  "usage": {
+    "completion_tokens": 112,
+    "neurons": 18.45448112487793,
+    "prompt_tokens": 340,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 452
+  }
+}

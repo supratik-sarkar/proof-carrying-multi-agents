@@ -1,0 +1,40 @@
+{
+ "err": {
+  "body": {
+   "error": {
+    "message": "unavailable"
+   }
+  },
+  "status": 503
+ },
+ "ok": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "recorded gemini answer"
+      },
+      {
+       "functionCall": {
+        "args": {
+         "q": "policy"
+        },
+        "name": "lookup"
+       }
+      }
+     ]
+    },
+    "finishReason": "STOP"
+   }
+  ],
+  "modelVersion": "gemini-x-2026",
+  "responseId": "gem-REC1",
+  "usageMetadata": {
+   "cachedContentTokenCount": 40,
+   "candidatesTokenCount": 33,
+   "promptTokenCount": 112,
+   "thoughtsTokenCount": 11
+  }
+ }
+}

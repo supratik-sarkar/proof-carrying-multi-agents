@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "414ed8e1f147d5947fe59d7568458d94f3fea3aa3665fcb375aadfd4e14342b8",
+  "candidate_text": "Ernest William Goodpasture.",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "5248cfc7f10097b24e741b9e557be763b815bf059f46c2e1fc1b8350592267c2",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "16ee4aa308be11ebbd8aac1f6bf848b6",
+  "prompt_sha256": "cd0b13b8ec395fadf5ee05c4a166ebf98057dd014869ea30e6f746f3a718d84e",
+  "provider": "gemini",
+  "provider_raw_sha256": "232af566e335cdaa2962982cb5185e20328316f764499f35afce4b6d88b6136a",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "twowiki:16ee4aa308be11ebbd8aac1f6bf848b6",
+  "text": "Ernest William Goodpasture.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 424,
+    "total_tokens": 430
+  }
+}

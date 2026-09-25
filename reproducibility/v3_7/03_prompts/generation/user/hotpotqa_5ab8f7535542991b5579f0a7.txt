@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] Oz the Great and Powerful: Oz the Great and Powerful is a 2013 American fantasy adventure film directed by Sam Raimi and produced by Joe Roth, from a screenplay written by David Lindsay-Abaire and Mitchell Kapner.  The film stars James Franco, Michelle Williams, Rachel Weisz and Mila Kunis, with Zach Braff, Bill Cobbs, Joey King, and Tony Cox in supporting roles.  Based on L. Frank Baum's "Oz" novels and set 20 years before the events of the original novel, "Oz the Great and Powerful" is a spiritual prequel to the 1939 Metro-Goldwyn-Mayer film, "The Wizard of Oz".  The film tells the story of Oscar Diggs, a deceptive magician who arrives in the Land of Oz and encounters three witches: Theodora, Evanora, and Glinda.  Oscar is then enlisted to restore order in Oz, while struggling to resolve conflicts with the witches and himself.
+
+[2] Sacred Planet: Sacred Planet is a 2004 documentary directed by Jon Long and Hairul Salleh Askor.  Robert Redford provided narration for the film.  The film was released by Walt Disney Pictures on April 22, 2004, and grossed $1,108,356.
+
+[3] James Franco: James Edward Franco (born April 19, 1978) is an American actor, director, screenwriter, and producer.  For his role in "127 Hours" (2010), Franco was nominated for an Academy Award for Best Actor.  He is known for his roles in live-action films such as "Milk" (2008), "Pineapple Express" (2008), "Rise of the Planet of the Apes" (2011), "Spring Breakers" (2012), "Oz the Great and Powerful" (2013), "This Is the End" (2013), " The Disaster Artist" (2017), and Sam Raimi's "Spider-Man" trilogy, while also voicing characters in the animated films "The Little Prince" (2015) and "Sausage Party" (2016).
+
+[4] Toys in the Attic (2009 film): Toys in the Attic (Czech: Na půdě aneb Kdo má dneska narozeniny?  ; festival title: In the Attic: Who Has a Birthday Today?)  is a 2009 Czech-French-Japanese-Slovak primarily stop-motion animated fantasy comedy thriller family film directed by Jiří Barta and written by Edgar Dutka and Barta which depicts a community of toys and other objects in an attic who come to life when no human is around.  It is an international co-production of Czech, Japanese and Slovak companies.  The film was released first in the Czech Republic on 5 March 2009 and has been shown subtitled at film festivals internationally.  An American dub – adapted, produced and directed by Vivian Schilling and performed by actors including Forest Whitaker, Joan Cusack, Cary Elwes and Schilling herself – has been recorded, which the film was first shown with on 3 March 2012 at the New York International Children's Film Festival and was released nationally on 24 August 2012 by Hannover House.
+
+Question: Which film was released first: Sacred Planet or Oz the Great and Powerful?
+
+Answer:

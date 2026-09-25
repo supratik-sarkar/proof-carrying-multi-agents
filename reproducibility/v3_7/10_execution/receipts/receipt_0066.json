@@ -1,0 +1,38 @@
+{
+  "schema": "PCG_MAS_V3_6_FIT_VALIDATOR_SEMANTIC_EQUIVALENCE",
+  "status": "PASS",
+  "timestamp": "2026-09-17T12:45:45.848194+00:00",
+  "frozen_strict_fit_guard": {
+    "path": "artifacts/v3_6/dataset_amendment_v2/scripts/strict_fit_guard.py",
+    "sha256": "52c454ac7778ac2650f3fb9f2e04398a0e6f5209f02d4a605589f619b2ecd174"
+  },
+  "optimized_strict_fit_guard": {
+    "path": "artifacts/v3_6/dataset_amendment_v2/scripts/strict_fit_guard_optimized.py",
+    "sha256": "5018e8ba3500eca778306f3e551632bc28412442b5e2a81280d047370515244b"
+  },
+  "enumerated_predicates": [
+    "P1: Manifest existence & selected_example_ids loading (NATURAL_FUSION_FIT_MANIFEST.json)",
+    "P2: Exact 7 final panel models bound",
+    "P3: Exact file universe count check: exactly 1 file per (model, ds, ex)",
+    "P4: Valid JSON parsing check",
+    "P5: Candidate text non-empty verification (candidate_text or text)",
+    "P6: Provenance validation (provider or provider_raw_sha256 or usage present)",
+    "P7: Cardinality check: seen == 700 and missing == 0 required for PASS",
+    "P8: gold_answer_fallback_used == False invariant",
+    "P9: Identical receipt output schema and keys to receipts/FIT_STRICT_GUARD_RECEIPT.json",
+    "P10: Identical terminal reporting lines on stdout"
+  ],
+  "controlled_fixture_subset_test": {
+    "fixture_size": "35 items (1 per dataset across 7 models)",
+    "frozen_output": {
+      "missing": 3,
+      "seen": 32
+    },
+    "optimized_output": {
+      "missing": 3,
+      "seen": 32
+    },
+    "output_match": true
+  },
+  "semantic_equivalence": true
+}

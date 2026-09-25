@@ -1,0 +1,16 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] "Mouloud Feraoun": ["Mouloud Feraoun( 8 March 1913 \u2013 15 March 1962) was an Algerian writer and martyr of the Algerian revolution born in Tizi Hibel, Kabylie.","Some of his books, written in French, have been translated into several languages including English and German.","He was assassinated by the French OAS on 15 March 1962."]
+
+[2] "Anna Margarete Stegmann": ["Anna Margarete Stegmann( July 12, 1871 \u2013 July 1, 1936) was a Swiss- German neurologist, psychoanalyst and politician.","She was a Social Democratic Party member of the Reichstag of the Weimar Republic.","The daughter of a farmer, she was born Anna Margarete Meyer in Z\u00fcrich, Switzerland.","Both her parents had died by the time that she was sixteen.","She worked for the Swiss postal service, completed her secondary education and went on to study medicine.","Stegmann earned her doctorate in 1910 in Zurich.","She joined the Social Democratic Party in 1918.","After completing her internship, she received her license to practise medicine in 1920 and set up practice in Dresden.","During the 1920s, she was a member of the International Psychoanalytical Association, the Schopenhauer Society and the Women's International League for Peace and Freedom.","When the Nazi Party gained power in Germany, she left for Switzerland.","From 1920 to 1924, she was an unpaid member of the city council of Dresden.","She served as a member of the Reichstag from May 1924 to September 1930.","In 1924, she argued for the right of women to abortion; in the spirit of those times, eugenic reasons were used to justify abortion in certain cases.","She married Arnold Stegmann in 1911 but he died in 1914.","She died in Arlesheim at the age of 64."]
+
+[3] "Gerrit Maritz": ["Gerhardus Marthinus( Gert or Gerrit) Maritz( 1 March 1797 \u2013 23 September 1838), b 1c8d2, was a Voortrekker pioneer and leader, wagon builder.","Gerrit Maritz was the son of Salamo Stefanus Maritz and Maria Elizabeth Oosthuizen.","He married Agnita Maria Olivier and later Anna Carolina Agatha van Rooyen and from them he fathered six children."]
+
+[4] "Princess Iniga of Thurn and Taxis": ["Princess Iniga Anna Margarete Wilhelmine Luise of Thurn and Taxis( German Iniga Anna Margarete Wilhelmine Luise, Prinzessin von Thurn und Taxis, 25 August 1925, Schloss Niederaichbach, Niederaichbach, Bavaria, Germany \u2013 17 September 2008, Aufhausen, Germany) was a princess of the House of Thurn and Taxis by birth and a Princess of Urach through her marriage to Prince Eberhard von Urach, member of a morganatic branch of the former royal House of W\u00fcrttemberg."]
+
+Question: Who was born later, Anna Margarete Stegmann or Mouloud Feraoun?
+
+Answer:

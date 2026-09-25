@@ -1,0 +1,24 @@
+{
+  "api_model_id": "gemini-3.1-flash-lite",
+  "candidate_sha256": "77faf887773817b6daeb45c5246d59fa5c74def5ea10e7b5121b7011b8e68cce",
+  "candidate_text": "Yes, they are cost-effective.",
+  "dataset_id": "pubmedqa",
+  "evidence_sha256": "da70165efe2adf51c8f392fccae277839cb1cbe732d7780016df192d46de2313",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "bb545e00fc2a159bcdf5e6cc8579d91ad98b812e08b7cb2bae7a5c205a9445b2",
+  "lane": "gemini_primary",
+  "model_id": "gemini-3.1-flash-lite",
+  "observation_id": "26370095",
+  "prompt_sha256": "cc970b9773a82290e6d8a726553a83cd61f2c3ff8f908fa5dd180be9eece687f",
+  "provider": "gemini",
+  "provider_raw_sha256": "3f986541d435bcd902213896049e913afc36b20a0466b3a6467c46bc08059647",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "pubmedqa:26370095",
+  "text": "Yes, they are cost-effective.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 545,
+    "total_tokens": 553
+  }
+}

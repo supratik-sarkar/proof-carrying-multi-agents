@@ -1,0 +1,37 @@
+You are a careful assistant. Use ONLY the provided context to answer.
+If the context doesn't contain the answer, say "I don't know."
+Give a brief answer (1-5 words when possible).
+
+Context:
+[1] TAT-QA 2: The Company considered both positive and negative evidence, including future reversals of existing taxable temporary differences, projected future taxable income, tax planning strategies, historic book profit/loss, prior taxable income/loss, and results of future operations, and determined that a valuation allowance was not required for a significant portion of its deferred tax assets. A valuation allowance of $31.4 million and $28.5 million remained as of July 31, 2019 and 2018, respectively.
+
+[2] TAT-QA table: row 0:  | As of July 31, | 
+row 1:  | 2019 | 2018
+row 2: Accruals and reserves | $7,870 | $12,129
+row 3: Stock-based compensation | 6,353 | 7,658
+row 4: Deferred revenue | 2,316 | 4,023
+row 5: Property and equipment | — | 1,268
+row 6: Net operating loss carryforwards | 55,881 | 56,668
+row 7: Tax credits | 74,819 | 60,450
+row 8: Total deferred tax assets | 147,239 | 142,196
+row 9: Less valuation allowance | 31,421 | 28,541
+row 10: Net deferred tax assets | 115,818 | 113,655
+row 11: Less deferred tax liabilities: |  | 
+row 12: Intangible assets | 7,413 | 11,461
+row 13: Convertible debt | 10,274 | 11,567
+row 14: Property and equipment | 1,435 | —
+row 15: Unremitted foreign earnings | 302 | 258
+row 16: Capitalized commissions | 6,086 | —
+row 17: Total deferred tax liabilities | 25,510 | 23,286
+row 18: Deferred tax assets, net | 90,308 | 90,369
+row 19: Less foreign deferred revenue | — | 69
+row 20: Less foreign capitalized commissions | 906 | —
+row 21: Total net deferred tax assets | 89,402 | 90,300
+
+[3] TAT-QA 3: The increase of $2.9 million in the valuation allowance in the current fiscal year relates primarily to net operating losses and income tax credits incurred in certain tax jurisdictions for which no tax benefit was recognized.
+
+[4] TAT-QA 1: The tax effects of temporary differences that gave rise to significant portions of deferred tax assets and liabilities are as follows (in thousands):
+
+Question: What was the average Stock-based compensation for 2018 and 2019?
+
+Answer:

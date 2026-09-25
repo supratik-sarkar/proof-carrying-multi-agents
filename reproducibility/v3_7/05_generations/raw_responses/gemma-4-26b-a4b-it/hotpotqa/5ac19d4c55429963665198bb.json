@@ -1,0 +1,28 @@
+{
+  "api_model_id": "@cf/google/gemma-4-26b-a4b-it",
+  "candidate_sha256": "e69473bb8e8c809429b1a3183c8a0f083208b68fb1378fa9e46a491c941cf131",
+  "candidate_text": "The May Revolution.",
+  "dataset_id": "hotpotqa",
+  "evidence_sha256": "73b2facb22f0eab0e497b9a08a5e404e4fedca2dc9c53e7543a7db1efef41f98",
+  "finish_reason": "stop",
+  "generation_policy_sha256": "dfa454faeade6be1f9e3cb0b751e6f5b04acd7b1988cd23b293d0652847051f6",
+  "lane": "recovery",
+  "model_id": "gemma-4-26b-a4b-it",
+  "observation_id": "5ac19d4c55429963665198bb",
+  "prompt_sha256": "1fc58c46d09bb85de8eefad428096144e61427a94b521083acf3f6263d8e3b03",
+  "provider": "cloudflare",
+  "provider_raw_sha256": "65ab10f677fe969f76d99432959c3c7eeb895bd59fd6a2086d802f0fb10fc7ad",
+  "schema": "PCG_MAS_V3_6_V2_GENERATION_OUTPUT",
+  "source_lineage_id": "hotpotqa:5ac19d4c55429963665198bb",
+  "text": "The May Revolution.",
+  "tool_calls": [],
+  "usage": {
+    "completion_tokens": 5,
+    "neurons": 7.718181610107422,
+    "prompt_tokens": 834,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 839
+  }
+}

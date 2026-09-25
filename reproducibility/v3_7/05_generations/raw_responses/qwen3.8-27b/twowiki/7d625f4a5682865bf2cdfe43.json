@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/qwen/qwen3.8-27b",
+  "candidate_sha256": "6859a5008e7c0a9569034f5a5f7381b9be60cba22f51b74adfa7ffbb52ae5971",
+  "candidate_text": "\n\nI don't know.",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "a9458ada5a4cb724f0de128bf065c6c6ef8b8f141284367586e221b6905c2f79",
+  "example_id": "593381a80bdd11eba7f7acde48001122",
+  "finish": "stop",
+  "input_sha256": "1986ea2531ae088b5c27a323bd574c2f67aaea527f8e0a7dac6c874e7f775870",
+  "max_output_tokens": 256,
+  "model_id": "qwen3.8-27b",
+  "observation_id": "593381a80bdd11eba7f7acde48001122",
+  "prompt_sha256": "1dbf9609d5995fdedccbf1dfcb5635ccefad9cacbeb36dcdefec33e91e5f9ea0",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Emperor Daigo\": [\"Daigo's reign spanned the years from 897 through 930.\",\"He is named after his place of burial.\"]\n\n[2] \"Lorenzo Cybo\": [\"Lorenzo Cybo Malaspina (20 July 1500 \\u2013 14 March 1549) was an Italian general, who was duke of Ferentillo.\",\"Born at Sampierdarena (in what is modern Genoa), he was the son of Franceschetto Cybo and Maddalena de' Medici, daughter of \\\"Lorenzo de' Medici\\\" and his uncle was Pope Leo X.\",\"His paternal grandfather was Pope Innocent VIII.\",\"The latter pushed him to marry Ricciarda Malaspina, heir of the Malaspina family, by which he founded the Cybo-Malaspina family, including later the marquisses and princes of Massa-Carrara.\",\"A skilled soldier, he held the position of commander-in-chief of the Papal Army.\",\"His sons Giulio and Alberico held in succession the lordship of Massa and Carrara after Lorenzo's death, under the tutorage of their mother Ricciarda.\"]\n\n[3] \"Clarice Orsini\": [\"Clarice Orsini( 1450\\u2013 1488) was the daughter of Jacopo Orsini, and his wife and cousin Maddalena Orsini.\",\"She was the wife of Lorenzo de' Medici and mother of Pope Leo X.\"]\n\n[4] \"William Rockhill Nelson\": [\"William Rockhill Nelson( March 7, 1841 \\u2013 April 13, 1915) was a real estate developer and co-founder of The Kansas City Star in Kansas City, Missouri.\",\"He donated his estate( and home) for the establishment of the Nelson- Atkins Museum of Art.\",\"Place of burial: Mount Washington Cemetery, Independence Missouri.\"]\n\nQuestion: Where was the place of burial of Lorenzo Cybo's mother?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "04beecc73024f36ab0d57143b5a5b68d26ce53f50aac7537c13ed91e9abc554d",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:593381a80bdd11eba7f7acde48001122",
+  "task_key": "2535a15f791177fe55fb8abf91dc4eb9dac27bca02d5f953c23802abf0373036",
+  "text": "\n\nI don't know.",
+  "timestamp": "2026-09-14T10:50:12.922328+00:00",
+  "tokens_in": 534,
+  "tokens_out": 212,
+  "usage": {
+    "completion_tokens": 212,
+    "neurons": 83.51818084716797,
+    "prompt_tokens": 534,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 746
+  }
+}

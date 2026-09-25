@@ -1,0 +1,36 @@
+{
+  "api_model_id": "@cf/openai/gpt-oss-120b",
+  "candidate_sha256": "c9cab0238debc6e55498e2c0963a1d8e25bd29c95ddd53a3fff841ee636b6bc5",
+  "candidate_text": "Austria",
+  "confidence_source": "RETRIEVAL_SCORE_FALLBACK_NO_PROVIDER_LOGPROBS",
+  "dataset_id": "twowiki",
+  "evidence_sha256": "4f8d07b316a233d7468a4ad2fbac2295880ef13df621281d7af997c4c37318be",
+  "example_id": "1837ca440bdb11eba7f7acde48001122",
+  "finish": "stop",
+  "input_sha256": "081c1e1a7f67dd8d59d7f2f75dfa28db985e98b2a285199c96b5ffda8ad9cdb7",
+  "max_output_tokens": 256,
+  "model_id": "gpt-oss-120b",
+  "observation_id": "1837ca440bdb11eba7f7acde48001122",
+  "prompt_sha256": "bc6fbc4a144a1d21ca11ff7a5602fca35f2fe86104b734c84f082beb17fe9f4b",
+  "prompt_source": "PROVER_NATIVE_PREP_V3_6",
+  "prompt_text": "You are a careful assistant. Use ONLY the provided context to answer.\nIf the context doesn't contain the answer, say \"I don't know.\"\nGive a brief answer (1-5 words when possible).\n\nContext:\n[1] \"Gently My Songs Entreat\": [\"Gently My Songs Entreat (German:) is a 1933 Austrian-German musical film directed by Willi Forst and starring Marta Eggerth, Luise Ullrich and Hans Jaray.\",\"Art direction was by Julius von Borsody.\",\"The film is a biopic of the composer Franz Schubert (1797\\u20131828).\",\"It was Forst's directorial debut.\",\"A British version was made called \\\"Unfinished Symphony\\\".\",\"The German title refers to the first line of the Lied \\\"St\\u00e4ndchen\\\" (Serenade) from Schubert's collection \\\"Schwanengesangthe most famous serenade in the world\\\", which Eggerth performs in the film.\"]\n\n[2] \"Hans Jaray\": [\"Hans Jaray( 1906\\u20131990) was an Austrian actor and playwright.\",\"He also wrote and directed several television films.\",\"Jaray starred as a leading man in a number of 1930s films, such as the Schubert biopic\\\" Gently My Songs Entreat\\\"( 1933).\",\"Jaray emigrated to the United States following the Anchluss of 1938, but returned to Vienna after the Second World War.\",\"The 1934 Czech film\\\" Man in Demand on All Sides\\\" was based on one of his plays.\"]\n\n[3] \"Unfinished Symphony (film)\": [\"Unfinished Symphony is a 1934 British- Austrian musical drama film directed by Anthony Asquith and starring M\\u00e1rtha Eggerth, Helen Chandler, Hans Jaray, and Ronald Squire.\",\"The film is based on the story of Franz Schubert who, in the 1820s left his symphony unfinished after losing the love of his life.\",\"The film's alternate German- language version was called\\\" Gently My Songs Entreat\\\".\",\"This title refers to the first line of the Lied\\\" St\\u00e4ndchen\\\"( Serenade) from Schubert's collection\\\" Schwanengesangthe most famous serenade in the world\\\", performed by M\\u00e1rtha Eggerth in the film.\"]\n\n[4] \"Willi Forst\": [\"Willi Forst, born Wilhelm Anton Frohs (7 April 1903 \\u2013 11 August 1980) was an Austrian actor, screenwriter, film director, film producer and singer.\",\"As a debonair actor he was a darling of the German-speaking film audiences, as a director, one of the most significant makers of the Viennese period musical melodramas and comedies of the 1930s known as \\\"Wiener Filme\\\".\",\"From the mid-1930s he also recorded many records, largely of sentimental Viennese songs, for the Odeon Records label owned by Carl Lindstr\\u00f6m AG.\"]\n\nQuestion: Where was the director of film Gently My Songs Entreat born?\n\nAnswer:",
+  "provider": "cloudflare",
+  "provider_logprobs_available": false,
+  "provider_raw_sha256": "b0cc3f23077edd9c8034ed7a46a3b2920813418aa47cdb97a16e18e0930f4794",
+  "schema": "PCG_MAS_V3_6_GENERATION_OUTPUT_V1",
+  "source_lineage_id": "twowiki:1837ca440bdb11eba7f7acde48001122",
+  "task_key": "0c2bd1fe11ccd967e35c428721903db2fa405690172543620c09b27e582bea9b",
+  "text": "Austria",
+  "timestamp": "2026-09-14T10:33:14.710383+00:00",
+  "tokens_in": 725,
+  "tokens_out": 169,
+  "usage": {
+    "completion_tokens": 169,
+    "neurons": 34.59077453613281,
+    "prompt_tokens": 725,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 894
+  }
+}
