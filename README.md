@@ -14,10 +14,7 @@
 
 > **PCG-MAS treats the generator as untrusted. A result is releasable only when it is accompanied by an acceptance certificate that an independent consumer can check against declared evidence, replay, execution, and semantic-support contracts.**
 
-**Live demo:** [pcg-mas-demo.pages.dev](https://pcg-mas-demo.pages.dev)  
-**Fallback demo:** [anonymous-artifact/pcg-demo](https://huggingface.co/spaces/anonymous-artifact/pcg-demo)
-
-The demo is an interactive illustration of the architecture. The sealed experimental record in [`reproducibility/v3_7/`](reproducibility/v3_7/) is the reproducibility authority.
+The local interactive demonstration code lives under [`app/`](app/) and can be run locally with zero external network dependencies. The sealed experimental record in [`reproducibility/v3_7/`](reproducibility/v3_7/) is the reproducibility authority.
 
 ---
 
@@ -29,26 +26,24 @@ PCG-MAS changes the release contract.
 
 Instead of asking a consumer to trust a model, provider, agent graph, or orchestration trace, the producer emits a **proof-carrying artifact**:
 
-\[
+$$
 Z = (\text{claim}, \text{evidence}, \text{execution record}, \text{certificate})
-\]
+$$
 
 and acceptance is determined by a checker:
 
-\[
-\mathrm{Check}(Z;G_t)
-=
-V_H \cdot V_{\Pi} \cdot V_{\Gamma} \cdot V_{\vdash}
-\]
+$$
+\mathrm{Check}(Z;G_t) = V_H \cdot V_{\Pi} \cdot V_{\Gamma} \cdot V_{\vdash}
+$$
 
 where the applicable channels represent:
 
 | Check | Role |
 |---|---|
-| \(V_H\) | evidence / commitment integrity |
-| \(V_{\Pi}\) | replay and execution-consistency validation |
-| \(V_{\Gamma}\) | declared execution / policy-contract validation |
-| \(V_{\vdash}\) | semantic support / entailment validation |
+| $V_H$ | evidence / commitment integrity |
+| $V_{\Pi}$ | replay and execution-consistency validation |
+| $V_{\Gamma}$ | declared execution / policy-contract validation |
+| $V_{\vdash}$ | semantic support / entailment validation |
 
 A releasable result must satisfy the checks declared applicable by the contract. The guarantee is therefore **checker-relative and contract-relative**: PCG-MAS does not claim that a passing certificate establishes unrestricted world truth.
 
@@ -352,12 +347,15 @@ The release process computes this block only after stale/internal material has b
 
 The demo exposes a user-facing view of the certificate lifecycle, including representative evidence, execution, policy, lineage, and certificate-inspection surfaces.
 
-- **Primary:** https://pcg-mas-demo.pages.dev
-- **Fallback:** https://huggingface.co/spaces/anonymous-artifact/pcg-demo
+The application code lives under [`app/`](app/). It can be run entirely locally without external network dependencies or telemetry:
 
-The demo is deliberately separated from experimental scoring. It is useful for understanding the mechanism, but it is **not** a source of reported scientific measurements.
+```sh
+cd app
+# Launch local server
+python server.py
+```
 
-The application code lives under [`app/`](app/). Generated dependency directories such as `node_modules/` are not part of the source release.
+The demo is deliberately separated from experimental scoring. It is useful for understanding the mechanism, but it is **not** a source of reported scientific measurements. Generated dependency directories such as `node_modules/` are not part of the source release.
 
 ---
 
@@ -472,7 +470,7 @@ If you want to **understand the idea**:
 2. `src/pcg/certificate.py`;
 3. `src/pcg/checker.py`;
 4. `src/pcg/v3/`;
-5. the live demo.
+5. the local demo in `app/`.
 
 If you want to **audit the experiment record**:
 
